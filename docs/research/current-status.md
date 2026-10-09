@@ -88,6 +88,15 @@ endpoint lower bound requires only one. The missing word must share target
 alignment; even granting the ideal gain, splitting every target path
 exceeds the exact moment budget. No stronger supplier or κ is certified.
 
+The [residual shared-readout diagnostic](../../research/residual-shared-readout/REPORT.md)
+now closes the unchanged single-target-bank implementation: arbitrary scalar
+encoding and decoding cannot realize the residual demands with just one
+extra transform before or after that bank. Exact array-operator independence,
+rather than address-matrix rank alone, detects the obstruction. Direct
+readout at unconverted center frames is correct but costs more, including
+peeling and every target alignment. An interleaved target/readout word remains
+outside these exclusions; none has been supplied. The selected κ is unchanged.
+
 The preceding reviewed recycled-bit composition was κ=0.000472154791;
 its [round-seven review](community-round7-review.md) retains the evidence.
 

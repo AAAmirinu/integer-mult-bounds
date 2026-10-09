@@ -15,6 +15,11 @@ It changes the proposed readout graph, rather than relabeling an invocation
 inside the already optimized grouped-gate model. It does not reopen the
 retired clean-aggregate producer model.
 
+The subsequent [residual shared-readout diagnostic](../residual-shared-readout/REPORT.md)
+closes the single-parallel-target-bank implementation and the direct
+unconverted-center schedules. The residual contract remains open only
+beyond those scoped models; the lower-bound gap is still not a construction.
+
 ## Interface and exact checks
 
 Work first in the plain triple geometry, for `h>=5`, `h!=9`, with
