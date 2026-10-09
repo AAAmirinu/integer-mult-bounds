@@ -77,6 +77,17 @@ target excursion. Under the retained outer cuts and auxiliary rank floor,
 using it for every target consumes full rank capacity even across invocation
 boundaries. Neither schedule earns a larger search; no new κ results.
 
+The [joint-readout design pass](../../research/joint-readout-design/REPORT.md)
+checks two explicit encoders on arbitrary inputs; both increase the paid
+rank bill. A joint rational endpoint-discrepancy calculation nevertheless
+has excess rank `binom(h,2)`, versus `h(h-1)` for separate center copies in
+the plain triple model. This lower-bound gap is not an implemented saving.
+Two paid partial center transforms reduce the next experiment to a pair
+of residual lines: ordinary readout costs two width-one copies, while the
+endpoint lower bound requires only one. The missing word must share target
+alignment; even granting the ideal gain, splitting every target path
+exceeds the exact moment budget. No stronger supplier or κ is certified.
+
 The preceding reviewed recycled-bit composition was κ=0.000472154791;
 its [round-seven review](community-round7-review.md) retains the evidence.
 
