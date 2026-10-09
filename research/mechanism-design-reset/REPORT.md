@@ -2,6 +2,12 @@
 
 2026-10-09. Douglas Colkitt, with OpenAI Codex assistance. Apache-2.0.
 
+**Follow-up:** the [terminal decoder admission pass](../terminal-decoder-admission/REPORT.md)
+is complete. Actual routing leaves almost all four-bank summary dimension,
+and common-frame terminal decoding exhausts rank capacity. No decoder was
+admitted. Distributed realizations remain unresolved, without a selected
+physical word or an automatic continuation to a frame search.
+
 **Decision: give a coupled terminal decoder one bounded routing/cost test.**
 Its scalar identity and arbitrary-workspace restoration have exact controls
 over both relevant scalar fields, including unequal noncommuting stage maps.

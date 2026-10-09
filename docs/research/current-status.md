@@ -107,6 +107,15 @@ remain missing. Rank-boosting tensor-label recipes fail required annihilations;
 packed orbit differences pay back their volume saving on expansion. No new
 supplier, complex-frame implementation, or κ has been established.
 
+The [terminal decoder admission pass](../../research/terminal-decoder-admission/REPORT.md)
+checks the actual h=22 complex motif and cover. A regular-cover projection
+trace bounds the proposed input-summary dimension below by `87.2667|G|`,
+versus `44|G|` in the aligned model and `88|G|` with four separate banks.
+Common-frame terminal decoding also consumes full rank capacity with its
+internal work granted free. No decoder or new supplier is admitted. These
+screens do not exclude every distributed decoder; such a word and its
+complete cost remain missing. The bounded round stops without a frame search.
+
 The preceding reviewed recycled-bit composition was κ=0.000472154791;
 its [round-seven review](community-round7-review.md) retains the evidence.
 
