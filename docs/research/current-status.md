@@ -41,6 +41,13 @@ the proposed copied-block budget even with zero auxiliary roles and central
 loss. Neither earns a circuit-construction round. These are scoped exclusions,
 not a barrier for all higher-rank geometries or compilers.
 
+The [in-place two-invocation diagnostic](../../research/inplace-producer-sixteenth/REPORT.md)
+tests original-data borrowing through matched reversible encoding. Its small
+word is correct and reduces 22 scalar gates to 14, but a nonpermutation
+endpoint-discrepancy argument proves that every frame assignment in this
+template costs at least full rank capacity before correction. This closes
+the matched-encoding model, not characteristic-dependent in-place producers.
+
 The preceding reviewed recycled-bit composition was κ=0.000472154791;
 its [round-seven review](community-round7-review.md) retains the evidence.
 
