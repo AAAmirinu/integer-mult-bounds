@@ -68,6 +68,15 @@ target budget. A lower-stock arithmetic control also fails the source-span
 screen. The next proposed round should change the paid producer/readout;
 no concrete new interaction family or larger supplier has been admitted.
 
+The [bounded boundary-readout round](../../research/boundary-readout-sixteenth/REPORT.md)
+is complete. Deferred cleanup cancels at the scalar level only with the
+required injection alignment and removes no children from the retained
+framed word; the finite shared-bank routing control fails that alignment.
+Direct readout into the center's frame is physically correct but forces a
+target excursion. Under the retained outer cuts and auxiliary rank floor,
+using it for every target consumes full rank capacity even across invocation
+boundaries. Neither schedule earns a larger search; no new κ results.
+
 The preceding reviewed recycled-bit composition was κ=0.000472154791;
 its [round-seven review](community-round7-review.md) retains the evidence.
 

@@ -13,6 +13,12 @@ an arithmetic target and a conditional rank-r cover. It did not provide
 labels, a scalar identity, or a producer attaining its histogram. Here we
 couple those missing parts before choosing an expensive search.
 
+**Follow-up:** the [bounded boundary-readout round](../boundary-readout-sixteenth/REPORT.md)
+has now tested deferred cleanup and direct nonzero-frame target readout.
+Neither supplies a cheaper recursive profile. Its endpoint obstruction
+permits crossing the intermediate invocation boundaries; neither proposal
+is an outstanding construction target.
+
 ## 1. The precise model being screened
 
 There are v scalar source labels, with rank-r idempotent address labels in
