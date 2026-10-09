@@ -56,6 +56,18 @@ local budget passes both target moments, but no such geometry or producer
 is supplied. The full old triple annihilation graph still fails this cover's
 target budget at every block rank. No new supplier or κ is certified.
 
+The [interaction-family design pass](../../research/interaction-family-design/REPORT.md)
+adds joint geometry/producer screens. Rank-nine blocks in dimension 19
+require odd girth at least 19. In a conservative copied-center model,
+triangle-free scalar support forces `v≤k(k+1)` and copied loss at least `kr`.
+These rule out the illustrative 250-port budget. Stronger source-span
+and elementary Ramsey screens raise the necessary scale at its loss ratio
+to at least 33,908 ports. A folded-cube identity has a genuine
+field-dependent rank gap but fails the copied-center
+target budget. A lower-stock arithmetic control also fails the source-span
+screen. The next proposed round should change the paid producer/readout;
+no concrete new interaction family or larger supplier has been admitted.
+
 The preceding reviewed recycled-bit composition was κ=0.000472154791;
 its [round-seven review](community-round7-review.md) retains the evidence.
 

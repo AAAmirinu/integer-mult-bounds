@@ -13,6 +13,11 @@ The improvement here is a more appropriate construction specification and
 exact controls for it. None of the previously rejected geometries becomes
 a supplier merely because the accounting is more favorable.
 
+**Follow-up:** the [interaction-family design pass](../interaction-family-design/REPORT.md)
+rejects the 250-port illustrative histogram in the conservative copied-center
+model using joint scalar-support and source-span bounds. Its arithmetic
+remains correct; that model cannot supply the proposed producer.
+
 ## 1. What a local block core must supply
 
 Let the local address space A have dimension d and let each of v data ports
