@@ -34,6 +34,13 @@ its aligned-register common-frame model costs at least twice the original
 local recursive work, even allowing a copied unchanged control. Broader distributed or typed fusion
 is untested; no stronger supplier or parameter witness results from this round.
 
+The [two-candidate higher-rank screen](../../research/higher-rank-sixteenth/REPORT.md)
+is also complete. Maximal sunflower packets lose the required annihilation
+interactions; a fractional-cycle tensor supplies exact block labels but fails
+the proposed copied-block budget even with zero auxiliary roles and central
+loss. Neither earns a circuit-construction round. These are scoped exclusions,
+not a barrier for all higher-rank geometries or compilers.
+
 The preceding reviewed recycled-bit composition was κ=0.000472154791;
 its [round-seven review](community-round7-review.md) retains the evidence.
 
