@@ -22,6 +22,10 @@ enforced `b<1/32` range from the balance `kappa<a/(1+a)` and the independent
 retained Gaussian condition `kappa<1/4`. Its larger-supplier examples are
 arithmetic diagnostics, not new witnesses or an enlarged theorem domain.
 
+The [κ=1/16 preparation](kappa-sixteenth-preparation.md) gives a paid supplier
+budget, exact recurrence screens and a bounded structural research plan.
+Its 8% coarse-bit / 7.5% complex targets are missing suppliers, not new results.
+
 The preceding reviewed recycled-bit composition was κ=0.000472154791;
 its [round-seven review](community-round7-review.md) retains the evidence.
 
