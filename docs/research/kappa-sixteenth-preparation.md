@@ -12,6 +12,8 @@ This preparation supplies an exact budget, rejection screens and a bounded
 first research round. It does not construct stronger suppliers or extend an
 analytic theorem. The [current record](current-status.md) and
 [domain audit](assembly-domain-audit.md) govern those distinctions.
+The completed [first bounded round](kappa-sixteenth-domain-round.md) narrows
+the search beyond local boundary tuning using a stronger gross-ledger screen.
 
 ## The supplier budget includes the bit wrapper
 

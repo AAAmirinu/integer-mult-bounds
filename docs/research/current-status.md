@@ -25,6 +25,10 @@ arithmetic diagnostics, not new witnesses or an enlarged theorem domain.
 The [κ=1/16 preparation](kappa-sixteenth-preparation.md) gives a paid supplier
 budget, exact recurrence screens and a bounded structural research plan.
 Its 8% coarse-bit / 7.5% complex targets are missing suppliers, not new results.
+The [first bounded round](kappa-sixteenth-domain-round.md) checks an arithmetic
+region and strengthens the fixed-ledger exclusion even with zero central loss.
+Near-full-child packing passes only an explicitly unimplemented relaxation;
+it motivates a bounded operation-level fusion diagnostic, not a new witness.
 
 The preceding reviewed recycled-bit composition was κ=0.000472154791;
 its [round-seven review](community-round7-review.md) retains the evidence.
