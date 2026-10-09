@@ -29,6 +29,10 @@ The [first bounded round](kappa-sixteenth-domain-round.md) checks an arithmetic
 region and strengthens the fixed-ledger exclusion even with zero central loss.
 Near-full-child packing passes only an explicitly unimplemented relaxation;
 it motivates a bounded operation-level fusion diagnostic, not a new witness.
+That [one-region fusion diagnostic](scalar-gate-fusion.md) is now complete:
+its aligned-register common-frame model costs at least twice the original
+local recursive work, even allowing a copied unchanged control. Broader distributed or typed fusion
+is untested; no stronger supplier or parameter witness results from this round.
 
 The preceding reviewed recycled-bit composition was κ=0.000472154791;
 its [round-seven review](community-round7-review.md) retains the evidence.

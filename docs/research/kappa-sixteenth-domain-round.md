@@ -177,6 +177,11 @@ region if the gain requires unproved cross-role regrouping or restores the
 same fragmented bill. The near-full-child screen is a target for that proof,
 not a demand that the first small example reach the full headline.
 
+Follow-up: the [one-region diagnostic](scalar-gate-fusion.md) now rejects
+the aligned-register common-frame model on its exact fixed boundary, including
+arbitrary common Clifford frames and a copied unchanged control. It supplies
+no instance of the optimistic packing above.
+
 No construction prototype was run in this round: neither assessed mechanism
 yet specifies a paid operation that passes the admission test. The completed
 work is the domain dependency map, a region certificate, and two quantitative
