@@ -48,6 +48,14 @@ endpoint-discrepancy argument proves that every frame assignment in this
 template costs at least full rank capacity before correction. This closes
 the matched-encoding model, not characteristic-dependent in-place producers.
 
+The [shared-core block preparation](../../research/shared-core-blocks/REPORT.md)
+derives a rank-r cover under explicit local-word and form-type hypotheses:
+`m=3d`, with complete deficit `2vr−3L`. Exact rank-two controls preserve all
+normalized moments under direct sum. A rank-nine/dimension-19 hypothetical
+local budget passes both target moments, but no such geometry or producer
+is supplied. The full old triple annihilation graph still fails this cover's
+target budget at every block rank. No new supplier or κ is certified.
+
 The preceding reviewed recycled-bit composition was κ=0.000472154791;
 its [round-seven review](community-round7-review.md) retains the evidence.
 
