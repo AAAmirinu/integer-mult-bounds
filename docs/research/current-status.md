@@ -97,6 +97,16 @@ readout at unconverted center frames is correct but costs more, including
 peeling and every target alignment. An interleaved target/readout word remains
 outside these exclusions; none has been supplied. The selected κ is unchanged.
 
+The [mechanism design reset](../../research/mechanism-design-reset/REPORT.md)
+compares three explicit departures. It selects one admission test for a
+coupled terminal decoder: replace central work inside three scalar exchange
+stages by a joint output correction. Exact scalar identities restore arbitrary
+dirty workspace over F2 and Q, including unequal noncommuting stage maps.
+Actual routing can enlarge two summary banks to four, and their frame costs
+remain missing. Rank-boosting tensor-label recipes fail required annihilations;
+packed orbit differences pay back their volume saving on expansion. No new
+supplier, complex-frame implementation, or κ has been established.
+
 The preceding reviewed recycled-bit composition was κ=0.000472154791;
 its [round-seven review](community-round7-review.md) retains the evidence.
 
