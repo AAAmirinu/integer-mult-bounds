@@ -1,0 +1,42 @@
+name: complementary-fft-reservoirs
+on:
+  pull_request:
+    paths:
+      - 'research/complementary-fft-reservoirs/**'
+      - 'research/e8-r715-whole-hosted/EXPECTED.json'
+      - 'research/e8-r740-replica32/code/engines/outer.py'
+      - 'notes/compact-control-*.tex'
+      - 'upstream/build/sections/05-layers.tex'
+      - 'upstream/build/sections/06-transforms.tex'
+      - 'references/semantic-bulk/rad20/**'
+      - '.github/workflows/complementary-fft-reservoirs.yml'
+  push:
+    paths:
+      - 'research/complementary-fft-reservoirs/**'
+      - 'research/e8-r715-whole-hosted/EXPECTED.json'
+      - 'research/e8-r740-replica32/code/engines/outer.py'
+      - 'notes/compact-control-*.tex'
+      - 'upstream/build/sections/05-layers.tex'
+      - 'upstream/build/sections/06-transforms.tex'
+      - 'references/semantic-bulk/rad20/**'
+      - '.github/workflows/complementary-fft-reservoirs.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -B research/complementary-fft-reservoirs/verify.py "$RUNNER_TEMP/complementary-fft-controls"
+      - run: git diff --exit-code

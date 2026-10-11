@@ -1,0 +1,26 @@
+{
+  "basis_columns": 429,
+  "capacity_mutations": [
+    "insufficient opposite-set capacity",
+    "row and compact-field alias",
+    "insufficient existing top-layout address volume"
+  ],
+  "common_field_layouts": 84,
+  "maximum_global_routes": 5,
+  "new_kappa_claim": false,
+  "operator_mutations": [
+    "omitted complementary pass",
+    "unpaid between-pass relabel",
+    "wrong twiddle sign",
+    "unrestored dirty reservoir"
+  ],
+  "parameter_witnesses": 4,
+  "polynomial_entries": 98080,
+  "precision_controls": 255,
+  "retained_strict_expressions": 44,
+  "scope": "Finite operator, layout and arithmetic evidence for the written conditional transfer; not an all-size machine execution or a new multiplication exponent.",
+  "shapes": 33,
+  "status": "PASS_CONDITIONAL_COMPLEMENTARY_FFT_CONTROLS",
+  "top_field_layouts": 168,
+  "unchanged_reference_kappa": "646049779721139/500000000000000000"
+}

@@ -1,0 +1,489 @@
+{
+  "basis_columns": 429,
+  "mutations_rejected": [
+    "omitted complementary pass",
+    "unpaid between-pass relabel",
+    "wrong twiddle sign",
+    "unrestored dirty reservoir"
+  ],
+  "polynomial_entries": 98080,
+  "scope": "Actual two-pass polynomial Fourier operators and physical routes; compact-core all-size cost remains a conditional written proof.",
+  "shape_count": 33,
+  "shapes": [
+    {
+      "K": 1,
+      "basis_columns": 4,
+      "ell": 2,
+      "full_basis": true,
+      "global_routes": 3,
+      "layers": 2,
+      "lengths": [
+        1,
+        1
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 16
+    },
+    {
+      "K": 1,
+      "basis_columns": 8,
+      "ell": 2,
+      "full_basis": true,
+      "global_routes": 4,
+      "layers": 3,
+      "lengths": [
+        1,
+        2
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 64
+    },
+    {
+      "K": 1,
+      "basis_columns": 8,
+      "ell": 2,
+      "full_basis": true,
+      "global_routes": 4,
+      "layers": 3,
+      "lengths": [
+        2,
+        1
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 64
+    },
+    {
+      "K": 1,
+      "basis_columns": 16,
+      "ell": 2,
+      "full_basis": true,
+      "global_routes": 5,
+      "layers": 4,
+      "lengths": [
+        2,
+        2
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 256
+    },
+    {
+      "K": 1,
+      "basis_columns": 16,
+      "ell": 3,
+      "full_basis": true,
+      "global_routes": 3,
+      "layers": 4,
+      "lengths": [
+        2,
+        2
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 256
+    },
+    {
+      "K": 1,
+      "basis_columns": 32,
+      "ell": 3,
+      "full_basis": true,
+      "global_routes": 4,
+      "layers": 5,
+      "lengths": [
+        2,
+        3
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 1024
+    },
+    {
+      "K": 1,
+      "basis_columns": 32,
+      "ell": 3,
+      "full_basis": true,
+      "global_routes": 4,
+      "layers": 5,
+      "lengths": [
+        3,
+        2
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 1024
+    },
+    {
+      "K": 1,
+      "basis_columns": 64,
+      "ell": 3,
+      "full_basis": true,
+      "global_routes": 5,
+      "layers": 6,
+      "lengths": [
+        3,
+        3
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 4096
+    },
+    {
+      "K": 2,
+      "basis_columns": 16,
+      "ell": 3,
+      "full_basis": true,
+      "global_routes": 3,
+      "layers": 4,
+      "lengths": [
+        2,
+        2
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 256
+    },
+    {
+      "K": 2,
+      "basis_columns": 32,
+      "ell": 3,
+      "full_basis": true,
+      "global_routes": 4,
+      "layers": 5,
+      "lengths": [
+        2,
+        3
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 1024
+    },
+    {
+      "K": 2,
+      "basis_columns": 32,
+      "ell": 3,
+      "full_basis": true,
+      "global_routes": 4,
+      "layers": 5,
+      "lengths": [
+        3,
+        2
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 1024
+    },
+    {
+      "K": 2,
+      "basis_columns": 64,
+      "ell": 3,
+      "full_basis": true,
+      "global_routes": 5,
+      "layers": 6,
+      "lengths": [
+        3,
+        3
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 4096
+    },
+    {
+      "K": 1,
+      "basis_columns": 5,
+      "ell": 2,
+      "full_basis": false,
+      "global_routes": 3,
+      "layers": 2,
+      "lengths": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 80
+    },
+    {
+      "K": 1,
+      "basis_columns": 5,
+      "ell": 2,
+      "full_basis": false,
+      "global_routes": 5,
+      "layers": 4,
+      "lengths": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 1280
+    },
+    {
+      "K": 1,
+      "basis_columns": 5,
+      "ell": 2,
+      "full_basis": false,
+      "global_routes": 5,
+      "layers": 4,
+      "lengths": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 320
+    },
+    {
+      "K": 1,
+      "basis_columns": 5,
+      "ell": 3,
+      "full_basis": false,
+      "global_routes": 3,
+      "layers": 4,
+      "lengths": [
+        2,
+        2,
+        2
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 320
+    },
+    {
+      "K": 1,
+      "basis_columns": 5,
+      "ell": 3,
+      "full_basis": false,
+      "global_routes": 5,
+      "layers": 6,
+      "lengths": [
+        3,
+        3,
+        3
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 2560
+    },
+    {
+      "K": 1,
+      "basis_columns": 5,
+      "ell": 3,
+      "full_basis": false,
+      "global_routes": 4,
+      "layers": 5,
+      "lengths": [
+        2,
+        3,
+        2
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 640
+    },
+    {
+      "K": 2,
+      "basis_columns": 5,
+      "ell": 3,
+      "full_basis": false,
+      "global_routes": 3,
+      "layers": 4,
+      "lengths": [
+        2,
+        2,
+        2
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 320
+    },
+    {
+      "K": 2,
+      "basis_columns": 5,
+      "ell": 3,
+      "full_basis": false,
+      "global_routes": 5,
+      "layers": 6,
+      "lengths": [
+        3,
+        3,
+        3
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 2560
+    },
+    {
+      "K": 2,
+      "basis_columns": 5,
+      "ell": 3,
+      "full_basis": false,
+      "global_routes": 4,
+      "layers": 5,
+      "lengths": [
+        2,
+        3,
+        2
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 640
+    },
+    {
+      "K": 2,
+      "basis_columns": 5,
+      "ell": 4,
+      "full_basis": false,
+      "global_routes": 3,
+      "layers": 6,
+      "lengths": [
+        3,
+        3
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 320
+    },
+    {
+      "K": 2,
+      "basis_columns": 5,
+      "ell": 4,
+      "full_basis": false,
+      "global_routes": 5,
+      "layers": 8,
+      "lengths": [
+        4,
+        4
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 1280
+    },
+    {
+      "K": 2,
+      "basis_columns": 5,
+      "ell": 4,
+      "full_basis": false,
+      "global_routes": 4,
+      "layers": 7,
+      "lengths": [
+        3,
+        4
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 640
+    },
+    {
+      "K": 3,
+      "basis_columns": 5,
+      "ell": 4,
+      "full_basis": false,
+      "global_routes": 3,
+      "layers": 6,
+      "lengths": [
+        3,
+        3
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 320
+    },
+    {
+      "K": 3,
+      "basis_columns": 5,
+      "ell": 4,
+      "full_basis": false,
+      "global_routes": 5,
+      "layers": 8,
+      "lengths": [
+        4,
+        4
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 1280
+    },
+    {
+      "K": 3,
+      "basis_columns": 5,
+      "ell": 4,
+      "full_basis": false,
+      "global_routes": 4,
+      "layers": 7,
+      "lengths": [
+        3,
+        4
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 640
+    },
+    {
+      "K": 2,
+      "basis_columns": 5,
+      "ell": 6,
+      "full_basis": false,
+      "global_routes": 3,
+      "layers": 10,
+      "lengths": [
+        5,
+        5
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 5120
+    },
+    {
+      "K": 2,
+      "basis_columns": 5,
+      "ell": 6,
+      "full_basis": false,
+      "global_routes": 5,
+      "layers": 12,
+      "lengths": [
+        6,
+        6
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 20480
+    },
+    {
+      "K": 2,
+      "basis_columns": 5,
+      "ell": 6,
+      "full_basis": false,
+      "global_routes": 4,
+      "layers": 11,
+      "lengths": [
+        5,
+        6
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 10240
+    },
+    {
+      "K": 3,
+      "basis_columns": 5,
+      "ell": 6,
+      "full_basis": false,
+      "global_routes": 3,
+      "layers": 10,
+      "lengths": [
+        5,
+        5
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 5120
+    },
+    {
+      "K": 3,
+      "basis_columns": 5,
+      "ell": 6,
+      "full_basis": false,
+      "global_routes": 5,
+      "layers": 12,
+      "lengths": [
+        6,
+        6
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 20480
+    },
+    {
+      "K": 3,
+      "basis_columns": 5,
+      "ell": 6,
+      "full_basis": false,
+      "global_routes": 4,
+      "layers": 11,
+      "lengths": [
+        5,
+        6
+      ],
+      "opposite_exact": true,
+      "polynomial_entries": 10240
+    }
+  ],
+  "status": "PASS"
+}

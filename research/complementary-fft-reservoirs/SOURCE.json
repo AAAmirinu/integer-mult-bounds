@@ -1,0 +1,16 @@
+{
+  "commit": "259c68488b7aa8a14cf3fcae7fc499381c9bf729",
+  "files": {
+    "notes/compact-control-layout.tex": "2bc28e50f3eb092195294cafa81213e520f6d42e7935e9905ad8a6199e2a7c87",
+    "notes/compact-control-movement.tex": "b963c3d2f4e1b7059aa289bb4b4ac89b688920bcf42f5b20d7698cdef0132cc6",
+    "upstream/build/sections/05-layers.tex": "20cfc8d12099d4e4ed9e3e7eeb6162edd9b6e0e076f24693364cd24377252594",
+    "upstream/build/sections/06-transforms.tex": "924316e4bc905066281d8f9e8746a49d8829aeb393688608deb1e61c3c87853c",
+    "references/semantic-bulk/rad20/reports/review-balanced-transform.md": "0c3a5b6f17188205d35cd421ef0c35c71f6111698f497e89da3ef7f870fef862",
+    "references/semantic-bulk/rad20/reports/review-arbitrary-routing.md": "f18f535a096abae473db71a4ae3f275d0116d7438fb18594d5b160571db670fd",
+    "references/semantic-bulk/rad20/reports/compact-arbitrary-source-routing.md": "3df36853a181fd5d331811b5c4859a1980116c69f447eb78c40a551ff28cde79",
+    "references/semantic-bulk/rad20/reports/review-semantic-child-guard.md": "5ded175dbc723df9e45b8a7abc1b729ff77e170d188b0d77102fd8a8f7e0da7e",
+    "references/semantic-bulk/rad20/code/review_balanced_transform.py": "6a61623a5298bc6a8b259bbdc78f168c45ef36d1b4ab7f5ed41d84ba2d4ad4c6",
+    "research/e8-r740-replica32/code/engines/outer.py": "c1ebb52163a7219504c728a5c2b098bf1e50bf20148a2879c5a74c3cadc7c03c",
+    "research/e8-r715-whole-hosted/EXPECTED.json": "9e91920c50fa72d81916faa17feb19d57568a7bb107a55e0ba3af1025e42e062"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "entire_result_byte_identical": true,
+  "operators_byte_identical": true,
+  "capacity_byte_identical": true,
+  "source_files": 11,
+  "manifest_sha256": "b170809282d9c79475e22dc7675cefbfd2e0a9a7907e12332a73419780a4b6df",
+  "linux_python": "3.12.3",
+  "macos_python": "3.11.15"
+}
