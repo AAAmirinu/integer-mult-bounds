@@ -58,7 +58,8 @@ try:
  py('gram',B/'checkers/gram_frames.py',base/'records','--gram','e8ham','--h',8,'--positive')
  py('geometry',ROOT/'code/geometry.py','--source',research/'e8-r740-replica32/parent436','--out',bit)
  py('emit',ROOT/'code/emit.py','--word',ROOT/'data/word.json.gz','--local-check',base,'--out',bit,'--isometries',ROOT/'data/residual-isometries.json')
- py('audit',ROOT/'code/audit.py',base,provider/'bit/nine',bit)
+ py('fresh-nine-stage-reference',up/'vendor/runtime/geometry_k.py','--source',up/'inputs/geometry','--out',out/'reference-nine','--stages',9,'--no-timing')
+ py('audit',ROOT/'code/audit.py',base,out/'reference-nine',bit)
 
  py('combined-invoice-and-outer',up/'code/assemble.py',out,bit,bit/'AUDIT.json',out/'RESULT.json','--complex',provider/'complex','--engines',up/'engines','--inherited',up/'inherited','--route-extra',6,'--nine','bit','--label','PR478','--parent-kappa','1295508560071773/1000000000000000000')
  result=read(out/'RESULT.json');expected=read(SELF/'EXPECTED.json')
