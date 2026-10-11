@@ -1,0 +1,37 @@
+{
+  "PR411": {
+    "reference": "1017629458064773/1000000000000000000",
+    "difference": "4214430649/25000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "grouped210": {
+    "reference": "508830459221077/500000000000000000",
+    "difference": "137116848579/1000000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "closure211_screen": {
+    "reference": "508849183785073/500000000000000000",
+    "difference": "99667720587/1000000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "PR412_reported": {
+    "reference": "1017776060460931/1000000000000000000",
+    "difference": "10987414901/500000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "PR413_reported": {
+    "reference": "1017671197486403/1000000000000000000",
+    "difference": "12683780433/100000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  }
+}
