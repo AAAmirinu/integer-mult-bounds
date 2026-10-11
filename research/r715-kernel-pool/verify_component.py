@@ -40,7 +40,7 @@ for e in es:
  for j,to in changes:
   rank=7*(to-levels[j]);levels[j]=to;sc.append(dict(kind='idle',idx=idx,pair=j,rank=rank));idx+=1
 win={i:x for i,x in HC.windows(sc).items() if x[1] and x[2]};widths=[8-dims[f] for f in word['start'][240:]]
-y,z=HC.load_selection(ROOT/'data/pooling.json','bit');slots,rem=HC.expand(win,y,z,{s:[(i,widths[i%R]) for i in range(R*T)] for s in range(stages)},240*T)
+y,z,_=HC.load_selection(ROOT/'data/pooling.json','bit');slots,rem=HC.expand(win,y,z,{s:[(i,widths[i%R]) for i in range(R*T)] for s in range(stages)},240*T)
 assert len(slots)==R*T*stages and len({(s,h) for i,cp,off,width,s,h in slots})==len(slots)
 assert all(s in win[i][2] and 0<=off and off+width<=win[i][1] for i,cp,off,width,s,h in slots)
 P=Counter({k:n*stages*T for k,n in audit['H'].items()})
