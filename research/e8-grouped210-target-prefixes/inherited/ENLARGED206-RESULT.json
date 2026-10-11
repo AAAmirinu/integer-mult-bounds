@@ -1,0 +1,79 @@
+{
+  "status": "PASS_ENLARGED_ACYCLIC206_BANK16_PR402_CONDITIONAL_COMPOSITION",
+  "kappa": "508781072593909/500000000000000000",
+  "kappa_decimal": "0.001017562145187818",
+  "complex_coarse": "15915603634335785361/15625000000000000000000",
+  "bit_coarse": "255384852701747/250000000000000000",
+  "checks": [
+    {
+      "name": "reconstruct",
+      "seconds": 1.368,
+      "log_sha256": "0a05fbfda0889b4de5a0b92eb6a40191d940e5a8fad31cf5711377035a758fd2"
+    },
+    {
+      "name": "shared",
+      "seconds": 1.841,
+      "log_sha256": "b4c94c5148f5d7084e2df57fcffd4adfe29723377106ac781c997832fc09818b"
+    },
+    {
+      "name": "acyclic",
+      "seconds": 0.421,
+      "log_sha256": "88d8e416994f3630e7e1dfcf11862c13af2b020b5a8b5a112b1d8e32403d136a"
+    },
+    {
+      "name": "dual",
+      "seconds": 0.775,
+      "log_sha256": "1f8347da6878e26a64a68fca6d5db2ca62c94b415188e61880c6328b578dfca1"
+    },
+    {
+      "name": "public-frame",
+      "seconds": 0.377,
+      "log_sha256": "862043e69198554a007bf7508023f561a419f8cfb058762c1cf723b001a36a2c"
+    },
+    {
+      "name": "resynthesis",
+      "seconds": 0.787,
+      "log_sha256": "8c0608706b6c580dfa25b8b73072d5ad997a294abdc345b687ffdcbf0e25a207"
+    },
+    {
+      "name": "local",
+      "seconds": 52.82,
+      "log_sha256": "fce7742baad835a3e557478098dddce6fa819babd4d93af808dcfaa85746a0b1"
+    },
+    {
+      "name": "compile-phase",
+      "seconds": 1.836,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "phase",
+      "seconds": 6.356,
+      "log_sha256": "ca6b17cc124f5f98aa36dce24a730bb964a39f180c7e4f52ed12833e2958a5e7"
+    },
+    {
+      "name": "banks",
+      "seconds": 13.585,
+      "log_sha256": "601e96ca79a92f222983175219c4e824c06e78383ab7539f77417d69819a142c"
+    },
+    {
+      "name": "bank-audit",
+      "seconds": 23.673,
+      "log_sha256": "2587b1d24cfc42c29c181aca04d9a4e7f1f7aa30a0bfe4e1819d4ca00dc0da1b"
+    },
+    {
+      "name": "bridge",
+      "seconds": 0.042,
+      "log_sha256": "ca9c4753f839f1662dcc2d51b1b028f9974ef657d6b920a1aba8549138266b73"
+    },
+    {
+      "name": "outer",
+      "seconds": 0.3,
+      "log_sha256": "8d1160752510a4317ba5249e37ee9d5c25b9bdf38994347fca6f48980fb320ec"
+    }
+  ],
+  "candidate_sha256": "5243b69bd3beec4b7632b49e9fc86cd0f2f84ec0736e173b06abeec8b1b7bb90",
+  "manifest_sha256": "d9d374afb0dc31d4ed7a306ed1e1645bf4aa3e40559a54c115257e34eb70fccd",
+  "template_sha256": "2ff46ded9e09a1dc7659c475dcc10ffa1bba96e611d31f62856ac7ce9c120f72",
+  "bit_evidence": "unchanged source-bound prior finite receipt",
+  "scope": "Finite conditional changed composition. Inherited all-size window, correlated-bank, recursive compiler, ordinary-call/fixed-tape/restored-row, precision and analytic interfaces remain assumptions; no Lean or unconditional multiplication theorem."
+}

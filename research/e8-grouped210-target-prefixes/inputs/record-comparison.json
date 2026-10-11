@@ -1,0 +1,30 @@
+{
+  "PR408": {
+    "reference": "1017022657082799/1000000000000000000",
+    "difference": "127652271871/200000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "PR409": {
+    "reference": "508625250464133/500000000000000000",
+    "difference": "12825547309/31250000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "PR410": {
+    "reference": "508781072593909/500000000000000000",
+    "difference": "1543332099/15625000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "PR411": {
+    "reference": "1017629458064773/1000000000000000000",
+    "difference": "31460377381/1000000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  }
+}

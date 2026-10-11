@@ -1,0 +1,32 @@
+{
+  "authoring": "OpenAI Codex; discovery source adapted from prior shared-donor search and PR404 exact replay/containment. Preserve repository and ancestor notices.",
+  "base_word_sha256": "a4e42aa1663f5ad0da48cee6fe8514b205e43cf6e791b80674dbc7506a098a32",
+  "method": "Enumerate strict superspaces of each frozen pivot entrance inside intersection of its original first frames and those of every dependency donor. Charge every donor-chain split; greedily choose best admissible enlargement. Then solve exact rational response dependence for an existing donor to become a new initial gauge via PREPENDED elementary shears, with every affected existing chain starting in a containing subspace.",
+  "reproduce": [
+    [
+      "python3",
+      "-B",
+      "enlarge.py",
+      "../inputs/candidate781.json",
+      "selection205.json",
+      "enlarged-selection.json"
+    ],
+    [
+      "python3",
+      "-B",
+      "promote.py",
+      "../inputs/candidate781.json",
+      "enlarged-selection.json",
+      "promotion760.json",
+      "--pivot",
+      "760"
+    ]
+  ],
+  "verification": "Portable enlarge.py exactly reproduced frozen enlarged-selection JSON, including all eight steps. Portable promote.py reproduced the same six rational coefficients for760. Float chi scores nominate only. shared/reconstruct,acyclic constructor,generalized local admission,banks/invoice/root/outer replay provide exact claim obligations.",
+  "missing_in_raw_entrance_candidate": "PR404 dual124/125,PR376 frame rewrite,PR402 target177,protected124/144 prefix must be separate downstream stages if used.",
+  "frozen_data_sha256": {
+    "selection205.json": "462f1d50dcaaf571ca88a2153f5c47b6a1ad09fd6abcd4947d7f20742d9477e0",
+    "enlarged-selection.json": "46b28ee2fd1768317fae7983043964b28f0f9c6e32a50f6a8b8b9b90e38920cc",
+    "promotion760.json": "d2629280582301ca0c6ce3a2d021daf0804bc8a9fb47aa944f69687d419b0595"
+  }
+}

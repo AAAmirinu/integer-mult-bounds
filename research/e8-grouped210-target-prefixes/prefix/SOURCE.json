@@ -1,0 +1,32 @@
+{
+  "ai_disclosure": "New prefix exploration, integration and verification scripts prepared by OpenAI Codex; no human mathematical verification claimed.",
+  "provenance": [
+    {
+      "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/404",
+      "head": "12f488264cdd74a3b60d0fb534f4955792384f5c",
+      "credit": "Dugongue shared-donor nested entrance construction and native exact admission"
+    },
+    {
+      "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/402",
+      "head": "7883c63ec724999b921c2304b66648cbb9e7a112",
+      "credit": "Chafik Boukhalfa target-window resynthesis, exact rational search and block histogram reconstruction"
+    }
+  ],
+  "source_candidate_sha256": "4741744ff43654b94859b7d80a925d7bb649f9cdf7bf20cbdf4e89d875ee4b6d",
+  "candidate_sha256": "19f479834eb843a69918588866acbd71653324e99d6d534a058b879d9f6eb950",
+  "exact_local_source_hashes": {
+    "candidate.json": "19f479834eb843a69918588866acbd71653324e99d6d534a058b879d9f6eb950",
+    "local_admit.py": "e95540dc7ada83421511efeb3130534cdd83c2946730978fa8d3acea33553762",
+    "coefficient_words.py": "5c6cdaf446ad217068fee6dbe9e5b21fabff504c64e408d5dd7a61159808904a",
+    "prefix/apply.py": "d423e14f3bec3a99502c49734ab5904fa0629220c1c35fe5301f1a6f14e45e09",
+    "deps/complex_labels.py": "e000ee131389fec427388b85f632879cbaaf10e5e5d979a47d6307d64ce58982",
+    "deps/complex_splice.py": "4fd7e0c9aa825a6bd40c5053c715a6efad0653c0947287fc9b90a56e52b5f8fd",
+    "deps/complex_scalars.py": "39b44fff410747d7ba96d6527bd38294cf78e62dd2d8d4055849b6dd72358af6",
+    "deps/p10pins.py": "93b78a2e038b23264d04836928c78b6ebf33b87ff3dcc0e43ba0f1748fadd143",
+    "deps/scatter.py": "dfd1afbbb3ff86f54db6a0313916403ec8ee6f939caa62f3edcc9d7a151bff95",
+    "deps/clifford_exact.py": "2982ead07721e83358dc67c6f49c2b4c16a236a6bebdfd72f58221be1f5d0962"
+  },
+  "gx_sixths_admission_claim": false,
+  "acyclic_entrance_proof": "Exact chronological prefix/suffix omission formula and entrance DAG; adapted from /private/tmp/pr404-acyclic206/local_admit.py",
+  "local_result_sha256": "9fc07b7a0d2858f2bdf121d9825f67b1116d1631950f5dcc07426fc548751144"
+}
