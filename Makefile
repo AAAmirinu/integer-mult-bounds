@@ -55,6 +55,14 @@ source527-verify: source527-record-check
 	python3 -B research/five-stage-source527-banks/verify.py --output "$$work/replay"
 
 .PHONY: e8-coupled-record-check e8-coupled-verify
+.PHONY: e8-clean-reuse-record-check e8-clean-reuse-verify
+e8-clean-reuse-record-check:
+	python3 -B research/e8-clean-reuse-extension/record.py
+
+e8-clean-reuse-verify: e8-clean-reuse-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-e8-clean-reuse.XXXXXX"); \
+	python3 -B research/e8-clean-reuse-extension/verify.py "$$work/replay"
+
 e8-coupled-record-check:
 	python3 -B research/e8-coupled-bit-retiming/record.py
 

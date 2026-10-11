@@ -23,7 +23,21 @@ not import every numerical refinement from the source527 branch. Original
 commits, licenses and AI-assistance disclosures are preserved. Douglas Colkitt
 performed the maintainer review and integration with OpenAI Codex assistance.
 
-### October 11 pending E8 candidate
+### October 11 pending E8 extension
+
+ai-nanachi, with substantial OpenAI Codex assistance, adds two exact two-donor
+complex helper substitutions, 27 clean-reset bit helper reuses, 26 subsequent
+bit frame moves and complete changed supplier admission. Conditional κ is
+`1003675427211799133818727/1000000000000000000000000000`. The new bit component
+improves separately; the complex component determines the headline.
+applecrusher supplies PR376's equal-helper aliases and frame repairs; Dugongue
+supplies PR390's prefix restoration; Rohan Arun supplies PR395's signed
+extension. The exact selected source pins and original notices are retained
+in the [extension notice](research/e8-clean-reuse-extension/NOTICE.md).
+All credits of the frozen PR389 package below remain. Maintainer acceptance
+and all-size proof obligations remain pending.
+
+### October 11 preceding PR389 candidate
 
 ai-nanachi, with substantial OpenAI Codex assistance, contributes connected
 one-, two- and three-gate frame coalescence (98 changed bit gates), complete

@@ -3,7 +3,37 @@
 **Community research maintained by Douglas Colkitt — conditional on the original
 OpenAI #109 framework.**
 
-## New conditional candidate: coupled E8 frames and refined assembly
+## New conditional candidate: E8 clean reuse and signed composition
+
+The extension candidate gives **κ = 0.001003675427211799133818727**, with
+maintainer review pending. It combines applecrusher's R781 helper/frame
+refinements and Rohan Arun's signed version of Dugongue's prefix identity
+with two additional two-donor helper substitutions. The new complex word
+has 779 helpers and is admitted through a complete fresh physical, Clifford,
+bank/owner and finite-invoice replay on 1,019 independent dirty columns.
+
+The separate bit contribution reuses 27 retired helpers by cancelling their
+clean content and rebuilding compensation for their actual independent dirt.
+After 26 further frame moves it has 795 helpers; full local and seven-stage
+column, geometry, whole-bank and finite checks are rerun. Its coarse saving
+is reported separately because the complex supplier determines κ.
+The requested 0.002 research target has not been achieved.
+
+[Exact pending record](certificates/candidates/e8-clean-reuse-extension.json) ·
+[Construction and scope](research/e8-clean-reuse-extension/PROOF.md) ·
+[Sources](research/e8-clean-reuse-extension/NOTICE.md) ·
+[Research record](research/e8-clean-reuse-extension/RESEARCH.md)
+
+```sh
+python3 -m pip install -r research/e8-clean-reuse-extension/requirements.txt
+make e8-clean-reuse-verify
+```
+
+Both full predecessor supplier suites and all changed supplier/assembly checks
+run from pinned source. All-size theorem interfaces remain conditional. This
+candidate does not replace the maintainer-reviewed selected result below.
+
+## Preceding PR389 candidate: coupled E8 frames and refined assembly
 
 The October 11 candidate gives
 **κ = 998634658090834606116833 / 1000000000000000000000000000

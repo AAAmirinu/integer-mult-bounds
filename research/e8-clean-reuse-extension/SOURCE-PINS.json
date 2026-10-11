@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "commit": "b07cf2f3fdffcbccca86c88a0c33b32dfce4bfe9",
+      "path": "vendor/source376/two_alias.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "sha256": "5046a050e168266aff6488d27ca6525469c844118fbaced9af2b3dde8e13065c",
+      "source_path": "research/e8-far-helper-composition/two_alias.py"
+    },
+    {
+      "commit": "b07cf2f3fdffcbccca86c88a0c33b32dfce4bfe9",
+      "path": "vendor/source376/candidate_from378.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "sha256": "b97c57e03fb570caab63bd82bf00664b5abea7eda8db3adfed69fc20efd82fb6",
+      "source_path": "research/e8-far-helper-composition/candidate_from378.py"
+    },
+    {
+      "commit": "b07cf2f3fdffcbccca86c88a0c33b32dfce4bfe9",
+      "path": "vendor/source376/candidate_frames.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "sha256": "2b8d10ff732e030eb643478b3da0a91753dc77314eeb882a51eafdb871d935e2",
+      "source_path": "research/e8-far-helper-composition/candidate_frames.py"
+    },
+    {
+      "commit": "b07cf2f3fdffcbccca86c88a0c33b32dfce4bfe9",
+      "path": "vendor/source376/transport.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "sha256": "264f6fc385532a25ae7f99774c2cb33e6ff6943fdbca546cfa000fb9e551fafb",
+      "source_path": "research/e8-far-helper-composition/transport.py"
+    },
+    {
+      "commit": "b07cf2f3fdffcbccca86c88a0c33b32dfce4bfe9",
+      "path": "vendor/source376/LICENSE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source_path": "research/e8-far-helper-composition/LICENSE"
+    },
+    {
+      "commit": "b07cf2f3fdffcbccca86c88a0c33b32dfce4bfe9",
+      "path": "vendor/source376/NOTICE.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "sha256": "604f9225eee50bc7bc5cb8bfd33c2598e700466278d03fa06cfbb74c2b8e0d8e",
+      "source_path": "research/e8-far-helper-composition/NOTICE.md"
+    },
+    {
+      "commit": "dcebad83e4d7e6a5643ba8edfb432b0ba0dd1826",
+      "path": "vendor/source395/construct.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "sha256": "2b49d8b1f24f6e642d3cc81142a3ad8dfacead60280dc0df0a1326daa97acc0b",
+      "source_path": "research/e8-signed-prefix/construct.py"
+    }
+  ],
+  "parent": {
+    "commit": "b3c45822ca847aec8c0c019bb04db30881fc2966",
+    "manifest_sha256": "389ac12de894730bd534f9a00d604866dd400175e32bd1204920dd98eafb8888",
+    "package": "research/e8-coupled-bit-retiming",
+    "scope": "Complete frozen source tree is retained beside this extension, without modifying any original bytes."
+  }
+}

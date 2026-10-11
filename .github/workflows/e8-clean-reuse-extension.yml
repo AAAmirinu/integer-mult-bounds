@@ -1,0 +1,49 @@
+name: E8 clean helper reuse extension
+on:
+  push:
+    paths:
+      - 'research/e8-clean-reuse-extension/**'
+      - 'research/e8-coupled-bit-retiming/**'
+      - '.github/workflows/e8-clean-reuse-extension.yml'
+  pull_request:
+    paths:
+      - 'research/e8-clean-reuse-extension/**'
+      - 'research/e8-coupled-bit-retiming/**'
+      - '.github/workflows/e8-clean-reuse-extension.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.13', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -r research/e8-clean-reuse-extension/requirements.txt
+      - name: Install exact arithmetic headers
+        run: |
+          if ! test -f /usr/include/boost/multiprecision/cpp_int.hpp; then
+            sudo apt-get update
+            sudo apt-get install -y libboost-dev
+          fi
+      - name: Full suppliers, changed words, invoices and outer controls
+        run: python -B research/e8-clean-reuse-extension/verify.py "${RUNNER_TEMP}/e8-clean-reuse"
+      - name: Check both pending records
+        run: |
+          python -B research/e8-coupled-bit-retiming/record.py
+          python -B research/e8-clean-reuse-extension/record.py
+      - run: git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: e8-clean-reuse-${{ matrix.python-version }}
+          path: ${{ runner.temp }}/e8-clean-reuse

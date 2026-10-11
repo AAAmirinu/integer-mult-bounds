@@ -1,5 +1,15 @@
 # Contribution review: release update and historical triage
 
+The [clean-reuse extension](../../research/e8-clean-reuse-extension/README.md)
+and its [exact pending record](../../certificates/candidates/e8-clean-reuse-extension.json)
+give conditional κ `1003675427211799133818727/1000000000000000000000000000`.
+It retains PR389's complete frozen source package, adds two complex two-donor
+substitutions and 27 bit clean-reset reuses, and composes the pinned PR376 and
+PR390/395 refinements. Both full predecessor supplier suites and the changed
+physical/phase/bank/finite/outer checks are rerun. The complex supplier binds;
+the bit headroom gain is recorded independently. Maintainer acceptance and
+the inherited all-size theorem interfaces remain pending.
+
 The October 11 [coupled E8 candidate](../../research/e8-coupled-bit-retiming/README.md)
 and [exact pending record](../../certificates/candidates/e8-coupled-bit-retiming.json)
 preserve the complete #375/#377 supplier replays, the new physical word,

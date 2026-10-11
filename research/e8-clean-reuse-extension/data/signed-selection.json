@@ -1,0 +1,358 @@
+[
+  {
+    "coefficient": "-1",
+    "cut_group": 2659,
+    "destination": 123,
+    "donor_target": 170,
+    "gain": 4.7803567329033,
+    "histogram_delta": {
+      "3": -1,
+      "4": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 3,
+    "recovery_frame": 725
+  },
+  {
+    "coefficient": "-1",
+    "cut_group": 2655,
+    "destination": 125,
+    "donor_target": 172,
+    "gain": 7.029697311378534,
+    "histogram_delta": {
+      "1": -1,
+      "3": -2,
+      "7": 1
+    },
+    "prefix_target_deliveries": 3,
+    "recovery_frame": 724
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2683,
+    "destination": 132,
+    "donor_target": 158,
+    "gain": 2.8708142280188618,
+    "histogram_delta": {
+      "1": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 743
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2663,
+    "destination": 138,
+    "donor_target": 145,
+    "gain": 2.8708142280188618,
+    "histogram_delta": {
+      "1": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 726
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2641,
+    "destination": 144,
+    "donor_target": 208,
+    "gain": 6.689899237787742,
+    "histogram_delta": {
+      "1": -1,
+      "2": -1,
+      "4": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 3,
+    "recovery_frame": 935
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2617,
+    "destination": 152,
+    "donor_target": 156,
+    "gain": 2.8708142280188618,
+    "histogram_delta": {
+      "1": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 923
+  },
+  {
+    "coefficient": "-1",
+    "cut_group": 2634,
+    "destination": 153,
+    "donor_target": 206,
+    "gain": 1.484519866898971,
+    "histogram_delta": {
+      "1": 1,
+      "2": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 937
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2675,
+    "destination": 159,
+    "donor_target": 166,
+    "gain": 2.8708142280188618,
+    "histogram_delta": {
+      "1": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 729
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2642,
+    "destination": 165,
+    "donor_target": 215,
+    "gain": 1.484519866898971,
+    "histogram_delta": {
+      "1": 1,
+      "2": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 921
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2639,
+    "destination": 168,
+    "donor_target": 217,
+    "gain": 2.8708142280188618,
+    "histogram_delta": {
+      "1": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 920
+  },
+  {
+    "coefficient": "-1",
+    "cut_group": 2645,
+    "destination": 169,
+    "donor_target": 122,
+    "gain": 4.7803567329033,
+    "histogram_delta": {
+      "3": -1,
+      "4": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 722
+  },
+  {
+    "coefficient": "-1",
+    "cut_group": 2649,
+    "destination": 171,
+    "donor_target": 124,
+    "gain": 4.7803567329033,
+    "histogram_delta": {
+      "3": -1,
+      "4": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 723
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2632,
+    "destination": 179,
+    "donor_target": 188,
+    "gain": 2.8708142280188618,
+    "histogram_delta": {
+      "1": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 719
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2575,
+    "destination": 180,
+    "donor_target": 221,
+    "gain": 3.81908500976888,
+    "histogram_delta": {
+      "2": -1,
+      "4": -1,
+      "6": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 892
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2665,
+    "destination": 181,
+    "donor_target": 174,
+    "gain": 2.8708142280188618,
+    "histogram_delta": {
+      "1": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 727
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2671,
+    "destination": 184,
+    "donor_target": 191,
+    "gain": 2.8708142280188618,
+    "histogram_delta": {
+      "1": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 728
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2622,
+    "destination": 185,
+    "donor_target": 176,
+    "gain": 4.7803567329033,
+    "histogram_delta": {
+      "3": -1,
+      "4": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 3,
+    "recovery_frame": 717
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2618,
+    "destination": 186,
+    "donor_target": 175,
+    "gain": 4.7803567329033,
+    "histogram_delta": {
+      "3": -1,
+      "4": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 716
+  },
+  {
+    "coefficient": "-1",
+    "cut_group": 2626,
+    "destination": 189,
+    "donor_target": 178,
+    "gain": 2.8708142280188618,
+    "histogram_delta": {
+      "1": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 718
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2643,
+    "destination": 190,
+    "donor_target": 226,
+    "gain": 1.484519866898971,
+    "histogram_delta": {
+      "1": 1,
+      "2": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 927
+  },
+  {
+    "coefficient": "-1",
+    "cut_group": 2644,
+    "destination": 201,
+    "donor_target": 232,
+    "gain": 1.484519866898971,
+    "histogram_delta": {
+      "1": 1,
+      "2": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 942
+  },
+  {
+    "coefficient": "-1",
+    "cut_group": 2677,
+    "destination": 202,
+    "donor_target": 198,
+    "gain": 2.8708142280188618,
+    "histogram_delta": {
+      "1": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 736
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2636,
+    "destination": 210,
+    "donor_target": 147,
+    "gain": 2.8708142280188618,
+    "histogram_delta": {
+      "1": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 933
+  },
+  {
+    "coefficient": "1",
+    "cut_group": 2635,
+    "destination": 223,
+    "donor_target": 183,
+    "gain": 1.484519866898971,
+    "histogram_delta": {
+      "1": 1,
+      "2": -1,
+      "6": -1,
+      "7": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 938
+  },
+  {
+    "coefficient": "-1",
+    "cut_group": 2588,
+    "destination": 227,
+    "donor_target": 192,
+    "gain": 3.81908500976888,
+    "histogram_delta": {
+      "2": -1,
+      "4": -1,
+      "6": 1
+    },
+    "prefix_target_deliveries": 2,
+    "recovery_frame": 902
+  }
+]
