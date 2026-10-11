@@ -54,6 +54,14 @@ source527-verify: source527-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-source527.XXXXXX"); \
 	python3 -B research/five-stage-source527-banks/verify.py --output "$$work/replay"
 
+.PHONY: e8-coupled-record-check e8-coupled-verify
+e8-coupled-record-check:
+	python3 -B research/e8-coupled-bit-retiming/record.py
+
+e8-coupled-verify: e8-coupled-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-e8-coupled.XXXXXX"); \
+	python3 -B research/e8-coupled-bit-retiming/verify.py "$$work/replay"
+
 verify-community: community-audit-check community-followup-check copied-reversed-producer copied-reversed-check copied-fixed-reversed-producer copied-fixed-reversed-check
 	$(MAKE) copied-fixed-verify
 	$(MAKE) climbed-48-verify

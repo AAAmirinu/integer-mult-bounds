@@ -1,5 +1,14 @@
 # Contribution review: release update and historical triage
 
+The October 11 [coupled E8 candidate](../../research/e8-coupled-bit-retiming/README.md)
+and [exact pending record](../../certificates/candidates/e8-coupled-bit-retiming.json)
+preserve the complete #375/#377 supplier replays, the new physical word,
+finite invoices and assembly controls. Its conditional κ is
+`49931732854659861010149/50000000000000000000000000`. This is a submitted
+candidate with maintainer review pending, separate from the reviewed selected
+result. The notice credits all pinned predecessors and distinguishes assembly
+gain from the new bit component's gain.
+
 For the current checkpoint, see the [round-eight review](community-round8-review.md),
 [selected record](../../certificates/selected-result.json) and
 [contributor ledger](../../CONTRIBUTORS.md). The entries below are historical;

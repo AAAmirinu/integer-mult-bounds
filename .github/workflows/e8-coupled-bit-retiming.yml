@@ -1,0 +1,45 @@
+name: E8 coupled bit retiming
+on:
+  push:
+    paths:
+      - 'research/e8-coupled-bit-retiming/**'
+      - '.github/workflows/e8-coupled-bit-retiming.yml'
+  pull_request:
+    paths:
+      - 'research/e8-coupled-bit-retiming/**'
+      - '.github/workflows/e8-coupled-bit-retiming.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.13', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -r research/e8-coupled-bit-retiming/requirements.txt
+      - name: Install exact arithmetic headers
+        run: |
+          if ! test -f /usr/include/boost/multiprecision/cpp_int.hpp; then
+            sudo apt-get update
+            sudo apt-get install -y libboost-dev
+          fi
+      - name: Replay both suppliers, controls, finite invoices and record
+        run: python -B research/e8-coupled-bit-retiming/verify.py "${RUNNER_TEMP}/e8-coupled"
+      - name: Check repository candidate record
+        run: python -B research/e8-coupled-bit-retiming/record.py
+      - run: git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: e8-coupled-${{ matrix.python-version }}
+          path: ${{ runner.temp }}/e8-coupled

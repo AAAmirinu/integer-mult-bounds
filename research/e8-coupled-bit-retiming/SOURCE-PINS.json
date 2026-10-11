@@ -1,0 +1,3074 @@
+{
+  "format": "e8-retiming-sources/1",
+  "files": [
+    {
+      "path": "vendor/source375/LICENSE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/LICENSE",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/source375/MANIFEST.sha256",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/MANIFEST.sha256",
+      "git_blob": "f09444eaff6683ca3a209b77f68721eea6bc9650",
+      "sha256": "51e760e691524dfe010bf84cda7f3cfcbf5f6a9383ef42dc4b99e81f2bbb5b53"
+    },
+    {
+      "path": "vendor/source375/NOTICE-PR352.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/NOTICE-PR352.md",
+      "git_blob": "4f9a0194a34a6b3b431d5b452655a2bc787fdb95",
+      "sha256": "967e6d7e76e216e4898cf543c75b527e8d397ec1ddba3800cb20701f24c89524"
+    },
+    {
+      "path": "vendor/source375/NOTICE.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/NOTICE.md",
+      "git_blob": "235facfadc567302556f5cee14eebb51509522e1",
+      "sha256": "949fafcf2c993d0a719ee24adacabbf2d578bd657f234b38ba0464cd0d9dd759"
+    },
+    {
+      "path": "vendor/source375/README.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/README.md",
+      "git_blob": "bafeeaab567cbdd2a69122e834cb7a7dd3347a6a",
+      "sha256": "378ab6a356cdc604204f9caf6c262fe7d29258db317435e6c65f0b2d0d59178e"
+    },
+    {
+      "path": "vendor/source375/SOURCE-pr363.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/SOURCE-pr363.json",
+      "git_blob": "cebdf46b6af0880207a8268bbc136a00117ee111",
+      "sha256": "8d44d9d894c70ef195d44468f6093e797f8757a969bda93b508f65bf334e6ade"
+    },
+    {
+      "path": "vendor/source375/SOURCE-pr370.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/SOURCE-pr370.json",
+      "git_blob": "29ab7abc3599d756f0ea94f77e1ee2b7d14f2847",
+      "sha256": "ba19bc388a7da6f91a7eb85ed4ee98f309eda557d1206fc3b55c3fa070ca23b5"
+    },
+    {
+      "path": "vendor/source375/SOURCE-pr373.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/SOURCE-pr373.json",
+      "git_blob": "398edc96af443863f270ec63bef6a41a238bd679",
+      "sha256": "20e7c346d38cabed0555586fc99f96d497ae80d9e7b26286e84eed33a56db6e1"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/certify_bit_g.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/certify_bit_g.py",
+      "git_blob": "d257992e31129ef761e7ff5b4fda71fd590dd60e",
+      "sha256": "c9a31508126f34e7ac95d802c39e8919a872cd705314de5bf3538de1636ce8ce"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/certify_bit_k.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/certify_bit_k.py",
+      "git_blob": "6560951d798e3fe4aebcd1c442e67edc87b4ed9b",
+      "sha256": "97b07eb2e2664522f672fb520d188520a3a2967ecefd6700667994614d478e0c"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/columns_h.cpp",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/columns_h.cpp",
+      "git_blob": "00c5a3a5d81d083582f60f33dd2e7bea5049c37f",
+      "sha256": "d1297f9052be4f2496e1ff2a77e4db2c0cdbd7d460d489b4c03e50bf317238ce"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/columns_k.cpp",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/columns_k.cpp",
+      "git_blob": "42bb232fbec4de703e70cc13dc2f39a3b43a3a01",
+      "sha256": "1c344d18fcd494eeca93e259f10cafae7705780e6592f6dcb35b34752dab9bc2"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/cost.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/cost.py",
+      "git_blob": "677584c1c6b0e959c19f58521b68d4b3e847f97e",
+      "sha256": "d55d2b865d1c3d35e343e1a38c592b9172ed8e2596d1107e34d92e2a80c7d03f"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/exactnd_h.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/exactnd_h.py",
+      "git_blob": "fa90b5089f53cbd1f98ec026391cf9375eb6a11d",
+      "sha256": "28a0d8ee29ac75b8a789705454987f07d618f135ed1f1bd45b97f18bcc4163e3"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/finite_g.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/finite_g.py",
+      "git_blob": "d1aa38980a164b7c8070c24a30560e90c1dbb721",
+      "sha256": "a591d8caa9ab50a4c7ec6934c71c93fc18fd14680180b43071e8d9d704f7ac9a"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/finite_k.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/finite_k.py",
+      "git_blob": "3a284fa4b27ca9034feed02a03afc882b9914ac0",
+      "sha256": "f93207e50f1e07237d8c29ecef6b7be89f7c35e3f0c0f2449da8f7c66f6442e1"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/geometry_g.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/geometry_g.py",
+      "git_blob": "74eb5822479153bd87e1ac1044161e8997d0bb6f",
+      "sha256": "b9fa3cd05f36f5fcebfdebfb4a86fb90e92ed3c1d9157c52918ee8c5b563b54f"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/geometry_k.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/geometry_k.py",
+      "git_blob": "f8afa8c245c720092062b1b1d805f5a58d77f11b",
+      "sha256": "0609920cffe790e927a4106bb82e63b3f8078c647ac9156fe0d22624634e759f"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/gram_frames.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/gram_frames.py",
+      "git_blob": "b740d47295c02692260d7cc01874a49fe48f78ab",
+      "sha256": "223a5a07731fc315a90a3e48177796babc155c1d9985c7ae5017eff6af2a0608"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/json.hpp",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/json.hpp",
+      "git_blob": "82d69f7c5d044c9887c96b90c97f5639083ecd14",
+      "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/legality_h.cpp",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/legality_h.cpp",
+      "git_blob": "cb1233c7e96b1aa8bbf4d2e4165d75ab0dca64b9",
+      "sha256": "6c1ef2b24e57781d6951c172a1024fc4300e6fd392c9d6672079a7806ab663b3"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/tile_g.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/tile_g.py",
+      "git_blob": "d897054811144048dd08598dcd02560f7d7c62ee",
+      "sha256": "8140eec180e42202f2c6a9f11f5c92885e60861c38a7611dd805c524e3438138"
+    },
+    {
+      "path": "vendor/source375/code/bit/checkers/tile_k.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/checkers/tile_k.py",
+      "git_blob": "a4635e6681c2f1521b44f24364cc457d304cb077",
+      "sha256": "64255088821f601ede2c3006f08cb97c39a4fa10dbbeb93a8a71fcfa0e1d8d77"
+    },
+    {
+      "path": "vendor/source375/code/bit/export_records.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/export_records.py",
+      "git_blob": "3632d370486a02f5456f7643ced03f8c925b2350",
+      "sha256": "8a5999601f917dbb492bb9ae9a344611f18cc7cedc53dc3c76496a369e530eb3"
+    },
+    {
+      "path": "vendor/source375/code/bit/independent/centres_sat.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/independent/centres_sat.py",
+      "git_blob": "efbcef69dda1f2331237c0888a0f18e7f89fab3e",
+      "sha256": "f69379968367544807db2f0cf14359977e56299383b3edcc4469ddea7c7ecb40"
+    },
+    {
+      "path": "vendor/source375/code/bit/independent/checkword.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/independent/checkword.py",
+      "git_blob": "da4e0fe05067184d4dab1e130ae1384c1fa983f5",
+      "sha256": "11bf9620ca9db16d52d9fe806b814fc9ec9a89c4d7645354d1861d96f6e805ad"
+    },
+    {
+      "path": "vendor/source375/code/bit/independent/mutate.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/independent/mutate.py",
+      "git_blob": "eba592fd468e0d7e7e5100fe99da6eb548c5906b",
+      "sha256": "0ff65aace5da4b57d96235bf830f8f11969322e75134d498aeb70e9753ec6b0d"
+    },
+    {
+      "path": "vendor/source375/code/bit/mutate_records.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/mutate_records.py",
+      "git_blob": "6794516f665d36eac189894e350a5ad01113cb4c",
+      "sha256": "b0e75d6550412a7be4017695e6b237392b611bb852ad8ff309d6682c9f166a4e"
+    },
+    {
+      "path": "vendor/source375/code/bit/producer/compile.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/producer/compile.py",
+      "git_blob": "86b12507ef86308336833a208a989d56072096d1",
+      "sha256": "60fea6a9d6617a3f87376d3fda040642e9cb70e7c179015e03ede8d289f30357"
+    },
+    {
+      "path": "vendor/source375/code/bit/producer/compile2.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/producer/compile2.py",
+      "git_blob": "a7bdfdfbe417c793b2a8c515f5432bdd10472259",
+      "sha256": "0e23d4282ceb75768e82631da016aaff9818aec53c7d75a6b2a28ee1b1160dc3"
+    },
+    {
+      "path": "vendor/source375/code/bit/producer/e8lib.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/producer/e8lib.py",
+      "git_blob": "8464b956f6a5aa5061695990a14b7a385d370c2e",
+      "sha256": "4f8a6843e83bc4f7055d7337f33dbe12ce499051f46bee1b81bbf6b34c652574"
+    },
+    {
+      "path": "vendor/source375/code/bit/producer/frames.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/producer/frames.py",
+      "git_blob": "b28c3b2413b9767e7ffe0a8b2db93836f3455494",
+      "sha256": "ba71f77dd3e3c1c54f361c066cebe9faadbc78db46376046e7af625bf1de8c24"
+    },
+    {
+      "path": "vendor/source375/code/bit/producer/fullword.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/producer/fullword.py",
+      "git_blob": "104f01b7803481b623809bc8a57682d28f09b5c3",
+      "sha256": "0daf87599e9e48646b985ad87351c56c1b73cfc99cdf9eca081483846ddbfa90"
+    },
+    {
+      "path": "vendor/source375/code/bit/producer/ham1.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/producer/ham1.py",
+      "git_blob": "8086649a5f71c16698db7059bbada7187d781b56",
+      "sha256": "359040fb432fd392472af6b8f5dca0234dd6c2be744a791df27ba62bc5da5175"
+    },
+    {
+      "path": "vendor/source375/code/bit/producer/ham2.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/producer/ham2.py",
+      "git_blob": "842f76b245a1bfb4150c53a853f6f472511f5a2f",
+      "sha256": "fdf0af785ce697bd7f80b4e75f7163735f3b599d9dc42f652f0ffdbdf18ea8bf"
+    },
+    {
+      "path": "vendor/source375/code/bit/producer/params-r865.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/producer/params-r865.json",
+      "git_blob": "110b4d94d884f03d4d37be22672ab27d836f1275",
+      "sha256": "1256c54debe0a551da8e24896ab73ef0bd4a5233ff8e6fedf21a9e6301d6e6f3"
+    },
+    {
+      "path": "vendor/source375/code/bit/producer/price.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/producer/price.py",
+      "git_blob": "9014d97d519eea1f8c96e4bfc75afa0febd5903f",
+      "sha256": "46c858e60ba0a117bf8227b864abf55e85ebee2d56a0dce64472b706499ac405"
+    },
+    {
+      "path": "vendor/source375/code/bit/producer/search2.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/producer/search2.py",
+      "git_blob": "b653f4b52ac743e7b6280bb1a5e3954ac1ad84bc",
+      "sha256": "4999c5d6bac9757e4236c45435201631eae21f644dc9543d8c0b6e3cc8360daf"
+    },
+    {
+      "path": "vendor/source375/code/bit/receipts_e8.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/receipts_e8.py",
+      "git_blob": "f514db37ab4c265b9546c8c0fe02e3faf9667a4e",
+      "sha256": "935ea65d9c6739e868ccf1aa439bd3c246657dfc887e4a0222a8f0901a5b41a5"
+    },
+    {
+      "path": "vendor/source375/code/bit/receipts_k.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/receipts_k.py",
+      "git_blob": "428261488b4af028fd04df4f84eead1dad79a389",
+      "sha256": "67f714e10a846e9cc62996342f825cd715055031e0b12591abdafd225717e195"
+    },
+    {
+      "path": "vendor/source375/code/bit/regression/certify_bit.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/regression/certify_bit.py",
+      "git_blob": "b8a6c4be5931daa83921e23ee5ad3ab263ca8ce8",
+      "sha256": "fc03e8f7bf73d7d70346b87c835d44508b0581c9ff9aec708fbbd4f0121e0394"
+    },
+    {
+      "path": "vendor/source375/code/bit/regression/columns_h_pr346.cpp",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/regression/columns_h_pr346.cpp",
+      "git_blob": "07b7fd220c1742eb9c634e8572bef2df8d1f2aa6",
+      "sha256": "26f5c9be3a7f545d50be458e3d17403921b5542a7dcd2986c848664a774977a8"
+    },
+    {
+      "path": "vendor/source375/code/bit/regression/cost.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/regression/cost.py",
+      "git_blob": "677584c1c6b0e959c19f58521b68d4b3e847f97e",
+      "sha256": "d55d2b865d1c3d35e343e1a38c592b9172ed8e2596d1107e34d92e2a80c7d03f"
+    },
+    {
+      "path": "vendor/source375/code/bit/regression/json.hpp",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/regression/json.hpp",
+      "git_blob": "82d69f7c5d044c9887c96b90c97f5639083ecd14",
+      "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63"
+    },
+    {
+      "path": "vendor/source375/code/bit/regression/legality_h_pr346.cpp",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/regression/legality_h_pr346.cpp",
+      "git_blob": "f4501be83a229cac1f3050993a204d8f75b86108",
+      "sha256": "5661d0b91e07d95736bde4c1824f27bebaecce0a84e38403f5391ebc51a52056"
+    },
+    {
+      "path": "vendor/source375/code/bit/regression/prime_new.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/regression/prime_new.py",
+      "git_blob": "372ce0958a23c0312209a0a0c6ea11af34e8a92d",
+      "sha256": "7bd5cb48537621f1217d174274d42483da4e2d02feec238643c798c36b30366a"
+    },
+    {
+      "path": "vendor/source375/code/bit/regression/prime_witnesses.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/regression/prime_witnesses.py",
+      "git_blob": "7f16d930302ae879c562dd58e085d9747fcac077",
+      "sha256": "98cd03bc9582e7bd0ab194c191ea8eea940539e510051443ab9fd3e572a364ab"
+    },
+    {
+      "path": "vendor/source375/code/bit/regression/stage_cohort.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/regression/stage_cohort.py",
+      "git_blob": "f6d7afe3e623208c4207b6a683a1e3e49249e31c",
+      "sha256": "6c288f6f234b528c1a7c0a4adfb724e91e0fe6b18c8dffad96af3f973de1829a"
+    },
+    {
+      "path": "vendor/source375/code/bit/regression/tile_check.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/bit/regression/tile_check.py",
+      "git_blob": "1e537bd2e48b93bbfdcbdec42672075a2441b584",
+      "sha256": "38c3f78daac118395565a65fa3543b1c349638ff2519ce7fda0dad2d788e90ae"
+    },
+    {
+      "path": "vendor/source375/code/certify_b3.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/certify_b3.py",
+      "git_blob": "3b9f5f97b815742e17679e14735639f6bbcc715e",
+      "sha256": "616bf82b56077c9e575791a70715047a5e01932649c3feb3e4c8ec56b39c9fab"
+    },
+    {
+      "path": "vendor/source375/code/complex/code/bridged.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/code/bridged.py",
+      "git_blob": "626a28614b07066528fd5f189d87cffa5015ac60",
+      "sha256": "5fe7174cd3a6580a74e4c1bf8fa7b426e8673f1c285603bf3076d4e758d70731"
+    },
+    {
+      "path": "vendor/source375/code/complex/code/complex_basis.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/code/complex_basis.py",
+      "git_blob": "8c400798a5f25d366747b35cb55e985222039083",
+      "sha256": "52d68781eaf6d9decf02446a532a7336fcf15924a9f6781ba0833d038decb9f8"
+    },
+    {
+      "path": "vendor/source375/code/complex/code/complex_gx.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/code/complex_gx.py",
+      "git_blob": "0986cc810e1d72ffb2b9ea70d1fe40517bbf2d76",
+      "sha256": "ccc924537db0c0d55f0c1934e79b8cf4d85b4fb336473d7b42d69e12557aa9f2"
+    },
+    {
+      "path": "vendor/source375/code/complex/code/complex_labels.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/code/complex_labels.py",
+      "git_blob": "5f1c9a65f1b0f096455805dc07832a38ca6eac7b",
+      "sha256": "e000ee131389fec427388b85f632879cbaaf10e5e5d979a47d6307d64ce58982"
+    },
+    {
+      "path": "vendor/source375/code/complex/code/complex_scalars.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/code/complex_scalars.py",
+      "git_blob": "129252a0236c401bb52c7f55d01734172906ce56",
+      "sha256": "c617b0fd2e18adcff15f6bf6cb3d54cc31f8432993be048b3442a5729eeff410"
+    },
+    {
+      "path": "vendor/source375/code/complex/code/complex_splice.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/code/complex_splice.py",
+      "git_blob": "bad0ec651f87890a46f314598cd72e762854a3ff",
+      "sha256": "dfb4c9108bfea4a09f3e38f12b9dbe6164abab1a4fef8442ca593e2110d38ef4"
+    },
+    {
+      "path": "vendor/source375/code/complex/code/p10pins.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/code/p10pins.py",
+      "git_blob": "8fd60cd9171d1c06f3ed93617612d7d8acc10cbb",
+      "sha256": "93b78a2e038b23264d04836928c78b6ebf33b87ff3dcc0e43ba0f1748fadd143"
+    },
+    {
+      "path": "vendor/source375/code/complex/code/scatter.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/code/scatter.py",
+      "git_blob": "20142c9851b9c10392bdcf0dd042a2cf8705f945",
+      "sha256": "dfd1afbbb3ff86f54db6a0313916403ec8ee6f939caa62f3edcc9d7a151bff95"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/LICENSE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/LICENSE",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/NOTICE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/NOTICE",
+      "git_blob": "63aa295646734f62c4270e653811530f9a570d3a",
+      "sha256": "9419dd03a2f52cf8bdfc4d18216ce29f263ab583b27f01ced8e420985bcb7c81"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/retained/FINITE_BRIDGE.txt",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/retained/FINITE_BRIDGE.txt",
+      "git_blob": "c1a88436113a1351f80c72bd08f6406ed5faa51d",
+      "sha256": "66d8f4ea8752abd89952d6674a636575a0db16e18b1c16e293f48f64242f0c46"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/retained/compact-control-layout.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/retained/compact-control-layout.tex",
+      "git_blob": "16f4d233471a7d189163ae7e7902becadecbba64",
+      "sha256": "2bc28e50f3eb092195294cafa81213e520f6d42e7935e9905ad8a6199e2a7c87"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/retained/compact-control-movement.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/retained/compact-control-movement.tex",
+      "git_blob": "06b6a9ef24245ac7b724c53a204635415b402357",
+      "sha256": "b963c3d2f4e1b7059aa289bb4b4ac89b688920bcf42f5b20d7698cdef0132cc6"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/retained/copied-centers-assembly.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/retained/copied-centers-assembly.tex",
+      "git_blob": "b0c69166c3048d27518355995e3e5b622722c696",
+      "sha256": "00117892971ae766188ace0af03030c44164fda105e42b70d84f52c3339a7dcb"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/retained/copied-centers-lemma.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/retained/copied-centers-lemma.tex",
+      "git_blob": "8933aaf508aa9d4c75ba1290913e02f6868d351d",
+      "sha256": "d0ce6d3d504996aadb098227885224e48df46101daec8893523a0a8b7364d8fe"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/retained/endpoint-gauge-complex.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/retained/endpoint-gauge-complex.tex",
+      "git_blob": "907a0ceda8df0317ddc7f2b71df5af2aa4d47dfc",
+      "sha256": "dfee33b0281e5551bb6927f757ff0240abade60ae1800f715afd88853ae0191e"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/retained/general-clifford-frames.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/retained/general-clifford-frames.tex",
+      "git_blob": "0367eeb005298601f28a673861d6f71bf1d0ebbb",
+      "sha256": "c9bb9655b594583c6b4bab8cb485233f1d1e588f83858cf1e4c3530cee8fed54"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/retained/stopped-product-complex.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/retained/stopped-product-complex.tex",
+      "git_blob": "4a9037137cd3158dbeca6d9e3b1881a599ebfcb5",
+      "sha256": "4738089103a4b263b3b0ef458f5ef35519c696f1ea871ae79e508d3720f5870a"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/source-pins.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/source-pins.json",
+      "git_blob": "c555ff203f493b10c87f51feeeabb26c92544064",
+      "sha256": "0d76527bf9c259b9532466a7b056ad6ff118867a96e044ff8e1a24aca12e1dbb"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__Bridge__Cert.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__Bridge__Cert.lean",
+      "git_blob": "f7bdc3d903341a9546056cde124d642e2677318b",
+      "sha256": "5c24746a6330907b9b37d6064095035a58575d64ce793d6d7c9881121fdc3980"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__Bridge__Net.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__Bridge__Net.lean",
+      "git_blob": "204f6d9cf902c85900f237bd99a23774e9a3f81b",
+      "sha256": "cf7d7d330b1bffe2e66712c873e647b13dc32db1ccfc0e0f4cd62ee6caf584f0"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__Carrier__Live.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__Carrier__Live.lean",
+      "git_blob": "b8306527d64ae06271c6aa55c5e0b3ded85c651c",
+      "sha256": "6d0649eb62589e66057f044e1e2103fc42f3f57a1498f82a26565bd8eb4026d0"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__Carrier__Phases.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__Carrier__Phases.lean",
+      "git_blob": "305da15b5d129959a0696e2031289eea91ec1813",
+      "sha256": "71dc3dda23dfe510d5d53cbada3a6c540cd1dc2825503fda618a5bd6cfc3e812"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__Fourier__Main.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__Fourier__Main.lean",
+      "git_blob": "9aa06b5bf28a2380ef9d54a0785ac2369f6012e4",
+      "sha256": "2e8e88efd4dcbdf0b1a6e39ce7eea8c5fd5ffee2faf360a8c0c9cba84c0e4ef3"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Chain__Geom.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Chain__Geom.lean",
+      "git_blob": "eb4490af8b0f5b97984d9dbdf345d86fe65d02c7",
+      "sha256": "c302f5834287421f11f3b0da7112fcde876cbc702896f2af4145b2d72ee393a2"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Chain__InvThm.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Chain__InvThm.lean",
+      "git_blob": "d69fcb4992778bcd2d12596e365ee8483aa538a2",
+      "sha256": "ade7e7873da75ca63a4b5ce2f562dde9c12bfbb69d87d7ae831039ff790e5adb"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Chain__NetCert.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Chain__NetCert.lean",
+      "git_blob": "6336ba076607f4229c58e51b01f35b8457effb88",
+      "sha256": "22ae34809466b4ac2a2c5cdde526f51ff246f5189f7c142b38aa4c0dcffb04a4"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Chain__NetDef.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Chain__NetDef.lean",
+      "git_blob": "c13042eb43328f9771a5f85e83edb59810f3a006",
+      "sha256": "6e17a68b1e988969f6eb77000028f7ed877e687b8ad3976ec1707fcfe1d2f520"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Chain__NetStage.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Chain__NetStage.lean",
+      "git_blob": "670f4c6a84b3453dd0b1bc0879fff3ecd9410919",
+      "sha256": "c122bc01392a6fdcc0bee918fed81804d3c9b1d3e071016dab65a4ed804ef0b6"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Chain__Phased.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Chain__Phased.lean",
+      "git_blob": "e68c42377f4fd0d0352ba697357d05f60333c8dc",
+      "sha256": "0de429c80231334f1ce92575c1e8ac382ca2d5e7d956767b547639a8941d9a8c"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Chain__WinB.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Chain__WinB.lean",
+      "git_blob": "951edde5cf5fdfb1dd5f7902499f3ccab961bf4a",
+      "sha256": "c33ec3fce09c0971c32ddcbb86d9383ffbe4c6d05cf36f20460005e6547bb845"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Data__B2Gp193Main.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Data__B2Gp193Main.lean",
+      "git_blob": "d7ecfebcea804af8209a0db3d89caa9ed364ea7a",
+      "sha256": "cb61f304da51f1dd0a2ec25bca4b63eb095eeb2863289e1e2bdee7c82beff48b"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Data__Glue.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Data__Glue.lean",
+      "git_blob": "c6cbac38e3a2fbabac74610519e26fcc065f7ff5",
+      "sha256": "d5314f2b93a7f0e1c949fb502331825bfc6d9d8762d35f865443e7c95b6c7ef7"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Data__InstB2Gp193.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Data__InstB2Gp193.lean",
+      "git_blob": "9b9925ce268a9f757fd44913140a57df95315769",
+      "sha256": "9587ddb9961f44938032b609307ab91c0b0e757e3991f1ad95480dd50fd4f72b"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Data__P193Cert.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Data__P193Cert.lean",
+      "git_blob": "3c3250279e66b56c9fee8a12c265ae2780ce4761",
+      "sha256": "d92ee6889be4753fc99f467bd84039743325123a1165128378b9c906a04f2703"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Data__P193Price.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Data__P193Price.lean",
+      "git_blob": "eeed011d64482adbdf0d6ff48a7c395a7252d57a",
+      "sha256": "0299bcd0fe255960eec682eef0f045f7e5cb1e4711af2aab4393526eae2caea3"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Data__P193ScalOK.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Data__P193ScalOK.lean",
+      "git_blob": "3539192ac1d3a51641f7ba08fa06a8659b12bc0b",
+      "sha256": "479434815822e98f015e335361089c3788d00dc3dd39c2944f75410aa0c158fe"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Data__RateB2Gp193x.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Data__RateB2Gp193x.lean",
+      "git_blob": "df563cde73a8f942e9c90189261dd6e8482d40f1",
+      "sha256": "6b40cac1481c931d47b1a092e382d04716ede0e785c492a2f2983e886a257c3f"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Data__Raw.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Data__Raw.lean",
+      "git_blob": "499fa67e88ebfe0ad777081cb61def3f74de81ba",
+      "sha256": "aba94a004c94dcae7cf3047c88a6da9561555f4ebe8ab92e299e6ce09ee7aa66"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GCert__Data__SolutionB2Gp193x.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GCert__Data__SolutionB2Gp193x.lean",
+      "git_blob": "0392e1f05bb89cca472c976391a649418dde186e",
+      "sha256": "45c768c9d71a7cc18bd6db74cb036db880d89580ca60557bb4a492280296b169"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GFrame__Engine__Adapt.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GFrame__Engine__Adapt.lean",
+      "git_blob": "24e261ad0862ba778f0e7f00d48756865b7f4eb8",
+      "sha256": "feec0a3828867968a5c7c2c30b86ed70449abc3c660a60ada67203a75bae2ef7"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GFrame__Engine__Letters.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GFrame__Engine__Letters.lean",
+      "git_blob": "2eca6e713bfd47449b872a0462857806861be9d5",
+      "sha256": "34906dbf5ae16b5174db00b4881a5cc1d2e583b8c8806db6523a5e2f86565f09"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/Work__GFrame__Engine__Level.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/Work__GFrame__Engine__Level.lean",
+      "git_blob": "6bd7cfa0c3f34bbd04fc445eceae0cc4d4c567fc",
+      "sha256": "80fb3daa9a45de0ed6da570eb4476b9104734be65d0116f58bcfcbcd67f771d0"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/tools__gx__ORIGIN.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/tools__gx__ORIGIN.md",
+      "git_blob": "e28b355d0a271da6c8c7da8b6d68451817378bf1",
+      "sha256": "6ba897a9495ddadcf8558b93133fdfaf66fc35ce7fa2c53e2d5667335c315e0b"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/tools__gx__gx.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/tools__gx__gx.py",
+      "git_blob": "6d14c0a976146eb881c1e3897b2476f8633d4e9c",
+      "sha256": "6f3dc8bb639933227a8dae181ec4a542e85c7276be9c9e330f49518e7b630b95"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/tools__gx__gxbind.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/tools__gx__gxbind.py",
+      "git_blob": "fcb625619cb07a9be9594422357786ca6e3c4add",
+      "sha256": "9c9dcfac47f0535bf3aa8ebf7c662cdef0ebda50a9f0a9282b8f3cf34809f835"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/tools__gx__gxconv.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/tools__gx__gxconv.py",
+      "git_blob": "49ebb65973a2403bb22aa32692762cd0522a0287",
+      "sha256": "dab7fec9f44c2d368ed334055d7126e202017feb46e41a8d86e2d998720f67c2"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/complex/sources/tools__gx__gxcore.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/complex/sources/tools__gx__gxcore.py",
+      "git_blob": "3e3f0a3076f3c326e7833c74eceecb3436dd3185",
+      "sha256": "eb972c06fe8c322db2d9a8d9a7d05596e8f40c4ca8e5f42eb6df3c7361b5d517"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/LICENSE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/LICENSE",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/NOTICE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/NOTICE",
+      "git_blob": "7008ce01c1f84c4ac181dd9382a94c83a1a172aa",
+      "sha256": "557c9ad4660eebd14a00583736c4d12d2c45f3fc9bc148845f9f3efec72c9434"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/B2Ge8.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/B2Ge8.lean",
+      "git_blob": "d1e3afba66b01bdc95d55d805ae63efa653031ff",
+      "sha256": "842b217147cf84e8042d6ef1c33104d5444b6587b594664bc9eb89b237ab4ad0"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/B2Ge8Main.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/B2Ge8Main.lean",
+      "git_blob": "ef1487658291016d68e78b865f9239d100c69e1c",
+      "sha256": "987103107d5586c096016f0a702d0de35b74398dbb50ac66f5886a43a5ca0d05"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/ChallengeB2Ge8x.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/ChallengeB2Ge8x.lean",
+      "git_blob": "c6c1567f5dfe456c5ffe4aad42598363df0a747a",
+      "sha256": "a59db9d54b83adc73391916f7c1ef5e381ff073027781c26cb350f43b79839e3"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/E8Cert.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/E8Cert.lean",
+      "git_blob": "ab43d9bf07756e60715ffad5e1f644cc2a1e6978",
+      "sha256": "13a243c7d7be31ae429d19b5ecd5d428d60c41b7cca8a330f0c4179b110ba7ea"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/E8Price.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/E8Price.lean",
+      "git_blob": "71b561645b714e82324a649d540e0628bc7c8c66",
+      "sha256": "cd250dd72406dde37765c501f666ceeedcc18f831070b26369bcb154c1f99a8e"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/E8ScalOK.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/E8ScalOK.lean",
+      "git_blob": "0657e91b9975ca1dfa8da21ddd37e81e8a58adb6",
+      "sha256": "6bd5e68effe8913a3f73e25ea59142cd9928ddf81e94250a6ea28aa7317388b3"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8.lean",
+      "git_blob": "c8165c355b811de25107973fe7e22e2ea036bf51",
+      "sha256": "5c7fb23df2c10b690f638a19bf066905b5b620b8a2ad0ffde76cc9348d8aa2b4"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8/S0.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8/S0.lean",
+      "git_blob": "5069b78564d65fcd7ea4a4865871cb783958a2c0",
+      "sha256": "36de82f6969c23082876a4d6848428623d1c65d2df3fc917f23ecba003189dd2"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8End.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8End.lean",
+      "git_blob": "dfec705e0e8de5098b1359e4deaa07d14fa595e3",
+      "sha256": "6ea83365afe01664b2132a630511b4de65f938dc328744ce7f77a01fad97f32d"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Hist.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Hist.lean",
+      "git_blob": "4c0a89ebc5b5ae8c23d94a576d8752056179b99a",
+      "sha256": "cce81699abe1f85a870dcf64edd395d2cf5a586da7700af565b557093095ab51"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Par.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Par.lean",
+      "git_blob": "9ace01b6f3ea6f04174a4d15ba700544b057df8a",
+      "sha256": "a343219b419f30f8ac4dd3a0a98bf53550c5fec6b2cbd245320a95977c319016"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Scal0.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Scal0.lean",
+      "git_blob": "219dd4f6dba8e79a8b041acc999938253d1a12f6",
+      "sha256": "78036e5443775ade5bde46a77ba3e0433fe22160da11b5b6c96c7f1075ecfbbd"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Seg0.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Seg0.lean",
+      "git_blob": "b69b6fdff45e26b5eae1b394c8556b13c1f4aa40",
+      "sha256": "f6b248dc4c3b2c94db95989b6bd5ad3c3f0d7ece3a511e5b69069550b821b138"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Seg1.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Seg1.lean",
+      "git_blob": "a05e925bdef191129c376518b18d0061f52fc9a4",
+      "sha256": "79d16ccceb61391446ea97f77fddadafa9150e9dea97919e775f6c78daa71839"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8SegF.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8SegF.lean",
+      "git_blob": "72addebadbfea53898f7664f923f4f6f80b58c6c",
+      "sha256": "924340aebc6f68b5a6526311ce33341af0a0a5a8375416762f08c1914ec08abe"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab0.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab0.lean",
+      "git_blob": "8995e049e05267f04b48eb4e9232bb8b056c4fec",
+      "sha256": "650600b631a21221956f9abbab9abebcc9cca628512d3e9a017e2373e2649b17"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab1.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab1.lean",
+      "git_blob": "38ccb738cedf7e10794161a90313cea62a3f6360",
+      "sha256": "60036fa4deeb19d39fc0dddf31359d2b6d2407ff66070f145b111bff16190eb0"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab2.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab2.lean",
+      "git_blob": "bc10a63187ba520d96e2d8bba3349afe334a7233",
+      "sha256": "c8a248da3eb770ba55ef267d118b29d49983311087ef789398d555e2c44b3a41"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab3.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab3.lean",
+      "git_blob": "07453a6580dcfb848970fce591c1a7e64867f860",
+      "sha256": "41975d430ec0095ad465a36d4903e90c01bc891d3abe5e2c372ef786c029a7ed"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/Gen/E8YChk.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/Gen/E8YChk.lean",
+      "git_blob": "e7129aa67f278d4fc1656f1d814bc4e6251a324c",
+      "sha256": "a290360c175544cb85edffe1b92fcf7d447cba09128e19de8dc87e0a1ff0c524"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/InstB2Ge8.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/InstB2Ge8.lean",
+      "git_blob": "be583c65d3a375aea13449a3b52fc07be39a60ea",
+      "sha256": "c1fee298187ea19b5d70fcfccef7d4fd4161be70c0adda19a89ca9933a759954"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/RateB2Ge8.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/RateB2Ge8.lean",
+      "git_blob": "46c0ed04cdadb5a3bf15920e51dc537fdfa43eb2",
+      "sha256": "7b6e59724c0f140e714afba237d5a1a91b22da70abc096ce274690140b39a3a6"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/RateB2Ge8x.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/RateB2Ge8x.lean",
+      "git_blob": "10c148fd72833f12e94e5a1770e13d60eaa6f8dc",
+      "sha256": "7c56d865ed6bfcb6919dabc1a6e53f8744ff4824a2f78335787485f3090970d1"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/Work/GCert/Data/SolutionB2Ge8x.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/Work/GCert/Data/SolutionB2Ge8x.lean",
+      "git_blob": "bfa1d0308824cb8c4261a78b5eb7a297fce2ab4c",
+      "sha256": "dd52f1fe0a372480edaf5e6c64903d6257c410e43d406f8acb6bf8f60a1ee28f"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/comparator/B2Ge8x.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/comparator/B2Ge8x.json",
+      "git_blob": "7fda546848f67f704e3f900c2c2f82d44f48deee",
+      "sha256": "ddad06c37f9268986f3ec8ce43da5230ee2bd887da2480328413a0dc58f2a926"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/certificate/gcert1-e8-r783.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/certificate/gcert1-e8-r783.json.gz",
+      "git_blob": "0bd0bacf744f1c31419e05b834e34a92be77ae57",
+      "sha256": "4b92f00fc7454b9b15e6d71a3b05062792eacca0a0ca4efee46f87827d57c8aa"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/e8/replay.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/e8/replay.py",
+      "git_blob": "a281ae6687ec6d8c6f71480bba7507f0b1eb4fd1",
+      "sha256": "be41ee310f28121c3e424cc8637d8fa02ef7c47fc8945e9bbd3856138fd800d6"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gen/foldgen.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gen/foldgen.py",
+      "git_blob": "a6287172bab665b9e5f125256dd535590c2be5f4",
+      "sha256": "a0f16e2c9e078ffbfb2174281ee93a48c18593aefb880318fc105ec85a205932"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gen/foldlib.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gen/foldlib.py",
+      "git_blob": "2cd642ec9e3d5b4b31ccaeec8eaafad5dab7790d",
+      "sha256": "7a3c38a698c129e13a767da75926a1305eb0c031b908450afc6feb185505c59a"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gen/gen_rates.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gen/gen_rates.py",
+      "git_blob": "8f90a197ba4642c36f82e804be5fd23e3c688b19",
+      "sha256": "ef8c869e4cf8da33a4c10b96f7f6faafd46e15d66766238070a60315aa169994"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gen/gen_sharp.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gen/gen_sharp.py",
+      "git_blob": "e28409ef864a8d6970d0a45457f67b08c1f0e380",
+      "sha256": "1b5eb3730cb16cf516e760879951fdfb9b065efc55f78c29a5c6404fcca57a78"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gen/templates/ChallengeB2L16x.lean.txt",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gen/templates/ChallengeB2L16x.lean.txt",
+      "git_blob": "5863ad32a049b0e1f3ebe48a6bcb4b67f1009fb4",
+      "sha256": "0488b7a2442c795414f103df912d1e6cc66d37b5be270940ea9564b7f2b666be"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gen/templates/SolutionB2L16x.lean.txt",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gen/templates/SolutionB2L16x.lean.txt",
+      "git_blob": "c111b98f65c32c1c29fe625880b4e836636d119b",
+      "sha256": "d414a890dfe126916374c1afc804b90e5081b7760f894b9ccdcf23d83a12f9ee"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gx/gsmirror.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gx/gsmirror.py",
+      "git_blob": "35af7ef46bd21341813b0e483b268fea60556896",
+      "sha256": "0e22bbe5924284e2fb916337ccefc8e41f6e54469749986ad15b3b81cfaec534"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gx/gxbind.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gx/gxbind.py",
+      "git_blob": "fcb625619cb07a9be9594422357786ca6e3c4add",
+      "sha256": "9c9dcfac47f0535bf3aa8ebf7c662cdef0ebda50a9f0a9282b8f3cf34809f835"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gx/gxcore.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gx/gxcore.py",
+      "git_blob": "3e3f0a3076f3c326e7833c74eceecb3436dd3185",
+      "sha256": "eb972c06fe8c322db2d9a8d9a7d05596e8f40c4ca8e5f42eb6df3c7361b5d517"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gx/gxgen.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gx/gxgen.py",
+      "git_blob": "12d847f09db92df2c68d10faf8c7403322110ef7",
+      "sha256": "ce9151054370c2210ed08f54c249a19dcb6946d182cdf934dee1a3781b53040f"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gx/gxpaths.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gx/gxpaths.py",
+      "git_blob": "355613a9c9641b4ec7754cd2503684bf60ac9aaf",
+      "sha256": "f00802d48ef3fedb00278f0b1c7bde074cc49dd30f202d7f32a9d2aebb3be443"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gx/gxrate.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gx/gxrate.py",
+      "git_blob": "6a58830d4c5eb950b5f73567374ec786a4ae4982",
+      "sha256": "514a5719f970fe36b1273cf59df0396db0e042dd7864c2eea53ab2a2fd1e2ad6"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gx/gxunit.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gx/gxunit.py",
+      "git_blob": "2c4587038c5f33358600b9feca285487e8453cfb",
+      "sha256": "3cc09a9c1a2db681c0f2016bc821af5b674d34834dbd6f195b9d482ce7c0ff58"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gx/regen_check.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gx/regen_check.py",
+      "git_blob": "720c4c06afb82330a4f23f1c3f7d3d529038b876",
+      "sha256": "b6172d58749c0b3b9138570c74827bcb23bf5db4ff9643740768cd7782ac4ca6"
+    },
+    {
+      "path": "vendor/source375/code/complex/inputs/e8/tools/gx/regen_check_e8.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/inputs/e8/tools/gx/regen_check_e8.py",
+      "git_blob": "c4db78c06fa6a5f21f7323edf8bf3d13ab07a931",
+      "sha256": "ad8fe9811c6ea0d89c795caef48686cfca600f5d540ebfd5d1251d6777cec7cf"
+    },
+    {
+      "path": "vendor/source375/code/complex/pins-e8-b3.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/pins-e8-b3.json",
+      "git_blob": "4dcc074355e26fe978aa34e9f14199bb21ebafea",
+      "sha256": "9e2d5b8e1f5f5d1c3113ed563ace88a3e5a605e1f053af350f1cec4d4791a4c4"
+    },
+    {
+      "path": "vendor/source375/code/complex/pins-e8-b3h.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/pins-e8-b3h.json",
+      "git_blob": "e64e2b57dbeb9355c108db8182ea59b31522be1a",
+      "sha256": "bffda4be2ef3ba7a1072029779cfa448e3d19a986eae444c7970b87f48b294c6"
+    },
+    {
+      "path": "vendor/source375/code/complex/pins-e8.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/pins-e8.json",
+      "git_blob": "ba757ae806be2599b6c9d3b0ca9e2143ef409ef1",
+      "sha256": "bf66f785878f636616ceab193e5a222143945ea06fc2f13dfb99b204ebba82ff"
+    },
+    {
+      "path": "vendor/source375/code/complex/portable_complex.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/complex/portable_complex.py",
+      "git_blob": "0bc6f87c10974183071256e6f4fb12618064fe9e",
+      "sha256": "a28cfd37ce5da0e97e03f225629f17f31e0278142b3757345ed47d7a66560cbf"
+    },
+    {
+      "path": "vendor/source375/code/pricing/base_two_moment.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/pricing/base_two_moment.py",
+      "git_blob": "14a90fa0e788217856f070382c9e61bd7c603c61",
+      "sha256": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098"
+    },
+    {
+      "path": "vendor/source375/code/pricing/moment.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/pricing/moment.py",
+      "git_blob": "7d697cb45203fe72d97037403d6da41f71f3b7fd",
+      "sha256": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482"
+    },
+    {
+      "path": "vendor/source375/code/pricing/outer.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/pricing/outer.py",
+      "git_blob": "43007488ad2c43187c77cc6798beff8b1cd76ad2",
+      "sha256": "c1ebb52163a7219504c728a5c2b098bf1e50bf20148a2879c5a74c3cadc7c03c"
+    },
+    {
+      "path": "vendor/source375/code/pricing/prime_witnesses.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/pricing/prime_witnesses.py",
+      "git_blob": "7f16d930302ae879c562dd58e085d9747fcac077",
+      "sha256": "98cd03bc9582e7bd0ab194c191ea8eea940539e510051443ab9fd3e572a364ab"
+    },
+    {
+      "path": "vendor/source375/code/provenance.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/code/provenance.py",
+      "git_blob": "83ec330d9f937e7c5e7af18be3e787e232b3508f",
+      "sha256": "e509d08cd82d078df86f491f83a312516cae26c5528ad073b924c73f53b34edd"
+    },
+    {
+      "path": "vendor/source375/data/bit/RECORD-SHA256SUMS",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/data/bit/RECORD-SHA256SUMS",
+      "git_blob": "53458062d6193eb1954592cb503fb75808e2b1cf",
+      "sha256": "cfc30216f441a1c44a533f2f26954f90e454136af8842c497de4e2da9bd32d8d"
+    },
+    {
+      "path": "vendor/source375/data/bit/bitE8-r865.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/data/bit/bitE8-r865.json.gz",
+      "git_blob": "8bec1751f7e33c3a1e4673ef5dbc34d6f205321e",
+      "sha256": "1fb726ea3818fe0837cceb0dd22a71a0814f064e5e781628104610d6468e0e55"
+    },
+    {
+      "path": "vendor/source375/data/regression-p10/BASE-RECORDS.bin.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/data/regression-p10/BASE-RECORDS.bin.gz",
+      "git_blob": "087f8261242e0e897907b8d4a86a7e1d100df172",
+      "sha256": "caabc13126e8f87d08f7697f51512cb3431ff52861f4190149251d8e19224430"
+    },
+    {
+      "path": "vendor/source375/data/regression-p10/BASE-frames.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/data/regression-p10/BASE-frames.json.gz",
+      "git_blob": "42ad5869ca5927c51daaa0af887c58960a4b37e3",
+      "sha256": "35070b83d12ebc60003ed344315328713134a43bdb04217c2c5cbc39e101391f"
+    },
+    {
+      "path": "vendor/source375/data/regression-p10/BASE-states.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/data/regression-p10/BASE-states.json.gz",
+      "git_blob": "427bc873b9ac858dd42c41b7a0cf8523e7dc3d09",
+      "sha256": "1e37ae5001447dd78a8287d8aa23d73a1d5862c4017f44db49af327f58d7cf22"
+    },
+    {
+      "path": "vendor/source375/data/regression-p10/receipts-loans/banks.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/data/regression-p10/receipts-loans/banks.json.gz",
+      "git_blob": "6a543b0dba04265f032f10bcbdb3dabbf07d13e7",
+      "sha256": "0bd464f873b0f59622026793affb308bf087833de6f3197202adc7a36d9d0782"
+    },
+    {
+      "path": "vendor/source375/data/regression-p10/receipts-loans/finite.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/data/regression-p10/receipts-loans/finite.json.gz",
+      "git_blob": "a7ab4e1dce3e01d01b10574e77a547b3b5027c31",
+      "sha256": "82b21b4e6bb4b20e0ecbca44f59941362f57a26a019f179e19b5b7b86262a116"
+    },
+    {
+      "path": "vendor/source375/data/regression-p10/receipts-loans/global_result.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/data/regression-p10/receipts-loans/global_result.json.gz",
+      "git_blob": "7a6dbc0dfe280dd7ed6014b1d492a61e573ca5a3",
+      "sha256": "7dccea4b8c4a81597779dc0944297d5f60efd9e2e5b19469417712e2192c6cca"
+    },
+    {
+      "path": "vendor/source375/data/regression-p10/receipts-loans/math.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/data/regression-p10/receipts-loans/math.json.gz",
+      "git_blob": "ee8102218a6d127b1dc6570778468658a8da273b",
+      "sha256": "c4074b86171c5bde8fbbff6df0022a116f17e11f0d2116ae3dfe75c8b2a18c64"
+    },
+    {
+      "path": "vendor/source375/data/regression-p10/receipts-loans/raw.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/data/regression-p10/receipts-loans/raw.json.gz",
+      "git_blob": "3a965a6005d9bff179b9500307044ccb7eaf8c2c",
+      "sha256": "505c13c667230e946e708d7c9086de34d1c5e259a557f6685765054001e29981"
+    },
+    {
+      "path": "vendor/source375/data/regression-p10/receipts-loans/scalar.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/data/regression-p10/receipts-loans/scalar.json.gz",
+      "git_blob": "5d4d5e1a2db03851fe71c8a48364ce58a3b5548a",
+      "sha256": "e7bb691b741227ce389ff6341fa0548ff8f638cc492a06be40fcd829fac0bed9"
+    },
+    {
+      "path": "vendor/source375/requirements.txt",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/requirements.txt",
+      "git_blob": "97fc30544865b9fcda4636ad0879a636b078ae1e",
+      "sha256": "1939ad706e192fb3781e8a0018880b1c6291ded07d40edc4048ab1a0e48f71ee"
+    },
+    {
+      "path": "vendor/source375/verify.sh",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+      "source_path": "research/e8-seven-stage-halving-two/verify.sh",
+      "git_blob": "bd84db82838c1d45c17aaed46409f231a55afd51",
+      "sha256": "f00ebcfa36f95e45b79b636c826cc8a390a3e4b724b24644231014c8d74a5663"
+    },
+    {
+      "path": "vendor/pr376-assembly.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "6df4dacc47066b226c7cee6612c1a3e648a3b431",
+      "source_path": "research/e8-bit-helper-reuse/assembly.py",
+      "sha256": "a026f013223294980eb16ab5c136175da0b42d7971f5913c8a61d46e28fcd45a"
+    },
+    {
+      "path": "vendor/source376/frame_replay.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "6df4dacc47066b226c7cee6612c1a3e648a3b431",
+      "source_path": "research/e8-bit-helper-reuse/frame_replay.py",
+      "sha256": "6dc74f24323c717d9eff7c12f27c67a0531899e61a8ee340c98162b1e34f9531"
+    },
+    {
+      "path": "vendor/source376/reuse_replay.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "6df4dacc47066b226c7cee6612c1a3e648a3b431",
+      "source_path": "research/e8-bit-helper-reuse/reuse_replay.py",
+      "sha256": "e83251e3d49267fb5b53eda53c1be80118b7df0cc671c38cad1f300883cd1316"
+    },
+    {
+      "path": "vendor/source376/frame-selection.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "6df4dacc47066b226c7cee6612c1a3e648a3b431",
+      "source_path": "research/e8-bit-helper-reuse/frame-selection.json",
+      "sha256": "a83d4880579fb1f8cffb701d1d685c157b7fa14ef9d6642e42ff1e4f5a1b8c5c"
+    },
+    {
+      "path": "vendor/source376/reuse-selection.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "6df4dacc47066b226c7cee6612c1a3e648a3b431",
+      "source_path": "research/e8-bit-helper-reuse/reuse-selection.json",
+      "sha256": "0b300bab47cf0d69cbc7965bf01c2a27c96b97677ee651334470d8c968b603f1"
+    },
+    {
+      "path": "vendor/source376/NOTICE.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "6df4dacc47066b226c7cee6612c1a3e648a3b431",
+      "source_path": "research/e8-bit-helper-reuse/NOTICE.md",
+      "sha256": "f99d75ada07356af43ec65d5dfb9d8bb35302d7f57d7339b2e61bd88a2ccd7f4"
+    },
+    {
+      "path": "vendor/source376/LICENSE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "6df4dacc47066b226c7cee6612c1a3e648a3b431",
+      "source_path": "research/e8-bit-helper-reuse/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/source376/PROOF.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "6df4dacc47066b226c7cee6612c1a3e648a3b431",
+      "source_path": "research/e8-bit-helper-reuse/PROOF.md",
+      "sha256": "4f441c28d95e938b036d8f595a25aa662b78039edeb4d3c8aa1b6693e7fd8029"
+    },
+    {
+      "path": "vendor/source377/LICENSE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/source377/MANIFEST.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/MANIFEST.json",
+      "sha256": "3743f954b5a652e51fa9ae5101318345d79f4c897ff9a29d5c54387b92118458"
+    },
+    {
+      "path": "vendor/source377/README.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/README.md",
+      "sha256": "a62afee2856e1eb096250efd3202a429cd4118e7d9a114e7b9c67e3c168df3ab"
+    },
+    {
+      "path": "vendor/source377/README.txt",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/README.txt",
+      "sha256": "ffe26cdb8a7e083f2f745b6cf18916a6af4f1635bc5b1577f30fb1ca4e575e07"
+    },
+    {
+      "path": "vendor/source377/verify.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/verify.py",
+      "sha256": "f99a2601b4864bb596955933b41f45a04e9c9b300b23e4aae2cb2934ec5d8c74"
+    },
+    {
+      "path": "vendor/source377/work/complex-nine-native/PROOF.txt",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/complex-nine-native/PROOF.txt",
+      "sha256": "ea0edb8cfb6b2f2c1adb2de12cc0aa5fb7c57e649033528565af3e52087beda7"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/LICENSE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/MANIFEST.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/MANIFEST.json",
+      "sha256": "3d0d867b84b86dd9f0850cedce9a6de83f2313a604bdef58f7235af30f94bcbd"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/NOTICE.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/NOTICE.md",
+      "sha256": "380ce615ddb67da3680fa188a0ba0daf578b983d58c2496cd20dd06f32e4ef57"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/SOURCE.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/SOURCE.json",
+      "sha256": "e69f2a72785302f892263cf765c84d07e083d9ad05730748f9c3374aade11e53"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/admit.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/admit.py",
+      "sha256": "1b9b069fbdef37b7e3fbc586aad9578ba85948e9f80877733af387573f3fa723"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/finite_guard.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/finite_guard.py",
+      "sha256": "bef59dddd391bcb49ed16ec6384517b8b7a2e21415cc810f9c2f59f440370983"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/price.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/price.py",
+      "sha256": "90cfb8d102adf0b5f93b71b05af5c078076f56873a868a66865575a5ea85d573"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/LICENSE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/MANIFEST.sha256",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/MANIFEST.sha256",
+      "sha256": "4b76fb09595321986da04017db16cf6aa36bcd6a048cdee2ec8b656de811e488"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/NOTICE.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/NOTICE.md",
+      "sha256": "967e6d7e76e216e4898cf543c75b527e8d397ec1ddba3800cb20701f24c89524"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/README.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/README.md",
+      "sha256": "c5349ae6637e846fefe132756968376d52c5e3f76241e96214f59e65cdb7ad16"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/SOURCE-pr346.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/SOURCE-pr346.json",
+      "sha256": "2ad0b2138d2aa8cd5c6ab6995fa8c6c167a822b668ef56a9cc39c5765d1134b3"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/builders/addcomp.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/builders/addcomp.py",
+      "sha256": "82e5ef0c7b6cf84c53bf6039330930242c9a5c8e8ea13183b2805cf9577f7129"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/builders/build_v5.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/builders/build_v5.py",
+      "sha256": "c0867d68b863ca7d8cdd7002ffed263cbd5525fea4522267b5f640e4eff5597b"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/builders/decomp.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/builders/decomp.py",
+      "sha256": "699c424170b41d3711da6a283f58cac824402ca373764365fd05c8e645ed07f5"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/builders/gather.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/builders/gather.py",
+      "sha256": "8c7d2a34fdcbe75d8ed8299e399d578b32adf44402c773fd905aa7c88e2b460d"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/builders/interface.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/builders/interface.py",
+      "sha256": "3b3e2fb894f871a9b6145844faaff34a05add59ae0eb8882c8feb2b914265b8a"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/builders/twin.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/builders/twin.py",
+      "sha256": "cfd261d82a31dd9024f1fa191eac2f5d893a7b51833b912459de46a1e9aac003"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/checkers/columns_h.cpp",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/checkers/columns_h.cpp",
+      "sha256": "26f5c9be3a7f545d50be458e3d17403921b5542a7dcd2986c848664a774977a8"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/checkers/exactnd_h.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/checkers/exactnd_h.py",
+      "sha256": "28a0d8ee29ac75b8a789705454987f07d618f135ed1f1bd45b97f18bcc4163e3"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/checkers/json.hpp",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/checkers/json.hpp",
+      "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/checkers/legality_h.cpp",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/checkers/legality_h.cpp",
+      "sha256": "5661d0b91e07d95736bde4c1824f27bebaecce0a84e38403f5391ebc51a52056"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/checkers/sub.hpp",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/checkers/sub.hpp",
+      "sha256": "59c1a64f9df61fc50f47d5a78c8f9351875bf6b352db1c9d109c7c90542a4f19"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/checkers/verifyT.cpp",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/checkers/verifyT.cpp",
+      "sha256": "1a5aea81aab652622e6547d901ead6aaf54fdca231da897dd99474c9f64a33bf"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/certify_complex.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/certify_complex.py",
+      "sha256": "7e480b7761fa700944a7dca41ccbefd530203b5e9168b6b37fe879b7e6da57fa"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/complex_basis.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/complex_basis.py",
+      "sha256": "52d68781eaf6d9decf02446a532a7336fcf15924a9f6781ba0833d038decb9f8"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/complex_gx.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/complex_gx.py",
+      "sha256": "ccc924537db0c0d55f0c1934e79b8cf4d85b4fb336473d7b42d69e12557aa9f2"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/complex_labels.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/complex_labels.py",
+      "sha256": "e000ee131389fec427388b85f632879cbaaf10e5e5d979a47d6307d64ce58982"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/complex_scalars.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/complex_scalars.py",
+      "sha256": "38e985ebe8c8e7f8c83c03828abde0c80be418caf95e97afdf2d0c357c0ed919"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/complex_splice.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/complex_splice.py",
+      "sha256": "aaf46c8e5c68875b8315892e924e082b2f219f8d042dd14937e7cd2f72456dce"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/p10pins.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/p10pins.py",
+      "sha256": "93b78a2e038b23264d04836928c78b6ebf33b87ff3dcc0e43ba0f1748fadd143"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/scatter.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/code/scatter.py",
+      "sha256": "dfd1afbbb3ff86f54db6a0313916403ec8ee6f939caa62f3edcc9d7a151bff95"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/LICENSE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/NOTICE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/NOTICE",
+      "sha256": "9419dd03a2f52cf8bdfc4d18216ce29f263ab583b27f01ced8e420985bcb7c81"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/FINITE_BRIDGE.txt",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/FINITE_BRIDGE.txt",
+      "sha256": "66d8f4ea8752abd89952d6674a636575a0db16e18b1c16e293f48f64242f0c46"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/compact-control-layout.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/compact-control-layout.tex",
+      "sha256": "2bc28e50f3eb092195294cafa81213e520f6d42e7935e9905ad8a6199e2a7c87"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/compact-control-movement.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/compact-control-movement.tex",
+      "sha256": "b963c3d2f4e1b7059aa289bb4b4ac89b688920bcf42f5b20d7698cdef0132cc6"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/copied-centers-assembly.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/copied-centers-assembly.tex",
+      "sha256": "00117892971ae766188ace0af03030c44164fda105e42b70d84f52c3339a7dcb"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/copied-centers-lemma.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/copied-centers-lemma.tex",
+      "sha256": "d0ce6d3d504996aadb098227885224e48df46101daec8893523a0a8b7364d8fe"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/endpoint-gauge-complex.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/endpoint-gauge-complex.tex",
+      "sha256": "dfee33b0281e5551bb6927f757ff0240abade60ae1800f715afd88853ae0191e"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/general-clifford-frames.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/general-clifford-frames.tex",
+      "sha256": "c9bb9655b594583c6b4bab8cb485233f1d1e588f83858cf1e4c3530cee8fed54"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/stopped-product-complex.tex",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/retained/stopped-product-complex.tex",
+      "sha256": "4738089103a4b263b3b0ef458f5ef35519c696f1ea871ae79e508d3720f5870a"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/source-pins.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/source-pins.json",
+      "sha256": "0d76527bf9c259b9532466a7b056ad6ff118867a96e044ff8e1a24aca12e1dbb"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__Bridge__Cert.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__Bridge__Cert.lean",
+      "sha256": "5c24746a6330907b9b37d6064095035a58575d64ce793d6d7c9881121fdc3980"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__Bridge__Net.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__Bridge__Net.lean",
+      "sha256": "cf7d7d330b1bffe2e66712c873e647b13dc32db1ccfc0e0f4cd62ee6caf584f0"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__Carrier__Live.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__Carrier__Live.lean",
+      "sha256": "6d0649eb62589e66057f044e1e2103fc42f3f57a1498f82a26565bd8eb4026d0"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__Carrier__Phases.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__Carrier__Phases.lean",
+      "sha256": "71dc3dda23dfe510d5d53cbada3a6c540cd1dc2825503fda618a5bd6cfc3e812"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__Fourier__Main.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__Fourier__Main.lean",
+      "sha256": "2e8e88efd4dcbdf0b1a6e39ce7eea8c5fd5ffee2faf360a8c0c9cba84c0e4ef3"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__Geom.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__Geom.lean",
+      "sha256": "c302f5834287421f11f3b0da7112fcde876cbc702896f2af4145b2d72ee393a2"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__InvThm.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__InvThm.lean",
+      "sha256": "ade7e7873da75ca63a4b5ce2f562dde9c12bfbb69d87d7ae831039ff790e5adb"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__NetCert.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__NetCert.lean",
+      "sha256": "22ae34809466b4ac2a2c5cdde526f51ff246f5189f7c142b38aa4c0dcffb04a4"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__NetDef.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__NetDef.lean",
+      "sha256": "6e17a68b1e988969f6eb77000028f7ed877e687b8ad3976ec1707fcfe1d2f520"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__NetStage.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__NetStage.lean",
+      "sha256": "c122bc01392a6fdcc0bee918fed81804d3c9b1d3e071016dab65a4ed804ef0b6"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__Phased.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__Phased.lean",
+      "sha256": "0de429c80231334f1ce92575c1e8ac382ca2d5e7d956767b547639a8941d9a8c"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__WinB.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Chain__WinB.lean",
+      "sha256": "c33ec3fce09c0971c32ddcbb86d9383ffbe4c6d05cf36f20460005e6547bb845"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__B2Gp193Main.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__B2Gp193Main.lean",
+      "sha256": "cb61f304da51f1dd0a2ec25bca4b63eb095eeb2863289e1e2bdee7c82beff48b"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__Glue.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__Glue.lean",
+      "sha256": "d5314f2b93a7f0e1c949fb502331825bfc6d9d8762d35f865443e7c95b6c7ef7"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__InstB2Gp193.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__InstB2Gp193.lean",
+      "sha256": "9587ddb9961f44938032b609307ab91c0b0e757e3991f1ad95480dd50fd4f72b"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__P193Cert.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__P193Cert.lean",
+      "sha256": "d92ee6889be4753fc99f467bd84039743325123a1165128378b9c906a04f2703"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__P193Price.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__P193Price.lean",
+      "sha256": "0299bcd0fe255960eec682eef0f045f7e5cb1e4711af2aab4393526eae2caea3"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__P193ScalOK.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__P193ScalOK.lean",
+      "sha256": "479434815822e98f015e335361089c3788d00dc3dd39c2944f75410aa0c158fe"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__RateB2Gp193x.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__RateB2Gp193x.lean",
+      "sha256": "6b40cac1481c931d47b1a092e382d04716ede0e785c492a2f2983e886a257c3f"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__Raw.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__Raw.lean",
+      "sha256": "aba94a004c94dcae7cf3047c88a6da9561555f4ebe8ab92e299e6ce09ee7aa66"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__SolutionB2Gp193x.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GCert__Data__SolutionB2Gp193x.lean",
+      "sha256": "45c768c9d71a7cc18bd6db74cb036db880d89580ca60557bb4a492280296b169"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GFrame__Engine__Adapt.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GFrame__Engine__Adapt.lean",
+      "sha256": "feec0a3828867968a5c7c2c30b86ed70449abc3c660a60ada67203a75bae2ef7"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GFrame__Engine__Letters.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GFrame__Engine__Letters.lean",
+      "sha256": "34906dbf5ae16b5174db00b4881a5cc1d2e583b8c8806db6523a5e2f86565f09"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GFrame__Engine__Level.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/Work__GFrame__Engine__Level.lean",
+      "sha256": "80fb3daa9a45de0ed6da570eb4476b9104734be65d0116f58bcfcbcd67f771d0"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/tools__gx__ORIGIN.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/tools__gx__ORIGIN.md",
+      "sha256": "6ba897a9495ddadcf8558b93133fdfaf66fc35ce7fa2c53e2d5667335c315e0b"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/tools__gx__gx.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/tools__gx__gx.py",
+      "sha256": "6f3dc8bb639933227a8dae181ec4a542e85c7276be9c9e330f49518e7b630b95"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/tools__gx__gxbind.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/tools__gx__gxbind.py",
+      "sha256": "9c9dcfac47f0535bf3aa8ebf7c662cdef0ebda50a9f0a9282b8f3cf34809f835"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/tools__gx__gxconv.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/tools__gx__gxconv.py",
+      "sha256": "dab7fec9f44c2d368ed334055d7126e202017feb46e41a8d86e2d998720f67c2"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/tools__gx__gxcore.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/complex/sources/tools__gx__gxcore.py",
+      "sha256": "eb972c06fe8c322db2d9a8d9a7d05596e8f40c4ca8e5f42eb6df3c7361b5d517"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/LICENSE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/NOTICE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/NOTICE",
+      "sha256": "557c9ad4660eebd14a00583736c4d12d2c45f3fc9bc148845f9f3efec72c9434"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/B2Ge8.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/B2Ge8.lean",
+      "sha256": "842b217147cf84e8042d6ef1c33104d5444b6587b594664bc9eb89b237ab4ad0"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/B2Ge8Main.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/B2Ge8Main.lean",
+      "sha256": "987103107d5586c096016f0a702d0de35b74398dbb50ac66f5886a43a5ca0d05"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/ChallengeB2Ge8x.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/ChallengeB2Ge8x.lean",
+      "sha256": "a59db9d54b83adc73391916f7c1ef5e381ff073027781c26cb350f43b79839e3"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/E8Cert.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/E8Cert.lean",
+      "sha256": "13a243c7d7be31ae429d19b5ecd5d428d60c41b7cca8a330f0c4179b110ba7ea"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/E8Price.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/E8Price.lean",
+      "sha256": "cd250dd72406dde37765c501f666ceeedcc18f831070b26369bcb154c1f99a8e"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/E8ScalOK.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/E8ScalOK.lean",
+      "sha256": "6bd5e68effe8913a3f73e25ea59142cd9928ddf81e94250a6ea28aa7317388b3"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8.lean",
+      "sha256": "5c7fb23df2c10b690f638a19bf066905b5b620b8a2ad0ffde76cc9348d8aa2b4"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8/S0.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8/S0.lean",
+      "sha256": "36de82f6969c23082876a4d6848428623d1c65d2df3fc917f23ecba003189dd2"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8End.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8End.lean",
+      "sha256": "6ea83365afe01664b2132a630511b4de65f938dc328744ce7f77a01fad97f32d"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Hist.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Hist.lean",
+      "sha256": "cce81699abe1f85a870dcf64edd395d2cf5a586da7700af565b557093095ab51"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Par.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Par.lean",
+      "sha256": "a343219b419f30f8ac4dd3a0a98bf53550c5fec6b2cbd245320a95977c319016"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Scal0.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Scal0.lean",
+      "sha256": "78036e5443775ade5bde46a77ba3e0433fe22160da11b5b6c96c7f1075ecfbbd"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Seg0.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Seg0.lean",
+      "sha256": "f6b248dc4c3b2c94db95989b6bd5ad3c3f0d7ece3a511e5b69069550b821b138"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Seg1.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Seg1.lean",
+      "sha256": "79d16ccceb61391446ea97f77fddadafa9150e9dea97919e775f6c78daa71839"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8SegF.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8SegF.lean",
+      "sha256": "924340aebc6f68b5a6526311ce33341af0a0a5a8375416762f08c1914ec08abe"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab0.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab0.lean",
+      "sha256": "650600b631a21221956f9abbab9abebcc9cca628512d3e9a017e2373e2649b17"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab1.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab1.lean",
+      "sha256": "60036fa4deeb19d39fc0dddf31359d2b6d2407ff66070f145b111bff16190eb0"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab2.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab2.lean",
+      "sha256": "c8a248da3eb770ba55ef267d118b29d49983311087ef789398d555e2c44b3a41"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab3.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8Tab3.lean",
+      "sha256": "41975d430ec0095ad465a36d4903e90c01bc891d3abe5e2c372ef786c029a7ed"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8YChk.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/Gen/E8YChk.lean",
+      "sha256": "a290360c175544cb85edffe1b92fcf7d447cba09128e19de8dc87e0a1ff0c524"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/InstB2Ge8.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/InstB2Ge8.lean",
+      "sha256": "c1fee298187ea19b5d70fcfccef7d4fd4161be70c0adda19a89ca9933a759954"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/RateB2Ge8.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/RateB2Ge8.lean",
+      "sha256": "7b6e59724c0f140e714afba237d5a1a91b22da70abc096ce274690140b39a3a6"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/RateB2Ge8x.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/RateB2Ge8x.lean",
+      "sha256": "7c56d865ed6bfcb6919dabc1a6e53f8744ff4824a2f78335787485f3090970d1"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/SolutionB2Ge8x.lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/Work/GCert/Data/SolutionB2Ge8x.lean",
+      "sha256": "dd52f1fe0a372480edaf5e6c64903d6257c410e43d406f8acb6bf8f60a1ee28f"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/comparator/B2Ge8x.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/comparator/B2Ge8x.json",
+      "sha256": "ddad06c37f9268986f3ec8ce43da5230ee2bd887da2480328413a0dc58f2a926"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/certificate/gcert1-e8-r783.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/certificate/gcert1-e8-r783.json.gz",
+      "sha256": "4b92f00fc7454b9b15e6d71a3b05062792eacca0a0ca4efee46f87827d57c8aa"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/e8/replay.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/e8/replay.py",
+      "sha256": "be41ee310f28121c3e424cc8637d8fa02ef7c47fc8945e9bbd3856138fd800d6"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gen/foldgen.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gen/foldgen.py",
+      "sha256": "a0f16e2c9e078ffbfb2174281ee93a48c18593aefb880318fc105ec85a205932"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gen/foldlib.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gen/foldlib.py",
+      "sha256": "7a3c38a698c129e13a767da75926a1305eb0c031b908450afc6feb185505c59a"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gen/gen_rates.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gen/gen_rates.py",
+      "sha256": "ef8c869e4cf8da33a4c10b96f7f6faafd46e15d66766238070a60315aa169994"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gen/gen_sharp.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gen/gen_sharp.py",
+      "sha256": "1b5eb3730cb16cf516e760879951fdfb9b065efc55f78c29a5c6404fcca57a78"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gen/templates/ChallengeB2L16x.lean.txt",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gen/templates/ChallengeB2L16x.lean.txt",
+      "sha256": "0488b7a2442c795414f103df912d1e6cc66d37b5be270940ea9564b7f2b666be"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gen/templates/SolutionB2L16x.lean.txt",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gen/templates/SolutionB2L16x.lean.txt",
+      "sha256": "d414a890dfe126916374c1afc804b90e5081b7760f894b9ccdcf23d83a12f9ee"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gsmirror.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gsmirror.py",
+      "sha256": "0e22bbe5924284e2fb916337ccefc8e41f6e54469749986ad15b3b81cfaec534"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gxbind.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gxbind.py",
+      "sha256": "9c9dcfac47f0535bf3aa8ebf7c662cdef0ebda50a9f0a9282b8f3cf34809f835"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gxcore.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gxcore.py",
+      "sha256": "eb972c06fe8c322db2d9a8d9a7d05596e8f40c4ca8e5f42eb6df3c7361b5d517"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gxgen.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gxgen.py",
+      "sha256": "ce9151054370c2210ed08f54c249a19dcb6946d182cdf934dee1a3781b53040f"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gxpaths.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gxpaths.py",
+      "sha256": "f00802d48ef3fedb00278f0b1c7bde074cc49dd30f202d7f32a9d2aebb3be443"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gxrate.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gxrate.py",
+      "sha256": "514a5719f970fe36b1273cf59df0396db0e042dd7864c2eea53ab2a2fd1e2ad6"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gxunit.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/gxunit.py",
+      "sha256": "3cc09a9c1a2db681c0f2016bc821af5b674d34834dbd6f195b9d482ce7c0ff58"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/regen_check.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/regen_check.py",
+      "sha256": "b6172d58749c0b3b9138570c74827bcb23bf5db4ff9643740768cd7782ac4ca6"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/regen_check_e8.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/inputs/e8/tools/gx/regen_check_e8.py",
+      "sha256": "ad8fe9811c6ea0d89c795caef48686cfca600f5d540ebfd5d1251d6777cec7cf"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/pins-e8.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/pins-e8.json",
+      "sha256": "bf66f785878f636616ceab193e5a222143945ea06fc2f13dfb99b204ebba82ff"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/portable_complex.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/portable_complex.py",
+      "sha256": "44e8ae8a5b915358a97dbed5fe4e70195ed3581fd45a216df48fc82a029db87d"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/regress_pr346.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/complex/regress_pr346.py",
+      "sha256": "29479da1547cd39cf20fe387cde4cad847a2880266db9d0ef3fb474f68591feb"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/export_p10.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/export_p10.py",
+      "sha256": "1161d23b459f7d981d6716073745909126d5465018cbbea7e6e6a9e4e5d68add"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/base_two_moment.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/base_two_moment.py",
+      "sha256": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/certify_bit.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/certify_bit.py",
+      "sha256": "fc03e8f7bf73d7d70346b87c835d44508b0581c9ff9aec708fbbd4f0121e0394"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/cost.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/cost.py",
+      "sha256": "d55d2b865d1c3d35e343e1a38c592b9172ed8e2596d1107e34d92e2a80c7d03f"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/moment.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/moment.py",
+      "sha256": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/outer.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/outer.py",
+      "sha256": "c1ebb52163a7219504c728a5c2b098bf1e50bf20148a2879c5a74c3cadc7c03c"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/prime_new.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/prime_new.py",
+      "sha256": "7bd5cb48537621f1217d174274d42483da4e2d02feec238643c798c36b30366a"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/prime_witnesses.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/prime_witnesses.py",
+      "sha256": "98cd03bc9582e7bd0ab194c191ea8eea940539e510051443ab9fd3e572a364ab"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/tile_check.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/pricing/tile_check.py",
+      "sha256": "38c3f78daac118395565a65fa3543b1c349638ff2519ce7fda0dad2d788e90ae"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/provenance.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/provenance.py",
+      "sha256": "9f5c05aa4d172478f2ab67e7bb83cacebfccc10ecba650c23539cdcee18f2139"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/code/stage_cohort.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/code/stage_cohort.py",
+      "sha256": "6c288f6f234b528c1a7c0a4adfb724e91e0fe6b18c8dffad96af3f973de1829a"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/BASE-RECORDS.bin.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/BASE-RECORDS.bin.gz",
+      "sha256": "caabc13126e8f87d08f7697f51512cb3431ff52861f4190149251d8e19224430"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/BASE-frames.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/BASE-frames.json.gz",
+      "sha256": "35070b83d12ebc60003ed344315328713134a43bdb04217c2c5cbc39e101391f"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/BASE-states.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/BASE-states.json.gz",
+      "sha256": "1e37ae5001447dd78a8287d8aa23d73a1d5862c4017f44db49af327f58d7cf22"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/FINAL-NEW-FRAMES.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/FINAL-NEW-FRAMES.json",
+      "sha256": "e7fe9d0686829ad5acf7930698b3c81a866ae834422aa3c9a12057dfae627175"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/FINAL-RECORDS.bin.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/FINAL-RECORDS.bin.gz",
+      "sha256": "fc4f1986da4585dc1721bcd954a95b3ffb2b562cc7031f40242de81664e3acb6"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/RECORD-SHA256SUMS",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/RECORD-SHA256SUMS",
+      "sha256": "21f732671eb34468be2252d4dfb81bdec4e7d7cd6564b93a482c2dd925e9c3b2"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/labels.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/data/bit/labels.json",
+      "sha256": "e037cd3d19d68e08523d09fce1c5f92206567784eb59f1924d93a837e4302fce"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/receipts/complex-guard-e8.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/receipts/complex-guard-e8.json",
+      "sha256": "f94a5dca42cbb88e9650f8f8a3ffbd1153636dfc0a48da5f7a7fca908c0650ad"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/receipts/kappa.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/receipts/kappa.json",
+      "sha256": "36316b6cfe423b56cda1fd52843e56c997d060e33d26b732b3ecf4de3ae83aaa"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/receipts/official-five-stage-columns.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/receipts/official-five-stage-columns.json",
+      "sha256": "32e291f249b4eab8d65664d10c94208fe2154bdb4a45aaff84e9e8da5295a29f"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/receipts/official-legality.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/receipts/official-legality.json",
+      "sha256": "7e675b7720f056548c1ee9f9de523eea10e6b014ddf90b7a630fd96163acbce6"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/requirements.txt",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/requirements.txt",
+      "sha256": "ca0825e0ae3db2855af7535ebdc4775beadbb6f07f8d3a84f0f4fd5b95ba5eae"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/upstream/pr352/verify.sh",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/upstream/pr352/verify.sh",
+      "sha256": "1a05c0b31ea37b2b5a4b84f6f9f504af8dd4220e13a6d9d86f64b2a731a903c7"
+    },
+    {
+      "path": "vendor/source377/work/native358/vendor/complex-reserve/verify.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/native358/vendor/complex-reserve/verify.py",
+      "sha256": "aa6f05c39404b4038c31c72f9fe7a8e137df911f6cb6fc668e316be37c40b126"
+    },
+    {
+      "path": "vendor/source377/work/odd-stages/RECIPE-9.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/odd-stages/RECIPE-9.json",
+      "sha256": "abda2e4c73ecb48d29c30c12bc9a5c2db71d11a35667b4298788ec9154eeec7b"
+    },
+    {
+      "path": "vendor/source377/work/odd-stages/audit_nine_template.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/odd-stages/audit_nine_template.py",
+      "sha256": "30c33508d02aeb8823dc477e8027bf6d44740aea0d3a3970fd2490aaf3b072d0"
+    },
+    {
+      "path": "vendor/source377/work/odd-stages/clifford_exact.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/odd-stages/clifford_exact.py",
+      "sha256": "2982ead07721e83358dc67c6f49c2b4c16a236a6bebdfd72f58221be1f5d0962"
+    },
+    {
+      "path": "vendor/source377/work/odd-stages/complex_candidate.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/odd-stages/complex_candidate.py",
+      "sha256": "e4faf656403720f78223934bec90c667086453d449323c85fa839d19829b4517"
+    },
+    {
+      "path": "vendor/source377/work/odd-stages/data_phases.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/odd-stages/data_phases.py",
+      "sha256": "671d6f8144c6d31e1766c6a0e144172da661a63f86b3d4d17fe2710f3ef752c4"
+    },
+    {
+      "path": "vendor/source377/work/odd-stages/global_nine.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/odd-stages/global_nine.py",
+      "sha256": "7e33e6ca88b11e28544bf7d43b02252208d4355369a14adb2aa8baa15773e42a"
+    },
+    {
+      "path": "vendor/source377/work/odd-stages/outer_fixed.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/odd-stages/outer_fixed.py",
+      "sha256": "0dc5b5a23bba5b4532cd11a290019d66d56ead611dddd3c40e2c9d0df64da198"
+    },
+    {
+      "path": "vendor/source377/work/odd-stages/verify_clifford_frames.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/odd-stages/verify_clifford_frames.py",
+      "sha256": "5d8cf110150c66f2e2df58ea4e24096f335740e2ae726a4778347d98053cfa76"
+    },
+    {
+      "path": "vendor/source377/work/pr361/code/engines/base_two_moment.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/pr361/code/engines/base_two_moment.py",
+      "sha256": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098"
+    },
+    {
+      "path": "vendor/source377/work/pr361/code/engines/moment.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/pr361/code/engines/moment.py",
+      "sha256": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482"
+    },
+    {
+      "path": "vendor/source377/work/pr361/code/engines/outer.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/pr361/code/engines/outer.py",
+      "sha256": "c1ebb52163a7219504c728a5c2b098bf1e50bf20148a2879c5a74c3cadc7c03c"
+    },
+    {
+      "path": "vendor/source377/work/pr361/complex/gcert1-e8-r783.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+      "source_path": "research/nine-stage-complex-e8/work/pr361/complex/gcert1-e8-r783.json.gz",
+      "sha256": "4b92f00fc7454b9b15e6d71a3b05062792eacca0a0ca4efee46f87827d57c8aa"
+    },
+    {
+      "path": "vendor/source381/LICENSE",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/source381/NOTICE.md",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/NOTICE.md",
+      "sha256": "56995c03a75e590e192f8f07a24a0f8a23494fbb37a1f7fc131c2e1942af6bd9"
+    },
+    {
+      "path": "vendor/source381/README.md",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/README.md",
+      "sha256": "75b5011d5633b6a291eb9d21d25913afdb4d20946a4fcfaafc2f02570868b126"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/certify_bit_g.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/certify_bit_g.py",
+      "sha256": "c9a31508126f34e7ac95d802c39e8919a872cd705314de5bf3538de1636ce8ce"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/certify_bit_k.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/certify_bit_k.py",
+      "sha256": "e68a81ef7981a90d613752003cd5cab5351e260f909b094f1668d8a4dfe480df"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/columns_h.cpp",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/columns_h.cpp",
+      "sha256": "d1297f9052be4f2496e1ff2a77e4db2c0cdbd7d460d489b4c03e50bf317238ce"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/columns_k.cpp",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/columns_k.cpp",
+      "sha256": "1c344d18fcd494eeca93e259f10cafae7705780e6592f6dcb35b34752dab9bc2"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/cost.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/cost.py",
+      "sha256": "d55d2b865d1c3d35e343e1a38c592b9172ed8e2596d1107e34d92e2a80c7d03f"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/exactnd_h.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/exactnd_h.py",
+      "sha256": "28a0d8ee29ac75b8a789705454987f07d618f135ed1f1bd45b97f18bcc4163e3"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/finite_g.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/finite_g.py",
+      "sha256": "a591d8caa9ab50a4c7ec6934c71c93fc18fd14680180b43071e8d9d704f7ac9a"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/finite_k.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/finite_k.py",
+      "sha256": "7e67dc75e63a11e38ac6d6615656c7cf6982e5a33dd404d04b967bf474cad02e"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/geometry_g.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/geometry_g.py",
+      "sha256": "b9fa3cd05f36f5fcebfdebfb4a86fb90e92ed3c1d9157c52918ee8c5b563b54f"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/geometry_k.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/geometry_k.py",
+      "sha256": "646b7e8773d9c99376cb00627f109a97319e6d72b439ff513c39035c28c3f70f"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/gram_frames.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/gram_frames.py",
+      "sha256": "223a5a07731fc315a90a3e48177796babc155c1d9985c7ae5017eff6af2a0608"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/json.hpp",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/json.hpp",
+      "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/legality_h.cpp",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/legality_h.cpp",
+      "sha256": "6c1ef2b24e57781d6951c172a1024fc4300e6fd392c9d6672079a7806ab663b3"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/tile_g.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/tile_g.py",
+      "sha256": "8140eec180e42202f2c6a9f11f5c92885e60861c38a7611dd805c524e3438138"
+    },
+    {
+      "path": "vendor/source381/code/bit/checkers/tile_k.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/checkers/tile_k.py",
+      "sha256": "64255088821f601ede2c3006f08cb97c39a4fa10dbbeb93a8a71fcfa0e1d8d77"
+    },
+    {
+      "path": "vendor/source381/code/bit/export_records.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/export_records.py",
+      "sha256": "8a5999601f917dbb492bb9ae9a344611f18cc7cedc53dc3c76496a369e530eb3"
+    },
+    {
+      "path": "vendor/source381/code/bit/independent/centres_sat.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/independent/centres_sat.py",
+      "sha256": "f69379968367544807db2f0cf14359977e56299383b3edcc4469ddea7c7ecb40"
+    },
+    {
+      "path": "vendor/source381/code/bit/independent/checkword.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/independent/checkword.py",
+      "sha256": "11bf9620ca9db16d52d9fe806b814fc9ec9a89c4d7645354d1861d96f6e805ad"
+    },
+    {
+      "path": "vendor/source381/code/bit/independent/mutate.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/independent/mutate.py",
+      "sha256": "0ff65aace5da4b57d96235bf830f8f11969322e75134d498aeb70e9753ec6b0d"
+    },
+    {
+      "path": "vendor/source381/code/bit/mutate_records.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/mutate_records.py",
+      "sha256": "b0e75d6550412a7be4017695e6b237392b611bb852ad8ff309d6682c9f166a4e"
+    },
+    {
+      "path": "vendor/source381/code/bit/producer/compile.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/producer/compile.py",
+      "sha256": "60fea6a9d6617a3f87376d3fda040642e9cb70e7c179015e03ede8d289f30357"
+    },
+    {
+      "path": "vendor/source381/code/bit/producer/compile2.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/producer/compile2.py",
+      "sha256": "0e23d4282ceb75768e82631da016aaff9818aec53c7d75a6b2a28ee1b1160dc3"
+    },
+    {
+      "path": "vendor/source381/code/bit/producer/e8lib.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/producer/e8lib.py",
+      "sha256": "4f8a6843e83bc4f7055d7337f33dbe12ce499051f46bee1b81bbf6b34c652574"
+    },
+    {
+      "path": "vendor/source381/code/bit/producer/frames.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/producer/frames.py",
+      "sha256": "ba71f77dd3e3c1c54f361c066cebe9faadbc78db46376046e7af625bf1de8c24"
+    },
+    {
+      "path": "vendor/source381/code/bit/producer/fullword.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/producer/fullword.py",
+      "sha256": "0daf87599e9e48646b985ad87351c56c1b73cfc99cdf9eca081483846ddbfa90"
+    },
+    {
+      "path": "vendor/source381/code/bit/producer/ham1.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/producer/ham1.py",
+      "sha256": "359040fb432fd392472af6b8f5dca0234dd6c2be744a791df27ba62bc5da5175"
+    },
+    {
+      "path": "vendor/source381/code/bit/producer/ham2.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/producer/ham2.py",
+      "sha256": "fdf0af785ce697bd7f80b4e75f7163735f3b599d9dc42f652f0ffdbdf18ea8bf"
+    },
+    {
+      "path": "vendor/source381/code/bit/producer/params-r865.json",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/producer/params-r865.json",
+      "sha256": "1256c54debe0a551da8e24896ab73ef0bd4a5233ff8e6fedf21a9e6301d6e6f3"
+    },
+    {
+      "path": "vendor/source381/code/bit/producer/price.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/producer/price.py",
+      "sha256": "46c858e60ba0a117bf8227b864abf55e85ebee2d56a0dce64472b706499ac405"
+    },
+    {
+      "path": "vendor/source381/code/bit/producer/search2.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/producer/search2.py",
+      "sha256": "4999c5d6bac9757e4236c45435201631eae21f644dc9543d8c0b6e3cc8360daf"
+    },
+    {
+      "path": "vendor/source381/code/bit/receipts_e8.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/receipts_e8.py",
+      "sha256": "935ea65d9c6739e868ccf1aa439bd3c246657dfc887e4a0222a8f0901a5b41a5"
+    },
+    {
+      "path": "vendor/source381/code/bit/receipts_k.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/receipts_k.py",
+      "sha256": "67f714e10a846e9cc62996342f825cd715055031e0b12591abdafd225717e195"
+    },
+    {
+      "path": "vendor/source381/code/bit/regression/certify_bit.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/regression/certify_bit.py",
+      "sha256": "fc03e8f7bf73d7d70346b87c835d44508b0581c9ff9aec708fbbd4f0121e0394"
+    },
+    {
+      "path": "vendor/source381/code/bit/regression/columns_h_pr346.cpp",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/regression/columns_h_pr346.cpp",
+      "sha256": "26f5c9be3a7f545d50be458e3d17403921b5542a7dcd2986c848664a774977a8"
+    },
+    {
+      "path": "vendor/source381/code/bit/regression/cost.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/regression/cost.py",
+      "sha256": "d55d2b865d1c3d35e343e1a38c592b9172ed8e2596d1107e34d92e2a80c7d03f"
+    },
+    {
+      "path": "vendor/source381/code/bit/regression/json.hpp",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/regression/json.hpp",
+      "sha256": "aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63"
+    },
+    {
+      "path": "vendor/source381/code/bit/regression/legality_h_pr346.cpp",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/regression/legality_h_pr346.cpp",
+      "sha256": "5661d0b91e07d95736bde4c1824f27bebaecce0a84e38403f5391ebc51a52056"
+    },
+    {
+      "path": "vendor/source381/code/bit/regression/prime_new.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/regression/prime_new.py",
+      "sha256": "7bd5cb48537621f1217d174274d42483da4e2d02feec238643c798c36b30366a"
+    },
+    {
+      "path": "vendor/source381/code/bit/regression/prime_witnesses.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/regression/prime_witnesses.py",
+      "sha256": "98cd03bc9582e7bd0ab194c191ea8eea940539e510051443ab9fd3e572a364ab"
+    },
+    {
+      "path": "vendor/source381/code/bit/regression/stage_cohort.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/regression/stage_cohort.py",
+      "sha256": "6c288f6f234b528c1a7c0a4adfb724e91e0fe6b18c8dffad96af3f973de1829a"
+    },
+    {
+      "path": "vendor/source381/code/bit/regression/tile_check.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/bit/regression/tile_check.py",
+      "sha256": "38c3f78daac118395565a65fa3543b1c349638ff2519ce7fda0dad2d788e90ae"
+    },
+    {
+      "path": "vendor/source381/code/complex/code/bridged.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/complex/code/bridged.py",
+      "sha256": "5fe7174cd3a6580a74e4c1bf8fa7b426e8673f1c285603bf3076d4e758d70731"
+    },
+    {
+      "path": "vendor/source381/code/pricing/base_two_moment.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/pricing/base_two_moment.py",
+      "sha256": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098"
+    },
+    {
+      "path": "vendor/source381/code/pricing/moment.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/pricing/moment.py",
+      "sha256": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482"
+    },
+    {
+      "path": "vendor/source381/code/pricing/outer.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/pricing/outer.py",
+      "sha256": "c1ebb52163a7219504c728a5c2b098bf1e50bf20148a2879c5a74c3cadc7c03c"
+    },
+    {
+      "path": "vendor/source381/code/pricing/prime_witnesses.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/pricing/prime_witnesses.py",
+      "sha256": "98cd03bc9582e7bd0ab194c191ea8eea940539e510051443ab9fd3e572a364ab"
+    },
+    {
+      "path": "vendor/source381/code/provenance.py",
+      "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+      "commit": "00765b291d0f924f337298eb1e2930cb0878b95e",
+      "source_path": "research/e8-nine-stage-kappa/code/provenance.py",
+      "sha256": "2d85285d54b287c8362b11311ac72999d6faa6b22a9f102c99150b26fcf35f3c"
+    },
+    {
+      "path": "vendor/pr380-verify.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "6e95ce5fb4112e5e98382886d7904aee29e31c56",
+      "source_path": "research/e8-seven-bit-nine-complex/verify.py",
+      "sha256": "18b30e79de20969ef087f85c5b74d4b0845c444ec39b5500e337cd208b7ed45b"
+    },
+    {
+      "path": "vendor/source384/LICENSE",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/source384/MANIFEST.sha256",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/MANIFEST.sha256",
+      "sha256": "81391dd38d839ee93036926b96c3d0e15a3f1d57f8490a3dfeb7b0ab764fdc9f"
+    },
+    {
+      "path": "vendor/source384/NOTICE.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/NOTICE.md",
+      "sha256": "4f2d5ada65cfddac05ae6c6b826b80e2930ad03102b03468f901ae6ab07e40ee"
+    },
+    {
+      "path": "vendor/source384/PROOF.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/PROOF.md",
+      "sha256": "acefbedcd58f631d06698235947320b7fd80e7c7fd5fdca663c0fe4f1c5bd9f4"
+    },
+    {
+      "path": "vendor/source384/README.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/README.md",
+      "sha256": "a41fae4ff443295a8ca4a66c23ad82cb1779394a55ba2f31685cba57c486e3c9"
+    },
+    {
+      "path": "vendor/source384/code/cxcheck.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/cxcheck.py",
+      "sha256": "97b461509656798d30b2610b4755ce825b1f84ae8772b9b4efd5c84d7404385b"
+    },
+    {
+      "path": "vendor/source384/code/cxfar.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/cxfar.py",
+      "sha256": "316cbf7d7c777e1fbe8a5d5fb249f0970b591330f4c2769c6827965a0e9c1adf"
+    },
+    {
+      "path": "vendor/source384/code/cxfinal.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/cxfinal.py",
+      "sha256": "7b2afb0be9591c72d31d7fbcce4e2d45bbe09daf7caa21123bca050b92cd2882"
+    },
+    {
+      "path": "vendor/source384/code/cxkernel.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/cxkernel.py",
+      "sha256": "8fc2a43e70fa8c1ce3f3025c9568b562accc5cf25b2ed53d7c0a1cbf954a0599"
+    },
+    {
+      "path": "vendor/source384/code/cxop.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/cxop.py",
+      "sha256": "2655e1e9ec94fb39512329ec86d261959ccd7c635c7535238f254a82861c2db1"
+    },
+    {
+      "path": "vendor/source384/code/cxpiece.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/cxpiece.py",
+      "sha256": "1c78b3025203c802c3aab9cc4113c48a7357d582f5bc75c47bde7953787f2e82"
+    },
+    {
+      "path": "vendor/source384/code/cxretime.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/cxretime.py",
+      "sha256": "e7e06595c12fbafb707a6846719c54b85e0c2bb105927e7e7ee20f028a37438b"
+    },
+    {
+      "path": "vendor/source384/code/cxsplit.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/cxsplit.py",
+      "sha256": "9f6c0718f371120b015733983b3c91285a3825d306b557f0b9013059c6c88b0e"
+    },
+    {
+      "path": "vendor/source384/code/e8core.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/e8core.py",
+      "sha256": "1cb286196c1530d06f50f0997febc5993b388f33464e295611b920ba30a24eeb"
+    },
+    {
+      "path": "vendor/source384/code/engines/base_two_moment.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/engines/base_two_moment.py",
+      "sha256": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098"
+    },
+    {
+      "path": "vendor/source384/code/engines/moment.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/engines/moment.py",
+      "sha256": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482"
+    },
+    {
+      "path": "vendor/source384/code/engines/outer.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/engines/outer.py",
+      "sha256": "c1ebb52163a7219504c728a5c2b098bf1e50bf20148a2879c5a74c3cadc7c03c"
+    },
+    {
+      "path": "vendor/source384/code/far9.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/far9.py",
+      "sha256": "ce5c8d4510c916f4b8ce122ddd9a45bb735d45dcbc1d2334cbf2e8793d6513aa"
+    },
+    {
+      "path": "vendor/source384/code/layout_bk.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/layout_bk.py",
+      "sha256": "e650d16538db8d80495fda5109cdfa0775e1d5f3b56b0aa39e5c1efc660877e7"
+    },
+    {
+      "path": "vendor/source384/code/nine.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/code/nine.py",
+      "sha256": "6a63cc4150a630ad5b3edc1df5e9ed4c6381cae887cca15dca192b793c3c13d4"
+    },
+    {
+      "path": "vendor/source384/complex/LICENSE-wht-power-saving-lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/complex/LICENSE-wht-power-saving-lean",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "vendor/source384/complex/NOTICE-wht-power-saving-lean",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/complex/NOTICE-wht-power-saving-lean",
+      "sha256": "557c9ad4660eebd14a00583736c4d12d2c45f3fc9bc148845f9f3efec72c9434"
+    },
+    {
+      "path": "vendor/source384/complex/gcert1-e8-r783.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/complex/gcert1-e8-r783.json.gz",
+      "sha256": "4b92f00fc7454b9b15e6d71a3b05062792eacca0a0ca4efee46f87827d57c8aa"
+    },
+    {
+      "path": "vendor/source384/complex/gx/gx.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/complex/gx/gx.py",
+      "sha256": "6f3dc8bb639933227a8dae181ec4a542e85c7276be9c9e330f49518e7b630b95"
+    },
+    {
+      "path": "vendor/source384/complex/gx/gxcore.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/complex/gx/gxcore.py",
+      "sha256": "eb972c06fe8c322db2d9a8d9a7d05596e8f40c4ca8e5f42eb6df3c7361b5d517"
+    },
+    {
+      "path": "vendor/source384/data/bit/bitE8-kernel.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/data/bit/bitE8-kernel.json.gz",
+      "sha256": "947f6e1266f009c6c54647e0b348b1e2076bb584b54fae19016bc8086741876a"
+    },
+    {
+      "path": "vendor/source384/data/gcert1-e8-r783-far.json.gz",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/data/gcert1-e8-r783-far.json.gz",
+      "sha256": "f2664ee7bcdfb55893abe9f1be8ee6a394a602e8262e611de2a0328bbd508aa7"
+    },
+    {
+      "path": "vendor/source384/data/pr377/GLOBAL-REVIEW.json",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/data/pr377/GLOBAL-REVIEW.json",
+      "sha256": "5ab0d754c01500879dd6c2a70322d08016e2917b3f5f84655923d383729411ad"
+    },
+    {
+      "path": "vendor/source384/verify.sh",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "fd81a16a1e4e82acfb4d45752cba17450644fde6",
+      "source_path": "research/e8-far-nine-complex/verify.sh",
+      "sha256": "ea4fc79ca6149a35279f6a71f7d3510fd372f7e17f0d64de847261e0d6c818b4"
+    },
+    {
+      "path": "vendor/pr385-verify.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "59c760fde8ee6f374d6860a34d376b108553c79a",
+      "source_path": "research/e8-retimed-nine-composition/verify.py",
+      "sha256": "b5b573d3a563d523584498ea7e928a69cf97bf93a8f886fbb3ce80bbb4cca984"
+    }
+  ]
+}

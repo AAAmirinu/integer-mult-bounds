@@ -1,0 +1,731 @@
+[
+  {
+    "saving": 0.0007811438241502321,
+    "R": 1113,
+    "deficit": 120,
+    "entropy": 153459.02008877645,
+    "local_histogram": {
+      "1": 2204,
+      "2": 984,
+      "3": 540,
+      "4": 390,
+      "5": 392,
+      "6": 60,
+      "7": 120,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 2004,
+      "B": 120,
+      "C": 2004
+    },
+    "columns": 1353,
+    "method": "low_weighted",
+    "changes": 0,
+    "elapsed_seconds": 1.7195853999983228,
+    "id": 1,
+    "idea": "Choose E8 low-read chains by concave rank cost instead of chain length",
+    "trial_seconds": 3.539936299999681,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0008254327067578893,
+    "R": 1007,
+    "deficit": 120,
+    "entropy": 145214.66898713855,
+    "local_histogram": {
+      "1": 2084,
+      "2": 984,
+      "3": 540,
+      "4": 418,
+      "5": 392,
+      "6": 60,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1898,
+      "B": 240,
+      "C": 1898
+    },
+    "columns": 1247,
+    "method": "low4",
+    "changes": 0,
+    "elapsed_seconds": 1.430661800000962,
+    "id": 2,
+    "idea": "Restrict E8 low reads to the D4 rank-four layer",
+    "trial_seconds": 3.744374300000345,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0008711486943283053,
+    "R": 923,
+    "deficit": 120,
+    "entropy": 137584.10512114913,
+    "local_histogram": {
+      "1": 2084,
+      "2": 984,
+      "3": 456,
+      "4": 418,
+      "5": 308,
+      "6": 60,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1814,
+      "B": 352,
+      "C": 1814
+    },
+    "columns": 1163,
+    "method": "low5",
+    "changes": 0,
+    "elapsed_seconds": 1.279232700000648,
+    "id": 3,
+    "idea": "Suppress rank-six reads to merge the final E8 target climb",
+    "trial_seconds": 3.052898100000675,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0008531520021009542,
+    "R": 949,
+    "deficit": 120,
+    "entropy": 140490.10438103453,
+    "local_histogram": {
+      "1": 1964,
+      "2": 1166,
+      "3": 420,
+      "4": 418,
+      "5": 392,
+      "6": 2,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1840,
+      "B": 360,
+      "C": 1840
+    },
+    "columns": 1189,
+    "method": "no5",
+    "changes": 0,
+    "elapsed_seconds": 1.399590500001068,
+    "id": 4,
+    "idea": "Suppress rank-five reads while keeping rank-four and rank-six deliveries",
+    "trial_seconds": 3.1069138000002567,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0007811438241502321,
+    "R": 1113,
+    "deficit": 120,
+    "entropy": 153459.02008877645,
+    "local_histogram": {
+      "1": 2204,
+      "2": 984,
+      "3": 540,
+      "4": 390,
+      "5": 392,
+      "6": 60,
+      "7": 120,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 2004,
+      "B": 120,
+      "C": 2004
+    },
+    "columns": 1353,
+    "method": "no_low",
+    "changes": 0,
+    "elapsed_seconds": 1.360957299999427,
+    "id": 5,
+    "idea": "Deliver every E8 side sum at its target cap",
+    "trial_seconds": 3.2026485000005778,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.000904072821093671,
+    "R": 865,
+    "deficit": 120,
+    "entropy": 132566.52155453697,
+    "local_histogram": {
+      "1": 2076,
+      "2": 942,
+      "3": 448,
+      "4": 418,
+      "5": 308,
+      "6": 2,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1756,
+      "B": 472,
+      "C": 1756
+    },
+    "columns": 1105,
+    "method": "cover_count",
+    "changes": 0,
+    "elapsed_seconds": 1.266462199999296,
+    "id": 6,
+    "idea": "Replace greedy E8 carrier chains by exact minimum path covers",
+    "trial_seconds": 2.958640299999388,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.000904072821093671,
+    "R": 865,
+    "deficit": 120,
+    "entropy": 132566.52155453697,
+    "local_histogram": {
+      "1": 2076,
+      "2": 942,
+      "3": 448,
+      "4": 418,
+      "5": 308,
+      "6": 2,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1756,
+      "B": 472,
+      "C": 1756
+    },
+    "columns": 1105,
+    "method": "cover_entropy",
+    "changes": 0,
+    "elapsed_seconds": 1.489306299999953,
+    "id": 7,
+    "idea": "Weight the E8 carrier path cover by the entropy derivative of rank cost",
+    "trial_seconds": 3.718721799999912,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.000904072821093671,
+    "R": 865,
+    "deficit": 120,
+    "entropy": 132566.52155453697,
+    "local_histogram": {
+      "1": 2076,
+      "2": 942,
+      "3": 448,
+      "4": 418,
+      "5": 308,
+      "6": 2,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1756,
+      "B": 472,
+      "C": 1756
+    },
+    "columns": 1105,
+    "method": "cover_exact",
+    "changes": 0,
+    "elapsed_seconds": 1.3963738000002195,
+    "id": 8,
+    "idea": "Weight the E8 carrier path cover by the current saving exponent",
+    "trial_seconds": 3.402615400000286,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.000904072821093671,
+    "R": 865,
+    "deficit": 120,
+    "entropy": 132566.52155453697,
+    "local_histogram": {
+      "1": 2076,
+      "2": 942,
+      "3": 448,
+      "4": 418,
+      "5": 308,
+      "6": 2,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1756,
+      "B": 472,
+      "C": 1756
+    },
+    "columns": 1105,
+    "method": "source_deep",
+    "changes": 0,
+    "elapsed_seconds": 1.6109467999995104,
+    "id": 9,
+    "idea": "Assign original E8 sources to the deepest eligible carrier chain",
+    "trial_seconds": 4.065571900000577,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0008423405737634782,
+    "R": 977,
+    "deficit": 120,
+    "entropy": 142296.06485013402,
+    "local_histogram": {
+      "1": 2076,
+      "2": 1054,
+      "3": 448,
+      "4": 418,
+      "5": 308,
+      "6": 114,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1756,
+      "B": 472,
+      "C": 1756
+    },
+    "columns": 1217,
+    "method": "source_cost",
+    "changes": 0,
+    "elapsed_seconds": 1.318340799998623,
+    "id": 10,
+    "idea": "Assign original E8 sources to the cheapest complete rank path",
+    "trial_seconds": 4.290143199999875,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0008391400199702636,
+    "R": 984,
+    "deficit": 120,
+    "entropy": 142839.5480299952,
+    "local_histogram": {
+      "1": 2084,
+      "2": 1054,
+      "3": 448,
+      "4": 416,
+      "5": 308,
+      "6": 114,
+      "7": 8,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 625,
+      "B": 1611,
+      "C": 1764
+    },
+    "columns": 1224,
+    "method": "phase_minimal",
+    "changes": 0,
+    "elapsed_seconds": 1.488687299999583,
+    "id": 11,
+    "idea": "Defer pure-helper E8 rules until after copied-total scatter",
+    "trial_seconds": 3.4840537999989465,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0008391400199702636,
+    "R": 984,
+    "deficit": 120,
+    "entropy": 142839.5480299952,
+    "local_histogram": {
+      "1": 2084,
+      "2": 1054,
+      "3": 448,
+      "4": 416,
+      "5": 308,
+      "6": 114,
+      "7": 8,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 989,
+      "B": 1247,
+      "C": 1764
+    },
+    "columns": 1224,
+    "method": "phase3",
+    "changes": 0,
+    "elapsed_seconds": 1.3814738999990368,
+    "id": 12,
+    "idea": "Cut the E8 hierarchy at rank three and rebuild high nodes after scatter",
+    "trial_seconds": 3.3583782999994582,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0008423405737634782,
+    "R": 977,
+    "deficit": 120,
+    "entropy": 142296.06485013402,
+    "local_histogram": {
+      "1": 2076,
+      "2": 1054,
+      "3": 448,
+      "4": 418,
+      "5": 308,
+      "6": 114,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1072,
+      "B": 1156,
+      "C": 1756
+    },
+    "columns": 1217,
+    "method": "phase4",
+    "changes": 0,
+    "elapsed_seconds": 1.4398187000006146,
+    "id": 13,
+    "idea": "Cut the E8 hierarchy at rank four and rebuild high nodes after scatter",
+    "trial_seconds": 4.132395500000712,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0008423405737634782,
+    "R": 977,
+    "deficit": 120,
+    "entropy": 142296.06485013402,
+    "local_histogram": {
+      "1": 2076,
+      "2": 1054,
+      "3": 448,
+      "4": 418,
+      "5": 308,
+      "6": 114,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1380,
+      "B": 848,
+      "C": 1756
+    },
+    "columns": 1217,
+    "method": "phase5",
+    "changes": 0,
+    "elapsed_seconds": 1.4892548000007082,
+    "id": 14,
+    "idea": "Cut the E8 hierarchy at rank five and rebuild high nodes after scatter",
+    "trial_seconds": 4.112980199999583,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0004392186419250321,
+    "R": 2160,
+    "deficit": 120,
+    "entropy": 273043.533959669,
+    "local_histogram": {
+      "1": 3936,
+      "2": 2763,
+      "3": 759,
+      "4": 706,
+      "5": 301,
+      "6": 470,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 4086,
+      "B": 472,
+      "C": 4086
+    },
+    "columns": 2400,
+    "method": "tree_balanced",
+    "changes": 0,
+    "elapsed_seconds": 4.615432399999918,
+    "id": 15,
+    "idea": "Reassociate E8 XOR nodes into balanced support trees",
+    "trial_seconds": 6.516596400000708,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0004611611055376774,
+    "R": 2048,
+    "deficit": 120,
+    "entropy": 260043.5333331686,
+    "local_histogram": {
+      "1": 4367,
+      "2": 2055,
+      "3": 719,
+      "4": 633,
+      "5": 394,
+      "6": 476,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 3965,
+      "B": 472,
+      "C": 3965
+    },
+    "columns": 2288,
+    "method": "tree_frame",
+    "changes": 0,
+    "elapsed_seconds": 41.355555500000264,
+    "id": 16,
+    "idea": "Reassociate E8 XOR nodes by minimum rational frame rank",
+    "trial_seconds": 43.62265499999921,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0008512791405378971,
+    "R": 950,
+    "deficit": 120,
+    "entropy": 140798.17771578944,
+    "local_histogram": {
+      "1": 2384,
+      "2": 858,
+      "3": 448,
+      "4": 364,
+      "5": 392,
+      "6": 58,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1924,
+      "B": 472,
+      "C": 1924
+    },
+    "columns": 1190,
+    "method": "tree_reuse",
+    "changes": 0,
+    "elapsed_seconds": 1.6379703000002337,
+    "id": 17,
+    "idea": "Reuse the largest existing E8 partial sum inside each target support",
+    "trial_seconds": 4.496950200000356,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.000904072821093671,
+    "R": 865,
+    "deficit": 120,
+    "entropy": 132566.52155453697,
+    "local_histogram": {
+      "1": 2076,
+      "2": 942,
+      "3": 448,
+      "4": 418,
+      "5": 308,
+      "6": 2,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1756,
+      "B": 472,
+      "C": 1756
+    },
+    "columns": 1105,
+    "method": "retime_lower",
+    "changes": 0,
+    "elapsed_seconds": 2.4513297000012244,
+    "id": 18,
+    "idea": "Lower every E8 gate to the join of actual predecessor frames",
+    "trial_seconds": 4.808825400001297,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0009052507515450725,
+    "R": 865,
+    "deficit": 120,
+    "entropy": 132393.96562503182,
+    "local_histogram": {
+      "1": 2098,
+      "2": 874,
+      "3": 500,
+      "4": 390,
+      "5": 322,
+      "6": 2,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1756,
+      "B": 472,
+      "C": 1756
+    },
+    "columns": 1105,
+    "method": "retime_upper",
+    "changes": 44,
+    "elapsed_seconds": 2.4337694000005285,
+    "id": 19,
+    "idea": "Raise every E8 gate to the root-spanned meet of successor frames",
+    "trial_seconds": 5.412368100000094,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0009052507515450725,
+    "R": 865,
+    "deficit": 120,
+    "entropy": 132393.96562503182,
+    "local_histogram": {
+      "1": 2098,
+      "2": 874,
+      "3": 500,
+      "4": 390,
+      "5": 322,
+      "6": 2,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1756,
+      "B": 472,
+      "C": 1756
+    },
+    "columns": 1105,
+    "method": "retime_both",
+    "changes": 44,
+    "elapsed_seconds": 2.4332325999985187,
+    "id": 20,
+    "idea": "Alternate legal extremal E8 gate frames under concave rank-cost scoring",
+    "trial_seconds": 4.8493169999983365,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0009045118471838198,
+    "R": 865,
+    "deficit": 120,
+    "entropy": 132502.16829725105,
+    "local_histogram": {
+      "1": 2082,
+      "2": 918,
+      "3": 462,
+      "4": 418,
+      "5": 308,
+      "6": 2,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1756,
+      "B": 472,
+      "C": 1756
+    },
+    "columns": 1105,
+    "method": "retime_components",
+    "changes": 4,
+    "elapsed_seconds": 1.7014276999998401,
+    "id": 21,
+    "idea": "Retime equal-frame E8 gate components together to escape single-gate traps",
+    "trial_seconds": 3.732516800000667,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.000904353848451611,
+    "R": 865,
+    "deficit": 120,
+    "entropy": 132525.28838032248,
+    "local_histogram": {
+      "1": 2085,
+      "2": 924,
+      "3": 471,
+      "4": 390,
+      "5": 322,
+      "6": 2,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1756,
+      "B": 472,
+      "C": 1756
+    },
+    "columns": 1105,
+    "method": "commute_forward",
+    "changes": 23,
+    "elapsed_seconds": 25.749395299999378,
+    "id": 22,
+    "idea": "Move commuting E8 additions toward each register's next use",
+    "trial_seconds": 27.584107599999697,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.0009044939994231059,
+    "R": 865,
+    "deficit": 120,
+    "entropy": 132504.78453796988,
+    "local_histogram": {
+      "1": 2081,
+      "2": 920,
+      "3": 461,
+      "4": 418,
+      "5": 308,
+      "6": 2,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1756,
+      "B": 472,
+      "C": 1756
+    },
+    "columns": 1105,
+    "method": "commute_backward",
+    "changes": 9,
+    "elapsed_seconds": 23.459094800000457,
+    "id": 23,
+    "idea": "Move commuting E8 additions toward each register's preceding use",
+    "trial_seconds": 25.262529200001154,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.000904072821093671,
+    "R": 865,
+    "deficit": 120,
+    "entropy": 132566.52155453697,
+    "local_histogram": {
+      "1": 2076,
+      "2": 942,
+      "3": 448,
+      "4": 418,
+      "5": 308,
+      "6": 2,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1756,
+      "B": 472,
+      "C": 1756
+    },
+    "columns": 1105,
+    "method": "early_cleanup",
+    "changes": 0,
+    "elapsed_seconds": 12.630890300000829,
+    "id": 24,
+    "idea": "Attempt early cleanup of dead E8 helpers by commuting cleanup gates",
+    "trial_seconds": 14.570851499998753,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  },
+  {
+    "saving": 0.000904072821093671,
+    "R": 865,
+    "deficit": 120,
+    "entropy": 132566.52155453697,
+    "local_histogram": {
+      "1": 2076,
+      "2": 942,
+      "3": 448,
+      "4": 418,
+      "5": 308,
+      "6": 2,
+      "8": 9
+    },
+    "gates": {
+      "D": 120,
+      "A": 1756,
+      "B": 472,
+      "C": 1756
+    },
+    "columns": 1105,
+    "method": "decoder_basis",
+    "changes": 2,
+    "elapsed_seconds": 2.1072518000000855,
+    "id": 25,
+    "idea": "Change the nine-total E8 decoder basis to reduce scatter additions",
+    "trial_seconds": 4.0359333000014885,
+    "scope": "Discovery: floating-point rank cost plus exact local F2 and frame checks; no outer bound certification."
+  }
+]

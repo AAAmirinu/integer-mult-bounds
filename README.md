@@ -3,6 +3,39 @@
 **Community research maintained by Douglas Colkitt — conditional on the original
 OpenAI #109 framework.**
 
+## New conditional candidate: coupled E8 frames and refined assembly
+
+The October 11 candidate gives
+**κ = 49931732854659861010149 / 50000000000000000000000000
+= 0.00099863465709319722020298**, with maintainer review pending.
+It improves the public [#384](https://github.com/CrocSwap/integer-mult-bounds/pull/384)
+witness by approximately `9.6119422020298e-13`.
+
+ai-nanachi's connected frame search changes 98 scalar-gate frames after
+applecrusher's [#376](https://github.com/CrocSwap/integer-mult-bounds/pull/376)
+helper reuse. The composition uses DaysSky's unsplit degree-two bit geometry
+from [#381](https://github.com/CrocSwap/integer-mult-bounds/pull/381) and
+Zhihao Chen's complete nine-stage complex supplier from
+[#377](https://github.com/CrocSwap/integer-mult-bounds/pull/377), with Chafik
+Boukhalfa's far-retimed unit from #384. The new unit's physical, Clifford and
+finite checks are fully rerun, following Rohan Arun's #385 derivation. The headline
+κ improvement comes from applying #376's exact assembly refinement to this
+new complex supplier; the separate bit improvement is recorded independently
+because the composition is complex-bound. Both complete supplier suites,
+physical columns, mutation controls, finite invoices and the 47 assembly
+inequalities are freshly replayed. General all-size interfaces remain
+conditional; finite replay is not a formal proof of the complete theorem.
+
+[Candidate record](certificates/candidates/e8-coupled-bit-retiming.json) ·
+[Proof and scope](research/e8-coupled-bit-retiming/PROOF.md) ·
+[Sources and attribution](research/e8-coupled-bit-retiming/NOTICE.md) ·
+[25-trial exploration](research/e8-coupled-bit-retiming/campaign/REPORT.md)
+
+```sh
+python3 -m pip install -r research/e8-coupled-bit-retiming/requirements.txt
+make e8-coupled-verify
+```
+
 ## Current reviewed result: gen4 circuits and common-delivery frames
 
 The composition of **DreamingOfClouds' [#276](https://github.com/CrocSwap/integer-mult-bounds/pull/276)**

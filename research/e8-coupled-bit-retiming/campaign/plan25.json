@@ -1,0 +1,141 @@
+{
+  "date": "2026-10-11",
+  "timezone": "Asia/Tokyo",
+  "deadlines": {
+    "prepare": "14:30",
+    "screen25": "15:00",
+    "explore5": "15:30",
+    "select1": "16:00",
+    "publish": "16:30"
+  },
+  "scope": "New bounded experiments on the pinned PR370 E8 bit word. Novelty is checked against public PR descriptions and the PR368 campaign; worldwide priority is not asserted.",
+  "baseline": "b7fe9cdf2da009c947ff6b334c562bc190b30373",
+  "ideas": [
+    {
+      "id": 1,
+      "idea": "Choose E8 low-read chains by concave rank cost instead of chain length",
+      "method": "low_weighted"
+    },
+    {
+      "id": 2,
+      "idea": "Restrict E8 low reads to the D4 rank-four layer",
+      "method": "low4"
+    },
+    {
+      "id": 3,
+      "idea": "Suppress rank-six reads to merge the final E8 target climb",
+      "method": "low5"
+    },
+    {
+      "id": 4,
+      "idea": "Suppress rank-five reads while keeping rank-four and rank-six deliveries",
+      "method": "no5"
+    },
+    {
+      "id": 5,
+      "idea": "Deliver every E8 side sum at its target cap",
+      "method": "no_low"
+    },
+    {
+      "id": 6,
+      "idea": "Replace greedy E8 carrier chains by exact minimum path covers",
+      "method": "cover_count"
+    },
+    {
+      "id": 7,
+      "idea": "Weight the E8 carrier path cover by the entropy derivative of rank cost",
+      "method": "cover_entropy"
+    },
+    {
+      "id": 8,
+      "idea": "Weight the E8 carrier path cover by the current saving exponent",
+      "method": "cover_exact"
+    },
+    {
+      "id": 9,
+      "idea": "Assign original E8 sources to the deepest eligible carrier chain",
+      "method": "source_deep"
+    },
+    {
+      "id": 10,
+      "idea": "Assign original E8 sources to the cheapest complete rank path",
+      "method": "source_cost"
+    },
+    {
+      "id": 11,
+      "idea": "Defer pure-helper E8 rules until after copied-total scatter",
+      "method": "phase_minimal"
+    },
+    {
+      "id": 12,
+      "idea": "Cut the E8 hierarchy at rank three and rebuild high nodes after scatter",
+      "method": "phase3"
+    },
+    {
+      "id": 13,
+      "idea": "Cut the E8 hierarchy at rank four and rebuild high nodes after scatter",
+      "method": "phase4"
+    },
+    {
+      "id": 14,
+      "idea": "Cut the E8 hierarchy at rank five and rebuild high nodes after scatter",
+      "method": "phase5"
+    },
+    {
+      "id": 15,
+      "idea": "Reassociate E8 XOR nodes into balanced support trees",
+      "method": "tree_balanced"
+    },
+    {
+      "id": 16,
+      "idea": "Reassociate E8 XOR nodes by minimum rational frame rank",
+      "method": "tree_frame"
+    },
+    {
+      "id": 17,
+      "idea": "Reuse the largest existing E8 partial sum inside each target support",
+      "method": "tree_reuse"
+    },
+    {
+      "id": 18,
+      "idea": "Lower every E8 gate to the join of actual predecessor frames",
+      "method": "retime_lower"
+    },
+    {
+      "id": 19,
+      "idea": "Raise every E8 gate to the root-spanned meet of successor frames",
+      "method": "retime_upper"
+    },
+    {
+      "id": 20,
+      "idea": "Alternate legal extremal E8 gate frames under concave rank-cost scoring",
+      "method": "retime_both"
+    },
+    {
+      "id": 21,
+      "idea": "Retime equal-frame E8 gate components together to escape single-gate traps",
+      "method": "retime_components"
+    },
+    {
+      "id": 22,
+      "idea": "Move commuting E8 additions toward each register's next use",
+      "method": "commute_forward"
+    },
+    {
+      "id": 23,
+      "idea": "Move commuting E8 additions toward each register's preceding use",
+      "method": "commute_backward"
+    },
+    {
+      "id": 24,
+      "idea": "Attempt early cleanup of dead E8 helpers by commuting cleanup gates",
+      "method": "early_cleanup",
+      "limitation": "Bounded commuting prototype only; storage reuse was not implemented."
+    },
+    {
+      "id": 25,
+      "idea": "Change the nine-total E8 decoder basis to reduce scatter additions",
+      "method": "decoder_basis"
+    }
+  ]
+}
