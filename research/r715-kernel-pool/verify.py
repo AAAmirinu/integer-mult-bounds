@@ -13,7 +13,10 @@ def integrity():
  actual=inv(cx);actual.pop('MANIFEST.json');assert actual==read(cx/'MANIFEST.json')
  for name,p in read(cx/'SOURCE.json')['packages'].items():assert inv(research/name)==p['files'],name
  assert sha(research/'complex-kernel-mixed151/code/parent_runner.py')==source['metadata_runner_sha256']
+ assert sha(research/'complex-kernel-mixed151/code/bash-env.sh')==source['bash_env_sha256']
 integrity();out.mkdir();steps=[];env=dict(os.environ,PYTHONDONTWRITEBYTECODE='1',PYTHONINTMAXSTRDIGITS='0',PYTHON=sys.executable,E8_REPLAY_PHASES='1',PYTHONPATH=os.pathsep.join([str(research/'e8-r740-replica32/code'),str(research/'idle-axis-hosting')]));env.pop('PYTHONOPTIMIZE',None)
+if ' ' in str(research) or ' ' in str(out):env['BASH_ENV']=str(research/'complex-kernel-mixed151/code/bash-env.sh')
+if 'BOOST_INCLUDE' not in env and Path('/opt/homebrew/include/boost').exists():env['BOOST_INCLUDE']='/opt/homebrew/include'
 def run(name,cmd):
  print('RUN',name,flush=True);log=out/(name+'.log');start=time.monotonic()
  with log.open('w') as f:q=subprocess.run(list(map(str,cmd)),env=env,stdout=f,stderr=subprocess.STDOUT)
