@@ -25,3 +25,6 @@ research/e8-prefix-bootstrap/** -text -whitespace
 
 # Preserve manifest-pinned PR398 supplier bytes.
 research/e8-r781-signed-source/** -text
+
+# Preserve manifest-pinned PR401 supplier bytes.
+research/e8-response-subspaces/** -text
