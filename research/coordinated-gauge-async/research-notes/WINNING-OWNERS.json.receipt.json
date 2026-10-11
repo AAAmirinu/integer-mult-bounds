@@ -1,0 +1,10 @@
+{
+  "status": "PASS_CONSTRUCTIVE_ASYNC_WHOLE_OWNER_MATCHING",
+  "source_sha256": "bfa1ac46493e39c23007c3c2a4efbdc719de1f53b37ad3a4d9a3ecc112153ebe",
+  "roles_sha256": "27dde4588521328868af5cbd28216869d3fefb03c1ca8248e2e12cacd30c3c29",
+  "roles": 40320,
+  "distinct_calls": 72,
+  "per_call_helpers": 560,
+  "physical_data_families": 7680,
+  "window_groups": 144
+}

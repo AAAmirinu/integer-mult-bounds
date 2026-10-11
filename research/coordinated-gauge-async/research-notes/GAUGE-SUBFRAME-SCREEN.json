@@ -1,0 +1,2514 @@
+{
+  "scope": "Exact frame-compatible single-gauge subspace deletion, scalar checked by construction; no paid hosting claim.",
+  "legal": 114,
+  "rejected": [
+    {
+      "helper": 190,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 80)"
+    },
+    {
+      "helper": 190,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 80)"
+    },
+    {
+      "helper": 191,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 80)"
+    },
+    {
+      "helper": 191,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 80)"
+    },
+    {
+      "helper": 246,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 96)"
+    },
+    {
+      "helper": 246,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 96)"
+    },
+    {
+      "helper": 247,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 96)"
+    },
+    {
+      "helper": 247,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 96)"
+    },
+    {
+      "helper": 274,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 96)"
+    },
+    {
+      "helper": 274,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 96)"
+    },
+    {
+      "helper": 275,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 96)"
+    },
+    {
+      "helper": 275,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 96)"
+    },
+    {
+      "helper": 536,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 49)"
+    },
+    {
+      "helper": 536,
+      "entrance": [
+        408
+      ],
+      "reason": "('non-nested gauges at target', 49)"
+    },
+    {
+      "helper": 537,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 49)"
+    },
+    {
+      "helper": 537,
+      "entrance": [
+        408
+      ],
+      "reason": "('non-nested gauges at target', 49)"
+    },
+    {
+      "helper": 538,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 49)"
+    },
+    {
+      "helper": 538,
+      "entrance": [
+        408
+      ],
+      "reason": "('non-nested gauges at target', 49)"
+    },
+    {
+      "helper": 539,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 49)"
+    },
+    {
+      "helper": 539,
+      "entrance": [
+        408
+      ],
+      "reason": "('non-nested gauges at target', 49)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        315
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        325
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        349
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        384
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        486
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        102,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        163,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        163,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        163,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        187,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        187,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        197,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        315,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        315,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        315,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        315,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        315,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        315,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        325,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        325,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        325,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        325,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        325,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        349,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        349,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        349,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        349,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        384,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        384,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        384,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        408,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        486,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        163,
+        102,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291,
+        102,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291,
+        163,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291,
+        163,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291,
+        163,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291,
+        187,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        291,
+        197,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        315,
+        163,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        315,
+        187,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        315,
+        187,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        325,
+        163,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 540,
+      "entrance": [
+        325,
+        197,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        315
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        325
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        349
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        384
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        486
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        102,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        163,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        163,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        163,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        187,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        187,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        197,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        315,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        315,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        315,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        315,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        315,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        315,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        325,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        325,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        325,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        325,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        325,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        349,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        349,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        349,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        349,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        384,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        384,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        384,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        408,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        486,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        163,
+        102,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291,
+        102,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291,
+        163,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291,
+        163,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291,
+        163,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291,
+        187,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        291,
+        197,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        315,
+        163,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        315,
+        187,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        315,
+        187,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        325,
+        163,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 541,
+      "entrance": [
+        325,
+        197,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        315
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        325
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        349
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        384
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        486
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        102,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        163,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        163,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        163,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        187,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        187,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        197,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        315,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        315,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        315,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        315,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        315,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        315,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        325,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        325,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        325,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        325,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        325,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        349,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        349,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        349,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        349,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        384,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        384,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        384,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        408,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        486,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        163,
+        102,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291,
+        102,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291,
+        163,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291,
+        163,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291,
+        163,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291,
+        187,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        291,
+        197,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        315,
+        163,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        315,
+        187,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        315,
+        187,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        325,
+        163,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 542,
+      "entrance": [
+        325,
+        197,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        315
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        325
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        349
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        384
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        486
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        102,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        163,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        163,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        163,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        187,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        187,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        197,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        315,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        315,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        315,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        315,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        315,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        315,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        325,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        325,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        325,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        325,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        325,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        349,
+        163
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        349,
+        187
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        349,
+        197
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        349,
+        221
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        384,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        384,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        384,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        408,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        486,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        163,
+        102,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291,
+        102,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291,
+        163,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291,
+        163,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291,
+        163,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291,
+        187,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        291,
+        197,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        315,
+        163,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        315,
+        187,
+        102
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        315,
+        187,
+        126
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        325,
+        163,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 543,
+      "entrance": [
+        325,
+        197,
+        24
+      ],
+      "reason": "('non-nested gauges at target', 81)"
+    },
+    {
+      "helper": 548,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 97)"
+    },
+    {
+      "helper": 548,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 97)"
+    },
+    {
+      "helper": 549,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 97)"
+    },
+    {
+      "helper": 549,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 97)"
+    },
+    {
+      "helper": 550,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 97)"
+    },
+    {
+      "helper": 550,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 97)"
+    },
+    {
+      "helper": 551,
+      "entrance": [
+        102
+      ],
+      "reason": "('non-nested gauges at target', 97)"
+    },
+    {
+      "helper": 551,
+      "entrance": [
+        510
+      ],
+      "reason": "('non-nested gauges at target', 97)"
+    }
+  ],
+  "unique": [
+    {
+      "helper": 134,
+      "old": [
+        510
+      ],
+      "new": [],
+      "profile": {
+        "1": 2384,
+        "2": 263,
+        "3": 531,
+        "4": 84,
+        "6": 93,
+        "5": 269,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 439,
+        "8": 103,
+        "7": 14,
+        "5": 4
+      },
+      "delta": {
+        "1": -1,
+        "2": -1,
+        "3": 1,
+        "5": -1,
+        "6": 1
+      },
+      "width_delta": {
+        "8": -1,
+        "9": 1
+      },
+      "local_entropy_gain": 4.612909758082267,
+      "tag": "gauge-134-0-0"
+    },
+    {
+      "helper": 136,
+      "old": [
+        510
+      ],
+      "new": [],
+      "profile": {
+        "1": 2385,
+        "2": 263,
+        "3": 531,
+        "4": 84,
+        "6": 92,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 439,
+        "8": 103,
+        "7": 14,
+        "5": 4
+      },
+      "delta": {
+        "2": -1,
+        "3": 1
+      },
+      "width_delta": {
+        "8": -1,
+        "9": 1
+      },
+      "local_entropy_gain": 1.9095425048844386,
+      "tag": "gauge-136-0-1"
+    },
+    {
+      "helper": 190,
+      "old": [
+        408,
+        102
+      ],
+      "new": [],
+      "profile": {
+        "1": 2384,
+        "2": 264,
+        "3": 531,
+        "4": 84,
+        "6": 92,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 439,
+        "8": 104,
+        "7": 13,
+        "5": 4
+      },
+      "delta": {
+        "1": -1,
+        "3": 1
+      },
+      "width_delta": {
+        "7": -1,
+        "9": 1
+      },
+      "local_entropy_gain": 3.295836866004329,
+      "tag": "gauge-190-0-2"
+    },
+    {
+      "helper": 190,
+      "old": [
+        408,
+        102
+      ],
+      "new": [
+        408
+      ],
+      "profile": {
+        "1": 2384,
+        "2": 265,
+        "3": 530,
+        "4": 84,
+        "6": 92,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 438,
+        "8": 105,
+        "7": 13,
+        "5": 4
+      },
+      "delta": {
+        "1": -1,
+        "2": 1
+      },
+      "width_delta": {
+        "7": -1,
+        "8": 1
+      },
+      "local_entropy_gain": 1.3862943611198906,
+      "tag": "gauge-190-1-3"
+    },
+    {
+      "helper": 532,
+      "old": [
+        510
+      ],
+      "new": [],
+      "profile": {
+        "1": 2385,
+        "2": 264,
+        "3": 530,
+        "4": 84,
+        "6": 93,
+        "5": 269,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 439,
+        "8": 103,
+        "7": 14,
+        "5": 4
+      },
+      "delta": {
+        "5": -1,
+        "6": 1
+      },
+      "width_delta": {
+        "8": -1,
+        "9": 1
+      },
+      "local_entropy_gain": 2.703367253197829,
+      "tag": "gauge-532-0-4"
+    },
+    {
+      "helper": 536,
+      "old": [
+        408,
+        102
+      ],
+      "new": [],
+      "profile": {
+        "1": 2385,
+        "2": 264,
+        "3": 530,
+        "4": 83,
+        "6": 93,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 439,
+        "8": 104,
+        "7": 13,
+        "5": 4
+      },
+      "delta": {
+        "4": -1,
+        "6": 1
+      },
+      "width_delta": {
+        "7": -1,
+        "9": 1
+      },
+      "local_entropy_gain": 5.205379370888768,
+      "tag": "gauge-536-0-5"
+    },
+    {
+      "helper": 536,
+      "old": [
+        408,
+        102
+      ],
+      "new": [
+        510
+      ],
+      "profile": {
+        "1": 2385,
+        "2": 264,
+        "3": 530,
+        "4": 83,
+        "6": 92,
+        "5": 271,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 438,
+        "8": 105,
+        "7": 13,
+        "5": 4
+      },
+      "delta": {
+        "4": -1,
+        "5": 1
+      },
+      "width_delta": {
+        "7": -1,
+        "8": 1
+      },
+      "local_entropy_gain": 2.5020121176909393,
+      "tag": "gauge-536-1-6"
+    },
+    {
+      "helper": 540,
+      "old": [
+        291,
+        163,
+        102,
+        24
+      ],
+      "new": [],
+      "profile": {
+        "1": 2385,
+        "2": 263,
+        "3": 530,
+        "4": 84,
+        "6": 93,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 439,
+        "8": 104,
+        "7": 14,
+        "5": 3
+      },
+      "delta": {
+        "2": -1,
+        "6": 1
+      },
+      "width_delta": {
+        "5": -1,
+        "9": 1
+      },
+      "local_entropy_gain": 9.36426245424844,
+      "tag": "gauge-540-0-7"
+    },
+    {
+      "helper": 540,
+      "old": [
+        291,
+        163,
+        102,
+        24
+      ],
+      "new": [
+        408
+      ],
+      "profile": {
+        "1": 2385,
+        "2": 263,
+        "3": 530,
+        "4": 84,
+        "6": 92,
+        "5": 271,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 438,
+        "8": 105,
+        "7": 14,
+        "5": 3
+      },
+      "delta": {
+        "2": -1,
+        "5": 1
+      },
+      "width_delta": {
+        "5": -1,
+        "8": 1
+      },
+      "local_entropy_gain": 6.660895201050611,
+      "tag": "gauge-540-1-8"
+    },
+    {
+      "helper": 540,
+      "old": [
+        291,
+        163,
+        102,
+        24
+      ],
+      "new": [
+        408,
+        102
+      ],
+      "profile": {
+        "1": 2385,
+        "2": 263,
+        "3": 530,
+        "4": 85,
+        "6": 92,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 438,
+        "8": 104,
+        "7": 15,
+        "5": 3
+      },
+      "delta": {
+        "2": -1,
+        "4": 1
+      },
+      "width_delta": {
+        "5": -1,
+        "7": 1
+      },
+      "local_entropy_gain": 4.1588830833596715,
+      "tag": "gauge-540-2-9"
+    },
+    {
+      "helper": 540,
+      "old": [
+        291,
+        163,
+        102,
+        24
+      ],
+      "new": [
+        291,
+        187,
+        102
+      ],
+      "profile": {
+        "1": 2393,
+        "2": 259,
+        "3": 531,
+        "4": 84,
+        "6": 92,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 438,
+        "8": 104,
+        "7": 14,
+        "6": 1,
+        "5": 3
+      },
+      "delta": {
+        "1": 8,
+        "2": -5,
+        "3": 1
+      },
+      "width_delta": {
+        "5": -1,
+        "6": 1
+      },
+      "local_entropy_gain": -3.635634939595124,
+      "tag": "gauge-540-3-10"
+    }
+  ],
+  "elapsed": 53.44359803199768
+}

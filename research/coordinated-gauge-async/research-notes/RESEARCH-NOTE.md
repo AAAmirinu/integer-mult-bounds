@@ -1,0 +1,13 @@
+# Shared target levels make gauge choices non-additive
+
+A helper entrance gauge moves that helper's dirty-response compensation to a chosen frame. The target must reach the largest compensation frame used by any helper feeding it, and each centre must descend through the resulting target levels. Consequently, changing one helper's entrance and changing a coordinated group have different paid effects.
+
+Start from the PR484/496 gauge80-kernel42 scalar word with the body retiming transferred from PR495 through PR501/502. Helpers540,541,542,543 have rank4 entrances. Replace all four by the already-present rank2 frame [408,102], leaving all kernel classes and the scalar body fixed. The four target levels at81,82,84,87 then drop from rank4 to rank2. Every first-touch inclusion, helper frame chain, target compensation chain and centre descent is checked by the exact constructor.
+
+Changing only one of these helpers, as suggested by PR473's stage-specific helper540 experiment, gives the local delta -rank2 +rank4. Four separate such changes would therefore suggest -4 rank2 +4 rank4. The actual joint change gives **-16 rank2 +4 rank4 +4 rank6**: the additional -12 rank2 +4 rank6 comes from the shared target-level collapse. This extra contribution is missed by summing individual gauge scores.
+
+The four helper residuals grow from width5 to width7. The complete local inventory becomes18 width7,104 width8 and438 width9 residuals. They must all remain whole on their assigned physical owners. The asynchronous packing is recomputed with that inventory; the benefit is not obtained by adding a local saving to a published exponent.
+
+The selected word has passed an independent exact rational audit on all800 arbitrary-dirty input columns, both forward and inverse-transpose, and42 omitted-kernel-correction controls. A portable constructor reproduces the selected word, checks its exact local profile delta, and binds the complete word after normalizing only two stale discovery floats and an optional redundant R field. It does not by itself certify physical aliasing, Gaussian normalization, finite precision or the outer exponent; those belong to the final global replay and its inherited conditional contracts.
+
+The bounded search retained three retimed response-matroid variants, all382 proper single-gauge subframes,20 coordinated choices and six further combinations. Only the coordinated rank2 collapse improved the full tested asynchronous inventory. These are local search results, not an optimality theorem. The exact selected construction, unsuccessful witnesses and rejected frame chains are preserved for future work.

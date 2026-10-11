@@ -1,0 +1,180 @@
+{
+  "candidates": [
+    {
+      "tag": "combo-drop532",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2381,
+        "2": 248,
+        "3": 530,
+        "4": 88,
+        "6": 104,
+        "5": 262,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 442,
+        "8": 100,
+        "7": 18
+      },
+      "delta_from_rank2": {
+        "1": -4,
+        "5": -8,
+        "6": 8
+      },
+      "width_delta_from_rank2": {
+        "8": -4,
+        "9": 4
+      }
+    },
+    {
+      "tag": "combo-drop134",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2375,
+        "2": 242,
+        "3": 540,
+        "4": 88,
+        "6": 98,
+        "5": 268,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 448,
+        "8": 94,
+        "7": 18
+      },
+      "delta_from_rank2": {
+        "1": -10,
+        "2": -6,
+        "3": 10,
+        "5": -2,
+        "6": 2
+      },
+      "width_delta_from_rank2": {
+        "8": -10,
+        "9": 10
+      }
+    },
+    {
+      "tag": "combo-drop544",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2385,
+        "2": 248,
+        "3": 530,
+        "4": 84,
+        "6": 112,
+        "5": 258,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 454,
+        "8": 92,
+        "7": 14
+      },
+      "delta_from_rank2": {
+        "4": -4,
+        "5": -12,
+        "6": 16
+      },
+      "width_delta_from_rank2": {
+        "7": -4,
+        "8": -12,
+        "9": 16
+      }
+    },
+    {
+      "tag": "combo-COMPONENT",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2375,
+        "2": 234,
+        "3": 544,
+        "4": 88,
+        "6": 96,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 442,
+        "8": 100,
+        "7": 18
+      },
+      "delta_from_rank2": {
+        "1": -10,
+        "2": -14,
+        "3": 14
+      },
+      "width_delta_from_rank2": {
+        "8": -4,
+        "9": 4
+      }
+    },
+    {
+      "tag": "combo-JOINT-47",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2371,
+        "2": 254,
+        "3": 530,
+        "4": 84,
+        "6": 100,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 442,
+        "8": 102,
+        "7": 16
+      },
+      "delta_from_rank2": {
+        "1": -14,
+        "2": 6,
+        "4": -4,
+        "6": 4
+      },
+      "width_delta_from_rank2": {
+        "7": -2,
+        "8": -2,
+        "9": 4
+      }
+    },
+    {
+      "tag": "combo-JOINT-51",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2371,
+        "2": 244,
+        "3": 538,
+        "4": 88,
+        "6": 98,
+        "5": 268,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 442,
+        "8": 100,
+        "7": 18
+      },
+      "delta_from_rank2": {
+        "1": -14,
+        "2": -4,
+        "3": 8,
+        "5": -2,
+        "6": 2
+      },
+      "width_delta_from_rank2": {
+        "8": -4,
+        "9": 4
+      }
+    }
+  ],
+  "scope": "Exact source constructors only; complete async price must be checked."
+}

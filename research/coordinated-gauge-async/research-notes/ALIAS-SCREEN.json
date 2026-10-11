@@ -1,0 +1,338 @@
+[
+  {
+    "drop": 424,
+    "frame_chain_legal": false,
+    "keep": 419,
+    "touches": 5
+  },
+  {
+    "drop": 425,
+    "frame_chain_legal": false,
+    "keep": 25,
+    "touches": 7
+  },
+  {
+    "drop": 480,
+    "frame_chain_legal": false,
+    "keep": 475,
+    "touches": 5
+  },
+  {
+    "drop": 481,
+    "frame_chain_legal": false,
+    "keep": 41,
+    "touches": 7
+  },
+  {
+    "drop": 510,
+    "frame_chain_legal": false,
+    "keep": 499,
+    "touches": 5
+  },
+  {
+    "drop": 511,
+    "frame_chain_legal": false,
+    "keep": 494,
+    "touches": 5
+  },
+  {
+    "drop": 512,
+    "frame_chain_legal": false,
+    "keep": 498,
+    "touches": 5
+  },
+  {
+    "drop": 513,
+    "frame_chain_legal": false,
+    "keep": 496,
+    "touches": 5
+  },
+  {
+    "drop": 536,
+    "frame_chain_legal": false,
+    "keep": 531,
+    "touches": 5
+  },
+  {
+    "drop": 537,
+    "frame_chain_legal": false,
+    "keep": 113,
+    "touches": 7
+  },
+  {
+    "drop": 538,
+    "frame_chain_legal": false,
+    "keep": 527,
+    "touches": 5
+  },
+  {
+    "drop": 539,
+    "frame_chain_legal": false,
+    "keep": 522,
+    "touches": 5
+  },
+  {
+    "drop": 540,
+    "frame_chain_legal": false,
+    "keep": 526,
+    "touches": 5
+  },
+  {
+    "drop": 541,
+    "frame_chain_legal": false,
+    "keep": 524,
+    "touches": 5
+  },
+  {
+    "drop": 592,
+    "frame_chain_legal": false,
+    "keep": 587,
+    "touches": 5
+  },
+  {
+    "drop": 593,
+    "frame_chain_legal": false,
+    "keep": 49,
+    "touches": 7
+  },
+  {
+    "drop": 622,
+    "frame_chain_legal": false,
+    "keep": 611,
+    "touches": 5
+  },
+  {
+    "drop": 623,
+    "frame_chain_legal": false,
+    "keep": 606,
+    "touches": 5
+  },
+  {
+    "drop": 624,
+    "frame_chain_legal": false,
+    "keep": 610,
+    "touches": 5
+  },
+  {
+    "drop": 625,
+    "frame_chain_legal": false,
+    "keep": 608,
+    "touches": 5
+  },
+  {
+    "drop": 648,
+    "frame_chain_legal": false,
+    "keep": 643,
+    "touches": 5
+  },
+  {
+    "drop": 649,
+    "frame_chain_legal": false,
+    "keep": 105,
+    "touches": 7
+  },
+  {
+    "drop": 650,
+    "frame_chain_legal": false,
+    "keep": 639,
+    "touches": 5
+  },
+  {
+    "drop": 651,
+    "frame_chain_legal": false,
+    "keep": 634,
+    "touches": 5
+  },
+  {
+    "drop": 652,
+    "frame_chain_legal": false,
+    "keep": 638,
+    "touches": 5
+  },
+  {
+    "drop": 653,
+    "frame_chain_legal": false,
+    "keep": 636,
+    "touches": 5
+  },
+  {
+    "drop": 678,
+    "frame_chain_legal": false,
+    "keep": 667,
+    "touches": 5
+  },
+  {
+    "drop": 679,
+    "frame_chain_legal": false,
+    "keep": 662,
+    "touches": 5
+  },
+  {
+    "drop": 680,
+    "frame_chain_legal": false,
+    "keep": 666,
+    "touches": 5
+  },
+  {
+    "drop": 681,
+    "frame_chain_legal": false,
+    "keep": 664,
+    "touches": 5
+  },
+  {
+    "drop": 682,
+    "frame_chain_legal": false,
+    "keep": 668,
+    "touches": 5
+  },
+  {
+    "drop": 683,
+    "frame_chain_legal": false,
+    "keep": 102,
+    "touches": 7
+  },
+  {
+    "drop": 684,
+    "frame_chain_legal": false,
+    "keep": 672,
+    "touches": 5
+  },
+  {
+    "drop": 685,
+    "frame_chain_legal": false,
+    "keep": 674,
+    "touches": 5
+  },
+  {
+    "drop": 704,
+    "frame_chain_legal": false,
+    "keep": 699,
+    "touches": 5
+  },
+  {
+    "drop": 705,
+    "frame_chain_legal": false,
+    "keep": 89,
+    "touches": 7
+  },
+  {
+    "drop": 706,
+    "frame_chain_legal": false,
+    "keep": 695,
+    "touches": 5
+  },
+  {
+    "drop": 707,
+    "frame_chain_legal": false,
+    "keep": 690,
+    "touches": 5
+  },
+  {
+    "drop": 708,
+    "frame_chain_legal": false,
+    "keep": 694,
+    "touches": 5
+  },
+  {
+    "drop": 709,
+    "frame_chain_legal": false,
+    "keep": 692,
+    "touches": 5
+  },
+  {
+    "drop": 710,
+    "frame_chain_legal": false,
+    "keep": 696,
+    "touches": 5
+  },
+  {
+    "drop": 711,
+    "frame_chain_legal": false,
+    "keep": 94,
+    "touches": 7
+  },
+  {
+    "drop": 712,
+    "frame_chain_legal": false,
+    "keep": 700,
+    "touches": 5
+  },
+  {
+    "drop": 713,
+    "frame_chain_legal": false,
+    "keep": 702,
+    "touches": 5
+  },
+  {
+    "drop": 732,
+    "frame_chain_legal": false,
+    "keep": 727,
+    "touches": 5
+  },
+  {
+    "drop": 733,
+    "frame_chain_legal": false,
+    "keep": 57,
+    "touches": 7
+  },
+  {
+    "drop": 734,
+    "frame_chain_legal": false,
+    "keep": 723,
+    "touches": 5
+  },
+  {
+    "drop": 735,
+    "frame_chain_legal": false,
+    "keep": 718,
+    "touches": 5
+  },
+  {
+    "drop": 736,
+    "frame_chain_legal": false,
+    "keep": 722,
+    "touches": 5
+  },
+  {
+    "drop": 737,
+    "frame_chain_legal": false,
+    "keep": 720,
+    "touches": 5
+  },
+  {
+    "drop": 738,
+    "frame_chain_legal": false,
+    "keep": 724,
+    "touches": 5
+  },
+  {
+    "drop": 739,
+    "frame_chain_legal": false,
+    "keep": 62,
+    "touches": 7
+  },
+  {
+    "drop": 740,
+    "frame_chain_legal": false,
+    "keep": 728,
+    "touches": 5
+  },
+  {
+    "drop": 741,
+    "frame_chain_legal": false,
+    "keep": 730,
+    "touches": 5
+  },
+  {
+    "drop": 742,
+    "frame_chain_legal": false,
+    "keep": 58,
+    "touches": 7
+  },
+  {
+    "drop": 743,
+    "frame_chain_legal": false,
+    "keep": 731,
+    "touches": 5
+  }
+]

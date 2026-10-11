@@ -1,0 +1,499 @@
+{
+  "scope": "At most20 exact constructive nominations; whole-owner invoice pending.",
+  "candidates": [
+    {
+      "tag": "coordinated-all",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2296,
+        "2": 202,
+        "3": 582,
+        "4": 56,
+        "6": 168,
+        "8": 24,
+        "5": 224
+      },
+      "widths": {
+        "9": 518,
+        "8": 42
+      },
+      "delta": {
+        "1": -89,
+        "2": -62,
+        "3": 52,
+        "4": -28,
+        "5": -46,
+        "6": 76,
+        "7": -1,
+        "8": 7
+      },
+      "width_delta": {
+        "5": -4,
+        "7": -14,
+        "8": -62,
+        "9": 80
+      },
+      "local_entropy_gain": 479.8672515961978,
+      "gauges": 0
+    },
+    {
+      "tag": "coordinated-rank1",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "2": 244,
+        "1": 2302,
+        "3": 576,
+        "4": 84,
+        "6": 138,
+        "8": 18,
+        "5": 224
+      },
+      "widths": {
+        "9": 500,
+        "8": 42,
+        "7": 14,
+        "5": 4
+      },
+      "delta": {
+        "1": -83,
+        "2": -20,
+        "3": 46,
+        "5": -46,
+        "6": 46,
+        "7": -1,
+        "8": 1
+      },
+      "width_delta": {
+        "8": -62,
+        "9": 62
+      },
+      "local_entropy_gain": 251.25166355095294,
+      "gauges": 18
+    },
+    {
+      "tag": "rank2",
+      "status": "REJECTED",
+      "reason": "('centre chain', 1)"
+    },
+    {
+      "tag": "coordinated-rank4",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2385,
+        "2": 248,
+        "3": 530,
+        "4": 84,
+        "6": 100,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 442,
+        "8": 104,
+        "7": 14
+      },
+      "delta": {
+        "2": -16,
+        "6": 8
+      },
+      "width_delta": {
+        "5": -4,
+        "9": 4
+      },
+      "local_entropy_gain": 63.82374474502839,
+      "gauges": 76
+    },
+    {
+      "tag": "higher",
+      "status": "REJECTED",
+      "reason": "('centre chain', 1)"
+    },
+    {
+      "tag": "coordinated-main",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2325,
+        "2": 222,
+        "4": 80,
+        "3": 582,
+        "6": 114,
+        "5": 256,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 490,
+        "8": 58,
+        "7": 8,
+        "5": 4
+      },
+      "delta": {
+        "1": -60,
+        "2": -42,
+        "3": 52,
+        "4": -4,
+        "5": -14,
+        "6": 22
+      },
+      "width_delta": {
+        "7": -6,
+        "8": -46,
+        "9": 52
+      },
+      "local_entropy_gain": 214.83004015498773,
+      "gauges": 28
+    },
+    {
+      "tag": "coordinated-centres",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2377,
+        "2": 248,
+        "3": 530,
+        "4": 72,
+        "6": 128,
+        "8": 17,
+        "7": 1,
+        "5": 254
+      },
+      "widths": {
+        "9": 466,
+        "8": 88,
+        "7": 6
+      },
+      "delta": {
+        "1": -8,
+        "2": -16,
+        "4": -12,
+        "5": -16,
+        "6": 36
+      },
+      "width_delta": {
+        "5": -4,
+        "7": -8,
+        "8": -16,
+        "9": 28
+      },
+      "local_entropy_gain": 169.54217324685885,
+      "gauges": 52
+    },
+    {
+      "tag": "coordinated-centres532",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2381,
+        "2": 264,
+        "3": 530,
+        "4": 84,
+        "6": 100,
+        "5": 262,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 442,
+        "8": 100,
+        "7": 14,
+        "5": 4
+      },
+      "delta": {
+        "1": -4,
+        "5": -8,
+        "6": 8
+      },
+      "width_delta": {
+        "8": -4,
+        "9": 4
+      },
+      "local_entropy_gain": 21.626938025582632,
+      "gauges": 76
+    },
+    {
+      "tag": "coordinated-centres536",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2381,
+        "2": 264,
+        "3": 530,
+        "4": 76,
+        "6": 96,
+        "5": 274,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 442,
+        "8": 104,
+        "7": 10,
+        "5": 4
+      },
+      "delta": {
+        "1": -4,
+        "4": -8,
+        "5": 4,
+        "6": 4
+      },
+      "width_delta": {
+        "7": -4,
+        "9": 4
+      },
+      "local_entropy_gain": 30.82956595431883,
+      "gauges": 76
+    },
+    {
+      "tag": "coordinated-centres540",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2385,
+        "2": 248,
+        "3": 530,
+        "4": 84,
+        "6": 100,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 442,
+        "8": 104,
+        "7": 14
+      },
+      "delta": {
+        "2": -16,
+        "6": 8
+      },
+      "width_delta": {
+        "5": -4,
+        "9": 4
+      },
+      "local_entropy_gain": 63.82374474502839,
+      "gauges": 76
+    },
+    {
+      "tag": "coordinated-centres544",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2385,
+        "2": 264,
+        "3": 530,
+        "4": 84,
+        "6": 96,
+        "5": 266,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 442,
+        "8": 100,
+        "7": 14,
+        "5": 4
+      },
+      "delta": {
+        "5": -4,
+        "6": 4
+      },
+      "width_delta": {
+        "8": -4,
+        "9": 4
+      },
+      "local_entropy_gain": 10.813469012791316,
+      "gauges": 76
+    },
+    {
+      "tag": "coordinated-centres548",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2385,
+        "2": 264,
+        "3": 530,
+        "4": 80,
+        "6": 96,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 442,
+        "8": 104,
+        "7": 10,
+        "5": 4
+      },
+      "delta": {
+        "4": -4,
+        "6": 4
+      },
+      "width_delta": {
+        "7": -4,
+        "9": 4
+      },
+      "local_entropy_gain": 20.821517483555073,
+      "gauges": 76
+    },
+    {
+      "tag": "coordinated-centres552",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2385,
+        "2": 264,
+        "3": 530,
+        "4": 84,
+        "6": 96,
+        "5": 266,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 442,
+        "8": 100,
+        "7": 14,
+        "5": 4
+      },
+      "delta": {
+        "5": -4,
+        "6": 4
+      },
+      "width_delta": {
+        "8": -4,
+        "9": 4
+      },
+      "local_entropy_gain": 10.813469012791316,
+      "gauges": 76
+    },
+    {
+      "tag": "coordinated-centres556",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2385,
+        "2": 264,
+        "3": 530,
+        "4": 84,
+        "6": 96,
+        "5": 266,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 442,
+        "8": 100,
+        "7": 14,
+        "5": 4
+      },
+      "delta": {
+        "5": -4,
+        "6": 4
+      },
+      "width_delta": {
+        "8": -4,
+        "9": 4
+      },
+      "local_entropy_gain": 10.813469012791316,
+      "gauges": 76
+    },
+    {
+      "tag": "main0",
+      "status": "REJECTED",
+      "reason": "('centre chain', 1)"
+    },
+    {
+      "tag": "main240",
+      "status": "REJECTED",
+      "reason": "('centre chain', 2)"
+    },
+    {
+      "tag": "coordinated-main360",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2385,
+        "2": 260,
+        "3": 534,
+        "4": 84,
+        "6": 92,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 442,
+        "8": 100,
+        "7": 14,
+        "5": 4
+      },
+      "delta": {
+        "2": -4,
+        "3": 4
+      },
+      "width_delta": {
+        "8": -4,
+        "9": 4
+      },
+      "local_entropy_gain": 7.638170019537754,
+      "gauges": 76
+    },
+    {
+      "tag": "coordinated-main464",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2385,
+        "2": 256,
+        "3": 538,
+        "4": 84,
+        "6": 92,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 446,
+        "8": 96,
+        "7": 14,
+        "5": 4
+      },
+      "delta": {
+        "2": -8,
+        "3": 8
+      },
+      "width_delta": {
+        "8": -8,
+        "9": 8
+      },
+      "local_entropy_gain": 15.276340039075508,
+      "gauges": 72
+    },
+    {
+      "tag": "all-to-line510",
+      "status": "REJECTED",
+      "reason": "('non-nested gauges at target', 80)"
+    },
+    {
+      "tag": "coordinated-higher-to-rank2",
+      "status": "PASS_EXACT_FRAME",
+      "profile": {
+        "1": 2385,
+        "2": 248,
+        "3": 530,
+        "4": 88,
+        "6": 96,
+        "5": 270,
+        "8": 17,
+        "7": 1
+      },
+      "widths": {
+        "9": 438,
+        "8": 104,
+        "7": 18
+      },
+      "delta": {
+        "2": -16,
+        "4": 4,
+        "6": 4
+      },
+      "width_delta": {
+        "5": -4,
+        "7": 4
+      },
+      "local_entropy_gain": 43.00222726147332,
+      "gauges": 80
+    }
+  ]
+}

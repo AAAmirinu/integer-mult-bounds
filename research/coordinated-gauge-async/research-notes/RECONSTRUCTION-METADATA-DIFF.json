@@ -1,0 +1,22 @@
+{
+  "actual_difference": [
+    [
+      "root.R",
+      "missing",
+      false,
+      true
+    ],
+    [
+      "root.report.complex_coarse_float",
+      0.001183986549206271,
+      0.0011839865492062917
+    ],
+    [
+      "root.report.gain_percent_float",
+      18.471088665042544,
+      18.471088665044633
+    ]
+  ],
+  "normalized_equal": true,
+  "normalized_sha256": "879c0e6ade3f1c84a515609a848dc917bddd1c1499e0cc37b2862809dfb8655b"
+}
