@@ -1,0 +1,10 @@
+{
+  "analysis_only": 14,
+  "blocked": 1,
+  "bounded_infeasible": 3,
+  "bounded_no_gain": 20,
+  "implemented": 1,
+  "not_evidenced": 40,
+  "partial_experiment": 11,
+  "partial_gain": 10
+}

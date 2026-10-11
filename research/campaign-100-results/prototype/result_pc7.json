@@ -1,0 +1,168 @@
+{
+ "tag": "pc7",
+ "arch": "arch_paired_cube.py",
+ "args": {
+  "p": "7",
+  "pm": "/tmp/radical/H/out/pkg_p7/bitword/producer/data/pm_p7.json",
+  "qmod": "/tmp/radical/H/out/pkg_p7/bitword/producer/data/qmod_p7.json",
+  "design": "/tmp/radical/H/out/pkg_p7/bitword/producer/data/local_design_p7.json",
+  "merge": "1"
+ },
+ "family": "paired_cube",
+ "p": 7,
+ "h": 14,
+ "v": 280,
+ "nodes": 2366,
+ "roots": 1064,
+ "mixes": 140,
+ "shape": {
+  "p": 7,
+  "h": 14,
+  "v": 280,
+  "m": 70,
+  "ell": 168,
+  "idle": [
+   26,
+   13,
+   30,
+   4
+  ],
+  "center_rank": 12,
+  "centers": 14,
+  "center_ranks": [
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12
+  ],
+  "scatter_reads": 60,
+  "scatter_reads_list": [
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60,
+   60
+  ],
+  "center_reads": 840,
+  "deficit": 280,
+  "virtual_m": 42,
+  "virtual_deficit": 56,
+  "replicas": 60,
+  "stages": 5
+ },
+ "virtual": {
+  "R": 2870,
+  "loss": 168,
+  "deficit": 56,
+  "gauges": 510,
+  "matched": 560,
+  "plain": 1904,
+  "float_root": 0.00020034654307593544
+ },
+ "byte_identical": {
+  "graph_p7.json": true,
+  "kchron_p7.json": true,
+  "profile_p7.json": true,
+  "word_p7.json.gz": true,
+  "frames_p7.json.gz": true
+ },
+ "price": {
+  "p": 7,
+  "h": 14,
+  "v": 280,
+  "m": 70,
+  "deficit": 280,
+  "ell": 168,
+  "centers": 14,
+  "R": 2680,
+  "entrances": {
+   "10": 230,
+   "11": 90
+  },
+  "literal_stock": 213900,
+  "rank_mass": 2991240,
+  "paid_hist": {
+   "1": 6058,
+   "2": 1604,
+   "3": 1658,
+   "4": 158,
+   "5": 536,
+   "6": 474,
+   "8": 404,
+   "9": 200,
+   "10": 280,
+   "11": 902,
+   "12": 294
+  },
+  "five_stage_hist": {
+   "1": 363480,
+   "2": 96240,
+   "3": 99480,
+   "4": 16200,
+   "5": 32160,
+   "6": 28440,
+   "8": 24240,
+   "9": 12000,
+   "10": 16800,
+   "11": 54120,
+   "12": 17640,
+   "13": 6720,
+   "26": 6720,
+   "30": 6720
+  },
+  "J_phys_chains": 92993.4863281448,
+  "J_five_stage": 7132696.858033028,
+  "physical_row": {
+   "R": 2680,
+   "changed_operation_frames": 864,
+   "internal": {
+    "1": 5078,
+    "2": 1464,
+    "3": 1658,
+    "4": 158,
+    "5": 536,
+    "6": 474,
+    "8": 404,
+    "9": 200,
+    "11": 762,
+    "12": 154
+   }
+  },
+  "kappa": "94107852646903/200000000000000000",
+  "kappa_float": 0.000470539263234515,
+  "bit_root": 0.000470760774709099,
+  "root_interval": [
+   "0.0004707607747090991297",
+   "0.0004707607747090991297"
+  ],
+  "seconds": 1.6313180923461914
+ },
+ "seconds": {
+  "architecture": 0.03942394256591797,
+  "compile_solve": 2.8696019649505615,
+  "compile_frozen": 2.6610939502716064,
+  "make_physical": 0.4412705898284912,
+  "descent": 1.1700427532196045,
+  "price": 1.6816151142120361,
+  "total": 8.931196928024292
+ }
+}

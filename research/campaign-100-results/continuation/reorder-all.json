@@ -1,0 +1,9 @@
+{
+  "input_records_sha256": "790ebf533a8f7884414ff1061a2650bdfb14f72f70c25148ecbc86443649e2c5",
+  "radius": 405697,
+  "boundary_gates": 19914,
+  "tested": 84214,
+  "candidates": 0,
+  "moves": [],
+  "phi": 0
+}

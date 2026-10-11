@@ -1,0 +1,126 @@
+{
+ "tag": "tri_all",
+ "arch": "arch_example_triples.py",
+ "args": {
+  "h": "7",
+  "family": "all"
+ },
+ "family": "triples_all",
+ "p": 3,
+ "h": 7,
+ "v": 35,
+ "nodes": 395,
+ "roots": 42,
+ "mixes": 0,
+ "shape": {
+  "p": 3,
+  "h": 7,
+  "v": 35,
+  "m": 35,
+  "ell": 42,
+  "idle": [
+   12,
+   6,
+   16,
+   4
+  ],
+  "center_rank": 6,
+  "centers": 7,
+  "center_ranks": [
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6
+  ],
+  "scatter_reads": 15,
+  "scatter_reads_list": [
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15
+  ],
+  "center_reads": 105,
+  "deficit": -70,
+  "virtual_m": 21,
+  "virtual_deficit": -56,
+  "replicas": 60,
+  "stages": 5
+ },
+ "virtual": {
+  "R": 389,
+  "loss": 42,
+  "deficit": -56,
+  "gauges": 17,
+  "matched": 48,
+  "plain": 279,
+  "float_root": 0.0
+ },
+ "price": {
+  "p": 3,
+  "h": 7,
+  "v": 35,
+  "m": 35,
+  "deficit": -70,
+  "ell": 42,
+  "centers": 7,
+  "R": 385,
+  "entrances": {
+   "5": 11,
+   "4": 2
+  },
+  "literal_stock": 30960,
+  "rank_mass": 217560,
+  "paid_hist": {
+   "1": 716,
+   "2": 240,
+   "3": 108,
+   "4": 166,
+   "5": 110,
+   "6": 60
+  },
+  "five_stage_hist": {
+   "1": 42960,
+   "2": 14400,
+   "3": 6480,
+   "4": 10800,
+   "5": 6600,
+   "6": 4440,
+   "12": 840,
+   "16": 840
+  },
+  "J_phys_chains": 7067.503398912982,
+  "J_five_stage": 509138.5713380967,
+  "physical_row": {
+   "R": 385,
+   "changed_operation_frames": 120,
+   "internal": {
+    "1": 705,
+    "2": 234,
+    "3": 108,
+    "4": 160,
+    "5": 99,
+    "6": 7
+   }
+  },
+  "kappa": null,
+  "kappa_float": 0.0,
+  "bit_root": 0.0,
+  "error": "AssertionError('no positive root: deficit -70, maxchild 16, m 35')",
+  "seconds": 0.1209878921508789
+ },
+ "seconds": {
+  "architecture": 0.002853870391845703,
+  "compile_solve": 0.15056109428405762,
+  "compile_frozen": 0.11889195442199707,
+  "make_physical": 0.04787921905517578,
+  "descent": 0.1017460823059082,
+  "price": 0.16078805923461914,
+  "total": 0.6130249500274658
+ }
+}

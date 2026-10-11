@@ -1,0 +1,81 @@
+=== p=5 h=10 v=80 h(h-2)=80 4v=320 4v-5h(h-2)=-80
+[21] inclusion-exclusion, no centres:
+  no centres (ell=0)                             centres=  0 ranks=[]             ell=    0  D=4v-5ell=   320  delivered 0/80 INFEASIBLE
+  singletons {T} (IE over sub-port T itself)     centres= 80 ranks=[1]            ell=   80  D=4v-5ell=   -80  delivered 80/80 FEASIBLE
+  IE over 2-sub-ports: cliques K_ab              centres= 40 ranks=[6]            ell=  240  D=4v-5ell=  -880  delivered 0/80 INFEASIBLE
+  IE over 1-sub-ports: stars (= paired cube)     centres= 10 ranks=[8]            ell=   80  D=4v-5ell=   -80  delivered 80/80 FEASIBLE
+  IE 1- and 2-sub-ports: stars + cliques         centres= 50 ranks=[6, 8]         ell=  320  D=4v-5ell= -1280  delivered 80/80 FEASIBLE
+[22] parity-check / code-syndrome families (rows = centre supports):
+  incidence code (2p stars)                      centres= 10 ranks=[8]            ell=   80  D=4v-5ell=   -80  delivered 80/80 FEASIBLE
+  pair-union rows (p, rank h-1)                  centres=  5 ranks=[9]            ell=   45  D=4v-5ell=    95  delivered 0/80 INFEASIBLE
+  pair-avoider rows (p, rank h-2)                centres=  5 ranks=[8]            ell=   40  D=4v-5ell=   120  delivered 0/80 INFEASIBLE
+  stars + pair-avoiders                          centres= 15 ranks=[8]            ell=  120  D=4v-5ell=  -280  delivered 80/80 FEASIBLE
+  cube rows (C(p,3), rank 4)                     centres= 10 ranks=[4]            ell=   40  D=4v-5ell=   120  delivered 0/80 INFEASIBLE
+  cliques K_ab (4C(p,2), rank 2(p-2))            centres= 40 ranks=[6]            ell=  240  D=4v-5ell=  -880  delivered 0/80 INFEASIBLE
+  star-XOR rows (all pairs of coordinates)       centres= 20 ranks=[9]            ell=  180  D=4v-5ell=  -580  delivered 0/80 INFEASIBLE
+  stars minus one: delivered 56/80 -> INFEASIBLE (every star is needed)
+[23] two-level: super-centres = unions of stars (ell counted once per super-centre):
+  pair unions star(2i) u star(2i+1)              centres=  5 ranks=[9]            ell=   45  D=4v-5ell=    95  delivered 0/80 INFEASIBLE
+  pair unions + one star per pair (even coord)   centres= 10 ranks=[8, 9]         ell=   85  D=4v-5ell=  -105  delivered 80/80 FEASIBLE
+[24] 2h centres of rank h/2 (half-stars H(c,A), H(c,B): ports with c and both other pairs in A resp. B; rank 2|A|):
+  half-stars (2h of them, |A| = p/2)             centres= 20 ranks=[3]            ell=   60  D=4v-5ell=    20  delivered 16/80 INFEASIBLE
+  half-stars + cross parts (= stars split in 3)  centres= 30 ranks=[3, 7]         ell=  130  D=4v-5ell=  -330  delivered 80/80 FEASIBLE
+  sub-stars by selector at the lowest other pair centres= 20 ranks=[7]            ell=  140  D=4v-5ell=  -380  delivered 80/80 FEASIBLE
+[27/29] star-centre combinations C with |T∩C| odd, |S∩C| even on N_T (all 2^h C):
+  valid combinations per target (first 16 targets): [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]  -> unique (C = T only)
+[28] Walsh-Hadamard H_8 mod 2: rank 1 of 8 (det = 4096 = 2^12) -> not invertible over F2
+
+=== p=6 h=12 v=160 h(h-2)=120 4v=640 4v-5h(h-2)=40
+[21] inclusion-exclusion, no centres:
+  no centres (ell=0)                             centres=  0 ranks=[]             ell=    0  D=4v-5ell=   640  delivered 0/160 INFEASIBLE
+  singletons {T} (IE over sub-port T itself)     centres=160 ranks=[1]            ell=  160  D=4v-5ell=  -160  delivered 160/160 FEASIBLE
+  IE over 2-sub-ports: cliques K_ab              centres= 60 ranks=[8]            ell=  480  D=4v-5ell= -1760  delivered 0/160 INFEASIBLE
+  IE over 1-sub-ports: stars (= paired cube)     centres= 12 ranks=[10]           ell=  120  D=4v-5ell=    40  delivered 160/160 FEASIBLE
+  IE 1- and 2-sub-ports: stars + cliques         centres= 72 ranks=[8, 10]        ell=  600  D=4v-5ell= -2360  delivered 160/160 FEASIBLE
+[22] parity-check / code-syndrome families (rows = centre supports):
+  incidence code (2p stars)                      centres= 12 ranks=[10]           ell=  120  D=4v-5ell=    40  delivered 160/160 FEASIBLE
+  pair-union rows (p, rank h-1)                  centres=  6 ranks=[11]           ell=   66  D=4v-5ell=   310  delivered 0/160 INFEASIBLE
+  pair-avoider rows (p, rank h-2)                centres=  6 ranks=[10]           ell=   60  D=4v-5ell=   340  delivered 0/160 INFEASIBLE
+  stars + pair-avoiders                          centres= 18 ranks=[10]           ell=  180  D=4v-5ell=  -260  delivered 160/160 FEASIBLE
+  cube rows (C(p,3), rank 4)                     centres= 20 ranks=[4]            ell=   80  D=4v-5ell=   240  delivered 0/160 INFEASIBLE
+  cliques K_ab (4C(p,2), rank 2(p-2))            centres= 60 ranks=[8]            ell=  480  D=4v-5ell= -1760  delivered 0/160 INFEASIBLE
+  star-XOR rows (all pairs of coordinates)       centres= 24 ranks=[11]           ell=  264  D=4v-5ell=  -680  delivered 0/160 INFEASIBLE
+  stars minus one: delivered 120/160 -> INFEASIBLE (every star is needed)
+[23] two-level: super-centres = unions of stars (ell counted once per super-centre):
+  pair unions star(2i) u star(2i+1)              centres=  6 ranks=[11]           ell=   66  D=4v-5ell=   310  delivered 0/160 INFEASIBLE
+  pair unions + one star per pair (even coord)   centres= 12 ranks=[10, 11]       ell=  126  D=4v-5ell=    10  delivered 160/160 FEASIBLE
+[24] 2h centres of rank h/2 (half-stars H(c,A), H(c,B): ports with c and both other pairs in A resp. B; rank 2|A|):
+  half-stars (2h of them, |A| = p/2)             centres= 24 ranks=[3, 6]         ell=  108  D=4v-5ell=   100  delivered 40/160 INFEASIBLE
+  half-stars + cross parts (= stars split in 3)  centres= 36 ranks=[3, 6, 9]      ell=  216  D=4v-5ell=  -440  delivered 160/160 FEASIBLE
+  sub-stars by selector at the lowest other pair centres= 24 ranks=[9]            ell=  216  D=4v-5ell=  -440  delivered 160/160 FEASIBLE
+[27/29] star-centre combinations C with |T∩C| odd, |S∩C| even on N_T (all 2^h C):
+  valid combinations per target (first 16 targets): [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]  -> unique (C = T only)
+[28] Walsh-Hadamard H_8 mod 2: rank 1 of 8 (det = 4096 = 2^12) -> not invertible over F2
+
+=== p=7 h=14 v=280 h(h-2)=168 4v=1120 4v-5h(h-2)=280
+[21] inclusion-exclusion, no centres:
+  no centres (ell=0)                             centres=  0 ranks=[]             ell=    0  D=4v-5ell=  1120  delivered 0/280 INFEASIBLE
+  singletons {T} (IE over sub-port T itself)     centres=280 ranks=[1]            ell=  280  D=4v-5ell=  -280  delivered 280/280 FEASIBLE
+  IE over 2-sub-ports: cliques K_ab              centres= 84 ranks=[10]           ell=  840  D=4v-5ell= -3080  delivered 0/280 INFEASIBLE
+  IE over 1-sub-ports: stars (= paired cube)     centres= 14 ranks=[12]           ell=  168  D=4v-5ell=   280  delivered 280/280 FEASIBLE
+  IE 1- and 2-sub-ports: stars + cliques         centres= 98 ranks=[10, 12]       ell= 1008  D=4v-5ell= -3920  delivered 280/280 FEASIBLE
+[22] parity-check / code-syndrome families (rows = centre supports):
+  incidence code (2p stars)                      centres= 14 ranks=[12]           ell=  168  D=4v-5ell=   280  delivered 280/280 FEASIBLE
+  pair-union rows (p, rank h-1)                  centres=  7 ranks=[13]           ell=   91  D=4v-5ell=   665  delivered 0/280 INFEASIBLE
+  pair-avoider rows (p, rank h-2)                centres=  7 ranks=[12]           ell=   84  D=4v-5ell=   700  delivered 0/280 INFEASIBLE
+  stars + pair-avoiders                          centres= 21 ranks=[12]           ell=  252  D=4v-5ell=  -140  delivered 280/280 FEASIBLE
+  cube rows (C(p,3), rank 4)                     centres= 35 ranks=[4]            ell=  140  D=4v-5ell=   420  delivered 0/280 INFEASIBLE
+  cliques K_ab (4C(p,2), rank 2(p-2))            centres= 84 ranks=[10]           ell=  840  D=4v-5ell= -3080  delivered 0/280 INFEASIBLE
+  star-XOR rows (all pairs of coordinates)       centres= 28 ranks=[13]           ell=  364  D=4v-5ell=  -700  delivered 0/280 INFEASIBLE
+  stars minus one: delivered 220/280 -> INFEASIBLE (every star is needed)
+[23] two-level: super-centres = unions of stars (ell counted once per super-centre):
+  pair unions star(2i) u star(2i+1)              centres=  7 ranks=[13]           ell=   91  D=4v-5ell=   665  delivered 0/280 INFEASIBLE
+  pair unions + one star per pair (even coord)   centres= 14 ranks=[12, 13]       ell=  175  D=4v-5ell=   245  delivered 280/280 FEASIBLE
+[24] 2h centres of rank h/2 (half-stars H(c,A), H(c,B): ports with c and both other pairs in A resp. B; rank 2|A|):
+  half-stars (2h of them, |A| = p/2)             centres= 28 ranks=[6]            ell=  168  D=4v-5ell=   280  delivered 64/280 INFEASIBLE
+  half-stars + cross parts (= stars split in 3)  centres= 42 ranks=[6, 11]        ell=  322  D=4v-5ell=  -490  delivered 280/280 FEASIBLE
+  sub-stars by selector at the lowest other pair centres= 28 ranks=[11]           ell=  308  D=4v-5ell=  -420  delivered 280/280 FEASIBLE
+[27/29] star-centre combinations C with |T∩C| odd, |S∩C| even on N_T (all 2^h C):
+  valid combinations per target (first 16 targets): [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]  -> unique (C = T only)
+[28] Walsh-Hadamard H_8 mod 2: rank 1 of 8 (det = 4096 = 2^12) -> not invertible over F2
+

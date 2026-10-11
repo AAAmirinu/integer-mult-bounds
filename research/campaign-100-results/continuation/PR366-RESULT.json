@@ -1,0 +1,212 @@
+{
+  "status": "PASS_SOURCE_BOUND_COUPLED_RETIMING",
+  "source": {
+    "pr": 364,
+    "commit": "f8c6a47abfec24b87cb1eb0a138dd73dfce2abe4",
+    "manifest_sha256": "aafe5f9324db13d92b11ce9e3ec8e7b54973f921142700de98649ddc46e16354",
+    "manifest_entries": 63
+  },
+  "word_sha256": "b99fa242f1ca49c6df3d9e7f0e60b241b04d37332177cecd03b648fc71fde6a1",
+  "changed_gates": 123,
+  "checks": {
+    "records": 405680,
+    "copies": 20,
+    "erases": 20,
+    "used_frames": 13426,
+    "final_mismatch": 0,
+    "X_not_restored": 0,
+    "H_not_restored": 0,
+    "resid_sigma0": 0,
+    "resid_other": 0,
+    "temp_clean": true,
+    "span_violations": 0
+  },
+  "columns": {
+    "bridge_additions": 5760,
+    "copied_center_original_source_immutable": true,
+    "five_stage_additions": 1788850,
+    "formal_columns_checked": 11930,
+    "fresh_center_copies": 120,
+    "global_live_registers": 11930,
+    "independent_dirty_registers": 8090,
+    "local_odd_scalar_additions": 357770,
+    "local_raw_H": [
+      [
+        1,
+        21883
+      ],
+      [
+        2,
+        8834
+      ],
+      [
+        3,
+        5357
+      ],
+      [
+        4,
+        1460
+      ],
+      [
+        5,
+        953
+      ],
+      [
+        6,
+        999
+      ],
+      [
+        7,
+        619
+      ],
+      [
+        8,
+        171
+      ],
+      [
+        9,
+        366
+      ],
+      [
+        10,
+        209
+      ],
+      [
+        11,
+        80
+      ],
+      [
+        12,
+        996
+      ],
+      [
+        14,
+        276
+      ],
+      [
+        16,
+        840
+      ],
+      [
+        17,
+        2604
+      ],
+      [
+        18,
+        610
+      ]
+    ],
+    "local_registers": 10010,
+    "local_scalar_additions": 357770,
+    "local_scalar_stream": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/package-replay-final/cout/COHORT249-RECORDS.bin",
+    "negative_controls": [
+      {
+        "omit_bridge": 0,
+        "rejected": true
+      },
+      {
+        "omit_bridge": 1,
+        "rejected": true
+      },
+      {
+        "omit_bridge": 2,
+        "rejected": true
+      },
+      {
+        "omit_bridge": 3,
+        "rejected": true
+      },
+      {
+        "omit_bridge": 4,
+        "rejected": true
+      },
+      {
+        "omit_bridge": 5,
+        "rejected": true
+      }
+    ],
+    "new_Q_categories": [
+      28,
+      29
+    ],
+    "payload_prefix_bits": 93,
+    "payload_prefix_upper": "9764307141478627477261015296",
+    "reverse_fresh_center_copies": 40,
+    "scope": "All 23627 independent physical input columns over F2, including all arbitrary helper dirt, restored; external copied-center work closes to zero. New cohort scalar lift uses actual signed coefficients and computed cancellation-free bounds; unchanged source527 signed decoder remains separate defining evidence. Physical projector routing and paid rank/bank receipts are independently bound, not inferred from scalar check.",
+    "seconds": 0.069159,
+    "signed_lift_prefix": [
+      {
+        "bits": 16,
+        "cancellation_free_signed_row_l1_upper": "52601",
+        "reverse": false
+      },
+      {
+        "bits": 20,
+        "cancellation_free_signed_row_l1_upper": "1023858",
+        "reverse": true
+      }
+    ],
+    "signed_reverse_semantics": "Reverse ADD coefficient negated; reverse DISCARD is fresh COPY from recorded unchanged original center; reverse COPY is DISCARD. Each such block is inverse over every commutative coefficient ring, by elementary-shear induction.",
+    "stages": [
+      {
+        "fresh_copies": 20,
+        "scalar_additions": 357770,
+        "signed_inverse": false,
+        "stage": 0
+      },
+      {
+        "fresh_copies": 20,
+        "scalar_additions": 357770,
+        "signed_inverse": true,
+        "stage": 1
+      },
+      {
+        "fresh_copies": 20,
+        "scalar_additions": 357770,
+        "signed_inverse": false,
+        "stage": 2
+      },
+      {
+        "fresh_copies": 20,
+        "scalar_additions": 357770,
+        "signed_inverse": true,
+        "stage": 3
+      },
+      {
+        "fresh_copies": 20,
+        "scalar_additions": 357770,
+        "signed_inverse": false,
+        "stage": 4
+      }
+    ],
+    "status": "PASS_NEW_COHORT249_ALL_FIVE_STAGE_FORMAL_COLUMNS_AND_PREFIX_BILL"
+  },
+  "price": {
+    "word": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/package-replay-final/candidate",
+    "local": {
+      "1": 21883,
+      "2": 8834,
+      "3": 5357,
+      "4": 1460,
+      "5": 953,
+      "6": 999,
+      "7": 619,
+      "8": 171,
+      "9": 366,
+      "10": 209,
+      "11": 80,
+      "12": 996,
+      "14": 276,
+      "16": 840,
+      "17": 2604,
+      "18": 610
+    },
+    "resid": 131850,
+    "W": 125190,
+    "bit_coarse": "402794119831239/500000000000000000",
+    "b": "876248285600677/1000000000000000000",
+    "binding": "bit",
+    "kappa": "160987957846297/200000000000000000",
+    "kappa_float": 0.000804939789231485
+  }
+}

@@ -1,0 +1,153 @@
+{
+ "tag": "pc6_chi2",
+ "arch": "arch_paired_cube.py",
+ "args": {
+  "p": "6",
+  "pm": "/tmp/radical/H/out/pkg_p6/bitword/producer/data/pm_p6.json",
+  "qmod": "/tmp/radical/H/out/pkg_p6/bitword/producer/data/qmod_p6.json",
+  "design": "/tmp/radical/H/out/pkg_p6/bitword/producer/data/local_design_p6.json",
+  "merge": "1",
+  "scale_chi": "2",
+  "star_coord": "0"
+ },
+ "family": "paired_cube_variant",
+ "p": 6,
+ "h": 12,
+ "v": 160,
+ "nodes": 1096,
+ "roots": 612,
+ "mixes": 80,
+ "shape": {
+  "p": 6,
+  "h": 12,
+  "v": 160,
+  "m": 60,
+  "ell": 120,
+  "idle": [
+   22,
+   11,
+   26,
+   4
+  ],
+  "center_rank": 10,
+  "centers": 12,
+  "center_ranks": [
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10
+  ],
+  "scatter_reads": 40,
+  "scatter_reads_list": [
+   40,
+   40,
+   40,
+   40,
+   40,
+   40,
+   40,
+   40,
+   40,
+   40,
+   40,
+   40
+  ],
+  "center_reads": 480,
+  "deficit": 40,
+  "virtual_m": 36,
+  "virtual_deficit": -40,
+  "replicas": 60,
+  "stages": 5
+ },
+ "virtual": {
+  "R": 1524,
+  "loss": 120,
+  "deficit": -40,
+  "gauges": 0,
+  "matched": 184,
+  "plain": 1220,
+  "float_root": 0.0
+ },
+ "price": {
+  "p": 6,
+  "h": 12,
+  "v": 160,
+  "m": 60,
+  "deficit": 40,
+  "ell": 120,
+  "centers": 12,
+  "R": 1524,
+  "entrances": {},
+  "literal_stock": 129840,
+  "rank_mass": 1557600,
+  "paid_hist": {
+   "1": 3052,
+   "2": 733,
+   "3": 835,
+   "4": 246,
+   "5": 101,
+   "6": 375,
+   "7": 96,
+   "8": 80,
+   "9": 726,
+   "10": 332
+  },
+  "five_stage_hist": {
+   "1": 183120,
+   "2": 43980,
+   "3": 50100,
+   "4": 18600,
+   "5": 6060,
+   "6": 22500,
+   "7": 5760,
+   "8": 4800,
+   "9": 43560,
+   "10": 19920,
+   "11": 3840,
+   "22": 3840,
+   "26": 3840
+  },
+  "J_phys_chains": 47200.25404611434,
+  "J_five_stage": 3591375.3921959144,
+  "physical_row": {
+   "R": 1524,
+   "changed_operation_frames": 845,
+   "internal": {
+    "1": 2572,
+    "2": 653,
+    "3": 835,
+    "4": 246,
+    "5": 101,
+    "6": 375,
+    "7": 96,
+    "9": 566,
+    "10": 252
+   }
+  },
+  "kappa": "133611920469539/1000000000000000000",
+  "kappa_float": 0.000133611920469539,
+  "bit_root": 0.000133629775001037,
+  "root_interval": [
+   "0.0001336297750010376858",
+   "0.0001336297750010376858"
+  ],
+  "seconds": 0.75484299659729
+ },
+ "seconds": {
+  "architecture": 0.016165733337402344,
+  "compile_solve": 1.0943479537963867,
+  "compile_frozen": 1.0110418796539307,
+  "make_physical": 0.15295696258544922,
+  "descent": 0.48486995697021484,
+  "price": 0.7970340251922607,
+  "total": 3.5944578647613525
+ }
+}

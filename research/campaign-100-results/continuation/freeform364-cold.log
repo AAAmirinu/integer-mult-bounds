@@ -1,0 +1,8 @@
+computing supports
+start J 460105.7524538929 calls 46254 movable 354890 fixed 2900 G 357810
+start kappa None
+[1.0 min] T 0.020 J 460105.752 best 460105.752 tried 4506041 acc 96430 up 129 pushes 1079220/1446 live 6761 tab 355387 frames 13180
+[2.0 min] T 0.004 J 460105.752 best 460105.752 tried 11178162 acc 251129 up 129 pushes 2808942/3711 live 6797 tab 355387 frames 13180
+anneal done J 460105.7524538929 best 460105.7524538929 tried 14135553 acc 319456
+polish round 0 applied 0 J 460105.7524538929
+done moves 0 J 460105.7524538929 calls 46254 kappa None new frames used 0

@@ -1,0 +1,122 @@
+{
+ "tag": "tri_steiner",
+ "arch": "arch_example_triples.py",
+ "args": {
+  "h": "7",
+  "family": "steiner"
+ },
+ "family": "triples_steiner",
+ "p": 3,
+ "h": 7,
+ "v": 7,
+ "nodes": 32,
+ "roots": 14,
+ "mixes": 0,
+ "shape": {
+  "p": 3,
+  "h": 7,
+  "v": 7,
+  "m": 35,
+  "ell": 21,
+  "idle": [
+   12,
+   6,
+   16,
+   4
+  ],
+  "center_rank": 3,
+  "centers": 7,
+  "center_ranks": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "scatter_reads": 3,
+  "scatter_reads_list": [
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3
+  ],
+  "center_reads": 21,
+  "deficit": -77,
+  "virtual_m": 21,
+  "virtual_deficit": -49,
+  "replicas": 60,
+  "stages": 5
+ },
+ "virtual": {
+  "R": 43,
+  "loss": 21,
+  "deficit": -49,
+  "gauges": 2,
+  "matched": 3,
+  "plain": 37,
+  "float_root": 0.0
+ },
+ "price": {
+  "p": 3,
+  "h": 7,
+  "v": 7,
+  "m": 35,
+  "deficit": -77,
+  "ell": 21,
+  "centers": 7,
+  "R": 41,
+  "entrances": {},
+  "literal_stock": 4140,
+  "rank_mass": 29904,
+  "paid_hist": {
+   "1": 67,
+   "2": 32,
+   "3": 8,
+   "4": 30,
+   "5": 9,
+   "6": 12
+  },
+  "five_stage_hist": {
+   "1": 4020,
+   "2": 1920,
+   "3": 480,
+   "4": 1968,
+   "5": 540,
+   "6": 888,
+   "12": 168,
+   "16": 168
+  },
+  "J_phys_chains": 799.4020026721458,
+  "J_five_stage": 64808.26524403909,
+  "physical_row": {
+   "R": 41,
+   "changed_operation_frames": 11,
+   "internal": {
+    "1": 67,
+    "2": 30,
+    "3": 8,
+    "4": 28,
+    "5": 9
+   }
+  },
+  "kappa": null,
+  "kappa_float": 0.0,
+  "bit_root": 0.0,
+  "error": "AssertionError('no positive root: deficit -77, maxchild 16, m 35')",
+  "seconds": 0.059478044509887695
+ },
+ "seconds": {
+  "architecture": 0.0021991729736328125,
+  "compile_solve": 0.01503896713256836,
+  "compile_frozen": 0.010998964309692383,
+  "make_physical": 0.033666133880615234,
+  "descent": 0.041442155838012695,
+  "price": 0.0960531234741211,
+  "total": 0.229262113571167
+ }
+}

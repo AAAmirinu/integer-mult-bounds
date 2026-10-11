@@ -1,0 +1,293 @@
+[
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/RADICAL-IDEAS.md",
+    "archive": "plans/RADICAL-IDEAS.md",
+    "bytes": 15362,
+    "sha256": "849e2a34f86d1cee2cd2dd8264b5a7b488a68b69ada52e390ac1aded0d9a1ec3"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/ARCHITECTURES-100.md",
+    "archive": "plans/ARCHITECTURES-100.md",
+    "bytes": 11784,
+    "sha256": "4bd8570c912276dbf353633481df4ccdb0b9190fdd88ad1e6c38baefefa2aa2e"
+  },
+  {
+    "source": "/tmp/radical/TRACKING.md",
+    "archive": "reports/TRACKING-historical.md",
+    "bytes": 10514,
+    "sha256": "e92e7e66842f698e527288ac76ad1ce4a7d1f519aa928eadbec3cf7e43e889e0"
+  },
+  {
+    "source": "/tmp/radical/A/RESULT.md",
+    "archive": "reports/A-RESULT.md",
+    "bytes": 10241,
+    "sha256": "3e851dcb492e443c780b49d8b183a827fabe5b0926a9508076bfb52f3d1ae4a7"
+  },
+  {
+    "source": "/tmp/radical/B-certificate-whatif/RESULT.md",
+    "archive": "reports/B-RESULT.md",
+    "bytes": 11323,
+    "sha256": "2a1a0e1f96b44bd4a06fc58038783f3d71c77e80feeb1f114f45eca4d379b771"
+  },
+  {
+    "source": "/tmp/radical/C/RESULT.md",
+    "archive": "reports/C-RESULT.md",
+    "bytes": 7013,
+    "sha256": "96a40f13ccea0042e9f8195796f6e701f52e4249e6cb218f91b172099fb6b412"
+  },
+  {
+    "source": "/tmp/radical/D/RESULT.md",
+    "archive": "reports/D-RESULT.md",
+    "bytes": 15562,
+    "sha256": "9baab414d5f7eb069994085cad390f8734c1427b94a91522c07c7d3b387e1b52"
+  },
+  {
+    "source": "/tmp/radical/E-module-sat/RESULT.md",
+    "archive": "reports/E-RESULT.md",
+    "bytes": 8773,
+    "sha256": "586c2b2737ca424189e437c7460764443b62cd9fe64ce2a7f37b38b9d9e09bc8"
+  },
+  {
+    "source": "/tmp/radical/F/RESULT.md",
+    "archive": "reports/F-RESULT.md",
+    "bytes": 11237,
+    "sha256": "e89bc95127b8420bf465c06f46fd534c68b62d7fd10a7d8e98230e17d2f33054"
+  },
+  {
+    "source": "/tmp/radical/G/RESULT.md",
+    "archive": "reports/G-RESULT.md",
+    "bytes": 13339,
+    "sha256": "3016ec99cb3df96ed523a300c1f17162866c0a9c25770b73dab89582d6f7d3fe"
+  },
+  {
+    "source": "/tmp/radical/H/RESULT.md",
+    "archive": "reports/H-RESULT.md",
+    "bytes": 10281,
+    "sha256": "915fae5f9863433100d638bf6cb8cfc3a451486f9820f13f927c633bfa441e4e"
+  },
+  {
+    "source": "/tmp/radical/I/RESULT.md",
+    "archive": "reports/I-RESULT.md",
+    "bytes": 10612,
+    "sha256": "0f6080b8dc05ad868ad13353a0654a8e4e8342e26d32020ea82143b24ef1d5f9"
+  },
+  {
+    "source": "/tmp/radical/J/RESULT.md",
+    "archive": "reports/J-RESULT.md",
+    "bytes": 10554,
+    "sha256": "94c48f5b54776e8fdf72cc54d1fbea3266098cccc77c878a932fc1669771947e"
+  },
+  {
+    "source": "/tmp/radical/K/RESULT.md",
+    "archive": "reports/K-RESULT.md",
+    "bytes": 8293,
+    "sha256": "9168b217a9970d972cda6d628042cd83ed01e8650860c16aa3a9be483aa977e8"
+  },
+  {
+    "source": "/tmp/radical/L-design-enum/RESULT.md",
+    "archive": "reports/L-RESULT.md",
+    "bytes": 8866,
+    "sha256": "5e306ca3f60d5954acc7ef62e4f4cb9de1bb7964f0e2eb0f5023850f07b7dbd5"
+  },
+  {
+    "source": "/tmp/radical/M/RESULT.md",
+    "archive": "reports/M-RESULT.md",
+    "bytes": 26522,
+    "sha256": "fd4b0f80eef427a6e5d8013ea19abe43c8a85f5826e7c8a22acc4655bebf3a68"
+  },
+  {
+    "source": "/tmp/radical/N/RESULT.md",
+    "archive": "reports/N-RESULT.md",
+    "bytes": 12166,
+    "sha256": "c3617cd5c6a638259c2f66e44c15e68c4d6be53fd1f52d6d53827204964daf42"
+  },
+  {
+    "source": "/tmp/radical/O/RESULT.md",
+    "archive": "reports/O-RESULT.md",
+    "bytes": 12100,
+    "sha256": "2c46a53a6bf638051d4542a47a94505d021914ade37fb8dad457f0c0fe33c53b"
+  },
+  {
+    "source": "/tmp/radical/P/RESULT.md",
+    "archive": "reports/P-RESULT.md",
+    "bytes": 7599,
+    "sha256": "048a0548b9712013e8d6eff7fb00984b6dceccdab37fff554631e219c46db5ce"
+  },
+  {
+    "source": "/tmp/radical/S/ARCH-SPEC.md",
+    "archive": "prototype/ARCH-SPEC.md",
+    "bytes": 15385,
+    "sha256": "ce8949dc3031bf7422756f6cea770e21a011b1d67bd6685942d7be0ea5269434"
+  },
+  {
+    "source": "/tmp/radical/S/out/result_pc10.json",
+    "archive": "prototype/result_pc10.json",
+    "bytes": 3337,
+    "sha256": "368bb51bfcb4ba0d1eb034ed8cef6e898d356f7db91ffc44689a3c87d36c6135"
+  },
+  {
+    "source": "/tmp/radical/S/out/result_pc6.json",
+    "archive": "prototype/result_pc6.json",
+    "bytes": 2605,
+    "sha256": "9cec356ca5d28a0baf550f396e48afb6d387d2d174f7f71a57487289492887fa"
+  },
+  {
+    "source": "/tmp/radical/S/out/result_pc6_chi2.json",
+    "archive": "prototype/result_pc6_chi2.json",
+    "bytes": 2501,
+    "sha256": "52b9fa454f271b46428939f2ea49d4d897cf97351de9bb7fe55b9f474f76742f"
+  },
+  {
+    "source": "/tmp/radical/S/out/result_pc6_nomix.json",
+    "archive": "prototype/result_pc6_nomix.json",
+    "bytes": 2497,
+    "sha256": "9c1d5fcc85987a22e1754ec90441488c0f084b7ccc2c90639d869dd42c405c6d"
+  },
+  {
+    "source": "/tmp/radical/S/out/result_pc6_support.json",
+    "archive": "prototype/result_pc6_support.json",
+    "bytes": 2484,
+    "sha256": "0fbb9776fe6613aeb651092e5befd84498d200e5dfd628bf0829d25b28c9a4c0"
+  },
+  {
+    "source": "/tmp/radical/S/out/result_pc7.json",
+    "archive": "prototype/result_pc7.json",
+    "bytes": 2736,
+    "sha256": "bb8c308544afab294bb1cf44b51600f10df493556d94ecc605c330a1a0d62339"
+  },
+  {
+    "source": "/tmp/radical/S/out/result_tri_all.json",
+    "archive": "prototype/result_tri_all.json",
+    "bytes": 1910,
+    "sha256": "2a8acdb4cc7fdc0af896008df52fb5c255b117d2bf2b1cf09a360fa48a352939"
+  },
+  {
+    "source": "/tmp/radical/S/out/result_tri_steiner.json",
+    "archive": "prototype/result_tri_steiner.json",
+    "bytes": 1849,
+    "sha256": "2ba7d23bcb39bd9b61e69700c813dbf0ec6fd604e5eef470949e79f8d382bec5"
+  },
+  {
+    "source": "/tmp/radical/T1/out/result_sx12.json",
+    "archive": "prototype/result_sx12.json",
+    "bytes": 2365,
+    "sha256": "7e5c85d53bd2c7215b1dfd166791191b9f630eb8db93e4f5c1d99306976c46ac"
+  },
+  {
+    "source": "/tmp/radical/T1/out/result_sx14.json",
+    "archive": "prototype/result_sx14.json",
+    "bytes": 2502,
+    "sha256": "1418a822834216fe7ef50ebe5e63d3c85ab57246fb5f5d0cc3cf837cefc349b7"
+  },
+  {
+    "source": "/tmp/radical/T3/decoders_p567.log",
+    "archive": "prototype/decoders_p567.log",
+    "bytes": 9217,
+    "sha256": "30f0b64df0215dab8b5ac283bc03b5825bd40540d52ffa871256b255febf7d50"
+  },
+  {
+    "source": "/tmp/radical/T3/decoders_p5_p6.log",
+    "archive": "prototype/decoders_p5_p6.log",
+    "bytes": 5531,
+    "sha256": "e2f50495a4a6c986411f5988155a6ad2eb591705001d456114722b120bb56ec0"
+  },
+  {
+    "source": "/tmp/radical/T3/decoders.py",
+    "archive": "prototype/decoders.py",
+    "bytes": 9261,
+    "sha256": "ea8c67c43d2ba368760b5448aa08bb2dcdc35cfb9275457168dd8771e0f81e05"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/reorder64.json",
+    "archive": "continuation/reorder64.json",
+    "bytes": 204,
+    "sha256": "b9edd77facf30b7c17f9e1ce36f296b524c20970495663e7ef5b6624ba776d82"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/reorder-all.json",
+    "archive": "continuation/reorder-all.json",
+    "bytes": 208,
+    "sha256": "4c547229cdfd1b30a531934838b9fef726a5917464488eb256381b7314160c2f"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/freeform364.json",
+    "archive": "continuation/freeform364.json",
+    "bytes": 77630,
+    "sha256": "2a0d77ed11b6f955b9e09a3f58f06194716f8573b33fb066df56bd7e3fc71295"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/freeform364-cold.json",
+    "archive": "continuation/freeform364-cold.json",
+    "bytes": 92,
+    "sha256": "158b42f4051de144c3f6434e83ae6cc2052cacbd6258bcf0ec2f05ed5ca70582"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/freeform364-reduced.json",
+    "archive": "continuation/freeform364-reduced.json",
+    "bytes": 179953,
+    "sha256": "9bae966f2ed79ee8c4a1ccf488167fb7814bf13c64452e3386235b04cfdcc075"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/cpsat364.json",
+    "archive": "continuation/cpsat364.json.gz",
+    "bytes": 15273900,
+    "sha256": "400838358d6383507345dd8f4692d9eaf9788c6c702b209df292e0ccc02f02aa",
+    "encoding": "gzip"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/cpsat364-normalized.json",
+    "archive": "continuation/cpsat364-normalized.json.gz",
+    "bytes": 15273900,
+    "sha256": "8b1044ff4fdae8991b3f353388a856113b436517386a37804922f86286c2d68e",
+    "encoding": "gzip"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/cpsat364-reduced.json",
+    "archive": "continuation/cpsat364-reduced.json.gz",
+    "bytes": 2521573,
+    "sha256": "263d2d03e0d4850370baed23102137e65474dadf527ff46b44cce57dae430bda",
+    "encoding": "gzip"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/combined364.json",
+    "archive": "continuation/combined364.json",
+    "bytes": 167345,
+    "sha256": "6183881d95ba987991f856b4b5d0f8f7588c3201e606e9d89b94b0bf453f62b8"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/freeform364.log",
+    "archive": "continuation/freeform364.log",
+    "bytes": 1293,
+    "sha256": "cf554d9e331b911e7270f46e4f62a8e2bc7ea1e13d6fb88b4206a013763152b5"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/freeform364-cold.log",
+    "archive": "continuation/freeform364-cold.log",
+    "bytes": 575,
+    "sha256": "53afe4bfead387846e40ba50899fe7a00b660fe497b73f4f086edfc52443e6b6"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/cpsat364.log",
+    "archive": "continuation/cpsat364.log",
+    "bytes": 96967,
+    "sha256": "0a33716bcdd73c02e56862c8c981419496eb2db4f06f9febf1638fea3f864ee9"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/candidate-combined.log",
+    "archive": "continuation/candidate-combined.log",
+    "bytes": 1519,
+    "sha256": "bf82e58d4bb2f1a6e74b0deeb989e208adb9f585c0ef763e672940fad88cf3f4"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/package-replay-final/RESULT.json",
+    "archive": "continuation/PR366-RESULT.json",
+    "bytes": 4917,
+    "sha256": "d0d47594dbcc519026fcecf90894fac567e1d7e59b8415441b4f705d125b933d"
+  },
+  {
+    "source": "/Volumes/SP AI 01_16/CodexWorkspaces/imb-retime2/frontier364/package-replay-final.log",
+    "archive": "continuation/PR366-replay.log",
+    "bytes": 13817,
+    "sha256": "7ae66ca39ddf0b062f077299aa3813cae230b6abf4c2f153b6c011c750eb85ff"
+  }
+]
