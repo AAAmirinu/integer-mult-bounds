@@ -22,3 +22,6 @@ research/community-round9-audit/** -text -whitespace
 # PR390 and the refinement bind the exact original bytes, including CRLF.
 research/e8-prefix-restoration/** -text -whitespace
 research/e8-prefix-bootstrap/** -text -whitespace
+
+# Preserve manifest-pinned PR398 supplier bytes.
+research/e8-r781-signed-source/** -text
