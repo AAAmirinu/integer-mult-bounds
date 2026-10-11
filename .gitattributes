@@ -26,3 +26,6 @@ research/e8-early-reset-kernel/** -text -whitespace
 research/e8-early-reset-reuse/** -text -whitespace
 research/idle-axis-hosting/** -text -whitespace
 research/split-centres-global/** -text -whitespace
+# Preserve source pins and the literal evidence diff, including removed whitespace.
+research/e8-target-mixing-whole/** -text
+research/e8-target-mixing-whole-validation/FINAL-COSMETIC.diff -text -whitespace
