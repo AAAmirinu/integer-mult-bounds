@@ -1,3 +1,5 @@
+> Historical stage document retained for provenance. Counts, hypotheses about entrance overlap, and references to "this package" below describe the named earlier stage. The current 217-gauge construction uses chronological acyclic entrances and 64 replicas; its authoritative current proof, counts and scope are in the package-root PROOF.md and VALIDATION.json. The earlier numerical examples do not describe the final word.
+
 Historical PR401 proof note: its universal wrapper argument is reused here; its final119-gauge numerical example is superseded by FINAL-SUFFICIENT.md and the root PROOF.md.
 
 # Sufficient two-sided normalization for arbitrary entrance frames

@@ -1,3 +1,5 @@
+> Historical stage document retained for provenance. Counts, hypotheses about entrance overlap, and references to "this package" below describe the named earlier stage. The current 217-gauge construction uses chronological acyclic entrances and 64 replicas; its authoritative current proof, counts and scope are in the package-root PROOF.md and VALIDATION.json. The earlier numerical examples do not describe the final word.
+
 # Direct sources and attribution
 
 All numbered PRs are in https://github.com/CrocSwap/integer-mult-bounds. Original upstream source and license notices are retained; no submitter identity or credentials are added.

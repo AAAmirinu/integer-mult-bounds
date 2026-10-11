@@ -1,3 +1,5 @@
+> Historical stage document retained for provenance. Counts, hypotheses about entrance overlap, and references to "this package" below describe the named earlier stage. The current 217-gauge construction uses chronological acyclic entrances and 64 replicas; its authoritative current proof, counts and scope are in the package-root PROOF.md and VALIDATION.json. The earlier numerical examples do not describe the final word.
+
 # Sufficient final-bank composition, frozen194candidate
 
 Candidate SHA256 d18ccdc580e78bde51575daec812cdbfaa92d1a700bf4d6a140b028f0424325a. The independently admitted complete dirty local word restores its own194 gauged helper tokens and all off-diagonal helper responses in both inverse-adjoint orientations. Helpers are arbitrary and may be correlated. Its194 entrances have37 distinct exact charts, total entrance dimension344. Shared donors are permitted because no gauged pivot is a donor; the explicit entrance shear is still I+N with N squared zero. Actual shared-donor frame walks are separately nested and admitted, rather than inferred from role disjointness.

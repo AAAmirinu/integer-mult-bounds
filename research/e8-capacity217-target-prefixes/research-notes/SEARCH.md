@@ -1,3 +1,5 @@
+> Historical stage document retained for provenance. Counts, hypotheses about entrance overlap, and references to "this package" below describe the named earlier stage. The current 217-gauge construction uses chronological acyclic entrances and 64 replicas; its authoritative current proof, counts and scope are in the package-root PROOF.md and VALIDATION.json. The earlier numerical examples do not describe the final word.
+
 # Research record and unpriced routes
 
 The priced witness is the 119-gauge response-subspace construction only. Discovery uses native C++ finite searches and the native HiGHS integer solver; floating scores nominate candidates. Exact rational reconstruction, integer inventory checks, Gaussian phases, template readback and strict moment inequalities determine acceptance.

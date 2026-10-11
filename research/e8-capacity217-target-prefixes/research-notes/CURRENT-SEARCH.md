@@ -1,3 +1,5 @@
+> Historical stage document retained for provenance. Counts, hypotheses about entrance overlap, and references to "this package" below describe the named earlier stage. The current 217-gauge construction uses chronological acyclic entrances and 64 replicas; its authoritative current proof, counts and scope are in the package-root PROOF.md and VALIDATION.json. The earlier numerical examples do not describe the final word.
+
 # Current bounded search and composition record
 
 The starting point is the admittedPR401119-gauge construction. This round catalogued all401PR entries and downloaded the four new/changed heads400,376,401,186. The source head of376 advanced during the initial download to7aa9d9f0247bb60c0519704bbca18990011e2a37; that actual downloaded frame edit, not the earlier catalogue head, is pinned. No refresh occurred during packaging. Unchanged public pipelines were not rerun.
