@@ -1,0 +1,32 @@
+{
+  "ai_disclosure": "New prefix exploration, integration and verification scripts prepared by OpenAI Codex; no human mathematical verification claimed.",
+  "provenance": [
+    {
+      "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/404",
+      "head": "12f488264cdd74a3b60d0fb534f4955792384f5c",
+      "credit": "Dugongue shared-donor nested entrance construction and native exact admission"
+    },
+    {
+      "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/402",
+      "head": "7883c63ec724999b921c2304b66648cbb9e7a112",
+      "credit": "Chafik Boukhalfa target-window resynthesis, exact rational search and block histogram reconstruction"
+    }
+  ],
+  "source_candidate_sha256": "957a29db7793338aa152f9f133982c1b9246b74e55253ef21a2a05c14e3db87e",
+  "candidate_sha256": "f455636298b7599d2f9c63ad25763c80c5c2c00b7126bc297a07619fc1311800",
+  "exact_local_source_hashes": {
+    "candidate.json": "f455636298b7599d2f9c63ad25763c80c5c2c00b7126bc297a07619fc1311800",
+    "local_admit.py": "55e56591261f5bb23e0badc78376ff55ca427a658859fe4bd661f46855c6cba3",
+    "coefficient_words.py": "5c6cdaf446ad217068fee6dbe9e5b21fabff504c64e408d5dd7a61159808904a",
+    "prefix/apply.py": "5da878df812a59346a17ce7f1ebbf5ef87af248636c9c04bf9d5385f3cef60a3",
+    "deps/complex_labels.py": "e000ee131389fec427388b85f632879cbaaf10e5e5d979a47d6307d64ce58982",
+    "deps/complex_splice.py": "4fd7e0c9aa825a6bd40c5053c715a6efad0653c0947287fc9b90a56e52b5f8fd",
+    "deps/complex_scalars.py": "39b44fff410747d7ba96d6527bd38294cf78e62dd2d8d4055849b6dd72358af6",
+    "deps/p10pins.py": "93b78a2e038b23264d04836928c78b6ebf33b87ff3dcc0e43ba0f1748fadd143",
+    "deps/scatter.py": "dfd1afbbb3ff86f54db6a0313916403ec8ee6f939caa62f3edcc9d7a151bff95",
+    "deps/clifford_exact.py": "2982ead07721e83358dc67c6f49c2b4c16a236a6bebdfd72f58221be1f5d0962"
+  },
+  "gx_sixths_admission_claim": false,
+  "acyclic_entrance_proof": "Exact chronological prefix/suffix omission formula and entrance DAG; original-A frame closure admitted by full reflected ledgers and adverse frame controls",
+  "local_result_sha256": "5086655f9d286c0ce5639cb275d22fb424bbc04284d0ccf1c1a13cbe21dd41bb"
+}

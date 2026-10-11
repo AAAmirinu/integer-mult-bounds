@@ -1,0 +1,44 @@
+{
+  "PR411": {
+    "reference": "1017629458064773/1000000000000000000",
+    "difference": "2862166273/15625000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "grouped210": {
+    "reference": "508830459221077/500000000000000000",
+    "difference": "151718264091/1000000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "PR412_reported": {
+    "reference": "1017776060460931/1000000000000000000",
+    "difference": "18288122657/500000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "PR413_reported": {
+    "reference": "1017671197486403/1000000000000000000",
+    "difference": "70719609921/500000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "PR416": {
+    "reference": "1017798035290733/1000000000000000000",
+    "difference": "1825176939/125000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "PR415_reported": {
+    "reference": "254446535007577/250000000000000000",
+    "difference": "26496675937/1000000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  }
+}
