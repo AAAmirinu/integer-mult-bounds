@@ -1,0 +1,30 @@
+{
+  "PR416": {
+    "reference": "1017798035290733/1000000000000000000",
+    "difference": "107418914803/200000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "capacity217_full": {
+    "reference": "254472458475213/250000000000000000",
+    "difference": "55661995487/125000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "PR419_reported": {
+    "reference": "203592481059369/200000000000000000",
+    "difference": "372724567903/1000000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "PR420": {
+    "reference": "203562527341249/200000000000000000",
+    "difference": "522493158503/1000000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  }
+}

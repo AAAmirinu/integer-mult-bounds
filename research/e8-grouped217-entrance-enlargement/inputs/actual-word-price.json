@@ -1,0 +1,129 @@
+{
+  "source_sha256": "3ecb4c3ac6c02e62067cc1cf3d58f07a40db64700c1003b75d64cb07a9e06188",
+  "replicas": 64,
+  "inventory": {
+    "9": 564,
+    "8": 151,
+    "7": 24,
+    "5": 18,
+    "4": 24
+  },
+  "local_profile": {
+    "9": 8,
+    "1": 2463,
+    "2": 698,
+    "3": 402,
+    "4": 114,
+    "5": 212,
+    "6": 227,
+    "7": 65,
+    "8": 20
+  },
+  "profile": {
+    "9": 4608,
+    "1": 1443249,
+    "2": 402048,
+    "3": 231552,
+    "4": 65664,
+    "5": 122112,
+    "6": 130752,
+    "7": 37440,
+    "8": 57600,
+    "16": 30720,
+    "32": 30720,
+    "48": 30720
+  },
+  "bank_patterns": [
+    {
+      "count": 2729,
+      "padding": 1,
+      "r9": 8
+    },
+    {
+      "count": 440,
+      "padding": 0,
+      "r8": 8,
+      "r9": 1
+    },
+    {
+      "count": 1152,
+      "padding": 0,
+      "r5": 1,
+      "r8": 4,
+      "r9": 4
+    },
+    {
+      "count": 1536,
+      "padding": 0,
+      "r4": 1,
+      "r7": 1,
+      "r8": 1,
+      "r9": 6
+    }
+  ],
+  "banks_per_stage": 5857,
+  "live": 114153,
+  "physical": 114944,
+  "deficit": 19968,
+  "coarse": {
+    "lower": "509686596699014261497/500000000000000000000000",
+    "upper": "203874638679605704599/200000000000000000000000",
+    "m": 73,
+    "stock": 114153,
+    "profile": {
+      "9": 4608,
+      "1": 1443249,
+      "2": 402048,
+      "3": 231552,
+      "4": 65664,
+      "5": 122112,
+      "6": 130752,
+      "7": 37440,
+      "8": 57600,
+      "16": 30720,
+      "32": 30720,
+      "48": 30720
+    },
+    "deficit": 19968,
+    "density": "1/10000000000000000",
+    "fallback_rank_one_calls": 441187483680,
+    "first_lower_residual": "-591592450617542312474423139788714733512947/6739986666787659948666753771754907668409286105635143120275902562304",
+    "first_upper_residual": "61109128078493405494371559047179258014880067/26959946667150639794667015087019630673637144422540572481103610249216",
+    "second_lower_residual": "-175546492804407227259/2000000000000000000000000000000000000000000000",
+    "second_upper_residual": "4533325507241222325429/2000000000000000000000000000000000000000000000",
+    "scope": "Exact moment on supplied paid counts; count realization and finite supplier admission are separate hypotheses."
+  },
+  "kappa": "254583782466187/250000000000000000",
+  "kappa_decimal": "0.001018335129864748",
+  "comparison": {
+    "PR416": {
+      "reference": "1017798035290733/1000000000000000000",
+      "difference": "107418914803/200000000000000000",
+      "sign": "positive",
+      "larger_is_better": true,
+      "improves": true
+    },
+    "capacity217_full": {
+      "reference": "254472458475213/250000000000000000",
+      "difference": "55661995487/125000000000000000",
+      "sign": "positive",
+      "larger_is_better": true,
+      "improves": true
+    },
+    "PR419_reported": {
+      "reference": "203592481059369/200000000000000000",
+      "difference": "372724567903/1000000000000000000",
+      "sign": "positive",
+      "larger_is_better": true,
+      "improves": true
+    },
+    "PR420": {
+      "reference": "203562527341249/200000000000000000",
+      "difference": "522493158503/1000000000000000000",
+      "sign": "positive",
+      "larger_is_better": true,
+      "improves": true
+    }
+  },
+  "scope": "Exact paid profile and inventory derived from supplied actual word, exact packing and moment screen. Full changed local/adapters/compiler invoice/bridge/outer replay still required."
+}

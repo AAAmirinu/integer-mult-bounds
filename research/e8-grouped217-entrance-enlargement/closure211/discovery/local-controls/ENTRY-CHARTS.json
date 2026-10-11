@@ -1,0 +1,2281 @@
+{
+  "950": {
+    "basis": [
+      268,
+      204,
+      33,
+      17,
+      3
+    ],
+    "formal_normalized_input_token": "T_950_inverse",
+    "physical_initial_chart": "T_950",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_950_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "951": {
+    "basis": [
+      259,
+      132,
+      68,
+      51,
+      12
+    ],
+    "formal_normalized_input_token": "T_951_inverse",
+    "physical_initial_chart": "T_951",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_951_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "952": {
+    "basis": [
+      304,
+      240,
+      9,
+      5,
+      3
+    ],
+    "formal_normalized_input_token": "T_952_inverse",
+    "physical_initial_chart": "T_952",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_952_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "953": {
+    "basis": [
+      373,
+      192,
+      12,
+      3
+    ],
+    "formal_normalized_input_token": "T_953_inverse",
+    "physical_initial_chart": "T_953",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_953_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "954": {
+    "basis": [
+      268,
+      129,
+      65,
+      60,
+      3
+    ],
+    "formal_normalized_input_token": "T_954_inverse",
+    "physical_initial_chart": "T_954",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_954_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "955": {
+    "basis": [
+      195,
+      36,
+      20,
+      12
+    ],
+    "formal_normalized_input_token": "T_955_inverse",
+    "physical_initial_chart": "T_955",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_955_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "956": {
+    "basis": [
+      256,
+      213,
+      48,
+      12,
+      3
+    ],
+    "formal_normalized_input_token": "T_956_inverse",
+    "physical_initial_chart": "T_956",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_956_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "957": {
+    "basis": [
+      349,
+      192,
+      48,
+      3
+    ],
+    "formal_normalized_input_token": "T_957_inverse",
+    "physical_initial_chart": "T_957",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_957_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "958": {
+    "basis": [
+      144,
+      80,
+      48,
+      15
+    ],
+    "formal_normalized_input_token": "T_958_inverse",
+    "physical_initial_chart": "T_958",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_958_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "959": {
+    "basis": [
+      272,
+      195,
+      48,
+      15
+    ],
+    "formal_normalized_input_token": "T_959_inverse",
+    "physical_initial_chart": "T_959",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_959_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "960": {
+    "basis": [
+      320,
+      192,
+      51,
+      15
+    ],
+    "formal_normalized_input_token": "T_960_inverse",
+    "physical_initial_chart": "T_960",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_960_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "961": {
+    "basis": [
+      257,
+      204,
+      60,
+      3
+    ],
+    "formal_normalized_input_token": "T_961_inverse",
+    "physical_initial_chart": "T_961",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_961_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "962": {
+    "basis": [
+      260,
+      195,
+      51,
+      12
+    ],
+    "formal_normalized_input_token": "T_962_inverse",
+    "physical_initial_chart": "T_962",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_962_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "963": {
+    "basis": [
+      343,
+      192,
+      48,
+      12
+    ],
+    "formal_normalized_input_token": "T_963_inverse",
+    "physical_initial_chart": "T_963",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_963_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "964": {
+    "basis": [
+      259,
+      240
+    ],
+    "formal_normalized_input_token": "T_964_inverse",
+    "physical_initial_chart": "T_964",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_964_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "965": {
+    "basis": [
+      448,
+      15
+    ],
+    "formal_normalized_input_token": "T_965_inverse",
+    "physical_initial_chart": "T_965",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_965_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "966": {
+    "basis": [
+      304,
+      15
+    ],
+    "formal_normalized_input_token": "T_966_inverse",
+    "physical_initial_chart": "T_966",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_966_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "967": {
+    "basis": [
+      268,
+      240
+    ],
+    "formal_normalized_input_token": "T_967_inverse",
+    "physical_initial_chart": "T_967",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_967_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "968": {
+    "basis": [
+      195
+    ],
+    "formal_normalized_input_token": "T_968_inverse",
+    "physical_initial_chart": "T_968",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_968_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "969": {
+    "basis": [
+      204
+    ],
+    "formal_normalized_input_token": "T_969_inverse",
+    "physical_initial_chart": "T_969",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_969_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "970": {
+    "basis": [
+      51
+    ],
+    "formal_normalized_input_token": "T_970_inverse",
+    "physical_initial_chart": "T_970",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_970_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "971": {
+    "basis": [
+      240,
+      9,
+      5,
+      3
+    ],
+    "formal_normalized_input_token": "T_971_inverse",
+    "physical_initial_chart": "T_971",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_971_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "972": {
+    "basis": [
+      256,
+      195,
+      51,
+      8,
+      4
+    ],
+    "formal_normalized_input_token": "T_972_inverse",
+    "physical_initial_chart": "T_972",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_972_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "973": {
+    "basis": [
+      60
+    ],
+    "formal_normalized_input_token": "T_973_inverse",
+    "physical_initial_chart": "T_973",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_973_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "974": {
+    "basis": [
+      15
+    ],
+    "formal_normalized_input_token": "T_974_inverse",
+    "physical_initial_chart": "T_974",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_974_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "975": {
+    "basis": [
+      255
+    ],
+    "formal_normalized_input_token": "T_975_inverse",
+    "physical_initial_chart": "T_975",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_975_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "976": {
+    "basis": [
+      3
+    ],
+    "formal_normalized_input_token": "T_976_inverse",
+    "physical_initial_chart": "T_976",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_976_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "977": {
+    "basis": [
+      12
+    ],
+    "formal_normalized_input_token": "T_977_inverse",
+    "physical_initial_chart": "T_977",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_977_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "978": {
+    "basis": [
+      240
+    ],
+    "formal_normalized_input_token": "T_978_inverse",
+    "physical_initial_chart": "T_978",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_978_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "979": {
+    "basis": [
+      192
+    ],
+    "formal_normalized_input_token": "T_979_inverse",
+    "physical_initial_chart": "T_979",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_979_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "980": {
+    "basis": [
+      48
+    ],
+    "formal_normalized_input_token": "T_980_inverse",
+    "physical_initial_chart": "T_980",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_980_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "981": {
+    "basis": [
+      469,
+      48,
+      12,
+      3
+    ],
+    "formal_normalized_input_token": "T_981_inverse",
+    "physical_initial_chart": "T_981",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_981_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "982": {
+    "basis": [
+      207
+    ],
+    "formal_normalized_input_token": "T_982_inverse",
+    "physical_initial_chart": "T_982",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_982_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "983": {
+    "basis": [
+      243
+    ],
+    "formal_normalized_input_token": "T_983_inverse",
+    "physical_initial_chart": "T_983",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_983_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "984": {
+    "basis": [
+      252
+    ],
+    "formal_normalized_input_token": "T_984_inverse",
+    "physical_initial_chart": "T_984",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_984_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "985": {
+    "basis": [
+      63
+    ],
+    "formal_normalized_input_token": "T_985_inverse",
+    "physical_initial_chart": "T_985",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_985_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "986": {
+    "basis": [
+      304,
+      240
+    ],
+    "formal_normalized_input_token": "T_986_inverse",
+    "physical_initial_chart": "T_986",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_986_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "987": {
+    "basis": [
+      256,
+      181,
+      117,
+      12,
+      3
+    ],
+    "formal_normalized_input_token": "T_987_inverse",
+    "physical_initial_chart": "T_987",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_987_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "988": {
+    "basis": [
+      256,
+      128,
+      64,
+      51,
+      15
+    ],
+    "formal_normalized_input_token": "T_988_inverse",
+    "physical_initial_chart": "T_988",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_988_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "989": {
+    "basis": [
+      256,
+      204,
+      60,
+      2,
+      1
+    ],
+    "formal_normalized_input_token": "T_989_inverse",
+    "physical_initial_chart": "T_989",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_989_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "990": {
+    "basis": [
+      259,
+      144,
+      80,
+      48,
+      15
+    ],
+    "formal_normalized_input_token": "T_990_inverse",
+    "physical_initial_chart": "T_990",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_990_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "991": {
+    "basis": [
+      259,
+      195,
+      36,
+      20,
+      12
+    ],
+    "formal_normalized_input_token": "T_991_inverse",
+    "physical_initial_chart": "T_991",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_991_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  },
+  "992": {
+    "basis": [
+      256,
+      151,
+      87,
+      48,
+      12
+    ],
+    "formal_normalized_input_token": "T_992_inverse",
+    "physical_initial_chart": "T_992",
+    "entry_adapter_rank": 0,
+    "entry_recipe": {
+      "rank": 0,
+      "left": {
+        "matrix_rows": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "offset": 0,
+        "quadratic_rows": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "linear_Z4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phase": 0
+      },
+      "right": null
+    },
+    "endpoint_residual": "F*T_992_inverse",
+    "endpoint_residual_owner": "architecture two-sided bank normalization receipt required"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "AI_disclosure": "OpenAI Codex,2026-10-11",
+  "provenance": "Apply remaining positive frame-closure nominations from the211 discovery to the verified211 raw entrance word. This retains all prior210 grouped promotions and211 pivot892/frame276 change.",
+  "selected_additions": [
+    {
+      "pivot": 669,
+      "entry": [
+        12
+      ]
+    },
+    {
+      "pivot": 821,
+      "entry": [
+        240
+      ]
+    },
+    {
+      "pivot": 644,
+      "entry": [
+        63
+      ]
+    }
+  ],
+  "source_raw211_sha256": "174d8d41335ef518e3e312a1e8ec162c4bea1646322a585554ec73f13cb9fde7",
+  "candidate_raw214_sha256": "273200440831148556600951863af5d599eadaf0d87f893ca95e418cf2ce7781",
+  "new_gates": 16,
+  "changed_original_A_frames": 4,
+  "full_local_phase_pairs": 846,
+  "paid_delta_vs211": {
+    "1": 7,
+    "2": -2,
+    "3": 1,
+    "4": -2,
+    "7": 1,
+    "8": -1
+  },
+  "proof": "Literal raw/full-snapshot operator equals right multiplication by the prepended elementary shears on all1021 columns; all214 gauges have zeroresponse. Native scalar restoration uses independent entrytokens,bothorientations,allframeledgers. Each original frame reversion and entranceomission is an explicit adversecontrol.",
+  "publication_scope": "Rawentrance candidate only; downstream dual124/125,376frame,402,target124/144prefixes must be composed and freshlyreplayed separately. Exact packed root must improve latestpublished bound."
+}
