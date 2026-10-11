@@ -1,0 +1,178 @@
+{
+  "status": "PASS_PUBLICATION_EXPORT_BYTES_ONLY",
+  "scientific_replay": false,
+  "files": [
+    {
+      "path": ".github/workflows/sharp-r715-fallback.yml",
+      "sha256": "b7ed6ae7b02802c32b4cd9896a8efd38aed8316de162b748df3324e8ec550c81",
+      "bytes": 2569,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/.gitattributes",
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/EXPECTED.json",
+      "sha256": "a35d5be18122349f63861542a66e56ed8011949e07a7e6d2a1620cb8e4cdc856",
+      "bytes": 16036,
+      "crlf_pairs": 59
+    },
+    {
+      "path": "research/r715-sharp-fallback/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/MANIFEST.json",
+      "sha256": "1c39c6126da2e45003c143335fc81215a00da0e62dc621eb59a6439e59585eab",
+      "bytes": 2501,
+      "crlf_pairs": 28
+    },
+    {
+      "path": "research/r715-sharp-fallback/NOTICE.md",
+      "sha256": "f00fe43f5351244f1941564fbafa4a74ca1ec1be128eb89322167b50f35d7783",
+      "bytes": 1755,
+      "crlf_pairs": 11
+    },
+    {
+      "path": "research/r715-sharp-fallback/PROOF.md",
+      "sha256": "f5c75f74e0e8a58375ead0e07d7d86621b24b381ec542476fe7d71c381e7d321",
+      "bytes": 3147,
+      "crlf_pairs": 21
+    },
+    {
+      "path": "research/r715-sharp-fallback/README.md",
+      "sha256": "6b8885a3bc20eb8f899a1f6bc1b4eb1b56f2c58068af6706761c0cc34a01bace",
+      "bytes": 4868,
+      "crlf_pairs": 31
+    },
+    {
+      "path": "research/r715-sharp-fallback/SOURCE.json",
+      "sha256": "3c5f926bf702e7edd6b9603a356f96e7e8fbd098942b9a28b054210ea594ce55",
+      "bytes": 2223,
+      "crlf_pairs": 35
+    },
+    {
+      "path": "research/r715-sharp-fallback/VALIDATION.json",
+      "sha256": "402285c0c0f09961bd6b3bbb5136350edaf05b227879b6f9bd29446e783424c6",
+      "bytes": 1208,
+      "crlf_pairs": 14
+    },
+    {
+      "path": "research/r715-sharp-fallback/code/assemble.py",
+      "sha256": "caaa27d087569b96868aa22a8dd8d88506b39e539f11c6d451c4e033e6deaba8",
+      "bytes": 12936,
+      "crlf_pairs": 140
+    },
+    {
+      "path": "research/r715-sharp-fallback/code/protocol.py",
+      "sha256": "d10dcc61d71f990f95f2502cfce037ec3bb1dcb6843cbb2c77867aea15ba20f4",
+      "bytes": 10457,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/code/sharp_bit_moment.py",
+      "sha256": "7112c50c7332fcd10c429c41fafd086ecb56f9f72d124e400156c2f098506650",
+      "bytes": 2578,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/evidence/R379-ERRATUM-001.json",
+      "sha256": "d8594bb164f36e684e0b987f4535ec0ed7ff868ee4a1e2f3e3e29b8fbf458fbe",
+      "bytes": 3478,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/evidence/R379-REVIEW-001.md",
+      "sha256": "c97919824e7895cf6bb4cfaa14426d1c84a1550e9f0f8c0c3e21d1fa87b5a630",
+      "bytes": 9086,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/evidence/R379-normal-001.json",
+      "sha256": "0352d6a3f62c4d8abe5b4b49641ea2d5eda1c95b8cdbf6ffbe8583004b643f8c",
+      "bytes": 38655,
+      "crlf_pairs": 237
+    },
+    {
+      "path": "research/r715-sharp-fallback/evidence/R379-optimized-001.json",
+      "sha256": "081ec142fb1fb21c0d50fae9edef81b45f462c185cb9ee71bf23e0b825b591b1",
+      "bytes": 38655,
+      "crlf_pairs": 237
+    },
+    {
+      "path": "research/r715-sharp-fallback/pins/CLOSURE.json",
+      "sha256": "256b32f08ec2b79685bf6cf05f7a52904355233d5b9900c415f047b91db3d971",
+      "bytes": 153019,
+      "crlf_pairs": 1635
+    },
+    {
+      "path": "research/r715-sharp-fallback/pins/parent-ADAPTED-PROVIDER-MANIFEST.json",
+      "sha256": "d8847f47377171106c36f78097695b0d6263b374fac3f80566a93422959cbf25",
+      "bytes": 15519,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/pins/parent-COMPLEX-CONTENT.json",
+      "sha256": "37aa6492cdee04ff66d203c5b62cd551d844a520f07fba94a36ce9c67851af61",
+      "bytes": 1250,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/pins/parent-EXPECTED.json",
+      "sha256": "70e515f0a5a2f9508cd030d35a99f90981a6eccc027c9ad5a3c77f5860310910",
+      "bytes": 20007,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/pins/parent-MANIFEST.json",
+      "sha256": "67d23bfff2c9d0b2b55c44e7dfb35b167471e29ef13a088a72c3912a64ad5fcf",
+      "bytes": 18238,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/pins/parent-SOURCE.json",
+      "sha256": "016ac6f3265c41a00b1ae03d162c49f05eddeb1def4cca71086d801e279afcdf",
+      "bytes": 2707,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/pins/parent-UPSTREAM-INVENTORY.json",
+      "sha256": "1d4c985f97116753418ddec94ed3ee90ef35ef8f5ceec8ab118834a8e8daaba8",
+      "bytes": 15606,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/tests/test_complex_content.py",
+      "sha256": "0e27f218a529b5a5c4d9db75861aa5e1f2be07c1ee889b57dbc4f1b35ba8e1b7",
+      "bytes": 5854,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/tests/test_process_bound.py",
+      "sha256": "cf7a702909a6924968018f1542b526fc151ce20729824c6c02bd3da0404f8e4f",
+      "bytes": 3030,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/tests/test_protocol.py",
+      "sha256": "cdee3b271ec358f66089fee69b5844ee832c0f069827cd12e59231a4e7f057bb",
+      "bytes": 7463,
+      "crlf_pairs": 0
+    },
+    {
+      "path": "research/r715-sharp-fallback/verify.py",
+      "sha256": "695b2d8070ace31a2ff4569911688b83ff72067fb2def15929ff97d98b4ffb69",
+      "bytes": 10672,
+      "crlf_pairs": 0
+    }
+  ],
+  "exporter_sha256": "05aba3662c3240d6dbfd86c82a9cb0284e43153e2c94df8a5b1e7588d271172b",
+  "checker_sha256": "4ad3004e0bd2b764498a7d227552304ba0d7be768429e95506fcb5ca4e384fbe",
+  "elapsed": 4.890999999828637,
+  "python": "3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)]"
+}

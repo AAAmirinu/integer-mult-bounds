@@ -1,0 +1,58 @@
+{
+  "status": "PASS_PINNED_SOURCE_CLOSURE",
+  "head": "c7590f1d861f0eaae725cc79901445385aab9125",
+  "checks": [
+    {
+      "package": "r715-replica84-complex79",
+      "files": 160,
+      "manifest_sha256": "67d23bfff2c9d0b2b55c44e7dfb35b167471e29ef13a088a72c3912a64ad5fcf"
+    },
+    {
+      "package": "r715-factor-replica84",
+      "files": 44,
+      "manifest_sha256": "4301db35c5e387c6740d52b96db4dc6154065416fb258959cf5245d6324bc3bb"
+    },
+    {
+      "package": "e8-complex-adapted-kernel",
+      "files": 21,
+      "manifest_sha256": "f0c44127f32efd5f3793aa31fb6f6914e91b52d23060591186cf7419965d4e1c"
+    },
+    {
+      "package": "e8-r740-replica32",
+      "files": 118
+    },
+    {
+      "package": "idle-axis-hosting",
+      "files": 13
+    },
+    {
+      "package": "e8-early-reset-kernel",
+      "files": 29
+    },
+    {
+      "package": "e8-early-reset-reuse",
+      "files": 27
+    },
+    {
+      "package": "split-centres-global",
+      "files": 47
+    },
+    {
+      "package": "r740-idle-hosted-replicas",
+      "files": 12
+    },
+    {
+      "package": "r740-hosted-eleven",
+      "files": 16
+    },
+    {
+      "package": "r740-hosted-rank149",
+      "files": 26
+    },
+    {
+      "package": "e8-target-mixing-whole",
+      "files": 16
+    }
+  ],
+  "checker_sha256": "d63a1f15c9fd3de26697297ecd7461ea9599d2136e00016de935a57f6b6b9a5b"
+}

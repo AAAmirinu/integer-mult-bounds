@@ -1,0 +1,27 @@
+{
+  "status": "PASS_FINAL004_ACTUAL_COMPLETED_PARENT_REUSE_REVIEW",
+  "reviewer": "Codex AI /root/whole_hosting_design",
+  "local_files": {
+    "REVIEW-004.md": "b32569b9dbb82f7b3fdf7d71ca04460ceb5827c97197c6cb963e48857f0c7c61",
+    "SOURCE-REVIEW-004.json": "e876da8775bafe962b778442c5ba894140826576b272812a4730f07e499e68a4",
+    "FINAL-CORE-SCOPE-004.json": "b159e3f6f0b2d69247eea8a3ff3a0fccdd40683e5865e6e2cdb4353d8137a191",
+    "PATCH-BYTES-REVIEW-004.json": "df93657894ee470b561904f8bcdc7d1810d55fc7f88b370f3e449743257f6dcb",
+    "EXPORT-REVIEW-004.json": "3a8d5a5e9c9a85691017c5b3532058540e71f9005274e20f55c3fecf1e025897",
+    "ACTUAL-PARENT-NORMAL-004.json": "090ea02698cb1adfc247e5349a2b29aeddd2656b6466be9bdb5c469b7470dd99",
+    "ACTUAL-PARENT-OO-004.json": "090ea02698cb1adfc247e5349a2b29aeddd2656b6466be9bdb5c469b7470dd99",
+    "ACTUAL-SHARP-NORMAL-004.json": "10e7f289015927b2481f3bd0725e60fc59586915044540848a3eb54879bd83a0",
+    "ACTUAL-SHARP-OO-004.json": "10e7f289015927b2481f3bd0725e60fc59586915044540848a3eb54879bd83a0",
+    "actual_receipts.py": "1a7d74db6624e8b453cfa7389b7cb1230f997309c3754c00595da1eb046938d0",
+    "patch_bytes.py": "2860db854e49e905a3fdd44c4a8bb2a7ed1423c42355cfb401270d9b5d26ff73",
+    "export_check.py": "4ad3004e0bd2b764498a7d227552304ba0d7be768429e95506fcb5ca4e384fbe",
+    "review_source.py": "7f4353daab901860c15b461c1f4bf27d657772fee8685572a73ce0ca59da87e1"
+  },
+  "actual_external_files": {
+    "F:/integer-mult-frontier/work/R378-pr473-replica84/data/launcher-result-001.json": "590ae28a4bdca07d778e07bdb54ee08a8c255d4f53005dfab226a408f52b6757",
+    "F:/integer-mult-frontier/work/R378-pr473-replica84/data/full-001/RECEIPT.json": "33db0e1e6b61c135849783d89a7381f7301b2765a146a57b4129c6f83c9bdccc",
+    "F:/integer-mult-frontier/work/R378-pr473-replica84/data/full-001/RESULT.json": "79320b636803d70a2c9c936c8282ab37700c9e525b5c8eed40b3d49da7ce633d",
+    "F:/integer-mult-frontier/work/R382-sharp84-actual/data/launcher-normal-001.json": "079c5dc5ad98e90c608b9d5cd455f81b7719214321032c538e3d9b5c2ffcf9bc",
+    "F:/integer-mult-frontier/work/R382-sharp84-actual/data/normal-001/RECEIPT.json": "76f01b40bd32da8174c3e7f4442fc01236845c02ffc906cc72877ce542eab56b",
+    "F:/integer-mult-frontier/work/R382-sharp84-actual/data/normal-001/RESULT.json": "352f78b416e62045907649825f5ea0c83174a1406ca21af829f1789eacd7b502"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "head": "c7590f1d861f0eaae725cc79901445385aab9125",
+  "image": "sha256:2e569d2b405adbad13e85c19cfb18e727a384b23d09ce684328987011d7f8583",
+  "python": "3.13.16",
+  "wheels": {
+    "mpmath-1.3.0-py3-none-any.whl": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+    "numpy-2.2.6-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl": "1bc23a79bfabc5d056d106f9befb8d50c31ced2fbc70eedb8155aec74a45798f",
+    "sympy-1.13.3-py3-none-any.whl": "54612cf55a62755ee71824ce692986f23c88ffa77207b30c1368eda4a7060f73"
+  },
+  "controller_sha256": "ffdaaa2cf3d4f64d2ce1e9465db3fc8f0c3a80f1a0b952528bbdc50585392535",
+  "source_closure_sha256": "fa56d82f66c85d9e521fa8bbcffb47458b4dcfb10e3999cf1fc7263d0952447a",
+  "container": "integer-mult-r378-c7590f1",
+  "exec_session_id": 62432,
+  "limits": {
+    "seconds": 1800,
+    "memory_bytes": 2147483648,
+    "cpus": 1,
+    "network": "none",
+    "source": "read-only"
+  },
+  "dependency_smoke": "Same pinned image/dependency mount used by completed original478 full replay"
+}

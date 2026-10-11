@@ -1,0 +1,54 @@
+{
+  "status": "ATTRIBUTION_CORRECTION_ONLY",
+  "date": "2026-10-11",
+  "reviewer": "AI agent /root/baseline_audit",
+  "corrects": {
+    "path": "REVIEW-001.md",
+    "sha256": "c97919824e7895cf6bb4cfaa14426d1c84a1550e9f0f8c0c3e21d1fa87b5a630",
+    "location": "First source-pin paragraph",
+    "incorrect_attribution": "Pinned updated PR473 source: chafreaky/integer-mult-bounds",
+    "correct_attribution": "Canonical PR473 head source repository: rohanarun/integer-mult-bounds. The audit retrieved the identical pinned Git commit from the chafreaky/integer-mult-bounds retrieval fork."
+  },
+  "canonical_source": {
+    "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/473",
+    "author_login": "rohanarun",
+    "head_repository": "rohanarun/integer-mult-bounds",
+    "head": "c7590f1d861f0eaae725cc79901445385aab9125",
+    "package": "research/r715-replica84-complex79",
+    "package_url": "https://github.com/rohanarun/integer-mult-bounds/tree/c7590f1d861f0eaae725cc79901445385aab9125/research/r715-replica84-complex79",
+    "source_explanation_url": "https://github.com/rohanarun/integer-mult-bounds/blob/c7590f1d861f0eaae725cc79901445385aab9125/research/r715-replica84-complex79/README.md",
+    "retained_proof_url": "https://github.com/rohanarun/integer-mult-bounds/blob/c7590f1d861f0eaae725cc79901445385aab9125/notes/three-stage-cover-bit.tex"
+  },
+  "retrieval_source": {
+    "repository": "chafreaky/integer-mult-bounds",
+    "head": "c7590f1d861f0eaae725cc79901445385aab9125",
+    "source_lock": "source-lock-001.json",
+    "source_lock_sha256": "8b850fef73448710b6b3d921f720c50ade361626f4eb9796ccd06325c4ae8bf8",
+    "interpretation": "A retrieval fork containing the shared immutable Git commit; not the canonical PR author repository."
+  },
+  "canonical_snapshot_evidence": {
+    "pull_request_snapshot_path": "F:/integer-mult-frontier/work/R372-integration/pr473-refresh-001.json",
+    "pull_request_snapshot_sha256": "d486f4be2bd684d9baaebc774c92070da973f1e2efacefdf767d4abba9dd2cdd",
+    "updated_at_in_snapshot": "2026-10-11T19:17:01Z",
+    "tree_snapshot_path": "F:/integer-mult-frontier/work/R372-integration/pr473-c759-tree-001.json",
+    "tree_snapshot_sha256": "50855241dd2e7c190886ed72584a052b1e6785c116ffbc9ef95e596aca0eb7c2",
+    "tree_snapshot_truncated": false,
+    "retrieved_source_lock_blob_ids_compared_to_canonical_tree": 208,
+    "matching_blob_ids": 208,
+    "mismatches": 0,
+    "fresh_network_request_for_this_erratum": false
+  },
+  "attribution": {
+    "canonical_supplier_builder": "Rohan Arun / rohanarun, with OpenAI Codex assistance as disclosed in the pinned source README",
+    "retained_provider_credit": "Dugongue for PR478 factors and PR471/478 complex normalization; upstream notices retain additional contributor credits",
+    "sharp_charge_adaptation": "R367-current-search team task; prior independent review R371 and updated-profile independent arithmetic review R379",
+    "reviewer": "R379 AI agent /root/baseline_audit, distinct from the R367 builder; no human peer review or author endorsement claimed"
+  },
+  "effect": {
+    "frozen_review_and_hash_bindings_modified": false,
+    "mathematical_rerun": false,
+    "source_bytes_changed": false,
+    "numerical_result_or_disposition_changed": false,
+    "scope": "Correct repository and contributor attribution. Stored-profile arithmetic remains accepted within the original conditional scope; physical supplier admission remains a separate gate."
+  }
+}

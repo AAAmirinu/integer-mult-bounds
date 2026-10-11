@@ -1,0 +1,35 @@
+{
+  "reference_repository": "rohanarun/integer-mult-bounds",
+  "reference_head": "c7590f1d861f0eaae725cc79901445385aab9125",
+  "parent_package": "research/r715-replica84-complex79",
+  "parent_entrypoint": "research/r715-replica84-complex79/verify.py",
+  "parent_receipt_status": "PASS_FULL_REPLICA84_COMPLEX79_COMPOSITION",
+  "provider_receipt_status": "PASS_R715_NEXT_FULL_COMPOSITION",
+  "source_assembler": "research/r715-replica84-complex79/upstream478/code/assemble.py",
+  "sharper_charge_predecessor": {
+    "pr": 465,
+    "repository": "Srikrishnabalaji/integer-mult-bounds",
+    "head": "22c2a15c232084a31b6c8f0263e2e8ce831047ea"
+  },
+  "parent_provider": {
+    "pr": 478,
+    "head": "bea1d52fd330c699903f81612ee58be81697d1eb"
+  },
+  "preserved_endpoint_reserve": "1/1000000000000000000000000",
+  "parent_manifest_sha256": "67d23bfff2c9d0b2b55c44e7dfb35b167471e29ef13a088a72c3912a64ad5fcf",
+  "parent_source_sha256": "016ac6f3265c41a00b1ae03d162c49f05eddeb1def4cca71086d801e279afcdf",
+  "parent_expected_sha256": "70e515f0a5a2f9508cd030d35a99f90981a6eccc027c9ad5a3c77f5860310910",
+  "closure_sha256": "256b32f08ec2b79685bf6cf05f7a52904355233d5b9900c415f047b91db3d971",
+  "retained_theorem_sha256": "47123a756f823c83a0d48cca2bf5add6472cd88410b13aed345e70c8834fb511",
+  "review": {
+    "reviewer": "R379 distinct AI auditor",
+    "disposition": "PASS changed-charge exact arithmetic on c759 stored profile and paid10304-bit invoice; full replay separate",
+    "review_sha256": "c97919824e7895cf6bb4cfaa14426d1c84a1550e9f0f8c0c3e21d1fa87b5a630",
+    "attribution_erratum_sha256": "d8594bb164f36e684e0b987f4535ec0ed7ff868ee4a1e2f3e3e29b8fbf458fbe",
+    "raw_review_sha256": "c97919824e7895cf6bb4cfaa14426d1c84a1550e9f0f8c0c3e21d1fa87b5a630"
+  },
+  "provider_manifest_sha256": "d8847f47377171106c36f78097695b0d6263b374fac3f80566a93422959cbf25",
+  "complex_content_pin_sha256": "37aa6492cdee04ff66d203c5b62cd551d844a520f07fba94a36ce9c67851af61",
+  "complex_content_receipt_status": "PASS_FRESH_BYTE_BINDINGS_AND_PINNED_CONTENT",
+  "retrieval_repository": "rohanarun/integer-mult-bounds (R378 Git checkout); chafreaky/integer-mult-bounds (R379 independent raw-source retrieval fork)"
+}

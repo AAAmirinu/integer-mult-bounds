@@ -1,0 +1,14 @@
+{
+  "status": "PASS_BOUNDED_PROTOCOL_FIXTURES_ONLY_FULL_PARENT_PENDING",
+  "scientific_full_parent_completed": false,
+  "reference_head": "c7590f1d861f0eaae725cc79901445385aab9125",
+  "tests": {
+    "FIXTURE-PROTOCOL-001.json": "d749937b3e99d73c2491c370ea544915e5ebad14b64357a673c8c3effa3b9f30",
+    "FIXTURE-PROTOCOL-OPTIMIZED-001.json": "1e87ced0ef37e2b6ea889aa704ccaa05c6f8b2d1c8590db5597fd67d9aae2521",
+    "FIXTURE-CONTENT-001.json": "4cb287a80be50cdd020b080df1fd53d0b2a26f29ce6a563e510f5c160d084f1e",
+    "FIXTURE-CONTENT-OPTIMIZED-001.json": "ac5ec8991ae72708b8f8fd932aacae24d0b02d7d0928b2ca9259e6cd98822eef",
+    "FIXTURE-PROCESS-WINDOWS-001.json": "f5d1783b0ca11a89f6dfdf8268bc54db48686ff6f0445b028cc029e14c4e54ea",
+    "FIXTURE-PROCESS-LINUX-001.json": "6309832d88d54550a2813fcb7205a5a47bc47366f35ff6fcd8e66286afddcab2"
+  },
+  "scope": "Synthetic protocol/content/process-tree controls only; exact stored profile sharp arithmetic independently reviewed by R379. The supplier full replay and actual sharp assembly remain separate terminal gates. Read-only unfinished parent preflight checked canonical12 files and actual executed receipt tree32 bindings; not scientific completion."
+}
