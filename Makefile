@@ -21,6 +21,7 @@ verify:
 	$(MAKE) verify-recycled-bit
 	$(MAKE) verify-entrance-banks
 	$(MAKE) gen4-bank-verify
+	$(MAKE) e8-combined-verify
 	$(MAKE) verify-certificates
 	$(MAKE) verify-ternary
 	$(MAKE) verify-research
@@ -547,3 +548,7 @@ recycled-bit-full-verify:
 
 verify-recycled-bit: recycled-bit-full-verify
 	python3 -m unittest discover -s tests -p 'test_recycled_bit_integration.py' -v
+
+.PHONY: e8-combined-verify
+e8-combined-verify:
+	python3 -B research/e8-combined/verify.py --output "$$(mktemp -d)"

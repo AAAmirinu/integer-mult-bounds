@@ -1,0 +1,326 @@
+{
+  "scope": "Source closure for the bit witness and exact checks. Search code is excluded.",
+  "files": [
+    {
+      "file": "vendor/bit/local.py",
+      "origin": "work/next-track/bit/integration/local.py",
+      "origin_sha256": "76146b884ad99327844ae5706fcf759be4271df7287e7a2755d09aaba1db6c33",
+      "sha256": "d7d1fde95293d4a815e7ba75379a4347ecc0b27172f85fc4e7b27711ad3b328f",
+      "adaptations": [
+        {
+          "type": "path_adaptation",
+          "old": "ROOT=Path(__file__).resolve().parents[1]\nsys.path[:0]=[str(ROOT/'pinned462/research/e8-r740-replica32/code'),str(ROOT/'r707-audit')]",
+          "new": "ROOT=Path(__file__).resolve().parent\nsys.path.insert(0,str(ROOT))"
+        }
+      ]
+    },
+    {
+      "file": "vendor/bit/geometry.py",
+      "origin": "work/next-track/bit/integration/geometry.py",
+      "origin_sha256": "be6e83c4905790a0d3b345d33ae949589560d1dc0602297e3ac1b993e2678358",
+      "sha256": "be6e83c4905790a0d3b345d33ae949589560d1dc0602297e3ac1b993e2678358",
+      "adaptations": []
+    },
+    {
+      "file": "vendor/bit/emit.py",
+      "origin": "work/next-track/bit/integration/emit.py",
+      "origin_sha256": "c42ac18978fcaeaf08b347f00d3c4a55a47e70a2035e08ab4b762cf0d261f296",
+      "sha256": "fe30eaede300e8d418884aed6f56f7e142ca9ced7a7ed803e08a4741167c2e46",
+      "adaptations": [
+        {
+          "type": "path_adaptation",
+          "old": "sys.path.insert(0,str(HERE.parent/\"pinned462/research/e8-r740-replica32/code\"))\nsys.path.insert(0,str(HERE.parent/\"pinned462/research/idle-axis-hosting\"))",
+          "new": "sys.path.insert(0,str(HERE))"
+        },
+        {
+          "type": "description_only",
+          "old": "Source-bound eleven-stage bit template with 8 independent replicas and no helper banks.",
+          "new": "Source-bound eleven-stage bit template with 4 independent replicas and no helper banks."
+        },
+        {
+          "type": "description_only",
+          "old": "Historical PR386 regression is performed by the unchanged parent wrapper.",
+          "new": "Historical PR386 wrapper regression is outside this package."
+        }
+      ]
+    },
+    {
+      "file": "vendor/bit/e8core.py",
+      "origin": "work/next-track/bit/pinned462/research/e8-r740-replica32/code/e8core.py",
+      "origin_sha256": "1cb286196c1530d06f50f0997febc5993b388f33464e295611b920ba30a24eeb",
+      "sha256": "02b4df319c6475e315b1c59bddb1112f84c8ad8b5f200cf0a62df5d1b4261ddb",
+      "adaptations": [
+        {
+          "type": "retain_functions_and_class",
+          "names": [
+            "load_word",
+            "rank",
+            "Lat",
+            "to_masks",
+            "replay"
+          ],
+          "origin_ranges": [
+            [
+              18,
+              20
+            ],
+            [
+              28,
+              39
+            ],
+            [
+              42,
+              77
+            ],
+            [
+              80,
+              81
+            ],
+            [
+              87,
+              146
+            ]
+          ],
+          "retained_imports": [
+            "import gzip, json",
+            "from fractions import Fraction as Q",
+            "from collections import Counter"
+          ]
+        },
+        {
+          "type": "formatting_only",
+          "description": "Remove one added blank line at the end of the file."
+        }
+      ],
+      "public_source": {
+        "repository": "rohanarun/integer-mult-bounds",
+        "tree": "c4df4fdbf411f047ff7d63c73c432e828e94d924",
+        "path": "research/e8-r740-replica32/code/e8core.py",
+        "blob": "78983b368715e89fe8524a6dd2c13585d2b5394e"
+      }
+    },
+    {
+      "file": "vendor/bit/export249.py",
+      "origin": "work/next-track/bit/pinned462/research/e8-r740-replica32/code/export249.py",
+      "origin_sha256": "6d9817f7c431573aff695e1eacfa7c2ca6d3a2a10baa3a2ea814ab9b9f7b13ab",
+      "sha256": "6d9817f7c431573aff695e1eacfa7c2ca6d3a2a10baa3a2ea814ab9b9f7b13ab",
+      "adaptations": [],
+      "public_source": {
+        "repository": "rohanarun/integer-mult-bounds",
+        "tree": "c4df4fdbf411f047ff7d63c73c432e828e94d924",
+        "path": "research/e8-r740-replica32/code/export249.py",
+        "blob": "462a0f121f5363265b02d812cb12bed39e33dc74"
+      }
+    },
+    {
+      "file": "vendor/bit/bank_routes.py",
+      "origin": "work/next-track/bit/pinned462/research/e8-r740-replica32/code/bank_routes.py",
+      "origin_sha256": "7c6997c455bd55acca3a1603797c34e7733d557c27a7694a1429ff15773a505d",
+      "sha256": "b599275d463feadb8d65c7c578edb53ae7254bfa8b5d4b93c13147bbf87070a6",
+      "adaptations": [
+        {
+          "type": "retain_functions",
+          "functions": [
+            "validate_isometries"
+          ],
+          "origin_ranges": [
+            [
+              36,
+              65
+            ]
+          ]
+        },
+        {
+          "type": "remove_unused_import",
+          "old": "from collections import Counter, defaultdict\n\n",
+          "new": ""
+        },
+        {
+          "type": "formatting_only",
+          "description": "Remove one added blank line at the end of the file."
+        }
+      ],
+      "public_source": {
+        "repository": "rohanarun/integer-mult-bounds",
+        "tree": "c4df4fdbf411f047ff7d63c73c432e828e94d924",
+        "path": "research/e8-r740-replica32/code/bank_routes.py",
+        "blob": "9e43a876664a26899762f3b8e9a582e684a3650a"
+      }
+    },
+    {
+      "file": "vendor/bit/hosting_core.py",
+      "origin": "work/next-track/bit/pinned462/research/idle-axis-hosting/hosting_core.py",
+      "origin_sha256": "d8b90cd5d152df3c7c351230863d9e61816ad5e1f21d69bea1a86a5daad559a3",
+      "sha256": "4ad4adc221251da166af9bdaa22907c62d8129e6fba5efe7c3e9e77151119e42",
+      "adaptations": [
+        {
+          "type": "retain_functions",
+          "functions": [
+            "windows",
+            "expand",
+            "load_selection"
+          ],
+          "origin_ranges": [
+            [
+              13,
+              28
+            ],
+            [
+              97,
+              121
+            ],
+            [
+              132,
+              138
+            ]
+          ]
+        },
+        {
+          "type": "module_header",
+          "old": "\"\"\"Idle-axis hosting: place whole dirty-helper residuals on the pending coordinates of an idle data family.\n\nA data family that is advanced by an idle child from level a to level b receives the commuting coordinate factors of\nthat child.  If the family is untouched (no local invocation on its pair and no bridge naming its pair) during an\ninterval of local invocations ending at the child, a helper residual of width w from an invocation inside that\ninterval may own w of those pending coordinates instead of a bank slot.  The child keeps only the remaining\ncoordinates.  This module computes the windows from the recipe and chooses, per replica, how many residuals of each\nwidth each child hosts (exact integer programme), then expands that choice into explicit slot assignments.\nStandard library plus scipy for the integer programme; the emitted assignment is re-checked without scipy.\"\"\"",
+          "new": "\"\"\"Replay a saved idle-axis hosting selection. The search solver is excluded.\"\"\""
+        },
+        {
+          "type": "description_only",
+          "old": "Replay a saved idle-axis hosting selection. The search solver is excluded.",
+          "new": "Replay a saved idle-axis hosting selection with the standard library. The search solver is excluded."
+        },
+        {
+          "type": "formatting_only",
+          "description": "Remove one added blank line at the end of the file."
+        }
+      ],
+      "public_source": {
+        "repository": "rohanarun/integer-mult-bounds",
+        "tree": "c4df4fdbf411f047ff7d63c73c432e828e94d924",
+        "path": "research/idle-axis-hosting/hosting_core.py",
+        "blob": "68b536daa9e6546c0aa046934bf840aaa3c3fde3"
+      }
+    },
+    {
+      "file": "vendor/bit/check_streams.py",
+      "origin": "work/next-track/bit/r707-audit/check_streams.py",
+      "origin_sha256": "491fcf5c556dbcec89843bceed11061cdd0da1a6d791c286c9d150c676953fff",
+      "sha256": "491fcf5c556dbcec89843bceed11061cdd0da1a6d791c286c9d150c676953fff",
+      "adaptations": []
+    },
+    {
+      "file": "vendor/bit/check_exact.py",
+      "origin": "work/next-track/bit/r707-audit/check_exact.py",
+      "origin_sha256": "c9a888ab1ad5c65a3981f0b7dae82bec72bf3dc5027644bf26c4a2ce32ae9670",
+      "sha256": "5bfef61e17c388c9b539a7aae224d48d4c35bd6de6578e9238d42cc56002365b",
+      "adaptations": [
+        {
+          "type": "retain_functions",
+          "functions": [
+            "row_space"
+          ],
+          "origin_ranges": [
+            [
+              12,
+              28
+            ]
+          ],
+          "module_header": "Use exact row reduction for the local stream check.",
+          "retained_import": "from fractions import Fraction as Q"
+        },
+        {
+          "type": "formatting_only",
+          "description": "Remove one added blank line at the end of the file."
+        }
+      ]
+    },
+    {
+      "file": "vendor/bit/check_word.py",
+      "origin": "work/next-track/whole-pipeline/independent/check_word.py",
+      "origin_sha256": "f2692a9f56f9caafcd123dc928df573a1ab51eea30897b70868da58ecd4ba186",
+      "sha256": "f2692a9f56f9caafcd123dc928df573a1ab51eea30897b70868da58ecd4ba186",
+      "adaptations": []
+    },
+    {
+      "file": "vendor/bit/check_records.py",
+      "origin": "work/next-track/whole-pipeline/independent/check_records.py",
+      "origin_sha256": "925b6e3d6a36bad0c23e442f2c9006f7b39f2ce60adc0328956acafaf93beef5",
+      "sha256": "925b6e3d6a36bad0c23e442f2c9006f7b39f2ce60adc0328956acafaf93beef5",
+      "adaptations": []
+    },
+    {
+      "file": "vendor/bit/check_global106.py",
+      "origin": "work/next-track/whole-pipeline/independent/check_global106.py",
+      "origin_sha256": "27adc06ab8814959bedc0fdf9dcf95f985faff12911f29be0d7e1ae639e966c4",
+      "sha256": "27adc06ab8814959bedc0fdf9dcf95f985faff12911f29be0d7e1ae639e966c4",
+      "adaptations": []
+    },
+    {
+      "file": "vendor/bit/check_routes.py",
+      "origin": "work/next-track/whole-pipeline/independent/routes106-check.py",
+      "origin_sha256": "cdca5ecbabb2295391f4b4868956ba93b02683977d3f65a765fc2a55696d6866",
+      "sha256": "4d5ed1aa4cda8709f921627a46b3b19122bb246509c38a522fb1f488cecce1a4",
+      "adaptations": [
+        {
+          "type": "path_adaptation",
+          "old": "parser.add_argument(\"--base\", type=Path, default=Path(\"work/next-track/bit/integration/global106\"))",
+          "new": "parser.add_argument(\"--base\", type=Path, required=True)"
+        },
+        {
+          "type": "path_adaptation",
+          "old": "parser.add_argument(\"--word\", type=Path, default=Path(\"work/next-track/bit/kernel-mix/four-family-106/word.json\"))",
+          "new": "parser.add_argument(\"--word\", type=Path, required=True)"
+        }
+      ]
+    },
+    {
+      "file": "vendor/bit/check_controls.py",
+      "origin": "work/next-track/whole-pipeline/independent/check_controls111.py",
+      "origin_sha256": "edbf6a01291785f3e286b1591527d2ff11ad25442cf4810e5704a9873e534205",
+      "sha256": "2dcec6a045ac069e6211a6550baf8c0613aabb8ab7a79ee50c943b68378309c3",
+      "adaptations": [
+        {
+          "type": "path_adaptation",
+          "old": "import copy,json,struct,tempfile",
+          "new": "import copy,json,struct,tempfile,sys"
+        },
+        {
+          "type": "path_adaptation",
+          "old": "base=Path('work/next-track/bit/kernel-mix/four-family-component111/word.json')",
+          "new": "base,source,result_path=map(Path,sys.argv[1:])"
+        },
+        {
+          "type": "path_adaptation",
+          "old": "source=Path('work/next-track/bit/integration/global111/local/records')\nwith tempfile.TemporaryDirectory(dir='work/next-track/whole-pipeline') as directory:",
+          "new": "with tempfile.TemporaryDirectory() as directory:"
+        },
+        {
+          "type": "path_adaptation",
+          "old": "Path('work/next-track/whole-pipeline/independent/candidate111-controls.json').write_text(json.dumps(result,indent=2)+'\\n')",
+          "new": "result_path.write_text(json.dumps(result,indent=2)+'\\n')"
+        }
+      ]
+    },
+    {
+      "file": "data/bit/word.json.gz",
+      "origin": "work/next-track/bit/integration/global111/word.json.gz",
+      "origin_sha256": "b333c32bc6bbc88fc2dc444e4890e55341f5a513b612fc781aa3cbf16ed9be7d",
+      "sha256": "b333c32bc6bbc88fc2dc444e4890e55341f5a513b612fc781aa3cbf16ed9be7d",
+      "adaptations": []
+    },
+    {
+      "file": "data/bit/selection.json",
+      "origin": "work/next-track/bit/kernel-mix/four-family-component111/hosted-exact/selection.json",
+      "origin_sha256": "d886c0b85a90fb741897f68a35dd24eeb0d3acd23a7f467060d8acaf65792b6e",
+      "sha256": "d886c0b85a90fb741897f68a35dd24eeb0d3acd23a7f467060d8acaf65792b6e",
+      "adaptations": []
+    },
+    {
+      "file": "vendor/bit/replay.py",
+      "origin": null,
+      "origin_sha256": null,
+      "sha256": "6cf1c5ad0d2ff6bb474586253e560706996b192888de9b96758e183aa1eecffb",
+      "adaptations": [
+        {
+          "type": "new_replay_driver"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "status": "PASS_CONDITIONAL_COMBINED_E8_WITNESS",
+  "kappa": "1307044366925301/1000000000000000000",
+  "kappa_decimal": "0.001307044366925301",
+  "main_commit": "12a4934d15006e8c10f9b2264f13f8f341be802b",
+  "main_kappa": "90446448750933/125000000000000000",
+  "relative_gain": "194490925639279/241190530002488",
+  "gain_percent": "80.637878127832",
+  "binding_component": "complex",
+  "bit": {
+    "profile": {
+      "1": 105000,
+      "2": 48602,
+      "3": 8095,
+      "4": 15904,
+      "5": 3300,
+      "6": 4240,
+      "7": 2205,
+      "8": 396,
+      "56": 395
+    },
+    "invoice": {
+      "live": 4800,
+      "physical": 4809,
+      "prefix_bits": 610,
+      "charged_prefix_bits": 640,
+      "coefficient_bits": 610,
+      "three_level_coefficient_bits": 1883,
+      "charged_three_level_coefficient_bits": 1920,
+      "row_coefficient": 19428,
+      "row_bound": {
+        "stock_exponent": 3089,
+        "additive_stock_charge": 9267,
+        "minimum_log2_width": 32,
+        "threshold_margin": 14189
+      }
+    },
+    "moment": {
+      "lower": "1308789373120170692069/1000000000000000000000000",
+      "upper": "130878937312017069207/100000000000000000000000",
+      "lower_residual_upper": "-3793944254784504604944273595931373/1569275433846670190958947355801916604025588861116008628224",
+      "upper_residual_lower": "5780079706686843942254062593913837/6277101735386680763835789423207666416102355444464034512896",
+      "method": "64-term atanh log series after binary reduction;18-degree exponential;192-bit outward dyadic rounding"
+    },
+    "emitted_program_sha256": "76d3cae169dc5c9dda300f58936b433bbfbe975ae556f52491eca4cae9ecfb0b"
+  },
+  "complex": {
+    "profile": {
+      "1": 205312,
+      "2": 22880,
+      "3": 49320,
+      "4": 5560,
+      "5": 22288,
+      "6": 16048,
+      "7": 2568,
+      "8": 7264,
+      "16": 8,
+      "46": 512,
+      "64": 1912
+    },
+    "invoice": {
+      "live": 9600,
+      "physical": 10178,
+      "maxchild": 64,
+      "rank_mass": 851136,
+      "hosted_residuals": 49280,
+      "wrapper_events": 13904,
+      "charged_wrapper_groups": 788480,
+      "max_helpers_per_physical_family_per_call": 1,
+      "physical_stock_bits": 3929,
+      "router_bits": 11850,
+      "literal_bits": 37859,
+      "row_coefficient": 20161,
+      "local_bound": 18687781085682,
+      "pervertex": 1772686901993840,
+      "halving_depth": 3,
+      "row_bound": {
+        "status": "PASS_FRACTIONAL_DEPTH_ROW_RESERVE",
+        "block_steps": 9,
+        "block_halvings": 4,
+        "exact_shrink_inequality": [
+          350356403707485209,
+          288230376151711744
+        ],
+        "stock_bits": 3929,
+        "row_slope": "76005/4",
+        "additive_stock_charge": 35361,
+        "minimum_log2_width": 32,
+        "retained_row_coefficient": 20161,
+        "threshold_margin": "1751",
+        "coarse_three_level_row": 21948,
+        "finite_three_level_halving": [
+          704969,
+          524288
+        ]
+      }
+    },
+    "moment": {
+      "lower": "654377483866781393011/500000000000000000000000",
+      "upper": "1308754967733562786023/1000000000000000000000000",
+      "lower_residual_upper": "-3748694116234626921713465867287277/1569275433846670190958947355801916604025588861116008628224",
+      "upper_residual_lower": "1685218799484082240877453220685041/3138550867693340381917894711603833208051177722232017256448",
+      "method": "64-term atanh log series after binary reduction;18-degree exponential;192-bit outward dyadic rounding"
+    },
+    "emitted_program_sha256": "4592b40412f8dfb5ffa69b3af4e5f104da5e7f38242f5d8b4b54742d9a5bac4c"
+  },
+  "next_grid_rejected": true,
+  "scope": "Finite local identities, exact phases, routed templates, invoices, moment signs and outer arithmetic. The all-size interfaces in PROOF.txt remain conditions.",
+  "independent_outer_check": {
+    "strict_constraints_checked": 47,
+    "bootstrap_levels_checked": 6,
+    "adjacent_grid_fails": true,
+    "complex_row_threshold_margin": 1751
+  },
+  "input_sha256": {
+    "data/bit/selection.json": "d886c0b85a90fb741897f68a35dd24eeb0d3acd23a7f467060d8acaf65792b6e",
+    "data/bit/word.json.gz": "b333c32bc6bbc88fc2dc444e4890e55341f5a513b612fc781aa3cbf16ed9be7d",
+    "data/complex/FULL-WORD.json.gz": "66655cd858afb515dfd4cad43c4fef01f9185af670e144750e9977588ebd4ecf",
+    "data/complex/hosting.json": "dc5fe719e71c26e856f0da96518af635ed2026b1c323052d97ee4e6b9839f2f1",
+    "data/complex/ports.json": "c4a4288b6052341eddff69e93999525b74512bb2fcdddb00bcdfe80ee42526ce",
+    "data/complex/schedule.json": "f62975a9146a4a0c9d1ecaa6f8567aeedf30bce484cc2105a74e4d7e9afc2522"
+  }
+}

@@ -1,0 +1,39 @@
+name: Verify combined E8 witness
+
+on:
+  push:
+    paths:
+      - 'research/e8-combined/**'
+      - '.github/workflows/e8-combined.yml'
+      - 'Makefile'
+  pull_request:
+    paths:
+      - 'research/e8-combined/**'
+      - '.github/workflows/e8-combined.yml'
+      - 'Makefile'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install the exact geometry dependency
+        run: python3 -m pip install -r research/e8-combined/requirements.txt
+      - name: Rebuild and check both suppliers and their composition
+        run: make e8-combined-verify
+      - name: Require unchanged tracked files
+        run: git diff --exit-code

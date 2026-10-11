@@ -1,0 +1,184 @@
+Conditional composition of two E8 suppliers
+
+Claim. In the interfaces stated in the conditions below, this construction gives
+T(n) = O(n (log n)^(1-kappa)), where
+
+  kappa = 1307044366925301 / 10^18 = 0.001307044366925301.
+
+This is a conditional exponent bound. It is 80.6378781278% above the selected
+bound on main at 12a4934d15006e8c10f9b2264f13f8f341be802b. It is not a
+runtime measurement or a proof of the full multiplication theorem.
+
+1. Local identities
+
+The bit word uses 120 source and 120 target streams and 705 dirty helper
+streams. Its 111 response-kernel pivots, 45 target receivers and 72 frame
+changes are fixed data. Both directions act correctly on all 945 independent
+input columns. The emitted 19,550 records include nine COPY/ERASE windows.
+Each common-frame ADD is the scalar XOR on the normalized streams. Each MOVE
+is the exact frame change. COPY/ERASE uses a fresh temporary and an unchanged
+source. Thus the common-frame induction gives the full local address operator
+on arbitrary streams. The helper endpoint is its charged residual projector,
+not an identity inferred from scalar restoration.
+
+The complex word uses 240 data and 560 dirty helper streams. Retiming changes
+728 frame labels and preserves every scalar operation and both endpoints.
+The same common-frame induction preserves the local physical operator.
+Both scalar directions check all 800 input columns. Exact Clifford checks
+include phase. For a helper entrance E, its residual is T_FULL T_E^-1.
+The paid pre/post monomials convert this residual into the exact coordinate
+Fourier factor of width 8 or 9. No isotropic entrance is treated as a
+coordinate entrance by an orthogonal conjugation.
+
+2. Complete finite templates
+
+Each supplier uses the signed eleven-stage layout. The bit template has four
+replicas, 4,800 live families and 4,809 physical families. Each of the 31,020
+whole helper occurrences has an exact owner route. Concrete routes are
+injective within a call, even when several helpers use one family. The routes
+use at most 106 factors; the invoice allows 144. All 8,955 unbanked scalar
+columns and all 1,320 data routes pass. The complex template has eight
+replicas, 9,600 live families and 10,178 physical families. Its 49,280 whole
+helper occurrences use distinct families within each call. All 8,520 phase
+equalities and 1,320 data routes pass.
+
+Each host lies in a checked idle window. Whole helper residuals occupy
+disjoint pending coordinates. The complementary idle child completes the
+original idle operator. No residual is split across physical families.
+Bridges, terminal shifts, exchanges and the complex cover correction remain
+in the emitted program and paid profile.
+
+3. Finite costs and moments
+
+The independent invoice uses the emitted counts, actual physical stock and
+fresh prefix bounds. The bit prefix has 610 bits and is charged at 640 bits.
+Its three-level coefficient has 1,883 bits and is charged at 1,920 bits.
+Its row slope is 19,428. The ceiling term adds 9,267. At log2(e) >= 32,
+the 20,161 reserve covers both terms, with margin 14,189 at the threshold. The complex invoice charges 788,480 restored
+rank-zero wrapper groups. Its router, literal and precision charges fit the
+retained bounds. Since 89^9 > 16*64^9, nine recursive steps give four binary
+halvings. The row cost is at most (9/4*3929+9909+252)*log2(e)+9*3929. For
+log2(e) >= 32 it is strictly below 20,161*log2(e), with margin 1,751 at the
+threshold. Smaller widths use the retained ordinary leaf interface.
+
+For profile H, dimension m and live stock W, the moment is
+
+  sum_r H_r*(r/m)^(1-z)/W
+    + 10^-16 * 32*m^2*sum_r H_r * m^(z-1)/W.
+
+The second term charges the retained bad-class fallback. Rational intervals
+give the strict lower endpoints
+
+  bit c = 1308789373120170692069 / 10^24,
+  complex b = 654377483866781393011 / (5*10^23).
+
+The moment is below 1 at each lower endpoint and above 1 one 10^-24 step
+later. The complex supplier is the smaller endpoint.
+
+4. Outer composition
+
+Set eta = beta = 10^-18 and s = min(c,(1-beta)*b)-10^-24. Start at
+a_0 = 384599/10^10 and apply the completed-ordinary-leaf bound six times:
+a_j = s-s^j*(s-a_0). Each step has a strictly positive gap. The cutoff constants are chosen
+sequentially, as stated below. Put a=a_6, q=a*(1-2*eta) and epsilon=(1-eta)/(1+q).
+The seven cost margins have minimum mu=epsilon*q. All 47 strict outer
+constraints hold. The largest 10^-18 grid point strictly below mu is the
+claimed kappa. The adjacent grid point fails. Every calculation uses exact
+rational arithmetic; finite certificates do not discharge the conditions below.
+
+
+Proof boundary and source map
+
+This submission is a finite E8 construction and an exact arithmetic
+composition. It does not complete the all-size multiplication proof.
+Its bound is conditional on the interfaces below. The finite checks do
+not establish these interfaces for every input size.
+
+Conditions already stated on main
+
+Main at 12a4934d15006e8c10f9b2264f13f8f341be802b states conditions for:
+the all-size weighted compiler; common-ancestor and weighted charts;
+complete-stream movement; restored rows and selectors; exact-tape routing;
+prime supply; precision and exact recovery; complex symbolic correctness;
+and the analytic reduction from transforms to multiplication. The source
+proof's normalization by live stock W, rather than physical stock, is part
+of this contract. The complete finite router uses physical stock.
+
+The initial saving a_0=384599/10^10 and the completed-ordinary-leaf bootstrap
+theorem are inherited. Their application uses the fresh finite coefficients.
+The checks establish the six positive gaps. They do not prove the initial
+theorem or the uniform recursion schedule. The supplier coefficient alone
+does not bound the constants of each earlier ordinary algorithm.
+
+Conditions from pending E8 work
+
+These are extensions of the main framework. They must not be described as
+unchanged hypotheses already reviewed on main.
+
+1. The E8 bit compiler must realize the projector label on mutable source,
+helper and target streams, including target-to-target additions, at all
+address widths. Common-frame induction proves the finite operator identity.
+It does not prove the compiler cost, fine grid or uniform exact-tape lowering.
+The relevant pending lineage includes PR370, PR386, PR433 and PR450/454.
+
+2. The whole-call hosting interface must allow arbitrary correlated dirty
+streams on idle data families. The finite argument checks distinct owners,
+unused windows, whole residuals, disjoint coordinates and exact complements.
+It does not enumerate the complete cover or establish the all-size compressed
+window, row restoration and selector implementation. PR442 introduces this
+extension; PR456/462 applies whole-residual pooling. No PR448 split-residual
+compiler premise is used.
+
+3. The complex Gaussian compiler must implement canonical Clifford frame
+changes and the paid two-sided monomial adapters on arbitrary streams, with
+restored work and the stated fixed-group costs at all sizes. Exact tableau
+and state checks establish the local phases and operator factors. They do
+not establish the full all-size compiler or analytic precision routine.
+The relevant lineage includes PR433, PR449/458 and their source notices.
+
+4. The bad-prime and bad-class envelope must apply to these new E8 frames,
+covers and compiler operations. The moment retains the same 10^-16 envelope
+and 32*m^2 rank-one fallback calls per paid child. This is an admitted
+framework condition, not a consequence of the moment's rational signs.
+
+5. The restored-row interface must charge stock once per actual recursion
+level and use the retained small ordinary leaves. The new complex nine-step
+row estimate proves that the numerical 20,161 reserve suffices under that
+contract. It does not construct a new tape machine or row divisor.
+
+
+Sequential ordinary bootstrap
+
+Let A_0 be a finite constant for the admitted initial ordinary algorithm with
+saving a_0. At level j, the earlier algorithm and its constant A_(j-1) have
+already been fixed. The admitted ordinary-wrapper theorem supplies the new
+construction and its finite coefficients. Choose an integer C_j >= 1 which
+bounds all its primitive, recurrence, wrapper, row, setup and padding
+constants, its large-width constant, and the earlier ordinary constant. Such
+a C_j exists under the admitted interfaces. It need not be at most 2^1920.
+
+The saving is a_j = s*(1-s+a_(j-1)). Let delta_j be the minimum of its four
+exact positive exponent gaps. Set B_j = ceil(log2(C_j)) and choose
+
+  L_j = ceil(max(1, 36/delta_j^2, 2*(4+B_j)/delta_j)),
+  e_j = 2^L_j.
+
+For t = log2(e) >= L_j, use
+
+  log2(1+t) <= 3*sqrt(t) <= delta_j*t/2,
+  log2(C_j)+4 <= delta_j*t/2.
+
+Then C_j*(1+log2(e))*e^(-delta_j) <= 1/16. This pays the lower
+order terms and makes the high borrowed row fit. For e < e_j, use the earlier
+ordinary algorithm. A finite constant which covers both ranges is
+
+  A_j = C_j + A_(j-1)*2^ceil(L_j*(a_j-a_(j-1))).
+
+This choice is sequential. C_j uses A_(j-1), while A_j is assigned after L_j.
+No constant depends on itself. Six steps give the stated exponent a_6, with
+finite constants and cutoffs whose numerical values are not certified by this
+package. The exact saving exponents, their positive gaps, and the formula for
+sufficient cutoffs are certified. The source's ordinary algorithm and its
+uniform scheduling remain admitted interfaces.
+
+The 1,920-bit supplier charge is separate from the stage constants C_j.
