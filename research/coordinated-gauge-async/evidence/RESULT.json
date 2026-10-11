@@ -1,0 +1,73 @@
+{
+  "status": "PASS_CONDITIONAL_ASYNCHRONOUS_COMPLEX_DERIVATIVE",
+  "kappa": "1372554837726243/1000000000000000000",
+  "kappa_decimal": "0.001372554837726243",
+  "complex_lower": "1374441333828159774039/1000000000000000000000000",
+  "bit_lower": "391360506745414227149/250000000000000000000000",
+  "template_sha256": "3a3e6f87997f15815d11b1ee389d0783482e0eca087fff8ebd29164eecf974f0",
+  "strict_constraints": 47,
+  "scope": "New complex program independently replayed. The unchanged PR493 bit operator and inherited all-size compiler, common-label, Lemma A realization, restored-row, precision/tape and analytic-transfer contracts remain dependencies. No unconditional multiplication bound or fresh Lean certification is claimed.",
+  "stages": [
+    {
+      "stage": "retiming",
+      "exit": 0,
+      "seconds": 1.360000000015134
+    },
+    {
+      "stage": "construct",
+      "exit": 0,
+      "seconds": 1.3589999999967404
+    },
+    {
+      "stage": "scalar",
+      "exit": 0,
+      "seconds": 2.2809999999881256
+    },
+    {
+      "stage": "emit-local",
+      "exit": 0,
+      "seconds": 1.3440000000118744
+    },
+    {
+      "stage": "phases",
+      "exit": 0,
+      "seconds": 200.84399999998277
+    },
+    {
+      "stage": "adapters",
+      "exit": 0,
+      "seconds": 1.4690000000118744
+    },
+    {
+      "stage": "parent-integration",
+      "exit": 0,
+      "seconds": 1.3280000000086147
+    },
+    {
+      "stage": "parent-replay",
+      "exit": 0,
+      "seconds": 9.625
+    },
+    {
+      "stage": "emit-async",
+      "exit": 0,
+      "seconds": 5.48399999999674
+    },
+    {
+      "stage": "independent-async",
+      "exit": 0,
+      "seconds": 26.90600000001723
+    },
+    {
+      "stage": "invoice",
+      "exit": 0,
+      "seconds": 2.25
+    },
+    {
+      "stage": "two-moments-assembly",
+      "exit": 0,
+      "seconds": 0.7030000000086147
+    }
+  ],
+  "package_manifest_sha256": null
+}

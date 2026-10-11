@@ -1,0 +1,55 @@
+{
+  "status": "PASS_EXACT_COORDINATED_GAUGE_RECONSTRUCTION",
+  "source_hashes": {
+    "retimed_base": "77c5a22608644e4634cbabeb3f53d40f50f4f5632405e8f0381c3fc4c4b845f4",
+    "baseline_selection": "436e4acadee227dbfcb66386c9ccaa38e68054e8ed4870bb174eeb41363375bb",
+    "gk_word.py": "f027a9273bcf4e0971258c160b7d3b3c196366b32a529cff6e6a0e666b03826b",
+    "gk_common.py": "e68d190fd436b2f3955decb590adb53344d5d4ea0a19d62d86df1e4b55ecd198"
+  },
+  "word_sha256": "91c7de4fef095352b0995a56eebbd2821d268b0da0632cccd808e2cd921abca0",
+  "normalized_word_sha256": "879c0e6ade3f1c84a515609a848dc917bddd1c1499e0cc37b2862809dfb8655b",
+  "normalization_ignored_metadata": [
+    "optional redundant R",
+    "report.complex_coarse_float",
+    "report.gain_percent_float"
+  ],
+  "changed_target_dimensions": {
+    "81": [
+      4,
+      2
+    ],
+    "82": [
+      4,
+      2
+    ],
+    "84": [
+      4,
+      2
+    ],
+    "87": [
+      4,
+      2
+    ]
+  },
+  "local_profile": {
+    "1": 2385,
+    "2": 248,
+    "3": 530,
+    "4": 88,
+    "6": 96,
+    "5": 270,
+    "8": 17,
+    "7": 1
+  },
+  "delta": {
+    "2": -16,
+    "4": 4,
+    "6": 4
+  },
+  "widths": {
+    "9": 438,
+    "8": 104,
+    "7": 18
+  },
+  "scope": "Exact local construction and frame nesting. Scalar, Gaussian phase, physical ownership, prefix and outer assembly independently required."
+}

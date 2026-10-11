@@ -1,0 +1,54 @@
+{
+  "status": "PASS_STRUCTURAL_MAIN_WORD_RETIMING_TRANSFER",
+  "source_files": {
+    "F:\\proof\\kappa-synthesis-20261011\\portable-replay-3\\base\\BASE-WORD.json.gz": "da4c5007092fd9456403179ef2a4391aef9fc5310e3eec5f2ab6c49b24147387",
+    "F:\\proof\\kappa-synthesis-20261011\\package\\research\\coordinated-gauge-async\\inputs\\PR495-FULL-WORD.json.gz": "66655cd858afb515dfd4cad43c4fef01f9185af670e144750e9977588ebd4ecf",
+    "F:\\proof\\kappa-synthesis-20261011\\package\\research\\coordinated-gauge-async\\vendor\\complex\\e8-complex-gauge-kernel\\data\\selections\\gauge80-kernel42.json": "436e4acadee227dbfcb66386c9ccaa38e68054e8ed4870bb174eeb41363375bb"
+  },
+  "changed_frames": {
+    "A": 224,
+    "B": 504
+  },
+  "discarded_prefix_events": {
+    "A": 229,
+    "B": 0
+  },
+  "preserved_gauge_fields": [
+    "centers",
+    "center_frames",
+    "target_levels",
+    "root_lines",
+    "ports",
+    "cut",
+    "precondition",
+    "start_extra",
+    "scatter"
+  ],
+  "entering_helpers": 122,
+  "entrance_rank": 148,
+  "local_profile": {
+    "1": 2385,
+    "2": 264,
+    "3": 530,
+    "4": 84,
+    "5": 270,
+    "6": 92,
+    "7": 1,
+    "8": 17
+  },
+  "transfer_controls_rejected": [
+    [
+      "A",
+      1
+    ],
+    [
+      "B",
+      3
+    ]
+  ],
+  "outputs": {
+    "FULL-WORD.json.gz": "c2ae016c463be382567afa47ee0718f83572d5372474237e2f74fb58a13fd264",
+    "RETIMED-BASE.json.gz": "77c5a22608644e4634cbabeb3f53d40f50f4f5632405e8f0381c3fc4c4b845f4"
+  },
+  "scope": "Structural transfer; scalar, frame, phase, whole-program, hosting and finite assembly checks must run independently."
+}

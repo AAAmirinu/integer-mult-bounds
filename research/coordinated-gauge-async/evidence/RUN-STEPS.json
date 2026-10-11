@@ -1,0 +1,62 @@
+[
+  {
+    "stage": "retiming",
+    "exit": 0,
+    "seconds": 1.360000000015134
+  },
+  {
+    "stage": "construct",
+    "exit": 0,
+    "seconds": 1.3589999999967404
+  },
+  {
+    "stage": "scalar",
+    "exit": 0,
+    "seconds": 2.2809999999881256
+  },
+  {
+    "stage": "emit-local",
+    "exit": 0,
+    "seconds": 1.3440000000118744
+  },
+  {
+    "stage": "phases",
+    "exit": 0,
+    "seconds": 200.84399999998277
+  },
+  {
+    "stage": "adapters",
+    "exit": 0,
+    "seconds": 1.4690000000118744
+  },
+  {
+    "stage": "parent-integration",
+    "exit": 0,
+    "seconds": 1.3280000000086147
+  },
+  {
+    "stage": "parent-replay",
+    "exit": 0,
+    "seconds": 9.625
+  },
+  {
+    "stage": "emit-async",
+    "exit": 0,
+    "seconds": 5.48399999999674
+  },
+  {
+    "stage": "independent-async",
+    "exit": 0,
+    "seconds": 26.90600000001723
+  },
+  {
+    "stage": "invoice",
+    "exit": 0,
+    "seconds": 2.25
+  },
+  {
+    "stage": "two-moments-assembly",
+    "exit": 0,
+    "seconds": 0.7030000000086147
+  }
+]

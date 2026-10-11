@@ -1,0 +1,59 @@
+{
+  "status": "PASS_REVIEW_OF_COMPLETE_PORTABLE_REPLAY_AND_COMPOSITION",
+  "reviewed_sha256": {
+    "verify.py": "c553dbf909d703e5afb0333d7da43481f5df18a71e932c23986d9bfd8b953e2e",
+    "code/assemble.py": "9db68cad2738d76052b25c8bdf6485edd6f14025bf47107d2425b10a2bdf69e0",
+    "code/build_retimed.py": "5177c0f1200d30fb532e58964d67d3cb08f7b9854ea97107f776f1883e36de97",
+    "code/build_rank2_collapse.py": "96695ffd96c81a5e06049cb61f91f5c69e1aa9a4223ada63986a2198a82d2847",
+    "code/audit_async.py": "bbc2bd87ab2aa8f7711da15d410bffeb96b0176da0fbfb80c6625cd4c61e06ca",
+    "code/audit_async_invoice.py": "bcfdc0b4aae2257327b3a643d7dfc0c6de85f3f392b686aa76df64b0c519f907",
+    "code/run_portable.py": "01030376f8a3afb86c559bc5036d1524165fc3b4119bcca12cc7c6e1990a7548",
+    ".gitattributes": "4ce4b6e6b8435f8c3a8387387732964a2ebf0183e8d77b8247ae8061b033e462"
+  },
+  "new_runtime_result": "Parent single portable replay completed all12 stages successfully; reviewer inspected receipts and independently compared serialized operators. No duplicate heavy replay launched.",
+  "checks": [
+    "Retiming transfer permits only frame changes on identical scalar event tails.",
+    "Coordinated four-gauge collapse explicitly preserves kernel selection and checks target dimensions, residual widths and paid-profile delta.",
+    "Actual source frame/phase/normalization constructors precede independent physical owner audit.",
+    "Every whole owner remains unique within each complete invocation, including240active data owners.",
+    "Actual event chronology and source-phase projection govern availability; sigma and spectator maps are reconstructed from actual pending axes.",
+    "All emitted children and all remainder children counted before exact moment pricing.",
+    "Prefix overcharge counts72complete invocations and72individual bridges and charges512bits.",
+    "Outer assembly uses two independent rational moment engines, a pinned cited bit profile,47strict inequalities and adjacent-grid rejection.",
+    "No optional discovery optimizer is required by the standalone verifier."
+  ],
+  "scope": "Conditional finite whole-owner construction; inherited all-size compiler, common-label, normalized Lemma A realization, restored-row, precision/tape and analytic-transfer contracts remain dependencies. PR493 bit operator is cited, not freshly reconstructed. No unconditional multiplication bound or Lean certification.",
+  "noncontributing_research": [
+    "The sufficient deferred-terminal-suffix theorem is valid but stock-capacity screen gives no additional gain here.",
+    "General paired-factor phase transport is a sufficient construction rule, not an achieved merged-bin witness."
+  ],
+  "kappa": "1372554837726243/1000000000000000000",
+  "kappa_decimal": "0.001372554837726243",
+  "complex_lower": "1374441333828159774039/1000000000000000000000000",
+  "bit_lower": "391360506745414227149/250000000000000000000000",
+  "template_sha256": "3a3e6f87997f15815d11b1ee389d0783482e0eca087fff8ebd29164eecf974f0",
+  "strict_constraints": 47,
+  "whole_owner_roles": 40320,
+  "orthogonal_73column_maps": 2972,
+  "explicit_remainders": 9360,
+  "rejected_mutations": 19,
+  "global_prefix_bits": 205,
+  "charged_prefix_bits": 512,
+  "portable_serialization_review": {
+    "only_parsed_template_change": "residual_adapter_sha256",
+    "local_event_streams_identical": true,
+    "normalization_recipes_identical": true,
+    "local_checks_identical": true,
+    "text_byte_changes_exactly_CRLF_to_LF": true,
+    "actual_Linux_execution_claimed": false,
+    "pinned_input_bytes_retained": true
+  },
+  "outstanding_finite_replay_obligations": [],
+  "receipt_sha256": {
+    "RESULT.json": "e79dec872757e3dc49648e362e0997b23bfcd88b9f18779ac71259aaacedd952",
+    "audit/ASYNC-AUDIT.json": "1aa61bed3ff2819cf5c1634d90df720cfda7a9cd32e570d752c3a6698a4405c1",
+    "audit/OWNERS-AND-PROFILE.json": "90b024ed70f38ef14f03646d91a4104aab578fdbdd358505664c2fbcf54961a6",
+    "audit/PREFIX-AND-INVOICE.json": "b0c2f45bc2aebf61d1b071f8805996c51383cd338c6d25a6fbc06f85268ce23b",
+    "audit/EXACT-ASSEMBLY.json": "5455ed1f38c252a1e888a29357aa544ed449d2d4485bd485b6881aa48f4b5964"
+  }
+}
