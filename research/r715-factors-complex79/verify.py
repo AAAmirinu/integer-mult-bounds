@@ -41,6 +41,7 @@ try:
  receipt=read(provider/'RECEIPT.json');assert receipt['status']=='PASS_R715_NEXT_FULL_COMPOSITION' and receipt['manifest_sha256']==pin['adapter_manifest_sha256']
  previous=read(provider/'RESULT.json');expected=read(up/'EXPECTED.json')
  for k in ['kappa','bit_lower','complex_lower','bit_profile','complex_profile']:assert previous[k]==expected[k],k
+ py('complex-byte-and-content-binding',SELF/'verify_complex_content.py',provider,SELF/'COMPLEX-CONTENT.json',out/'COMPLEX-CONTENT-RECEIPT.json')
  py('source-reconstruction',ROOT/'verify_component.py',out/'reconstruction','--research-root',research)
  B=research/'e8-r740-replica32/parent436/code/bit';base=out/'local';bit=out/'bit';bins=out/'bin';bins.mkdir();word=read(ROOT/'data/word.json');R=word['R']
  py('export',B/'export_records.py',ROOT/'data/word.json.gz',base/'records')
@@ -63,7 +64,8 @@ try:
 
  py('combined-invoice-and-outer',up/'code/assemble.py',out,bit,bit/'AUDIT.json',out/'RESULT.json','--complex',provider/'complex','--engines',up/'engines','--inherited',up/'inherited','--route-extra',6,'--nine','bit','--label','PR478','--parent-kappa','1295508560071773/1000000000000000000')
  result=read(out/'RESULT.json');expected=read(SELF/'EXPECTED.json')
- for key in ['kappa','bit_lower','complex_lower','binding_component','bit_profile','complex_profile','bit','complex','bit_template_sha256','emitted_program_sha256','complex_template_sha256']:assert result[key]==expected[key],key
+ for key in ['kappa','bit_lower','complex_lower','binding_component','bit_profile','complex_profile','bit','complex','bit_template_sha256','emitted_program_sha256']:assert result[key]==expected[key],key
+ assert result['complex_template_sha256']==read(out/'COMPLEX-CONTENT-RECEIPT.json')['actual_template_sha256']
  integrity();receipt=dict(status='PASS_FACTORS_COMPLEX79_COMPLETED_PROVIDER_REUSED' if a.provider_output else 'PASS_FULL_FACTORS_COMPLEX79_COMPOSITION',kappa=result['kappa'],python=sys.version.split()[0],manifest_sha256=sha(SELF/'MANIFEST.json'),source_sha256=sha(SELF/'SOURCE.json'),provider_receipt_sha256=sha(provider/'RECEIPT.json'),steps=steps,scope='Whole-family residuals, same-owner spectators and inherited conditional compiler/analytic interfaces; inventory-only upstream packaging adapter is explicit.')
  (out/'RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n');print(json.dumps(receipt),flush=True)
 except BaseException as e:
