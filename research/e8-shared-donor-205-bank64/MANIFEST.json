@@ -66,6 +66,7 @@
     "inputs/expected-profile.json": "5a6f9edae86dd4d8f06d5d043d3efca83120ad5b11cd77e57dff400ca344b93b",
     "inputs/helper781.json": "3df4c637c69840d53a0137eadbe16e25add617984bbe4da099d059f026192f1e",
     "local/ANCESTRY-NOTICE.md": "66997993ef97c9c185b2b96b9bc0f67ee297f01cc79da6f4b7e7077b3a601e6a",
+    "local/MANIFEST.json": "3244b88da8f5b1582a777319d9a92b7bf317c41ae76215f9a191fb39b2a9e218",
     "local/README.md": "fb34710058552124798406167c0e3f2525cb665f9aa8d297329b3a4d1e295051",
     "local/UPSTREAM-NOTICE.md": "9d8ba00681a08f4f6e2d2fef828c9837763a5ea534dca198b5b82ca8a0fc3662",
     "local/deps/clifford_exact.py": "2982ead07721e83358dc67c6f49c2b4c16a236a6bebdfd72f58221be1f5d0962",
