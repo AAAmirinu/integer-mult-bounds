@@ -1,0 +1,75 @@
+{
+  "status": "PASS_EARLY_RESET_INDEPENDENT_RECORD_BANK_INVOICE_OUTER_AUDIT",
+  "bit_columns_both_orientations": 986,
+  "bit_assignments": 53712,
+  "complex_assignments": 40320,
+  "bit_profile": {
+    "1": 172872,
+    "2": 62208,
+    "3": 34200,
+    "4": 22248,
+    "5": 10944,
+    "7": 6768,
+    "8": 648,
+    "14": 3840,
+    "28": 3840,
+    "42": 3840
+  },
+  "complex_profile": {
+    "1": 142704,
+    "2": 56448,
+    "3": 12096,
+    "4": 16128,
+    "5": 28224,
+    "8": 7488,
+    "16": 3840,
+    "32": 3840,
+    "48": 3840
+  },
+  "bit_invoice": {
+    "unit_additions": 1067904,
+    "route_items": 738096,
+    "selector_calls": 1404600336,
+    "coefficient": "82161054619467903627466673362935694404222551446324515153973743276713",
+    "two_level_coefficient": "697345620266262871364032555923586120394340875592228434515672100154310091400196711454369020063307483063509359977666001075109630373576151983819240676",
+    "prefix_bits": 226,
+    "charged_prefix_bits": 256,
+    "coefficient_bits": 226,
+    "two_level_coefficient_bits": 488,
+    "charged_two_level_coefficient_bits": 512,
+    "row_coefficient": 18355,
+    "live": 14394,
+    "physical": 14403
+  },
+  "complex_invoice": {
+    "local_primitive_bound": 10106507224156,
+    "local_adapters": 389696,
+    "pervertex": 771280115394960,
+    "physical_stock_bits": 2642,
+    "router_bits": 7984,
+    "literal_bits": 35284,
+    "physical_row_coefficient": 15445,
+    "retained_row_coefficient": 20161,
+    "compiler": 25934336,
+    "G_exponent": 30000,
+    "E_exponent": 100000,
+    "C0_exponent": 210000,
+    "required_C0_bits": 200012,
+    "halving_degree": 2,
+    "halving_integer_inequality": [
+      5329,
+      4608
+    ]
+  },
+  "kappa": "1806275959707/1600000000000000",
+  "strict_constraints": 47,
+  "adjacent_grid_rejected": true,
+  "source_sha256": "c318f1020cfeb2e9e12c8922e1978ce5e136eb2fcdfd837b30b533e921dd07db",
+  "input_hashes": {
+    "/private/tmp/pr433-r746-fulladmission-v1/bit426-source-centres/records/249-records.bin": "d5eb8b381cfedb11c02bc862d579d9a7d6d1f780fa0eae68bb64ccaae3be09d0",
+    "/private/tmp/pr433-r746-fulladmission-v1/bit426-source-centres/global/GLOBAL-TEMPLATE.json.gz": "7457ac3627bf1d41344c7a1945f9b9f2e4f415a4d27130259b2a0407be370462",
+    "/private/tmp/pr433-r746-fulladmission-v1/split-centres/GLOBAL-TEMPLATE.json.gz": "a761d07a741a482ad0d2af725fa5298146635a3a2fae69e554bf0565d55d26c6",
+    "/private/tmp/pr433-r746-fulladmission-v1/RESULT.json": "1ac2bb698e5bfddde44ccb955a0cd427fe99db81c82bf1fca975bc1b2f1ec24b"
+  },
+  "scope": "Independent finite source/program accounting and exact arithmetic. Scalar primitive and phase audits separate; inherited all-size interfaces remain conditional."
+}

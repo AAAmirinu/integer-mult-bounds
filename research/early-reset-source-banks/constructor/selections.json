@@ -1,0 +1,183 @@
+[
+  {
+    "reset_after_step": 1035,
+    "reset_part": "A",
+    "reset_after_gate": 1035,
+    "new_helper": 949,
+    "retired_helper": 252,
+    "frame": 458,
+    "reset_donors": [
+      0,
+      1,
+      512,
+      523
+    ],
+    "reset_size": 4,
+    "new_step": 1403
+  },
+  {
+    "reset_after_step": 1330,
+    "reset_part": "A",
+    "reset_after_gate": 1330,
+    "new_helper": 942,
+    "retired_helper": 457,
+    "frame": 470,
+    "reset_donors": [
+      708,
+      710,
+      714
+    ],
+    "reset_size": 3,
+    "new_step": 1370
+  },
+  {
+    "reset_after_step": 1031,
+    "reset_part": "A",
+    "reset_after_gate": 1031,
+    "new_helper": 948,
+    "retired_helper": 406,
+    "frame": 458,
+    "reset_donors": [
+      411,
+      516,
+      517
+    ],
+    "reset_size": 3,
+    "new_step": 1414
+  },
+  {
+    "reset_after_step": 1054,
+    "reset_part": "A",
+    "reset_after_gate": 1054,
+    "new_helper": 936,
+    "retired_helper": 310,
+    "frame": 461,
+    "reset_donors": [
+      315,
+      564,
+      565
+    ],
+    "reset_size": 3,
+    "new_step": 1308
+  },
+  {
+    "reset_after_step": 1071,
+    "reset_part": "A",
+    "reset_after_gate": 1071,
+    "new_helper": 936,
+    "retired_helper": 422,
+    "frame": 463,
+    "reset_donors": [
+      427,
+      596,
+      597
+    ],
+    "reset_size": 3,
+    "new_step": 1317
+  },
+  {
+    "reset_after_step": 1088,
+    "reset_part": "A",
+    "reset_after_gate": 1088,
+    "new_helper": 933,
+    "retired_helper": 294,
+    "frame": 465,
+    "reset_donors": [
+      299,
+      628,
+      629
+    ],
+    "reset_size": 3,
+    "new_step": 1289
+  },
+  {
+    "reset_after_step": 1098,
+    "reset_part": "A",
+    "reset_after_gate": 1098,
+    "new_helper": 934,
+    "retired_helper": 374,
+    "frame": 466,
+    "reset_donors": [
+      379,
+      644,
+      645
+    ],
+    "reset_size": 3,
+    "new_step": 1300
+  },
+  {
+    "reset_after_step": 1108,
+    "reset_part": "A",
+    "reset_after_gate": 1108,
+    "new_helper": 933,
+    "retired_helper": 444,
+    "frame": 467,
+    "reset_donors": [
+      439,
+      660,
+      661
+    ],
+    "reset_size": 3,
+    "new_step": 1299
+  },
+  {
+    "reset_after_step": 1118,
+    "reset_part": "A",
+    "reset_after_gate": 1118,
+    "new_helper": 932,
+    "retired_helper": 492,
+    "frame": 468,
+    "reset_donors": [
+      487,
+      676,
+      677
+    ],
+    "reset_size": 3,
+    "new_step": 1290
+  },
+  {
+    "reset_after_step": 1128,
+    "reset_part": "A",
+    "reset_after_gate": 1128,
+    "new_helper": 937,
+    "retired_helper": 476,
+    "frame": 469,
+    "reset_donors": [
+      471,
+      692,
+      693
+    ],
+    "reset_size": 3,
+    "new_step": 1385
+  },
+  {
+    "reset_after_step": 1138,
+    "reset_part": "A",
+    "reset_after_gate": 1138,
+    "new_helper": 936,
+    "retired_helper": 460,
+    "frame": 470,
+    "reset_donors": [
+      455,
+      708,
+      709
+    ],
+    "reset_size": 3,
+    "new_step": 1381
+  },
+  {
+    "reset_after_step": 1039,
+    "reset_part": "A",
+    "reset_after_gate": 1039,
+    "new_helper": 946,
+    "retired_helper": 532,
+    "frame": 459,
+    "reset_donors": [
+      343,
+      348,
+      533
+    ],
+    "reset_size": 3,
+    "new_step": 1438
+  }
+]

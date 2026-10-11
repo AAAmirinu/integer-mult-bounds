@@ -1,0 +1,161 @@
+{
+  "status": "PASS_ALL_ACTUAL_LITERAL_SCALAR_PRIMITIVES",
+  "checks": {
+    "forward": {
+      "all_independent_live_columns": 800,
+      "arbitrary_coefficient_and_center_initial_columns": 17,
+      "scalar_macros": 19744,
+      "real_component_literal_primitives": 222204,
+      "all_scratch_cleared": true,
+      "endpoint": "forward Y+=X"
+    },
+    "backward": {
+      "all_independent_live_columns": 800,
+      "arbitrary_coefficient_and_center_initial_columns": 17,
+      "scalar_macros": 19744,
+      "real_component_literal_primitives": 222300,
+      "all_scratch_cleared": true,
+      "endpoint": "backward X-=Y"
+    }
+  },
+  "coefficient_inventory": [
+    {
+      "kind": "add",
+      "coefficient": "-1",
+      "count": 4864
+    },
+    {
+      "kind": "add",
+      "coefficient": "-1/2",
+      "count": 3356
+    },
+    {
+      "kind": "add",
+      "coefficient": "-1/4",
+      "count": 6332
+    },
+    {
+      "kind": "add",
+      "coefficient": "-1/8",
+      "count": 2726
+    },
+    {
+      "kind": "add",
+      "coefficient": "-11/8",
+      "count": 38
+    },
+    {
+      "kind": "add",
+      "coefficient": "-2",
+      "count": 276
+    },
+    {
+      "kind": "add",
+      "coefficient": "-3/4",
+      "count": 24
+    },
+    {
+      "kind": "add",
+      "coefficient": "-3/8",
+      "count": 878
+    },
+    {
+      "kind": "add",
+      "coefficient": "-5/8",
+      "count": 424
+    },
+    {
+      "kind": "add",
+      "coefficient": "-7/8",
+      "count": 152
+    },
+    {
+      "kind": "add",
+      "coefficient": "-9/8",
+      "count": 46
+    },
+    {
+      "kind": "add",
+      "coefficient": "1",
+      "count": 4864
+    },
+    {
+      "kind": "add",
+      "coefficient": "1/2",
+      "count": 3356
+    },
+    {
+      "kind": "add",
+      "coefficient": "1/4",
+      "count": 6556
+    },
+    {
+      "kind": "add",
+      "coefficient": "1/8",
+      "count": 2726
+    },
+    {
+      "kind": "add",
+      "coefficient": "11/8",
+      "count": 38
+    },
+    {
+      "kind": "add",
+      "coefficient": "2",
+      "count": 276
+    },
+    {
+      "kind": "add",
+      "coefficient": "3/4",
+      "count": 24
+    },
+    {
+      "kind": "add",
+      "coefficient": "3/8",
+      "count": 878
+    },
+    {
+      "kind": "add",
+      "coefficient": "5/8",
+      "count": 424
+    },
+    {
+      "kind": "add",
+      "coefficient": "7/8",
+      "count": 152
+    },
+    {
+      "kind": "add",
+      "coefficient": "9/8",
+      "count": 46
+    },
+    {
+      "kind": "scale",
+      "coefficient": "-1",
+      "count": 392
+    },
+    {
+      "kind": "scale",
+      "coefficient": "-1/2",
+      "count": 224
+    },
+    {
+      "kind": "scale",
+      "coefficient": "-2",
+      "count": 224
+    },
+    {
+      "kind": "scale",
+      "coefficient": "1/4",
+      "count": 56
+    },
+    {
+      "kind": "scale",
+      "coefficient": "4",
+      "count": 56
+    }
+  ],
+  "canonical_word_sha256": "79ff8e19335d5d5d1563ef0bc218106945d6a2b88ece53ee24bb3d88b2594ba3",
+  "local_programs_sha256": "e1b483423ec93c47c80d21a01d92591f3856d1ec68da231372ec2bc29f7e8fd8",
+  "scope": "Every actual scalar macro is lowered to clear,copy,unit signed add,double,halve or negate and replayed against 800 live and seventeen initially dirty private columns. All scratch is cleared and the literal counts equal the invoice."
+}

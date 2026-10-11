@@ -1,0 +1,157 @@
+{
+  "status": "PASS_ALL_COLUMNS_AND_BOTH_FRAME_LEDGERS",
+  "R": 746,
+  "columns": 986,
+  "operations": 18825,
+  "forward_profile": {
+    "1": 2401,
+    "2": 864,
+    "3": 475,
+    "4": 309,
+    "5": 152,
+    "7": 14,
+    "8": 9
+  },
+  "reverse_profile": {
+    "1": 2401,
+    "2": 864,
+    "3": 475,
+    "4": 309,
+    "5": 152,
+    "7": 14,
+    "8": 9
+  },
+  "exact_rational_frame_ranks": 944,
+  "source_sha256": "015811014644ed62acba1da590d9cf6ebdfe834d89867f8ce2b68722609072ea",
+  "output_sha256": "fc5b2fb84dbbdbcf9b1bb36ebf768f31130dd5a93edec3d12f52c8e4be66ce48",
+  "mutation_controls": [
+    {
+      "round": 0,
+      "mutation": "omit",
+      "rejected": "('scalar', 178)"
+    },
+    {
+      "round": 0,
+      "mutation": "late",
+      "rejected": "('scalar', 178)"
+    },
+    {
+      "round": 1,
+      "mutation": "omit",
+      "rejected": "('scalar', 153)"
+    },
+    {
+      "round": 1,
+      "mutation": "late",
+      "accepted": true
+    },
+    {
+      "round": 2,
+      "mutation": "omit",
+      "rejected": "('scalar', 177)"
+    },
+    {
+      "round": 2,
+      "mutation": "late",
+      "rejected": "('frame', 411, 515, 458)"
+    },
+    {
+      "round": 3,
+      "mutation": "omit",
+      "rejected": "('scalar', 226)"
+    },
+    {
+      "round": 3,
+      "mutation": "late",
+      "rejected": "('frame', 315, 489, 461)"
+    },
+    {
+      "round": 4,
+      "mutation": "omit",
+      "rejected": "('scalar', 170)"
+    },
+    {
+      "round": 4,
+      "mutation": "late",
+      "rejected": "('frame', 427, 485, 463)"
+    },
+    {
+      "round": 5,
+      "mutation": "omit",
+      "rejected": "('scalar', 234)"
+    },
+    {
+      "round": 5,
+      "mutation": "late",
+      "rejected": "('frame', 299, 481, 465)"
+    },
+    {
+      "round": 6,
+      "mutation": "omit",
+      "rejected": "('scalar', 194)"
+    },
+    {
+      "round": 6,
+      "mutation": "late",
+      "rejected": "('frame', 379, 480, 466)"
+    },
+    {
+      "round": 7,
+      "mutation": "omit",
+      "rejected": "('scalar', 162)"
+    },
+    {
+      "round": 7,
+      "mutation": "late",
+      "rejected": "('frame', 439, 477, 467)"
+    },
+    {
+      "round": 8,
+      "mutation": "omit",
+      "rejected": "('scalar', 138)"
+    },
+    {
+      "round": 8,
+      "mutation": "late",
+      "rejected": "('frame', 487, 476, 468)"
+    },
+    {
+      "round": 9,
+      "mutation": "omit",
+      "rejected": "('scalar', 146)"
+    },
+    {
+      "round": 9,
+      "mutation": "late",
+      "rejected": "('frame', 471, 473, 469)"
+    },
+    {
+      "round": 10,
+      "mutation": "omit",
+      "rejected": "('scalar', 154)"
+    },
+    {
+      "round": 10,
+      "mutation": "late",
+      "rejected": "('frame', 455, 472, 470)"
+    },
+    {
+      "round": 11,
+      "mutation": "omit",
+      "rejected": "('scalar', 209)"
+    },
+    {
+      "round": 11,
+      "mutation": "late",
+      "rejected": "('frame', 343, 549, 459)"
+    },
+    {
+      "mutation": "omit dirty compensation",
+      "rejected": "('scalar', 120)"
+    },
+    {
+      "mutation": "omit helper cleanup",
+      "rejected": "('scalar', 240)"
+    }
+  ]
+}

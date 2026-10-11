@@ -1,0 +1,44 @@
+{
+  "status": "PASS_SPLIT433_TARGETED_REFLECTED_LEDGER_MUTATIONS",
+  "base_ir_replay_observed_exit": 0,
+  "local_base_checks": {
+    "forward": {
+      "all_exact_columns": 800,
+      "prefix_l1_upper": "32209",
+      "prefix_bits_upper": 15,
+      "charged_payload_bits": 192,
+      "private_work_erased": true
+    },
+    "backward": {
+      "all_exact_columns": 800,
+      "prefix_l1_upper": "1039185",
+      "prefix_bits_upper": 20,
+      "charged_payload_bits": 192,
+      "private_work_erased": true
+    }
+  },
+  "controls": [
+    "backward_common_frame_changed",
+    "backward_cleanup_event_removed",
+    "backward_cleanup_reversed",
+    "backward_center_before_final_gather",
+    "backward_dirty_compensation_omitted",
+    "backward_bank_owner_right_factor_changed",
+    "bank_padding_omitted_from_execution_schedule",
+    "physical_private_namespace_alias",
+    "backward_program_owner_binding_wrong"
+  ],
+  "global_profile": {
+    "1": 142704,
+    "3": 12096,
+    "4": 16128,
+    "2": 56448,
+    "5": 28224,
+    "8": 7488,
+    "16": 3840,
+    "32": 3840,
+    "48": 3840
+  },
+  "template_sha256": "942d030fa43316c560c88d7d7d904583446e1a96945b3ebd37a91c88a192ab4f",
+  "scope": "Finite reflected event and physical owner/padding controls; uses PR433 complex_replay interpreter, with independent literal primitive interpreter in separate receipt."
+}

@@ -1,0 +1,70 @@
+{
+  "status": "PASS_PR433_INDEPENDENT_RECORD_BANK_INVOICE_OUTER_AUDIT",
+  "bit_columns_both_orientations": 998,
+  "bit_assignments": 54576,
+  "complex_assignments": 40320,
+  "bit_profile": {
+    "1": 170424,
+    "2": 63000,
+    "3": 34200,
+    "4": 23112,
+    "5": 11808,
+    "7": 6768,
+    "8": 648,
+    "14": 3840,
+    "28": 3840,
+    "42": 3840
+  },
+  "complex_profile": {
+    "1": 142704,
+    "2": 56448,
+    "3": 12096,
+    "4": 16128,
+    "5": 28224,
+    "8": 7488,
+    "16": 3840,
+    "32": 3840,
+    "48": 3840
+  },
+  "bit_invoice": {
+    "prefix_bits": 223,
+    "charged_prefix_bits": 256,
+    "coefficient_bits": 223,
+    "two_level_coefficient_bits": 483,
+    "charged_two_level_coefficient_bits": 512,
+    "row_coefficient": 18355,
+    "live": 14502,
+    "physical": 14511
+  },
+  "complex_invoice": {
+    "local_primitive_bound": 10106507224156,
+    "local_adapters": 389696,
+    "pervertex": 771280115394960,
+    "physical_stock_bits": 2642,
+    "router_bits": 7984,
+    "literal_bits": 35284,
+    "physical_row_coefficient": 15445,
+    "retained_row_coefficient": 20161,
+    "compiler": 25934336,
+    "G_exponent": 30000,
+    "E_exponent": 100000,
+    "C0_exponent": 210000,
+    "required_C0_bits": 200012,
+    "halving_degree": 2,
+    "halving_integer_inequality": [
+      5329,
+      4608
+    ]
+  },
+  "kappa": "560432476129139/500000000000000000",
+  "strict_constraints": 47,
+  "adjacent_grid_rejected": true,
+  "source_sha256": "c0d83cb36def807af995bb4b62eec51aeedec98817b63d36484c0a35dbd1387d",
+  "input_hashes": {
+    "/private/tmp/pr433-source-search-full314/bit426-source-centres/records/249-records.bin": "fcc06bc2315d8da0468334c19716eea65bad38945f342635d999901a82d81816",
+    "/private/tmp/pr433-source-search-full314/bit426-source-centres/global/GLOBAL-TEMPLATE.json.gz": "e7882a18ed53e85f4a511a9d3d3502e4484b7e1b2e09f4f9d9a90466838708d0",
+    "/private/tmp/pr433-source-search-full314/split-centres/GLOBAL-TEMPLATE.json.gz": "a761d07a741a482ad0d2af725fa5298146635a3a2fae69e554bf0565d55d26c6",
+    "/private/tmp/pr433-source-search-full314/RESULT.json": "0ba447d6de6edd9fbe2371c36e3605dffa0c6526a874cfcb9bd19285c056bf1e"
+  },
+  "scope": "Independent finite source/program accounting and exact arithmetic. Scalar primitive and phase audits separate; inherited all-size interfaces remain conditional."
+}

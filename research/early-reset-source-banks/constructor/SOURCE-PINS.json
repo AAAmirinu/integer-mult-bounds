@@ -1,0 +1,13 @@
+{
+  "upstream_pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/433",
+  "upstream_commit": "2992f234bcb2538cb70f4d026aa8d08250b1040c",
+  "source_word_sha256": "015811014644ed62acba1da590d9cf6ebdfe834d89867f8ce2b68722609072ea",
+  "output_word_sha256": "fc5b2fb84dbbdbcf9b1bb36ebf768f31130dd5a93edec3d12f52c8e4be66ce48",
+  "upstream_files": {
+    "code/bit_construct.py": "a461e6c983531beb5c8ac82ff593f39ce4e056387d1d6061f6e6b294dde4395f",
+    "inputs/bit-r767.json.gz": "bd3b84244528767b85d8d7fe423b155630b5c659e21e51563674b1dcb6305ad7",
+    "NOTICE.md": "66101a9e74d0ba9c2da4c8802bcb1968534adfa7130b954628eb8bf515fc0389",
+    "SOURCES.json": "11aa666d678fed084b01d1e8e47239e1674eaedbc6fe0cee7edb2753477af9be",
+    "vendor/export_records.py": "8a5999601f917dbb492bb9ae9a344611f18cc7cedc53dc3c76496a369e530eb3"
+  }
+}
