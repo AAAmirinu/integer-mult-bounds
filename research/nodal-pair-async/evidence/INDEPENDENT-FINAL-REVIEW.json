@@ -1,0 +1,50 @@
+{
+  "status": "PASS_INDEPENDENT_PAIR35_CONSTRUCTOR_OWNER_ENVELOPE_AND_FINAL_RECEIPT_REVIEW",
+  "result": {
+    "kappa": "1393662920776407/1000000000000000000",
+    "complex_lower": "697803963898659915203/500000000000000000000000",
+    "bit_lower": "391360506745414227149/250000000000000000000000",
+    "template_sha256": "83b8adca338e954e59170de7bc9c5b23e240655879d6719e593641aaba00e8fd",
+    "strict_constraints": 47
+  },
+  "files": {
+    "verify.py": "d87a87f2e991031dbcd4e8d24bf14955a3b2d2048b3b81dac045bf2b7ba6bca7",
+    "code/build_pair35.py": "4a36da4ee9407e5f84a0128ef49ed9e92bcdfc604d25a3c8b591b374eec65c62",
+    "code/construct_partial.py": "8b9a7f1bb69626d76fec9e915134cec7199a70b53656723ce49ecc47f4644afd",
+    "code/audit_kernel_scalar.py": "7a0e306013e8a198f2a77a0d582aab6cf14b5520756345143205272b9f1b0f3f",
+    "code/audit_async.py": "009494faa5470f2cf7099eef97b203ea59d0a2d703db7f9f5af49b78cf6fd56f",
+    "code/audit_async_invoice.py": "75e30d516069140c958063e45905c84ad7e04c2029654592e5fa7c8725a7feba",
+    "code/emit_async.py": "830b3d8307e58b3c6daaf8f4ad6d96e4dadf1eaea2cd7cfeaf585d7de58a5d74",
+    "code/assemble.py": "9db68cad2738d76052b25c8bdf6485edd6f14025bf47107d2425b10a2bdf69e0",
+    "code/run_portable.py": "01030376f8a3afb86c559bc5036d1524165fc3b4119bcca12cc7c6e1990a7548",
+    "vendor/complex/e8-complex-gauge-kernel/code/replay_gk.py": "2f064890bdde1eb9ea2c9a339e8ae9713dcffe0274be4b1ef6208ad2b7ba5a2a"
+  },
+  "receipts": {
+    "RESULT.json": "d31253b8e92f1f807848a6aadb5c6b6d16d60a074babaaaa3a03db5cdd74d50f",
+    "audit/ASYNC-AUDIT.json": "515abbdff41bddcdd16428195a62b7f2262b7221b326a6eac843a56ef8508a4f",
+    "audit/OWNERS-AND-PROFILE.json": "87551fbec3c1eec091286749330e8b725e0142f3371c15e2bce40fd12d25d79c",
+    "audit/PREFIX-AND-INVOICE.json": "c0cc1a411f4f42ad70d093de39ff43cb90f4bf2b4c733ef8cb2f1de435e4cbde",
+    "audit/EXACT-ASSEMBLY.json": "5a3f465fc95192c0ba3406dcdbf2faaa0357be0a0a7ccdb962e43b81b6362f40",
+    "audit/KERNEL-SCALAR.json": "7b0a0f6a70c9e83068227e7514e0438b3c7a621c838703d08a28fe8d85336ed3",
+    "base/split-centres/CONSTRUCTION.json": "44e5532862be89b29cb729f4fbd477f5975033a2de84a68c5ff107a9663dbc97",
+    "base/split-centres/INDEPENDENT-REPLAY.json": "98c694e5186384f1afffa1b9e2c461c574f76f3c267596a9540943706d117d86"
+  },
+  "full_stage_count": 14,
+  "whole_helper_owners": 40320,
+  "orthogonal_maps": 2842,
+  "remainders": 7540,
+  "kernel_controls": 99,
+  "async_controls": 19,
+  "physical_prefix_bits": 206,
+  "charged_prefix_bits": 512,
+  "physical_row_coefficient": 16467,
+  "notes": [
+    "Pair-cover substitution preserves the exact pinned public factory except the selected per-block matchings; its rational decoder is rebuilt.",
+    "Retiming transfers only scalar-identical events and source-bound normalized word hash gates the full result.",
+    "Independent nomination checker verifies all owner timelines, complete-family uniqueness, disjoint pending footprints and full profile.",
+    "Independent Horner envelope matches fresh invoice exactly. Runtime-derived prefix bound replaces stale provider-specific fixture;512charge unchanged.",
+    "Canonical LF text pins and the portable subprocess launcher preserve pinned semantic word. Actual Linux execution is not claimed by this review.",
+    "No Schur-derived numerical contribution: all bounded splice screens rejected; source-inspired research does not count as four achieved improving techniques."
+  ],
+  "scope": "Checked finite conditional construction. Unchanged PR493 bit operator and inherited all-size compiler/common-label/Lemma A/restored-row/precision/analytic contracts remain dependencies. No universal record, unconditional multiplication theorem or fresh Lean certification."
+}

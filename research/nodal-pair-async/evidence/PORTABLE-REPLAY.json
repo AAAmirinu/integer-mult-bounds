@@ -1,0 +1,83 @@
+{
+  "status": "PASS_CONDITIONAL_ASYNCHRONOUS_COMPLEX_DERIVATIVE",
+  "kappa": "1393662920776407/1000000000000000000",
+  "kappa_decimal": "0.001393662920776407",
+  "complex_lower": "697803963898659915203/500000000000000000000000",
+  "bit_lower": "391360506745414227149/250000000000000000000000",
+  "template_sha256": "83b8adca338e954e59170de7bc9c5b23e240655879d6719e593641aaba00e8fd",
+  "strict_constraints": 47,
+  "scope": "New complex program independently replayed. The unchanged PR493 bit operator and inherited all-size compiler, common-label, Lemma A realization, restored-row, precision/tape and analytic-transfer contracts remain dependencies. No unconditional multiplication bound or fresh Lean certification is claimed.",
+  "stages": [
+    {
+      "stage": "partial-factory",
+      "exit": 0,
+      "seconds": 0.5620000000053551
+    },
+    {
+      "stage": "construct-kernel92",
+      "exit": 0,
+      "seconds": 2.1719999999913853
+    },
+    {
+      "stage": "construct-pair35",
+      "exit": 0,
+      "seconds": 1.6410000000032596
+    },
+    {
+      "stage": "kernel-scalar-controls",
+      "exit": 0,
+      "seconds": 29.139999999984866
+    },
+    {
+      "stage": "scalar",
+      "exit": 0,
+      "seconds": 2.5940000000118744
+    },
+    {
+      "stage": "emit-local",
+      "exit": 0,
+      "seconds": 1.562999999994645
+    },
+    {
+      "stage": "phases",
+      "exit": 0,
+      "seconds": 201.06200000000536
+    },
+    {
+      "stage": "adapters",
+      "exit": 0,
+      "seconds": 1.187999999994645
+    },
+    {
+      "stage": "parent-integration",
+      "exit": 0,
+      "seconds": 1.2960000000020955
+    },
+    {
+      "stage": "parent-replay",
+      "exit": 0,
+      "seconds": 9.671999999991385
+    },
+    {
+      "stage": "emit-async",
+      "exit": 0,
+      "seconds": 4.532000000006519
+    },
+    {
+      "stage": "independent-async",
+      "exit": 0,
+      "seconds": 26.171000000002095
+    },
+    {
+      "stage": "invoice",
+      "exit": 0,
+      "seconds": 2.312000000005355
+    },
+    {
+      "stage": "two-moments-assembly",
+      "exit": 0,
+      "seconds": 0.7190000000118744
+    }
+  ],
+  "package_manifest_sha256": "3eed73503053159418872d3fbe4ae8a9b0d8eeee69cc5ad1673bde0ccca26bb3"
+}

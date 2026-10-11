@@ -1,0 +1,18 @@
+{
+  "backward": {
+    "positive_recursive_sites": 3700,
+    "zero_candidates": 0,
+    "candidate_event_ids": [],
+    "modulus": "2305843009213693951",
+    "scope": "A nonzero modular entry disproves exact zero; any zero candidate needs independent rational replay."
+  },
+  "forward": {
+    "positive_recursive_sites": 3700,
+    "zero_candidates": 0,
+    "candidate_event_ids": [],
+    "modulus": "2305843009213693951",
+    "scope": "A nonzero modular entry disproves exact zero; any zero candidate needs independent rational replay."
+  },
+  "program_sha256": "69dea7d57a781fb7705c8abc42041e9c797437a5f437fae78586fe5a82e3c506",
+  "source_sha256": "7e5734f288209587806e09fef8d3578e5be5241686d1aa7d5759d793ed07c94d"
+}

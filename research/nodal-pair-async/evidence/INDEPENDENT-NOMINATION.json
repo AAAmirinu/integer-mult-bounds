@@ -1,0 +1,29 @@
+{
+  "status": "PASS_INDEPENDENT_LITERAL_OWNER_AND_PROFILE_REVIEW",
+  "calls": 72,
+  "roles": 40320,
+  "remainder_profile": {
+    "3": 3044,
+    "5": 3608,
+    "7": 92,
+    "48": 796
+  },
+  "profile": {
+    "1": 182160,
+    "2": 13104,
+    "3": 40196,
+    "4": 6336,
+    "5": 25064,
+    "6": 4896,
+    "7": 164,
+    "8": 1224,
+    "48": 796
+  },
+  "deficit": 2496,
+  "source_hashes": {
+    "PAIR35-SELECTED.json": "a04f33dcd7921d42d7507606a9781c5e5519bacf0747220e61195635105b11ba",
+    "PAIR35-SELECTED.owners.json.gz": "5e1ac46a2390c8355ad4b05a154c8c95ed4dd47e87f620d549c5deb26bfa95f7",
+    "CONSTRUCTION.json": "17d06de76d0988d2487fc9bd85eef54270c71573e6939089e4b0fe5e621d946f"
+  },
+  "scope": "Exact nomination-level chronology, original child lifetimes, complete-family uniqueness, disjoint pending-coordinate offsets, source-bound widths, all remainders. Full physical maps, phases and scalar invoice remain separate checks."
+}
