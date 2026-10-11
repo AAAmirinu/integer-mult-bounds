@@ -1,0 +1,486 @@
+{
+  "scope": "Thirty most recently created/updated PR pages checked; all diff-listed files for new479-482 and updated473/477 downloaded where retrievable. No unchanged public verification rerun.",
+  "rows": [
+    {
+      "number": 483,
+      "title": "Conditional kappa = 0.001296606691405309: response-kernel cancellation and nested-donor flags on R715 \u00b7 Pull Request #483 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "a01b261b8101617280556fded95e636cb05f4fb686c2709e1db54c40a063557c",
+      "headSha": "3738c3ce2d04d6a6c6363408ff9402286f592bc7",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "tn12",
+      "prior_head": null,
+      "changed_since_previous": true,
+      "source_locator": "https://github.com/CrocSwap/integer-mult-bounds/pull/483"
+    },
+    {
+      "number": 482,
+      "title": "Conditional \u03ba = 0.001168862033074029: R715 target factors in non-hosting banks by eumemic \u00b7 Pull Request #482 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "f8c9204314bf2bf97d62d9fcdf6965ad58fb072d513aaf10abd03a95c04aa296",
+      "headSha": "ab81e78de235ed11d4279ee89b0824650c372e17",
+      "headRepositoryOwnerLogin": "eumemic",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "codex/r715-target-factors-banked",
+      "prior_head": null,
+      "changed_since_previous": true
+    },
+    {
+      "number": 481,
+      "title": "Batch Gaussian boundary right-hand sides to reduce their cost by chafreaky \u00b7 Pull Request #481 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "4002412413723d8e08b87f7288cb63b168d93473324d372528858377ed8e81e7",
+      "headSha": "5f3db6a11198bab07d8effe8f0c9f5df9c3f2eb7",
+      "headRepositoryOwnerLogin": "chafreaky",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "research/batched-gaussian-boundary",
+      "prior_head": null,
+      "changed_since_previous": true
+    },
+    {
+      "number": 480,
+      "title": "Conditional \u03ba = 0.001372550159367980: cross-copy hosting on #472&#39;s R715 eleven-stage word (+1.63% over #469) by higherbeing \u00b7 Pull Request #480 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "b3cd38dd0fc4c87364ad07c85858b112dcad2c1731546df87352f2559a8ad226",
+      "headSha": "668c7dd0fa76d0da4289c9dea63b965e730142d0",
+      "headRepositoryOwnerLogin": "higherbeing",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "research/cross-copy-hosting-r715",
+      "prior_head": null,
+      "changed_since_previous": true
+    },
+    {
+      "number": 479,
+      "title": "Remove the chirp-generation dimension factor with exact streamed phases by chafreaky \u00b7 Pull Request #479 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "7ad2c8b0e9f63add39e70eb503766d0922703173824fba3b48c671dc269b8cd8",
+      "headSha": "40dd01058439cdffae3e3b41c4fe52edaccf5f91",
+      "headRepositoryOwnerLogin": "chafreaky",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "research/streamed-chirp-phases",
+      "prior_head": null,
+      "changed_since_previous": true
+    },
+    {
+      "number": 478,
+      "title": "Conditional kappa = 0.001295508560071773: fourteen target factors on PR473 (+0.1226%) \u00b7 Pull Request #478 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "a51d4fff85c1ed06bde320222916a601dfabc38e8981fdb5c7ae388c208cd08d",
+      "headSha": "bea1d52fd330c699903f81612ee58be81697d1eb",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "ten1",
+      "prior_head": "bea1d52fd330c699903f81612ee58be81697d1eb",
+      "changed_since_previous": false,
+      "source_locator": "https://github.com/CrocSwap/integer-mult-bounds/pull/478"
+    },
+    {
+      "number": 477,
+      "title": "Add categorized experiment log: 100 ideas, 300 trials, and recorded failures by rohanarun \u00b7 Pull Request #477 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "e3c6f50840c7dbed6f434b670eee81fa8a9fe9c20ca58dc7d4ac5bb284e58802",
+      "headSha": "196fac3d94198422939b021e93512020a543d339",
+      "headRepositoryOwnerLogin": "rohanarun",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "codex/research-experiment-log",
+      "prior_head": "bfc3dc1b366a6913a42de04ccfdc69eb63979c19",
+      "changed_since_previous": true
+    },
+    {
+      "number": 476,
+      "title": "Conditional kappa = 0.001291542455423938: two-layer target factoring on R715 (+0.1461% over #470) \u00b7 Pull Request #476 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "aeb13475cb44237a371abdeeccf55907572f0545c638e6c29012d0db7ff97a32",
+      "headSha": "e850569c33ad1d5771e2f8b1c6dfe7a445396167",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "tn10",
+      "prior_head": "e850569c33ad1d5771e2f8b1c6dfe7a445396167",
+      "changed_since_previous": false,
+      "source_locator": "https://github.com/CrocSwap/integer-mult-bounds/pull/476"
+    },
+    {
+      "number": 475,
+      "title": "Remove compact FFT reservation and top-bit costs with complementary reservoirs by chafreaky \u00b7 Pull Request #475 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "76a2b518e8e3fbe8048aacb8dfa4ca1f014c92e2a9b8394c6059bafa545d81ff",
+      "headSha": "5996e33ecad6a0ccd578aec58831457829d75575",
+      "headRepositoryOwnerLogin": "chafreaky",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "research/complementary-fft-reservoirs",
+      "prior_head": "5996e33ecad6a0ccd578aec58831457829d75575",
+      "changed_since_previous": false
+    },
+    {
+      "number": 474,
+      "title": "Bind the selected gen4 certificate to fresh replay outputs by artuskg \u00b7 Pull Request #474 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "e82f80284c353291b6966c605d66b7c583684702869d25ea83adc922be299ca6",
+      "headSha": "6563bc97e4c0f86d4ff9b11476ae925a6be7ff7f",
+      "headRepositoryOwnerLogin": "artuskg",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "codex/bind-selected-gen4-replay-20261011",
+      "prior_head": "6563bc97e4c0f86d4ff9b11476ae925a6be7ff7f",
+      "changed_since_previous": false
+    },
+    {
+      "number": 473,
+      "title": "Conditional \u03ba = 0.001295629942587122: rational84 whole-family packing and complex79 by rohanarun \u00b7 Pull Request #473 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "4b15d2ab20c6048f79ddf9af9379e40c5ae457fc9e5b3d4dfc3e98d7875adc17",
+      "headSha": "e2e9bc9b4c6461cb22b38b4fc0468ed73f059a8d",
+      "headRepositoryOwnerLogin": "rohanarun",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "codex/r715-pr472-deliveries",
+      "prior_head": "2242365e482de3c6d230de86340896e5f46ec403",
+      "changed_since_previous": true
+    },
+    {
+      "number": 472,
+      "title": "Conditional \u03ba = 0.001292099559442278: R715 shared kernel, target mixing and whole hosting by chafreaky \u00b7 Pull Request #472 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "567df712ad393e211bf38593ebf347ddb8d40b2f8602e49c3c715ed9393adb1d",
+      "headSha": "259c68488b7aa8a14cf3fcae7fc499381c9bf729",
+      "headRepositoryOwnerLogin": "chafreaky",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "research/e8-r715-whole-hosted",
+      "prior_head": "259c68488b7aa8a14cf3fcae7fc499381c9bf729",
+      "changed_since_previous": false
+    },
+    {
+      "number": 471,
+      "title": "Conditional kappa = 0.001274548075945587: full-nine-axis kernel normalization and same-owner spectator borrowing \u00b7 Pull Request #471 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "b6338b42c506561efcbe7c3ee501e23da8e6aa8c76b5292314a31af4e0101288",
+      "headSha": "56b3da6aa1295d37ce43f1753479bfe4737b7ac3",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "t9",
+      "prior_head": "56b3da6aa1295d37ce43f1753479bfe4737b7ac3",
+      "changed_since_previous": false,
+      "source_locator": "https://github.com/CrocSwap/integer-mult-bounds/pull/471"
+    },
+    {
+      "number": 470,
+      "title": "Conditional \u03ba = 0.001291474845253222: retimed kernel and reordered R715 deliveries by rohanarun \u00b7 Pull Request #470 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "76895eb0c336971e1f587b41cb3941291606ecd8aa67190f48fc16acd4e7f063",
+      "headSha": "aaf3ef64672cb96d2f0cfe36410640ee59c07c9f",
+      "headRepositoryOwnerLogin": "rohanarun",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "codex/r715-retimed-kernel-pool",
+      "prior_head": "aaf3ef64672cb96d2f0cfe36410640ee59c07c9f",
+      "changed_since_previous": false
+    },
+    {
+      "number": 469,
+      "title": "Conditional \u03ba = 0.001350580884553120: gate-frame retiming of #450&#39;s eleven-stage cross-copy word (+0.2105%) by ahrazzle \u00b7 Pull Request #469 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "835e4a8ad3954643d27c13dabbbcf5e42b045aef29910f223090517163722077",
+      "headSha": "a820816f07f60544bd38c6f12c38a9c25066ddf0",
+      "headRepositoryOwnerLogin": "ahrazzle",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "retimed-eleven-stage",
+      "prior_head": "a820816f07f60544bd38c6f12c38a9c25066ddf0",
+      "changed_since_previous": false
+    },
+    {
+      "number": 468,
+      "title": "Prove nine calls are necessary for three abelian bit registers by aliromman \u00b7 Pull Request #468 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "a90cff0cf4bef04d8b6fce46d15f61b03197f124cd741add959ae01d8c1490e9",
+      "headSha": "07a78bf335b0b5039a1fecd7cd74a0fe1d1605ea",
+      "headRepositoryOwnerLogin": "aliromman",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "codex/bit-three-register-lower-bound",
+      "prior_head": "07a78bf335b0b5039a1fecd7cd74a0fe1d1605ea",
+      "changed_since_previous": false
+    },
+    {
+      "number": 467,
+      "title": "Conditional \u03ba = 0.001289283116193775: R715 shared kernel, retiming and whole pooling by rohanarun \u00b7 Pull Request #467 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "dd90f7fd34318274f38215c71b4369016a91c1d008d756c95cec80e2bdec915c",
+      "headSha": "e28109cd3fe2f2853449e4c49a55887790e16ba2",
+      "headRepositoryOwnerLogin": "rohanarun",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "codex/r715-kernel-pool",
+      "prior_head": "e28109cd3fe2f2853449e4c49a55887790e16ba2",
+      "changed_since_previous": false
+    },
+    {
+      "number": 466,
+      "title": "Conditional \u03ba = 0.001274415506145115: complex response kernel + rank151/mixed bit word on #451 (+0.670%) by rohanarun \u00b7 Pull Request #466 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "8768ef691bf74620b1d4dd01614de2cc2c76fb480e037d9a081c187bb947ab3f",
+      "headSha": "c2f8e18b1b3e39abb5d2f63b9ee4582c96cd75de",
+      "headRepositoryOwnerLogin": "rohanarun",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "research/e8-r740-dual-kernel",
+      "prior_head": "c2f8e18b1b3e39abb5d2f63b9ee4582c96cd75de",
+      "changed_since_previous": false
+    },
+    {
+      "number": 465,
+      "title": "Conditional kappa = 0.001283479306671789: certified R715 assembly with sharp bit charge by Srikrishnabalaji \u00b7 Pull Request #465 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "7d9248e054b240c37e64db240141afbfbe70168ad2481893e59ddb29c4f86158",
+      "headSha": "22c2a15c232084a31b6c8f0263e2e8ce831047ea",
+      "headRepositoryOwnerLogin": "Srikrishnabalaji",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "research/r715-certified-assembly",
+      "prior_head": "22c2a15c232084a31b6c8f0263e2e8ce831047ea",
+      "changed_since_previous": false
+    },
+    {
+      "number": 464,
+      "title": "Conditional \u03ba = 0.001347744550711765: sharper bit bad-class charge on #450&#39;s word by ahrazzle \u00b7 Pull Request #464 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "75da0b7df9096b1543621549ac08c04db7bc0d3211c6f478f9dc72df9dcf03d2",
+      "headSha": "8c546e9918ae37d842916d89ffe28f2c08cdb3d3",
+      "headRepositoryOwnerLogin": "ahrazzle",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "sharp-charge-on-450",
+      "prior_head": "8c546e9918ae37d842916d89ffe28f2c08cdb3d3",
+      "changed_since_previous": false
+    },
+    {
+      "number": 463,
+      "title": "Conditional \u03ba = 0.001283479303751122: E8 bit word R715 (carrier lower bound + F2 overlap cancellation) with #458&#39;s complex supplier (+0.711% over #460) by DreamingOfClouds \u00b7 Pull Request #463 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "588e2c1f26db1cf5f8bb26d3d15e0fb8426f7a51615012198735dbdd9bdad8d9",
+      "headSha": "cdf0c1c6540df987467988fd771340670f4136f3",
+      "headRepositoryOwnerLogin": "DreamingOfClouds",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "e8-carrier-rekid-r715",
+      "prior_head": "cdf0c1c6540df987467988fd771340670f4136f3",
+      "changed_since_previous": false
+    },
+    {
+      "number": 462,
+      "title": "Conditional \u03ba = 0.001274494971185576: four-replica whole bit hosting by rohanarun \u00b7 Pull Request #462 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "42105a459824a8b959abc6846238aa92302aab96105f9ae84090ca2388de87f0",
+      "headSha": "a63b25e65578816d78843c0e25131d9be7567cd2",
+      "headRepositoryOwnerLogin": "rohanarun",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "codex/bit-whole-pool4",
+      "prior_head": "a63b25e65578816d78843c0e25131d9be7567cd2",
+      "changed_since_previous": false
+    },
+    {
+      "number": 461,
+      "title": "Conditional kappa = 0.001274032592088050: sharper bit bad-class charge on #458 by Srikrishnabalaji \u00b7 Pull Request #461 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "8e6959dcafde42cba2cb53a0dd114a266ea10af9f65a5691096ff3249f36d5fe",
+      "headSha": "dc297912ad446779f983818816617c03dfc76e16",
+      "headRepositoryOwnerLogin": "Srikrishnabalaji",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "research/sharp-bit-bad-fraction",
+      "prior_head": null,
+      "changed_since_previous": true
+    },
+    {
+      "number": 460,
+      "title": "Conditional \u03ba = 0.001274415506145115: paid complex kernel + rank151 target mixing by rohanarun \u00b7 Pull Request #460 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "03bd1247f2f37f6b16eb4ec8f2593743629f6a05981275491c2f02f955fcca0b",
+      "headSha": "b98bbb4bc398ad67a41f123c6c301628c37e1d6b",
+      "headRepositoryOwnerLogin": "rohanarun",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "codex/complex-kernel-mixed151",
+      "prior_head": "b98bbb4bc398ad67a41f123c6c301628c37e1d6b",
+      "changed_since_previous": false
+    },
+    {
+      "number": 459,
+      "title": "Conditional \u03ba = 0.001266536148630309: rank151 kernel + target-prefix mixing on #451, complex-bound (+0.0477%) by rohanarun \u00b7 Pull Request #459 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "4eabb81432ad9d14eecb24024fd0de60e5af66857fa2f56d0bebf11e94f2d0c8",
+      "headSha": "e037bc50c3d5efc1bec0d258a9f274f79ba45ec7",
+      "headRepositoryOwnerLogin": "rohanarun",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "research/e8-r740-rank151-mixed",
+      "prior_head": null,
+      "changed_since_previous": true
+    },
+    {
+      "number": 450,
+      "title": "Conditional \u03ba = 0.001347744547714835: eleven-stage cross-copy hosting with target mixing (+1.278% over #448) by DreamingOfClouds \u00b7 Pull Request #450 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "d739c5bc920a504255ef306532b7bc297c0157501bf4bcd4f92c7d6289e9f42e",
+      "headSha": "350943275564c53b209c1277aac7d691807726be",
+      "headRepositoryOwnerLogin": "DreamingOfClouds",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "e8-eleven-stage-cross-copy",
+      "prior_head": "350943275564c53b209c1277aac7d691807726be",
+      "changed_since_previous": false
+    },
+    {
+      "number": 397,
+      "title": "Formalize the indexed B_K scalar bridge and bind the pinned B3 word by artuskg \u00b7 Pull Request #397 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "2ddff1e7c7e4f4a56bc01895a51cb2b3fb88ffb10a15d59f06313b3394d834d9",
+      "headSha": "cb6455fa1e9af68be47c33948d3d1a6f0717a5e4",
+      "headRepositoryOwnerLogin": "artuskg",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "codex/tintagel-scalar-bridge-lean-20261011",
+      "prior_head": "cb6455fa1e9af68be47c33948d3d1a6f0717a5e4",
+      "changed_since_previous": false
+    },
+    {
+      "number": 376,
+      "title": "Conditional \u03ba=0.0011208649522582786: split centres with complete signed admission by applecrusher \u00b7 Pull Request #376 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "306c8263771360a8f6d6f4d1961b7f745a6074881f667499a3a6bc25b655c5ec",
+      "headSha": "5522b4edf9748ccda787df81f0a83eda83cdc4e8",
+      "headRepositoryOwnerLogin": "applecrusher",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "codex-e8-reuse-extension",
+      "prior_head": "5522b4edf9748ccda787df81f0a83eda83cdc4e8",
+      "changed_since_previous": false
+    },
+    {
+      "number": 275,
+      "title": "Finite assembly, source-basis cost reduction, and E8 verification by lydakis \u00b7 Pull Request #275 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [],
+      "sha256": "362584f4c20d8cb1871e2f29c6f1a2abef4486ee40414be40bd7c77a5fcfc3f6",
+      "headSha": "e500c9c4217483de882cf06e6e80b25b70ea1ca5",
+      "headRepositoryOwnerLogin": "lydakis",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "codex/zero-frame-target-restores",
+      "prior_head": "e500c9c4217483de882cf06e6e80b25b70ea1ca5",
+      "changed_since_previous": false
+    },
+    {
+      "number": 186,
+      "title": "Shared-edge supplier, coordinated frames and entrance banks: conditional kappa = 6.61885549259598e-4 \u00b7 Pull Request #186 \u00b7 CrocSwap/integer-mult-bounds \u00b7 GitHub",
+      "commits": [
+        "0d584fad684b7999ae94edc6a1914901bdc9efa7"
+      ],
+      "sha256": "192ead297e4b719af1fbd00cac89fc19763084e1078a11da264d98fd2d2fe74b",
+      "headSha": "bea1d52fd330c699903f81612ee58be81697d1eb",
+      "headRepositoryName": "integer-mult-bounds",
+      "headBranch": "main",
+      "prior_head": "bea1d52fd330c699903f81612ee58be81697d1eb",
+      "changed_since_previous": false,
+      "source_locator": "https://github.com/CrocSwap/integer-mult-bounds/pull/186"
+    }
+  ],
+  "changed": [
+    {
+      "number": 483,
+      "headSha": "3738c3ce2d04d6a6c6363408ff9402286f592bc7",
+      "prior_head": null
+    },
+    {
+      "number": 482,
+      "headSha": "ab81e78de235ed11d4279ee89b0824650c372e17",
+      "prior_head": null
+    },
+    {
+      "number": 481,
+      "headSha": "5f3db6a11198bab07d8effe8f0c9f5df9c3f2eb7",
+      "prior_head": null
+    },
+    {
+      "number": 480,
+      "headSha": "668c7dd0fa76d0da4289c9dea63b965e730142d0",
+      "prior_head": null
+    },
+    {
+      "number": 479,
+      "headSha": "40dd01058439cdffae3e3b41c4fe52edaccf5f91",
+      "prior_head": null
+    },
+    {
+      "number": 477,
+      "headSha": "196fac3d94198422939b021e93512020a543d339",
+      "prior_head": "bfc3dc1b366a6913a42de04ccfdc69eb63979c19"
+    },
+    {
+      "number": 473,
+      "headSha": "e2e9bc9b4c6461cb22b38b4fc0468ed73f059a8d",
+      "prior_head": "2242365e482de3c6d230de86340896e5f46ec403"
+    },
+    {
+      "number": 461,
+      "headSha": "dc297912ad446779f983818816617c03dfc76e16",
+      "prior_head": null
+    },
+    {
+      "number": 459,
+      "headSha": "e037bc50c3d5efc1bec0d258a9f274f79ba45ec7",
+      "prior_head": null
+    }
+  ],
+  "unavailable_files": {
+    "477-inventory": [
+      {
+        "path": "research/experiment-log/execution-failures/hierarchy-baseline-order.md",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/COMPLETE.json",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/DEPENDENCY-HASHES.json",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/LEDGER.json",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/README.md",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/SOURCE463-ACQUISITION.json",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/SUMMARY.json",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/certify_r715_baseline_order.py",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/inventory_r715_hierarchy_rewrites.py",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/r715-hierarchy-baseline-rebuild.log",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/r715-hierarchy-baseline-rebuild/ORDER-EQUIVALENCE.json",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/r715-hierarchy-rewrite-inventory.log",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/r715-hierarchy-rewrite-inventory/HIERARCHY.json",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/r715-hierarchy-rewrite-inventory/RESULT.json",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/r715-hierarchy-rewrite-screen.log",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/rebuild_r715_hierarchy_baseline.py",
+        "error": "<HTTPError 404: 'Not Found'>"
+      },
+      {
+        "path": "research/experiment-log/negative-searches/hierarchy-rewrites/screen_r715_hierarchy_rewrites.py",
+        "error": "<HTTPError 404: 'Not Found'>"
+      }
+    ]
+  }
+}

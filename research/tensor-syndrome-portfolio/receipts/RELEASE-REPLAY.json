@@ -1,0 +1,41 @@
+{
+  "status": "PASS_RESPONSE_PORTFOLIO_COMPLETED_COMPLEX_REUSED",
+  "kappa": "1297375468897877/1000000000000000000",
+  "seconds": 250.359,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "manifest_sha256": "e293ff356fdce717c3a1a740ec9601bf0b12720fc043a10223ae6c42c5435299",
+  "steps": [
+    {
+      "name": "changed-provider-11",
+      "seconds": 87.5,
+      "log_sha256": "89eb312051ea32260ff6b66d34ae6fbc0de169150645285d35e1767e75713864"
+    },
+    {
+      "name": "changed-provider-1",
+      "seconds": 91.125,
+      "log_sha256": "89eb312051ea32260ff6b66d34ae6fbc0de169150645285d35e1767e75713864"
+    },
+    {
+      "name": "stage-inventory-emission",
+      "seconds": 10.187,
+      "log_sha256": "06cc072fe68d270d8900f533a0e4d807e0be8ea8cb90fd9a1927b1e763c42d12"
+    },
+    {
+      "name": "independent-mixed-physical-audit",
+      "seconds": 29.297,
+      "log_sha256": "5e400bf1b3cfbea47b8597207bdcc8af221ab7696fc55854bc2efd975a3be7bb"
+    },
+    {
+      "name": "completed-complex-reused",
+      "receipt_sha256": "cf3631c7bcd12a605e67ba846f65611f5bed713d053a75aff0045dbf029d8761",
+      "source_files": 87,
+      "output_files": 17
+    },
+    {
+      "name": "two-moments-and-47-constraints",
+      "seconds": 0.734,
+      "log_sha256": "dc7172606ae18c6de5efa58b97e2c6f79dc60df01ca0504317a7da4984681388"
+    }
+  ],
+  "scope": "Fresh two-provider reconstruction/native columns, actual mixed physical audit/invoice and47constraints; unchanged completed complex receipt,implementation and output hashes explicitly checked; no fresh complex execution."
+}

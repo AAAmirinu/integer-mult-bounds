@@ -1,0 +1,20 @@
+{
+  "1": {
+    "bit470/data/kernel-selection.json": "d583f9377f6f2bd1bfcf88900578156659e8bdf7c895b2ae868c37c582009603",
+    "bit470/data/residual-isometries.json": "fabc451511f10076db598a5a21a310fc3cf373c443307f9e4ab95b455fb1981a",
+    "bit470/data/selection.json": "252fcdc1020b6a9713514d71efa48563382d09b524228f2d462f59c1d1afd848",
+    "bit470/data/word.json": "85aa6f307bba095c1e62675a42882ab31bc6cc0e90277d5d32c480ebbc96abe2",
+    "bit470/data/word.json.gz": "05d4e5d6d88cb1f01e50d139568ee6caccea6db1c7cf3b6dccb2a4362df82cf3",
+    "code/NESTED-SELECTION.json": "eb4f2367175a48bf5c09d78e09689e7c05caf9e8b683958492b695d068d1a922",
+    "code/RETIME-SELECTION.json": "c47be2471a9db3e45e47fcbc243efa11b32a321af935d732cb951b848afbcd42"
+  },
+  "11": {
+    "bit470/data/kernel-selection.json": "69e15a41cbc907cd864f93f14c6a866aedcd7fb4a49176fe717a9df92e730d08",
+    "bit470/data/residual-isometries.json": "9b005b44d8eea4d98aaade97f6df80d489c7c4a03ada44650fa4ba35d9435817",
+    "bit470/data/selection.json": "135dcd22ba951203ad10004d55639b50417f75af3731185117edc0a43613494a",
+    "bit470/data/word.json": "e5aeb20f6b10873fd66c9805d5fee26a23a61b37cec5afcc8cc554c8a7861aab",
+    "bit470/data/word.json.gz": "4de22caf112f437b34c1dda99ca24e0a42a96ecc968a669a61f93b814658a482",
+    "code/NESTED-SELECTION.json": "0df01833c8266fcb6ad896d986206c56150d6731ec95a183634b4b77666c8a70",
+    "code/RETIME-SELECTION.json": "d6c33268f0d0e823d7e23a9f42191364312136539779c9894bc0eb1b7d374b8c"
+  }
+}
