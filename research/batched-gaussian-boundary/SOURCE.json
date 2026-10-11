@@ -1,0 +1,26 @@
+{
+  "commit": "40dd01058439cdffae3e3b41c4fe52edaccf5f91",
+  "files": {
+    "references/semantic-bulk/rad20/code/downstream_banded_inverse.py": "024770e7ba33a3739f9d5aa474687109a35e1488c3ad6486656615911ab4cbb0",
+    "references/semantic-bulk/rad20/code/downstream_blocked_gaussian.py": "2ca6a460a7a9718eaf50f96c1602a1f21c65e2254acb58d3a1693c7e38f1ef95",
+    "references/semantic-bulk/rad20/code/downstream_gaussian.py": "c666f8ccced2e25db53fc5c0332b86a544b7b84313d0b588588dd19541f1a32a",
+    "references/semantic-bulk/rad20/code/downstream_phase_inverse.py": "423a67c300b7c93051e0c86edfc6e1c26d342854d06571f8975bfb64181e4f6d",
+    "references/semantic-bulk/rad20/code/review_banded_inverse.py": "3e91715a1f185efcc5428798779064e0bf2ef892b57e7998afabed1820cd7dca",
+    "references/semantic-bulk/rad20/reports/bulk-resampling-tape-transfer.md": "cda26d5aca04b9c824eb6c4f50bee564fb7fa908b09a72e76852df5e0b9d2622",
+    "references/semantic-bulk/rad20/reports/downstream-microbox-resampling.md": "9598c236eed7e44ac5eb41cc20f7c23249829e195247d15e2857a34e14222c49",
+    "references/semantic-bulk/rad20/reports/downstream-phase-cell-inverse.md": "3cdf492bcb719db4295658604dc202d6a2c5a008b87de43ec54f0107c64db730",
+    "references/semantic-bulk/rad20/reports/review-bulk-resampling.md": "12aefaa9a0eee367fb71e8f910ed5f0094e1203d2caa29836b0c37887c446c29",
+    "references/semantic-bulk/rad20/reports/review-phase-cell-inverse.md": "113927dd4fb77a55a457bd5f6da8cbfc7262d0fbc4e9d708b591a1d632e6caf6",
+    "research/e8-r740-replica32/code/engines/outer.py": "c1ebb52163a7219504c728a5c2b098bf1e50bf20148a2879c5a74c3cadc7c03c",
+    "research/streamed-chirp-phases/PROOF.md": "0c4438e09ec34ec8208dff90851fbc05bee0cbbefcac4d90208cfc63facc0207"
+  },
+  "literature": [
+    {
+      "author": "Volker Strassen",
+      "doi": "10.1007/BF02165411",
+      "title": "Gaussian elimination is not optimal",
+      "url": "https://courses.grainger.illinois.edu/cs357/su2013/Honors/Strassen.pdf",
+      "year": 1969
+    }
+  ]
+}

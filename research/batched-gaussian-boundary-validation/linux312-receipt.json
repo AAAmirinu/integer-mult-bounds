@@ -1,0 +1,8 @@
+{
+  "checks_sha256": "d2d4a55ae3e3c447c690abd5a5534e554daad6d63445c91b8a055a69ef0697f2",
+  "manifest_sha256": "43dd63180f2f958b1962bff048f0e1f15cb52782f34f5d9b5476c14514d164a0",
+  "python": "3.12.3",
+  "result_sha256": "271b6a79d1f20e353d126a9ca8140a20fbcb209cef500b088a7ec457d2540dda",
+  "source_sha256": "5612e6c0e86b399f37f9485285b3e5df34759bf412b063c3cb706e2761928d66",
+  "status": "PASS_BATCHED_GAUSSIAN_BOUNDARY_CONTROLS"
+}

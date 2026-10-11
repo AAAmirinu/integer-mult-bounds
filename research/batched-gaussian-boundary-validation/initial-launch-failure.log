@@ -1,0 +1,4 @@
+Oct 11 23:02:40 spark-38d6 systemd[2095]: Started research-resume-20261011-batched-boundary-final.service - /bin/bash /home/chafreaky/offload/run-batched-boundary-final.sh.
+Oct 11 23:02:40 spark-38d6 bash[1808271]: /bin/bash: /home/chafreaky/offload/run-batched-boundary-final.sh: No such file or directory
+Oct 11 23:02:40 spark-38d6 systemd[2095]: research-resume-20261011-batched-boundary-final.service: Main process exited, code=exited, status=127/n/a
+Oct 11 23:02:40 spark-38d6 systemd[2095]: research-resume-20261011-batched-boundary-final.service: Failed with result 'exit-code'.

@@ -1,0 +1,11 @@
+{
+  "checks_sha256": "d2d4a55ae3e3c447c690abd5a5534e554daad6d63445c91b8a055a69ef0697f2",
+  "entire_artifacts_identical": {
+    "CHECKS.json": true,
+    "RESULT.json": true
+  },
+  "manifest_sha256": "43dd63180f2f958b1962bff048f0e1f15cb52782f34f5d9b5476c14514d164a0",
+  "result_sha256": "271b6a79d1f20e353d126a9ca8140a20fbcb209cef500b088a7ec457d2540dda",
+  "source_count": 12,
+  "sources_match_parent_git": true
+}

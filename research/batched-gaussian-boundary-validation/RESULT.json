@@ -1,0 +1,18 @@
+{
+  "boundary_exponent": "29*(1-r)/32",
+  "complete_schur_entries": 2952,
+  "cyclic_systems": 15,
+  "gaussian_systems": 2,
+  "inverse_entries": 2781,
+  "kappa_claim": null,
+  "layouts": {
+    "cases": 54,
+    "checked_inverse": true,
+    "forward_record_moves": 46080,
+    "one_field_padding": true,
+    "padded_records": 18432
+  },
+  "mutants": 6,
+  "scalar_exponent_upper": "45/16",
+  "strassen_entries": 341
+}
