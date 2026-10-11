@@ -1,0 +1,21 @@
+{
+  "bit": {
+    "pr": 382,
+    "head": "015f00b8da94197f3cef02a60e728c195f8047a6",
+    "manifest_sha256": "05f782fdfa4b5c16afb90d8fb09f473ce3a6b620884ecd63fbb34fc4ae173d84"
+  },
+  "complex": {
+    "pr": 377,
+    "head": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+    "manifest_sha256": "3743f954b5a652e51fa9ae5101318345d79f4c897ff9a29d5c54387b92118458"
+  },
+  "retiming": {
+    "pr": 365,
+    "head": "a22270515e9c6102dda3b22e75ca2c62e82812ff",
+    "certificate_sha256": "31467ace2b1667630b72e488e688911a0404b4755d0d2c87560b111ed4c07998"
+  },
+  "comparison": {
+    "pr": 382,
+    "kappa": "998243154231047/1000000000000000000"
+  }
+}
