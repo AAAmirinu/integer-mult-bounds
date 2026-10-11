@@ -15,7 +15,8 @@ def integrity():
     assert sha(parent/'MANIFEST.json')==spec['upstream_manifest_sha256']
     expected=read(ROOT/'UPSTREAM-MANIFEST.json')['files']
     actual={str(p.relative_to(parent)):sha(p) for p in parent.rglob('*') if p.is_file() and p!=parent/'MANIFEST.json'}
-    assert actual==expected,'PR390 source bytes changed'
+    mismatch={k:dict(expected=expected.get(k),actual=actual.get(k)) for k in expected.keys()|actual.keys() if expected.get(k)!=actual.get(k)}
+    assert not mismatch,('PR390 source bytes changed',mismatch)
     return parent,spec
 
 def main():
