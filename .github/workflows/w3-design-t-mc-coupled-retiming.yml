@@ -1,0 +1,36 @@
+name: Verify coupled retiming after PR364
+on:
+  pull_request:
+    paths:
+      - 'research/w3-design-t-mc-coupled-retiming/**'
+      - '.github/workflows/w3-design-t-mc-coupled-retiming.yml'
+  push:
+    paths:
+      - 'research/w3-design-t-mc-coupled-retiming/**'
+      - '.github/workflows/w3-design-t-mc-coupled-retiming.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install verifier dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++ libboost-dev
+          python -m pip install -r research/w3-design-t-mc-coupled-retiming/requirements.txt
+      - name: Replay source and new certificate
+        run: python -B research/w3-design-t-mc-coupled-retiming/verify.py "$RUNNER_TEMP/coupled-retiming"
+      - name: Confirm source tree unchanged
+        run: git diff --exit-code
