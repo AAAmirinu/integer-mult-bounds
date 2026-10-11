@@ -1,0 +1,9 @@
+{
+  "EXPECTED.json": "32cb5a91b462e58df6954f0dee557a31d70cf0262b9b626f058fc9bd6a01c95d",
+  "PROOF.md": "4e1aed3fff009308075f98436ebd606a54d37611f8f6fc10fa20e1e3aa54bd7e",
+  "README.md": "cde5831bca25a58badc5315c06204955d9324a519a111ac392f1321ccd0ae57b",
+  "SOURCE.json": "832c1cd38cc8fa2c61b9fe455ace113606ff9fd3e335fad875cc41f253c3b855",
+  "code/branchfree.py": "9e9becc3b7599545d73160e6169b91230da06b485ba81bf9b76c6bd33ce4aacc",
+  "code/check.py": "0d0c42bf04086820864495382117b2af4b697e6a5abe6ab87286e1807d60e554",
+  "verify.py": "aee2f7cd59a2d0c875153cb1a21f32bf87499b038d8ba343a3c0c271cce78997"
+}

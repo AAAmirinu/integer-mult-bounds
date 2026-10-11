@@ -1,0 +1,14 @@
+{
+  "exact_cases": 36,
+  "exact_inverse_entries": 1950,
+  "exact_ldl_entries": 1950,
+  "full_schur_cases": 2,
+  "full_schur_entries": 3024,
+  "kappa_claim": null,
+  "mutants": 5,
+  "rounded_cases": 8,
+  "rounded_entries": 2084,
+  "scope": "local branch-free replacement and retained Schur error transfer; no joint-axis evaluator",
+  "tensor_entries": 756,
+  "weighted_factor_entries": 1856
+}

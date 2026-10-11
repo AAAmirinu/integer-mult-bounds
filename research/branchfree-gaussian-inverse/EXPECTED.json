@@ -1,0 +1,607 @@
+{
+  "complete_schur": [
+    {
+      "boundary_counts": {
+        "scalar_additions": 6552,
+        "scalar_products": 2548,
+        "tiles": 364
+      },
+      "entries": 624,
+      "error_upper": "968507718467548155118008430081/22835963083295358096932575511191922182123945984",
+      "global_matrix": "unchanged truncated H",
+      "local_cells": [
+        {
+          "changed_source": true,
+          "inverse_difference_upper": "940024533057251354506092454551/1461501637330902918203684832716283019655932542976",
+          "n": 4,
+          "perturbation_bound": "43503173352049887299234555894481/1461501637330902918203684832716283019655932542976",
+          "perturbation_upper": "939971288725099434527530080753/1461501637330902918203684832716283019655932542976",
+          "resolvent_upper": "117935757587472989159012326393/182687704666362864775460604089535377456991567872",
+          "rounded_operator_error_upper": "1/1461501637330902918203684832716283019655932542976"
+        },
+        {
+          "changed_source": true,
+          "inverse_difference_upper": "62013003857105645328684408473057/1461501637330902918203684832716283019655932542976",
+          "n": 10,
+          "perturbation_bound": "1536180037940342613466150025690278995/1461501637330902918203684832716283019655932542976",
+          "perturbation_upper": "61984493981458932309034940585597/1461501637330902918203684832716283019655932542976",
+          "resolvent_upper": "1996320489344487560550649765469/45671926166590716193865151022383844364247891968",
+          "rounded_operator_error_upper": "1/1461501637330902918203684832716283019655932542976"
+        },
+        {
+          "changed_source": true,
+          "inverse_difference_upper": "15503250661523559447651187380887/365375409332725729550921208179070754913983135744",
+          "n": 4,
+          "perturbation_bound": "23295586318870023093565528926282933/1461501637330902918203684832716283019655932542976",
+          "perturbation_upper": "61984493981458932309034940585597/1461501637330902918203684832716283019655932542976",
+          "resolvent_upper": "63882255659000391470443532244609/1461501637330902918203684832716283019655932542976",
+          "rounded_operator_error_upper": "1/1461501637330902918203684832716283019655932542976"
+        }
+      ],
+      "local_counts": {
+        "convolutions": 312,
+        "diagonal_products": 4680,
+        "integer_products": 1248,
+        "max_operand_bits": 5426
+      },
+      "residual_upper": "15496123495411148039110356010555/365375409332725729550921208179070754913983135744",
+      "rhs": 26,
+      "schur": "exactly the original H Schur, rounded by the pinned solver",
+      "shape": [
+        24,
+        26,
+        4,
+        1
+      ]
+    },
+    {
+      "boundary_counts": {
+        "scalar_additions": 72072,
+        "scalar_products": 17836,
+        "tiles": 364
+      },
+      "entries": 2400,
+      "error_upper": "396728575/1461501637330902918203684832716283019655932542976",
+      "global_matrix": "unchanged truncated H",
+      "local_cells": [
+        {
+          "changed_source": true,
+          "inverse_difference_upper": "17142641/1461501637330902918203684832716283019655932542976",
+          "n": 8,
+          "perturbation_bound": "161864862426255/365375409332725729550921208179070754913983135744",
+          "perturbation_upper": "17120195/1461501637330902918203684832716283019655932542976",
+          "resolvent_upper": "17646185/1461501637330902918203684832716283019655932542976",
+          "rounded_operator_error_upper": "1/1461501637330902918203684832716283019655932542976"
+        },
+        {
+          "changed_source": true,
+          "inverse_difference_upper": "397654273/1461501637330902918203684832716283019655932542976",
+          "n": 20,
+          "perturbation_bound": "109982080334415200313/1461501637330902918203684832716283019655932542976",
+          "perturbation_upper": "99043289/365375409332725729550921208179070754913983135744",
+          "resolvent_upper": "431698117/1461501637330902918203684832716283019655932542976",
+          "rounded_operator_error_upper": "1/1461501637330902918203684832716283019655932542976"
+        },
+        {
+          "changed_source": true,
+          "inverse_difference_upper": "397654273/1461501637330902918203684832716283019655932542976",
+          "n": 8,
+          "perturbation_bound": "988001034753287495/1461501637330902918203684832716283019655932542976",
+          "perturbation_upper": "99043289/365375409332725729550921208179070754913983135744",
+          "resolvent_upper": "431698117/1461501637330902918203684832716283019655932542976",
+          "rounded_operator_error_upper": "1/1461501637330902918203684832716283019655932542976"
+        }
+      ],
+      "local_counts": {
+        "convolutions": 600,
+        "diagonal_products": 18000,
+        "integer_products": 2400,
+        "max_operand_bits": 12217
+      },
+      "residual_upper": "396450775/1461501637330902918203684832716283019655932542976",
+      "rhs": 50,
+      "schur": "exactly the original H Schur, rounded by the pinned solver",
+      "shape": [
+        48,
+        50,
+        4,
+        2
+      ]
+    }
+  ],
+  "identities": [
+    {
+      "inverse_entries": 1,
+      "ldl_entries": 1,
+      "n": 1,
+      "q": "1/4"
+    },
+    {
+      "inverse_entries": 1,
+      "ldl_entries": 1,
+      "n": 1,
+      "q": "1/16"
+    },
+    {
+      "inverse_entries": 1,
+      "ldl_entries": 1,
+      "n": 1,
+      "q": "1/256"
+    },
+    {
+      "inverse_entries": 4,
+      "ldl_entries": 4,
+      "n": 2,
+      "q": "1/4"
+    },
+    {
+      "inverse_entries": 4,
+      "ldl_entries": 4,
+      "n": 2,
+      "q": "1/16"
+    },
+    {
+      "inverse_entries": 4,
+      "ldl_entries": 4,
+      "n": 2,
+      "q": "1/256"
+    },
+    {
+      "inverse_entries": 9,
+      "ldl_entries": 9,
+      "n": 3,
+      "q": "1/4"
+    },
+    {
+      "inverse_entries": 9,
+      "ldl_entries": 9,
+      "n": 3,
+      "q": "1/16"
+    },
+    {
+      "inverse_entries": 9,
+      "ldl_entries": 9,
+      "n": 3,
+      "q": "1/256"
+    },
+    {
+      "inverse_entries": 16,
+      "ldl_entries": 16,
+      "n": 4,
+      "q": "1/4"
+    },
+    {
+      "inverse_entries": 16,
+      "ldl_entries": 16,
+      "n": 4,
+      "q": "1/16"
+    },
+    {
+      "inverse_entries": 16,
+      "ldl_entries": 16,
+      "n": 4,
+      "q": "1/256"
+    },
+    {
+      "inverse_entries": 25,
+      "ldl_entries": 25,
+      "n": 5,
+      "q": "1/4"
+    },
+    {
+      "inverse_entries": 25,
+      "ldl_entries": 25,
+      "n": 5,
+      "q": "1/16"
+    },
+    {
+      "inverse_entries": 25,
+      "ldl_entries": 25,
+      "n": 5,
+      "q": "1/256"
+    },
+    {
+      "inverse_entries": 36,
+      "ldl_entries": 36,
+      "n": 6,
+      "q": "1/4"
+    },
+    {
+      "inverse_entries": 36,
+      "ldl_entries": 36,
+      "n": 6,
+      "q": "1/16"
+    },
+    {
+      "inverse_entries": 36,
+      "ldl_entries": 36,
+      "n": 6,
+      "q": "1/256"
+    },
+    {
+      "inverse_entries": 49,
+      "ldl_entries": 49,
+      "n": 7,
+      "q": "1/4"
+    },
+    {
+      "inverse_entries": 49,
+      "ldl_entries": 49,
+      "n": 7,
+      "q": "1/16"
+    },
+    {
+      "inverse_entries": 49,
+      "ldl_entries": 49,
+      "n": 7,
+      "q": "1/256"
+    },
+    {
+      "inverse_entries": 64,
+      "ldl_entries": 64,
+      "n": 8,
+      "q": "1/4"
+    },
+    {
+      "inverse_entries": 64,
+      "ldl_entries": 64,
+      "n": 8,
+      "q": "1/16"
+    },
+    {
+      "inverse_entries": 64,
+      "ldl_entries": 64,
+      "n": 8,
+      "q": "1/256"
+    },
+    {
+      "inverse_entries": 81,
+      "ldl_entries": 81,
+      "n": 9,
+      "q": "1/4"
+    },
+    {
+      "inverse_entries": 81,
+      "ldl_entries": 81,
+      "n": 9,
+      "q": "1/16"
+    },
+    {
+      "inverse_entries": 81,
+      "ldl_entries": 81,
+      "n": 9,
+      "q": "1/256"
+    },
+    {
+      "inverse_entries": 100,
+      "ldl_entries": 100,
+      "n": 10,
+      "q": "1/4"
+    },
+    {
+      "inverse_entries": 100,
+      "ldl_entries": 100,
+      "n": 10,
+      "q": "1/16"
+    },
+    {
+      "inverse_entries": 100,
+      "ldl_entries": 100,
+      "n": 10,
+      "q": "1/256"
+    },
+    {
+      "inverse_entries": 121,
+      "ldl_entries": 121,
+      "n": 11,
+      "q": "1/4"
+    },
+    {
+      "inverse_entries": 121,
+      "ldl_entries": 121,
+      "n": 11,
+      "q": "1/16"
+    },
+    {
+      "inverse_entries": 121,
+      "ldl_entries": 121,
+      "n": 11,
+      "q": "1/256"
+    },
+    {
+      "inverse_entries": 144,
+      "ldl_entries": 144,
+      "n": 12,
+      "q": "1/4"
+    },
+    {
+      "inverse_entries": 144,
+      "ldl_entries": 144,
+      "n": 12,
+      "q": "1/16"
+    },
+    {
+      "inverse_entries": 144,
+      "ldl_entries": 144,
+      "n": 12,
+      "q": "1/256"
+    }
+  ],
+  "kappa_claim": null,
+  "rejected_mutants": [
+    {
+      "discrepancy_lower": "1/65536",
+      "name": "drop-middle-f"
+    },
+    {
+      "discrepancy_lower": "1/65536",
+      "name": "reverse-h"
+    },
+    {
+      "discrepancy_lower": "1/65536",
+      "name": "drop-signs"
+    },
+    {
+      "discrepancy_lower": "1/65536",
+      "name": "omit-weight-reciprocal"
+    },
+    {
+      "discrepancy_lower": "1/65536",
+      "name": "declare-truncated-source-inverse-exact"
+    }
+  ],
+  "rounded": [
+    {
+      "counts": {
+        "convolutions": 10,
+        "diagonal_products": 75,
+        "integer_products": 40,
+        "max_operand_bits": 1957
+      },
+      "direction": 1,
+      "entries": 15,
+      "error_upper": "1/1766847064778384329583297500742918515827483896875618958121606201292619776",
+      "n": 3,
+      "probes": 5,
+      "reciprocal_guard_bits": 10,
+      "work_bits": 384
+    },
+    {
+      "counts": {
+        "convolutions": 10,
+        "diagonal_products": 75,
+        "integer_products": 40,
+        "max_operand_bits": 1957
+      },
+      "direction": -1,
+      "entries": 15,
+      "error_upper": "1/1766847064778384329583297500742918515827483896875618958121606201292619776",
+      "n": 3,
+      "probes": 5,
+      "reciprocal_guard_bits": 10,
+      "work_bits": 384
+    },
+    {
+      "counts": {
+        "convolutions": 20,
+        "diagonal_products": 400,
+        "integer_products": 80,
+        "max_operand_bits": 6076
+      },
+      "direction": 1,
+      "entries": 80,
+      "error_upper": "1/1766847064778384329583297500742918515827483896875618958121606201292619776",
+      "n": 8,
+      "probes": 10,
+      "reciprocal_guard_bits": 35,
+      "work_bits": 384
+    },
+    {
+      "counts": {
+        "convolutions": 20,
+        "diagonal_products": 400,
+        "integer_products": 80,
+        "max_operand_bits": 6076
+      },
+      "direction": -1,
+      "entries": 80,
+      "error_upper": "1/1766847064778384329583297500742918515827483896875618958121606201292619776",
+      "n": 8,
+      "probes": 10,
+      "reciprocal_guard_bits": 35,
+      "work_bits": 384
+    },
+    {
+      "counts": {
+        "convolutions": 38,
+        "diagonal_products": 1615,
+        "integer_products": 152,
+        "max_operand_bits": 14129
+      },
+      "direction": 1,
+      "entries": 323,
+      "error_upper": "1/1766847064778384329583297500742918515827483896875618958121606201292619776",
+      "n": 17,
+      "probes": 19,
+      "reciprocal_guard_bits": 80,
+      "work_bits": 384
+    },
+    {
+      "counts": {
+        "convolutions": 38,
+        "diagonal_products": 1615,
+        "integer_products": 152,
+        "max_operand_bits": 14129
+      },
+      "direction": -1,
+      "entries": 323,
+      "error_upper": "1/1766847064778384329583297500742918515827483896875618958121606201292619776",
+      "n": 17,
+      "probes": 19,
+      "reciprocal_guard_bits": 80,
+      "work_bits": 384
+    },
+    {
+      "counts": {
+        "convolutions": 52,
+        "diagonal_products": 3120,
+        "integer_products": 208,
+        "max_operand_bits": 20947
+      },
+      "direction": 1,
+      "entries": 624,
+      "error_upper": "1/1766847064778384329583297500742918515827483896875618958121606201292619776",
+      "n": 24,
+      "probes": 26,
+      "reciprocal_guard_bits": 115,
+      "work_bits": 384
+    },
+    {
+      "counts": {
+        "convolutions": 52,
+        "diagonal_products": 3120,
+        "integer_products": 208,
+        "max_operand_bits": 20947
+      },
+      "direction": -1,
+      "entries": 624,
+      "error_upper": "1/1766847064778384329583297500742918515827483896875618958121606201292619776",
+      "n": 24,
+      "probes": 26,
+      "reciprocal_guard_bits": 115,
+      "work_bits": 384
+    }
+  ],
+  "scope": "local branch-free replacement and retained Schur error transfer; no joint-axis evaluator",
+  "tensor_and_weighted": {
+    "scope": "exact identities and norm bounds, no fast joint evaluator",
+    "tensor_identities": [
+      {
+        "entries": 36,
+        "shape": [
+          2,
+          3
+        ],
+        "stages": 5
+      },
+      {
+        "entries": 144,
+        "shape": [
+          3,
+          4
+        ],
+        "stages": 5
+      },
+      {
+        "entries": 576,
+        "shape": [
+          2,
+          3,
+          4
+        ],
+        "stages": 5
+      }
+    ],
+    "weighted_factors": [
+      {
+        "base": "1/2",
+        "entries": 32,
+        "maximum_measured_norm": "231306209482210194248322882336200536391844315953/182687704666362864775460604089535377456991567872",
+        "n": 4,
+        "norm_upper": "2087859481901289883148121189594690028079903632823/1461501637330902918203684832716283019655932542976"
+      },
+      {
+        "base": "3/4",
+        "entries": 32,
+        "maximum_measured_norm": "1329195694931578701123897232924574758905790863747/730750818665451459101842416358141509827966271488",
+        "n": 4,
+        "norm_upper": "3579187683259354085396779182162325762422691941983/1461501637330902918203684832716283019655932542976"
+      },
+      {
+        "base": "1/2",
+        "entries": 128,
+        "maximum_measured_norm": "925036349554720793081590418579027855921129881785/730750818665451459101842416358141509827966271488",
+        "n": 8,
+        "norm_upper": "2087859481901289883148121189594690028079903632823/1461501637330902918203684832716283019655932542976"
+      },
+      {
+        "base": "3/4",
+        "entries": 128,
+        "maximum_measured_norm": "2601347409204216641591592865688601491295957135701/1461501637330902918203684832716283019655932542976",
+        "n": 8,
+        "norm_upper": "3579187683259354085396779182162325762422691941983/1461501637330902918203684832716283019655932542976"
+      },
+      {
+        "base": "1/2",
+        "entries": 512,
+        "maximum_measured_norm": "1850071216850754925277227446659532501334482763893/1461501637330902918203684832716283019655932542976",
+        "n": 16,
+        "norm_upper": "2087859481901289883148121189594690028079903632823/1461501637330902918203684832716283019655932542976"
+      },
+      {
+        "base": "3/4",
+        "entries": 512,
+        "maximum_measured_norm": "2594975433742572471051731029402405853069433824383/1461501637330902918203684832716283019655932542976",
+        "n": 16,
+        "norm_upper": "3579187683259354085396779182162325762422691941983/1461501637330902918203684832716283019655932542976"
+      },
+      {
+        "base": "7/8",
+        "entries": 512,
+        "maximum_measured_norm": "922174111645836762918234662670247789566278580305/365375409332725729550921208179070754913983135744",
+        "n": 16,
+        "norm_upper": "3340575171042063813036993903351504044927845812517/730750818665451459101842416358141509827966271488"
+      }
+    ]
+  },
+  "uniform_bounds": [
+    {
+      "gap_at_p101": 3304405,
+      "intercept": -12,
+      "name": "rounded-source term below 2^-40p",
+      "slope": 32717
+    },
+    {
+      "gap_at_p101": 97,
+      "intercept": -4,
+      "name": "tail below half 2^-39p",
+      "slope": 1
+    },
+    {
+      "gap_at_p101": 3834,
+      "intercept": -4,
+      "name": "resolvent smallness 8p*2^-39p<1/2",
+      "slope": 38
+    },
+    {
+      "gap_at_p101": 94,
+      "intercept": -7,
+      "name": "inverse perturbation <=2^-37p",
+      "slope": 1
+    },
+    {
+      "gap_at_p101": 3301791,
+      "intercept": 0,
+      "name": "rounded local <=2^-37p",
+      "slope": 32691
+    },
+    {
+      "gap_at_p101": 91,
+      "intercept": -10,
+      "name": "composition local <=2^-34p",
+      "slope": 1
+    },
+    {
+      "gap_at_p101": 3301690,
+      "intercept": 0,
+      "name": "boundary composition <=2^-34p",
+      "slope": 32690
+    },
+    {
+      "gap_at_p101": 3121,
+      "intercept": -10,
+      "name": "final 2^-32p below 2^-p-10",
+      "slope": 31
+    }
+  ]
+}

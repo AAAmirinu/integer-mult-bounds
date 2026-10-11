@@ -1,0 +1,50 @@
+name: branchfree-gaussian-inverse
+on:
+  pull_request:
+    paths:
+      - 'research/branchfree-gaussian-inverse/**'
+      - 'references/semantic-bulk/rad20/code/downstream_banded_inverse.py'
+      - 'references/semantic-bulk/rad20/code/downstream_blocked_gaussian.py'
+      - 'references/semantic-bulk/rad20/code/downstream_gaussian.py'
+      - 'references/semantic-bulk/rad20/code/downstream_phase_inverse.py'
+      - 'references/semantic-bulk/rad20/code/review_banded_inverse.py'
+      - 'references/semantic-bulk/rad20/reports/downstream-phase-cell-inverse.md'
+      - 'references/semantic-bulk/rad20/reports/review-phase-cell-inverse.md'
+      - 'research/batched-gaussian-boundary/PROOF.md'
+      - 'research/batched-gaussian-boundary/code/batched.py'
+      - 'research/batched-gaussian-boundary/code/check.py'
+      - '.github/workflows/branchfree-gaussian-inverse.yml'
+  push:
+    paths:
+      - 'research/branchfree-gaussian-inverse/**'
+      - 'references/semantic-bulk/rad20/code/downstream_banded_inverse.py'
+      - 'references/semantic-bulk/rad20/code/downstream_blocked_gaussian.py'
+      - 'references/semantic-bulk/rad20/code/downstream_gaussian.py'
+      - 'references/semantic-bulk/rad20/code/downstream_phase_inverse.py'
+      - 'references/semantic-bulk/rad20/code/review_banded_inverse.py'
+      - 'references/semantic-bulk/rad20/reports/downstream-phase-cell-inverse.md'
+      - 'references/semantic-bulk/rad20/reports/review-phase-cell-inverse.md'
+      - 'research/batched-gaussian-boundary/PROOF.md'
+      - 'research/batched-gaussian-boundary/code/batched.py'
+      - 'research/batched-gaussian-boundary/code/check.py'
+      - '.github/workflows/branchfree-gaussian-inverse.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -B research/branchfree-gaussian-inverse/verify.py "$RUNNER_TEMP/branchfree-controls"
+      - run: git diff --exit-code

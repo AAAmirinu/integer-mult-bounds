@@ -1,0 +1,15 @@
+{
+  "commit": "f14e5881b7681641fade599b5389995843088e20",
+  "files": {
+    "references/semantic-bulk/rad20/code/downstream_banded_inverse.py": "024770e7ba33a3739f9d5aa474687109a35e1488c3ad6486656615911ab4cbb0",
+    "references/semantic-bulk/rad20/code/downstream_blocked_gaussian.py": "2ca6a460a7a9718eaf50f96c1602a1f21c65e2254acb58d3a1693c7e38f1ef95",
+    "references/semantic-bulk/rad20/code/downstream_gaussian.py": "c666f8ccced2e25db53fc5c0332b86a544b7b84313d0b588588dd19541f1a32a",
+    "references/semantic-bulk/rad20/code/downstream_phase_inverse.py": "423a67c300b7c93051e0c86edfc6e1c26d342854d06571f8975bfb64181e4f6d",
+    "references/semantic-bulk/rad20/code/review_banded_inverse.py": "3e91715a1f185efcc5428798779064e0bf2ef892b57e7998afabed1820cd7dca",
+    "references/semantic-bulk/rad20/reports/downstream-phase-cell-inverse.md": "3cdf492bcb719db4295658604dc202d6a2c5a008b87de43ec54f0107c64db730",
+    "references/semantic-bulk/rad20/reports/review-phase-cell-inverse.md": "113927dd4fb77a55a457bd5f6da8cbfc7262d0fbc4e9d708b591a1d632e6caf6",
+    "research/batched-gaussian-boundary/PROOF.md": "d147cdd503e3b1830779d6810f0314b071de9cb6c5e15cfb42d80dff1079d435",
+    "research/batched-gaussian-boundary/code/batched.py": "a935d3e3ace1719a8bf1665445fade2e3b0c1d58bf07a1cb42c50dc4dfedae33",
+    "research/batched-gaussian-boundary/code/check.py": "661b7d194447339f7af420f017b008fa4717470f38c50a0da99db19e962a931d"
+  }
+}
