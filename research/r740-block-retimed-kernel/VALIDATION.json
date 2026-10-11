@@ -1,0 +1,34 @@
+{
+  "status": "PASS_FRESH_COMPLETE_PHASE_AND_INDEPENDENT_REPLAY",
+  "runtime": {
+    "executable": "/private/tmp/moonshot/primitives/char0/venv/bin/python",
+    "version": "3.12.13"
+  },
+  "command": "python3 -B research/r740-block-retimed-kernel/verify.py OUTPUT --replay-phases",
+  "observed_exit_code": 0,
+  "full_complex_phase_replay": true,
+  "independent_audit_no_producer_or_pricing_imports": true,
+  "word_sha256": "00d8aa8608e40b53fd8752399de06cb730cc55caaadc528f88379cb31b8460a6",
+  "kappa": "1138798055343319/1000000000000000000",
+  "bit_template_sha256": "b87ed8c20819237f2daacdd1383a2776419551a62a7014eb9720af146a9dd9ec",
+  "complex_template_sha256": "942d030fa43316c560c88d7d7d904583446e1a96945b3ebd37a91c88a192ab4f",
+  "verification_steps": [
+    "hamming_packets",
+    "complex_construct",
+    "complex_audit",
+    "complex_emit",
+    "complex_phases",
+    "bit_construct",
+    "bit_kernel",
+    "bit_export",
+    "bit_global",
+    "bit_audit",
+    "bit_price",
+    "complex_integrate",
+    "complex_replay",
+    "combined",
+    "independent_audit"
+  ],
+  "prior_release": "PR #440 bd03373b6d4d4e380d0b6ea7d55cd2ac8f163544",
+  "post_replay_packaging": "Certificates and manifest metadata added after successful replay; construction and audit code unchanged."
+}

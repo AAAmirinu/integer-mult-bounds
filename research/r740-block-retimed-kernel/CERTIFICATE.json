@@ -1,0 +1,30 @@
+{
+  "status": "PASS_FINAL_WINDOW_BLOCK_RETIMER",
+  "kappa": "1138798055343319/1000000000000000000",
+  "kappa_decimal": "0.001138798055343319",
+  "bit_lower": "17814006170324008149/15625000000000000000000",
+  "complex_lower": "1183986549206329/1000000000000000000",
+  "word_sha256": "00d8aa8608e40b53fd8752399de06cb730cc55caaadc528f88379cb31b8460a6",
+  "template_sha256": "b87ed8c20819237f2daacdd1383a2776419551a62a7014eb9720af146a9dd9ec",
+  "complex_template_sha256": "942d030fa43316c560c88d7d7d904583446e1a96945b3ebd37a91c88a192ab4f",
+  "verification_steps": [
+    "hamming_packets",
+    "complex_construct",
+    "complex_audit",
+    "complex_emit",
+    "complex_phases",
+    "bit_construct",
+    "bit_kernel",
+    "bit_export",
+    "bit_global",
+    "bit_audit",
+    "bit_price",
+    "complex_integrate",
+    "complex_replay",
+    "combined",
+    "independent_audit"
+  ],
+  "phase_mode": "full replay",
+  "independent_audit": "INDEPENDENT-AUDIT.json",
+  "scope": "Finite conditional witness; inherited all-size compiler, dirty-bank, compressed-window, restored-work, precision and analytic interfaces remain assumptions."
+}
