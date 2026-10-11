@@ -1,0 +1,14 @@
+{
+  "unit": "research-resume-20261011-partial-async",
+  "linux_output": "/home/cfky/offload/check-partial-async-fresh",
+  "linux_run": "/home/cfky/research/integer-mult/runs/resume-20261011-partial-async",
+  "macos_pid": 65419,
+  "macos_output": "/private/tmp/partial-async-macos314-fresh",
+  "manifest": "a4a3eb10e137b607cecdb41550d14ab3ec52966522725bcad47360ba41acb78b",
+  "stage": "PASS_BOTH_FRESH_RESULTS_IDENTICAL",
+  "updated_utc": "2026-10-11T23:03:35Z",
+  "macos_pid_live": false,
+  "macos_terminal_artifacts": true,
+  "linux_exit": 0,
+  "result_sha256": "cb91ddf9cfac48e6fc8c6b734e377dbf80ba8cccb1226408b48e38734d9e4be7"
+}

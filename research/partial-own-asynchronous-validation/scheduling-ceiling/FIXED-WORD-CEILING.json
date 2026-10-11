@@ -1,0 +1,26 @@
+{
+  "base_two_lower_margin": "23729915031673465366229/10000000000000000000000000000000000000000000000",
+  "ideal_profile": {
+    "1": 179496,
+    "2": 16128,
+    "3": 37152,
+    "4": 6048,
+    "5": 21456,
+    "6": 4608,
+    "7": 72,
+    "8": 1224,
+    "48": 1365
+  },
+  "ideal_remainder_count": 1365,
+  "ideal_remainder_rank": 48,
+  "kappa_upper": "181019631259824210783/125181019631259824210783",
+  "kappa_upper_decimal": "0.001446062923860547769379155902845171878880048754188662117964326301451687",
+  "local_checks_sha256": "15d44a7378f01a50a79f155c782ddd3532be2d6b66421b8ff8f2015896a63b40",
+  "local_mass": 492624,
+  "mercator_lower_margin": "63975732016275671275006374078472903936292789/26959946667150639794667015087019630673637144422540572481103610249216",
+  "rejected_b": "181019631259824210783/125000000000000000000000",
+  "rejected_b_decimal": "0.001448157050078593686264",
+  "remainder_mass": 65520,
+  "scope": "Only constructions retaining this local paid profile at all 72 calls, m=73, W=7680, deficit2496 and other child ranks at most48. Allows impossible ideal placement, so this is an upper bound, not an achievable candidate or a global algorithmic barrier.",
+  "status": "PASS_FIXED_WORD_RELAXED_CEILING_TWO_EXACT_ENGINES"
+}

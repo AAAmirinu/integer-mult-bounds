@@ -1,0 +1,30 @@
+gauge80-kernel42 batch 0 failures so far 0 6
+gauge80-kernel42 batch 1 failures so far 0 9
+gauge80-kernel42 batch 2 failures so far 0 12
+gauge80-kernel42 batch 3 failures so far 0 15
+gauge80-kernel42 batch 4 failures so far 0 17
+gauge80-kernel42 batch 5 failures so far 0 20
+gauge80-kernel42 batch 6 failures so far 0 23
+gauge80-kernel42 batch 7 failures so far 0 26
+gauge80-kernel42 batch 8 failures so far 0 27
+gauge80-kernel42 batch 9 failures so far 0 27
+gauge80-kernel42 batch 10 failures so far 0 27
+gauge80-kernel42 batch 11 failures so far 0 28
+gauge80-kernel42 batch 12 failures so far 0 28
+gauge80-kernel42 batch 13 failures so far 0 29
+gauge80-kernel42 batch 14 failures so far 0 29
+gauge80-kernel42 batch 15 failures so far 0 31
+gauge80-kernel42 batch 16 failures so far 0 34
+gauge80-kernel42 batch 17 failures so far 0 37
+gauge80-kernel42 batch 18 failures so far 0 39
+gauge80-kernel42 batch 19 failures so far 0 41
+gauge80-kernel42 batch 20 failures so far 0 43
+gauge80-kernel42 batch 21 failures so far 0 46
+gauge80-kernel42 batch 22 failures so far 0 49
+gauge80-kernel42 batch 23 failures so far 0 52
+gauge80-kernel42 batch 24 failures so far 0 54
+gauge80-kernel42 batch 25 failures so far 0 55
+gauge80-kernel42 dense 0 failures so far 0 57
+gauge80-kernel42 dense 1 failures so far 0 59
+gauge80-kernel42 PASS 806 basis columns + 8 dense 59.2 s
+PRE_OPERATION_EXACTNESS_BOUNDS {'add_calls': 251154, 'scale_calls': 8858, 'primitive_calls': 856399, 'maximum_proved_numerator_bits': 29, 'checked_result_file': 'E2E-gauge80-kernel42.json', 'checked_result_sha256': '7acff3f9871d38aafb3528e1f72b02a0b3b2f613b2acfb9e91de95c4491081f1', 'identity_assertions_passed': True}

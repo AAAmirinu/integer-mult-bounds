@@ -1,0 +1,17 @@
+{
+ "variant": "gauge80-kernel42",
+ "seed": 2026,
+ "columns": 806,
+ "kinds": {
+  "entering": 244,
+  "target_level": 50,
+  "port": 240,
+  "random": 256,
+  "centre": 16
+ },
+ "batches": 26,
+ "failures": [],
+ "dense": 8,
+ "seconds": 59.2,
+ "status": "PASS"
+}

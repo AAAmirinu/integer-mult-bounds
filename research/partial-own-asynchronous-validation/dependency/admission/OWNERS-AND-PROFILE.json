@@ -1,0 +1,44 @@
+{
+  "status": "PASS_INDEPENDENT_ACTUAL_OWNER_CHARTS_AND_COMPLETE_PAID_PROFILE",
+  "calls": 72,
+  "actual_73column_sigmas": 3924,
+  "sigma_stream_sha256": "57561e5e3ea238a36e85053c8a17f999e6e5efdfc9b6a4e2ede04bde491dcbcb",
+  "cross_replica_helper_roles": 35281,
+  "explicit_idle_remainder_children": 10040,
+  "source_idle_children_charged": 17280,
+  "actual_helper_owner_charts": 40320,
+  "distinct_charts": 3924,
+  "hosted_residuals": 40320,
+  "banked_residuals": 0,
+  "all_800_owners_per_call_distinct": true,
+  "entering_helpers": 164,
+  "widths": {
+    "9": 396,
+    "8": 146,
+    "7": 14,
+    "5": 4
+  },
+  "live": 7680,
+  "physical": 8258,
+  "banks": 0,
+  "rank_mass": 558144,
+  "deficit": 2496,
+  "paid_profile": {
+    "1": 179832,
+    "2": 16128,
+    "3": 40655,
+    "4": 6048,
+    "5": 24343,
+    "6": 4608,
+    "7": 1128,
+    "8": 3112,
+    "32": 1,
+    "48": 369
+  },
+  "owner_charts_sha256": "0a7de1552ebaf4a36983a6749e61b17d0c86b284a3fb5f063e50f80d80491c80",
+  "local_program_sha256": {
+    "backward": "0137081b701d21aba04d38b6807d10007307c025cdde63a3b9228b9cb89fffbe",
+    "forward": "a6e6e00001f8d3bb02cfc7809c306e8c24ba7ffd599a7caea6a0c3a369fc9f1f"
+  },
+  "scope": "Every residual plus spectator chart extends to one complete invertible orthogonal73-axis basis within its single owner family; unique owners prevent within-call aliasing. Individual normalized helper identity supplied by fresh512-column LemmaA/G check; all-size compiler assumptions retained."
+}

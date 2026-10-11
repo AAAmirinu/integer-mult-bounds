@@ -1,0 +1,80 @@
+RUN compiler-version
+PASS compiler-version
+RUN boost-header-trace
+PASS boost-header-trace
+RUN boost-arbitrary-integer
+PASS boost-arbitrary-integer
+RUN complete493
+RUN complete484
+PASS complete493
+RUN independent493-local-owners
+PASS independent493-local-owners
+RUN independent493-invoice
+PASS independent493-invoice
+RUN guarded-lg_instances
+RUN guarded-lg_e2e
+PASS complete484
+PASS guarded-lg_instances
+PASS guarded-lg_e2e
+RUN rebuild-retimed
+PASS rebuild-retimed
+RUN independent-retimed-frames
+PASS independent-retimed-frames
+RUN independent-partial-algebra
+PASS independent-partial-algebra
+RUN independent-partial-frames
+PASS independent-partial-frames
+RUN retimed-guarded-lg_instances
+RUN retimed-guarded-lg_e2e
+PASS retimed-guarded-lg_e2e
+PASS retimed-guarded-lg_instances
+RUN pooled-emitter
+PASS pooled-emitter
+RUN independent-pooled-controller
+PASS independent-pooled-controller
+RUN finite-serial-pool-operator
+PASS finite-serial-pool-operator
+RUN independent-pooled-physical-invoice
+PASS independent-pooled-physical-invoice
+RUN independent-composition
+PASS independent-composition
+RUN final-proof-object-admission
+PASS final-proof-object-admission
+{
+  "status": "PASS_FRESH_R489_PARTIAL_OWN_KERNEL84_WHOLE_COMPLEX",
+  "artifacts": {
+    "RELEASE-ADMISSION.json": "ba26b3c26e86397572cf73c8e84237b0e6717f72048b6c15371f1486b6387e65",
+    "partial-algebra/ALGEBRA.json": "5c1c0e7e39b9cccc6dcdb3b3f38f29d0cfbb4481f62b9460e056fab6fc0518d2",
+    "PARTIAL-FRAME-REVIEW.json": "549b7b981fb8eb0e743e1bba8018560d9fb8f7b542e2cde371f11d76f1213375",
+    "guarded/INSTANCES-gauge80-kernel42.json": "995a63d80d6840559d05229934706f357f481693ded965cd2b7402d11057da3a",
+    "guarded/E2E-gauge80-kernel42.json": "7acff3f9871d38aafb3528e1f72b02a0b3b2f613b2acfb9e91de95c4491081f1",
+    "retimed-guarded/INSTANCES-gauge80-kernel42.json": "95af74efffd0f27876fe60ddc4948db2bce8b9dba0eb85d43564a8c3a3e5f77f",
+    "retimed-guarded/E2E-gauge80-kernel42.json": "b4cf83dcfbf80ae008c478d8340260c82838e0dac54f23a4137d29e9090a5533",
+    "retimed/gauge80-kernel42/RECEIPT.json": "49c6618d7d4e326290c0eecec860031ceb613c2ba547012f756e1494dfa111e4",
+    "retimed-guarded/PREOP-GUARDS-lg_instances.json": "14b992ebfd6ee0fa0aa1e7d9c5164a0cee6ceb041ec0196f571ae94ce9007ae6",
+    "retimed-guarded/PREOP-GUARDS-lg_e2e.json": "3b7aaacfad32ac2b1a250574b704fa94a21b72d12bb5e055542ec0217d375f29",
+    "RETIME-FRAME-REVIEW.json": "e181419a1b543526595864df48daca08a5f3cbf2482eefb450b452e308147858",
+    "TOOLCHAIN.json": "6962867b1f9da3b69e72084b94569e0a783094880b3815c5aec3ab321a0ac09c",
+    "BIT-LOCAL-OWNERS.json": "0c2ac175eb853d98fcde7a4b0a6a3c0a8dbbbe13e5987e85881d6260204a5eb7",
+    "BIT-INVOICE.json": "87bb7da9ccf4b391a013acf0d421216e7104f47ce078f727149368a5ebc8396b",
+    "HOSTING-AUDIT.json": "4710765127291412190fce9496c2ec6b8591298b46a027978c2b7f68c036b9ba",
+    "FINITE-SERIAL-POOL.json": "f5beb99ac5812e84a7a5fc88c42fd9708d2054c3dcaf2e58fda4cf464eb505d3",
+    "COMPOSITION-REVIEW.json": "921ccdc12325ad465b82bb9481a91ab4563a3244e7e8fd7a9403e51e06021599",
+    "complex/RECEIPT.json": "42b2b0691dc4f16a44c4dbc23cf1cef8eccce0492c7f7befb33df9ce1b85f5b3",
+    "bit/RESULT.json": "293f34ddc4ee3b063e84b3ae012a8f53c5006f4cfa22d090c6b56b2f789e0954",
+    "admission/ADMISSION.json": "b82f2a3ce2b2c0ff86bd0084c818bbca2f50e26e7553d035aaad356b8f57ee75",
+    "admission/GLOBAL-PREFIX.json": "8fe5211b628ae6536fd55788d745e04f4f2fed0f4fc283ce84f6e3be83f70870",
+    "admission/OWNERS-AND-PROFILE.json": "d3c5e5f0ff58889ef845f2aec3192ec3ffcd6e768b06e801872a6d0f3da7ef6d",
+    "admission/PREFIX-AND-INVOICE.json": "cd94ca5e78c1ad3f969dcd1b4ee48d84c7d680bab5c4ddbdb17266a31eb56789",
+    "admission/EXACT-ASSEMBLY.json": "ef099ac870f973da871dd1561464c151e27cb4e94a6502e5ab582b981658bed6",
+    "guarded/PREOP-GUARDS-lg_instances.json": "874ae20b67ee9c7a6fc2f5f5f668c692bc23bc3787b9402a2ab235ca42853d1f",
+    "guarded/PREOP-GUARDS-lg_e2e.json": "24fa964105a289577bdaa621d0d2dc09eb3409a78c20cc5dac52265c2092f1d8"
+  },
+  "kappa": "1363614743745701/1000000000000000000",
+  "kappa_decimal": "0.001363614743745701",
+  "python": "3.14.8",
+  "source_manifest_sha256": "797a365028a0c82d677db0b4624b6bdd38699c99d6696eb3bfbe01b40266b9a2",
+  "exact_math_sha256": "90fd7d912c39187a6402e76d83e36f1cf2880a20e565a2c7c782bf19c3cc1f6c",
+  "seconds": 721.363,
+  "scope": "Conditional partial-own factory/kernel84 whole-owner finite construction; both pinned suppliers reconstructed and the changed word recompiled, scalar dirty restoration/reflected ledgers/actual owner maps/complete invoices and47inequalities checked. Inherited all-size compiler, LemmaA realization, precision/tape, restored-row and analytic contracts remain."
+}

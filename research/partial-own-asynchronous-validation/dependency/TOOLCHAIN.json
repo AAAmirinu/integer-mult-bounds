@@ -1,0 +1,8 @@
+{
+  "compiler": "c++",
+  "compiler_version_log_sha256": "4e8a77bcb032deb6591b0db384ff9808d01d9030f00e2d877394df88a12a2536",
+  "boost_cpp_int_header": "/opt/homebrew/include/boost/multiprecision/cpp_int.hpp",
+  "boost_cpp_int_header_sha256": "4099045e8ac3e3507779c08980272b261a86498a23a4d0bb0786849f5424595a",
+  "header_trace_sha256": "63feccb2e5287bf595bcb659705ad00ffc36fb2ad18459212a350099f9284edc",
+  "exact_257bit_probe": true
+}

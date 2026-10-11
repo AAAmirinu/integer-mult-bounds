@@ -1,0 +1,5 @@
+gauge80-kernel42 I-tr 2947 failures 0 66
+gauge80-kernel42 I-comp gates 420 inputs 130 failures 0 72
+gauge80-kernel42 I-centre failures 0 83
+gauge80-kernel42 I-helper 164 failures 0 89
+PRE_OPERATION_EXACTNESS_BOUNDS {'add_calls': 1116, 'scale_calls': 884, 'primitive_calls': 104738, 'maximum_proved_numerator_bits': 14, 'checked_result_file': 'INSTANCES-gauge80-kernel42.json', 'checked_result_sha256': '95af74efffd0f27876fe60ddc4948db2bce8b9dba0eb85d43564a8c3a3e5f77f', 'identity_assertions_passed': True}

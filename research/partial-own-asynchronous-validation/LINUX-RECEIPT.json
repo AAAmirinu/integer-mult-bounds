@@ -1,0 +1,54 @@
+{
+  "status": "PASS_FRESH_PARTIAL_OWN_ASYNCHRONOUS_WHOLE_OWNER",
+  "python": "3.14.8",
+  "steps": [
+    {
+      "name": "fresh-both-suppliers-and-partial-own",
+      "exit_code": 0,
+      "seconds": 915.07,
+      "log_sha256": "f4c8756acb057cc2014915050f7f724350d755e83d0b984419b1139525b4ea02"
+    },
+    {
+      "name": "emit-asynchronous",
+      "exit_code": 0,
+      "seconds": 2.055,
+      "log_sha256": "38335e0e9adb34cde5571a64a29c6a3db3a9ca27a4b8b632541dd671ba25d3c4"
+    },
+    {
+      "name": "independent-controller",
+      "exit_code": 0,
+      "seconds": 9.27,
+      "log_sha256": "e9dda947b961ed17b02c6a5f6d8e4959c2b8ead8e86b7dc4cc070376394a04c2"
+    },
+    {
+      "name": "finite-invoice",
+      "exit_code": 0,
+      "seconds": 0.948,
+      "log_sha256": "330c026d6972593c1494ca0640271e1bd355306d3580334e199ffbb5e57e33c9"
+    },
+    {
+      "name": "two-exact-engines-and-outer",
+      "exit_code": 0,
+      "seconds": 0.241,
+      "log_sha256": "35cd8755f6aadd23ebc4fbeec7b53c00055505b1f1c351ca309b7067852dc054"
+    }
+  ],
+  "source_manifest_sha256": "a4a3eb10e137b607cecdb41550d14ab3ec52966522725bcad47360ba41acb78b",
+  "artifacts": {
+    "RESULT.json": "cb91ddf9cfac48e6fc8c6b734e377dbf80ba8cccb1226408b48e38734d9e4be7",
+    "FRESH-BIT-INPUT.json": "865454092ca664ea3b8d92eb5946dfb42d62be7e5b149fb87ec574c8ccfa4ad1",
+    "dependency/RECEIPT.json": "79e7f8448f1a0e411e02b7aa308fd4a4b6eb266eb2aaad9131533c5b6b46c66f",
+    "dependency/EXACT-MATH.json": "90fd7d912c39187a6402e76d83e36f1cf2880a20e565a2c7c782bf19c3cc1f6c",
+    "dependency/RELEASE-ADMISSION.json": "439e07b69111fe9829d258a169e6a819b4f0cbcbfd198ebd9ca05574627e6483",
+    "dependency/TOOLCHAIN.json": "0f81afdfa662e23ac236c853cd76acf2f1491c1c6ed2269827a6ca302876cabb",
+    "dependency/partial-algebra/ALGEBRA.json": "53ced4bb78d79e44e9008b9b69a7637cd5acef1f8d9dd29adfcbe4a2469465d9",
+    "dependency/PARTIAL-FRAME-REVIEW.json": "167a9723a1a8a64a2748ec785010ad65d13d7eef772f4bcee7d8ffd00ca3df1e",
+    "dependency/retimed-guarded/PREOP-GUARDS-lg_instances.json": "450ae8416456c1b3e16e5adb319da50920adda492d2e114f0f32f5cff453a566",
+    "dependency/retimed-guarded/PREOP-GUARDS-lg_e2e.json": "2ee570d98c983e9247bdd279ce1e5a3bbc4eb94bc3ec7af8f2da3c21563ecb8a",
+    "admission/ASYNC-AUDIT.json": "e9dda947b961ed17b02c6a5f6d8e4959c2b8ead8e86b7dc4cc070376394a04c2",
+    "admission/OWNERS-AND-PROFILE.json": "c0704afd45088aed19239dcc39d0f47fef2f721f710cc22412c921d3ee47e1ef",
+    "admission/GLOBAL-PREFIX.json": "fddc9daed4ca12a26efda88e9d08ced349205a79bc4f4a3dc28bb79dae36a398",
+    "admission/PREFIX-AND-INVOICE.json": "330c026d6972593c1494ca0640271e1bd355306d3580334e199ffbb5e57e33c9",
+    "admission/EXACT-ASSEMBLY.json": "4475c9d8f65bb869756c024f3145d2e3c2cfa00dee434934644865658f254d08"
+  }
+}

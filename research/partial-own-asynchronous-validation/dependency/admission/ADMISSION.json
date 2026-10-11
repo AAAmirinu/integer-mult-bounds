@@ -1,0 +1,84 @@
+{
+  "status": "PASS_COMPLETE_POOLED_COMPLEX_FINITE_ADMISSION",
+  "complex_template_sha256": "44b7779f98a4369bb590d8753eaebd77d30423c8726ba83f0b4ffc7d58489926",
+  "complex_profile": {
+    "1": 179832,
+    "2": 16128,
+    "3": 40655,
+    "4": 6048,
+    "5": 24343,
+    "6": 4608,
+    "7": 1128,
+    "8": 3112,
+    "32": 1,
+    "48": 369
+  },
+  "complex_live": 7680,
+  "physical": 8258,
+  "rank_mass": 558144,
+  "deficit": 2496,
+  "complex_hosted_residuals": 40320,
+  "one_owner_per_complete_invocation": true,
+  "actual_73column_sigmas": 3924,
+  "cross_replica_helper_roles": 35281,
+  "global_prefix_bits": 142,
+  "retained_payload_bits": 192,
+  "source_artifacts": {
+    "split-centres/CANONICAL-WORD.json.gz": "150663631462ead2e9ab10cbb9ab0aacce84c1a64a0ee523901f4869837ec7f6",
+    "split-centres/LOCAL-PROGRAMS.json.gz": "a2f80e895a6e387156c2a7c3cbd0efc96767618fcfcee0c5762ee050c5b2d0a9",
+    "split-centres/LOCAL-CHECKS.json": "15d44a7378f01a50a79f155c782ddd3532be2d6b66421b8ff8f2015896a63b40",
+    "split-centres/RESIDUAL-ADAPTERS.json": "546196e37830b9ccbc544834cb6f37ba4ad841faf96f025fe5155f5ba3924e07",
+    "work/complex-nine-native/DATA-PHASES.json": "f621f6d4296cb215f334830356c5f79fe10d6d04d15b3ccda76ba0885ab67d0a"
+  },
+  "controller_audit_sha256": "4710765127291412190fce9496c2ec6b8591298b46a027978c2b7f68c036b9ba",
+  "controller_mutations_rejected": [
+    "alias two whole owners",
+    "helper on active data family",
+    "owner in private namespace",
+    "unbound change of owner replica",
+    "omit complete invocation",
+    "reorder invocation replicas",
+    "interleave local invocations",
+    "change local instruction stream",
+    "wrong residual width",
+    "wrong spectator coordinate",
+    "omit spectator route",
+    "overlap residual footprint",
+    "omit idle remainder",
+    "underpay idle remainder",
+    "omit bridge touch",
+    "remove one-owner rule",
+    "duplicate frozen role",
+    "understate physical reserve"
+  ],
+  "bit_result_sha256": "293f34ddc4ee3b063e84b3ae012a8f53c5006f4cfa22d090c6b56b2f789e0954",
+  "complex_lower": "1365476727944167989749/1000000000000000000000000",
+  "kappa": "1363614743745701/1000000000000000000",
+  "kappa_decimal": "0.001363614743745701",
+  "observed_stages": [
+    {
+      "stage": "owners",
+      "observed_exit": 0
+    },
+    {
+      "stage": "scalar-invoice",
+      "observed_exit": 0
+    },
+    {
+      "stage": "global-prefix",
+      "observed_exit": 0
+    },
+    {
+      "stage": "two-moments-outer",
+      "observed_exit": 0
+    }
+  ],
+  "files": {
+    "OWNERS-AND-PROFILE.json": "d3c5e5f0ff58889ef845f2aec3192ec3ffcd6e768b06e801872a6d0f3da7ef6d",
+    "PREFIX-AND-INVOICE.json": "cd94ca5e78c1ad3f969dcd1b4ee48d84c7d680bab5c4ddbdb17266a31eb56789",
+    "OBSERVED-EXITS.json": "4b563f11d8e00dd70af2205d7e077bc7c6124ff30fa995168a8c565ebe75f8fa",
+    "GLOBAL-PREFIX.json": "8fe5211b628ae6536fd55788d745e04f4f2fed0f4fc283ce84f6e3be83f70870",
+    "EXACT-ASSEMBLY.json": "ef099ac870f973da871dd1561464c151e27cb4e94a6502e5ab582b981658bed6"
+  },
+  "scope": "Exact finite program, complete-invocation normalization, whole physical owners, both scalar orientations, full paid profile, cross-replica-safe global prefix and strict arithmetic assembly. Retains inherited all-size compiler/precision/tape/common-grid and analytic-transfer contracts. PR484 source remains unchanged; independent audit by OpenAI Codex."
+}

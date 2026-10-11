@@ -1,0 +1,65 @@
+{
+  "error": "AssertionError(('rebuild-retimed', 'PASS construct-partial-own\\nPASS selection-mutations\\nPASS apply-kernel-selection\\nPASS unretimed-scalar-frame\\nPASS unretimed-emit-both-orientations\\nTraceback (most recent call last):\\n  File \"/home/cfky/offload/resume-20261011-pr507/code/rebuild_retimed.py\", line 50, in <module>\\n    run(\\'apply-frame-map\\',HERE/\\'apply_retime.py\\',U/\\'split-centres/FULL-WORD.json.gz\\',M,sc/\\'FULL-WORD.json.gz\\')\\n    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/home/cfky/offload/resume-20261011-pr507/code/rebuild_retimed.py\", line 28, in run\\n    assert p.returncode==0,(name,log.read_text()[-4000:])\\n           ^^^^^^^^^^^^^^^\\nAssertionError: (\\'apply-frame-map\\', \\'Traceback (most recent call last):\\\\n  File \"/home/cfky/offload/resume-20261011-pr507/code/apply_retime.py\", line 60, in <module>\\\\n    if __name__==\\\\\\'__main__\\\\\\':main(*map(Path,sys.argv[1:4]))\\\\n                            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\\\\n  File \"/home/cfky/offload/resume-20261011-pr507/code/apply_retime.py\", line 46, in main\\\\n    assert not out.exists();w=json.loads(gzip.decompress(src.read_bytes()));p=json.loads(gzip.decompress(mapfile.read_bytes()));assert hashlib.sha256(canonical(w)).hexdigest()==p[\\\\\\'source_word_json_sha256\\\\\\'];z=copy.deepcopy(w)\\\\n                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\\\nAssertionError\\\\n\\')\\n'))",
+  "steps": [
+    {
+      "name": "compiler-version",
+      "returncode": 0,
+      "seconds": 0.001,
+      "log_sha256": "88b7c4b67564a146863224148116065fee418539f0a408f3636a68f3bde51805"
+    },
+    {
+      "name": "boost-header-trace",
+      "returncode": 0,
+      "seconds": 0.613,
+      "log_sha256": "8e3245f0b4887b7b2c71e9b5e1da2e072c4a6508ef2c1cbda6b8f5aecfb5a00e"
+    },
+    {
+      "name": "boost-arbitrary-integer",
+      "returncode": 0,
+      "seconds": 0.001,
+      "log_sha256": "45ab3b5e33ea24fdb1b557c142c208ab46bac2282e541e0e309598d8baec2e62"
+    },
+    {
+      "name": "complete493",
+      "returncode": 0,
+      "seconds": 85.159,
+      "log_sha256": "32449fac5aae6e6e00375c16e59b61597ae498ec95ecb4dac80a713c6ee6905a"
+    },
+    {
+      "name": "independent493-local-owners",
+      "returncode": 0,
+      "seconds": 2.985,
+      "log_sha256": "0c2ac175eb853d98fcde7a4b0a6a3c0a8dbbbe13e5987e85881d6260204a5eb7"
+    },
+    {
+      "name": "independent493-invoice",
+      "returncode": 0,
+      "seconds": 0.4,
+      "log_sha256": "56833d952fba42da638cd96123960249c1693c38a4cdbb9f074e0d7d94f7ecd6"
+    },
+    {
+      "name": "complete484",
+      "returncode": 0,
+      "seconds": 487.922,
+      "log_sha256": "24e8e4ab71aac9a0c59048e784fd83823df375c9f0bd00a3ddd06efa68bc350a"
+    },
+    {
+      "name": "guarded-lg_instances",
+      "returncode": 0,
+      "seconds": 231.705,
+      "log_sha256": "2920c01ec9a75e0e6514180eaa6ab1551a08a1a18c8cf5d5976951a4c4da354e"
+    },
+    {
+      "name": "guarded-lg_e2e",
+      "returncode": 0,
+      "seconds": 231.714,
+      "log_sha256": "242dc86ef4120cc3c7c98f8d61466c9b1f81e00f9997bc49a6c9a6588ff72935"
+    },
+    {
+      "name": "rebuild-retimed",
+      "returncode": 1,
+      "seconds": 2.744,
+      "log_sha256": "ef5b3dfc0a443e621f2d5ec28953a275137fd9f398eedf0c98325d7ed1df91ed"
+    }
+  ]
+}

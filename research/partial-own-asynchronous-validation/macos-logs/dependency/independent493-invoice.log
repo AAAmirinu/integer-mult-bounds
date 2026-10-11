@@ -1,0 +1,30 @@
+{
+  "status": "PASS_INDEPENDENT_PR493_PINNED_SOURCE_INVOICE_AND_EXACT_ASSEMBLY",
+  "head": "c3a9a436b84fe44fdc223a5784d84736d1c2d3c7",
+  "manifest_sha256": "7f25c41d0400ef5adf763eae6e166003a9b59e5a655b860c04b052f6731c7297",
+  "manifest_files": 93,
+  "git_blob_files": 94,
+  "result_sha256": "293f34ddc4ee3b063e84b3ae012a8f53c5006f4cfa22d090c6b56b2f789e0954",
+  "native_columns_sha256": "045369ffa5d5f4eabd50f1ebbd5355b5fac89d514115ae0e6dbb4f85b5a11629",
+  "native_eleven_columns_sha256": "b2227e377ce9575f7770c9b5d1003c37ba1404e3dbd7a4e7de40c91ffb530833",
+  "bit_lower": "391360506745414227149/250000000000000000000000",
+  "actual_bit_profile": {
+    "1": 105600,
+    "2": 130560,
+    "4": 19680,
+    "6": 14400,
+    "7": 7680,
+    "8": 1584,
+    "48": 2,
+    "56": 2628
+  },
+  "rank_mass": 745536,
+  "paid_calls": 282134,
+  "prefix_bits": 2119,
+  "charged_prefix_bits": 2176,
+  "three_level_coefficient_bits": 6411,
+  "charged_coefficient_bits": 6464,
+  "row_coefficient": 19431,
+  "retained_row_allowance": 20161,
+  "scope": "This audit independently checks pinned sources and the supplied fresh bit output. Supplier verifier execution and native compiler provenance are bound by the enclosing root verifier. The complex b values here remain cited arithmetic; the enclosing composition must bind its chosen b to a fresh complex replay. PR448 remains information-only disputed split. Inherited all-size compiler, mutable-label, restored-row and analytic contracts remain conditional."
+}

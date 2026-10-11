@@ -1,0 +1,19 @@
+PASS construct-partial-own
+PASS selection-mutations
+PASS apply-kernel-selection
+PASS unretimed-scalar-frame
+PASS unretimed-emit-both-orientations
+PASS apply-frame-map
+PASS word-mutations
+PASS pipeline-mutations
+PASS scalar-frame
+PASS emit-both-orientations
+PASS exact-gaussian-phases
+PASS residual-adapters
+PASS integrate-global
+PASS independent-program-replay
+PASS pooled-emitter
+PASS independent-pooled-controller
+PASS lemma-G-identities
+PASS retimed-lemma-G-mutants
+PASS_FRESH_PARTIAL_OWN_KERNEL_RETIMED_COMPLEX_WORD

@@ -1,0 +1,20 @@
+{
+  "status": "EXACTLY_TWO_DISCOVERY_DISPLAY_FIELDS_DIFFER",
+  "original_head": "8d4444cf8a16d500cbb94add6e4fa8bcfb9c7d5e",
+  "fields": {
+    "complex_coarse_float": {
+      "macos": 0.0011839865492062449,
+      "linux": 0.0011839865492062444
+    },
+    "gain_percent_float": {
+      "macos": 18.471088665039947,
+      "linux": 18.471088665039904
+    }
+  },
+  "all_other_parsed_fields_equal": true,
+  "normalized_unretimed_sha256": "8ba589dd34c4d9ee345fc58176be6dc780b31882113b16b853bcf431d58ac8a3",
+  "frozen_source_hash_matches": true,
+  "original_apply_retime_passes_after_only_two_field_normalization": true,
+  "normalized_retimed_bytes_equal_macos": true,
+  "scope": "Original full Linux verifier failed at source hash; no claim of unchanged upstream full pass. Mathematical bytes are equal; derivative fixes historical display annotations without weakening source or candidate hash checks."
+}

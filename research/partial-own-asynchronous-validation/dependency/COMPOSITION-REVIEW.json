@@ -1,0 +1,89 @@
+{
+  "status": "PASS_INDEPENDENT_FRESH_SUPPLIER_COMPOSITION_GATE",
+  "bit_result_sha256": "293f34ddc4ee3b063e84b3ae012a8f53c5006f4cfa22d090c6b56b2f789e0954",
+  "assembly_sha256": "ef099ac870f973da871dd1561464c151e27cb4e94a6502e5ab582b981658bed6",
+  "owner_audit_sha256": "d3c5e5f0ff58889ef845f2aec3192ec3ffcd6e768b06e801872a6d0f3da7ef6d",
+  "invoice_sha256": "cd94ca5e78c1ad3f969dcd1b4ee48d84c7d680bab5c4ddbdb17266a31eb56789",
+  "fresh_complex_integration_sha256": "199b9336728c4778f821207ca13fb997aa195d647e7ad560ee2571741b9691cc",
+  "fresh_base_template_sha256": "81ddf92ed411e749946cb2f25caa8a206fe8ae38bdc2b2f5c6a6926a8c6f5e91",
+  "fresh_derivative_receipt_sha256": "49c6618d7d4e326290c0eecec860031ceb613c2ba547012f756e1494dfa111e4",
+  "fresh_unretimed_word_sha256": "ae74a5368c90d38a4164aaa6ab60bde14e0500241730a465a4d157542aba3079",
+  "partial_constructor_sha256": "f4e0eea2790a152337c36c440eb790d7c1c2dc6ec241575ce87f27bcf5830854",
+  "kernel_selection_sha256": "08b2e803d4bbdd73e6c56b52a07990c4dc53ea4384955148dcca9f3317b5c9c7",
+  "changed_template_sha256": "44b7779f98a4369bb590d8753eaebd77d30423c8726ba83f0b4ffc7d58489926",
+  "preserved_local_program_sha256": "346e86c70f27b78724a087a85be691255c4c3f47b7b9c200cdb764ad6e13c586",
+  "preserved_fields": [
+    "local_programs",
+    "m",
+    "recipe",
+    "adapter_policy",
+    "cover",
+    "loop_order",
+    "expanded_scalar_interface",
+    "exact_data_phase_recipe_sha256",
+    "exact_local_clifford_recipe_sha256",
+    "residual_adapter_sha256"
+  ],
+  "live": 7680,
+  "physical": 8258,
+  "profile": {
+    "1": 179832,
+    "2": 16128,
+    "3": 40655,
+    "4": 6048,
+    "5": 24343,
+    "6": 4608,
+    "7": 1128,
+    "8": 3112,
+    "32": 1,
+    "48": 369
+  },
+  "rank_mass": 558144,
+  "finite": {
+    "physical_stock_bits": 2641,
+    "router_bits": 7984,
+    "literal_bits": 35282,
+    "physical_row_coefficient": 15443,
+    "retained_row_coefficient": 20161,
+    "required_C0_bits": 200012,
+    "halving_integer_inequality": [
+      5329,
+      4608
+    ],
+    "G_exponent": 30000,
+    "E_exponent": 100000,
+    "C0_exponent": 210000
+  },
+  "bit_lower": "391360506745414227149/250000000000000000000000",
+  "complex_lower": "1365476727944167989749/1000000000000000000000000",
+  "kappa": "1363614743745701/1000000000000000000",
+  "bit_charged_three_level_coefficient_bits": 6464,
+  "bit_row_coefficient": 19431,
+  "external_row_allowance": 20161,
+  "strict_outer_constraints": 47,
+  "outer_controls": [
+    "next_grid",
+    "zero_eta",
+    "zero_beta",
+    "unit_beta"
+  ],
+  "binding_mutations_rejected": [
+    {
+      "field": "bit_charged_three_level_coefficient_bits",
+      "rejected_value": 2176
+    },
+    {
+      "field": "bit_charged_three_level_coefficient_bits",
+      "rejected_value": 6400
+    },
+    {
+      "field": "external_row_allowance",
+      "rejected_value": 20160
+    },
+    {
+      "field": "bit_lower",
+      "rejected_value": "1565442026981656908597/1000000000000000000000000"
+    }
+  ],
+  "scope": "Arithmetic and fresh-output binding gate. Enclosing fresh root execution must bind both complete pinned supplier replays, physical owner/controller admission, scalar invoice and compiler provenance. Inherited Lemma A spectator borrowing, all-size compiler/common-label/restored-row/precision/tape and analytic-transfer contracts remain conditional."
+}
