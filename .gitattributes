@@ -32,3 +32,6 @@ research/e8-target-mixing-whole-validation/FINAL-COSMETIC.diff -text -whitespace
 # R715 source-pinned words and upstream discovery artifacts retain exact bytes.
 research/e8-r715-whole-hosted/** -text
 research/e8-r715-whole-hosted/upstream*/** -whitespace
+# Unmodified PR484 and PR493 supplier packages retain their upstream bytes.
+research/e8-complex-gauge-kernel/** -text -whitespace
+research/e8-bit-carrier-skeleton/** -text -whitespace

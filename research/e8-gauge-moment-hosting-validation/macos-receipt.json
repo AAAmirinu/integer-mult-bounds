@@ -1,0 +1,44 @@
+{
+  "status": "PASS_FRESH_GAUGE_MOMENT_HOSTING_COMPOSITION",
+  "kappa": "1325117552367841/1000000000000000000",
+  "python": "3.14.8",
+  "result_sha256": "1f6fa6e082ef98e2b2335d676e33e1f077da608a2db8160df3c3aff3984b8b8b",
+  "source_manifest_sha256": "bfea9d9b08120be4278c92881b9bee93c1f5708486156781d086bae6d2b135e6",
+  "parent484_receipt_sha256": "e514aa56b337b51a9c44a5b088c5880571c44f1f415b2401cef32ea9721cb373",
+  "parent493_result_sha256": "098ae6eea08bb0110dd83874d2d88152b8821869cb3039cc51982d4a15388b97",
+  "bit_template_sha256": "4027cb09301554f3c86147e429d6d93d5e6acea52b58cea1c39e2365c54ef9e9",
+  "bit_geometry_sha256": "335ad811d23149086788234ec2b2c4be7c1cf1e4914836f1b3aabb0ee9d94d1a",
+  "bit_fingerprint_omits_only_geometry_field": "seconds",
+  "steps": [
+    {
+      "name": "full-parent484-all-variants",
+      "seconds": 409.91,
+      "log_sha256": "2b16d9b924208db96c99adc44d9c7b2c9347e1f2992320dd1dfc2395be3fcec6"
+    },
+    {
+      "name": "full-parent493-bit",
+      "seconds": 68.78,
+      "log_sha256": "a045a112024011d84dffd84eaa1b566d152bec2c49023e1f596afbabc86be0c8"
+    },
+    {
+      "name": "new-hosting",
+      "seconds": 0.44,
+      "log_sha256": "0fa7507ee80c77af4180f88d9d837d5fc2c82fe9953ce3dca5bace2a7366a0ce"
+    },
+    {
+      "name": "independent-hosting-audit",
+      "seconds": 3.76,
+      "log_sha256": "a662db8679529077971fd24dc387136d6c1c4d924e12a5a1080095a07128c32b"
+    },
+    {
+      "name": "independent-selection-counts",
+      "seconds": 0.15,
+      "log_sha256": "1eb1d9967d57170b049d77c085a1c4454e36efc0269d13ed4baee3f67259ff05"
+    },
+    {
+      "name": "two-moments-finite-invoices-outer",
+      "seconds": 0.11,
+      "log_sha256": "3111d5d8b997664fc1e4ed8c78a66fa3a6fbbb1e3edc96543cec5fa4beb1378d"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS_PREOP_INT64_GUARDED_PHYSICAL_REPLAY",
+  "variant": "gauge80-kernel42",
+  "basis_columns": 806,
+  "dense_columns": 8,
+  "orientations": 2,
+  "statistics": {
+    "add_scaled": 251154,
+    "scale": 8858,
+    "C": 193147,
+    "largest_intermediate_bound": 377135104
+  },
+  "largest_intermediate_bound_bits": 29,
+  "source_sha256": {
+    "gd.py": "64cdb2cfefc9ec3ed80c277a18848778427c3d3dbda9b7be13f740522478e1de",
+    "lg_e2e.py": "8fe3719e8ec5ec49af480b40c15f07612a356f5071ea30e17ae2d8931b3f20ce",
+    "lg_phys.py": "0ca37829b596d83d0b94c5f0b6b278a100f22e626b2ab3b5210a38f9657c8a27"
+  },
+  "input_sha256": {
+    "CANONICAL-WORD.json.gz": "7124ea8159c408b29b3e7479353155b87c16b968bafeef3fef79fc47f6278071",
+    "LOCAL-PROGRAMS.json.gz": "758c75e48154875421803b564614ac0f9d549c6f28561b287c3ac68264aec823",
+    "CLIFFORD-RECIPES.json": "626d06a0219fe20cf0dc6405b45fab0bb9e26d6307c92ff053eaec231559a420",
+    "RESIDUAL-ADAPTERS.json": "546196e37830b9ccbc544834cb6f37ba4ad841faf96f025fe5155f5ba3924e07"
+  },
+  "scope": "Every executed addition, multiplication, left shift and C gate is bounded before int64 arithmetic; the original after-operation guards remain active. This is the published E2E sample, not every full-program basis column."
+}

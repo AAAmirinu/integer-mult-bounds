@@ -1,0 +1,20 @@
+{
+  "kappa": "1325117552367841/1000000000000000000",
+  "kappa_decimal": "0.001325117552367841",
+  "complex_lower": "1326875818805153/1000000000000000000",
+  "bit_lower": "391360506745414227149/250000000000000000000000",
+  "binding_component": "complex",
+  "complex": {
+    "live": 7746,
+    "physical": 8324,
+    "maxchild": 8,
+    "rank_mass": 562962,
+    "hosted_residuals": 39792,
+    "physical_stock_bits": 2641,
+    "router_bits": 7984,
+    "literal_bits": 35282,
+    "row_coefficient": 15443,
+    "pervertex_bits": 51
+  },
+  "complex_template_sha256": "4f47e03f7bcb3489ad8fd78c1067636c680b3113d8ef15ca25b5785ae3dee6fc"
+}

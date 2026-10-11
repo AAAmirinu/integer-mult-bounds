@@ -1,0 +1,12 @@
+{
+  "EXPECTED.json": "f2cdc46655aae837475f459da792b16595bad8cf25cd0804f8a1248ae27db476",
+  "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "NOTICE.md": "a7cf53a0cc9532cc5294e80aafce79f67b9fa3234ac651804eade22680312157",
+  "PROOF.md": "1efec12397775c59bb8dcda37a1ffb401797224b9b39478fe7b06b20510966ce",
+  "README.md": "8e0b2d40fbf7a215d35b72b61acafa06ce4ed1dbfcea3c18539f3432bfe239ad",
+  "SOURCE.json": "8cb4357d3e28fd8898d921ecde113d68d674aa099eaff7be2242fd778ba2b2d5",
+  "code/check_selection.py": "ee00b2e323801873bc9603cd30af0621ebbdcccfdfe17c42c9fc929fa8298a4d",
+  "code/discover.py": "b8b4bbd8c494d370be9dddbe5ecbe05306533b27ef6fc27bf84613a6cef8dcbd",
+  "data/SELECTION.json": "be7178482e9c9ae1ac87c06535526091cdb5893690e655dd179cfd3196c850d4",
+  "verify.py": "37d291e42519cb64a3bd30a3e4c33acf99f6a796d5ba601409e4c9f3faaccd4a"
+}

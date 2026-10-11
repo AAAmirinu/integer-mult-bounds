@@ -1,0 +1,23 @@
+{
+  "status": "PASS_IDENTICAL_COMPLETE_MACOS_LINUX_RESULTS",
+  "kappa": "1325117552367841/1000000000000000000",
+  "manifest_sha256": "bfea9d9b08120be4278c92881b9bee93c1f5708486156781d086bae6d2b135e6",
+  "result_sha256": "1f6fa6e082ef98e2b2335d676e33e1f077da608a2db8160df3c3aff3984b8b8b",
+  "python": [
+    "3.14.8 macOS arm64",
+    "3.14.8 Linux aarch64"
+  ],
+  "parent484_mode": "--all, unchanged source, complete supplied receipt passes",
+  "parent493_mode": "full unchanged verify.sh, real Boost multiprecision C++ checkers",
+  "files": {
+    "README.md": "41d6895ce33605d6509c65bf0ee0b947aa4f12c87ad099ebbc40dcaa4873e50d",
+    "checked_physics.py": "f999bac8f33e41be25734c99d7a5403b88243b254b79b1ed100041955fce0b98",
+    "linux-parent484-receipt.json": "710cb719f3a469ee61bd77929d0c582c31089d167bc65ccf565cf068a54e6ee9",
+    "linux-receipt.json": "11d4d9736f6cace810e08a67a97b8fce92313d901ebbe3ca632f8cf6dccf4bf0",
+    "linux-result.json": "1f6fa6e082ef98e2b2335d676e33e1f077da608a2db8160df3c3aff3984b8b8b",
+    "macos-parent484-receipt.json": "e514aa56b337b51a9c44a5b088c5880571c44f1f415b2401cef32ea9721cb373",
+    "macos-receipt.json": "69010b4ea47c1428e365b0a623aa2692a629cfe60bad6a72c3e15f39c71670bd",
+    "macos-result.json": "1f6fa6e082ef98e2b2335d676e33e1f077da608a2db8160df3c3aff3984b8b8b",
+    "preop-bounds.json": "f6d3d1f2973e65da434dbb2e9fd367b03b0748b322a5d2edfe7f68e9326d3018"
+  }
+}
