@@ -1,0 +1,21 @@
+{
+ "EXPECTED.json": "477a14cab5278ea85621507bbff8c99803b24a92569e0f61884f5065f03e89ab",
+ "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+ "NOTICE.md": "961e9f76ae96950c90b23a477c9f8fa1aff9acad4494c8f576735aefe961ceab",
+ "PR-BODY.md": "e43ddf4a41ec864577f673a51c265359199096ea348f374d843715605d7e8752",
+ "README.md": "cca9a7a3921e85511050d0160c6c34736278a957a8dd302d823a4acbf68cb462",
+ "SOURCE.json": "5470f4468e150dd467f670358c705df9bcf7c957e27aa3c924091b4e4ec0fc85",
+ "code/hosting_model.py": "3db1114e57c73af016b236177e8c50d8c3dc99f6b44600b6b020a5f724b13df1",
+ "code/kernel_cap.py": "ca05ab0843f05fc92e76208969e6ae9d7fb9af561abbd8ee2f1a9282ebc21570",
+ "code/kernel_from_selection.py": "fbc0abe0afb31e4ef24a71baa84ca2a78c3d2243539310771e3d01d93c29950e",
+ "code/scan_pivots.py": "fa98533493a1020b7aeaeaec042b2857f1f0c2889ac451100c48a3b6e3ca8d16",
+ "code/select_kernel.py": "1712ec5abba3421ec57913e3a2834055f570d05691eca4568a2abe7072d0cd47",
+ "compose.py": "61f10700bfbfd8b88d5d3f0eaf8aa1436c107b5827c7e025ee9a7e2c25ef9a8b",
+ "data/cap-analysis.json": "dbd488388b429f1b711eaec375db5fd6d46d9da3008f975d3b4efdc78e670a58",
+ "data/kernel-selection.json": "00eceeb2e61cc23f6954e595945caf731e9132441f13de578283981143446bce",
+ "data/residual-isometries.json": "f6dd81dd791760bdc5c5b46d6ab56690fb49991ec059e1cdf6ef74c4fd64ebde",
+ "data/selection.json": "0d590dc444be36b66f0c508c71223f1d82eebc9c71015ffa39fc452810479b9c",
+ "data/word-kernel.json.gz": "830067be7ba017407293931fb44c31db146886be8b8e3d277b82b46e0a197c2a",
+ "data/word-mixed.json.gz": "115c2393a8e1382ecfe72f5d9e5e725804c87af911a08885dce3f3a8e0e8494d",
+ "verify.py": "cb044889d1ae2318f7ef8804666bb8016af8ed5f1ec5af46dc35562152eba661"
+}
