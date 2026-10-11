@@ -1,7 +1,9 @@
 # Extension research record
 
-The requested target is conditional kappa > 0.002. The design deadline is
-21:00 JST and PR completion deadline 22:00 JST on 2026-10-11. Effort is split
+The requested target is conditional kappa > 0.002. The original design deadline
+was 21:00 JST and PR completion deadline 22:00 JST on 2026-10-11; the requester
+subsequently extended research through 24:00 JST, with a validated interim PR
+permitted earlier. Effort is split equally
 between integrating existing results and independent structural experiments.
 The validated value in EXPECTED.json is below that target.
 

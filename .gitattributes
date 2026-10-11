@@ -20,3 +20,6 @@ research/five-stage-source527-banks/** -text -whitespace
 research/community-round9-audit/** -text -whitespace
 # The E8 candidate binds exact third-party bytes and regenerated records.
 research/e8-coupled-bit-retiming/** -text -whitespace
+# These finite candidates and proof receipts likewise bind literal source bytes.
+research/e8-clean-reuse-extension/** -text -whitespace
+research/e8-structural-frontiers/** -text -whitespace
