@@ -1,0 +1,124 @@
+{
+  "all_pairs_profile": {
+    "1": 1981,
+    "2": 932,
+    "3": 20,
+    "4": 224,
+    "5": 392,
+    "8": 24
+  },
+  "base_profile": {
+    "1": 1981,
+    "2": 932,
+    "3": 20,
+    "4": 224,
+    "5": 392,
+    "8": 24
+  },
+  "entrance_pivots": 79,
+  "flag_candidates": [],
+  "individually_unobservable_gates": [],
+  "pair_candidates": [
+    {
+      "delta": {},
+      "gates": [
+        2181,
+        2215
+      ]
+    },
+    {
+      "delta": {},
+      "gates": [
+        2111,
+        2145
+      ]
+    },
+    {
+      "delta": {},
+      "gates": [
+        2041,
+        2075
+      ]
+    },
+    {
+      "delta": {},
+      "gates": [
+        1971,
+        2005
+      ]
+    },
+    {
+      "delta": {},
+      "gates": [
+        1901,
+        1935
+      ]
+    },
+    {
+      "delta": {},
+      "gates": [
+        1831,
+        1865
+      ]
+    },
+    {
+      "delta": {},
+      "gates": [
+        1761,
+        1795
+      ]
+    },
+    {
+      "delta": {},
+      "gates": [
+        1691,
+        1725
+      ]
+    },
+    {
+      "delta": {},
+      "gates": [
+        1621,
+        1655
+      ]
+    },
+    {
+      "delta": {},
+      "gates": [
+        1551,
+        1585
+      ]
+    },
+    {
+      "delta": {},
+      "gates": [
+        1481,
+        1515
+      ]
+    },
+    {
+      "delta": {},
+      "gates": [
+        1411,
+        1445
+      ]
+    },
+    {
+      "delta": {},
+      "gates": [
+        1341,
+        1375
+      ]
+    },
+    {
+      "delta": {},
+      "gates": [
+        1271,
+        1305
+      ]
+    }
+  ],
+  "prefix_kernel_gates": 229,
+  "scope": "Exact bounded finite screens only. Individual same-source same-write-epoch opposite-response pairs preserve the target map; joint scalar compatibility has not been certified. Frame profiles alone are not full physical certificates. No candidate screened here improves the paid moment.",
+  "source_sha256": "2e13b2dd1e1b0dfa341dbd57b91ee1758ad041cd5ce2e734bf2f9fd0bac155cb"
+}

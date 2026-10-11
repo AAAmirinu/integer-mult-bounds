@@ -1,0 +1,14 @@
+{
+  "status": "PASS_INDEPENDENT_PROVIDER_ROUTE_SELECTION",
+  "template_sha256": "c385a29414959d08d771b56e4a2d1bcc83d4e09ab4427cdc753fbd9a4d7fad1d",
+  "provider_calls": {
+    "base": 56,
+    "variant": 32
+  },
+  "helper_occurrences": 62920,
+  "source": "No emitter/auditor imports: exact provider-map hash, rational orthogonality, each full helper frame, local program hash, and occurrence residual width independently checked.",
+  "review_files": {
+    "emit_portfolio.py": "643a4c2e014d0c6307cf87026f837168425dff9d1f3d7cea2f0597daaf64ea38",
+    "audit_portfolio.py": "c250b6142c6f5423b70991da8b3c99421f266507dd0b0e52c3c19c6854e34231"
+  }
+}

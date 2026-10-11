@@ -1,0 +1,27 @@
+{
+  "source_sha256": "86ec5a244728e90714d545d0ecb8557346577f9e5c4a265b1cad844398ba4f02",
+  "remove": 2098,
+  "after": 1686,
+  "removed_event": [
+    836,
+    452,
+    [
+      5
+    ]
+  ],
+  "anchor_event": [
+    480,
+    642,
+    [
+      452
+    ]
+  ],
+  "insert": [
+    480,
+    452,
+    [
+      5
+    ]
+  ],
+  "candidate_sha256": "ea83356588268d7604cd6dbeb6bc1355b5020f5d04e6034f556b99e71549dff9"
+}

@@ -1,0 +1,15 @@
+# Research record and mechanism scope
+
+The frozen sweep covers new PR479/480/481/482/483 and updated PR473/477, plus the other recent/updated heads listed in RECENT-PRS.json. Public constructions were read and downloaded, not all independently reverified. Seventeen diff-listed PR477 archive files returned404 and are listed explicitly; none is an implementation dependency.
+
+The selected crossover is response cosets from linear coding/control theory, combined with compiler register-allocation inventories. Equality modulo a response kernel allows a source injection to move between program positions while preserving each target response. Immutability of the source removes cross terms; rebuilt inverse cleanup restores arbitrary dirty helpers. The actual successful witness is simpler: a source addition commutes earlier past other additions into its receiver. This is a new finite witness in this construction, not a claim to invent retiming or establish literature priority.
+
+Nested donor flags give alternative local implementations with different residual-width inventories. Their value depends on which idle families are available at the invocation's stage. A local implementation with a weaker standalone score can improve the complete program if it tiles that stage's available families better. Earlier R740 portfolio work already admitted multiple providers; this package credits and adapts that mechanism to stage-selected R715 nested flags. It does not call the general portfolio idea new.
+
+New PR473 rational84 packing motivates a larger-replica comparison. A bounded native exact-objective nomination at84replicas gave only about5.9e-9 more bit saving than the analogous eight-replica two-provider candidate before response retiming. It is retained as discovery evidence, not an admitted additional gain. The smaller explicit eight-replica construction is the replay target.
+
+PR479 uses exact finite differences to stream chirp phases; PR481 batches Gaussian boundary right-hand sides with Strassen products. Both explicitly leave their selected kappa unchanged. Their accounting improvements cannot be added to this supplier's saving. PR482 transfers the R715 and target-factor word to a lower non-hosting construction; that alternative does not contribute an extra hosted saving here. PR480's higher cross-copy claim has a distinct disputed admission premise and is compared separately, without claiming this whole-owner construction exceeds it.
+
+The complex response screen finds14 opposite-response cancellation pairs and no paid-profile improvement, even when all are removed. Nested complex donor lifts in the screened family also yield no candidate. Exact finite screens and sufficient scope are retained; no universal impossibility claim follows.
+
+No new Lean certification. All inherited all-size supplier/compiler/hosting/analytic interfaces remain conditional. Both successful transformations must pass exact changed-component replay and a complete combined physical/invoice/outer assembly before any numerical result is labeled achieved.

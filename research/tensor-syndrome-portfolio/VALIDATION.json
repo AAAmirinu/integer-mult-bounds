@@ -1,0 +1,17 @@
+{
+  "status": "PASS_RELEASE_CHANGED_PROVIDERS_COMPLEX_REUSED",
+  "kappa": "1297375468897877/1000000000000000000",
+  "research_physical_audit_sha256": "f383ca1f7df4c90c965018cfe51de0fcbfb7203f3f231707fe3936b4a37c9eca",
+  "research_assembly_sha256": "05aae2b13d06f3e7c322a7bfa06d9e88293345e97f122fea83eea1f23126d203",
+  "scope": "Both changed provider local/physical checks and mixed audit plus exact assembly passed. Release wrapper recompiles both. Unchanged complex may be reused only with original source/output receipt pins. Outer delivery retains the final release receipt. No CI or Lean claim.",
+  "release_replay_seconds": 250.359,
+  "release_replay_manifest_sha256": "e293ff356fdce717c3a1a740ec9601bf0b12720fc043a10223ae6c42c5435299",
+  "release_replay_receipt_sha256": "54ea8d22dbfa6e6d33d17b2f3562fd8edbfbb9c7bb3822e865221e3e1586cb3d",
+  "post_replay_metadata_changes": [
+    "RECENT-PRS.json: omit submission author handle; retain upstream PR links and head pins",
+    "RESULT.json and EXPECTED.json: use fresh actual replay result",
+    "VALIDATION.json: record completed release replay",
+    "receipts/RELEASE-REPLAY.json and RELEASE-REPLAY-MANIFEST.json: retain exact pre-packaging source evidence"
+  ],
+  "post_replay_implementation_or_input_changes": false
+}

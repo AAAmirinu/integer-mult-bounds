@@ -1,0 +1,420 @@
+{
+  "\"sub_mem_ker\"": [
+    {
+      "name": "sub_mem_ker_iff",
+      "statement": "theorem sub_mem_ker_iff {x y} : x - y \u2208 ker f \u2194 f x = f y",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/.lake/packages/mathlib/Mathlib/Algebra/Module/Submodule/Ker.lean",
+      "source_line": 189,
+      "compile_status": "ARTIFACT_PRESENT"
+    },
+    {
+      "name": "sub_mem_ker",
+      "statement": "lemma sub_mem_ker (g : G) (x : V) : \u03c1 g x - x \u2208 Coinvariants.ker \u03c1",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/.lake/packages/mathlib/Mathlib/RepresentationTheory/Coinvariants.lean",
+      "source_line": 71,
+      "compile_status": "ARTIFACT_PRESENT"
+    },
+    {
+      "name": "sub_mem_ker_iff",
+      "statement": "theorem sub_mem_ker_iff {x y} : x - y \u2208 ker f \u2194 f x = f y",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/.lake/packages/mathlib/Mathlib/RingTheory/Ideal/Maps.lean",
+      "source_line": 827,
+      "compile_status": "ARTIFACT_PRESENT"
+    },
+    {
+      "name": "mem_moorePenroseSolutionSet_iff_sub_mem_ker",
+      "statement": "private lemma mem_moorePenroseSolutionSet_iff_sub_mem_ker (T : \ud835\udcd7 \u2192L[\u211d] \ud835\udcda) (y : \ud835\udcda) {z x : \ud835\udcd7}\r\n    (hz : z \u2208 moorePenroseSolutionSet T y) :\r\n    x \u2208 moorePenroseSolutionSet T y \u2194 x - z \u2208 T.ker",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ReasBook-4.30/ReasBook/Books/ConvexAnalysisMonotoneOperators_BauschkeCombettes_2017/Chap03/Proposition_3_30.lean",
+      "source_line": 51,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "P2MW.S_AlgebraicGeometry_isAffine_of_isClosedImmersion_of_isAffine_of_range_union_range.AlgebraicGeometry.UnionAffine.sub_mem_ker_sup_ker",
+      "statement": "theorem sub_mem_ker_sup_ker (U : X.Opens) (hU : IsAffineOpen U) (a\u2081 : \u0393(Z\u2081, \u22a4)) (a\u2082 : \u0393(Z\u2082, \u22a4))\n    (h : (pullback.fst i\u2081 i\u2082).appTop a\u2081 = (pullback.snd i\u2081 i\u2082).appTop a\u2082)\n    (t\u2081 t\u2082 : \u0393(X, U))\n    (ht\u2081 : i\u2081.app U t\u2081 = Z\u2081.presheaf.map (homOfLE le_top).op a\u2081)\n    (ht\u2082 : i\u2082.app U t\u2082 = Z\u2082.presheaf.map (homOfLE le_top).op a\u2082) :\n    t\u2081 - t\u2082 \u2208 RingHom.ker (i\u2081.app U).hom \u2294 RingHom.ker (i\u2082.app U).hom",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/fermats-last-theorem/P2M/Sol/S_AlgebraicGeometry_isAffine_of_isClosedImmersion_of_isAffine_of_range_union_range.lean",
+      "source_line": 110,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "P2MW.S_Algebra_PointDerivations_exists_linearEquiv_tensor_forall_map_eq_of_finiteType.S2cAux.sub_mem_ker",
+      "statement": "theorem sub_mem_ker (hev : ev.comp (algebraMap k A) = RingHom.id k) (a : A) : a - algebraMap k A (ev a) \u2208 RingHom.ker ev",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/fermats-last-theorem/P2M/Sol/S_Algebra_PointDerivations_exists_linearEquiv_tensor_forall_map_eq_of_finiteType.lean",
+      "source_line": 33,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "P2MW.S_AutomorphicForm_bruhatEisenstein_sub_constantTerm_isRapidlyDecreasingOn.M4aP3B.TorusInversion.eq_iff_sub_mem_ker",
+      "statement": "private theorem eq_iff_sub_mem_ker (x y : A) : \u0398 x = \u0398 y \u2194 \u0398 (x - y) = 0",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/fermats-last-theorem/P2M/Sol/S_AutomorphicForm_bruhatEisenstein_sub_constantTerm_isRapidlyDecreasingOn.lean",
+      "source_line": 147,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "P2MW.S_QuaternionAlgebra_exists_algHom_matrix_apply_mem_and_trace_of_apply_mem_of_isIndefiniteRamifiedExactlyAt.P2mTypeFix.sub_mem_kerSub_of_apply_eq",
+      "statement": "theorem sub_mem_kerSub_of_apply_eq {x y : \u210d[\u211a, c, d]} (hx : x \u2208 O) (hy : y \u2208 O) (h : \u03c7 \u27e8x, hx\u27e9 = \u03c7 \u27e8y, hy\u27e9) :\n    x - y \u2208 kerSub O \u03c7 h\u03c7",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/fermats-last-theorem/P2M/Sol/S_QuaternionAlgebra_exists_algHom_matrix_apply_mem_and_trace_of_apply_mem_of_isIndefiniteRamifiedExactlyAt.lean",
+      "source_line": 447,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    }
+  ],
+  "\"quotKerEquivRange\"": [
+    {
+      "name": "quotKerEquivRange",
+      "statement": "noncomputable def quotKerEquivRange : (L \u29f8 f.ker) \u2243\u2097\u2045R\u2046 f.range",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/.lake/packages/mathlib/Mathlib/Algebra/Lie/Quotient.lean",
+      "source_line": 225,
+      "compile_status": "ARTIFACT_PRESENT"
+    },
+    {
+      "name": "Mathlib.Algebra.Module.LinearMap.Index",
+      "statement": "/-\r\nCopyright (c) 2026 Oliver Nash. All rights reserved.\r\nReleased under Apache 2.0 license as described in the file LICENSE.\r\nAuthors: Oliver Nash\r\n-/\r\nmodule\r\n\r\npublic import Mathlib.Algebra.Exact.Sequence\r\npublic import Mathlib.Algebra.Module.LinearMap.Defs\r\npublic import Mathlib.Algebra.Module.Submodule.Map\r\npublic import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas\r\n\r\n/-!\r\n# The index of a linear map\r\n\r\nIn this file we define the index of a linear map and provide some basic API.\r\n\r\n## Main definitions / results:\r\n\r\n* `LinearMap.index`: the index of a linear map, with sign convention `index = dim ker - dim coker`.\r\n* `LinearMap.index_comp`: the index is additive under composition.\r\n\r\n-/\r\n\r\nnoncomputable section\r\n\r\nnamespace LinearMap\r\n\r\nopen Function Module\r\n\r\nvariable {M N : Type*} [AddCommGroup M] [AddCommGroup N]\r\n\r\nsection Ring\r\n\r\nvariable {R : Type*} [Ring R] [Module R M] [Module R N] (f : M \u2192\u2097[R] N)\r\n\r\n/-- The index of a linear map with sign convention `index = dim ker - dim coker`.\r\n\r\nIn the case that either the kernel or cokernel has infinite rank, the value is junk. -/\r\npublic def index : \u2124 := finrank R f.ker - finrank R (N \u29f8 f.range)\r\n\r\nvariable {f}\r\n\r\npublic lemma index_eq_finrank_sub :\r\n    f.index = finrank R f.ker - finrank R (N \u29f8 f.range) := by\r\n  rfl\r\n\r\n@[nontriviality] public lemma index_of_subsingleton [Subsingleton R] :\r\n    f.index = 0 := by\r\n  simp [index_eq_finrank_sub]\r\n\r\n@[simp] public lemma index_zero :\r\n    (0 : M \u2192\u2097[R] N).index = finrank R M - finrank R N := by\r\n  rw [index_eq_finrank_sub, ker_zero, range_zero]\r\n  simpa using (Submodule.quotEquivOfEqBot _ rfl).finrank_eq\r\n\r\npublic lemma index_of_injective [Nontrivial R] (hf : Injective f) :\r\n    f.index = - finrank R (N \u29f8 f.range) := by\r\n  simpa [index_eq_finrank_sub] using ker_eq_bot.2 hf \u25b8 finrank_bot _ _\r\n\r\nvariable [StrongRankCondition R]\r\n\r\npublic lemma index_of_surjective (hf : Surjective f) :\r\n    f.index = finrank R f.ker := by\r\n  rw [index_eq_finrank_sub, range_eq_top.mpr hf]\r\n  simp [finrank_eq_zero_of_subsingleton]\r\n\r\nset_option backward.isDefEq.respectTransparency.types false in\r\n@[simp] public lemma index_id :\r\n    (id : M \u2192\u2097[R] M).index = 0 := by\r\n  nontriviality R\r\n  rw [index_eq_finrank_sub, range_id]\r\n  simp [finrank_eq_zero_of_subsingleton]\r\n\r\n@[simp] public lemma _root_.LinearEquiv.index_eq_zero {e : M \u2243\u2097[R] N} :\r\n    e.toLinearMap.index = 0 := by\r\n  nontriviality R\r\n  have := index_of_injective e.injective\r\n  have := index_of_surjective e.surjective\r\n  lia\r\n\r\nend Ring\r\n\r\nsection DivisionRing\r\n\r\nvariable {k : Type*} [DivisionRing k] [Module k M] [Module k N] {f : M \u2192\u2097[k] N}\r\n\r\n@[simp] public lemma index_neg :\r\n    (-f).index = f.index := by\r\n  rw [index_eq_finrank_sub, index_eq_finrank_sub, ker_neg, range_neg]\r\n\r\npublic lemma index_eq_of_finiteDimensional [FiniteDimensional k M] [FiniteDimensional k N] :\r\n    f.index = finrank k M - finrank k N := by\r\n  -- `0 \u2192 f.ker \u2192 M \u2192 N \u2192 f.coker \u2192 0`\r\n  rw [index_eq_finrank_sub]\r\n  have h\u2081 := f.range.finrank_quotient_add_finrank\r\n  have h\u2082 := f.quotKerEquivRange.finrank_eq\r\n  have h\u2083 := f.ker.finrank_quotient_add_finrank\r\n  lia\r\n\r\nset_option backward.isDefEq.respectTransparency.types false in\r\nopen Submodule in\r\n@[simp] public lemma index_comp {P : Type*} [AddCommGroup P] [Module k P] (g : N \u2192\u2097[k] P)\r\n    [FiniteDimensional k f.ker] [FiniteDimensional k g.ker]\r\n    [FiniteDimensional k (N \u29f8 f.range)] [FiniteDimensional k (P \u29f8 g.range)] :\r\n    (g \u2218\u2097 f).index = g.index + f.index := by\r\n  -- `0 \u2192 f.ker \u2192 (g \u2218\u2097 f).ker \u2192 g.ker \u2192 f.coker \u2192 (g \u2218\u2097 f).coker \u2192 g.coker \u2192 0`\r\n  have aux : f.range \u2264 comap g (g \u2218\u2097 f).range := by rw [\u2190 map_le_iff_le_comap, range_comp]\r\n  let f\u2080 : f.ker \u2192\u2097[k] (g \u2218\u2097 f).ker := inclusion <| ker_le_ker_comp f g\r\n  let f\u2081 : (g \u2218\u2097 f).ker \u2192\u2097[k] g.ker := f.restrict <| by simp\r\n  let f\u2082 : g.ker \u2192\u2097[k] N \u29f8 f.range := f.range.mkQ \u2218\u2097 g.ker.subtype\r\n  let f\u2083 : (N \u29f8 f.range) \u2192\u2097[k] P \u29f8 (g \u2218\u2097 f).range := f.range.mapQ (g \u2218\u2097 f).range g aux\r\n  let f\u2084 : (P \u29f8 (g \u2218\u2097 f).range) \u2192\u2097[k] P \u29f8 g.ran",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/.lake/packages/mathlib/Mathlib/Algebra/Module/LinearMap/Index.lean",
+      "source_line": 1,
+      "compile_status": "ARTIFACT_PRESENT"
+    },
+    {
+      "name": "quotKerEquivRange",
+      "statement": "noncomputable def quotKerEquivRange : (M \u29f8 LinearMap.ker f) \u2243\u2097[R] LinearMap.range f",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/.lake/packages/mathlib/Mathlib/LinearAlgebra/Isomorphisms.lean",
+      "source_line": 39,
+      "compile_status": "ARTIFACT_PRESENT"
+    },
+    {
+      "name": "quotKerEquivRange_apply_mk",
+      "statement": "theorem quotKerEquivRange_apply_mk (x : M) :\r\n    (f.quotKerEquivRange (Submodule.Quotient.mk x) : M\u2082) = f x",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/.lake/packages/mathlib/Mathlib/LinearAlgebra/Isomorphisms.lean",
+      "source_line": 52,
+      "compile_status": "ARTIFACT_PRESENT"
+    },
+    {
+      "name": "quotKerEquivRange_symm_apply_image",
+      "statement": "theorem quotKerEquivRange_symm_apply_image (x : M) (h : f x \u2208 LinearMap.range f) :\r\n    f.quotKerEquivRange.symm \u27e8f x, h\u27e9 = (LinearMap.ker f).mkQ x",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/.lake/packages/mathlib/Mathlib/LinearAlgebra/Isomorphisms.lean",
+      "source_line": 62,
+      "compile_status": "ARTIFACT_PRESENT"
+    },
+    {
+      "name": "isStrictMap_iff_isHomeomorph_quotKerEquivRange",
+      "statement": "protected lemma isStrictMap_iff_isHomeomorph_quotKerEquivRange :\r\n    IsStrictMap f\u2097 \u2194 IsHomeomorph f\u2097.quotKerEquivRange",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/.lake/packages/mathlib/Mathlib/Topology/Maps/Strict/Module.lean",
+      "source_line": 41,
+      "compile_status": "ARTIFACT_PRESENT"
+    },
+    {
+      "name": "ContinuousLinearEquiv.quotKerEquivRange",
+      "statement": "noncomputable def _root_.ContinuousLinearEquiv.quotKerEquivRange\r\n    (hf : IsStrictMap f\u2097) : (M \u29f8 f\u2097.ker) \u2243L[R] f\u2097.range",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/.lake/packages/mathlib/Mathlib/Topology/Maps/Strict/Module.lean",
+      "source_line": 53,
+      "compile_status": "ARTIFACT_PRESENT"
+    }
+  ],
+  "\"map_sum\" \"LinearMap\"": [
+    {
+      "name": "leaneval.Qiuzhen-CFSG_CFSG.BenderSuzuki.PFAppendixIII.FrobeniusBilinear",
+      "statement": "module\r\n\r\npublic import BenderSuzuki.PFAppendixIII.Basic\r\nimport Mathlib.Algebra.Module.ZMod\r\nimport Mathlib.FieldTheory.Finite.GaloisField\r\nimport Mathlib.LinearAlgebra.FreeModule.Finite.Matrix\r\nimport Mathlib.LinearAlgebra.LinearIndependent.Lemmas\r\n\r\n/-!\r\n# Frobenius coordinates for binary bilinear maps\r\n-/\r\n\r\nnamespace BenderSuzuki\r\nnamespace PFAppendixIII\r\n\r\nset_option maxHeartbeats 800000 in\r\n/-- Every binary bilinear map on a binary Galois field has a unique expansion\r\nin products of Frobenius conjugates. -/\r\npublic theorem frobeniusBilinear_expansion\r\n    (n : \u2115) (hn : 0 < n)\r\n    (B : BinaryGaloisField n \u2192\u2097[ZMod 2]\r\n      BinaryGaloisField n \u2192\u2097[ZMod 2] BinaryGaloisField n) :\r\n    \u2203 coeff : Fin n \u2192 Fin n \u2192 BinaryGaloisField n,\r\n      \u2200 a b : BinaryGaloisField n,\r\n        B a b = \u2211 i : Fin n, \u2211 j : Fin n,\r\n          coeff i j * a ^ (2 ^ (i : \u2115)) * b ^ (2 ^ (j : \u2115)) := by\r\n  classical\r\n  let K := BinaryGaloisField n\r\n  let sigma : K \u2243\u2090[ZMod 2] K :=\r\n    FiniteField.frobeniusAlgEquivOfAlgebraic (ZMod 2) K\r\n  let frob (i : Fin n) : K \u2192\u2097[ZMod 2] K := (sigma ^ (i : \u2115)).toLinearMap\r\n  have hsigma_order : orderOf sigma = n := by\r\n    rw [FiniteField.orderOf_frobeniusAlgEquivOfAlgebraic,\r\n      GaloisField.finrank 2 hn.ne']\r\n  let fhom (i : Fin n) : K \u2192* K := (sigma ^ (i : \u2115)).toMonoidHom\r\n  have hfhom : Function.Injective fhom := by\r\n    intro i j hij\r\n    have hp : sigma ^ (i : \u2115) = sigma ^ (j : \u2115) := by\r\n      apply AlgEquiv.ext\r\n      intro x\r\n      exact DFunLike.congr_fun hij x\r\n    have hmod := pow_eq_pow_iff_modEq.mp hp\r\n    rw [hsigma_order] at hmod\r\n    exact Fin.ext (hmod.eq_of_lt_of_lt i.isLt j.isLt)\r\n  have hfun : LinearIndependent K (fun i : Fin n => (fhom i : K \u2192 K)) :=\r\n    (linearIndependent_monoidHom K K).comp fhom hfhom\r\n  have hfrob : LinearIndependent K frob := by\r\n    rw [Fintype.linearIndependent_iff]\r\n    intro g hg i\r\n    apply (Fintype.linearIndependent_iff.mp hfun g ?_ i)\r\n    funext x\r\n    have hx := LinearMap.congr_fun hg x\r\n    simpa [frob, fhom] using hx\r\n  have hfinrank_linear : Module.finrank K (K \u2192\u2097[ZMod 2] K) = n := by\r\n    rw [Module.finrank_linearMap, GaloisField.finrank 2 hn.ne']\r\n    simp\r\n  letI : Nonempty (Fin n) := \u27e8\u27e80, hn\u27e9\u27e9\r\n  let basis : Module.Basis (Fin n) K (K \u2192\u2097[ZMod 2] K) :=\r\n    basisOfLinearIndependentOfCardEqFinrank hfrob (by\r\n      simpa using hfinrank_linear.symm)\r\n  have hbasis (i : Fin n) : basis i = frob i := by\r\n    simp [basis]\r\n  have hfrob_apply (i : Fin n) (x : K) :\r\n      frob i x = x ^ (2 ^ (i : \u2115)) := by\r\n    change (sigma ^ (i : \u2115)) x = _\r\n    rw [AlgEquiv.coe_pow,\r\n      FiniteField.coe_frobeniusAlgEquivOfAlgebraic_iterate]\r\n    simp [ZMod.card]\r\n  let d (j : Fin n) : K \u2192\u2097[ZMod 2] K :=\r\n    ({ toFun := fun a => basis.repr (B a) j\r\n       map_zero' := by simp\r\n       map_add' := by\r\n         intro a b\r\n         simp } : K \u2192+ K).toZModLinearMap 2\r\n  have hd_apply (j : Fin n) (x : K) :\r\n      d j x = basis.repr (B x) j := rfl\r\n  let coeff : Fin n \u2192 Fin n \u2192 K := fun i j => basis.repr (d j) i\r\n  refine \u27e8coeff, ?_\u27e9\r\n  intro a b\r\n  have houter := congrArg (fun L : K \u2192\u2097[ZMod 2] K => L b)\r\n    (basis.sum_repr (B a))\r\n  have hinner (j : Fin n) := congrArg (fun L : K \u2192\u2097[ZMod 2] K => L a)\r\n    (basis.sum_repr (d j))\r\n  have houter' : \u2211 j : Fin n,\r\n      basis.repr (B a) j * basis j b = B a b := by\r\n    simpa only [map_sum, LinearMap.sum_apply, map_smul,\r\n      LinearMap.smul_apply, smul_eq_mul] using houter\r\n  have hinner' (j : Fin n) : \u2211 i : Fin n,\r\n      basis.repr (d j) i * basis i a = d j a := by\r\n    simpa only [map_sum, LinearMap.sum_apply, map_smul,\r\n      LinearMap.smul_apply, smul_eq_mul] using hinner j\r\n  calc\r\n    B a b = \u2211 j : Fin n, d j a * b ^ (2 ^ (j : \u2115)) := by\r\n      rw [\u2190 houter']\r\n      apply Finset.sum_congr rfl\r\n      intro j _hj\r\n      rw [hd_apply, hbasis, hfrob_apply]\r\n    _ = \u2211 j : Fin n, (\u2211 i : Fin n,\r\n          coeff i j * a ^ (2 ^ (i : \u2115))) * b ^ (2 ^ (j : \u2115)) := by\r\n      apply Finset.sum_congr rfl\r\n      intro j _hj\r\n      congr 1\r\n      rw [\u2190 h",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/leaneval/Qiuzhen-CFSG_CFSG/BenderSuzuki/PFAppendixIII/FrobeniusBilinear.lean",
+      "source_line": 1,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "LinearMap.sum_comp",
+      "statement": "theorem LinearMap.sum_comp {R M M\u2082 M\u2083 : Type _} [Semiring R] [AddCommMonoid M] [AddCommMonoid M\u2082]\n    [AddCommMonoid M\u2083] [Module R M] [Module R M\u2082] [Module R M\u2083] (f : M \u2192\u2097[R] M\u2083) {\u03b1 : Type _}\n    (s : Finset \u03b1) (g : \u03b1 \u2192 M\u2083 \u2192\u2097[R] M\u2082) : (\u2211 a \u2208 s, g a) \u2218\u2097 f = \u2211 a \u2208 s, g a \u2218\u2097 f",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/Vilin97_lean-pool/LeanPool/Monlib4/LinearAlgebra/End.lean",
+      "source_line": 29,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "LinearMap.IsBimoduleMap.sum_coe",
+      "statement": "theorem LinearMap.IsBimoduleMap.sum_coe {p : Type _} {s : Finset p}\n  (x : p \u2192 (IsBimoduleMaps R H\u2081 H\u2082)) :\n  (\u2211 i \u2208 s, x i : IsBimoduleMaps R H\u2081 H\u2082).1 = \u2211 i \u2208 s, (x i).1",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/Vilin97_lean-pool/LeanPool/Monlib4/LinearAlgebra/MyBimodule.lean",
+      "source_line": 229,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "LinearMap.sum_single_comp_proj",
+      "statement": "theorem LinearMap.sum_single_comp_proj {R : Type _} {\u03b9 : Type _} [Fintype \u03b9] [DecidableEq \u03b9]\n    [Semiring R] {\u03c6 : \u03b9 \u2192 Type _} [\u2200 i : \u03b9, AddCommMonoid (\u03c6 i)] [\u2200 i : \u03b9, Module R (\u03c6 i)] :\n    \u2211 i : \u03b9, LinearMap.single _ _ i \u2218\u2097 LinearMap.proj i = (LinearMap.id : (\u2200 i, \u03c6 i) \u2192\u2097[R] \u2200 i,\n      \u03c6 i)",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/Vilin97_lean-pool/LeanPool/Monlib4/LinearAlgebra/Ips/MatIps.lean",
+      "source_line": 614,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "QuantumSet.PsiInvFun_apply",
+      "statement": "theorem PsiInvFun_apply [hA : QuantumSet A] [hB : QuantumSet B]\n    (t r : \u211d) (x : A) (y : B\u1d50\u1d52\u1d56) :\n    PsiInvFun t r (x \u2297\u209c[\u2102] y) =\n      |ha.modAut (-t) x\u27e9\u27e8hb.modAut (-r) (star (MulOpposite.unop y))| := by\n  simp_rw [PsiInvFun, LinearMap.coe_mk, AddHom.coe_mk,\n    Module.Basis.tensorProduct_repr_tmul_apply,\n    smul_eq_mul, mul_comm,\n    \u2190 rankOne_lm_smul_smul, \u2190 rankOne_lm_sum_sum, \u2190\n    _root_.map_smul, \u2190 star_smul, Basis.mulOpposite_repr_apply, \u2190 map_sum, \u2190 star_sum,\n    OrthonormalBasis.coe_toBasis_repr_apply, OrthonormalBasis.sum_repr]",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/Vilin97_lean-pool/LeanPool/Monlib4/LinearAlgebra/QuantumSet/Basic.lean",
+      "source_line": 400,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "P2MW.S_LanglandsTunnell_CubicInduction_hasWhittakerMultOne_of_ne_one_of_forall_mem_gl3CyclicSubspace.LanglandsTunnell.LanglandsTunnell.CubicInduction.linearMap_sum_algebraMap_smul_eq_integral",
+      "statement": "private theorem linearMap_sum_algebraMap_smul_eq_integral (\u03bc : Measure X) (F : X \u2192 V) (hF : (Set.range F).Finite)\n    (hmeas : \u2200 w : V, MeasurableSet (F \u207b\u00b9' {w})) (hfin : \u2200 w : V, w \u2260 0 \u2192 \u03bc (F \u207b\u00b9' {w}) \u2260 \u22a4) (\u2113 : V \u2192\u2097[\u2102] \u2102) :\n    \u2113 (\u2211 w \u2208 hF.toFinset, algebraMap \u211d \u2102 (\u03bc (F \u207b\u00b9' {w})).toReal \u2022 w) = \u222b y, \u2113 (F y) \u2202\u03bc",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/fermats-last-theorem/P2M/Sol/S_LanglandsTunnell_CubicInduction_hasWhittakerMultOne_of_ne_one_of_forall_mem_gl3CyclicSubspace.lean",
+      "source_line": 2022,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "P2MW.S_LinearMap_sum_neg_one_pow_mul_finrank_eq_zero_of_exact.P2mLES.finrank_eq_range_add_ker",
+      "statement": "theorem finrank_eq_range_add_ker {M N : Type v} [AddCommGroup M] [Module k M] [AddCommGroup N] [Module k N]\n    [Module.Finite k M] (f : M \u2192\u2097[k] N) :\n    finrank k M = finrank k (LinearMap.range f) + finrank k (LinearMap.ker f)",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/fermats-last-theorem/P2M/Sol/S_LinearMap_sum_neg_one_pow_mul_finrank_eq_zero_of_exact.lean",
+      "source_line": 15,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "P2MW.S_LinearMap_sum_neg_one_pow_mul_finrank_eq_zero_of_exact.P2mLES.main",
+      "statement": "theorem main\n    (A B C : \u2115 \u2192 Type v)\n    [\u2200 i, AddCommGroup (A i)] [\u2200 i, Module k (A i)] [\u2200 i, Module.Finite k (A i)]\n    [\u2200 i, AddCommGroup (B i)] [\u2200 i, Module k (B i)] [\u2200 i, Module.Finite k (B i)]\n    [\u2200 i, AddCommGroup (C i)] [\u2200 i, Module k (C i)] [\u2200 i, Module.Finite k (C i)]\n    (f : \u2200 i, A i \u2192\u2097[k] B i) (g : \u2200 i, B i \u2192\u2097[k] C i) (\u03b4 : \u2200 i, C i \u2192\u2097[k] A (i + 1))\n    (hf0 : Function.Injective (f 0))\n    (hfg : \u2200 i, Function.Exact (f i) (g i))\n    (hg\u03b4 : \u2200 i, Function.Exact (g i) (\u03b4 i))\n    (h\u03b4f : \u2200 i, Function.Exact (\u03b4 i) (f (i + 1)))\n    (N : \u2115) (hN : Subsingleton (A N)) :\n    \u2211 i \u2208 Finset.range N, (-1 : \u2124) ^ i *\n        ((finrank k (A i) : \u2124) - finrank k (B i) + finrank k (C i)) = 0",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/fermats-last-theorem/P2M/Sol/S_LinearMap_sum_neg_one_pow_mul_finrank_eq_zero_of_exact.lean",
+      "source_line": 20,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "P2MW.S_LinearMap_sum_neg_one_pow_mul_finrank_eq_zero_of_exact.solution",
+      "statement": "theorem solution\n    {k : Type u} [DivisionRing k] (A B C : \u2115 \u2192 Type v)\n    [\u2200 i, AddCommGroup (A i)] [\u2200 i, Module k (A i)] [\u2200 i, Module.Finite k (A i)]\n    [\u2200 i, AddCommGroup (B i)] [\u2200 i, Module k (B i)] [\u2200 i, Module.Finite k (B i)]\n    [\u2200 i, AddCommGroup (C i)] [\u2200 i, Module k (C i)] [\u2200 i, Module.Finite k (C i)]\n    (f : \u2200 i, A i \u2192\u2097[k] B i) (g : \u2200 i, B i \u2192\u2097[k] C i) (\u03b4 : \u2200 i, C i \u2192\u2097[k] A (i + 1))\n    (hf0 : Function.Injective (f 0))\n    (hfg : \u2200 i, Function.Exact (f i) (g i))\n    (hg\u03b4 : \u2200 i, Function.Exact (g i) (\u03b4 i))\n    (h\u03b4f : \u2200 i, Function.Exact (\u03b4 i) (f (i + 1)))\n    (N : \u2115) (hN : Subsingleton (A N)) :\n    \u2211 i \u2208 Finset.range N, (-1 : \u2124) ^ i *\n        ((Module.finrank k (A i) : \u2124) - Module.finrank k (B i) + Module.finrank k (C i)) = 0",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/fermats-last-theorem/P2M/Sol/S_LinearMap_sum_neg_one_pow_mul_finrank_eq_zero_of_exact.lean",
+      "source_line": 81,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "P2MW.S_LinearMap_sum_roots_charpoly_map_pow_eq_trace_pow.P2mC2H1.trace_pow_restrict_maxGenEigenspace",
+      "statement": "theorem trace_pow_restrict_maxGenEigenspace (S : Module.End E W) (\u03bc : E) (n : \u2115) :\n    LinearMap.trace E _ ((S ^ n).restrict\n      (S.mapsTo_maxGenEigenspace_of_comm (Commute.refl S |>.pow_right n) \u03bc)) =\n      \u03bc ^ n * (finrank E (S.maxGenEigenspace \u03bc) : E)",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/fermats-last-theorem/P2M/Sol/S_LinearMap_sum_roots_charpoly_map_pow_eq_trace_pow.lean",
+      "source_line": 15,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "P2MW.S_LinearMap_sum_roots_charpoly_map_pow_eq_trace_pow.P2mC2H1.sum_roots_pow_eq_trace_pow",
+      "statement": "theorem sum_roots_pow_eq_trace_pow [IsAlgClosed E] (S : Module.End E W) (n : \u2115) :\n    ((S.charpoly).roots.map (fun z => z ^ n)).sum = LinearMap.trace E W (S ^ n)",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/fermats-last-theorem/P2M/Sol/S_LinearMap_sum_roots_charpoly_map_pow_eq_trace_pow.lean",
+      "source_line": 37,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "P2MW.S_LinearMap_sum_roots_charpoly_map_pow_eq_trace_pow.P2mC2H1.sum_roots_charpoly_map_pow_eq_trace_pow",
+      "statement": "theorem sum_roots_charpoly_map_pow_eq_trace_pow {L : Type*} [Field L] {V : Type*} [AddCommGroup V]\n    [Module L V] [FiniteDimensional L V] (E : Type*) [Field E] [Algebra L E] [IsAlgClosed E]\n    (T : V \u2192\u2097[L] V) (n : \u2115) :\n    (((T.charpoly).map (algebraMap L E)).roots.map (fun z => z ^ n)).sum =\n      algebraMap L E (LinearMap.trace L V (T ^ n))",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/fermats-last-theorem/P2M/Sol/S_LinearMap_sum_roots_charpoly_map_pow_eq_trace_pow.lean",
+      "source_line": 64,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    }
+  ],
+  "\"syndrome\"": [
+    {
+      "name": "BinarySyndromeDecodingInstance",
+      "statement": "structure BinarySyndromeDecodingInstance where\r\n  checkCount : \u2115\r\n  blockLength : \u2115\r\n  parityCheck : Fin checkCount \u2192 Fin blockLength \u2192 ZMod 2\r\n  syndrome : Fin checkCount \u2192 ZMod 2\r\n  radius : \u2115",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/TenProofs/GapCVP.lean",
+      "source_line": 89253,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "encodeBinarySyndromeDecodingInstance",
+      "statement": "def encodeBinarySyndromeDecodingInstance\r\n    (record : BinarySyndromeDecodingInstance) : List Bool",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/TenProofs/GapCVP.lean",
+      "source_line": 89335,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "decodeBinarySyndromeDecodingInstance",
+      "statement": "def decodeBinarySyndromeDecodingInstance\r\n    (bits : List Bool) : Option BinarySyndromeDecodingInstance",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/TenProofs/GapCVP.lean",
+      "source_line": 89371,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "decodeBinarySyndromeDecodingInstance_encode",
+      "statement": "@[simp] theorem decodeBinarySyndromeDecodingInstance_encode\r\n    (record : BinarySyndromeDecodingInstance) :\r\n    decodeBinarySyndromeDecodingInstance\r\n      (encodeBinarySyndromeDecodingInstance record) = some record",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/TenProofs/GapCVP.lean",
+      "source_line": 89414,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "binarySyndromeProduct",
+      "statement": "def binarySyndromeProduct\r\n    (record : BinarySyndromeDecodingInstance)\r\n    (word : Fin record.blockLength \u2192 ZMod 2) :\r\n    Fin record.checkCount \u2192 ZMod 2",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/TenProofs/GapCVP.lean",
+      "source_line": 89442,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "binarySyndromeTarget",
+      "statement": "def binarySyndromeTarget (record : BinarySyndromeDecodingInstance) :\r\n    Fin record.checkCount \u2192 ZMod 2",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/TenProofs/GapCVP.lean",
+      "source_line": 89449,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "encodeBinarySyndromeDecodingInstance_injective",
+      "statement": "theorem encodeBinarySyndromeDecodingInstance_injective :\r\n    Function.Injective encodeBinarySyndromeDecodingInstance",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/TenProofs/GapCVP.lean",
+      "source_line": 126180,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "binarySyndromeDecodingPromise",
+      "statement": "noncomputable def binarySyndromeDecodingPromise : GapCVP.PromiseProblem where\r\n  yes bits",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/TenProofs/GapCVP.lean",
+      "source_line": 126231,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "canonicalBinarySyndromeNo",
+      "statement": "def canonicalBinarySyndromeNo : BinarySyndromeDecodingInstance where\r\n  checkCount",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/TenProofs/GapCVP.lean",
+      "source_line": 126300,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "canonicalBinarySyndromeNo_mem",
+      "statement": "theorem canonicalBinarySyndromeNo_mem :\r\n    binarySyndromeDecodingPromise.no\r\n      (encodeBinarySyndromeDecodingInstance\r\n        canonicalBinarySyndromeNo)",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/TenProofs/GapCVP.lean",
+      "source_line": 126338,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "paperVariableAritySyndromeInstance",
+      "statement": "def paperVariableAritySyndromeInstance\r\n    (encodingLength : \u2115) (formula : ThreeCNF) :\r\n    BinarySyndromeDecodingInstance",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/TenProofs/GapCVP.lean",
+      "source_line": 126368,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "paperVariableAritySyndromeInstance_completeness",
+      "statement": "theorem paperVariableAritySyndromeInstance_completeness\r\n    (encodingLength : \u2115) (formula : ThreeCNF)\r\n    (satisfiable : \u2203 assignment : \u2115 \u2192 Bool,\r\n      \u2200 clause \u2208 formula, clauseSatisfied assignment clause) :\r\n    binarySyndromeDecodingPromise.yes\r\n      (encodeBinarySyndromeDecodingInstance\r\n        (paperVariableAritySyndromeInstance encodingLength formula))",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "lean/mathproof/External/TenProofs/GapCVP.lean",
+      "source_line": 126379,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    }
+  ],
+  "\"retiming\"": [
+    {
+      "name": "Wikipedia.HopfProblem.OrbitPair.TargetClock.HasNativeRetiming",
+      "statement": "def HasNativeRetiming (F : \u211d \u00d7 M \u2192 N) (\u03b2 : N \u2192 \u211d) (a b : \u211d) : Prop",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/plby_lean-proofs/src/latest/Wikipedia/HopfProblem/OrbitPairNativeTargetClock.lean",
+      "source_line": 45,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "Wikipedia.HopfProblem.OrbitPair.TimeRetiming.clockFamily",
+      "statement": "def clockFamily (F : \u211d \u00d7 M \u2192 N) (\u03c4 : \u211d \u00d7 M \u2192 \u211d) (p : \u211d \u00d7 M) : N",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/plby_lean-proofs/src/latest/Wikipedia/HopfProblem/OrbitPairRetimingCollisionCriterion.lean",
+      "source_line": 21,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "Wikipedia.HopfProblem.OrbitPair.TimeRetiming.timePairMap",
+      "statement": "def timePairMap (\u03c1 : \u211d \u2192 \u211d) (p : \u211d \u00d7 (M \u00d7 M)) : \u211d \u00d7 (M \u00d7 M)",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/plby_lean-proofs/src/latest/Wikipedia/HopfProblem/OrbitPairRetimingCollisionCriterion.lean",
+      "source_line": 23,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "Wikipedia.HopfProblem.OrbitPair.TimeRetiming.HasProjectedSeparation",
+      "statement": "def HasProjectedSeparation (F : \u211d \u00d7 M \u2192 N) (J : Set \u211d) (U P : Set M) : Prop",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/plby_lean-proofs/src/latest/Wikipedia/HopfProblem/OrbitPairRetimingCollisionCriterion.lean",
+      "source_line": 25,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "Wikipedia.HopfProblem.OrbitPair.TimeRetiming.collision_in_plateau",
+      "statement": "theorem collision_in_plateau {F : \u211d \u00d7 M \u2192 N} {\u03c4 : \u211d \u00d7 M \u2192 \u211d}\n    {J : Set \u211d} {U P : Set M} (hPU : P \u2286 U)\n    (hsep : HasProjectedSeparation F J U P)\n    (hrange : \u2200 t \u2208 J, \u2200 x, \u03c4 (t, x) \u2208 J)\n    {t : \u211d} (ht : t \u2208 J) {x y : M} (hx : x \u2208 U) (hne : x \u2260 y)\n    (heq : clockFamily F \u03c4 (t, x) = clockFamily F \u03c4 (t, y)) : x \u2208 P \u2227 y \u2208 P",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/plby_lean-proofs/src/latest/Wikipedia/HopfProblem/OrbitPairRetimingCollisionCriterion.lean",
+      "source_line": 28,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "Wikipedia.HopfProblem.OrbitPair.TimeRetiming.clock_eq_original",
+      "statement": "theorem clock_eq_original {F : \u211d \u00d7 M \u2192 N} {\u03c4 : \u211d \u00d7 M \u2192 \u211d} {p : \u211d \u00d7 M}\n    (h\u03c4 : \u03c4 p = p.1) : clockFamily F \u03c4 p = F p",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/plby_lean-proofs/src/latest/Wikipedia/HopfProblem/OrbitPairRetimingCollisionCriterion.lean",
+      "source_line": 42,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "Wikipedia.HopfProblem.OrbitPair.TimeRetiming.clock_doublePoints_iff",
+      "statement": "theorem clock_doublePoints_iff {F : \u211d \u00d7 M \u2192 N} {\u03c4 : \u211d \u00d7 M \u2192 \u211d} {\u03c1 : \u211d \u2192 \u211d}\n    {J : Set \u211d} {U P : Set M} (hPU : P \u2286 U)\n    (hsep : HasProjectedSeparation F J U P)\n    (hrange : \u2200 t \u2208 J, \u2200 x, \u03c4 (t, x) \u2208 J)\n    (hfixed : \u2200 t x, t \u2209 J \u2228 x \u2209 U \u2192 \u03c4 (t, x) = t)\n    (hplateau : \u2200 t x, x \u2208 P \u2192 \u03c4 (t, x) = \u03c1 t) (p : \u211d \u00d7 (M \u00d7 M)) :\n    p \u2208 FamilyDoublePoints.doublePoints (clockFamily F \u03c4) \u2194\n      ((p.1 \u2209 J \u2228 (p.2.1 \u2209 U \u2227 p.2.2 \u2209 U)) \u2227 p \u2208 FamilyDoublePoints.doublePoints F) \u2228\n      (p.2.1 \u2208 P \u2227 p.2.2 \u2208 P \u2227 timePairMap \u03c1 p \u2208 FamilyDoublePoints.doublePoints F)",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/plby_lean-proofs/src/latest/Wikipedia/HopfProblem/OrbitPairRetimingCollisionCriterion.lean",
+      "source_line": 46,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "Wikipedia.HopfProblem.OrbitPair.TimeRetiming.timePairMap_injective",
+      "statement": "theorem timePairMap_injective {\u03c1 : \u211d \u2192 \u211d} (h\u03c1 : Injective \u03c1) :\n    Injective (timePairMap (M := M) \u03c1)",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/plby_lean-proofs/src/latest/Wikipedia/HopfProblem/OrbitPairRetimingCollisionCriterion.lean",
+      "source_line": 86,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "Wikipedia.HopfProblem.OrbitPair.TimeRetiming.finite_clock_doublePoints",
+      "statement": "theorem finite_clock_doublePoints {F : \u211d \u00d7 M \u2192 N} {\u03c4 : \u211d \u00d7 M \u2192 \u211d} {\u03c1 : \u211d \u2192 \u211d}\n    {J : Set \u211d} {U P : Set M} (hPU : P \u2286 U)\n    (hsep : HasProjectedSeparation F J U P)\n    (hrange : \u2200 t \u2208 J, \u2200 x, \u03c4 (t, x) \u2208 J)\n    (hfixed : \u2200 t x, t \u2209 J \u2228 x \u2209 U \u2192 \u03c4 (t, x) = t)\n    (hplateau : \u2200 t x, x \u2208 P \u2192 \u03c4 (t, x) = \u03c1 t)\n    (h\u03c1 : Injective \u03c1) (hfinite : (FamilyDoublePoints.doublePoints F).Finite) :\n    (FamilyDoublePoints.doublePoints (clockFamily F \u03c4)).Finite",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/plby_lean-proofs/src/latest/Wikipedia/HopfProblem/OrbitPairRetimingCollisionCriterion.lean",
+      "source_line": 93,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "Wikipedia.HopfProblem.OrbitPair.TimeRetiming.conditionalTimeEquiv",
+      "statement": "def conditionalTimeEquiv (\u03c1 : \u211d \u2243 \u211d) (S : Set A) : (\u211d \u00d7 A) \u2243 (\u211d \u00d7 A)",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/plby_lean-proofs/src/latest/Wikipedia/HopfProblem/OrbitPairRetimingCollisionEquiv.lean",
+      "source_line": 21,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "Wikipedia.HopfProblem.OrbitPair.TimeRetiming.conditionalTimeEquiv_of_mem",
+      "statement": "theorem conditionalTimeEquiv_of_mem (\u03c1 : \u211d \u2243 \u211d) (S : Set A) {p : \u211d \u00d7 A} (hp : p.2 \u2208 S) :\n    conditionalTimeEquiv \u03c1 S p = (\u03c1 p.1, p.2)",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/plby_lean-proofs/src/latest/Wikipedia/HopfProblem/OrbitPairRetimingCollisionEquiv.lean",
+      "source_line": 29,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    },
+    {
+      "name": "Wikipedia.HopfProblem.OrbitPair.TimeRetiming.conditionalTimeEquiv_of_notMem",
+      "statement": "theorem conditionalTimeEquiv_of_notMem (\u03c1 : \u211d \u2243 \u211d) (S : Set A) {p : \u211d \u00d7 A} (hp : p.2 \u2209 S) :\n    conditionalTimeEquiv \u03c1 S p = p",
+      "context": "Source excerpt; names and types are not compiler-resolved",
+      "source_file": "external/ai2026/plby_lean-proofs/src/latest/Wikipedia/HopfProblem/OrbitPairRetimingCollisionEquiv.lean",
+      "source_line": 34,
+      "compile_status": "NO_LOCAL_ARTIFACT"
+    }
+  ]
+}
