@@ -1,0 +1,20 @@
+{
+  "status": "WITHDRAWN_MATCHED_ASSUMPTION_ACCEPTANCE",
+  "timestamp_utc": "2026-10-11T20:14:10.007597+00:00",
+  "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/491",
+  "affected_head": "3520c0dbdd37b97165a6c81ff02e120da7ae5545",
+  "finding": "The GL-conditioned 2m^3/q bad-class bound was applied while retaining O-cover row costs. Retained GL note does not establish that probability law on O. Atm78 compatible GL coarse row28416 exceeds20161, whereas original O row19434 fits.",
+  "preserved_finite_evidence": "Original rational84 full parent replay and actual old sharper arithmetic runs remain valid finite computations, but do not establish the probability hypothesis or a matched-source theorem gain.",
+  "required_correction": "Preserve original orthogonal-cover badfraction1e-16 and its inherited conditional realization hypotheses. Change only complete Gaussian fallback194688 to146478. Independently review and actually assemble both source-specific revised candidates before acceptance.",
+  "public_description_corrected": true,
+  "all_size_proved": false,
+  "current_record_claim": false,
+  "new_candidates_stored_only": {
+    "response28_kappa": "648305991611853/500000000000000000",
+    "response28_gain": "728599/1000000000000000000",
+    "replica84_kappa": "1295629943312713/1000000000000000000",
+    "replica84_gain": "725591/1000000000000000000"
+  },
+  "finding_receipts": "R390 MATCHED-MATH normal/optimized; distinct R394 review pending",
+  "historical_immutable_evidence_preserved": true
+}

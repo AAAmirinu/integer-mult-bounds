@@ -1,0 +1,51 @@
+{
+  "status": "PASS_ACTUAL_REVISION002_TERMINAL_BINDINGS",
+  "containers": {
+    "84/normal": {
+      "container": "integer-mult-r406-docs84-normal",
+      "exit_code": 0,
+      "oom": false,
+      "manifest_sha256": "3841b7a454e3e1fc0ca8b0bb4aaf6ff6ad777497e10d376051b098e336a6fdc5",
+      "receipt_sha256": "ed3a50af7e5a16b0db6e051eb3f22af7d77e3a0beea485864d15e68f4f98bed7",
+      "result_sha256": "3ca515ae5bd91604703e98ef49b8077160ad520ef7a871d9c32d1da1f1346b32",
+      "actual_seconds": 43.11542324599577,
+      "launcher_sha256": "4c0f15277bfd05965e969b5f305540ea86177187f2abe0fc9b4cd1ad60bb44ba",
+      "outer_sha256": "c784fe3b98da96495f653e91a53b3f11ee6171f0f5a8c03be031aed133c106cb"
+    },
+    "84/optimized": {
+      "container": "integer-mult-r406-docs84-optimized",
+      "exit_code": 0,
+      "oom": false,
+      "manifest_sha256": "3841b7a454e3e1fc0ca8b0bb4aaf6ff6ad777497e10d376051b098e336a6fdc5",
+      "receipt_sha256": "c39dd5157577a0501ff230f1a501ca0c764c2c3edfb92a29faa102f98fd0e402",
+      "result_sha256": "3ca515ae5bd91604703e98ef49b8077160ad520ef7a871d9c32d1da1f1346b32",
+      "actual_seconds": 36.65244946299936,
+      "launcher_sha256": "3ccb045aa06abf2086173f5a01d8117f79c477d19c8e6eedcf1bfdaac726d19c",
+      "outer_sha256": "1618c7e3e60efa4db0d473dd05cefa9c3a7b992b98e758f1c556979f4e8cc5b6"
+    },
+    "28/normal": {
+      "container": "integer-mult-r406-docs28-normal",
+      "exit_code": 0,
+      "oom": false,
+      "manifest_sha256": "eb70309056cc274287411b1a5abef73185279816d60e631061a5ff89dd05d5cb",
+      "receipt_sha256": "2b5308e36b41944d1053f4f532e805b62942a47f7b95e28895d73ef517ec3e90",
+      "result_sha256": "66e43afa9142033b32652617ceaef813b11b230bff3a21d83a27ad6b60b04ae7",
+      "actual_seconds": 15.401591372996336,
+      "launcher_sha256": "e02e5de9b2eff359a96492e248676eb8cb735f477a4a1e8a9ece3ddf9cf2e651",
+      "outer_sha256": "5cb04363ad3105817fb611d702d85a0f8e06475959f7231682a7a7ee65e5d4a5"
+    },
+    "28/optimized": {
+      "container": "integer-mult-r406-docs28-optimized",
+      "exit_code": 0,
+      "oom": false,
+      "manifest_sha256": "eb70309056cc274287411b1a5abef73185279816d60e631061a5ff89dd05d5cb",
+      "receipt_sha256": "df90ce2f12fa2398bb5cf0320fddf1214170b624310b28aa688cb723ba64c479",
+      "result_sha256": "66e43afa9142033b32652617ceaef813b11b230bff3a21d83a27ad6b60b04ae7",
+      "actual_seconds": 13.195376697025495,
+      "launcher_sha256": "00e75ea34309ab7506e8e0622975f8c426a34b06a9732ad8a9048ac98f1809ab",
+      "outer_sha256": "cef19b703835ce4ccf61380509e3e1e9e887cd2b64c212ed4a9c7e9d9b47fa5c"
+    }
+  },
+  "normal_optimized_and_prior001_result_bytes_identical_each": true,
+  "checker_sha256": "1a1f682b28db9d8295fe6fd5a8c8d11e325e5e8046b6ead70cf6240331fe08d4"
+}

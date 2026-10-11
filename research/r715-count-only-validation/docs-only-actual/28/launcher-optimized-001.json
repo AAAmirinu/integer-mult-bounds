@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "2026-10-11T20:37:38.115574+00:00",
+  "status": "TERMINAL_SHARP_ASSEMBLY_PASS",
+  "head": "f43a0e9ad04a7b3683498274854ae2e35d4a8d7c",
+  "command": [
+    "/usr/local/bin/python",
+    "-OO",
+    "-B",
+    "/proposal/verify.py",
+    "/out/optimized-001",
+    "--research-root",
+    "/source/research",
+    "--parent-output",
+    "/parent"
+  ],
+  "python": "3.13.16 (main, Oct  6 2026, 02:04:05) [GCC 12.2.0]",
+  "exit_code": 0,
+  "timeout": false,
+  "actual_seconds": 13.195376697025495,
+  "timeout_seconds": 300,
+  "controller_sha256": "1fe19e09e77ac4ded1c04f330474edda054fd4671f50be44dca843149784427c",
+  "package_manifest_sha256": "eb70309056cc274287411b1a5abef73185279816d60e631061a5ff89dd05d5cb",
+  "parent_receipt_sha256": "c079df31cf02580d34983a8589c77d5a94567b3c6b9ef6210b849eb2a01455ea",
+  "scope": "Actual completed full original response28 replay reused explicitly; fresh sharper bit moment and complete assembly, original physical program/invoices and all-size assumptions retained."
+}

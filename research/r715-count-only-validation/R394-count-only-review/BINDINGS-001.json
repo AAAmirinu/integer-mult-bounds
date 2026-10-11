@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "independent.py": "4326c76012f55412a98f8d05c4c6efcd36a6ce6e442bcf311e9d3efe9f23cf74",
+    "SOURCE-LOCK-001.json": "1e7ae9c370f25fa70c9e27890cd4e345d6821506c2e6b09f73ee29c356e04946",
+    "PROOF-SOURCE-LOCK-001.json": "daffe9789a3ebc7726b49283d3f441ef5758e38c266095dc5ec0786f9b8bb5d3",
+    "normal-001.json": "6c5c4ce25abda676f5307716e37677027f22af5904efbbb595d8917f83e182f5",
+    "optimized-001.json": "e63d8d3fae5d173b6de338d4770d5bb8b8851db049e183adb252d6e7526a830b"
+  },
+  "normal_optimized_exact_profiles_identical": true
+}

@@ -1,10 +1,10 @@
-name: Verify sharp R715 bit fallback on exact head
+name: Verify corrected R715 count-only fallback on exact head
 
 on:
   push:
-    paths: ['research/r715-sharp-fallback/**', '.github/workflows/sharp-r715-fallback.yml']
+    paths: ['research/r715-sharp-fallback/**', 'research/r715-sharp-response28/**', '.github/workflows/sharp-r715-fallback.yml']
   pull_request:
-    paths: ['research/r715-sharp-fallback/**', '.github/workflows/sharp-r715-fallback.yml']
+    paths: ['research/r715-sharp-fallback/**', 'research/r715-sharp-response28/**', '.github/workflows/sharp-r715-fallback.yml']
   workflow_dispatch:
 
 permissions:
@@ -18,6 +18,7 @@ jobs:
       fail-fast: false
       matrix:
         python: ['3.11', '3.14']
+        package: ['r715-sharp-fallback', 'r715-sharp-response28']
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
@@ -26,22 +27,25 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
         with:
           python-version: ${{ matrix.python }}
-      - name: Install exact replay headers and retained supplier dependencies
+      - name: Install replay headers and retained supplier dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y g++ libboost-dev
           python -m pip install -r research/e8-r740-replica32/parent436/requirements.txt
           python -m pip freeze
-      - name: Check receipt corruption, content bindings and process-tree limits
-        run: |
-          python -B research/r715-sharp-fallback/tests/test_protocol.py
-          python -OO -B research/r715-sharp-fallback/tests/test_protocol.py
-          python -B research/r715-sharp-fallback/tests/test_complex_content.py
-          python -OO -B research/r715-sharp-fallback/tests/test_complex_content.py
-          python -B research/r715-sharp-fallback/tests/test_process_bound.py
-      - name: Rebuild both original suppliers and compose the sharper charge
-        run: python -B research/r715-sharp-fallback/verify.py "$RUNNER_TEMP/sharp-r715"
+      - name: Check active receipt corruption, content bindings and process-tree limits
         env:
+          PACKAGE: ${{ matrix.package }}
+        run: |
+          python -B "research/$PACKAGE/tests/test_protocol.py"
+          python -OO -B "research/$PACKAGE/tests/test_protocol.py"
+          python -B "research/$PACKAGE/tests/test_complex_content.py"
+          python -OO -B "research/$PACKAGE/tests/test_complex_content.py"
+          python -B "research/$PACKAGE/tests/test_process_bound.py"
+      - name: Rebuild original suppliers and compose count-only correction
+        run: python -B "research/$PACKAGE/verify.py" "$RUNNER_TEMP/sharp-r715"
+        env:
+          PACKAGE: ${{ matrix.package }}
           PYTHONDONTWRITEBYTECODE: '1'
           PYTHONINTMAXSTRDIGITS: '0'
           OPENBLAS_NUM_THREADS: '1'
@@ -53,11 +57,7 @@ jobs:
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         if: always()
         with:
-          name: sharp-r715-${{ matrix.python }}
+          name: sharp-r715-${{ matrix.package }}-${{ matrix.python }}
           path: |
-            ${{ runner.temp }}/sharp-r715/*.json
-            ${{ runner.temp }}/sharp-r715/*.log
-            ${{ runner.temp }}/sharp-r715/parent/*.json
-            ${{ runner.temp }}/sharp-r715/parent/*.log
-            ${{ runner.temp }}/sharp-r715/parent/provider/*.json
-            ${{ runner.temp }}/sharp-r715/parent/provider/*.log
+            ${{ runner.temp }}/sharp-r715/**/*.json
+            ${{ runner.temp }}/sharp-r715/**/*.log

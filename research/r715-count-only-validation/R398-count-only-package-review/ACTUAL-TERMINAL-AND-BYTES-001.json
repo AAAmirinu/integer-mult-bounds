@@ -1,0 +1,261 @@
+{
+  "status": "PASS_FOUR_ACTUAL_SCIENCE_CONTAINERS_NO_OOM_AND_NORMAL_OPT_BYTES_IDENTICAL",
+  "containers": [
+    {
+      "name": "integer-mult-r397-count84-normal",
+      "image": "sha256:2e569d2b405adbad13e85c19cfb18e727a384b23d09ce684328987011d7f8583",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-11T20:20:11.257896443Z",
+        "FinishedAt": "2026-10-11T20:20:54.296172532Z"
+      },
+      "resources": {
+        "NanoCpus": 1000000000,
+        "Memory": 2147483648,
+        "MemorySwap": 2147483648,
+        "NetworkMode": "none"
+      },
+      "launcher_sha256": "9e98f3157fd777773c43ae8a56b5ab985e24130dbe367e0a96f5351d2ea7a4d3",
+      "result_sha256": "3ca515ae5bd91604703e98ef49b8077160ad520ef7a871d9c32d1da1f1346b32",
+      "actual_seconds": 42.62051223302842,
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R397-count84-actual/data",
+          "Destination": "/out",
+          "RW": true
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R397-count84-actual/runner.py",
+          "Destination": "/runner.py",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R369-pr473-full-replay/deps",
+          "Destination": "/opt/codex-deps/lib/python3.13/site-packages",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R378-pr473-replica84/repo",
+          "Destination": "/source",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R378-pr473-replica84/data/full-001",
+          "Destination": "/parent",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R395-count-only-correction/replica84/revision-001/research/r715-sharp-fallback",
+          "Destination": "/proposal",
+          "RW": false
+        }
+      ]
+    },
+    {
+      "name": "integer-mult-r397-count84-optimized",
+      "image": "sha256:2e569d2b405adbad13e85c19cfb18e727a384b23d09ce684328987011d7f8583",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-11T20:22:39.804765211Z",
+        "FinishedAt": "2026-10-11T20:23:18.131044949Z"
+      },
+      "resources": {
+        "NanoCpus": 1000000000,
+        "Memory": 2147483648,
+        "MemorySwap": 2147483648,
+        "NetworkMode": "none"
+      },
+      "launcher_sha256": "d7d2f77f55e62bdf0984e79bf565dbf287ac77307cb84dc9bc1c9975be0fdd0a",
+      "result_sha256": "3ca515ae5bd91604703e98ef49b8077160ad520ef7a871d9c32d1da1f1346b32",
+      "actual_seconds": 37.80576938399463,
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R397-count84-actual/runner.py",
+          "Destination": "/runner.py",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R369-pr473-full-replay/deps",
+          "Destination": "/opt/codex-deps/lib/python3.13/site-packages",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R378-pr473-replica84/repo",
+          "Destination": "/source",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R378-pr473-replica84/data/full-001",
+          "Destination": "/parent",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R395-count-only-correction/replica84/revision-001/research/r715-sharp-fallback",
+          "Destination": "/proposal",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R397-count84-actual/data",
+          "Destination": "/out",
+          "RW": true
+        }
+      ]
+    },
+    {
+      "name": "integer-mult-r392-count28-normal",
+      "image": "sha256:2e569d2b405adbad13e85c19cfb18e727a384b23d09ce684328987011d7f8583",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-11T20:21:04.349344503Z",
+        "FinishedAt": "2026-10-11T20:21:21.87480387Z"
+      },
+      "resources": {
+        "NanoCpus": 1000000000,
+        "Memory": 2147483648,
+        "MemorySwap": 2147483648,
+        "NetworkMode": "none"
+      },
+      "launcher_sha256": "431322fa1a6e886e2d55f943bd2027e2b7e7650c351182337ccc80f682fd3bdc",
+      "result_sha256": "66e43afa9142033b32652617ceaef813b11b230bff3a21d83a27ad6b60b04ae7",
+      "actual_seconds": 17.105998560989974,
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R385-response28-full/data/full-002",
+          "Destination": "/parent",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R395-count-only-correction/response28/revision-001/research/r715-sharp-response28",
+          "Destination": "/proposal",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R392-response28-actual/data",
+          "Destination": "/out",
+          "RW": true
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R392-response28-actual/runner.py",
+          "Destination": "/runner.py",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R369-pr473-full-replay/deps",
+          "Destination": "/opt/codex-deps/lib/python3.13/site-packages",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R392-response28-actual/repo",
+          "Destination": "/source",
+          "RW": false
+        }
+      ]
+    },
+    {
+      "name": "integer-mult-r392-count28-optimized",
+      "image": "sha256:2e569d2b405adbad13e85c19cfb18e727a384b23d09ce684328987011d7f8583",
+      "state": {
+        "Status": "exited",
+        "Running": false,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 0,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-11T20:24:28.260390794Z",
+        "FinishedAt": "2026-10-11T20:24:44.170731204Z"
+      },
+      "resources": {
+        "NanoCpus": 1000000000,
+        "Memory": 2147483648,
+        "MemorySwap": 2147483648,
+        "NetworkMode": "none"
+      },
+      "launcher_sha256": "58f62e9ea9ef6264f2afd189c8f486a99b528c84ed0fc66ec84074b932f8dfb0",
+      "result_sha256": "66e43afa9142033b32652617ceaef813b11b230bff3a21d83a27ad6b60b04ae7",
+      "actual_seconds": 15.352166405005846,
+      "mounts": [
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R392-response28-actual/repo",
+          "Destination": "/source",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R385-response28-full/data/full-002",
+          "Destination": "/parent",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R395-count-only-correction/response28/revision-001/research/r715-sharp-response28",
+          "Destination": "/proposal",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R392-response28-actual/data",
+          "Destination": "/out",
+          "RW": true
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R392-response28-actual/runner.py",
+          "Destination": "/runner.py",
+          "RW": false
+        },
+        {
+          "Type": "bind",
+          "Source": "F:/integer-mult-frontier/work/R369-pr473-full-replay/deps",
+          "Destination": "/opt/codex-deps/lib/python3.13/site-packages",
+          "RW": false
+        }
+      ]
+    }
+  ]
+}

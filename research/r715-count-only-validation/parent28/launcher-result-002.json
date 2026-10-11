@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-10-11T20:14:18.688729+00:00",
+  "status": "TERMINAL_REPLAY_PASS",
+  "source_pr": 473,
+  "head": "f43a0e9ad04a7b3683498274854ae2e35d4a8d7c",
+  "command": [
+    "/usr/local/bin/python",
+    "-B",
+    "/source/verify.py",
+    "/out/full-002"
+  ],
+  "python": "3.13.16 (main, Oct  6 2026, 02:04:05) [GCC 12.2.0]",
+  "exit_code": 0,
+  "timed_out": false,
+  "actual_seconds": 729.8365929239953,
+  "timeout_seconds": 1800,
+  "controller_sha256": "a506cfd46f2d43ba3304e633d666f20e1f2a68e2112deeb6c08ea5d395671c45",
+  "scope": "Fresh full original response28 composition only; no sharp-charge admission from launcher."
+}

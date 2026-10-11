@@ -1,0 +1,3 @@
+# Corrected count-only admission
+
+The independent final review is R398-count-only-package-review/REVIEW-FINAL-001.md. ACCEPTANCE.json binds the current two source-specific improvements. Actual full parent replays are separate from four shorter corrected assemblies, which explicitly reuse completed full parent outputs. The original conditional orthogonal-cover bad fraction remains exactly 1/10^16; the earlier GL probability transfer is withdrawn. These results do not claim a current frontier record or an unconditional theorem. All AI-generated construction/review receipts are distinguished from human review.

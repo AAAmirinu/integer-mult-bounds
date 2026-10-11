@@ -1,0 +1,39 @@
+{
+  "status": "PASS_CORRECTED_COUNT_ONLY_SOURCE_SPECIFIC_CONDITIONAL_ADMISSION",
+  "claim": "Fallback child count194688 to146478 only; inherited O-cover fraction1/10^16 retained. No current-record or unconditional/all-size proof claim.",
+  "replica84": {
+    "head": "c7590f1d861f0eaae725cc79901445385aab9125",
+    "kappa": "1295629943312713/1000000000000000000",
+    "gain": "725591/1000000000000000000",
+    "fresh_original_seconds": "1378.0701668",
+    "sharp_mode": "completed_full_parent_reuse",
+    "normal_seconds": "42.620512233",
+    "optimized_seconds": "37.805769384"
+  },
+  "response28": {
+    "head": "f43a0e9ad04a7b3683498274854ae2e35d4a8d7c",
+    "kappa": "648305991611853/500000000000000000",
+    "gain": "728599/1000000000000000000",
+    "fresh_original_seconds": "729.836592924",
+    "sharp_mode": "completed_full_parent_reuse",
+    "normal_seconds": "17.105998561",
+    "optimized_seconds": "15.352166405"
+  },
+  "independent_review": "R398-count-only-package-review/REVIEW-FINAL-001.md",
+  "timing_erratum": "R398-count-only-package-review/ERRATUM-TIMING-001.json",
+  "all47_and_six_bootstrap": "PASS normal and optimized; RESULT bytes identical per package",
+  "prior_probability_transfer": "explicitly withdrawn; history immutable",
+  "frontier_context": "Newer PR493 c3a9a436 offers stronger source-carrier conditional pairing; count-only change does not raise its complex-bound cap. Current package improvement is measured against its exact pinned source, not latest frontier.",
+  "frozen_actual_revision": "R395 revision001; revision002 changes README and manifest only, separately bound by docs-only delta and fresh reassembly",
+  "published_package_manifests": {
+    "replica84": "3841b7a454e3e1fc0ca8b0bb4aaf6ff6ad777497e10d376051b098e336a6fdc5",
+    "response28": "eb70309056cc274287411b1a5abef73185279816d60e631061a5ff89dd05d5cb"
+  },
+  "docs_only_revision002_actual": {
+    "status": "PASS_FOUR_ACTUAL_COMPLETED_PARENT_REUSE_ASSEMBLIES",
+    "receipts": "docs-only-actual/{84,28}/{normal,optimized}-001/RECEIPT.json",
+    "normal_optimized_result_bytes": "identical to each other and original001 math RESULT",
+    "scope": "README and MANIFEST changes only, physically reassembled against exact frozen002 proposals; fresh original suppliers reused explicitly"
+  },
+  "required_baseline_checks": "NOT_ALL_PASS: make verify inheritedh57 confirmed2GiB OOM; full600s exact1.14 gen4 banks-entry confirmed2GiB OOM; see required-checks/STATUS.json. No all-checks-pass claim."
+}

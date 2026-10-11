@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ACTUAL_NATIVE_FRAME_GEOMETRY_ENUMS_AND_HASHES",
+  "bindings": {
+    "cout/legality.json": "25b0bbd5c9746904c88151c572b6849829e8c66dba26fd55b27c487646fd2c6c",
+    "cout/columns.json": "cc22c44ad8961318aba60fb5d10f24b2277af7921e27b806426428d4e28ff15c",
+    "LABELS.json": "3a548a8674ca93501d2050d398d546fc1ee02c718b15ca2591cd15aefd3b028f",
+    "nested/NESTED-AUDIT.json": "5ecfc7333e108b07940fb5e3800316903c0c6d20e1480f9c5a08d1eab4750654",
+    "hosted/GEOMETRY.json": "c57cca24a95d53068ac3f6103bc4b8fa4d28022513e529b54bf16d86e6c7d01b"
+  },
+  "formal_signed_columns": 1195,
+  "dirty_columns": 955,
+  "copies": 9,
+  "donors": 102,
+  "correction_rows": 120,
+  "scope": "Actual completed native/frame/geometry outputs, checked metadata and byte bindings; no independent re-execution or all-size theorem."
+}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS_INDEPENDENT_CORRECTED_PACKAGE_MATH_AND_SCOPE",
+  "cases": [
+    {
+      "case": "replica84",
+      "package_manifest_sha256": "a3a69174e5d425075668a6d1057c1d1198e87c439ac19e8dac7f81b055292f71",
+      "source_sha256": "0b52c3dcf472db831ab4d549a08de81b1ae6f0202c0df84c31996273f6a3847f",
+      "unchanged_reviewed_core": [
+        "verify.py",
+        "code/protocol.py",
+        "code/assemble.py",
+        "tests/test_process_bound.py"
+      ],
+      "kappa": "1295629943312713/1000000000000000000",
+      "bad_fraction": "1/10000000000000000",
+      "controls": "Nine protocol and canonicalcontent normal/-OO fresh passes; process core byte-identical to independently tested prior version",
+      "scope": "Exact independent matched-cover arithmetic; inherited O law remains conditional"
+    },
+    {
+      "case": "response28",
+      "package_manifest_sha256": "a7bf1ae3aa18cf709968cc7988a2aeb4e0cb339116796f333648126c14f05287",
+      "source_sha256": "df6cbe8d9fa429173c71fa6f1851c883dcfb2b8b146ee9842cf598e1fe8afd9b",
+      "unchanged_reviewed_core": [
+        "verify.py",
+        "code/protocol.py",
+        "code/assemble.py",
+        "tests/test_process_bound.py"
+      ],
+      "kappa": "648305991611853/500000000000000000",
+      "bad_fraction": "1/10000000000000000",
+      "controls": "Nine protocol and canonicalcontent normal/-OO fresh passes; process core byte-identical to independently tested prior version",
+      "scope": "Exact independent matched-cover arithmetic; inherited O law remains conditional"
+    }
+  ],
+  "independent_math_receipt_sha256": "8c3693e1eed213bcfe131ec8665c70ab9e84b73ec2ef945060bda24cb8455420"
+}

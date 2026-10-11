@@ -1,41 +1,23 @@
-# Sharp bit fallback on the pinned original PR473 construction
+# Count-only Gaussian fallback correction on pinned replica84
 
-This additive package applies PR465's source-derived rare-class invoice to PR473 at **`c7590f1d861f0eaae725cc79901445385aab9125`**. It preserves the complete supplier sources, main paid profiles, whole-family owners, complex79 construction, physical prefix/router/row invoices and positive endpoint reserves.
+This immutable correction changes ONLY the Gaussian fallback child count194688 to146478. The original orthogonal-normalizer bad fraction remains exactly `1/10^16`, and the inherited O-cover assumption, physical programs/owners, rows, prefixes, routing and every other invoice remain unchanged. The previous GL-derived probability transfer is withdrawn: its sampling model did not match the O row invoice. Historical reviews for that different probability appear under `evidence/historical-withdrawn-probability-transfer` and do not admit this revision.
 
-Conditional arithmetic candidate: **κ = 0.001295629945499994**, exact `647814972749997/500000000000000000`, versus this pinned source's `0.001295629942587122`. Gain: `364109/125000000000000000 = 2.912872e-12`. This is a source-specific improvement at the pinned replica84 head. Further source changes require new pins and review.
+Source-specific conditional candidate: `1295629943312713/1000000000000000000`, exact improvement `725591/1000000000000000000` over pinned PR473 `c7590f1d861f0eaae725cc79901445385aab9125`. Bit binds; complex lower is unchanged. EXPECTED records freshly recalculated roots, all47 constraints and six bootstrap witnesses. Distinct count-only arithmetic has been matched by R390; package and actual sharp scientific replay remain separate gates. No preparation fixture is scientific completion.
 
-The sharper bit root lower is `1297310780195435972192/10^24`. Complex lower remains `1305231506267591/10^18`; bit binds. `EXPECTED.json` records the exact witnesses and all47 outer constraints. The distinct R379 AI review in `evidence/` accepts changed-charge arithmetic conditional on the retained interface. Full replay is a separate gate. No completed scientific replay by this package is claimed at preparation time; fixture tests only validate its binding/timeout protocol.
-
-From the repository root, the default freshly invokes the unchanged original PR473 wrapper and then recomputes the sharp bit invoice and complete assembly:
-
-For the distributed additive patch, use `git -c core.autocrlf=false apply --whitespace=nowarn contribution.patch` to preserve its literal source-cache bytes on every host. The contribution's local `.gitattributes` then keeps all of its pinned bytes unchanged when committed and checked out.
+Default fresh original source replay and sharp assembly:
 
 ```sh
 python -B research/r715-sharp-fallback/verify.py /absolute/new/output
 ```
 
-To explicitly reuse a **completed fresh full original parent**:
+Explicit reuse of a completed fresh full original parent:
 
 ```sh
-python -B research/r715-sharp-fallback/verify.py /absolute/new/sharp-output --parent-output /absolute/completed/original-parent
+python -B research/r715-sharp-fallback/verify.py /absolute/new/sharp-output --parent-output /absolute/completed/full-parent
 ```
 
-The receipt distinguishes fresh original execution from completed-full-parent reuse. Component-only and reused-complex-only receipts are rejected. All exact original source/package bytes are closed by `pins/CLOSURE.json`; the repository may be on a descendant commit containing this additive package. Changing any pinned dependency requires a new source lock and review. Original files are never edited.
+The unchanged strict protocol closes original source bytes/inventories, full fresh-parent status, actual complete profiles/invoices, nested log/build artifacts, templates and programs, canonical mathematical complex contents, and the exact changed result. Reuse gets a distinct honest receipt. The current finite prefix charge3456 and three-level coefficient charge10304, row19437 under allowance20161, are preserved.
 
-Requires the original supplier runtime: Python3.11+, numpy, SymPy, mpmath, C++17, Boost and the unchanged shell-wrapper prerequisites. A container with1CPU and2GiB memory is recommended. The default fresh process-tree timeout is1,800seconds (`--fresh-timeout` changes it); the final assembler is limited to180seconds. Timed-out process trees are terminated and logs/failures retained. Paths and runtime imports are relative to the package/source root. No network or optimizer is used by the verifier. Output must be new and outside the checkout.
+Python3.11+, the inherited supplier dependencies, C++17 and Boost are required. Linux/macOS or a Linux container with1CPU/2GiB is recommended. Fresh process-tree timeout1800s and final assembly180s remain; complete group/job cleanup includes TERM-ignoring grandchildren and normal leader exit. Runtime paths are relative, offline, and output must be new/outside the checkout.
 
-The verifier checks the complete original source closure, raw manifests/source/expected pins, full top/provider receipts, every executed nested step-log and recorded build-artifact hash, actual profiles and numerical types, compressed and decompressed template bytes, emitted-program record bindings, physical invoices and the exact final root/κ. Historical receipts inside the completely pinned copied provider-source tree are source inputs, excluded from executed receipt traversal. It preserves the original missing-`.gitattributes` manifest adapter.
-
-The current original wrapper's twelve-file `COMPLEX-CONTENT.json` contract handles gzip header variation. The original checker is re-run with assertions enabled. Active checks independently recompute its canonical hashes, retain every mathematical/program field, bind every actual raw file and actual decompressed template to the checker receipt and RESULT, and compare all remaining original output fields exactly. Only explicit references to earlier measured raw files become their pinned content hashes. Unknown fields or hashes remain included. A changed live inventory, program or source binding fails.
-
-Bounded protocol tests are independent of scientific completion:
-
-```sh
-python -B research/r715-sharp-fallback/tests/test_protocol.py
-python -OO -B research/r715-sharp-fallback/tests/test_protocol.py
-python -B research/r715-sharp-fallback/tests/test_complex_content.py
-python -OO -B research/r715-sharp-fallback/tests/test_complex_content.py
-python -B research/r715-sharp-fallback/tests/test_process_bound.py
-```
-
-Their synthetic parent contents and outputs are labelled `FIXTURE_ONLY`, and receipts state `PASS_*_FIXTURES_ONLY`. They execute no supplier algorithm or proposed scientific assembler. See `PROOF.md`, `NOTICE.md` and `SOURCE.json` for derivation, credit and conditional interfaces. No unconditional sub-n-log-n theorem, fresh Lean proof, global optimum or human peer review is claimed.
+Apply the additive patch with `git -c core.autocrlf=false apply --whitespace=nowarn contribution.patch`; local `* -text` attributes preserve exact bytes. Synthetic protocol/content/process tests under tests/ remain labelled fixtures and run normally or -OO. CORRECTION, SOURCE and PROOF explain the exact supersession, attribution and conditional assumptions. No new GL or O probability theorem, unconditional multiplication result, current-record or human-review claim is made.

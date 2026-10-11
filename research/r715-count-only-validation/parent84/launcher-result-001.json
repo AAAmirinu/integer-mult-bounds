@@ -1,0 +1,19 @@
+{
+  "timestamp_utc": "2026-10-11T19:44:36.099471+00:00",
+  "status": "TERMINAL_REPLAY_PASS",
+  "source_pr": 473,
+  "head": "c7590f1d861f0eaae725cc79901445385aab9125",
+  "command": [
+    "/usr/local/bin/python",
+    "-B",
+    "/source/research/r715-replica84-complex79/verify.py",
+    "/out/full-001"
+  ],
+  "python": "3.13.16 (main, Oct  6 2026, 02:04:05) [GCC 12.2.0]",
+  "exit_code": 0,
+  "timed_out": false,
+  "actual_seconds": 1378.070166814985,
+  "timeout_seconds": 1800,
+  "controller_sha256": "ffdaaa2cf3d4f64d2ce1e9465db3fc8f0c3a80f1a0b952528bbdc50585392535",
+  "scope": "Fresh full original84 composition only; no sharp-charge admission from launcher."
+}

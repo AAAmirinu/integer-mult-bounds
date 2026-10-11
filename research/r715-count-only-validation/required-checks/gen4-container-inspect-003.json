@@ -1,0 +1,241 @@
+[
+    {
+        "Id": "95a748540174a486e1dd03c25bd4b8f5956b2ba0292b0c5b7ee9a7ff5869e707",
+        "Created": "2026-10-11T20:37:50.377174922Z",
+        "Path": "sh",
+        "Args": [
+            "-c",
+            "tail -f /dev/null"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": true,
+            "Dead": false,
+            "Pid": 12790,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-11T20:37:50.531759467Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:2e569d2b405adbad13e85c19cfb18e727a384b23d09ce684328987011d7f8583",
+        "ResolvConfPath": "/var/lib/docker/containers/95a748540174a486e1dd03c25bd4b8f5956b2ba0292b0c5b7ee9a7ff5869e707/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/95a748540174a486e1dd03c25bd4b8f5956b2ba0292b0c5b7ee9a7ff5869e707/hostname",
+        "HostsPath": "/var/lib/docker/containers/95a748540174a486e1dd03c25bd4b8f5956b2ba0292b0c5b7ee9a7ff5869e707/hosts",
+        "LogPath": "/var/lib/docker/containers/95a748540174a486e1dd03c25bd4b8f5956b2ba0292b0c5b7ee9a7ff5869e707/95a748540174a486e1dd03c25bd4b8f5956b2ba0292b0c5b7ee9a7ff5869e707-json.log",
+        "Name": "/r393-gen4-corrected-full",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "F:\\integer-mult-frontier\\work\\R393-required-repository-checks\\deps-sympy114:/opt/codex-deps/lib/python3.13/site-packages:ro"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "none",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 2147483648,
+            "NanoCpus": 1000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 2147483648,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+                {
+                    "Type": "bind",
+                    "Source": "F:\\integer-mult-frontier\\work\\R389-published-required-checks\\repo",
+                    "Target": "/source",
+                    "ReadOnly": true
+                },
+                {
+                    "Type": "bind",
+                    "Source": "F:\\integer-mult-frontier\\work\\R393-required-repository-checks",
+                    "Target": "/results"
+                }
+            ],
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "Storage": {
+            "RootFS": {
+                "Snapshot": {
+                    "Name": "overlayfs"
+                }
+            }
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "F:\\integer-mult-frontier\\work\\R393-required-repository-checks\\deps-sympy114",
+                "Destination": "/opt/codex-deps/lib/python3.13/site-packages",
+                "Mode": "ro",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "F:\\integer-mult-frontier\\work\\R389-published-required-checks\\repo",
+                "Destination": "/source",
+                "Mode": "",
+                "RW": false,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "bind",
+                "Source": "F:\\integer-mult-frontier\\work\\R393-required-repository-checks",
+                "Destination": "/results",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "95a748540174",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PYTHONDONTWRITEBYTECODE=1",
+                "PYTHONUSERBASE=/opt/codex-deps",
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                "PYTHON_VERSION=3.13.16",
+                "PYTHON_SHA256=f4b1bfb3c79b5bb11b8d228a12504163b4c0dab4d679828d8f5f26b6cb6ab35d"
+            ],
+            "Cmd": [
+                "sh",
+                "-c",
+                "tail -f /dev/null"
+            ],
+            "Image": "sha256:2e569d2b405adbad13e85c19cfb18e727a384b23d09ce684328987011d7f8583",
+            "Volumes": null,
+            "WorkingDir": "/repo",
+            "Entrypoint": null,
+            "Labels": {},
+            "StopTimeout": 1
+        },
+        "NetworkSettings": {
+            "SandboxID": "bf3254a2dd194075e34b742dbb98ca93ebf8bd9cc9bd694be02cc4cce8af76ea",
+            "SandboxKey": "/var/run/docker/netns/bf3254a2dd19",
+            "Ports": {},
+            "Networks": {
+                "none": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "c28283f4675ef339702a22e8defb6f7e2ede0b7f4106bf17096d57b15269c247",
+                    "EndpointID": "1a349903b563a8ba3f0088dfed3b51fa52e241713d6c56f3d9f64fdc084f7415",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "MacAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": null
+                }
+            }
+        },
+        "ImageManifestDescriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:2a8b7010d95f3370c314bde772ad8e17ed921571fbf84baf0378e55427b9d586",
+            "size": 1436,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        }
+    }
+]

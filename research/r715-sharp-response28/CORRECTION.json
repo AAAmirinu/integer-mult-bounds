@@ -1,0 +1,20 @@
+{
+  "status": "PRIOR_PROBABILITY_TRANSFER_WITHDRAWN_COUNT_ONLY_REVISION",
+  "change": "Gaussian count only",
+  "fallback_before": 194688,
+  "fallback_after": 146478,
+  "bad_fraction_before": "1/10000000000000000",
+  "bad_fraction_after": "1/10000000000000000",
+  "source_head": "f43a0e9ad04a7b3683498274854ae2e35d4a8d7c",
+  "kappa": "648305991611853/500000000000000000",
+  "gain": "728599/1000000000000000000",
+  "prior_package_manifest_sha256": "2d27146505531e69781116897117445222f84b99e269e025af8417b91c4b9003",
+  "scientific_full_parent_completion_in_this_revision": false,
+  "scope": "Prior GL-derived probability claims and acceptance do not admit this corrected revision. Retain original inherited O-cover, fixed-owner geometry, rows and all other supplier hypotheses; exact changed count requires fresh bound sharp recomposition and new review.",
+  "historical_reviews_superseded": [
+    "R379",
+    "R384",
+    "R381",
+    "R390 prior GL-transfer scope"
+  ]
+}

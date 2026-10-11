@@ -1,0 +1,14 @@
+{
+  "status": "PASS_DOC_ONLY_IMMUTABLE_REVISION002",
+  "changed_package_files": [
+    "MANIFEST.json",
+    "README.md"
+  ],
+  "unchanged_source_and_math": true,
+  "old_manifest_sha256": "a3a69174e5d425075668a6d1057c1d1198e87c439ac19e8dac7f81b055292f71",
+  "new_manifest_sha256": "3841b7a454e3e1fc0ca8b0bb4aaf6ff6ad777497e10d376051b098e336a6fdc5",
+  "patch_sha256": "0b94a7ec5223078517f319aa8ffb278714c18c896c3ac4d8f58f43a74ee34d67",
+  "compiler_and_protocol_receipts_reused_unchanged": true,
+  "actual_science_gate": "Root actual revision001 scientific results remain hash-specific; revision002 exact docs-only delta requires coordinator validation or fast recompose.",
+  "checker_sha256": "0b2889f39aac730c1ce4597fe7c2ee68ff04fb30d2623506648d75bdb2157017"
+}

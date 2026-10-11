@@ -1,0 +1,15 @@
+{
+  "task": "R393",
+  "group": "fresh complete gen4 nine-gate replay600s, explicitly authorized after180s timeout",
+  "source_head": "3520c0dbdd37b97165a6c81ff02e120da7ae5545",
+  "CPU": 1,
+  "memory_bytes": 2147483648,
+  "network": "none",
+  "science_limit_seconds": 600,
+  "preparation_outside_timer": true,
+  "image": "sha256:2e569d2b405adbad13e85c19cfb18e727a384b23d09ce684328987011d7f8583",
+  "dependency_inventory_sha256": "7e016c19177c905f65a1a933c09ae32e2af3cd1ba038e805720912fbc2bde568",
+  "controller_sha256": "5e5a5bbd0417e97eac9b7aff3c1c43ddb73d8ef99a68c59416598c66030498d9",
+  "prior_gen4_failure_receipt_sha256": "f44b07c631393a7568592f76966ffcd65139994eedd5459c1c44a97e5671cbb6",
+  "broad_verification": "Not repeated: confirmed inherited h57 standard-library producer cgroupOOM at same2GB cap; source and gates unchanged."
+}

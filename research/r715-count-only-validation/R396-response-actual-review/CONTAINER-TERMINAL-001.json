@@ -1,0 +1,49 @@
+{
+  "name": "/integer-mult-r385-f43-002",
+  "image": "sha256:2e569d2b405adbad13e85c19cfb18e727a384b23d09ce684328987011d7f8583",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-11T20:02:08.374907873Z",
+    "FinishedAt": "2026-10-11T20:14:18.738833487Z"
+  },
+  "resources": {
+    "NanoCpus": 1000000000,
+    "Memory": 2147483648,
+    "MemorySwap": 2147483648,
+    "NetworkMode": "none"
+  },
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "F:/integer-mult-frontier/work/R385-response28-full/source",
+      "Destination": "/source",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "F:/integer-mult-frontier/work/R385-response28-full/data",
+      "Destination": "/out",
+      "RW": true
+    },
+    {
+      "Type": "bind",
+      "Source": "F:/integer-mult-frontier/work/R385-response28-full/runner-002.py",
+      "Destination": "/runner.py",
+      "RW": false
+    },
+    {
+      "Type": "bind",
+      "Source": "F:/integer-mult-frontier/work/R369-pr473-full-replay/deps",
+      "Destination": "/opt/codex-deps/lib/python3.13/site-packages",
+      "RW": false
+    }
+  ]
+}

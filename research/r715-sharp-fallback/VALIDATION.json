@@ -3,12 +3,12 @@
   "scientific_full_parent_completed": false,
   "reference_head": "c7590f1d861f0eaae725cc79901445385aab9125",
   "tests": {
-    "FIXTURE-PROTOCOL-001.json": "d749937b3e99d73c2491c370ea544915e5ebad14b64357a673c8c3effa3b9f30",
-    "FIXTURE-PROTOCOL-OPTIMIZED-001.json": "1e87ced0ef37e2b6ea889aa704ccaa05c6f8b2d1c8590db5597fd67d9aae2521",
-    "FIXTURE-CONTENT-001.json": "4cb287a80be50cdd020b080df1fd53d0b2a26f29ce6a563e510f5c160d084f1e",
-    "FIXTURE-CONTENT-OPTIMIZED-001.json": "ac5ec8991ae72708b8f8fd932aacae24d0b02d7d0928b2ca9259e6cd98822eef",
-    "FIXTURE-PROCESS-WINDOWS-001.json": "f5d1783b0ca11a89f6dfdf8268bc54db48686ff6f0445b028cc029e14c4e54ea",
-    "FIXTURE-PROCESS-LINUX-001.json": "6309832d88d54550a2813fcb7205a5a47bc47366f35ff6fcd8e66286afddcab2"
+    "FIXTURE-PROTOCOL-001.json": "29b4087cb4374c91510248b7b9228bbbcac9d3ae62590256eb7143f6bc234e44",
+    "FIXTURE-PROTOCOL-OPTIMIZED-001.json": "596d69278bd0fa453810e3d2eabc4fd59c6a7047389d1bb1704ba62f481c7f37",
+    "FIXTURE-CONTENT-001.json": "2ac52e0d67a64068416ef213d809302f377b3f7aabcb8961eb3e362e556de638",
+    "FIXTURE-CONTENT-OPTIMIZED-001.json": "c69194b9caa9b1021fce4859db9add16613c67bbb76dbfe86961f91a7b0e22e9",
+    "FIXTURE-PROCESS-WINDOWS-001.json": "249a50a954ef26c685c53b4146b8e96a63a44d22ece48d73b0093e75197c1fc4",
+    "FIXTURE-PROCESS-LINUX-001.json": "486f73260eb4bb9087bf2da88c41de76ead9c0c57542ea33a94f696047dfb274"
   },
-  "scope": "Synthetic protocol/content/process-tree controls only; exact stored profile sharp arithmetic independently reviewed by R379. The supplier full replay and actual sharp assembly remain separate terminal gates. Read-only unfinished parent preflight checked canonical12 files and actual executed receipt tree32 bindings; not scientific completion."
+  "scope": "Count-only correction protocol fixtures; inherited O bad fraction1e-16 unchanged. Prior GL probability transfer withdrawn. Actual sharp gate and new review remain separate."
 }

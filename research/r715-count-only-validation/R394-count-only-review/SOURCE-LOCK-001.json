@@ -1,0 +1,68 @@
+{
+  "files": [
+    {
+      "profile": "response28",
+      "head": "f43a0e9ad04a7b3683498274854ae2e35d4a8d7c",
+      "canonical_repository": "rohanarun/integer-mult-bounds",
+      "original_review_lock_sha256": "7d5776700fb607c192bfc9e6c7bf86ce43b83070927f188f38bfccfdc974af65",
+      "path": "research/r715-response-replica28/EXPECTED.json",
+      "bytes": 20561,
+      "sha256": "1ae67c224f8ec1f82e141dffff42af96f5e9abed6f7c16ec0533b1d93cfec5e4",
+      "git_blob_sha1": "0232a325bf5b8de2df7e2437258c0371869c2c4d",
+      "url": "https://raw.githubusercontent.com/rohanarun/integer-mult-bounds/f43a0e9ad04a7b3683498274854ae2e35d4a8d7c/research/r715-response-replica28/EXPECTED.json"
+    },
+    {
+      "profile": "response28",
+      "head": "f43a0e9ad04a7b3683498274854ae2e35d4a8d7c",
+      "canonical_repository": "rohanarun/integer-mult-bounds",
+      "original_review_lock_sha256": "7d5776700fb607c192bfc9e6c7bf86ce43b83070927f188f38bfccfdc974af65",
+      "path": "notes/three-stage-cover-bit.tex",
+      "bytes": 13061,
+      "sha256": "47123a756f823c83a0d48cca2bf5add6472cd88410b13aed345e70c8834fb511",
+      "git_blob_sha1": "f05225d21f92cf8cef21b6e12601d5b4d61991f0",
+      "url": "https://raw.githubusercontent.com/rohanarun/integer-mult-bounds/f43a0e9ad04a7b3683498274854ae2e35d4a8d7c/notes/three-stage-cover-bit.tex"
+    },
+    {
+      "profile": "response28",
+      "head": "f43a0e9ad04a7b3683498274854ae2e35d4a8d7c",
+      "canonical_repository": "rohanarun/integer-mult-bounds",
+      "original_review_lock_sha256": "7d5776700fb607c192bfc9e6c7bf86ce43b83070927f188f38bfccfdc974af65",
+      "path": "research/e8-r740-replica32/parent436/code/bit/checkers/finite_k.py",
+      "bytes": 12200,
+      "sha256": "7e67dc75e63a11e38ac6d6615656c7cf6982e5a33dd404d04b967bf474cad02e",
+      "git_blob_sha1": "8781815ee6ee663edc0e0afdf1380186594ec913",
+      "url": "https://raw.githubusercontent.com/rohanarun/integer-mult-bounds/f43a0e9ad04a7b3683498274854ae2e35d4a8d7c/research/e8-r740-replica32/parent436/code/bit/checkers/finite_k.py"
+    },
+    {
+      "profile": "replica84",
+      "head": "c7590f1d861f0eaae725cc79901445385aab9125",
+      "canonical_repository": "rohanarun/integer-mult-bounds",
+      "original_review_lock_sha256": "8b850fef73448710b6b3d921f720c50ade361626f4eb9796ccd06325c4ae8bf8",
+      "path": "notes/three-stage-cover-bit.tex",
+      "bytes": 13061,
+      "git_blob_sha1": "f05225d21f92cf8cef21b6e12601d5b4d61991f0",
+      "sha256": "47123a756f823c83a0d48cca2bf5add6472cd88410b13aed345e70c8834fb511"
+    },
+    {
+      "profile": "replica84",
+      "head": "c7590f1d861f0eaae725cc79901445385aab9125",
+      "canonical_repository": "rohanarun/integer-mult-bounds",
+      "original_review_lock_sha256": "8b850fef73448710b6b3d921f720c50ade361626f4eb9796ccd06325c4ae8bf8",
+      "path": "research/r715-replica84-complex79/EXPECTED.json",
+      "bytes": 20007,
+      "git_blob_sha1": "45ee9fde7fdf6b19b6303372068977201b4ef61c",
+      "sha256": "70e515f0a5a2f9508cd030d35a99f90981a6eccc027c9ad5a3c77f5860310910"
+    },
+    {
+      "profile": "replica84",
+      "head": "c7590f1d861f0eaae725cc79901445385aab9125",
+      "canonical_repository": "rohanarun/integer-mult-bounds",
+      "original_review_lock_sha256": "8b850fef73448710b6b3d921f720c50ade361626f4eb9796ccd06325c4ae8bf8",
+      "path": "research/r715-replica84-complex79/upstream478/vendor/native/finite_k.py",
+      "bytes": 12200,
+      "git_blob_sha1": "8781815ee6ee663edc0e0afdf1380186594ec913",
+      "sha256": "7e67dc75e63a11e38ac6d6615656c7cf6982e5a33dd404d04b967bf474cad02e"
+    }
+  ],
+  "scope": "Raw EXPECTED and Gaussian child-count derivation sources; canonical repository corrected from earlier retrieval fork attribution"
+}

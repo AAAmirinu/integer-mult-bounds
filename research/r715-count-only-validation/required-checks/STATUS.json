@@ -1,0 +1,8 @@
+{
+  "status": "REQUIRED_BASELINE_CHECKS_NOT_ALL_PASS",
+  "make_verify": "Inherited partial-swap-producer h57 killed under declared1CPU2GiB; preserved exact Docker OOM event. No source-gate or resource weakening.",
+  "gen4": "Terminal FAIL fresh full600s exact SymPy1.14: five gates passed, then banks-entry OOM at404.156s. cgroup oom1/oom_kill1/peak=cap2147483648; no full certificate, source unchanged.",
+  "new_packages": "Source-specific actual parent and corrected normal/OO assemblies independently PASS; distinct from required broad baseline suite.",
+  "final_review": "REVIEW-001.md",
+  "current_published_source": "3520c0dbdd37b97165a6c81ff02e120da7ae5545 required baseline closure retained by corrected source"
+}

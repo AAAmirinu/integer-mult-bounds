@@ -22,14 +22,20 @@
   "closure_sha256": "256b32f08ec2b79685bf6cf05f7a52904355233d5b9900c415f047b91db3d971",
   "retained_theorem_sha256": "47123a756f823c83a0d48cca2bf5add6472cd88410b13aed345e70c8834fb511",
   "review": {
-    "reviewer": "R379 distinct AI auditor",
-    "disposition": "PASS changed-charge exact arithmetic on c759 stored profile and paid10304-bit invoice; full replay separate",
-    "review_sha256": "c97919824e7895cf6bb4cfaa14426d1c84a1550e9f0f8c0c3e21d1fa87b5a630",
-    "attribution_erratum_sha256": "d8594bb164f36e684e0b987f4535ec0ed7ff868ee4a1e2f3e3e29b8fbf458fbe",
-    "raw_review_sha256": "c97919824e7895cf6bb4cfaa14426d1c84a1550e9f0f8c0c3e21d1fa87b5a630"
+    "reviewer": "R390 distinct AI matched-arithmetic auditor; R394 final distinct arithmetic review pending",
+    "scope": "Count-only arithmetic independently matched normal/-OO; corrected package and actual science review separate",
+    "normal_receipt_sha256": "8c3693e1eed213bcfe131ec8665c70ab9e84b73ec2ef945060bda24cb8455420",
+    "optimized_receipt_sha256": "d416c04e1a427d977b1d998b985ca16e5a37044584bc6cc3b5c3325927f5e2db"
   },
   "provider_manifest_sha256": "d8847f47377171106c36f78097695b0d6263b374fac3f80566a93422959cbf25",
   "complex_content_pin_sha256": "37aa6492cdee04ff66d203c5b62cd551d844a520f07fba94a36ce9c67851af61",
   "complex_content_receipt_status": "PASS_FRESH_BYTE_BINDINGS_AND_PINNED_CONTENT",
-  "retrieval_repository": "rohanarun/integer-mult-bounds (R378 Git checkout); chafreaky/integer-mult-bounds (R379 independent raw-source retrieval fork)"
+  "retrieval_repository": "rohanarun/integer-mult-bounds (R378 Git checkout); chafreaky/integer-mult-bounds (R379 independent raw-source retrieval fork)",
+  "change_scope": "ONLY Gaussian fallback child count194688 to146478; unchanged inherited orthogonal-normalizer bad fraction1/10^16",
+  "inherited_bad_fraction": "1/10000000000000000",
+  "cover_model": "Original conditional orthogonal O-normalizer cover and O row bound; no GL probability transfer",
+  "supersedes_probability_transfer": {
+    "prior_package_manifest_sha256": "1c39c6126da2e45003c143335fc81215a00da0e62dc621eb59a6439e59585eab",
+    "reason": "Earlier2m^3/q transfer used GL sampling while the accepted physical row invoice used O sampling; probability transfer withdrawn. Count-only correction keeps the original law."
+  }
 }

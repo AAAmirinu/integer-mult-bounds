@@ -1,0 +1,14 @@
+{
+  "status": "PASS_BOUNDED_PROTOCOL_FIXTURES_ONLY_FULL_PARENT_PENDING",
+  "scientific_full_parent_completed": false,
+  "reference_head": "f43a0e9ad04a7b3683498274854ae2e35d4a8d7c",
+  "tests": {
+    "FIXTURE-PROTOCOL-001.json": "288932b3f021b5421266f3d584aafcfe17efa02c810124c8b5f8f069b6c9a832",
+    "FIXTURE-PROTOCOL-OPTIMIZED-001.json": "55c9026cf05a625f684e8116ea31fc0b1fcdcdf9b3babe00bd65e8e407991cd5",
+    "FIXTURE-CONTENT-001.json": "8577aa72a90a920405ab3dc8c5581924e1f63a650f26bd151b376e2d1a49e579",
+    "FIXTURE-CONTENT-OPTIMIZED-001.json": "a3b3dced032c151918b27cfa57f9edbda686011dd0e2e2c819323a0ad1948a13",
+    "FIXTURE-PROCESS-WINDOWS-001.json": "525118c4e652f9f09da45ab18e557eb9ef7aed3aa92686b1b96674ef30bdbeff",
+    "FIXTURE-PROCESS-LINUX-001.json": "48ef1a52c4cc5a49f9471951f54bbae82bc55b1c0d90dad99c6de7a96a9d0a5b"
+  },
+  "scope": "Count-only correction protocol fixtures; inherited O bad fraction1e-16 unchanged. Prior GL probability transfer and R384 old arithmetic admission withdrawn. Current distinct R390 matched count-only math; actual sharp gate and new review remain separate."
+}

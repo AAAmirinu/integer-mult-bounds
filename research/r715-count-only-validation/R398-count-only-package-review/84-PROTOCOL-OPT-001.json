@@ -1,0 +1,51 @@
+{
+  "status": "PASS_PROTOCOL_FIXTURES_ONLY",
+  "scientific_supplier_or_assembler_run": false,
+  "controls": [
+    {
+      "name": "nested_provider_log_corruption",
+      "reason": "nested step log hash differs: provider\\provider-step.log"
+    },
+    {
+      "name": "nested_build_artifact_corruption",
+      "reason": "nested artifact hash differs: proof.json"
+    },
+    {
+      "name": "integer_count_changed_to_float",
+      "reason": "completed result types/values differ: bit_profile"
+    },
+    {
+      "name": "template_actual_bytes_corruption",
+      "reason": "actual decompressed template bytes differ"
+    },
+    {
+      "name": "receipt_path_escape",
+      "reason": "receipt path escapes its output directory"
+    },
+    {
+      "name": "component_receipt_not_full_parent",
+      "reason": "completed fresh full original parent receipt required"
+    },
+    {
+      "name": "nonlexical_source_inventory",
+      "reason": "original package inventory changed: research/fixture"
+    },
+    {
+      "name": "original_source_byte_change",
+      "reason": "original source bytes changed: research/fixture/code.py"
+    },
+    {
+      "name": "original_source_inventory_extension",
+      "reason": "original package inventory changed: research/fixture"
+    }
+  ],
+  "positive": "synthetic completed-parent binding, nested log/build files and template bytes; no supplier algorithms executed",
+  "checker_sha256": "cdee3b271ec358f66089fee69b5844ee832c0f069827cd12e59231a4e7f057bb",
+  "protocol_sha256": "d10dcc61d71f990f95f2502cfce037ec3bb1dcb6843cbb2c77867aea15ba20f4",
+  "python": "3.10.1",
+  "command": [
+    "F:/integer-mult-frontier/work/R395-count-only-correction/replica84/revision-001/research/r715-sharp-fallback/tests/test_protocol.py",
+    "F:/integer-mult-frontier/work/R398-count-only-package-review/84-PROTOCOL-OPT-001.json"
+  ],
+  "elapsed_seconds": 0.0940000000409782
+}

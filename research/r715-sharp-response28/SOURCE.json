@@ -1,0 +1,35 @@
+{
+  "reference_repository": "rohanarun/integer-mult-bounds",
+  "reference_head": "f43a0e9ad04a7b3683498274854ae2e35d4a8d7c",
+  "parent_package": "research/r715-response-replica28",
+  "parent_entrypoint": "research/r715-response-replica28/verify.py",
+  "parent_receipt_status": "PASS_RESPONSE_REPLICA28_FULL_COMPOSITION",
+  "bit_receipt_status": "PASS_CHANGED_RESPONSE_FLAG_COMPOSITION",
+  "parent_manifest_sha256": "f346fa0d27664ed50361fe72045007610461d0d46abcbf2c8daf68165ccc8bcf",
+  "parent_provenance_sha256": "6793e9c9e1802333298a746e095013627368bf590fdbb18630cb14a3b1297fa8",
+  "parent_expected_sha256": "1ae67c224f8ec1f82e141dffff42af96f5e9abed6f7c16ec0533b1d93cfec5e4",
+  "closure_sha256": "b47d66dff9c3d5f42b202f25e430b13cd1cd4c6d5baa718e43a01e4d3323af2f",
+  "complex_content_pin_sha256": "37aa6492cdee04ff66d203c5b62cd551d844a520f07fba94a36ce9c67851af61",
+  "complex_identity_sha256": "81641d056840db0e3a0c7b771be0d300a5780da021bfccfc8e90e7ef36be3d67",
+  "review": {
+    "reviewer": "R390 distinct AI matched-arithmetic auditor; R394 final distinct arithmetic review pending",
+    "scope": "Count-only arithmetic independently matched normal/-OO; corrected package and actual science review separate",
+    "normal_receipt_sha256": "8c3693e1eed213bcfe131ec8665c70ab9e84b73ec2ef945060bda24cb8455420",
+    "optimized_receipt_sha256": "d416c04e1a427d977b1d998b985ca16e5a37044584bc6cc3b5c3325927f5e2db"
+  },
+  "sharper_charge_predecessor": {
+    "pr": 465,
+    "repository": "Srikrishnabalaji/integer-mult-bounds",
+    "head": "22c2a15c232084a31b6c8f0263e2e8ce831047ea"
+  },
+  "retained_theorem_sha256": "47123a756f823c83a0d48cca2bf5add6472cd88410b13aed345e70c8834fb511",
+  "preserved_endpoint_reserve": "1/1000000000000000000000000",
+  "complex_records_pin_sha256": "5ebd9cb2ceff320b3825689b2497d3bc808ddc2a14d2f855628af1a4d203fa66",
+  "change_scope": "ONLY Gaussian fallback child count194688 to146478; unchanged inherited orthogonal-normalizer bad fraction1/10^16",
+  "inherited_bad_fraction": "1/10000000000000000",
+  "cover_model": "Original conditional orthogonal O-normalizer cover and O row bound; no GL probability transfer",
+  "supersedes_probability_transfer": {
+    "prior_package_manifest_sha256": "2d27146505531e69781116897117445222f84b99e269e025af8417b91c4b9003",
+    "reason": "Earlier2m^3/q transfer used GL sampling while the accepted physical row invoice used O sampling; probability transfer withdrawn. Count-only correction keeps the original law."
+  }
+}

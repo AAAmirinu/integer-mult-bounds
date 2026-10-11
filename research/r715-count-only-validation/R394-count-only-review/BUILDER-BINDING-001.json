@@ -1,0 +1,56 @@
+{
+  "status": "PASS_DISTINCT_CORRECTED_BUILDER_SOURCE_AND_ARITHMETIC_BINDING",
+  "reviewer": "AI baseline_audit",
+  "packages": [
+    {
+      "profile": "response28",
+      "package": "F:\\integer-mult-frontier\\work\\R395-count-only-correction\\response28\\revision-001\\research\\r715-sharp-response28",
+      "manifest_sha256": "a7bf1ae3aa18cf709968cc7988a2aeb4e0cb339116796f333648126c14f05287",
+      "files": 30,
+      "expected_sha256": "28a8fd32bb2e52b43dff565b634bd1baec2f3a72ca79fd007edb6727c7c53540",
+      "helper_sha256": "0fd70c30075734740b2e73149d8627dfb69fbd1f972f516e2e41f49702e89743",
+      "assembler_sha256": "caaa27d087569b96868aa22a8dd8d88506b39e539f11c6d451c4e033e6deaba8",
+      "proof_sha256": "b413e0cd1ca4ca10928109a9eff58830a9ec270b2721d2210ba6e6790248e8d0",
+      "exact_fields_compared": [
+        "kappa",
+        "bit_lower",
+        "bit_upper",
+        "complex_lower",
+        "bootstrap",
+        "strict_outer_constraints",
+        "fallback_children",
+        "bad_fraction",
+        "gain_over_pinned_parent"
+      ],
+      "kappa": "648305991611853/500000000000000000",
+      "source_audit": "Helper uses unchangedFraction1/10^16 and exact6N(N-1)+3N+6(N-1), m<=78. Assembler uses this charge in both independent source interval paths; complex charge remains original. PROOF explicitly preservesOcover and withdrawsGL transfer; historical evidence labelledwithdrawn."
+    },
+    {
+      "profile": "replica84",
+      "package": "F:\\integer-mult-frontier\\work\\R395-count-only-correction\\replica84\\revision-001\\research\\r715-sharp-fallback",
+      "manifest_sha256": "a3a69174e5d425075668a6d1057c1d1198e87c439ac19e8dac7f81b055292f71",
+      "files": 29,
+      "expected_sha256": "aeb5f6583cb1e6f44065598f97da6b41bf56e799704a9d99c5d55a14b1906b67",
+      "helper_sha256": "0fd70c30075734740b2e73149d8627dfb69fbd1f972f516e2e41f49702e89743",
+      "assembler_sha256": "caaa27d087569b96868aa22a8dd8d88506b39e539f11c6d451c4e033e6deaba8",
+      "proof_sha256": "2f81515de7006530b5d56b193a708f26388804d5eca5141ffb710902031dab96",
+      "exact_fields_compared": [
+        "kappa",
+        "bit_lower",
+        "bit_upper",
+        "complex_lower",
+        "bootstrap",
+        "strict_outer_constraints",
+        "fallback_children",
+        "bad_fraction",
+        "gain_over_pinned_parent"
+      ],
+      "kappa": "1295629943312713/1000000000000000000",
+      "source_audit": "Helper uses unchangedFraction1/10^16 and exact6N(N-1)+3N+6(N-1), m<=78. Assembler uses this charge in both independent source interval paths; complex charge remains original. PROOF explicitly preservesOcover and withdrawsGL transfer; historical evidence labelledwithdrawn."
+    }
+  ],
+  "independent_math_review_sha256": "493a6d7d805402b90163d3d2cdbca88bca93f9b0722b537b9c18f60c947ce625",
+  "script_sha256": "2d97b596ac39ec17591c4913fe0f72c33c90dc668147152645437062154e8fe4",
+  "optimization": 0,
+  "scope": "Complete additive manifests, raw parent EXPECTED hash (binding inventories/invoices), compact correction roots/bootstrap/all47/kappa compared with independent R394 computation. No concrete corrected full-wrapper execution, no synthetic fixture inference, no all-sizeO law proof."
+}

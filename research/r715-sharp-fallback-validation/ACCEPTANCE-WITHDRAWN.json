@@ -1,0 +1,65 @@
+{
+  "status": "ACCEPTED_SOURCE_SPECIFIC_FINITE_CONDITIONAL_IMPROVEMENT",
+  "timestamp_utc": "2026-10-11T19:50:56.187261+00:00",
+  "source_head": "c7590f1d861f0eaae725cc79901445385aab9125",
+  "kappa": "647814972749997/500000000000000000",
+  "parent_kappa": "647814971293561/500000000000000000",
+  "gain": "364109/125000000000000000",
+  "package_manifest_sha256": "1c39c6126da2e45003c143335fc81215a00da0e62dc621eb59a6439e59585eab",
+  "actual_result_sha256": "352f78b416e62045907649825f5ea0c83174a1406ca21af829f1789eacd7b502",
+  "normal_optimized_result_bytes_identical": true,
+  "completed_full_parent_seconds": 1378.070166814985,
+  "actual_sharp_seconds": [
+    35.30296506700688,
+    33.19707245499012
+  ],
+  "independent_source_and_actual_review_sha256": "b32569b9dbb82f7b3fdf7d71ca04460ceb5827c97197c6cb963e48857f0c7c61",
+  "container_terminal_states": {
+    "integer-mult-r378-c7590f1": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-11T19:21:37.418737192Z",
+      "FinishedAt": "2026-10-11T19:44:36.160880464Z"
+    },
+    "integer-mult-r382-sharp84": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-11T19:45:11.535623036Z",
+      "FinishedAt": "2026-10-11T19:45:47.352767932Z"
+    },
+    "integer-mult-r382-sharp84-optimized": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-11T19:46:37.941870726Z",
+      "FinishedAt": "2026-10-11T19:47:11.69588454Z"
+    }
+  },
+  "original_source_clean": true,
+  "scope": "Fresh full c759 rational84 parent replay, explicit completed-full-parent sharp recomposition, distinct source/arithmetic/actual-output AI review. Same physical programs, main profiles and complete invoices; changed bit rare-class charge only. All inherited all-size contracts remain conditional.",
+  "frontier_recheck": "PR473 subsequently reports the stronger f43 response-replica28 number 0.001296611982495107. This published c759 result makes no current-record claim; response transfer is ongoing.",
+  "frontier_snapshot_sha256": "a23a4766196fde833275f553c01f37517f27d35f452e9ff5c8aa4ec2435ce4f1",
+  "all_size_proved": false,
+  "current_record_claim": false,
+  "github_ci": "Separate exact-head3.11/3.14 workflow; no pass claim at local acceptance."
+}

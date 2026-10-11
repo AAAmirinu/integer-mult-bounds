@@ -1,0 +1,24 @@
+python3 -B scripts/verify_selected_result.py
+PASS selected record, exact kappa, original source inventory and proof supplement: 90446448750933/125000000000000000
+20:38:49 UTC  Admitting the pinned gen4 physical bit word
+20:38:49 UTC  Running the PR168-v4 package checker on the gen4 virtual word
+20:39:57 UTC  Running the PR200 physical-word proof on the gen4 physical word
+20:40:25 UTC  virtual PASS 96.1s
+20:40:54 UTC  raw PASS 17.0s
+PASS independent F2 event observer 2137016 e9f6cfba8609197b261dc37a4bcc731d20d8f3676ea1bb592f07e88b27de002b {3: 1760, 2: 1510656, 1: 624600}
+PASS PHYSICAL 2137016 records 2233133 rankmass 425742 tagged 6ec66be3ede255b2c6bb3004d2adb991efcdd323267f6b7beea21b83e9dc46c6
+PASS parity fusion 626360 ADDs 722477 records
+PASS concave descent retiming 880 gates 93320 paid calls 722477 records
+20:42:41 UTC  bit physical/global/geometry PASS
+20:42:41 UTC  Checking all19930 source, target and arbitrary dirty F2 columns
+20:42:44 UTC  Checking independent literal physical projection and inverse
+20:42:58 UTC  Checking the signed integer source decoder and dirty restoration
+20:44:53 UTC  scalar PASS 132.1s
+20:45:02 UTC  Validated 5000 exact basis determinants
+20:45:06 UTC  Validated 10000 exact basis determinants
+20:45:10 UTC  Validated 15000 exact basis determinants
+20:45:14 UTC  Validated 20000 exact basis determinants
+20:45:18 UTC  Validated 25000 exact basis determinants
+20:45:20 UTC  primes PASS 26.8s
+Killed
+make: *** [Makefile:46: gen4-bank-verify] Error 137

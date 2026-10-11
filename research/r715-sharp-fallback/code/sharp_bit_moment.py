@@ -1,7 +1,8 @@
 """Sharper inherited bit bad-class invoice; OpenAI Codex assistance.
 
-Source: retained notes/three-stage-cover-bit.tex, Gaussian fallback count and
-per-edge bad fraction for every q>2^80. Does not change the local word,
+Source: retained Gaussian fallback count. The parent's conditional orthogonal
+normalizer law supplies the unchanged bad fraction 1/10^16. Changes only count,
+not probability, local word,
 physical owner, row reserve, finite prefix or routing bill.
 """
 from decimal import Decimal, localcontext, ROUND_FLOOR
@@ -14,8 +15,8 @@ def source_charge(m):
     require(type(m) is int and 1<m<=78,'sharp invoice outside verified dimension range')
     n=2*m
     children=6*n*(n-1)+3*n+6*(n-1)
-    fraction=Q(2*m**3,1<<80)
-    require(children<32*m*m and fraction<Q(1,10**16),'source charge not bounded by inherited charge')
+    fraction=Q(1,10**16)
+    require(children<32*m*m and fraction==Q(1,10**16),'count-only charge not bounded by inherited count')
     return children,fraction
 
 def moment(engine,profile,m,W,saving):

@@ -1,0 +1,39 @@
+{
+  "status": "CONFIRMED_INHERITED_MAKE_VERIFY_2GB_MEMORY_LIMIT",
+  "source_head": "3520c0dbdd37b97165a6c81ff02e120da7ae5545",
+  "target": "make verify",
+  "failed_step": "make verify-producers -> partial-swap-producer -> h57 positive labels",
+  "returncode": 2,
+  "resource_limit": {
+    "CPU": 1,
+    "memory_bytes": 2147483648
+  },
+  "docker_oom_event": {
+    "Type": "container",
+    "Action": "oom",
+    "Actor": {
+      "ID": "5fa0b8afc013cba121e3c4db363dd7f032ec602453d56f97fe7f200db209db15",
+      "Attributes": {
+        "desktop.docker.io/binds/0/Source": "F:\\integer-mult-frontier\\work\\R369-pr473-full-replay\\deps",
+        "desktop.docker.io/binds/0/SourceKind": "hostFile",
+        "desktop.docker.io/binds/0/Target": "/opt/codex-deps/lib/python3.13/site-packages",
+        "desktop.docker.io/mounts/0/Source": "F:\\integer-mult-frontier\\work\\R389-published-required-checks\\repo",
+        "desktop.docker.io/mounts/0/SourceKind": "hostFile",
+        "desktop.docker.io/mounts/0/Target": "/source",
+        "desktop.docker.io/mounts/1/Source": "F:\\integer-mult-frontier\\work\\R393-required-repository-checks",
+        "desktop.docker.io/mounts/1/SourceKind": "hostFile",
+        "desktop.docker.io/mounts/1/Target": "/results",
+        "desktop.docker.io/ports.scheme": "v2",
+        "image": "sha256:2e569d2b405adbad13e85c19cfb18e727a384b23d09ce684328987011d7f8583",
+        "name": "r393-verify"
+      }
+    },
+    "scope": "local",
+    "time": 1791750528,
+    "timeNano": 1791750528342250308
+  },
+  "raw_event_sha256": "7a3dd138b9d47d7a3fb2281942cc3315896771aadd752ad1a4ba5c58a2f13d3b",
+  "terminal_log_sha256": "ffba751f481507066a26dd241673ffae857e448549eda769cb730543395b6a21",
+  "terminal_receipt_sha256": "2545c35f9a6f71ab16ad02eedb31040dea2109ae787fb6498154ed7c22e2db8a",
+  "reason_no_repeat": "Same inherited producer uses standard library only; changing SymPy cannot repair its confirmed cgroupOOM. Coordinator explicitly instructed avoid redundant same-resource broad replay. No sourcegate or memorycap change."
+}

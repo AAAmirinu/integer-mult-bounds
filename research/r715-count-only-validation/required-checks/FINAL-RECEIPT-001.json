@@ -1,0 +1,42 @@
+{
+  "task": "R393",
+  "source_head": "3520c0dbdd37b97165a6c81ff02e120da7ae5545",
+  "host_source_status": "clean",
+  "required_targets": {
+    "make gen4-bank-verify": "FAIL",
+    "make verify": "FAIL_INHERITED_H57_PRODUCER_CGROUP_OOM_2GB"
+  },
+  "gen4_seconds": 404.155999999959,
+  "gen4_all_nine_fresh_stages": null,
+  "gen4_source_manifest_sha256": null,
+  "gen4_receipt_sha256": "2d015e954021d376296dee09bec0bfc2e0789811c162bd3bbb5a3af8bb9cfd3f",
+  "gen4_log_sha256": "d4bd60ec9900573f50b9d025f5cddb531d28b6e006427af51c8271496ad5880d",
+  "gen4_outputs_sha256": {
+    "bit.json": "1a62d2d14f66e2de6e206e3532943b8b7a90298a1252bd025071e7690fd61d17",
+    "descent-frame-pairs.json": "29b44c5846fa4e4689a8e886a46192b014077cf285a3aff09bf96c08a8c737f9",
+    "descent-per-role.json": "590b19e2f046381edff23fd6f69021a9702cb87491ffe6db3fad3daf1cc483d1",
+    "descent-used-bases.json": "486cd94a4c15cf32ce7491cb5db6244f66e6043c37bc9e59984fea267e4a78c8",
+    "descent.json": "145af84e3697e0b7dcdb6cb4891f4c2de2f7eabcc90da81e2a64c9c3b6ffe21b",
+    "geometry.json": "74e7ccd1d0ee6f5b2f4f4b5725172f9cd2135e92bd0f12f0a329d7f8a26a01d8",
+    "global_result.json": "d538326c0f260dc5218005f0f2942c006f63084d9c641d45e674df6d2b699aef",
+    "parity.json": "b3542f177db8f6a04fb81bd1a2d42d94e32111d02d1a9d89b3d282bda9eaf212",
+    "physical.json": "7206a3425869884aa007787d21162716584a783cde1fcbc36b2530fba6328813",
+    "primes.json": "0337eedc1b1185b0d97de2eb5aa71a388a199b16ab5c20a774e7e68dd4ccf2d2",
+    "raw.json": "b5aa71d9d387fdfcfad4cab3c919944f42e08c17867144ba0a0b29a616c346c5",
+    "scalar.json": "3da3396cd885adb3a83d669a1d807bc668016d8bcfb957118f624c63a6f3e8cf",
+    "virtual.json": "a621441f41a9a37fb1327d0a8c0ceddeadc965b0685f7933c54ea5b08da4a69c"
+  },
+  "broad_receipt_sha256": "2545c35f9a6f71ab16ad02eedb31040dea2109ae787fb6498154ed7c22e2db8a",
+  "broad_log_sha256": "ffba751f481507066a26dd241673ffae857e448549eda769cb730543395b6a21",
+  "broad_oom_evidence_sha256": "391e8bfe24dc32a49f9b7c594bcaf88363c444495b1adab343951b9609bfde2c",
+  "prior_failures_preserved": [
+    "R389 broad outertime limit",
+    "R389 missingSymPy",
+    "R393 gen4SymPy1.13.3 mismatch",
+    "R393 correctedgen4first180s timeout",
+    "R393 broadconfirmedOOM"
+  ],
+  "dependency_complete_stability_sha256": "eef2adc6137337f67ddaf0d49059c03f05ab3296d2b10ca6b1956c6571d6c26a",
+  "reviewer": "AI baseline_audit",
+  "scope": "Required Makefile checks on exact published3520 source. Gen4 completed status only after original nine-gate verifier; broadverify notpassed, unchanged stdlib h57 producer memorylimit. No source edits, no raisedcap, no weakenedgates, no mandatorycheckPASS inferred from candidate-specific replay. All-size claims remain conditional."
+}

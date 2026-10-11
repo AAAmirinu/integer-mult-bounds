@@ -1,0 +1,19 @@
+{
+  "status": "PASS_INDEPENDENT_ACTUAL_CORRECTED_COUNT_ONLY_RESPONSE28",
+  "package_manifest_sha256": "eb70309056cc274287411b1a5abef73185279816d60e631061a5ff89dd05d5cb",
+  "package_source_sha256": "df6cbe8d9fa429173c71fa6f1851c883dcfb2b8b146ee9842cf598e1fe8afd9b",
+  "parent_admission_sha256": "c19895adf0b64d8012de90419124b77351fbed8d12679af1942e5a5380365b0d",
+  "parent_receipt_sha256": "c079df31cf02580d34983a8589c77d5a94567b3c6b9ef6210b849eb2a01455ea",
+  "sharp_receipt_sha256": "2b5308e36b41944d1053f4f532e805b62942a47f7b95e28895d73ef517ec3e90",
+  "sharp_result_sha256": "66e43afa9142033b32652617ceaef813b11b230bff3a21d83a27ad6b60b04ae7",
+  "actual_proposal_sha256": {
+    "assemble.py": "caaa27d087569b96868aa22a8dd8d88506b39e539f11c6d451c4e033e6deaba8",
+    "sharp_bit_moment.py": "0fd70c30075734740b2e73149d8627dfb69fbd1f972f516e2e41f49702e89743"
+  },
+  "kappa": "648305991611853/500000000000000000",
+  "gain": "728599/1000000000000000000",
+  "bad_fraction": "1/10000000000000000",
+  "fallback_children": 146478,
+  "checker_sha256": "b9bd72f5847dcde6bd3ca13e43bd4d2ba57d8c714d65d8205c87b101d2e2f868",
+  "scope": "Actual count-only sharp assembly against completed original fresh28 supplier and immutable reviewed package; O bad-class law remains inherited conditional assumption. No new O theorem or GL transfer."
+}

@@ -1,0 +1,9 @@
+python3 -B scripts/verify_selected_result.py
+PASS selected record, exact kappa, original source inventory and proof supplement: 90446448750933/125000000000000000
+20:33:46 UTC  Admitting the pinned gen4 physical bit word
+20:33:46 UTC  Running the PR168-v4 package checker on the gen4 virtual word
+20:34:56 UTC  Running the PR200 physical-word proof on the gen4 physical word
+20:35:26 UTC  virtual PASS 99.6s
+20:35:56 UTC  raw PASS 17.6s
+PASS independent F2 event observer 2137016 e9f6cfba8609197b261dc37a4bcc731d20d8f3676ea1bb592f07e88b27de002b {3: 1760, 2: 1510656, 1: 624600}
+make: *** [Makefile:46: gen4-bank-verify] Terminated

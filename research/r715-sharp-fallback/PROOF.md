@@ -1,21 +1,9 @@
-# Changed bit invoice and retained hypotheses
+# Count refinement with original O-cover hypothesis unchanged
 
-Only the generic fixed-projector/local-ring subsections of retained `notes/three-stage-cover-bit.tex` are used. Its old m67/h23 geometry and histogram are not transferred. Current source: PR473 `c7590f1d861f0eaae725cc79901445385aab9125`, m78, W100800, rank mass7828128 and deficit34272.
+The only mathematical change is the exact Gaussian fallback invoice. For N=2m, full unit-pivot local-ring Gauss-Jordan requires at most N(N-1) additions, N swaps and N-1 paired diagonal steps. Inherited reversed-child bills give `6N(N-1)+3N+6(N-1)=24m^2+6m-6`, hence146478 at m78 instead of the relaxed `32m^2=194688`. Full fallback children are charged at width1/m; no good contribution is subtracted. The retained finite bill/algorithm supplies the count, not a new chart distribution theorem.
 
-The retained fixed-projector normalizer contract supplies nonzero cleared leading minors under a uniform GL_m(F_q) chart. Their summed degree is at most m³. Polynomial zero counting and conditioning on invertibility cost at most a factor2, giving per-edge bad fraction≤2m³/q. Choose a fixed q>2^80 after all finite rational-denominator/rank exclusions. The conservative charged fraction is `2*m^3/2^80`, at m78 exactly `59319/75557863725914323419136`, less than10^-16. Edge expectations are summed separately, so no simultaneous union over edges, replicas, stages or scalar gates is introduced.
+The parent orthogonal-normalizer cover bad law remains the conditional `delta<=1/10^16`. Its O-compatible rows and cardinality are unchanged. No GL sampling, `2m^3/q` probability, or stronger O bad-class law is transferred. Earlier GL-derived probability claims are withdrawn because uniform GL charts would incur an incompatible row coefficient28416 exceeding allowance20161. This corrected invoice preserves the source O row bound19437 and all source chart/compiler assumptions.
 
-Full unit-pivot Gauss-Jordan elimination of an invertible N×N local-ring residual, N=2m, uses at most N(N−1) additions and N swaps. Each upper addition is conservatively charged6 reversed children; swaps cost3 each; N−1 diagonal pairs cost6 each. Thus the inherited fallback count is
+For the actual pinned histogram, the changed moment is `sum_r r H_r/(mW) exp(s log(m/r)) + 146478 sum H_r/(mW) * (1/10^16) * exp(s log m)`. The unchanged source interval and base-two engines, plus the separate rational atanh/Taylor engine, enclose strict roots. All47 outer inequalities and six bootstrap cutoffs are recomputed with the original positive reserves, eta=beta=grid10^-18 and the actual finite coefficient charge10304. Original root/outer witnesses are reconstructed first; old-count-at-new-root and next-grid controls reject.
 
-`6*N*(N-1)+3*N+6*(N-1)=24*m^2+6*m-6=146478`.
-
-It is smaller than the prior `32*m^2=194688` overcharge. Every child has normalized width≤1/m. The complete bad contribution is added; no displaced good contribution is subtracted. Paid adapters, compiler/routing work, finite prefix, three-level coefficient10304-bit reserve, external row allowance20161 and all endpoint margins are unchanged. This applies PR465's already published sharper accounting to a different, pinned stored histogram.
-
-For saving s, the exact moment is
-
-`sum_r [r*H_r/(m*W)] exp(s*log(m/r)) + [146478*sum H_r/(m*W)] * (2*m^3/2^80) * exp(s*log m)`.
-
-The retained two independent rational interval engines certify strict lower/upper endpoint signs. Six ordinary bootstrap steps retain eta=beta=grid10^-18, initial384599/10^10 and the10^-24 positive supplier reserve. All47 strict balanced outer inequalities and adjacent-grid/invalid-parameter controls are retained. The independent R379 review reconstructs moments and all47 formulas without importing the producer engines; its review is evidence for the pinned replica84 inputs only.
-
-The wrapper accepts only the complete original scientific parent with strict source/output bindings, then recomputes the copied complete assembler. If the original fresh run fails its own expected-program/template bindings, no sharp success receipt is produced. Fixture tests establish only the wrapper protocol.
-
-Still conditional: uniform fixed-projector cover/chart realization and nonzero-minor witnesses, finite exclusions, Gaussian fallback realization/compiler, bit target-label and mutable-basis contracts, whole-family correlated dirty hosting, complex monomial normalization/same-owner restored spectators, compressed windows, restored work/rows, tape/common-grid, precision and analytic finite-to-asymptotic transfer. Finite certificates do not discharge these all-size hypotheses.
+Original source-specific physical programs, per-edge frame realization, whole correlated-dirty owners, same-owner spectators, fixed chart/normalizer, finite exclusions, local-ring Gaussian/compiler, restored work, compressed windows, precision/tape/grid and analytic finite-to-asymptotic transfer remain inherited conditional contracts. The count-only refinement proves no new cover geometry or probability law. Finite full supplier replay, actual sharp recomposition and fresh distinct reviews are required gates for this correction; fixture tests or historical withdrawn probability reviews do not discharge them.

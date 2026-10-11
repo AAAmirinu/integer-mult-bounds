@@ -1,0 +1,31 @@
+{
+  "status": "TIME_LIMIT",
+  "target": "make gen4-bank-verify",
+  "returncode": 124,
+  "source_head": "3520c0dbdd37b97165a6c81ff02e120da7ae5545",
+  "host_source_clean": true,
+  "source_lock_sha256": "7496874a3a2d44226bce3f7a94f298c0b656f1d8cb6239fbab007b06e7c952e8",
+  "controller_sha256": "93d4b0cb1aa291fe59de214a46a2f03bfea8506cda3bed52513ddc282c74fea4",
+  "declaration_sha256": "9d8bd339a05d8616af5520cd6f707f4ea06483ad33263bac4192d90aab86c1a1",
+  "dependency_target_sha256": "c50c70a7fd36c5199bef58b54bd8993369b2bc516d6e11e06a1cc3a802334198",
+  "dependency_versions": "1.14.0 2.2.6 1.3.0",
+  "image": "sha256:2e569d2b405adbad13e85c19cfb18e727a384b23d09ce684328987011d7f8583",
+  "container_id": "34b33d5ca25bfb7e8880c6c8fe188a83a1e22ac58efd879cf3da63cd25f0d185",
+  "seconds_scientific": 180.26599999982864,
+  "science_limit_seconds": 180,
+  "preparation_seconds_excluded": 62.40600000019185,
+  "command": [
+    "docker",
+    "exec",
+    "r393-gen4-corrected",
+    "sh",
+    "-c",
+    "cd /work\ntimeout --signal=TERM --kill-after=5s 180s make gen4-bank-verify\nr393_result=$?\ngit status --porcelain > /results/gen4-generated-status-002.txt\nexit \"$r393_result\""
+  ],
+  "log_sha256": "0f718df1632b360cbb90ffb258bec66e2c0dbdebfbc40d47096b9f7b54ad1e97",
+  "generated_status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "cgroup_before_sha256": "791e78de2c3e1fdfa3fbe7f5ce615271f87f2e23256c6f18bcc836521f8c7197",
+  "cgroup_after_sha256": "ec81ab8af28561827b89cce86dea5a91eb9ecfb6bce3123a6dc10d15313f121a",
+  "container_inspect_sha256": "2d24e4069e3b44529241a8a6e4f106ec1114330d731584bff0f7b1c748142470",
+  "scope": "Exact required gen4 target; no source edits or weakened assertions; fresh isolated container; copy outside scientific timer. Broadmakeverify remains independentlyfailed at confirmed inherited2GBmemorylimit."
+}

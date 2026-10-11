@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "profile": "response28",
+      "head": "f43a0e9ad04a7b3683498274854ae2e35d4a8d7c",
+      "canonical_repository": "rohanarun/integer-mult-bounds",
+      "path": "research/r715-response-replica28/MANIFEST.json",
+      "bytes": 20460,
+      "sha256": "f346fa0d27664ed50361fe72045007610461d0d46abcbf2c8daf68165ccc8bcf",
+      "git_blob_sha1": "38eebfffc281e0b409b46d840167ea1eb21aa207",
+      "url": "https://raw.githubusercontent.com/rohanarun/integer-mult-bounds/f43a0e9ad04a7b3683498274854ae2e35d4a8d7c/research/r715-response-replica28/MANIFEST.json"
+    },
+    {
+      "profile": "response28",
+      "head": "f43a0e9ad04a7b3683498274854ae2e35d4a8d7c",
+      "canonical_repository": "rohanarun/integer-mult-bounds",
+      "path": "research/r715-response-replica28/PROOF.md",
+      "bytes": 1620,
+      "sha256": "500106fbaf317fb82f40a73df244b82878e93dc1d69c8931d8ca72315cfd79f3",
+      "git_blob_sha1": "489e7c22c1b7375c8ed6ab7bfd9e83b0f4fa5c0f",
+      "url": "https://raw.githubusercontent.com/rohanarun/integer-mult-bounds/f43a0e9ad04a7b3683498274854ae2e35d4a8d7c/research/r715-response-replica28/PROOF.md"
+    },
+    {
+      "profile": "response28",
+      "head": "f43a0e9ad04a7b3683498274854ae2e35d4a8d7c",
+      "canonical_repository": "rohanarun/integer-mult-bounds",
+      "path": "research/e8-r740-replica32/parent436/code/bit/checkers/finite_k.py",
+      "bytes": 12200,
+      "sha256": "7e67dc75e63a11e38ac6d6615656c7cf6982e5a33dd404d04b967bf474cad02e",
+      "git_blob_sha1": "8781815ee6ee663edc0e0afdf1380186594ec913",
+      "url": "https://raw.githubusercontent.com/rohanarun/integer-mult-bounds/f43a0e9ad04a7b3683498274854ae2e35d4a8d7c/research/e8-r740-replica32/parent436/code/bit/checkers/finite_k.py"
+    },
+    {
+      "profile": "response28",
+      "head": "f43a0e9ad04a7b3683498274854ae2e35d4a8d7c",
+      "canonical_repository": "rohanarun/integer-mult-bounds",
+      "path": "research/r715-response-replica28/code/assemble.py",
+      "bytes": 12767,
+      "sha256": "62ae42819a5886b41e398701700b56f49002517484329ea5cd101b872e75a74c",
+      "git_blob_sha1": "363e98968c84601bc9ca179966f87d52cf9e5236",
+      "url": "https://raw.githubusercontent.com/rohanarun/integer-mult-bounds/f43a0e9ad04a7b3683498274854ae2e35d4a8d7c/research/r715-response-replica28/code/assemble.py"
+    },
+    {
+      "profile": "replica84",
+      "head": "c7590f1d861f0eaae725cc79901445385aab9125",
+      "canonical_repository": "rohanarun/integer-mult-bounds",
+      "path": "research/r715-replica84-complex79/MANIFEST.json",
+      "bytes": 18238,
+      "git_blob_sha1": "df727ec0d01feed156afb5a7975d625e19829ca9",
+      "sha256": "67d23bfff2c9d0b2b55c44e7dfb35b167471e29ef13a088a72c3912a64ad5fcf"
+    }
+  ],
+  "scope": "Supplementary proof/source authentication, append-only to arithmetic lock"
+}

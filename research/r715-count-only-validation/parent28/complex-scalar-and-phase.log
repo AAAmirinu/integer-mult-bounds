@@ -1,0 +1,23 @@
+full main columns 800 replayed
+PASS exact arbitrary dirt and restored sources/helpers
+PASS exact inverse-transpose on every column
+PASS audit 1.7085223300091457
+PASS emitted forward 24911 events
+PASS emitted backward 24911 events
+exact phase edges 0 / 2932 seconds 1.0795470429875422
+exact phase edges 200 / 2932 seconds 13.890919836005196
+exact phase edges 400 / 2932 seconds 27.550843653007178
+exact phase edges 600 / 2932 seconds 42.68315353200887
+exact phase edges 800 / 2932 seconds 58.05586027499521
+exact phase edges 1000 / 2932 seconds 73.27043745698757
+exact phase edges 1200 / 2932 seconds 88.80803194301552
+exact phase edges 1400 / 2932 seconds 104.36876969700097
+exact phase edges 1600 / 2932 seconds 120.16355437898892
+exact phase edges 1800 / 2932 seconds 136.3261579470127
+exact phase edges 2000 / 2932 seconds 152.91067755699623
+exact phase edges 2200 / 2932 seconds 169.1081164389907
+exact phase edges 2400 / 2932 seconds 184.68584814900532
+exact phase edges 2600 / 2932 seconds 201.61487349998788
+exact phase edges 2800 / 2932 seconds 218.04250088499975
+PASS exact local phases 232.78530588399735 seconds
+BUILD COMPLETE

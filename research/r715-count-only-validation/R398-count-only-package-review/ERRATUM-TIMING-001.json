@@ -1,0 +1,6 @@
+{
+  "status": "IMMUTABLE_REVIEW_TIMING_ERRATUM",
+  "original_review_sha256": "f43b06d64914d51c4ca18aa3f83a2d86cc4fdcb63e921fad4a7c4b75a85fec6f",
+  "correction": "The actual84 optimized runtime is37.80576938399463s (rounded37.8058), and actual28 optimized runtime is15.352166405005846s (rounded15.3522). Review prose runtime rounding was inaccurate. All source/math/payload/results/admission fields are unchanged.",
+  "authoritative_actual_terminal_sha256": "77b1095e3e225d361a08cb46eae6f55e2d5bc3ff7fdf8d184745d95f96e7b097"
+}
