@@ -32,3 +32,9 @@ With the unsplit idle climbs (#375), the largest child is 38 of m = 63, so the h
 - the complex side binds;
 - κ = 95464544449649/10¹⁷;
 - κ + 10⁻¹⁸ is rejected.
+
+**6. Lean (B₂ only).** In Sussman's five-stage word B₂ the unit theorem of the new certificate is kernel-checked by his
+unchanged generators and checker (wht-power-saving-lean `9c94857`): `wht_main_block_B2Ge8FRx` states
+`WHTTimeBoundsAt (1 - 8766835/(10:ℝ)^10)`, `tools/Compare.lean` gives `RESULT: PASS`, and the axioms are propext,
+Classical.choice and Quot.sound (`lean/LEAN-B2-E8FR.txt`). The B₃ pricing of points 4 and 5, and #377's layouts, have no
+Lean proof.

@@ -1,0 +1,159 @@
+Lean evidence: the re-timed E8 certificate (data/gcert1-e8-r783-far.json.gz) in Sussman's five-stage word B_2
+==============================================================================================================
+
+Scope. This is a kernel-checked theorem for ONE unit of the certificate in Sussman's bridged five-stage word B_2
+(m = 5h = 45, W = 4v + R = 1,263), the layout that his theorem wht_main_block_B2Ge8x covers for the original
+gcert1-e8-r783. It is NOT a proof of the seven-stage B_3 layout this package prices (b, kappa), and not a proof
+of any #377 nine-stage layout; those remain without a Lean proof.
+
+Theorem (OAI.PowerSaving.WHT.wht_main_block_B2Ge8FRx, module Work.GCert.Data.SolutionB2Ge8FRx):
+
+    ∃ solve W, WHTProgram solve W ∧ WHTTimeBoundsAt (1 - 8766835/(10:ℝ)^10) W
+
+Sussman's original (wht_main_block_B2Ge8x, same generators):      1 - 8762479/(10:ℝ)^10
+Gain in the stated B_2 exponent: 4356/10^10 (+0.0497 %).
+
+Toolchain and inputs
+--------------------
+- jacobalansussman/wht-power-saving-lean at 9c94857bbaee886f8649edee0bc2d3c738f9555e (2026-10-10), a fresh
+  clone (the older checkout at f010392, an ancestor, was left untouched); lean-toolchain leanprover/lean4:v4.34.1,
+  lakefile.lean and lake-manifest.json unchanged; no repository file modified, only new files added.
+- Lean (version 4.34.1, aarch64-unknown-linux-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release),
+  Linux 6.17.0 aarch64, 20 threads (builds pinned to 16 with taskset -c 0-15), 121 GB.
+- Certificate: data/gcert1-e8-r783-far.json.gz of this package, copied to tools/certificate/ in the clone.
+    sha256 (gz)          f2664ee7bcdfb55893abe9f1be8ee6a394a602e8262e611de2a0328bbd508aa7
+    sha256 (decompressed) f2a404fe3f00cf843718fc8c23c6227d84e5e65c5a19cc1141dc1a6997ca86e7
+- Tags: certificate name E8FR, instance B2Ge8FR (Sussman's: E8, B2Ge8).
+
+Control. In the same clone, python3 tools/gx/regen_check_e8.py (Sussman's original) printed
+    RESULT: REPRODUCED (25 repository files reproduced byte for byte, 0 different, 3 generated files not in the repository)
+
+Commands (repository root of the clone)
+---------------------------------------
+    GX_OUT=<out> python3 tools/gx/gxgen.py tools/certificate/gcert1-e8-r783-far.json.gz E8FR
+    GX_OUT=<out> python3 tools/gx/gxrate.py B2Ge8FR E8FR
+    cp -r <out>/Work/GCert/Data/. Work/GCert/Data/ ; cp <out>/cmp/B2Ge8FRx.json comparator/
+    for m in Gen.E8FR.S0 Gen.E8FR Gen.E8FRPar Gen.E8FRTab0 Gen.E8FRTab1 Gen.E8FRTab2 Gen.E8FRTab3 Gen.E8FRSeg0 \
+             Gen.E8FRSeg1 Gen.E8FRSegF Gen.E8FREnd Gen.E8FRHist Gen.E8FRYChk Gen.E8FRScal0 RateB2Ge8FR RateB2Ge8FRx \
+             InstB2Ge8FR E8FRPrice E8FRCert E8FRScalOK B2Ge8FR B2Ge8FRMain ChallengeB2Ge8FRx SolutionB2Ge8FRx; do
+      lake build Work.GCert.Data.$m || break
+    done
+    lake env lean --run tools/Compare.lean Work.GCert.Data.ChallengeB2Ge8FRx \
+        Work.GCert.Data.SolutionB2Ge8FRx OAI.PowerSaving.WHT.wht_main_block_B2Ge8FRx
+
+Generator output (gxgen.py, gxrate.py), verbatim
+------------------------------------------------
+    E8FR: mirror accepts; h=9 v=120 R=783 N=9039; pairs=3120; replay segments=2; scalar batches=1
+    wrote 2 data modules ([227296] bytes), 10 check modules, Work.GCert.Data.Gen.E8FRHist, Work.GCert.Data.E8FRCert
+    build order: Work.GCert.Data.Gen.E8FR.S0 Work.GCert.Data.Gen.E8FR Work.GCert.Data.Gen.E8FRScal0 Work.GCert.Data.Gen.E8FRYChk Work.GCert.Data.Gen.E8FRTab0 Work.GCert.Data.Gen.E8FRTab1 Work.GCert.Data.Gen.E8FRTab2 Work.GCert.Data.Gen.E8FRTab3 Work.GCert.Data.Gen.E8FRSeg0 Work.GCert.Data.Gen.E8FRSeg1 Work.GCert.Data.Gen.E8FRSegF Work.GCert.Data.Gen.E8FREnd Work.GCert.Data.Gen.E8FRHist Work.GCert.Data.E8FRPrice Work.GCert.Data.E8FRCert Work.GCert.Data.E8FRScalOK
+    unit B2Ge8FR: W=1263 m=45 D=120 tally=56715 blocks=[(1, 10465), (2, 3030), (3, 2620), (4, 835), (5, 1075), (6, 1705), (7, 215), (8, 360), (9, 40), (16, 240), (20, 240)]
+    RateB2Ge8FR: block 87667/10^8 (evaluated 87667, fails 87669), rank 55517 (evaluated 55517, fails 55524), s=13, slack 2.13e-08, rank slack 1.53e-06
+    RateB2Ge8FRx: block 8766835/10^10 (evaluated 8766838, fails 8766839), rank 5552387 (evaluated 5552389, fails 5552394), s=40, slack 2.06e-10, rank slack 2.91e-09
+    packed B2Ge8FRx wht_main_block_B2Ge8FRx 1 - 8766835/10^10 challenge code lines changed (0-based): [321, 322, 323]
+    packed B2Ge8FR wht_main_block_B2Ge8FR 1 - 87667/10^8 challenge code lines changed (0-based): [321, 322, 323]
+
+The Python mirror of both Lean checks accepts. The unit block list equals our own B_2 histogram (5 x the block
+histogram + 2v x B_2 idle climbs {20 | 16, 8, 4}); verify.sh step 4b recomputes it. The exact B_2 coarse saving
+by our engines is b_2 = 219170973636899/(2.5*10^17) = 8.76683894547596e-4, so floor(10^10 b_2) = 8766838 =
+Sussman's "evaluated" figure. His generator states the exponent at 3 grid points below (s = 40 rank-sharp plan),
+exactly as for his original (stated 8762479, evaluated 8762482, b_2 = 8.76248285600677e-4).
+
+Challenge vs Sussman's ChallengeB2Ge8x: after renaming B2Ge8FR -> B2Ge8 and E8FR -> E8, the only differing lines
+are the four that carry the exponent (8766835 in place of 8762479): doc lines 6, 13, 322 and the statement, line 324.
+
+Build (lake build, one module per call, 24 modules)
+---------------------------------------------------
+- 24 of 24 exit code 0, each "Build completed successfully"; last: (9213 jobs); no line starting with "error".
+- "declaration uses `sorry`" appears exactly once, for Work/GCert/Data/ChallengeB2Ge8FRx.lean:323:8 (the
+  challenge states the theorem without proof, as intended); for no other module.
+- The large evaluations are kernel evaluations (`by decide +kernel`): tab0..tab3, seg0, seg1, segF, end, hist,
+  yChk, scal0.
+- Axiom lines printed by the build for the 24 new modules (each once):
+    Work/GCert/Data/Gen/E8FRTab0.lean:10:0: 'GXD.E8FR.tab0_ok' depends on axioms: [propext]
+    Work/GCert/Data/Gen/E8FRTab1.lean:10:0: 'GXD.E8FR.tab1_ok' depends on axioms: [propext]
+    Work/GCert/Data/Gen/E8FRTab2.lean:10:0: 'GXD.E8FR.tab2_ok' depends on axioms: [propext]
+    Work/GCert/Data/Gen/E8FRTab3.lean:10:0: 'GXD.E8FR.tab3_ok' depends on axioms: [propext]
+    Work/GCert/Data/Gen/E8FRSeg0.lean:9:0: 'GXD.E8FR.seg0_ok' depends on axioms: [propext]
+    Work/GCert/Data/Gen/E8FRSeg1.lean:9:0: 'GXD.E8FR.seg1_ok' depends on axioms: [propext]
+    Work/GCert/Data/Gen/E8FRSegF.lean:9:0: 'GXD.E8FR.segF_ok' depends on axioms: [propext]
+    Work/GCert/Data/Gen/E8FREnd.lean:10:0: 'GXD.E8FR.end_ok' depends on axioms: [propext]
+    Work/GCert/Data/Gen/E8FRYChk.lean:10:0: 'GXD.E8FR.ychk_ok' depends on axioms: [propext]
+    Work/GCert/Data/Gen/E8FRScal0.lean:10:0: 'GXD.E8FR.scal0_ok' depends on axioms: [propext]
+    Work/GCert/Data/RateB2Ge8FR.lean:204:0: 'OAI.PowerSaving.BlockAccounting.fold_B2Ge8FR' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/RateB2Ge8FR.lean:205:0: 'OAI.PowerSaving.BlockAccounting.fold_B2Ge8FR_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/RateB2Ge8FR.lean:206:0: 'OAI.PowerSaving.BlockAccounting.foldRank_B2Ge8FR' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/RateB2Ge8FR.lean:207:0: 'OAI.PowerSaving.BlockAccounting.foldRank_B2Ge8FR_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/RateB2Ge8FRx.lean:204:0: 'OAI.PowerSaving.BlockAccounting.fold_B2Ge8FRx' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/RateB2Ge8FRx.lean:205:0: 'OAI.PowerSaving.BlockAccounting.fold_B2Ge8FRx_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/RateB2Ge8FRx.lean:206:0: 'OAI.PowerSaving.BlockAccounting.foldRank_B2Ge8FRx' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/RateB2Ge8FRx.lean:207:0: 'OAI.PowerSaving.BlockAccounting.foldRank_B2Ge8FRx_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/InstB2Ge8FR.lean:54:0: 'OAI.PowerSaving.BridgeRate.B2Ge8FR.unit_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/InstB2Ge8FR.lean:55:0: 'OAI.PowerSaving.BridgeRate.B2Ge8FR.unit_tally' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/E8FRPrice.lean:53:0: 'GXD.E8FR.inv_cost' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/E8FRPrice.lean:54:0: 'GXD.E8FR.inv_moves' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/E8FRCert.lean:77:0: 'GXD.E8FR.valid' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/E8FRCert.lean:78:0: 'GXD.E8FR.lab_price' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/E8FRScalOK.lean:15:0: 'GXD.E8FR.scalOK' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/B2Ge8FR.lean:100:0: 'OAI.PowerSaving.WHT.wht_B2Ge8FR_of_scal' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/B2Ge8FR.lean:101:0: 'OAI.PowerSaving.WHT.wht_B2Ge8FRx_of_scal' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/B2Ge8FR.lean:102:0: 'OAI.PowerSaving.WHT.wht_B2Ge8FR_of_ids' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/B2Ge8FR.lean:103:0: 'OAI.PowerSaving.WHT.wht_B2Ge8FRx_of_ids' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/B2Ge8FRMain.lean:32:0: 'OAI.PowerSaving.WHT.wht_main_B2Ge8FR' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/B2Ge8FRMain.lean:33:0: 'OAI.PowerSaving.WHT.wht_main_B2Ge8FRx' depends on axioms: [propext, Classical.choice, Quot.sound]
+    Work/GCert/Data/SolutionB2Ge8FRx.lean:38:0: 'OAI.PowerSaving.WHT.wht_main_block_B2Ge8FRx' depends on axioms: [propext, Classical.choice, Quot.sound]
+- Wall time 24 modules: about 90 s; largest Lean process 7.04 GB.
+
+tools/Compare.lean (exit code 0), verbatim
+------------------------------------------
+    challenge module: Work.GCert.Data.ChallengeB2Ge8FRx   (10745 modules loaded)
+    solution module:  Work.GCert.Data.SolutionB2Ge8FRx   (11034 modules loaded)
+    sanity: imported proofs are loaded (Nat.add_comm uses 7 constants, Real.exp_pos uses 85)
+
+    === OAI.PowerSaving.WHT.wht_main_block_B2Ge8FRx ===
+    challenge: theorem in Work.GCert.Data.ChallengeB2Ge8FRx;  solution: theorem in Work.GCert.Data.SolutionB2Ge8FRx
+    OK: statement is the same kernel term in both
+    challenge proof uses sorryAx: true
+    statement depends on 2035 constants; 107 are declared in the challenge file itself
+    OK: every statement dependency is identical in the solution
+    solution proof reaches 36821 constants; axioms: #[Classical.choice, Quot.sound, propext]
+    OK: only permitted axioms
+
+    RESULT: PASS
+    CMP_EXIT 0
+
+    (the 107 per-constant "identical: ..." lines, indented in the log, are omitted)
+  Wall 15.7 s, maximum resident set 16.1 GB.
+
+Not run: the official leanprover/comparator (comparator/B2Ge8FRx.json was generated; it needs landrun /
+Landlock, as in Sussman's VERIFY.md section 8).
+
+SHA-256 of the 26 generated Lean modules and 2 comparator configurations
+------------------------------------------------------------------------
+    7d756363c48bf9de60db8eb6108f9b36c14ab927f502532faae27a7ad17d9756  cmp/B2Ge8FR.json
+    5ac2659d6c8e9c981d0f69f6beeae98abad33d361414ca4a608f2fdc5232a1fa  cmp/B2Ge8FRx.json
+    7151321cef1612922b2b9961cde0803f92a8c905ffd6f0c3556a8bac80864582  Work/GCert/Data/B2Ge8FR.lean
+    b273786f6f973628f882127abc26b7307d1046b7ab80888ec3403ddc05f3e07f  Work/GCert/Data/B2Ge8FRMain.lean
+    42d88d6b7fead91bab2e7051cb2ddd8a19d49323fe186c3fef6d75acfb8343e5  Work/GCert/Data/ChallengeB2Ge8FR.lean
+    ac370d35ba633a80c917fda44129655feaec874f6f96491bc748e4c52d219d7a  Work/GCert/Data/ChallengeB2Ge8FRx.lean
+    7c8369d5e510837911b1199e5ca3f4b862226b4f61753b4cdacc65c67eb46bbf  Work/GCert/Data/E8FRCert.lean
+    42a041e5f80e33376c3f6627e9663395e5af6c72785645227000dd58924139b8  Work/GCert/Data/E8FRPrice.lean
+    d62cedaa79d2badb7ffe6c5ab5dec73b6392a90883b66596b2024e497d650bdc  Work/GCert/Data/E8FRScalOK.lean
+    e62f8ba7cbf5bd06989609d30bb9c812bac9a1656620bf9c0e6e7d275b7d8ee9  Work/GCert/Data/Gen/E8FREnd.lean
+    fed2c5788b9fbca540c1bf1772fa3f5ec4c9b5ab771d5ecfcc3cc149599d755f  Work/GCert/Data/Gen/E8FRHist.lean
+    9dba64181b0f7aa46d6fc45b9eba9d9e5de2da9fa07cff605a7b29dccf24b5be  Work/GCert/Data/Gen/E8FR.lean
+    776aab4f5d0ec5fc56e0a81a645a2698cbc1153524b3de8cff308266b5e5aaba  Work/GCert/Data/Gen/E8FRPar.lean
+    a657d8ffece650ce41625fff21c24626f6816911ec102c9fe7b09f0eaa59a63e  Work/GCert/Data/Gen/E8FR/S0.lean
+    853fc82b6c5fb1ac55febbe78da5d46a06fb844d9528ceb403afff2ee8bbacaf  Work/GCert/Data/Gen/E8FRScal0.lean
+    b3fc8760bb8a0f03d03b7952c6c871f50517de377c9bf640043d74ba5ff3d28c  Work/GCert/Data/Gen/E8FRSeg0.lean
+    d8116703d1bcfe2ea847f471e183b03abadefc0b34aab9fd3b02d24740e353dd  Work/GCert/Data/Gen/E8FRSeg1.lean
+    695b3d53f9d754fecc234f29f692701ac7cacb3c867604f27899fd89a188fea4  Work/GCert/Data/Gen/E8FRSegF.lean
+    c9568cd8e456d116cea1d14d157524f5478e9760fc7f328a4eda0df32d0c3139  Work/GCert/Data/Gen/E8FRTab0.lean
+    096fef120b0e3af85bd6512bad12b1f15655fb67cf6e6f41036063de813503ff  Work/GCert/Data/Gen/E8FRTab1.lean
+    ba5820e0b41a56a3ff0dd7f0ff4401d36f82d60e7fb835ffc6f38622fa6ea3a0  Work/GCert/Data/Gen/E8FRTab2.lean
+    868944bfacea917b2958492ecea31f564de951d0ed7f10d17b680f93c7fa958e  Work/GCert/Data/Gen/E8FRTab3.lean
+    82909506ed4b3288676dad6af108c7fa9b5f7ca88565165cc68db897acba939e  Work/GCert/Data/Gen/E8FRYChk.lean
+    dbd7cbb4ef78bf48852fce9ab582d4ded574f6239cac7d602b62d0cee2cb3dd3  Work/GCert/Data/InstB2Ge8FR.lean
+    ceda23d73841d962024f6e7ed539f9da1e06fbfee627c4a05a21908408fac571  Work/GCert/Data/RateB2Ge8FR.lean
+    3eb3d99db71857c4dbe759f0bfb2f935ff7cd80ef4a9e26c8972723886420270  Work/GCert/Data/RateB2Ge8FRx.lean
+    6f1e4eae4a3369a6956696d98f297a1bcf13de2c05a79a5b7e66a1d2dcbd7cb8  Work/GCert/Data/SolutionB2Ge8FR.lean
+    836ba4e14d6eb2bd9a01146f723dcbf29ed1ef9e06a6797c565096a6f88ef446  Work/GCert/Data/SolutionB2Ge8FRx.lean

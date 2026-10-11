@@ -16,7 +16,7 @@ for line in open('MANIFEST.sha256'):
     if hashlib.sha256(open(p,'rb').read()).hexdigest()!=h: print('MISMATCH',p);bad+=1
 files={os.path.relpath(os.path.join(r,f)) for r,_,fs in os.walk('.') for f in fs if '__pycache__' not in r}-{'MANIFEST.sha256'}
 if files-listed: print('UNLISTED',sorted(files-listed));bad+=1
-sys.exit(1 if bad else 0)") && echo "   all files match MANIFEST.sha256"
+sys.exit(1 if bad else 0)") || { echo "MANIFEST FAIL"; exit 1; }; echo "   all files match MANIFEST.sha256"
 
 echo "== 1. pinned inputs (git blob ids)"
 $PY -c "
@@ -57,6 +57,23 @@ $PY -c "
 import json;k=json.load(open('$WD/kappa.json'))['ours']
 assert k['kappa']=='95464544449649/100000000000000000' and k['binding']=='complex' and k['b_unsplit']=='477778832512643/500000000000000000',k
 print('PASS conditional kappa =',k['kappa'],'=',k['kappa_float'],'(complex-bound: our E8 certificate in the unsplit B_3 at halving degree two; bit side #370/#373)')"
+
+echo "== 4b. B_2 (Sussman's five-stage word): the unit behind the Lean theorem of lean/LEAN-B2-E8FR.txt"
+$PY -c "
+import sys,gzip,json,math;sys.path.insert(0,'$C')
+from collections import Counter;from e8core import coarse;from layout_bk import layout
+def b2(f):
+    c=json.load(gzip.open(f));H=Counter()
+    for w in c['blocks'].values():
+        for r,n in w.items():H[int(r)]+=5*n
+    for r in layout(2,c['h'])['blocks']:H[r]+=2*c['v']
+    W=4*c['v']+c['R'];m=5*c['h'];assert m*W-sum(r*n for r,n in H.items())==4*c['v']-5*c['cst'] and 2*max(H)<m
+    return sorted(H.items()),coarse(H,m,W)
+lean={'$ORIG':([(1,10455),(2,3020),(3,2590),(4,940),(5,1075),(6,1655),(7,215),(8,360),(9,40),(16,240),(20,240)],8762479,'wht_main_block_B2Ge8x (Sussman)'),
+      '$OURS':([(1,10465),(2,3030),(3,2620),(4,835),(5,1075),(6,1705),(7,215),(8,360),(9,40),(16,240),(20,240)],8766835,'wht_main_block_B2Ge8FRx (ours)')}
+for f,(Hl,e,name) in lean.items():
+    H,b=b2(f);assert H==Hl,(f,H);fl=math.floor(b*10**10);assert e<=fl and fl-e==3,(fl,e)
+    print('   %-32s unit blocks = Lean unit block list; b_2 = %s = %.15e, floor(1e10 b_2) = %d; stated exponent 1 - %d/10^10'%(name,b,float(b),fl,e))"
 
 if [ $QUICK = 0 ]; then
   echo "== 5. regeneration: our search (split, retiming, in-group and far piece relocation) from Sussman's original"

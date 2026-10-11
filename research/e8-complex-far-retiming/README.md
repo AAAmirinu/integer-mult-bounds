@@ -82,13 +82,21 @@ Only Python 3.11+ and the standard library are needed. The steps are:
    - PR #315's `outer.assembly`: 47 strict constraints, adjacent κ rejected, complex-bound.
 
    Regressions: Sussman's split b is #363's 932783231884153/10¹⁸, and the unsplit κ is #375's 95424356568133/10¹⁷.
+
+   4b. B₂ (Sussman's five-stage word): the unit histogram of both certificates equals the unit block list of the Lean
+   modules, and b₂ gives the stated Lean exponents (⌊10¹⁰ b₂⌋ − 3, his generator's margin): 8762479 for his,
+   8766835 for ours (b₂ = 8.76683894547596e-4, +0.0497 %).
 5. Full mode only: our search (`code/cxfar.py`, `code/cxfinal.py`) re-run from Sussman's original must regenerate the shipped certificate byte for byte (decompressed).
 
 ## Admitted conditions and open obligations
 
-- **No Lean proof of B₃** on either side, and **no Lean proof of the new certificate**. Sussman's Lean theorem
-  `wht_main_block_B2Ge8x` covers his original certificate in B₂. Here the certificate is checked with his `gx.check1` and
-  `gxcore`, plus the full operator identity against the original.
+- **Lean: the five-stage (B₂) unit theorem of the new certificate is kernel-checked; the B₃ and #377 layouts remain
+  without Lean proof.** Sussman's generators (wht-power-saving-lean `9c94857`, unchanged) run on our certificate give
+  `wht_main_block_B2Ge8FRx : ∃ solve W, WHTProgram solve W ∧ WHTTimeBoundsAt (1 - 8766835/(10:ℝ)^10) W`, against his
+  `wht_main_block_B2Ge8x` at 1 − 8762479/10¹⁰ for the original. `lake build` passes, `tools/Compare.lean` prints
+  `RESULT: PASS`, and the axioms are propext, Classical.choice and Quot.sound (`lean/LEAN-B2-E8FR.txt`). The κ of this
+  package is priced in B₃, which has no Lean proof on either side. There the certificate is checked with his
+  `gx.check1` and `gxcore`, plus the full operator identity against the original.
 - **#375's halving-degree-two guard** for the unsplit complex idle climbs (max child 38 at m = 63: 63² > 2·38²) is
   admitted as #375 states it: the row coefficient is 2·1903 + 9909 + 252 = 13,967 < 20,161, with m ≤ 72. The stock
   quantities in it (m, W, R, h, cst) are unchanged here.
