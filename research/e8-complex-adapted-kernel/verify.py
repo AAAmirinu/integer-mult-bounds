@@ -41,6 +41,7 @@ try:
  assert ae==be|extra and ac==bc
  (out/'DEFAULT-REGRESSION.json').write_text(json.dumps(dict(status='PASS_FRESH_DEFAULT_LOCAL_PROGRAM_REGRESSION',local_programs_equal=True,local_checks_equal=True,canonical_only_differences=['empty target_levels metadata','explicit center directed edge inventory'],additional_edges=sorted(ae-be),fresh_program_sha256=sha(baseline/'split-centres/LOCAL-PROGRAMS.json.gz')),indent=2)+'\n')
  py('kernel-rebuild',ROOT/'code/rebuild.py',source/'split-centres/FULL-WORD.json.gz',out/'REBUILD.json')
+ py('discovery-metadata-controls',ROOT/'code/check_metadata.py',source/'split-centres/FULL-WORD.json.gz',out/'METADATA-PORTABILITY.json')
  workspace(changed,ROOT/'data/word.json.gz',source)
  py('kernel-scalar',ROOT/'upstream449/audit_cxg.py',cwd=changed)
  py('kernel-programs',ROOT/'upstream449/emit_cxg.py',cwd=changed)

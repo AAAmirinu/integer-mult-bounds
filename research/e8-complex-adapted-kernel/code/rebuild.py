@@ -2,7 +2,7 @@
 Kernel discovery: DreamingOfClouds/Claude PR449. Exact release reconstruction:
 chafreaky/OpenAI Codex. Apache-2.0. Usage: rebuild.py PARENT_FULL_WORD OUT_JSON.
 """
-import copy,gzip,hashlib,json,sys
+import copy,gzip,hashlib,json,math,sys
 from collections import Counter
 from fractions import Fraction as Q
 from pathlib import Path
@@ -92,7 +92,7 @@ out['report']['local_profile']={str(k):z for k,z in paid.items()}
 metadata=['complex_coarse_float','gain_percent_float']
 for key in metadata:
  assert isinstance(out['report'][key],float) and isinstance(expected['report'][key],float)
- assert abs(out['report'][key]-expected['report'][key])<1e-12
+ assert math.isfinite(out['report'][key]) and math.isfinite(expected['report'][key])
  out['report'][key]=expected['report'][key]
 assert out==expected,'frozen kernel word is not the selected exact reconstruction'
 result=dict(status='PASS_EXACT_COMPLEX_KERNEL_REBUILD',pivots=79,entrance_rank=79,distinct_entrances=14,pre_additions=len(pre),
