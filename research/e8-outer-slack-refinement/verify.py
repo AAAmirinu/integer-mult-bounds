@@ -29,10 +29,16 @@ def main():
     baseline=read(out/'baseline/kappa.json');source=read(ROOT/'SOURCE.json')
     assert baseline['kappa']==source['kappa'] and baseline['binding']=='complex'
     from refine import refine
-    witness=refine(Q(baseline['b']),Q(baseline['c']))
+    from coarse_precision import certify
+    precision=certify(baseline['profile'],73,14727,Q(baseline['b']))
+    assert precision==read(ROOT/'EXPECTED-COARSE-PRECISION.json')
+    (out/'COARSE-PRECISION.json').write_text(json.dumps(precision,indent=2)+'\n')
+    witness=refine(Q(precision['coarse_lower']),Q(baseline['c']))
+    upper=Q(precision['coarse_upper'])
+    assert upper/(1+upper)<Q(witness['kappa'])+Q(1,10**18)
     assert witness==read(ROOT/'EXPECTED-WITNESS.json')
     k=Q(witness['kappa']);before=Q(baseline['kappa']);assert k>before
     (out/'WITNESS.json').write_text(json.dumps(witness,indent=2,default=str)+'\n')
-    integrity();result=dict(status='PASS_EXACT_OUTER_SLACK_REFINEMENT',kappa=str(k),kappa_float=float(k),baseline_kappa=str(before),absolute_gain=str(k-before),relative_gain_percent=float(100*(k/before-1)),strict_constraints=47,negative_controls=len(witness['negative_controls_rejected']),next_grid_above_fixed_complex_outer_ceiling=True,bootstrap_rounds=witness['bootstrap_rounds'],gain_over_previous_three_round=str(k-Q(witness['previous_three_round_kappa'])),coarse_savings_unchanged=True,scope='Same conditional supplier assumptions and open obligations as PR384. Fixed six-level PR185 ordinary bootstrap and strict witness parameters; inherited completed-leaf/restored-row/analytic interfaces remain conditional. No coarse circuit change or Lean proof.')
+    integrity();result=dict(status='PASS_EXACT_OUTER_SLACK_REFINEMENT',kappa=str(k),kappa_float=float(k),baseline_kappa=str(before),absolute_gain=str(k-before),relative_gain_percent=float(100*(k/before-1)),strict_constraints=47,negative_controls=len(witness['negative_controls_rejected']),next_grid_above_fixed_complex_outer_ceiling=True,bootstrap_rounds=witness['bootstrap_rounds'],gain_over_previous_three_round=str(k-Q(witness['previous_three_round_kappa'])),gain_over_previous_six_round=str(k-Q(witness['previous_six_round_kappa'])),coarse_constructions_unchanged=True,coarse_precision_digits=24,two_moment_engines=True,next_grid_above_unrounded_moment_ceiling=True,scope='Same conditional supplier assumptions and open obligations as PR384. Fixed six-level PR185 ordinary bootstrap, strict witness parameters and 24-place coarse moment enclosure; inherited completed-leaf/restored-row/analytic interfaces remain conditional. No coarse circuit change or Lean proof.')
     (out/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2),flush=True)
 if __name__=='__main__':main()

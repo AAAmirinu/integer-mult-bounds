@@ -33,7 +33,11 @@ def refine(b,c):
         stages.append(dict(level=j+1,ordinary_calls_only_to_level=j,gaps={k:str(v) for k,v in gaps.items()},minimum_gap=str(delta),cutoff_examples_by_constant_bits=examples))
         chain.append(a)
     previous=json.loads((ROOT/'THREE-ROUND-WITNESS.json').read_text())
-    assert list(map(str,chain[:4]))==previous['bootstrap_chain']
+    prior_saving=(1-beta)*Q(previous['complex_coarse'])-backoff
+    prior_chain=[initial]
+    for _ in range(3):prior_chain.append((1-prior_saving)*prior_saving+prior_saving*prior_chain[-1])
+    assert list(map(str,prior_chain))==previous['bootstrap_chain']
+    previous_six=json.loads((ROOT/'SIX-ROUND-18-DIGIT-COARSE-WITNESS.json').read_text())
     a=chain[-1];q=a*(1-2*eta);minimum=(1-eta)*q/(1+q)
     scaled=minimum/grid;kappa=grid*((scaled.numerator-1)//scaled.denominator)
     bridge=dict(proof='PROOF.md',representation='Unchanged PR384 inherited finite envelope; fixed-depth PR185 ordinary wrappers restore internal rows',
@@ -56,7 +60,7 @@ def refine(b,c):
     # of bootstrap depth. This is a family ceiling, not a new circuit bound.
     ceiling=b/(1+b)
     assert kappa<minimum<ceiling<kappa+grid
-    assert kappa==Q(499317329045417,500000000000000000)
+    assert kappa>Q(previous_six['kappa'])
     # Five levels at the same slack values do not yet reach the chosen grid.
     a5=chain[-2];q5=a5*(1-2*eta);assert (1-eta)*q5/(1+q5)<kappa
-    return dict(kappa=str(kappa),kappa_float=float(kappa),eta=str(eta),beta=str(beta),saving_backoff=str(backoff),degraded_bit_saving=str(saving),bit_coarse=str(c),complex_coarse=str(b),bootstrap_rounds=depth,bootstrap_chain=list(map(str,chain)),bootstrap_stages=stages,strict_constraints={k:str(v) for k,v in asm['strict_constraints'].items()},margins={k:str(v) for k,v in asm['margins'].items()},minimum_margin=str(minimum),absorption_gap=str(minimum-kappa),fixed_complex_outer_ceiling=str(ceiling),next_grid_above_ceiling=True,five_rounds_insufficient_at_selected_slacks=True,previous_three_round_kappa=previous['kappa'],negative_controls_rejected=rejected,finite_envelope=json.loads(json.dumps(bridge,default=str)))
+    return dict(kappa=str(kappa),kappa_float=float(kappa),eta=str(eta),beta=str(beta),saving_backoff=str(backoff),degraded_bit_saving=str(saving),bit_coarse=str(c),complex_coarse=str(b),bootstrap_rounds=depth,bootstrap_chain=list(map(str,chain)),bootstrap_stages=stages,strict_constraints={k:str(v) for k,v in asm['strict_constraints'].items()},margins={k:str(v) for k,v in asm['margins'].items()},minimum_margin=str(minimum),absorption_gap=str(minimum-kappa),fixed_complex_outer_ceiling=str(ceiling),next_grid_above_ceiling=True,five_rounds_insufficient_at_selected_slacks=True,previous_three_round_kappa=previous['kappa'],previous_six_round_kappa=previous_six['kappa'],prior_chain_regression_passed=True,negative_controls_rejected=rejected,finite_envelope=json.loads(json.dumps(bridge,default=str)))

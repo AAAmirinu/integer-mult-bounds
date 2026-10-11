@@ -2,7 +2,7 @@
 
 ## Pinned interfaces and acyclic composition
 
-The base completed ordinary saving is a0=384599/10^10. The bit and complex coarse suppliers are unchanged from #384. Use s=(1-beta)b-10^-24 with beta=eta=10^-18. Exact comparison gives a0<s<c and s<(1-beta)b<b<1/32.
+The base completed ordinary saving is a0=384599/10^10. The bit and complex constructions and paid profiles are unchanged from #384. The complex coarse saving is selected with finer rational precision as established below. Use s=(1-beta)b-10^-24 with beta=eta=10^-18. Exact comparison gives a0<s<c and s<(1-beta)b<b<1/32.
 
 The inherited completed ordinary contract handles arbitrary widths, two complete chunks and arbitrary complete spectators, restores preceding row coordinates, performs required high-digit borrowing internally, and uses a fixed finite tape set. This is stronger than an F2 matrix identity. It is retained conditionally, not proved anew here. Its use for stopped leaves, weighted wrappers, routing and high-part exchanges is explained in the pinned reviewed PR185 proof.
 
@@ -39,10 +39,22 @@ This is the same conditional fixed-depth reasoning in the reviewed PR185 mechani
 
 ## Exact witness and grid ceiling
 
-Use a=a6, q=a(1-2 eta), epsilon=(1-eta)/(1+q). The pinned outer assembly verifies all 47 strict constraints, including all seven performance margins; their minimum is M=epsilon*q. The result is the greatest 10^-18 multiple strictly below M. The next point, zero eta, zero beta and unit beta are rejected. The first three levels reproduce the former published witness exactly; five levels at the same slacks do not reach the new grid point.
+Use a=a6, q=a(1-2 eta), epsilon=(1-eta)/(1+q). The pinned outer assembly verifies all 47 strict constraints, including all seven performance margins; their minimum is M=epsilon*q. The result is the greatest 10^-18 multiple strictly below M. The next point, zero eta, zero beta and unit beta are rejected. A separate regression reproduces the former three-level witness at its original coarse input; five levels at the same slacks do not reach the new grid point.
 
 Every valid witness in this unchanged outer formula has a<b and positive eta, so `M<a/(1+a)<b/(1+b)`. Exact comparison proves
 
 `kappa < M < b/(1+b) < kappa+10^-18`.
 
 Consequently the next grid point is impossible within this outer formula at the fixed complex coarse input, including with further finite bootstrap levels. This is not a bound for different suppliers or a different assembly. All inherited #384 and completed-ordinary-interface conditions remain explicit.
+
+## Certified coarse-root precision
+
+The unchanged PR384 complex profile has m=73, stock 14727 and deficit 2496. Let
+
+`b=999632926176283805553/10^24`, `u=b+10^-24`.
+
+Both independent rational engines prove `moment(b)<1<moment(u)`, including the unchanged positive bad density 10^-16 and all `32*m^2*sum(H.values())` rank-one fallback children. Decimal arithmetic only proposes the two rational endpoints. The two separate outward rational calculations admit b and reject u. All coefficient/geometry/finite assumptions remain the same.
+
+Using b rather than its previous 18-place truncation gives the strict six-level witness `kappa=199726931618167/200000000000000000`, exactly 10^-18 above the preceding six-level witness. This is removal of an intermediate rounding loss, not a change to a circuit or the fallback density.
+
+Finally exact arithmetic proves `u/(1+u)<kappa+10^-18`. The true paid-moment root lies below u, so further root precision, bootstrap depth or positive-slack choices cannot reach that next final grid point within the retained outer formula and this unchanged paid profile.
