@@ -1,0 +1,26 @@
+RUN selection-controls
+PASS selection-controls
+RUN word-controls
+PASS word-controls
+RUN pipeline-controls
+PASS pipeline-controls
+RUN scalar
+PASS scalar
+RUN programs
+PASS programs
+RUN phases
+PASS phases
+RUN wrappers
+PASS wrappers
+RUN integrate
+PASS integrate
+RUN scalar-readback
+PASS scalar-readback
+RUN common-labels
+PASS common-labels
+RUN RUNlg_instances 
+lg_e2e
+PASS lg_e2e
+PASS lg_instances
+RUN lemma-controls
+PASS lemma-controls

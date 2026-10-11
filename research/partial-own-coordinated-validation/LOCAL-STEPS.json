@@ -1,0 +1,80 @@
+[
+  {
+    "name": "selection-controls",
+    "exit_code": 0,
+    "seconds": 0.6709795839851722,
+    "log_sha256": "90c066e392fa1fdd018d9679d84b25f4e6478cabb9c06180f36063dcb2ea0be0"
+  },
+  {
+    "name": "word-controls",
+    "exit_code": 0,
+    "seconds": 1.5534632919589058,
+    "log_sha256": "7138c95893d4135181074f2cb27e2c48873f1a736668e7d8e79b2a01eb3ae8a1"
+  },
+  {
+    "name": "pipeline-controls",
+    "exit_code": 0,
+    "seconds": 6.213820667006075,
+    "log_sha256": "a6ca3979a17f335cad7e216f2925762fc687ed057db5cdc25f7aa6271a5c405e"
+  },
+  {
+    "name": "scalar",
+    "exit_code": 0,
+    "seconds": 0.7180084580322728,
+    "log_sha256": "0d55a2d7c54c3a70f3f4c3901535dd13c3f11f6c7cdd3bd7cb779011e57db14f"
+  },
+  {
+    "name": "programs",
+    "exit_code": 0,
+    "seconds": 0.43159433407709,
+    "log_sha256": "eb31feb56872be87e2252d1d6af68b001e50c9cb2116eb7e9a234f7b76f17b84"
+  },
+  {
+    "name": "phases",
+    "exit_code": 0,
+    "seconds": 82.9388717910042,
+    "log_sha256": "097d929e3efa28cb6db6d32f24e24b90ad1686d431b8add9a4a47f99e31590b4"
+  },
+  {
+    "name": "wrappers",
+    "exit_code": 0,
+    "seconds": 0.49122391699347645,
+    "log_sha256": "5a21b531c104727a8f2fa6b0e420d65ca8d36f628f5bf4be5642248254164e56"
+  },
+  {
+    "name": "integrate",
+    "exit_code": 0,
+    "seconds": 0.45686087501235306,
+    "log_sha256": "51274a61a0b69d9c069df60e065b7e79328166f79fed214e79ed47cfefc3bafa"
+  },
+  {
+    "name": "scalar-readback",
+    "exit_code": 0,
+    "seconds": 2.7247572910273448,
+    "log_sha256": "04a057c55168c3dbfe452a4fc62fc90f55f1844d9e8c62e48e78e59b58ae1137"
+  },
+  {
+    "name": "common-labels",
+    "exit_code": 0,
+    "seconds": 0.34945674997288734,
+    "log_sha256": "2a40f7ab55e68d059bcd42523c521c2227b2860b81adaf3af83b482c4e3ecdde"
+  },
+  {
+    "name": "lg_e2e",
+    "exit_code": 0,
+    "seconds": 53.4952824159991,
+    "log_sha256": "8d19d21a0d9edd18ee28247fe6c5295353be8470d0ba24960dbe885075e79449"
+  },
+  {
+    "name": "lg_instances",
+    "exit_code": 0,
+    "seconds": 91.9638359589735,
+    "log_sha256": "07ced46a13a9a46e45bb055a6e0241258a05d0e292db418ef8302fc74f65d3de"
+  },
+  {
+    "name": "lemma-controls",
+    "exit_code": 0,
+    "seconds": 13.445825000060722,
+    "log_sha256": "85971e972d786bbaab87f2b7f4edb1c60c38cdc2c5df49d2cc2e92e616066bd0"
+  }
+]

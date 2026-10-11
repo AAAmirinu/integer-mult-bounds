@@ -1,0 +1,96 @@
+{
+  "status": "PASS_FRESH_PARTIAL_OWN_KERNEL84_GAUGE_COLLAPSE_LOCAL",
+  "steps": [
+    {
+      "name": "selection-controls",
+      "exit_code": 0,
+      "seconds": 0.7676295251585543,
+      "log_sha256": "90c066e392fa1fdd018d9679d84b25f4e6478cabb9c06180f36063dcb2ea0be0"
+    },
+    {
+      "name": "word-controls",
+      "exit_code": 0,
+      "seconds": 1.7108491270337254,
+      "log_sha256": "7138c95893d4135181074f2cb27e2c48873f1a736668e7d8e79b2a01eb3ae8a1"
+    },
+    {
+      "name": "pipeline-controls",
+      "exit_code": 0,
+      "seconds": 7.558163334149867,
+      "log_sha256": "a6ca3979a17f335cad7e216f2925762fc687ed057db5cdc25f7aa6271a5c405e"
+    },
+    {
+      "name": "scalar",
+      "exit_code": 0,
+      "seconds": 0.8194277740549296,
+      "log_sha256": "b5d9717106ecf20aef33c61938bac32a72a79dc0c6f573bcf2cedf63f9d48a32"
+    },
+    {
+      "name": "programs",
+      "exit_code": 0,
+      "seconds": 0.5481878148857504,
+      "log_sha256": "eb31feb56872be87e2252d1d6af68b001e50c9cb2116eb7e9a234f7b76f17b84"
+    },
+    {
+      "name": "phases",
+      "exit_code": 0,
+      "seconds": 102.93655487918295,
+      "log_sha256": "b78c3a4cce191d123038c3f176d552ef5af1c01617f3452910a5c3f18a732138"
+    },
+    {
+      "name": "wrappers",
+      "exit_code": 0,
+      "seconds": 0.6119043410290033,
+      "log_sha256": "5a21b531c104727a8f2fa6b0e420d65ca8d36f628f5bf4be5642248254164e56"
+    },
+    {
+      "name": "integrate",
+      "exit_code": 0,
+      "seconds": 0.5929723181761801,
+      "log_sha256": "51274a61a0b69d9c069df60e065b7e79328166f79fed214e79ed47cfefc3bafa"
+    },
+    {
+      "name": "scalar-readback",
+      "exit_code": 0,
+      "seconds": 3.349855609005317,
+      "log_sha256": "04a057c55168c3dbfe452a4fc62fc90f55f1844d9e8c62e48e78e59b58ae1137"
+    },
+    {
+      "name": "common-labels",
+      "exit_code": 0,
+      "seconds": 0.4339849641546607,
+      "log_sha256": "5328fb468c950d1827f02ee8b617b79dfc7daa2603868467f0e4c49ebad3521b"
+    },
+    {
+      "name": "lg_e2e",
+      "exit_code": 0,
+      "seconds": 57.795800029998645,
+      "log_sha256": "56c8eba939e4bc8e4a1c8828836f67d1e225e80625a2b134f3246eaeb0f1fd5d"
+    },
+    {
+      "name": "lg_instances",
+      "exit_code": 0,
+      "seconds": 155.89181265607476,
+      "log_sha256": "14dbe8af0405694096fdbc5452c3ac82e3b2a942fdd60799243594ef92fb700a"
+    },
+    {
+      "name": "lemma-controls",
+      "exit_code": 0,
+      "seconds": 15.797983785159886,
+      "log_sha256": "50f1adee578c4c022f815e9f6b5a7cc9bf294c7672d52d5a476deab779ce3032"
+    }
+  ],
+  "artifacts": {
+    "split-centres/FULL-WORD.json.gz": "1440a181da5eb223884972b841c2931aae8ef70d75392c82f15ff4c1e2d3d71b",
+    "split-centres/CANONICAL-WORD.json.gz": "0bac897f83fcae0f849095d9d083f85a284f191667a456092f2b555fc1aecff4",
+    "split-centres/LOCAL-PROGRAMS.json.gz": "073d8f2de955fa076bf136f938dd29fd5b4dac505139651ecc53bd2eb3630913",
+    "split-centres/LOCAL-CHECKS.json": "52c7e1970e5c236050b4da34579b4cb9775cec64845fb33c49e15fbce927fcab",
+    "split-centres/RESIDUAL-ADAPTERS.json": "c46c93e3c87a9a561f2d7f617b72665b8aa59eb531167151e5b9592bd1233084",
+    "lemmaG/INSTANCES-gauge80-kernel42.json": "4e72940fecb794667dd4068e24b787b1a3941b141696b01ac41edf5e39b362a7",
+    "lemmaG/E2E-gauge80-kernel42.json": "00ce00c835496635603536fd1e447257085d7cb6e5dfcc0da537deb5a1edc03b",
+    "lemmaG/MUTANTS.json": "47f30fd73feef2e048b2854477d3604b0110149086221c87d49a03b199e22e1e",
+    "lemmaG/PREOP-GUARDS-lg_instances.json": "933a7c205c728b459a5638ec65815db2a0ad2b502b8a940502f936e41452ae63",
+    "lemmaG/PREOP-GUARDS-lg_e2e.json": "ce4898271ade05bd7a3f1a78469bc380989ade4180a414011d8be38f73cf5248"
+  },
+  "scope": "Fresh changed local word scalar, common labels, phases, wrappers, guarded physics and controls. Uses module workspace freshly rebuilt by this package. No new global allocation or assembly admission."
+}

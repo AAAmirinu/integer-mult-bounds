@@ -1,0 +1,47 @@
+{
+  "status": "STRUCTURAL_CONSTRUCTION_ONLY",
+  "baseline_reconstruction_all_fields_equal": true,
+  "preserved_kernel_pivots": 84,
+  "body_frame_transfer_prefix": 671,
+  "delta": {
+    "2": -16,
+    "4": 4,
+    "6": 4
+  },
+  "target_delta": {
+    "81": [
+      4,
+      2
+    ],
+    "82": [
+      4,
+      2
+    ],
+    "84": [
+      4,
+      2
+    ],
+    "87": [
+      4,
+      2
+    ]
+  },
+  "widths": {
+    "7": 18,
+    "8": 146,
+    "9": 396
+  },
+  "local_profile": {
+    "1": 2493,
+    "2": 208,
+    "3": 516,
+    "4": 88,
+    "5": 298,
+    "6": 68,
+    "7": 1,
+    "8": 17
+  },
+  "source_word_sha256": "73afd6e5579644b131e5b1adef9a48b622affb6c17f26bad0eac2fcf086637ac",
+  "word_sha256": "1440a181da5eb223884972b841c2931aae8ef70d75392c82f15ff4c1e2d3d71b",
+  "scope": "Full exact structural reconstruction; scalar, Gaussian, guarded physical, placement and assembly gates remain."
+}

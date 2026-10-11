@@ -1,0 +1,18 @@
+{
+  "patterns_checked": 112,
+  "margins": [
+    "2639033803919378709653248084583173853348428482382459882680277775436294139912624380298623551/3496005452600308958129979155686642825130248622481342464000000000000000000000000000000000000000000000",
+    "551055970301256447423175631732012128141/730000000000000000000000000000000000000000000000"
+  ],
+  "kappa_upper": "13911431/10013911431",
+  "status": "PASS_EXACT_PACKING_DUAL_AND_FIVE_CONTROLS",
+  "certificate_sha256": "63768797625f10a56e7bcca552de13dea5ea0751dd77768cf9ba9084988f101f",
+  "mutations_rejected": [
+    "increase rank dual beyond feasibility",
+    "understate rank stock",
+    "wrong whole helper width inventory",
+    "claim smaller outer ceiling",
+    "omit one finite pattern"
+  ],
+  "scope": "Fixed local profile,72calls,m73,W7680,deficit2496 and unchanged idle ranks; whole helpers assigned once each, one remainder per original idle child. Drops all time, owner-conflict and chart restrictions. Does not bound changed local words, split-child contracts or all algorithms."
+}

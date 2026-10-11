@@ -1,0 +1,3585 @@
+{
+  "status": "EXACT_AVAILABLE_COLUMN_SCREEN",
+  "free_helpers": 232,
+  "directions": [
+    {
+      "direction": 1,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 2,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 3,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 4,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 5,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 6,
+      "eligible": 6,
+      "old_donors": 2,
+      "rank": 8,
+      "new_pivots": []
+    },
+    {
+      "direction": 7,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 8,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 9,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 10,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 11,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 12,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 13,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 14,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 15,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 16,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 17,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 18,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 19,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 20,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 21,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 22,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 23,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 24,
+      "eligible": 0,
+      "old_donors": 18,
+      "rank": 18,
+      "new_pivots": []
+    },
+    {
+      "direction": 25,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 26,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 27,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 28,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 29,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 30,
+      "eligible": 2,
+      "old_donors": 2,
+      "rank": 4,
+      "new_pivots": []
+    },
+    {
+      "direction": 31,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 32,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 33,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 34,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 35,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 36,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 37,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 38,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 39,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 40,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 41,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 42,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 43,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 44,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 45,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 46,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 47,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 48,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 49,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 50,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 51,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 52,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 53,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 54,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 55,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 56,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 57,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 58,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 59,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 60,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 61,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 62,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 63,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 64,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 65,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 66,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 67,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 68,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 69,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 70,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 71,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 72,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 73,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 74,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 75,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 76,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 77,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 78,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 79,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 80,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 81,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 82,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 83,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 84,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 85,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 86,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 87,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 88,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 89,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 90,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 91,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 92,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 93,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 94,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 95,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 96,
+      "eligible": 0,
+      "old_donors": 18,
+      "rank": 18,
+      "new_pivots": []
+    },
+    {
+      "direction": 97,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 98,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 99,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 100,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 101,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 102,
+      "eligible": 0,
+      "old_donors": 2,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 103,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 104,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 105,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 106,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 107,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 108,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 109,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 110,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 111,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 112,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 113,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 114,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 115,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 116,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 117,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 118,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 119,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 120,
+      "eligible": 0,
+      "old_donors": 50,
+      "rank": 48,
+      "new_pivots": []
+    },
+    {
+      "direction": 121,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 122,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 123,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 124,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 125,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 126,
+      "eligible": 0,
+      "old_donors": 38,
+      "rank": 36,
+      "new_pivots": []
+    },
+    {
+      "direction": 127,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 128,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 129,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 130,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 131,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 132,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 133,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 134,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 135,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 136,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 137,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 138,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 139,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 140,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 141,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 142,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 143,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 144,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 145,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 146,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 147,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 148,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 149,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 150,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 151,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 152,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 153,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 154,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 155,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 156,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 157,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 158,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 159,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 160,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 161,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 162,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 163,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 164,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 165,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 166,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 167,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 168,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 169,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 170,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 171,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 172,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 173,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 174,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 175,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 176,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 177,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 178,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 179,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 180,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 181,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 182,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 183,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 184,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 185,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 186,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 187,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 188,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 189,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 190,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 191,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 192,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 193,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 194,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 195,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 196,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 197,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 198,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 199,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 200,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 201,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 202,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 203,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 204,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 205,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 206,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 207,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 208,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 209,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 210,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 211,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 212,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 213,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 214,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 215,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 216,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 217,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 218,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 219,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 220,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 221,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 222,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 223,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 224,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 225,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 226,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 227,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 228,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 229,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 230,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 231,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 232,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 233,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 234,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 235,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 236,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 237,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 238,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 239,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 240,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 241,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 242,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 243,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 244,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 245,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 246,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 247,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 248,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 249,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 250,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 251,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 252,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 253,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 254,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 255,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 256,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 257,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 258,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 259,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 260,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 261,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 262,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 263,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 264,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 265,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 266,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 267,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 268,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 269,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 270,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 271,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 272,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 273,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 274,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 275,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 276,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 277,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 278,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 279,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 280,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 281,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 282,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 283,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 284,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 285,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 286,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 287,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 288,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 289,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 290,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 291,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 292,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 293,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 294,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 295,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 296,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 297,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 298,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 299,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 300,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 301,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 302,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 303,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 304,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 305,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 306,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 307,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 308,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 309,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 310,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 311,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 312,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 313,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 314,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 315,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 316,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 317,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 318,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 319,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 320,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 321,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 322,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 323,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 324,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 325,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 326,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 327,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 328,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 329,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 330,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 331,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 332,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 333,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 334,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 335,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 336,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 337,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 338,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 339,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 340,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 341,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 342,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 343,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 344,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 345,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 346,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 347,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 348,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 349,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 350,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 351,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 352,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 353,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 354,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 355,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 356,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 357,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 358,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 359,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 360,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 361,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 362,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 363,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 364,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 365,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 366,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 367,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 368,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 369,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 370,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 371,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 372,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 373,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 374,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 375,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 376,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 377,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 378,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 379,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 380,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 381,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 382,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 383,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 384,
+      "eligible": 2,
+      "old_donors": 15,
+      "rank": 17,
+      "new_pivots": []
+    },
+    {
+      "direction": 385,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 386,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 387,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 388,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 389,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 390,
+      "eligible": 0,
+      "old_donors": 8,
+      "rank": 8,
+      "new_pivots": []
+    },
+    {
+      "direction": 391,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 392,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 393,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 394,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 395,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 396,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 397,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 398,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 399,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 400,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 401,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 402,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 403,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 404,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 405,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 406,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 407,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 408,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 409,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 410,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 411,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 412,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 413,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 414,
+      "eligible": 4,
+      "old_donors": 4,
+      "rank": 8,
+      "new_pivots": []
+    },
+    {
+      "direction": 415,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 416,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 417,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 418,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 419,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 420,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 421,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 422,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 423,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 424,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 425,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 426,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 427,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 428,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 429,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 430,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 431,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 432,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 433,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 434,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 435,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 436,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 437,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 438,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 439,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 440,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 441,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 442,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 443,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 444,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 445,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 446,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 447,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 448,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 449,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 450,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 451,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 452,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 453,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 454,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 455,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 456,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 457,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 458,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 459,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 460,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 461,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 462,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 463,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 464,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 465,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 466,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 467,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 468,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 469,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 470,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 471,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 472,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 473,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 474,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 475,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 476,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 477,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 478,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 479,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 480,
+      "eligible": 4,
+      "old_donors": 3,
+      "rank": 7,
+      "new_pivots": []
+    },
+    {
+      "direction": 481,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 482,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 483,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 484,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 485,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 486,
+      "eligible": 4,
+      "old_donors": 0,
+      "rank": 4,
+      "new_pivots": []
+    },
+    {
+      "direction": 487,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 488,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 489,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 490,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 491,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 492,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 493,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 494,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 495,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 496,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 497,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 498,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 499,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 500,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 501,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 502,
+      "eligible": 3,
+      "old_donors": 0,
+      "rank": 3,
+      "new_pivots": []
+    },
+    {
+      "direction": 503,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 504,
+      "eligible": 0,
+      "old_donors": 4,
+      "rank": 4,
+      "new_pivots": []
+    },
+    {
+      "direction": 505,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 506,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 507,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 508,
+      "eligible": 2,
+      "old_donors": 0,
+      "rank": 2,
+      "new_pivots": []
+    },
+    {
+      "direction": 509,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 510,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    },
+    {
+      "direction": 511,
+      "eligible": 0,
+      "old_donors": 0,
+      "rank": 0,
+      "new_pivots": []
+    }
+  ],
+  "candidates": [],
+  "scope": "Additional kernels using currently unassigned helpers and same-line existing donors only. Existing pivots/gauges fixed. No global maximality or physical admission claimed."
+}

@@ -1,0 +1,212 @@
+{
+  "results": [
+    {
+      "matching": [
+        0,
+        0
+      ],
+      "status": "CLEAN_BASE_AND_SELECTED_STRUCTURAL_ONLY",
+      "pivots": 78,
+      "profile": {
+        "1": 2129,
+        "2": 888,
+        "3": 50,
+        "4": 298,
+        "8": 17,
+        "6": 6,
+        "7": 1,
+        "5": 286
+      },
+      "widths": {
+        "9": 402,
+        "8": 140,
+        "7": 18
+      }
+    },
+    {
+      "matching": [
+        0,
+        1
+      ],
+      "status": "CLEAN_BASE_AND_SELECTED_STRUCTURAL_ONLY",
+      "pivots": 70,
+      "profile": {
+        "1": 2105,
+        "2": 892,
+        "3": 58,
+        "4": 298,
+        "8": 17,
+        "6": 6,
+        "7": 1,
+        "5": 286
+      },
+      "widths": {
+        "9": 410,
+        "8": 132,
+        "7": 18
+      }
+    },
+    {
+      "matching": [
+        0,
+        2
+      ],
+      "status": "CLEAN_BASE_AND_SELECTED_STRUCTURAL_ONLY",
+      "pivots": 70,
+      "profile": {
+        "1": 2105,
+        "2": 892,
+        "3": 58,
+        "4": 298,
+        "8": 17,
+        "6": 6,
+        "7": 1,
+        "5": 286
+      },
+      "widths": {
+        "9": 410,
+        "8": 132,
+        "7": 18
+      }
+    },
+    {
+      "matching": [
+        1,
+        0
+      ],
+      "status": "CLEAN_BASE_AND_SELECTED_STRUCTURAL_ONLY",
+      "pivots": 70,
+      "profile": {
+        "1": 2105,
+        "2": 892,
+        "3": 58,
+        "4": 298,
+        "8": 17,
+        "6": 6,
+        "7": 1,
+        "5": 286
+      },
+      "widths": {
+        "9": 410,
+        "8": 132,
+        "7": 18
+      }
+    },
+    {
+      "matching": [
+        1,
+        1
+      ],
+      "status": "CLEAN_BASE_AND_SELECTED_STRUCTURAL_ONLY",
+      "pivots": 84,
+      "profile": {
+        "1": 2157,
+        "2": 880,
+        "3": 44,
+        "4": 298,
+        "8": 17,
+        "6": 6,
+        "7": 1,
+        "5": 286
+      },
+      "widths": {
+        "9": 396,
+        "8": 146,
+        "7": 18
+      }
+    },
+    {
+      "matching": [
+        1,
+        2
+      ],
+      "status": "CLEAN_BASE_AND_SELECTED_STRUCTURAL_ONLY",
+      "pivots": 70,
+      "profile": {
+        "1": 2105,
+        "2": 892,
+        "3": 58,
+        "4": 298,
+        "8": 17,
+        "6": 6,
+        "7": 1,
+        "5": 286
+      },
+      "widths": {
+        "9": 410,
+        "8": 132,
+        "7": 18
+      }
+    },
+    {
+      "matching": [
+        2,
+        0
+      ],
+      "status": "CLEAN_BASE_AND_SELECTED_STRUCTURAL_ONLY",
+      "pivots": 70,
+      "profile": {
+        "1": 2105,
+        "2": 892,
+        "3": 58,
+        "4": 298,
+        "8": 17,
+        "6": 6,
+        "7": 1,
+        "5": 286
+      },
+      "widths": {
+        "9": 410,
+        "8": 132,
+        "7": 18
+      }
+    },
+    {
+      "matching": [
+        2,
+        1
+      ],
+      "status": "CLEAN_BASE_AND_SELECTED_STRUCTURAL_ONLY",
+      "pivots": 70,
+      "profile": {
+        "1": 2105,
+        "2": 892,
+        "3": 58,
+        "4": 298,
+        "8": 17,
+        "6": 6,
+        "7": 1,
+        "5": 286
+      },
+      "widths": {
+        "9": 410,
+        "8": 132,
+        "7": 18
+      }
+    },
+    {
+      "matching": [
+        2,
+        2
+      ],
+      "status": "CLEAN_BASE_AND_SELECTED_STRUCTURAL_ONLY",
+      "pivots": 70,
+      "profile": {
+        "1": 2113,
+        "2": 892,
+        "3": 54,
+        "4": 294,
+        "5": 290,
+        "8": 17,
+        "6": 6,
+        "7": 1
+      },
+      "widths": {
+        "9": 410,
+        "8": 132,
+        "7": 18
+      }
+    }
+  ],
+  "scope": "Fresh exact clean scalar bases plus structural/profile checks only; new dirty, retiming, Gaussian and physical admission absent. Greedy kernel selection is not optimal."
+}

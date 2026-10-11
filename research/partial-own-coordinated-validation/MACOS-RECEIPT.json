@@ -1,0 +1,71 @@
+{
+  "status": "PASS_FRESH_PARTIAL_OWN_COORDINATED_ASYNCHRONOUS",
+  "python": "3.14.8",
+  "steps": [
+    {
+      "name": "fresh-both-suppliers-and-partial-own",
+      "exit_code": 0,
+      "seconds": 725.0,
+      "log_sha256": "0f6d27f00e524bf37e876a985885a80302af495ee40496b50b0fe00f4e3509fa"
+    },
+    {
+      "name": "construct-coordinated",
+      "exit_code": 0,
+      "seconds": 0.588,
+      "log_sha256": "593f94e7e34c5d47988828fb532cd69c21c8920b609a7880a5fb84681956339c"
+    },
+    {
+      "name": "fresh-coordinated-local",
+      "exit_code": 0,
+      "seconds": 202.009,
+      "log_sha256": "732b16744c59a9c1d545c15b8baaa95e1b6dd4f23f809d9e9ed4cd1eb1be8a6e"
+    },
+    {
+      "name": "emit-asynchronous",
+      "exit_code": 0,
+      "seconds": 1.7,
+      "log_sha256": "43aee5a079eec07bdd4deab57cc9627608d1f66dc6c6aad42954371af16d41bc"
+    },
+    {
+      "name": "independent-controller",
+      "exit_code": 0,
+      "seconds": 7.773,
+      "log_sha256": "07e9773eaaafab7bc2ce2a14e7c88c506b813e30c5bb6d50efab9e8003201123"
+    },
+    {
+      "name": "finite-invoice",
+      "exit_code": 0,
+      "seconds": 0.762,
+      "log_sha256": "b712f163632c7d108cbf8f79132ec88a533363a22ae24e0658df20cb85d0f824"
+    },
+    {
+      "name": "two-exact-engines-and-outer",
+      "exit_code": 0,
+      "seconds": 0.227,
+      "log_sha256": "dca919b4ff796714c370b8b488d7adbe4d184c21ecbcd661d456cfa92c81d710"
+    }
+  ],
+  "source_manifest_sha256": "9544660a1a54915a45f0c48abb3c327ce3f01381a2a448ca09442c18cfcb992c",
+  "artifacts": {
+    "construction/CONSTRUCTION.json": "09ce5b394f2bc98c6c99753e223b1642b7f9676b48fb7f3a34564f317d47ee31",
+    "coordinated/gauge80-kernel42/RECEIPT.json": "f7c9f6f19944f815f498adf8798a4b8362dc50449a882a929e7cfc41a5b58f1c",
+    "coordinated/gauge80-kernel42/lemmaG/PREOP-GUARDS-lg_instances.json": "a8c8e8c90bc95d4932a7f1d2146f2f2fdc578d7546482f1da61100be54cec6b8",
+    "coordinated/gauge80-kernel42/lemmaG/PREOP-GUARDS-lg_e2e.json": "c9223aa12efaff48861e57641fe5beb0b1fe47cde07bf8ac8f13af0f54f5decd",
+    "coordinated/gauge80-kernel42/lemmaG/MUTANTS.json": "60fc36afd56900009e584b1a1fec544e3e377cc1ee4a989ee957afb4e8e4b8ce",
+    "RESULT.json": "b5700b468a40f9e142165999b4818a6de0af53183f801b8057c0a40fa78c9c59",
+    "FRESH-BIT-INPUT.json": "865454092ca664ea3b8d92eb5946dfb42d62be7e5b149fb87ec574c8ccfa4ad1",
+    "dependency/RECEIPT.json": "a54e5d3a522bb6681b843b176bed4d4e545a2265db92a629b7cdcbb707c60f32",
+    "dependency/EXACT-MATH.json": "90fd7d912c39187a6402e76d83e36f1cf2880a20e565a2c7c782bf19c3cc1f6c",
+    "dependency/RELEASE-ADMISSION.json": "027affadf59cb58b76d0b4c45fca598cbb8ed89f72880fdc8dd45eb9861733b9",
+    "dependency/TOOLCHAIN.json": "6962867b1f9da3b69e72084b94569e0a783094880b3815c5aec3ab321a0ac09c",
+    "dependency/partial-algebra/ALGEBRA.json": "68457e5307cfb961e72f5e1dcec28c8d2154afae60d8c210b0ddaa8408800a70",
+    "dependency/PARTIAL-FRAME-REVIEW.json": "4ea282d05ac98f400fe1b3f9a8fbdf3f860b26e1e150daaac940322de86bd86a",
+    "dependency/retimed-guarded/PREOP-GUARDS-lg_instances.json": "359a5e10f11e3d5ce671fb46132ec908bda9a94d952f7c3c937b49a48f6d51b2",
+    "dependency/retimed-guarded/PREOP-GUARDS-lg_e2e.json": "5dbdf8bdb2edbcd628f1e2d925086338d3dd90a9e624f42d4b54cd601682352a",
+    "admission/ASYNC-AUDIT.json": "07e9773eaaafab7bc2ce2a14e7c88c506b813e30c5bb6d50efab9e8003201123",
+    "admission/OWNERS-AND-PROFILE.json": "46ec8c28fd6fc91aff1c9c2501cf51954d3c7d5a06a5f5253a04e9b8ca8acc48",
+    "admission/GLOBAL-PREFIX.json": "975a6f46750a3e3170283f9c005a3e0d9ce2dc33c54ee810f4cccbde0c98a9f8",
+    "admission/PREFIX-AND-INVOICE.json": "b712f163632c7d108cbf8f79132ec88a533363a22ae24e0658df20cb85d0f824",
+    "admission/EXACT-ASSEMBLY.json": "2c6a9573ce4da670ab57648571b0f0f2e315164eaab5bfb36651816f9bd6c065"
+  }
+}

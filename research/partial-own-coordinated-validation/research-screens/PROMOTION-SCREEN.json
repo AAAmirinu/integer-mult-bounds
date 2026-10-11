@@ -1,0 +1,6 @@
+{
+  "status": "EXACT_CURRENT_RELATION_INTERSECTION_SCREEN",
+  "eligible": [],
+  "candidates": [],
+  "scope": "Fixed current donor relations, single pivot promotion only; not a global maximum."
+}

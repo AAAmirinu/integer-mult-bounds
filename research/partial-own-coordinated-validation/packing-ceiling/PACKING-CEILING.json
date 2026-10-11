@@ -1,0 +1,41 @@
+{
+  "status": "EXACT_DUAL_REJECTS_FIXED_WORD_PACKING_RATE",
+  "rejected_b": "13911431/10000000000",
+  "rejected_b_decimal": "0.0013911431",
+  "kappa_upper": "13911431/10013911431",
+  "kappa_upper_decimal": "0.001389210509385420986354238107500992935434721242043707466459616223462083",
+  "rank_stock": {
+    "16": 3840,
+    "8": 5760,
+    "32": 3840,
+    "48": 3840
+  },
+  "helper_widths": {
+    "9": 396,
+    "8": 146,
+    "7": 18
+  },
+  "calls": 72,
+  "remainder_mass": 64944,
+  "patterns": 112,
+  "dual_rank": {
+    "8": "12899601931/1000000000000",
+    "16": "12899601931/500000000000",
+    "32": "53662808745354717645216300254323086260711/1953125000000000000000000000000000000000000",
+    "48": "54695493296447488364617545254323086260711/1953125000000000000000000000000000000000000"
+  },
+  "dual_width": {
+    "7": "-914739949/40000000000",
+    "8": "-12899601931/1000000000000",
+    "9": "-1465352569/500000000000"
+  },
+  "min_exact_dual_slack": "0",
+  "mercator_rejection_margin": "2639033803919378709653248084583173853348428482382459882680277775436294139912624380298623551/3496005452600308958129979155686642825130248622481342464000000000000000000000000000000000000000000000",
+  "base_two_rejection_margin": "551055970301256447423175631732012128141/730000000000000000000000000000000000000000000000",
+  "source_artifacts": {
+    "split-centres/LOCAL-CHECKS.json": "52c7e1970e5c236050b4da34579b4cb9775cec64845fb33c49e15fbce927fcab",
+    "split-centres/CANONICAL-WORD.json.gz": "0bac897f83fcae0f849095d9d083f85a284f191667a456092f2b555fc1aecff4",
+    "split-centres/GLOBAL-TEMPLATE.json.gz": "eea4c48ff798f8b9c34290d6a5fe57f7c35385c23bcf894d06b36b92bcb0e5bb"
+  },
+  "scope": "Fixed local profile,72calls,m73,W7680,deficit2496 and unchanged idle ranks; whole helpers assigned once each, one remainder per original idle child. Drops all time, owner-conflict and chart restrictions. Does not bound changed local words, split-child contracts or all algorithms."
+}

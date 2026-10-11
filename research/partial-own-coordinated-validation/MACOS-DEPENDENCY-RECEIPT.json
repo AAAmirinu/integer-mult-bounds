@@ -1,0 +1,166 @@
+{
+  "status": "PASS_FRESH_R489_PARTIAL_OWN_KERNEL84_WHOLE_COMPLEX",
+  "artifacts": {
+    "RELEASE-ADMISSION.json": "027affadf59cb58b76d0b4c45fca598cbb8ed89f72880fdc8dd45eb9861733b9",
+    "partial-algebra/ALGEBRA.json": "68457e5307cfb961e72f5e1dcec28c8d2154afae60d8c210b0ddaa8408800a70",
+    "PARTIAL-FRAME-REVIEW.json": "4ea282d05ac98f400fe1b3f9a8fbdf3f860b26e1e150daaac940322de86bd86a",
+    "guarded/INSTANCES-gauge80-kernel42.json": "3e724797fb5cec09be5819bc9cbadef18236e7195115ea9872c027085f858333",
+    "guarded/E2E-gauge80-kernel42.json": "f4d0a770aec85e9529c95f17555fe88a99037d6297c84795c3fb28a51931cbb7",
+    "retimed-guarded/INSTANCES-gauge80-kernel42.json": "a7b834466c600776a814347283c4f68b4c99756df3a5a191910e66e1e33a93a7",
+    "retimed-guarded/E2E-gauge80-kernel42.json": "e9f83a4c46ddfcfbce2cc7de86b1a4aa985756412ae87fc2b70f578d58d2ed08",
+    "retimed/gauge80-kernel42/RECEIPT.json": "16c4b94ea77d1d63d6dd203e7ed3facb8ef04fd591a11f7ff8e206683088a3bc",
+    "retimed-guarded/PREOP-GUARDS-lg_instances.json": "359a5e10f11e3d5ce671fb46132ec908bda9a94d952f7c3c937b49a48f6d51b2",
+    "retimed-guarded/PREOP-GUARDS-lg_e2e.json": "5dbdf8bdb2edbcd628f1e2d925086338d3dd90a9e624f42d4b54cd601682352a",
+    "RETIME-FRAME-REVIEW.json": "911054b6997650baaad39b32dee2553f62974beda89cb0e218fee024a5249b89",
+    "TOOLCHAIN.json": "6962867b1f9da3b69e72084b94569e0a783094880b3815c5aec3ab321a0ac09c",
+    "BIT-LOCAL-OWNERS.json": "0c2ac175eb853d98fcde7a4b0a6a3c0a8dbbbe13e5987e85881d6260204a5eb7",
+    "BIT-INVOICE.json": "f34fc517ab48476f1945dff4ff0a1ba324425c00d4285d9e7017e2840c331b5a",
+    "HOSTING-AUDIT.json": "4710765127291412190fce9496c2ec6b8591298b46a027978c2b7f68c036b9ba",
+    "FINITE-SERIAL-POOL.json": "f5beb99ac5812e84a7a5fc88c42fd9708d2054c3dcaf2e58fda4cf464eb505d3",
+    "COMPOSITION-REVIEW.json": "4ebff8244dd8f447259ee8e7c1370336ad12195392b984971bf030a1f85d9db0",
+    "complex/RECEIPT.json": "63808890c4c388fd7101fffd93d8ab9f0e0db161da12cf888e88abb4023e7e78",
+    "bit/RESULT.json": "f0992075aecbeff17ca987d44f07d6b523241f006c97e81635f0d9d069b8b7d1",
+    "admission/ADMISSION.json": "a5d177d5490ed4a6f38589823aef001b9fb047499d25692b9fbad09abcbf2377",
+    "admission/GLOBAL-PREFIX.json": "8fe5211b628ae6536fd55788d745e04f4f2fed0f4fc283ce84f6e3be83f70870",
+    "admission/OWNERS-AND-PROFILE.json": "d3c5e5f0ff58889ef845f2aec3192ec3ffcd6e768b06e801872a6d0f3da7ef6d",
+    "admission/PREFIX-AND-INVOICE.json": "cd94ca5e78c1ad3f969dcd1b4ee48d84c7d680bab5c4ddbdb17266a31eb56789",
+    "admission/EXACT-ASSEMBLY.json": "5a6ddf03429c6c1e1d87a88b6d95c2335c35fa352d49de66218bb976e06a7793",
+    "guarded/PREOP-GUARDS-lg_instances.json": "b5b49cd58900e5b0f51125001836615bd5f83e282a6f8fb94c5efeb2c75088e8",
+    "guarded/PREOP-GUARDS-lg_e2e.json": "165706078235c9d3ecf690f09aa5cef3a187808f53f8522056ceef411423f996"
+  },
+  "kappa": "1363614743745701/1000000000000000000",
+  "kappa_decimal": "0.001363614743745701",
+  "python": "3.14.8",
+  "source_manifest_sha256": "797a365028a0c82d677db0b4624b6bdd38699c99d6696eb3bfbe01b40266b9a2",
+  "exact_math_sha256": "90fd7d912c39187a6402e76d83e36f1cf2880a20e565a2c7c782bf19c3cc1f6c",
+  "steps": [
+    {
+      "name": "compiler-version",
+      "returncode": 0,
+      "seconds": 0.074,
+      "log_sha256": "4e8a77bcb032deb6591b0db384ff9808d01d9030f00e2d877394df88a12a2536"
+    },
+    {
+      "name": "boost-header-trace",
+      "returncode": 0,
+      "seconds": 0.631,
+      "log_sha256": "63feccb2e5287bf595bcb659705ad00ffc36fb2ad18459212a350099f9284edc"
+    },
+    {
+      "name": "boost-arbitrary-integer",
+      "returncode": 0,
+      "seconds": 0.727,
+      "log_sha256": "45ab3b5e33ea24fdb1b557c142c208ab46bac2282e541e0e309598d8baec2e62"
+    },
+    {
+      "name": "complete493",
+      "returncode": 0,
+      "seconds": 64.82,
+      "log_sha256": "a045a112024011d84dffd84eaa1b566d152bec2c49023e1f596afbabc86be0c8"
+    },
+    {
+      "name": "independent493-local-owners",
+      "returncode": 0,
+      "seconds": 2.799,
+      "log_sha256": "0c2ac175eb853d98fcde7a4b0a6a3c0a8dbbbe13e5987e85881d6260204a5eb7"
+    },
+    {
+      "name": "independent493-invoice",
+      "returncode": 0,
+      "seconds": 0.311,
+      "log_sha256": "1d0b42e54f452d9318f21e93f85e09d978b014f3a8f04e065b80676bf5ad2584"
+    },
+    {
+      "name": "complete484",
+      "returncode": 0,
+      "seconds": 367.632,
+      "log_sha256": "24e8e4ab71aac9a0c59048e784fd83823df375c9f0bd00a3ddd06efa68bc350a"
+    },
+    {
+      "name": "guarded-lg_instances",
+      "returncode": 0,
+      "seconds": 158.791,
+      "log_sha256": "cd7a1ba3f28ce3047466db89d5a6f2764c2f94c26bae674b28fa7724ad0978b2"
+    },
+    {
+      "name": "guarded-lg_e2e",
+      "returncode": 0,
+      "seconds": 158.79,
+      "log_sha256": "58c5bf669a5a9c45b0cef3b6a56b6a1187077230181f5bbe522154c7d7b324d4"
+    },
+    {
+      "name": "rebuild-retimed",
+      "returncode": 0,
+      "seconds": 249.604,
+      "log_sha256": "20e073ba89a740a381a3030f038a39b7d5884ef0c509eb23cdd10e2a1e9e3c5e"
+    },
+    {
+      "name": "independent-retimed-frames",
+      "returncode": 0,
+      "seconds": 1.017,
+      "log_sha256": "84cf9693c8d4355884d4cbb93769d2f39abc5088e4e42b3a8d633a087908be38"
+    },
+    {
+      "name": "independent-partial-algebra",
+      "returncode": 0,
+      "seconds": 0.425,
+      "log_sha256": "68457e5307cfb961e72f5e1dcec28c8d2154afae60d8c210b0ddaa8408800a70"
+    },
+    {
+      "name": "independent-partial-frames",
+      "returncode": 0,
+      "seconds": 1.006,
+      "log_sha256": "51b6ed748b31ac5e24e92b29b6499a14aacfdf46403e26d723f1c8dce77efec7"
+    },
+    {
+      "name": "retimed-guarded-lg_e2e",
+      "returncode": 0,
+      "seconds": 50.837,
+      "log_sha256": "a3514e9647b6a29aeb2a169100a764e7019b1bed778605df4e2388512b89c328"
+    },
+    {
+      "name": "retimed-guarded-lg_instances",
+      "returncode": 0,
+      "seconds": 89.647,
+      "log_sha256": "59f29e4ec6a3cf5e0cfa975812d4a309056238516ce4471669d114139cd3920d"
+    },
+    {
+      "name": "pooled-emitter",
+      "returncode": 0,
+      "seconds": 1.71,
+      "log_sha256": "17b1673b44c9ecc82646e8cee8c3429e49760bb9ad52c33f1b9302d5b3f8f03d"
+    },
+    {
+      "name": "independent-pooled-controller",
+      "returncode": 0,
+      "seconds": 7.668,
+      "log_sha256": "4710765127291412190fce9496c2ec6b8591298b46a027978c2b7f68c036b9ba"
+    },
+    {
+      "name": "finite-serial-pool-operator",
+      "returncode": 0,
+      "seconds": 0.033,
+      "log_sha256": "f5beb99ac5812e84a7a5fc88c42fd9708d2054c3dcaf2e58fda4cf464eb505d3"
+    },
+    {
+      "name": "independent-pooled-physical-invoice",
+      "returncode": 0,
+      "seconds": 3.365,
+      "log_sha256": "5e7a6a4e9e15513e909d484f97f54fb734fdbd38df87110523128509d679261a"
+    },
+    {
+      "name": "independent-composition",
+      "returncode": 0,
+      "seconds": 0.906,
+      "log_sha256": "7419d7198a12662b0d8af2967778a303d8743bb42cbba3ab3665146c2727212e"
+    },
+    {
+      "name": "final-proof-object-admission",
+      "returncode": 0,
+      "seconds": 0.44,
+      "log_sha256": "322e332deef078459ad7fc66103c5d47888f87e194bee5373f76006ace19fa78"
+    }
+  ],
+  "seconds": 724.945,
+  "scope": "Conditional partial-own factory/kernel84 whole-owner finite construction; both pinned suppliers reconstructed and the changed word recompiled, scalar dirty restoration/reflected ledgers/actual owner maps/complete invoices and47inequalities checked. Inherited all-size compiler, LemmaA realization, precision/tape, restored-row and analytic contracts remain."
+}
