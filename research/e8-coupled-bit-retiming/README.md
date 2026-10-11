@@ -5,19 +5,22 @@ Conditional candidate, October 11, 2026; maintainer review pending.
 The fully replayed seven-stage bit / nine-stage complex composition gives
 
 ```
-kappa = 49931732854659861010149 / 50000000000000000000000000
-      = 0.00099863465709319722020298
+kappa = 998634658090834606116833 / 1000000000000000000000000000
+      = 0.000998634658090834606116833
 ```
 
-It exceeds PR #384's `998634656132003 / 10^18` by
-`48059711010149 / 50000000000000000000000000`, approximately
-`9.6119422020298e-13` (relative `9.62508e-8 %`). This is a small exponent
+It exceeds PR #387's `998634657132636 / 10^18` by
+`958198606116833 / 1000000000000000000000000000`, approximately
+`9.58198606116833e-13` (relative `9.59509e-8 %`). This is a small exponent
 improvement, not a measured runtime improvement. The headline gain applies
 applecrusher's PR #376 exact assembly refinement to the freshly replayed
 PR #384 retimed unit in PR #377's complex supplier; it is **not attributed to
 the new bit frames**. This package also freshly supplies the certificate-specific
 physical, Clifford and finite checks left open in PR #384, using the derivation
 pattern of Rohan Arun's PR #385.
+It also adopts PR #387's smaller beta=10^-18 while retaining eight bootstrap
+steps, eta=10^-24 and the 10^-27 grid; all new strict cutoffs and zero/unit
+parameter controls are checked.
 
 The new contribution on the bit side is deterministic coalescence of connected
 one-, two- and three-gate groups, applied after PR #376's 43-helper reuse.

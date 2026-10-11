@@ -226,7 +226,7 @@
     }
   },
   "bit_saving": "2382370177/50000000000000",
-  "certificate_sha256": "e5508aeec4275bb40dfdc733a50a913534096e312751890d06ed3dbc8c4e71da",
+  "certificate_sha256": "a069d77d94e9f370e83acec3d746d9a4d9a26f371f3abb49d0edc6dd4d76b1d6",
   "kappa": "4764513337/100000000000000",
   "margins": 7,
   "producer_words_regenerated_and_matched": true,

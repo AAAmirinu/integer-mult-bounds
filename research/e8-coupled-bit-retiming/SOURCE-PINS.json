@@ -3069,6 +3069,27 @@
       "commit": "59c760fde8ee6f374d6860a34d376b108553c79a",
       "source_path": "research/e8-retimed-nine-composition/verify.py",
       "sha256": "b5b573d3a563d523584498ea7e928a69cf97bf93a8f886fbb3ce80bbb4cca984"
+    },
+    {
+      "path": "vendor/source387/refine.py",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "803b139f9f551200f76df7f751183c4b7aecf6e6",
+      "source_path": "research/e8-outer-slack-refinement/refine.py",
+      "sha256": "ef7810c2f5235287e4d329973ed66325dfd643afa2eede53beba25ad9f445542"
+    },
+    {
+      "path": "vendor/source387/PROOF.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "803b139f9f551200f76df7f751183c4b7aecf6e6",
+      "source_path": "research/e8-outer-slack-refinement/PROOF.md",
+      "sha256": "3ba09b7d116066f5cd3039c4c226f3627c3e6145829cbd29859ebaf357801209"
+    },
+    {
+      "path": "vendor/source387/NOTICE.md",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "803b139f9f551200f76df7f751183c4b7aecf6e6",
+      "source_path": "research/e8-outer-slack-refinement/NOTICE.md",
+      "sha256": "d3a7c39b97f951301277b82242d205785a31e8eb05e284cb310346658f307521"
     }
   ]
 }

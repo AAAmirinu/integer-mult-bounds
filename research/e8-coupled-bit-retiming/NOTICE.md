@@ -39,6 +39,10 @@ immutable vendor directories, including CC0 mathematical proof sources.
   derivation to #384's stronger unit. The new package supplies the missing
   physical/Clifford/invoice replay for that unit, and uses our fully invoiced
   zero-entrance bit word rather than the #382 kernel word.
+- Rohan Arun, PR #387, smaller positive beta=10^-18 witness backoff and
+  zero/unit-parameter controls, `803b139f9f551200f76df7f751183c4b7aecf6e6`.
+  We combine this beta with #376's eight bootstrap steps and finer grid;
+  #387's three-round witness is the final dated comparison.
 - Jacob Sussman, E8 family, local complex source and mathematical certificates;
   Henry Grant, five-stage geometry; Evan McKinney, completed banks; eumemic,
   moment/assembly/source527 machinery; Chafik Boukhalfa, physical checks;

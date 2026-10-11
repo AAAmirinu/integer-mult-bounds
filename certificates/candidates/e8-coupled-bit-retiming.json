@@ -1,8 +1,8 @@
 {
-  "absolute_gain": "48059711010149/50000000000000000000000000",
+  "absolute_gain": "958198606116833/1000000000000000000000000000",
   "assistance": "Substantial OpenAI Codex assistance",
   "baseline_bit_coarse": "8128527708459/8000000000000000",
-  "baseline_composed_kappa": "49931732854659861010149/50000000000000000000000000",
+  "baseline_composed_kappa": "998634658090834606116833/1000000000000000000000000000",
   "bit_coarse": "63613071872999/62500000000000000",
   "bit_component_gain": "1743186410609/1000000000000000000",
   "changed_gates": 98,
@@ -14,8 +14,8 @@
   "finite_coefficient": 56346946940397,
   "format": "conditional-candidate-record/1",
   "global_columns": 1542,
-  "kappa": "49931732854659861010149/50000000000000000000000000",
-  "kappa_decimal": "0.00099863465709319722020298",
+  "kappa": "998634658090834606116833/1000000000000000000000000000",
+  "kappa_decimal": "0.000998634658090834606116833",
   "local_columns": 1062,
   "local_histogram": {
     "1": 2227,
@@ -27,13 +27,13 @@
     "7": 14,
     "8": 18
   },
-  "manifest_sha256": "6c24fee5e4d51728b53e7b7893af6d2e00f3903248997b3e9b61f94e9c232d54",
+  "manifest_sha256": "389ac12de894730bd534f9a00d604866dd400175e32bd1204920dd98eafb8888",
   "package": "research/e8-coupled-bit-retiming",
-  "prior_pr384": "998634656132003/1000000000000000000",
+  "prior_pr387": "249658664283159/250000000000000000",
   "retiming_kappa_gain": "0",
   "review_status": "Pending maintainer review",
   "scope": "Finite conditional witness; upstream all-size compiler, recursive suppliers, compressed Clifford windows, banking, routing, restored-row, Gaussian recovery and analytic interfaces remain assumed. Not a formal proof of the complete theorem.",
-  "source_pins_sha256": "4cb1bd0cb7ce632066bd7fdfe85b2ee953683b4f22d42e353bf69dce0b03a2bc",
+  "source_pins_sha256": "528a2912ce81f7e9ce0a1c575322b82cf209606cfaf7d3e8c899209e766cf128",
   "status": "PASS_SOURCE_BOUND_E8_BIT_RETIMING_AND_ASSEMBLY",
   "upstream_main": "12a4934d15006e8c10f9b2264f13f8f341be802b",
   "verification": "make e8-coupled-verify"

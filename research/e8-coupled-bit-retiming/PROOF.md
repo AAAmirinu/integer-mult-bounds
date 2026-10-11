@@ -95,8 +95,10 @@ compressed-window or analytic hypotheses.
 
 ## Exact assembly refinement
 
-Apply PR #376's eta=10^-24, beta=10^-9, eight bootstrap steps and 10^-27 grid
-to the new complex saving b. Select the bit saving strictly below
+Apply PR #376's eta=10^-24, eight bootstrap steps and 10^-27 grid, with
+PR #387's smaller positive beta=10^-18, to the new complex saving b.
+The retained outer interface permits every strict 0<beta<1; this changes its
+witness backoff, not the supplier or finite-envelope hypotheses. Select the bit saving strictly below
 `(1-beta)*b` and within two grid ticks of it, and recertify it with both moment
 engines on the actual histogram. For each bootstrap step, compute all four
 positive gaps and a fresh eventual cutoff at the **new finite coefficient**:
@@ -108,8 +110,9 @@ L*delta >= 2*(4+ceil(log2(coefficient))).
 
 The 47 exact outer slacks and seven margins are positive. The next 10^-27
 assembly tick fails; admission at the complex leaf cap fails as well. This
-produces the rational kappa in `data/EXPECTED.json`, larger than PR #384's
-3-bootstrap / eta=10^-12 / 10^-18-grid witness. The larger kappa comes from
+produces the rational kappa in `data/EXPECTED.json`, larger than PR #387's
+3-bootstrap / eta=10^-18 / 10^-18-grid witness. Zero eta, zero beta and unit
+beta are additional rejected controls. The larger kappa comes from
 this assembly refinement. The unchanged PR #376 bit word reaches the same
 complex cap under the same new layout and parameters; the verifier explicitly
 checks that its final kappa equals the new bit word's, and separately records

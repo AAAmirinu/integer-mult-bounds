@@ -11,7 +11,7 @@ def record():
     from verify import manifests
     manifests()
     expected=json.loads((ROOT/'data/EXPECTED.json').read_text(encoding='utf-8'))
-    k=Q(expected['kappa']);old=Q(expected['prior_pr384'])
+    k=Q(expected['kappa']);old=Q(expected['prior_pr387'])
     assert k>old>Q(1,1024) and Q(expected['absolute_gain'])==k-old
     assert expected['retiming_kappa_gain']=='0'
     assert expected['baseline_composed_kappa']==expected['kappa']

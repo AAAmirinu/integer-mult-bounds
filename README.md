@@ -6,10 +6,10 @@ OpenAI #109 framework.**
 ## New conditional candidate: coupled E8 frames and refined assembly
 
 The October 11 candidate gives
-**κ = 49931732854659861010149 / 50000000000000000000000000
-= 0.00099863465709319722020298**, with maintainer review pending.
-It improves the public [#384](https://github.com/CrocSwap/integer-mult-bounds/pull/384)
-witness by approximately `9.6119422020298e-13`.
+**κ = 998634658090834606116833 / 1000000000000000000000000000
+= 0.000998634658090834606116833**, with maintainer review pending.
+It improves the public [#387](https://github.com/CrocSwap/integer-mult-bounds/pull/387)
+witness by approximately `9.58198606116833e-13`.
 
 ai-nanachi's connected frame search changes 98 scalar-gate frames after
 applecrusher's [#376](https://github.com/CrocSwap/integer-mult-bounds/pull/376)
@@ -20,7 +20,7 @@ Zhihao Chen's complete nine-stage complex supplier from
 Boukhalfa's far-retimed unit from #384. The new unit's physical, Clifford and
 finite checks are fully rerun, following Rohan Arun's #385 derivation. The headline
 κ improvement comes from applying #376's exact assembly refinement to this
-new complex supplier; the separate bit improvement is recorded independently
+new complex supplier, with #387's smaller positive beta backoff; the separate bit improvement is recorded independently
 because the composition is complex-bound. Both complete supplier suites,
 physical columns, mutation controls, finite invoices and the 47 assembly
 inequalities are freshly replayed. General all-size interfaces remain

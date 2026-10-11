@@ -43,6 +43,8 @@ The initial comparison was against PR #382, available at 15:20. The final
 comparison is against PR #384's stronger far-retimed unit. Its previously
 unreplayed physical, Clifford and finite stages are now replayed from the full
 pinned #377 source, following #385's derivation procedure, before admission.
+PR #387's smaller beta backoff was then incorporated into the eight-step
+assembly; that three-round witness is the final comparison.
 
 To reproduce a screen trial from the repository root:
 

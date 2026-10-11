@@ -28,7 +28,7 @@ performed the maintainer review and integration with OpenAI Codex assistance.
 ai-nanachi, with substantial OpenAI Codex assistance, contributes connected
 one-, two- and three-gate frame coalescence (98 changed bit gates), complete
 pinned supplier replay and a separate exact candidate record. The conditional
-κ is `49931732854659861010149/50000000000000000000000000`.
+κ is `998634658090834606116833/1000000000000000000000000000`.
 The headline improvement applies applecrusher's #376 assembly refinement to
 Zhihao Chen's #377 nine-stage complex supplier; it is not attributed to the
 new bit frames. Dylan Crow supplies the #370 E8 bit word; applecrusher supplies
@@ -37,7 +37,8 @@ degree-two layout; Rohan Arun supplies #380's common-envelope comparison.
 Chafik Boukhalfa's #384 supplies the far-retimed complex unit and dated preceding
 witness. Rohan Arun's #385 supplies the complete retimed-complex derivation
 procedure. This package freshly checks the #384 unit's physical word, new
-Clifford frames and finite invoice. The
+Clifford frames and finite invoice, and adopts #387's smaller beta backoff.
+#387 is the final preceding witness. The
 [package notice](research/e8-coupled-bit-retiming/NOTICE.md) records exact pins,
 AI disclosures, retained licenses and the complete predecessor lineage.
 Maintainer acceptance and general all-size proof obligations remain pending.
