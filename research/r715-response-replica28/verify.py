@@ -11,7 +11,7 @@ OUT=args.output.resolve();assert not OUT.exists() and not OUT.is_relative_to(ROO
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 read=lambda p:json.loads(p.read_text(encoding='utf-8'))
 def integrity():
- actual={p.relative_to(ROOT).as_posix():sha(p)for p in ROOT.rglob('*')if p.is_file()and p.name!='MANIFEST.json'and '__pycache__'not in p.parts}
+ actual={p.relative_to(ROOT).as_posix():sha(p)for p in ROOT.rglob('*')if p.is_file()and p!=ROOT/'MANIFEST.json'and '__pycache__'not in p.parts}
  assert actual==read(ROOT/'MANIFEST.json'),'Package manifest mismatch'
 integrity();OUT.mkdir(parents=True);start=time.monotonic();steps=[]
 env=dict(os.environ,PYTHONUTF8='1',PYTHONDONTWRITEBYTECODE='1',PYTHONINTMAXSTRDIGITS='0',PYTHONPATH=os.pathsep.join(map(str,[ROOT/'vendor/runtime',ROOT/'vendor/complex',ROOT/'code'])),TMP=str(OUT),TEMP=str(OUT));env.pop('PYTHONOPTIMIZE',None)
