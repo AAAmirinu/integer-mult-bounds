@@ -20,7 +20,7 @@ verify:
 	$(MAKE) verify-paired-cube
 	$(MAKE) verify-recycled-bit
 	$(MAKE) verify-entrance-banks
-	$(MAKE) gen4-bank-verify
+	$(MAKE) gen4-envelope-verify
 	$(MAKE) verify-certificates
 	$(MAKE) verify-ternary
 	$(MAKE) verify-research
@@ -45,6 +45,11 @@ verify-entrance-banks: entrance-bank-verify
 gen4-bank-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-gen4.XXXXXX"); \
 	python3 -B research/five-stage-gen4-banks/verify.py --output "$$work/replay"
+
+.PHONY: gen4-envelope-verify
+gen4-envelope-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-envelope.XXXXXX"); \
+	python3 -B research/gen4-envelope-refinement/verify.py --output "$$work/replay"
 
 .PHONY: source527-record-check source527-verify
 source527-record-check:

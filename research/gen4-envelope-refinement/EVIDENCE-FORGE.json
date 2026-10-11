@@ -1,0 +1,544 @@
+{
+  "schema": "gen4-envelope-evidence-forge/v1",
+  "protocol": "forge-agent/v2",
+  "working_context": "working-context/v1",
+  "project_id": "837263f9-9fec-455d-93ad-5162cd35bf94",
+  "scope": "Forge independently checks exact finite JSON source values against immutable explicitly selected snapshots. It does not independently prove the mathematics, execute the physical replay, or accept a formal multiplication theorem. Authored hypotheses, observations and decisions remain advisory.",
+  "retention": "This public file is a sanitized index of retained ledger record IDs, not a ledger export or research authority. The institution ledger retains immutable requests, assessments, failures and workflow transitions; public source/certificate files support separate reproduction.",
+  "source_snapshots": {
+    "baseline": "8034a246-921b-49e7-9148-54e5d0b21a4c",
+    "current": "5d73276b-1d0c-4a80-8ef4-4a0232c8305c",
+    "historical": [
+      "a43125dd-46c8-45dc-9c84-4d43660290e7",
+      "eef38c9d-032f-4b9f-a8cd-ab4dd09dd547"
+    ],
+    "completeness": "selected-files-only"
+  },
+  "current_summary_sha256": "27e8470b241a958d68dba3c183cfa31afc744bdd9c9197015150b9012f25aa3b",
+  "expected_certificate_sha256": "4e2baeaa66ed90260a41cd887cf2e4c3b97853d82484872abac6c1f7ee41b8bb",
+  "assessment_scope": "structured-fact-only; narrativeAssessed=false",
+  "baseline": {
+    "task_id": "0b31613e-20c2-437b-9127-e0c649840112",
+    "decision_id": "b160f51f-1a41-42a4-9291-6ff818fa1736",
+    "transition_id": "91ba9eb0-291d-4b6b-8b19-56a11dc4f243",
+    "facts": [
+      {
+        "name": "selected-kappa",
+        "claimId": "1fa745c8-42d4-44c0-9dc2-2ab5cf09de41",
+        "assessmentId": "416bc616-ef88-4288-82c5-345eb1f06960",
+        "path": "certificates/selected-result.json",
+        "pointer": "/kappa"
+      },
+      {
+        "name": "selected-decimal",
+        "claimId": "8b0d4d78-b667-402f-9089-af9293a72994",
+        "assessmentId": "30f9f24b-f953-4b43-a7f0-fa238c7c51b3",
+        "path": "certificates/selected-result.json",
+        "pointer": "/decimal"
+      },
+      {
+        "name": "selected-scope",
+        "claimId": "cf0a7140-26c3-4ae7-9170-a7f5b48cc0a7",
+        "assessmentId": "bd7a30ee-90f5-4f42-bdd3-7903b19bfe11",
+        "path": "certificates/selected-result.json",
+        "pointer": "/scope"
+      },
+      {
+        "name": "selected-certificate-hash",
+        "claimId": "392c90ff-1adf-49f6-8c2a-df85ba3c3946",
+        "assessmentId": "ad147f5a-51d6-45e8-a0b8-278eab996173",
+        "path": "certificates/selected-result.json",
+        "pointer": "/certificate_sha256"
+      },
+      {
+        "name": "certificate-kappa",
+        "claimId": "17955231-e659-4fd0-879d-7f5ca32e4c6c",
+        "assessmentId": "e84f011c-ffec-46c8-9a26-36e57bf2825f",
+        "path": "research/community-pr279-audit/certificate.json",
+        "pointer": "/kappa"
+      },
+      {
+        "name": "certificate-binding",
+        "claimId": "6c2cd287-c80c-473b-b9ed-556043c0360e",
+        "assessmentId": "5f54679b-8e0d-4012-ad50-3e745e777022",
+        "path": "research/community-pr279-audit/certificate.json",
+        "pointer": "/binding"
+      },
+      {
+        "name": "certificate-bit-profile",
+        "claimId": "1d2fc6a6-3e13-4dc8-b2f2-6cee7de1b2d7",
+        "assessmentId": "69c930c8-e85e-4f49-a659-ce1f8ae3411d",
+        "path": "research/community-pr279-audit/certificate.json",
+        "pointer": "/bit_profile"
+      },
+      {
+        "name": "certificate-complex-profile",
+        "claimId": "9d360639-75aa-4634-8d2a-e355fd95a1cf",
+        "assessmentId": "716c96a5-ed5e-4e34-9aa1-ae76816df11e",
+        "path": "research/community-pr279-audit/certificate.json",
+        "pointer": "/complex_profile"
+      }
+    ]
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "task_id": "fa1ba981-bd17-4eed-8ef6-94eb969b8455",
+      "hypothesis_id": "183fc24c-fa53-4795-9068-f2d4af9637e2",
+      "plan_id": "340c6bc1-b4ff-4170-a350-4debe1f25a71",
+      "observation_ids": [
+        "c7f7a005-2463-45ff-afbe-c92d8398c3b6",
+        "b16097f9-821d-499e-a63d-d8a2f3f9188d"
+      ],
+      "counterevidence_ids": [],
+      "summary_fact": {
+        "name": "cycle-01",
+        "pointer": "/cycles/0",
+        "claimId": "59172af1-c77c-4919-9374-543971526928",
+        "assessmentId": "85ed3743-cf68-458b-ab34-c463d3142c40"
+      },
+      "incumbent_before": "90446448750933/125000000000000000",
+      "incumbent_after": "723571590009631/1000000000000000000",
+      "attempts": 1,
+      "rejected_attempts": 0,
+      "improved_in_report": true,
+      "decision_id": "68f186d1-0562-4c83-a9d9-2cd0f69488f9",
+      "decision_outcome": "accepted-advisory",
+      "transition_id": "89c80e50-24d6-4940-b62a-0296183c62fe",
+      "workflow_state": "completed-advisory"
+    },
+    {
+      "cycle": 2,
+      "task_id": "8cb6edc3-54e2-4b97-897e-5a5d0fa763ff",
+      "hypothesis_id": "0a2ef8dc-dec4-451b-aa37-322dcde7edf5",
+      "plan_id": "0c3f3430-bfb5-4b58-8cf7-fafe551fc3d3",
+      "observation_ids": [
+        "b9cd7543-7e02-4c23-b571-318a4b8fdf2f"
+      ],
+      "counterevidence_ids": [],
+      "summary_fact": {
+        "name": "cycle-02",
+        "pointer": "/cycles/1",
+        "claimId": "c697f679-6818-4610-b89f-881a7b733778",
+        "assessmentId": "396e5bd2-75e0-43d6-8dfd-db7a15e42bbe"
+      },
+      "incumbent_before": "723571590009631/1000000000000000000",
+      "incumbent_after": "723571590269559/1000000000000000000",
+      "attempts": 4,
+      "rejected_attempts": 0,
+      "improved_in_report": true,
+      "decision_id": "5e56be85-c892-4660-b17d-cef0c527240c",
+      "decision_outcome": "accepted-advisory",
+      "transition_id": "6392fc33-bb70-4464-8aef-432206b9470f",
+      "workflow_state": "completed-advisory"
+    },
+    {
+      "cycle": 3,
+      "task_id": "1a54f934-ea1a-4e18-9597-b4dec4bfa384",
+      "hypothesis_id": "c396cf92-3451-465d-8606-63f5a395c0a7",
+      "plan_id": "13088b45-f8af-4d6f-9c4e-4344cf6e3a17",
+      "observation_ids": [
+        "73d2a53d-c5d7-439b-b9a8-18e9cdaf88e9"
+      ],
+      "counterevidence_ids": [],
+      "summary_fact": {
+        "name": "cycle-03",
+        "pointer": "/cycles/2",
+        "claimId": "5f255c0f-ca26-4292-bbf5-4766215d4f05",
+        "assessmentId": "96f7a3fd-6e37-484b-9171-13fa3bd73414"
+      },
+      "incumbent_before": "723571590269559/1000000000000000000",
+      "incumbent_after": "723571590269561/1000000000000000000",
+      "attempts": 3,
+      "rejected_attempts": 0,
+      "improved_in_report": true,
+      "decision_id": "4221f90d-f821-4522-aea1-59df203c4f35",
+      "decision_outcome": "accepted-advisory",
+      "transition_id": "f98a9091-86ba-4a8d-b2b6-c7bdb5550310",
+      "workflow_state": "completed-advisory"
+    },
+    {
+      "cycle": 4,
+      "task_id": "c859ba86-3f19-443c-a2ec-7ffe6e7f2c31",
+      "hypothesis_id": "48edcdf3-4d5b-49e7-8521-2ee6abf61de8",
+      "plan_id": "1a0c29ef-55a7-4ccb-9d2c-5023da0a5302",
+      "observation_ids": [
+        "9fd0efdd-6574-4f21-9b17-fe328d970239"
+      ],
+      "counterevidence_ids": [
+        "3498f82f-230a-469c-8958-d445bf443a1e"
+      ],
+      "summary_fact": {
+        "name": "cycle-04",
+        "pointer": "/cycles/3",
+        "claimId": "2fcd9693-8793-4fcd-a60c-db87ddc53bf8",
+        "assessmentId": "aa8acf8a-9b51-47ea-8b83-f0dc8e028478"
+      },
+      "incumbent_before": "723571590269561/1000000000000000000",
+      "incumbent_after": "723571590269561/1000000000000000000",
+      "attempts": 5,
+      "rejected_attempts": 2,
+      "improved_in_report": false,
+      "decision_id": "8ef81846-d5ba-4581-93d8-004d59437820",
+      "decision_outcome": "rejected-approach",
+      "transition_id": "077acd29-8f1e-4add-be90-4f78378dcedc",
+      "workflow_state": "completed-advisory"
+    },
+    {
+      "cycle": 5,
+      "task_id": "83f740d8-bac1-4ec2-9d62-fe53424a341f",
+      "hypothesis_id": "ad128557-9347-4d41-a829-f64b1da92004",
+      "plan_id": "72cebf2a-5f1e-45c1-989e-539e806f47cf",
+      "observation_ids": [
+        "8d49a8fb-01f1-4dc8-aa02-a1a0acba25b8"
+      ],
+      "counterevidence_ids": [],
+      "summary_fact": {
+        "name": "cycle-05",
+        "pointer": "/cycles/4",
+        "claimId": "b7ceb756-8ff2-427e-98de-a094abdb97dd",
+        "assessmentId": "a85ea007-2714-44c1-99bf-21765317944c"
+      },
+      "incumbent_before": "723571590269561/1000000000000000000",
+      "incumbent_after": "723571590269562123501/1000000000000000000000000",
+      "attempts": 1,
+      "rejected_attempts": 0,
+      "improved_in_report": true,
+      "decision_id": "d98bf821-9198-44ad-ad7a-1e135949b617",
+      "decision_outcome": "accepted-advisory",
+      "transition_id": "28590830-e470-4370-b4d7-7d4691853c1a",
+      "workflow_state": "completed-advisory"
+    },
+    {
+      "cycle": 6,
+      "task_id": "0286eb87-dfcd-46f9-8545-4ba59f61bea5",
+      "hypothesis_id": "5201779d-104b-4a6b-b5d2-b11f42211275",
+      "plan_id": "025b2895-438f-48ea-bab6-b6a6d3be2bb3",
+      "observation_ids": [
+        "9db08c82-03a3-438c-a961-fe0db7d69c6b"
+      ],
+      "counterevidence_ids": [],
+      "summary_fact": {
+        "name": "cycle-06",
+        "pointer": "/cycles/5",
+        "claimId": "5ac90ef6-fcc2-4630-a2e0-81c2a208d15d",
+        "assessmentId": "b15eda8f-dab1-47a3-89dc-4c867c4a8995"
+      },
+      "incumbent_before": "723571590269562123501/1000000000000000000000000",
+      "incumbent_after": "361785795588034120579/500000000000000000000000",
+      "attempts": 1,
+      "rejected_attempts": 0,
+      "improved_in_report": true,
+      "decision_id": "8ab6a4f0-e2c0-428b-ba35-ed406803b67e",
+      "decision_outcome": "accepted-advisory",
+      "transition_id": "4cf03825-49e7-4c39-b8bc-d7298cbb890d",
+      "workflow_state": "completed-advisory"
+    },
+    {
+      "cycle": 7,
+      "task_id": "f91be27e-e763-4f9b-bc15-ed8f4ee33ff2",
+      "hypothesis_id": "20796a40-41e0-4f3a-a73d-03d9ac56a5c6",
+      "plan_id": "ad8bf05a-25f4-4718-b7f4-04f76dd5eeaf",
+      "observation_ids": [
+        "d2c93128-eee5-4e97-a84e-e67375297a83"
+      ],
+      "counterevidence_ids": [],
+      "summary_fact": {
+        "name": "cycle-07",
+        "pointer": "/cycles/6",
+        "claimId": "95f79d0e-5054-475f-81cd-215df232d777",
+        "assessmentId": "c10bb94f-c2f7-4340-ab73-0fef0a028b5d"
+      },
+      "incumbent_before": "361785795588034120579/500000000000000000000000",
+      "incumbent_after": "723571593813895603649/1000000000000000000000000",
+      "attempts": 1,
+      "rejected_attempts": 0,
+      "improved_in_report": true,
+      "decision_id": "9fb271ca-6037-4ae6-b32f-7c39f83397c7",
+      "decision_outcome": "accepted-advisory",
+      "transition_id": "873e8e10-1294-45fa-afed-14e9f1cdee5c",
+      "workflow_state": "completed-advisory"
+    },
+    {
+      "cycle": 8,
+      "task_id": "7b677c82-e4c2-46ce-adb9-f9aa2c840cba",
+      "hypothesis_id": "477f8c2d-f3ef-4a64-9724-3c5785176dc8",
+      "plan_id": "a2be0a80-8f05-4848-b72c-5fec8b28f0b9",
+      "observation_ids": [
+        "da5f154c-e3b4-481a-8a70-e98347f06770"
+      ],
+      "counterevidence_ids": [],
+      "summary_fact": {
+        "name": "cycle-08",
+        "pointer": "/cycles/7",
+        "claimId": "1e5627cd-aeff-470b-8e32-70adb91c5158",
+        "assessmentId": "8538a327-200e-4a61-ae4a-25c34a772420"
+      },
+      "incumbent_before": "723571593813895603649/1000000000000000000000000",
+      "incumbent_after": "723571593839810222163/1000000000000000000000000",
+      "attempts": 1,
+      "rejected_attempts": 0,
+      "improved_in_report": true,
+      "decision_id": "44242aa6-c592-442b-8ed5-281004a17cf9",
+      "decision_outcome": "accepted-advisory",
+      "transition_id": "1376163f-93cd-4d91-99a4-2fb58349e163",
+      "workflow_state": "completed-advisory"
+    },
+    {
+      "cycle": 9,
+      "task_id": "b0d418e0-7520-4c49-b72b-f019c5dab426",
+      "hypothesis_id": "35bbf8e1-bd7d-40c2-a796-e79b32865a10",
+      "plan_id": "675f660d-6466-483f-96d3-e534c67c19d5",
+      "observation_ids": [
+        "bdba98e0-bb1a-4e09-a5d9-8559c8be8237"
+      ],
+      "counterevidence_ids": [],
+      "summary_fact": {
+        "name": "cycle-09",
+        "pointer": "/cycles/8",
+        "claimId": "4e475f40-9987-4b76-8628-9e9c9db6de37",
+        "assessmentId": "b942021d-abeb-4589-b517-57c7ca438d5f"
+      },
+      "incumbent_before": "723571593839810222163/1000000000000000000000000",
+      "incumbent_after": "36178579693950269331/50000000000000000000000",
+      "attempts": 1,
+      "rejected_attempts": 0,
+      "improved_in_report": true,
+      "decision_id": "27ab5583-5308-43b6-8b08-678273a160d0",
+      "decision_outcome": "accepted-advisory",
+      "transition_id": "95cf0ee3-c734-4821-a50f-f7d3ac3078fe",
+      "workflow_state": "completed-advisory"
+    },
+    {
+      "cycle": 10,
+      "task_id": "bcda7503-749d-4b71-b568-487b1761f263",
+      "hypothesis_id": "a2b7aeed-c0b7-4b47-9fde-704add35d353",
+      "plan_id": "b38f2daf-33e1-4c5f-8f35-20a813ab8b2e",
+      "observation_ids": [
+        "5639411c-971a-40cc-acdc-e113dde4a9ac"
+      ],
+      "counterevidence_ids": [],
+      "summary_fact": {
+        "name": "cycle-10",
+        "pointer": "/cycles/9",
+        "claimId": "a8f488a8-a29d-4f1d-a334-73aea43c161e",
+        "assessmentId": "ec71443c-8e81-43fe-819a-3bdabfc4919a"
+      },
+      "incumbent_before": "36178579693950269331/50000000000000000000000",
+      "incumbent_after": "9044644923487574859/12500000000000000000000",
+      "attempts": 1,
+      "rejected_attempts": 0,
+      "improved_in_report": true,
+      "decision_id": "30359718-6ffe-4772-8427-526a28f11392",
+      "decision_outcome": "accepted-advisory",
+      "transition_id": "69776881-e1d9-4eae-b436-4547138c512c",
+      "workflow_state": "completed-advisory"
+    },
+    {
+      "cycle": 11,
+      "task_id": "c58a53bd-99d3-4e7b-9108-d7f3e52f1348",
+      "hypothesis_id": "8dba7cb8-4657-4eee-907a-a2978e373eee",
+      "plan_id": "be352292-cf0a-4694-8072-2ac68e032a3f",
+      "observation_ids": [
+        "cd6e86b4-c81b-42c1-842e-f9d173a6fa3f",
+        "03304c45-1cbb-4b58-82e9-166f19ec7dcf",
+        "f7576bc8-bd5a-4065-ba9b-1db9c6dc5be4",
+        "2af3c09f-e169-4b6a-9f5b-589b7fd36677"
+      ],
+      "counterevidence_ids": [
+        "871e9803-24f0-441d-93ab-ed8a8d39fcc5"
+      ],
+      "summary_fact": {
+        "name": "cycle-11",
+        "pointer": "/cycles/10",
+        "claimId": "e9499ae4-c632-4b49-a057-2d9f7b50946f",
+        "assessmentId": "8315e3f3-13e2-4e25-86b2-7277614a1d37"
+      },
+      "incumbent_before": "9044644923487574859/12500000000000000000000",
+      "incumbent_after": "361785796939503063587/500000000000000000000000",
+      "attempts": 36,
+      "rejected_attempts": 0,
+      "improved_in_report": true,
+      "decision_id": "78d4fd0f-c241-4b8f-b850-8883dc0e0aba",
+      "decision_outcome": "accepted-advisory",
+      "transition_id": "38e9224c-a86d-4a8d-b8c0-e9ec4792bff1",
+      "workflow_state": "completed-advisory"
+    }
+  ],
+  "current_refinement_facts": [
+    {
+      "name": "cycle-01",
+      "pointer": "/cycles/0",
+      "claimId": "59172af1-c77c-4919-9374-543971526928",
+      "assessmentId": "85ed3743-cf68-458b-ab34-c463d3142c40"
+    },
+    {
+      "name": "cycle-02",
+      "pointer": "/cycles/1",
+      "claimId": "c697f679-6818-4610-b89f-881a7b733778",
+      "assessmentId": "396e5bd2-75e0-43d6-8dfd-db7a15e42bbe"
+    },
+    {
+      "name": "cycle-03",
+      "pointer": "/cycles/2",
+      "claimId": "5f255c0f-ca26-4292-bbf5-4766215d4f05",
+      "assessmentId": "96f7a3fd-6e37-484b-9171-13fa3bd73414"
+    },
+    {
+      "name": "cycle-04",
+      "pointer": "/cycles/3",
+      "claimId": "2fcd9693-8793-4fcd-a60c-db87ddc53bf8",
+      "assessmentId": "aa8acf8a-9b51-47ea-8b83-f0dc8e028478"
+    },
+    {
+      "name": "cycle-05",
+      "pointer": "/cycles/4",
+      "claimId": "b7ceb756-8ff2-427e-98de-a094abdb97dd",
+      "assessmentId": "a85ea007-2714-44c1-99bf-21765317944c"
+    },
+    {
+      "name": "cycle-06",
+      "pointer": "/cycles/5",
+      "claimId": "5ac90ef6-fcc2-4630-a2e0-81c2a208d15d",
+      "assessmentId": "b15eda8f-dab1-47a3-89dc-4c867c4a8995"
+    },
+    {
+      "name": "cycle-07",
+      "pointer": "/cycles/6",
+      "claimId": "95f79d0e-5054-475f-81cd-215df232d777",
+      "assessmentId": "c10bb94f-c2f7-4340-ab73-0fef0a028b5d"
+    },
+    {
+      "name": "cycle-08",
+      "pointer": "/cycles/7",
+      "claimId": "1e5627cd-aeff-470b-8e32-70adb91c5158",
+      "assessmentId": "8538a327-200e-4a61-ae4a-25c34a772420"
+    },
+    {
+      "name": "cycle-09",
+      "pointer": "/cycles/8",
+      "claimId": "4e475f40-9987-4b76-8628-9e9c9db6de37",
+      "assessmentId": "b942021d-abeb-4589-b517-57c7ca438d5f"
+    },
+    {
+      "name": "cycle-10",
+      "pointer": "/cycles/9",
+      "claimId": "a8f488a8-a29d-4f1d-a334-73aea43c161e",
+      "assessmentId": "ec71443c-8e81-43fe-819a-3bdabfc4919a"
+    },
+    {
+      "name": "cycle-11",
+      "pointer": "/cycles/10",
+      "claimId": "e9499ae4-c632-4b49-a057-2d9f7b50946f",
+      "assessmentId": "8315e3f3-13e2-4e25-86b2-7277614a1d37"
+    },
+    {
+      "name": "selected-kappa",
+      "pointer": "/selected_kappa",
+      "claimId": "afe61aa8-5ab0-47db-a750-fba178297ce5",
+      "assessmentId": "ebc91599-6829-4106-b5ba-d77fcba110a5"
+    },
+    {
+      "name": "selected-decimal",
+      "pointer": "/selected_decimal",
+      "claimId": "dfa622d2-dcc7-441d-a77c-0a3a3be00e4b",
+      "assessmentId": "4711b2e1-a1ac-49eb-ba0c-188acdd71d84"
+    },
+    {
+      "name": "gain-over-selected",
+      "pointer": "/gain_over_selected",
+      "claimId": "6a7a3634-4ba4-4c2e-8ff3-bc850bae7a75",
+      "assessmentId": "a7a32798-ed87-40a7-99eb-68d307a20cd5"
+    },
+    {
+      "name": "full-certificate-sha256",
+      "pointer": "/full_certificate_sha256",
+      "claimId": "1c10bc5f-fbf8-4b25-88a6-e1b21176c3fe",
+      "assessmentId": "ee8aaff1-b940-4093-a5b8-eed5a04a130a"
+    },
+    {
+      "name": "parameters",
+      "pointer": "/parameters",
+      "claimId": "d7d4ac3a-bb04-4f87-9965-67ba7e6d8299",
+      "assessmentId": "c03be374-a5f7-463f-964e-bf1a300b7254"
+    },
+    {
+      "name": "envelope",
+      "pointer": "/envelope",
+      "claimId": "dba1642d-e2da-402a-a93f-62b767e2e00f",
+      "assessmentId": "876507ba-19d5-4b23-93c5-deb704e9d14b"
+    },
+    {
+      "name": "negative-controls",
+      "pointer": "/negative_controls",
+      "claimId": "afbb5f37-d958-41c2-8541-1924d8d5550a",
+      "assessmentId": "a03626a6-c6f3-42f1-bfba-9b8363c3b166"
+    },
+    {
+      "name": "strict-constraints",
+      "pointer": "/strict_constraints",
+      "claimId": "848a5ccf-676f-4823-9a02-1e6b8ee8cb18",
+      "assessmentId": "8854e21f-8bf6-4137-8421-3faee6ba7558"
+    },
+    {
+      "name": "margins",
+      "pointer": "/margins",
+      "claimId": "c39ed2fa-a61f-4cc5-855d-4c410556aaf9",
+      "assessmentId": "e8f5586d-f0cd-476d-98f0-68cd356c7bfc"
+    },
+    {
+      "name": "scope",
+      "pointer": "/scope",
+      "claimId": "1b58477f-3dd5-49a1-8c66-c5bfc713f82f",
+      "assessmentId": "34795737-a513-4771-94f0-afb1849b99c4"
+    },
+    {
+      "name": "evidence-scope",
+      "pointer": "/evidence_scope",
+      "claimId": "d5be876d-58fd-4817-a928-317bf446b56f",
+      "assessmentId": "291b5380-f85e-4ff8-89ea-200defef263c"
+    }
+  ],
+  "preserved_history": {
+    "superseded_summary_fact_count": 22,
+    "canonical_serialization_changed_certificate_hash": true,
+    "physical_replay_failure_record": "871e9803-24f0-441d-93ab-ed8a8d39fcc5",
+    "physical_replay_failure_report_sha256": "107317bd8ff8f0ea86ce61c4a924c88c303e73b28eb03d3d77b656ef6aca648e",
+    "utf8_rerun_plan_id": "ddd84cfd-8858-4255-b878-f3d56fdcac27"
+  },
+  "external_validation": {
+    "completePhysicalReplay": true,
+    "certificateSha256": "4e2baeaa66ed90260a41cd887cf2e4c3b97853d82484872abac6c1f7ee41b8bb",
+    "executionReportSha256": "4b8866ea1f83db9505bcb2aa813f4d79d12a0c98af63487957529c4558226092",
+    "baselineVerificationSha256": "26198ba4c83518fac0cf362d2c90178e14d83d05ef3576c95f01d1455e8baa94",
+    "totalSeconds": 603.1400000001304,
+    "inheritedReplaySeconds": 593.9680000001099,
+    "freshStages": [
+      "banks",
+      "bit",
+      "complex",
+      "finite",
+      "math",
+      "primes",
+      "raw",
+      "scalar",
+      "virtual"
+    ],
+    "inputsUnchanged": true,
+    "sourceFiles": 112,
+    "sourceManifestSha256": "99e202d9ffe5baf89e02796edbfc7095b2b227622eccf7b61afa01fd61aeb385",
+    "windowsExtensionTestsPassed": 15,
+    "windowsSelectedResultTestsPassed": 4,
+    "linuxExtensionTestsPassed": 15,
+    "linuxArithmeticWrapperPassed": true,
+    "diffCheckPassed": true,
+    "originalFailedReplayPreserved": true,
+    "final_observation_id": "2af3c09f-e169-4b6a-9f5b-589b7fd36677",
+    "scope": "authored host-execution observations; not independently executed by Forge"
+  },
+  "forge_execution": {
+    "runs_used": 0,
+    "lookup_guidance_activated": false,
+    "paid_model_calls": 0
+  }
+}

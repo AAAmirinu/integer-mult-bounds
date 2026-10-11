@@ -1,0 +1,45 @@
+name: Verify conditional gen4 envelope refinement
+
+on:
+  push:
+    paths:
+      - 'research/gen4-envelope-refinement/**'
+      - 'research/five-stage-gen4-banks/**'
+      - 'research/community-pr279-audit/**'
+      - 'tests/test_gen4_envelope_refinement.py'
+      - '.github/workflows/gen4-envelope-refinement.yml'
+  pull_request:
+    paths:
+      - 'research/gen4-envelope-refinement/**'
+      - 'research/five-stage-gen4-banks/**'
+      - 'research/community-pr279-audit/**'
+      - 'tests/test_gen4_envelope_refinement.py'
+      - '.github/workflows/gen4-envelope-refinement.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  physical-and-arithmetic:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install the inherited pinned arithmetic dependency
+        run: python -m pip install --disable-pip-version-check -r research/five-stage-gen4-banks/requirements.txt
+      - name: Check mathematical rejection controls and source binding
+        run: python -B -m unittest discover -s tests -p test_gen4_envelope_refinement.py -v
+      - name: Fresh physical replay followed by refined exact certificate
+        run: python -B research/gen4-envelope-refinement/verify.py --output "$RUNNER_TEMP/gen4-envelope"
+      - name: Preserve committed artifacts
+        run: git diff --exit-code

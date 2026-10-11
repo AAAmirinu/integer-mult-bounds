@@ -1,0 +1,165 @@
+{
+  "base_commit": "12a4934d15006e8c10f9b2264f13f8f341be802b",
+  "baseline_kappa": "90446448750933/125000000000000000",
+  "cycles": [
+    {
+      "admitted_trials": 1,
+      "best_trial_kappa": "723571590009631/1000000000000000000",
+      "cycle": 1,
+      "hypothesis": "Reduce strictly positive outer backoff at the unchanged three finite levels.",
+      "improved": true,
+      "incumbent_after": "723571590009631/1000000000000000000",
+      "incumbent_before": "90446448750933/125000000000000000",
+      "predecessor": 0,
+      "rejected_trials": 0
+    },
+    {
+      "admitted_trials": 4,
+      "best_trial_kappa": "723571590269559/1000000000000000000",
+      "cycle": 2,
+      "hypothesis": "Search fixed finite ordinary depths 4,5,6,8; constants may depend on the selected depth.",
+      "improved": true,
+      "incumbent_after": "723571590269559/1000000000000000000",
+      "incumbent_before": "723571590009631/1000000000000000000",
+      "predecessor": 1,
+      "rejected_trials": 0
+    },
+    {
+      "admitted_trials": 3,
+      "best_trial_kappa": "723571590269561/1000000000000000000",
+      "cycle": 3,
+      "hypothesis": "Search outer backoff at the admitted finite depth.",
+      "improved": true,
+      "incumbent_after": "723571590269561/1000000000000000000",
+      "incumbent_before": "723571590269559/1000000000000000000",
+      "predecessor": 2,
+      "rejected_trials": 0
+    },
+    {
+      "admitted_trials": 3,
+      "best_trial_kappa": "723571590269561/1000000000000000000",
+      "cycle": 4,
+      "hypothesis": "Probe whether the outer complex-leaf allocation beta binds the headline.",
+      "improved": false,
+      "incumbent_after": "723571590269561/1000000000000000000",
+      "incumbent_before": "723571590269561/1000000000000000000",
+      "predecessor": 3,
+      "rejected_trials": 2
+    },
+    {
+      "admitted_trials": 1,
+      "best_trial_kappa": "723571590269562123501/1000000000000000000000000",
+      "cycle": 5,
+      "hypothesis": "Refine the strictly certified coarse and headline grids from 10^-18 to 10^-24.",
+      "improved": true,
+      "incumbent_after": "723571590269562123501/1000000000000000000000000",
+      "incumbent_before": "723571590269561/1000000000000000000",
+      "predecessor": 4,
+      "rejected_trials": 0
+    },
+    {
+      "admitted_trials": 1,
+      "best_trial_kappa": "361785795588034120579/500000000000000000000000",
+      "cycle": 6,
+      "hypothesis": "Replace 32m^2 by the proved exact full Gaussian fallback count.",
+      "improved": true,
+      "incumbent_after": "361785795588034120579/500000000000000000000000",
+      "incumbent_before": "723571590269562123501/1000000000000000000000000",
+      "predecessor": 5,
+      "rejected_trials": 0
+    },
+    {
+      "admitted_trials": 1,
+      "best_trial_kappa": "723571593813895603649/1000000000000000000000000",
+      "cycle": 7,
+      "hypothesis": "Use 2m^3/2^80 from the already required prime threshold; keep 32m^2.",
+      "improved": true,
+      "incumbent_after": "723571593813895603649/1000000000000000000000000",
+      "incumbent_before": "361785795588034120579/500000000000000000000000",
+      "predecessor": 5,
+      "rejected_trials": 0
+    },
+    {
+      "admitted_trials": 1,
+      "best_trial_kappa": "723571593839810222163/1000000000000000000000000",
+      "cycle": 8,
+      "hypothesis": "Compose the exact full fallback count and retained prime-threshold probability.",
+      "improved": true,
+      "incumbent_after": "723571593839810222163/1000000000000000000000000",
+      "incumbent_before": "723571593813895603649/1000000000000000000000000",
+      "predecessor": [
+        6,
+        7
+      ],
+      "rejected_trials": 0
+    },
+    {
+      "admitted_trials": 1,
+      "best_trial_kappa": "36178579693950269331/50000000000000000000000",
+      "cycle": 9,
+      "hypothesis": "Use the elementary GL invertibility lower bound in place of the factor two.",
+      "improved": true,
+      "incumbent_after": "36178579693950269331/50000000000000000000000",
+      "incumbent_before": "723571593839810222163/1000000000000000000000000",
+      "predecessor": 8,
+      "rejected_trials": 0
+    },
+    {
+      "admitted_trials": 1,
+      "best_trial_kappa": "9044644923487574859/12500000000000000000000",
+      "cycle": 10,
+      "hypothesis": "Use the disjoint good/bad partition while retaining the complete fallback on every bad class.",
+      "improved": true,
+      "incumbent_after": "9044644923487574859/12500000000000000000000",
+      "incumbent_before": "36178579693950269331/50000000000000000000000",
+      "predecessor": 9,
+      "rejected_trials": 0
+    },
+    {
+      "admitted_trials": 36,
+      "best_trial_kappa": "361785796939503063587/500000000000000000000000",
+      "cycle": 11,
+      "hypothesis": "Joint bounded search of fixed ordinary depth and positive backoff, with strict boundary controls.",
+      "improved": true,
+      "incumbent_after": "361785796939503063587/500000000000000000000000",
+      "incumbent_before": "9044644923487574859/12500000000000000000000",
+      "predecessor": 10,
+      "rejected_trials": 0
+    }
+  ],
+  "derived_from": "EXPECTED.json",
+  "envelope": {
+    "bad_fraction": "4080124641199373464633340625/2854495385411919762116567216532507403120279552",
+    "disjoint_good_bad": "True",
+    "fallback_count": "346314",
+    "kind": "disjoint",
+    "prime_lower_bound": "1208925819614629174706176"
+  },
+  "evidence_scope": "This is a derived index of the full arithmetic certificate. Forge JSON assessments check captured field values, not the mathematical proof or external execution.",
+  "full_certificate_sha256": "4e2baeaa66ed90260a41cd887cf2e4c3b97853d82484872abac6c1f7ee41b8bb",
+  "gain_over_selected": "1935771063587/500000000000000000000000",
+  "margins": 7,
+  "negative_controls": [
+    "zero outer backoff",
+    "unbounded ordinary depth",
+    "zero cutoff gap",
+    "unproved missing fallback child",
+    "omitted rare class",
+    "altered child profile with unchanged mass",
+    "coarse endpoint used as ordinary saving",
+    "detached ordinary saving",
+    "noncontracting adjacent coarse point"
+  ],
+  "parameters": {
+    "beta": "1/1000000000",
+    "coarse": "724095528834925876331/1000000000000000000000000",
+    "depth": "7",
+    "eta": "1/1000000000000000000000000",
+    "headline_grid": "1000000000000000000000000"
+  },
+  "schema": "gen4-envelope-summary/v1",
+  "scope": "Conditional exact arithmetic and finite-composition refinement of the pinned selected PR279. Physical realization and all-size interfaces are inherited; no global record or practical multiplication claim.",
+  "selected_decimal": "0.000723571593879006127174",
+  "selected_kappa": "361785796939503063587/500000000000000000000000",
+  "strict_constraints": 47
+}
