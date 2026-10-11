@@ -1,0 +1,185 @@
+{
+  "status": "PASS_SOURCE_BOUND_ELEVEN_STAGE_BIT_TEMPLATE",
+  "h": 8,
+  "m": 78,
+  "v": 120,
+  "R": 687,
+  "replicas": 1,
+  "live": 1200,
+  "physical": 1209,
+  "word_sha256": "5c01e028449218c0c49786322d8109e94178113130c3ef7841d2f6a64eb4abb4",
+  "source_records_sha256": "004c81a6a3966290cf14b9ebbc2099fe3421d191a8d02fa850fb3430b15d4564",
+  "local_checks": {
+    "forward": {
+      "copies": 9,
+      "adds": 15474,
+      "records": 19588,
+      "all_columns": 927,
+      "cancellation_free_row_l1": 1143,
+      "profile": {
+        "1": 2401,
+        "2": 1039,
+        "3": 223,
+        "4": 295,
+        "5": 80,
+        "6": 58,
+        "8": 9
+      },
+      "sha256": "0d0521901442616f752362deb1f30d380cb897bf54fe713ff3516ff60b3c712a"
+    },
+    "reverse": {
+      "copies": 9,
+      "adds": 15474,
+      "records": 19588,
+      "all_columns": 927,
+      "cancellation_free_row_l1": 28338,
+      "profile": {
+        "1": 2401,
+        "2": 1039,
+        "3": 223,
+        "4": 295,
+        "5": 80,
+        "6": 58,
+        "8": 9
+      },
+      "sha256": "dd86c0725e12ac113d25bfd0a43135874964033b0e7c907abeb3e85cf5f6c9b3"
+    }
+  },
+  "scalar_stages": [
+    {
+      "stage": 0,
+      "all_columns": 8757,
+      "helper_columns": 7557,
+      "reverse": false
+    },
+    {
+      "stage": 1,
+      "all_columns": 8757,
+      "helper_columns": 7557,
+      "reverse": true
+    },
+    {
+      "stage": 2,
+      "all_columns": 8757,
+      "helper_columns": 7557,
+      "reverse": false
+    },
+    {
+      "stage": 3,
+      "all_columns": 8757,
+      "helper_columns": 7557,
+      "reverse": true
+    },
+    {
+      "stage": 4,
+      "all_columns": 8757,
+      "helper_columns": 7557,
+      "reverse": false
+    },
+    {
+      "stage": 5,
+      "all_columns": 8757,
+      "helper_columns": 7557,
+      "reverse": true
+    },
+    {
+      "stage": 6,
+      "all_columns": 8757,
+      "helper_columns": 7557,
+      "reverse": false
+    },
+    {
+      "stage": 7,
+      "all_columns": 8757,
+      "helper_columns": 7557,
+      "reverse": true
+    },
+    {
+      "stage": 8,
+      "all_columns": 8757,
+      "helper_columns": 7557,
+      "reverse": false
+    },
+    {
+      "stage": 9,
+      "all_columns": 8757,
+      "helper_columns": 7557,
+      "reverse": true
+    },
+    {
+      "stage": 10,
+      "all_columns": 8757,
+      "helper_columns": 7557,
+      "reverse": false
+    }
+  ],
+  "independent_unbanked_scalar_columns": 8757,
+  "all_scalar_columns_restored": true,
+  "geometry_sha256": "6564086c3a5a51996b9829c8b650fb45a6e7e08f443d063f9b57b9dd34e923fd",
+  "template_sha256": "599dbbca150e7f863a0ebe40f1b2fc92c36b6ab9f02faea13b88c2a6d17b9c6e",
+  "emitted_program_sha256": null,
+  "emitted_events": 215468,
+  "local_invocations": 11,
+  "bank_assignments": 0,
+  "banks_per_stage": null,
+  "entrance_rank_total": 100,
+  "residual_bank_slots": true,
+  "padding_calls": 0,
+  "profile": {
+    "1": 26411,
+    "2": 11429,
+    "3": 2453,
+    "4": 3245,
+    "5": 880,
+    "6": 638,
+    "7": 960,
+    "8": 99,
+    "14": 480,
+    "28": 480,
+    "42": 480,
+    "56": 480
+  },
+  "paid_calls": 48035,
+  "rank_mass": 152548,
+  "deficit": null,
+  "maxchild": 56,
+  "halving_depth": 3,
+  "halving_integer_inequality": [
+    474552,
+    351232
+  ],
+  "local_additions": 15474,
+  "bridge_additions": 2880,
+  "copy_erase_episodes": 99,
+  "global_prefix_bound": "683664860211208875481772071654609604141238976512",
+  "global_prefix_bits": 159,
+  "charged_prefix_bits": 192,
+  "omitted_bridge_shears_rejected": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "scope": "Complete source-bound finite cover template. Local and unbanked global F2 columns are replayed; arbitrary physical bank dirt follows by injective owner routes and the all-column local theorem. Astronomical cover enumeration and all-size compiler interfaces remain explicit inherited assumptions.",
+  "seconds": 0.6237791669555008
+}

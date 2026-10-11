@@ -1,0 +1,160 @@
+{
+  "checks": {
+    "columns_k5_formal": 1887,
+    "copy_bound": {
+      "by_class": {
+        "16/6": {
+          "bound": 1,
+          "copies": 1
+        },
+        "2/2": {
+          "bound": 180,
+          "copies": 184
+        },
+        "4/3": {
+          "bound": 168,
+          "copies": 196
+        },
+        "8/4": {
+          "bound": 3,
+          "copies": 6
+        },
+        "8/5": {
+          "bound": 112,
+          "copies": 112
+        },
+        "9/4": {
+          "bound": 0,
+          "copies": 1
+        }
+      },
+      "carriers": 240,
+      "chi_histogram": {
+        "1": 464,
+        "2": 434,
+        "3": 33
+      },
+      "copies": 500,
+      "phase_rule": "rtc",
+      "status": "PASS_COPY_ANATOMY_AND_BOUND",
+      "transversal_cover_bound": 464
+    },
+    "copy_bound_allA_phases": {
+      "chi_histogram": {
+        "1": 408,
+        "2": 490,
+        "3": 33
+      },
+      "copies": 556
+    },
+    "hierarchy": {
+      "compile2": {
+        "Arules": 831,
+        "Brules": 100,
+        "R": 811,
+        "carriers": 240,
+        "chains": 1791,
+        "copies": 500,
+        "inplace": 869,
+        "low": 352
+      },
+      "final_R": 687,
+      "raw_R": 811,
+      "retime_moves": 35,
+      "reuse_helpers": 115,
+      "reuse_totals": 9,
+      "reused_R": 687,
+      "status": "PASS_HIERARCHY_COMPILED_READ_THEN_CLIMB"
+    },
+    "kernel": {
+      "donor_slots": 93,
+      "entrance_rank": 100,
+      "entries": 100,
+      "interface_prefix_ok": true,
+      "output_sha256": "0b8532e3cb6e3988a4756344b67d4a20ed5de95d84cc9542bb8e8a505176fa76",
+      "post_retime_moves": 0,
+      "pre_retime_moves": 60,
+      "replicas": 32,
+      "selection_entries": 100,
+      "status": "PASS_KERNEL_EXACT_SELECTION"
+    },
+    "mix": {
+      "B_gates": [
+        692,
+        580
+      ],
+      "D_gates": [
+        9259,
+        9315
+      ],
+      "chained": 0,
+      "mix_dims": {
+        "6": 56
+      },
+      "receivers": 56,
+      "target_climb_saving_per_call": 291.501
+    },
+    "mixed_local_cost_per_call": 24499.51,
+    "mixed_local_profile": {
+      "1": 2401,
+      "2": 1039,
+      "3": 223,
+      "4": 295,
+      "5": 80,
+      "6": 58,
+      "8": 9
+    },
+    "mixed_word_sha256": "5c01e028449218c0c49786322d8109e94178113130c3ef7841d2f6a64eb4abb4",
+    "word_sha256": "481ba1892aefe75276cce7000c7840a39a53cb011cd94afc27750df77f204e53"
+  },
+  "note": "variant 'pr442' recorded with --complex-upstream pointing at a verified PR #442 run (identical complex b); a default run regenerates it",
+  "status": "PASS_R687_READ_THEN_CLIMB_ELEVEN_STAGE_WHOLE_RESIDUAL",
+  "variants": {
+    "pr442": {
+      "binding_component": "complex",
+      "bit": {
+        "charged_prefix_bits": 192,
+        "charged_two_level_coefficient_bits": 576,
+        "coefficient_bits": 159,
+        "hosted_residuals": 7557,
+        "live": 1200,
+        "maxchild": 56,
+        "physical": 1209,
+        "prefix_bits": 159,
+        "rank_mass": 93192,
+        "row_coefficient": 28416,
+        "two_level_coefficient_bits": 524
+      },
+      "bit_c_gain_over_pr454_percent": 3.1180146382105485,
+      "bit_c_gain_over_r715_percent": 2.3580732019385886,
+      "bit_lower": "65771650815860982499/50000000000000000000000",
+      "bit_only_kappa": "656852462742269/500000000000000000",
+      "bit_profile": {
+        "1": 26411,
+        "2": 11891,
+        "3": 2453,
+        "4": 3675,
+        "42": 1,
+        "5": 880,
+        "56": 112,
+        "6": 919,
+        "7": 560,
+        "8": 99
+      },
+      "bit_template_sha256": "994e0c00962793e8322af4047f30a8d23f520f64f1396f6cee5e0626764047d9",
+      "complex_lower": "1267453159029119/1000000000000000000",
+      "emitted_program_sha256": "0e85ac85697a9509559ee1006e8616c4dd6eba57938701e20a1d010b7ae35aef",
+      "external_row_allowance": 28416,
+      "halving_depth": 3,
+      "kappa": "316462188756427/250000000000000000",
+      "kappa_gain_over_pr456_percent": -0.05652911815755306,
+      "outer_controls": [
+        "next_grid",
+        "zero_eta",
+        "zero_beta",
+        "unit_beta"
+      ],
+      "strict_constraints": 47
+    }
+  }
+}

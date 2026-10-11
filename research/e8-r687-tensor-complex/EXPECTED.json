@@ -1,0 +1,61 @@
+{
+  "bit_geometry_sha256": "6564086c3a5a51996b9829c8b650fb45a6e7e08f443d063f9b57b9dd34e923fd",
+  "result_pr471": {
+    "binding_component": "complex",
+    "bit_lower": "65771650815860982499/50000000000000000000000",
+    "bit_profile": {
+      "1": 26411,
+      "2": 11891,
+      "3": 2453,
+      "4": 3675,
+      "42": 1,
+      "5": 880,
+      "56": 112,
+      "6": 919,
+      "7": 560,
+      "8": 99
+    },
+    "bit_template_sha256": "994e0c00962793e8322af4047f30a8d23f520f64f1396f6cee5e0626764047d9",
+    "complex_lower": "1305231506267591/1000000000000000000",
+    "complex_profile": {
+      "1": 153851,
+      "2": 71764,
+      "3": 4807,
+      "4": 17248,
+      "40": 1,
+      "5": 33266,
+      "6": 2,
+      "64": 2046,
+      "7": 2254,
+      "8": 6356
+    },
+    "complex_template_sha256": "2f372d4ce8422076ff2249ff3e9e13da6bd6ed3ba3b69b7d4d8b1e47e6440eb3",
+    "emitted_program_sha256": "0e85ac85697a9509559ee1006e8616c4dd6eba57938701e20a1d010b7ae35aef",
+    "external_row_allowance": 20161,
+    "kappa": "260706019542937/200000000000000000",
+    "kappa_decimal": "0.001303530097714685",
+    "outer_controls": [
+      "next_grid",
+      "zero_eta",
+      "zero_beta",
+      "unit_beta"
+    ],
+    "strict_constraints": 47
+  },
+  "result_pr484": {
+    "binding_component": "bit",
+    "bit_lower": "65771650815860982499/50000000000000000000000",
+    "charged_coefficient_bits": 576,
+    "complex_lower": "663394767670133/500000000000000000",
+    "complex_template_sha256": "18450983dd5a5dab0534e5ecf3e5a9e0d5c2e10500d26fe720482972ba8c7759",
+    "external_row_allowance": 28416,
+    "kappa": "656852462742269/500000000000000000",
+    "kappa_decimal": "0.001313704925484538",
+    "outer_controls": [
+      "next_grid",
+      "zero_eta",
+      "zero_beta",
+      "unit_beta"
+    ]
+  }
+}

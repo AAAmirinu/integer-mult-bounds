@@ -1,0 +1,21 @@
+{
+ "bit": {
+  "package": "e8-r687-read-then-climb",
+  "manifest_sha256": "ce43249608c4b72a66a8ed647cef9f06ef4281af95a40dab634e038fff7bfb75",
+  "source_sha256": "62a9c83c253f4f95912130a528294ba5ac0c0486916c846846c4c26d9e28ade5"
+ },
+ "complex": {
+  "package": "e8-tensor-normalization",
+  "pr": 471,
+  "head": "56b3da6aa1295d37ce43f1753479bfe4737b7ac3",
+  "manifest_sha256": "cf08dd76023789f03c1da4cc13f108068e2b58b6f86461a16eab2a87e5666fc9",
+  "manifest_entries_absent_from_pr_tree": [
+   ".gitattributes"
+  ]
+ },
+ "complex_cited": {
+  "package": "e8-complex-gauge-kernel",
+  "pr": 484,
+  "note": "draft; cited from evidence/pr484 (its own full-run RESULT and RECEIPT)"
+ }
+}

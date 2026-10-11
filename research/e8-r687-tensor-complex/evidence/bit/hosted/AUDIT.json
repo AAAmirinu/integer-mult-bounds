@@ -1,0 +1,43 @@
+{
+  "status": "PASS_INDEPENDENT_REPLICATED_HOSTING_AUDIT",
+  "template_sha256": "994e0c00962793e8322af4047f30a8d23f520f64f1396f6cee5e0626764047d9",
+  "emitted_program_sha256": "0e85ac85697a9509559ee1006e8616c4dd6eba57938701e20a1d010b7ae35aef",
+  "emitted_events": 215468,
+  "profile": {
+    "1": 26411,
+    "2": 11891,
+    "3": 2453,
+    "4": 3675,
+    "5": 880,
+    "6": 919,
+    "7": 560,
+    "8": 99,
+    "42": 1,
+    "56": 112
+  },
+  "live": 1200,
+  "physical": 1209,
+  "hosted_residuals": 7557,
+  "bank_assignments": 0,
+  "rank_mass": 93192,
+  "deficit": 408,
+  "maxchild": 56,
+  "mutations_rejected": [
+    "slot outside window",
+    "copy index outside family",
+    "negative slot offset",
+    "wrong residual width",
+    "duplicate helper",
+    "omitted helper",
+    "hosted owner in another replica or outside the data stock",
+    "hosted owner on a wrong data family",
+    "wrong call orientation",
+    "duplicate call",
+    "changed idle rank",
+    "understated live stock",
+    "missing remainder summary",
+    "stale stage count",
+    "hosted coordinate beyond the pending set",
+    "overlapping hosted coordinates"
+  ]
+}

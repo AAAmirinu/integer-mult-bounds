@@ -1,0 +1,46 @@
+name: e8-r687-tensor-complex
+on:
+  pull_request:
+    paths:
+      - 'research/e8-early-reset-kernel/**'
+      - 'research/idle-axis-hosting/**'
+      - 'research/e8-r740-replica32/**'
+      - 'research/e8-tensor-normalization/**'
+      - 'research/e8-r687-read-then-climb/**'
+      - 'research/e8-r687-tensor-complex/**'
+      - '.github/workflows/e8-r687-tensor-complex.yml'
+  push:
+    paths:
+      - 'research/e8-early-reset-kernel/**'
+      - 'research/idle-axis-hosting/**'
+      - 'research/e8-r740-replica32/**'
+      - 'research/e8-tensor-normalization/**'
+      - 'research/e8-r687-read-then-climb/**'
+      - 'research/e8-r687-tensor-complex/**'
+      - '.github/workflows/e8-r687-tensor-complex.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: sudo apt-get update && sudo apt-get install -y libboost-dev
+      - run: python -m pip install -r research/e8-r740-replica32/parent436/requirements.txt scipy
+      - name: LIGHT (frozen hierarchy, copy bound, mixing, pinned-evidence composition)
+        run: python -B research/e8-r687-tensor-complex/verify.py "$RUNNER_TEMP/e8-r687-light" --light
+      - name: FULL (R687 bit supplier and PR471 complex supplier from scratch, then the exact composition)
+        run: python -B research/e8-r687-tensor-complex/verify.py "$RUNNER_TEMP/e8-r687-full"
+      - name: Require an unchanged tracked tree
+        run: git diff --exit-code
