@@ -20,3 +20,5 @@ research/five-stage-source527-banks/** -text -whitespace
 research/community-round9-audit/** -text -whitespace
 # E8 staged bit word in B3 with #377 complex: MANIFEST.sha256 and the git-blob pins fix exact bytes.
 research/e8-kernel-bit-b3/** -text -whitespace
+# #377 nine-stage component with the #378 re-timed E8 unit: MANIFEST.sha256 and the git-blob pins fix exact bytes.
+research/e8-far-nine-complex/** -text -whitespace
