@@ -1,0 +1,12 @@
+{
+ "description": "Pinned inputs of research/format-obstructions (sha256). Vendored byte for byte; nothing is fetched at run time.",
+ "files": {
+  "gx/gx.py": "6f3dc8bb639933227a8dae181ec4a542e85c7276be9c9e330f49518e7b630b95",
+  "inputs/gcert1-p3-cone-R16.json": "fe3ad604eec43845747603414222fc6a82ed16168ef64909440c0a72eba97dc9",
+  "inputs/gcert1-p10-anneal-mw-flow.json.gz": "117d1cf1ad9c0ab3fac42557cf4aa4f7166700e8c005eb3f928b187544f23f49",
+  "inputs/gcert1-p11-pr193.json.gz": "15251deb0c11e0504d7b297c9786818888a93f08b92b03c6c122784b70488633",
+  "inputs/pr425/FULL-WORD.json.gz": "e55a0d4a1f1e3daaa082749489c9df2025f6a4fe9576aad2726cf881280f16fb",
+  "inputs/pricing/cost.py": "d55d2b865d1c3d35e343e1a38c592b9172ed8e2596d1107e34d92e2a80c7d03f",
+  "inputs/pricing/hist_p10b.json": "d70c58e539141c49453a684d0b01324a08d49f7c28dccd3b5b82472b5a8594a4"
+ }
+}

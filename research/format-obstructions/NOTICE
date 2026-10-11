@@ -1,0 +1,43 @@
+Prepared by DreamingOfClouds with Claude Opus 5.5 (Anthropic), via Claude Code. Apache-2.0.
+Inherited files retain their original notices and assistance disclosures. This package claims no exclusive
+priority over concurrent work and reports no new kappa. The credits below do not imply review or endorsement.
+
+What this package contributes: PROOF.md and README.md (the statements and proofs of Theorems A, B, C, P and S, the
+clique bound, and their scope), the checks in checks/ (taint replay and Thm A/B/C data on gcert/1 programs, the p = 3
+toy and its exhaustive optimum, the fixed-role cross-Gram computation, the overlap measurements, the replay and the
+simulation of PR #425's word, the E8 label SAT instances, the clique numbers, the pricing context), verify.py,
+expected.json, SOURCE.json and the small p = 3 program inputs/gcert1-p3-cone-R16.json (local research, not published
+upstream). Everything else is vendored byte for byte or re-used as credited below.
+
+Vendored byte for byte (sha256 in SOURCE.json):
+
+- gx/gx.py: Jacob Sussman (Anthropic Claude assistance), gcert/1 and the reference checker gx.check1; Apache-2.0,
+  Copyright 2026 Jacob Sussman, jacobalansussman/wht-power-saving-lean at f010392c (as vendored in PR #327).
+- inputs/gcert1-p11-pr193.json.gz: Jacob Sussman's gcert/1 certificate of Avi Eisenberg (ikeboy)'s PR #193 complex
+  helper (as vendored in research/five-stage-gen4-banks/inputs/complex on main).
+- inputs/gcert1-p10-anneal-mw-flow.json.gz: PR #327 (DreamingOfClouds, head 40ed0456), the p = 10 complex program
+  compiled with PR #304's recipe. Its lineage: icekylinx (PR #144 paired cubes and signed decoder, PR #184 frame flow
+  and exact lift), Avi Eisenberg (ikeboy) (PR #191/#193/#194), chafreaky / Chafik Boukhalfa (PR #200 operation
+  frames and complex checker, PR #233 maximum-weight reuse pairs, PR #256 gcert emitter), eumemic (PR #168 modules and
+  physical frames), DaysSky (PR #162 carrier closure), Jacob Sussman (gcert/1, gx, the five-stage layout of
+  hcg890's PR #234, the unit convention of gxconv). Their notices are in PR #327 and PR #304.
+- inputs/pr425/FULL-WORD.json.gz: PR #425 (jacklightChen / Zhihao Chen, with OpenAI Codex assistance; head e11ccea1),
+  the mutable-basis Hamming complex word, regenerated with its own hamming_packets.py and hamming_full.py under
+  Python 3.12 (sha256 e55a0d4a... equals the one in its EXPECTED.json). It builds on Dylan Crow's PR #370 table of
+  E8 root lines in Construction-A coordinates (with Anthropic Claude assistance) and on Jacob Sussman's E8 complex
+  unit as published in DaysSky's PR #352. Original notices: PR #425.
+- inputs/pricing/cost.py: PR #346 (Louis Harrison), the cost model of PR #310 (Dylan Crow / utcorvusvolat-dotcom, w3
+  supplier work); only solve_moment is used.
+- inputs/pricing/hist_p10b.json: the five-stage normalised histogram of PR #325 (DreamingOfClouds) as copied from the
+  math.json that its verification writes (a run output at head 0eca9340, not a committed file); PR #325 builds on #315/#285/#276 (DreamingOfClouds), eumemic's PR #168 generator and source527
+  package, chafreaky's PR #200 physical rules, hcg890 and Jacob Sussman's five-stage architecture, and Evan
+  McKinney's PR #197 completed banks.
+
+Used as references and not vendored: PR #386 (jacklightChen) for the width m = 64 of its compressed nine-stage windows;
+PR #433 (icekylinx, split centres) and PR #442 (DaysSky, idle-axis hosting) for where recent gains came from;
+PR #370 (Dylan Crow) for the E8 bit word and its copy loss 72; SovereignSteak's PR #250 and hcg890's PR #234 for the
+five-stage ledger D = 4kv - 5 cst. checks/e8lib.py uses the E8 line coordinates of PR #370; checks/sat_e8.py and
+checks/families.py are adapted from local research scripts of DreamingOfClouds (Claude assistance).
+
+The five-stage layout, the frame lemma (Lean) and gx.check1 are Jacob Sussman's. OpenAI: the original complex phase
+network of "Integer multiplication below n log n".

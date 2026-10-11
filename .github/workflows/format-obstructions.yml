@@ -1,0 +1,27 @@
+name: format-obstructions
+
+on:
+  pull_request:
+    paths:
+      - 'research/format-obstructions/**'
+      - '.github/workflows/format-obstructions.yml'
+  push:
+    paths:
+      - 'research/format-obstructions/**'
+      - '.github/workflows/format-obstructions.yml'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install the pinned packages (python-sat for the CaDiCaL checks)
+        run: python -m pip install -r research/format-obstructions/requirements.txt
+      - name: Replay the certificates, the toy, Theorem P, the #425 word and Theorem S, the pricing context and the E8 label SAT checks
+        run: python3 -B research/format-obstructions/verify.py --output "$RUNNER_TEMP/format-obstructions-out"
+      - name: Require an unchanged tree
+        run: git diff --exit-code
