@@ -1,0 +1,40 @@
+{
+  "AI_disclosure": "OpenAI Codex,2026-10-11",
+  "provenance": "Specialize the rank1[48] five-pivot frame-closure discovery to the remaining pivot672 after retaining the alreadyverified210 basis. Apply atop214; coefficient relation K672+K345-K673=0 is exact on the current raw response.",
+  "source_raw214_sha256": "273200440831148556600951863af5d599eadaf0d87f893ca95e418cf2ce7781",
+  "candidate_raw215_sha256": "6a51485af21d9cf9f7f62787dc766ec46c2e6c1ed2f6d00203c9ebe0d4504666",
+  "selected_pivot": 672,
+  "entry": [
+    48
+  ],
+  "donor_coefficients": {
+    "345": "1",
+    "673": "-1"
+  },
+  "new_gates": 2,
+  "frame_rewrite": [
+    {
+      "part": "A",
+      "index": 1088,
+      "old": 47,
+      "new": 305,
+      "basis": [
+        274,
+        48
+      ],
+      "roles": [
+        345,
+        504
+      ]
+    }
+  ],
+  "local_delta": {
+    "1": 2,
+    "2": -1,
+    "7": 1,
+    "8": -1
+  },
+  "full_local_phase_pairs": 848,
+  "verification": "Portable generic frameclosure constructor proves full raw and snapshot right-multiplication identities on1021 columns. Reverting newly required frame and omitting newentrance are explicit constructorcontrols. Native fullreceipt includes all6originalAframe reversioncontrols plusrawentranceleak control,bothdirty/scalar/frame ledgers,andexactGaussian phases.",
+  "downstream_scope": "Rawentrance word; completepublication must additionally compose/replay dual124/125,PR376frame,PR402,andprotectedtarget124/144 prefixes asclaimed."
+}

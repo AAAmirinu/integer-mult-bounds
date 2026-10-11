@@ -1,0 +1,11 @@
+# Validation
+
+The full changed-composition verifier exited0 with `PASS_GROUPED_ACYCLIC210_BANK16_PREFIX_CONDITIONAL_COMPOSITION`, κ =508830459221077/500000000000000000 =0.001017660918442154. It reconstructed the enlarged206 predecessor, the literal four-pivot grouped entrance word, chronological target recovery, PR376 frame edit, relocated PR402 resynthesis and freshly pinned target124/144 prefixes in one replay.
+
+The210 entrances have368 dimensions and675 literal unit-numerator gates. Native checks passed all1021 protected raw columns, unchanged source/helper rows and retained totals,7042 recomputed response entries expanded into7143 unit macros, both full symbolic scalar orientations with distinct entrance tokens, dirty restoration and erased private work, both reflected frame ledgers and chronological acyclic omission proofs. Fresh exact Gaussian checks passed842 local/reflected phase pairs,43 residual frames and22016 address columns. All16 signed palette coefficient words passed the independent primitive microcheck and its omitted-third-half control.
+
+The complete16-replica template,12496owner routes,13 bank mutation controls,6 response mutation controls, changed compiler invoice, reserve bridge, two independent rational moment engines and47 strict outer inequalities passed together. The paid profile contains644382 child calls with rank mass2082078, live28590, physical29381,1470banks perstage,734rank-one paddings perstage anddeficit4992. Executable exact Fraction comparisons require positive improvement over each frozen reference; the difference from#411 is31460377381/10^18.
+
+The unchanged bit and prior-phase receipts remain source-bound reused evidence; the optional bit component was not replayed here. Quarter/eighth schedules use their own literal primitive proof. No old sixth-grid/E5 claim, unchanged legacy gx acceptance, Lean or unconditional multiplication theorem is asserted. All-size interfaces remain inherited assumptions.
+
+VALIDATION.json binds every file in the actual successful replay. Only top-level README/validation prose and RESULT/VALIDATION JSON were added or changed afterward; executable and witness bytes are unchanged. The final manifest covers the delivered package. Generated source-provenance hashes may depend on output paths, so acceptance requires fresh execution of current sources.
