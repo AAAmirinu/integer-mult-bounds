@@ -29,3 +29,6 @@ research/split-centres-global/** -text -whitespace
 # Preserve source pins and the literal evidence diff, including removed whitespace.
 research/e8-target-mixing-whole/** -text
 research/e8-target-mixing-whole-validation/FINAL-COSMETIC.diff -text -whitespace
+
+research/complex-kernel-mixed151/** -text
+research/r740-hosted-rank151-mixed/** -text
