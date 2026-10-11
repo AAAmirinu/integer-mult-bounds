@@ -1,0 +1,6 @@
+{
+  "add_calls": 251154,
+  "scale_calls": 8858,
+  "primitive_calls": 853381,
+  "maximum_proved_numerator_bits": 29
+}

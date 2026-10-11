@@ -1,0 +1,20 @@
+{
+  "status": "PASS_ALL_UPSTREAM_GIT_BYTES_AND_STAGED_MANIFEST",
+  "upstream_files": 297,
+  "root_manifest_files": 306,
+  "source_manifest_sha256": "0280d00a97632273b94af7e9956e38755bc6d76194de424e5fe73c91c72bb0db",
+  "source_json_sha256": "d8af7de053f29b063cc609d2ec59e3b639ee7495007491a4cae1c76bdfd4d0ff",
+  "parent496": {
+    "pr": 496,
+    "head": "00cf70efd6a8637531deafef698157ca83e249ee",
+    "path": "research/r489-pooled-whole-complex"
+  },
+  "retiming495": {
+    "status": "PASS_RETIMING_SOURCE_MATCHES_PINNED_GIT",
+    "pr": 495,
+    "head": "355d9f7ff293e291676ff4a32eed434419692576",
+    "path": "research/e8-combined/data/complex/FULL-WORD.json.gz",
+    "sha256": "66655cd858afb515dfd4cad43c4fef01f9185af670e144750e9977588ebd4ecf"
+  },
+  "publication_base": "12a4934d15006e8c10f9b2264f13f8f341be802b"
+}

@@ -1,0 +1,8 @@
+{
+  "compiler": "c++",
+  "compiler_version_log_sha256": "88b7c4b67564a146863224148116065fee418539f0a408f3636a68f3bde51805",
+  "boost_cpp_int_header": "/home/cfky/r14-parallel-20261009-0742/deps/root/usr/include/boost/multiprecision/cpp_int.hpp",
+  "boost_cpp_int_header_sha256": "2677f6c5f854060c483f08500f2d7ddb16e4d3f5e64562e414fdd1ebb4226aa4",
+  "header_trace_sha256": "8e3245f0b4887b7b2c71e9b5e1da2e072c4a6508ef2c1cbda6b8f5aecfb5a00e",
+  "exact_257bit_probe": true
+}

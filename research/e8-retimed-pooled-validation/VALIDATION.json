@@ -1,0 +1,29 @@
+{
+  "status": "PASS_FRESH_MACOS_AND_LINUX_IDENTICAL_COMPLETE_RESULT",
+  "python": "3.14.8",
+  "exit_codes": {
+    "macos": 0,
+    "linux": 0
+  },
+  "source_manifest_sha256": "0280d00a97632273b94af7e9956e38755bc6d76194de424e5fe73c91c72bb0db",
+  "result_sha256": "4a951fc558757d045f8296b4014e4be71553ac7514a4d996d4bf0232ebefec5f",
+  "fresh_root_stages_per_platform": 24,
+  "pinned_upstream_files": 297,
+  "staged_manifest_entries": 306,
+  "compared": "Complete RESULT.json bytes, including all strict outer margins and bootstrap cutoffs",
+  "kernel_scope": "Finite conditional certificate; inherited all-size contracts remain",
+  "files": {
+    "SOURCE-VERIFICATION.json": "fc775df4307e42b592572a01f097540e3ae0f1f6f3b7fc31421d6ad53b889167",
+    "LINUX-TOOLCHAIN.json": "0f81afdfa662e23ac236c853cd76acf2f1491c1c6ed2269827a6ca302876cabb",
+    "RESULT.json": "4a951fc558757d045f8296b4014e4be71553ac7514a4d996d4bf0232ebefec5f",
+    "COMPOSITION-REVIEW.json": "5872f14bf990eed8082aa2dc7952589b4079bec29fae3e4508ffd565ebf9fde8",
+    "HOSTING-AUDIT.json": "0045f8dfc47f9e223f35b5a53c12c06abfe93c6051ed5328afe2ae17262ec76b",
+    "LINUX-RECEIPT.json": "b05708f2b07aa52931db25233fc9a895742a856408fd8246dccca1b82153b33a",
+    "LINUX-INSTANCE-GUARDS.json": "43da15d612714a16af35540e70b17c9d9c522fb34b03b378e5e4b8359233d634",
+    "MACOS-E2E-GUARDS.json": "3b0130e80b98c543188be9b5d3c778ee11c09983f15ae2c62fd11f893ed916be",
+    "MACOS-RECEIPT.json": "e09e9488adddddde68d91de88f7baf2db7cc23a4f9711da00ed7cb94f6d3e79c",
+    "MACOS-INSTANCE-GUARDS.json": "43da15d612714a16af35540e70b17c9d9c522fb34b03b378e5e4b8359233d634",
+    "MACOS-TOOLCHAIN.json": "6962867b1f9da3b69e72084b94569e0a783094880b3815c5aec3ab321a0ac09c",
+    "LINUX-E2E-GUARDS.json": "3b0130e80b98c543188be9b5d3c778ee11c09983f15ae2c62fd11f893ed916be"
+  }
+}

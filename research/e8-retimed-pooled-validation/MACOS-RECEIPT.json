@@ -1,0 +1,165 @@
+{
+  "status": "PASS_FRESH_RETIMED_GAUGE_POOLED_WHOLE_OWNER",
+  "artifacts": {
+    "parent496/RECEIPT.json": "d3f7a66d29f823bcfdeb0f7e102a34eac17d0b4e79cd967f7a87b1798254f656",
+    "transfer/TRANSFER.json": "9470eb72232f7acc7d99e06fecb9f9ba88a29f3fe908fabe63630431ca654588",
+    "HOSTING-AUDIT.json": "0045f8dfc47f9e223f35b5a53c12c06abfe93c6051ed5328afe2ae17262ec76b",
+    "COMPOSITION-REVIEW.json": "4ba189ab45c5d893183cc7a86149cd3addc016a8530b8c212b72b54fcfe4c9d7",
+    "admission/ADMISSION.json": "e9396ef6648d04f7f0e0bbc0f92e788be6302272c89f4397fc3ac661bc2b77dc",
+    "admission/GLOBAL-PREFIX.json": "668b536774bdee9a1fe918bd3e458717ed69cadeabc386a3ea1c9b54b1ef6e6c",
+    "lemmaG/LABELS-gauge80-kernel42.json": "0009bbdf80a0c65a267a379472a89005cb0ed3599a67a7d65ecadd6d9e80cb06",
+    "lemmaG/INSTANCES-gauge80-kernel42.json": "ca8b36dfd35f4f9c032d34d53bbfcbb98033c2b251a807d1561ee2d4b44306f3",
+    "lemmaG/E2E-gauge80-kernel42.json": "3e43347f4aa2731a7689215461caf454a58fd4011d52a5e5ca49d106e0fb8a5c",
+    "lemmaG/PREOP-GUARDS-lg_instances.json": "43da15d612714a16af35540e70b17c9d9c522fb34b03b378e5e4b8359233d634",
+    "lemmaG/PREOP-GUARDS-lg_e2e.json": "3b0130e80b98c543188be9b5d3c778ee11c09983f15ae2c62fd11f893ed916be",
+    "lemmaG/MUTANTS.json": "23e516b55e723b6ebebfbcb50b6380c656ab2a32185ae92ce45bfce4600476b7",
+    "RESULT.json": "4a951fc558757d045f8296b4014e4be71553ac7514a4d996d4bf0232ebefec5f"
+  },
+  "python": "3.14.8",
+  "steps": [
+    {
+      "name": "complete496",
+      "exit_code": 0,
+      "seconds": 378.074,
+      "log_sha256": "3418f2219aa9a3c25f15f47fc58db154406132c9c4f5e8ebf14394e7982f8703"
+    },
+    {
+      "name": "transfer",
+      "exit_code": 0,
+      "seconds": 0.391,
+      "log_sha256": "169f130afac947949d346fdfb20422042d2c8cd2d0b23fd6a2309b6a41f9011d"
+    },
+    {
+      "name": "word-controls",
+      "exit_code": 0,
+      "seconds": 1.567,
+      "log_sha256": "7138c95893d4135181074f2cb27e2c48873f1a736668e7d8e79b2a01eb3ae8a1"
+    },
+    {
+      "name": "selection-controls",
+      "exit_code": 0,
+      "seconds": 0.547,
+      "log_sha256": "90c066e392fa1fdd018d9679d84b25f4e6478cabb9c06180f36063dcb2ea0be0"
+    },
+    {
+      "name": "pipeline-controls",
+      "exit_code": 0,
+      "seconds": 6.252,
+      "log_sha256": "a6ca3979a17f335cad7e216f2925762fc687ed057db5cdc25f7aa6271a5c405e"
+    },
+    {
+      "name": "scalar",
+      "exit_code": 0,
+      "seconds": 0.727,
+      "log_sha256": "a976f6d0082a926fa594de2772f80a0c6d8b2847b45c4acbf5c5038a53e270b4"
+    },
+    {
+      "name": "programs",
+      "exit_code": 0,
+      "seconds": 0.429,
+      "log_sha256": "4eaec4d39a6e9b8fb5ddc15cc8b154f2eb6c25708f1c7905e3243a350ec7c5c5"
+    },
+    {
+      "name": "phases",
+      "exit_code": 0,
+      "seconds": 82.325,
+      "log_sha256": "e475b3a926de2dbbda7ccccc6285a2319d0d0ee62076963673d7de8adf3a1254"
+    },
+    {
+      "name": "wrappers",
+      "exit_code": 0,
+      "seconds": 0.523,
+      "log_sha256": "539afb02eeb2975f6e647ccf0e520be953919361fdf1c88432ed17f99d3fcf6e"
+    },
+    {
+      "name": "integrate",
+      "exit_code": 0,
+      "seconds": 0.445,
+      "log_sha256": "51274a61a0b69d9c069df60e065b7e79328166f79fed214e79ed47cfefc3bafa"
+    },
+    {
+      "name": "scalar-readback",
+      "exit_code": 0,
+      "seconds": 2.726,
+      "log_sha256": "04a057c55168c3dbfe452a4fc62fc90f55f1844d9e8c62e48e78e59b58ae1137"
+    },
+    {
+      "name": "base-host",
+      "exit_code": 0,
+      "seconds": 0.433,
+      "log_sha256": "595b95fd9402f943fcf750bbce897626123388a99384888bbff0c8216ff92829"
+    },
+    {
+      "name": "base-host-audit",
+      "exit_code": 0,
+      "seconds": 5.532,
+      "log_sha256": "aea9fdac11fb5443dfe2e45bfd124cbd6ce1783afd2b29f915dddd83a8bb73aa"
+    },
+    {
+      "name": "base-host-controls",
+      "exit_code": 0,
+      "seconds": 0.745,
+      "log_sha256": "1a0d3e12b040b52387e8245c4f2140aaa4cfd6a2596088fea254136872e66cd0"
+    },
+    {
+      "name": "gaussian-selftest",
+      "exit_code": 0,
+      "seconds": 0.473,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "common-labels",
+      "exit_code": 0,
+      "seconds": 0.348,
+      "log_sha256": "d93047434768535deca938e68581c30fead070104d6ac4070bfce1161e739a78"
+    },
+    {
+      "name": "whole-program",
+      "exit_code": 0,
+      "seconds": 51.071,
+      "log_sha256": "5dd586d285da30a60f03cd6ed5cedaa0ee1c2ad8603fe3e5e0323a2ca45934d1"
+    },
+    {
+      "name": "all-instance-columns",
+      "exit_code": 0,
+      "seconds": 87.811,
+      "log_sha256": "644cb2c49c10ceec27d601473edd0dfda67ad8445388a0df85b50b8ee2189f2a"
+    },
+    {
+      "name": "lemma-controls",
+      "exit_code": 0,
+      "seconds": 13.493,
+      "log_sha256": "5a8f40882af137bcf882b6bffe0cc651f342204fd13a63e0acc38da574933b3e"
+    },
+    {
+      "name": "pooled-emit",
+      "exit_code": 0,
+      "seconds": 1.678,
+      "log_sha256": "7cde98b70d89d494270458b8c343ad376d401ef76509d0c8a983fc54e6e5f1fe"
+    },
+    {
+      "name": "pooled-controller",
+      "exit_code": 0,
+      "seconds": 7.77,
+      "log_sha256": "0045f8dfc47f9e223f35b5a53c12c06abfe93c6051ed5328afe2ae17262ec76b"
+    },
+    {
+      "name": "serial-pool",
+      "exit_code": 0,
+      "seconds": 0.031,
+      "log_sha256": "f5beb99ac5812e84a7a5fc88c42fd9708d2054c3dcaf2e58fda4cf464eb505d3"
+    },
+    {
+      "name": "physical-admission",
+      "exit_code": 0,
+      "seconds": 3.321,
+      "log_sha256": "acc7d19638599be98a44882b8b969430a35efa3b2142637d346770c2dc861e08"
+    },
+    {
+      "name": "independent-composition",
+      "exit_code": 0,
+      "seconds": 0.989,
+      "log_sha256": "04899fe89187d5a2a5949eb0fc82ac4c57927e664c195d0860a9ece68fa9ed8e"
+    }
+  ]
+}
