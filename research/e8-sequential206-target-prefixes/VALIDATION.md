@@ -1,0 +1,11 @@
+# Validation
+
+The complete changed-composition verifier exited 0 with `PASS_ENLARGED_ACYCLIC206_BANK16_PREFIX_CONDITIONAL_COMPOSITION`, κ = 1017629458064773/10^18 = 0.001017629458064773. It reconstructed every enlarged206 predecessor stage, applied the pinned target124/144 prefix transformation, recomputed the actual nongauged response and freshly replayed the full combination.
+
+Native checks passed all1,021 protected raw columns, unchanged source/helper rows and retained totals,7058 recomputed response entries expanded into7159 unit macros, both full symbolic scalar orientations with distinct entrance tokens, dirty restoration and erased private work, both reflected frame ledgers and chronological acyclic omission proofs. It freshly checked840 local/reflected Gaussian phase pairs,43 residual frames and22,016 address columns. The explicit coefficient microcheck passed all16 signed palette coefficients with exact independent source,target and dirty-work symbols, independently matched primitive invoices, and rejected an omitted third half.
+
+The full16-replica template and12,496 owner routes,13 bank mutations,6 response mutations, complete changed compiler invoice, reserve bridge, two rational moment engines and47 strict outer inequalities passed together. The final paid profile has643,887 child calls,rank mass2,082,735,live28,599,physical29,390,banks1,471perstage anddeficit4,992. Exact Fraction comparisons are executable gates and show a positive increase from every frozen reference listed in inputs/record-comparison.json.
+
+The unchanged bit and prior-phase receipts remain source-bound reused evidence; the optional bit component was not replayed here. Quarter/eighth schedules have their own explicit literal primitive proof; no old sixth-grid/E5 claim, unchanged legacy gx acceptance, Lean or unconditional multiplication theorem is asserted. All-size interfaces remain inherited assumptions.
+
+VALIDATION.json binds every file in the actual successful replay. Only top-level README/validation prose and the new RESULT/VALIDATION JSON files were added or changed after execution; executable and witness bytes are unchanged. The final manifest covers the full delivered package. Generated source-provenance hashes can depend on output paths, so acceptance requires fresh execution of current sources.

@@ -1,0 +1,23 @@
+{
+  "PR408": {
+    "reference": "1017022657082799/1000000000000000000",
+    "difference": "303400490987/500000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "PR409": {
+    "reference": "508625250464133/500000000000000000",
+    "difference": "378957136507/1000000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  },
+  "full_enlarged206": {
+    "reference": "508781072593909/500000000000000000",
+    "difference": "13462575391/200000000000000000",
+    "sign": "positive",
+    "larger_is_better": true,
+    "improves": true
+  }
+}
