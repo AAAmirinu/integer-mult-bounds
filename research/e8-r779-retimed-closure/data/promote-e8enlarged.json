@@ -1,0 +1,52 @@
+{
+ "note": "chafreaky: our additions on top of the pinned #420/#421/#423 data. enlarge838 = our enlargement of gauge 838 from [204] to [304,204] (the role of #423's 785, which is not a gauge on our word); prefix125 = our helper-sourced target-125 prefix re-synthesis (slot = insert before B gate of the word after the 124 prefix, source helper, gate frame, a, b; same format as promote-e8closure.json prefix124).",
+ "enlarge838": {
+  "pivot": 838,
+  "basis": [
+   304,
+   204
+  ]
+ },
+ "excluded423": [
+  785
+ ],
+ "prefix125": {
+  "target": 125,
+  "cut": 1270,
+  "replaced": [
+   870,
+   1178,
+   1268
+  ],
+  "deliveries": [
+   [
+    13,
+    563,
+    336,
+    1,
+    2
+   ],
+   [
+    975,
+    367,
+    904,
+    1,
+    2
+   ],
+   [
+    975,
+    251,
+    724,
+    -1,
+    2
+   ]
+  ]
+ },
+ "inventory64": {
+  "9": 36224,
+  "8": 9536,
+  "7": 1536,
+  "5": 1152,
+  "4": 1536
+ }
+}

@@ -1,0 +1,320 @@
+{
+ "note": "chafreaky: our layers on ai-nanachi's #426 R779 gauged word (#426 read as data). removed_r781 = the two #426-substituted helpers (R781 register ids); register ids >= 240 of our R781 data are mapped r -> r - #{removed < r}. designs: #402's 177/220 deliveries relocated (anchor = #398-word B index -> B index of the input word, insert after) with restore source y180 replaced by y221 (#426's signed layer makes y180 a pivot of a y read). prefix124 / prefix172: replaced = B indices (of the input word) of the target's pre-cut writes, which become source-touching empty markers; deliveries = [slot (insert before this B index of the input word, in list order), frame, helper source, a, b]. retime: fixed-scalar gate-frame retimings on the word after prefix124 (gates listed as [part, index]; a block shares one new frame).",
+ "removed_r781": [
+  556,
+  577
+ ],
+ "designs": {
+  "anchors": {
+   "2620": 927,
+   "2840": 1148,
+   "3209": 1526,
+   "3210": 1527,
+   "3211": 1528,
+   "3212": 1529,
+   "3372": 1689,
+   "3373": 1690,
+   "3374": 1691,
+   "3375": 1692
+  },
+  "restore": {
+   "180": 221
+  }
+ },
+ "prefix124": {
+  "target": 124,
+  "replaced": [
+   869,
+   1264
+  ],
+  "deliveries": [
+   [
+    14,
+    336,
+    562,
+    1,
+    2
+   ],
+   [
+    501,
+    723,
+    253,
+    -1,
+    2
+   ]
+  ]
+ },
+ "retime": [
+  {
+   "gates": [
+    [
+     "A",
+     724
+    ]
+   ],
+   "basis": [
+    256,
+    245,
+    12,
+    3
+   ]
+  },
+  {
+   "gates": [
+    [
+     "A",
+     790
+    ]
+   ],
+   "basis": [
+    256,
+    159,
+    95,
+    48
+   ]
+  },
+  {
+   "gates": [
+    [
+     "B",
+     45
+    ]
+   ],
+   "basis": [
+    256,
+    204,
+    33,
+    17
+   ]
+  },
+  {
+   "gates": [
+    [
+     "B",
+     75
+    ]
+   ],
+   "basis": [
+    259,
+    129,
+    65,
+    63
+   ]
+  },
+  {
+   "gates": [
+    [
+     "B",
+     87
+    ]
+   ],
+   "basis": [
+    276,
+    215,
+    36,
+    12
+   ]
+  },
+  {
+   "gates": [
+    [
+     "B",
+     103
+    ]
+   ],
+   "basis": [
+    292,
+    231,
+    20,
+    12
+   ]
+  },
+  {
+   "gates": [
+    [
+     "B",
+     113
+    ]
+   ],
+   "basis": [
+    256,
+    132,
+    51,
+    12
+   ]
+  },
+  {
+   "gates": [
+    [
+     "B",
+     123
+    ]
+   ],
+   "basis": [
+    256,
+    68,
+    51,
+    12
+   ]
+  },
+  {
+   "gates": [
+    [
+     "B",
+     125
+    ]
+   ],
+   "basis": [
+    307,
+    183,
+    68,
+    12
+   ]
+  },
+  {
+   "gates": [
+    [
+     "B",
+     129
+    ]
+   ],
+   "basis": [
+    268,
+    132,
+    68,
+    63
+   ]
+  },
+  {
+   "gates": [
+    [
+     "B",
+     730
+    ]
+   ],
+   "basis": [
+    259,
+    176,
+    112,
+    15
+   ]
+  },
+  {
+   "gates": [
+    [
+     "A",
+     1978
+    ],
+    [
+     "A",
+     1979
+    ],
+    [
+     "A",
+     1980
+    ],
+    [
+     "A",
+     1981
+    ],
+    [
+     "B",
+     376
+    ]
+   ],
+   "basis": [
+    193,
+    49,
+    9,
+    5,
+    3
+   ]
+  },
+  {
+   "gates": [
+    [
+     "A",
+     2041
+    ],
+    [
+     "A",
+     2042
+    ],
+    [
+     "A",
+     2043
+    ],
+    [
+     "A",
+     2044
+    ],
+    [
+     "B",
+     428
+    ]
+   ],
+   "basis": [
+    273,
+    144,
+    80,
+    48,
+    15
+   ]
+  },
+  {
+   "gates": [
+    [
+     "B",
+     1157
+    ]
+   ],
+   "basis": [
+    261,
+    129,
+    65,
+    36,
+    17,
+    9,
+    3
+   ]
+  }
+ ],
+ "prefix172": {
+  "target": 172,
+  "replaced": [
+   874,
+   1180,
+   1276
+  ],
+  "deliveries": [
+   [
+    4,
+    336,
+    562,
+    -1,
+    2
+   ],
+   [
+    876,
+    904,
+    358,
+    1,
+    2
+   ],
+   [
+    977,
+    904,
+    367,
+    -1,
+    2
+   ],
+   [
+    977,
+    724,
+    280,
+    -1,
+    2
+   ]
+  ]
+ }
+}
