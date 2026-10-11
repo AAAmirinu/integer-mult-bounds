@@ -1,0 +1,29 @@
+{
+ "base": "Dugongue PR #404 shared/selection194.json (194 pivots, 42 groups)",
+ "swaps": [
+  {
+   "plan": 28,
+   "out": 555,
+   "into": 748,
+   "why": "sixths: 555 had half-coefficient donors 888/947 whose half-unit dirt meets a later /2 gate (gxcore E5 rejects #404 word at register 947)"
+  },
+  {
+   "plan": 0,
+   "out": 1019,
+   "into": 958,
+   "why": "1019 becomes a donor with coefficient +-2, so the unique quarter-of-1019 uncompute of sink 301 stays in sixths"
+  },
+  {
+   "plan": 5,
+   "out": 1020,
+   "into": 1001,
+   "why": "1020 becomes a donor with coefficient +-2, so the unique quarter-of-1020 uncompute of sink 387 stays in sixths"
+  },
+  {
+   "plan": 27,
+   "out": 585,
+   "into": 636,
+   "why": "sink 387 inverse column b = A^-1 e_387 no longer meets a gauged coordinate (a_G = b_G = 0 for both fused sinks)"
+  }
+ ]
+}
