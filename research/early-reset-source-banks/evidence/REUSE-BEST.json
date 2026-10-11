@@ -1,0 +1,32 @@
+{
+  "status": "ONE_EARLY_RESET_FULL_LOCAL_PASS_NOT_GLOBAL_ADMITTED",
+  "candidate": 25,
+  "selection": {
+    "reset_after_step": 1035,
+    "reset_part": "A",
+    "reset_after_gate": 1035,
+    "new_helper": 949,
+    "retired_helper": 252,
+    "frame": 458,
+    "reset_donors": [
+      0,
+      1,
+      512,
+      523
+    ],
+    "reset_size": 4,
+    "new_step": 1403
+  },
+  "candidate_sha256": "f4206df92a98e8e94aee680e962fc0d760a0b3555cbfab718f13fe66a9253277",
+  "local_profile": {
+    "1": 2368,
+    "2": 875,
+    "3": 475,
+    "4": 320,
+    "5": 163,
+    "7": 14,
+    "8": 9
+  },
+  "score_at_old_c": 0.9999982836732146,
+  "searched": 410
+}

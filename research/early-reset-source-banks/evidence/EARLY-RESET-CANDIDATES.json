@@ -1,0 +1,6194 @@
+{
+  "status": "EXACT_EARLY_CLEAN_RESET_SPAN_SCREEN_NOT_ADMITTED",
+  "candidates": [
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 949,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 950,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 951,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 960,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 961,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 949,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 950,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 951,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 960,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 961,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 949,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 950,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 951,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 960,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 961,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 949,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 950,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 951,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 960,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 961,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 949,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 950,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 951,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 960,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1031,
+      "reset_part": "A",
+      "reset_after_gate": 1031,
+      "new_helper": 961,
+      "retired_helper": 406,
+      "frame": 458,
+      "reset_donors": [
+        411,
+        516,
+        517
+      ],
+      "reset_size": 3,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 949,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 950,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 951,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 960,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 961,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 949,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 950,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 951,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 960,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 961,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 949,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 950,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 951,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 960,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 961,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 949,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 950,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 951,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 960,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 961,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 949,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 950,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 951,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 960,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1035,
+      "reset_part": "A",
+      "reset_after_gate": 1035,
+      "new_helper": 961,
+      "retired_helper": 252,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        512,
+        523
+      ],
+      "reset_size": 4,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 949,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 950,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 951,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 960,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 961,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 949,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 950,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 951,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 960,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 961,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 949,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 950,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 951,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 960,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 961,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 949,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 950,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 951,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 960,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 961,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 949,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1403
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 950,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1412
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 951,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1415
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 960,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1434
+    },
+    {
+      "reset_after_step": 1036,
+      "reset_part": "A",
+      "reset_after_gate": 1036,
+      "new_helper": 961,
+      "retired_helper": 258,
+      "frame": 458,
+      "reset_donors": [
+        0,
+        1,
+        252,
+        512,
+        523
+      ],
+      "reset_size": 5,
+      "new_step": 1437
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 957,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1427
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 959,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1431
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 963,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1441
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 965,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1445
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 957,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1427
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 959,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1431
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 963,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1441
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 965,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1445
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 957,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1427
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 959,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1431
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 963,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1441
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 965,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1445
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 957,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1427
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 959,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1431
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 963,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1441
+    },
+    {
+      "reset_after_step": 1037,
+      "reset_part": "A",
+      "reset_after_gate": 1037,
+      "new_helper": 965,
+      "retired_helper": 532,
+      "frame": 459,
+      "reset_donors": [
+        343,
+        348,
+        533
+      ],
+      "reset_size": 3,
+      "new_step": 1445
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 936,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1306
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 956,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1425
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 958,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1429
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 966,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1447
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 968,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1451
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 936,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1306
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 956,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1425
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 958,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1429
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 966,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1447
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 968,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1451
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 936,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1306
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 956,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1425
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 958,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1429
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 966,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1447
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 968,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1451
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 936,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1306
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 956,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1425
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 958,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1429
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 966,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1447
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 968,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1451
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 936,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1306
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 956,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1425
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 958,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1429
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 966,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1447
+    },
+    {
+      "reset_after_step": 1052,
+      "reset_part": "A",
+      "reset_after_gate": 1052,
+      "new_helper": 968,
+      "retired_helper": 310,
+      "frame": 461,
+      "reset_donors": [
+        315,
+        564,
+        565
+      ],
+      "reset_size": 3,
+      "new_step": 1451
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 937,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1314
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 940,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1351
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 941,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1356
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 947,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1388
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 948,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1393
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 937,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1314
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 940,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1351
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 941,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1356
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 947,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1388
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 948,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1393
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 937,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1314
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 940,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1351
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 941,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1356
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 947,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1388
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 948,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1393
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 937,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1314
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 940,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1351
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 941,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1356
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 947,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1388
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 948,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1393
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 937,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1314
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 940,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1351
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 941,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1356
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 947,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1388
+    },
+    {
+      "reset_after_step": 1068,
+      "reset_part": "A",
+      "reset_after_gate": 1068,
+      "new_helper": 948,
+      "retired_helper": 422,
+      "frame": 463,
+      "reset_donors": [
+        427,
+        596,
+        597
+      ],
+      "reset_size": 3,
+      "new_step": 1393
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 933,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1285
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 992,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1505
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 993,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1507
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 996,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1515
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 997,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1517
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 933,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1285
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 992,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1505
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 993,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1507
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 996,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1515
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 997,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1517
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 933,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1285
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 992,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1505
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 993,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1507
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 996,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1515
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 997,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1517
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 933,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1285
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 992,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1505
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 993,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1507
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 996,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1515
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 997,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1517
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 933,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1285
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 992,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1505
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 993,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1507
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 996,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1515
+    },
+    {
+      "reset_after_step": 1084,
+      "reset_part": "A",
+      "reset_after_gate": 1084,
+      "new_helper": 997,
+      "retired_helper": 294,
+      "frame": 465,
+      "reset_donors": [
+        299,
+        628,
+        629
+      ],
+      "reset_size": 3,
+      "new_step": 1517
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 935,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1295
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 990,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1501
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 991,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1503
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 994,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1511
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 995,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1513
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 935,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1295
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 990,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1501
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 991,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1503
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 994,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1511
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 995,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1513
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 935,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1295
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 990,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1501
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 991,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1503
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 994,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1511
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 995,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1513
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 935,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1295
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 990,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1501
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 991,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1503
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 994,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1511
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 995,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1513
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 935,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1295
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 990,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1501
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 991,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1503
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 994,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1511
+    },
+    {
+      "reset_after_step": 1093,
+      "reset_part": "A",
+      "reset_after_gate": 1093,
+      "new_helper": 995,
+      "retired_helper": 374,
+      "frame": 466,
+      "reset_donors": [
+        379,
+        644,
+        645
+      ],
+      "reset_size": 3,
+      "new_step": 1513
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 934,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1293
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 978,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1471
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 979,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1473
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 986,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1489
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 987,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1491
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 934,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1293
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 978,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1471
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 979,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1473
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 986,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1489
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 987,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1491
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 934,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1293
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 978,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1471
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 979,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1473
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 986,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1489
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 987,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1491
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 934,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1293
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 978,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1471
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 979,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1473
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 986,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1489
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 987,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1491
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 934,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1293
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 978,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1471
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 979,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1473
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 986,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1489
+    },
+    {
+      "reset_after_step": 1102,
+      "reset_part": "A",
+      "reset_after_gate": 1102,
+      "new_helper": 987,
+      "retired_helper": 444,
+      "frame": 467,
+      "reset_donors": [
+        439,
+        660,
+        661
+      ],
+      "reset_size": 3,
+      "new_step": 1491
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 932,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1283
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 976,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1467
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 977,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1469
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 984,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1485
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 985,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1487
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 932,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1283
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 976,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1467
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 977,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1469
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 984,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1485
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 985,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1487
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 932,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1283
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 976,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1467
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 977,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1469
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 984,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1485
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 985,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1487
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 932,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1283
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 976,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1467
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 977,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1469
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 984,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1485
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 985,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1487
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 932,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1283
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 976,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1467
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 977,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1469
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 984,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1485
+    },
+    {
+      "reset_after_step": 1111,
+      "reset_part": "A",
+      "reset_after_gate": 1111,
+      "new_helper": 985,
+      "retired_helper": 492,
+      "frame": 468,
+      "reset_donors": [
+        487,
+        676,
+        677
+      ],
+      "reset_size": 3,
+      "new_step": 1487
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 944,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1376
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 974,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1463
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 975,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1465
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 982,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1481
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 983,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1483
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 944,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1376
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 974,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1463
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 975,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1465
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 982,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1481
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 983,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1483
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 944,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1376
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 974,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1463
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 975,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1465
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 982,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1481
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 983,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1483
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 944,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1376
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 974,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1463
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 975,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1465
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 982,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1481
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 983,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1483
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 944,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1376
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 974,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1463
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 975,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1465
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 982,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1481
+    },
+    {
+      "reset_after_step": 1120,
+      "reset_part": "A",
+      "reset_after_gate": 1120,
+      "new_helper": 983,
+      "retired_helper": 476,
+      "frame": 469,
+      "reset_donors": [
+        471,
+        692,
+        693
+      ],
+      "reset_size": 3,
+      "new_step": 1483
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 942,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 943,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 972,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 973,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 980,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 981,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 942,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 943,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 972,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 973,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 980,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 981,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 942,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 943,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 972,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 973,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 980,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 981,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 942,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 943,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 972,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 973,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 980,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 981,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 942,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 943,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 972,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 973,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 980,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 981,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 942,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 943,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 972,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 973,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 980,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1127,
+      "reset_part": "A",
+      "reset_after_gate": 1127,
+      "new_helper": 981,
+      "retired_helper": 710,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        460
+      ],
+      "reset_size": 2,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 942,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 943,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 972,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 973,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 980,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 981,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 942,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 943,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 972,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 973,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 980,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 981,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 942,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 943,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 972,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 973,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 980,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 981,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 942,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 943,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 972,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 973,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 980,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 981,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 942,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 943,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 972,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 973,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 980,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 981,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 942,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 943,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 972,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 973,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 980,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1129,
+      "reset_part": "A",
+      "reset_after_gate": 1129,
+      "new_helper": 981,
+      "retired_helper": 460,
+      "frame": 470,
+      "reset_donors": [
+        455,
+        708,
+        709
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 942,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 943,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 972,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 973,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 980,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 981,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 942,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 943,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 972,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 973,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 980,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 981,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 942,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 943,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 972,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 973,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 980,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 981,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 942,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 943,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 972,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 973,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 980,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 981,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 942,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 943,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 972,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 973,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 980,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 981,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 942,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 943,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 972,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 973,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 980,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1329,
+      "reset_part": "A",
+      "reset_after_gate": 1329,
+      "new_helper": 981,
+      "retired_helper": 457,
+      "frame": 470,
+      "reset_donors": [
+        708,
+        710,
+        714
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 942,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 943,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 972,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 973,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 980,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 981,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 942,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 943,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 972,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 973,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 980,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 981,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 942,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 943,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 972,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 973,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 980,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 981,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 942,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 943,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 972,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 973,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 980,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 981,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 942,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 943,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 972,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 973,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 980,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 981,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 942,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1369
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 943,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1371
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 972,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1459
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 973,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1461
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 980,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1477
+    },
+    {
+      "reset_after_step": 1332,
+      "reset_part": "A",
+      "reset_after_gate": 1332,
+      "new_helper": 981,
+      "retired_helper": 714,
+      "frame": 470,
+      "reset_donors": [
+        457,
+        708,
+        710
+      ],
+      "reset_size": 3,
+      "new_step": 1479
+    }
+  ]
+}
