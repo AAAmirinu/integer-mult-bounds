@@ -18,3 +18,8 @@ coefficient at1664bits. The inherited192/1024 charges are not reused.
 Read PROOF.md for the whole-family argument, prefix induction and conditional
 scope; SOURCE.json binds the exact parent and unchanged word. GitHub CI is
 separate from local receipts. Initial evidence is a component screen only.
+
+Parent portability update: PR460 now retains the terminal initial failure and
+normalizes only two inherited discovery-float fields for PR458 reconstruction.
+Pinned mathematical sources and exact checks are unchanged. SOURCE.json binds
+the repaired parent manifest; full verification is pending.
