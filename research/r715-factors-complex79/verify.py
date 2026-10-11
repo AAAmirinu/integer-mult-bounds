@@ -6,7 +6,7 @@ SELF=Path(__file__).resolve().parent
 ap=argparse.ArgumentParser();ap.add_argument('output',type=Path);ap.add_argument('--research-root',type=Path,default=SELF.parent);ap.add_argument('--provider-output',type=Path);a=ap.parse_args();out=a.output.resolve();research=a.research_root.resolve();assert not out.exists() and not out.is_relative_to(research)
 read=lambda p:json.loads(p.read_text());sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 def inv(p):return {f.relative_to(p).as_posix():sha(f) for f in p.rglob('*') if f.is_file() and '__pycache__' not in f.parts}
-pin=read(SELF/'SOURCE.json');ROOT=research/pin['bit_package']
+pin=read(SELF/'SOURCE.json');ROOT=SELF.parent/pin['bit_package']
 def integrity():
  own=inv(SELF);own.pop('MANIFEST.json');assert own==read(SELF/'MANIFEST.json')
  assert inv(SELF/'upstream478')==read(SELF/'UPSTREAM-INVENTORY.json')
@@ -31,7 +31,8 @@ try:
  up=out/'provider-source';shutil.copytree(SELF/'upstream478',up)
  declared=read(up/'MANIFEST.json');assert sha(up/'MANIFEST.json')==pin['original_manifest_sha256']
  actual=inv(up);actual.pop('MANIFEST.json');assert set(declared)-set(actual)=={'.gitattributes'} and declared['.gitattributes']==pin['missing_attributes_sha256'];assert all(declared[k]==v for k,v in actual.items())
- (up/'MANIFEST.json').write_text(json.dumps(actual,indent=2)+'\n');assert sha(up/'MANIFEST.json')==pin['adapter_manifest_sha256']
+ assert read(SELF/'ADAPTED-PROVIDER-MANIFEST.json')==actual
+ (up/'MANIFEST.json').write_bytes((SELF/'ADAPTED-PROVIDER-MANIFEST.json').read_bytes());assert sha(up/'MANIFEST.json')==pin['adapter_manifest_sha256']
  (out/'MANIFEST-ADAPTER.json').write_text(json.dumps(dict(original=pin['original_manifest_sha256'],adapted=pin['adapter_manifest_sha256'],only_change='Remove absent .gitattributes from manifest inventory; all existing source/input bytes unchanged'),indent=2)+'\n')
  provider=a.provider_output.resolve() if a.provider_output else out/'provider'
  if a.provider_output:
