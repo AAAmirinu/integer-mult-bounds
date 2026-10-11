@@ -1,0 +1,133 @@
+{
+  "status": "PASS_CHANGED_FULL_FOOTPRINT_BORROWED_SPECTATOR_COMPOSITION",
+  "kappa": "1274548075945587/1000000000000000000",
+  "seconds": 479.234,
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "manifest_sha256": "cfc017cd41330e17e51fbbeafd5ce71bc992879c4b8e184440185cd1d1477151",
+  "steps": [
+    {
+      "name": "changed-bit",
+      "seconds": 60.641,
+      "log_sha256": "701fa41ecdb5152e9215e98f94c258f971fcca4398641cfcd1c5b80946c3803b"
+    },
+    {
+      "name": "complex-scalar-and-phase",
+      "seconds": 195.39,
+      "log_sha256": "0275cf73bb9729d9ca00ca4e904fd928c143da65a5957992041fe698889ee93e"
+    },
+    {
+      "name": "complex-normalization",
+      "seconds": 117.813,
+      "log_sha256": "75c311ec3ded0c905f2f3b2596a45977a71d86d4178a069cc16967d998f4cd5d"
+    },
+    {
+      "name": "data-phases",
+      "seconds": 32.359,
+      "log_sha256": "e1942c20e45d000cba67034f4815ea5fc9043cd7a1117890d1beee2a45a4276a"
+    },
+    {
+      "name": "borrowed-emission",
+      "seconds": 3.328,
+      "log_sha256": "68e6b2ca158ffd72e7d371e883436394d3082da3be6a07c2ace2512c386d87ef"
+    },
+    {
+      "name": "borrowed-independent",
+      "seconds": 51.438,
+      "log_sha256": "8df65018706038c3b442324eb0b86fcecc915535d489865607261552f86c84e2"
+    },
+    {
+      "name": "routes-independent",
+      "seconds": 3.39,
+      "log_sha256": "66e81a79d67f02196c24231f0ab6d3e131b64e195139f75a2d165bc9e7068056"
+    },
+    {
+      "name": "whole-controller",
+      "seconds": 14.125,
+      "log_sha256": "02fa240820b4a259b18f0597b9c5ce95a6307a7fb219dcda2f1092baeae5bd09"
+    },
+    {
+      "name": "two-moments-and-47-constraints",
+      "seconds": 0.688,
+      "log_sha256": "9763904cf17ca431a03b41cddc0c5182bddf274d9b8916294540654b79d31f80"
+    }
+  ],
+  "scope": "Fresh changed bit C++ compilation and columns; fresh complex scalar/phase/monomial proofs; independent physical/orthogonal routes; whole controller; finite invoices, two moment implementations,47strictconstraints. Retains conditional all-size interfaces; no Lean certification or public full-chain replay.",
+  "bit_steps": [
+    {
+      "name": "targetmix",
+      "seconds": 1.219,
+      "log_sha256": "6ca7b339d9c783412a531106d768ad29f9333821b896367af23bea184375f4e6"
+    },
+    {
+      "name": "compile-legality",
+      "seconds": 7.437,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "compile-columns",
+      "seconds": 5.844,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "compile-columns_k5",
+      "seconds": 6.094,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "records",
+      "seconds": 1.265,
+      "log_sha256": "dfdc493f666bb605bed153027c4f17500eb812c759cf0a179ede7ca098010a21"
+    },
+    {
+      "name": "mix-check",
+      "seconds": 0.203,
+      "log_sha256": "c5cd85c32b2461c8a4f9f9ccf5f6ac8d2cd80c08de28265052dbb774a9870598"
+    },
+    {
+      "name": "cohort",
+      "seconds": 0.157,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "legality",
+      "seconds": 0.031,
+      "log_sha256": "738268d3c295cfb81a1e3ba9bf6e0db2ab695804ac68e99a1fa904cc597b1bf9"
+    },
+    {
+      "name": "columns",
+      "seconds": 0.016,
+      "log_sha256": "a4e99a9761dcfe396f14eb8d9cfbae3dc085736b86e1ea9bf1ab4ad89aba13c7"
+    },
+    {
+      "name": "columns_k5",
+      "seconds": 0.015,
+      "log_sha256": "1657140619c050d65d2141e782a83dacc04b8bb5178624fbf38289583c8e6b50"
+    },
+    {
+      "name": "gram",
+      "seconds": 0.203,
+      "log_sha256": "4c0b06dd6d3369137995fbe63ce0369502098436ec3bec03d3ff5243c101ea9b"
+    },
+    {
+      "name": "geometry",
+      "seconds": 6.219,
+      "log_sha256": "e7f26e4ad3f98a1a68824027c820e8601822fa68d152ae175545f097fb8c8d65"
+    },
+    {
+      "name": "global",
+      "seconds": 0.797,
+      "log_sha256": "ac92f5a22b56a8797e2404ad6daec54b011f1e54c857c6fc47c42ff387eb82f0"
+    },
+    {
+      "name": "hosted",
+      "seconds": 7.141,
+      "log_sha256": "c55e0cf85be013f0d6d79b2aa2364c480ead953c3f021c11fdc0e013967b5a51"
+    },
+    {
+      "name": "independent",
+      "seconds": 22.109,
+      "log_sha256": "7a2216d658b1a7d180aeaeb01b2925160753964841e17d1487dea9cc18d9165c"
+    }
+  ],
+  "post_replay_changes": "Documentation typography, archive of replayed manifest, addition of validation receipts and byte-preserving .gitattributes; executable sources and mathematical inputs unchanged."
+}
