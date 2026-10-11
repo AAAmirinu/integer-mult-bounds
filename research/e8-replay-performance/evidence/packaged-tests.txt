@@ -1,0 +1,60 @@
+test_failed_child_is_failure (__main__.SharingTests.test_failed_child_is_failure) ... ok
+test_fork_isolates_registry_records_and_nested_state (__main__.SharingTests.test_fork_isolates_registry_records_and_nested_state) ... ok
+test_missing_or_duplicated_prefix_rejected (__main__.SharingTests.test_missing_or_duplicated_prefix_rejected) ... ok
+test_pinned_consumer_shapes (__main__.SharingTests.test_pinned_consumer_shapes) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.050s
+
+OK
+test_bank_replay_substitution_and_corruption (__main__.Tests.test_bank_replay_substitution_and_corruption) ... ok
+test_dot_memo_uses_current_row_contents (__main__.Tests.test_dot_memo_uses_current_row_contents) ... ok
+test_integer_factor_replay_every_prefix (__main__.Tests.test_integer_factor_replay_every_prefix) ... ok
+test_integer_triples (__main__.Tests.test_integer_triples) ... ok
+test_line_bytes_and_typed_keys (__main__.Tests.test_line_bytes_and_typed_keys) ... ok
+test_scalar_substitution_preserves_all_other_code (__main__.Tests.test_scalar_substitution_preserves_all_other_code) ... ok
+test_scheduling_inserts_exactly_one_worker_and_keeps_stage_order (__main__.Tests.test_scheduling_inserts_exactly_one_worker_and_keeps_stage_order) ... ok
+test_source_shapes_and_changed_bytes_refused (__main__.Tests.test_source_shapes_and_changed_bytes_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.047s
+
+OK
+test_child_nested_mutation_isolated_and_types_preserved (__main__.AdmissionTests.test_child_nested_mutation_isolated_and_types_preserved) ... ok
+test_complete_package_mismatch_and_symlink_rejected (__main__.AdmissionTests.test_complete_package_mismatch_and_symlink_rejected) ... ok
+test_failed_admission_is_not_success (__main__.AdmissionTests.test_failed_admission_is_not_success) ... ok
+test_large_result_pipe_does_not_deadlock (__main__.AdmissionTests.test_large_result_pipe_does_not_deadlock) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.015s
+
+OK
+test_modular_inverses_and_complete_rref (__main__.GeneratorTests.test_modular_inverses_and_complete_rref) ... ok
+test_producer_cube_size_argument_passed_through (__main__.GeneratorTests.test_producer_cube_size_argument_passed_through) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.473s
+
+OK
+test_actual_replay_rejects_changed_basis_and_covector_after_warm_cache (__main__.ScalarTests.test_actual_replay_rejects_changed_basis_and_covector_after_warm_cache) ... ok
+test_changed_source_and_ast_shape_refused (__main__.ScalarTests.test_changed_source_and_ast_shape_refused) ... ok
+test_geometry_full_content_mutation_and_eviction (__main__.ScalarTests.test_geometry_full_content_mutation_and_eviction) ... ok
+test_integer_transcript_exact_and_type_refusals (__main__.ScalarTests.test_integer_transcript_exact_and_type_refusals) ... ok
+test_radix_bound_and_minimal_byte_width (__main__.ScalarTests.test_radix_bound_and_minimal_byte_width) ... ok
+test_signed_packing_and_undersized_carry_counterexample (__main__.ScalarTests.test_signed_packing_and_undersized_carry_counterexample) ... ok
+test_unit_addition_all_modes_big_integers (__main__.ScalarTests.test_unit_addition_all_modes_big_integers) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.922s
+
+OK
+test_blob_and_inventory (__main__.PackageTests.test_blob_and_inventory) ... ok
+test_changed_package_and_extra_file_refused (__main__.PackageTests.test_changed_package_and_extra_file_refused) ... ok
+test_changed_tree_pin_refused (__main__.PackageTests.test_changed_tree_pin_refused) ... ok
+test_disabled_assertions_refused (__main__.PackageTests.test_disabled_assertions_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.193s
+
+OK
+PASS all packaged offline controls

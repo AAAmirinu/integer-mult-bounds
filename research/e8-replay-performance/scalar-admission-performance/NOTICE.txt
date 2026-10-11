@@ -1,0 +1,28 @@
+Local exact scalar-admission performance experiment by Aman with OpenAI Codex
+assistance, extending the retained producer-prefix, predecessor-performance and
+source-admission-performance experiments without modifying their source/evidence.
+
+Pinned upstream PR358:
+https://github.com/CrocSwap/integer-mult-bounds/pull/358
+e76d7a94e6ad819e2aa9dc99083ecfa3e7842e0b
+
+Retain the upstream Apache-2.0 license and all author/AI-assistance credits.
+The retained scalar word/checker credit eumemic, DreamingOfClouds, Anthropic
+Claude and OpenAI Codex/ChatGPT assistance as recorded in the frozen package.
+No original frozen source file, input manifest or selected word is edited.
+
+The prototype changes exact arithmetic evaluation and the clean checker's
+formal-column encoding width. Every original replay, inverse and corruption
+control still runs. Negative controls keep their original encoding width.
+Original file hashes alone do not describe this optimized execution; retain
+the fresh SCALAR-PERFORMANCE.json and NATIVE-PERFORMANCE-RUN.json sidecars.
+
+The construction's kappa, words, prime thresholds, payload precision and
+conditional all-size assumptions are unchanged. Checker packing is not a
+physical payload-width reduction. No unconditional theorem is claimed.
+
+Benchmark configurations run sequentially on the same macOS host, using the
+same two-worker schedule, one BLAS/OMP thread, strict pins and Python hash seed
+0. OS caches are not flushed. CPU times supplement wall times; this does not
+eliminate all machine-state variation. POSIX fork/wait4 remains required by
+the inherited prefix adapter.

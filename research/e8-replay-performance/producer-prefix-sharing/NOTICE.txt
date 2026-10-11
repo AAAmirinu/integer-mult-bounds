@@ -1,0 +1,18 @@
+Producer-prefix sharing experiment
+
+New adapter, tests, benchmark driver and analysis prepared by Aman with
+substantial OpenAI Codex assistance. New code is Apache-2.0.
+
+This is execution infrastructure for the immutable PR358 finite witness at
+e76d7a94e6ad819e2aa9dc99083ecfa3e7842e0b. It does not claim a new construction,
+improved kappa, new source selection or unconditional theorem.
+
+All mathematical and producer implementation credits remain with the authors
+identified in the complete original package's retained notices. In particular,
+source353354 retains work by DreamingOfClouds, Chafik Boukhalfa, Rohan Arun,
+eumemic and the restoration/sink contributors; the E8 supplier retains Jacob
+Sussman's credits. See the pinned package's NOTICE files for the complete
+attribution, licenses, inherited dependencies and AI-assistance disclosures.
+
+The original source files were not edited. Prefix sharing reuses freshly
+executed original producer and transform results in isolated child consumers.

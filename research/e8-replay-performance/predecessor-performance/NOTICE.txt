@@ -1,0 +1,34 @@
+Pinned external performance experiment, prepared with OpenAI Codex assistance.
+
+The immutable construction is CrocSwap/integer-mult-bounds PR358, head
+e76d7a94e6ad819e2aa9dc99083ecfa3e7842e0b. All upstream licenses, attribution,
+AI-assistance notices and analytic assumptions remain in the retained source.
+The experiment does not edit that source or its manifests.
+
+Jacob Sussman's gx reference checker and gxcore mirror remain credited in the
+construction and in verification-performance/research/gcert-scalar-performance.
+The latter package contains the earlier exact common-denominator scalar change
+and its Apache-2.0 license/provenance. This experiment executes only that scal
+function in the exact-hash-bound original gx module. All other gx code and the
+independent gxcore mirror remain unchanged.
+
+integer_factors.py applies the same elementary rational row factors over exact
+integer row numerators and positive common denominators. bank_check.py's basis,
+inverse, two-sided products, factor derivation, final identity checks and controls
+continue to run. No machine-width arithmetic or probabilistic identity test is
+used.
+
+Frame predicate caches use complete current row content; transcript caching
+stores only JSON bytes, not validation or admission results. Every cache starts
+empty in this run. Only already generated tuples reach the internal pickle key
+encoder; no external pickle is loaded. Consumer state and chronology are replayed.
+
+The scheduling experiment overlaps fresh independent stages with the same two
+active worker slots. All original commands and final receipt bindings are checked.
+The producer-prefix-sharing prototype has its own retained provenance notice.
+
+Original source receipts describe their source files. Optimized executions must
+also retain PERFORMANCE-ADAPTER.json and NATIVE-PERFORMANCE-RUN.json, which record
+the external implementation hashes. They are not evidence that original bytes
+executed without substitutions. No unconditional theorem or improved kappa is
+claimed, and no GitHub write is part of this experiment.

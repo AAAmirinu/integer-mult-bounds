@@ -1,0 +1,25 @@
+Local performance experiment by Aman with OpenAI Codex assistance.
+
+Pinned upstream PR358:
+https://github.com/CrocSwap/integer-mult-bounds/pull/358
+e76d7a94e6ad819e2aa9dc99083ecfa3e7842e0b
+
+Original generator, physical producer, source checkers and all proof checks
+remain in the immutable 839-blob source tree. Retain its Apache-2.0 licensing,
+notices, author and AI-assistance credits. The generator credits eumemic and
+DreamingOfClouds with Anthropic Claude assistance; source admission and physical
+lowering also retain their original OpenAI Codex/ChatGPT assistance credits.
+
+This experiment extends the retained producer-prefix-sharing and predecessor-
+performance prototypes. Their original code and measurement evidence are
+unchanged. Fresh run sidecars identify the external execution implementations;
+original manifest hashes alone do not describe the optimized execution.
+
+The witness remains conditional under its inherited all-size interfaces.
+Neither a new kappa nor an unconditional multiplication theorem is claimed.
+POSIX fork/wait4 and one Python thread in the source parent are required.
+
+Benchmark configurations run sequentially on the same host. Each uses the
+previous best two-worker proof/native schedule; no third CPU worker is added.
+OS caches are not flushed. Timings are measurements of this finite pipeline,
+not claims about LLM discovery time or all community workloads.

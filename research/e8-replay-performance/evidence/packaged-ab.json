@@ -1,0 +1,568 @@
+{
+  "adverse_controls": 11,
+  "clean_packing_width": [
+    24,
+    16
+  ],
+  "comparison": {
+    "byte_identical_artifacts": {
+      "FRAME-PRIMES.json": "d90446cabb2faffa6767eb4e193cf9f6b779e4952a4ecd8a6656b0f4b30228ef",
+      "INVOICE.json": "33bde05cd4e09730923f5679ddebb6e4f0526d642ce6e089e4b99080b0d2342c",
+      "REFLECTED-LEDGERS.json": "4b5da3be107c7a4cf117e51104bbe42de3d994ba498558279f48fdd9b173498c",
+      "TILING.json": "e6a95b265d8d16c2fe610a03c96716208dab221dd5df975574438010a57f7d47",
+      "base/249-states.json": "eaff759838d262daae6d3d7330eba1d64f473a19ea51f74057084253c6f8d4fc",
+      "base/COHORT249-RECORDS.bin": "e7d20c66176ff94e435e1462f749699316e392912ba04658318c1b36784400ea",
+      "base/frames.json": "b6b1124646420c4d3d3f6aee10be336efc7eb1835d3a1ed4f8d6bdc0272c4ffb",
+      "candidate-source/249-states.json": "b3294f2a3ac10e95b9bc3852396d23cf32affd4eece2887c5b5e4e5e6f0ff0dd",
+      "candidate-source/COHORT249-RECORDS.bin": "d75fa9566e9a6b74e7b07966c4ddf5bd07e956e3119d5b1c150da1932d61511e",
+      "candidate-source/frames.json": "f5a3809c298f69083290c6043147d1a026439453558af6efe01d69e351dbe29f",
+      "candidate/249-states.json": "b6e02c5a636864e5f939503f03e3402bcac0e5eb68860a58983ed9bfa10d7774",
+      "candidate/COHORT249-RECORDS.bin": "98007fb3a634ca671bcfea6bed8c1b33da190606ffbea748cd931399ecf65d2d",
+      "candidate/frames.json": "0ffa31d68b6784624a6e40f81840dec9bbb9fe0638211a7b2f4c9ff3a9098a93",
+      "materialized/base/frames.json": "3ccfa9fd63ec49d562c44d0f52a7500baf3d94630c4134eddfa4a78c5f1af94d",
+      "materialized/base/records.bin": "e7d20c66176ff94e435e1462f749699316e392912ba04658318c1b36784400ea",
+      "materialized/final/frames.json": "f9aaaac0f26f23c9b224ba7ebc4e9a1e6ec132f35bcd7514150d299f4282de3b",
+      "materialized/final/records.bin": "d75fa9566e9a6b74e7b07966c4ddf5bd07e956e3119d5b1c150da1932d61511e",
+      "source353354/base/249-records.bin": "e7d20c66176ff94e435e1462f749699316e392912ba04658318c1b36784400ea",
+      "source353354/base/249-states.json": "c9074c617c5a3f662a5647d81cf89272dd5ff26d9ef802f2d8bfb56eac30e9a9",
+      "source353354/base/frames.json": "3ccfa9fd63ec49d562c44d0f52a7500baf3d94630c4134eddfa4a78c5f1af94d",
+      "source353354/candidate/249-records.bin": "0b3054e8dbc7e81803c312349b7bfa4a551145b47a04a848bf97e84101997f2a",
+      "source353354/candidate/249-states.json": "5d5584b697bd9388e3248eb7c857eed75eff43b9e9941d7e1b3c4a3bd1009e0f",
+      "source353354/candidate/frames.json": "f9aaaac0f26f23c9b224ba7ebc4e9a1e6ec132f35bcd7514150d299f4282de3b",
+      "source353354/design-t/249-records.bin": "d9385faeff81dddf71000bffc0610a5b234f162171ce7302451706a2b147eef3",
+      "source353354/design-t/249-states.json": "efd8536cde1d919183fba231d86fc61a98c7fa4b347729d4eee74755abc834f3",
+      "source353354/design-t/frames.json": "5e5d19e536b4a0f6536abb960e5991be657a33c10a8480af7e479c15e9e5ff9b",
+      "source353354/pkg/descent-selection.json": "e33619f5b8e639b9a387ffa6b9d1fafb9058318d44c39b02b54430bceb922810",
+      "source353354/pkg/descent2-selection.json": "ff0283c0116aaa8c43101626a5a944149730e0f7400ea28d36ca6f44a49c83dd",
+      "source353354/pkg/kernel-selection.json": "e2d67dc69e0a2992ba15a58f0ec1fdd25cadae137be6253826f03460f3003fd6",
+      "source353354/pkg/reorder-selection.json": "1655138407cec8d079d0d1331203db46c95b70bac135f3256f66b38af5011a2a",
+      "source353354/pkg/reorder2-selection.json": "598e4cd20aa804b79e2a31163a312679dc0419dfb26a5494e7f0186fe6076d79",
+      "source353354/pkg/restore-selection.json": "25aae3fa144e2fe205f6c410f3823619dc8c14849cdc4e3b2890ecc124e9de03",
+      "source353354/pkg/sink-selection.json": "5c911c4a984b3b186ed2f5921d36ccbc8e53d54fbeba5c998c941843c355af70",
+      "source353354/pkg/target-selection.json": "911537c356649a7b264293310d288d15ed54d150cea55833bc56d0f9cf285e61",
+      "source353354/stages/00-parity/249-records.bin": "e7d20c66176ff94e435e1462f749699316e392912ba04658318c1b36784400ea",
+      "source353354/stages/00-parity/249-states.json": "c9074c617c5a3f662a5647d81cf89272dd5ff26d9ef802f2d8bfb56eac30e9a9",
+      "source353354/stages/00-parity/frames.json": "3ccfa9fd63ec49d562c44d0f52a7500baf3d94630c4134eddfa4a78c5f1af94d",
+      "source353354/stages/01-descent/249-records.bin": "6db1ea807b3d8c168e09a0a2103acead129301d04ef1311eaaf329d2990a47b3",
+      "source353354/stages/01-descent/249-states.json": "35eb5da66d1048e385279b3e5ac17ee087ba8b160b2ec576624d46bfcb73fc1f",
+      "source353354/stages/01-descent/frames.json": "0a11f85578a3b38e9d2207bd114e82e6c1a6efb586ba903868b8fae6f50d16ea",
+      "source353354/stages/02-target/249-records.bin": "ccdf8eb313b1d1c59e1437a7f4bc5b7c5d05c632f5548952641afb3a0413ba38",
+      "source353354/stages/02-target/249-states.json": "e588d55b65019134be815720b39d303d021e4cae88101c13f13faa4cfe94b2c8",
+      "source353354/stages/02-target/frames.json": "a61e453680ab503a000173829a3059f15098f6746b10154a098023c7aaee5222",
+      "source353354/stages/03-restore/249-records.bin": "81006af82df040b635dcec85bbdcfad7158782f2f1aa5f5ffa452bd6db01fea2",
+      "source353354/stages/03-restore/249-states.json": "99b0fdfd073ef92e1cf2b8e372a37a8b9b38d8d4916d795caa0cdea068f389d8",
+      "source353354/stages/03-restore/frames.json": "5e5d19e536b4a0f6536abb960e5991be657a33c10a8480af7e479c15e9e5ff9b",
+      "source353354/stages/04-sink/249-records.bin": "b39e948f0bdde127ff3ddaf29ff3348819c5a65b68c41e1d9224a218773d4eac",
+      "source353354/stages/04-sink/249-states.json": "2816d6338b7a05351086095a3ff7ccf456cc7493ccba2e0bd19d3949bb252540",
+      "source353354/stages/04-sink/frames.json": "5e5d19e536b4a0f6536abb960e5991be657a33c10a8480af7e479c15e9e5ff9b"
+    },
+    "independently_revalidated_receipt_bindings": {
+      "certificate": [
+        "BANK.json",
+        "COLUMNS.json",
+        "COMPACTION.json",
+        "FRAME-PRIMES.json",
+        "INTEGER-AUDIT.json",
+        "INVOICE.json",
+        "LEGALITY.json",
+        "ORIGINAL-EXPORT.json",
+        "PRICE.json",
+        "REFINEMENT.json",
+        "REFLECTED-LEDGERS.json",
+        "ROLE-MAP.json",
+        "SOURCE-COMPOSITION.json",
+        "SOURCE-ROLE-MAP.json",
+        "TILING.json",
+        "bank/BANK-CHARTS.json",
+        "bank/BANK-REVIEW.json",
+        "base/249-states.json",
+        "base/COHORT249-RECORDS.bin",
+        "base/frames.json",
+        "candidate-REGENERATION.json",
+        "candidate-source/249-states.json",
+        "candidate-source/COHORT249-FINAL.json",
+        "candidate-source/COHORT249-FRAMES.json",
+        "candidate-source/COHORT249-INITIAL.json",
+        "candidate-source/COHORT249-RECORDS.bin",
+        "candidate-source/COHORT249-SELECTION.json",
+        "candidate-source/frames.json",
+        "candidate/249-states.json",
+        "candidate/COHORT249-FINAL.json",
+        "candidate/COHORT249-FRAMES.json",
+        "candidate/COHORT249-INITIAL.json",
+        "candidate/COHORT249-RECORDS.bin",
+        "candidate/COHORT249-SELECTION.json",
+        "candidate/frames.json",
+        "charts/COMBINED-CHART-AUDIT.json",
+        "charts/COMBINED-CHARTS.json",
+        "complex-reserve/INDEPENDENT-REPLAY.json",
+        "complex-reserve/LEAN-DATA.json",
+        "complex-reserve/SUPPLIER-CHECK.json",
+        "complex-reserve/VERIFICATION.json",
+        "complex-reserve/admission/INDEPENDENT-AUDIT.json",
+        "complex-reserve/admission/UPSTREAM-GUARD.json",
+        "complex-reserve/candidate.json",
+        "predecessor/banks.json",
+        "predecessor/certificate.json",
+        "predecessor/complex.json",
+        "predecessor/math.json",
+        "predecessor/primes.json",
+        "predecessor/verification.json",
+        "source353354/STAGES.json",
+        "source353354/VERIFICATION.json",
+        "source353354/base/249-records.bin",
+        "source353354/base/249-states.json",
+        "source353354/base/frames.json",
+        "source353354/candidate/249-records.bin",
+        "source353354/candidate/249-states.json",
+        "source353354/candidate/frames.json",
+        "source353354/newbase-source-admission/ADMISSION.json",
+        "source353354/newbase-source-admission/original-helper-roles.json",
+        "source353354/newbase-source-admission/parity.json",
+        "source353354/newbase-source-admission/physical.json",
+        "source353354/newbase-source-admission/source-scalar.json",
+        "source353354/newbase-source-admission/virtual.json",
+        "source353354/pkg/descent-selection.json",
+        "source353354/pkg/restore-selection.json",
+        "source353354/pkg/sink-selection.json",
+        "source353354/pkg/target-selection.json",
+        "source353354/producer-regeneration/final/frames_p10.json.gz",
+        "source353354/producer-regeneration/final/graph_p10.json",
+        "source353354/producer-regeneration/final/kchron_p10.json",
+        "source353354/producer-regeneration/final/profile_p10.json",
+        "source353354/producer-regeneration/final/word_p10.json.gz",
+        "source353354/stages/00-parity/249-records.bin",
+        "source353354/stages/00-parity/249-states.json",
+        "source353354/stages/00-parity/frames.json",
+        "source353354/stages/04-sink/249-records.bin",
+        "source353354/stages/04-sink/249-states.json",
+        "source353354/stages/04-sink/frames.json"
+      ],
+      "price-reserve": [
+        "INDEPENDENT-REPLAY.json",
+        "LEAN-DATA.json",
+        "SUPPLIER-CHECK.json",
+        "VERIFICATION.json",
+        "admission/INDEPENDENT-AUDIT.json",
+        "admission/UPSTREAM-GUARD.json",
+        "candidate.json"
+      ],
+      "price-supplier": [
+        "INDEPENDENT-REPLAY.json",
+        "LEAN-DATA.json",
+        "SUPPLIER-CHECK.json",
+        "VERIFICATION.json",
+        "admission/INDEPENDENT-AUDIT.json",
+        "admission/UPSTREAM-GUARD.json",
+        "candidate.json"
+      ],
+      "refinement-external_receipt_hashes": [
+        "$OUTPUT/complex-reserve/INDEPENDENT-REPLAY.json",
+        "$OUTPUT/complex-reserve/LEAN-DATA.json",
+        "$OUTPUT/complex-reserve/SUPPLIER-CHECK.json",
+        "$OUTPUT/complex-reserve/VERIFICATION.json",
+        "$OUTPUT/complex-reserve/admission/INDEPENDENT-AUDIT.json",
+        "$OUTPUT/complex-reserve/admission/UPSTREAM-GUARD.json",
+        "$OUTPUT/complex-reserve/candidate.json"
+      ],
+      "refinement-receipt_hashes": [
+        "BANK.json",
+        "COLUMNS.json",
+        "FRAME-PRIMES.json",
+        "INVOICE.json",
+        "PRICE.json",
+        "candidate/COHORT249-FINAL.json",
+        "candidate/COHORT249-FRAMES.json",
+        "candidate/COHORT249-INITIAL.json",
+        "candidate/COHORT249-RECORDS.bin",
+        "candidate/frames.json",
+        "predecessor/complex.json",
+        "predecessor/math.json",
+        "predecessor/primes.json",
+        "predecessor/verification.json"
+      ]
+    },
+    "predecessor_receipts_equal_except_seconds_and_timings": [
+      "banks.json",
+      "bit.json",
+      "certificate.json",
+      "complex.json",
+      "finite.json",
+      "geometry.json",
+      "global_result.json",
+      "math.json",
+      "parity.json",
+      "physical.json",
+      "primes.json",
+      "raw.json",
+      "scalar.json",
+      "verification.json",
+      "virtual.json"
+    ],
+    "predecessor_uncompressed_records_equal": true,
+    "prices_certificates_refinement_equal": true
+  },
+  "cpu_time_reduction_percent": 29.569780129287025,
+  "full_wall_time_reduction_percent": 42.23140978324478,
+  "identical_producer_files": [
+    "final/frames_p10.json",
+    "final/frames_p10.json.gz",
+    "final/graph_p10.json",
+    "final/kchron_p10.json",
+    "final/profile_p10.json",
+    "final/sinks.json",
+    "final/word_p10.json",
+    "final/word_p10.json.gz",
+    "phys/frames_p10.json",
+    "phys/frames_p10.json.gz",
+    "phys/graph_p10.json",
+    "phys/kchron_p10.json",
+    "phys/profile_p10.json",
+    "phys/sinks.json",
+    "phys/word_p10.json",
+    "phys/word_p10.json.gz",
+    "pkg/bit/base_word.py",
+    "pkg/bit/word.py",
+    "pkg/references/pr168-v4/SOURCE.json",
+    "pkg/references/pr168-v4/research/paired-cube-bit/check_paired_cube_bit.py",
+    "pkg/selected/bit/frames_p10.json",
+    "pkg/selected/bit/frames_p10.json.gz",
+    "pkg/selected/bit/graph_p10.json",
+    "pkg/selected/bit/kchron_p10.json",
+    "pkg/selected/bit/profile_p10.json",
+    "pkg/selected/bit/sinks.json",
+    "pkg/selected/bit/word_p10.json",
+    "pkg/selected/bit/word_p10.json.gz",
+    "raw/frames_p10.json",
+    "raw/graph_p10.json",
+    "raw/kchron_p10.json",
+    "raw/profile_p10.json",
+    "raw/word_p10.json",
+    "raw/word_p10.json.gz"
+  ],
+  "kappa": "80367971186626189473809/100000000000000000000000000",
+  "manifest_sha256": "d8dd6762f6068942cc396129347c5188c8e1f704c146656d84de3944918f686c",
+  "negative_control_width": 24,
+  "runs": {
+    "baseline": {
+      "cpu_seconds": 425.422098,
+      "maximum_stage_workers": 2,
+      "platform": "darwin",
+      "python": "3.13.12 (main, Feb  3 2026, 17:53:27) [Clang 17.0.0 (clang-1700.6.3.2)]",
+      "seconds": 285.4137959580403,
+      "stages": [
+        {
+          "finished_seconds": 145.15413845796138,
+          "seconds": 145.15322662494145,
+          "stage": "immutable-reference325",
+          "started_seconds": 0.000911833019927144
+        },
+        {
+          "finished_seconds": 233.1630538329482,
+          "seconds": 233.1621052499395,
+          "stage": "source353354-471",
+          "started_seconds": 0.0009485830087214708
+        },
+        {
+          "finished_seconds": 233.70246708299965,
+          "seconds": 0.538898500148207,
+          "stage": "compact-native-source",
+          "started_seconds": 233.16356858285144
+        },
+        {
+          "finished_seconds": 237.02889583283104,
+          "seconds": 3.3263299157842994,
+          "stage": "immutable-complex-reserve",
+          "started_seconds": 233.70256591704674
+        },
+        {
+          "finished_seconds": 238.14806408295408,
+          "seconds": 1.1190919161308557,
+          "stage": "export-native",
+          "started_seconds": 237.02897216682322
+        },
+        {
+          "finished_seconds": 239.4271246669814,
+          "seconds": 1.2784440000541508,
+          "stage": "regenerate-signed-eighteen",
+          "started_seconds": 238.14868066692725
+        },
+        {
+          "finished_seconds": 241.34960970794782,
+          "seconds": 1.922270999988541,
+          "stage": "exact-integer-operator",
+          "started_seconds": 239.42733870795928
+        },
+        {
+          "finished_seconds": 243.59634270798415,
+          "seconds": 2.2464371661189944,
+          "stage": "compile-legality",
+          "started_seconds": 241.34990554186516
+        },
+        {
+          "finished_seconds": 245.1403672080487,
+          "seconds": 1.543862583115697,
+          "stage": "compile-columns",
+          "started_seconds": 243.596504624933
+        },
+        {
+          "finished_seconds": 247.42862591682933,
+          "seconds": 2.2881175838410854,
+          "stage": "compile-changed-charts",
+          "started_seconds": 245.14050833298825
+        },
+        {
+          "finished_seconds": 250.3523554999847,
+          "seconds": 2.9235512500163168,
+          "stage": "compile-banks",
+          "started_seconds": 247.42880424996838
+        },
+        {
+          "finished_seconds": 252.88832795782946,
+          "seconds": 2.535838082898408,
+          "stage": "compile-invoice",
+          "started_seconds": 250.35248987493105
+        },
+        {
+          "finished_seconds": 254.0858782918658,
+          "seconds": 1.197495959000662,
+          "stage": "legality",
+          "started_seconds": 252.88838233286515
+        },
+        {
+          "finished_seconds": 254.59851808287203,
+          "seconds": 0.5125839998945594,
+          "stage": "columns",
+          "started_seconds": 254.08593408297747
+        },
+        {
+          "finished_seconds": 256.17674637492746,
+          "seconds": 1.5781638328917325,
+          "stage": "both-reflected-ledgers",
+          "started_seconds": 254.59858254203573
+        },
+        {
+          "finished_seconds": 256.4245122920256,
+          "seconds": 0.24768566712737083,
+          "stage": "tiling",
+          "started_seconds": 256.17682662489824
+        },
+        {
+          "finished_seconds": 263.92861266690306,
+          "seconds": 7.504037000006065,
+          "stage": "bank-frames-and-assignment",
+          "started_seconds": 256.424575666897
+        },
+        {
+          "finished_seconds": 278.13265275000595,
+          "seconds": 14.2039559581317,
+          "stage": "changed-charts",
+          "started_seconds": 263.92869679187424
+        },
+        {
+          "finished_seconds": 278.62566374987364,
+          "seconds": 0.4928946669679135,
+          "stage": "geometry-admission",
+          "started_seconds": 278.1327690829057
+        },
+        {
+          "finished_seconds": 282.25900662504137,
+          "seconds": 3.633269750047475,
+          "stage": "all-frame-prime-minors",
+          "started_seconds": 278.6257368749939
+        },
+        {
+          "finished_seconds": 283.16745933284983,
+          "seconds": 0.9083710408303887,
+          "stage": "price",
+          "started_seconds": 282.25908829201944
+        },
+        {
+          "finished_seconds": 283.59252499998547,
+          "seconds": 0.42498775012791157,
+          "stage": "finite-invoice",
+          "started_seconds": 283.16753724985756
+        },
+        {
+          "finished_seconds": 284.34838987491094,
+          "seconds": 0.7557930829934776,
+          "stage": "prime-threshold-bootstrap",
+          "started_seconds": 283.59259679191746
+        },
+        {
+          "finished_seconds": 285.0469785828609,
+          "seconds": 0.698526999913156,
+          "stage": "complete-admission",
+          "started_seconds": 284.34845158294775
+        }
+      ],
+      "variant": "original"
+    },
+    "optimized": {
+      "cpu_seconds": 299.625719,
+      "maximum_stage_workers": 2,
+      "platform": "darwin",
+      "python": "3.13.12 (main, Feb  3 2026, 17:53:27) [Clang 17.0.0 (clang-1700.6.3.2)]",
+      "seconds": 164.87952620908618,
+      "stages": [
+        {
+          "finished_seconds": 120.70701158302836,
+          "seconds": 120.70679450011812,
+          "stage": "immutable-reference325",
+          "started_seconds": 0.0002170829102396965
+        },
+        {
+          "finished_seconds": 130.57122866692953,
+          "seconds": 130.57096974994056,
+          "stage": "source353354-471",
+          "started_seconds": 0.0002589169889688492
+        },
+        {
+          "finished_seconds": 136.22162441699766,
+          "seconds": 0.5680556250736117,
+          "stage": "compact-native-source",
+          "started_seconds": 135.65356879192404
+        },
+        {
+          "finished_seconds": 124.03998825000599,
+          "seconds": 3.3322702920995653,
+          "stage": "immutable-complex-reserve",
+          "started_seconds": 120.70771795790642
+        },
+        {
+          "finished_seconds": 137.32747433288023,
+          "seconds": 1.1057063329499215,
+          "stage": "export-native",
+          "started_seconds": 136.2217679999303
+        },
+        {
+          "finished_seconds": 138.57755404198542,
+          "seconds": 1.2494100839830935,
+          "stage": "regenerate-signed-eighteen",
+          "started_seconds": 137.32814395800233
+        },
+        {
+          "finished_seconds": 140.4722910420969,
+          "seconds": 1.894652666989714,
+          "stage": "exact-integer-operator",
+          "started_seconds": 138.5776383751072
+        },
+        {
+          "finished_seconds": 126.26715841703117,
+          "seconds": 2.2271435840521008,
+          "stage": "compile-legality",
+          "started_seconds": 124.04001483297907
+        },
+        {
+          "finished_seconds": 127.84480179194361,
+          "seconds": 1.577610292006284,
+          "stage": "compile-columns",
+          "started_seconds": 126.26719149993733
+        },
+        {
+          "finished_seconds": 130.21955791697837,
+          "seconds": 2.3747125840745866,
+          "stage": "compile-changed-charts",
+          "started_seconds": 127.84484533290379
+        },
+        {
+          "finished_seconds": 133.10071179200895,
+          "seconds": 2.881047584116459,
+          "stage": "compile-banks",
+          "started_seconds": 130.2196642078925
+        },
+        {
+          "finished_seconds": 135.65319170802832,
+          "seconds": 2.5524492911063135,
+          "stage": "compile-invoice",
+          "started_seconds": 133.100742416922
+        },
+        {
+          "finished_seconds": 141.33234312501736,
+          "seconds": 0.8596823329571635,
+          "stage": "legality",
+          "started_seconds": 140.4726607920602
+        },
+        {
+          "finished_seconds": 141.56327354209498,
+          "seconds": 0.23083337512798607,
+          "stage": "columns",
+          "started_seconds": 141.332440166967
+        },
+        {
+          "finished_seconds": 143.11553016700782,
+          "seconds": 1.5521830420475453,
+          "stage": "both-reflected-ledgers",
+          "started_seconds": 141.56334712496027
+        },
+        {
+          "finished_seconds": 143.359872458037,
+          "seconds": 0.24426433304324746,
+          "stage": "tiling",
+          "started_seconds": 143.11560812499374
+        },
+        {
+          "finished_seconds": 150.56466741696931,
+          "seconds": 7.204512167023495,
+          "stage": "bank-frames-and-assignment",
+          "started_seconds": 143.36015524994582
+        },
+        {
+          "finished_seconds": 157.7846764579881,
+          "seconds": 14.424444790929556,
+          "stage": "changed-charts",
+          "started_seconds": 143.36023166705854
+        },
+        {
+          "finished_seconds": 158.34179791691713,
+          "seconds": 0.5566657499875873,
+          "stage": "geometry-admission",
+          "started_seconds": 157.78513216692954
+        },
+        {
+          "finished_seconds": 161.95743933296762,
+          "seconds": 3.615554040996358,
+          "stage": "all-frame-prime-minors",
+          "started_seconds": 158.34188529197127
+        },
+        {
+          "finished_seconds": 162.86421316699125,
+          "seconds": 0.9066879590973258,
+          "stage": "price",
+          "started_seconds": 161.95752520789392
+        },
+        {
+          "finished_seconds": 163.02498949994333,
+          "seconds": 0.1606868328526616,
+          "stage": "finite-invoice",
+          "started_seconds": 162.86430266709067
+        },
+        {
+          "finished_seconds": 163.76635204209015,
+          "seconds": 0.7412805841304362,
+          "stage": "prime-threshold-bootstrap",
+          "started_seconds": 163.0250714579597
+        },
+        {
+          "finished_seconds": 164.49626345792785,
+          "seconds": 0.7298480409663171,
+          "stage": "complete-admission",
+          "started_seconds": 163.76641541696154
+        }
+      ],
+      "variant": "scalar"
+    }
+  },
+  "scope": "One same-host sequential pair; all original checks and fresh receipt bindings. No new kappa or current-frontier throughput claim.",
+  "source_admission_receipts": [
+    "source353354/newbase-source-admission/ADMISSION.json",
+    "source353354/newbase-source-admission/original-helper-roles.json",
+    "source353354/newbase-source-admission/parity.json",
+    "source353354/newbase-source-admission/physical.json",
+    "source353354/newbase-source-admission/source-scalar.json",
+    "source353354/newbase-source-admission/virtual.json"
+  ],
+  "source_commit": "e76d7a94e6ad819e2aa9dc99083ecfa3e7842e0b",
+  "status": "PASS_PACKAGED_FULL_NATIVE_AB",
+  "word_sha256": "98007fb3a634ca671bcfea6bed8c1b33da190606ffbea748cd931399ecf65d2d"
+}

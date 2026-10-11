@@ -1,0 +1,25 @@
+Prepared by Aman with substantial OpenAI Codex assistance. New execution
+infrastructure is Apache-2.0. This publication packages the retained local
+producer-prefix, predecessor, source-admission and scalar-performance adapters
+without changing their original bytes. The new portable wrapper and packaging
+are identified separately by MANIFEST.json and fresh PACKAGE-RUN.json.
+
+The mathematical construction and original producers/checkers belong to the
+authors credited in the exact PR358 package at
+e76d7a94e6ad819e2aa9dc99083ecfa3e7842e0b. All839 fetched source blobs include
+their licenses/notices and assistance disclosures. In particular, retain Jacob
+Sussman's E8/gcert framework and the source-specific work credited to eumemic,
+DreamingOfClouds, Chafik Boukhalfa, Rohan Arun and the other inherited authors.
+No upstream author's review or endorsement is implied.
+
+The copied gx reference checker is Jacob Sussman's unchanged source from
+jacobalansussman/wht-power-saving-lean, commit9c94857bbaee886f8649edee0bc2d3c738f9555e.
+Its reference/LICENSE and reference/NOTICE are retained. gx_fast.py changes
+only scal to use exact common denominators; its own NOTICE.md is retained.
+
+Component NOTICE files are historical experiment provenance. Their statements
+that no GitHub write was made describe those local experiments. This separate
+publication makes their execution infrastructure available for review.
+
+No new bound, unconditional multiplication theorem, formal proof, current
+frontier speedup or community discovery-throughput measurement is claimed.

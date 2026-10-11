@@ -1,0 +1,24 @@
+{
+  "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "compiler": "Apple clang version 16.0.0 (clang-1600.0.26.6)",
+  "compiler_flags": "-D_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION; include compatibility bits/stdc++.h header",
+  "compatibility_file_sha256": {
+    "cxx": "8e06ac2566f97793ef106b6c8d8df18491a36c70f1775760a7989f70eb2467bb",
+    "stdc++.h": "08ef1c2063828bcc6ae69baa021bddd47949bc7903d02248a2b17fc47d68c8a3"
+  },
+  "boost_version": "1.76.0",
+  "python": "CPython3.13.12",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "sympy": "1.14.0",
+  "blas_omp_threads": 1,
+  "pythonhashseed": 0,
+  "cache_flush": false,
+  "order": [
+    "original",
+    "scalar"
+  ],
+  "worker_budget": 2,
+  "note": "Compatibility header only aggregates C++ standard library headers; real Boost multiprecision is used. CI uses g++/libboost-dev. The first launch was rejected before replay because its redirected log was outside build/; retained locally, not included in timings."
+}
