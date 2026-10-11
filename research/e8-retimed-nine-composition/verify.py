@@ -7,6 +7,7 @@ from fractions import Fraction as Q
 import argparse, gzip, hashlib, importlib.util, json, os, shutil, subprocess, sys
 ROOT = Path(__file__).resolve().parent
 sys.dont_write_bytecode = True
+sys.set_int_max_str_digits(0)  # Exact finite certificates contain large integers.
 read = lambda p: json.loads(p.read_text())
 sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
 def write(p, value): p.write_text(json.dumps(value, indent=2, default=str) + '\n')
