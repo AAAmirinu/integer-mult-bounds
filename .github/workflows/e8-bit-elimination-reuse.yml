@@ -1,0 +1,42 @@
+name: e8-bit-elimination-reuse
+
+on:
+  pull_request:
+    paths:
+      - 'research/e8-bit-elimination-reuse/**'
+      - '.github/workflows/e8-bit-elimination-reuse.yml'
+  push:
+    paths:
+      - 'research/e8-bit-elimination-reuse/**'
+      - '.github/workflows/e8-bit-elimination-reuse.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.12', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install the Python requirements, a C++17 compiler and the Boost headers
+        run: |
+          python -m pip install --disable-pip-version-check -r research/e8-bit-elimination-reuse/requirements.txt
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends g++ libboost-dev
+      - name: Quick verification (word rebuild, exact checks, official checkers, compressed nine-stage and B4 prices)
+        run: CXX=g++ bash research/e8-bit-elimination-reuse/verify.sh --quick "$RUNNER_TEMP/e8-bit-elimination-reuse-quick"
+      - name: Full verification (adds the PR #386 and PR #381 regressions on PR #370's word and the B3 rows)
+        run: CXX=g++ bash research/e8-bit-elimination-reuse/verify.sh "$RUNNER_TEMP/e8-bit-elimination-reuse-full"
+      - name: Require committed files to remain unchanged
+        run: git diff --exit-code
