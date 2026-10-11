@@ -1,0 +1,212 @@
+{
+  "checks": {
+    "build": {
+      "deletions": {
+        "deleted": [
+          [
+            894,
+            "8/4"
+          ],
+          [
+            895,
+            "8/4"
+          ]
+        ],
+        "raw_R": [
+          782,
+          780
+        ],
+        "removable_by_class": {
+          "16/6": 1,
+          "8/4": 2
+        }
+      },
+      "inline_moves": 29,
+      "rules_changed": 15,
+      "stage_delete": {
+        "final_R": 685,
+        "raw_R": 780,
+        "retime_moves": 35,
+        "reuse_helpers": 86,
+        "reuse_totals": 9,
+        "reused_R": 685
+      },
+      "stage_inline": {
+        "compile2": {
+          "Arules": 831,
+          "Brules": 100,
+          "R": 782,
+          "carriers": 241,
+          "chains": 1764,
+          "copies": 472,
+          "inplace": 871,
+          "low": 352
+        },
+        "final_R": 687,
+        "raw_R": 782,
+        "retime_moves": 35,
+        "reuse_helpers": 86,
+        "reuse_totals": 9,
+        "reused_R": 687
+      }
+    },
+    "columns_k5_formal": 1885,
+    "copy_bound_inlined_dag": {
+      "by_class": {
+        "16/6": {
+          "bound": 1,
+          "copies": 1
+        },
+        "2/2": {
+          "bound": 180,
+          "copies": 183
+        },
+        "4/3": {
+          "bound": 168,
+          "copies": 168
+        },
+        "8/4": {
+          "bound": 3,
+          "copies": 6
+        },
+        "8/5": {
+          "bound": 112,
+          "copies": 112
+        },
+        "9/4": {
+          "bound": 0,
+          "copies": 1
+        }
+      },
+      "carriers": 240,
+      "chi_histogram": {
+        "1": 464,
+        "2": 463,
+        "3": 4
+      },
+      "copies": 471,
+      "phase_rule": "rtc",
+      "status": "PASS_COPY_ANATOMY_AND_BOUND",
+      "transversal_cover_bound": 464
+    },
+    "five_stage_saving": [
+      "[0.00100823305142374569, 0.00100823305142374569]",
+      "[0.00100823305050452694, 0.00100823305050452694]"
+    ],
+    "inline_word_sha256": "39a7e0eab0853d9f214fbee6c2fddf14037cff4de758eb9c89c737f1f62e070d",
+    "kernel": {
+      "donor_slots": 84,
+      "entrance_rank": 100,
+      "entries": 100,
+      "interface_prefix_ok": true,
+      "output_sha256": "0678f16c15de332e49451d6157d807ace85eb6cb2a9f79caaa9bc656894f170e",
+      "post_retime_moves": 0,
+      "pre_retime_moves": 62,
+      "replicas": 32,
+      "selection_entries": 100,
+      "status": "PASS_KERNEL_EXACT_SELECTION"
+    },
+    "kernel_word_sha256": "0678f16c15de332e49451d6157d807ace85eb6cb2a9f79caaa9bc656894f170e",
+    "mix": {
+      "B_gates": [
+        692,
+        580
+      ],
+      "D_gates": [
+        9190,
+        9246
+      ],
+      "chained": 0,
+      "mix_dims": {
+        "6": 56
+      },
+      "receivers": 56,
+      "target_climb_saving_per_call": 291.501
+    },
+    "mixed_local_cost_per_call": 24324.665,
+    "mixed_local_profile": {
+      "1": 2342,
+      "2": 1009,
+      "3": 221,
+      "4": 315,
+      "5": 87,
+      "6": 57,
+      "8": 9
+    },
+    "mixed_word_sha256": "99fab501d6559a4d6758a58edd449bdce08a45efecd2799f220b0ed209541769",
+    "pivots": {
+      "candidates": 233,
+      "per_component": [
+        100,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "upper_bound": 101,
+      "witness": 101
+    },
+    "word_sha256": "0b5e1d67fb5e32ca9db61b9d9eda0df486769031fd261fbf96d152e0749a7d7d"
+  },
+  "note": "Recorded by verify.py (E8R685_RECORD=1, --quick --complex-upstream) on the committed package. The pr442 variant is the recorded run with a verified PR #442 upstream directory (the output of PR #442 verify.py); the bit supplier fields do not depend on the complex upstream and are always compared. checks are compared in full by FULL and in part (the keys --light computes) by --light.",
+  "status": "PASS_R685_INLINE_DELETIONS_ELEVEN_STAGE_WHOLE_RESIDUAL",
+  "variants": {
+    "pr442": {
+      "binding_component": "complex",
+      "bit": {
+        "charged_prefix_bits": 192,
+        "charged_two_level_coefficient_bits": 512,
+        "coefficient_bits": 155,
+        "hosted_residuals": 7535,
+        "live": 1200,
+        "maxchild": 56,
+        "physical": 1209,
+        "prefix_bits": 155,
+        "rank_mass": 93192,
+        "row_coefficient": 28416,
+        "two_level_coefficient_bits": 510
+      },
+      "bit_c_gain_over_pr454_percent": 3.7546311751031,
+      "bit_c_gain_over_r687_percent": 0.6173669451706572,
+      "bit_c_gain_over_r715_percent": 2.989998111600942,
+      "bit_lower": "661777032472911750807/500000000000000000000000",
+      "bit_only_kappa": "1321804585114131/1000000000000000000",
+      "bit_profile": {
+        "1": 25762,
+        "2": 11562,
+        "3": 2431,
+        "4": 3895,
+        "49": 1,
+        "5": 958,
+        "56": 115,
+        "6": 907,
+        "7": 560,
+        "8": 99
+      },
+      "bit_template_sha256": "15ab113f26d048236fae5f90acb9e5f3abaa661c9dea753b270fe38c5e965252",
+      "complex_lower": "1267453159029119/1000000000000000000",
+      "emitted_program_sha256": "b4273132caa9f8cdfbcf362893b64b222c4127839857fbe2afd069d1ded855c3",
+      "external_row_allowance": 28416,
+      "halving_depth": 3,
+      "kappa": "316462188756427/250000000000000000",
+      "kappa_gain_over_pr456_percent": -0.05652911815755306,
+      "outer_controls": [
+        "next_grid",
+        "zero_eta",
+        "zero_beta",
+        "unit_beta"
+      ],
+      "strict_constraints": 47
+    }
+  }
+}

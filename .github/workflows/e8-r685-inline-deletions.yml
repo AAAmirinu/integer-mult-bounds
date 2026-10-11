@@ -1,0 +1,46 @@
+name: e8-r685-inline-deletions
+on:
+  pull_request:
+    paths:
+      - 'research/e8-early-reset-kernel/**'
+      - 'research/idle-axis-hosting/**'
+      - 'research/e8-r740-replica32/**'
+      - 'research/e8-r715-eleven-stage-whole/**'
+      - 'research/e8-r687-read-then-climb/**'
+      - 'research/e8-r685-inline-deletions/**'
+      - '.github/workflows/e8-r685-inline-deletions.yml'
+  push:
+    paths:
+      - 'research/e8-early-reset-kernel/**'
+      - 'research/idle-axis-hosting/**'
+      - 'research/e8-r740-replica32/**'
+      - 'research/e8-r715-eleven-stage-whole/**'
+      - 'research/e8-r687-read-then-climb/**'
+      - 'research/e8-r685-inline-deletions/**'
+      - '.github/workflows/e8-r685-inline-deletions.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: sudo apt-get update && sudo apt-get install -y libboost-dev
+      - run: python -m pip install -r research/e8-r740-replica32/parent436/requirements.txt scipy
+      - name: LIGHT (word rebuilt from the frozen R687 hierarchy, copy bound, pivots, kernel, mixing, relaxed checker)
+        run: python -B research/e8-r685-inline-deletions/verify.py "$RUNNER_TEMP/e8-r685-light" --light
+      - name: FULL (R685 bit supplier from scratch: parents, C++ checks, eleven-stage hosting, assembly)
+        run: python -B research/e8-r685-inline-deletions/verify.py "$RUNNER_TEMP/e8-r685-full"
+      - name: Require an unchanged tracked tree
+        run: git diff --exit-code

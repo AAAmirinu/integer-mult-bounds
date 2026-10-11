@@ -1,0 +1,21 @@
+{
+ "EXPECTED.json": "ce635a293532cace4c789ec694706bf664e562ae2dcbd3d91212ec33f7933c27",
+ "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+ "NOTICE.md": "186c3e7204f57f3f9d49943376dba106d52b2d5ca0527af81a07fb3f0b4636a8",
+ "README.md": "cfc8e1f3bcc2e2b8982d364ced5b55bad2b4da2355f0e33a8f55f7cb78fe30e0",
+ "SOURCE.json": "88ddc22d34e62e575bdef401f44dc00160024f05c7bab075d2d07cf09b28f173",
+ "code/chain_model.py": "c68f094472873fa83eb310a7258445b7ff542ed4c413c3cbe5d74632893e03a9",
+ "code/copy_sweep.py": "ee89ec18789c187828928886d4a4a89e9609890d39263d9b399713fcff2a1db4",
+ "code/r685_word.py": "f3a84dcafe9fecf01a78ace86785a1e2ef11df3f6be69a2ac9ec21b868c5a727",
+ "code/select_pivots.py": "357a0803538fa18b3fae804e663e7fd15cceb2f25ccbd42855bc1c2e7b0fc400",
+ "data/chains-inline.json": "5c35259b6a05a8b971491dae337afb44d34a9a8d8154f33458c5820a2e3f3941",
+ "data/inline-kids.json": "a0529853b59f739a9d7d0d1d8e29ee042b9be8db3b3361ae4a40c5655cd4b5f3",
+ "data/kernel-selection.json": "6d874edb120b32c093282826f98cea23725381c577cc96fb2d2ac8265c5c8c0b",
+ "data/pivot-selection.json": "44f720ab79112610266e8cb52b51d092a924ec1cc5b94124c7e31b0f23903950",
+ "data/residual-isometries.json": "f6dd81dd791760bdc5c5b46d6ab56690fb49991ec059e1cdf6ef74c4fd64ebde",
+ "data/selection.json": "c4721ee1a7f91b243e3773493224f376df8f237abe34f28746a126650f66136a",
+ "data/word-kernel.json.gz": "a058b71a419a7246d7f68a3c513d708515d86c4a3644e583fe2338ead8d22743",
+ "data/word-mixed.json.gz": "2d19c6589ec1c8e2d100bcfa31bde5b9f5494cc28d3367b51983d79f851fcb79",
+ "data/word-r685.json.gz": "8259ae61349cddfedc9d873778de3657a968f19276bed62664b26283d4422211",
+ "verify.py": "1fda53b4e3d9ea7d9fe66200ee9c6f1b6154a471fffe9d4d1dbd2136ee8dc93a"
+}
