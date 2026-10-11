@@ -1,0 +1,8 @@
+{
+ "note": "Complex coarse savings b cited for the outer assembly. Values only; no complex construction is re-run here.",
+ "suppliers": [
+  {"name": "pr407", "b": "508780574407464422817/500000000000000000000000", "source": "our PR #407 (research/e8-repivot-fusion in this branch, commit 2eca271); re-run by its own verify.sh"},
+  {"name": "pr410", "b": "15915603634335785361/15625000000000000000000", "source": "eumemic PR #410 head 95ad14d, research/e8-enlarged-sequential206/RESULT.json complex_coarse (git blob 7cb3fce1)"},
+  {"name": "pr409", "b": "101828635323117962043/100000000000000000000000", "source": "rohanarun PR #409 head 212e03d, research/e8-sequential-gauges/VALIDATION.json complex_coarse (git blob 83093476)"}
+ ]
+}

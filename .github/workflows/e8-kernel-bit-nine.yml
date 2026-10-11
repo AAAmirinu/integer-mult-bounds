@@ -1,0 +1,41 @@
+name: e8-kernel-bit-nine
+
+on:
+  pull_request:
+    paths:
+      - 'research/e8-kernel-bit-nine/**'
+      - '.github/workflows/e8-kernel-bit-nine.yml'
+  push:
+    paths:
+      - 'research/e8-kernel-bit-nine/**'
+      - '.github/workflows/e8-kernel-bit-nine.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.12', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install a C++17 compiler and Boost headers
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++ libboost-dev
+      - name: Quick verification (manifest, pins, #376 rebuild, kernel stage, legality, B4 columns, banks, guard, pricing)
+        run: bash research/e8-kernel-bit-nine/verify.sh --quick "$RUNNER_TEMP/e8b9-quick"
+      - name: Full verification (adds the K = 2 columns-port regression)
+        run: bash research/e8-kernel-bit-nine/verify.sh "$RUNNER_TEMP/e8b9-full"
+      - name: Require an unchanged tree
+        run: git diff --exit-code
