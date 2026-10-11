@@ -1,8 +1,8 @@
 # Attribution and provenance
 
 Prepared by DaysSky, assisted with Claude. Apache-2.0 (see `LICENSE`) applies to the new code and to the inherited
-Apache-2.0 code; third-party notices are preserved where files are vendored. `SOURCE-pr370.json` and
-`SOURCE-pr363.json` record, by git blob id, every file taken unchanged from those two pull requests.
+Apache-2.0 code; third-party notices are preserved where files are vendored. `SOURCE-pr370.json`, `SOURCE-pr363.json`
+and `SOURCE-pr373.json` record, by git blob id, every file taken unchanged from those three pull requests.
 
 ## Vendored
 
@@ -27,7 +27,20 @@ Apache-2.0 code; third-party notices are preserved where files are vendored. `SO
   `NOTICE` are beside the files), PR #352's portable complex checks with the layout as a parameter, and `bridged.py`,
   which generalizes Sussman's bridged five-stage word to B_K. See `NOTICE-PR352.md` for the complex-check lineage.
 
-## New in this package
+## From PR #373
+
+Everything above was vendored by PR #373 (DaysSky) at `3ff87b5dc0b22a57958547ee347d5da25b7f9401`. That PR also added the
+K-parameterized bit-side checkers `columns_k.cpp`, `geometry_k.py`, `tile_k.py`, `certify_bit_k.py`, `finite_k.py`
+and `receipts_k.py` (`SOURCE-pr373.json`).
+
+## New in this package (halving degree two)
+
+- `code/complex/portable_complex.py`: the finite guard computes the least halving degree and charges it in the
+  external row coefficient (t = 1 is the original). It keeps m <= 72, and the idle-climb split is read from the pins.
+- `code/complex/pins-e8-b3h.json` (unsplit B_3) and the third guard run and exact b in `code/certify_b3.py`.
+- `verify.sh`, `code/provenance.py`, `README.md`, this notice, `MANIFEST.sha256`, the provenance files, the workflow.
+
+## New in PR #373 (kept)
 
 - `code/bit/checkers/columns_k.cpp`: `columns_h.cpp` with the bank schedule, twin bridges and terminal exchange
   generated for B_K (`-DKPAIRS`, default 2 = the five-stage tables).

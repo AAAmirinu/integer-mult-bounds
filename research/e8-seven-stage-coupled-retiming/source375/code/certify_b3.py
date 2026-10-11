@@ -10,7 +10,11 @@
 3. The helper circuit is Sussman's E8 unit: his generators regenerate the Lean data of wht_main_block_B2Ge8x from it
    byte for byte, and his stand-alone replay accepts it at 8762479.
 4. b for B_2 (must equal #352's) and for B_3, from the guard's own histogram with the two rational moment engines
-   and the 10^-16 fallback; the next 10^-18 grid point must fail."""
+   and the 10^-16 fallback; the next 10^-18 grid point must fail.
+5. Halving degree two (this package): the B_3 guard once more against pins-e8-b3h.json, with the idle climbs NOT split
+   below m/2.  The guard computes the least halving degree t (63^2 > 2 * 38^2, so t = 2), keeps m <= 72, and charges
+   t times the stock logarithm in the external row coefficient (2 * 1903 + 9909 + 252 = 13967 < 20161).  The split
+   B_3 value 932783231884153/10^18 (PR #363) is reproduced as a regression; the unsplit value is the new supplier."""
 import json, os, subprocess, sys, importlib.util
 from fractions import Fraction as Q
 HERE = os.path.dirname(os.path.abspath(__file__)); CX = os.path.join(HERE, 'complex'); E8 = os.path.join(CX, 'inputs', 'e8')
@@ -35,12 +39,17 @@ def guard(pins):
     r = json.loads(out.stdout)
     assert r['status'] == 'PASS_FRESH_COMPLEX_LABEL_SCALAR_SPLICE_PRECISION', r['status']
     return r
-r2 = guard('pins-e8.json'); r3 = guard('pins-e8-b3.json')
-if os.environ.get('CX_RECEIPT'): json.dump(r3, open(os.environ['CX_RECEIPT'], 'w'), indent=1)
+r2 = guard('pins-e8.json'); r3 = guard('pins-e8-b3.json'); r3h = guard('pins-e8-b3h.json')
+if os.environ.get('CX_RECEIPT'): json.dump(r3h, open(os.environ['CX_RECEIPT'], 'w'), indent=1)
+assert r2['precision_guard']['halving_degree'] == r3['precision_guard']['halving_degree'] == 1 and r3h['precision_guard']['halving_degree'] == 2
 pg = r3['precision_guard']
 print('complex checks: B_2 regression %s (#352 pins); B_3 %s | m %d, live %d, deficit %d, max child %d, rows %d < 20161, '
       'induction gap %d B' % (r2['status'], r3['status'], pg['m'], pg['live_per_vertex'], r3['ledger']['deficit'],
       r3['ledger']['max_child'], pg['physical_row_overcharge_coefficient'], pg['induction_gap_multiple_of_B']), flush=True)
+ph = r3h['precision_guard']
+print('complex checks, halving degree two: B_3 unsplit %s | m %d, max child %d (63^2 > 2 * 38^2), halving degree %d, rows %d < 20161, '
+      'induction gap %d B' % (r3h['status'], ph['m'], r3h['ledger']['max_child'], ph['halving_degree'], ph['physical_row_overcharge_coefficient'],
+      ph['induction_gap_multiple_of_B']), flush=True)
 
 regen = subprocess.run([sys.executable, '-B', os.path.join(E8, 'tools/gx/regen_check_e8.py')], capture_output=True, text=True, env=env)
 last = regen.stdout.strip().splitlines()[-1]
@@ -62,10 +71,13 @@ def coarse(r, K):
     lo, _ = other.moment(m, W, list(CH.items()), b + grid); badlo, _ = other.moment(m, W, [(1, fb)], b + grid)
     assert up + Q(1, 10**16) * bad < 1 < lo + Q(1, 10**16) * badlo
     return b
-b2 = coarse(r2, 2); b3 = coarse(r3, 3)
+b2 = coarse(r2, 2); b3 = coarse(r3, 3); b3h = coarse(r3h, 3)
 assert b2 == Q(876248285600677, 10**18), b2
 assert b3 == Q(932783231884153, 10**18), b3
+assert b3h == Q(119394377245827, 125 * 10**15), b3h
 print('PASS coarse savings (two engines, 10^-16 fallback, adjacent grid point excluded): B_2 b = %s = %.12e (= #352); '
       'B_3 b = %s = %.12e (%+.3f %%)' % (b2, float(b2), b3, float(b3), 100 * (float(b3) / float(b2) - 1)), flush=True)
-json.dump(dict(layout='B_3', stages=7, m=63, W=1503, deficit=r3['ledger']['deficit'], histogram=r3['five_stage_histogram'],
-               b=str(b3), b_float=float(b3), b_B2=str(b2)), open(os.environ.get('B3_OUT', os.devnull), 'w'), indent=1)
+print('PASS halving degree two: B_3 b = %s = %.12e (%+.3f %% over the split B_3, %+.3f %% over B_2)'
+      % (b3h, float(b3h), 100 * (float(b3h) / float(b3) - 1), 100 * (float(b3h) / float(b2) - 1)), flush=True)
+json.dump(dict(layout='B_3', stages=7, m=63, W=1503, deficit=r3h['ledger']['deficit'], histogram=r3h['five_stage_histogram'],
+               halving_degree=2, b=str(b3h), b_float=float(b3h), b_B3_split=str(b3), b_B2=str(b2)), open(os.environ.get('B3_OUT', os.devnull), 'w'), indent=1)

@@ -1,23 +1,23 @@
 # Seven-stage E8 with the coupled complex retiming
 
-Combining PR365's four coupled frame changes with PR373's seven-stage construction raises the conditional integer-multiplication saving to
+Combining PR365's four coupled frame changes with PR375's seven-stage construction raises the conditional integer-multiplication saving to
 
-**κ = 233014627343551 / 250000000000000000 = 0.000932058509374204.**
+**κ = 954395132518163 / 1000000000000000000 = 0.000954395132518163.**
 
-This is approximately **0.01551% above PR373** at commit `3ff87b5dc0b22a57958547ee347d5da25b7f9401`. The bit word, its seven-stage layout, replica count, banks, and finite bill are unchanged. The improvement comes from applying PR365's already checked complex circuit to the seven-stage complex supplier. This package claims that composition, not a new E8 word or new retiming discovery.
+This is approximately **0.01588% above PR375** at commit `79874623cf86d92325c26ccafc31413d12e9d248`. The bit word, its seven-stage layout, replica count, banks, and finite bill are unchanged. The improvement comes from applying PR365's already checked complex circuit to the seven-stage complex supplier. This package claims that composition, not a new E8 word or new retiming discovery.
 
-| Quantity | PR373 baseline | Composition |
+| Quantity | PR375 baseline | Composition |
 |---|---:|---:|
-| Complex coarse saving b, denominator 10^18 | 932783231884153 | 932928054566567 |
+| Complex coarse saving b, denominator 10^18 | 955155017966616 | 955306874505079 |
 | Bit coarse saving c, denominator 10^18 | 968197503705007 | unchanged |
-| Final κ, denominator 10^18 | 931913956512090 | 932058509374204 |
-| Complex recursive calls in seven stages | 29978 | 29971 |
+| Final κ, denominator 10^18 | 954243565681330 | 954395132518163 |
+| Complex recursive calls in seven stages | 29498 | 29491 |
 | Complex rank mass | 94473 | unchanged |
 | Complex width / live normalization | 63 / 1503 | unchanged |
-| Complex deficit / maximum child | 216 / 31 | unchanged |
+| Complex deficit / maximum child | 216 / 38 | unchanged |
 | Complex scalar primitive steps, forward / backward | 68158 / 72856 | unchanged |
 
-The complex side still binds. The exact difference in κ is `72276431057 / 500000000000000000`.
+The complex side still binds. As in PR375, the complex idle climbs remain unsplit, with maximum child 38 at width 63. The guard charges halving degree two: `63^2 > 2*38^2`, physical row coefficient `2*1903 + 9909 + 252 = 13967 < 20161`, and completed-child induction gap `49*B`. These quantities are unchanged by the retiming. The exact difference in κ is `151566836833 / 1000000000000000000`.
 
 ## Replay
 
@@ -30,7 +30,7 @@ python -B research/e8-seven-stage-coupled-retiming/verify.py /path/to/fresh/outp
 
 The output must be outside the package and not already exist. On macOS with Homebrew Boost, add `--boost-include /opt/homebrew/include`. Temporary files stay beneath the supplied output. Allow several minutes and at least 200 MB of available output space.
 
-The verifier first runs the entire pinned PR373 replay, including its producer reconstruction, native all-column checks, negative controls, geometry, banks, finite bills, five-stage regressions and original complex supplier. It then runs PR365's reconstruction and complete rational scalar-map comparison, binds its source certificate to PR373's original certificate, and checks the retimed circuit through PR373's complex B3 label, scalar, splice and precision checkers with frozen new pins. Neither vendor tree is edited.
+The verifier first runs the entire pinned PR375 replay, including its producer reconstruction, native all-column checks, negative controls, geometry, banks, finite bills, five-stage regressions and original complex supplier. It then runs PR365's reconstruction and complete rational scalar-map comparison, binds its source certificate to PR375's original certificate, and checks the retimed circuit through PR375's complex B3 label, scalar, splice and precision checkers with frozen new pins. Neither vendor tree is edited.
 
 Both exact rational moment engines prove the new complex saving and reject the adjacent 10^-18 grid point. The unchanged bit certificate is repriced with that supplier; all 47 strict outer constraints hold and the next κ grid point is rejected. The resulting finite bit bill must equal the baseline receipt. `RESULT.json` is written only after all checks pass. Expected results are comparison targets, not substitutes for replay.
 
@@ -49,10 +49,12 @@ It is a positive weighted sum of second differences of `x^p`, with weights `(1,4
 
 ## Proof scope
 
-This remains a conditional finite-certificate improvement under the interfaces of PR373, PR365 and their ancestors. It is not an unconditional integer-multiplication theorem or a global optimum. No new Lean build is performed. The original Sussman data regenerate byte for byte during the baseline replay; that assertion applies to the original circuit, not the modified one.
+This remains a conditional finite-certificate improvement under the interfaces of PR375, PR365 and their ancestors. It is not an unconditional integer-multiplication theorem or a global optimum. No new Lean build is performed. The original Sussman data regenerate byte for byte during the baseline replay; that assertion applies to the original circuit, not the modified one.
 
-In particular, the seven-stage B3 bridge has executable geometry/scalar checks but no new Lean proof here. PR370's admission of nine retained totals at bit dimension eight, its E8 route/geometry interfaces, the complex frame-transfer and helper-cleanup interfaces, and the recursion, tape compiler, balanced assembly and finite-bill proof interfaces remain inherited. Seven-stage formulas are replayed from PR373; their proof text is not newly derived by this composition. Exact scalar agreement does not by itself establish those interfaces.
+The additional PR375 assumption remains explicit: the complex precision/recovery interface is inherited at halving degree two, whereas its original bridge text stated degree one. This package replays the degree-two guard but does not prove that interface.
+
+In particular, the seven-stage B3 bridge has executable geometry/scalar checks but no new Lean proof here. PR370's admission of nine retained totals at bit dimension eight, its E8 route/geometry interfaces, the complex frame-transfer and helper-cleanup interfaces, and the recursion, tape compiler, balanced assembly and finite-bill proof interfaces remain inherited. Seven-stage formulas are replayed from PR375; their proof text is not newly derived by this composition. Exact scalar agreement does not by itself establish those interfaces.
 
 ## Credit
 
-Jacob Sussman supplied the E8 complex unit and proof/checker framework. Dylan Crow (utcorvusvolat-dotcom), with Claude assistance, supplied PR370's E8 bit word. DaysSky, with Claude assistance, supplied PR363's B_K extension and PR373's seven-stage composition. Rohan's PR365, prepared with OpenAI Codex assistance, supplied the four complex retimings. PR315 and its cited predecessors supplied the exact pricing and balanced assembly engines. See the preserved notices for complete upstream credit. This composition and its source-bound verifier were prepared with substantial OpenAI Codex assistance and are offered under Apache-2.0.
+Jacob Sussman supplied the E8 complex unit and proof/checker framework. Dylan Crow (utcorvusvolat-dotcom), with Claude assistance, supplied PR370's E8 bit word. DaysSky, with Claude assistance, supplied PR363's B_K extension, PR373's seven-stage composition and PR375's degree-two guard. Rohan's PR365, prepared with OpenAI Codex assistance, supplied the four complex retimings. PR315 and its cited predecessors supplied the exact pricing and balanced assembly engines. See the preserved notices for complete upstream credit. This composition and its source-bound verifier were prepared with substantial OpenAI Codex assistance and are offered under Apache-2.0.

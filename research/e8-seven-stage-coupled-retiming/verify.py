@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Replay pinned PR373, PR365, and their seven-stage composition from source.
+"""Replay pinned PR375, PR365, and their seven-stage composition from source.
 Prepared with OpenAI Codex assistance; Apache-2.0. No network or saved PASS inputs.
 """
 from pathlib import Path
@@ -28,11 +28,11 @@ def manifests():
         assert sha(ROOT / path) == digest, path
     actual = {str(p.relative_to(ROOT)) for p in ROOT.rglob('*') if p.is_file()}
     assert actual == set(manifest) | {'MANIFEST.json'}, 'unlisted package files'
-    for line in (ROOT / 'source373/MANIFEST.sha256').read_text().splitlines():
+    for line in (ROOT / 'source375/MANIFEST.sha256').read_text().splitlines():
         digest, path = line.split(None, 1)
-        assert sha(ROOT / 'source373' / path) == digest, path
+        assert sha(ROOT / 'source375' / path) == digest, path
     source = read(ROOT / 'SOURCES.json')
-    assert sha(ROOT / 'source373/MANIFEST.sha256') == source['pr373']['manifest_sha256']
+    assert sha(ROOT / 'source375/MANIFEST.sha256') == source['pr375']['manifest_sha256']
 
 def main():
     if sys.flags.optimize:
@@ -44,7 +44,7 @@ def main():
     assert not out.exists(), 'choose a fresh output directory'
     manifests(); out.mkdir(parents=True); (out/'tmp').mkdir()
     env = dict(os.environ, PYTHONDONTWRITEBYTECODE='1', TMPDIR=str(out/'tmp'),
-               VERIFY_PYTHON=sys.executable, SOURCE373=str(ROOT/'source373'),
+               VERIFY_PYTHON=sys.executable, SOURCE375=str(ROOT/'source375'),
                CX_RECORD=str(out/'unexpected-record.json'))
     include = [str(args.boost_include)] if args.boost_include else []
     if sys.platform == 'darwin': include.insert(0, str(ROOT/'support'))
@@ -62,10 +62,10 @@ def main():
 
     # Run the complete original baseline script. Only shell transport changes:
     # honor spaces in paths and use the same Python interpreter as this verifier.
-    script = (ROOT/'source373/verify.sh').read_text()
+    script = (ROOT/'source375/verify.sh').read_text()
     old = 'HERE=$(cd "$(dirname "$0")" && pwd)'
     assert script.count(old) == 1 and script.count('PY="python3 -B"') == 1
-    script = script.replace(old, 'HERE=$SOURCE373')
+    script = script.replace(old, 'HERE=$SOURCE375')
     script = script.replace('set -euo pipefail', "set -euo pipefail\nIFS=$'\\n\\t'")
     script = script.replace('PY="python3 -B"', 'PY=py; py() { "$VERIFY_PYTHON" -B "$@"; }')
     (out/'baseline.sh').write_text(script)
@@ -74,18 +74,18 @@ def main():
     expected = read(ROOT/'EXPECTED.json')
     baseline = read(out/'baseline/kappa.json'); baseline.pop('word')
     assert baseline == expected['baseline']
-    print('PASS full pinned PR373 replay', flush=True)
+    print('PASS full pinned PR375 replay', flush=True)
 
     # PR365 independently reconstructs the circuit and checks every entry of
     # the full rational scalar map, including all initial helper columns.
     run(py(ROOT/'source365/verify.py'), 'pr365.json')
     pr365 = read(out/'pr365.json'); assert pr365['status'] == 'PASS'
-    original = ROOT/'source373/code/complex/inputs/e8/tools/certificate/gcert1-e8-r783.json.gz'
+    original = ROOT/'source375/code/complex/inputs/e8/tools/certificate/gcert1-e8-r783.json.gz'
     assert original.read_bytes() == (ROOT/'source365/data/original.json.gz').read_bytes()
     cert = ROOT/'source365/data/retimed.json.gz'; raw = gzip.decompress(cert.read_bytes())
     assert hashlib.sha256(raw).hexdigest() == pr365['uncompressed_sha256'][1]
 
-    cx = ROOT/'source373/code/complex'
+    cx = ROOT/'source375/code/complex'
     source_pins = read(cx/'inputs/complex/source-pins.json')
     source_pins['certificate'].update(path=str(cert), compressed_sha256=sha(cert),
                                      uncompressed_sha256=hashlib.sha256(raw).hexdigest())
@@ -107,12 +107,16 @@ def main():
     assert candidate['ledger']['calls'] == oldcx['ledger']['calls'] - 7
     for key in ('forward','backward'):
         assert candidate['scalar_bill'][key]['totals'] == oldcx['scalar_bill'][key]['totals']
+    for key in ('halving_degree','physical_row_overcharge_coefficient','induction_gap_multiple_of_B'):
+        assert candidate['precision_guard'][key] == oldcx['precision_guard'][key]
+    assert candidate['precision_guard']['halving_degree'] == 2
+    assert candidate['precision_guard']['physical_row_overcharge_coefficient'] == 13967
     oldH = {int(k):v for k,v in oldcx['five_stage_histogram'].items()}
     H = {int(k):v for k,v in candidate['five_stage_histogram'].items()}
     delta = {k:H.get(k,0)-oldH.get(k,0) for k in H.keys() | oldH.keys()}
     assert {k:v for k,v in delta.items() if v} == {int(k):7*v for k,v in pr365['histogram_delta'].items()}
 
-    pricing = ROOT/'source373/code/pricing'
+    pricing = ROOT/'source375/code/pricing'
     moment = load('moment',pricing/'moment.py'); other=load('base_two_moment',pricing/'base_two_moment.py')
     m=candidate['precision_guard']['m']; W=candidate['precision_guard']['live_per_vertex']
     root=moment.certify(H,m,W,True); b=Q(int(Q(root['lower'])*10**18),10**18)
@@ -127,13 +131,13 @@ def main():
         else: assert min(a[0],alt[0])>1
         bounds.append(dict(saving=str(saving),original=list(map(str,a)),independent=list(map(str,alt))))
     write(out/'candidate-complex-moment.json',dict(b=str(b),bounds=bounds,histogram=H,m=m,W=W))
-    bit=ROOT/'source373/code/bit'; rec=out/'baseline/records'
+    bit=ROOT/'source375/code/bit'; rec=out/'baseline/records'
     run(py(bit/'checkers/certify_bit_k.py',rec,b,3,8,7,out/'candidate-kappa.json'),'candidate-pricing.log')
     kappa=read(out/'candidate-kappa.json'); kappa.pop('word')
     assert kappa==expected['candidate'] and Q(kappa['kappa'])>Q(baseline['kappa'])
     for key in ('bit_coarse','normalized_histogram','bit_moment_interval','W','m','T','maxchild'):
         assert kappa[key]==baseline[key]
-    run(py(bit/'receipts_k.py',ROOT/'source373/data/bit/bitE8-r865.json.gz',rec,
+    run(py(bit/'receipts_k.py',ROOT/'source375/data/bit/bitE8-r865.json.gz',rec,
            out/'baseline/cout/legality.json',out/'baseline/k3/columns.json',
            out/'candidate-kappa.json',out/'candidate-finite-input.json'),'candidate-finite-input.log')
     run(py(bit/'checkers/finite_k.py','e8',out/'candidate-finite-input.json',out/'candidate-finite.json'),
@@ -143,14 +147,14 @@ def main():
     result=dict(status='PASS_FULL_SOURCE_BOUND_SEVEN_STAGE_COMPOSITION',
         kappa=kappa['kappa'],baseline_kappa=baseline['kappa'],complex_b=str(b),
         relative_gain_percent=float(100*(Q(kappa['kappa'])/Q(baseline['kappa'])-1)),
-        bit_word_sha256=sha(ROOT/'source373/data/bit/bitE8-r865.json.gz'),
+        bit_word_sha256=sha(ROOT/'source375/data/bit/bitE8-r865.json.gz'),
         complex_certificate_sha256=sha(cert),complex_uncompressed_sha256=hashlib.sha256(raw).hexdigest(),
         seven_stage_histogram_delta={k:v for k,v in delta.items() if v},
         complete_scalar_map=pr365['scalar_map_rows_and_columns'],
-        checks=['full PR373 replay and controls','full PR365 replay and controls','frozen complex B3 pins',
+        checks=['full PR375 replay and controls','full PR365 replay and controls','frozen complex B3 pins',
                 'two rational moment engines and adjacent-tick rejection','47 strict assembly constraints',
                 'unchanged seven-stage bit histogram and finite bill'],
-        scope='Conditional inherited PR373/365 interfaces; no new Lean build or unconditional multiplication theorem.')
+        scope='Conditional inherited PR375/365 interfaces, including complex halving degree two; no new Lean build or unconditional multiplication theorem.')
     write(out/'RESULT.json',result);print(json.dumps(result,indent=2),flush=True)
 
 if __name__=='__main__': main()

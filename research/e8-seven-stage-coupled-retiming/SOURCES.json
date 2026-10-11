@@ -1,10 +1,4 @@
 {
-  "pr373": {
-    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/373",
-    "commit": "3ff87b5dc0b22a57958547ee347d5da25b7f9401",
-    "package": "research/e8-bit-seven-stage",
-    "manifest_sha256": "c945d6c1fa1a469ef73e48519921589926f7c7a9cf19eb51842255d2c0ef2d8e"
-  },
   "pr365": {
     "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/365",
     "commit": "a22270515e9c6102dda3b22e75ca2c62e82812ff",
@@ -14,5 +8,11 @@
     "commit": "f8c6a47abfec24b87cb1eb0a138dd73dfce2abe4",
     "path": "research/w3-design-t-staged-p10b-reorder-mc/code/checkers/bits/stdc++.h",
     "sha256": "51908262576163a64815def96ff39b62aef3d52daaad9c561505c4293ff88e18"
+  },
+  "pr375": {
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/375",
+    "commit": "79874623cf86d92325c26ccafc31413d12e9d248",
+    "package": "research/e8-seven-stage-halving-two",
+    "manifest_sha256": "51e760e691524dfe010bf84cda7f3cfcbf5f6a9383ef42dc4b99e81f2bbb5b53"
   }
 }

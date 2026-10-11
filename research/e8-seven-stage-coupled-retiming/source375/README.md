@@ -1,24 +1,57 @@
-κ = 9.3191395651209e-4
+κ = 9.5424356568133e-4
 
-# The E8 bit word and the E8 complex unit in the seven-stage bridged word
+# Seven-stage E8 bit and complex suppliers, with the complex idle climbs at halving degree two
 
-This package gives a conditional finite construction with **κ = 93191395651209/10¹⁷ ≈ 9.3191395651209·10⁻⁴**:
+This package gives a conditional finite construction with **κ = 95424356568133/10¹⁷ ≈ 9.5424356568133·10⁻⁴**:
 
-- +6.45 % over PR #370 (8.75481145306751e-4), whose E8 bit word it uses;
-- +3.17 % over that bit word in five stages with PR #363's seven-stage complex unit (9.03256e-4, the number PR #370
-  reports but does not claim).
+- +2.40 % over PR #373 (9.3191395651209e-4), which it extends;
+- +9.00 % over PR #370 (8.75481145306751e-4).
 
-Both suppliers run in the **seven-stage bridged word B₃**. That is PR #363's generalization of Jacob Sussman's
-bridged five-stage word B₂ from two bank pairs to three:
+Everything is PR #373's, with one change on the complex side. PR #363 split the complex supplier's two longest idle
+climbs below m/2, 38 → 31 + 7 and 32 → 31 + 1, to meet the half-shrink guard of the inherited finite bridge
+(2 · max child < m). Here they are **left whole**. The largest complex child is then 38 of m = 63, so one recursion level
+no longer halves the size, but two do: 63² = 3969 > 2 · 38² = 2888, which is **halving degree two**.
 
 | side | supplier | layout | coarse saving |
 | --- | --- | --- | ---: |
-| bit | PR #370's E8 bit word `bitE8-r865` (h = 8, v = 120, R = 865, 9 centres), unchanged | B₃: m = 56, W = 1,585, D = 216 | c = 968197503705007/10¹⁸ ≈ **9.68197503705007·10⁻⁴** |
-| complex | Sussman's E8 unit `gcert1-e8-r783`, unchanged (PR #363) | B₃: m = 63, W = 1,503, D = 216 | b = 932783231884153/10¹⁸ ≈ 9.32783231884153·10⁻⁴ |
+| bit | PR #370's E8 bit word `bitE8-r865`, unchanged (PR #373) | B₃, split (max child 27 of 56, degree 1) | c = 968197503705007/10¹⁸ ≈ 9.68197503705007·10⁻⁴ |
+| complex | Sussman's E8 unit `gcert1-e8-r783`, unchanged | B₃, **unsplit** (max child 38 of 63, degree 2) | b = 119394377245827/(125·10¹⁵) ≈ **9.55155017966616·10⁻⁴** |
 
-The bit coarse saving is +7.09 % over the same word in five stages (9.04073e-4) and 3.8 % above the complex supplier, so
-**the complex side binds**. κ is the complex-bound assembly of PR #315's `outer.assembly`: all 47 constraints hold,
-the complex leaf cap itself is rejected, and the adjacent 10⁻¹⁸ grid point is rejected.
+The bit side is 1.4 % above the complex side, so **the complex side binds**. κ is the complex-bound assembly of PR
+#315's `outer.assembly`: all 47 constraints hold, the complex leaf cap itself is rejected, and the adjacent 10⁻¹⁸ grid
+point is rejected. The bit word, its seven-stage checks and the circuit of the complex unit are unchanged from PR #373.
+That includes the Lean binding of Sussman's `wht_main_block_B2Ge8x`.
+
+## Halving degree two
+
+The half-shrink guard is used once in the inherited complex finite bridge
+(`code/complex/inputs/complex/retained/FINITE_BRIDGE.txt`, section 4): "The complex child maximum below m/2 gives
+halving degree 1, while log2 W < 5208 < 10000". The external row coefficient is then bounded by
+A = 10000 + 9909 + 252 = 20161. With halving degree t the recursion depth is t·⌈log₂ n⌉, and the row term becomes
+t·log₂ W. The guard (`code/complex/portable_complex.py`) now:
+
+- computes the least t with mᵗ > 2·(max child)ᵗ;
+- charges t times the actual physical stock logarithm, 2 · 1903 + 9909 + 252 = 13,967 < 20,161, so A and the outer
+  assembly are unchanged;
+- keeps the cover bound m ≤ 72 and the completed-child induction gap, now 49·B > 0.
+
+At t = 1 it is the original guard. The B₂ run (PR #352's pins) and the split B₃ run (PR #363's pins) are
+regressions in `verify.sh`.
+
+This is the generalization the repository already uses elsewhere:
+
+- **PR #144's integration review** (`research/pr-review-20261009/check_paired_cube_arithmetic.py`): a complex child of
+  60 at m = 72, halving degree 4, and the row coefficient 4·2571 + 9909 + 252.
+- **The copied-centers assembly** (`copied-centers-assembly.tex`, with `research/copied-fixed-reversed/balanced_assembly.py`):
+  halving degrees 9 and 20, a row reserve D_j(e) = t_j⌈log₂ e⌉, and coefficient Σ t_j·w_j.
+- **PR234 on the bit side** (`research/five-stage-source527-banks/UPSTREAM-PR234-PROOF.md`): "The proper child ratio 5/6
+  requires halving degree four. The one-level weighted recurrence is retained; its histogram is not multiplied by four."
+
+The moment equation is the one-level histogram either way. Only the finite row constant depends on t.
+
+**Why not further.** Unsplit complex B₄ prices at 9.5673·10⁻⁴, but m = 81 exceeds the cover bound m ≤ 72. Unsplit B₅
+needs halving degree three and prices lower (9.3708·10⁻⁴). The bit side keeps PR #373's split layout because it does
+not bind. Unsplit, at halving degree two, it would give 9.9123·10⁻⁴.
 
 ## The layout
 
@@ -43,14 +76,15 @@ the bit word is unchanged. Only the word around it changes:
   so the bank tiling uses **T = 7 literal replicas**: 865 exact width-56 banks. The moment arithmetic is invariant
   under this normalization.
 
-## What is checked (`bash research/e8-bit-seven-stage/verify.sh <fresh dir>`, about 4 min)
+## What is checked (`bash research/e8-seven-stage-halving-two/verify.sh <fresh dir>`, about 4 min)
 
-Every step of PR #370's verification runs, and so does the B₃ version of each stage-dependent step. Each new checker is a
-K-parameterized copy of a PR #370 checker. At K = 2 it reproduces that checker's receipt, and `verify.sh` compares the
-two.
+Every step of PR #373's verification runs: PR #370's steps and their B₃ versions, each with its K = 2 regression.
+Steps 8 and 9 add the halving-degree-two complex supplier and keep PR #373's values as regressions.
 
-0. **Manifest and provenance.** 142 files have the git blob ids of PR #370 at `b7fe9cd`, and 6 those of PR #363 at
-   `9df55da` (`SOURCE-pr370.json`, `SOURCE-pr363.json`).
+0. **Manifest and provenance.** 142 files have the git blob ids of PR #370 at `b7fe9cd`, 4 those of PR #363 at
+   `9df55da`, and 7 those of PR #373 at `3ff87b5` (`SOURCE-pr370.json`, `SOURCE-pr363.json`, `SOURCE-pr373.json`).
+   The edited files are `portable_complex.py` (the halving degree), `certify_b3.py`, `verify.sh`, `provenance.py`,
+   README and NOTICE. The new file is `pins-e8-b3h.json`.
 1. **The word** (PR #370) is regenerated from its producer parameters, and the PR249 records are exported.
 2. **One invocation** (PR #370): the independent all-column checker and its 6 word-level controls.
 3. **Legality and formal columns.** Legality of one invocation uses PR #266's checker (NCOPY = 9).
@@ -75,17 +109,20 @@ two.
    `tile_g.py`.
 7. **Copied centres.** 9 retained totals at the full frame. This is PR #370's admission, and it is charged as NCOPY = 9
    per invocation everywhere.
-8. **Complex supplier** (PR #363, `certify_b3.py`):
-   - the B₂ regression reproduces PR #352's pins and b;
-   - at B₃, PR #352's portable checks at m = 63: rows 12,064 < 20,161, induction gap 63·B, max child 31;
+8. **Complex supplier** (`certify_b3.py`):
+   - the B₂ regression reproduces PR #352's pins and b (halving degree 1);
+   - the split B₃ regression reproduces PR #363's pins and b₃ = 932783231884153/10¹⁸ (halving degree 1);
+   - **unsplit B₃**, against `pins-e8-b3h.json`, runs PR #352's portable checks at m = 63: max child 38, halving degree
+     2, rows 2·1903 + 9909 + 252 = 13,967 < 20,161, induction gap 49·B, m ≤ 72;
    - Sussman's Lean data regenerated byte for byte, and his replay accepts;
-   - b₃ = 932783231884153/10¹⁸.
+   - b₃ = 119394377245827/(125·10¹⁵), with two engines and the 10⁻¹⁶ fallback, and the adjacent grid point rejected.
 9. **Bit coarse saving and outer assembly.** `certify_bit_k.py 3 8 7` takes the one-level histogram
    7 × (one invocation) + 240 × (B₃ idle blocks), with W = 7 · 1,585, m = 56 and deficit 7 · 216. It uses PR #315's
    two engines with the 10⁻¹⁶ fallback, and rejects the adjacent grid point. The outer assembly gives 47 positive
    constraints and κ.
 
-   At K = 2, T = 1 the receipt fields equal PR #370's (κ = 8.75481145306751e-4).
+   At K = 2, T = 1 the receipt fields equal PR #370's (κ = 8.75481145306751e-4). With the split b₃ it gives PR #373's
+   κ = 93191395651209/10¹⁷. With the halving-degree-two b₃ it gives κ = 95424356568133/10¹⁷.
 10. **Finite bill at m = 56** (`finite_k.py`). The original formulas with the stage counts of B₃:
     - 7 invocations' additions plus 12v bridge additions;
     - route families 2·7·(2v + R) + 6v;
@@ -110,6 +147,9 @@ two.
   - the complex symbolic correctness;
   - the precision/recovery and row interfaces, including the additive row constants;
   - the analytic transfer.
+- **Halving degree two on the complex side.** The inherited finite bridge text states half-shrink (degree 1). Here
+  its row term is charged at degree 2 as in the repository's degree-4 and degree-9/20 precedents (above), with the
+  precision/recovery interface inherited at that depth. The outer assembly's constants are unchanged.
 - The finite bill takes PR #370's formulas with the counts of seven stages (above). Its proof text is PR #370's and the
   source527/p10 lineage's, not re-derived here.
 - This is a conditional finite construction, not a formal verification of the multiplication theorem.
@@ -120,7 +160,9 @@ two.
   generalized bit-side checkers this package extends.
 - **Jacob Sussman:** the E8 family and the E8 complex unit; the bridged five-stage word and its geometry, which B₃
   generalizes.
-- **PR #363 (DaysSky):** B_K and the seven-stage complex unit.
+- **PR #363 / PR #373 (DaysSky):** B_K, the seven-stage complex unit and the seven-stage bit construction.
+- The halving-degree generalization follows PR #144's integration review, the copied-centers assembly and PR234 (hcg890
+  / Henry Grant).
 - **PR #352 / #346 / #315 / #266 / source527 / PR234 lineage:** see `NOTICE.md` and `NOTICE-PR352.md`.
 
 Prepared by DaysSky, assisted with Claude.

@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
-# One-command verification of the e8-bit-seven-stage package: PR #370's E8 bit word and PR #363's E8 complex unit, both
-# in the seven-stage bridged word B_3.
+# One-command verification of the e8-seven-stage-halving-two package: PR #373 (PR #370's E8 bit word and Sussman's E8
+# complex unit, both in the seven-stage bridged word B_3) with the complex supplier's idle climbs left unsplit, at
+# halving degree two.
 # usage: bash verify.sh /fresh/output/dir   (python3 >= 3.11 with numpy, mpmath, sympy; g++ C++17 with Boost headers)
 set -euo pipefail
 HERE=$(cd "$(dirname "$0")" && pwd); WD=$(mkdir -p "$1" && cd "$1" && pwd)
 export PYTHONDONTWRITEBYTECODE=1
 C=$HERE/code; B=$C/bit; CK=$B/checkers; D=$HERE/data/bit; R=$HERE/data/regression-p10; PY="python3 -B"
 WORD=$D/bitE8-r865.json.gz; REC=$WD/records; BIN=$WD/bin; mkdir -p $BIN $WD/regression $WD/k2 $WD/k3
-B2=876248285600677/1000000000000000000; B3=932783231884153/1000000000000000000
-echo "== 0. package manifest; provenance from PR #370 and PR #363"
+B2=876248285600677/1000000000000000000; B3=932783231884153/1000000000000000000; B3H=119394377245827/125000000000000000
+echo "== 0. package manifest; provenance from PR #373, PR #370 and PR #363"
 (cd $HERE && sha256sum -c MANIFEST.sha256 --quiet) && echo "   all files match MANIFEST.sha256"
 $PY $C/provenance.py
 
@@ -78,9 +79,9 @@ cp=[struct.unpack_from('<6i',rec,24*i) for i in range(len(rec)//24) if struct.un
 assert len(cp)==len(w['ret'])==9 and all(e[5]==8 for e in cp) and [e[1] for e in cp]==w['ret']
 print('   retained totals',len(w['ret']),'at the full frame; copy loss L = 72 per invocation; B_3 deficit 6v - 7L = 216')"
 
-echo "== 8. complex supplier: Jacob Sussman's E8 unit in B_2 (PR #352 regression) and B_3 (PR #363)"
+echo "== 8. complex supplier: Jacob Sussman's E8 unit in B_2 (PR #352 regression), B_3 split (PR #363 regression) and B_3 at halving degree two"
 CX_RECEIPT=$WD/complex-guard-b3.json B3_OUT=$WD/b3.json $PY $C/certify_b3.py
-$PY -c "import json;k=json.load(open('$WD/b3.json'));assert k['b']=='$B3' and k['b_B2']=='$B2',k"
+$PY -c "import json;k=json.load(open('$WD/b3.json'));assert k['b']=='$B3H' and k['b_B3_split']=='$B3' and k['b_B2']=='$B2' and k['halving_degree']==2,k"
 
 echo "== 9. bit coarse saving and outer assembly (47 constraints), PR #315 engines, h = 8"
 $PY $CK/certify_bit_g.py $REC $B2 8 1 $WD/k2/kappa_g.json > /dev/null
@@ -89,7 +90,9 @@ $PY -c "
 import json;a=json.load(open('$WD/k2/kappa_g.json'));b=json.load(open('$WD/k2/kappa.json'))
 assert all(a[k]==b[k] for k in a if k!='word') and a['kappa']=='875481145306751/1000000000000000000'
 print('   regression: certify_bit_k at K = 2 gives PR #370 receipt fields; five-stage kappa',a['kappa'],'(complex-bound by b_2)')"
-$PY $CK/certify_bit_k.py $REC $B3 3 8 7 $WD/kappa.json
+$PY $CK/certify_bit_k.py $REC $B3 3 8 7 $WD/k3/kappa_split.json > /dev/null
+$PY -c "import json;k=json.load(open('$WD/k3/kappa_split.json'));assert k['kappa']=='93191395651209/100000000000000000' and k['binding']=='complex';print('   regression: with the split complex b_3 the seven-stage bit word gives PR #373 kappa',k['kappa'])"
+$PY $CK/certify_bit_k.py $REC $B3H 3 8 7 $WD/kappa.json
 echo "   regression (PR #370): generalized vs original certify_bit on the PR #325 p10b word (h = 20, T = 12)"
 cp -r $WD/regression/base $WD/regression/base_o
 PR315=$C/pricing $PY $C/bit/regression/certify_bit.py $WD/regression/base_o $B2 > /dev/null
@@ -112,7 +115,7 @@ $PY $CK/finite_k.py regression $WD/regression/loans
 $PY -c "
 import json;k=json.load(open('$WD/kappa.json'))
 assert k['K']==3 and k['stages']==7 and k['m']==56 and k['T']==7 and k['W']==7*(6*120+865) and k['maxchild']==27
-assert k['bit_coarse']=='968197503705007/1000000000000000000' and k['complex_coarse']=='$B3'
-assert k['kappa']=='93191395651209/100000000000000000' and k['binding']=='complex',k
+assert k['bit_coarse']=='968197503705007/1000000000000000000' and k['complex_coarse']=='$B3H'
+assert k['kappa']=='95424356568133/100000000000000000' and k['binding']=='complex',k
 from fractions import Fraction as F
-print('PASS conditional kappa =',k['kappa'],'=',k['kappa_float'],'(seven-stage bit word, complex-bound by the seven-stage E8 complex unit; bit coarse',k['bit_coarse'],'=',float(F(k['bit_coarse'])),')')"
+print('PASS conditional kappa =',k['kappa'],'=',k['kappa_float'],'(seven-stage bit word, complex-bound by the seven-stage E8 complex unit at halving degree two; bit coarse',k['bit_coarse'],'=',float(F(k['bit_coarse'])),')')"

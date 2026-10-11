@@ -53,8 +53,13 @@ def finite_guard(m, b, basis):
     pin('stock_bits',[group.bit_length(),live_stock.bit_length(),physical_stock.bit_length(),s.bit_length()],'fresh cover/work stock')
     need(router<G and literal<E and B<1<<100001,'fresh router/literal guard')
     induction=2*(dim-l['max_child'])-1;need(2*B*(dim-l['max_child'])-s-E==induction*B and induction>=1,'completed-child induction')
-    need(32*dim*B*B<C0 and 2*B+18<C0 and 2*l['max_child']<dim,'semantic and half-shrink guard')
-    row=live_stock.bit_length()+9909+252;rowphysical=physical_stock.bit_length()+9909+252
+    # least halving degree t: dim^t > 2 max_child^t (t = 1 is the half-shrink guard of the original bridge).  The external
+    # row coefficient charges t times the stock logarithm, as in PR #144's integration (4*2571+9909+252) and
+    # copied-centers-assembly.tex (D_j(e) = t_j ceil(log2 e)); the cover bound V < 2^(m m) <= 2^5184 needs m <= 72.
+    t=1
+    while dim**t<=2*l['max_child']**t:t+=1
+    need(32*dim*B*B<C0 and 2*B+18<C0 and 0<l['max_child']<dim and dim<=72,'semantic, contraction and cover guard')
+    row=t*live_stock.bit_length()+9909+252;rowphysical=t*physical_stock.bit_length()+9909+252
     need(row<=rowphysical<20161,'external rows')
     gap=Q(10**6)-Q(51,25)*20161;need(gap>0,'row reserve gap')
     need(2*(dim*(dim-1)+3*dim+dim+3*dim*(dim-1)//2+dim+1)+2*dim<compiler,'explicit quadratic-phase lowering')
@@ -77,7 +82,7 @@ def finite_guard(m, b, basis):
         complete_local_group_bits=local.bit_length(),global_logical_groups_bits=K.bit_length(),
         simple_global_logical_bound_exponent=6050,router_bits=router.bit_length(),G_exponent=30000,
         literal_charge_bits=literal.bit_length(),E_exponent=100000,required_C0_bits=(32*dim*B*B).bit_length(),
-        C0_exponent=210000,induction_gap_multiple_of_B=induction,group_bits=group.bit_length(),
+        C0_exponent=210000,induction_gap_multiple_of_B=induction,halving_degree=t,group_bits=group.bit_length(),
         live_stock_bits=live_stock.bit_length(),physical_stock_bits=physical_stock.bit_length(),
         rank_mass_bits=s.bit_length(),live_row_coefficient=row,physical_row_overcharge_coefficient=rowphysical,
         retained_row_coefficient=20161,retained_row_gap=str(gap),controls=controls,
@@ -105,7 +110,7 @@ def run(package_root=None, progress=lambda text:None):
     checks=labels.replay_label_counts(c)
     v,R,h=c['v'],c['R'],c['h'];dim=SL*h;W=2*KL*v+R
     H=Counter({int(k):SL*n for k,n in checks['invocation_histogram'].items()})
-    layout=bridged.check(KL,h,split=(dim-1)//2)              # idle climbs of the bridged word, split below m/2
+    layout=bridged.check(KL,h,split=None if PINS.get('split')=='none' else (dim-1)//2)   # idle climbs of the bridged word; split below m/2 unless the pins say 'none'
     for rank in layout['blocks_per_role_pair']:H[rank]+=2*v
     ledger=dict(histogram={str(k):n for k,n in sorted(H.items())},calls=sum(H.values()),
         rank_mass=sum(k*n for k,n in H.items()),max_child=max(H),deficit=dim*W-sum(k*n for k,n in H.items()),

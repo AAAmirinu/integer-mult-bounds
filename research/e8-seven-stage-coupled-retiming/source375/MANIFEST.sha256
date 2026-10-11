@@ -1,9 +1,10 @@
 c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4  ./LICENSE
 967e6d7e76e216e4898cf543c75b527e8d397ec1ddba3800cb20701f24c89524  ./NOTICE-PR352.md
-8e854fc5a031742dd1cdb1b73d7a95224a7e504f92e95ddd1798e127e6d41fb0  ./NOTICE.md
-e73e71a1c9f3dadf07fad5592a41edc01185207fb730866ab42a4b564e0f4e7e  ./README.md
-23aea683d4bf17a51e9a37898ce398a48f19c43a82c567fed833b4757f73b130  ./SOURCE-pr363.json
-26379ae7bc8f64ec5dedc791ca71a7a5ddf7019a5e14e302cd3bab2d0fb5197a  ./SOURCE-pr370.json
+949fafcf2c993d0a719ee24adacabbf2d578bd657f234b38ba0464cd0d9dd759  ./NOTICE.md
+378ab6a356cdc604204f9caf6c262fe7d29258db317435e6c65f0b2d0d59178e  ./README.md
+8d44d9d894c70ef195d44468f6093e797f8757a969bda93b508f65bf334e6ade  ./SOURCE-pr363.json
+ba19bc388a7da6f91a7eb85ed4ee98f309eda557d1206fc3b55c3fa070ca23b5  ./SOURCE-pr370.json
+20e7c346d38cabed0555586fc99f96d497ae80d9e7b26286e84eed33a56db6e1  ./SOURCE-pr373.json
 c9a31508126f34e7ac95d802c39e8919a872cd705314de5bf3538de1636ce8ce  ./code/bit/checkers/certify_bit_g.py
 97b07eb2e2664522f672fb520d188520a3a2967ecefd6700667994614d478e0c  ./code/bit/checkers/certify_bit_k.py
 d1297f9052be4f2496e1ff2a77e4db2c0cdbd7d460d489b4c03e50bf317238ce  ./code/bit/checkers/columns_h.cpp
@@ -45,7 +46,7 @@ aaf127c04cb31c406e5b04a63f1ae89369fccde6d8fa7cdda1ed4f32dfc5de63  ./code/bit/reg
 98cd03bc9582e7bd0ab194c191ea8eea940539e510051443ab9fd3e572a364ab  ./code/bit/regression/prime_witnesses.py
 6c288f6f234b528c1a7c0a4adfb724e91e0fe6b18c8dffad96af3f973de1829a  ./code/bit/regression/stage_cohort.py
 38c3f78daac118395565a65fa3543b1c349638ff2519ce7fda0dad2d788e90ae  ./code/bit/regression/tile_check.py
-4916587100f4268d96bea24082b1714e6ff79eee84c0b02a3fa4dcf342110ae9  ./code/certify_b3.py
+616bf82b56077c9e575791a70715047a5e01932649c3feb3e4c8ec56b39c9fab  ./code/certify_b3.py
 5fe7174cd3a6580a74e4c1bf8fa7b426e8673f1c285603bf3076d4e758d70731  ./code/complex/code/bridged.py
 52d68781eaf6d9decf02446a532a7336fcf15924a9f6781ba0833d038decb9f8  ./code/complex/code/complex_basis.py
 ccc924537db0c0d55f0c1934e79b8cf4d85b4fb336473d7b42d69e12557aa9f2  ./code/complex/code/complex_gx.py
@@ -139,13 +140,14 @@ f00802d48ef3fedb00278f0b1c7bde074cc49dd30f202d7f32a9d2aebb3be443  ./code/complex
 b6172d58749c0b3b9138570c74827bcb23bf5db4ff9643740768cd7782ac4ca6  ./code/complex/inputs/e8/tools/gx/regen_check.py
 ad8fe9811c6ea0d89c795caef48686cfca600f5d540ebfd5d1251d6777cec7cf  ./code/complex/inputs/e8/tools/gx/regen_check_e8.py
 9e2d5b8e1f5f5d1c3113ed563ace88a3e5a605e1f053af350f1cec4d4791a4c4  ./code/complex/pins-e8-b3.json
+bffda4be2ef3ba7a1072029779cfa448e3d19a986eae444c7970b87f48b294c6  ./code/complex/pins-e8-b3h.json
 bf66f785878f636616ceab193e5a222143945ea06fc2f13dfb99b204ebba82ff  ./code/complex/pins-e8.json
-2bcda5c68b381901a332f99d3ef579ab9477c5b0e69cc2043a53f35797867317  ./code/complex/portable_complex.py
+a28cfd37ce5da0e97e03f225629f17f31e0278142b3757345ed47d7a66560cbf  ./code/complex/portable_complex.py
 aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098  ./code/pricing/base_two_moment.py
 81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482  ./code/pricing/moment.py
 c1ebb52163a7219504c728a5c2b098bf1e50bf20148a2879c5a74c3cadc7c03c  ./code/pricing/outer.py
 98cd03bc9582e7bd0ab194c191ea8eea940539e510051443ab9fd3e572a364ab  ./code/pricing/prime_witnesses.py
-2461921b53dec59749e68893ac04bfa2839dcb74f94e3ba2a476d9ee1bb287fb  ./code/provenance.py
+e509d08cd82d078df86f491f83a312516cae26c5528ad073b924c73f53b34edd  ./code/provenance.py
 cfc30216f441a1c44a533f2f26954f90e454136af8842c497de4e2da9bd32d8d  ./data/bit/RECORD-SHA256SUMS
 1fb726ea3818fe0837cceb0dd22a71a0814f064e5e781628104610d6468e0e55  ./data/bit/bitE8-r865.json.gz
 caabc13126e8f87d08f7697f51512cb3431ff52861f4190149251d8e19224430  ./data/regression-p10/BASE-RECORDS.bin.gz
@@ -158,4 +160,4 @@ c4074b86171c5bde8fbbff6df0022a116f17e11f0d2116ae3dfe75c8b2a18c64  ./data/regress
 505c13c667230e946e708d7c9086de34d1c5e259a557f6685765054001e29981  ./data/regression-p10/receipts-loans/raw.json.gz
 e7bb691b741227ce389ff6341fa0548ff8f638cc492a06be40fcd829fac0bed9  ./data/regression-p10/receipts-loans/scalar.json.gz
 1939ad706e192fb3781e8a0018880b1c6291ded07d40edc4048ab1a0e48f71ee  ./requirements.txt
-5d4dec638e2b25a3d5c3cbf384f1d7a4f5afbe87c75ec83825f559398ac0cf8e  ./verify.sh
+f00ebcfa36f95e45b79b636c826cc8a390a3e4b724b24644231014c8d74a5663  ./verify.sh

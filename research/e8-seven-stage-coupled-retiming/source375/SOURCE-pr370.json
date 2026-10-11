@@ -148,10 +148,5 @@
   "data/regression-p10/receipts-loans/raw.json.gz": "3a965a6005d9bff179b9500307044ccb7eaf8c2c",
   "data/regression-p10/receipts-loans/scalar.json.gz": "5d4d5e1a2db03851fe71c8a48364ce58a3b5548a"
  },
- "changed": [
-  "NOTICE.md",
-  "README.md",
-  "requirements.txt",
-  "verify.sh"
- ]
+ "changed": []
 }
