@@ -1,9 +1,7 @@
-# R715 kernel, retiming and whole pooling — draft candidate
+# R715 kernel, retiming and whole pooling
 
-Exact local candidate on PR463 R715, with 99 kernel pivots, total entrance rank118, 56 target-sharing receivers, 60 single-gate retimings and14 connected-pair retimings. Pool four replicas with every residual wholly on one physical family.
+Conditional kappa=0.001289283116193775,0.45219% above PR465. New R71599-pivot/rank118 kernel,56 target receivers,74 retiming moves and four-replica whole pooling. Complex supplier PR458 is unchanged. See PROOF.md for retained assumptions and the fresh604-bit prefix/1920-bit three-level charge.
 
-Exact aggregate bit lower =645473756513106438971/500000000000000000000000. With unchanged PR458 complex root, the arithmetic ceiling c/(1+c) is approximately0.001289283116193776. This is a **projection, not an admitted final kappa**. No cross-family residual splitting.
+`python -B research/r715-kernel-pool/verify.py /absolute/new/output` performs full pinned complex replay and all changed component checks. Requires Python3.11+, SymPy1.14, a C++17 compiler and Boost headers; CXX and BOOST_INCLUDE may be set. An explicit `--complex-output` may reuse a completed full complex run, producing a distinct status. `verify_component.py` remains a narrower reconstruction-and-arithmetic check and does not constitute full admission.
 
-Local exact rational-span/F2 replay and two rational moment engines pass. Local checks do not settle physical address operators. Pending: emitted global ownership/routes, new cancellation-free physical-family prefix and finite invoice, independent operator audit, strict final outer assembly, fresh full-parent replay, and CI.
-
-Run `python -B research/r715-kernel-pool/verify_component.py /absolute/new/output` for the scoped source reconstruction, local replay, exact whole-family packing and moment checks. It deliberately emits a GLOBAL_PENDING status. Pinned parent packages are inherited from PR462; NumPy/SciPy are not needed for frozen selection expansion.
+At this update the complete changed bit routing, independent audit, prefix, invoice and outer checks passed locally. The portable full wrapper is being verified with completed full complex supplier receipts; no GitHub CI pass is claimed.
