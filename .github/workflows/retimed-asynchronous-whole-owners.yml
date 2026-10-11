@@ -1,0 +1,29 @@
+name: retimed-asynchronous-whole-owners
+on:
+  pull_request:
+    paths: ['research/retimed-asynchronous-whole-owners/**', '.github/workflows/retimed-asynchronous-whole-owners.yml']
+  push:
+    paths: ['research/retimed-asynchronous-whole-owners/**', '.github/workflows/retimed-asynchronous-whole-owners.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.13', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install numpy
+      - name: Fresh local physics, asynchronous owners, finite invoice and exact assembly
+        run: python -B research/retimed-asynchronous-whole-owners/verify.py "$RUNNER_TEMP/retimed-asynchronous"
+      - name: Require an unchanged tracked tree
+        run: git diff --exit-code

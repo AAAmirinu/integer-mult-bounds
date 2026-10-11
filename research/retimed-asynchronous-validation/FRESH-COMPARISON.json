@@ -1,0 +1,14 @@
+{
+  "unit": "research-resume-20261011-async-retimed",
+  "linux_output": "/home/cfky/offload/check-async-retimed-fresh",
+  "linux_run": "/home/cfky/research/integer-mult/runs/resume-20261011-async-retimed",
+  "macos_pid": 61726,
+  "macos_output": "/private/tmp/async-retimed-macos314-fresh",
+  "manifest": "5803b204360b144ff8e111abae713e27cae320d89cce1b6ef72410c9752bcb35",
+  "stage": "PASS_BOTH_FRESH_RESULTS_IDENTICAL",
+  "updated_utc": "2026-10-11T22:31:36Z",
+  "macos_pid_live": false,
+  "macos_terminal_artifacts": true,
+  "linux_exit": 0,
+  "result_sha256": "94585e3cdc8605de54323755ce6014a101bdc6b9a1cf73adbac0458805df6619"
+}

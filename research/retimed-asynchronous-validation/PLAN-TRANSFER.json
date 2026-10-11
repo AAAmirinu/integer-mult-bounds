@@ -1,0 +1,54 @@
+{
+  "status": "PASS_UNCHANGED_WIDTH_ASYNC_PLAN_TRANSFER",
+  "preserved_fields": [
+    "centers",
+    "center_frames",
+    "target_levels",
+    "root_lines",
+    "ports",
+    "cut",
+    "precondition",
+    "start_extra",
+    "scatter"
+  ],
+  "helper_widths": {
+    "5": 4,
+    "7": 14,
+    "8": 104,
+    "9": 438
+  },
+  "old_local_profile": {
+    "1": 2057,
+    "2": 928,
+    "3": 50,
+    "4": 274,
+    "5": 314,
+    "6": 2,
+    "7": 1,
+    "8": 17
+  },
+  "new_local_profile": {
+    "1": 2385,
+    "2": 264,
+    "3": 530,
+    "4": 84,
+    "5": 270,
+    "6": 92,
+    "7": 1,
+    "8": 17
+  },
+  "predicted_profile": {
+    "1": 171856,
+    "2": 19008,
+    "3": 41592,
+    "4": 6048,
+    "5": 22941,
+    "6": 6624,
+    "7": 2209,
+    "8": 1224,
+    "16": 1,
+    "48": 408
+  },
+  "plan_sha256": "bdfdc2f64ff8f9d64f05b8330d4f7c11b02ea41ac67d41d4c82a624434be0fe2",
+  "scope": "Only local paid profile changes. The independent emitted-controller audit must reconstruct all owners, events and actual paid children."
+}

@@ -1,0 +1,4 @@
+full main columns 800 replayed
+PASS exact arbitrary dirt and restored sources/helpers
+PASS exact inverse-transpose on every column
+PASS prospective b 0.001183945732643359 gain 18.467004511682045 percent; seconds 0.6544058750150725

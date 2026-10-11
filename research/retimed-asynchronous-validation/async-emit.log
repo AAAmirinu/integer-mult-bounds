@@ -1,0 +1,47 @@
+{
+  "status": "EMITTED_ASYNCHRONOUS_WHOLE_OWNER_COMPLEX_TEMPLATE",
+  "template_sha256": "61cb5130c9a909a5fd412885608bbd697aac4d9d56d46c87d1af995a8e2f0f4e",
+  "parent_template_sha256": "1abda640b9cfa5d1e60aaa1cfcd35c72a962cbc0bb5adcc0e541e70bc81973d9",
+  "live": 7680,
+  "physical": 8258,
+  "global_profile": {
+    "1": 171856,
+    "2": 19008,
+    "3": 41592,
+    "4": 6048,
+    "5": 22941,
+    "6": 6624,
+    "7": 2209,
+    "8": 1224,
+    "16": 1,
+    "48": 408
+  },
+  "rank_mass": 558144,
+  "deficit": 2496,
+  "maxchild": 48,
+  "hosted_residuals": 40320,
+  "banks_per_stage": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "entering_helper_roles": 8784,
+  "unique_actual_73column_sigmas": 3194,
+  "sigma_stream_sha256": "f2e2f8346abac2d6eb8f51877644f271791cf0385823f2c0be72628063a2c1ee",
+  "cross_replica_helper_roles": 33114,
+  "asynchronous_order_sha256": "e4748b9ffaf60576efc61160413da3a7528ef3549bc0af96cf7ed799e2de1156",
+  "source_artifacts": {
+    "split-centres/CANONICAL-WORD.json.gz": "bae9701c7fde304860cc89d72d1bcb503f392b25cff04401202e833301e2ef18",
+    "split-centres/LOCAL-PROGRAMS.json.gz": "39af027100077ecdf4dea36c937faa813b195e5be4554f09b4f35f1ca230d518",
+    "split-centres/LOCAL-CHECKS.json": "ece1b3d5ee31525844a66dab0288c1b5a74bf57d3e83157823249139dc05916b",
+    "split-centres/RESIDUAL-ADAPTERS.json": "546196e37830b9ccbc544834cb6f37ba4ad841faf96f025fe5155f5ba3924e07",
+    "work/complex-nine-native/DATA-PHASES.json": "f621f6d4296cb215f334830356c5f79fe10d6d04d15b3ccda76ba0885ab67d0a"
+  },
+  "scope": "New emitted complete-invocation placement; independent controller/spectator/normalization and complete finite invoice admission required."
+}

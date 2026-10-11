@@ -1,0 +1,140 @@
+{
+  "status": "PASS_FRESH_RETIMED_ASYNCHRONOUS_WHOLE_OWNER",
+  "python": "3.14.8",
+  "steps": [
+    {
+      "name": "transfer",
+      "exit_code": 0,
+      "seconds": 0.376,
+      "log_sha256": "169f130afac947949d346fdfb20422042d2c8cd2d0b23fd6a2309b6a41f9011d"
+    },
+    {
+      "name": "word-controls",
+      "exit_code": 0,
+      "seconds": 1.471,
+      "log_sha256": "7138c95893d4135181074f2cb27e2c48873f1a736668e7d8e79b2a01eb3ae8a1"
+    },
+    {
+      "name": "selection-controls",
+      "exit_code": 0,
+      "seconds": 0.522,
+      "log_sha256": "90c066e392fa1fdd018d9679d84b25f4e6478cabb9c06180f36063dcb2ea0be0"
+    },
+    {
+      "name": "pipeline-controls",
+      "exit_code": 0,
+      "seconds": 6.002,
+      "log_sha256": "a6ca3979a17f335cad7e216f2925762fc687ed057db5cdc25f7aa6271a5c405e"
+    },
+    {
+      "name": "scalar",
+      "exit_code": 0,
+      "seconds": 0.696,
+      "log_sha256": "99c7c9b194b10d91c4e6b9ba2d87ccffc1077b9e54da2b90ab6dd3f5196ccae0"
+    },
+    {
+      "name": "programs",
+      "exit_code": 0,
+      "seconds": 0.408,
+      "log_sha256": "4eaec4d39a6e9b8fb5ddc15cc8b154f2eb6c25708f1c7905e3243a350ec7c5c5"
+    },
+    {
+      "name": "phases",
+      "exit_code": 0,
+      "seconds": 82.625,
+      "log_sha256": "68f94c68caf64ecb2b68b14eb6289348a369c651c802eeb8f1a252d236756654"
+    },
+    {
+      "name": "wrappers",
+      "exit_code": 0,
+      "seconds": 0.557,
+      "log_sha256": "539afb02eeb2975f6e647ccf0e520be953919361fdf1c88432ed17f99d3fcf6e"
+    },
+    {
+      "name": "integrate",
+      "exit_code": 0,
+      "seconds": 0.453,
+      "log_sha256": "ce500ae60a967e87b72ea1e2e6d59a32daf2f01c139685612f073caa87a0d098"
+    },
+    {
+      "name": "scalar-readback",
+      "exit_code": 0,
+      "seconds": 2.698,
+      "log_sha256": "04a057c55168c3dbfe452a4fc62fc90f55f1844d9e8c62e48e78e59b58ae1137"
+    },
+    {
+      "name": "plan-transfer",
+      "exit_code": 0,
+      "seconds": 0.258,
+      "log_sha256": "38395f337ac789dab2a60b10cdf798a1019e6fc8fe238ecdd4bdab4b777e9230"
+    },
+    {
+      "name": "async-emit",
+      "exit_code": 0,
+      "seconds": 1.688,
+      "log_sha256": "ad13ccd443d4265518c7b77958bd8ccfa86337f6f42a7e576e07202eea8b3dde"
+    },
+    {
+      "name": "async-controller",
+      "exit_code": 0,
+      "seconds": 7.993,
+      "log_sha256": "f9c0a25bf69d084351289829a9fce3e3d003a3581e4103a2fb7c106093bb78f7"
+    },
+    {
+      "name": "gaussian-selftest",
+      "exit_code": 0,
+      "seconds": 0.523,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "common-labels",
+      "exit_code": 0,
+      "seconds": 0.401,
+      "log_sha256": "d93047434768535deca938e68581c30fead070104d6ac4070bfce1161e739a78"
+    },
+    {
+      "name": "whole-program",
+      "exit_code": 0,
+      "seconds": 50.688,
+      "log_sha256": "02813e0449acd5cee74791de5b54680b0238e81a58c9043bf2abcf9cbf82fdad"
+    },
+    {
+      "name": "all-instance-columns",
+      "exit_code": 0,
+      "seconds": 87.397,
+      "log_sha256": "03d601457a4ffdda88f81545b909372b415491966ab4c4a1efd177cce4c5bbda"
+    },
+    {
+      "name": "lemma-controls",
+      "exit_code": 0,
+      "seconds": 15.783,
+      "log_sha256": "1c4ebdab47d2260aa7b1cbcef92c41cd8644fa5cf8ae55adcda23af3b61a82b1"
+    },
+    {
+      "name": "finite-invoice",
+      "exit_code": 0,
+      "seconds": 0.764,
+      "log_sha256": "d7df4b706e59905fb0f8bb8517b773334ca74564d23384211c1b684cf44630a4"
+    },
+    {
+      "name": "exact-assembly",
+      "exit_code": 0,
+      "seconds": 0.23,
+      "log_sha256": "6ba26e1b4302bdc8ded9ec207b734bb037ecf356a51f6b5b2d89c4fc8a6fb412"
+    }
+  ],
+  "artifacts": {
+    "RESULT.json": "94585e3cdc8605de54323755ce6014a101bdc6b9a1cf73adbac0458805df6619",
+    "transfer/TRANSFER.json": "68ecde838061fb5427721febacc27e99d4550cba416c017e1a68cec5930e13e1",
+    "PLAN-TRANSFER.json": "8b7bb7ac95dd268df8c067705b83fa678541182f81daaeef8714de3b85ad4ede",
+    "admission/ASYNC-AUDIT.json": "f9c0a25bf69d084351289829a9fce3e3d003a3581e4103a2fb7c106093bb78f7",
+    "admission/PREFIX-AND-INVOICE.json": "d7df4b706e59905fb0f8bb8517b773334ca74564d23384211c1b684cf44630a4",
+    "admission/EXACT-ASSEMBLY.json": "7d2dcc280a4b807794927882d4a94371fdd4e649dc81eb139558ababe7d68893",
+    "admission/GLOBAL-PREFIX.json": "946d7c70c40758fcb90c58e5253745bb15a665cf3252c34b67217433f4762f5e",
+    "lemmaG/INSTANCES-gauge80-kernel42.json": "d4cdf3c5e1fd4971746fc2187e4ffba7ba082fd176786882c922a6f94fd8a3b9",
+    "lemmaG/E2E-gauge80-kernel42.json": "186aa61173fd22c7835b15d202e88486a729d3854fa26af97956a5f51c2b4e62",
+    "lemmaG/PREOP-GUARDS-lg_instances.json": "43da15d612714a16af35540e70b17c9d9c522fb34b03b378e5e4b8359233d634",
+    "lemmaG/PREOP-GUARDS-lg_e2e.json": "3b0130e80b98c543188be9b5d3c778ee11c09983f15ae2c62fd11f893ed916be",
+    "lemmaG/MUTANTS.json": "96386393eea71ce6374f31cae5fbffc2862637cd2ce5d7061dc94bf464112e84"
+  }
+}

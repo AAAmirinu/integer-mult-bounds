@@ -1,0 +1,33 @@
+{
+  "completed_stages": [
+    "construct",
+    "scalar",
+    "emit-local",
+    "phases",
+    "adapters",
+    "parent-integration",
+    "parent-replay",
+    "emit-async",
+    "independent-async",
+    "invoice",
+    "two-moments-assembly"
+  ],
+  "fresh_adapter_lf_sha256": "546196e37830b9ccbc544834cb6f37ba4ad841faf96f025fe5155f5ba3924e07",
+  "fresh_template_sha256": "aa7418710aba299895453a437fdfc02564f73f2ed202a0b4a6c4b296a079b995",
+  "missing_expected_sha256": "4ce4b6e6b8435f8c3a8387387732964a2ebf0183e8d77b8247ae8061b033e462",
+  "missing_manifest_file": ".gitattributes",
+  "numerical_result": {
+    "bit_lower": "391360506745414227149/250000000000000000000000",
+    "complex_lower": "679773808909616785409/500000000000000000000000",
+    "kappa": "67885087881447/50000000000000000",
+    "kappa_decimal": "0.001357701757628940"
+  },
+  "only_template_field_difference": "residual_adapter_sha256",
+  "present_manifest_files_verified": 63,
+  "published_adapter_crlf_sha256": "a4cec4b3ccaebb33cf169b50230c4033eb956f9e75fad64cf6647a3f794c5cca",
+  "published_template_sha256": "276b69e3fc79a211daaf39776d91b3a6f9c262c415cbd199ab02d5e0ccb9bf4b",
+  "scope": "Published verify.py fails unchanged. A wrapper allowed only the known absent metadata file; all eleven mathematical stages then passed, before the final serialized-template anchor failed. Exact CRLF reconstruction and one-field substitution reproduce that anchor. No mathematical assertion or source-file hash was weakened.",
+  "source_head": "4ee769c8e28837482272b5f4742497da8e2fc9d4",
+  "status": "ALL_11_MATHEMATICAL_STAGES_PASS_WITH_DOCUMENTED_PACKAGING_AND_NEWLINE_EXCEPTIONS",
+  "template_after_one_proven_newline_hash_substitution": "276b69e3fc79a211daaf39776d91b3a6f9c262c415cbd199ab02d5e0ccb9bf4b"
+}

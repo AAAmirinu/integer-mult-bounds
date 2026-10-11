@@ -1,0 +1,54 @@
+{
+  "status": "PASS_STRUCTURAL_MAIN_WORD_RETIMING_TRANSFER",
+  "source_files": {
+    "/Users/chafreaky/Documents/personal/integer-mult-research-20261008/e8-async-retimed/research/retimed-asynchronous-whole-owners/vendor/pr505/inputs/BASE-WORD.json.gz": "da4c5007092fd9456403179ef2a4391aef9fc5310e3eec5f2ab6c49b24147387",
+    "/Users/chafreaky/Documents/personal/integer-mult-research-20261008/e8-async-retimed/research/retimed-asynchronous-whole-owners/data/PR495-FULL-WORD.json.gz": "66655cd858afb515dfd4cad43c4fef01f9185af670e144750e9977588ebd4ecf",
+    "/Users/chafreaky/Documents/personal/integer-mult-research-20261008/e8-async-retimed/research/retimed-asynchronous-whole-owners/vendor/complex/e8-complex-gauge-kernel/data/selections/gauge80-kernel42.json": "436e4acadee227dbfcb66386c9ccaa38e68054e8ed4870bb174eeb41363375bb"
+  },
+  "changed_frames": {
+    "A": 224,
+    "B": 504
+  },
+  "discarded_prefix_events": {
+    "A": 229,
+    "B": 0
+  },
+  "preserved_gauge_fields": [
+    "centers",
+    "center_frames",
+    "target_levels",
+    "root_lines",
+    "ports",
+    "cut",
+    "precondition",
+    "start_extra",
+    "scatter"
+  ],
+  "entering_helpers": 122,
+  "entrance_rank": 148,
+  "local_profile": {
+    "1": 2385,
+    "2": 264,
+    "3": 530,
+    "4": 84,
+    "5": 270,
+    "6": 92,
+    "7": 1,
+    "8": 17
+  },
+  "transfer_controls_rejected": [
+    [
+      "A",
+      1
+    ],
+    [
+      "B",
+      3
+    ]
+  ],
+  "outputs": {
+    "RETIMED-BASE.json.gz": "5b0632330c1aca9f33601e1c222e8dc2d1a0f279e29fef9e1d889489af7195af",
+    "FULL-WORD.json.gz": "8d5a3d6e20f9c3593938a251ffc64aa8d810c324979e5bcf26a33840c544afe2"
+  },
+  "scope": "Structural transfer; scalar, frame, phase, whole-program, hosting and finite assembly checks must run independently."
+}
