@@ -1,0 +1,86 @@
+[
+  {
+    "pr": 458,
+    "head": "44e9eae8287951c1e6dbbd3c553f5743fe2240b0",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/458",
+    "title": "Conditional \u03ba = 0.001274032589159993: complex kernel with paid residual adapters"
+  },
+  {
+    "pr": 459,
+    "head": "e037bc50c3d5efc1bec0d258a9f274f79ba45ec7",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/459",
+    "title": "Conditional \u03ba = 0.001266536148630309: rank151 kernel + target-prefix mixing on #451, complex-bound (+0.0477%)"
+  },
+  {
+    "pr": 460,
+    "head": "b98bbb4bc398ad67a41f123c6c301628c37e1d6b",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/460",
+    "title": "Conditional \u03ba = 0.001274415506145115: paid complex kernel + rank151 target mixing"
+  },
+  {
+    "pr": 461,
+    "head": "dc297912ad446779f983818816617c03dfc76e16",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/461",
+    "title": "Conditional kappa = 0.001274032592088050: sharper bit bad-class charge on #458"
+  },
+  {
+    "pr": 462,
+    "head": "a63b25e65578816d78843c0e25131d9be7567cd2",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/462",
+    "title": "Conditional \u03ba = 0.001274494971185576: four-replica whole bit hosting"
+  },
+  {
+    "pr": 463,
+    "head": "cdf0c1c6540df987467988fd771340670f4136f3",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/463",
+    "title": "Conditional \u03ba = 0.001283479303751122: E8 bit word R715 (carrier lower bound + F2 overlap cancellation) with #458's complex supplier (+0.711% over #460)"
+  },
+  {
+    "pr": 464,
+    "head": "8c546e9918ae37d842916d89ffe28f2c08cdb3d3",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/464",
+    "title": "Conditional \u03ba = 0.001347744550711765: sharper bit bad-class charge on #450's word"
+  },
+  {
+    "pr": 465,
+    "head": "22c2a15c232084a31b6c8f0263e2e8ce831047ea",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/465",
+    "title": "Conditional kappa = 0.001283479306671789: certified R715 assembly with sharp bit charge"
+  },
+  {
+    "pr": 466,
+    "head": "c2f8e18b1b3e39abb5d2f63b9ee4582c96cd75de",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/466",
+    "title": "Conditional \u03ba = 0.001274415506145115: complex response kernel + rank151/mixed bit word on #451 (+0.670%)"
+  },
+  {
+    "pr": 467,
+    "head": "e28109cd3fe2f2853449e4c49a55887790e16ba2",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/467",
+    "title": "Conditional \u03ba = 0.001289283116193775: R715 shared kernel, retiming and whole pooling"
+  },
+  {
+    "pr": 468,
+    "head": "07a78bf335b0b5039a1fecd7cd74a0fe1d1605ea",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/468",
+    "title": "Prove nine calls are necessary for three abelian bit registers"
+  },
+  {
+    "pr": 469,
+    "head": "a820816f07f60544bd38c6f12c38a9c25066ddf0",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/469",
+    "title": "Conditional \u03ba = 0.001350580884553120: gate-frame retiming of #450's eleven-stage cross-copy word (+0.2105%)"
+  },
+  {
+    "pr": 470,
+    "head": "281a0fbded64209e51964bfe4bf19b1da37a6f5b",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/470",
+    "title": "Conditional \u03ba = 0.001289658858369261: reselect R715 kernel after retiming"
+  },
+  {
+    "pr": 471,
+    "head": "56b3da6aa1295d37ce43f1753479bfe4737b7ac3",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/471",
+    "title": "Conditional kappa = 0.001274548075945587: full-nine-axis kernel normalization and same-owner spectator borrowing"
+  }
+]

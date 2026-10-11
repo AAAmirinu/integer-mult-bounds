@@ -1,0 +1,61 @@
+{
+  "status": "PASS_FRESH_DEFAULT_PORTABLE_REPLAY",
+  "receipt": {
+    "status": "PASS_TWO_LAYER_SCHUR_R715_COMPOSITION",
+    "kappa": "645771227711969/500000000000000000",
+    "seconds": 510.203,
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "manifest_sha256": "ca54ce14fd84f90955383e6b8e54131347c9f78c84feba602e6f8d7bfbbdf98c",
+    "steps": [
+      {
+        "name": "changed-bit",
+        "seconds": 81.718,
+        "log_sha256": "d8b3fd1d142d374afcdcc218ee6fd0acd6a4e407a023aa10cc8769e2860bd213"
+      },
+      {
+        "name": "complex-scalar-and-phase",
+        "seconds": 201.157,
+        "log_sha256": "20b9b92e922bd9c7583eb5df9eedc5d4e439ae9f02a26e4f7ead9db122032c22"
+      },
+      {
+        "name": "complex-normalization",
+        "seconds": 119.359,
+        "log_sha256": "75c311ec3ded0c905f2f3b2596a45977a71d86d4178a069cc16967d998f4cd5d"
+      },
+      {
+        "name": "data-phases",
+        "seconds": 32.828,
+        "log_sha256": "e1942c20e45d000cba67034f4815ea5fc9043cd7a1117890d1beee2a45a4276a"
+      },
+      {
+        "name": "borrowed-emission",
+        "seconds": 3.375,
+        "log_sha256": "68e6b2ca158ffd72e7d371e883436394d3082da3be6a07c2ace2512c386d87ef"
+      },
+      {
+        "name": "borrowed-independent",
+        "seconds": 52.719,
+        "log_sha256": "8df65018706038c3b442324eb0b86fcecc915535d489865607261552f86c84e2"
+      },
+      {
+        "name": "routes-independent",
+        "seconds": 3.375,
+        "log_sha256": "66e81a79d67f02196c24231f0ab6d3e131b64e195139f75a2d165bc9e7068056"
+      },
+      {
+        "name": "whole-controller",
+        "seconds": 14.906,
+        "log_sha256": "02fa240820b4a259b18f0597b9c5ce95a6307a7fb219dcda2f1092baeae5bd09"
+      },
+      {
+        "name": "two-moments-and-47-constraints",
+        "seconds": 0.703,
+        "log_sha256": "e60707475400c4cbf1dc988b6880ddfbbebeb02387f6740878e5bf6ff4a96124"
+      }
+    ],
+    "scope": "Fresh changed bit C++ compilation and columns; fresh complex scalar/phase/monomial proofs; independent physical/orthogonal routes; whole controller; finite invoices, two moment implementations,47strictconstraints. Retains conditional all-size interfaces; no Lean certification or public full-chain replay."
+  },
+  "result_sha256": "38f2c9aec3b12b52a2d9a0d82a2eabfac56eeb8ec24179f637ecb92332bf136d",
+  "replay_manifest_sha256": "ca54ce14fd84f90955383e6b8e54131347c9f78c84feba602e6f8d7bfbbdf98c",
+  "scope": "Full default package replay completed. Only validation and replay-manifest metadata changed afterward; mathematical inputs and implementation unchanged. Conditional interfaces retained; GitHub CI not claimed."
+}
