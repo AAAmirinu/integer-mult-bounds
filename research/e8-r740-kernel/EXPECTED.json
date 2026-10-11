@@ -1,0 +1,19 @@
+{
+  "global": {
+    "R": 740,
+    "live": 14187,
+    "physical": 14196,
+    "banks_per_stage": 723,
+    "entrance_rank_total": 136,
+    "bank_assignments": 53280,
+    "independent_unbanked_scalar_columns": 7620,
+    "deficit": 2496,
+    "global_prefix_bits": 123
+  },
+  "result": {
+    "kappa": "56696402193643/50000000000000000",
+    "bit_lower": "1135215296333206583339/1000000000000000000000000",
+    "complex_lower": "1183986549206329/1000000000000000000",
+    "binding_component": "bit"
+  }
+}
