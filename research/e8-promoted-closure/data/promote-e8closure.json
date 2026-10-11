@@ -1,0 +1,53 @@
+{
+ "about": "derived by compose416.py (asserted equal there): plan947 = #416's pivot-821 relation re-solved on our word (donor 748 is our pivot; donors 555 and 947 added, unique solution) and re-pivoted on 947; prefix124 = helper-sourced re-synthesis of target 124's B-prefix (own search); inventory32 = residual inventory at 32 replicas",
+ "plan947": {
+  "basis": [
+   240
+  ],
+  "pivots": [
+   {
+    "pivot": 947,
+    "coefficients": {
+     "522": "-4",
+     "555": "-2",
+     "769": "-1",
+     "821": "-2",
+     "888": "2",
+     "913": "1",
+     "936": "-3",
+     "957": "-1"
+    }
+   }
+  ]
+ },
+ "prefix124": {
+  "cut": 1262,
+  "replaced": [
+   867,
+   1260
+  ],
+  "deliveries": [
+   [
+    11,
+    563,
+    336,
+    1,
+    2
+   ],
+   [
+    499,
+    253,
+    723,
+    -1,
+    2
+   ]
+  ]
+ },
+ "inventory32": {
+  "9": 18208,
+  "8": 5152,
+  "7": 288,
+  "5": 608,
+  "4": 736
+ }
+}
