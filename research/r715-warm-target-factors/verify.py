@@ -41,7 +41,7 @@ try:
   run('compile-'+name,[cxx,'-O2','-std=c++17','-DHDIM=8',*defs,*inc,'-o',bins/name,B/'checkers'/src])
  run('official-legality',[bins/'legality',base/'cin',base/'cout',base/'cout/legality.json'])
  for name,file in [('columns_h','columns.json'),('columns_k5','columns_k5.json')]:run(name,[bins/name,base/'cout/COHORT249-RECORDS.bin',base/'cout'/file])
- py('record-mutations',B/'mutate_records.py',base/'records',base/'cin',base/'cout',bins/'legality',bins/'columns_k5',bins/'legality_ncopy_h')
+ py('record-mutations',ROOT/'code/mutate_records.py',base/'records',base/'cin',base/'cout',bins/'legality',bins/'columns_k5',bins/'legality_ncopy_h')
  py('gram',B/'checkers/gram_frames.py',base/'records','--gram','e8ham','--h',8,'--positive')
  py('geometry',ROOT/'code/geometry.py','--source',research/'e8-r740-replica32/parent436','--out',bit)
  py('emit',ROOT/'code/emit.py','--word',ROOT/'data/word.json.gz','--local-check',base,'--out',bit,'--isometries',ROOT/'data/residual-isometries.json')
