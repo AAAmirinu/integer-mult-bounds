@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "all_results_byte_identical": true,
+  "all_checks_byte_identical": true,
+  "versions": [
+    "3.11.15 macOS",
+    "3.14.8 macOS",
+    "3.12.3 Linux"
+  ],
+  "source_files": 5,
+  "manifest_sha256": "29e69096ff63ce12851e1c152677182353055e49b7e1fd80e93a1be00292ad1d"
+}

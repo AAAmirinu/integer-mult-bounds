@@ -1,0 +1,8 @@
+{
+  "checks_sha256": "42a941a5fa57e4d979d9ee419f787464a7f25b87b46786522723679e9da5b694",
+  "manifest_sha256": "29e69096ff63ce12851e1c152677182353055e49b7e1fd80e93a1be00292ad1d",
+  "python": "3.12.3",
+  "result_sha256": "521ac6bf98f2a4c3d1c25e1374d838f43354ca76d16150499783e6d1a1d71f10",
+  "source_sha256": "a90653f2ab1a1ac32880e2b3818c13b8b7a6c3972b67f0f769ecb6641d8170ab",
+  "status": "PASS_STREAMED_CHIRP_CONTROLS"
+}
