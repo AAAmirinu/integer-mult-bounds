@@ -29,3 +29,6 @@ research/split-centres-global/** -text -whitespace
 # Preserve source pins and the literal evidence diff, including removed whitespace.
 research/e8-target-mixing-whole/** -text
 research/e8-target-mixing-whole-validation/FINAL-COSMETIC.diff -text -whitespace
+# R715 source-pinned words and upstream discovery artifacts retain exact bytes.
+research/e8-r715-whole-hosted/** -text
+research/e8-r715-whole-hosted/upstream*/** -whitespace
