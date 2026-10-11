@@ -1,0 +1,130 @@
+{
+  "AI_disclosure": "OpenAI Codex,2026-10-11",
+  "provenance": "Independent backward-capacity and exact GF(2) subspace search continuing the grouped prepend idea from PR409 and the closure211/214/215 sequence. Capacities intersect every future touched-register capacity in reverse gate order, with fixed retained-snapshot and final-frame constraints. Unlike earlier donor-only closure searches, both pivots and donors may enlarge their first frame.",
+  "source_raw215_sha256": "6a51485af21d9cf9f7f62787dc766ec46c2e6c1ed2f6d00203c9ebe0d4504666",
+  "candidate_raw217_sha256": "02b0a06edcf6483f65b070ec611e9e07dc811985dc869f7445a919851b1f7221",
+  "selection": [
+    {
+      "basis": [
+        304,
+        111
+      ],
+      "donors": [
+        421
+      ],
+      "pivots": [
+        {
+          "pivot": 435,
+          "coefficients": {
+            "421": "1"
+          }
+        }
+      ]
+    },
+    {
+      "basis": [
+        259,
+        246
+      ],
+      "donors": [
+        257
+      ],
+      "pivots": [
+        {
+          "pivot": 367,
+          "coefficients": {
+            "257": "1"
+          }
+        }
+      ]
+    }
+  ],
+  "new_gates": 2,
+  "entrance_rankmass_change": 4,
+  "paid_local_rankmass_change": -4,
+  "local_delta": {
+    "1": 4,
+    "2": 1,
+    "3": -2,
+    "6": 2,
+    "8": -2
+  },
+  "changed_original_frames": [
+    {
+      "part": "A",
+      "index": 714,
+      "old": 8,
+      "new": 995,
+      "basis": [
+        259,
+        246
+      ],
+      "roles": [
+        257,
+        6
+      ]
+    },
+    {
+      "part": "A",
+      "index": 822,
+      "old": 55,
+      "new": 549,
+      "basis": [
+        259,
+        246,
+        15
+      ],
+      "roles": [
+        367,
+        53
+      ]
+    },
+    {
+      "part": "A",
+      "index": 875,
+      "old": 78,
+      "new": 994,
+      "basis": [
+        304,
+        111
+      ],
+      "roles": [
+        421,
+        76
+      ]
+    },
+    {
+      "part": "A",
+      "index": 876,
+      "old": 993,
+      "new": 299,
+      "basis": [
+        271,
+        80,
+        63
+      ],
+      "roles": [
+        700,
+        76
+      ]
+    },
+    {
+      "part": "A",
+      "index": 888,
+      "old": 85,
+      "new": 550,
+      "basis": [
+        304,
+        159,
+        111
+      ],
+      "roles": [
+        435,
+        83
+      ]
+    }
+  ],
+  "discovery_screen": "Exhaustively enumerated all rank2\u20136 subspaces within nongauged capacities. Exact rational response-rank testing, without coefficient restriction, found exactly10 rank2 spaces having relations and no rank3\u20136 relations.1000 randomized elimination trials per viable rank2 support nominated these2 profitable single-pivot relations. Floating costs nominate only; exact complete packing/outerassembly determine kappa.",
+  "verification": "Native217 local pass: all1021 scalar columns,dirty restoration,distinct entrance tokens,both reflected frame ledgers,lifetimes,866 Gaussian phase pairs; adverse controls revert every required original-A frame plus omit first entrance. Constructor verifies all1021 whole and pre-snapshot raw columns against literal right multiplication.",
+  "downstream_scope": "Raw entrance word. Complete publication must compose and freshly replay dual124/125,PR376frame,PR402,protected124/144 prefixes if claimed."
+}

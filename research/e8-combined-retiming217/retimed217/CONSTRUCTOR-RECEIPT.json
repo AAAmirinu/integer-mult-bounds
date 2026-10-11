@@ -1,0 +1,271 @@
+{
+  "status": "PASS_FIXED_SCALAR_GATE_FRAME_RETIMING",
+  "source_sha256": "7cacea6505d1bde3913268f00a9bb450a03c1d15fec81f500195c14f5e03fb7e",
+  "candidate_sha256": "3c2c7470ed3c1af2a7a94e32435065bdfef88838303ee1be9d716989b9ffb507",
+  "selection": [
+    {
+      "part": "A",
+      "index": 822,
+      "old_frame": 549,
+      "new_frame": 879,
+      "new_basis": [
+        256,
+        245,
+        12,
+        3
+      ],
+      "scalar_group": [
+        "in",
+        367,
+        [
+          [
+            53,
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "part": "A",
+      "index": 888,
+      "old_frame": 550,
+      "new_frame": 870,
+      "new_basis": [
+        256,
+        159,
+        95,
+        48
+      ],
+      "scalar_group": [
+        "in",
+        435,
+        [
+          [
+            83,
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "part": "B",
+      "index": 42,
+      "old_frame": 511,
+      "new_frame": 1008,
+      "new_basis": [
+        256,
+        204,
+        33,
+        17
+      ],
+      "scalar_group": [
+        "in",
+        653,
+        [
+          [
+            457,
+            -1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "part": "B",
+      "index": 72,
+      "old_frame": 523,
+      "new_frame": 1009,
+      "new_basis": [
+        259,
+        129,
+        65,
+        63
+      ],
+      "scalar_group": [
+        "in",
+        559,
+        [
+          [
+            618,
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "part": "B",
+      "index": 84,
+      "old_frame": 528,
+      "new_frame": 1010,
+      "new_basis": [
+        276,
+        215,
+        36,
+        12
+      ],
+      "scalar_group": [
+        "in",
+        377,
+        [
+          [
+            467,
+            -1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "part": "B",
+      "index": 100,
+      "old_frame": 535,
+      "new_frame": 1011,
+      "new_basis": [
+        292,
+        231,
+        20,
+        12
+      ],
+      "scalar_group": [
+        "in",
+        669,
+        [
+          [
+            678,
+            -1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "part": "B",
+      "index": 110,
+      "old_frame": 539,
+      "new_frame": 1012,
+      "new_basis": [
+        256,
+        132,
+        51,
+        12
+      ],
+      "scalar_group": [
+        "in",
+        591,
+        [
+          [
+            629,
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "part": "B",
+      "index": 120,
+      "old_frame": 544,
+      "new_frame": 1013,
+      "new_basis": [
+        256,
+        68,
+        51,
+        12
+      ],
+      "scalar_group": [
+        "in",
+        588,
+        [
+          [
+            473,
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "part": "B",
+      "index": 122,
+      "old_frame": 545,
+      "new_frame": 1014,
+      "new_basis": [
+        307,
+        183,
+        68,
+        12
+      ],
+      "scalar_group": [
+        "in",
+        592,
+        [
+          [
+            633,
+            -1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "part": "B",
+      "index": 126,
+      "old_frame": 547,
+      "new_frame": 1015,
+      "new_basis": [
+        268,
+        132,
+        68,
+        63
+      ],
+      "scalar_group": [
+        "in",
+        671,
+        [
+          [
+            679,
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "part": "B",
+      "index": 718,
+      "old_frame": 811,
+      "new_frame": 1017,
+      "new_basis": [
+        259,
+        176,
+        112,
+        15
+      ],
+      "scalar_group": [
+        "in",
+        593,
+        [
+          [
+            652,
+            1,
+            1
+          ]
+        ]
+      ]
+    }
+  ],
+  "local_delta": {
+    "1": -31,
+    "2": 18,
+    "3": 2,
+    "5": 11,
+    "6": -11
+  },
+  "all1021raw_columns_unchanged": true,
+  "scalar_words_unchanged": true,
+  "entrance_dimensions": 391,
+  "fixed_snapshot_labels": true
+}

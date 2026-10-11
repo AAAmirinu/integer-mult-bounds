@@ -1,0 +1,129 @@
+{
+  "status": "PASS_BLOCK217_BANK64_PREFIX_CONDITIONAL_COMPOSITION",
+  "kappa": "1018364819189613/1000000000000000000",
+  "kappa_decimal": "0.001018364819189613",
+  "complex_coarse": "127425367910454002819/125000000000000000000000",
+  "bit_coarse": "255384852701747/250000000000000000",
+  "checks": [
+    {
+      "name": "reconstruct",
+      "seconds": 1.065,
+      "log_sha256": "0a05fbfda0889b4de5a0b92eb6a40191d940e5a8fad31cf5711377035a758fd2"
+    },
+    {
+      "name": "shared",
+      "seconds": 1.468,
+      "log_sha256": "46325bd1e7c00af14a151e064f30cfa1094e69c4d2a890f18d65dc8654e71e69"
+    },
+    {
+      "name": "acyclic",
+      "seconds": 0.321,
+      "log_sha256": "69028d655492ddb6aefbc084e5e293982b74d21cd8b8a99f38f16534e349d6c9"
+    },
+    {
+      "name": "newgroup",
+      "seconds": 0.445,
+      "log_sha256": "936918e0479d56eae56eb3ece140bf3c44bb1f2c76a0397288608d5aec074727"
+    },
+    {
+      "name": "closure211",
+      "seconds": 0.553,
+      "log_sha256": "7b046880a1320dcd2082768942e83ad3f909294d93645a8184dc98fa9a31c204"
+    },
+    {
+      "name": "closure214",
+      "seconds": 0.627,
+      "log_sha256": "d4031601fff0282774db249f77fbb0ac36d23b848c0dcd2740c4ae2492853147"
+    },
+    {
+      "name": "closure215",
+      "seconds": 0.54,
+      "log_sha256": "e389758ed8e84c09fbb3563e635ac9b9ea83681785f7d4b40140a8439d3d5b50"
+    },
+    {
+      "name": "capacity217",
+      "seconds": 0.58,
+      "log_sha256": "01b98347e63a9aadf40f5906893c7c287fb4c283f2d8b24122e555c564b12e4e"
+    },
+    {
+      "name": "enlarged217",
+      "seconds": 0.678,
+      "log_sha256": "f1c9d8a56a9b8900f837f4a3714caa453db42286ead47cf101be0deec24fbe3d"
+    },
+    {
+      "name": "grouped217",
+      "seconds": 0.445,
+      "log_sha256": "114d012fa5d71a76458155497b2e063791790c7817acb7ac769df8d4a89dcc13"
+    },
+    {
+      "name": "dual",
+      "seconds": 0.565,
+      "log_sha256": "c49986fd91ddd8c6154eed103e8fbbabc22b705880d6902ac2dbb342ac9b48ff"
+    },
+    {
+      "name": "public-frame",
+      "seconds": 0.306,
+      "log_sha256": "17f74dbe627aebcd1349a38f7f50d46979a6ca1fa684efa2a2e720b57be29451"
+    },
+    {
+      "name": "resynthesis",
+      "seconds": 0.577,
+      "log_sha256": "9b7180d1f58ae1a5fb073c286e4d5e5d2f896aab185fae817d96fcdb7b5cea6b"
+    },
+    {
+      "name": "prefix",
+      "seconds": 0.321,
+      "log_sha256": "a48f77f7132c28db792f5f5a387674fa35b74939cba9957981811d2895880d45"
+    },
+    {
+      "name": "block217",
+      "seconds": 0.341,
+      "log_sha256": "5d8465aab1cb054fcfef90d8b5df0c7b4123c4e4a7b7a8ca86709bd4b4decaee"
+    },
+    {
+      "name": "local",
+      "seconds": 50.545,
+      "log_sha256": "89fe7e4ade5455fdfa6a5bb15fdacdcc990de1ded0d8330a9fa12e130d0dfd9f"
+    },
+    {
+      "name": "coefficient-words",
+      "seconds": 0.043,
+      "log_sha256": "db3c16f5a28256e73df39b749ad7c5b3c91343da0e9ca12f11c26149edf0db01"
+    },
+    {
+      "name": "compile-phase",
+      "seconds": 1.564,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "phase",
+      "seconds": 6.183,
+      "log_sha256": "d9739ea861f68270233233864ddeab12a18b1148f0bffdcb2dd0f9ca249cf367"
+    },
+    {
+      "name": "banks",
+      "seconds": 39.158,
+      "log_sha256": "1267f98b44cb7561a39d5af6deee43b63877272673d0956514f0300588bb2b54"
+    },
+    {
+      "name": "bank-audit",
+      "seconds": 67.737,
+      "log_sha256": "450c9a55d8ec75bb507b91de36bcb7b9bab2cac508966f58b38d95d9da04df95"
+    },
+    {
+      "name": "bridge",
+      "seconds": 0.034,
+      "log_sha256": "78d133d7c3d484b3c9203a840a7489ad19edbe1d24b28a5cc63459fd79caf949"
+    },
+    {
+      "name": "outer",
+      "seconds": 0.241,
+      "log_sha256": "6628e09105110f9e0278e261716e1665af0b3f853f0183da59d8c443bc2ac443"
+    }
+  ],
+  "candidate_sha256": "4f28e78260aa7ad16e125515bdb0cc7cd1ef5eb14da5ccdcda4d0d6978a8c0ea",
+  "manifest_sha256": "62d07453b8929b3f94bae9a2dcbd60761f44d40cd5f0fe824c6659551d3526cb",
+  "template_sha256": "e80f1c95f4dc6183ddf6f346922f9d432b175b884d269b6a84ca864f6d825f48",
+  "bit_evidence": "unchanged source-bound prior finite receipt",
+  "scope": "Finite conditional changed composition. Inherited all-size window, correlated-bank, recursive compiler, ordinary-call/fixed-tape/restored-row, precision and analytic interfaces remain assumptions; no Lean or unconditional multiplication theorem."
+}
