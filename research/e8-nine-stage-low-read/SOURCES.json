@@ -1,0 +1,20 @@
+{
+  "baseline": {
+    "pr": 381,
+    "head": "00765b291d0f924f337298eb1e2930cb0878b95e",
+    "package": "research/e8-nine-stage-kappa",
+    "manifest_sha256": "5cf9a292cbc046e81e18666b8ec3588cb0dad80e50b10a498a565cbf8ac93d30",
+    "kappa": "995656966441037/1000000000000000000"
+  },
+  "candidate": {
+    "pr": 379,
+    "head": "e01bcc51ca7ee93cec54350afae8f163aafc8f93",
+    "path": "research/e8-low-read-seven-complex/source/candidate-certificate.tar.gz",
+    "sha256": "827c0b6859f2b1ff7e5f5fbac955d61ecb25c828e7a0ff4dbc279ba6854d6a9d"
+  },
+  "macos_header": {
+    "pr": 364,
+    "head": "f8c6a47abfec24b87cb1eb0a138dd73dfce2abe4",
+    "path": "research/w3-design-t-staged-p10b-reorder-mc/code/checkers/bits/stdc++.h"
+  }
+}
