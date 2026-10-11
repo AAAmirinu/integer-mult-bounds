@@ -1,0 +1,8 @@
+{
+  "checks_sha256": "a4f07b46595c7108d3d2dd16f9058017a0261b6f9aefa7ef524c80dab18d2e6a",
+  "manifest_sha256": "bb3163873d7fe70cf7758ac2babde3663144c07b43b99869c2f96b5e0eb64162",
+  "python": "3.14.8",
+  "result_sha256": "47c617183cd444b4312ecacd7ca64c3274ad94ebb6a4e94c0e1f477e4ac24dec",
+  "source_sha256": "5157695271fc0ae860067d193bfce21af4fe8080f15054acc2f3414df4a10614",
+  "status": "PASS_FUSED_DYADIC_HALO_CONTROLS"
+}

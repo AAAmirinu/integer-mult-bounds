@@ -1,0 +1,582 @@
+{
+  "explicit_streams": [
+    {
+      "actual": {
+        "adjacent_record_travel": 6,
+        "axis_updates": 8,
+        "complete_control_period_restored": true,
+        "final_rewind": 4,
+        "records": 8,
+        "total_travel": 10,
+        "valid_records": 7
+      },
+      "formula": {
+        "adjacent_record_travel": 6,
+        "final_rewind": 4,
+        "total_travel": 10,
+        "valid_records": 7
+      },
+      "shape": [
+        8
+      ],
+      "sides": [
+        4
+      ]
+    },
+    {
+      "actual": {
+        "adjacent_record_travel": 14,
+        "axis_updates": 16,
+        "complete_control_period_restored": true,
+        "final_rewind": 12,
+        "records": 16,
+        "total_travel": 26,
+        "valid_records": 15
+      },
+      "formula": {
+        "adjacent_record_travel": 14,
+        "final_rewind": 12,
+        "total_travel": 26,
+        "valid_records": 15
+      },
+      "shape": [
+        16
+      ],
+      "sides": [
+        8
+      ]
+    },
+    {
+      "actual": {
+        "adjacent_record_travel": 162,
+        "axis_updates": 136,
+        "complete_control_period_restored": true,
+        "final_rewind": 72,
+        "records": 128,
+        "total_travel": 234,
+        "valid_records": 105
+      },
+      "formula": {
+        "adjacent_record_travel": 162,
+        "final_rewind": 72,
+        "total_travel": 234,
+        "valid_records": 105
+      },
+      "shape": [
+        8,
+        16
+      ],
+      "sides": [
+        4,
+        4
+      ]
+    },
+    {
+      "actual": {
+        "adjacent_record_travel": 610,
+        "axis_updates": 528,
+        "complete_control_period_restored": true,
+        "final_rewind": 408,
+        "records": 512,
+        "total_travel": 1018,
+        "valid_records": 465
+      },
+      "formula": {
+        "adjacent_record_travel": 610,
+        "final_rewind": 408,
+        "total_travel": 1018,
+        "valid_records": 465
+      },
+      "shape": [
+        16,
+        32
+      ],
+      "sides": [
+        8,
+        8
+      ]
+    },
+    {
+      "actual": {
+        "adjacent_record_travel": 1686,
+        "axis_updates": 1160,
+        "complete_control_period_restored": true,
+        "final_rewind": 580,
+        "records": 1024,
+        "total_travel": 2266,
+        "valid_records": 735
+      },
+      "formula": {
+        "adjacent_record_travel": 1686,
+        "final_rewind": 580,
+        "total_travel": 2266,
+        "valid_records": 735
+      },
+      "shape": [
+        8,
+        16,
+        8
+      ],
+      "sides": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "actual": {
+        "adjacent_record_travel": 11806,
+        "axis_updates": 8720,
+        "complete_control_period_restored": true,
+        "final_rewind": 6540,
+        "records": 8192,
+        "total_travel": 18346,
+        "valid_records": 6975
+      },
+      "formula": {
+        "adjacent_record_travel": 11806,
+        "final_rewind": 6540,
+        "total_travel": 18346,
+        "valid_records": 6975
+      },
+      "shape": [
+        16,
+        32,
+        16
+      ],
+      "sides": [
+        8,
+        8,
+        8
+      ]
+    },
+    {
+      "actual": {
+        "adjacent_record_travel": 33426,
+        "axis_updates": 17544,
+        "complete_control_period_restored": true,
+        "final_rewind": 9288,
+        "records": 16384,
+        "total_travel": 42714,
+        "valid_records": 11025
+      },
+      "formula": {
+        "adjacent_record_travel": 33426,
+        "final_rewind": 9288,
+        "total_travel": 42714,
+        "valid_records": 11025
+      },
+      "shape": [
+        8,
+        16,
+        8,
+        16
+      ],
+      "sides": [
+        4,
+        4,
+        4,
+        4
+      ]
+    }
+  ],
+  "kappa_claim": null,
+  "mutants": [
+    {
+      "missing_rows": 0,
+      "name": "omit-wrap",
+      "wrong_rows": 12
+    },
+    {
+      "missing_rows": 153,
+      "name": "omit-tail",
+      "wrong_rows": 0
+    },
+    {
+      "missing_rows": 0,
+      "name": "prefer-main-over-repair",
+      "wrong_rows": 12
+    },
+    {
+      "changed_axis_entries": 8,
+      "name": "use-side-as-core-stride"
+    }
+  ],
+  "operator_cases": [
+    {
+      "all_basis_columns": true,
+      "halo": 2,
+      "last_trace": {
+        "exception_rows": 11,
+        "primary_rows": 7,
+        "returned_rows": 15,
+        "sparse": {
+          "join_head_travel": 15,
+          "requests": 24,
+          "tiles": 3
+        },
+        "travel": {
+          "adjacent_record_travel": 15,
+          "axis_updates": 16,
+          "complete_control_period_restored": true,
+          "final_rewind": 9,
+          "records": 16,
+          "total_travel": 24,
+          "valid_records": 14
+        }
+      },
+      "output_entries": 270,
+      "probes": 18,
+      "side": 8,
+      "source": [
+        15
+      ],
+      "target": [
+        16
+      ],
+      "volume": {
+        "all_records": 32,
+        "bad_records": 24,
+        "good_records": 8,
+        "main_records": 16
+      }
+    },
+    {
+      "all_basis_columns": true,
+      "halo": 2,
+      "last_trace": {
+        "exception_rows": 183,
+        "primary_rows": 42,
+        "returned_rows": 195,
+        "sparse": {
+          "join_head_travel": 255,
+          "requests": 960,
+          "tiles": 15
+        },
+        "travel": {
+          "adjacent_record_travel": 351,
+          "axis_updates": 272,
+          "complete_control_period_restored": true,
+          "final_rewind": 153,
+          "records": 256,
+          "total_travel": 504,
+          "valid_records": 196
+        }
+      },
+      "output_entries": 50310,
+      "probes": 258,
+      "side": 8,
+      "source": [
+        15,
+        13
+      ],
+      "target": [
+        16,
+        16
+      ],
+      "volume": {
+        "all_records": 1024,
+        "bad_records": 960,
+        "good_records": 64,
+        "main_records": 256
+      }
+    },
+    {
+      "all_basis_columns": false,
+      "halo": 2,
+      "last_trace": {
+        "exception_rows": 344,
+        "primary_rows": 84,
+        "returned_rows": 377,
+        "sparse": {
+          "join_head_travel": 511,
+          "requests": 1856,
+          "tiles": 29
+        },
+        "travel": {
+          "adjacent_record_travel": 783,
+          "axis_updates": 528,
+          "complete_control_period_restored": true,
+          "final_rewind": 305,
+          "records": 512,
+          "total_travel": 1088,
+          "valid_records": 420
+        }
+      },
+      "output_entries": 1885,
+      "probes": 5,
+      "side": 8,
+      "source": [
+        13,
+        29
+      ],
+      "target": [
+        16,
+        32
+      ],
+      "volume": {
+        "all_records": 2048,
+        "bad_records": 1856,
+        "good_records": 192,
+        "main_records": 512
+      }
+    },
+    {
+      "all_basis_columns": false,
+      "halo": 2,
+      "last_trace": {
+        "exception_rows": 2109,
+        "primary_rows": 210,
+        "returned_rows": 2145,
+        "sparse": {
+          "join_head_travel": 4095,
+          "requests": 32256,
+          "tiles": 63
+        },
+        "travel": {
+          "adjacent_record_travel": 7071,
+          "axis_updates": 4368,
+          "complete_control_period_restored": true,
+          "final_rewind": 2457,
+          "records": 4096,
+          "total_travel": 9528,
+          "valid_records": 2744
+        }
+      },
+      "output_entries": 10725,
+      "probes": 5,
+      "side": 8,
+      "source": [
+        15,
+        13,
+        11
+      ],
+      "target": [
+        16,
+        16,
+        16
+      ],
+      "volume": {
+        "all_records": 32768,
+        "bad_records": 32256,
+        "good_records": 512,
+        "main_records": 4096
+      }
+    },
+    {
+      "all_basis_columns": false,
+      "halo": 2,
+      "last_trace": {
+        "exception_rows": 767,
+        "primary_rows": 483,
+        "returned_rows": 899,
+        "sparse": {
+          "join_head_travel": 1023,
+          "requests": 2048,
+          "tiles": 8
+        },
+        "travel": {
+          "adjacent_record_travel": 1247,
+          "axis_updates": 1056,
+          "complete_control_period_restored": true,
+          "final_rewind": 825,
+          "records": 1024,
+          "total_travel": 2072,
+          "valid_records": 900
+        }
+      },
+      "output_entries": 4495,
+      "probes": 5,
+      "side": 16,
+      "source": [
+        29,
+        31
+      ],
+      "target": [
+        32,
+        32
+      ],
+      "volume": {
+        "all_records": 2304,
+        "bad_records": 2048,
+        "good_records": 256,
+        "main_records": 1024
+      }
+    }
+  ],
+  "scope": "fused compression-halo layout; local contraction fixture only",
+  "symbolic_census": [
+    {
+      "adjacent_record_travel": 528354,
+      "all_records": 983040,
+      "bad_records": 786432,
+      "dimensions": 2,
+      "final_rewind": 521208,
+      "good_records": 196608,
+      "halo": 1,
+      "main_records": 524288,
+      "per_axis_entries": 1536,
+      "side": 256,
+      "tensor_executed": false,
+      "total_travel": 1049562,
+      "travel_ratio": "524781/262144",
+      "valid_records": 522753
+    },
+    {
+      "adjacent_record_travel": 8462180,
+      "all_records": 15728640,
+      "bad_records": 12582912,
+      "dimensions": 2,
+      "final_rewind": 8351722,
+      "good_records": 3145728,
+      "halo": 3,
+      "main_records": 8388608,
+      "per_axis_entries": 6144,
+      "side": 1024,
+      "tensor_executed": false,
+      "total_travel": 16813902,
+      "travel_ratio": "8406951/4194304",
+      "valid_records": 8370185
+    },
+    {
+      "adjacent_record_travel": 4457978972162,
+      "all_records": 15461882265600,
+      "bad_records": 14843406974976,
+      "dimensions": 4,
+      "final_rewind": 4385146923000,
+      "good_records": 618475290624,
+      "halo": 1,
+      "main_records": 4398046511104,
+      "per_axis_entries": 6144,
+      "side": 512,
+      "tensor_executed": false,
+      "total_travel": 8843125895162,
+      "travel_ratio": "4421562947581/2199023255552",
+      "valid_records": 4385175234561
+    },
+    {
+      "adjacent_record_travel": 1139073854102676,
+      "all_records": 3958241859993600,
+      "bad_records": 3799912185593856,
+      "dimensions": 4,
+      "final_rewind": 1123425300963306,
+      "good_records": 158329674399744,
+      "halo": 3,
+      "main_records": 1125899906842624,
+      "per_axis_entries": 24576,
+      "side": 2048,
+      "tensor_executed": false,
+      "total_travel": 2262499155065982,
+      "travel_ratio": "1131249577532991/562949953421312",
+      "valid_records": 1123427967950929
+    },
+    {
+      "adjacent_record_travel": 5033781890933211462064877634,
+      "all_records": 61201869617990601969500160000,
+      "bad_records": 61103946626601817006348959744,
+      "dimensions": 8,
+      "final_rewind": 4944502469287977000806371320,
+      "good_records": 97922991388784963151200256,
+      "halo": 1,
+      "main_records": 4951760157141521099596496896,
+      "per_axis_entries": 24576,
+      "side": 1024,
+      "tensor_executed": false,
+      "total_travel": 9978284360221188462871248954,
+      "travel_ratio": "4989142180110594231435624477/2475880078570760549798248448",
+      "valid_records": 4937271333511545288340250625
+    },
+    {
+      "adjacent_record_travel": 328791302063196225870795650908020,
+      "all_records": 4010925727284632090673162485760000,
+      "bad_records": 4004508246120976679328085425782784,
+      "dimensions": 8,
+      "final_rewind": 324161976149571403980782832566250,
+      "good_records": 6417481163655411345077059977216,
+      "halo": 3,
+      "main_records": 324518553658426726783156020576256,
+      "per_axis_entries": 98304,
+      "side": 4096,
+      "tensor_executed": false,
+      "total_travel": 652953278212767629851578483474270,
+      "travel_ratio": "326476639106383814925789241737135/162259276829213363391578010288128",
+      "valid_records": 323806174417918061965604859910561
+    },
+    {
+      "adjacent_record_travel": 1635916337031695682474402811180683047461310110380654698225858,
+      "all_records": 245476153408718183586160030398759242034241879410317721600000000,
+      "bad_records": 245475524989765457267610049829081421210582271751106431186632704,
+      "dimensions": 16,
+      "final_rewind": 1605760752415119677410119294765008716906982657720585063211000,
+      "good_records": 628418952726318549980569677820823659607659211290413367296,
+      "halo": 1,
+      "main_records": 1606938044258990275541962092341162602522202993782792835301376,
+      "per_axis_entries": 98304,
+      "side": 2048,
+      "tensor_executed": false,
+      "total_travel": 3241677089446815359884522105945691764368292768101239761436858,
+      "travel_ratio": "1620838544723407679942261052972845882184146384050619880718429/803469022129495137770981046170581301261101496891396417650688",
+      "valid_records": 1602236629883958336441464946160756201236900457963303812890625
+    },
+    {
+      "adjacent_record_travel": 6997676124613522745647694486301883993571093442718375537347735372699444,
+      "all_records": 1054312050838323519783081328785036783514817384220890379241232793600000000,
+      "bad_records": 1054309351799473373674870684096835093820651586288386773761861936044048384,
+      "dimensions": 16,
+      "final_rewind": 6897954834317842050887700708359906352012888800240659618219438945042410,
+      "good_records": 2699038850146108210644688201689694165797932503605479370857555951616,
+      "halo": 3,
+      "main_records": 6901746346790563787434755862277025452451108972170386555162524223799296,
+      "per_axis_entries": 393216,
+      "side": 8192,
+      "tensor_executed": false,
+      "total_travel": 13895630958931364796535395194661790345583982242959035155567174317741854,
+      "travel_ratio": "6947815479465682398267697597330895172791991121479517577783587158870927/3450873173395281893717377931138512726225554486085193277581262111899648",
+      "valid_records": 6886596870745240269514040570316596361732631272942121891934010937890625
+    },
+    {
+      "dimensions": 101,
+      "exact_power_inequality": true,
+      "fraction_below": "p^-5",
+      "fraction_upper": "852462805093/302231454903657293676544",
+      "halo": 4220112896,
+      "p": 101,
+      "side": 1208925819614629174706176,
+      "t": 1461501637330902918203684832716283019655932542976,
+      "tensor_executed": false
+    },
+    {
+      "dimensions": 128,
+      "exact_power_inequality": true,
+      "fraction_below": "p^-5",
+      "fraction_upper": "17179869185/37778931862957161709568",
+      "halo": 8589934592,
+      "p": 128,
+      "side": 19342813113834066795298816,
+      "t": 374144419156711147060143317175368453031918731001856,
+      "tensor_executed": false
+    },
+    {
+      "dimensions": 257,
+      "exact_power_inequality": true,
+      "fraction_below": "p^-5",
+      "fraction_upper": "17868678762753/19807040628566084398385987584",
+      "halo": 69527932928,
+      "p": 257,
+      "side": 158456325028528675187087900672,
+      "t": 12554203470773361527671578846415332832204710888928069025792,
+      "tensor_executed": false
+    },
+    {
+      "dimensions": 1024,
+      "exact_power_inequality": true,
+      "fraction_below": "p^-5",
+      "fraction_upper": "8796093022209/324518553658426726783156020576256",
+      "halo": 4398046511104,
+      "p": 1024,
+      "side": 1329227995784915872903807060280344576,
+      "t": 1766847064778384329583297500742918515827483896875618958121606201292619776,
+      "tensor_executed": false
+    }
+  ]
+}

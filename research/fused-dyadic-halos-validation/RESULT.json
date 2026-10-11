@@ -1,0 +1,12 @@
+{
+  "axis_updates": 28112,
+  "emitted_records": 26264,
+  "exact_operator_entries": 67685,
+  "explicit_streams": 7,
+  "kappa_claim": null,
+  "mutants": 4,
+  "operator_cases": 5,
+  "operator_probes": 291,
+  "scope": "fused compression-halo layout; local contraction fixture only",
+  "symbolic_censuses": 12
+}

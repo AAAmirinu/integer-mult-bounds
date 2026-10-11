@@ -1,0 +1,14 @@
+{
+  "commit": "5f3db6a11198bab07d8effe8f0c9f5df9c3f2eb7",
+  "files": {
+    "references/semantic-bulk/rad20/reports/bulk-resampling-tape-transfer.md": "cda26d5aca04b9c824eb6c4f50bee564fb7fa908b09a72e76852df5e0b9d2622",
+    "references/semantic-bulk/rad20/reports/compact-arbitrary-source-routing.md": "3df36853a181fd5d331811b5c4859a1980116c69f447eb78c40a551ff28cde79",
+    "references/semantic-bulk/rad20/reports/downstream-microbox-resampling.md": "9598c236eed7e44ac5eb41cc20f7c23249829e195247d15e2857a34e14222c49",
+    "references/semantic-bulk/rad20/reports/downstream-phase-cell-inverse.md": "3cdf492bcb719db4295658604dc202d6a2c5a008b87de43ec54f0107c64db730",
+    "references/semantic-bulk/rad20/reports/review-arbitrary-routing.md": "f18f535a096abae473db71a4ae3f275d0116d7438fb18594d5b160571db670fd",
+    "references/semantic-bulk/rad20/reports/review-bulk-resampling.md": "12aefaa9a0eee367fb71e8f910ed5f0094e1203d2caa29836b0c37887c446c29",
+    "references/semantic-bulk/rad20/reports/review-phase-cell-inverse.md": "113927dd4fb77a55a457bd5f6da8cbfc7262d0fbc4e9d708b591a1d632e6caf6",
+    "research/batched-gaussian-boundary/PROOF.md": "d147cdd503e3b1830779d6810f0314b071de9cb6c5e15cfb42d80dff1079d435",
+    "upstream/build/sections/07-resampling.tex": "8a6b91670f9163afb54892489fa2210c77fe1b058f0325ec7d18b44b94be6e2c"
+  }
+}
