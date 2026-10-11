@@ -1,0 +1,66 @@
+{
+ "coefficient": 56827881566191,
+ "coefficient_bits": 46,
+ "low_matrix_power": 3136,
+ "strict_upper": "q^3137",
+ "positive_rank_children": 220430,
+ "rank_mass": 602952,
+ "weighted_additions": 729841,
+ "unit_expanded_additions": 729841,
+ "route_families": 109116,
+ "copy_erase_episodes": 441,
+ "payload_prefix_upper": 1470666556800000000,
+ "payload_prefix_bits": 61,
+ "delta_tau_lower": "4997569035253230132231271966655578596616140652649/13479973333575319897333507543509815336818572211270286240551805124608",
+ "delta_linear": "105468749845699/42164062500000000",
+ "bootstrap_chain": [
+  "384599/10000000000",
+  "61933597060205564541203810563151/62500000000000000000000000000000000",
+  "15498160930960039813571035714271381085521865737993/15625000000000000000000000000000000000000000000000000",
+  "3874543893202253377122556663709579737464282742885121125317415951199/3906250000000000000000000000000000000000000000000000000000000000000000"
+ ],
+ "gaps": [
+  {
+   "stage": 1,
+   "minimum_gap": "59105289180185458796189436849/62500000000000000000000000000000000",
+   "cutoff_log2_at_charged_coefficient": "40254074165956"
+  },
+  {
+   "stage": 2,
+   "minimum_gap": "14656386397686428964285728618914478134262007/15625000000000000000000000000000000000000000000000000",
+   "cutoff_log2_at_charged_coefficient": "40915582699675383866"
+  },
+  {
+   "stage": 3,
+   "minimum_gap": "3634355997877443336290420262535717257114878874682584048801/3906250000000000000000000000000000000000000000000000000000000000000000",
+   "cutoff_log2_at_charged_coefficient": "41587962022234333003903579"
+  }
+ ],
+ "row_reserve": {
+  "internal_coefficient": 3137,
+  "external_complex_coefficient": 20161
+ },
+ "route": {
+  "factors": 7,
+  "factor_counts": {
+   "swap": 7
+  },
+  "denominators": [],
+  "factor_program_sha256": "095fd1d755582a8a95b08559727b82b71ae8d5558c9021657a0dc196a52a90bf",
+  "exact_inverse_reconstruction": true,
+  "missing_addition_rejected": true,
+  "all_ports": {
+   "ports": 120,
+   "max_factors": 77,
+   "denominators": [
+    1,
+    2,
+    4
+   ]
+  }
+ },
+ "rejected_controls": [
+  "zero cutoff gap",
+  "negative constant"
+ ]
+}

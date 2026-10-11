@@ -1,0 +1,22 @@
+{
+  "status": "PASS_PR377_FRESH_TWO_RUNTIME_REPLAYS",
+  "pin": "/private/tmp/pr377-supplier-PIN.json",
+  "complex_coarse": "999240641319551/1000000000000000000",
+  "replays": [
+    {
+      "python": "3.11.5",
+      "proof": "/private/tmp/pr377-supplier-fresh-v1",
+      "actual_exit": 0,
+      "session": 70249,
+      "chunk": "1cb9a6"
+    },
+    {
+      "python": "3.12.13",
+      "proof": "/private/tmp/pr377-supplier-fresh-cp312-v1",
+      "actual_exit": 0,
+      "session": 2275,
+      "chunk": "b9c4ad"
+    }
+  ],
+  "scope": "The explicit proof retains local E8, Clifford/compiler, common-grid and row/analytic interfaces. No Lean kernel build, astronomical cover enumeration, certificate-producer regeneration or improved bit-side theorem is claimed."
+}

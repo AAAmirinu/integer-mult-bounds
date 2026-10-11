@@ -1,0 +1,103 @@
+{
+  "status": "PASS_INHERITED_BIT_CONTRACT_CLASSIFICATION",
+  "conclusion": "Global integer identity is not required by the inherited bit supplier contract. Local defining integer source must have explicit clean decoder M, exact source/helper restoration and literal signed inverse; M reduces to I over F2. The global bridged payload identity is over F2.",
+  "evidence": [
+    {
+      "path": "/private/tmp/pr325-pinned346/research/five-stage-source527-banks/scalar_check.py",
+      "sha256": "21147793b5e5a2da07959a5fa69e860ccd595c44c548936244773012c29ede7a",
+      "line": 72,
+      "excerpt": "return dict(status='PASS_FRESH527_F2_SIGNED_DECODER_INDEPENDENT_INVERSE_AND_25_CONTROLS',F2=exact,integer=integer,majorant=dict(residual_bound=bound,packing_bits=bits),forward=forward,inverse=inverse,controls=controls,source_sha256=hashlib.sha256(source.encode()).hexdigest(),seconds=time.monotonic()-started,scope='Fresh source527 F2 all-column supplier and both signed defining integer decoders, independently projected literal word/inverse majorants. Five-stage signed lift uses the literal primitive inverse; the F2 endpoint specifies its supplier property.')"
+    },
+    {
+      "path": "/private/tmp/pr325-pinned346/research/five-stage-source527-banks/source527/word.py",
+      "sha256": "e675d4eb9d90ff0b44279fae0b46f1a8b39f65421cc38454b70a6b75d0e10b42",
+      "line": 206,
+      "excerpt": "if binary:want=[Y0[t]^X0[t]for t in range(v)]"
+    },
+    {
+      "path": "/private/tmp/pr325-pinned346/research/five-stage-source527-banks/source527/word.py",
+      "sha256": "e675d4eb9d90ff0b44279fae0b46f1a8b39f65421cc38454b70a6b75d0e10b42",
+      "line": 262,
+      "excerpt": "assert z==Z0,('dirty restoration',mode)"
+    }
+  ],
+  "pr376": {
+    "base_head": "4835f59e3467dcea542d1463733c3acdfa9b10bc",
+    "candidate_word_json_sha256": "176d57abc9ed95e2276a154320877de356d6d78e1ee03157567a85f230fcdf08",
+    "signed_sha256": "801d0f37641b413cbe35cabe0dd14c5a6a08ccc477fbd6e79a1c886abe4f2a97",
+    "raw_sha256": "984756b84290283a26e141f0aceeeb1bae4498540ca0d2621080d0da6a5cb421",
+    "raw": {
+      "records": 18873,
+      "weighted_additions": 14689,
+      "unit_additions": 14689
+    },
+    "signed": {
+      "records": 18985,
+      "weighted_additions": 14801,
+      "unit_additions": 14953
+    },
+    "even_zero_frame_additions": 112
+  },
+  "finite_scope": "112 inserted even ZERO-frame ADDs have zero recursive rank price but increase defining-source arithmetic work. The actual paid F2 word is byte-identical after parity filtering. Any finite bill consuming signed defining operations must account for 14801 weighted or 14953 unit ADDs, rather than 14689 emitted F2 ADDs; the signed inverse majorant is 7500. Root owns fresh finite integration.",
+  "limitations": [
+    "The earlier seven-stage integer identity assertion was strictly stronger than the inherited contract and its failure does not reject this bit source.",
+    "Both reflected local ledgers pass, but this receipt does not certify global source-owner lowering, bank charts or exact finite assembly."
+  ],
+  "AI": "OpenAI Codex assistance; original E8 PR370 Dylan Crow with Anthropic Claude, helper reuse PR376 OpenAI Codex. Apache-2.0.",
+  "seven_stage_prefix_gap": {
+    "status": "REQUIRES_FRESH_GLOBAL_PREFIX_SCAN",
+    "source": "/private/tmp/pr376-frozen-source-v1/research/e8-bit-seven-stage/code/bit/checkers/columns_k.cpp",
+    "sha256": "1c344d18fcd494eeca93e259f10cafae7705780e6592f6dcb35b34752dab9bc2",
+    "legacy_expression": [
+      [
+        34,
+        "cpp_int payload=64*largestF*largestF*largestF*largestB*largestB;need(payload<(cpp_int(1)<<104),\"payloadfiniteprefix2^104\");"
+      ]
+    ],
+    "requirement": "Compute cancellation-free prefix over actual seven stages, every bridge and terminal exchange using emitted raw coefficients; the five-stage 64*F^3*B^2 expression does not constitute a seven-stage bound. Root owns correction and exact finite integration."
+  },
+  "candidate_origin": {
+    "base_pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/376",
+    "base_head": "4835f59e3467dcea542d1463733c3acdfa9b10bc",
+    "candidate": "/private/tmp/pr376-b-order-frozen-v1/candidate-word.json.gz",
+    "candidate_word_gz_sha256": "b7f8420b8bee58fba99dee68455a80839c8bb2ceabcc50fd0ffd0f4f3aa6b320",
+    "candidate_word_json_sha256": "176d57abc9ed95e2276a154320877de356d6d78e1ee03157567a85f230fcdf08",
+    "transformation": "Frozen final B-order candidate; local signed target independently derived from exact A/scatter/B and checked against full source.",
+    "AI": "OpenAI Codex assistance"
+  },
+  "forward_and_reflected_ledgers": [
+    {
+      "histogram": {
+        "1": 2170,
+        "2": 903,
+        "3": 476,
+        "4": 296,
+        "5": 290,
+        "6": 8,
+        "7": 14,
+        "8": 18
+      },
+      "paid_calls": 4175,
+      "rank_mass": 8328
+    },
+    {
+      "histogram": {
+        "1": 2170,
+        "2": 903,
+        "3": 476,
+        "4": 296,
+        "5": 290,
+        "6": 8,
+        "7": 14,
+        "8": 18
+      },
+      "paid_calls": 4175,
+      "rank_mass": 8328
+    }
+  ],
+  "signed_majorants": {
+    "forward": 742,
+    "inverse": 7500,
+    "composition": 8075
+  }
+}

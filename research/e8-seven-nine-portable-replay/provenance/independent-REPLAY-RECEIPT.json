@@ -1,0 +1,25 @@
+{
+  "status": "PASS_FRESH_FINAL_B_ORDER_INDEPENDENT_SEVEN_STAGE_IR_AND_GEOMETRY",
+  "geometry": {
+    "exit_code": 0,
+    "completion_chunk": "d1888e",
+    "log_sha256": "3ecfc37bf6d9fc0a2557dea8ce05d4fc6b88d5cbfa780f0130e84f6bfd5ed40c",
+    "script_sha256": "5508a8d3dbb4346fbb83de3a9a96f5e8b7ce9d85192e86d63f95f1a238097053",
+    "result_sha256": "40a109a5d8a2f834922ae65dc7922677bad7ed5129f8249567850695c0e207f0"
+  },
+  "idle_links": {
+    "exit_code": 0,
+    "completion_chunk": "9d2da1",
+    "log_sha256": "e9ac738bee95b287f0484f0f7cc2fc7ccf6936b92534cf90bace4414b547a29a",
+    "script_sha256": "1e8093ebed911b1270553b5e290702de469355a31667d68330249541fe39163e",
+    "links_sha256": "5315d6b76fd3d11b55c4ef0fdfb242fc509f49b5c483e272b011ab6895b9b102"
+  },
+  "raw_ir": {
+    "exit_code": 0,
+    "completion_chunk": "e993c5",
+    "log_sha256": "ca14cef666980f1d6d8e417661fa2329e6c674131c2fb27e9a54bb66b8eacc5e",
+    "script_sha256": "55482d25e318aa8de76dbbcdf3d4425050064aeb7e71e8ecf352554213869e94",
+    "result_sha256": "ca14cef666980f1d6d8e417661fa2329e6c674131c2fb27e9a54bb66b8eacc5e"
+  },
+  "no_published_files_modified": true
+}

@@ -1,0 +1,11 @@
+{
+  "pr": 377,
+  "head": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+  "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/377",
+  "source_manifest_sha256": "3743f954b5a652e51fa9ae5101318345d79f4c897ff9a29d5c54387b92118458",
+  "archive": "/private/tmp/pr377-supplier-source-v1.tar.gz",
+  "archive_sha256": "0f53bc9bbd8fd112ad59cdc74a599e10b2f3d081640600b24e44162e29affcaa",
+  "file_count": 161,
+  "archive_scope": "Immutable PR377 research/nine-stage-complex-e8 only; no generated files",
+  "provenance": "Zhihao Chen with substantial OpenAI Codex assistance; E8 Jacob Sussman 9c94857 through PR352, licenses preserved"
+}

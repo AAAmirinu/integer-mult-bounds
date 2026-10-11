@@ -1,0 +1,248 @@
+{
+  "all_f2_columns": 10794,
+  "bank_controls": [
+    {
+      "block": 0,
+      "differing_columns": 16,
+      "mode": "omit"
+    },
+    {
+      "block": 0,
+      "differing_columns": 16,
+      "mode": "repeat"
+    },
+    {
+      "block": 1,
+      "differing_columns": 16,
+      "mode": "omit"
+    },
+    {
+      "block": 1,
+      "differing_columns": 16,
+      "mode": "repeat"
+    },
+    {
+      "block": 2,
+      "differing_columns": 16,
+      "mode": "omit"
+    },
+    {
+      "block": 2,
+      "differing_columns": 16,
+      "mode": "repeat"
+    },
+    {
+      "block": 3,
+      "differing_columns": 16,
+      "mode": "omit"
+    },
+    {
+      "block": 3,
+      "differing_columns": 16,
+      "mode": "repeat"
+    },
+    {
+      "block": 4,
+      "differing_columns": 16,
+      "mode": "omit"
+    },
+    {
+      "block": 4,
+      "differing_columns": 16,
+      "mode": "repeat"
+    },
+    {
+      "block": 5,
+      "differing_columns": 16,
+      "mode": "omit"
+    },
+    {
+      "block": 5,
+      "differing_columns": 16,
+      "mode": "repeat"
+    },
+    {
+      "block": 6,
+      "differing_columns": 16,
+      "mode": "omit"
+    },
+    {
+      "block": 6,
+      "differing_columns": 16,
+      "mode": "repeat"
+    }
+  ],
+  "bank_slots_sha256": "9f38cb212964d7dd7f4cd54c941c6c4a631f24ffd3eda0589e180c0954b2580d",
+  "banks_per_stage": 822,
+  "charts_sha256": "f94959b43d32b6edf6f60bce48c6c6717ea5e9799b35d6052ab5df53718e5e20",
+  "deficit": 1512,
+  "full_seven_stage_cancellation_free_prefix": 1676572497474094192863,
+  "legacy_five_stage_payload_guard_used": false,
+  "literal_stock": 10794,
+  "opcode_counts": {
+    "0": 204575,
+    "1": 719761,
+    "2": 441,
+    "3": 441,
+    "4": 15120,
+    "5": 10080,
+    "7": 2520
+  },
+  "paid_calls": 219695,
+  "paid_histogram": {
+    "1": 108010,
+    "2": 44247,
+    "3": 23324,
+    "4": 14504,
+    "5": 14210,
+    "6": 2072,
+    "7": 5726,
+    "8": 882,
+    "14": 1680,
+    "20": 1680,
+    "27": 3360
+  },
+  "payload_bits": 71,
+  "physical_banks": 5754,
+  "price_sha256": "852ad22ad3d38829345cec7c946327ac5a6d9e322a1ca42556545d5a558832d8",
+  "program_sha256": "d702e9503f7564d85b6234541d88269848c405ab282bf4af6b701aaa18d2f424",
+  "rank_mass": 602952,
+  "replicas": 7,
+  "role_stage_assignments": 40278,
+  "scope": "Exact renamed seven-stage raw-bit program with scalar F2 endpoint, dirty helpers, COPY lifetimes, all local paid MOVE chart links, and explicit completed-bank slots. Source-level signed decoder, all-port stage/idle geometry, finite invoice and all-size transfer require separate receipts.",
+  "source": {
+    "249-records.bin": "984756b84290283a26e141f0aceeeb1bae4498540ca0d2621080d0da6a5cb421",
+    "249-states.json": "fb27f6f39e2b835ad6266309bafe14e855a573577dd597ee9f231c9ddfa21a0e",
+    "frames.json": "884480e45865a9d9d57f5f7198844a64271b046bc95e9820efbefb9e10878330"
+  },
+  "stages": [
+    {
+      "adds": 102823,
+      "copies": 63,
+      "erasures": 63,
+      "max_prefix_l1": 742,
+      "paid": {
+        "1": 15190,
+        "2": 6321,
+        "3": 3332,
+        "4": 2072,
+        "5": 2030,
+        "6": 56,
+        "7": 98,
+        "8": 126
+      },
+      "reverse": false,
+      "stage": 0
+    },
+    {
+      "adds": 102823,
+      "copies": 63,
+      "erasures": 63,
+      "max_prefix_l1": 2653659,
+      "paid": {
+        "1": 15190,
+        "2": 6321,
+        "3": 3332,
+        "4": 2072,
+        "5": 2030,
+        "6": 56,
+        "7": 98,
+        "8": 126
+      },
+      "reverse": true,
+      "stage": 1
+    },
+    {
+      "adds": 102823,
+      "copies": 63,
+      "erasures": 63,
+      "max_prefix_l1": 1035011856,
+      "paid": {
+        "1": 15190,
+        "2": 6321,
+        "3": 3332,
+        "4": 2072,
+        "5": 2030,
+        "6": 56,
+        "7": 98,
+        "8": 126
+      },
+      "reverse": false,
+      "stage": 2
+    },
+    {
+      "adds": 102823,
+      "copies": 63,
+      "erasures": 63,
+      "max_prefix_l1": 3381733382002,
+      "paid": {
+        "1": 15190,
+        "2": 6321,
+        "3": 3332,
+        "4": 2072,
+        "5": 2030,
+        "6": 56,
+        "7": 98,
+        "8": 126
+      },
+      "reverse": true,
+      "stage": 3
+    },
+    {
+      "adds": 102823,
+      "copies": 63,
+      "erasures": 63,
+      "max_prefix_l1": 1317248687019042,
+      "paid": {
+        "1": 15190,
+        "2": 6321,
+        "3": 3332,
+        "4": 2072,
+        "5": 2030,
+        "6": 56,
+        "7": 98,
+        "8": 126
+      },
+      "reverse": false,
+      "stage": 4
+    },
+    {
+      "adds": 102823,
+      "copies": 63,
+      "erasures": 63,
+      "max_prefix_l1": 4304283097477072187,
+      "paid": {
+        "1": 15190,
+        "2": 6321,
+        "3": 3332,
+        "4": 2072,
+        "5": 2030,
+        "6": 56,
+        "7": 98,
+        "8": 126
+      },
+      "reverse": true,
+      "stage": 5
+    },
+    {
+      "adds": 102823,
+      "copies": 63,
+      "erasures": 63,
+      "max_prefix_l1": 1676571180224372161965,
+      "paid": {
+        "1": 15190,
+        "2": 6321,
+        "3": 3332,
+        "4": 2072,
+        "5": 2030,
+        "6": 56,
+        "7": 98,
+        "8": 126
+      },
+      "reverse": false,
+      "stage": 6
+    }
+  ],
+  "status": "PASS_EXPLICIT_SEVEN_STAGE_LOWERING_CHART_LINKS_F2_ENDPOINT_BANKS_AND_FULL_PREFIX",
+  "width": 56
+}

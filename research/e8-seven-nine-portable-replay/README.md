@@ -1,0 +1,19 @@
+κ = 9.93946061393808e-4
+
+# Reproducible replay of the frozen E8 seven/nine composition
+
+This is an **unchanged-κ reproducibility successor to [PR #388](https://github.com/CrocSwap/integer-mult-bounds/pull/388)**, not a new record claim. The exact result remains **κ = 993946061393807595571272 / 10^27 = 9.9394606139380795571272·10^-4**. The B-order word and nine-stage complex supplier are unchanged. PR #388 remains frozen at `783e019de2a27c30cd0dc858f4611f044e6fe77a`.
+
+The published #388 clean checkout failed its manifest because three ignored `.log` files were named but not committed. Its verifier also omitted fresh candidate reconstruction/export, both reflected frame ledgers, independent chart/idle/IR checks and the fresh finite bill; it replaced the freshly replayed complex receipts with historical ones before assembly. This successor fixes those verification gaps and binds the exact assembly to actual fresh supplier outputs. See `REPAIR.md` for the precise changes and retained limitations.
+
+Run `python3 -B verify.py .` with Python 3.11 or newer, numpy, sympy and mpmath. No network, C++ compiler or workstation-specific path is needed. The command uses a fresh output directory and checks every packaged file, the immutable source archives, source reconstruction, emitted scalar words, signed dirty restoration, both frame ledgers, exact local/reflected chart identities, full seven-stage lowering, idle links, physical bank assignments, fresh all-port rational routes, the complete finite invoice, the complex supplier and exact assembly. `--quick` checks only integrity, source reconstruction and historical assembly; it does not claim fresh component admission.
+
+The bit side has h=8, v=120, R=822, seven bridged stages, m=56, W=10794, T=7 and deficit 1512. Its word has 18,873 local records and 592 commuting B additions. The normalized program has 219,695 paid calls, rank mass 602,952 and histogram {1:108010, 2:44247, 3:23324, 4:14504, 5:14210, 6:2072, 7:5726, 8:882, 14:1680, 20:1680, 27:3360}. The coarse saving is c = 198986994618331 / (2·10^17).
+
+The seven-stage program has 952,938 records and all 10,794 F₂ columns are checked, with arbitrary dirty helpers, 204,575 local MOVE/COPY chart links, 15,120 idle operations, explicit data-family mapping and bank slots. Five IR mutation controls reject omitted bridges, wrong charts, wrong idle IDs, wrong copied centers and reflected signs. The actual cancellation-free prefix is 1,676,572,497,474,092,862,863 (71 bits), below the 104-bit finite allowance.
+
+The signed supplement restores all 1,062 integer columns for arbitrary helper dirt and both reflected directions, with exact parity projection to the emitted word. Both ledgers have 4,175 paid calls and rank mass 8,328; forward/inverse majorants are 742/7500. Its 112 even zero-frame compensation additions are conservatively charged in the finite invoice.
+
+The PR377 complex supplier has b = 999240641319551/10^18, m=73, physical=15520, two-layer guard 5329 > 4608 and physical row coefficient 15445 < 20161. The assembly uses eight bootstrap cutoffs, eta=10^-24 and beta=10^-9, and rejects the adjacent 10^-27 grid point. The finite coefficient is unchanged at 56,695,687,506,592. Historical CPython 3.11/3.12 receipts are retained as provenance; each full verifier run records its own actual exits, logs and hashes separately.
+
+The finite result remains conditional on inherited source527/PR234 compiler, bank/routing, E8 chart, precision/recovery, row and analytic interfaces. No Lean multiplication theorem or new all-size compiler proof is claimed. Credits: the E8 unit and word lineage remain attributed to Jacob Sussman and Dylan Crow with their recorded Claude assistance; PR376/PR377 contributors and notices are retained; the B-order, signed audit, lowering, finite correction, composition and portable repair were prepared with OpenAI Codex assistance. Apache-2.0. See `NOTICE.md` and archived source notices.

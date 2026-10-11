@@ -1,0 +1,9 @@
+{
+  "status": "PASS_INDEPENDENT_EXACT_ALL_LOCAL_AND_REFLECTED_CHART_IDENTITIES",
+  "frames": 944,
+  "charts": 3361,
+  "frames_sha256": "884480e45865a9d9d57f5f7198844a64271b046bc95e9820efbefb9e10878330",
+  "charts_sha256": "f94959b43d32b6edf6f60bce48c6c6717ea5e9799b35d6052ab5df53718e5e20",
+  "same_rank_wrong_frame_chart_rejected": true,
+  "AI": "OpenAI Codex, Apache-2.0."
+}

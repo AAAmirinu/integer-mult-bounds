@@ -1,0 +1,8 @@
+{
+  "session": 70249,
+  "actual_exit_code": 0,
+  "observed_chunk": "1cb9a6",
+  "verification_sha256": "1dce467cfd699aeb09af76e3a2af5396506bda42cf34c8ba866e1d037355ee1d",
+  "source_manifest_sha256": "3743f954b5a652e51fa9ae5101318345d79f4c897ff9a29d5c54387b92118458",
+  "python": "3.11.5 (main, May 29 2026, 21:26:09) [Clang 17.0.0 (clang-1700.3.19.1)]"
+}

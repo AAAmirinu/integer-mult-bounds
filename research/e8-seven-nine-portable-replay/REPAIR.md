@@ -1,0 +1,15 @@
+# Reproducibility correction to frozen PR #388
+
+The mathematical candidate and κ = 993946061393807595571272/10^27 are unchanged. PR #388 remains frozen at commit 783e019de2a27c30cd0dc858f4611f044e6fe77a.
+
+A clean git archive of that commit failed before execution because its outer manifest named three ignored `.log` files absent from Git. Its full driver also omitted candidate reconstruction, emitted record export, both frame ledgers, independent chart/idle/IR checks and fresh finite execution. Finally it replayed PR377 but replaced the fresh complex receipts with historical receipts before assembly.
+
+This package checks exact shipped file coverage (including nested manifests), reconstructs PR376 retiming/helper reuse and the commuting B witness, freshly exports every scalar record, runs scalar mutation tests and both frame ledgers, audits the signed source with arbitrary helper dirt, verifies all local/reflected rational chart matrices, freshly lowers all seven stages and checks all F₂ columns, all idle child identities and physical bank assignments, regenerates all 120 rational route programs and the complete finite bill, and assembles from the complex supplier's actual fresh outputs.
+
+Fresh replay logs and actual exit codes are written outside the package. The exact assembly binds a deterministic complex semantic contract and immutable source manifest. Run-specific timing, absolute locations and log/derived-receipt hashes remain in the fresh verification receipt; they are not substituted into historical evidence. The signed portable receipt removes only elapsed time and directory prefixes from the input hash map. The new finite and assembly artifacts bind that portable signed receipt. The κ arithmetic and finite coefficient remain unchanged.
+
+Historical CPython/native receipts in `proof/` and `provenance/` retain their original locations as provenance only. Executable repair checkers in `code/` accept explicit paths. Original independent-checker files under `proof/independent/` are retained as historical source and are not executed by the driver. Source archives remain byte-for-byte identical to #388. The pinned base376 word and parent finite receipt are copied from the already completed full PR376 replay, with `provenance/parent376/ROOT-EXIT.json` and `RECEIPT.json`; the wrapper freshly reconstructs the base word from original source witnesses and freshly derives every route field used from that finite receipt.
+
+Requirements: Python 3.11 or newer, numpy, sympy and mpmath. No network, compiler or workstation-specific path is needed by the replay command. Rational chart generation need not be rerun: every supplied chart matrix and inverse is verified directly over exact rationals in both orientations. Full verification remains finite and conditional on the inherited all-size compiler, bank/routing, precision/recovery, row and analytic interfaces. It is not a Lean multiplication theorem.
+
+Prepared with OpenAI Codex assistance. All source credits, licenses, notices and earlier AI disclosures remain in NOTICE.md and the immutable source archives.

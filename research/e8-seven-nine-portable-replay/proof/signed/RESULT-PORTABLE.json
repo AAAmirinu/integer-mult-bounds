@@ -1,0 +1,121 @@
+{
+  "arbitrary_helper_dirt_restored_exactly": true,
+  "attribution": "Original E8 construction: Dylan Crow with Anthropic Claude assistance; PR376 helper reuse and this independent audit and signed defining-source repair: OpenAI Codex assistance. Apache-2.0.",
+  "compensation": {
+    "even_additions": 112,
+    "maximum_coefficient": 5,
+    "odd_additions": 8699,
+    "unit_additions": 8963,
+    "weighted_additions": 8811
+  },
+  "controls": [
+    {
+      "mode": "F2",
+      "name": "omit_odd_dirt_compensation",
+      "rejected": true
+    },
+    {
+      "mode": "Z",
+      "name": "omit_cleanup_add",
+      "rejected": true
+    },
+    {
+      "mode": "F2",
+      "name": "omit_retained_scatter",
+      "rejected": true
+    },
+    {
+      "mode": "Z",
+      "name": "flip_dirt_compensation_sign",
+      "rejected": true
+    },
+    {
+      "mode": "Z",
+      "name": "flip_cleanup_sign",
+      "rejected": true
+    },
+    {
+      "mode": "Z",
+      "name": "same_parity_wrong_integer_compensation",
+      "rejected": true
+    }
+  ],
+  "decoder": {
+    "diagonal_coefficients": [
+      1,
+      3,
+      5
+    ],
+    "maximum_coefficient": 10,
+    "nonzero_coefficients": 14400
+  },
+  "decoder_sha256": "c6ac445ac59188dd87462ca1f8def53070ebc5af871b83a0f75db27b7cc61f4d",
+  "direction_minus_source": {
+    "copies": 9,
+    "final_max_row_l1": 742,
+    "formal_columns": 1062,
+    "max_prefix_row_l1": 742
+  },
+  "exported_F2_record_sha256": "984756b84290283a26e141f0aceeeb1bae4498540ca0d2621080d0da6a5cb421",
+  "forward": {
+    "copies": 9,
+    "final_max_row_l1": 742,
+    "formal_columns": 1062,
+    "max_prefix_row_l1": 742
+  },
+  "forward_and_reflected_ledgers": [
+    {
+      "histogram": {
+        "1": 2170,
+        "2": 903,
+        "3": 476,
+        "4": 296,
+        "5": 290,
+        "6": 8,
+        "7": 14,
+        "8": 18
+      },
+      "paid_calls": 4175,
+      "rank_mass": 8328
+    },
+    {
+      "histogram": {
+        "1": 2170,
+        "2": 903,
+        "3": 476,
+        "4": 296,
+        "5": 290,
+        "6": 8,
+        "7": 14,
+        "8": 18
+      },
+      "paid_calls": 4175,
+      "rank_mass": 8328
+    }
+  ],
+  "forward_then_signed_inverse_identity": true,
+  "independent_adjoint_all_target_rows": true,
+  "input_sha256": {
+    "249-records.bin": "984756b84290283a26e141f0aceeeb1bae4498540ca0d2621080d0da6a5cb421",
+    "249-states.json": "fb27f6f39e2b835ad6266309bafe14e855a573577dd597ee9f231c9ddfa21a0e",
+    "frames.json": "884480e45865a9d9d57f5f7198844a64271b046bc95e9820efbefb9e10878330",
+    "word.json.gz": "b7f8420b8bee58fba99dee68455a80839c8bb2ceabcc50fd0ffd0f4f3aa6b320"
+  },
+  "literal_parity_record_equality": true,
+  "literal_signed_inverse": {
+    "copies": 9,
+    "final_max_row_l1": 7500,
+    "formal_columns": 1062,
+    "max_prefix_row_l1": 7500
+  },
+  "scope": "Exact all-column signed defining-source supplement. The actual paid bit word is its byte-identical parity reduction and keeps its own forward/inverse majorant and paid profile. The defining Z target is the explicit clean E8 network decoder, not the identity; its mod2 is identity. This is not a source527 replay or a general all-size compiler proof. E8 rational charts, global seven-stage emitted addresses, selectors, finite invoice and assembly are separate obligations.",
+  "signed_record_sha256": "801d0f37641b413cbe35cabe0dd14c5a6a08ccc477fbd6e79a1c886abe4f2a97",
+  "signed_records": 18985,
+  "signed_source_majorant_is_not_emitted_word_payload_bound": true,
+  "signed_source_support_checks": 78502,
+  "source_pr376_candidate_sha256": "b7f8420b8bee58fba99dee68455a80839c8bb2ceabcc50fd0ffd0f4f3aa6b320",
+  "source_rows_unchanged_exactly": true,
+  "status": "PASS_EXACT_SIGNED_DEFINING_DECODER_AND_LITERAL_PARITY_PROJECTION",
+  "target_decoder_exact_integer": true,
+  "target_decoder_mod2_identity": true
+}

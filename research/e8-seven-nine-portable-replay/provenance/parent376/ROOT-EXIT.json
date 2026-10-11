@@ -1,0 +1,11 @@
+{
+  "source_head": "4835f59e3467dcea542d1463733c3acdfa9b10bc",
+  "session": 10751,
+  "actual_exit": 0,
+  "observed_chunk": "af3e60",
+  "python": "/private/tmp/moonshot/primitives/char0/venv/bin/python",
+  "PYTHONPATH": "/private/tmp/pr327-pinned-runtime-cp312",
+  "utc": "2026-10-11T06:12:26.436629+00:00",
+  "receipt_sha256": "5bc6d381d84e7edb2836ac2963ad93d896f4b0b758dc21f6b1d6636456cc460a",
+  "status": "PASS_FRESH_UNCHANGED_PR376_FULL_REPLAY_WITH_KNOWN_LEGACY_PREFIX_GUARD_LIMITATION"
+}
