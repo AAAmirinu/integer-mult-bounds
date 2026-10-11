@@ -20,8 +20,8 @@ five-stage formal-column checks are also rerun on the changed literal word.
 
 The change in the local paid histogram is
 
-    H1:-17, H2:-8, H3:-5, H4:+26, H5:-26,
-    H6:+13, H7:-13, H8:+13, H9:+17, H10:-17.
+    H1:-17, H2:+1, H3:-19, H4:+35, H5:-34,
+    H6:+17, H7:-17, H8:+17, H9:+17, H10:-17.
 
 The coefficients sum to -17 and their rank-weighted sum is zero. Unchanged
 COPY costs and the inherited five-stage idle distribution are included in
@@ -30,20 +30,20 @@ and normalized deficit is 24480.
 
 The exact bit coarse saving is
 
-    c = 201394305392623 / 250000000000000000.
+    c = 402794119831239 / 500000000000000000.
 
 Both independent rational engines prove the full-fallback moment is below
 one at c and above one at c + 10^-18. With the unchanged E8 complex supplier
 and the inherited outer assembly, all 47 strict inequalities hold for
 
-    kappa = 804928788870063 / 10^18,
+    kappa = 160987957846297 / 200000000000000000,
 
 and the adjacent kappa grid point is rejected. This yields the stated
 conditional sufficient construction under the inherited interfaces.
 
 The logarithmic search objective nominates candidates only. Neither floating
 point annealing scores nor a sum of prior published gains is a certificate.
-The 30 retained components have negative rational paid-moment intervals at
+The 35 retained components have negative rational paid-moment intervals at
 the baseline exponent; the final claim additionally uses the actual emitted
 word, exact stock and complete repricing.
 

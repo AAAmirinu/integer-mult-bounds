@@ -1,10 +1,10 @@
 # Coupled frame retiming after PR364
 
-Conditional kappa **804928788870063 / 10^18**, or
-**0.000804928788870063**, improves frozen PR364's
-0.000804879370798932 by **0.006139810874%**.
+Conditional kappa **160987957846297 / 200000000000000000**, or
+**0.000804939789231485**, improves frozen PR364's
+0.000804879370798932 by **0.007506520200%**.
 
-The construction changes 99 ADD frames in 30 coupled components of the final
+The construction changes 123 ADD frames in 35 coupled components of the final
 Design T/min-cost-carrier word. All signed scalar instructions, their order,
 registers, COPY windows and entrance/exit frames are preserved. The local paid
 call count falls by 17; rank mass and helper stock are unchanged.
@@ -53,10 +53,16 @@ tested 50,422,591 proposals and returned 322 changed frames. We then separated
 changes into components connected by consecutive register uses, computed
 each component's exact rational moment delta at the baseline bit exponent,
 and retained only the 30 strictly beneficial components. This reduction
-improved the result over retaining the whole annealed assignment.
+improved the result over retaining the whole annealed assignment. A separate
+180-second CP-SAT solve over a finite frame universe returned a feasible,
+nonoptimal assignment that was worse as a whole. The same exact component
+reduction extracted 20 beneficial components. Five of those, comprising 24
+gates, have no changed-gate adjacency to the annealer's retained components.
+We compose those five with the first 30, then re-emit and reprice the entire
+word. No global frame optimality is inferred from this bounded solve.
 
-The retained changes lower 56 category-12 gate frames from dimension 13 to 12,
-and 43 from 15 to 14. There are 43 newly registered frames. These are coupled
+The retained changes lower 71 category-12 gate frames from dimension 13 to 12,
+and 52 from 15 to 14. There are 53 newly registered frames. These are coupled
 changes: legality is checked on the simultaneous assignment, not inferred
 from a sequence of individually beneficial gate moves.
 
@@ -68,3 +74,8 @@ negative results apply only to the tested move classes.
 The bit side still binds. Sussman's E8 complex saving remains exactly
 876248285600677 / 10^18. No supplier improvements or published kappa gains
 are added arithmetically.
+
+The repository-level PR also includes the unchanged three-file pin repair
+from PR318 at `a45747d2559141a594916475f52642e4fab86e02`, whose pinned inputs
+were checked against current main. This repairs the inherited joint-dual CI
+failure without altering its mathematics.
