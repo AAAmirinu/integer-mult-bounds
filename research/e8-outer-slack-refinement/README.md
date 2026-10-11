@@ -1,6 +1,6 @@
-# Exact outer-assembly slack refinement
+# Six-level ordinary bootstrap and exact outer witness
 
-Conditional **kappa = 0.000998634657132636** (`249658664283159/250000000000000000`), versus #384's 0.000998634656132003. The absolute gain is **0.000000000001000633**, about **0.0000001002001076024877%**. This is a tiny witness-parameter improvement, with unchanged circuits and unchanged coarse savings.
+Conditional **kappa = 0.000998634658090834** (`499317329045417/500000000000000000`). This is above #384's 0.000998634656132003 and the previous three-level version of this PR, 0.000998634657132636. It is a small finite-bootstrap/witness improvement. The local circuits, paid profiles, bit coarse saving and complex coarse saving are unchanged.
 
 ## Reproduce
 
@@ -10,18 +10,26 @@ Python 3.11+ and its standard library are sufficient:
 python -B research/e8-outer-slack-refinement/verify.py /fresh/output/directory
 ```
 
-The output directory must not exist. The verifier first runs the complete pinned #384 verifier, including exact operator equality, both moment engines, all baseline inequalities, and full regeneration of its retimed certificate. Its only shell adaptations select the active Python and preserve paths with spaces. It then computes the new witness using the unchanged, pinned `outer.assembly`, checks all 47 strict rational slacks, rejects four invalid witnesses, and proves the next 10^-18 grid point exceeds the entire retained three-round family's supremum. Original source integrity is checked before and after.
+The output directory must not exist. The verifier first runs the complete pinned #384 verifier, including both moment engines, exact operator equality, baseline assembly and full regeneration of the retimed certificate. Its shell adapter only selects the active Python and preserves paths with spaces. It then reconstructs six fixed bootstrap levels, checks their closed forms and positive finite-cutoff gaps, verifies all 47 strict rational assembly constraints, and rejects six invalid witnesses/cutoffs. The next 10^-18 grid point exceeds `b/(1+b)`, the ceiling of the unchanged outer formula at this fixed complex saving. Original source integrity is checked before and after.
 
-## What changes
+## The improvement
 
-The existing construction has bit coarse saving `251726760077483/250000000000000000` and complex coarse saving `999632926176283/10^18`. The latter limits the allowed bootstrap saving. Instead of #384's beta=10^-9, eta=10^-12 and coarse-grid backoff, use beta=eta=10^-18 and choose `s=(1-beta)*b-10^-24`. All inequalities remain strictly positive. Keep the same three bootstrap rounds and the same finite envelope. `EXPECTED-WITNESS.json` records the full exact chain and every slack; it is compared against a fresh calculation, never used as the calculation's input.
+The unchanged coarse inputs are `c = 251726760077483/250000000000000000` and `b = 999632926176283/10^18`. Keep beta=eta=10^-18 and `s=(1-beta)*b-10^-24`. Starting with completed ordinary saving `a0=384599/10^10`, construct exactly six acyclic levels:
 
-The only improvement is in the final witness. This does not improve the local word, recursive moment, stock, finite invoice, bit or complex coarse saving. The stronger numerical witness retains #384's conditional scope.
+`a[j+1]=(1-s)*s+s*a[j] = s-s^(j+1)*(s-a0)`.
 
-## Proof scope
+Each ordinary call in level j uses only the completed preceding level. Coarse recursive children still shrink their input width. Six is fixed independently of input size; no infinite-depth algorithm or growing stack is used. Every stage has positive atom, borrowing, remainder and stock gaps. Its lower-order tolls can therefore be absorbed above a finite cutoff, with the previously completed algorithm used below it.
 
-All supplier assumptions and unresolved obligations of #384 remain, including #382's kernel entrance-completion/bit-geometry/finite-bill obligations and #377's compressed-window, arbitrary-dirty-bank, exact Clifford/compiler, common-grid, row and analytic interfaces. This package runs exactly the checks #384 supplies. It does not newly discharge its certificate-specific splice/Clifford/invoice obligations, and does not claim an unconditional multiplication exponent or new Lean proof.
+This extends the fixed-depth argument from our reviewed #185 work, pinned under `bootstrap-sources/`. The earlier review covered three levels; the six-level extension and its conditional composition argument are supplied in `PROOF.md` here. For each stage the code checks the exact cutoff inequalities at representative constant bit bounds. The proof gives the formula for any fixed dominating stage constant; these examples do not claim to measure the inherited algorithm's actual constants.
 
-The grid-optimality statement is only for the retained three-round assembly family and fixed coarse inputs; it is not a global bound on other bootstrap depths, circuits or assembly constructions. See `PROOF.md`.
+The six-level witness reaches the largest 10^-18 grid point below `b/(1+b)`. In the retained outer formula, `a<b` and positive eta force the compact margin below this ceiling. Thus another bootstrap depth or slack choice in that same formula and at the same b cannot reach the next grid point. This says nothing about stronger coarse suppliers or a different outer assembly. Five levels at the selected slacks are explicitly checked to fall short of the chosen grid point.
 
-The source384 directory is unchanged from commit fd81a16a1e4e82acfb4d45752cba17450644fde6. Its original licenses, notices, checkers, search, proof and manifest are preserved. The three joint-dual metadata files outside this package reuse #318's source-pin repair without any mathematical change.
+`THREE-ROUND-WITNESS.json` preserves the previous result and checks that the first three levels are unchanged. `PARAMETERS.json` freezes the selected finite depth and slacks. `EXPECTED-WITNESS.json` is compared to fresh calculations, never used as their substitute.
+
+## Conditional scope
+
+All #384 supplier assumptions and unresolved obligations remain, including #382's kernel entrance-completion, bit-geometry and finite-bill obligations and #377's compressed-window, arbitrary-dirty-bank, Clifford/compiler, common-grid, row and analytic interfaces. The ordinary bootstrap additionally states the same inherited completed-leaf contract explicitly: arbitrary widths, complete spectators, restored internally borrowed rows and a fixed finite tape set. Each new fixed level must satisfy that conditional interface. There is no new proof of those base interfaces, measured machine constant, practical speedup, Lean build or unconditional multiplication exponent.
+
+This package runs exactly the circuit checks #384 supplies; it does not discharge that PR's unrerun certificate-specific splice/Clifford/invoice obligations. The reviewed bootstrap sources explain why internal borrowing at completed endpoints does not require a new external row multiplier. The retained external 252 allocation is slack, not a claim about the six-level algorithm's internal workspace.
+
+`source384/` is unchanged from fd81a16a1e4e82acfb4d45752cba17450644fde6. Its licenses, notices and manifest remain intact. Bootstrap proof sources are byte-bound to main commit 12a4934d15006e8c10f9b2264f13f8f341be802b. The three joint-dual metadata files outside this package reuse #318's source-pin repair without a mathematical change.
