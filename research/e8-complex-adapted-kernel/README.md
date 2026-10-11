@@ -49,6 +49,14 @@ canonical JSON so gzip container differences do not alter the operator
 identity across Python versions. Frozen source bytes remain individually
 hash-pinned. Receipts record completed checks, modes and source hashes.
 
+The two inherited floating-point discovery estimates are finite provenance
+metadata, normalized to the frozen report before exact word comparison.
+Their numerical agreement is not a proof condition. The verifier tests
+2.1e-12 perturbations independently, rejects nonfinite estimates, and rejects
+changes to exact gates, register counts or unrecognized report fields.
+This fixes the Python 3.11 portability failure reported by PR460; the operator,
+kernel selection, exact prices and expected result remain unchanged.
+
 ## Scope
 
 The new paid adapter and distinct-host argument is supplied here. The
