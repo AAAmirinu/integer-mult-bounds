@@ -68,5 +68,3 @@ The fourteen-dimensional enlargement and joint914/960 selection use exact backwa
 ## Joint gate-frame block successor
 
 The joint retiming of ten A/B gate frame labels, source-pinned constructor, full protected-prefix admission and complete bank/invoice/outer integration were prepared with substantial OpenAI Codex assistance. PR423's scalar construction is retained exactly. Original source attributions, Apache-2.0 license, PR376 and PR402 provenance, and existing AI disclosures are preserved.
-
-The complete prefix predecessor was published as PR423 at 997613cb3064b4096b996409a671e558251d55f8. This separate joint-block217 successor preserves that PR head and claim.
