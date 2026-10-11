@@ -1,0 +1,37 @@
+name: e8-sequential-enlarged
+
+on:
+  pull_request:
+    paths:
+      - 'research/e8-sequential-enlarged/**'
+      - '.github/workflows/e8-sequential-enlarged.yml'
+  push:
+    paths:
+      - 'research/e8-sequential-enlarged/**'
+      - '.github/workflows/e8-sequential-enlarged.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.12', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Quick verification (manifest, pins, #399+#402+#407 controls, #406/#408/#409/#410 words and controls, re-pivot, enlargement, fusion, re-synthesis, replay, banks, kappa)
+        run: bash research/e8-sequential-enlarged/verify.sh --quick "$RUNNER_TEMP/e8s-quick"
+      - name: Full verification (adds every regeneration)
+        run: bash research/e8-sequential-enlarged/verify.sh "$RUNNER_TEMP/e8s-full"
+      - name: Require an unchanged tree
+        run: git diff --exit-code

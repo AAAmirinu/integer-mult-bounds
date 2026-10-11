@@ -1,0 +1,9 @@
+{
+ "base": "rohanarun PR #409 SELECTION.json (four ordered sequential entrance groups, ten promoted pivots)",
+ "swaps": [
+  {"plan_vector": 51, "out": 1010, "into": 739,
+   "why": "gxcore E5: with pivot 1010 (half-coefficient relation) the plan's half-unit gauged dirt meets a later /2 gate at register 204; with 739 every intermediate entry stays in sixths"},
+  {"plan_vector": 195, "out": 910, "into": 531,
+   "why": "gxcore E5: with pivot 910 the plan's half-unit gauged dirt reaches register 275 beyond sixths; pivoting on 531 makes all three relations integral"}
+ ]
+}
