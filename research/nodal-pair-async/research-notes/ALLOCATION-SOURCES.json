@@ -1,0 +1,19 @@
+{
+  "scope": "Source-only inspection; no new Lean compilation or imported theorem application",
+  "sources": [
+    {
+      "path": "OAI/Computability/MatchingCount/UnitFlow.lean",
+      "sha256": "6658549d05b7e602bcaad654101ac8e7db9ea475187e622104e11aee3fcd00e8"
+    },
+    {
+      "path": "OAI/Computability/MatchingCount/UnitMincut.lean",
+      "sha256": "6b97f2f6b924094da244fe1c80ba06167e872186a017c9c61261c52df2605df3"
+    },
+    {
+      "path": "OAI/Combinatorics/PerfectMatching/Main.lean",
+      "sha256": "c71fc37997fdbefad7fb237f1883b3f2ce014b641f310e8bfd521b82012c37f5"
+    }
+  ],
+  "selected_plan_sha256": "a04f33dcd7921d42d7507606a9781c5e5519bacf0747220e61195635105b11ba",
+  "selected_owners_sha256": "5e1ac46a2390c8355ad4b05a154c8c95ed4dd47e87f620d549c5deb26bfa95f7"
+}

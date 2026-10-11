@@ -1,0 +1,10 @@
+{
+  "path": "lean/OAI/InformationTheory/QuantumCircuit/PruningConstruction.lean",
+  "declarations": [
+    "reflect_action_error",
+    "reflection_filter_error"
+  ],
+  "sha256": "928e58964c824dff5aff910ef5123e49452160dd0091aecbbc5e4d17271c071c",
+  "revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "evidence": "source inspection; no fresh Lean audit"
+}

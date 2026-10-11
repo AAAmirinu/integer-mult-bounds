@@ -1,0 +1,70 @@
+{
+  "status": "SUFFICIENT_TRANSFORMATION_DERIVED_NO_ADMISSIBLE_IMPROVEMENT_IN_BOUNDED_SCREENS",
+  "source_family": "OpenAI AlgorithmicThinTrees rational Schur history",
+  "proof": "SCHUR-CIRCUIT-PROOF.md",
+  "sources": "OPENAI-SOURCE.json",
+  "screens": [
+    {
+      "directory": "pure-factory",
+      "status": "EXACT_RATIONAL_FRAME_GATE",
+      "source_sha256": "e46603ffddfb7600d57cb4aba3501ec816196a07331d84edc6e24a76ddb0bc15",
+      "tested": 557,
+      "failures": {
+        "nonmonotone_frame": 557
+      },
+      "legal": 0,
+      "receipt_sha256": "5e254f372a17154837888b977ebdf73a61a989e898cf4a806ca6551faae3929f"
+    },
+    {
+      "directory": "retimed-factory",
+      "status": "EXACT_RATIONAL_FRAME_GATE",
+      "source_sha256": "e46603ffddfb7600d57cb4aba3501ec816196a07331d84edc6e24a76ddb0bc15",
+      "tested": 557,
+      "failures": {
+        "singular_schur_pivot": 154,
+        "target_frame_conflict": 386,
+        "non_dyadic_scale": 14,
+        "nonmonotone_frame": 3
+      },
+      "legal": 0,
+      "receipt_sha256": "e5d9883161658eee486ea9ca9b0ec6f4b72402e68cedbbdca704fa55fa528ddc"
+    },
+    {
+      "directory": "pivot-factory",
+      "status": "EXACT_RATIONAL_FRAME_GATE",
+      "source_sha256": "e46603ffddfb7600d57cb4aba3501ec816196a07331d84edc6e24a76ddb0bc15",
+      "tested": 557,
+      "failures": {
+        "target_frame_conflict": 484,
+        "singular_locked_pivot": 56,
+        "non_dyadic_scale": 14,
+        "nonmonotone_frame": 3
+      },
+      "legal": 0,
+      "receipt_sha256": "70e1aa609cc5e8dedc037c8f46cbc3419c747cc5639d34fdc14b515285104690"
+    },
+    {
+      "directory": "newton-pivot-factory",
+      "status": "EXACT_RATIONAL_FRAME_GATE",
+      "source_sha256": "f8c22c3e6f5f7325c6ee8db2d730600ba67df1a8f920af362c53c4e3ab00c3c9",
+      "tested": 557,
+      "failures": {
+        "target_frame_conflict": 484,
+        "singular_locked_pivot": 56,
+        "non_dyadic_scale": 14,
+        "nonmonotone_frame": 3
+      },
+      "legal": 0,
+      "receipt_sha256": "652e2babfee5c3df4447ac4d414befe4bbde1eb1206e908f98df15b6de4a94ea"
+    }
+  ],
+  "contribution": "Explicit fill-in and live-pivot circuit synthesis with frame and dyadic-cost checks; no numerical gain. All proposals rejected before costly compilation.",
+  "remaining": "Final physical/invoice review of the independently nominated kernel-lane winner.",
+  "selected_candidate_review": {
+    "candidate": "pair-3-5",
+    "normalized_word_sha256": "bf26b8c3709039eb027430218f8b9bd3c369eb9c584e4ebfc2f9e350bab93f19",
+    "constructor_sha256": "7103459689b37e7f3e516a72b9de41ddbab7ced4a8053f3b9609e05189d3a6ee",
+    "nomination_review": "PAIR35-NOMINATION-REVIEW.json",
+    "status": "EXACT_CONSTRUCTOR_AND_LITERAL_OWNER_REVIEW_PASS_PHYSICAL_REPLAY_PENDING"
+  }
+}

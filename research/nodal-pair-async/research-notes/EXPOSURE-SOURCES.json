@@ -1,0 +1,31 @@
+{
+  "snapshot": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "sources": [
+    {
+      "path": "lean/OAI/Combinatorics/HoneycombChords/SparseInterpolation.lean",
+      "sha256": "e25c2131c0f08009a7d237b3f8f1087732c36760ad61f6403d6f2b655c0393ae",
+      "declarations": [
+        "sparseTestMatrix_factor",
+        "newtonEvaluation_det_pos"
+      ],
+      "evidence": "Source inspection, no fresh Lean compilation"
+    },
+    {
+      "path": "lean/OAI/Combinatorics/HoneycombChords/NewtonKernel.lean",
+      "sha256": "64428dfa7ac247eda2e150293cea265eee5990df68691dc72a6047e100b1cbe5",
+      "declarations": [
+        "powerNewton_evaluation",
+        "newtonBasis_eval_zero"
+      ],
+      "evidence": "Source inspection, no fresh Lean compilation"
+    },
+    {
+      "path": "lean/OAI/Combinatorics/HoneycombChords/PositiveJets.lean",
+      "sha256": "6c735cf7e879d10663c61d544a32566dc948b9c0066e17d53853caa53de38265",
+      "declarations": [
+        "newtonBasis"
+      ],
+      "evidence": "Source inspection, no fresh Lean compilation"
+    }
+  ]
+}

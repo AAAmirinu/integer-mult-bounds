@@ -1,0 +1,23 @@
+{
+  "proof_family": "AlgorithmicThinTrees rational Schur history",
+  "sources": [
+    {
+      "path": "openai-math/lean\\OAI\\Combinatorics\\ThinTrees\\RationalMatrix\\SchurHistory.lean",
+      "sha256": "a8857a8df1c6e3a38061c6f8db1f263c3c3eb602456390f0a5f7a882f7c01ca0",
+      "statements": [
+        "CurrentKS.Realization.schurHistory_iterate",
+        "CurrentKS.Realization.SchurDesc.wire",
+        "CurrentKS.Realization.runsPoly_schurHistory"
+      ]
+    },
+    {
+      "path": "openai-math/lean\\OAI\\Combinatorics\\ThinTrees\\RationalMatrix\\MatrixRealization.lean",
+      "sha256": "fea369ac6de1a1626bb8303e806d9d913e3af0ef0c27091405504b9f1cd65691",
+      "statements": [
+        "CurrentKS.Realization.schurEntry",
+        "CurrentKS.Realization.schur"
+      ]
+    }
+  ],
+  "evidence": "Source read only; no fresh Lean kernel or axiom audit. The new linear-circuit specialization is derived separately, not asserted to be a verbatim source theorem."
+}
