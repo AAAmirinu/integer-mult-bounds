@@ -16,4 +16,6 @@
 
 **5. Assembly.** PR #315's `outer.assembly`, with the bit c = 251726760077483/(2.5·10¹⁷) (#382) and this b, gives κ = 998634656132003/10¹⁸. It is complex-bound, all 47 strict constraints are positive, and κ + 10⁻¹⁸ is rejected. With #377's b the same call returns #382's κ = 998243154231047/10¹⁸.
 
+**Lean.** Only the five-stage B₂ unit theorem of this certificate is kernel-checked (`wht_main_block_B2Ge8FRx`, exponent 1 − 8766835/10¹⁰, `lean/LEAN-B2-E8FR.txt`); the nine-stage pricing above has no Lean proof.
+
 **Open.** The finite checks that #377 ran on Sussman's specific gates are not re-run for the new gates; the README lists them.

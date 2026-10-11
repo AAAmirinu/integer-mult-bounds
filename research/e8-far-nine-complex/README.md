@@ -81,7 +81,7 @@ None of #377's scripts were run. Only its receipt's `profile`, `m`, `live` and `
 
 The new unit has the same ports, start/final frames, retained totals and operator. Its gates and frames differ: there are 775/1,226 gates (against 773/1,220, +0.4 %) and 948 frames (two new). The new transitions are nested, as `gx.check1` E1 checks, so they fall under #377's general Clifford compiler interface. The finite invoice's exponents (router < 2³⁰⁰⁰⁰ against 7,984 bits used) leave far more slack than a 0.4 % change in the scalar-macro count consumes. Still, these are obligations of this package and are stated as such.
 
-**#378's own conditions** carry over: there is no Lean proof of the new certificate, which is checked by Sussman's `gx.check1`/`gxcore` and by the full operator identity.
+**#378's own conditions** carry over. Lean: the five-stage (B₂) unit theorem of the new certificate is kernel-checked; the B₃ and #377 layouts, including the nine-stage one priced here, remain without Lean proof. Sussman's unchanged generators (wht-power-saving-lean `9c94857`) give `wht_main_block_B2Ge8FRx : ∃ solve W, WHTProgram solve W ∧ WHTTimeBoundsAt (1 - 8766835/(10:ℝ)^10) W` (his original: 1 − 8762479/10¹⁰), with `tools/Compare.lean` `RESULT: PASS` and axioms propext, Classical.choice, Quot.sound (`lean/LEAN-B2-E8FR.txt`). In the nine-stage layout the certificate is checked by Sussman's `gx.check1`/`gxcore` and by the full operator identity.
 
 **The bit side is #382's claim**, including its halving-degree-two admission. Here we re-derive c from the word only. #382's stage replays, legality and B₃ formal-columns checks are in `research/e8-kernel-bit-b3/`.
 

@@ -17,7 +17,7 @@ for line in open('MANIFEST.sha256'):
     if hashlib.sha256(open(p,'rb').read()).hexdigest()!=h: print('MISMATCH',p);bad+=1
 files={os.path.relpath(os.path.join(r,f)) for r,_,fs in os.walk('.') for f in fs if '__pycache__' not in r}-{'MANIFEST.sha256'}
 if files-listed: print('UNLISTED',sorted(files-listed));bad+=1
-sys.exit(1 if bad else 0)") && echo "   all files match MANIFEST.sha256"
+sys.exit(1 if bad else 0)") || { echo "MANIFEST FAIL"; exit 1; }; echo "   all files match MANIFEST.sha256"
 
 echo "== 1. pinned inputs (git blob ids)"
 $PY -c "
