@@ -1,0 +1,10 @@
+component 208 rank 63
+  blocks 13 coupling 24 (free 12), sum block mins 100, coupling LB 20 -> LB sumrank 120  [3s]
+  total sumrank <= 120 attainable: False  [3103s]
+  total sumrank <= 121 attainable: True  [4352s]
+  => min sumrank 121 (LB 120 ) pivots 87
+component 28 rank 5
+  exact DP min sumrank 12 pivots 16
+component 14 rank 5
+  exact DP min sumrank 5 pivots 9
+TOTAL max pivots (exact, rank-1 axis-class model) 112

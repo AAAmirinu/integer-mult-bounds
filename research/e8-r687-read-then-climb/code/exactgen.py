@@ -1,8 +1,14 @@
 # Exact min sum-rank (=> max pivots) for one 'big' component via: block decomposition, per-block exact DP over span states,
-# coupling elements enumerated, DFS over blocks with optimistic-completion pruning.   usage: exactgen.py DATA.json comps.json [maxslack]
+# coupling elements enumerated, DFS over blocks with optimistic-completion pruning.
+# usage: exactgen.py DATA.json comps.json [maxslack] [lb]     ('lb': stop after the lower bounds; small components are still exact)
+# Completeness: block states are kept up to slack MAXSLACK, so an infeasible total T is proved only when T - LB <= MAXSLACK; the
+# reported optimum T is exact when T - LB <= MAXSLACK + 1 (the last infeasible total lies within the kept slack). Feasible totals
+# come with an explicit assignment found by the search.
+# Prepared by DreamingOfClouds with Claude (the project's matroid scout), via Claude Code; header, 'lb' mode and the machine-readable
+# CERT line by DreamingOfClouds with Claude Opus 5.5 (Anthropic), via Claude Code.  Apache-2.0.
 import json,sys,time,itertools,pickle
 from collections import defaultdict
-DATA=sys.argv[1]; COMPS=sys.argv[2]; MAXSLACK=int(sys.argv[3]) if len(sys.argv)>3 else 2
+DATA=sys.argv[1]; COMPS=sys.argv[2]; MAXSLACK=int(sys.argv[3]) if len(sys.argv)>3 else 2; LBONLY=len(sys.argv)>4 and sys.argv[4]=='lb'
 D=json.load(open(DATA))
 fl={int(k):v for k,v in D['fl'].items()}; resp={int(k):v for k,v in D['resp'].items()}
 comps=json.load(open(COMPS)); comps.sort(key=len,reverse=True)
@@ -121,12 +127,13 @@ def solve(c):
                 if al and dfs(depth+1,ch,al,slack+sl): return True
             return False
         return dfs(0,{i:[] for i in classes8},A,0)
+    if LBONLY: return None,LB
     for T in range(LB,LB+MAXSLACK+3):
         ok=feasible(T)
         print(f'  total sumrank <= {T} attainable: {ok}  [{time.time()-t0:.0f}s]',flush=True)
         if ok: return T,LB
     return None,LB
-tot=0
+tot=0; cert=[]
 for c in comps:
     if len(c)<2: continue
     print('component',len(c),'rank',len(span_of([resp[h] for h in c])),flush=True)
@@ -136,7 +143,10 @@ for c in comps:
         for cap in range(1,60):
             cl,st=blockstates(c,cap)
             if st: break
-        T=min(st.values()); print('  exact DP min sumrank',T,'pivots',len(c)-T); tot+=len(c)-T; continue
+        T=min(st.values()); print('  exact DP min sumrank',T,'pivots',len(c)-T); tot+=len(c)-T; cert.append(dict(size=len(c),method='dp',min_sumrank=T)); continue
     T,LB=solve(c)
-    print('  => min sumrank',T,'(LB',LB,') pivots',len(c)-T if T else None); tot+=len(c)-T if T else 0
-print('TOTAL max pivots (exact, rank-1 axis-class model)',tot)
+    print('  => min sumrank',T,'(LB',LB,') pivots',len(c)-T if T else None); tot+=len(c)-T if T else len(c)-LB
+    cert.append(dict(size=len(c),method='search',LB=LB,min_sumrank=T,maxslack=MAXSLACK,complete=(T is not None and T-LB<=MAXSLACK+1)))
+coloops=sum(1 for c in comps if len(c)<2); tot+=0   # coloops carry no pivot
+print(('UPPER BOUND max pivots (lower bounds only)' if LBONLY else 'TOTAL max pivots (exact, rank-1 axis-class model)'),tot)
+print('CERT',json.dumps(dict(components=cert,coloops=coloops,max_pivots=None if LBONLY else tot,upper_bound=tot,lb_only=LBONLY)))

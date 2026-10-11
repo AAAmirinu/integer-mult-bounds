@@ -4,7 +4,8 @@ complex supplier (PR #442's here; research/e8-r687-tensor-complex composes it wi
 usage: python -B research/e8-r687-read-then-climb/verify.py /absolute/new/output [--quick] [--discover-check] [--complex-upstream=DIR]
   --quick               skip only PR #443's historical regressions
   --discover-check      recompute the frozen hosting selection with scipy (HiGHS) and require equality
-  --no-certificate      skip only the exact pivot certificates (R687 = 101, R715 = 112; minutes to tens of minutes on a loaded machine)
+  --certificate         also rerun the exhaustive refutation of the R687 pivot certificate (about 30 min loaded); by default the
+                        lower bounds and the witness are recomputed and the pinned refutation log is checked
   --complex-upstream=D  use an already verified complex supplier directory with PR #442's layout (parent/changed, complex/,
                         AUDIT.json, RESULT.json, RECEIPT.json) instead of running PR #442's verifier
 needs: Python 3.11+, numpy, mpmath, sympy, scipy (as PR #443/#450); a C++17 compiler (CXX) and Boost headers (BOOST_INCLUDE).
@@ -15,7 +16,7 @@ from fractions import Fraction
 assert __debug__
 ROOT = Path(__file__).resolve().parent; R = ROOT.parent
 args = [a for a in sys.argv[1:] if not a.startswith('--')]; flags = {a.split('=')[0]: a.partition('=')[2] for a in sys.argv[1:] if a.startswith('--')}
-assert len(args) == 1 and set(flags) <= {'--quick', '--discover-check', '--complex-upstream', '--no-certificate'}, __doc__
+assert len(args) == 1 and set(flags) <= {'--quick', '--discover-check', '--complex-upstream', '--certificate'}, __doc__
 out = Path(args[0]).resolve(); assert not out.exists() and not out.is_relative_to(R)
 quick = '--quick' in flags
 read = lambda p: json.loads(Path(p).read_text())
@@ -135,21 +136,34 @@ try:
     else:
         e = read(ROOT / 'EXPECTED.json')
         assert checks == e['checks'], 'checks differ from EXPECTED'
+        ev = e['variants']['pr442']   # the bit supplier's own fields do not depend on the complex upstream: always compared
+        for kk in ('bit_lower', 'bit', 'bit_profile', 'bit_template_sha256', 'emitted_program_sha256', 'halving_depth', 'strict_constraints', 'external_row_allowance'):
+            assert got[kk] == ev[kk], (kk, got[kk], ev[kk])
         if complex_tag in e['variants']:
             for kk, vv in e['variants'][complex_tag].items(): assert got[kk] == vv, (kk, got[kk], vv)
-    # ---------------- exact pivot certificate (matroid min-sum-rank list partition): the frozen selection attains the maximum; R715 for reference
-    piv = {}
-    if '--no-certificate' not in flags:
-        for tag, wd in (('r687', D / 'word-r687.json.gz'), ('r715', R / 'e8-r715-eleven-stage-whole/data/word-r715.json.gz')):
-            py('pivot-data-' + tag, CODE / 'pivot_data.py', R, wd, w / ('pivot-data-%s.json' % tag), w / ('pivot-comps-%s.json' % tag), stdout_to=w / ('pivot-data-%s.out' % tag))
-            # MAXSLACK 1 is exact for both claims: every coupling assignment costs >= the coupling bound, so a total T <= LB + 1 leaves
-            # each block a slack <= 1 (LB infeasible needs slack-0 states only; LB + 1 is decided by an explicit feasible witness)
-            py('pivot-exact-' + tag, CODE / 'exactgen.py', w / ('pivot-data-%s.json' % tag), w / ('pivot-comps-%s.json' % tag), 1, stdout_to=w / ('pivot-exact-%s.txt' % tag))
-            assert 'attainable: True' in (w / ('pivot-exact-%s.txt' % tag)).read_text()
-            t_ = (w / ('pivot-exact-%s.txt' % tag)).read_text(); piv[tag] = int(t_.split('TOTAL max pivots (exact, rank-1 axis-class model)')[1].split()[0])
-        assert piv == dict(r687=101, r715=112), piv
+    # ---------------- R715 copy anatomy on its own pinned hierarchy (PR #370 phases)
+    py('copy-bound-r715', CODE / 'copy_bound.py', R, R / 'e8-r715-eleven-stage-whole/data/hierarchy-r715.json', 'allA', stdout_to=w / 'copy-bound-r715.json')
+    c715 = read(w / 'copy-bound-r715.json'); assert c715['copies'] == 528 and c715['carriers'] == 240 and c715['transversal_cover_bound'] == 492
+    # ---------------- exact pivot maximum on R687 (matroid min-sum-rank list partition; README 'Exact kernel pivots')
+    pv = w / 'pivot-data-r687.json'; pc = w / 'pivot-comps-r687.json'
+    py('pivot-data-r687', CODE / 'pivot_data.py', R, D / 'word-r687.json.gz', pv, pc, stdout_to=w / 'pivot-data-r687.out')
+    py('pivot-bounds-r687', CODE / 'exactgen.py', pv, pc, 1, 'lb', stdout_to=w / 'pivot-bounds-r687.txt')
+    cert = json.loads((w / 'pivot-bounds-r687.txt').read_text().split('CERT ')[1])
+    assert [(x['size'], x.get('LB'), x['min_sumrank']) for x in cert['components']] == [(190, 111, None), (26, None, 11), (12, None, 4)] and cert['upper_bound'] == 102
+    comps = read(pc); sel = read(D / 'pivot-selection.json'); cid = {h: i for i, c in enumerate(comps) for h in c}
+    per = [sum(1 for E_, p_, D_ in sel if cid[p_] == i) for i in range(3)]
+    assert per == [190 - 112, 26 - 11, 12 - 4] and len(sel) == 101   # the frozen selection is a witness: sum-rank LB + 1 = 112 on the big component
+    pin = (D / 'pivot-certificate-r687.txt').read_text()   # pinned exhaustive run: sum-rank 111 refuted (complete: slack 0 <= MAXSLACK 1)
+    assert 'LB sumrank 111' in pin and 'total sumrank <= 111 attainable: False' in pin and 'total sumrank <= 112 attainable: True' in pin and 'TOTAL max pivots (exact, rank-1 axis-class model) 101' in pin
+    piv = dict(r687=101, upper_bound_recomputed=cert['upper_bound'], witness=len(sel), refutation='pinned log' if '--certificate' not in flags else 'recomputed')
+    if '--certificate' in flags:   # the exhaustive refutation itself (about 30 min on a loaded 12-core machine)
+        py('pivot-exact-r687', CODE / 'exactgen.py', pv, pc, 1, stdout_to=w / 'pivot-exact-r687.txt')
+        t_ = (w / 'pivot-exact-r687.txt').read_text(); full = json.loads(t_.split('CERT ')[1])
+        assert full['max_pivots'] == 101 and all(x.get('complete', True) for x in full['components'])
+        strip = lambda txt: [l.split('  [')[0] for l in txt.splitlines() if not l.startswith('CERT')]
+        assert strip(t_) == strip(pin), 'recomputed certificate differs from the pinned log'
     integrity()
-    receipt = dict(status='PASS_R687_READ_THEN_CLIMB_ELEVEN_STAGE_WHOLE_RESIDUAL', mode='quick' if quick else 'full', exact_pivot_maximum=piv or 'not run (--no-certificate)', complex=complex_tag, kappa=res['kappa'], kappa_decimal=res['kappa_decimal'],
+    receipt = dict(status='PASS_R687_READ_THEN_CLIMB_ELEVEN_STAGE_WHOLE_RESIDUAL', mode='quick' if quick else 'full', exact_pivot_maximum=piv, copy_bound_r715=dict(copies=c715['copies'], bound=c715['transversal_cover_bound']), complex=complex_tag, kappa=res['kappa'], kappa_decimal=res['kappa_decimal'],
                    bit_lower=res['bit_lower'], complex_lower=res['complex_lower'], binding_component=res['binding_component'], bit_only_kappa=res['bit_only_kappa'],
                    bit_c_gain_over_pr454_percent=got['bit_c_gain_over_pr454_percent'], bit_c_gain_over_r715_percent=got['bit_c_gain_over_r715_percent'], kappa_gain_over_pr456_percent=got['kappa_gain_over_pr456_percent'],
                    manifest_sha256=sha(ROOT / 'MANIFEST.json'), source_sha256=sha(ROOT / 'SOURCE.json'), compiler=compiler, python=sys.version.split()[0], checks=steps)

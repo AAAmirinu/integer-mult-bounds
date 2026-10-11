@@ -1,5 +1,5 @@
 """Composition of the R687 bit supplier with our draft PR #484's complex supplier (research/e8-complex-gauge-kernel, gauge80 +
-kernel42; conditional on its Lemmas A and G), CITED from #484's pinned full-run result (evidence/pr484), as #484's own assembler
+kernel42; conditional on its Lemmas A and G), CITED from #484's pinned full-run result (evidence/pr484; a full run at #484 head d30a05f, manifest pinned in SOURCE.json), as #484's own assembler
 composes external bit suppliers: the outer assembly below is #484's code/assemble_gk.py per-supplier loop, unchanged in substance
 (six-level bootstrap with the supplier's charged two-level coefficient, row allowance max(20161, bit row, complex row),
 #434's 47 strict outer inequalities, next-grid and parameter controls), on PR #443's pinned engines.
@@ -12,6 +12,8 @@ ROOT = Path(__file__).resolve().parent; RES = ROOT.parent
 bitr, outp = json.loads(Path(sys.argv[1]).read_text()), Path(sys.argv[2])
 cx = json.loads((ROOT / 'evidence/pr484/RESULT-gauge80-kernel42.json').read_text()); rc = json.loads((ROOT / 'evidence/pr484/RECEIPT.json').read_text())
 assert rc['status'] == 'PASS_FULL_COMPLEX_GAUGE_KERNEL_COMPOSITION' and rc['complex_lower'] == cx['complex_lower']
+pin = json.loads((ROOT / 'SOURCE.json').read_text())['complex_cited']
+assert rc['manifest_sha256'] == pin['manifest_sha256'], ('pinned #484 receipt is not from the pinned head', rc['manifest_sha256'])
 def load(n):
     sp = importlib.util.spec_from_file_location('c484_' + n, RES / 'e8-r740-replica32/code/engines' / (n + '.py')); m = importlib.util.module_from_spec(sp); sp.loader.exec_module(m); return m
 Outer = load('outer')

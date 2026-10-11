@@ -13,7 +13,7 @@ sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest(); read = lambda p: jso
 man = read(ROOT / 'MANIFEST.json')
 actual = {p.relative_to(ROOT).as_posix(): sha(p) for p in ROOT.rglob('*') if p.is_file() and p.name != 'MANIFEST.json' and '__pycache__' not in p.parts}
 missing = sorted(set(man) - set(actual)); assert missing in ([], ['.gitattributes']), missing
-assert {k: v for k, v in man.items() if k != '.gitattributes'} == actual, 'PR #471 package differs from its manifest'
+assert {k: v for k, v in man.items() if k not in missing} == actual, 'PR #471 package differs from its manifest'   # a present .gitattributes is hash-checked
 OUT.mkdir(parents=True); steps = []
 env = dict(os.environ, PYTHONUTF8='1', PYTHONDONTWRITEBYTECODE='1', PYTHONINTMAXSTRDIGITS='0', TMP=str(OUT), TEMP=str(OUT),
            PYTHONPATH=os.pathsep.join(map(str, [ROOT / 'vendor/runtime', ROOT / 'vendor/complex', ROOT / 'code']))); env.pop('PYTHONOPTIMIZE', None)

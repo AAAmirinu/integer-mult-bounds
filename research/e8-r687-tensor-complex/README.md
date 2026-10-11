@@ -11,7 +11,7 @@ kernel pivots. It is priced at eleven stages with PR #442 whole-residual hosting
 How these compare with other published results:
 - **With #484:** +1.32% over #483 (1.296607·10⁻³, the best bit-bound whole-residual κ before #493).
 - **Below #493.** #493 (eumemic) posts a 489-helper bit word, c ≈ 1.565·10⁻³, which no longer binds. #493 with #484 gives
-  1.325031·10⁻³, which is 0.85% above our #484 figure.
+  1.325031·10⁻³, which is 0.86% above our #484 figure.
 - **With #471:** κ equals #471's complex cap, the same value #493 reports with #471.
 - **What this PR is.** A method and knowledge PR: the copy anatomy and lower bound, read-then-climb, and exact pivot certificates.
   It is not a κ record.
@@ -30,7 +30,7 @@ M level of the #370 lattice, and #493 has no such level. Exact pivots and the ho
 - `code/complex471.py` runs #471's complex supplier unchanged. It replays the exact command sequence of #471's verify.py without
   that file's bit part.
   - Integrity is checked against #471's MANIFEST. That manifest also lists a `.gitattributes` which is absent from the PR's git
-    tree, probably a web upload of a dotfile. This entry is reported, not required.
+    tree, probably a web upload of a dotfile. The entry may be absent (recorded in the RECEIPT); when present it is hash-checked.
 - `compose.py` runs #471's `code/assemble.py` unchanged, with its bit inputs replaced by the R687 supplier's eleven-stage outputs:
   - two moments per supplier;
   - #471's bit invoice (product-bound prefix, row bound) and its complex stock, router and literal invoices;
@@ -42,7 +42,8 @@ M level of the #370 lattice, and #493 has no such level. Exact pivots and the ho
 - `evidence/`:
   - the bit supplier's eleven-stage GLOBAL, AUDIT and a geometry summary, from the bit package's own run;
   - #471's complex GLOBAL and AUDIT from `code/complex471.py`;
-  - #484's full-run RESULT and RECEIPT.
+  - #484's full-run RESULT and RECEIPT, from a run at #484 head d30a05f (manifest 435fb2f2…, pinned in SOURCE.json and
+    asserted by `compose484.py`).
 
 ## Verification
 `python -B research/e8-r687-tensor-complex/verify.py /abs/out --light` runs in minutes:

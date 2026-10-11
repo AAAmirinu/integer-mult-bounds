@@ -1,5 +1,5 @@
 """Shared-donor kernel for a new bit word (PR #417/#443 kernel, PR #443's replica_kernel with 32 replicas, unchanged) from a FROZEN
-EXACT pivot selection (code/pivot_exact.py certifies its size is the maximum), plus PR #436's retiming before and after.
+EXACT pivot selection (code/exactgen.py certifies its size is the maximum), plus PR #436's retiming before and after.
 Same as PR #463's kernel_rebuild.py except that the greedy selection search is replaced by the frozen selection, checked entry by entry.  Entry = pivot p, entrance E (a coordinate
 subspace spanned by frame lines inside p's first frame, so that #443's residual isometries are coordinate permutations),
 donors D with resp(p) = XOR resp(D) over F2 (found by elimination among eligible helpers).  Every result is checked by
@@ -39,6 +39,8 @@ for E_, p, D in sel:                 # every entry is checked here; PR #443's ke
     for d in D: y ^= resp[d]
     assert y == 0, ('pivot response is not the XOR of its donors', p)
 assert len({p for E_, p, D in sel}) == len(sel) and not ({p for E_, p, D in sel} & {d for E_, p, D in sel for d in D})
+for d in {d for E_, p, D in sel for d in D}:   # a donor serves one entrance (as PR #463's greedy search enforced)
+    assert len({tuple(E_) for E_, p, D in sel if d in D}) == 1, ('donor at two entrances', d)
 tot = sum(len(e[0]) for e in sel)
 if (8 * ret['R'] - tot) % 2:
     sel.pop(max(i for i, e in enumerate(sel) if len(e[0]) == 1))

@@ -6,6 +6,7 @@ on:
       - 'research/idle-axis-hosting/**'
       - 'research/e8-r740-replica32/**'
       - 'research/e8-tensor-normalization/**'
+      - 'research/e8-r715-eleven-stage-whole/**'
       - 'research/e8-r687-read-then-climb/**'
       - 'research/e8-r687-tensor-complex/**'
       - '.github/workflows/e8-r687-tensor-complex.yml'
@@ -15,6 +16,7 @@ on:
       - 'research/idle-axis-hosting/**'
       - 'research/e8-r740-replica32/**'
       - 'research/e8-tensor-normalization/**'
+      - 'research/e8-r715-eleven-stage-whole/**'
       - 'research/e8-r687-read-then-climb/**'
       - 'research/e8-r687-tensor-complex/**'
       - '.github/workflows/e8-r687-tensor-complex.yml'
@@ -24,7 +26,7 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 360
     strategy:
       fail-fast: false
       matrix:

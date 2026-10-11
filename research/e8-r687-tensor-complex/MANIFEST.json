@@ -2,11 +2,11 @@
  "EXPECTED.json": "632ffe1b68b69a3047945ef047537ef2674ed43043ffcee334a1ef28ffda9d12",
  "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
  "NOTICE.md": "f1919ecb7b47da17404181cbb6d475b064f38db8bc4d4a5b8c0acc15a0442387",
- "README.md": "d59dadf89566044786123909293f4180e73ce336dbf77fbbe5cc2e6298b9762d",
- "SOURCE.json": "5ffe9080f73483e0e05668eda927cf253ee47e589f3a5dbe3e6bc3bf0a8809f7",
- "code/complex471.py": "d765f9e633679d094130cffd9a642ec05913653c03fc6bed3632fc6ba9b82e89",
+ "README.md": "5466c08a280e14deec1f649e02118c5d45c007326b290a9ce2c946bd941e569b",
+ "SOURCE.json": "22e357a1ef122e0ee3ae9654a884cf0eebfaae5c0c38b3cf57669937d9627364",
+ "code/complex471.py": "830a46d03da62a4ec8b9120b4fc44ef6261133c08967260a31b63f971533a2fb",
  "compose.py": "722d6eb8a5bdf6199f972e4ad991612e361d13b629f6a12c35038fe0721f99f6",
- "compose484.py": "acebae723bfa5b0e857addb7b448eb78f6aa8212d0c2aafd55df5b2cf80430c0",
+ "compose484.py": "f4ceee9c0d3b012743bf281e08d6d79cef7c272b64bb43cfff173981cafdf35e",
  "evidence/bit/hosted/AUDIT.json": "cd446628a7b36a10b3b79342b2d73fd07a258015ccb3378c508e96080c2b4229",
  "evidence/bit/hosted/GLOBAL.json": "6543d8d296dbbbaaf418af0b177b392758c22c9b77bcbfb237aa21d429a57672",
  "evidence/bit/nine/GEOMETRY.json": "95bb141d709e1983dc304474ba34c8bcefa75b414e7dc706c4c59c0613d87283",
@@ -14,7 +14,7 @@
  "evidence/complex/AUDIT.json": "face4def3f8e2f2bc79ac2065b0a1aa48bde3944ec4be929bc9e2ed9d30a87d8",
  "evidence/complex/COMPLEX471-RECEIPT.json": "110c0c1353b6d90ed1c9e059f11034e50fd05cc93bc4d5fc541f00672dd0ea4e",
  "evidence/complex/GLOBAL.json": "4c88a9a7beec53800770e1c209027436e89f5355de56abc4983cb7a91bcdff24",
- "evidence/pr484/RECEIPT.json": "b4071a98dad5bec72ebdf9fc8265e67a4d1b26dccc8448868a69772184daad61",
+ "evidence/pr484/RECEIPT.json": "555c42914326043576f2aa03adce807705fa5a23433e3691fd00d8d97f08687d",
  "evidence/pr484/RESULT-gauge80-kernel42.json": "b3805d43ee6ea653d311d484686f953d03e03242974bb7ed91402eadaf6e5ff6",
- "verify.py": "fb98da3856e01582a2ecc9ad2638532d07056a71ac51ab8fa132652d400dc64f"
+ "verify.py": "00aeb5c4884b46dc6f953319b6967d9f56c32c9e5ec0b54bae936920d42eca07"
 }

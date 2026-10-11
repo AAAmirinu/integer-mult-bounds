@@ -32,8 +32,10 @@ def integrity():
     for name, e in read(BIT / 'SOURCE.json')['packages'].items(): assert inv(R / name) == e['files'], ('upstream package differs', name)
     c = src['complex']; assert sha(P471 / 'MANIFEST.json') == c['manifest_sha256']
     m = read(P471 / 'MANIFEST.json'); a = {k: v for k, v in inv(P471).items() if k != 'MANIFEST.json'}
-    assert sorted(set(m) - set(a)) == c['manifest_entries_absent_from_pr_tree'] and {k: v for k, v in m.items() if k in a} == a, 'PR #471 package differs'
-integrity(); out.mkdir(parents=True); (out / 'logs').mkdir(); steps = []
+    absent = sorted(set(m) - set(a))   # #471's manifest lists a .gitattributes that its PR tree lacks; when present it is hash-checked
+    assert absent in c['manifest_entries_absent_from_pr_tree_allowed'] and {k: v for k, v in m.items() if k in a} == a, 'PR #471 package differs'
+    return absent
+absent471 = integrity(); out.mkdir(parents=True); (out / 'logs').mkdir(); steps = []
 env = dict(os.environ, PYTHONDONTWRITEBYTECODE='1', PYTHONINTMAXSTRDIGITS='0'); env.pop('PYTHONOPTIMIZE', None)
 if 'BOOST_INCLUDE' not in env and Path('/opt/homebrew/include/boost').exists(): env['BOOST_INCLUDE'] = '/opt/homebrew/include'
 def run(name, cmd, stdout_to=None):
@@ -83,7 +85,7 @@ try:
     receipt = dict(status='PASS_R687_COMPOSITIONS', mode='light' if light else 'full', bit_lower=res['bit_lower'],
                    pr484_cited=dict(kappa=r4['kappa'], kappa_decimal=r4['kappa_decimal'], binding=r4['binding_component'], complex_lower=r4['complex_lower'], gain_over_pr483_percent=r4['gain_over_pr483_percent']),
                    pr471=dict(kappa=res['kappa'], kappa_decimal=res['kappa_decimal'], binding=res['binding_component'], complex_lower=res['complex_lower'], gain_over_pr473_percent=res['gain_over_pr473_percent']),
-                   manifest_sha256=sha(ROOT / 'MANIFEST.json'), source_sha256=sha(ROOT / 'SOURCE.json'), python=sys.version.split()[0], steps=steps)
+                   pr471_manifest_entries_absent=absent471, manifest_sha256=sha(ROOT / 'MANIFEST.json'), source_sha256=sha(ROOT / 'SOURCE.json'), python=sys.version.split()[0], steps=steps)
     (out / 'RECEIPT.json').write_text(json.dumps(receipt, indent=2) + '\n'); print(json.dumps({k: receipt[k] for k in list(receipt)[:5]}, indent=2))
 except BaseException as e:
     (out / 'FAILURE.json').write_text(json.dumps(dict(error=repr(e), completed=steps), indent=2) + '\n'); raise

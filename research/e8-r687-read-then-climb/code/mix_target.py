@@ -1,6 +1,6 @@
 # Target-prefix mixing generator and its checks: the F2 analogue of PR #425's target-basis packets, written by the
 # same Claude Opus 5.5 (Anthropic) via Claude Code effort as this package (DreamingOfClouds); Apache-2.0.
-"""[copies/ variant: B may hold helper rules; version-aware prefixes; positional insertion]
+"""[B-rule-aware variant: B may hold helper rules; version-aware prefixes; positional insertion]
 Target-prefix mixing on a bitE8/1 word (F2 analogue of PR425's target basis V).
 For a receiver target u and donor w whose delivered B-phase registers at frames inside G coincide (as an F2 multiset),
 u drops those deliveries and instead takes y_w with ONE addition y_u += y_w at the common frame G.  Exactness:
@@ -23,7 +23,7 @@ def rank(idx):
 dim = [rank(f) for f in c['frames']]; F = [frozenset(f) for f in c['frames']]
 cost = lambda r: r * math.log(64 / r) if r > 0 else 0
 Bb, Bd = c['B'][:sb], c['B'][sb:]
-# copies/ generalisation: B may also contain HELPER RULES (dst >= 2v; read-then-climb words). Deliveries are compared by
+# B-rule-aware generalisation: B may also contain HELPER RULES (dst >= 2v; read-then-climb words). Deliveries are compared by
 # (register, version) where version = number of earlier B writes to that register, and mix gates are inserted by position.
 assert all((v <= d < 2 * v and all(s >= 2 * v for s in ss)) or (d >= 2 * v and all(not (v <= s < 2 * v) for s in ss)) for f, d, ss in Bd), 'B: helper deliveries or helper rules'
 ver = {}; verat = []
