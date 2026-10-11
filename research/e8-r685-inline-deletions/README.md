@@ -23,8 +23,8 @@ The word is a follow-up on #504 (R687, read-then-climb, exact pivots); everythin
    reads can instead take a set of up to three other registers whose x-parts XOR to the copy's content, legal at that read's own frame (frames only climb and a gate has one
    frame, so the register must be at a frame inside the gate frame now and inside its next frame later). Exactly three copies qualify after the inline: two D4(c) copies
    (class 8/4) and the 16/6 sum with two deliveries. The two D4(c) copies are deleted (their reads take other registers; the dirt compensation and cleanup are rebuilt exactly by #443's
-   reuse step), and reuse and retime run again: **R = 685**, five-stage saving 1.008233·10⁻³ (+0.125%). The 16/6 copy is redundant too, but deleting it costs two kernel
-   pivots and removes no register, so it stays.
+   reuse step), and reuse and retime run again: **R = 685**, five-stage saving 1.008233·10⁻³ (+0.125%). The 16/6 copy is redundant too, but deleting it removes no
+   register (reuse already recovers it) and leaves the pivot bound at 101, so it stays.
 
 **Exact kernel pivots.** The inlined word has 233 pivot candidates; the sum-rank lower bounds give at most 101 pivots (sum-rank 118 on the 218-element component, 1 on the other nontrivial
 component). The pinned selection (`data/pivot-selection.json`, seeded annealing, reproduced by `code/select_pivots.py`) attains 101, so 101 is the maximum for #443-format selections on this
