@@ -1,0 +1,69 @@
+{
+  "records": 952938,
+  "paid": {
+    "1": 108010,
+    "2": 44247,
+    "3": 23324,
+    "4": 14504,
+    "5": 14210,
+    "6": 2072,
+    "7": 5726,
+    "8": 882,
+    "14": 1680,
+    "20": 1680,
+    "27": 3360
+  },
+  "paid_calls": 219695,
+  "rank_mass": 602952,
+  "prefix": 1676572497474094192863,
+  "bits": 71,
+  "opcode_counts": {
+    "1": 719761,
+    "0": 204575,
+    "2": 441,
+    "3": 441,
+    "4": 15120,
+    "5": 10080,
+    "7": 2520
+  },
+  "all_f2_columns": 10794,
+  "linked_local_move_occurrences": 204575,
+  "linked_idle_occurrences": 15120,
+  "status": "PASS_INDEPENDENT_RAW_IR_F2_PREFIX_CHART_IDLE_COPY_AND_BANK_LINKS",
+  "program_sha256": "d702e9503f7564d85b6234541d88269848c405ab282bf4af6b701aaa18d2f424",
+  "charts_sha256": "f94959b43d32b6edf6f60bce48c6c6717ea5e9799b35d6052ab5df53718e5e20",
+  "idle_links_sha256": "5315d6b76fd3d11b55c4ef0fdfb242fc509f49b5c483e272b011ab6895b9b102",
+  "bank_slots_sha256": "9f38cb212964d7dd7f4cd54c941c6c4a631f24ffd3eda0589e180c0954b2580d",
+  "data_map_sha256": "84e50cecf1310ef74570be07bdc93f572bb6e0e2286152fe29eccfeaf250da0c",
+  "bank_slot_count": 40278,
+  "bank_coordinates": 322224,
+  "negative_controls": [
+    {
+      "name": "omit_first_bridge",
+      "rejected": true,
+      "reason": "global F2 endpoint"
+    },
+    {
+      "name": "substitute_move_chart",
+      "rejected": true,
+      "reason": "('lowered-record mismatch', 8700, (0, 720, 0, 2, 1, 2, 0, 0), (0, 720, 0, 2, 1, 1, 0, 0))"
+    },
+    {
+      "name": "wrong_idle_gap_id",
+      "rejected": true,
+      "reason": "unbound idle child"
+    },
+    {
+      "name": "different_borrowed_center",
+      "rejected": true,
+      "reason": "('lowered-record mismatch', 13799, (2, 10794, 1534, 0, 1, 0, 0, 0), (2, 10794, 1533, 0, 1, 0, 0, 0))"
+    },
+    {
+      "name": "wrong_reflected_add_sign",
+      "rejected": true,
+      "reason": "('lowered-record mismatch', 132175, (1, 720, 120, 1, 1, 5, 1, 1), (1, 720, 120, -1, 1, 5, 1, 1))"
+    }
+  ],
+  "scope": "IR scalar families and completed physical bank namespace are distinct. DATA-FAMILY-MAP plus BANK-SLOTS binds all data families and every stage/replica helper window. This check verifies that address plan, exact local scalar stream, F2 endpoint and true raw prefix; it does not turn the finite plan into an all-size compiler proof.",
+  "AI": "OpenAI Codex assistance, Apache-2.0"
+}

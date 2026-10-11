@@ -1,0 +1,65 @@
+{
+  "status": "PASS_FRESH_CANDIDATE_NATIVE_ADMISSION",
+  "checks": [
+    "export",
+    "word",
+    "word-mutations",
+    "stage",
+    "legality",
+    "columns",
+    "record-mutations",
+    "gram",
+    "geometry",
+    "banks",
+    "pricing",
+    "exact-charts",
+    "lowering"
+  ],
+  "python": "3.11.5 (main, May 29 2026, 21:26:09) [Clang 17.0.0 (clang-1700.3.19.1)]",
+  "price": {
+    "K": 3,
+    "stages": 7,
+    "idle_blocks_per_role_pair": [
+      27,
+      7,
+      14,
+      7,
+      20,
+      27,
+      1,
+      7,
+      6
+    ],
+    "h": 8,
+    "T": 7,
+    "maxchild": 27,
+    "bit_moment_interval": [
+      "26959946667150639747051176231749557230811192321123933927319997910097/26959946667150639794667015087019630673637144422540572481103610249216",
+      "26959946667150639747051176231749557230811192321123933927319997910099/26959946667150639794667015087019630673637144422540572481103610249216"
+    ],
+    "normalized_histogram": {
+      "1": 108010,
+      "2": 44247,
+      "3": 23324,
+      "5": 14210,
+      "4": 14504,
+      "6": 2072,
+      "8": 882,
+      "7": 5726,
+      "27": 3360,
+      "14": 1680,
+      "20": 1680
+    },
+    "W": 10794,
+    "m": 56,
+    "bit_coarse": "198986994618331/200000000000000000",
+    "complex_coarse": "999240641319551/1000000000000000000",
+    "binding": "bit",
+    "kappa": "248486515112671/250000000000000000",
+    "kappa_float": 0.000993946060450684
+  },
+  "word_sha256": "b7f8420b8bee58fba99dee68455a80839c8bb2ceabcc50fd0ffd0f4f3aa6b320",
+  "program_sha256": "d702e9503f7564d85b6234541d88269848c405ab282bf4af6b701aaa18d2f424",
+  "full_prefix_bits": 71,
+  "scope": "Uses immutable compiled official checkers from freshly replayed PR376. Signed source, exact invoice and outer assembly are separate receipts."
+}
