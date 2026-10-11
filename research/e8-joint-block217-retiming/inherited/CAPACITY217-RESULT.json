@@ -1,0 +1,114 @@
+{
+  "status": "PASS_CAPACITY217_BANK64_PREFIX_CONDITIONAL_COMPOSITION",
+  "kappa": "254472458475213/250000000000000000",
+  "kappa_decimal": "0.001017889833900852",
+  "complex_coarse": "1018926989324773613017/1000000000000000000000000",
+  "bit_coarse": "255384852701747/250000000000000000",
+  "checks": [
+    {
+      "name": "reconstruct",
+      "seconds": 0.717,
+      "log_sha256": "0a05fbfda0889b4de5a0b92eb6a40191d940e5a8fad31cf5711377035a758fd2"
+    },
+    {
+      "name": "shared",
+      "seconds": 0.937,
+      "log_sha256": "e4e7c18e867bf402170bdf3c08ebe396db8a0af2e2e55425babc544707042ac4"
+    },
+    {
+      "name": "acyclic",
+      "seconds": 0.201,
+      "log_sha256": "d1eaad0c85164d5f6e3e44e8558e64e0873cfc39b48c9c8286815c8b161033f6"
+    },
+    {
+      "name": "newgroup",
+      "seconds": 0.276,
+      "log_sha256": "936918e0479d56eae56eb3ece140bf3c44bb1f2c76a0397288608d5aec074727"
+    },
+    {
+      "name": "closure211",
+      "seconds": 0.361,
+      "log_sha256": "7b046880a1320dcd2082768942e83ad3f909294d93645a8184dc98fa9a31c204"
+    },
+    {
+      "name": "closure214",
+      "seconds": 0.403,
+      "log_sha256": "d4031601fff0282774db249f77fbb0ac36d23b848c0dcd2740c4ae2492853147"
+    },
+    {
+      "name": "closure215",
+      "seconds": 0.355,
+      "log_sha256": "e389758ed8e84c09fbb3563e635ac9b9ea83681785f7d4b40140a8439d3d5b50"
+    },
+    {
+      "name": "capacity217",
+      "seconds": 0.385,
+      "log_sha256": "01b98347e63a9aadf40f5906893c7c287fb4c283f2d8b24122e555c564b12e4e"
+    },
+    {
+      "name": "dual",
+      "seconds": 0.349,
+      "log_sha256": "0516531778bf4416e47f41bab8a467c34838b03ec4f1831869a8c0e4969a5fb0"
+    },
+    {
+      "name": "public-frame",
+      "seconds": 0.2,
+      "log_sha256": "03788683d434d0e4e93aa95c01324f4d47078057555482f7057efc6e133185e5"
+    },
+    {
+      "name": "resynthesis",
+      "seconds": 0.37,
+      "log_sha256": "110e1fead63deb360babaacf1bba47a559ee48ef3f60b1940cfca94ff6454d76"
+    },
+    {
+      "name": "prefix",
+      "seconds": 0.221,
+      "log_sha256": "99d505d32614990c2e394fb4d021c3b4a445531ec85b687cf35dcc690d9648cc"
+    },
+    {
+      "name": "local",
+      "seconds": 40.701,
+      "log_sha256": "668458d798a94e448de07b506f808ae02818298e24df96f132659aab3a10936c"
+    },
+    {
+      "name": "coefficient-words",
+      "seconds": 0.063,
+      "log_sha256": "db3c16f5a28256e73df39b749ad7c5b3c91343da0e9ca12f11c26149edf0db01"
+    },
+    {
+      "name": "compile-phase",
+      "seconds": 1.397,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "phase",
+      "seconds": 4.76,
+      "log_sha256": "8d45030c8756a8c098f6a3d370044b43e3e40755d764d35c9af5dc8bbb549674"
+    },
+    {
+      "name": "banks",
+      "seconds": 35.675,
+      "log_sha256": "0fddc1559dae4d02649546483a05347e2b765b8e41ea16597cd96bba0bb0951b"
+    },
+    {
+      "name": "bank-audit",
+      "seconds": 53.164,
+      "log_sha256": "8a44968a9ecd5a9b64ce19e1f9db54d0b50d6e5debdcc155c7b5eda18c48f045"
+    },
+    {
+      "name": "bridge",
+      "seconds": 0.042,
+      "log_sha256": "78d133d7c3d484b3c9203a840a7489ad19edbe1d24b28a5cc63459fd79caf949"
+    },
+    {
+      "name": "outer",
+      "seconds": 0.263,
+      "log_sha256": "7bf81ab238876a255b83dd6097fd9ec15f2a621f7aeab0988cc3f50a58d697c2"
+    }
+  ],
+  "candidate_sha256": "6e91f5f1b90a13f7dc399525c1134923e791d507f9535005985931fa756bcfd1",
+  "manifest_sha256": "9447c2f9261d0f6ee5d622810dc5f2c47175db773946688387e0ca97bdb536f5",
+  "template_sha256": "c4ea905e8c4387c6fcb6e8c62434e96418e41b00c85d2f066a778fe11193f86f",
+  "bit_evidence": "unchanged source-bound prior finite receipt",
+  "scope": "Finite conditional changed composition. Inherited all-size window, correlated-bank, recursive compiler, ordinary-call/fixed-tape/restored-row, precision and analytic interfaces remain assumptions; no Lean or unconditional multiplication theorem."
+}

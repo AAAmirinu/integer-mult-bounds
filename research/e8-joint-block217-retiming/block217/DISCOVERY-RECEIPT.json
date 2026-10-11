@@ -1,0 +1,156 @@
+{
+  "status": "PASS_BLOCK_FRAME_RETIMING",
+  "source_sha256": "3ecb4c3ac6c02e62067cc1cf3d58f07a40db64700c1003b75d64cb07a9e06188",
+  "candidate_sha256": "4f28e78260aa7ad16e125515bdb0cc7cd1ef5eb14da5ccdcda4d0d6978a8c0ea",
+  "selection": [
+    {
+      "part": "A",
+      "index": 2078,
+      "old": 483,
+      "new": 1019,
+      "basis": [
+        193,
+        49,
+        9,
+        5,
+        3
+      ],
+      "block_score": -0.0008538241979354488
+    },
+    {
+      "part": "A",
+      "index": 2079,
+      "old": 483,
+      "new": 1019,
+      "basis": [
+        193,
+        49,
+        9,
+        5,
+        3
+      ],
+      "block_score": -0.0008538241979354488
+    },
+    {
+      "part": "A",
+      "index": 2080,
+      "old": 483,
+      "new": 1019,
+      "basis": [
+        193,
+        49,
+        9,
+        5,
+        3
+      ],
+      "block_score": -0.0008538241979354488
+    },
+    {
+      "part": "A",
+      "index": 2081,
+      "old": 483,
+      "new": 1019,
+      "basis": [
+        193,
+        49,
+        9,
+        5,
+        3
+      ],
+      "block_score": -0.0008538241979354488
+    },
+    {
+      "part": "B",
+      "index": 376,
+      "old": 483,
+      "new": 1019,
+      "basis": [
+        193,
+        49,
+        9,
+        5,
+        3
+      ],
+      "block_score": -0.0008538241979354488
+    },
+    {
+      "part": "A",
+      "index": 2141,
+      "old": 502,
+      "new": 1020,
+      "basis": [
+        273,
+        144,
+        80,
+        48,
+        15
+      ],
+      "block_score": -0.00015949449399021987
+    },
+    {
+      "part": "A",
+      "index": 2142,
+      "old": 502,
+      "new": 1020,
+      "basis": [
+        273,
+        144,
+        80,
+        48,
+        15
+      ],
+      "block_score": -0.00015949449399021987
+    },
+    {
+      "part": "A",
+      "index": 2143,
+      "old": 502,
+      "new": 1020,
+      "basis": [
+        273,
+        144,
+        80,
+        48,
+        15
+      ],
+      "block_score": -0.00015949449399021987
+    },
+    {
+      "part": "A",
+      "index": 2144,
+      "old": 502,
+      "new": 1020,
+      "basis": [
+        273,
+        144,
+        80,
+        48,
+        15
+      ],
+      "block_score": -0.00015949449399021987
+    },
+    {
+      "part": "B",
+      "index": 428,
+      "old": 502,
+      "new": 1020,
+      "basis": [
+        273,
+        144,
+        80,
+        48,
+        15
+      ],
+      "block_score": -0.00015949449399021987
+    }
+  ],
+  "local_delta": {
+    "1": -2,
+    "2": 10,
+    "3": -14,
+    "4": 6
+  },
+  "scalar_words_unchanged": true,
+  "raw_columns_unchanged": true,
+  "entrance_dimensions": 391
+}

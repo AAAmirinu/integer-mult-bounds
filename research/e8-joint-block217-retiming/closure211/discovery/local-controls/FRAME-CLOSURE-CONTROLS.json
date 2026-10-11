@@ -1,0 +1,18 @@
+[
+  {
+    "name": "revert_original_A_frame",
+    "index": 724,
+    "old": 276,
+    "wrong": 22,
+    "rejected": true,
+    "reason": "Reject: A: frame does not strictly climb"
+  },
+  {
+    "name": "omit_first_new_entrance_gate",
+    "rejected": true,
+    "raw_gauged_leak_witness": [
+      133,
+      892
+    ]
+  }
+]
