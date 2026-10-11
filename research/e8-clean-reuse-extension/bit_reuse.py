@@ -1,5 +1,7 @@
-"""Novel-stream screen: per-read exact clean aliases, with original frame guards.
-This private search does not claim a finite invoice or multiplication exponent.
+"""Fixed clean-reset reconstruction with all independent dirt columns.
+
+The calling verifier separately admits frames, banks, invoices and phases.
+Apache-2.0; prepared with substantial OpenAI Codex assistance.
 """
 import argparse,bisect,copy,gzip,json,math,pathlib,sys,time
 from collections import Counter,defaultdict
@@ -73,4 +75,3 @@ def reconstruct(c,p):
     out['C']=[[1,d,list(ss)]for f,d,ss in reversed(out['A']+out['B'])if d>=240]
     audit(out)
     return out
-

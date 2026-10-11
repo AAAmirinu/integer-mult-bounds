@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "license": "Apache-2.0",
+      "origin": "Independent dream-theorem investigation, 2026-10-11",
+      "path": "vendor/center_rank_obstructions.py",
+      "sha256": "578f23dffaa0ae69114d5180f9096dc05d3ccba553b67127b708d1a1fab86e88"
+    },
+    {
+      "license": "Apache-2.0",
+      "origin": "Independent dream-theorem investigation, 2026-10-11",
+      "path": "vendor/static_firstframe_bound.py",
+      "sha256": "dfba119a8d4526722c85125b935c2470b371c486cc35763212c0431996273af5"
+    },
+    {
+      "license": "See original supplier NOTICE.md",
+      "origin": "Frozen existing supplier dependency",
+      "path": "e8-clean-reuse-extension/data/kernel-base.json.gz",
+      "sha256": "785a6160912b8bf8535ccd438c7d13c0730f874d6a5d07ef530e50279e7cf7d8"
+    },
+    {
+      "license": "See original supplier NOTICE.md",
+      "origin": "Frozen existing supplier dependency",
+      "path": "e8-clean-reuse-extension/data/complex-candidate.json.gz",
+      "sha256": "0e3a9ceb4ab14a126a8e9e0d056322f9d2234ccda4f7472a8ad2849bd7a54131"
+    },
+    {
+      "license": "See original supplier NOTICE.md",
+      "origin": "Frozen existing supplier dependency",
+      "path": "e8-coupled-bit-retiming/vendor/source381/code/pricing/moment.py",
+      "sha256": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482"
+    },
+    {
+      "license": "Apache-2.0",
+      "origin": "Independent source-pattern investigation, 2026-10-11",
+      "path": "vendor/universal_rank8_span.py",
+      "sha256": "8c81ade376c8fc298566000f34eb0d81623b67d9ef0912b815d6ad903dda7e8b"
+    }
+  ]
+}

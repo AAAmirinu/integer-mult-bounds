@@ -3,20 +3,29 @@
 **Community research maintained by Douglas Colkitt — conditional on the original
 OpenAI #109 framework.**
 
-## New conditional candidate: E8 clean reuse and signed composition
+## New conditional candidate: shared E8 response spaces and clean reuse
 
-The extension candidate gives **κ = 0.001003675427211799133818727**, with
-maintainer review pending. It combines applecrusher's R781 helper/frame
-refinements and Rohan Arun's signed version of Dugongue's prefix identity
-with two additional two-donor helper substitutions. The new complex word
-has 779 helpers and is admitted through a complete fresh physical, Clifford,
-bank/owner and finite-invoice replay on 1,019 independent dirty columns.
+The extension candidate gives **κ = 0.001018766833114735805248075**, with maintainer review
+pending. It composes Dugongue's shared-donor response spaces from
+[#404](https://github.com/CrocSwap/integer-mult-bounds/pull/404), the exact
+two-sided dirty-bank normalization from
+[#401](https://github.com/CrocSwap/integer-mult-bounds/pull/401), and
+applecrusher's new frame improvement with our independent R779 substitutions.
+It also composes PR409's ordered entrance promotions, PR410's enlargements
+and PR412's checker-clean re-pivoting. The unchanged original gx and gxcore
+checker families both pass the reconstructed word.
+The combined word has 202 entrance gauges of rank mass 360 and 734 mixed
+banks per stage. All 1,019 independent dirty columns, both orientations,
+every old and new Gaussian child pair, physical owners and the finite
+invoice are checked. The source-specific gains are recomputed together.
 
-The separate bit contribution reuses 27 retired helpers by cancelling their
+The separate bit contribution reuses 55 retired helpers by cancelling their
 clean content and rebuilding compensation for their actual independent dirt.
-After 26 further frame moves it has 795 helpers; full local and seven-stage
+After 54 further frame moves it has 767 helpers; full local and seven-stage
 column, geometry, whole-bank and finite checks are rerun. Its coarse saving
-is reported separately because the complex supplier determines κ.
+also lifts a new bit bottleneck: keeping the preceding bit supplier with this
+same complex supplier gives κ = 0.001016774267814750149837485. The combined
+construction is limited by the complex supplier.
 The requested 0.002 research target has not been achieved.
 
 [Exact pending record](certificates/candidates/e8-clean-reuse-extension.json) ·
@@ -29,9 +38,17 @@ python3 -m pip install -r research/e8-clean-reuse-extension/requirements.txt
 make e8-clean-reuse-verify
 ```
 
-Both full predecessor supplier suites and all changed supplier/assembly checks
-run from pinned source. All-size theorem interfaces remain conditional. This
-candidate does not replace the maintainer-reviewed selected result below.
+Both full predecessor supplier suites, the intermediate signed R779 supplier,
+and the changed response-space/bit/assembly checks run from pinned source.
+All-size theorem interfaces remain conditional. This candidate does not
+replace the maintainer-reviewed selected result below.
+
+[Three exact structural obstructions](research/e8-structural-frontiers/README.md)
+are included independently: the frozen center basis cannot lower copied
+frame rank; any rank-eight completion still needs source span at least seven;
+and the fixed first-frame family misses 0.002 for every bank count. These
+results state their restrictions and leave changed centers, words, joint
+endpoints and geometries open. Run `make e8-structural-verify` to reproduce.
 
 ## Preceding PR389 candidate: coupled E8 frames and refined assembly
 

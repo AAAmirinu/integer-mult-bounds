@@ -56,6 +56,11 @@ source527-verify: source527-record-check
 
 .PHONY: e8-coupled-record-check e8-coupled-verify
 .PHONY: e8-clean-reuse-record-check e8-clean-reuse-verify
+.PHONY: e8-structural-verify
+e8-structural-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-e8-structural.XXXXXX"); \
+	python3 -B research/e8-structural-frontiers/verify.py "$$work/replay"
+
 e8-clean-reuse-record-check:
 	python3 -B research/e8-clean-reuse-extension/record.py
 

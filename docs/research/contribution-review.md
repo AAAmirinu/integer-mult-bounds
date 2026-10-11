@@ -2,12 +2,18 @@
 
 The [clean-reuse extension](../../research/e8-clean-reuse-extension/README.md)
 and its [exact pending record](../../certificates/candidates/e8-clean-reuse-extension.json)
-give conditional κ `1003675427211799133818727/1000000000000000000000000000`.
+give conditional κ `40750673324589432209923/40000000000000000000000000`.
 It retains PR389's complete frozen source package, adds two complex two-donor
-substitutions and 27 bit clean-reset reuses, and composes the pinned PR376 and
-PR390/395 refinements. Both full predecessor supplier suites and the changed
+substitutions and 55 bit clean-reset reuses, and composes the pinned PR376 and
+PR390/395 refinements with PR401/404's shared response-space construction,
+PR409/410's ordered promotions/enlargements and PR412's checker-clean
+re-pivoting. Both unchanged original gx and gxcore checkers pass.
+Both full predecessor supplier suites and the changed
 physical/phase/bank/finite/outer checks are rerun. The complex supplier binds;
-the bit headroom gain is recorded independently. Maintainer acceptance and
+the bit contribution is measured against the exact unchanged-bit control.
+The [structural appendix](../../research/e8-structural-frontiers/README.md)
+adds three scoped, independently reproduced obstruction proofs.
+Maintainer acceptance and
 the inherited all-size theorem interfaces remain pending.
 
 The October 11 [coupled E8 candidate](../../research/e8-coupled-bit-retiming/README.md)

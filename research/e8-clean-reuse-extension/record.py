@@ -8,7 +8,8 @@ def record():
     from verify import manifests
     manifests();expected=json.loads((ROOT/'data/EXPECTED.json').read_text(encoding='utf-8'))
     k=Q(expected['kappa']);old=Q(expected['prior_pr389']);assert k>old and Q(expected['absolute_gain'])==k-old
-    assert expected['bit_reuse_kappa_gain']=='0'and expected['conditional']
+    assert Q(expected['bit_reuse_kappa_gain'])>0 and expected['conditional']
+    assert Q(expected['fair_old_bit_kappa'])+Q(expected['bit_reuse_kappa_gain'])==k
     assert Q(expected['bit_coarse'])>Q(expected['complex_coarse'])
     with localcontext()as ctx:ctx.prec=70;decimal=format(Decimal(k.numerator)/Decimal(k.denominator),'f')
     assert decimal in(REPO/'README.md').read_text(encoding='utf-8')

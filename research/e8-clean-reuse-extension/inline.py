@@ -117,4 +117,3 @@ def repair(c,drop,terms):
     out['blocks']={k:{str(r):cnt for r,cnt in sorted(h.items())}for k,h in H.items()}
     out['N']=sum(r*cnt for h in H.values()for r,cnt in h.items());assert out['N']==c['N']-c['h']
     return out
-

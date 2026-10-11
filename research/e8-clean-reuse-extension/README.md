@@ -1,7 +1,7 @@
-# E8 clean helper reuse and signed composition
+# Shared E8 response spaces and clean helper reuse
 
-Conditional candidate **kappa = 1003675427211799133818727/1000000000000000000000000000 = 0.001003675427211799133818727**.
-The complex supplier binds; the new R795 bit supplier improves its coarse
+Conditional candidate **kappa = 40750673324589432209923/40000000000000000000000000 = 0.001018766833114735805248075**.
+The complex supplier binds; the new R767 bit supplier improves its coarse
 saving independently. The target of 0.002 has not been achieved.
 
 From a checkout of this PR with Python, C++17 and Boost headers:
@@ -11,14 +11,17 @@ python -m pip install -r research/e8-clean-reuse-extension/requirements.txt
 python -B research/e8-clean-reuse-extension/verify.py /fresh/output
 ```
 
-The frozen predecessor package remains adjacent. New source dependencies are
-included and pinned; no remote downloads or cached PASS files supply admission.
-Original supplier files remain immutable. Full replay includes both inherited
-supplier suites and the changed physical words, phases, geometry, bank owners,
-finite invoices, negative controls, two rational moments and 47 outer conditions.
+The complete frozen predecessor stays adjacent. New dependencies are bundled
+and pinned, with their original bytes unchanged. No network or discovery
+solver is required by reproduction. Every changed local Gaussian pair is
+recomputed, including the old pairs; cached phase PASS files do not admit the
+changed word. Full replay includes both predecessor suppliers, the signed
+R779 intermediate, the combined response-space word, bit R767, mixed-bank
+owner readback, finite invoices, mathematical omission/parameter controls,
+two rational moment engines and 47 outer inequalities.
 
 See PROOF.md, NOTICE.md and RESEARCH.md for the construction and precise scope.
 This finite conditional witness is not a formal proof of the full multiplication
-theorem. All inherited all-size compiler, recursive, dirty-bank/cover, routing,
+theorem. Inherited all-size compiler, recursive, dirty-bank/cover, routing,
 restored-row, precision, recovery and analytic interfaces remain assumptions.
 Prepared with substantial OpenAI Codex assistance; Apache-2.0.

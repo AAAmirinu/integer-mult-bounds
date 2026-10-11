@@ -1,0 +1,175 @@
+{
+  "capacity_only_minimum_banks": 539,
+  "firstframe_histogram": {
+    "1": 257,
+    "2": 185,
+    "3": 147,
+    "4": 35,
+    "5": 43,
+    "6": 109,
+    "7": 3
+  },
+  "helper_excess_monotonicity": [
+    {
+      "exact_lower_gap": "232804129002738513112523018184518688231719857690583292128446125139/1968076106701996705010692101352433039175511542845461791120563548192768",
+      "next": 1,
+      "previous": 0
+    },
+    {
+      "exact_lower_gap": "157311168745188412375095174373822272689002726494120259222229250603/1968076106701996705010692101352433039175511542845461791120563548192768",
+      "next": 2,
+      "previous": 1
+    },
+    {
+      "exact_lower_gap": "128889704847754423377225053269298975202842521134722678257359540983/1968076106701996705010692101352433039175511542845461791120563548192768",
+      "next": 3,
+      "previous": 2
+    },
+    {
+      "exact_lower_gap": "55224628589068064117082183515775226903650696671612949689557770719/984038053350998352505346050676216519587755771422730895560281774096384",
+      "next": 4,
+      "previous": 3
+    },
+    {
+      "exact_lower_gap": "96745326971758534477530658945103134195083633903192078740683911229/1968076106701996705010692101352433039175511542845461791120563548192768",
+      "next": 5,
+      "previous": 4
+    },
+    {
+      "exact_lower_gap": "85829611392963300394035275589507784716176313682282495809936245903/1968076106701996705010692101352433039175511542845461791120563548192768",
+      "next": 6,
+      "previous": 5
+    },
+    {
+      "exact_lower_gap": "38377736557987834685842784384262128242577648789500055593578724205/984038053350998352505346050676216519587755771422730895560281774096384",
+      "next": 7,
+      "previous": 6
+    },
+    {
+      "exact_lower_gap": "34494882291219380458310920612940632063630950410201266749119215269/984038053350998352505346050676216519587755771422730895560281774096384",
+      "next": 8,
+      "previous": 7
+    },
+    {
+      "exact_lower_gap": "7775260014541429194664025017431600931193192764712166374311886841/246009513337749588126336512669054129896938942855682723890070443524096",
+      "next": 9,
+      "previous": 8
+    }
+  ],
+  "helper_excess_monotonicity_at_relaxed_root_upper": [
+    {
+      "exact_lower_gap": "187649091474936355462924323656144001654695956507910924065574055607/1968076106701996705010692101352433039175511542845461791120563548192768",
+      "next": 1,
+      "previous": 0
+    },
+    {
+      "exact_lower_gap": "63420587977079138233291620476660337468767514151580986634847478975/984038053350998352505346050676216519587755771422730895560281774096384",
+      "next": 2,
+      "previous": 1
+    },
+    {
+      "exact_lower_gap": "25984242676694483548436382418700843469291943026526514600904035361/492019026675499176252673025338108259793877885711365447780140887048192",
+      "next": 3,
+      "previous": 2
+    },
+    {
+      "exact_lower_gap": "44536834683041737385370769740932832853688726907938732028392873621/984038053350998352505346050676216519587755771422730895560281774096384",
+      "next": 4,
+      "previous": 3
+    },
+    {
+      "exact_lower_gap": "78026791482533605773692857229815746411154392445932805442206524311/1968076106701996705010692101352433039175511542845461791120563548192768",
+      "next": 5,
+      "previous": 4
+    },
+    {
+      "exact_lower_gap": "34613370619107527241000487625767820129585582145528940758677800079/984038053350998352505346050676216519587755771422730895560281774096384",
+      "next": 6,
+      "previous": 5
+    },
+    {
+      "exact_lower_gap": "30955405684829328348835808402043872433856718226775351674647768205/984038053350998352505346050676216519587755771422730895560281774096384",
+      "next": 7,
+      "previous": 6
+    },
+    {
+      "exact_lower_gap": "27824705493507108671481239554018429386543493091530447015636805015/984038053350998352505346050676216519587755771422730895560281774096384",
+      "next": 8,
+      "previous": 7
+    },
+    {
+      "exact_lower_gap": "3136018397786076972237165716614597505253287619849114545609494619/123004756668874794063168256334527064948469471427841361945035221762048",
+      "next": 9,
+      "previous": 8
+    }
+  ],
+  "minimum_bank_padding_dimensions": 43,
+  "minimum_integer_bank_model_histogram": {
+    "16": 3840,
+    "2": 216,
+    "3": 7848,
+    "32": 3840,
+    "4": 3096,
+    "43": 9,
+    "48": 3840,
+    "5": 2520,
+    "6": 10584,
+    "7": 13320,
+    "8": 41544,
+    "9": 576
+  },
+  "minimum_integer_stock": 12531,
+  "minimum_integer_target_moment_interval": [
+    "26977621889433716216919913774417780588421601897650368571854657299437/26959946667150639794667015087019630673637144422540572481103610249216",
+    "26977621889433716216919913774417780588421601897650368571854657299439/26959946667150639794667015087019630673637144422540572481103610249216"
+  ],
+  "minimum_residual_dimensions_per_invocation": 4913,
+  "necessary_coarse": "1/499",
+  "positive_fallback_omitted": true,
+  "pricer_sha256": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482",
+  "proof": [
+    "Let d_r<=f_r=dim(original firstframe_r), s_r=9-d_r. Every helper remaining nested walk costs at least phi(s_r), because splitting total rank raises sum phi(rank), phi(x)=(x/73)^(1-b), 0<b<1.",
+    "The family retains original data endpoints, center-copy children and nine-stage geometric blocks. Their most optimistic endpoint histogram is the recorded fixed data histogram. All response, cleanup, additional gate and phase costs are omitted.",
+    "For B full width73 banks per stage, capacity requires 73B>=8 sum_r s_r. Padding rank P=73B-8 sum_r s_r has total moment cost at least P/73, even if arbitrary rank73 or fractional padding is granted.",
+    "Therefore total moment numerator minus stock W=7680+9B is at least data_numerator-7680 +72 sum_r [phi(s_r)-s_r/73]. This expression is independent of B.",
+    "Exact rational outward intervals certify g(r)=phi(r)-r/73 strictly increasing for r=0,...,9 at b=1/499. Thus d_r<=f_r implies g(s_r)>=g(9-f_r).",
+    "Using all f_r simultaneously for free, relaxing stock to 7680+72*4913/73 and omitting all padding entropy gives the recorded lower bound. Its moment lower endpoint exceeds1, so every member of this precisely fixed-firstframe family fails the target coarse saving for every integer B.",
+    "The integer539-bank histogram with a single rank43 padding child per stage is an additional stronger optimistic check, not needed for the all-B proof.",
+    "The same exact g(r) monotonicity is checked at the relaxed root upper grid point, whose relaxed moment lower endpoint exceeds1; hence the coarse saving of any member of this family is strictly below that grid point. The listed fractional-root interval is an upper-bound benchmark, never an achieved supplier."
+  ],
+  "relaxed_coarse_root_interval": [
+    "0.00161665218448218122518",
+    "0.001616652184482181225181"
+  ],
+  "relaxed_fractional_effective_stock": "914376/73",
+  "relaxed_histogram": {
+    "16": 3840,
+    "2": 216,
+    "3": 7848,
+    "32": 3840,
+    "4": 3096,
+    "48": 3840,
+    "5": 2520,
+    "6": 10584,
+    "7": 13320,
+    "8": 41544,
+    "9": 576
+  },
+  "relaxed_nominal_kappa_ceiling_interval": [
+    "0.001614042838601308598974799626045785758993095950973889417537361848851917",
+    "0.001614042838601308598975796400565242841216067919947222632293185530645867"
+  ],
+  "relaxed_target_moment_interval": [
+    "26977617261418862023450643799713090411411389767428014955159063864265/26959946667150639794667015087019630673637144422540572481103610249216",
+    "26977617261418862023450643799713090411411389767428014955159063864267/26959946667150639794667015087019630673637144422540572481103610249216"
+  ],
+  "scope": "Necessary bound for unchanged R779 first required frames, nine-axis final helpers, residual rank9-d per helper, 72 copies, same original data endpoints/center copies/geometry and complete width73 banks. Entrance gauges of any rational donor topology are granted maximal frame dimensions for free. This is not a global impossibility result and does not apply after changing firstframes, endpoints, copied centers, geometry, residual rank relation or bank semantics. No achieved supplier is asserted.",
+  "source_sha256": "0e3a9ceb4ab14a126a8e9e0d056322f9d2234ccda4f7472a8ad2849bd7a54131",
+  "static_entrance_mass_upper": 2098,
+  "status": "PASS_EXACT_FIXED_FIRSTFRAME_ALL_BANK_COUNTS_TARGET_REJECTION",
+  "target_kappa": "1/500",
+  "unnormalized_target_gap_interval": [
+    "2019695913074996083282410974724367648382920184600012457116181839255553/246009513337749588126336512669054129896938942855682723890070443524096",
+    "2019695913074996083282410974724367648382920184600012457116181839484147/246009513337749588126336512669054129896938942855682723890070443524096"
+  ]
+}

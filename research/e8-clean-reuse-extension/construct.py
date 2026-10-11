@@ -2,7 +2,7 @@
 import copy,gzip,hashlib,json,pathlib,sys,types
 from collections import defaultdict
 from fractions import Fraction as Q
-import exact,inline,bit_reuse
+import exact,inline,bit_reuse,gauges
 ROOT=pathlib.Path(__file__).resolve().parent;PARENT=ROOT.parent/'e8-coupled-bit-retiming'
 sys.path.insert(0,str(ROOT/'vendor/source376'));import candidate_frames,transport
 def signed(c):
@@ -40,10 +40,30 @@ def bit_build():
         for move in block['changes']:
             i=bygate[move['phase'],move['index']];assert nodes[i]['mask']==int(move['old'])
             low,high,edges=R.interval({i},nodes,previous,following,frame);m=int(move['new']);assert bit_reuse.F.inside(low,m)and bit_reuse.F.inside(m,high);nodes[i]['mask']=m
-    c=R.write_nodes(c,nodes);bit_reuse.audit(c);return c,controls
+    c=R.write_nodes(c,nodes);bit_reuse.audit(c)
+    for block in exact.read(ROOT/'data/extra-bit-rounds.json'):
+        for e in block['reuses']:c=bit_reuse.reconstruct(c,e)
+        nodes,masks=R.nodes_of(c);bygate={(n['phase'],n['index']):i for i,n in enumerate(nodes)if not n.get('pin')}
+        previous,following,frame=R.links(nodes,c,masks)
+        for step in block['retiming']:
+            assert step['method']=='extremes'
+            for move in step['changes']:
+                i=bygate[move['phase'],move['index']];assert nodes[i]['mask']==int(move['old'])
+                low,high,edges=R.interval({i},nodes,previous,following,frame);m=int(move['new'])
+                assert bit_reuse.F.inside(low,m)and bit_reuse.F.inside(m,high);nodes[i]['mask']=m
+        c=R.write_nodes(c,nodes);bit_reuse.audit(c)
+    assert c['R']==767
+    return c,controls
 def emit(out):
     out=pathlib.Path(out);out.mkdir(exist_ok=False);base,c,cc=complex_build();b,bc=bit_build()
     for name,z in [('kernel-base',base),('complex-candidate',c),('bit-candidate',b)]:
         raw=json.dumps(z,sort_keys=True,separators=(',',':')).encode();blob=transport.deterministic_gzip(raw);expected=(ROOT/'data'/(name+'.json.gz')).read_bytes();assert blob==expected,'changed fixed witness '+name;(out/(name+'.json.gz')).write_bytes(blob)
-    report={'status':'PASS_FIXED_WITNESSES_AND_CONTROLS','complex_R':c['R'],'bit_R':b['R'],'all_complex_raw_columns':240+c['R'],'bit_reuses':27,'additional_bit_frame_moves':26,'negative_controls':cc+bc};(out/'RECONSTRUCTION.json').write_text(json.dumps(report,indent=2)+'\n');return report
+    gauged,signed_base,gr=gauges.build(c)
+    for name,z in [('gauged-candidate',gauged),('gauge-signed-base',signed_base)]:
+        raw=json.dumps(z,sort_keys=True,separators=(',',':')).encode();blob=transport.deterministic_gzip(raw)
+        assert blob==(ROOT/'data'/(name+'.json.gz')).read_bytes(),'changed gauge witness '+name
+        (out/(name+'.json.gz')).write_bytes(blob)
+    # Native response-space checkers accept plain JSON and bind its bytes.
+    (out/'gauged-candidate.json').write_text(json.dumps(gauged,sort_keys=True,separators=(',',':')),encoding='utf-8',newline='\n')
+    report={'status':'PASS_FIXED_WITNESSES_AND_CONTROLS','complex_R':c['R'],'bit_R':b['R'],'all_complex_raw_columns':240+c['R'],'bit_reuses':55,'additional_bit_frame_moves':54,'negative_controls':cc+bc,'response_spaces':gr};(out/'RECONSTRUCTION.json').write_text(json.dumps(report,indent=2)+'\n');return report
 if __name__=='__main__':print(emit(sys.argv[1]))

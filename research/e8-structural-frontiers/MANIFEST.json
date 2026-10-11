@@ -1,0 +1,16 @@
+{
+  "CENTER-PROOF.md": "b262050a3a71edacee052ed7a2d8be5909265ee99ee57b239e2a045747805760",
+  "FIRSTFRAME-PROOF.md": "6f9caed441561b8c83ea6ba8d5741ec1aa0e83aaa4e31b89234c64412eaa304d",
+  "PATTERN-PROOF.md": "67adb76f0cb12ec5f4f17096d96691dea60c72e98ddb2f81f14fec2c89a25583",
+  "README.md": "fe7b0ac178380b68bd71c5b283f60eece4a71570e5bf0cd32025af540aee4776",
+  "SOURCE-PINS.json": "9fdd87057158085006b8d14e422040651e5f43bf13c2a51f6ded29a53906699f",
+  "center_rank_obstructions.py": "97901d8edfe90c1ef0b9784bc070b791eb71f54c9725f7806bc7676cf701069f",
+  "data/CENTER-RANK-OBSTRUCTIONS.json": "24937eda953634d66baec39e867c06e12203c976236586de27b598bb55736ca9",
+  "data/STATIC-FIRSTFRAME-BOUND.json": "955845f6eac44f5030ea17c1fa1c4cacfb00fffcf13bd96a1de935e459a4235e",
+  "data/UNIVERSAL-RANK8-SPAN.json": "a1d5d7a25dbaf6be06d94255631a30608a301715b75540e38df64747ef27325e",
+  "static_firstframe_bound.py": "4e81165246369f2ec86e132335dcd0faa3bb61a9b522cd1d4d37f44accba9bfa",
+  "vendor/center_rank_obstructions.py": "578f23dffaa0ae69114d5180f9096dc05d3ccba553b67127b708d1a1fab86e88",
+  "vendor/static_firstframe_bound.py": "dfba119a8d4526722c85125b935c2470b371c486cc35763212c0431996273af5",
+  "vendor/universal_rank8_span.py": "8c81ade376c8fc298566000f34eb0d81623b67d9ef0912b815d6ad903dda7e8b",
+  "verify.py": "d92f589ef8a594ba56bf920fa7fd4647510e1d3488477a43bd3c82a554ea33af"
+}

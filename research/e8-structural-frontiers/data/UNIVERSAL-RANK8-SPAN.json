@@ -1,0 +1,5764 @@
+{
+  "status": "PASS_PATTERN_ONLY_RANK8_SOURCE_SPAN_LOWER_BOUND",
+  "source_sha256": "785a6160912b8bf8535ccd438c7d13c0730f874d6a5d07ef530e50279e7cf7d8",
+  "ports": [
+    7,
+    11,
+    19,
+    35,
+    67,
+    131,
+    259,
+    13,
+    21,
+    37,
+    69,
+    133,
+    261,
+    25,
+    41,
+    73,
+    137,
+    265,
+    49,
+    81,
+    145,
+    273,
+    97,
+    161,
+    289,
+    193,
+    321,
+    385,
+    14,
+    22,
+    38,
+    70,
+    134,
+    262,
+    26,
+    42,
+    74,
+    138,
+    266,
+    50,
+    82,
+    146,
+    274,
+    98,
+    162,
+    290,
+    194,
+    322,
+    386,
+    28,
+    44,
+    76,
+    140,
+    268,
+    52,
+    84,
+    148,
+    276,
+    100,
+    164,
+    292,
+    196,
+    324,
+    388,
+    56,
+    88,
+    152,
+    280,
+    104,
+    168,
+    296,
+    200,
+    328,
+    392,
+    112,
+    176,
+    304,
+    208,
+    336,
+    400,
+    224,
+    352,
+    416,
+    448,
+    508,
+    506,
+    502,
+    494,
+    478,
+    446,
+    382,
+    254,
+    505,
+    501,
+    493,
+    477,
+    445,
+    381,
+    253,
+    499,
+    491,
+    475,
+    443,
+    379,
+    251,
+    487,
+    471,
+    439,
+    375,
+    247,
+    463,
+    431,
+    367,
+    239,
+    415,
+    351,
+    223,
+    319,
+    191,
+    127
+  ],
+  "completion_hypothesis": "Over any characteristic-zero field: rank(C)=8, C_tt=1, C_ts=0 for t!=s and binary q_t dot q_s=1.",
+  "clique_certified_normals": 391,
+  "clique_witnesses": [
+    {
+      "normal": 1,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 2,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        34,
+        43,
+        48,
+        85,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 4,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        49,
+        58,
+        63,
+        84,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 7,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 8,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        49,
+        68,
+        73,
+        84,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 11,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 13,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        7,
+        22,
+        27,
+        94,
+        99,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 14,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        9,
+        15,
+        28,
+        43,
+        55,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 15,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        18,
+        25,
+        40,
+        44,
+        56,
+        58,
+        109
+      ]
+    },
+    {
+      "normal": 16,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        49,
+        74,
+        79,
+        84,
+        99,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 19,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        7,
+        22,
+        27,
+        94,
+        99,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 21,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 22,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        29,
+        43,
+        51,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 23,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        25,
+        36,
+        44,
+        52,
+        58,
+        113
+      ]
+    },
+    {
+      "normal": 25,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 26,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        34,
+        43,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 27,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        25,
+        31,
+        44,
+        52,
+        68,
+        113
+      ]
+    },
+    {
+      "normal": 28,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        36,
+        39,
+        49,
+        58,
+        119
+      ]
+    },
+    {
+      "normal": 29,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        3,
+        7,
+        25,
+        31,
+        37,
+        59,
+        68,
+        113
+      ]
+    },
+    {
+      "normal": 30,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        3,
+        10,
+        16,
+        21,
+        95,
+        102,
+        108,
+        113
+      ]
+    },
+    {
+      "normal": 31,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 32,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        3,
+        50,
+        74,
+        82,
+        84,
+        99,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 35,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        3,
+        7,
+        19,
+        27,
+        95,
+        99,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 37,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        27,
+        93,
+        101,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 38,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        30,
+        40,
+        51,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 39,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        25,
+        36,
+        41,
+        52,
+        55,
+        116
+      ]
+    },
+    {
+      "normal": 41,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 42,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 43,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        25,
+        31,
+        41,
+        52,
+        65,
+        116
+      ]
+    },
+    {
+      "normal": 44,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        36,
+        39,
+        50,
+        55,
+        119
+      ]
+    },
+    {
+      "normal": 45,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        7,
+        25,
+        31,
+        37,
+        56,
+        65,
+        116
+      ]
+    },
+    {
+      "normal": 46,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        10,
+        16,
+        24,
+        94,
+        102,
+        108,
+        116
+      ]
+    },
+    {
+      "normal": 47,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 49,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        18,
+        27,
+        92,
+        107,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 50,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        36,
+        39,
+        50,
+        55,
+        119
+      ]
+    },
+    {
+      "normal": 51,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        7,
+        25,
+        31,
+        37,
+        56,
+        65,
+        116
+      ]
+    },
+    {
+      "normal": 52,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 53,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        25,
+        31,
+        41,
+        52,
+        65,
+        116
+      ]
+    },
+    {
+      "normal": 54,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        10,
+        20,
+        24,
+        93,
+        102,
+        112,
+        116
+      ]
+    },
+    {
+      "normal": 55,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        15,
+        18,
+        27,
+        92,
+        107,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 56,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        30,
+        40,
+        51,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 57,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        25,
+        36,
+        41,
+        52,
+        55,
+        116
+      ]
+    },
+    {
+      "normal": 58,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        20,
+        24,
+        92,
+        107,
+        112,
+        116
+      ]
+    },
+    {
+      "normal": 59,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        10,
+        18,
+        27,
+        93,
+        102,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 60,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        20,
+        24,
+        92,
+        107,
+        112,
+        116
+      ]
+    },
+    {
+      "normal": 61,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        4,
+        7,
+        18,
+        27,
+        96,
+        99,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 62,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        4,
+        11,
+        17,
+        28,
+        48,
+        62,
+        71,
+        110
+      ]
+    },
+    {
+      "normal": 64,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        4,
+        51,
+        74,
+        83,
+        84,
+        99,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 67,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        4,
+        7,
+        18,
+        27,
+        96,
+        99,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 69,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        10,
+        18,
+        27,
+        93,
+        102,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 70,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        31,
+        39,
+        50,
+        65,
+        119
+      ]
+    },
+    {
+      "normal": 71,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        35,
+        41,
+        52,
+        54,
+        118
+      ]
+    },
+    {
+      "normal": 73,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        18,
+        27,
+        92,
+        107,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 74,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        36,
+        39,
+        50,
+        55,
+        119
+      ]
+    },
+    {
+      "normal": 75,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        30,
+        41,
+        52,
+        64,
+        118
+      ]
+    },
+    {
+      "normal": 76,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 77,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        7,
+        23,
+        30,
+        37,
+        56,
+        64,
+        118
+      ]
+    },
+    {
+      "normal": 78,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        9,
+        16,
+        26,
+        94,
+        101,
+        108,
+        118
+      ]
+    },
+    {
+      "normal": 79,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        15,
+        18,
+        27,
+        92,
+        107,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 81,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 82,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 83,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        7,
+        23,
+        30,
+        37,
+        56,
+        64,
+        118
+      ]
+    },
+    {
+      "normal": 84,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        36,
+        39,
+        50,
+        55,
+        119
+      ]
+    },
+    {
+      "normal": 85,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        30,
+        41,
+        52,
+        64,
+        118
+      ]
+    },
+    {
+      "normal": 86,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        20,
+        26,
+        93,
+        101,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 87,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 88,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        31,
+        39,
+        50,
+        65,
+        119
+      ]
+    },
+    {
+      "normal": 89,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        35,
+        41,
+        52,
+        54,
+        118
+      ]
+    },
+    {
+      "normal": 90,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        26,
+        92,
+        106,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 91,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        27,
+        93,
+        101,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 92,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        26,
+        92,
+        106,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 93,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        3,
+        7,
+        19,
+        27,
+        95,
+        99,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 94,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        3,
+        11,
+        17,
+        28,
+        48,
+        60,
+        69,
+        111
+      ]
+    },
+    {
+      "normal": 97,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 98,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        34,
+        43,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 99,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        3,
+        7,
+        20,
+        29,
+        37,
+        59,
+        64,
+        118
+      ]
+    },
+    {
+      "normal": 100,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        36,
+        39,
+        49,
+        58,
+        119
+      ]
+    },
+    {
+      "normal": 101,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        20,
+        29,
+        44,
+        52,
+        64,
+        118
+      ]
+    },
+    {
+      "normal": 102,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        26,
+        93,
+        100,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 103,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 104,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        31,
+        39,
+        49,
+        68,
+        119
+      ]
+    },
+    {
+      "normal": 105,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        34,
+        44,
+        52,
+        54,
+        118
+      ]
+    },
+    {
+      "normal": 106,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 107,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 108,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 109,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        7,
+        22,
+        27,
+        94,
+        99,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 110,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        11,
+        17,
+        28,
+        48,
+        57,
+        66,
+        114
+      ]
+    },
+    {
+      "normal": 112,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        9,
+        15,
+        31,
+        35,
+        49,
+        74,
+        119
+      ]
+    },
+    {
+      "normal": 113,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        16,
+        18,
+        34,
+        44,
+        50,
+        56,
+        118
+      ]
+    },
+    {
+      "normal": 114,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 115,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        7,
+        22,
+        27,
+        94,
+        99,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 116,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 117,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 118,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        11,
+        21,
+        29,
+        48,
+        53,
+        66,
+        114
+      ]
+    },
+    {
+      "normal": 120,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        26,
+        93,
+        100,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 121,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 122,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        16,
+        21,
+        34,
+        48,
+        53,
+        56,
+        114
+      ]
+    },
+    {
+      "normal": 124,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        16,
+        21,
+        38,
+        41,
+        49,
+        63,
+        114
+      ]
+    },
+    {
+      "normal": 127,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 128,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        5,
+        52,
+        75,
+        83,
+        84,
+        99,
+        110,
+        118
+      ]
+    },
+    {
+      "normal": 131,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        5,
+        7,
+        18,
+        26,
+        97,
+        99,
+        110,
+        118
+      ]
+    },
+    {
+      "normal": 133,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        11,
+        18,
+        26,
+        93,
+        103,
+        110,
+        118
+      ]
+    },
+    {
+      "normal": 134,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        32,
+        39,
+        50,
+        66,
+        118
+      ]
+    },
+    {
+      "normal": 135,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 137,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        16,
+        18,
+        26,
+        92,
+        108,
+        110,
+        118
+      ]
+    },
+    {
+      "normal": 138,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        37,
+        39,
+        50,
+        56,
+        118
+      ]
+    },
+    {
+      "normal": 139,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        30,
+        40,
+        51,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 140,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        35,
+        41,
+        52,
+        54,
+        118
+      ]
+    },
+    {
+      "normal": 141,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        7,
+        22,
+        30,
+        36,
+        55,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 142,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        9,
+        15,
+        27,
+        94,
+        101,
+        107,
+        119
+      ]
+    },
+    {
+      "normal": 143,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        16,
+        18,
+        26,
+        92,
+        108,
+        110,
+        118
+      ]
+    },
+    {
+      "normal": 145,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        26,
+        92,
+        106,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 146,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        35,
+        41,
+        52,
+        54,
+        118
+      ]
+    },
+    {
+      "normal": 147,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        7,
+        22,
+        30,
+        36,
+        55,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 148,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        37,
+        39,
+        50,
+        56,
+        118
+      ]
+    },
+    {
+      "normal": 149,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        30,
+        40,
+        51,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 150,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        27,
+        93,
+        101,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 151,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        26,
+        92,
+        106,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 152,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        32,
+        39,
+        50,
+        66,
+        118
+      ]
+    },
+    {
+      "normal": 153,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 154,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 155,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        9,
+        20,
+        26,
+        93,
+        101,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 156,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 157,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        3,
+        7,
+        20,
+        26,
+        95,
+        99,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 158,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        3,
+        10,
+        17,
+        28,
+        47,
+        60,
+        68,
+        112
+      ]
+    },
+    {
+      "normal": 161,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 162,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        34,
+        44,
+        52,
+        54,
+        118
+      ]
+    },
+    {
+      "normal": 163,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        3,
+        7,
+        19,
+        29,
+        36,
+        58,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 164,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        37,
+        39,
+        49,
+        59,
+        118
+      ]
+    },
+    {
+      "normal": 165,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        29,
+        43,
+        51,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 166,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 167,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 168,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        20,
+        32,
+        39,
+        49,
+        69,
+        118
+      ]
+    },
+    {
+      "normal": 169,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        34,
+        43,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 170,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 171,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        26,
+        93,
+        100,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 172,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 173,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        7,
+        23,
+        26,
+        94,
+        99,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 174,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        10,
+        17,
+        28,
+        47,
+        57,
+        65,
+        115
+      ]
+    },
+    {
+      "normal": 176,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        9,
+        16,
+        32,
+        35,
+        49,
+        75,
+        118
+      ]
+    },
+    {
+      "normal": 177,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        18,
+        34,
+        43,
+        50,
+        55,
+        119
+      ]
+    },
+    {
+      "normal": 178,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 179,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        7,
+        23,
+        26,
+        94,
+        99,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 180,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 181,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        26,
+        93,
+        100,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 182,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        10,
+        21,
+        29,
+        47,
+        53,
+        65,
+        115
+      ]
+    },
+    {
+      "normal": 184,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 185,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 186,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        15,
+        21,
+        34,
+        47,
+        53,
+        55,
+        115
+      ]
+    },
+    {
+      "normal": 188,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        15,
+        21,
+        38,
+        40,
+        49,
+        62,
+        115
+      ]
+    },
+    {
+      "normal": 191,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 193,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        25,
+        92,
+        105,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 194,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        20,
+        34,
+        46,
+        52,
+        55,
+        116
+      ]
+    },
+    {
+      "normal": 195,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        4,
+        7,
+        18,
+        29,
+        35,
+        58,
+        65,
+        119
+      ]
+    },
+    {
+      "normal": 196,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        20,
+        37,
+        40,
+        49,
+        61,
+        116
+      ]
+    },
+    {
+      "normal": 197,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        10,
+        18,
+        29,
+        43,
+        50,
+        65,
+        119
+      ]
+    },
+    {
+      "normal": 198,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 199,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        25,
+        92,
+        105,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 200,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        10,
+        20,
+        32,
+        40,
+        49,
+        71,
+        116
+      ]
+    },
+    {
+      "normal": 201,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        18,
+        34,
+        43,
+        50,
+        55,
+        119
+      ]
+    },
+    {
+      "normal": 202,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 203,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        24,
+        25,
+        93,
+        100,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 204,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 205,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        7,
+        24,
+        25,
+        94,
+        99,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 206,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        9,
+        17,
+        28,
+        45,
+        57,
+        64,
+        117
+      ]
+    },
+    {
+      "normal": 208,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        10,
+        16,
+        32,
+        36,
+        49,
+        77,
+        116
+      ]
+    },
+    {
+      "normal": 209,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        34,
+        43,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 210,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 211,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        7,
+        24,
+        25,
+        94,
+        99,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 212,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 213,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        24,
+        25,
+        93,
+        100,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 214,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        9,
+        21,
+        29,
+        45,
+        53,
+        64,
+        117
+      ]
+    },
+    {
+      "normal": 216,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 217,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        25,
+        92,
+        105,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 218,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        21,
+        34,
+        45,
+        53,
+        54,
+        117
+      ]
+    },
+    {
+      "normal": 220,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        21,
+        38,
+        39,
+        49,
+        60,
+        117
+      ]
+    },
+    {
+      "normal": 223,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        25,
+        92,
+        105,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 224,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        3,
+        10,
+        16,
+        32,
+        36,
+        50,
+        80,
+        113
+      ]
+    },
+    {
+      "normal": 225,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 226,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 227,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        3,
+        7,
+        21,
+        25,
+        95,
+        99,
+        113,
+        117
+      ]
+    },
+    {
+      "normal": 228,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 229,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        9,
+        21,
+        25,
+        93,
+        101,
+        113,
+        117
+      ]
+    },
+    {
+      "normal": 230,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        24,
+        30,
+        42,
+        53,
+        64,
+        117
+      ]
+    },
+    {
+      "normal": 232,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        27,
+        93,
+        101,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 233,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        21,
+        25,
+        92,
+        106,
+        113,
+        117
+      ]
+    },
+    {
+      "normal": 234,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        35,
+        42,
+        53,
+        54,
+        117
+      ]
+    },
+    {
+      "normal": 236,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        38,
+        39,
+        50,
+        57,
+        117
+      ]
+    },
+    {
+      "normal": 239,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        21,
+        25,
+        92,
+        106,
+        113,
+        117
+      ]
+    },
+    {
+      "normal": 240,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        9,
+        15,
+        27,
+        94,
+        101,
+        107,
+        119
+      ]
+    },
+    {
+      "normal": 241,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        17,
+        18,
+        25,
+        92,
+        109,
+        110,
+        117
+      ]
+    },
+    {
+      "normal": 242,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        38,
+        39,
+        50,
+        57,
+        117
+      ]
+    },
+    {
+      "normal": 244,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        35,
+        42,
+        53,
+        54,
+        117
+      ]
+    },
+    {
+      "normal": 247,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        17,
+        18,
+        25,
+        92,
+        109,
+        110,
+        117
+      ]
+    },
+    {
+      "normal": 248,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        24,
+        30,
+        42,
+        53,
+        64,
+        117
+      ]
+    },
+    {
+      "normal": 251,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        12,
+        18,
+        25,
+        93,
+        104,
+        110,
+        117
+      ]
+    },
+    {
+      "normal": 253,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        6,
+        7,
+        18,
+        25,
+        98,
+        99,
+        110,
+        117
+      ]
+    },
+    {
+      "normal": 254,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        6,
+        28,
+        39,
+        46,
+        91,
+        99,
+        110,
+        117
+      ]
+    },
+    {
+      "normal": 255,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 256,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        6,
+        53,
+        76,
+        83,
+        84,
+        99,
+        110,
+        117
+      ]
+    },
+    {
+      "normal": 259,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        6,
+        7,
+        18,
+        25,
+        98,
+        99,
+        110,
+        117
+      ]
+    },
+    {
+      "normal": 261,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        12,
+        18,
+        25,
+        93,
+        104,
+        110,
+        117
+      ]
+    },
+    {
+      "normal": 262,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        24,
+        33,
+        39,
+        50,
+        67,
+        117
+      ]
+    },
+    {
+      "normal": 263,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 265,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        17,
+        18,
+        25,
+        92,
+        109,
+        110,
+        117
+      ]
+    },
+    {
+      "normal": 266,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        38,
+        39,
+        50,
+        57,
+        117
+      ]
+    },
+    {
+      "normal": 267,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        30,
+        40,
+        51,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 268,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        35,
+        42,
+        53,
+        54,
+        117
+      ]
+    },
+    {
+      "normal": 269,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        7,
+        22,
+        30,
+        36,
+        55,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 270,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        9,
+        15,
+        27,
+        94,
+        101,
+        107,
+        119
+      ]
+    },
+    {
+      "normal": 271,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        17,
+        18,
+        25,
+        92,
+        109,
+        110,
+        117
+      ]
+    },
+    {
+      "normal": 273,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        21,
+        25,
+        92,
+        106,
+        113,
+        117
+      ]
+    },
+    {
+      "normal": 274,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        35,
+        42,
+        53,
+        54,
+        117
+      ]
+    },
+    {
+      "normal": 275,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        7,
+        22,
+        30,
+        36,
+        55,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 276,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        38,
+        39,
+        50,
+        57,
+        117
+      ]
+    },
+    {
+      "normal": 277,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        30,
+        40,
+        51,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 278,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        27,
+        93,
+        101,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 279,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        21,
+        25,
+        92,
+        106,
+        113,
+        117
+      ]
+    },
+    {
+      "normal": 280,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        24,
+        33,
+        39,
+        50,
+        67,
+        117
+      ]
+    },
+    {
+      "normal": 281,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 282,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 283,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        9,
+        21,
+        25,
+        93,
+        101,
+        113,
+        117
+      ]
+    },
+    {
+      "normal": 284,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 285,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        3,
+        7,
+        21,
+        25,
+        95,
+        99,
+        113,
+        117
+      ]
+    },
+    {
+      "normal": 286,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        3,
+        10,
+        16,
+        28,
+        46,
+        59,
+        68,
+        113
+      ]
+    },
+    {
+      "normal": 289,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        25,
+        92,
+        105,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 290,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        21,
+        34,
+        45,
+        53,
+        54,
+        117
+      ]
+    },
+    {
+      "normal": 291,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        3,
+        7,
+        19,
+        29,
+        36,
+        58,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 292,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        21,
+        38,
+        39,
+        49,
+        60,
+        117
+      ]
+    },
+    {
+      "normal": 293,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        29,
+        43,
+        51,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 294,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 295,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        25,
+        92,
+        105,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 296,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        21,
+        33,
+        39,
+        49,
+        70,
+        117
+      ]
+    },
+    {
+      "normal": 297,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        34,
+        43,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 298,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 299,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        24,
+        25,
+        93,
+        100,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 300,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 301,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        7,
+        24,
+        25,
+        94,
+        99,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 302,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        10,
+        16,
+        28,
+        46,
+        56,
+        65,
+        116
+      ]
+    },
+    {
+      "normal": 304,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        9,
+        17,
+        33,
+        35,
+        49,
+        76,
+        117
+      ]
+    },
+    {
+      "normal": 305,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        18,
+        34,
+        43,
+        50,
+        55,
+        119
+      ]
+    },
+    {
+      "normal": 306,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 307,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        7,
+        24,
+        25,
+        94,
+        99,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 308,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 309,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        24,
+        25,
+        93,
+        100,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 310,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        10,
+        20,
+        29,
+        46,
+        52,
+        65,
+        116
+      ]
+    },
+    {
+      "normal": 312,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 313,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        25,
+        92,
+        105,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 314,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        15,
+        20,
+        34,
+        46,
+        52,
+        55,
+        116
+      ]
+    },
+    {
+      "normal": 316,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        15,
+        20,
+        37,
+        40,
+        49,
+        61,
+        116
+      ]
+    },
+    {
+      "normal": 319,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        24,
+        25,
+        92,
+        105,
+        116,
+        117
+      ]
+    },
+    {
+      "normal": 321,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 322,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        21,
+        34,
+        47,
+        53,
+        55,
+        115
+      ]
+    },
+    {
+      "normal": 323,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        4,
+        7,
+        18,
+        29,
+        35,
+        58,
+        65,
+        119
+      ]
+    },
+    {
+      "normal": 324,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        21,
+        38,
+        40,
+        49,
+        62,
+        115
+      ]
+    },
+    {
+      "normal": 325,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        10,
+        18,
+        29,
+        43,
+        50,
+        65,
+        119
+      ]
+    },
+    {
+      "normal": 326,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 327,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 328,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        10,
+        21,
+        33,
+        40,
+        49,
+        72,
+        115
+      ]
+    },
+    {
+      "normal": 329,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        18,
+        34,
+        43,
+        50,
+        55,
+        119
+      ]
+    },
+    {
+      "normal": 330,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 331,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        26,
+        93,
+        100,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 332,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 333,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        7,
+        23,
+        26,
+        94,
+        99,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 334,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        9,
+        16,
+        28,
+        44,
+        56,
+        64,
+        118
+      ]
+    },
+    {
+      "normal": 336,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        10,
+        17,
+        33,
+        36,
+        49,
+        78,
+        115
+      ]
+    },
+    {
+      "normal": 337,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        34,
+        43,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 338,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 339,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        7,
+        23,
+        26,
+        94,
+        99,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 340,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 341,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        26,
+        93,
+        100,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 342,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        9,
+        20,
+        29,
+        44,
+        52,
+        64,
+        118
+      ]
+    },
+    {
+      "normal": 344,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 345,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 346,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        34,
+        44,
+        52,
+        54,
+        118
+      ]
+    },
+    {
+      "normal": 348,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        37,
+        39,
+        49,
+        59,
+        118
+      ]
+    },
+    {
+      "normal": 351,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 352,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        3,
+        10,
+        17,
+        33,
+        36,
+        50,
+        81,
+        112
+      ]
+    },
+    {
+      "normal": 353,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 354,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 355,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        3,
+        7,
+        20,
+        26,
+        95,
+        99,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 356,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 357,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        9,
+        20,
+        26,
+        93,
+        101,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 358,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        30,
+        41,
+        52,
+        64,
+        118
+      ]
+    },
+    {
+      "normal": 360,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        27,
+        93,
+        101,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 361,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        26,
+        92,
+        106,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 362,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        35,
+        41,
+        52,
+        54,
+        118
+      ]
+    },
+    {
+      "normal": 364,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        37,
+        39,
+        50,
+        56,
+        118
+      ]
+    },
+    {
+      "normal": 367,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        26,
+        92,
+        106,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 368,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        9,
+        15,
+        27,
+        94,
+        101,
+        107,
+        119
+      ]
+    },
+    {
+      "normal": 369,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        16,
+        18,
+        26,
+        92,
+        108,
+        110,
+        118
+      ]
+    },
+    {
+      "normal": 370,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        37,
+        39,
+        50,
+        56,
+        118
+      ]
+    },
+    {
+      "normal": 372,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        35,
+        41,
+        52,
+        54,
+        118
+      ]
+    },
+    {
+      "normal": 375,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        16,
+        18,
+        26,
+        92,
+        108,
+        110,
+        118
+      ]
+    },
+    {
+      "normal": 376,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        30,
+        41,
+        52,
+        64,
+        118
+      ]
+    },
+    {
+      "normal": 379,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        11,
+        18,
+        26,
+        93,
+        103,
+        110,
+        118
+      ]
+    },
+    {
+      "normal": 381,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        5,
+        7,
+        18,
+        26,
+        97,
+        99,
+        110,
+        118
+      ]
+    },
+    {
+      "normal": 382,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        5,
+        28,
+        39,
+        47,
+        90,
+        99,
+        110,
+        118
+      ]
+    },
+    {
+      "normal": 383,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 385,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 386,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        16,
+        21,
+        34,
+        48,
+        53,
+        56,
+        114
+      ]
+    },
+    {
+      "normal": 387,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        5,
+        7,
+        18,
+        29,
+        35,
+        59,
+        66,
+        118
+      ]
+    },
+    {
+      "normal": 388,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        16,
+        21,
+        38,
+        41,
+        49,
+        63,
+        114
+      ]
+    },
+    {
+      "normal": 389,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        11,
+        18,
+        29,
+        44,
+        50,
+        66,
+        118
+      ]
+    },
+    {
+      "normal": 390,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        26,
+        93,
+        100,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 391,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 392,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        11,
+        21,
+        33,
+        41,
+        49,
+        73,
+        114
+      ]
+    },
+    {
+      "normal": 393,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        16,
+        18,
+        34,
+        44,
+        50,
+        56,
+        118
+      ]
+    },
+    {
+      "normal": 394,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 395,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 396,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 397,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        7,
+        22,
+        27,
+        94,
+        99,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 398,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        9,
+        15,
+        28,
+        43,
+        55,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 400,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        11,
+        17,
+        33,
+        37,
+        49,
+        79,
+        114
+      ]
+    },
+    {
+      "normal": 401,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        34,
+        44,
+        52,
+        54,
+        118
+      ]
+    },
+    {
+      "normal": 402,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 403,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        7,
+        22,
+        27,
+        94,
+        99,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 404,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        26,
+        92,
+        105,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 405,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 406,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        29,
+        43,
+        51,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 408,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        23,
+        26,
+        93,
+        100,
+        115,
+        118
+      ]
+    },
+    {
+      "normal": 409,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 410,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        34,
+        43,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 412,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        36,
+        39,
+        49,
+        58,
+        119
+      ]
+    },
+    {
+      "normal": 415,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 416,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        3,
+        11,
+        17,
+        33,
+        37,
+        50,
+        82,
+        111
+      ]
+    },
+    {
+      "normal": 417,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        35,
+        41,
+        52,
+        54,
+        118
+      ]
+    },
+    {
+      "normal": 418,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        26,
+        92,
+        106,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 419,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        3,
+        7,
+        19,
+        27,
+        95,
+        99,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 420,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        20,
+        26,
+        92,
+        106,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 421,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        27,
+        93,
+        101,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 422,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        30,
+        40,
+        51,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 424,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        20,
+        26,
+        93,
+        101,
+        112,
+        118
+      ]
+    },
+    {
+      "normal": 425,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 426,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 428,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        36,
+        39,
+        50,
+        55,
+        119
+      ]
+    },
+    {
+      "normal": 431,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 432,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        9,
+        16,
+        26,
+        94,
+        101,
+        108,
+        118
+      ]
+    },
+    {
+      "normal": 433,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        15,
+        18,
+        27,
+        92,
+        107,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 434,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        36,
+        39,
+        50,
+        55,
+        119
+      ]
+    },
+    {
+      "normal": 436,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 439,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        18,
+        27,
+        92,
+        107,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 440,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        30,
+        40,
+        51,
+        64,
+        119
+      ]
+    },
+    {
+      "normal": 443,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        10,
+        18,
+        27,
+        93,
+        102,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 445,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        4,
+        7,
+        18,
+        27,
+        96,
+        99,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 446,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        4,
+        28,
+        39,
+        48,
+        89,
+        99,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 447,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        23,
+        35,
+        41,
+        52,
+        54,
+        118
+      ]
+    },
+    {
+      "normal": 448,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        4,
+        11,
+        17,
+        33,
+        37,
+        51,
+        83,
+        110
+      ]
+    },
+    {
+      "normal": 449,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        25,
+        36,
+        41,
+        52,
+        55,
+        116
+      ]
+    },
+    {
+      "normal": 450,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        20,
+        24,
+        92,
+        107,
+        112,
+        116
+      ]
+    },
+    {
+      "normal": 451,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        4,
+        7,
+        18,
+        27,
+        96,
+        99,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 452,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        20,
+        24,
+        92,
+        107,
+        112,
+        116
+      ]
+    },
+    {
+      "normal": 453,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        10,
+        18,
+        27,
+        93,
+        102,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 454,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        31,
+        39,
+        50,
+        65,
+        119
+      ]
+    },
+    {
+      "normal": 456,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        10,
+        20,
+        24,
+        93,
+        102,
+        112,
+        116
+      ]
+    },
+    {
+      "normal": 457,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        15,
+        18,
+        27,
+        92,
+        107,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 458,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        36,
+        39,
+        50,
+        55,
+        119
+      ]
+    },
+    {
+      "normal": 460,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 463,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        15,
+        18,
+        27,
+        92,
+        107,
+        110,
+        119
+      ]
+    },
+    {
+      "normal": 464,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        10,
+        16,
+        24,
+        94,
+        102,
+        108,
+        116
+      ]
+    },
+    {
+      "normal": 465,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 466,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        35,
+        40,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 468,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        36,
+        39,
+        50,
+        55,
+        119
+      ]
+    },
+    {
+      "normal": 471,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        27,
+        92,
+        106,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 472,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        31,
+        39,
+        50,
+        65,
+        119
+      ]
+    },
+    {
+      "normal": 475,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        27,
+        93,
+        101,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 477,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        3,
+        7,
+        19,
+        27,
+        95,
+        99,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 478,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        3,
+        28,
+        40,
+        48,
+        88,
+        99,
+        111,
+        119
+      ]
+    },
+    {
+      "normal": 479,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        25,
+        36,
+        41,
+        52,
+        55,
+        116
+      ]
+    },
+    {
+      "normal": 480,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        3,
+        10,
+        16,
+        21,
+        95,
+        102,
+        108,
+        113
+      ]
+    },
+    {
+      "normal": 481,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 482,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        34,
+        43,
+        51,
+        54,
+        119
+      ]
+    },
+    {
+      "normal": 484,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        0,
+        14,
+        19,
+        36,
+        39,
+        49,
+        58,
+        119
+      ]
+    },
+    {
+      "normal": 487,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 488,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        1,
+        9,
+        19,
+        31,
+        39,
+        49,
+        68,
+        119
+      ]
+    },
+    {
+      "normal": 491,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 493,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        7,
+        22,
+        27,
+        94,
+        99,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 494,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        28,
+        43,
+        48,
+        87,
+        99,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 495,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        14,
+        25,
+        36,
+        44,
+        52,
+        58,
+        113
+      ]
+    },
+    {
+      "normal": 496,
+      "outside_ports": 56,
+      "identity_minor_ports": [
+        2,
+        9,
+        15,
+        31,
+        35,
+        49,
+        74,
+        119
+      ]
+    },
+    {
+      "normal": 499,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        2,
+        7,
+        22,
+        27,
+        94,
+        99,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 501,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        8,
+        22,
+        27,
+        93,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 502,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        29,
+        43,
+        48,
+        86,
+        100,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 503,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        18,
+        25,
+        40,
+        44,
+        56,
+        58,
+        109
+      ]
+    },
+    {
+      "normal": 505,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 506,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        34,
+        43,
+        48,
+        85,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 507,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        1,
+        18,
+        25,
+        40,
+        44,
+        66,
+        68,
+        104
+      ]
+    },
+    {
+      "normal": 508,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        0,
+        49,
+        58,
+        63,
+        84,
+        105,
+        114,
+        119
+      ]
+    },
+    {
+      "normal": 509,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        7,
+        18,
+        25,
+        55,
+        59,
+        66,
+        68,
+        98
+      ]
+    },
+    {
+      "normal": 510,
+      "outside_ports": 64,
+      "identity_minor_ports": [
+        28,
+        39,
+        46,
+        55,
+        59,
+        66,
+        68,
+        91
+      ]
+    },
+    {
+      "normal": 511,
+      "outside_ports": 120,
+      "identity_minor_ports": [
+        0,
+        13,
+        22,
+        27,
+        92,
+        105,
+        114,
+        119
+      ]
+    }
+  ],
+  "no_eight_clique_normals": [
+    3,
+    5,
+    6,
+    9,
+    10,
+    12,
+    17,
+    18,
+    20,
+    24,
+    33,
+    34,
+    36,
+    40,
+    48,
+    63,
+    65,
+    66,
+    68,
+    72,
+    80,
+    95,
+    96,
+    111,
+    119,
+    123,
+    125,
+    126,
+    129,
+    130,
+    132,
+    136,
+    144,
+    159,
+    160,
+    175,
+    183,
+    187,
+    189,
+    190,
+    192,
+    207,
+    215,
+    219,
+    221,
+    222,
+    231,
+    235,
+    237,
+    238,
+    243,
+    245,
+    246,
+    249,
+    250,
+    252,
+    257,
+    258,
+    260,
+    264,
+    272,
+    287,
+    288,
+    303,
+    311,
+    315,
+    317,
+    318,
+    320,
+    335,
+    343,
+    347,
+    349,
+    350,
+    359,
+    363,
+    365,
+    366,
+    371,
+    373,
+    374,
+    377,
+    378,
+    380,
+    384,
+    399,
+    407,
+    411,
+    413,
+    414,
+    423,
+    427,
+    429,
+    430,
+    435,
+    437,
+    438,
+    441,
+    442,
+    444,
+    455,
+    459,
+    461,
+    462,
+    467,
+    469,
+    470,
+    473,
+    474,
+    476,
+    483,
+    485,
+    486,
+    489,
+    490,
+    492,
+    497,
+    498,
+    500,
+    504
+  ],
+  "no_eight_clique_normals_weight_characterization": [
+    2,
+    6
+  ],
+  "all_bad_two_plane_generating_pairs": 3360,
+  "distinct_all_bad_two_planes": 1120,
+  "independent_third_generators_checked": 393120,
+  "all_bad_three_spaces": [],
+  "support_span_lower_bound": 7,
+  "eight_independent_copied_centers_rank_mass_lower_bound": 56,
+  "conclusion": "For any rank8 completion of the pattern, every nonzero row-space form has binary source support span at least7. This is weaker than frozen-basis bound9 and does not establish attainability7.",
+  "hypothetical_unchanged_side_budget": {
+    "description": "Exactly eight rank7 copied centers replace eight rank9 copies; all other R779 calls, W and fallback fixed.",
+    "target_kappa": "1/500",
+    "necessary_coarse": "1/499",
+    "m": 73,
+    "W": 14691,
+    "histogram": {
+      "1": 157131,
+      "2": 43776,
+      "3": 36648,
+      "4": 7848,
+      "5": 15480,
+      "6": 23256,
+      "7": 5328,
+      "8": 7488,
+      "16": 3840,
+      "32": 3840,
+      "48": 3840
+    },
+    "budget_source_sha256": "0e3a9ceb4ab14a126a8e9e0d056322f9d2234ccda4f7472a8ad2849bd7a54131",
+    "moment_engine_sha256": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482",
+    "deficit": 3648,
+    "moment_lower": "26993519853286249543575145263152640471610927815337004160704625045967/26959946667150639794667015087019630673637144422540572481103610249216",
+    "moment_upper": "26993519853286249543575145263152640471610927815337004160704625045969/26959946667150639794667015087019630673637144422540572481103610249216",
+    "verdict": "EXCLUDED_EVEN_IN_THIS_COST_MODEL",
+    "warning": "No local word, coefficient/phase proof or center-frame compiler is constructed. The exclusion only applies to this unchanged-side invoice."
+  }
+}

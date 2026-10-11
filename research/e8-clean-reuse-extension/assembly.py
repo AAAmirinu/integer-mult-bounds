@@ -27,7 +27,7 @@ def encode(x):
     if isinstance(x, (list,tuple)): return [encode(v) for v in x]
     return x
 
-def run(parent, priced, finite):
+def run(parent, priced, finite, expected_coarse=None, supplier_bridge=None):
     pricing = Path(parent)/'code/pricing'
     moment = load('e8_assembly_moment', pricing/'moment.py')
     other = load('e8_assembly_base_two', pricing/'base_two_moment.py')
@@ -41,7 +41,8 @@ def run(parent, priced, finite):
     assert finite['row_reserve']['internal_coefficient']==2*(m*m+1)<20161
     assert sum(H.values())==finite['positive_rank_children']
     assert sum(r*n for r,n in H.items())==finite['rank_mass']
-    assert b==Q(json.loads((Path(__file__).resolve().parent/'data/EXPECTED.json').read_text())['complex_coarse'])
+    if expected_coarse is None:expected_coarse=json.loads((Path(__file__).resolve().parent/'data/EXPECTED.json').read_text())['complex_coarse']
+    assert b==Q(expected_coarse)
     grid = 10**27
     eta, beta = Q(1,10**24), Q(1,10**18)
     cap=(1-beta)*b
@@ -78,6 +79,14 @@ def run(parent, priced, finite):
                               C1=1,strict_literal_gap=1,induction_gap_lower=1),
                 rows=dict(coefficient=20161,degree=10**6,suffix_slope=4*10**6,
                           degree_gap=Q(10**6)-Q(51*20161,25)))
+    if supplier_bridge is not None:
+        supplied=json.loads(json.dumps(supplier_bridge))
+        assert supplied['semantic']==bridge['semantic']
+        assert supplied['rows']['coefficient']==20161 and supplied['rows']['degree']==10**6
+        assert supplied['rows']['suffix_slope']==4*10**6
+        supplied['rows']['degree_gap']=Q(supplied['rows']['degree_gap'])
+        assert supplied['rows']['degree_gap']==bridge['rows']['degree_gap']
+        bridge=supplied
     bit=chain[-1];q=bit*(1-2*eta);minimum=(1-eta)*q/(1+q)
     ticks=minimum*grid;kappa=Q((ticks.numerator-1)//ticks.denominator,grid)
     assembly=outer.assembly(bit,b,bridge,kappa,eta=eta,beta=beta)

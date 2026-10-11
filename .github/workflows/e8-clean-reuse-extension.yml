@@ -4,11 +4,13 @@ on:
     paths:
       - 'research/e8-clean-reuse-extension/**'
       - 'research/e8-coupled-bit-retiming/**'
+      - 'research/e8-structural-frontiers/**'
       - '.github/workflows/e8-clean-reuse-extension.yml'
   pull_request:
     paths:
       - 'research/e8-clean-reuse-extension/**'
       - 'research/e8-coupled-bit-retiming/**'
+      - 'research/e8-structural-frontiers/**'
       - '.github/workflows/e8-clean-reuse-extension.yml'
   workflow_dispatch:
 permissions:
@@ -16,7 +18,7 @@ permissions:
 jobs:
   replay:
     runs-on: ubuntu-24.04
-    timeout-minutes: 30
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix:
@@ -41,6 +43,8 @@ jobs:
         run: |
           python -B research/e8-coupled-bit-retiming/record.py
           python -B research/e8-clean-reuse-extension/record.py
+      - name: Fresh exact structural obstruction proofs
+        run: python -B research/e8-structural-frontiers/verify.py "${RUNNER_TEMP}/e8-structural-frontiers"
       - run: git diff --exit-code
       - uses: actions/upload-artifact@v4
         if: always()

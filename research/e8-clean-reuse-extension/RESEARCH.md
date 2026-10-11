@@ -13,7 +13,7 @@ readouts and use of retired intermediate aggregates. A screen is not an
 admitted supplier and is not counted as an achieved exponent.
 
 The successful new mechanisms are the two complex two-donor substitutions
-and 27 bit clean-reset reuses. Their fixed witnesses and mathematical controls
+and 55 bit clean-reset reuses. Their fixed witnesses and mathematical controls
 are reproduced by construct.py; the full admission follows in verify.py.
 
 Bounded private screens at the frozen R779 baseline found:
@@ -30,3 +30,31 @@ These are bounded discovery observations, not global impossibility or priority
 claims. The implementation submitted here contains the successful construction
 and its complete verification. Further structural ideas remain research work.
 Original author credit is preserved in NOTICE.md and SOURCE-PINS.json.
+
+
+Further bounded structural screens found: 48 temporary input-carrier plans
+failed the existing paid-frame guards; 67 wider two-donor substitutions
+failed those guards; 63,222 cut/readout pair screens produced four legal
+proposals and no gain. These scopes do not exclude changed frame chronologies.
+Independent nested-flag forest experiments from the PR401-mapped word reached
+178 gauges and rank mass 325; their numerical pricing was superseded by the
+fully admitted mapped PR404 selection. Shared-donor novelty is credited to
+the concurrent PR404 source. Fixed-center support tests and exact hypothetical
+budgets motivate further structural work, without admitting extra gains.
+
+The selected response-space construction uses 202 gauges and rank mass 360.
+All existing and new local phase pairs are freshly computed. The integer
+packing has 734 banks per stage; discovery used a time-limited solver only
+to nominate a feasible fixed witness. Reproduction checks exact inventories
+and does not run that solver or assert global packing optimality.
+
+The historical joint-dual witness includes README/Makefile in its source
+closure. Their metadata hashes and derived arithmetic/validation records are
+regenerated after the new top-level entry and verification target; the old
+mathematical producer and physical witness are unchanged.
+
+The final two reuse rounds found 14 exact two-parent resets and 14 exact
+three-parent resets, each followed by 14 legal frame moves. A further round
+under the same bounded search found no profitable proposal. These are fixed
+discovery results, not a proof of global minimality. The R767 supplier is
+admitted on all 1,007 local and 1,487 global independent columns.

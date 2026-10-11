@@ -5,7 +5,7 @@ ROOT=pathlib.Path(__file__).resolve().parent
 PARENT=ROOT.parent/'e8-coupled-bit-retiming'
 spec=importlib.util.spec_from_file_location('clean_reuse_outer_assembly',ROOT/'assembly.py')
 assembly=importlib.util.module_from_spec(spec);spec.loader.exec_module(assembly)
-import construct,complex_native,bit_native
+import construct,complex_native,bit_native,gauge_native
 def read(p):return json.loads(pathlib.Path(p).read_text(encoding='utf-8'))
 def dump(p,z):pathlib.Path(p).write_text(json.dumps(z,indent=2,sort_keys=True)+'\n',encoding='utf-8',newline='\n')
 def sha(p):return hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()
@@ -28,19 +28,27 @@ def main(out,shell,boost):
     with(out/'predecessor.log').open('w',encoding='utf-8')as f:subprocess.run(command,env=env,stdout=f,stderr=subprocess.STDOUT,check=True)
     prior=read(out/'predecessor/candidate/RESULT.json');expected=read(ROOT/'data/EXPECTED.json');assert prior['kappa']==expected['prior_pr389']
     regeneration=construct.emit(out/'reconstructed');assert len(regeneration['negative_controls'])==4
+    assert regeneration['response_spaces']['unchanged_gx_and_gxcore']=='PASS'
     c=out/'reconstructed/complex-candidate.json.gz';base=out/'reconstructed/kernel-base.json.gz';bit=out/'reconstructed/bit-candidate.json.gz'
     complex_native.main(c,base,out/'complex')
-    cx=read(out/'complex/VERIFICATION.json')
-    bit_native.main(bit,out/'complex/VERIFICATION.json',out/'bit',out/'predecessor/baseline/bin')
+    baseline=read(out/'complex/VERIFICATION.json')
+    assert baseline['coarse']==read(ROOT/'data/BASELINE-EXPECTED.json')['complex_coarse']
+    gauge_native.main(out/'reconstructed/gauged-candidate.json',ROOT/'data/bank-patterns.json',base,out/'reconstructed/gauge-signed-base.json.gz',out/'gauges')
+    cx=read(out/'gauges/VERIFICATION.json');bridge=read(out/'gauges/banks/BRIDGE.json')
+    bit_native.main(bit,out/'gauges/VERIFICATION.json',out/'bit',out/'predecessor/baseline/bin')
     b=read(out/'bit/VERIFICATION.json');p=read(out/'bit/priced.json');f=read(out/'bit/finite.json')
-    result=assembly.run(PARENT/'vendor/source381',p,f);dump(out/'ASSEMBLY.json',result)
+    result=assembly.run(PARENT/'vendor/source381',p,f,supplier_bridge=bridge);dump(out/'ASSEMBLY.json',result)
     assert len(result['assembly']['strict_constraints'])==47
     # Fair control: same new complex supplier, unchanged old bit component.
     oldp=read(out/'predecessor/candidate/priced.json');oldp['complex_coarse']=cx['coarse']
-    control=assembly.run(PARENT/'vendor/source381',oldp,read(out/'predecessor/candidate/finite.json'));dump(out/'FAIR-OLD-BIT-ASSEMBLY.json',control)
-    assert result['kappa']==control['kappa']and Q(b['coarse'])>Q(oldp['bit_coarse'])
+    control=assembly.run(PARENT/'vendor/source381',oldp,read(out/'predecessor/candidate/finite.json'),supplier_bridge=bridge);dump(out/'FAIR-OLD-BIT-ASSEMBLY.json',control)
+    bit_reuse_gain=Q(result['kappa'])-Q(control['kappa'])
+    assert bit_reuse_gain>0 and control['binding']=='bit' and result['binding']=='complex'
+    assert Q(b['coarse'])>Q(oldp['bit_coarse'])
     assert p['m']<=73 and p['W']<=cx['live']and f['row_reserve']['internal_coefficient']<20161
-    fresh=dict(status='PASS_FRESH_E8_CLEAN_REUSE_AND_SIGNED_COMPOSITION',kappa=result['kappa'],prior_pr389=prior['kappa'],absolute_gain=str(Q(result['kappa'])-Q(prior['kappa'])),complex_coarse=cx['coarse'],bit_coarse=b['coarse'],complex_R=cx['R'],bit_R=b['R'],complex_local_columns=cx['local_columns'],bit_local_columns=b['local_columns'],bit_global_columns=b['global_columns'],complex_live=cx['live'],complex_physical=cx['physical'],complex_profile=cx['profile'],complex_finite_invoice=cx['finite_invoice'],bit_live=b['live'],bit_profile=p['normalized_histogram'],bit_finite_coefficient=f['coefficient'],bit_component_gain=str(Q(b['coarse'])-Q(prior['bit_coarse'])),bit_reuse_kappa_gain='0',conditional=True)
+    fresh=dict(status='PASS_FRESH_E8_SHARED_RESPONSE_AND_CLEAN_REUSE_COMPOSITION',kappa=result['kappa'],prior_pr389=prior['kappa'],absolute_gain=str(Q(result['kappa'])-Q(prior['kappa'])),complex_coarse=cx['coarse'],bit_coarse=b['coarse'],complex_R=cx['R'],bit_R=b['R'],complex_local_columns=cx['local_columns'],bit_local_columns=b['local_columns'],bit_global_columns=b['global_columns'],complex_live=cx['live'],complex_physical=cx['physical'],complex_profile=cx['profile'],complex_finite_invoice=cx['finite_invoice'],complex_gauges=cx['gauges'],complex_entrance_rankmass=cx['entrance_rankmass'],complex_banks_per_stage=cx['banks_per_stage'],complex_all_fresh_phase_pairs=cx['all_fresh_phase_pairs'],complex_bank_boundary_adapters=cx['explicit_bank_boundary_adapters'],bit_live=b['live'],bit_profile=p['normalized_histogram'],bit_finite_coefficient=f['coefficient'],bit_component_gain=str(Q(b['coarse'])-Q(prior['bit_coarse'])),bit_reuse_kappa_gain=str(bit_reuse_gain),fair_old_bit_kappa=control['kappa'],conditional=True)
+    fresh['complex_unchanged_original_checkers']=['gx.check1','gxcore.mirror']
+    fresh['complex_chronological_entrance_shears']=regeneration['response_spaces']['unit_entrance_gates']
     assert fresh==expected,('Updated record differs from fresh admission',fresh)
     dump(out/'RESULT.json',fresh);manifests();print(fresh['status'],fresh['kappa'],flush=True)
 if __name__=='__main__':
