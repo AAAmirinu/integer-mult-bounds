@@ -1,0 +1,25 @@
+{
+  "bit": {
+    "pr": 375,
+    "head": "79874623cf86d92325c26ccafc31413d12e9d248",
+    "package": "research/e8-seven-stage-halving-two",
+    "manifest_sha256": "51e760e691524dfe010bf84cda7f3cfcbf5f6a9383ef42dc4b99e81f2bbb5b53"
+  },
+  "complex": {
+    "pr": 377,
+    "head": "d0a620fcc99ba012468d61d01f5bb14007076d50",
+    "package": "research/nine-stage-complex-e8",
+    "manifest_sha256": "3743f954b5a652e51fa9ae5101318345d79f4c897ff9a29d5c54387b92118458"
+  },
+  "comparison": {
+    "pr": 378,
+    "head": "c248962c3cf641d4f6226d63d86843f2c096a7d0",
+    "kappa": "95464544449649/100000000000000000",
+    "scope": "Comparison with the published value; PR378 is not a construction dependency."
+  },
+  "macos_header": {
+    "pr": 364,
+    "head": "f8c6a47abfec24b87cb1eb0a138dd73dfce2abe4",
+    "path": "research/w3-design-t-staged-p10b-reorder-mc/code/checkers/bits/stdc++.h"
+  }
+}
