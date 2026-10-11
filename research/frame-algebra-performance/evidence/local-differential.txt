@@ -1,0 +1,12 @@
+test_all_distinct_real_frame_matrices (__main__.ExactRowsTests.test_all_distinct_real_frame_matrices) ... ok
+test_edge_cases (__main__.ExactRowsTests.test_edge_cases) ... ok
+test_generators_and_ragged_rejection (__main__.ExactRowsTests.test_generators_and_ragged_rejection) ... ok
+test_incomplete_or_symlinked_source_is_rejected (__main__.ExactRowsTests.test_incomplete_or_symlinked_source_is_rejected) ... ok
+test_pivot_cancellation_and_rejection_cases (__main__.ExactRowsTests.test_pivot_cancellation_and_rejection_cases) ... ok
+test_row_space_invariance (__main__.ExactRowsTests.test_row_space_invariance) ... ok
+test_seeded_rational_and_singular_matrices (__main__.ExactRowsTests.test_seeded_rational_and_singular_matrices) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 53.739s
+
+OK

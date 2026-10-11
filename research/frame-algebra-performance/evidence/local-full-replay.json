@@ -1,0 +1,368 @@
+{
+  "status": "PASS_EXACT_AB_REPLAY",
+  "source_commit": "f8c6a47abfec24b87cb1eb0a138dd73dfce2abe4",
+  "source_metadata_sha256": "2237dc2736e7bdff4f61432963bda7a5a9d312c01666d42219a2591fb2b6f985",
+  "implementation_sha256": "56703c3f11a071a27794159028a980eeb36363569d12b179dd8f905d233471a5",
+  "platform": "macOS-26.2-arm64-arm-64bit-Mach-O",
+  "repetitions": 1,
+  "reference_median_seconds": 227.541029416956,
+  "fast_median_seconds": 64.47760550002567,
+  "speedup": 3.528993169835772,
+  "time_saved_percent": 71.66330588147505,
+  "runs": {
+    "reference": [
+      {
+        "mode": "reference",
+        "returncode": 0,
+        "source_commit": "f8c6a47abfec24b87cb1eb0a138dd73dfce2abe4",
+        "source_files_unchanged": true,
+        "source_files_checked": 64,
+        "implementation_sha256": "56703c3f11a071a27794159028a980eeb36363569d12b179dd8f905d233471a5",
+        "source_metadata_sha256": "2237dc2736e7bdff4f61432963bda7a5a9d312c01666d42219a2591fb2b6f985",
+        "verifier_seconds": 227.44992416584864,
+        "python": "3.13.12 (main, Feb  3 2026, 17:53:27) [Clang 17.0.0 (clang-1700.6.3.2)]",
+        "command": [
+          "bash",
+          "$WORKSPACE/work/e8-pipeline-profile/pr364-source/verify.sh",
+          "$WORKSPACE/work/frame-algebra-validation/reference-1"
+        ],
+        "cxx": "$WORKSPACE/work/frontier-gain/cxx-compat/cxx",
+        "boost_include": "$LOCAL_BOOST_INCLUDE",
+        "scope": "Full shipped PR364 verifier; native admission obligations remain open.",
+        "outputs": {
+          "TT": {
+            "249-records.bin": "2cad2fd39f0c318a421644d5ddc9ebb6da60a4c136a2e25d611b2cce7eb80351",
+            "249-states.json": "749950d487d856ed1aec60fc66d3eeb915a9a8ac6528b62c055093cafee03821",
+            "frames.json": "f9aaaac0f26f23c9b224ba7ebc4e9a1e6ec132f35bcd7514150d299f4282de3b"
+          },
+          "K": {
+            "249-records.bin": "2e1c75cac2b43639a737d13c8c8b7b34c54438ff76e73c7a9834554a9b3c666f",
+            "249-states.json": "c6716136d92ceddee8dc63902d9604260dfb5e78191578f393dc04dc0b1e6ff4",
+            "frames.json": "c52e1581ffae03e418200abb3bbdffc48e3f1d74751f1497da5b064307de41c0"
+          },
+          "KR": {
+            "249-records.bin": "17fe0d41202e6b89d281b439f34ccb11b45b48e3ec6ff6d9b785f55e0295b1dd",
+            "249-states.json": "56711211a8bcebc37fd1c8800eba2837825be21252623bd3adfcdbff1cfebb74",
+            "frames.json": "d817b08936780245235ce50729d7c104f43eb4a0dc8e333269aeea89b08b4885"
+          },
+          "KRO": {
+            "249-records.bin": "bd74b9b69107f02b4be767d2c6bc2c757e3e0c04321a3f662d3cb9c85b94dcd1",
+            "249-states.json": "682cf023abfbd43afdf1d0d2c9ffd9d22499f224616b1e4e1f32cf2d0629a239",
+            "frames.json": "d817b08936780245235ce50729d7c104f43eb4a0dc8e333269aeea89b08b4885"
+          },
+          "F": {
+            "249-records.bin": "790ebf533a8f7884414ff1061a2650bdfb14f72f70c25148ecbc86443649e2c5",
+            "249-states.json": "af20c644aa9b5df2567f672c9ce5c8a923d3cb0bbfa0852ddf3ed1c791bc7ae2",
+            "frames.json": "d817b08936780245235ce50729d7c104f43eb4a0dc8e333269aeea89b08b4885"
+          }
+        },
+        "pricing": {
+          "local": {
+            "1": 21900,
+            "2": 8833,
+            "3": 5376,
+            "4": 1425,
+            "5": 987,
+            "6": 982,
+            "7": 636,
+            "8": 154,
+            "9": 349,
+            "10": 226,
+            "11": 80,
+            "12": 996,
+            "14": 276,
+            "16": 840,
+            "17": 2604,
+            "18": 610
+          },
+          "resid": 131850,
+          "W": 125190,
+          "bit_coarse": "402763861924747/500000000000000000",
+          "b": "876248285600677/1000000000000000000",
+          "binding": "bit",
+          "kappa": "201219842699733/250000000000000000",
+          "kappa_float": 0.000804879370798932
+        },
+        "transcript_seconds": 200.9757843760308,
+        "transcript_stages": [
+          {
+            "original_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/code/stages.py",
+              "kernel",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/TT",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/K",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/kernel-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "executed_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/code/stages.py",
+              "kernel",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/TT",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/K",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/kernel-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "seconds": 41.065706624882296,
+            "returncode": 0
+          },
+          {
+            "original_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/code/stages.py",
+              "retime",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/K",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/KR",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/retime-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "executed_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/code/stages.py",
+              "retime",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/K",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/KR",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/retime-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "seconds": 52.76841074996628,
+            "returncode": 0
+          },
+          {
+            "original_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/code/stages.py",
+              "reorder",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/KR",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/KRO",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/reorder-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "executed_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/code/stages.py",
+              "reorder",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/KR",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/KRO",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/reorder-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "seconds": 53.54971970897168,
+            "returncode": 0
+          },
+          {
+            "original_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/code/stages.py",
+              "reorder",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/KRO",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/F",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/reorder2-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "executed_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/code/stages.py",
+              "reorder",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/KRO",
+              "$WORKSPACE/work/frame-algebra-validation/reference-1/F",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/reorder2-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "seconds": 53.591947292210534,
+            "returncode": 0
+          }
+        ],
+        "status": "PASS_FULL_SHIPPED_PR364_REPLAY",
+        "seconds": 227.541029416956
+      }
+    ],
+    "fast": [
+      {
+        "mode": "fast",
+        "returncode": 0,
+        "source_commit": "f8c6a47abfec24b87cb1eb0a138dd73dfce2abe4",
+        "source_files_unchanged": true,
+        "source_files_checked": 64,
+        "implementation_sha256": "56703c3f11a071a27794159028a980eeb36363569d12b179dd8f905d233471a5",
+        "source_metadata_sha256": "2237dc2736e7bdff4f61432963bda7a5a9d312c01666d42219a2591fb2b6f985",
+        "verifier_seconds": 64.39083529217169,
+        "python": "3.13.12 (main, Feb  3 2026, 17:53:27) [Clang 17.0.0 (clang-1700.6.3.2)]",
+        "command": [
+          "bash",
+          "$WORKSPACE/work/e8-pipeline-profile/pr364-source/verify.sh",
+          "$WORKSPACE/work/frame-algebra-validation/fast-1"
+        ],
+        "cxx": "$WORKSPACE/work/frontier-gain/cxx-compat/cxx",
+        "boost_include": "$LOCAL_BOOST_INCLUDE",
+        "scope": "Full shipped PR364 verifier; native admission obligations remain open.",
+        "outputs": {
+          "TT": {
+            "249-records.bin": "2cad2fd39f0c318a421644d5ddc9ebb6da60a4c136a2e25d611b2cce7eb80351",
+            "249-states.json": "749950d487d856ed1aec60fc66d3eeb915a9a8ac6528b62c055093cafee03821",
+            "frames.json": "f9aaaac0f26f23c9b224ba7ebc4e9a1e6ec132f35bcd7514150d299f4282de3b"
+          },
+          "K": {
+            "249-records.bin": "2e1c75cac2b43639a737d13c8c8b7b34c54438ff76e73c7a9834554a9b3c666f",
+            "249-states.json": "c6716136d92ceddee8dc63902d9604260dfb5e78191578f393dc04dc0b1e6ff4",
+            "frames.json": "c52e1581ffae03e418200abb3bbdffc48e3f1d74751f1497da5b064307de41c0"
+          },
+          "KR": {
+            "249-records.bin": "17fe0d41202e6b89d281b439f34ccb11b45b48e3ec6ff6d9b785f55e0295b1dd",
+            "249-states.json": "56711211a8bcebc37fd1c8800eba2837825be21252623bd3adfcdbff1cfebb74",
+            "frames.json": "d817b08936780245235ce50729d7c104f43eb4a0dc8e333269aeea89b08b4885"
+          },
+          "KRO": {
+            "249-records.bin": "bd74b9b69107f02b4be767d2c6bc2c757e3e0c04321a3f662d3cb9c85b94dcd1",
+            "249-states.json": "682cf023abfbd43afdf1d0d2c9ffd9d22499f224616b1e4e1f32cf2d0629a239",
+            "frames.json": "d817b08936780245235ce50729d7c104f43eb4a0dc8e333269aeea89b08b4885"
+          },
+          "F": {
+            "249-records.bin": "790ebf533a8f7884414ff1061a2650bdfb14f72f70c25148ecbc86443649e2c5",
+            "249-states.json": "af20c644aa9b5df2567f672c9ce5c8a923d3cb0bbfa0852ddf3ed1c791bc7ae2",
+            "frames.json": "d817b08936780245235ce50729d7c104f43eb4a0dc8e333269aeea89b08b4885"
+          }
+        },
+        "pricing": {
+          "local": {
+            "1": 21900,
+            "2": 8833,
+            "3": 5376,
+            "4": 1425,
+            "5": 987,
+            "6": 982,
+            "7": 636,
+            "8": 154,
+            "9": 349,
+            "10": 226,
+            "11": 80,
+            "12": 996,
+            "14": 276,
+            "16": 840,
+            "17": 2604,
+            "18": 610
+          },
+          "resid": 131850,
+          "W": 125190,
+          "bit_coarse": "402763861924747/500000000000000000",
+          "b": "876248285600677/1000000000000000000",
+          "binding": "bit",
+          "kappa": "201219842699733/250000000000000000",
+          "kappa_float": 0.000804879370798932
+        },
+        "transcript_seconds": 39.07847058400512,
+        "transcript_stages": [
+          {
+            "original_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/code/stages.py",
+              "kernel",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/TT",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/K",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/kernel-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "executed_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/exact-frame-algebra/research/frame-algebra-performance/stage_adapter.py",
+              "kernel",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/TT",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/K",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/kernel-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "seconds": 7.7805003330577165,
+            "returncode": 0
+          },
+          {
+            "original_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/code/stages.py",
+              "retime",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/K",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/KR",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/retime-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "executed_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/exact-frame-algebra/research/frame-algebra-performance/stage_adapter.py",
+              "retime",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/K",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/KR",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/retime-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "seconds": 10.31066754204221,
+            "returncode": 0
+          },
+          {
+            "original_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/code/stages.py",
+              "reorder",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/KR",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/KRO",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/reorder-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "executed_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/exact-frame-algebra/research/frame-algebra-performance/stage_adapter.py",
+              "reorder",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/KR",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/KRO",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/reorder-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "seconds": 10.564258833881468,
+            "returncode": 0
+          },
+          {
+            "original_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/code/stages.py",
+              "reorder",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/KRO",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/F",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/reorder2-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "executed_command": [
+              "$WORKSPACE/work/e8-pipeline-profile/venv/bin/python",
+              "-B",
+              "$WORKSPACE/work/exact-frame-algebra/research/frame-algebra-performance/stage_adapter.py",
+              "reorder",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/KRO",
+              "$WORKSPACE/work/frame-algebra-validation/fast-1/F",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/stages/reorder2-selection.json",
+              "$WORKSPACE/work/e8-pipeline-profile/pr364-source/data/labels.json"
+            ],
+            "seconds": 10.423043875023723,
+            "returncode": 0
+          }
+        ],
+        "status": "PASS_FULL_SHIPPED_PR364_REPLAY",
+        "seconds": 64.47760550002567
+      }
+    ]
+  },
+  "publication_note": "Machine-specific paths normalized; all timings, hashes, exact pricing and output comparisons retained.",
+  "original_benchmark_receipt_sha256": "8427e1e028981ad5384f10f40c40b0016a2d933c9f6c4be0e6c50fd58c837c4c"
+}

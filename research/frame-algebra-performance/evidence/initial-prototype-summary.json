@@ -1,0 +1,7 @@
+{
+  "before_seconds": 239.5547152501531,
+  "after_seconds": 70.47667708294466,
+  "speedup": 3.399063706823449,
+  "time_saved_percent": 70.58013364113917,
+  "scope": "Initial exploratory PR364 full shipped-verifier replay, before packaging; current implementation is measured separately in local-full-replay.json."
+}
