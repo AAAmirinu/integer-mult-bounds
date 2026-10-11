@@ -15,6 +15,6 @@
   "endpoint_adapters": 240,
   "all_child_equalities_include_global_phase": true,
   "recipe_sha256": "ba762cb3ec8c41ea047084e5ee9748dfa8d95ec022a572923ab0525f83553916",
-  "seconds": 185.82044635600005,
+  "seconds": 188.79264863200024,
   "scope": "Every local frame and center transition. Expanded scalar-interface integration and global emitted program are separate obligations."
 }

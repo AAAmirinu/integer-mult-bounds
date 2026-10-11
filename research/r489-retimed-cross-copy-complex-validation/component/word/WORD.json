@@ -39,7 +39,7 @@
   "steps": [
     {
       "step": "scalar",
-      "log_sha256": "8756d8ee3ef3f8989a192b22854d8b0cc383386ca6df12e10432c682ac1b16d2"
+      "log_sha256": "23f52af8cbc6e8f53601c1b39f9dd9b9f5c64562d33f6ada080f25e6b62cc11c"
     },
     {
       "step": "programs",
@@ -47,7 +47,7 @@
     },
     {
       "step": "phases",
-      "log_sha256": "bdd7920e9c155c52a55dfcd0d0ff79f7f085f3d96e45745fc14503cedbf91913"
+      "log_sha256": "6c850e8d16ab59c13e2dd1e26e1965e6e4cced4debb2af3f1be72b17ddd6c905"
     },
     {
       "step": "adapters",

@@ -4,17 +4,17 @@
   "kappa": "726474255625747/500000000000000000",
   "kappa_decimal": "0.001452948511251494",
   "reference_pr494_kappa": "358867191156973/250000000000000000",
-  "manifest_sha256": "78e7ddd973e1f22bbfc376b4f1a5d496b38ff88ccf8499fa996a83bcafc34080",
+  "manifest_sha256": "7499ab23496ff1342b5803357e2860f2ed8f47f0887d9805a67b6994a4110081",
   "parent_receipt_sha256": "ac1d126427121cc4524b0a506f3ca459f7e09c4a849d07c13a154546864f9275",
   "checks": [
     {
       "name": "complex-word",
-      "seconds": 193.2,
+      "seconds": 196.1,
       "log_sha256": "e92ba9c5ecdc6c39e1d45f0a380eca4fae3bad777f3000caf54e47608212d6d4"
     },
     {
       "name": "complex-hybrid-cross-copy-hosting",
-      "seconds": 20.6,
+      "seconds": 20.5,
       "log_sha256": "4183ff868ca28916cf1a147ac3dbc3dbeaddf7febf4bbcd0f8874040e9c9aee4"
     },
     {
@@ -24,12 +24,12 @@
     },
     {
       "name": "independent-complex-audit",
-      "seconds": 60.3,
+      "seconds": 60.1,
       "log_sha256": "1d2557923dc868d746d639e2e6f554ac8356a0cfa801c8b1bae75538b39b58ba"
     },
     {
       "name": "exact-assembly",
-      "seconds": 0.5,
+      "seconds": 0.6,
       "log_sha256": "9df2c9d07bab0538ddefa44cca0c8b47a17ab4838726f77a12ff40d4c49e7423"
     }
   ],
