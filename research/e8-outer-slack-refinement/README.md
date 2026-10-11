@@ -1,6 +1,6 @@
 # Exact outer-assembly slack refinement
 
-Conditional **kappa = 0.000998634657132636** (`249658664283159/250000000000000000`), versus #384's 0.000998634656132003. The absolute gain is **0.000000000000999633**, about **0.0000001002001076024877%**. This is a tiny witness-parameter improvement, with unchanged circuits and unchanged coarse savings.
+Conditional **kappa = 0.000998634657132636** (`249658664283159/250000000000000000`), versus #384's 0.000998634656132003. The absolute gain is **0.000000000001000633**, about **0.0000001002001076024877%**. This is a tiny witness-parameter improvement, with unchanged circuits and unchanged coarse savings.
 
 ## Reproduce
 
