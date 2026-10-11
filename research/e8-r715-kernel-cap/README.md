@@ -4,7 +4,8 @@
 as PR #463): c = 1295910576589222380953/10²⁴ ≈ 1.295911·10⁻³, +0.839% over R715's 1.285129·10⁻³.**
 With PR #458's complex supplier, unchanged: **κ = 1294233365881801/1000000000000000000 ≈ 1.294233365881801·10⁻³, bit-bound, +0.838% over PR #463**.
 Nothing in the word, the hosting rule, the mixing or the complex supplier changes. Only the *kernel selection* does: 112 rank-1 pivots
-(PR #463: 84 pivots with entrance ranks 1, 2, 4) chosen by seeded annealing instead of PR #443's greedy search.
+(PR #463: 84 pivots with entrance ranks 1, 2, 4) chosen by seeded annealing instead of PR #443's greedy search. **112 is the exact maximum of that pivot
+model on R715** (§2, certified by an exact computation that `verify.py --light` reruns), so the pivot count cannot be improved within it (the choice of donors among 112-pivot selections still moves `c`, §3).
 
 ## 1. The width rule (what sets the width of a residual)
 **Rule.** A helper register `h` whose start frame has dimension `e_h` leaves, in every local invocation, the residual `D_P` with `P` the
@@ -40,25 +41,44 @@ inside `first(p)`; its delivery vector `resp(p) ∈ F₂¹²⁰` (the targets it
    `|T_i| − rank_F₂ resp(T_i)` pivots (donors = a basis, pivots = the other members), so
    `max pivots = |C| − min_{partitions} Σ_i rank resp(T_i)`.
 4. *Ceiling.* `Σ_i rank resp(T_i) ≥ rank resp(⋃T_i)` (subadditivity) and `|U| − rank(U)` is monotone in `U`, hence
-   **pivots ≤ |C| − rank resp(C) = 263 − 86 = 177**.
+   **pivots ≤ |C| − rank resp(C) = 263 − 86 = 177** (valid, but loose: the exact maximum below is 112).
 5. *Parity.* PR #443's 32-replica bank equation `32(8R − Σ entrance ranks) ≡ 0 (mod 64)` needs an even entrance-rank total, so an odd rank-1 count
    loses one pivot (111 → 110).
 6. *Scope.* The 177 holds for coordinate entrances only. With any flat allowed (as upstream `kernel()` does), all 706 helpers qualify and the same
-   argument gives `|H| − rank resp(H) = 706 − 120 = 586`, in a format this package does not verify.
+   argument gives `|H| − rank resp(H) = 706 − 120 = 586`, in a format this package does not verify. Both bounds stay as stated, scoped bounds; both are loose.
 
 **Computed** (exact F₂ elimination, `code/kernel_cap.py`, data in `data/cap-analysis.json`): `|C| = 263`, `rank resp(C) = 86`, class sizes
 65–81 and class ranks 37–43 per frame line (class nullities 25–39), 232 of the 263 carriers lie in the span of the others of some class (the only ones
 that can be pivots), and the matroid of delivery vectors has one big component (208 elements) beside components of 28 and 14 and 13 coloops.
 
-**Searched, not certified.** The optimum of item 3 is *not* proved. Seeded annealing over the class assignment (`code/select_kernel.py`, 150,000
-moves; self-contained xorshift64* generator, bit-for-bit reproducible) reached **112 in 14 of 16 restarts** (seeds 0–3, 10–13, 20–23, 30–33; the other two
-reached 111) and never 113; six restarts of 600,000 moves (seeds 100–102, 200–202) all stop at 112. A CP-SAT relation model restricted to ≤ 3 donors per
-pivot (`select_kernel.py --ilp`) found 111 in 240 s with an unclosed bound of 141 (earlier runs: 110–111 with bounds 119–130), so it is a restriction,
-not a proof. Allowing entrances at any of the 120 root lines (outside the verified format, which needs coordinate isometries) did not beat 111 in the same
-kind of budget. The honest statement is **112 ≤ optimum ≤ 177**, with the search evidence pointing to the lower end.
+**Exact maximum: 112 (certified by `code/exact_pivots.py`; `verify.py --light` recomputes it and asserts 112).** The partition problem of item 3 is a
+*min-sum-rank list partition*: it minimises a sum of ranks, so it is not a matroid union, intersection or parity problem (those maximise rank), and it is NP-hard
+when the number of classes is unbounded (vertex cover reduces to it). It is nevertheless solved exactly here, with 8 classes and the block structure of the
+delivery vectors:
+1. The matroid of the 263 delivery vectors splits into connected components of 208 (rank 63), 28 (rank 5) and 14 (rank 5) elements plus 13 coloops; the
+   objective is additive over components.
+2. The components of 28 and 14 are solved by an exhaustive dynamic programme over the tuples of class spans: minimum sum-rank 12 and 5, i.e. 16 and 9 pivots.
+3. The 208-element component consists of 13 block-local groups (supports inside one group of targets joined by vectors of weight ≤ 4) and 24 coupling
+   elements (12 with a two-line list). Blocks have disjoint coordinates, so ranks add over blocks: **lower bound** = Σ exact block minima (DP, 100) +
+   the minimum over all 2¹² coupling assignments of Σ_i rank(coupling part of class i modulo the largest span the blocks could give it) (20) = **120**.
+   An exhaustive depth-first search over the block-optimal span tuples, pruned by the optimistic completion "every remaining block at its maximal span",
+   shows 120 **infeasible** and exhibits 121 (hence minimum sum-rank 121, i.e. 87 pivots).
+4. Total **87 + 16 + 9 = 112** pivots; 112 is even, so the parity rule drops none. The exact maximum equals the annealing plateau (14 of 16 restarts at 112,
+   never 113; six 600,000-move restarts all at 112) and the shipped selection. The 177 above and the 586 of item 6 are therefore valid but loose bounds
+   (the CP-SAT relation model of `select_kernel.py --ilp`, restricted to ≤ 3 donors per pivot, stalls at 110–111 with an unclosed bound: a restriction, not a proof).
+Scope of the 112: the model of items 2–3 (rank-1 coordinate entrances, one entrance class per donor, 8 frame lines of the R715 word; PR #443's conditions as
+re-asserted by `kernel_cap.check_selection`). It is a statement about that format, not about formats where a donor serves nested entrances or entrances are
+not coordinate flats (those are outside it, as for the 177). Entrances at any of the 120 root lines (outside the verified format, which needs coordinate
+isometries) were searched only, in the same kind of budget, and did not beat 111; they are not covered by the exact result.
 
-Why it matters: the model price of a rank-1 pivot is about +0.03% of `c` here (§4). If the proved ceiling 177 were reachable the model would give
-about +2.9% (§4); the annealing plateau says kernel selection on R715 is essentially used up.
+Why it matters: the model price of a rank-1 pivot is about +0.03% of `c` here (§4). The 177 ceiling would have been about +2.9% (§4); the exact maximum
+shows it is not reachable, so the pivot count on R715 within this format is used up: 112 is the optimum.
+
+**Method credit.** The min-sum-rank formulation, the component and block decomposition, the per-block exact DP, the coupling-assignment lower bound and the
+search with optimistic completion come from the matroid-optimisation pass of DreamingOfClouds with Claude Opus 5.5 (Anthropic), via Claude Code. Related
+literature on partitioning with a sum of submodular (here: rank) costs: submodular multiway partition / load balancing (Svitkina and Fleischer 2008;
+Chekuri and Ene 2011). The same method gives **101 pivots on the R687 read-then-climb word** (100 after the parity rule); that is computed outside this package
+and will be reported in a follow-up PR.
 
 ## 3. The selection method
 `code/select_kernel.py WORD`: draw an initial class assignment, then anneal single-helper class moves with the exact objective `Σ_i rank resp(T_i)`
@@ -93,7 +113,7 @@ Each rank-1 pivot is worth about +0.033% of `c`; R715's 84 greedy pivots (total 
 pivot is worth roughly 0.003% per unit (rank-2 upgrades of the selected pivots are not explored here).
 
 `hosting_model.py` (CP-SAT, whole-residual rule, exact two-engine endpoint) reproduces the pipeline's hosted endpoint to the last digit and is how
-the scan is priced. Under the same model, 177 rank-1 pivots would give +2.9% (the proved ceiling, not claimed) and 240 (all A2 rank-7 copies full)
+the scan is priced. Under the same model, 177 rank-1 pivots would give +2.9% (the proved ceiling, loose and not reachable: the exact maximum is 112; not claimed) and 240 (all A2 rank-7 copies full)
 +5.8% relative to 112; k = 0 is infeasible (the width-8 slots of the 240 copies cannot hold the 7,865 residuals): narrow residuals are
 required, not just helpful.
 
@@ -112,14 +132,16 @@ required, not just helpful.
 python -m pip install -r research/e8-r740-replica32/parent436/requirements.txt scipy ortools
 python -B research/e8-r715-kernel-cap/verify.py /abs/new/out --light        # about two minutes, no C++
 python -B research/e8-r715-kernel-cap/verify.py /abs/new/out                # FULL: about 40 minutes with a C++17 compiler and Boost
+python -B research/e8-r715-kernel-cap/code/exact_pivots.py research research/e8-r715-eleven-stage-whole/data/word-r715.json.gz exact.json   # exact maximum: 112
 python -B research/e8-r715-kernel-cap/code/select_kernel.py research research/e8-r715-eleven-stage-whole/data/word-r715.json.gz sel.json --seed 3 --iters 150000 --restarts 1
 ```
 FULL accepts `--complex-output=DIR`, `--complex-upstream=DIR`, `--reuse-parent443=DIR` (already verified parents) and `--quick`.
-Contents: `code/kernel_cap.py` (candidates, ceiling, exact selection and width checks), `code/select_kernel.py` (annealing, optional CP-SAT),
+Contents: `code/kernel_cap.py` (candidates, ceiling, exact selection and width checks), `code/exact_pivots.py` (exact pivot maximum: block DP and
+exhaustive search, about 10 s plus the word load), `code/select_kernel.py` (annealing, optional CP-SAT),
 `code/kernel_from_selection.py`, `code/hosting_model.py`, `code/scan_pivots.py`; `data/` (selection, kernel and mixed words, isometries, hosting
 selection, ceiling analysis); `compose.py`; `EXPECTED.json`, `SOURCE.json`, `MANIFEST.json`, `NOTICE.md`.
 
 ## 7. Scope
 Conditional like its parents (inherited compiler/dirty-helper/precision/analytic assumptions, PR #450's Lemma M for the bit target mixing,
-PR #458's adapters). No cross-copy or cross-family lemma is used. The ceiling in §2 is a statement about the shared-donor kernel format of PR #443;
+PR #458's adapters). No cross-copy or cross-family lemma is used. The ceiling and the exact maximum in §2 are statements about the shared-donor kernel format of PR #443;
 formats where a donor serves nested entrances, or entrances that are not coordinate flats, are outside it. No unconditional theorem or Lean proof is claimed.

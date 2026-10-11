@@ -1,7 +1,8 @@
-"""Kernel-cap package: width rule, pivot ceiling, annealed 112-pivot kernel selection, and the R715 bit supplier rebuilt with it.
+"""Kernel-cap package: width rule, pivot ceiling, exact pivot maximum (112), annealed 112-pivot kernel selection, and the R715 bit supplier rebuilt with it.
 usage: python -B research/e8-r715-kernel-cap/verify.py /absolute/new/output [--light] [flags]
   --light                 quick mode (about two minutes, no C++): package integrity and pins; ceiling analysis recomputed from the pinned
-                          R715 word; selection checked against the exact kernel conditions; kernel word rebuilt (PR #443 kernel, replay,
+                          R715 word; EXACT pivot maximum recomputed (block DP + exhaustive search, `code/exact_pivots.py`) and required to equal
+                          112; selection checked against the exact kernel conditions; kernel word rebuilt (PR #443 kernel, replay,
                           interface) and compared; target mixing regenerated and compared; width rule checked on the word and on the
                           exported records; hosting re-solve (CP-SAT, needs ortools; skipped with a notice without it) priced with the exact
                           engine against the pinned endpoint; screen composition with PR #458's pinned complex endpoint (47 strict outer
@@ -91,6 +92,10 @@ try:
     kj = read(w / 'kernel.json'); assert csha(w / 'kernel.json.gz') == csha(D / 'word-kernel.json.gz') and read(w / 'isometries.json') == read(ISO)
     sel = read(KSEL); assert len(sel) == kj['selection']['entries'] == 112 and kj['selection']['pivots_by_entrance_rank'] == {'1': 112}
     expect('light', 'kernel', kj)
+    py('exact-pivots', CODE / 'exact_pivots.py', R, WORD, w / 'exact-pivots.json', stdout_to=w / 'exact-pivots.txt')       # exact maximum, not a search
+    ex = read(w / 'exact-pivots.json'); expect('light', 'exact_pivots', ex)
+    assert ex['exact_max_pivots'] == ex['exact_max_pivots_after_parity'] == 112 == len(sel), 'exact pivot maximum is not the shipped 112'
+    assert ex['proved_ceiling'] == cap['proved_ceiling'] and ex['candidates'] == cap['candidates'] and ex['loops'] == 0
     mx = out / 'mixed'; mx.mkdir()
     py('mix-generate', SC / 'mix_target.py', D / 'word-kernel.json.gz', mx / 'word-mixed.json', stdout_to=mx / 'mix.json')
     assert csha(mx / 'word-mixed.json') == csha(D / 'word-mixed.json.gz'), 'regenerated mixed word differs'; expect('light', 'mix', read(mx / 'mix.json'))

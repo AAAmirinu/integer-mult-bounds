@@ -296,6 +296,60 @@
    "proved_ceiling": 177,
    "response_rank_of_candidates": 86
   },
+  "exact_pivots": {
+   "big_component_search": [
+    {
+     "blocks": 13,
+     "coupling_lower_bound": 20,
+     "free_coupling": 12,
+     "lower_bound": 120,
+     "size": 208,
+     "sum_block_minima": 100,
+     "tried": [
+      [
+       120,
+       0,
+       false
+      ],
+      [
+       121,
+       0,
+       true
+      ]
+     ]
+    }
+   ],
+   "candidates": 263,
+   "coloops": 13,
+   "exact_max_pivots": 112,
+   "exact_max_pivots_after_parity": 112,
+   "loops": 0,
+   "model": "rank-1 coordinate entrances (README section 2, items 2-3)",
+   "nontrivial_components": [
+    {
+     "method": "block decomposition + exhaustive search",
+     "min_sum_rank": 121,
+     "pivots": 87,
+     "rank": 63,
+     "size": 208
+    },
+    {
+     "method": "span-tuple DP",
+     "min_sum_rank": 12,
+     "pivots": 16,
+     "rank": 5,
+     "size": 28
+    },
+    {
+     "method": "span-tuple DP",
+     "min_sum_rank": 5,
+     "pivots": 9,
+     "rank": 5,
+     "size": 14
+    }
+   ],
+   "proved_ceiling": 177
+  },
   "kernel": {
    "controls_rejected": [
     "donor dropped (response relation fails)",
