@@ -5,6 +5,7 @@ import importlib.util
 from pathlib import Path
 import sys
 from branchfree import apply, counter, factors, packed_lower, prepare, rounded
+from precision_guard import run as precision_guard
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO/'references/semantic-bulk/rad20/code'))
@@ -264,6 +265,7 @@ def uniform_bounds():
 def run():
     return dict(identities=identities(), rounded=rounded_cases(),
                 tensor_and_weighted=tensor_and_weighted(),
+                tensor_precision_guard=precision_guard(),
                 complete_schur=[complete_case(*x) for x in ((24,26,4,1),(48,50,4,2))],
                 rejected_mutants=mutants(), uniform_bounds=uniform_bounds(),
                 kappa_claim=None,

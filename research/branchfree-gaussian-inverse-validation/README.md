@@ -26,3 +26,11 @@ and sparse coupling maps. The complete-Schur reference is an independent
 dense inverse of the unchanged source H. The conditional all-size proof,
 not these samples, supplies the general error/tape transfer. No fast joint
 weighted evaluator, complete multiplication theorem or new kappa is claimed.
+
+The updated package also checks 4,096 entries of a dense three-axis operator:
+a 14-bit unweighted kernel grid erases 28 entries above the 8-bit error
+target, while a 30-bit grid passes. Four symbolic parameter rows support
+the separate all-size precision counterexample; their tensors are not
+executed. The full wrappers above were all rerun after adding this guard,
+and their complete outputs again match byte for byte. The previous
+receipts remain available at the initial PR commit.

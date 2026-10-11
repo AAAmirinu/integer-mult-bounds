@@ -10,7 +10,11 @@ rounded arithmetic, and composition with the unchanged Schur system.
 The global H and exact Schur setup remain unchanged. The conditional proof
 preserves the scalar precision, disk and normalization interface. It also
 bounds both weighted triangular factors by 3p, identifying a useful target
-for future tensor computation. A fast weighted tensor evaluator, routing,
+for future tensor computation. A checked counterexample rejects materializing the unweighted tensor kernel
+on the scalar precision grid before reweighting. This is a failure of that
+implementation, not a general FFT or weighted-operator lower bound.
+
+A fast weighted tensor evaluator, routing,
 padding and boundary composition are still missing; no new kappa or change
 to the Gaussian dimension exponent is claimed.
 

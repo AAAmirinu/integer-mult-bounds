@@ -4,6 +4,8 @@
   "exact_ldl_entries": 1950,
   "full_schur_cases": 2,
   "full_schur_entries": 3024,
+  "joint_kernel_guard_entries": 4096,
+  "joint_kernel_symbolic_rows": 4,
   "kappa_claim": null,
   "mutants": 5,
   "rounded_cases": 8,

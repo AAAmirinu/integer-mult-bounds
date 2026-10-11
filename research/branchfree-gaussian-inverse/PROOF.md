@@ -126,7 +126,7 @@ A constant number of sequential local tapes and reversals adds O(np).
 Setup denominators for the exact products f and h have polynomially many
 bits in p. The old exact rational Schur construction still uses OLD A^-1,
 and is performed once per axis as before. Nothing in (1) replaces that
-precomputation with the model. Setup remains polynomial in s,p and n^o(1)
+precomputation with the model. Setup remains polynomial in s,p and subpolynomial in the overall input bit length
 in the retained asymptotic setting.
 
 ## Complete unchanged Schur composition and scalar error interface
@@ -224,3 +224,81 @@ reciprocal guards, independently rounded/truncated Gaussian sources, and
 complete original-Schur solves with the new rounded local operation and
 the existing rounded batched boundary/coupling operations. They use modest
 work precisions and do not simulate asymptotic p or a full tape machine.
+
+## A checked failure of one joint-kernel implementation
+
+The small weighted norm in (8) does **not** justify materializing the
+unweighted tensor convolution kernel on the same P-fractional-bit grid.
+Here is an explicit failure of that particular proposed implementation.
+It is not a lower bound for FFTs, implicit kernels, floating-point formats
+with exponents, adaptive precision, or all joint weighted algorithms.
+
+For an integer a>=26 set
+
+    p=2^(10a), m=2^(4a), X=2^(3a), d=u=m, D=d-1,
+    P=32768p, w=4X+2, k=X/2048.
+
+These have epsilon=r=2/5, u*d<=p, u>=ceil(log2(8p)),
+(w-2)^2*u=16p and d-2>2w+k+3. Thus the retained scalar and
+cell/band conditions hold eventually. The actual prime-generated axes
+may be kept: their theta_i are in (1/(4d),1/(2d-1)), so u*theta_i<2.
+No artificial common prime size or changed capacity hypothesis is needed.
+Select a full phase cell on each axis, and its interior coordinates at
+offsets w and w+k from the cell's first index. Both lie in its interior.
+
+Let q_i be the existing downward P-grid approximation to
+q_*i=exp(-pi*u*rho_i). Its exact h_(i,k)=(-q_i)^k/f_(i,k)
+satisfies |h_(i,k)|<2*q_*i^k<2^(1-3mk). The tensor kernel coefficient K
+for these D displacements therefore satisfies
+
+    |K| <2^(-D(3mk-1)) <2^-P.                         (9)
+
+Rounding K toward zero on the P-grid gives exactly zero. Reweighting this
+stored zero cannot recover the corresponding weighted map entry.
+
+To bound the true weighted entry from below, let beta_0 be the first phase
+value of a full cell; -1/2<=beta_0<-1/2+theta. At j=w+k the upper product's
+exponent obeys
+
+    (rho+2beta_j)k-theta*k^2 <=theta*k*(2w+k+3).
+
+Consequently the exact exponential weights give
+
+    (a_w/a_(w+k))*q_*^k
+      >=exp[-pi*u*theta*k*(2w+k+3)]
+      >2^[-16k*(2w+k+3)].
+
+The actual a_hat_w/a_hat_(w+k) is at least half the exact ratio.
+Also q_*i>2^(-16m) implies q_i/q_*i>=1-delta with
+ delta=2^(16m+2-P)<=2^(-100p). Since Dk<p, all q-rounding ratios
+together are at least (1-delta)^(Dk)>1/2. Finally f_(i,k)<=1.
+The magnitude of the required weighted tensor entry is thus greater than
+
+    2^[-16Dk(2w+k+3)-D-1] >2^(-p/8) >2^-p.          (10)
+
+A unit basis input at the selected source tensor coordinate turns this
+entry into an output error. Hence the zero in (9) violates the desired
+p-bit absolute accuracy. The operator itself still has the norm bound (8).
+
+The comparisons are uniform, not extrapolated from tested sizes. With
+D>=m/2 and X>=128, the exponent in (9) divided by p is at least
+3*2^a/4096-1/(2X^2)>32768. The exponent in (10) divided by p is less than
+
+    (8+1/2048+7/128)/128 +1/128^2 <1/8.
+
+The remaining cell inequality follows from m/X=2^a; the corrected
+exponential and reciprocal approximations use their original margins.
+The required unweighted fractional exponent scales as m*D*k,
+which is Theta(p^(11/10)) in this family. This is a representation cost
+for this kernel materialization, not a bit-complexity lower bound on the
+underlying weighted operator.
+
+The verifier includes these universal rational inequalities plus symbolic
+rows a=26,27,32,64. Those rows do not execute their enormous tensors.
+A separate finite rational example actually checks all 4,096 entries of
+a 64-by-64 three-axis operator. A 14-bit unweighted grid erases 28 entries
+larger than the 8-bit target error; a 30-bit grid passes the same comparison.
+This small example illustrates the mechanism and does not satisfy every
+asymptotic p>=101 hypothesis. The preceding argument supplies the latter.
+The existing per-axis evaluator does not materialize this joint kernel
+and is not contradicted by this rejection test.

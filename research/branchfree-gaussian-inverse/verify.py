@@ -40,6 +40,8 @@ def main():
                    full_schur_entries=sum(x['entries'] for x in checked['complete_schur']),
                    tensor_entries=sum(x['entries'] for x in checked['tensor_and_weighted']['tensor_identities']),
                    weighted_factor_entries=sum(x['entries'] for x in checked['tensor_and_weighted']['weighted_factors']),
+                   joint_kernel_guard_entries=checked['tensor_precision_guard']['dense_toy']['operator_entries'],
+                   joint_kernel_symbolic_rows=len(checked['tensor_precision_guard']['symbolic_rows']),
                    mutants=len(checked['rejected_mutants']), scope=checked['scope'], kappa_claim=None)
     integrity()
     out.mkdir(parents=True)
