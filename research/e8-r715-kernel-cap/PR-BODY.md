@@ -1,7 +1,6 @@
 > ⚠️ **Draft:** the heavy verification (full fresh-copy replays, CI) is still running. Build on this at your own risk.
 
-Method and knowledge package on the R715 bit word (PR #463): **what sets the width of a residual, how many narrow residuals the shared-donor kernel can
-ever give with coordinate entrances (the verified residual-isometry format: exactly 112), and a 112-pivot kernel selection by seeded annealing.** Conditional **κ = 1294233365881801/1000000000000000000 ≈ 1.294233365881801·10⁻³, bit-bound**: +0.838% over #463
+Method and knowledge package on the R715 bit word (PR #463): **what sets the width of a residual, how many narrow residuals the shared-donor kernel can give on the retimed R715 word with coordinate entrances (the verified residual-isometry format: exactly 112), and a 112-pivot kernel selection by seeded annealing.** Conditional **κ = 1294233365881801/1000000000000000000 ≈ 1.294233365881801·10⁻³, bit-bound**: +0.838% over #463
 and +0.165% over #472 (κ = 1.292099559·10⁻³). It is below the current lemma-less frontier: −0.108% vs #473 (κ = 1.295630·10⁻³, as updated on Oct 11, now the frontier) and −0.098% vs #478 (1.295509·10⁻³). This PR's point is the method and the bounds, not the frontier. The bit supplier is c = 1295910576589222380953/10²⁴ ≈ 1.295911·10⁻³ (+0.839% over R715). Same word, same
 hosting rule, same mixing, #458's complex supplier unchanged: only the kernel selection changes, 84 → 112 pivots.
 
@@ -14,7 +13,7 @@ hosting rule, same mixing, #458's complex supplier unchanged: only the kernel se
 1. **The width rule, checked exactly.** A residual's width is 8 − entrance rank, and only kernel pivots have a nonzero entrance: the helper hierarchy and the
    target mixing do not set it. Checked three ways on all 715 helpers (kernel-word frames, exported records of the mixed word, the independent hosted audit).
 2. **The pivot ceiling and the exact maximum, for coordinate entrances** (the verified residual-isometry format). A pivot needs a frame line inside its first frame (263 of 706 helpers), and its delivery vector must be an XOR of donors of one
-   entrance class. *Proved:* pivots ≤ |C| − rank = 263 − 86 = **177**, and rank-1 coordinate entrances lose nothing up to parity. *Exact maximum: **112**, certified by
+   entrance class. *Proved:* pivots ≤ |C| − rank = 263 − 86 = **177**, and rank-1 coordinate entrances lose nothing up to parity. *Exact maximum on the retimed R715 word: **112**, by a computer-assisted exhaustive search (independently re-audited), certified by
    `code/exact_pivots.py`* (rerun by `verify.py --light`, asserted equal to 112, about 10 s): the pivot problem is a min-sum-rank list partition (max pivots = |C| − min Σ_i rank of the class
    vectors; NP-hard in general, not a matroid union/intersection/parity problem), solved exactly here by splitting the delivery matroid into components (208 / 28 / 14 elements plus 13 coloops),
    exhaustive span-tuple DP on the small ones (16 and 9 pivots) and, on the 208, an exact block DP with a coupling-assignment lower bound and an exhaustive search (minimum sum-rank 121, so 87 pivots;

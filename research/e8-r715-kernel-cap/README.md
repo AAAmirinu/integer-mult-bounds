@@ -51,7 +51,7 @@ inside `first(p)`; its delivery vector `resp(p) ∈ F₂¹²⁰` (the targets it
 65–81 and class ranks 37–43 per frame line (class nullities 25–39), 232 of the 263 carriers lie in the span of the others of some class (the only ones
 that can be pivots), and the matroid of delivery vectors has one big component (208 elements) beside components of 28 and 14 and 13 coloops.
 
-**Exact maximum: 112 (certified by `code/exact_pivots.py`; `verify.py --light` recomputes it and asserts 112).** The partition problem of item 3 is a
+**Exact maximum: 112 (computer-assisted exhaustive search on the retimed R715 word, certified by `code/exact_pivots.py`; `verify.py --light` recomputes it and asserts 112).** The partition problem of item 3 is a
 *min-sum-rank list partition*: it minimises a sum of ranks, so it is not a matroid union, intersection or parity problem (those maximise rank), and it is NP-hard
 when the number of classes is unbounded (vertex cover reduces to it). It is nevertheless solved exactly here, with 8 classes and the block structure of the
 delivery vectors:
@@ -64,7 +64,7 @@ delivery vectors:
    An exhaustive depth-first search over the block-optimal span tuples, pruned by the optimistic completion "every remaining block at its maximal span",
    shows 120 **infeasible** and exhibits 121 (hence minimum sum-rank 121, i.e. 87 pivots).
 4. Total **87 + 16 + 9 = 112** pivots; 112 is even, so the parity rule drops none. The exact maximum equals the annealing plateau (14 of 16 restarts at 112,
-   never 113; six 600,000-move restarts all at 112) and the shipped selection. The 177 above and the 586 of item 6 are therefore valid but loose bounds
+   never 113) and the shipped selection. The 177 above and the 586 of item 6 are therefore valid but loose bounds
    (the CP-SAT relation model of `select_kernel.py --ilp`, restricted to ≤ 3 donors per pivot, stalls at 110–111 with an unclosed bound: a restriction, not a proof).
 Scope of the 112: the model of items 2–3 (rank-1 coordinate entrances, one entrance class per donor, 8 frame lines of the R715 word; PR #443's conditions as
 re-asserted by `kernel_cap.check_selection`). It is a statement about that format, not about formats where a donor serves nested entrances or entrances are
