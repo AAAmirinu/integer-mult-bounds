@@ -43,12 +43,12 @@ last_node=split_nodes(a.out.parent,'FrameTraceNodes','FrameTraceCore','SourceFra
 defs[0]=f'import {last_node}'
 for i,(_,center)in enumerate(snaps):defs.append(f'def state{i} : State := ⟨node{roots[i]}, '+('none'if center is None else f'some {center}')+'⟩')
 N=len(snaps)-1
-checks.append('theorem initial_tabulate : Tree.tabulate 10 (fun i => state0.frames.get i) = state0.frames := by decide')
-checks.append(f'theorem final_tabulate : Tree.tabulate 10 (fun i => state{N}.frames.get i) = state{N}.frames := by decide')
+checks.append('theorem initial_tabulate : Tree.tabulate 10 (fun i => state0.frames.get i) = state0.frames := by decide +kernel')
+checks.append(f'theorem final_tabulate : Tree.tabulate 10 (fun i => state{N}.frames.get i) = state{N}.frames := by decide +kernel')
 for i in range(N):
  es=entries[200*i:200*(i+1)];defs.extend(flat_list(f'chunk{i}', 'Entry', ['⟨⟨%d,%d,%d,%s⟩,%d,%d,%d⟩'%(op,x,y,str(odd).lower(),old,new,rank)for op,x,y,odd,old,new,rank in es]))
  checks.append(f'theorem project{i} : chunk{i}.map Entry.scalar = SourceMatrix.chunk{i} := rfl')
- checks.append(f'theorem checkpoint{i} : runChecked chunk{i} (state{i},true) = (state{i+1},true) := by decide')
+ checks.append(f'theorem checkpoint{i} : runChecked chunk{i} (state{i},true) = (state{i+1},true) := by decide +kernel')
 defs.append('def chunks : List (List Entry) := ['+','.join(f'chunk{i}'for i in range(N))+']')
 defs.append('def forward : List Entry := chunks.flatten')
 cert.append('theorem scalar_word : forward.map Entry.scalar = SourceMatrix.forwardWord := by\n  simp only [forward, chunks, List.flatten_cons, List.flatten_nil, List.map_append, List.map_nil, '+', '.join(f'project{i}'for i in range(N))+', SourceMatrix.forwardWord, SourceMatrix.forwardChunks]')

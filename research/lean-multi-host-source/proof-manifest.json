@@ -1,7 +1,7 @@
 {
   "source_base_commit": "13611a8958fc71046a83d8431d2bd6335e6a3e2f",
-  "lean_commit": "d8b18978322de05a8f3dba51ef03cf5461676c17",
-  "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+  "lean_commit": "6741444a63eec253a7eae7a83f1beb3de015023d",
+  "mathlib_commit": "308445d7985027f538e281e18df29ca16ede2ba3",
   "modules": [
     {
       "module": "RowEvaluation",
@@ -55,23 +55,415 @@
     {
       "module": "EndpointInterpretation",
       "source": "EndpointInterpretation.lean",
-      "sha256": "174de6a410ad642cb55e4f21b7470a979a33275d4fc2e346caff0f3db90f1615",
+      "sha256": "51570f5017addce5cdfa9b0db72c9952d07b4c6f25825bbd6779f3b06f2e42f9",
       "imports": [
         "TreeReplay"
       ]
     },
     {
-      "module": "FrameData",
-      "source": "FrameData.lean",
-      "sha256": "8bcdc93969f06caae9a438d59cd5e8cc052573daef4f0a9c16141b4815b68ce3",
+      "module": "FrameDatumCore",
+      "source": "FrameDatumCore.lean",
+      "sha256": "e5366a4a48f372055f1fff636308143e59ea4112aa17a4f94ae2c272facb80ad",
       "imports": [
         "Std"
       ]
     },
     {
+      "module": "FrameCertificateBatch00",
+      "source": "FrameCertificateBatch00.lean",
+      "sha256": "111e02e4d440cb9d3ea05874c766f56a1815f96fa5fabb1d678155f537a16537",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch01",
+      "source": "FrameCertificateBatch01.lean",
+      "sha256": "a175aad32b00f20d173bab7e7ab6bed82ad75dcdb14308eca119ea3337ad053d",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch02",
+      "source": "FrameCertificateBatch02.lean",
+      "sha256": "554d57cc8d865cf99ae76d114446623825e12f4c8d22f9b96dad3a769ff2c245",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch03",
+      "source": "FrameCertificateBatch03.lean",
+      "sha256": "be518cf85f67fade1182b23b5345ba6d3d38aff632845f322e9254bb90ed1d50",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch04",
+      "source": "FrameCertificateBatch04.lean",
+      "sha256": "28254d974a1be3f5a688e01985066634deeb03bb5f67ee09ad258df151db7404",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch05",
+      "source": "FrameCertificateBatch05.lean",
+      "sha256": "cc71b6d65ed6f9e85e82f6305b9b7791d9315891b670d56b9f51c652427618db",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch06",
+      "source": "FrameCertificateBatch06.lean",
+      "sha256": "c7c06105064d302311ef210a5aa90296aaf6c5bfcd7c1c664f7a956eb30f6b91",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch07",
+      "source": "FrameCertificateBatch07.lean",
+      "sha256": "97de7baecb1b64d4df63509b1347141d3636af3b61162fb993d3858690cf9c99",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch08",
+      "source": "FrameCertificateBatch08.lean",
+      "sha256": "74431382844b811d8c1595a292265c72a85b23bc15d8de89c1f3ecdb604c13b9",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch09",
+      "source": "FrameCertificateBatch09.lean",
+      "sha256": "89cb95a4ebcacecb0c7851f10f4061cb346e0bc52eddd763f3f7e44be239424a",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch10",
+      "source": "FrameCertificateBatch10.lean",
+      "sha256": "d267799a0cd5a9680757090691048b524725491148e78f9746d9eebe509aae5c",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch11",
+      "source": "FrameCertificateBatch11.lean",
+      "sha256": "89d7d675a7efdf6103aa67a2e12a382c075ecb5fa14b09f5e192450accc948be",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch12",
+      "source": "FrameCertificateBatch12.lean",
+      "sha256": "d5a709034cc3763fd035d83625a4c9c2c83395abba228d5b0589cbba0fcf6090",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch13",
+      "source": "FrameCertificateBatch13.lean",
+      "sha256": "38184ba48454b41872c3b66a4baffbc10e4aa403b4fda137b6d08ebd49ec9c54",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameCertificateBatch14",
+      "source": "FrameCertificateBatch14.lean",
+      "sha256": "c409954e06d3e2acc2b1232a29ec5436fd11a905228ffc726823e218dbb7dc28",
+      "imports": [
+        "FrameDatumCore"
+      ]
+    },
+    {
+      "module": "FrameLookup",
+      "source": "FrameLookup.lean",
+      "sha256": "de4c0437e67dbdcf9fabc4dd3440532311ee50a1e9b525bbde58e4d38193ed60",
+      "imports": [
+        "FrameCertificateBatch00",
+        "FrameCertificateBatch01",
+        "FrameCertificateBatch02",
+        "FrameCertificateBatch03",
+        "FrameCertificateBatch04",
+        "FrameCertificateBatch05",
+        "FrameCertificateBatch06",
+        "FrameCertificateBatch07",
+        "FrameCertificateBatch08",
+        "FrameCertificateBatch09",
+        "FrameCertificateBatch10",
+        "FrameCertificateBatch11",
+        "FrameCertificateBatch12",
+        "FrameCertificateBatch13",
+        "FrameCertificateBatch14"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch00",
+      "source": "FrameTransitionBatch00.lean",
+      "sha256": "a2163dcf7b91df3564b7120dbc161ac5b3e9322c661518c13e9203b6a970427b",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch01",
+      "source": "FrameTransitionBatch01.lean",
+      "sha256": "e0de45756bfd4fcb8dd173f7aba33b597174c4006ca8f9d5c0270e7ea0279e21",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch02",
+      "source": "FrameTransitionBatch02.lean",
+      "sha256": "217902b829934343e44cbcd4f3444bd06e34afe51ed6b69e6b19320f12ecc005",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch03",
+      "source": "FrameTransitionBatch03.lean",
+      "sha256": "413f6919b9709dc5ecdfbb5fd6ea705634faf6c98f2d541f644c14e28e5c33b2",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch04",
+      "source": "FrameTransitionBatch04.lean",
+      "sha256": "72475ce2d68d8a30da836817117c79b17f538996142e5f8bb222ca6feed0de1b",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch05",
+      "source": "FrameTransitionBatch05.lean",
+      "sha256": "6127e0dadb177f66bce998fd8c7928494ec909cae67e4a4fc5109d17b599b690",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch06",
+      "source": "FrameTransitionBatch06.lean",
+      "sha256": "5e0834d02dbb30d6dd454017dc7d07862f4dbdb1267748f697a252aa04b5fd37",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch07",
+      "source": "FrameTransitionBatch07.lean",
+      "sha256": "a9c701f147999a1fba944de3c3d9e79915aafa1a4bb345d950b58a763f46ff3c",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch08",
+      "source": "FrameTransitionBatch08.lean",
+      "sha256": "79aac53e878ae7c891c04386ec5031d1530e188f2f54891f80ccc0320e29e553",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch09",
+      "source": "FrameTransitionBatch09.lean",
+      "sha256": "d46b34901b50e31761a35a010fededa41f1ccc008752bb0679fbff6d3e100f60",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch10",
+      "source": "FrameTransitionBatch10.lean",
+      "sha256": "0a180f3b37902fed338d04a2fec089a152e62dc3e8be83bf749f470c26143159",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch11",
+      "source": "FrameTransitionBatch11.lean",
+      "sha256": "e2695ab99fc87cb049bac751a18e2a386775d40a0de8b2e31c179c8bdc063b89",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch12",
+      "source": "FrameTransitionBatch12.lean",
+      "sha256": "f606011d6b85069f90bb2d00009ad49c41583c7ec49f58e537a780f39dac2185",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch13",
+      "source": "FrameTransitionBatch13.lean",
+      "sha256": "46775e819f1339363cd05cc9cdb5fd0465509be28a542705819d4e3266f501fd",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch14",
+      "source": "FrameTransitionBatch14.lean",
+      "sha256": "97c794cfee64391353af4bf834c1a7ade476b7c3017c07087a0238a9f33c0085",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch15",
+      "source": "FrameTransitionBatch15.lean",
+      "sha256": "de48a004709ca3dbade2fe86298e708d9a4dd3001bfffc60dccad6d0a123695e",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch16",
+      "source": "FrameTransitionBatch16.lean",
+      "sha256": "0016f6e69a789592976e00d220b51bb787a8c848e99592c72b2d9e07536e3e3d",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch17",
+      "source": "FrameTransitionBatch17.lean",
+      "sha256": "71ac4c00d8d6836b7b7b735a787a0064b9da8d356fe1b5d1c454703004aff111",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch18",
+      "source": "FrameTransitionBatch18.lean",
+      "sha256": "97e2d36a321b5b01118da22c20970b34241545fa8ae12a85c21841fa2567595c",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch19",
+      "source": "FrameTransitionBatch19.lean",
+      "sha256": "5b1620c6ffb9d27ab460c20bc5e627887fa670c8a22cde070776d13768ad298c",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch20",
+      "source": "FrameTransitionBatch20.lean",
+      "sha256": "c897c9f065cf35133c0ca8675695e80307d4b88a2f0f53a7a9a77b7a4ef7d5e4",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch21",
+      "source": "FrameTransitionBatch21.lean",
+      "sha256": "87bc85e67ce49b86a80cff090500c53548f93c279c0fe8afefc4d158d04a7687",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch22",
+      "source": "FrameTransitionBatch22.lean",
+      "sha256": "d1ab45ff8b36665bab4828d7b41b9cc8b4efc1870957df198e8fe53c0b1b81f4",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch23",
+      "source": "FrameTransitionBatch23.lean",
+      "sha256": "17d33961084e4ecd1a44d04345d6287ca9b53bc33ac0db90c6a7c406c83b2fc3",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch24",
+      "source": "FrameTransitionBatch24.lean",
+      "sha256": "c6fd7af383f9aacb4e80a3124e43a73e4afe05d2d3213e573b0c57284e344e46",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch25",
+      "source": "FrameTransitionBatch25.lean",
+      "sha256": "e7c0f78a9b3f1439e758cbfd673803f6557ca63aee46db0a26ea918917194648",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameTransitionBatch26",
+      "source": "FrameTransitionBatch26.lean",
+      "sha256": "e7226d7bfacc0124771fa91274e1af769a5ff7c0a7f78be1f84a3d26b0ba926c",
+      "imports": [
+        "FrameLookup"
+      ]
+    },
+    {
+      "module": "FrameData",
+      "source": "FrameData.lean",
+      "sha256": "4ad78f3c14c02510076b0a7ec1dc4d5d0956c7da4e5abab707ad3843b037d989",
+      "imports": [
+        "FrameTransitionBatch00",
+        "FrameTransitionBatch01",
+        "FrameTransitionBatch02",
+        "FrameTransitionBatch03",
+        "FrameTransitionBatch04",
+        "FrameTransitionBatch05",
+        "FrameTransitionBatch06",
+        "FrameTransitionBatch07",
+        "FrameTransitionBatch08",
+        "FrameTransitionBatch09",
+        "FrameTransitionBatch10",
+        "FrameTransitionBatch11",
+        "FrameTransitionBatch12",
+        "FrameTransitionBatch13",
+        "FrameTransitionBatch14",
+        "FrameTransitionBatch15",
+        "FrameTransitionBatch16",
+        "FrameTransitionBatch17",
+        "FrameTransitionBatch18",
+        "FrameTransitionBatch19",
+        "FrameTransitionBatch20",
+        "FrameTransitionBatch21",
+        "FrameTransitionBatch22",
+        "FrameTransitionBatch23",
+        "FrameTransitionBatch24",
+        "FrameTransitionBatch25",
+        "FrameTransitionBatch26"
+      ]
+    },
+    {
       "module": "FrameGeometry",
       "source": "FrameGeometry.lean",
-      "sha256": "3fc83e60717189241a2656f70a98e0781536bea37f2727dad63b5cc0091e1c55",
+      "sha256": "9b3a3dd8be883911383ce8ce1beecedf0a3e0ba24434055b626d7eadbc4ed7d9",
       "imports": [
         "FrameData",
         "FramedReplay",
@@ -91,11 +483,147 @@
       ]
     },
     {
-      "module": "FrameTraceLiterals",
-      "source": "FrameTraceLiterals.lean",
-      "sha256": "950b19499a2310ff5dc148138b8439ec46e3847caef544192cd0df4da6907264",
+      "module": "FrameTraceNodes00",
+      "source": "FrameTraceNodes00.lean",
+      "sha256": "37d0af1fdbbfd5a8d91dd8194b4a355adf4ca72d131696ee45bd17d3a07d64c1",
       "imports": [
         "FrameTraceCore"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes01",
+      "source": "FrameTraceNodes01.lean",
+      "sha256": "419db84aa81b363aed579c49f34879cfb2beaee1c6dbccf2b671ba2c3e57873a",
+      "imports": [
+        "FrameTraceNodes00"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes02",
+      "source": "FrameTraceNodes02.lean",
+      "sha256": "91f939116704453faab0a4cadc9ad752fd78fba86c7ad23a507ed3ccb5650d8c",
+      "imports": [
+        "FrameTraceNodes01"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes03",
+      "source": "FrameTraceNodes03.lean",
+      "sha256": "6f04da55ea9845fafdee389ce2479d7b56a74978bdbdc4810fea55b04ee732d5",
+      "imports": [
+        "FrameTraceNodes02"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes04",
+      "source": "FrameTraceNodes04.lean",
+      "sha256": "4645ff70106ae4fc94d95d726986e55e53aee54c151d50c5a12ef87c34dc2c9c",
+      "imports": [
+        "FrameTraceNodes03"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes05",
+      "source": "FrameTraceNodes05.lean",
+      "sha256": "858930b83a9a3ef2cf11441909e6cac321382096120b201952372146dce2a61e",
+      "imports": [
+        "FrameTraceNodes04"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes06",
+      "source": "FrameTraceNodes06.lean",
+      "sha256": "02a6160a764100a2edf57bea609dda7c92f7da3529e2ec7ea0ccc0d50d52a73e",
+      "imports": [
+        "FrameTraceNodes05"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes07",
+      "source": "FrameTraceNodes07.lean",
+      "sha256": "fe2b0dda8016846712eb91f39938820aeecff44e2aa7a14613574b74935b60b3",
+      "imports": [
+        "FrameTraceNodes06"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes08",
+      "source": "FrameTraceNodes08.lean",
+      "sha256": "706b5f6640fc07460730d064eff22c0902867b94cbf180bff4c4aa9b76eba428",
+      "imports": [
+        "FrameTraceNodes07"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes09",
+      "source": "FrameTraceNodes09.lean",
+      "sha256": "3c706bf2a219a1869e4c5bdc404c0a55fb515b3ef4932ce4677ba8447a8afd0a",
+      "imports": [
+        "FrameTraceNodes08"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes10",
+      "source": "FrameTraceNodes10.lean",
+      "sha256": "d9c310fc5f046a124421d1eb97c325b6b3b6b7162cbe7a77751fb3c3fd4188ac",
+      "imports": [
+        "FrameTraceNodes09"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes11",
+      "source": "FrameTraceNodes11.lean",
+      "sha256": "e886da755bd731e6f6575ccf682bc90ebc932df4cbb73cb95ce259b6417067c8",
+      "imports": [
+        "FrameTraceNodes10"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes12",
+      "source": "FrameTraceNodes12.lean",
+      "sha256": "6f55b825af840464e45c19423dd5c5cd4c1af36b979c3144c10e598124e386da",
+      "imports": [
+        "FrameTraceNodes11"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes13",
+      "source": "FrameTraceNodes13.lean",
+      "sha256": "a79873c412f47d79d11398fa0eb8bfff2f2ebd7431062063424b3d0ea2992498",
+      "imports": [
+        "FrameTraceNodes12"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes14",
+      "source": "FrameTraceNodes14.lean",
+      "sha256": "918ee9397720c6fe48c0a09d92e8b26b63cdbb24810169bad445d6c3f64a2687",
+      "imports": [
+        "FrameTraceNodes13"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes15",
+      "source": "FrameTraceNodes15.lean",
+      "sha256": "2766c65fca721fb36c8f49c3c5ce0ec6202f6d092e324ac0b2d6c141180c8381",
+      "imports": [
+        "FrameTraceNodes14"
+      ]
+    },
+    {
+      "module": "FrameTraceNodes16",
+      "source": "FrameTraceNodes16.lean",
+      "sha256": "070b7d4d5cb4439a70c97f48df21daf2f8af246c18dc083a74bab71224ec19fe",
+      "imports": [
+        "FrameTraceNodes15"
+      ]
+    },
+    {
+      "module": "FrameTraceLiterals",
+      "source": "FrameTraceLiterals.lean",
+      "sha256": "342564753b1e7de5f435b79d40161a732ce7f4047e7f30a29d8b701d4e93b57d",
+      "imports": [
+        "FrameTraceNodes16"
       ]
     },
     {
@@ -109,24 +637,200 @@
     {
       "module": "FrameMoveData",
       "source": "FrameMoveData.lean",
-      "sha256": "070793e71a93cb9f2e925520022e1c8d3f8000553e3c384279eea118197ac325",
+      "sha256": "93cd6f82c987072a3ebc791005ccf6ff497aad5b548fe27d1ab94f1f960d6e46",
       "imports": [
         "FrameData",
         "FrameTraceLiterals"
       ]
     },
     {
-      "module": "MatrixData",
-      "source": "MatrixData.lean",
-      "sha256": "dfb7acb5dcb1d6b7978d80d4105c602be82d72305811f3a04a814ffd97bbdc64",
+      "module": "MatrixNodes00",
+      "source": "MatrixNodes00.lean",
+      "sha256": "a01dcc83490cff26ec58fd2655e720bd450597c7e52d6d9211b56ba467975781",
       "imports": [
         "TreeReplay"
       ]
     },
     {
+      "module": "MatrixNodes01",
+      "source": "MatrixNodes01.lean",
+      "sha256": "d321cee03c9d345f0b17d46b5f03b0a1503b070c029225a6af49042f112778f4",
+      "imports": [
+        "MatrixNodes00"
+      ]
+    },
+    {
+      "module": "MatrixNodes02",
+      "source": "MatrixNodes02.lean",
+      "sha256": "5f5937f408127676abe7a4cdc86cb3d08aaf0f3b806887b1d66441f4880a72d8",
+      "imports": [
+        "MatrixNodes01"
+      ]
+    },
+    {
+      "module": "MatrixNodes03",
+      "source": "MatrixNodes03.lean",
+      "sha256": "2f83aced14f802807d352240e3742c26ca43763f24de33e087a516a336fd8be2",
+      "imports": [
+        "MatrixNodes02"
+      ]
+    },
+    {
+      "module": "MatrixNodes04",
+      "source": "MatrixNodes04.lean",
+      "sha256": "688981bee0cee50fd29195695151f81485ae13717c23cdd5a0406a3cfc911e66",
+      "imports": [
+        "MatrixNodes03"
+      ]
+    },
+    {
+      "module": "MatrixNodes05",
+      "source": "MatrixNodes05.lean",
+      "sha256": "9880db6dd07b43e98104fcae8a0ded0d75b63f401c088b1a2bfd69e08c070fd4",
+      "imports": [
+        "MatrixNodes04"
+      ]
+    },
+    {
+      "module": "MatrixNodes06",
+      "source": "MatrixNodes06.lean",
+      "sha256": "aac24fd408112b82389d893ad35fab5545d7699dfd1e2d579409dca6e834c5f4",
+      "imports": [
+        "MatrixNodes05"
+      ]
+    },
+    {
+      "module": "MatrixNodes07",
+      "source": "MatrixNodes07.lean",
+      "sha256": "42c946eb6ccca92d060163d3736364ded55a753d97e74e23e7f57379c0e1dbe7",
+      "imports": [
+        "MatrixNodes06"
+      ]
+    },
+    {
+      "module": "MatrixNodes08",
+      "source": "MatrixNodes08.lean",
+      "sha256": "763cb707af55ee4edeead5877b945e5f1d00b755809090524fc894e073cb581d",
+      "imports": [
+        "MatrixNodes07"
+      ]
+    },
+    {
+      "module": "MatrixNodes09",
+      "source": "MatrixNodes09.lean",
+      "sha256": "49b4f5fbb7e2d5a6248a1d1fcfe31e34f4510d3adcaa2b7b26250b5caaa8cbf9",
+      "imports": [
+        "MatrixNodes08"
+      ]
+    },
+    {
+      "module": "MatrixNodes10",
+      "source": "MatrixNodes10.lean",
+      "sha256": "4b328c56ae73d050d9a9977b6ef46b1bc262360f6bb3127b76e9e4d4ed95c330",
+      "imports": [
+        "MatrixNodes09"
+      ]
+    },
+    {
+      "module": "MatrixNodes11",
+      "source": "MatrixNodes11.lean",
+      "sha256": "5686968297a6cca072b91d9b89ed9aec5d14da1928e8e607c3554d32d434b681",
+      "imports": [
+        "MatrixNodes10"
+      ]
+    },
+    {
+      "module": "MatrixNodes12",
+      "source": "MatrixNodes12.lean",
+      "sha256": "e81dce0c430faa8305cccac2a3febac90dfb6ff7b3f096da32b8e9719061121a",
+      "imports": [
+        "MatrixNodes11"
+      ]
+    },
+    {
+      "module": "MatrixNodes13",
+      "source": "MatrixNodes13.lean",
+      "sha256": "2d41d07c822aa5e7ff828e3080dbdf0bc5746a5219b14e551e2833e657209272",
+      "imports": [
+        "MatrixNodes12"
+      ]
+    },
+    {
+      "module": "MatrixNodes14",
+      "source": "MatrixNodes14.lean",
+      "sha256": "be52802fc4243b7849f9c62eb918aa86cad53d0617672599f72f63a1f879f53a",
+      "imports": [
+        "MatrixNodes13"
+      ]
+    },
+    {
+      "module": "MatrixNodes15",
+      "source": "MatrixNodes15.lean",
+      "sha256": "541d4956f9b64683942cf0b24ba013a3bc4437a015d6d9b72139d30c6bdc73d6",
+      "imports": [
+        "MatrixNodes14"
+      ]
+    },
+    {
+      "module": "MatrixNodes16",
+      "source": "MatrixNodes16.lean",
+      "sha256": "901df816bf7e2ddf11df9b2e3deebfb6d46a7aa8d997c21a55c85770cb3c016c",
+      "imports": [
+        "MatrixNodes15"
+      ]
+    },
+    {
+      "module": "MatrixNodes17",
+      "source": "MatrixNodes17.lean",
+      "sha256": "8a31a049a1a7553b6993e6d938f7d7b67503024eeb6ade142d42b89a39b8b4d5",
+      "imports": [
+        "MatrixNodes16"
+      ]
+    },
+    {
+      "module": "MatrixNodes18",
+      "source": "MatrixNodes18.lean",
+      "sha256": "efc122d30bf4856b6d3d254caba3528559e012756d2a8d4d702276bb8b93f8f8",
+      "imports": [
+        "MatrixNodes17"
+      ]
+    },
+    {
+      "module": "MatrixNodes19",
+      "source": "MatrixNodes19.lean",
+      "sha256": "8eed839a781c93944a0a5e35d35e8e79fe50575062481373a056b1c6977aa04b",
+      "imports": [
+        "MatrixNodes18"
+      ]
+    },
+    {
+      "module": "MatrixNodes20",
+      "source": "MatrixNodes20.lean",
+      "sha256": "af9d3d9325a65c2dd061cff6f28404138fe3e9c1aaca9006c51ae97bc5e8a057",
+      "imports": [
+        "MatrixNodes19"
+      ]
+    },
+    {
+      "module": "MatrixNodes21",
+      "source": "MatrixNodes21.lean",
+      "sha256": "cb146ece2b33d9dc8f378bc0f0c8e3050ea67a5417991161d4022100c22b4b4e",
+      "imports": [
+        "MatrixNodes20"
+      ]
+    },
+    {
+      "module": "MatrixData",
+      "source": "MatrixData.lean",
+      "sha256": "0acaaf4682e8e8fc226e3dde5bb133ed1c0103983dae7e393daf8fa285de769a",
+      "imports": [
+        "MatrixNodes21"
+      ]
+    },
+    {
       "module": "FrameTraceCheckpoints",
       "source": "FrameTraceCheckpoints.lean",
-      "sha256": "117ecd55d92e17358f282a9c1ee0b0b1dc85fd79cf236c9e5d624d13ceed94c0",
+      "sha256": "1c8a676a7522dba1e466785b41b67011ecf09a7a2a1b3e1d3b637d2f9331b625",
       "imports": [
         "FrameTraceLiterals",
         "MatrixData"
@@ -177,7 +881,7 @@
     {
       "module": "OwnershipData",
       "source": "OwnershipData.lean",
-      "sha256": "fa08b345a9763529ff8ad62f58ed472362aadfd3410cbaf02774339e4f13ee6a",
+      "sha256": "9a18c91328362a6494b84e5825fcc31c15cc15a6e8445d6d9357b5e4bab4edf6",
       "imports": [
         "Std"
       ]
@@ -293,7 +997,7 @@
     {
       "module": "PortData",
       "source": "PortData.lean",
-      "sha256": "756e51c88c58f684c3ba0550d5b74dcd49b9225e4210409babf0aa99c53b1612",
+      "sha256": "78352dcfb183e8a81d3118a1f0f46474dbad1b7eeb4bbe1f02b4ab205f8b363f",
       "imports": [
         "Std"
       ]
@@ -309,7 +1013,7 @@
     {
       "module": "PortGeometry",
       "source": "PortGeometry.lean",
-      "sha256": "68b39cc27ed66768224c152c667272ac070403aac5730f21f6cbaac6c6b15cc6",
+      "sha256": "2093278b70153217403f0c7d69bc7949a3bfb460b98fa90e7baf57c9952edc7b",
       "imports": [
         "PortRowData",
         "Mathlib.Data.Matrix.Mul",
@@ -333,7 +1037,7 @@
     {
       "module": "ParentOwnershipData",
       "source": "ParentOwnershipData.lean",
-      "sha256": "737ae7eb42e3d287db5fcd840eecef3c80bc0e01238bba2c8ba8cfbd162c3220",
+      "sha256": "4d2b53fb74dd2153aa3265efb60356aac5c199474c4f89c65e1fa50b9fc2f54f",
       "imports": [
         "OwnershipData"
       ]

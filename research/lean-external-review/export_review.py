@@ -18,7 +18,8 @@ PREFIXES = ['research/' + name for name in [
     'lean-single-stream-obstruction', 'lean-source-invocation-audit',
     'lean-contribution-archive',
 ]]
-ROOT_FILES = ['LICENSE', 'NOTICE', 'CONTRIBUTING.md']
+ROOT_FILES = ['LICENSE', 'NOTICE', 'CONTRIBUTING.md', 'Makefile',
+              '.github/workflows/verify.yml']
 
 
 def git(*args):

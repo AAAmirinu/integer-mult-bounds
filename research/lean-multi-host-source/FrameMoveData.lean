@@ -22,7 +22,7 @@ def moveCheck (e : FrameTrace.Entry) : Bool :=
     (FrameGeometry.transition (moveIndex e)).1.val = e.oldFrame ∧
     (FrameGeometry.transition (moveIndex e)).2.val = e.newFrame)
 
-theorem moves_checked : SourceFrameTrace.forward.all moveCheck = true := by decide
+theorem moves_checked : SourceFrameTrace.forward.all moveCheck = true := by decide +kernel
 
 theorem move_pair (e : FrameTrace.Entry) (he : e ∈ SourceFrameTrace.forward)
     (hop : e.scalar.op = 0) :

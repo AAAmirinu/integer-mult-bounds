@@ -3,9 +3,12 @@
 import argparse
 from datetime import datetime, timezone
 import hashlib
+import importlib.util
 import json
+import os
 from pathlib import Path
 import re
+import sys
 
 ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
@@ -19,7 +22,8 @@ DIRECTORIES = [
 # Avoid a circular digest. The delivery SHA256SUMS covers both files.
 EXCLUDED = {'research/lean-external-review/package-manifest.json',
             'research/lean-external-review/package-validation.json'}
-ROOT_FILES = ['LICENSE', 'NOTICE', 'CONTRIBUTING.md']
+ROOT_FILES = ['LICENSE', 'NOTICE', 'CONTRIBUTING.md', 'Makefile',
+              '.github/workflows/verify.yml']
 
 
 def sha(path):
@@ -34,8 +38,9 @@ def require(ok, message):
 def inventory():
     files = [ROOT / name for name in ROOT_FILES]
     for name in DIRECTORIES:
-        files.extend(p for p in (ROOT / 'research' / name).rglob('*')
-                     if p.is_file() and '__pycache__' not in p.parts and p.suffix != '.pyc')
+        for directory, subdirs, names in os.walk(ROOT / 'research' / name):
+            subdirs[:] = sorted(n for n in subdirs if n not in {'.lake', '__pycache__', '.git'})
+            files.extend(Path(directory) / n for n in names if not n.endswith('.pyc'))
     require(all(not p.is_symlink() for p in files), 'Symlink in review sources')
     return {str(p.relative_to(ROOT)): sha(p) for p in sorted(files)
             if str(p.relative_to(ROOT)) not in EXCLUDED}
@@ -220,6 +225,111 @@ def bindings(allow_pending_task_b=False):
             'task_b_receipt_sha256': sha(HERE / 'validation/task-b.json')}
 
 
+def port_bindings(allow_pending=False, build_receipt=None):
+    """Bind the full-port schema; never reinterpret historical direct-Lean receipts."""
+    project = ROOT / 'research/lean-multi-host-source'
+    manifest_path = project / 'port-manifest.json'
+    manifest = json.loads(manifest_path.read_text())
+    require(manifest['schemaVersion'] == 1 and manifest['scope'] == 'lean421-full-port',
+            'Unsupported port manifest schema')
+    for name in manifest['files']:
+        require((project / name).resolve().is_relative_to(ROOT), 'Manifest source escapes delivery')
+    # Reuse the runner's read-only structural checks, not its build entry point.
+    spec = importlib.util.spec_from_file_location('pr442_port_verifier', project / 'verify.py')
+    verifier = importlib.util.module_from_spec(spec)
+    sys.path.insert(0, str(project))
+    try:
+        spec.loader.exec_module(verifier)
+        require(verifier.validate_manifest() == manifest, 'Port manifest changed during validation')
+    finally:
+        sys.path.pop(0)
+    require(manifest['leanVersion'] == '4.21.0' and
+            manifest['leanCommit'] == '6741444a63eec253a7eae7a83f1beb3de015023d' and
+            manifest['mathlibCommit'] == '308445d7985027f538e281e18df29ca16ede2ba3',
+            'Port differs from exact upstream toolchain pins')
+    modules = [row['module'] for row in manifest['modules']]
+    require(len(modules) == len(set(modules)) == 147, 'Wrong full-port module count')
+    audit_counts = {'task_a': 21, 'task_b': 931, 'hosting': 47,
+                    'source_invocation': 422, 'single_stream': 15}
+    require(set(manifest['audits']) == set(audit_counts), 'Wrong port audit inventory')
+    for key, count in audit_counts.items():
+        require(len(manifest['audits'][key]['declarations']) == count, 'Wrong audit count: ' + key)
+    receipt_path = build_receipt or HERE / 'validation/lean421-fresh.json'
+    if not receipt_path.exists():
+        require(allow_pending and build_receipt is None,
+                'Current fresh Lean 4.21 receipt is absent; use --allow-pending-port only for preparation')
+        return {'status': 'PENDING_PORT', 'task_b_verified': False,
+                'port_verified': False, 'local_modules': len(modules),
+                'original_contribution_files': 66, 'archived_exclusions': 9,
+                'planned_audit_counts': audit_counts,
+                'notice': 'Full fresh Lean 4.21 replay and CI runtime qualification are pending.'}
+    receipt = json.loads(receipt_path.read_text())
+    require(receipt['schemaVersion'] == 1 and receipt['scope'] == 'lean421-full-port' and
+            receipt['status'] == 'PASS', 'Current port receipt is not a full PASS')
+    require(receipt['manifestSha256'] == sha(manifest_path), 'Port receipt/manifest mismatch')
+    require(receipt['sourceFiles'] == manifest['files'] and receipt['sourceFilesUnchanged'] is True,
+            'Port receipt/source binding mismatch')
+    require(receipt['freshLocalBuild'] is True and receipt['trackedClean'] is True,
+            'Port receipt must record a fresh build from a clean tracked checkout')
+    require(re.fullmatch(r'[0-9a-f]{40}', receipt['gitCommit']) is not None,
+            'Invalid build commit')
+    require(receipt['compiledLocalModules'] == sorted(modules) and
+            receipt['replayedLocalModules'] == [], 'Port receipt reused or omitted local modules')
+    require(receipt['environmentOverrides'] == {} and
+            0 < receipt['stackLimit'][0] <= 8388608, 'Non-default external build settings')
+    toolchain = receipt['toolchain']
+    require(toolchain['version'] == manifest['leanVersion'] and
+            toolchain['leanCommit'] == manifest['leanCommit'] and
+            toolchain['mathlibCommit'] == manifest['mathlibCommit'], 'Receipt toolchain pin mismatch')
+    require(toolchain['description'].startswith('Lean (version 4.21.0,'), 'Wrong compiler description')
+    for key in ['leanBinarySha256', 'lakeBinarySha256']:
+        require(digest_string(toolchain[key]), 'Invalid toolchain binary fingerprint')
+    footprint(toolchain['bundledLibraries'], 'Lean bundled libraries')
+    require(receipt['toolchainFingerprintUnchanged'] is True,
+            'Toolchain was not checked unchanged after verification')
+    dependencies = receipt['dependencies']
+    require(set(dependencies) == set(manifest['dependencyPins']), 'Wrong dependency inventory')
+    for name, pin in manifest['dependencyPins'].items():
+        record = dependencies[name]
+        require(record['commit'] == pin and digest_string(record['trackedSourceSha256']),
+                'Dependency source fingerprint mismatch: ' + name)
+        footprint(record['buildArtifactsBefore'], name + ' artifacts before build')
+        footprint(record['buildArtifacts'], name + ' artifacts after build')
+        require(record['artifactsChangedDuringBuild'] ==
+                (record['buildArtifactsBefore'] != record['buildArtifacts']),
+                'Inconsistent dependency artifact reuse evidence: ' + name)
+    footprint(receipt['localArtifacts'], 'Local build artifacts')
+    require(set(receipt['moduleOleanSha256']) == set(modules) and
+            all(digest_string(d) for d in receipt['moduleOleanSha256'].values()),
+            'Incomplete local artifact fingerprints')
+    require(set(receipt['audits']) == set(audit_counts), 'Incomplete receipt audit groups')
+    for key, audit in manifest['audits'].items():
+        record = receipt['audits'][key]
+        require(record['source'] == audit['source'] and
+                record['declarationCount'] == audit_counts[key] and
+                list(record['declarations']) == audit['declarations'],
+                'Receipt audit inventory mismatch: ' + key)
+        require(all(isinstance(values, list) and set(values) <=
+                    {'propext', 'Classical.choice', 'Quot.sound'}
+                    for values in record['declarations'].values()),
+                'Nonstandard axiom in ' + key)
+    expected_commands = [['lake', 'env', 'lean', option]
+                         for option in ['--version', '--githash', '--print-prefix']]
+    expected_commands += [['lake', 'build']]
+    expected_commands += [['lake', 'env', 'lean', audit['source']]
+                          for audit in manifest['audits'].values()]
+    require([r['command'] for r in receipt['commands']] == expected_commands,
+            'Unexpected compilation or audit command')
+    require(all(r['exitCode'] == 0 and r['timedOut'] is False and
+                digest_string(r['outputSha256']) for r in receipt['commands']),
+            'Build command did not pass or lacks output fingerprint')
+    return {'status': 'PASS', 'task_b_verified': True, 'port_verified': True,
+            'local_modules': len(modules), 'original_contribution_files': 66,
+            'archived_exclusions': 9, 'audit_counts': audit_counts,
+            'port_receipt_sha256': sha(receipt_path), 'port_replay_mode': 'fresh',
+            'ci_runtime_qualification': 'Separate measured projection; not established by this integrity check.'}
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--write-manifest', action='store_true',
@@ -227,9 +337,18 @@ def main():
     p.add_argument('--receipt', type=Path)
     p.add_argument('--allow-pending-task-b', action='store_true',
                    help='allow an absent Task B receipt only when explicitly marked running; result is PENDING_TASK_B')
+    p.add_argument('--allow-pending-port', action='store_true',
+                   help='check an unfinished Lean 4.21 inventory; report PENDING_PORT')
+    p.add_argument('--build-receipt', type=Path,
+                   help='validate a new full fresh Lake receipt instead of the packaged receipt')
     args = p.parse_args()
     files = inventory()
-    counts = bindings(allow_pending_task_b=args.allow_pending_task_b)
+    if (ROOT / 'research/lean-multi-host-source/port-manifest.json').exists():
+        counts = port_bindings(args.allow_pending_port, args.build_receipt)
+    else:
+        require(not args.allow_pending_port and args.build_receipt is None,
+                'Port options require the full Lean 4.21 manifest')
+        counts = bindings(allow_pending_task_b=args.allow_pending_task_b)
     manifest_path = HERE / 'package-manifest.json'
     if args.write_manifest:
         manifest_path.write_text(json.dumps({
@@ -240,11 +359,13 @@ def main():
         }, indent=2) + '\n')
     expected = json.loads(manifest_path.read_text())
     require(expected['base_commit'] == BASE, 'Package manifest upstream base mismatch')
-    require(expected['validation_status'] == counts['status'], 'Package validation status mismatch')
+    require(expected['validation_status'] == counts['status'] or
+            (args.build_receipt is not None and expected['validation_status'] == 'PENDING_PORT'
+             and counts['status'] == 'PASS'), 'Package validation status mismatch')
     require(files == expected['sha256'], 'Package inventory differs from package-manifest.json')
     result = {'status': counts['status'], 'completed_utc': datetime.now(timezone.utc).isoformat(),
               'manifest_sha256': sha(manifest_path), 'files_checked': len(files), **counts,
-              'scope': 'Inventory, manifested sources and available fresh receipt bindings; PENDING_TASK_B means Task B verification is unfinished. This verifier does not run Lean or authenticate build provenance.'}
+              'scope': 'Inventory, manifested sources and available fresh receipt bindings; PENDING_TASK_B or PENDING_PORT means current verification is unfinished. This verifier does not run Lean or authenticate build provenance.'}
     if args.receipt:
         args.receipt.write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result))

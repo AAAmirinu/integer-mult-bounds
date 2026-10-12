@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Verify the bounded Lean 4.21 Phase 1 probe using ordinary Lake commands.
+"""Build the complete Lean 4.21 contribution through Lake and audit its axioms.
 
-This is not the complete Task B verifier. See PORT-PHASE1.md.
+No compilation flags, environment overrides, or resource-limit changes are
+applied. A receipt distinguishes a fresh local build from an incremental run.
 """
 import argparse
 from datetime import datetime, timezone
@@ -15,12 +16,16 @@ import signal
 import subprocess
 import time
 import tomllib
+from update_port_manifest import code
 
 ROOT = Path(__file__).resolve().parent
 ALLOWED = {'propext', 'Classical.choice', 'Quot.sound'}
 FORBIDDEN = re.compile(
     r'\b(sorry|admit|axiom|native_decide|implemented_by|extern|unsafe|opaque)\b'
+    r'|\bdecide\s*\+\s*native\b'
     r'|set_option\s+(?!maxHeartbeats\b|maxRecDepth\b)')
+AUDIT_COUNTS = {'task_a': 21, 'task_b': 931, 'hosting': 47,
+                'source_invocation': 422, 'single_stream': 15}
 
 
 def require(condition, message):
@@ -44,133 +49,191 @@ def footprint(root):
             'bytes': sum(size for _, size, _ in records)}
 
 
+def validate_manifest():
+    manifest = json.loads((ROOT / 'port-manifest.json').read_text())
+    require(manifest['scope'] == 'lean421-full-port', 'Wrong manifest scope')
+    for name, digest in manifest['files'].items():
+        require(sha(ROOT / name) == digest, 'Changed manifested source: ' + name)
+    config = tomllib.loads((ROOT / 'lakefile.toml').read_text())
+    require(config['lean_lib'] == manifest['libraries'], 'Changed Lake library configuration')
+    require(config['defaultTargets'] == manifest['defaultTargets'], 'Changed default targets')
+    require(config['require'] == [{'name': 'mathlib',
+        'git': 'https://github.com/leanprover-community/mathlib4',
+        'rev': manifest['mathlibCommit']}], 'Changed Mathlib requirement')
+    modules = {r['module']: r for r in manifest['modules']}
+    configured = [name for lib in config['lean_lib'] for name in lib['roots']]
+    require(len(modules) == len(configured) == 147 and set(configured) == set(modules),
+            'Wrong complete module inventory')
+    require(len(manifest['originalContribution']) == 66, 'Wrong original contribution inventory')
+    require(len(manifest['archivedExclusions']) == 9, 'Wrong archival inventory')
+    exclusions = {(ROOT / row['source']).resolve() for row in manifest['archivedExclusions']}
+    for row in manifest['archivedExclusions']:
+        require(sha(ROOT / row['source']) == row['sha256'] == row['baseline_sha256'],
+                'Changed archived evidence: ' + row['source'])
+    for row in manifest['modules']:
+        source = ROOT / row['source']
+        require(source.resolve() not in exclusions, 'Archived evidence in build target')
+        require(sha(source) == row['sha256'], 'Changed module: ' + row['module'])
+        text = code(source.read_text())
+        require(not FORBIDDEN.search(text), 'Forbidden source construct: ' + row['module'])
+        imports = [n for line in re.findall(r'^import\s+(.+)$', text, re.M) for n in line.split()]
+        require(imports == row['imports'], 'Changed imports: ' + row['module'])
+        require(all(n in modules or n in ('Std', 'Lean')
+                    or n.startswith(('Std.', 'Lean.', 'Mathlib.')) for n in imports),
+                'Unmanifested local import: ' + row['module'])
+    require(set(manifest['audits']) == set(AUDIT_COUNTS), 'Wrong audit groups')
+    for key, audit in manifest['audits'].items():
+        source = ROOT / audit['source']
+        require(source.resolve() not in exclusions and sha(source) == audit['sha256'],
+                'Changed audit source: ' + key)
+        text = code(source.read_text())
+        require(not FORBIDDEN.search(text), 'Forbidden audit source: ' + key)
+        wanted = re.findall(r'^#print axioms (\S+)\s*$', text, re.M)
+        require(wanted == audit['declarations'] and len(wanted) == len(set(wanted)) == AUDIT_COUNTS[key],
+                'Wrong audit inventory: ' + key)
+        require(all(n in modules for n in re.findall(r'^import (\S+)\s*$', text, re.M)),
+                'Unmanifested audit import: ' + key)
+    require('SourceInvocation.actualContract' in manifest['audits']['task_b']['declarations'],
+            'Missing actualContract audit')
+    lake_manifest = json.loads((ROOT / 'lake-manifest.json').read_text())
+    pins = {p['name']: p['rev'] for p in lake_manifest['packages']}
+    require(pins == manifest['dependencyPins'] and len(pins) == 9, 'Changed dependency pins')
+    require((ROOT / 'lean-toolchain').read_text().strip() == 'leanprover/lean4:v4.21.0',
+            'Wrong toolchain file')
+    return manifest
+
+
+def dependency_sources(manifest):
+    result = {}
+    lake_manifest = json.loads((ROOT / 'lake-manifest.json').read_text())
+    for package in lake_manifest['packages']:
+        directory = ROOT / lake_manifest['packagesDir'] / package['name']
+        head = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=directory, text=True).strip()
+        require(head == manifest['dependencyPins'][package['name']], 'Wrong dependency revision: ' + package['name'])
+        dirty = subprocess.check_output(['git', 'status', '--porcelain', '--untracked-files=no'],
+                                        cwd=directory, text=True)
+        require(not dirty, 'Modified dependency: ' + package['name'])
+        extra = subprocess.check_output(['git', 'ls-files', '--others', '--exclude-standard', '-z'],
+                                        cwd=directory).decode().split('\0')
+        require(not any(n.endswith('.lean') for n in extra), 'Untracked dependency Lean source: ' + package['name'])
+        paths = subprocess.check_output(['git', 'ls-files', '-z'], cwd=directory).decode().split('\0')
+        records = [(name, sha(directory / name)) for name in sorted(filter(None, paths))]
+        result[package['name']] = {'commit': head, 'trackedSourceSha256': hashlib.sha256(
+            json.dumps(records, separators=(',', ':')).encode()).hexdigest()}
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--lake', default='lake', help='Lake executable selection only')
     parser.add_argument('--receipt', type=Path)
     args = parser.parse_args()
-    # Inspect inherited settings; never set or raise them. Lake itself supplies
-    # its normal dependency search path to its child Lean processes.
-    tuning = ['LEAN_PATH', 'LEAN_OPTS', 'LEAN_NUM_THREADS', 'LEAN_SYSROOT',
-              'LEAN_SRC_PATH', 'MATHLIB_CACHE_DIR', 'LAKE_OVERRIDE_LEAN', 'LEAN_GITHASH']
+    tuning = ['LEAN_PATH', 'LEAN_OPTS', 'LEAN_NUM_THREADS', 'LEAN_SYSROOT', 'LEAN_SRC_PATH',
+              'MATHLIB_CACHE_DIR', 'LAKE_OVERRIDE_LEAN', 'LEAN_GITHASH', 'LAKE_JOBS',
+              'LEAN_STACK_SIZE', 'LEAN_MAX_MEMORY']
     require(not any(os.environ.get(key) for key in tuning), 'External Lean tuning detected')
     stack = resource.getrlimit(resource.RLIMIT_STACK)
     require(0 < stack[0] <= 8388608, 'Raised OS stack limit detected')
-    manifest = json.loads((ROOT / 'probe-manifest.json').read_text())
-    for name, digest in manifest['files'].items():
-        require(sha(ROOT / name) == digest, 'Changed probe source: ' + name)
-    config = tomllib.loads((ROOT / 'lakefile.toml').read_text())
-    require(config['lean_lib'][0]['roots'] == manifest['modules'], 'Wrong Lake roots')
-    require(config['defaultTargets'] == ['InvocationProbe'], 'Wrong default target')
-    for name in manifest['modules']:
-        src = (ROOT / (name + '.lean')).read_text()
-        # The manifested probe sources contain no nested block comments.
-        src = re.sub(r'/-.*?-/', ' ', src, flags=re.S)
-        src = re.sub(r'--[^\n]*', ' ', src)
-        require(not FORBIDDEN.search(src), 'Forbidden source construct: ' + name)
-    audit = (ROOT / 'ProbeAxioms.lean').read_text()
-    wanted = re.findall(r'^#print axioms (\S+)\s*$', audit, re.M)
-    require(wanted == manifest['audit_declarations'], 'Changed probe axiom inventory')
-    require(len(wanted) == len(set(wanted)), 'Duplicate audit declaration')
-    receipt = {'status': 'RUNNING', 'scope': 'Phase 1 probe only',
-               'manifest_sha256': sha(ROOT / 'probe-manifest.json'),
-               'started_utc': datetime.now(timezone.utc).isoformat(),
-               'stack_limit': list(stack), 'environment_overrides': {}, 'commands': [],
-               'fresh_local_build': not any(p.is_file() for p in
-                                            (ROOT / '.lake/build').rglob('*'))}
-    receipt['checkout_commit'] = subprocess.check_output(
-        ['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip()
-    receipt['tracked_checkout_clean_at_start'] = not subprocess.check_output(
-        ['git', 'status', '--porcelain', '--untracked-files=no'], cwd=ROOT, text=True)
+    manifest = validate_manifest()
+    started = time.monotonic()
+    receipt = {'schemaVersion': 1, 'status': 'RUNNING', 'scope': 'lean421-full-port',
+        'manifestSha256': sha(ROOT / 'port-manifest.json'),
+        'startedUtc': datetime.now(timezone.utc).isoformat(),
+        'stackLimit': list(stack), 'environmentOverrides': {}, 'commands': [], 'audits': {},
+        'sourceFiles': manifest['files'],
+        'freshLocalBuild': not any(p.is_file() for p in (ROOT / '.lake/build').rglob('*')),
+        'gitCommit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
+        'trackedClean': not subprocess.check_output(['git', 'status', '--porcelain', '--untracked-files=no'], cwd=ROOT, text=True)}
 
     def run(arguments, display_output=True):
         start = time.monotonic()
         print('$ lake ' + ' '.join(arguments), flush=True)
         process = subprocess.Popen([args.lake, *arguments], cwd=ROOT, text=True,
-                                   stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
-                                   start_new_session=True)
+            stdout=subprocess.PIPE, stderr=subprocess.STDOUT, start_new_session=True)
         timed_out = False
         try:
-            output, _ = process.communicate(timeout=2700)
+            output, _ = process.communicate(timeout=max(1, 2700 - (time.monotonic() - started)))
         except subprocess.TimeoutExpired:
             timed_out = True
             os.killpg(process.pid, signal.SIGTERM)
-            output, _ = process.communicate()
-        # No environment override, stack change or extra Lean option is used.
-        receipt['commands'].append({'command': ['lake', *arguments],
-                                    'seconds': round(time.monotonic() - start, 3),
-                                    'exit_code': process.returncode, 'timed_out': timed_out})
+            try:
+                output, _ = process.communicate(timeout=10)
+            except subprocess.TimeoutExpired:
+                os.killpg(process.pid, signal.SIGKILL)
+                output, _ = process.communicate()
+        elapsed = round(time.monotonic() - start, 3)
+        receipt['commands'].append({'command': ['lake', *arguments], 'seconds': elapsed,
+            'exitCode': process.returncode, 'timedOut': timed_out,
+            'outputSha256': hashlib.sha256(output.encode()).hexdigest()})
         if display_output or process.returncode or timed_out:
             print(output, end='', flush=True)
-        require(not timed_out and process.returncode == 0, 'Lake command failed or exceeded 45 minutes')
-        require('declaration uses \'sorry\'' not in output, 'Incomplete proof')
+        require(not timed_out and process.returncode == 0, 'Lake command failed or total verification exceeded 45 minutes')
+        require("declaration uses 'sorry'" not in output, 'Incomplete proof')
         return output
 
     try:
         version = run(['env', 'lean', '--version']).strip()
         require(version.startswith('Lean (version 4.21.0,'), 'Wrong Lean version')
         revision = run(['env', 'lean', '--githash']).strip()
-        require(revision == manifest['lean_commit'], 'Wrong Lean revision')
-        receipt['lean'] = version
-        receipt['lean_commit'] = revision
+        require(revision == manifest['leanCommit'], 'Wrong Lean revision')
         prefix = Path(run(['env', 'lean', '--print-prefix'], display_output=False).strip())
-        receipt['toolchain'] = {
-            'lean_binary_sha256': sha(prefix / 'bin/lean'),
-            'lake_binary_sha256': sha(prefix / 'bin/lake'),
-            'bundled_libraries': footprint(prefix / 'lib/lean')}
+        receipt['toolchain'] = {'version': '4.21.0', 'description': version,
+            'leanCommit': revision, 'mathlibCommit': manifest['mathlibCommit'],
+            'leanBinarySha256': sha(prefix / 'bin/lean'), 'lakeBinarySha256': sha(prefix / 'bin/lake'),
+            'bundledLibraries': footprint(prefix / 'lib/lean')}
+        before = dependency_sources(manifest)
+        lake_manifest = json.loads((ROOT / 'lake-manifest.json').read_text())
+        artifacts_before = {name: footprint(ROOT / lake_manifest['packagesDir'] / name / '.lake/build')
+                            for name in before}
         build_output = run(['build'])
-        modules = set(manifest['modules'])
+        modules = {r['module'] for r in manifest['modules']}
         built = set(re.findall(r'\bBuilt (\S+)', build_output)) & modules
         replayed = set(re.findall(r'\bReplayed (\S+)', build_output)) & modules
-        receipt['compiled_local_modules'] = sorted(built)
-        receipt['replayed_local_modules'] = sorted(replayed)
-        if receipt['fresh_local_build']:
-            require(built == modules and not replayed, 'Fresh build did not compile every probe module')
-        output = run(['env', 'lean', 'ProbeAxioms.lean'])
-        rows = re.findall(
-            r"^'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
-            output, re.M)
-        require(len(rows) == len(wanted) and {name for name, _ in rows} == set(wanted),
-                'Incomplete or extra axiom reports')
-        require(all(set(filter(None, axioms.split(', '))) <= ALLOWED for _, axioms in rows),
-                'Nonstandard axiom')
-        receipt['audit_declarations'] = len(rows)
-        for name, digest in manifest['files'].items():
-            require(sha(ROOT / name) == digest, 'Probe source changed during build: ' + name)
-        receipt['local_artifacts'] = footprint(ROOT / '.lake/build')
-        receipt['module_olean_sha256'] = {
-            name: sha(ROOT / '.lake/build/lib/lean' / (name + '.olean'))
-            for name in manifest['modules']}
-        receipt['dependencies'] = {}
-        lake_manifest = json.loads((ROOT / 'lake-manifest.json').read_text())
-        for package in lake_manifest['packages']:
-            directory = ROOT / lake_manifest['packagesDir'] / package['name']
-            head = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=directory,
-                                           text=True).strip()
-            require(head == package['rev'], 'Wrong dependency commit: ' + package['name'])
-            dirty = subprocess.check_output(['git', 'status', '--porcelain',
-                                            '--untracked-files=no'], cwd=directory, text=True)
-            require(not dirty, 'Modified dependency: ' + package['name'])
-            extra = subprocess.check_output(['git', 'ls-files', '--others',
-                                             '--exclude-standard', '-z'], cwd=directory).decode().split('\0')
-            require(not any(name.endswith('.lean') for name in extra),
-                    'Untracked Lean dependency source: ' + package['name'])
-            paths = subprocess.check_output(['git', 'ls-files', '-z'], cwd=directory).decode().split('\0')
-            records = [(name, sha(directory / name)) for name in sorted(filter(None, paths))]
-            receipt['dependencies'][package['name']] = {
-                'commit': head, 'tracked_source_sha256': hashlib.sha256(
-                    json.dumps(records, separators=(',', ':')).encode()).hexdigest(),
-                'build_artifacts': footprint(directory / '.lake/build')}
+        receipt['compiledLocalModules'] = sorted(built)
+        receipt['replayedLocalModules'] = sorted(replayed)
+        if receipt['freshLocalBuild']:
+            require(built == modules and not replayed, 'Fresh build did not compile every local module')
+        for key, audit in manifest['audits'].items():
+            output = run(['env', 'lean', audit['source']])
+            rows = re.findall(r"^'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)", output, re.M)
+            wanted = audit['declarations']
+            require(len(rows) == len(wanted) and {n for n, _ in rows} == set(wanted),
+                    'Incomplete, duplicate, or extra axiom reports: ' + key)
+            declarations = {n: list(filter(None, axioms.split(', '))) for n, axioms in rows}
+            require(all(set(names) <= ALLOWED for names in declarations.values()), 'Nonstandard axiom: ' + key)
+            receipt['audits'][key] = {'source': audit['source'], 'declarationCount': len(declarations),
+                'declarations': declarations, 'seconds': receipt['commands'][-1]['seconds']}
+        after = dependency_sources(manifest)
+        require(before == after, 'Dependency sources changed during verification')
+        receipt['dependencies'] = after
+        for name, record in receipt['dependencies'].items():
+            record['buildArtifacts'] = footprint(ROOT / lake_manifest['packagesDir'] / name / '.lake/build')
+            record['buildArtifactsBefore'] = artifacts_before[name]
+            record['artifactsChangedDuringBuild'] = record['buildArtifacts'] != artifacts_before[name]
+        require(sha(prefix / 'bin/lean') == receipt['toolchain']['leanBinarySha256']
+                and sha(prefix / 'bin/lake') == receipt['toolchain']['lakeBinarySha256']
+                and footprint(prefix / 'lib/lean') == receipt['toolchain']['bundledLibraries'],
+                'Toolchain files changed during verification')
+        receipt['toolchainFingerprintUnchanged'] = True
+        require(validate_manifest() == manifest, 'Manifest changed during verification')
+        require(sha(ROOT / 'port-manifest.json') == receipt['manifestSha256'], 'Manifest changed during verification')
+        receipt['sourceFilesUnchanged'] = True
+        receipt['localArtifacts'] = footprint(ROOT / '.lake/build')
+        receipt['moduleOleanSha256'] = {name: sha(ROOT / '.lake/build/lib/lean' / (name.replace('.', '/') + '.olean')) for name in sorted(modules)}
+        require(time.monotonic() - started < 2700, 'Total verification exceeded 45 minutes')
         receipt['status'] = 'PASS'
     except Exception as exc:
         receipt['status'] = 'FAIL'
         receipt['error'] = str(exc)
         raise
     finally:
-        receipt['completed_utc'] = datetime.now(timezone.utc).isoformat()
+        receipt['completedUtc'] = datetime.now(timezone.utc).isoformat()
+        receipt['totalSeconds'] = round(time.monotonic() - started, 3)
         if args.receipt:
+            args.receipt.parent.mkdir(parents=True, exist_ok=True)
             args.receipt.write_text(json.dumps(receipt, indent=2) + '\n')
-    print(f"PASS Phase 1 probe: {len(manifest['modules'])} modules; {len(wanted)} axiom reports")
+    kind = 'fresh' if receipt['freshLocalBuild'] else 'incremental (not a fresh-build receipt)'
+    print(f"PASS full Lean 4.21 port: 147 modules, five audits; {kind}")
 
 
 if __name__ == '__main__':

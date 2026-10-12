@@ -49,26 +49,26 @@ def invPerm (t : Tag) (i : Axis) : Axis :=
 def sourceMask (t : Slot) (i : Axis) : Bool := (lookup sourceBits t.val).testBit i.val
 def targetMask (t : Slot) (i : Axis) : Bool := (lookup targetBits t.val).testBit i.val
 
-theorem perm_inverse : ∀ (t : Tag) (i : Axis), invPerm t (perm t i) = i := by decide
-theorem inverse_perm : ∀ (t : Tag) (i : Axis), perm t (invPerm t i) = i := by decide
-theorem perm_support : ∀ (s : Slot) (i : Axis), targetMask s (perm (slotTag s) i) = sourceMask s i := by decide
+theorem perm_inverse : ∀ (t : Tag) (i : Axis), invPerm t (perm t i) = i := by decide +kernel
+theorem inverse_perm : ∀ (t : Tag) (i : Axis), perm t (invPerm t i) = i := by decide +kernel
+theorem perm_support : ∀ (s : Slot) (i : Axis), targetMask s (perm (slotTag s) i) = sourceMask s i := by decide +kernel
 
 def fingerprint (t : Tag) : Nat :=
   (List.range 8).foldl (fun n i => n + (perm t ⟨i % 64, Nat.mod_lt _ (by decide)⟩).val * 64^i) 0
 
-theorem fingerprint_injective : ∀ (a b : Tag), fingerprint a = fingerprint b → a = b := by decide
+theorem fingerprint_injective : ∀ (a b : Tag), fingerprint a = fingerprint b → a = b := by decide +kernel
 
-theorem owner_inverse : ∀ r : Role, lookup inverseOwnerTable (59*family r+(tag r).val) = r.val := by decide
+theorem owner_inverse : ∀ r : Role, lookup inverseOwnerTable (59*family r+(tag r).val) = r.val := by decide +kernel
 
 theorem family_tag_injective {r s : Role} (hf : family r = family s) (ht : tag r = tag s) : r = s := by
   apply Fin.ext
   rw [← owner_inverse r, ← owner_inverse s, hf, ht]
 
-theorem family_data : ∀ r : Fin 240, family ⟨r.val, Nat.lt_trans r.isLt (by decide)⟩ = r.val := by decide
+theorem family_data : ∀ r : Fin 240, family ⟨r.val, Nat.lt_trans r.isLt (by decide)⟩ = r.val := by decide +kernel
 
-theorem helper_range : ∀ r : Role, 240 ≤ r.val → 7680 ≤ family r ∧ family r < 14259 := by decide
+theorem helper_range : ∀ r : Role, 240 ≤ r.val → 7680 ≤ family r ∧ family r < 14259 := by decide +kernel
 
-theorem helper_frame : ∀ r : Role, 240 ≤ r.val → lookup initialFrameTable r.val = lookup slotInitialFrame (slot r).val := by decide
+theorem helper_frame : ∀ r : Role, 240 ≤ r.val → lookup initialFrameTable r.val = lookup slotInitialFrame (slot r).val := by decide +kernel
 
 end ParentOwnership
 #print axioms ParentOwnership.perm_inverse

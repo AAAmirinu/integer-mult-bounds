@@ -1,90 +1,87 @@
-# Validation on the current upstream base
+# Validation of the Lean 4.21 port
 
 Exact upstream base: `db0e57bc7f36b5ac0fc844ad7ce1396165ee6647`.
-Local review branch: `lean/pr442-invocation-review`.
-The previous branch remains at `377012d9e1d350c29fc47669e82415249429f60c`.
+The port is isolated from `lean/pr442-invocation-review` and PR #540.
 
-All 75 included Lean source files are byte-for-byte unchanged from that prior
-contribution. The permanent Task B declaration inventory now additionally names
-`SourceInvocation.actualContract`, bringing it to 931 entries. No proof was
-edited to pass a build.
+## Current status: stopped; full verification pending
 
-## Current build status
+The Phase 2 probe stopped at the user-specified performance gate:
+`lake build FrameGeometry` was terminated at 17.199 seconds after reaching
+the 17.187-second cap (three times its 5.729-second historical module time).
+There is no FrameGeometry PASS. Lake overhead and compiler time were not
+separately measured. No compilation was retried after this stop condition.
+See [the Phase 2 report](../lean-multi-host-source/PORT-PHASE2.md) and its
+saved probe evidence. The successful split FrameData group is a bounded
+development result, not a full fresh Task B replay.
 
-**Fresh Task A and Task B replays: PASS.** Task B completed at
-2026-10-12 03:19:37 UTC.
+The complete fresh Lean 4.21 package build, all audits and final CI runtime
+qualification are **not yet reported as passed**. The target versions are
+Lean 4.21.0 (`6741444a63eec253a7eae7a83f1beb3de015023d`) and Mathlib
+`308445d7985027f538e281e18df29ca16ede2ba3`, exactly matching upstream
+`formal/lean`. The canonical completed receipt will be
+`validation/lean421-fresh.json`, bound directly to the current
+`../lean-multi-host-source/port-manifest.json`.
 
-| Check | Current result | Evidence |
-| --- | --- | --- |
-| Task A | PASS: six modules freshly compiled, zero reused; 21 axiom reports | [fresh receipt](validation/task-a.json), [log](validation/task-a.log) |
-| Task B | PASS: 52 modules freshly compiled, zero reused, zero legacy reused; 931 axiom reports including `SourceInvocation.actualContract` | [fresh receipt](validation/task-b.json), [log](validation/task-b.log) |
-| Source extraction | PASS: six input hashes and all 19,002 events in order | [source receipt](validation/source-binding.json) |
-| Package and delivery | Checked separately from Lean compilation; consult the separate receipts for their results | [package receipt](package-validation.json) and exported delivery receipt |
+The earlier [Phase 1 results](../lean-multi-host-source/PORT-PHASE1.md)
+cover a bounded subset only. They establish neither the full package nor
+its final CI runtime. Further isolated module probes likewise do not
+replace a complete fresh build.
 
-Task A started on 2026-10-12 and completed with `lean -t 0`. Task B started
-after Task A passed. Both use Lean 4.33.0 at
-`d8b18978322de05a8f3dba51ef03cf5461676c17`; Task B uses Mathlib
-`db584cd6d46c92f209a44c0f1c829460d327499d` and its pinned manifest.
+The full run must compile all 147 local module roots without reusing local
+artifacts, then check the original 931 Task B declarations, 21 Task A
+declarations and three legacy contribution audits. Installed Lean, Mathlib,
+transitive dependencies and artifact fingerprints must be recorded. Ordinary
+Lake commands must work with the inherited default external settings.
+Source heartbeat/recursion options remain permitted.
 
-The unchanged Task B runner fingerprinted the installed Lean distribution,
-Mathlib, all eight manifest dependencies, and their artifacts before compilation,
-and recorded the same fingerprint afterward. Its completed fresh receipt
-binds the current manifest, every module's source and artifacts, ordered
-local dependency hashes, and all 931 axiom reports. The `actualContract`
-report lists only `propext`, `Classical.choice`, and `Quot.sound`.
+The contribution comprises 66 original Lean files (64 compiled modules and
+two separately invoked audit scripts), with 83 additional modules from
+same-content certificate partitioning. Nine archived third-party overlap
+snapshots account for the remainder of the historical 75-file count. They
+remain unchanged and inventory-hashed, but are outside this port's build,
+CI and axiom inventory. The differential test is delegated separately and
+is not a claimed result of this validation.
 
-Task A accepts only `propext` and `Quot.sound`; Task B additionally permits
-`Classical.choice`. These reports are transitive axiom inventories; a count
-of named reports is not a count of new mathematical ideas.
+The runtime projection must account for a four-core GitHub runner slower than
+this machine, using a stated slowdown and safety margin. The planning model
+uses 1.5 times measured time plus a further 20% margin. The package will not be
+reported complete if the resulting projection exceeds approximately 30
+minutes; the upstream formal job's hard timeout remains 45 minutes.
+Dependency-cache setup assumptions and any source-build fallback must be
+reported explicitly.
 
-## Integrity checks
+## Historical Lean 4.33 evidence
 
-```sh
-python3 research/lean-external-review/verify_package.py
-python3 research/lean-multi-host-source/check_sources.py
-```
+`validation/task-a.json`, `validation/task-b.json`, their logs and
+`validation/run-metadata.json` are retained at their original paths for
+historical comparison. **They are not receipts for the current port.**
+The 4.33 run completed Task B at 2026-10-12 03:19:37 UTC, compiling six Task A
+modules and 52 Task B modules fresh and auditing 21 and 931 declarations.
+It used Lean `d8b18978322de05a8f3dba51ef03cf5461676c17` and Mathlib
+`db584cd6d46c92f209a44c0f1c829460d327499d`.
 
-The ordinary verifier checks the package, manifested sources, source binding,
-and both current fresh receipts. It requires direct manifest matches, complete
-axiom inventories, and fresh Task B compilation with no reused modules.
-These integrity checks inspect recorded evidence; they do not themselves run
-Lean or authenticate the origin of the recorded build.
+That recorded fresh run fingerprinted the installed Lean distribution,
+Mathlib, its eight dependencies and their artifacts before and after
+compilation. Earlier historical Task B builds had not fingerprinted installed
+Mathlib/dependency libraries. The later 4.33 fresh run records its own
+libraries; it neither authenticates the earlier bytes nor establishes the
+4.21 port. No historical receipt is reanchored as current verification.
 
-Current evidence is directly bound to current manifests. The earlier
-metadata-reanchoring helper and receipt are no longer part of this delivery's
-verification path. Original `replay-result.json` files and older review
-receipts remain historical context; their 930-entry Task B inventories and
-legacy reuse do not establish the current 931-entry result.
+## Integrity and limitations
 
-The old Task B compilation did not fingerprint its installed external libraries.
-The completed current fresh build records those hashes for the new run.
-It does not repair the historical receipt or authenticate earlier library bytes.
-No project compiled module was reused in the current run. Installed public
-Lean/Mathlib dependencies are fingerprinted; rebuilding Mathlib itself is not
-claimed by the project replay. Nor is this a `leanchecker --fresh` audit of
-every constant in the complete imported Lean/Std/Mathlib environment.
+The strict package verifier checks current file hashes, the canonical port
+manifest and a matching fresh receipt. It fails when the current receipt is
+absent. Preparation mode `--allow-pending-port` reports `PENDING_PORT`.
+These checks inspect recorded evidence; they do not run Lean or authenticate
+the origin of the receipt. [BUILD.md](BUILD.md) describes fresh reproduction.
 
-## Delivery and review limits
+Only standard Lean axioms are permitted. A count of named axiom reports is
+not a count of new mathematical ideas. A project build against fingerprinted
+public dependencies does not claim a fresh Mathlib rebuild or a
+`leanchecker --fresh` audit of every imported constant.
 
-The exporter creates one patch from the exact upstream base above. Validation
-unpacks the archive, checks file hashes and source regeneration, then applies
-that patch to an isolated base tree and requires the committed result tree.
-Delivery validation uses the ordinary strict checks, requiring both fresh
-proof receipts. Its exported receipt records the result separately from the
-Lean compilation receipts.
-
-The historical `make gen4-bank-verify` PASS and timed-out `make verify` sweep
-were on the older base. They have not been rerun on this upstream base and are
-not current integration evidence. No upstream generator or `upstream/` input
-was changed.
-
-See [MERGED-OVERLAP.md](MERGED-OVERLAP.md) for the incorporated #442/#509/#516
-comparison, draft #528, and the toolchain mismatch. The current changes do not
-prove source scheduling of the hand-supplied pending ranges or exercise
-cross-invocation disjointness. Full cover sweeps, later scheduling, global
-allocation equivalence, costs, all-size compilation, analytic transfer and κ
-remain outside scope.
-
-The fresh project proof builds are complete. Maintainer review is still needed
-for source fidelity, the comparison boundary, and integration with the
-incorporated formal packages; a successful build does not settle those questions.
+Source fidelity, comparison boundaries and integration still require
+maintainer review. Hand-supplied pending ranges remain unbound to the source
+schedule; cross-invocation disjointness is not exercised. Full cover sweeps,
+later scheduling, global allocation equivalence, costs, all-size compilation,
+analytic transfer and κ remain outside the mathematical scope.

@@ -90,5 +90,6 @@
     "WholeHosting.PhysicalExample.old_output_is_threaded",
     "WholeHosting.PhysicalExample.relocated_output_is_threaded",
     "WholeHosting.PhysicalExample.absorption"
-  ]
+  ],
+  "lean_commit": "6741444a63eec253a7eae7a83f1beb3de015023d"
 }

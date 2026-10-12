@@ -24,29 +24,29 @@ Main declarations include `MultiHosting.multi_hosting`,
 `selected_native_completion`, `selected_native_realization`, and
 `selected_temporary_restoration` (the latter names are in `SourceInvocation`).
 
-Both tasks passed fresh without resume: Task A compiled six modules and
-audited 21 declarations; Task B compiled 52 modules and audited 931
-declarations, including `SourceInvocation.actualContract`. No project modules
-were reused. Task B completed at 2026-10-12 03:19:37 UTC; its
-[fresh receipt](https://github.com/cheesegrader/integer-mult-bounds/blob/lean/pr442-invocation-review/research/lean-external-review/validation/task-b.json)
-matches the current manifest and records unchanged installed toolchain/library
-fingerprints before and after compilation. The replay used pinned, fingerprinted
-Lean/Mathlib dependencies; it does not claim a fresh Mathlib rebuild or a
-`leanchecker --fresh` audit of the complete imported environment.
-Reproduce after the [dependency setup](https://github.com/cheesegrader/integer-mult-bounds/blob/lean/pr442-invocation-review/research/lean-external-review/README.md):
+The package is being ported to the project's exact Lean 4.21.0 / Mathlib
+`308445d7985027f538e281e18df29ca16ede2ba3` setup. Full fresh replay and CI
+runtime qualification are pending; historical Lean 4.33 passes do not
+establish this port. The current probe stopped at the FrameGeometry
+three-times-baseline timing gate; no full-port PASS is claimed.
+The intended reproduction command after the documented
+pinned dependency setup is:
 
 ```sh
-python3 research/lean-external-review/reproduce.py \
-  --lean /path/to/lean-4.33.0-linux/bin/lean \
-  --mathlib /path/to/mathlib4 \
-  --build-dir /tmp/review-task-b-fresh \
-  --receipt-dir /tmp/review-receipts-fresh
+make formal-pr442-verify
 ```
 
-The base is `db0e57bc7f36b5ac0fc844ad7ce1396165ee6647`. The package uses
-Lean 4.33.0 / Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`;
-upstream #509/#516 use 4.21.0 / `308445d7985027f538e281e18df29ca16ede2ba3`.
-No port is included.
+The ordinary Lake build uses no external resource overrides, extra compiler
+flags or environment settings. The permanent audits retain 931 Task B
+declarations, including `SourceInvocation.actualContract`, and 21 Task A
+declarations. The port covers 66 original contribution files; nine unchanged
+archived third-party snapshots are excluded from this build and its audits.
+Certificate partitioning adds independent modules without changing theorem
+statements. The full package must qualify below an approximately 30-minute
+projection on a slower four-core runner before it is reported ready.
+The differential test is delegated separately and is not a reported check here.
+
+The exact upstream base is `db0e57bc7f36b5ac0fc844ad7ce1396165ee6647`.
 
 Scope limits:
 
@@ -73,4 +73,5 @@ Questions for maintainers:
 2. Is retaining all host/data/exterior outputs with explicit auxiliary bank
    outputs the right boundary for later scheduling proofs?
 3. Where should these concrete certificates integrate with #509/#516 and #528?
-4. Is a standalone Lean 4.33 package acceptable, or is a 4.21 port required?
+4. The Lean 4.21 port is in progress. Once its fresh replay and CI budget pass,
+   does the proposed Lake package and formal CI target fit the project layout?

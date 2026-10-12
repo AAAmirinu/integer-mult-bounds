@@ -11,6 +11,10 @@ set_option maxRecDepth 100000
 open TreeReplay
 open LinearReplay (evalRow evalRow_zero evalRow_xor evalRow_shift_basis)
 
+-- Use the generic evaluator/tabulation lemmas in these proofs. Avoid eagerly
+-- expanding the literal row count or the complete tabulated tree in Lean 4.21.
+attribute [local irreducible] evalRow Tree.tabulate
+
 def endpointRow (i : Nat) : Nat :=
   if i < 987 then
     if 120 ≤ i ∧ i < 240 then (1 <<< i) ^^^ (1 <<< (i - 120)) else 1 <<< i

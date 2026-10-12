@@ -1,8 +1,12 @@
 # Reproducing the source-invocation work
 
-**Phase 1 port branch:** the instructions below describe the Lean 4.33 baseline.
-For the bounded Lean 4.21 Lake package, use [PORT-PHASE1.md](PORT-PHASE1.md).
-No environment override or raised stack is used for that probe.
+**Historical Lean 4.33 instructions:** the commands and manifest references
+below apply only to review baseline `c4b1560a569f54064608bf88440f9e492c03fba3`.
+Current manifests and source-version fields target 4.21. For the current
+ordinary Lake route, use [the external build instructions](../lean-external-review/BUILD.md).
+The Phase 2 port is stopped at its performance gate; see
+[PORT-PHASE2.md](PORT-PHASE2.md). The bounded Phase 1 results remain in
+[PORT-PHASE1.md](PORT-PHASE1.md).
 
 Task A has its own independent replay in `../lean-multi-host-framework`.
 This directory concerns Task B. A successful build certifies the statements

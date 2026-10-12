@@ -1,9 +1,19 @@
+## Lean 4.21 port stopped at the performance gate
+
+The port covers all 66 contribution Lean files. The nine Lean files under
+`review-receipts/external-overlap/raw/` are archived snapshots of other authors’
+work, retained byte-for-byte as review evidence. They are excluded from Lake
+build targets, CI compilation, and axiom audits; they are not compatibility
+inputs. The full port and CI runtime validation are not yet complete.
+See [PORT-PHASE2.md](PORT-PHASE2.md) for the FrameGeometry timeout, successful
+bounded probes and remaining validation gates.
+
 # One concrete invocation of whole-residual hosting
 
 **This branch contains a partial Lean 4.21 port.** See
 [PORT-PHASE1.md](PORT-PHASE1.md) for its separate Lake build, manifest and results.
-The full 4.33 package manifests and receipts below are retained as the baseline;
-they do not certify this branch's changed data representation on 4.21.
+Historical 4.33 receipts are retained as the baseline; current manifests target
+4.21 and do not yet have a complete fresh-build receipt.
 
 This is Task B of the local verification contribution. Task A, the abstract
 multi-host theorem and recovery of the previous single-host theorem, is
@@ -63,8 +73,8 @@ The final statements are collected in `SourceInvocation.lean`:
 The permanent axiom-audit inventory now includes the constructed definition
 `SourceInvocation.actualContract`, alongside the 930 named theorem declarations:
 931 declarations in total. The historical 930-declaration receipt does not
-certify that expanded inventory. The completed fresh replay audits all 931
-declarations; its result and receipt are reported separately in
+certify that expanded inventory. The completed historical 4.33 fresh replay
+audits all 931 declarations; it does not certify this port. Status is reported in
 [`../lean-external-review/VALIDATION.md`](../lean-external-review/VALIDATION.md).
 
 The geometry uses exact integer witnesses, cast into any field with
@@ -132,7 +142,7 @@ or a higher κ. PR448's advertised split gain remains unestablished.
 
 ## Reproduction and review
 
-See [BUILD.md](BUILD.md) for the pinned Lean/Mathlib build and replay commands,
+See [the current Lake build instructions](../lean-external-review/BUILD.md),
 [source-versions.json](source-versions.json) for the source and input hashes,
 and [proof-manifest.json](proof-manifest.json) for the local module inventory.
 `check_sources.py` checks the raw source binding and regenerates the literal

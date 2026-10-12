@@ -61,6 +61,7 @@ theorem cast_mul_factor (K : Type*) [Field K] (a b c : Matrix (Fin 8) (Fin 8) In
     (h : a * b = k • c) :
     castMatrix K a * castMatrix K b = (k : K) • castMatrix K c := by
   have hc := congrArg (fun m : Matrix (Fin 8) (Fin 8) Int => m.map (Int.castRingHom K)) h
+  dsimp only at hc
   rw [Matrix.map_mul] at hc
   change castMatrix K a * castMatrix K b = _ at hc
   rw [hc]

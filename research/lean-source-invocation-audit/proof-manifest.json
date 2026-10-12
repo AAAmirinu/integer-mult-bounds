@@ -480,5 +480,6 @@
     "SourceInvocation.parent_witness",
     "SourceInvocation.declared_hosted_witness",
     "SourceInvocation.direct_single_host_bridge_impossible"
-  ]
+  ],
+  "lean_commit": "6741444a63eec253a7eae7a83f1beb3de015023d"
 }

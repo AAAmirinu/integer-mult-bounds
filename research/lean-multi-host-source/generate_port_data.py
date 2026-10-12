@@ -124,8 +124,8 @@ structure CertifiedPort where
         lines.append(f"def certified{index} : CertifiedPort where\n"
                      f"  basis := fun i j => intLookup {btree} (8 * i.val + j.val)\n"
                      f"  route := fun i j => intLookup {rtree} (16 * i.val + j.val)\n"
-                     "  column_correct := by decide\n  row_correct := by decide\n"
-                     "  route_correct := by decide\n\n")
+                     "  column_correct := by decide +kernel\n  row_correct := by decide +kernel\n"
+                     "  route_correct := by decide +kernel\n\n")
     lines.append('''inductive PortLookup where
   | leaf : CertifiedPort → PortLookup
   | node : PortLookup → PortLookup → PortLookup

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reproduce Task A and Task B from the portable sources (fresh by default)."""
+"""Reproduce the Lean 4.21 contribution with a fresh ordinary Lake build."""
 import argparse
 import json
 from pathlib import Path
@@ -7,41 +7,45 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[2]
+PROJECT = ROOT / 'research/lean-multi-host-source'
 
 
 def main():
-    p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--lean', type=Path, required=True)
-    p.add_argument('--mathlib', type=Path, required=True)
-    p.add_argument('--build-dir', type=Path, required=True)
-    p.add_argument('--receipt-dir', type=Path, required=True)
-    p.add_argument('--allow-pending-task-b', action='store_true',
-                   help='accept an explicitly pending package inventory before building Task B fresh')
-    p.add_argument('--resume', action='store_true',
-                   help='resume an environment-bound build made by the current runner')
-    a = p.parse_args()
-    out = a.receipt_dir.resolve()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--lake', default='lake', help='Lake executable selection only')
+    parser.add_argument('--receipt-dir', required=True, type=Path)
+    args = parser.parse_args()
+    build = PROJECT / '.lake/build'
+    if build.exists() and any(build.iterdir()):
+        raise RuntimeError('Fresh reproduction requires an empty local .lake/build; use a clean checkout')
+    out = args.receipt_dir.resolve()
+    if out.is_relative_to(ROOT):
+        raise RuntimeError('Write reproduction receipts outside the checkout')
     out.mkdir(parents=True, exist_ok=False)
-    lean, mathlib, build = map(lambda p: str(p.resolve()), (a.lean, a.mathlib, a.build_dir))
     commands = [
-        ['research/lean-external-review/verify_package.py', '--receipt', str(out / 'inventory.json')] +
-        (['--allow-pending-task-b'] if a.allow_pending_task_b else []),
-        ['research/lean-multi-host-source/check_sources.py', '--receipt', str(out / 'source-binding.json')],
-        ['research/lean-multi-host-framework/replay.py', '--lean', lean,
-         '--receipt', str(out / 'task-a.json')],
-        ['research/lean-multi-host-source/replay.py', '--lean', lean, '--mathlib', mathlib,
-         '--build-dir', build, '--receipt', str(out / 'task-b.json')] + (['--resume'] if a.resume else []),
+        ['research/lean-external-review/verify_package.py', '--allow-pending-port',
+         '--receipt', str(out / 'inventory-before.json')],
+        ['research/lean-multi-host-source/check_sources.py',
+         '--receipt', str(out / 'source-binding.json')],
+        ['research/lean-multi-host-source/test_flat_data.py'],
+        ['research/lean-multi-host-source/verify.py', '--lake', args.lake,
+         '--receipt', str(out / 'lean421-fresh.json')],
+        ['research/lean-external-review/verify_package.py',
+         '--build-receipt', str(out / 'lean421-fresh.json'),
+         '--receipt', str(out / 'inventory-after.json')],
     ]
-    for i, args in enumerate(commands):
-        command = [sys.executable, *args]
-        print('Running ' + args[0], flush=True)
-        with (out / f'{i + 1}.log').open('w') as log:
-            result = subprocess.run(command, cwd=ROOT, stdout=log, stderr=subprocess.STDOUT)
+    for index, arguments in enumerate(commands, 1):
+        print('Running ' + arguments[0], flush=True)
+        log_path = out / f'{index}.log'
+        with log_path.open('w') as log:
+            result = subprocess.run([sys.executable, *arguments], cwd=ROOT,
+                                    stdout=log, stderr=subprocess.STDOUT)
         if result.returncode:
-            print(f'FAILED: see {out / f"{i + 1}.log"}', file=sys.stderr)
+            print(f'FAILED: see {log_path}', file=sys.stderr)
             raise SystemExit(result.returncode)
-    print(json.dumps({'status': 'PASS', 'receipts': str(out), 'task_a': 'fresh',
-                      'task_b': 'resumed' if a.resume else 'fresh'}))
+    print(json.dumps({'status': 'PASS', 'receipts': str(out),
+                      'local_build': 'fresh', 'runner': 'ordinary Lake',
+                      'differential_test': 'separate delegated work; not run here'}))
 
 
 if __name__ == '__main__':
