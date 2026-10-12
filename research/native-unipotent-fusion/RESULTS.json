@@ -1,0 +1,145 @@
+{
+  "XOR_or_affine_optimality_claim": false,
+  "bad_primes": [
+    2
+  ],
+  "baseline_serialized_affine_events": 12,
+  "both_XOR_scans_after_chart_cancellation": 4,
+  "child_volume": "V/3 on q",
+  "child_width": "N/3",
+  "complete_DATA_c_or_C_supplier": false,
+  "final_private_wipe_volume_after_completed_endpoint": "V/3",
+  "fused_affine_events": 6,
+  "fused_children": 1,
+  "kappa_claim": false,
+  "old_rho4_defined_on_half_integral_generator": false,
+  "private_initialization_volume": "V/3",
+  "recovery_negative_control": {
+    "after_wipe_then_inverse": [
+      [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "entry": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "retained_forward_output": [
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "rings": [
+    {
+      "ADDRESS_basis_columns": 6,
+      "VALUE_spectator_columns": 5,
+      "dirty_BIT_basis_columns": 20,
+      "fixed_point_BIT_assignments": 16,
+      "modulus": 5
+    },
+    {
+      "ADDRESS_basis_columns": 6,
+      "VALUE_spectator_columns": 25,
+      "dirty_BIT_basis_columns": 100,
+      "fixed_point_BIT_assignments": 16,
+      "modulus": 25
+    },
+    {
+      "ADDRESS_basis_columns": 6,
+      "VALUE_spectator_columns": 7,
+      "dirty_BIT_basis_columns": 28,
+      "fixed_point_BIT_assignments": 16,
+      "modulus": 7
+    },
+    {
+      "ADDRESS_basis_columns": 6,
+      "VALUE_spectator_columns": 49,
+      "dirty_BIT_basis_columns": 196,
+      "fixed_point_BIT_assignments": 16,
+      "modulus": 49
+    }
+  ],
+  "signed_VALUE_lift": false,
+  "specified_baseline_children": 2,
+  "status": "PASS_EXACT_LOCAL_NATIVE_FUSION",
+  "three_DATA_plus_one_private_stock": "4/3",
+  "total_VALUE_spectator_columns": 86,
+  "total_dirty_BIT_columns": 344
+}
