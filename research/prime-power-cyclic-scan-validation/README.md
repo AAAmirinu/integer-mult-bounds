@@ -1,27 +1,32 @@
 # Portable replay evidence
 
-`macos-weighted/` and `linux-weighted/` are complete fresh replays of the
-current five-stage source manifest, including independently varying
-unit phases. They passed on macOS/Python3.14 in157.14s and Linux
-aarch64/Python3.12 in144.34s. All five deterministic certificates are
-byte-identical across platforms. The collector checks source pins, every
-artifact and log hash, and coverage derived from the actual records.
+`macos-dirty/` and `linux-dirty/` are complete fresh replays of the current
+nine-stage source manifest, including varying unit phases and dirty-array
+inverse shears. They passed on macOS/Python 3.14 in 164.74s and Linux
+aarch64/Python 3.12 in 163.67s. All nine deterministic certificates
+are byte-identical across platforms. The collector checks source pins,
+every artifact and log hash, and coverage derived from the actual records.
 
-The five stages cover108 generic cases,480 mixed-factor cases with240
-dense comparisons,345 budget instances,8384 stride mappings,43 routed
-executions, and116 varying-phase/coefficient cases with72 additional
-dense comparisons. All28 malformed/corrupted controls are rejected.
-Each current platform directory retains the receipt, five certificates,
-stage record, five logs and independent collection record.
+The original five stages retain 108 generic cases, 480 mixed-factor cases
+with 240 dense comparisons, 345 budget instances, 8384 stride mappings,
+43 routed executions, and 116 varying-phase/coefficient cases with 72 dense
+comparisons. The dirty extension adds 36 leaf cases, 120 dense compositions,
+24 actual-kernel cases and 1035 integer precision budgets. All 48 malformed
+or corrupted controls are rejected, including eight instruction mutations.
+Each current platform directory retains the receipt, nine certificates,
+stage record, nine logs and independent collection record.
 
-`macos/` and `linux/` preserve the earlier four-stage evidence at the
-original manifest947439ebc034aa28003d5940037b8abd05be94b1269b20fb09ca3d08bf3abb46.
-Those receipts are historical; their pins are not represented as current.
-Current manifest:bccbfe9d741d2b19f50e7749f8b161fbd80de0bded2ab05047f705e58f03367d.
+Current source manifest: `01ad8bfa2f392cdba88d398fdfd62f5d6cc1c172887cdc2c5ce38c9040d979e6`.
+
+`macos-weighted/` and `linux-weighted/` retain the previous five-stage
+replays at manifest `bccbfe9d741d2b19f50e7749f8b161fbd80de0bded2ab05047f705e58f03367d`.
+`macos/` and `linux/` retain the earlier four-stage evidence at manifest
+`947439ebc034aa28003d5940037b8abd05be94b1269b20fb09ca3d08bf3abb46`.
+These earlier receipts are historical, not evidence for the current source.
 
 Timings are operational metadata, not controlled performance benchmarks.
-The written proof and cited algorithms determine the general complexity
-claim; finite replays do not establish the full multiplication theorem.
-An initial earlier Linux transport was rejected before mathematical
-replay because macOS archive metadata added AppleDouble files. Explicit
+The written proof and cited algorithms determine general complexity;
+finite replays do not establish the complete multiplication theorem or
+bit-reversible arithmetic compilation. An initial earlier Linux transport
+was rejected because archive metadata added AppleDouble files; explicit
 regular-file archives corrected it without weakening source checks.

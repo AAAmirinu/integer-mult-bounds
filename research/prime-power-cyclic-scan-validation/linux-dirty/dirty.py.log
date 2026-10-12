@@ -1,0 +1,6 @@
+PASS factors 1
+PASS factors 2
+PASS factors 3
+PASS factors 5
+PASS factors 8
+PASS 36 leaf cases 120 compositions 7 controls

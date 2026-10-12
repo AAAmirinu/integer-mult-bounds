@@ -1,0 +1,5 @@
+PASS 4 1
+PASS 9 1
+PASS 9 2
+PASS 16 1
+{"status": "passed", "generic": 36, "cases": 80, "dense": 72, "controls": 6}

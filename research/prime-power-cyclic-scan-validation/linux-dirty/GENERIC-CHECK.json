@@ -1,0 +1,1431 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "beta": "1/2",
+      "b": [
+        "1/2",
+        "0"
+      ],
+      "length": 1,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "1/2",
+        "0"
+      ],
+      "length": 1,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "1/2",
+        "0"
+      ],
+      "length": 2,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "1/2",
+        "0"
+      ],
+      "length": 2,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "1/2",
+        "0"
+      ],
+      "length": 3,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "1/2",
+        "0"
+      ],
+      "length": 3,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "1/2",
+        "0"
+      ],
+      "length": 8,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "1/2",
+        "0"
+      ],
+      "length": 8,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "1/2",
+        "0"
+      ],
+      "length": 17,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "1/2",
+        "0"
+      ],
+      "length": 17,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "1/2",
+        "0"
+      ],
+      "length": 64,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "1/2",
+        "0"
+      ],
+      "length": 64,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "-1/2",
+        "0"
+      ],
+      "length": 1,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "-1/2",
+        "0"
+      ],
+      "length": 1,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "-1/2",
+        "0"
+      ],
+      "length": 2,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "-1/2",
+        "0"
+      ],
+      "length": 2,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "-1/2",
+        "0"
+      ],
+      "length": 3,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "-1/2",
+        "0"
+      ],
+      "length": 3,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "-1/2",
+        "0"
+      ],
+      "length": 8,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "-1/2",
+        "0"
+      ],
+      "length": 8,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "-1/2",
+        "0"
+      ],
+      "length": 17,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "-1/2",
+        "0"
+      ],
+      "length": 17,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "-1/2",
+        "0"
+      ],
+      "length": 64,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "-1/2",
+        "0"
+      ],
+      "length": 64,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "3/10",
+        "2/5"
+      ],
+      "length": 1,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "3/10",
+        "2/5"
+      ],
+      "length": 1,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "3/10",
+        "2/5"
+      ],
+      "length": 2,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "3/10",
+        "2/5"
+      ],
+      "length": 2,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "3/10",
+        "2/5"
+      ],
+      "length": 3,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "3/10",
+        "2/5"
+      ],
+      "length": 3,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "3/10",
+        "2/5"
+      ],
+      "length": 8,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "3/10",
+        "2/5"
+      ],
+      "length": 8,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "3/10",
+        "2/5"
+      ],
+      "length": 17,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "3/10",
+        "2/5"
+      ],
+      "length": 17,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "3/10",
+        "2/5"
+      ],
+      "length": 64,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/2",
+      "b": [
+        "3/10",
+        "2/5"
+      ],
+      "length": 64,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/4611686018427387904",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "15/16",
+        "0"
+      ],
+      "length": 1,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "15/16",
+        "0"
+      ],
+      "length": 1,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "15/16",
+        "0"
+      ],
+      "length": 2,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "15/16",
+        "0"
+      ],
+      "length": 2,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "15/16",
+        "0"
+      ],
+      "length": 3,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "15/16",
+        "0"
+      ],
+      "length": 3,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "15/16",
+        "0"
+      ],
+      "length": 8,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "15/16",
+        "0"
+      ],
+      "length": 8,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "15/16",
+        "0"
+      ],
+      "length": 17,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "15/16",
+        "0"
+      ],
+      "length": 17,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "15/16",
+        "0"
+      ],
+      "length": 64,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "15/16",
+        "0"
+      ],
+      "length": 64,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "-15/16",
+        "0"
+      ],
+      "length": 1,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "-15/16",
+        "0"
+      ],
+      "length": 1,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "-15/16",
+        "0"
+      ],
+      "length": 2,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "-15/16",
+        "0"
+      ],
+      "length": 2,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "-15/16",
+        "0"
+      ],
+      "length": 3,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "-15/16",
+        "0"
+      ],
+      "length": 3,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "-15/16",
+        "0"
+      ],
+      "length": 8,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "-15/16",
+        "0"
+      ],
+      "length": 8,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "-15/16",
+        "0"
+      ],
+      "length": 17,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "-15/16",
+        "0"
+      ],
+      "length": 17,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "-15/16",
+        "0"
+      ],
+      "length": 64,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "-15/16",
+        "0"
+      ],
+      "length": 64,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "9/16",
+        "3/4"
+      ],
+      "length": 1,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "9/16",
+        "3/4"
+      ],
+      "length": 1,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "9/16",
+        "3/4"
+      ],
+      "length": 2,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "9/16",
+        "3/4"
+      ],
+      "length": 2,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "9/16",
+        "3/4"
+      ],
+      "length": 3,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "9/16",
+        "3/4"
+      ],
+      "length": 3,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "9/16",
+        "3/4"
+      ],
+      "length": 8,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "9/16",
+        "3/4"
+      ],
+      "length": 8,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "9/16",
+        "3/4"
+      ],
+      "length": 17,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "9/16",
+        "3/4"
+      ],
+      "length": 17,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "9/16",
+        "3/4"
+      ],
+      "length": 64,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/16",
+      "b": [
+        "9/16",
+        "3/4"
+      ],
+      "length": 64,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/9007199254740992",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "4095/4096",
+        "0"
+      ],
+      "length": 1,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "4095/4096",
+        "0"
+      ],
+      "length": 1,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "4095/4096",
+        "0"
+      ],
+      "length": 2,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "4095/4096",
+        "0"
+      ],
+      "length": 2,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "4095/4096",
+        "0"
+      ],
+      "length": 3,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "4095/4096",
+        "0"
+      ],
+      "length": 3,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "4095/4096",
+        "0"
+      ],
+      "length": 8,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "4095/4096",
+        "0"
+      ],
+      "length": 8,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "4095/4096",
+        "0"
+      ],
+      "length": 17,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "4095/4096",
+        "0"
+      ],
+      "length": 17,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "4095/4096",
+        "0"
+      ],
+      "length": 64,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "4095/4096",
+        "0"
+      ],
+      "length": 64,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "-4095/4096",
+        "0"
+      ],
+      "length": 1,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "-4095/4096",
+        "0"
+      ],
+      "length": 1,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "-4095/4096",
+        "0"
+      ],
+      "length": 2,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "-4095/4096",
+        "0"
+      ],
+      "length": 2,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "-4095/4096",
+        "0"
+      ],
+      "length": 3,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "-4095/4096",
+        "0"
+      ],
+      "length": 3,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "-4095/4096",
+        "0"
+      ],
+      "length": 8,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "-4095/4096",
+        "0"
+      ],
+      "length": 8,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "-4095/4096",
+        "0"
+      ],
+      "length": 17,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "-4095/4096",
+        "0"
+      ],
+      "length": 17,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "-4095/4096",
+        "0"
+      ],
+      "length": 64,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "-4095/4096",
+        "0"
+      ],
+      "length": 64,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "2457/4096",
+        "819/1024"
+      ],
+      "length": 1,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "2457/4096",
+        "819/1024"
+      ],
+      "length": 1,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "2457/4096",
+        "819/1024"
+      ],
+      "length": 2,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "2457/4096",
+        "819/1024"
+      ],
+      "length": 2,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "2457/4096",
+        "819/1024"
+      ],
+      "length": 3,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "2457/4096",
+        "819/1024"
+      ],
+      "length": 3,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "2457/4096",
+        "819/1024"
+      ],
+      "length": 8,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "2457/4096",
+        "819/1024"
+      ],
+      "length": 8,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": true,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "2457/4096",
+        "819/1024"
+      ],
+      "length": 17,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "2457/4096",
+        "819/1024"
+      ],
+      "length": 17,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "2457/4096",
+        "819/1024"
+      ],
+      "length": 64,
+      "direction": -1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": false,
+      "residual_check": true
+    },
+    {
+      "beta": "1/4096",
+      "b": [
+        "2457/4096",
+        "819/1024"
+      ],
+      "length": 64,
+      "direction": 1,
+      "bits": 64,
+      "forward_error_bound": "27/536870912",
+      "dense_crosscheck": false,
+      "residual_check": true
+    }
+  ],
+  "controls": [
+    {
+      "name": "unstable",
+      "rejected": "uncertified stable factor"
+    },
+    {
+      "name": "underprecision",
+      "rejected": "precision too low for closure"
+    },
+    {
+      "name": "empty",
+      "rejected": "empty cycle"
+    },
+    {
+      "name": "bad_direction",
+      "rejected": "invalid direction"
+    },
+    {
+      "name": "corrupt_output",
+      "rejected": "residual error bound failed"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "positive": 1,
+  "controls": [
+    {
+      "name": "undo_in_forward_order",
+      "rejected": "dirty restoration"
+    },
+    {
+      "name": "wrong_inner_phase",
+      "rejected": "dense error"
+    },
+    {
+      "name": "omit_inner_shift",
+      "rejected": "dense error"
+    },
+    {
+      "name": "negative_word_not_reversed",
+      "rejected": "dense error"
+    },
+    {
+      "name": "omit_last_commutator_term",
+      "rejected": "dense error"
+    },
+    {
+      "name": "omit_scratch_restoration",
+      "rejected": "dirty restoration"
+    },
+    {
+      "name": "overwrite_dirty_scratch",
+      "rejected": "dirty restoration"
+    },
+    {
+      "name": "insufficient_rounding",
+      "rejected": "dense error"
+    }
+  ]
+}

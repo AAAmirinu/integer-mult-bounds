@@ -1,0 +1,100 @@
+{
+  "status": "PASS_ALL_FRESH_CYCLIC_SCAN_CERTIFICATES",
+  "manifest_sha256": "01ad8bfa2f392cdba88d398fdfd62f5d6cc1c172887cdc2c5ce38c9040d979e6",
+  "python": "3.14.8 (main, Sep 30 2026, 17:55:09) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "seconds": 164.73575083294418,
+  "stages": [
+    {
+      "script": "scan.py",
+      "certificate": "GENERIC-CHECK.json",
+      "exit_code": 0,
+      "seconds": 0.11269683297723532,
+      "log_sha256": "0d4c689ef33e5814b965851ae61048daa0ca67b61f87b9cfb9b6df1b1ca5d195"
+    },
+    {
+      "script": "check.py",
+      "certificate": "CHECK.json",
+      "exit_code": 0,
+      "seconds": 129.78048487496562,
+      "log_sha256": "4c5012532bc3cf8478e07cded47c39f6023839cf0bb0097729b7680d8c314f46"
+    },
+    {
+      "script": "check_budgets.py",
+      "certificate": "BUDGETS.json",
+      "exit_code": 0,
+      "seconds": 0.03071500000078231,
+      "log_sha256": "c10847602c0bfd47b491bc4e1fe2094015576ddd914cf560a860d888a09c6844"
+    },
+    {
+      "script": "check_layout.py",
+      "certificate": "LAYOUT-CHECK.json",
+      "exit_code": 0,
+      "seconds": 3.0233245419804007,
+      "log_sha256": "755150a81d929cee57c546b36aa15385b9aaabec176e78c6e231218b2d134659"
+    },
+    {
+      "script": "weighted.py",
+      "certificate": "WEIGHTED-CHECK.json",
+      "exit_code": 0,
+      "seconds": 13.39150712499395,
+      "log_sha256": "3c1edce0132112b148fbf897c787ed70c8cb24f41cda5be03d1e928f52337fdb"
+    },
+    {
+      "script": "dirty.py",
+      "certificate": "DIRTY-CHECK.json",
+      "exit_code": 0,
+      "seconds": 8.305770082981326,
+      "log_sha256": "42b8617f3e0bc267ebbeee908f836e36ddcbe3f0ad27463e6344babb310a22a8"
+    },
+    {
+      "script": "dirty_controls.py",
+      "certificate": "DIRTY-CONTROLS.json",
+      "exit_code": 0,
+      "seconds": 0.09807595901656896,
+      "log_sha256": "c185fee03384e3ebb54222f714d505b3acd9d489a12c02b9a5e69d9391cd5cd3"
+    },
+    {
+      "script": "dirty_kernels.py",
+      "certificate": "DIRTY-KERNELS.json",
+      "exit_code": 0,
+      "seconds": 9.940257958951406,
+      "log_sha256": "2f3364a6c067107aaa757db68c5b5a46f34301ac3e6eb1b26a51d6b52d485f81"
+    },
+    {
+      "script": "dirty_budgets.py",
+      "certificate": "DIRTY-BUDGETS.json",
+      "exit_code": 0,
+      "seconds": 0.038244000053964555,
+      "log_sha256": "df8ef0beb37ced99df4b114b217f96e52f593442280d04b2ddac08f5a5937ee5"
+    }
+  ],
+  "artifacts": {
+    "GENERIC-CHECK.json": "fae46227f36d213872fc7f56e25952987377dfb1d93f6fcaf24a6744998e1819",
+    "CHECK.json": "a5029c74505ff454ce2587e159c4e4b96760b5064edcea735fcc4039170078b1",
+    "BUDGETS.json": "fcba284aabb7ef2305ff4ddacb2af8ba614ccd9d9735affe3af0c199658c7a9c",
+    "LAYOUT-CHECK.json": "a4a725575ad7fc6bc6db84f74d2a14d12700d2380597b8382ebe12ae1d152c54",
+    "WEIGHTED-CHECK.json": "e5bf83ef5a58e2a87712741b68615eee194a85039365e65e6c1426e805bf6f7d",
+    "DIRTY-CHECK.json": "a236f367d5e3266cf92057fc5591d74e58fc266ed4474aba436f1731f015e81e",
+    "DIRTY-CONTROLS.json": "d7fa923a0f66f129a99581cd64ca44c762908af37eee9e86c67f3b81d1ec308c",
+    "DIRTY-KERNELS.json": "166ab50c1c57659c811f10b2866298cfdea09627bab97ecd22805ba5ce83353c",
+    "DIRTY-BUDGETS.json": "54d412e8450adb72334163a2a2485f30d1d29dfedeb872974d16605836881384",
+    "STAGES.json": "f686b77883b0833d5e5f78e3942e6dbea747b1a0d700a931d689351f17a868ef"
+  },
+  "coverage": {
+    "generic_cases": 108,
+    "mixed_cases": 480,
+    "mixed_dense_comparisons": 240,
+    "budget_cases": 345,
+    "stride_mappings": 8384,
+    "stride_executions": 43,
+    "weighted_generic_cases": 36,
+    "weighted_kernel_cases": 80,
+    "weighted_dense_comparisons": 72,
+    "dirty_generic_cases": 36,
+    "dirty_compositions": 120,
+    "dirty_kernel_cases": 24,
+    "dirty_budget_cases": 1035
+  },
+  "scope": "Finite and symbolic-budget evidence; no new kappa, physical tape benchmark, Pan implementation or complete multiplication theorem."
+}

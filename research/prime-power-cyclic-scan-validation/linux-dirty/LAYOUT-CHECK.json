@@ -1,0 +1,748 @@
+{
+  "status": "passed",
+  "mapping_cases": 8384,
+  "execution_cases": [
+    {
+      "length": 1,
+      "step": -1,
+      "dense": true,
+      "cycles": 1,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 0,
+        "record_copies": 0,
+        "key_comparisons": 0
+      },
+      "backward_sort": {
+        "passes": 0,
+        "record_copies": 0,
+        "key_comparisons": 0
+      }
+    },
+    {
+      "length": 1,
+      "step": 0,
+      "dense": true,
+      "cycles": 1,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 0,
+        "record_copies": 0,
+        "key_comparisons": 0
+      },
+      "backward_sort": {
+        "passes": 0,
+        "record_copies": 0,
+        "key_comparisons": 0
+      }
+    },
+    {
+      "length": 1,
+      "step": 1,
+      "dense": true,
+      "cycles": 1,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 0,
+        "record_copies": 0,
+        "key_comparisons": 0
+      },
+      "backward_sort": {
+        "passes": 0,
+        "record_copies": 0,
+        "key_comparisons": 0
+      }
+    },
+    {
+      "length": 1,
+      "step": 2,
+      "dense": true,
+      "cycles": 1,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 0,
+        "record_copies": 0,
+        "key_comparisons": 0
+      },
+      "backward_sort": {
+        "passes": 0,
+        "record_copies": 0,
+        "key_comparisons": 0
+      }
+    },
+    {
+      "length": 1,
+      "step": 5,
+      "dense": true,
+      "cycles": 1,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 0,
+        "record_copies": 0,
+        "key_comparisons": 0
+      },
+      "backward_sort": {
+        "passes": 0,
+        "record_copies": 0,
+        "key_comparisons": 0
+      }
+    },
+    {
+      "length": 2,
+      "step": -1,
+      "dense": true,
+      "cycles": 1,
+      "cycle_length": 2,
+      "forward_sort": {
+        "passes": 1,
+        "record_copies": 2,
+        "key_comparisons": 1
+      },
+      "backward_sort": {
+        "passes": 1,
+        "record_copies": 2,
+        "key_comparisons": 1
+      }
+    },
+    {
+      "length": 2,
+      "step": 0,
+      "dense": true,
+      "cycles": 2,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 1,
+        "record_copies": 2,
+        "key_comparisons": 1
+      },
+      "backward_sort": {
+        "passes": 1,
+        "record_copies": 2,
+        "key_comparisons": 1
+      }
+    },
+    {
+      "length": 2,
+      "step": 1,
+      "dense": true,
+      "cycles": 1,
+      "cycle_length": 2,
+      "forward_sort": {
+        "passes": 1,
+        "record_copies": 2,
+        "key_comparisons": 1
+      },
+      "backward_sort": {
+        "passes": 1,
+        "record_copies": 2,
+        "key_comparisons": 1
+      }
+    },
+    {
+      "length": 2,
+      "step": 2,
+      "dense": true,
+      "cycles": 2,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 1,
+        "record_copies": 2,
+        "key_comparisons": 1
+      },
+      "backward_sort": {
+        "passes": 1,
+        "record_copies": 2,
+        "key_comparisons": 1
+      }
+    },
+    {
+      "length": 2,
+      "step": 7,
+      "dense": true,
+      "cycles": 1,
+      "cycle_length": 2,
+      "forward_sort": {
+        "passes": 1,
+        "record_copies": 2,
+        "key_comparisons": 1
+      },
+      "backward_sort": {
+        "passes": 1,
+        "record_copies": 2,
+        "key_comparisons": 1
+      }
+    },
+    {
+      "length": 3,
+      "step": -1,
+      "dense": true,
+      "cycles": 1,
+      "cycle_length": 3,
+      "forward_sort": {
+        "passes": 2,
+        "record_copies": 6,
+        "key_comparisons": 3
+      },
+      "backward_sort": {
+        "passes": 2,
+        "record_copies": 6,
+        "key_comparisons": 3
+      }
+    },
+    {
+      "length": 3,
+      "step": 0,
+      "dense": true,
+      "cycles": 3,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 2,
+        "record_copies": 6,
+        "key_comparisons": 3
+      },
+      "backward_sort": {
+        "passes": 2,
+        "record_copies": 6,
+        "key_comparisons": 3
+      }
+    },
+    {
+      "length": 3,
+      "step": 1,
+      "dense": true,
+      "cycles": 1,
+      "cycle_length": 3,
+      "forward_sort": {
+        "passes": 2,
+        "record_copies": 6,
+        "key_comparisons": 3
+      },
+      "backward_sort": {
+        "passes": 2,
+        "record_copies": 6,
+        "key_comparisons": 3
+      }
+    },
+    {
+      "length": 3,
+      "step": 2,
+      "dense": true,
+      "cycles": 1,
+      "cycle_length": 3,
+      "forward_sort": {
+        "passes": 2,
+        "record_copies": 6,
+        "key_comparisons": 3
+      },
+      "backward_sort": {
+        "passes": 2,
+        "record_copies": 6,
+        "key_comparisons": 3
+      }
+    },
+    {
+      "length": 3,
+      "step": 9,
+      "dense": true,
+      "cycles": 3,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 2,
+        "record_copies": 6,
+        "key_comparisons": 3
+      },
+      "backward_sort": {
+        "passes": 2,
+        "record_copies": 6,
+        "key_comparisons": 3
+      }
+    },
+    {
+      "length": 4,
+      "step": -1,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 4,
+      "forward_sort": {
+        "passes": 2,
+        "record_copies": 8,
+        "key_comparisons": 5
+      },
+      "backward_sort": {
+        "passes": 2,
+        "record_copies": 8,
+        "key_comparisons": 5
+      }
+    },
+    {
+      "length": 4,
+      "step": 0,
+      "dense": false,
+      "cycles": 4,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 2,
+        "record_copies": 8,
+        "key_comparisons": 4
+      },
+      "backward_sort": {
+        "passes": 2,
+        "record_copies": 8,
+        "key_comparisons": 4
+      }
+    },
+    {
+      "length": 4,
+      "step": 1,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 4,
+      "forward_sort": {
+        "passes": 2,
+        "record_copies": 8,
+        "key_comparisons": 4
+      },
+      "backward_sort": {
+        "passes": 2,
+        "record_copies": 8,
+        "key_comparisons": 4
+      }
+    },
+    {
+      "length": 4,
+      "step": 2,
+      "dense": false,
+      "cycles": 2,
+      "cycle_length": 2,
+      "forward_sort": {
+        "passes": 2,
+        "record_copies": 8,
+        "key_comparisons": 5
+      },
+      "backward_sort": {
+        "passes": 2,
+        "record_copies": 8,
+        "key_comparisons": 5
+      }
+    },
+    {
+      "length": 4,
+      "step": 11,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 4,
+      "forward_sort": {
+        "passes": 2,
+        "record_copies": 8,
+        "key_comparisons": 5
+      },
+      "backward_sort": {
+        "passes": 2,
+        "record_copies": 8,
+        "key_comparisons": 5
+      }
+    },
+    {
+      "length": 5,
+      "step": -1,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 5,
+      "forward_sort": {
+        "passes": 3,
+        "record_copies": 15,
+        "key_comparisons": 7
+      },
+      "backward_sort": {
+        "passes": 3,
+        "record_copies": 15,
+        "key_comparisons": 7
+      }
+    },
+    {
+      "length": 5,
+      "step": 0,
+      "dense": false,
+      "cycles": 5,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 3,
+        "record_copies": 15,
+        "key_comparisons": 8
+      },
+      "backward_sort": {
+        "passes": 3,
+        "record_copies": 15,
+        "key_comparisons": 8
+      }
+    },
+    {
+      "length": 5,
+      "step": 1,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 5,
+      "forward_sort": {
+        "passes": 3,
+        "record_copies": 15,
+        "key_comparisons": 8
+      },
+      "backward_sort": {
+        "passes": 3,
+        "record_copies": 15,
+        "key_comparisons": 8
+      }
+    },
+    {
+      "length": 5,
+      "step": 2,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 5,
+      "forward_sort": {
+        "passes": 3,
+        "record_copies": 15,
+        "key_comparisons": 8
+      },
+      "backward_sort": {
+        "passes": 3,
+        "record_copies": 15,
+        "key_comparisons": 9
+      }
+    },
+    {
+      "length": 5,
+      "step": 13,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 5,
+      "forward_sort": {
+        "passes": 3,
+        "record_copies": 15,
+        "key_comparisons": 9
+      },
+      "backward_sort": {
+        "passes": 3,
+        "record_copies": 15,
+        "key_comparisons": 8
+      }
+    },
+    {
+      "length": 8,
+      "step": -1,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 8,
+      "forward_sort": {
+        "passes": 3,
+        "record_copies": 24,
+        "key_comparisons": 14
+      },
+      "backward_sort": {
+        "passes": 3,
+        "record_copies": 24,
+        "key_comparisons": 14
+      }
+    },
+    {
+      "length": 8,
+      "step": 0,
+      "dense": false,
+      "cycles": 8,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 3,
+        "record_copies": 24,
+        "key_comparisons": 12
+      },
+      "backward_sort": {
+        "passes": 3,
+        "record_copies": 24,
+        "key_comparisons": 12
+      }
+    },
+    {
+      "length": 8,
+      "step": 1,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 8,
+      "forward_sort": {
+        "passes": 3,
+        "record_copies": 24,
+        "key_comparisons": 12
+      },
+      "backward_sort": {
+        "passes": 3,
+        "record_copies": 24,
+        "key_comparisons": 12
+      }
+    },
+    {
+      "length": 8,
+      "step": 2,
+      "dense": false,
+      "cycles": 2,
+      "cycle_length": 4,
+      "forward_sort": {
+        "passes": 3,
+        "record_copies": 24,
+        "key_comparisons": 16
+      },
+      "backward_sort": {
+        "passes": 3,
+        "record_copies": 24,
+        "key_comparisons": 15
+      }
+    },
+    {
+      "length": 8,
+      "step": 4,
+      "dense": false,
+      "cycles": 4,
+      "cycle_length": 2,
+      "forward_sort": {
+        "passes": 3,
+        "record_copies": 24,
+        "key_comparisons": 15
+      },
+      "backward_sort": {
+        "passes": 3,
+        "record_copies": 24,
+        "key_comparisons": 16
+      }
+    },
+    {
+      "length": 8,
+      "step": 19,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 8,
+      "forward_sort": {
+        "passes": 3,
+        "record_copies": 24,
+        "key_comparisons": 17
+      },
+      "backward_sort": {
+        "passes": 3,
+        "record_copies": 24,
+        "key_comparisons": 17
+      }
+    },
+    {
+      "length": 12,
+      "step": -1,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 12,
+      "forward_sort": {
+        "passes": 4,
+        "record_copies": 48,
+        "key_comparisons": 23
+      },
+      "backward_sort": {
+        "passes": 4,
+        "record_copies": 48,
+        "key_comparisons": 23
+      }
+    },
+    {
+      "length": 12,
+      "step": 0,
+      "dense": false,
+      "cycles": 12,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 4,
+        "record_copies": 48,
+        "key_comparisons": 24
+      },
+      "backward_sort": {
+        "passes": 4,
+        "record_copies": 48,
+        "key_comparisons": 24
+      }
+    },
+    {
+      "length": 12,
+      "step": 1,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 12,
+      "forward_sort": {
+        "passes": 4,
+        "record_copies": 48,
+        "key_comparisons": 24
+      },
+      "backward_sort": {
+        "passes": 4,
+        "record_copies": 48,
+        "key_comparisons": 24
+      }
+    },
+    {
+      "length": 12,
+      "step": 2,
+      "dense": false,
+      "cycles": 2,
+      "cycle_length": 6,
+      "forward_sort": {
+        "passes": 4,
+        "record_copies": 48,
+        "key_comparisons": 31
+      },
+      "backward_sort": {
+        "passes": 4,
+        "record_copies": 48,
+        "key_comparisons": 29
+      }
+    },
+    {
+      "length": 12,
+      "step": 6,
+      "dense": false,
+      "cycles": 6,
+      "cycle_length": 2,
+      "forward_sort": {
+        "passes": 4,
+        "record_copies": 48,
+        "key_comparisons": 29
+      },
+      "backward_sort": {
+        "passes": 4,
+        "record_copies": 48,
+        "key_comparisons": 31
+      }
+    },
+    {
+      "length": 12,
+      "step": 27,
+      "dense": false,
+      "cycles": 3,
+      "cycle_length": 4,
+      "forward_sort": {
+        "passes": 4,
+        "record_copies": 48,
+        "key_comparisons": 32
+      },
+      "backward_sort": {
+        "passes": 4,
+        "record_copies": 48,
+        "key_comparisons": 30
+      }
+    },
+    {
+      "length": 17,
+      "step": -1,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 17,
+      "forward_sort": {
+        "passes": 5,
+        "record_copies": 85,
+        "key_comparisons": 37
+      },
+      "backward_sort": {
+        "passes": 5,
+        "record_copies": 85,
+        "key_comparisons": 37
+      }
+    },
+    {
+      "length": 17,
+      "step": 0,
+      "dense": false,
+      "cycles": 17,
+      "cycle_length": 1,
+      "forward_sort": {
+        "passes": 5,
+        "record_copies": 85,
+        "key_comparisons": 48
+      },
+      "backward_sort": {
+        "passes": 5,
+        "record_copies": 85,
+        "key_comparisons": 48
+      }
+    },
+    {
+      "length": 17,
+      "step": 1,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 17,
+      "forward_sort": {
+        "passes": 5,
+        "record_copies": 85,
+        "key_comparisons": 48
+      },
+      "backward_sort": {
+        "passes": 5,
+        "record_copies": 85,
+        "key_comparisons": 48
+      }
+    },
+    {
+      "length": 17,
+      "step": 2,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 17,
+      "forward_sort": {
+        "passes": 5,
+        "record_copies": 85,
+        "key_comparisons": 53
+      },
+      "backward_sort": {
+        "passes": 5,
+        "record_copies": 85,
+        "key_comparisons": 59
+      }
+    },
+    {
+      "length": 17,
+      "step": 8,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 17,
+      "forward_sort": {
+        "passes": 5,
+        "record_copies": 85,
+        "key_comparisons": 46
+      },
+      "backward_sort": {
+        "passes": 5,
+        "record_copies": 85,
+        "key_comparisons": 56
+      }
+    },
+    {
+      "length": 17,
+      "step": 37,
+      "dense": false,
+      "cycles": 1,
+      "cycle_length": 17,
+      "forward_sort": {
+        "passes": 5,
+        "record_copies": 85,
+        "key_comparisons": 59
+      },
+      "backward_sort": {
+        "passes": 5,
+        "record_copies": 85,
+        "key_comparisons": 58
+      }
+    }
+  ],
+  "controls": [
+    {
+      "name": "omitted_modular_inverse",
+      "rejected": "stride adjacency"
+    },
+    {
+      "name": "wrong_stride",
+      "rejected": "expanded residual"
+    }
+  ],
+  "scope": "Explicit charged two-sort cycle layout; Python lists verify routing and pass counts, not physical tape execution."
+}

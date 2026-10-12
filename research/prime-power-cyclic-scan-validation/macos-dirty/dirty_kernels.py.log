@@ -1,0 +1,4 @@
+PASS kernel 4 1
+PASS kernel 9 1
+PASS kernel 9 2
+PASS 24 kernel cases
