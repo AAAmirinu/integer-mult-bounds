@@ -1,0 +1,53 @@
+{
+  "snapshot": "81 recent/updated PR conversations, frozen through525 before packaging",
+  "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+  "current": [
+    {
+      "pr": 525,
+      "head": "71acd0c35ee81de848316b3f2b4c3bd15b219c51",
+      "role": "Read kernel102 cold checkpoint; superseded, no gain used"
+    },
+    {
+      "pr": 524,
+      "head": "9161fb1ff1c71bd8255e32d57ab5164aa8109376",
+      "role": "Read carry-graded box convolution; no unpaid routing gain used"
+    },
+    {
+      "pr": 523,
+      "head": "a900f98be8ff2c09d3292b5112d4731dbd0c8438",
+      "role": "Used isolated112 puncture and physical restriction code"
+    },
+    {
+      "pr": 522,
+      "head": "e9f8075b5212e9bddf361097dbb022dcd052e0bb",
+      "role": "Direct ranksector99 scalar ancestry; local archived source reused"
+    },
+    {
+      "pr": 473,
+      "head": "c26b3cc74d0203948f973a41d38340116c79dab8",
+      "role": "Used updated ranksector112 integration, physical owner seed and independent audit adaptations"
+    }
+  ],
+  "ancestry_ledger": "vendor/base120/SOURCES.json",
+  "direct_additional_credits": [
+    507,
+    484,
+    496,
+    493,
+    495,
+    501,
+    502,
+    505,
+    508,
+    514,
+    518,
+    520,
+    458,
+    433,
+    425,
+    370,
+    361,
+    315
+  ],
+  "scope": "Pins describe used sources or explicitly labeled read-only context. No unchanged public operator was redundantly verified."
+}
