@@ -1,0 +1,320 @@
+[
+  {
+    "name": "jp8_504-step0-cold_kernel-construction",
+    "exit_code": 0,
+    "seconds": 0.165,
+    "log_sha256": "7a13ad21a3e4e12710e37ab9d1c54a90b2b8741fc3f5f620c363844e9cd766fb"
+  },
+  {
+    "name": "jp8_504-step0-cold_kernel-omissions",
+    "exit_code": 0,
+    "seconds": 1.453,
+    "log_sha256": "a64c8d0998fb64a4ef0b28a96637f208b8cbbb22b02c43a71ca5b4f00c275e32"
+  },
+  {
+    "name": "ck_504-step0-greedy_kernels-construction",
+    "exit_code": 0,
+    "seconds": 2.567,
+    "log_sha256": "23ca231febd30ee092f617f0506d120c01e421bc3c814ba82b11d912c7f15869"
+  },
+  {
+    "name": "jp8_504-step1-multicut-construction",
+    "exit_code": 0,
+    "seconds": 1.531,
+    "log_sha256": "6f1fd8e202891558084ac9ee00606bbff0659c869f1bf6414461d87f6b67c53c"
+  },
+  {
+    "name": "jp8_504-step1-multicut-omissions",
+    "exit_code": 0,
+    "seconds": 6.636,
+    "log_sha256": "3f52a3d40481d4e9360d9320bab4a42c580cccdefdc3cab2e4f8225263018c90"
+  },
+  {
+    "name": "ck_504-step0-greedy_kernels-omissions",
+    "exit_code": 0,
+    "seconds": 9.761,
+    "log_sha256": "e57622df5f252d2027d1c92e3fa8aae67d5db2a4318df110fcc8d9db99c0a2b3"
+  },
+  {
+    "name": "ck_504-step1-frame_coalesce-construction",
+    "exit_code": 0,
+    "seconds": 1.34,
+    "log_sha256": "3d2d67cbd82dd5b79c3cfea987b31bcc6a16283c68c6b13b9801e009cc94e09c"
+  },
+  {
+    "name": "jp8_504-step2-frozen558_scalar_audits-static44",
+    "exit_code": 0,
+    "seconds": 3.88,
+    "log_sha256": "349924aaa9888edbe6e126e02df3a186c97d9fb4c064667252ce9918987134ea"
+  },
+  {
+    "name": "ck_504-step2-gate_move_coalesce-construction",
+    "exit_code": 0,
+    "seconds": 0.92,
+    "log_sha256": "0ebcf2ca688428a23e0ad3e734b35dd9004972405ca1cca679663e42df96b032"
+  },
+  {
+    "name": "jp8_504-step2-frozen558_scalar_audits-rank5",
+    "exit_code": 0,
+    "seconds": 0.957,
+    "log_sha256": "bab3028f59a9b024df5f20d2c0f3755933cea161bfd49ab676fa6133f58a05db"
+  },
+  {
+    "name": "jp8_504-step3-joint_prefix-construction",
+    "exit_code": 0,
+    "seconds": 0.223,
+    "log_sha256": "9d4cf22962c6e9358f935ca7d6ea5bc0fb64b54112d6d8d3ce5ad63fb2fb037c"
+  },
+  {
+    "name": "jp8_504-step3-joint_prefix-all-kernel-omissions",
+    "exit_code": 0,
+    "seconds": 25.408,
+    "log_sha256": "13fae47d3799fead98d1c0df5702516c3cbebf27636a35ae3e7d494274fef5cf"
+  },
+  {
+    "name": "jp8_504-step3-joint_prefix-rank5-omissions",
+    "exit_code": 0,
+    "seconds": 0.857,
+    "log_sha256": "bab3028f59a9b024df5f20d2c0f3755933cea161bfd49ab676fa6133f58a05db"
+  },
+  {
+    "name": "jp8_504-step3-joint_prefix-independent-joint-prefix-and-coverage",
+    "exit_code": 0,
+    "seconds": 0.106,
+    "log_sha256": "71720fe1f7eeabaf40bb9d8b84fa9f203a058fd26147c80124801e6e94dc8d34"
+  },
+  {
+    "name": "k-triangle-control-pr531-construct504",
+    "exit_code": 0,
+    "seconds": 0.211,
+    "log_sha256": "559deb17ff2bef299fd0ca2cfe6723ff1f0d495ce48d27794d735e9a5efcdbc7"
+  },
+  {
+    "name": "k-triangle-control-empty-schedule",
+    "exit_code": 0,
+    "seconds": 0.211,
+    "log_sha256": "559deb17ff2bef299fd0ca2cfe6723ff1f0d495ce48d27794d735e9a5efcdbc7"
+  },
+  {
+    "name": "ck-base-k_triangle-construction",
+    "exit_code": 0,
+    "seconds": 0.223,
+    "log_sha256": "ba6767bc74e7e91330d27026fa81875d2b116f7a34b818a037d94f1bd519b778"
+  },
+  {
+    "name": "jp8-step0-port_stage-construction",
+    "exit_code": 0,
+    "seconds": 0.181,
+    "log_sha256": "c4589e35d96b35e3d9609514d0070f004d7015565a0b976c38addcfeb258829b"
+  },
+  {
+    "name": "ck-step0-port_stage-construction",
+    "exit_code": 0,
+    "seconds": 0.183,
+    "log_sha256": "c4589e35d96b35e3d9609514d0070f004d7015565a0b976c38addcfeb258829b"
+  },
+  {
+    "name": "ck-step0-port_stage-native-audit",
+    "exit_code": 0,
+    "seconds": 0.451,
+    "log_sha256": "ad5a9cb12de58efcf7ab746a61785a834ac041ce7b6e43d3b03efa340f9ae432"
+  },
+  {
+    "name": "jp8-step0-port_stage-native-audit",
+    "exit_code": 0,
+    "seconds": 0.453,
+    "log_sha256": "90527dcb66263aca4cef65b94adb533238fd827d13ffc1aaa3f5aa5bdaddeb1c"
+  },
+  {
+    "name": "jp8-step1-port_stage-construction",
+    "exit_code": 0,
+    "seconds": 0.185,
+    "log_sha256": "12c7d03fdeb93f55d8fd4dd5fa47b84ea99084a3893c7413b4075498a25852eb"
+  },
+  {
+    "name": "ck-step1-port_stage-construction",
+    "exit_code": 0,
+    "seconds": 0.194,
+    "log_sha256": "d433afce182797b5de84635d88c1b918fe628da48683cfa7d15546629642f4b0"
+  },
+  {
+    "name": "jp8-step1-port_stage-native-audit",
+    "exit_code": 0,
+    "seconds": 0.454,
+    "log_sha256": "13fd5480c75f394434f010befa12fced7fa13355aeb25fe996e578ab765b8025"
+  },
+  {
+    "name": "ck-step1-port_stage-native-audit",
+    "exit_code": 0,
+    "seconds": 0.453,
+    "log_sha256": "e85ba6bf3df6895856db3a85551446cd237d294144fdacfc5ebd3ca35a12e087"
+  },
+  {
+    "name": "jp8-step2-port_stage-construction",
+    "exit_code": 0,
+    "seconds": 0.188,
+    "log_sha256": "51feeab86b59709dfa97c1c0c42c002f536c6cfa77dbcd63dc23825356789a1b"
+  },
+  {
+    "name": "ck-step2-port_stage-construction",
+    "exit_code": 0,
+    "seconds": 0.187,
+    "log_sha256": "0d89761796a80cd1d804f43b1143b1e87c0d242f5e3d5d6173dea5959a254185"
+  },
+  {
+    "name": "jp8-step2-port_stage-native-audit",
+    "exit_code": 0,
+    "seconds": 0.455,
+    "log_sha256": "6c11156d907de1772d26243bbdfe04956a16b961c1affc9a1f77237504552cd8"
+  },
+  {
+    "name": "ck-step2-port_stage-native-audit",
+    "exit_code": 0,
+    "seconds": 0.459,
+    "log_sha256": "d451509e1446745483f11ddece24417bca05c6d93c6d4fae15a2e42c4dc97534"
+  },
+  {
+    "name": "jp8-step3-port_stage-construction",
+    "exit_code": 0,
+    "seconds": 0.187,
+    "log_sha256": "9383ac7971bd0358340a8a57395564dbe2b3e7100a05412edd6982cfa897de70"
+  },
+  {
+    "name": "ck-step3-port_stage-construction",
+    "exit_code": 0,
+    "seconds": 0.187,
+    "log_sha256": "d6ecdc9b0ecb72130e1b65fee83b51461ae229df5045506b44d86ed783e78f0a"
+  },
+  {
+    "name": "jp8-step3-port_stage-native-audit",
+    "exit_code": 0,
+    "seconds": 0.452,
+    "log_sha256": "693916de63d7d7cc2fcbfa7de9c4ceeac4eb5463d90d44df8a5cf4158508ed60"
+  },
+  {
+    "name": "ck-step3-port_stage-native-audit",
+    "exit_code": 0,
+    "seconds": 0.454,
+    "log_sha256": "769511166d2acbe8b14d48e41d32c54b6a8218d80f43761c85741b4982fa8e81"
+  },
+  {
+    "name": "ck-step4-port_stage-construction",
+    "exit_code": 0,
+    "seconds": 0.187,
+    "log_sha256": "59f0ef9eb4ae0edb7c3a4dfed4a645afb7e46b3d8e13c0d44bd8ea8bdafadf94"
+  },
+  {
+    "name": "ck-step4-port_stage-native-audit",
+    "exit_code": 0,
+    "seconds": 0.458,
+    "log_sha256": "2e80b7d2c27312b40b1db4e94344646f348bb5fe8c649fa5990fc989146621c0"
+  },
+  {
+    "name": "jp8-step4-frame_regroup-construction",
+    "exit_code": 0,
+    "seconds": 4.329,
+    "log_sha256": "032f531192f4305265166b93d6789916d173e8794187d423d4c57f05b82d4b91"
+  },
+  {
+    "name": "jp8-step5-hyperplane_end-construction",
+    "exit_code": 0,
+    "seconds": 0.061,
+    "log_sha256": "869928b2fadd21726a0e67bacfe6bed0485dec5a04f069bb8d722ab8f355960e"
+  },
+  {
+    "name": "ck-step5-frame_regroup-construction",
+    "exit_code": 0,
+    "seconds": 4.367,
+    "log_sha256": "993d83424ca7f8f945c1febae876964d7d2933beccf0c8dc10a8ef17ce5fc015"
+  },
+  {
+    "name": "ck-step6-hyperplane_end-construction",
+    "exit_code": 0,
+    "seconds": 0.059,
+    "log_sha256": "869928b2fadd21726a0e67bacfe6bed0485dec5a04f069bb8d722ab8f355960e"
+  },
+  {
+    "name": "jp8-step5-hyperplane_end-controls",
+    "exit_code": 0,
+    "seconds": 4.721,
+    "log_sha256": "cc7c58cced7bf8282336b0e5230658cb083eca77127057ac83ab1dd7435e072c"
+  },
+  {
+    "name": "jp8-step6-cold_end-construction",
+    "exit_code": 0,
+    "seconds": 0.315,
+    "log_sha256": "75fd6897f921d77a8a5e9d5516bb61e87db4d758895339378dcc76dfbd4db0d5"
+  },
+  {
+    "name": "ck-step6-hyperplane_end-controls",
+    "exit_code": 0,
+    "seconds": 4.753,
+    "log_sha256": "8de5e292fcb8b87cd00950981869459eaf755e3cbc68da864a331b74aa2f8cd4"
+  },
+  {
+    "name": "ck-step7-cold_end-construction",
+    "exit_code": 0,
+    "seconds": 0.162,
+    "log_sha256": "f7e01bc5464dc87cce68ba24441bdcb93933aedef565f18410cb68a2f635e30d"
+  },
+  {
+    "name": "ck-step7-cold_end-controls",
+    "exit_code": 0,
+    "seconds": 16.577,
+    "log_sha256": "510da823c86553f414625ec1586ecde40f1b83aae02d124a12ed458847aa4603"
+  },
+  {
+    "name": "jp8-step6-cold_end-controls",
+    "exit_code": 0,
+    "seconds": 81.782,
+    "log_sha256": "643582e9813bb979eeee6609bae2409df91b0109a6c05b61efb34b2249765f74"
+  },
+  {
+    "name": "bind-providers",
+    "exit_code": 0,
+    "seconds": 0.572,
+    "log_sha256": "71f679ce5a123fb58397fd6852ba64ce3832fd20e81a096bfda9a1cf3237237a"
+  },
+  {
+    "name": "emit-controller",
+    "exit_code": 0,
+    "seconds": 2.533,
+    "log_sha256": "06a67b8a083e245af358860d2defcee44703d5986effe4e5a764900c7ce7748a"
+  },
+  {
+    "name": "independent-controller-and-controls",
+    "exit_code": 0,
+    "seconds": 18.743,
+    "log_sha256": "35df58195fc23fce378393d42d6b1231c8243162370c5f282580727b2c574df1"
+  },
+  {
+    "name": "fresh-invoice",
+    "exit_code": 0,
+    "seconds": 1.402,
+    "log_sha256": "d60e00ac7323718423cbd2c761fe3a3f4f6a27633da4c7dd65d4133c22842d20"
+  },
+  {
+    "name": "conservative-and-native-exact-assembly",
+    "exit_code": 0,
+    "seconds": 0.261,
+    "log_sha256": "2b13a82d0929f2b5b26b73f14231bc2c79d3a8aac3f4c7bd479dcaf852cf9ce6"
+  },
+  {
+    "name": "admission-controls",
+    "exit_code": 0,
+    "seconds": 0.315,
+    "log_sha256": "40f0c35552fb10f02288ae8d2c6b9f902050fb370c0a19b7b88c977d0d44dab1"
+  },
+  {
+    "name": "phase-timing-portability-controls",
+    "exit_code": 0,
+    "seconds": 0.71,
+    "log_sha256": "d4300a182a615922dd73ff2b945ff671086b86d5b80dbc009539e96d9b4dfe82"
+  },
+  {
+    "name": "actual-recompression-and-rebound-controls",
+    "exit_code": 0,
+    "seconds": 2.858,
+    "log_sha256": "9c20730203542b9a5ed97e1ce2e2c51526e88de0b2983d4f15d7e550b8ed02ea"
+  }
+]

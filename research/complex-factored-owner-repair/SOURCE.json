@@ -1,0 +1,10 @@
+{
+  "base_pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/627",
+  "base_commit": "f95308a9afa5adc071fe75c8cd7feec172503d4f",
+  "base_manifest_sha256": "4df4ffe961de2802897acae97679464f616b56d02495d32fc8ac69a09b7c4aab",
+  "base_full_fresh_receipt_sha256": "a6a873875e7cfeaab7e9ac17773b2072a2849cd9e2402ed9254039e9a56c5a52",
+  "supplier_words_unchanged": true,
+  "verifier_code_unchanged": true,
+  "moved_placements": 18250,
+  "assistance": "OpenAI Codex for chafreaky"
+}

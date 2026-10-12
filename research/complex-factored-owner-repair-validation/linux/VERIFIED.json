@@ -1,0 +1,15 @@
+{
+  "status": "PASS_FULL_FRESH_PLATFORM",
+  "platform": "linux",
+  "stages": 64,
+  "receipt_artifacts": 51,
+  "seconds": 430.7770697060041,
+  "kappa": "817938558930951/500000000000000000",
+  "manifest_sha256": "f998eb842379eefc131d088b9678e1ac0543f3dc3799974464c37df5408b8748",
+  "spec_sha256": "fe7a908ffbc82d7828868a94ea1c0d3d8e8c52fb3b276653ba3a17814a03f82a",
+  "receipt_sha256": "db47fd806c5e89c7336c694befc3df3641be74ecdb19b8bdf92a9c28c2d00af0",
+  "reused": {
+    "baseline": false,
+    "locals": []
+  }
+}

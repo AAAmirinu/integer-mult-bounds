@@ -1,0 +1,6 @@
+{
+  "verifier_python": "/home/cfky/offload/venv314/bin/python",
+  "platform": "Linux-6.17.0-1032-nvidia-aarch64-with-glibc2.39",
+  "supervisor_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "verifier_python_version": "Python 3.14.8"
+}

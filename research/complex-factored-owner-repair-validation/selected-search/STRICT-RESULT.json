@@ -1,0 +1,39 @@
+{
+  "status": "PASS_COLD14_NATIVE_COMPLEX_AND_CITED_BIT",
+  "kappa": "817938558930951/500000000000000000",
+  "kappa_decimal": "0.001635877117861902",
+  "complex_lower": "1638557596740709325069/1000000000000000000000000",
+  "bit_lower": "413456747036699736067/250000000000000000000000",
+  "conservative_kappa_decimal": "0.001635877114991649",
+  "conservative_complex_lower": "204819699232630346277/125000000000000000000000",
+  "global_profile": {
+    "1": 181708,
+    "2": 30145,
+    "3": 31106,
+    "4": 11520,
+    "5": 4912,
+    "6": 576,
+    "8": 576,
+    "12": 1,
+    "16": 3,
+    "32": 2,
+    "48": 2220
+  },
+  "provider_counts": {
+    "ck": 8,
+    "jp8": 64
+  },
+  "surcharge_model": {
+    "complex": false,
+    "bit": true
+  },
+  "seconds": 163.1741219169926,
+  "reused": {
+    "baseline": true,
+    "locals": [
+      "ck",
+      "jp8"
+    ]
+  },
+  "scope": "Conditional native exact-complex witness after complete conservative admission, moment and outer checks; PR559 exact-cover recurrence correction only, bit bad-residue surcharge and H1-H5 retained. The frozen PR582 plain-joint-prefix, added-kernel and entrance-promoted provider dispatch with the new frame coalescences composed with cited unchanged PR543 bit supplier. All-size compiler, common-label/mutable-source realization, whole-call hosting, precision/tape and analytic transfer remain assumptions. No unconditional theorem or full Lean certification."
+}

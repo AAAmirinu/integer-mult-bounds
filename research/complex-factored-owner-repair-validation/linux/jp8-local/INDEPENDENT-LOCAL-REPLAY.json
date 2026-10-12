@@ -1,0 +1,73 @@
+{
+  "status": "PASS_INDEPENDENT_LOCAL_SCALAR_FRAME_AND_WRAPPER_REPLAY",
+  "canonical_word_sha256": "a1ad6d8a9b55f28c8c883aaf08220848fd3c02904273805ec7868279d2657419",
+  "local_programs_sha256": "8f0ac3474448175f2ea93a70ff46619f421499f4de9502bea99c8139b80c6e6a",
+  "v": 112,
+  "helpers": 492,
+  "local": {
+    "forward": {
+      "all_exact_columns": 716,
+      "prefix_l1_upper": "138654422821531566965297199820445494940582391740377479958477/2048",
+      "prefix_bits_upper": 186,
+      "charged_payload_bits": 192,
+      "private_work_erased": true
+    },
+    "backward": {
+      "all_exact_columns": 716,
+      "prefix_l1_upper": "638089968504424831787697683476726126523408314505/131072",
+      "prefix_bits_upper": 142,
+      "charged_payload_bits": 192,
+      "private_work_erased": true
+    }
+  },
+  "paid_profiles": {
+    "forward": {
+      "1": 2514,
+      "4": 160,
+      "8": 8,
+      "3": 448,
+      "2": 402,
+      "5": 68,
+      "6": 8
+    },
+    "backward": {
+      "1": 2514,
+      "4": 160,
+      "8": 8,
+      "3": 448,
+      "2": 402,
+      "5": 68,
+      "6": 8
+    }
+  },
+  "entering_helpers": 204,
+  "cold_hyperplane_ended_helpers": 24,
+  "negative_controls_rejected": [
+    "wrong_scale",
+    "missing_center",
+    "wrong_common_frame",
+    "wrong_child_rank",
+    "missing_pre_wrapper",
+    "missing_post_wrapper",
+    "wrapper_with_wrong_frame",
+    "wrapper_in_wrong_phase",
+    "wrapper_on_a_data_register",
+    "wrapper_on_a_target_register",
+    "wrapper_on_a_centre_register",
+    "hpe_pre_wrapper_resolved_to_full_recipe",
+    "hpe_post_wrapper_without_terminal_frame",
+    "hpe_post_wrapper_wrong_terminal_frame",
+    "hpe_tail_gate_at_full_frame",
+    "hpe_tail_climb_dropped",
+    "hpe_helper_exit_adapter_to_full",
+    "hpe_tail_gate_moved_into_full_cleanup",
+    "cold_hpe_pre_wrapper_replaced_by_identity_entry_adapter",
+    "cold_hpe_pre_wrapper_dropped",
+    "cold_hpe_post_wrapper_replaced_by_exit_adapter",
+    "cold_hpe_pre_wrapper_resolved_to_cold_full_convention",
+    "cold_hpe_wrapper_with_nonzero_entrance",
+    "cold_hpe_post_wrapper_wrong_terminal_frame",
+    "cold_hpe_premix_gate_before_pre_wrapper"
+  ],
+  "scope": "Literal forward and inverse-transpose replay on every arbitrary data/helper column, physical frame incidence, ordered paid wrappers, cleared private work and prefix coefficients. Global hosting and outer exponent are separate."
+}
