@@ -1,0 +1,42 @@
+{
+  "baseline_reconstruction_all_fields_equal": true,
+  "body_frame_transfer_prefix": 671,
+  "dyadic_event_counts": {
+    "A": 3021,
+    "B": 840,
+    "cleanup": 2825,
+    "cut": 232,
+    "precondition": 168
+  },
+  "kernel_pivots": 102,
+  "local_profile": {
+    "1": 2481,
+    "2": 192,
+    "3": 506,
+    "4": 88,
+    "5": 242,
+    "6": 124,
+    "7": 1,
+    "8": 17
+  },
+  "pair_body_frames_transferred": {
+    "A": 225,
+    "B": 504
+  },
+  "scope": "Whole new factory, exact baseline binding, selection relations, frames and dyadic primitives. Scalar/physical/global admission remains separate.",
+  "sources": {
+    "/home/cfky/offload/check-ranksector112-fresh/dependency/retimed/gauge80-kernel42/sc_base/FULL-WORD.json.gz": "7a65e01ca3de586a1892d6cdc3f80e008facfee7380cd5d73c52077a60ca4cb8",
+    "/home/cfky/offload/check-ranksector112-fresh/dependency/retimed/gauge80-kernel42/split-centres/FULL-WORD.json.gz": "73afd6e5579644b131e5b1adef9a48b622affb6c17f26bad0eac2fcf086637ac",
+    "/home/cfky/offload/ranksector112-source/ranksector-kernel102-port112/data/KERNEL102-SELECTION.json": "e0b027e0fceb634c75e7a2437df7b046d696684a5112b77087a61812fed1a8cc",
+    "/home/cfky/offload/ranksector112-source/ranksector-kernel102-port112/data/PAIR-SPEC.json": "751fad3214c819635216df2dab77b682c6a1798d1d71a959ba4e7392aab9b8c0",
+    "/home/cfky/offload/ranksector112-source/ranksector-kernel102-port112/references/pr522/construct_ranksector.py": "0b535b717ea3d15cf7e86b096a9a95fc92d71748cd5f937d1989001a3d2ec996",
+    "/home/cfky/offload/ranksector112-source/ranksector-kernel102-port112/vendor/pr507/data/KERNEL-SELECTION.json": "08b2e803d4bbdd73e6c56b52a07990c4dc53ea4384955148dcca9f3317b5c9c7"
+  },
+  "status": "SOURCE_BOUND_STRUCTURE_AND_DYADIC_GATE",
+  "widths": {
+    "7": 18,
+    "8": 164,
+    "9": 378
+  },
+  "word_sha256": "00a255145aeeb6b2fb17198838c8071622b69e34d74c5eafc8d89d3913cd3c54"
+}

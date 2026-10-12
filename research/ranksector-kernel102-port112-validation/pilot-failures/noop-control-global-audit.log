@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/chafreaky/Documents/personal/integer-mult-research-20261008/resume-20261011/ranksector112/audit_global_restriction.py", line 281, in <module>
+    reject('changed entering bank owner', lambda s: s['template']['calls'][0]['owners'][224].__setitem__(0, 7168))
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chafreaky/Documents/personal/integer-mult-research-20261008/resume-20261011/ranksector112/audit_global_restriction.py", line 271, in reject
+    raise AssertionError('Accepted negative control: ' + name)
+AssertionError: Accepted negative control: changed entering bank owner

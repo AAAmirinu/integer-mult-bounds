@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/var/folders/q9/b9m8ygds55j006pp64bvbp100000gn/T/ranksector112-control-hh9nigjf/source/verify.py", line 21, in <module>
+    integrity();OUT.mkdir();steps=[]
+    ~~~~~~~~~^^
+  File "/var/folders/q9/b9m8ygds55j006pp64bvbp100000gn/T/ranksector112-control-hh9nigjf/source/verify.py", line 19, in integrity
+    assert inventory==read(ROOT/'MANIFEST.json'),'Complete package manifest'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Complete package manifest

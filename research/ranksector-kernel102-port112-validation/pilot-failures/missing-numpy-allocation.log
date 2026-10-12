@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/chafreaky/Documents/personal/integer-mult-research-20261008/resume-20261011/ranksector112/allocate112.py", line 10, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'

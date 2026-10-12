@@ -1,0 +1,62 @@
+{
+  "status": "PASS_INDEPENDENT_LOCAL_SCALAR_FRAME_AND_WRAPPER_REPLAY",
+  "canonical_word_sha256": "04c2f85b068ba577812b932168ae679722b00d5295a2f2d34a5fabccdf49237a",
+  "local_programs_sha256": "1b17c7d3a11df1cc62b93a6afcff81446c2634805635cdca1317c21e7ff45470",
+  "v": 112,
+  "helpers": 560,
+  "local": {
+    "forward": {
+      "all_exact_columns": 784,
+      "prefix_l1_upper": "576707",
+      "prefix_bits_upper": 20,
+      "charged_payload_bits": 192,
+      "private_work_erased": true
+    },
+    "backward": {
+      "all_exact_columns": 784,
+      "prefix_l1_upper": "28711895",
+      "prefix_bits_upper": 25,
+      "charged_payload_bits": 192,
+      "private_work_erased": true
+    }
+  },
+  "paid_profiles": {
+    "forward": {
+      "1": 2473,
+      "2": 192,
+      "3": 506,
+      "4": 88,
+      "5": 242,
+      "8": 1,
+      "6": 124,
+      "7": 1
+    },
+    "backward": {
+      "1": 2473,
+      "2": 192,
+      "3": 506,
+      "4": 88,
+      "5": 242,
+      "8": 1,
+      "6": 124,
+      "7": 1
+    }
+  },
+  "entering_helpers": 182,
+  "negative_controls_rejected": [
+    "wrong_scale",
+    "missing_center",
+    "wrong_common_frame",
+    "wrong_child_rank",
+    "missing_pre_wrapper",
+    "missing_post_wrapper",
+    "wrapper_with_wrong_frame",
+    "wrapper_in_wrong_phase",
+    "wrapper_on_a_data_register",
+    "wrapper_on_a_target_register",
+    "wrapper_on_a_centre_register",
+    "centre_step_not_nested",
+    "centre_descent_step_skipped"
+  ],
+  "scope": "Literal forward and inverse-transpose replay on every arbitrary data/helper column, physical frame incidence, ordered paid wrappers, cleared private work and prefix coefficients. Global hosting and outer exponent are separate."
+}

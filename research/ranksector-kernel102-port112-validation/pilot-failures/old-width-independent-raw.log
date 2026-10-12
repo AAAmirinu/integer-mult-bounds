@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/chafreaky/Documents/personal/integer-mult-research-20261008/resume-20261011/pr523/research/punctured112-global/code/audit_112_independent.py", line 155, in <module>
+    assert Counter(widths)=={7:18,8:154,9:388}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,49 @@
+{
+  "status": "PASS_LITERAL_DISJOINT_PROJECTION_OF_GUARDED_PARENT",
+  "orientations": {
+    "forward": {
+      "original_events": 22132,
+      "retained_events": 22044,
+      "deleted_events": {
+        "adapter": 32,
+        "scalar": 32,
+        "center": 8,
+        "climb": 16
+      },
+      "deleted_children": {
+        "1": 8,
+        "8": 16
+      }
+    },
+    "backward": {
+      "original_events": 22132,
+      "retained_events": 22044,
+      "deleted_events": {
+        "adapter": 32,
+        "scalar": 32,
+        "center": 8,
+        "climb": 16
+      },
+      "deleted_children": {
+        "1": 8,
+        "8": 16
+      }
+    }
+  },
+  "negative_controls": [
+    "cross_component_read",
+    "missing_kept_instruction",
+    "changed_kept_coefficient"
+  ],
+  "parent_guard_receipts": {
+    "PREOP-GUARDS-lg_instances.json": "72e3b7efc965c01b01cb1f2384ed895b920e5e21b115763c2db7a9246d79138e",
+    "PREOP-GUARDS-lg_e2e.json": "3987517f98c4767990c2ca7bb8937c9e0613856a837b8d804fc7e60722d42111",
+    "MUTANTS.json": "27e156ff8a3874ad5dc35ca955fab74e3286799998183434b6cf6403215e334e"
+  },
+  "source_hashes": {
+    "/home/cfky/offload/check-ranksector112-fresh/coordinated/gauge80-kernel42/split-centres/LOCAL-PROGRAMS.json.gz": "3bd455be99bce1646445c9bc3f4eb381e41626eea0a0aebfa2934a2dd1ab4474",
+    "/home/cfky/offload/check-ranksector112-fresh/local112/LOCAL-PROGRAMS.json.gz": "1b17c7d3a11df1cc62b93a6afcff81446c2634805635cdca1317c21e7ff45470",
+    "/home/cfky/offload/check-ranksector112-fresh/coordinated/gauge80-kernel42/RECEIPT.json": "6a27d9e20ef1e48ff36769bef72005cc342b73fa8c6e1fac932f7e684d225204"
+  },
+  "scope": "Every retained expanded instruction, frame and coefficient equals the guarded120 program under an injective register rename. Removed registers form a disjoint component, so the restriction preserves every retained local operation and its range bound. The new whole-owner routing and global invoice require separate audits; all-size interfaces remain inherited."
+}

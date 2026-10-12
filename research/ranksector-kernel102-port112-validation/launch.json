@@ -1,0 +1,10 @@
+{
+  "unit": "research-resume-20261012-ranksector112",
+  "linux_output": "/home/cfky/offload/check-ranksector112-fresh",
+  "linux_run": "/home/cfky/research/integer-mult/runs/resume-20261012-ranksector112",
+  "macos_pid": 86527,
+  "macos_output": "/private/tmp/ranksector112-macos314-fresh",
+  "manifest": "cd2b2e47b2dbd994d4fd506d36d4c1e561d9615faaddada72aa9d1734b88d47c",
+  "linux_source": "/home/cfky/offload/ranksector112-source/ranksector-kernel102-port112",
+  "source_tar_sha256": "2f5c0415a8a1ddce23baf31c3fce349a7ef172b9844f32aadeec7d3bee46166a"
+}

@@ -1,0 +1,9 @@
+{
+  "add_calls": 1116,
+  "scale_calls": 884,
+  "primitive_calls": 104738,
+  "maximum_proved_numerator_bits": 14,
+  "checked_result_file": "INSTANCES-gauge80-kernel42.json",
+  "checked_result_sha256": "464886616f969630e2ab31e7d8a0cdb1cc0df9c10e8d759810dcb37198bd8c79",
+  "identity_assertions_passed": true
+}

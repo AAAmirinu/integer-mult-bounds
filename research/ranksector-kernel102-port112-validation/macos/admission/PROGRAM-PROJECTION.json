@@ -1,0 +1,49 @@
+{
+  "status": "PASS_LITERAL_DISJOINT_PROJECTION_OF_GUARDED_PARENT",
+  "orientations": {
+    "forward": {
+      "original_events": 22132,
+      "retained_events": 22044,
+      "deleted_events": {
+        "adapter": 32,
+        "scalar": 32,
+        "center": 8,
+        "climb": 16
+      },
+      "deleted_children": {
+        "1": 8,
+        "8": 16
+      }
+    },
+    "backward": {
+      "original_events": 22132,
+      "retained_events": 22044,
+      "deleted_events": {
+        "adapter": 32,
+        "scalar": 32,
+        "center": 8,
+        "climb": 16
+      },
+      "deleted_children": {
+        "1": 8,
+        "8": 16
+      }
+    }
+  },
+  "negative_controls": [
+    "cross_component_read",
+    "missing_kept_instruction",
+    "changed_kept_coefficient"
+  ],
+  "parent_guard_receipts": {
+    "PREOP-GUARDS-lg_instances.json": "3f6bb597fe84059703a18a5fee0bb7c52e8e56934e04234e08993ad4d8e10457",
+    "PREOP-GUARDS-lg_e2e.json": "0088b0d28430fd00267a0edaf815b3f590e53fb88e246d567f2b764b640c23fc",
+    "MUTANTS.json": "730e640210ce26b7892b6a9c2494461acd9de970fc3f234d66edc51820a90a97"
+  },
+  "source_hashes": {
+    "/private/tmp/ranksector112-macos314-fresh/coordinated/gauge80-kernel42/split-centres/LOCAL-PROGRAMS.json.gz": "3bd455be99bce1646445c9bc3f4eb381e41626eea0a0aebfa2934a2dd1ab4474",
+    "/private/tmp/ranksector112-macos314-fresh/local112/LOCAL-PROGRAMS.json.gz": "1b17c7d3a11df1cc62b93a6afcff81446c2634805635cdca1317c21e7ff45470",
+    "/private/tmp/ranksector112-macos314-fresh/coordinated/gauge80-kernel42/RECEIPT.json": "19e7a3b16e43e083a5f40952b3debefba59a71132a0cbce2b660c5447a0d5704"
+  },
+  "scope": "Every retained expanded instruction, frame and coefficient equals the guarded120 program under an injective register rename. Removed registers form a disjoint component, so the restriction preserves every retained local operation and its range bound. The new whole-owner routing and global invoice require separate audits; all-size interfaces remain inherited."
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS_ALL_PREOUTPUT_CONTROLS",
+  "source_manifest_sha256": "cd2b2e47b2dbd994d4fd506d36d4c1e561d9615faaddada72aa9d1734b88d47c",
+  "controls": [
+    {
+      "control": "optimized",
+      "exit_code": 1,
+      "output_created": false,
+      "log_sha256": "e4c7fbb7b25e851c1fb62b46a6cbf40180ff688d35c3d8d2eb2071da37a24662"
+    },
+    {
+      "control": "missing-input",
+      "exit_code": 1,
+      "output_created": false,
+      "log_sha256": "a97b55c692d686b013b22d1d2d84640a2f64b1bd3136f0aeb60b597b4275bdbc"
+    },
+    {
+      "control": "changed-source",
+      "exit_code": 1,
+      "output_created": false,
+      "log_sha256": "ed850eb5caadef0a2365ea9ed4aa79ce0c09ab8ed996b58f1c818a845e0ddba3"
+    },
+    {
+      "control": "unexpected-file",
+      "exit_code": 1,
+      "output_created": false,
+      "log_sha256": "ab78fbb4e5ae8e053b50c565e7bbd25d13a803c2c11f60a4afe984ad858bda0f"
+    }
+  ]
+}

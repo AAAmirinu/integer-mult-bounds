@@ -1,0 +1,97 @@
+{
+  "actual_orthogonal_charts": 3687,
+  "all_owners_per_call_distinct": 784,
+  "deficit": 2560,
+  "deleted_canonical_ports": [
+    0,
+    13,
+    22,
+    35,
+    40,
+    51,
+    54,
+    119
+  ],
+  "deleted_scalar_operations": {
+    "cut": 8
+  },
+  "helpers": 560,
+  "idle_remainders": {
+    "3": 3314,
+    "5": 3112,
+    "7": 14,
+    "32": 1,
+    "48": 270
+  },
+  "inputs": {
+    "/home/cfky/offload/check-ranksector112-fresh/coordinated/gauge80-kernel42/split-centres/CANONICAL-WORD.json.gz": "27bef7d12f92d77678f4bacabd3dea59b7a6405846b8d5296613a221ce50ec61",
+    "/home/cfky/offload/check-ranksector112-fresh/coordinated/gauge80-kernel42/split-centres/GLOBAL-TEMPLATE.json.gz": "1ec4225c2e5a83c89f33dc1040b422b273124f4c6d759043cbaa07c080a05b90",
+    "/home/cfky/offload/check-ranksector112-fresh/coordinated/gauge80-kernel42/work/complex-nine-native/DATA-PHASES.json": "f621f6d4296cb215f334830356c5f79fe10d6d04d15b3ccda76ba0885ab67d0a",
+    "/home/cfky/offload/check-ranksector112-fresh/local112/CANONICAL-WORD.json.gz": "04c2f85b068ba577812b932168ae679722b00d5295a2f2d34a5fabccdf49237a",
+    "/home/cfky/offload/check-ranksector112-fresh/local112/LOCAL-PROGRAMS.json.gz": "1b17c7d3a11df1cc62b93a6afcff81446c2634805635cdca1317c21e7ff45470",
+    "/home/cfky/offload/check-ranksector112-fresh/local112/RESIDUAL-ADAPTERS.json": "83b01e8834fda8fa82250e0ae67bcd9ce9ea5fa487144c4b0e12cfaf298b85be",
+    "/home/cfky/offload/ranksector112-source/ranksector-kernel102-port112/data/OWNERS.json.gz": "777ede6bd494b8a2a1bac409af5debcd28a0b0cccf7663fd2b4ef1a62437a3df"
+  },
+  "invocations": 72,
+  "live": 7168,
+  "local": {
+    "backward": {
+      "columns": 784,
+      "events": 22044,
+      "profile": {
+        "1": 2473,
+        "2": 192,
+        "3": 506,
+        "4": 88,
+        "5": 242,
+        "6": 124,
+        "7": 1,
+        "8": 1
+      },
+      "scalar_macros": 16658
+    },
+    "forward": {
+      "columns": 784,
+      "events": 22044,
+      "profile": {
+        "1": 2473,
+        "2": 192,
+        "3": 506,
+        "4": 88,
+        "5": 242,
+        "6": 124,
+        "7": 1,
+        "8": 1
+      },
+      "scalar_macros": 16658
+    }
+  },
+  "no_emitter_or_hosting_checker_imported": true,
+  "no_nominated_profile_or_windows_used": true,
+  "paid_profile": {
+    "1": 178056,
+    "2": 13824,
+    "3": 39746,
+    "4": 6336,
+    "5": 20536,
+    "6": 8928,
+    "7": 86,
+    "8": 72,
+    "32": 1,
+    "48": 270
+  },
+  "pending_axes_covered": 348480,
+  "physical": 7738,
+  "rank_mass": 520704,
+  "residual_widths": {
+    "7": 18,
+    "8": 164,
+    "9": 378
+  },
+  "same_local_frames_and_residual_wrappers_as_parent": true,
+  "scope": "Independent finite restriction, all rational scalar columns, nested local frames, fixed whole-owner schedule, actual port charts and paid histogram. The inherited all-size/compiler, common-label realization, precision/tape and analytic transfer interfaces remain conditions.",
+  "seconds": 1.5758256008848548,
+  "status": "PASS_INDEPENDENT_RAW_112_RESTRICTION_LOCAL_COLUMNS_CHARTS_WINDOWS_OWNERS_AND_PROFILE",
+  "v": 112,
+  "whole_owner_roles": 40320
+}

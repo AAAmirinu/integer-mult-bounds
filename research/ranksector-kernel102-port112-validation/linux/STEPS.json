@@ -1,0 +1,110 @@
+[
+  {
+    "name": "fresh-both-suppliers-and-partial-own",
+    "exit_code": 0,
+    "seconds": 907.097,
+    "log_sha256": "ee167652cda7e43b900d5e6a2cd6533c4bc201e773d290c39c7e81c09c875167"
+  },
+  {
+    "name": "construct-coordinated",
+    "exit_code": 0,
+    "seconds": 0.846,
+    "log_sha256": "bb43851cf1ff212a5328444f5aa610458d86b748ee20ef42e4c8f2d1b753ec14"
+  },
+  {
+    "name": "independent-all-kernel-corrections",
+    "exit_code": 0,
+    "seconds": 8.4,
+    "log_sha256": "db90a388ec2aca4ae6884c0b700f5ff630faadbd89f325d7af61234d205c2079"
+  },
+  {
+    "name": "fresh-coordinated-local",
+    "exit_code": 0,
+    "seconds": 316.438,
+    "log_sha256": "e757da0b8844a8f5424c24fb2d264d85be815ec7584d79dba444ab1fd74af025"
+  },
+  {
+    "name": "restrict-local112",
+    "exit_code": 0,
+    "seconds": 0.162,
+    "log_sha256": "fc94671be1c7e98adde023e18f9a675ea2c310fe28680650dd9ab66d128ef81f"
+  },
+  {
+    "name": "exact-word-transport112",
+    "exit_code": 0,
+    "seconds": 0.167,
+    "log_sha256": "b8c3fa5ddca6b9f97518c35148f544a9f8f47cc311754c0224641bc8ed328915"
+  },
+  {
+    "name": "emit-local112",
+    "exit_code": 0,
+    "seconds": 0.424,
+    "log_sha256": "dfba875419b3d2116956fc1e7495b1fc5ce9e5dc525f4da4442826c49cc59c88"
+  },
+  {
+    "name": "independent-local112",
+    "exit_code": 0,
+    "seconds": 1.664,
+    "log_sha256": "8ecf2ed5cc02a77d79c3599e738f9e580c75ebc2b03366c934b1e63df6f1f9a6"
+  },
+  {
+    "name": "literal-guarded-program-projection",
+    "exit_code": 0,
+    "seconds": 0.515,
+    "log_sha256": "1b515fe2b52a0b06840d55cd1930d73142bfea735a06281dee261d80d33fd6e7"
+  },
+  {
+    "name": "exact-local-phases112",
+    "exit_code": 0,
+    "seconds": 102.538,
+    "log_sha256": "24a86ccf5975988e786d3fe1de2ec9de21f572012e28792139d5fc33591b2901"
+  },
+  {
+    "name": "residual-wrappers112",
+    "exit_code": 0,
+    "seconds": 0.602,
+    "log_sha256": "5a21b531c104727a8f2fa6b0e420d65ca8d36f628f5bf4be5642248254164e56"
+  },
+  {
+    "name": "restrict-global112",
+    "exit_code": 0,
+    "seconds": 0.863,
+    "log_sha256": "d36a24cb2bcb5a8d8f95b44c4e61a3ee28420b21c6a3a93de20a8a4319e54c46"
+  },
+  {
+    "name": "independent-global-restriction",
+    "exit_code": 0,
+    "seconds": 3.532,
+    "log_sha256": "bf554fcc690142b7af9551b5a46e9ed80421ddbe812aeea63b51dc61178fff7f"
+  },
+  {
+    "name": "emit-asynchronous",
+    "exit_code": 0,
+    "seconds": 1.919,
+    "log_sha256": "c008ae6ee4d75d9732f938c7dc5484203c1364982e146ed2516fa253d9c6f18e"
+  },
+  {
+    "name": "independent-controller",
+    "exit_code": 0,
+    "seconds": 8.447,
+    "log_sha256": "c802fbd53f9f7bd7724895b47f39db2fe288a7bfd5f2ad37ac82245ea0e218d0"
+  },
+  {
+    "name": "independent-raw-reconstruction",
+    "exit_code": 0,
+    "seconds": 1.782,
+    "log_sha256": "71a0b6c24a7e1da8fdd01989d331ccc1e0f9f1fb7f4f8c00f55b348ea05b209c"
+  },
+  {
+    "name": "finite-invoice",
+    "exit_code": 0,
+    "seconds": 0.775,
+    "log_sha256": "1094a46e89191e80560353c681725c253ed7ea9de413c7d859f34b75f6b9a8f4"
+  },
+  {
+    "name": "two-exact-engines-and-outer",
+    "exit_code": 0,
+    "seconds": 0.239,
+    "log_sha256": "b6a851243024d13d269814a4bf9cecc97b77a1d9f6fc0eb6fb39e814aa1c8a87"
+  }
+]

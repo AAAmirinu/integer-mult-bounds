@@ -1,0 +1,74 @@
+[
+  {
+    "name": "restriction",
+    "exit_code": 0,
+    "seconds": 0.12239525001496077,
+    "log_sha256": "fc94671be1c7e98adde023e18f9a675ea2c310fe28680650dd9ab66d128ef81f"
+  },
+  {
+    "name": "transport",
+    "exit_code": 0,
+    "seconds": 0.1329325409606099,
+    "log_sha256": "b8c3fa5ddca6b9f97518c35148f544a9f8f47cc311754c0224641bc8ed328915"
+  },
+  {
+    "name": "emit-local",
+    "exit_code": 0,
+    "seconds": 0.3567829999374226,
+    "log_sha256": "dfba875419b3d2116956fc1e7495b1fc5ce9e5dc525f4da4442826c49cc59c88"
+  },
+  {
+    "name": "audit-local",
+    "exit_code": 0,
+    "seconds": 1.3564961249940097,
+    "log_sha256": "8ecf2ed5cc02a77d79c3599e738f9e580c75ebc2b03366c934b1e63df6f1f9a6"
+  },
+  {
+    "name": "phases",
+    "exit_code": 0,
+    "seconds": 82.65142200002447,
+    "log_sha256": "df47f3f8236b151e7af6326666d33d5f4df0bd7aa9bbce7f2ac2b44d1264a79e"
+  },
+  {
+    "name": "wrappers",
+    "exit_code": 0,
+    "seconds": 0.4842482910025865,
+    "log_sha256": "5a21b531c104727a8f2fa6b0e420d65ca8d36f628f5bf4be5642248254164e56"
+  },
+  {
+    "name": "global-restrict",
+    "exit_code": 0,
+    "seconds": 0.6881808749167249,
+    "log_sha256": "d36a24cb2bcb5a8d8f95b44c4e61a3ee28420b21c6a3a93de20a8a4319e54c46"
+  },
+  {
+    "name": "global-audit",
+    "exit_code": 0,
+    "seconds": 2.744533292017877,
+    "log_sha256": "bf554fcc690142b7af9551b5a46e9ed80421ddbe812aeea63b51dc61178fff7f"
+  },
+  {
+    "name": "allocation",
+    "exit_code": 0,
+    "seconds": 12.19117833301425,
+    "log_sha256": "f932b5423b5a298f1a2734b212e9614aeec3ef3ea916718263ee5ea0607eab7b"
+  },
+  {
+    "name": "emit-whole",
+    "exit_code": 0,
+    "seconds": 1.6802327079931274,
+    "log_sha256": "c008ae6ee4d75d9732f938c7dc5484203c1364982e146ed2516fa253d9c6f18e"
+  },
+  {
+    "name": "controller",
+    "exit_code": 0,
+    "seconds": 7.473294000024907,
+    "log_sha256": "c802fbd53f9f7bd7724895b47f39db2fe288a7bfd5f2ad37ac82245ea0e218d0"
+  },
+  {
+    "name": "independent-raw",
+    "exit_code": 1,
+    "seconds": 0.418674833024852,
+    "log_sha256": "38948bf40d212f02401e7363335dc8b34463b9fd7cdac1d922e2d662f7b3f3f9"
+  }
+]

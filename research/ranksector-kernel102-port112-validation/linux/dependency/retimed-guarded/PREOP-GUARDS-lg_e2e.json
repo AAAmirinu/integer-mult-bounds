@@ -1,0 +1,9 @@
+{
+  "add_calls": 248832,
+  "scale_calls": 10008,
+  "primitive_calls": 840618,
+  "maximum_proved_numerator_bits": 29,
+  "checked_result_file": "E2E-gauge80-kernel42.json",
+  "checked_result_sha256": "3086ac5aa85206d1a9c5bcc10283a8f029789063f0c7796aa8dcbadae162d437",
+  "identity_assertions_passed": true
+}
