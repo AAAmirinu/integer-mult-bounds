@@ -1,0 +1,11 @@
+name = "InvocationProbe"
+defaultTargets = ["InvocationProbe"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "308445d7985027f538e281e18df29ca16ede2ba3"
+
+[[lean_lib]]
+name = "InvocationProbe"
+roots = ["RowEvaluation", "LinearReplay", "TreeReplay", "MatrixData", "FramedReplay", "FrameTraceCore", "FrameTraceLiterals", "MatrixCheckpoints", "FrameTraceCheckpoints", "PortData", "PortRowData", "PortGeometry", "MatrixNodes00", "MatrixNodes01", "MatrixNodes02", "MatrixNodes03", "MatrixNodes04", "MatrixNodes05", "MatrixNodes06", "MatrixNodes07", "MatrixNodes08", "MatrixNodes09", "MatrixNodes10", "MatrixNodes11", "MatrixNodes12", "MatrixNodes13", "MatrixNodes14", "MatrixNodes15", "MatrixNodes16", "MatrixNodes17", "MatrixNodes18", "MatrixNodes19", "MatrixNodes20", "MatrixNodes21", "FrameTraceNodes00", "FrameTraceNodes01", "FrameTraceNodes02", "FrameTraceNodes03", "FrameTraceNodes04", "FrameTraceNodes05", "FrameTraceNodes06", "FrameTraceNodes07", "FrameTraceNodes08", "FrameTraceNodes09", "FrameTraceNodes10", "FrameTraceNodes11", "FrameTraceNodes12", "FrameTraceNodes13", "FrameTraceNodes14", "FrameTraceNodes15", "FrameTraceNodes16"]

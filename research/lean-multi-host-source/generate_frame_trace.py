@@ -4,6 +4,7 @@ projection chunk. Bind these raw entries to the original event JSON in replay.
 """
 import argparse,gzip,json,hashlib
 from pathlib import Path
+from flat_data import flat_list, split_nodes
 p=argparse.ArgumentParser();p.add_argument('template',type=Path);p.add_argument('states',type=Path);p.add_argument('out',type=Path);a=p.parse_args()
 t=json.loads(gzip.decompress(a.template.read_bytes()));states=json.loads(a.states.read_bytes());word=t['local_programs']['forward'];assert len(word)==19002
 entries=[]
@@ -37,13 +38,15 @@ roots=[intern(xs)for xs,_ in snaps]
 defs=['import FrameTraceCore','set_option maxRecDepth 100000','set_option maxHeartbeats 0','namespace SourceFrameTrace','open FrameTrace','open TreeReplay (Tree)']
 checks=['import FrameTraceLiterals','import MatrixData','set_option maxRecDepth 100000','set_option maxHeartbeats 0','namespace SourceFrameTrace','open FrameTrace','open TreeReplay (Tree)']
 cert=['import FrameTraceCheckpoints','set_option maxRecDepth 100000','set_option maxHeartbeats 0','namespace SourceFrameTrace','open FrameTrace','open TreeReplay (Tree)']
-for i,n in enumerate(nodes):defs.append(f'def node{i} : Tree Nat := '+(f'.leaf {n[1]}'if n[0]=='leaf'else f'.node node{n[1]} node{n[2]}'))
+node_lines=[f'def node{i} : Tree Nat := '+(f'.leaf {n[1]}'if n[0]=='leaf'else f'.node node{n[1]} node{n[2]}') for i,n in enumerate(nodes)]
+last_node=split_nodes(a.out.parent,'FrameTraceNodes','FrameTraceCore','SourceFrameTrace',node_lines)
+defs[0]=f'import {last_node}'
 for i,(_,center)in enumerate(snaps):defs.append(f'def state{i} : State := ⟨node{roots[i]}, '+('none'if center is None else f'some {center}')+'⟩')
 N=len(snaps)-1
 checks.append('theorem initial_tabulate : Tree.tabulate 10 (fun i => state0.frames.get i) = state0.frames := by decide')
 checks.append(f'theorem final_tabulate : Tree.tabulate 10 (fun i => state{N}.frames.get i) = state{N}.frames := by decide')
 for i in range(N):
- es=entries[200*i:200*(i+1)];defs.append(f'def chunk{i} : List Entry := ['+',\n'.join('⟨⟨%d,%d,%d,%s⟩,%d,%d,%d⟩'%(op,x,y,str(odd).lower(),old,new,rank)for op,x,y,odd,old,new,rank in es)+']')
+ es=entries[200*i:200*(i+1)];defs.extend(flat_list(f'chunk{i}', 'Entry', ['⟨⟨%d,%d,%d,%s⟩,%d,%d,%d⟩'%(op,x,y,str(odd).lower(),old,new,rank)for op,x,y,odd,old,new,rank in es]))
  checks.append(f'theorem project{i} : chunk{i}.map Entry.scalar = SourceMatrix.chunk{i} := rfl')
  checks.append(f'theorem checkpoint{i} : runChecked chunk{i} (state{i},true) = (state{i+1},true) := by decide')
 defs.append('def chunks : List (List Entry) := ['+','.join(f'chunk{i}'for i in range(N))+']')

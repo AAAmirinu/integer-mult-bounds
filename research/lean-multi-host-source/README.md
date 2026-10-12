@@ -1,5 +1,10 @@
 # One concrete invocation of whole-residual hosting
 
+**This branch contains a partial Lean 4.21 port.** See
+[PORT-PHASE1.md](PORT-PHASE1.md) for its separate Lake build, manifest and results.
+The full 4.33 package manifests and receipts below are retained as the baseline;
+they do not certify this branch's changed data representation on 4.21.
+
 This is Task B of the local verification contribution. Task A, the abstract
 multi-host theorem and recovery of the previous single-host theorem, is
 separately committed as `13611a8958fc71046a83d8431d2bd6335e6a3e2f` in
@@ -13,12 +18,13 @@ forward orientation. It uses the inherited R747 word: 19,002 events,
 arbitrary, correlated dirty payloads. The original and relocated templates
 contain the identical local word.
 
-**Current fresh build: PASS.** The replay completed at 2026-10-12 03:19:37 UTC
+**Lean 4.33 baseline fresh build: PASS.** At review base
+`c4b1560a569f54064608bf88440f9e492c03fba3`, the replay completed at 2026-10-12 03:19:37 UTC
 from an empty project build directory, without resume: all 52 modules were
 freshly compiled and all 931 declarations audited, including
 `SourceInvocation.actualContract`. No project artifacts were reused.
 The [fresh receipt](../lean-external-review/validation/task-b.json) directly
-matches the current manifest and records the installed Lean/Mathlib and
+matches the baseline manifest and sources and records the installed Lean/Mathlib and
 dependency fingerprints. It does not claim a fresh build of Mathlib itself.
 
 **Historical build status: PASS.** The earlier coherent source build checked all 52 modules

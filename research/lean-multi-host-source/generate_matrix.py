@@ -3,6 +3,7 @@ Every event is retained; Python's matrix results are checked by Lean rfl.
 """
 import argparse,gzip,hashlib,json
 from pathlib import Path
+from flat_data import flat_list, split_nodes
 ap=argparse.ArgumentParser();ap.add_argument('template',type=Path);ap.add_argument('out',type=Path);a=ap.parse_args();a.out.mkdir(parents=True,exist_ok=True)
 raw=gzip.decompress(a.template.read_bytes());assert hashlib.sha256(raw).hexdigest()=='dd7833dcaff8c84b258847f4c4d65b6402c702700ae37d2c464083ee37b24126'
 es=json.loads(raw)['local_programs']['forward'];assert len(es)==19002
@@ -38,14 +39,16 @@ namespace SourceMatrix
 open LinearReplay (Event)
 open TreeReplay
 '''
-lines=[header]
+node_lines=[]
 for key,n in nodes.items():
- if key[0]=='l':lines+=['def node%d : Tree Nat := .leaf %d'%(n,key[1])]
- else:lines+=['def node%d : Tree Nat := .node node%d node%d'%(n,key[1],key[2])]
+ if key[0]=='l':node_lines+=['def node%d : Tree Nat := .leaf %d'%(n,key[1])]
+ else:node_lines+=['def node%d : Tree Nat := .node node%d node%d'%(n,key[1],key[2])]
+last_node=split_nodes(a.out,'MatrixNodes','TreeReplay','SourceMatrix',node_lines)
+lines=[header.replace('import TreeReplay',f'import {last_node}',1)]
 for i,r in enumerate(roots):lines+=['def state%d : Tree Nat × Bool := (node%d, true)'%(i,r)]
 lines+=['def initial : Tree Nat := node%d'%roots[0],'def expected : Tree Nat := node%d'%roots[-1]]
 for i in range(N):
- lines+=['def chunk%d : List Event := [%s]'%(i,',\n'.join('⟨%s,%s,%s,%s⟩'%(e[0],e[1],e[2],str(bool(e[3]&1)).lower())for e in es[i*chunk_size:(i+1)*chunk_size]))]
+ lines+=flat_list(f'chunk{i}', 'Event', ['⟨%s,%s,%s,%s⟩'%(e[0],e[1],e[2],str(bool(e[3]&1)).lower())for e in es[i*chunk_size:(i+1)*chunk_size]])
 lines+=['def forwardChunks : List (List Event) := ['+','.join('chunk%d'%i for i in range(N))+']',
 'def forwardWord : List Event := forwardChunks.flatten','end SourceMatrix']
 a.out.joinpath('MatrixData.lean').write_text('\n'.join(lines)+'\n')

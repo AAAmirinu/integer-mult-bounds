@@ -59,6 +59,7 @@ theorem cast_orthogonal (K : Type*) [Field K] (port : Fin 120) :
       (4 : K) • (1 : Matrix (Fin 8) (Fin 8) K) := by
   have h := congrArg (fun m : Matrix (Fin 8) (Fin 8) Int => m.map (Int.castRingHom K))
     (doubled_orthogonal port)
+  dsimp only at h
   rw [Matrix.map_mul] at h
   change (castBasis K port).transpose * castBasis K port = _ at h
   rw [h]
@@ -71,6 +72,7 @@ theorem cast_row_orthogonal (K : Type*) [Field K] (port : Fin 120) :
       (4 : K) • (1 : Matrix (Fin 8) (Fin 8) K) := by
   have h := congrArg (fun m : Matrix (Fin 8) (Fin 8) Int => m.map (Int.castRingHom K))
     (doubled_row_orthogonal port)
+  dsimp only at h
   rw [Matrix.map_mul] at h
   change castBasis K port * (castBasis K port).transpose = _ at h
   rw [h]
@@ -325,7 +327,7 @@ theorem route15_entry (K : Type*) [Field K] (h2 : (2 : K) ≠ 0)
   simp only [route15, quarteredRoute_exact, expectedRoute15, expectedQuarteredRoute,
     routeExpected]
   split_ifs <;> simp [basis_entry] <;>
-    field_simp [h2, h4] <;> ring
+    field_simp [h2, h4] <;> ring <;> simp
 
 def gatherStage2 {K : Type*} (v : Fin 64 → K) (i : Fin 15) : K :=
   if hi : i.val < 8 then v ⟨i.val, Nat.lt_trans hi (by decide)⟩

@@ -1,5 +1,10 @@
 # External review: one literal PR442 R747 invocation
 
+**On the Phase 1 port branch:** this directory retains the Lean 4.33 review
+package and historical receipts. It is not a completed Lean 4.21 package.
+See [the bounded compatibility probe](../lean-multi-host-source/PORT-PHASE1.md)
+for the separate manifest, Lake commands, results and remaining work.
+
 This package contains Task A (a multi-host contract with exact single-host
 recovery) and Task B (its connection to one literal PR442 forward invocation).
 The contribution is prepared on a new review branch based on upstream

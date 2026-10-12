@@ -70,14 +70,45 @@ def check():
         # An independent literal parser checks chronological event preservation;
         # it does not rely on the checkpoint generator's symbolic execution.
         matrix_source = (ROOT / 'MatrixData.lean').read_text()
-        chunks = re.findall(r'def chunk(\d+) : List Event := \[(.*?)\]', matrix_source, re.S)
-        require([int(i) for i, _ in chunks] == list(range(96)), 'Wrong chunk inventory')
+        definitions = re.findall(
+            r'^def (chunk\d+(?:_tail\d+)?) : List Event :=\s*([\s\S]*?)(?=^def |^end |\Z)',
+            matrix_source, re.M)
+        require(len(dict(definitions)) == len(definitions), 'Duplicate chunk declaration')
+        bodies = dict(definitions)
+        public = [name for name, _ in definitions if re.fullmatch(r'chunk\d+', name)]
+        require(public == ['chunk' + str(i) for i in range(96)], 'Wrong chunk inventory')
+        visited, active, expanded = set(), set(), {}
+
+        def expand(name):
+            require(name in bodies and name not in active, 'Missing or cyclic list suffix')
+            visited.add(name)
+            if name in expanded:
+                return expanded[name]
+            active.add(name)
+            body = bodies[name].strip()
+            entries = []
+            while True:
+                item = re.match(r'⟨(\d+),(\d+),(\d+),(true|false)⟩\s*::\s*', body)
+                if item is None:
+                    break
+                o, x, y, bit = item.groups()
+                entries.append((int(o), int(x), int(y), bit == 'true'))
+                body = body[item.end():]
+            if body != '[]':
+                require(re.fullmatch(r'chunk\d+_tail\d+', body) is not None,
+                        'Unparsed event or suffix text')
+                require(body.split('_')[0] == name.split('_')[0], 'Cross-chunk suffix')
+                entries.extend(expand(body))
+            active.remove(name)
+            expanded[name] = entries
+            return entries
+
         actual = []
-        for _, body in chunks:
-            tuples = re.findall(r'⟨(\d+),(\d+),(\d+),(true|false)⟩', body)
-            require(re.sub(r'⟨\d+,\d+,\d+,(?:true|false)⟩|[\s,]', '', body) == '',
-                    'Unparsed event text')
-            actual.extend((int(o), int(x), int(y), b == 'true') for o, x, y, b in tuples)
+        for i, name in enumerate(public):
+            entries = expand(name)
+            require(len(entries) == (200 if i < 95 else 2), 'Changed checkpoint boundary')
+            actual.extend(entries)
+        require(visited == set(bodies), 'Unreferenced list suffix')
         expected_events = [(e[0], e[1], e[2], bool(e[3] & 1)) for e in events]
         require(actual == expected_events, 'Normalized literal word differs from source')
         require('def forwardWord : List Event := forwardChunks.flatten' in matrix_source,
@@ -94,6 +125,16 @@ def check():
             require(result.returncode == 0, script + '\n' + result.stdout)
 
         run('generate_matrix.py', ROOT / 'inputs/hosted-template.json.gz', work / 'matrix')
+        def check_node_modules(directory, prefix):
+            generated = sorted(directory.glob(prefix + '*.lean'))
+            require([p.name for p in generated] ==
+                    [p.name for p in sorted(ROOT.glob(prefix + '*.lean'))],
+                    'Wrong generated module inventory: ' + prefix)
+            for path in generated:
+                require(path.read_bytes() == (ROOT / path.name).read_bytes(),
+                        'Non-reproducible generated module: ' + path.name)
+
+        check_node_modules(work / 'matrix', 'MatrixNodes')
         for name in ('MatrixData.lean', 'MatrixCheckpoints.lean', 'MatrixCertificate.lean'):
             require((work / 'matrix' / name).read_bytes() == (ROOT / name).read_bytes(),
                     'Non-reproducible generated file: ' + name)
@@ -113,6 +154,7 @@ def check():
                 'Non-reproducible original-bank ownership data')
         run('generate_frame_trace.py', ROOT / 'inputs/hosted-template.json.gz',
             work / 'states.json', work / 'FrameTraceData.lean')
+        check_node_modules(work, 'FrameTraceNodes')
         for name in ('FrameTraceLiterals.lean', 'FrameTraceCheckpoints.lean', 'FrameTraceData.lean'):
             require((work / name).read_bytes() == (ROOT / name).read_bytes(),
                     'Non-reproducible frame trace data: ' + name)

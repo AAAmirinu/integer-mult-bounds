@@ -1,5 +1,9 @@
 # Reproducing the source-invocation work
 
+**Phase 1 port branch:** the instructions below describe the Lean 4.33 baseline.
+For the bounded Lean 4.21 Lake package, use [PORT-PHASE1.md](PORT-PHASE1.md).
+No environment override or raised stack is used for that probe.
+
 Task A has its own independent replay in `../lean-multi-host-framework`.
 This directory concerns Task B. A successful build certifies the statements
 actually present in the Lean files; consult `README.md` for the precise scope
@@ -49,7 +53,7 @@ lake build Mathlib.Data.Matrix.Mul \
 Mathlib's official `lake exe cache get` can supply the same library artifacts
 when available. In this session the configured proxy refused the official
 Azure cache endpoint, so the required library modules were built from source.
-For writable cache storage use `MATHLIB_CACHE_DIR`; changing HOME is unnecessary.
+A cache is optional; Lake can compile the pinned dependency sources instead.
 
 ## Source binding and proof replay
 
