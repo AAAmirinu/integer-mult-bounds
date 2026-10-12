@@ -1,0 +1,9 @@
+{
+  "status": "FEASIBLE",
+  "seconds": 300.05244336600003,
+  "rounded_entropy": 45507.373242,
+  "lower_bound": 0.0,
+  "pattern_variables": 2159,
+  "flow_variables": 198006,
+  "scope": "Restricted-pattern nomination only; independent physical and exact arithmetic admission required."
+}

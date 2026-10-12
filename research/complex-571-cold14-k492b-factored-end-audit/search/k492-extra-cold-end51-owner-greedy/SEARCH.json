@@ -1,0 +1,209 @@
+{
+  "status": "DISCOVERY_REQUIRES_INDEPENDENT_ADMISSION",
+  "moves": [
+    {
+      "time": 13,
+      "helper": 139,
+      "width": 9,
+      "source": [
+        1,
+        8,
+        81
+      ],
+      "destination": [
+        1,
+        8,
+        82
+      ],
+      "entropy_gain": 11.577907326221107
+    },
+    {
+      "time": 20,
+      "helper": 485,
+      "width": 8,
+      "source": [
+        0,
+        10,
+        85
+      ],
+      "destination": [
+        0,
+        12,
+        85
+      ],
+      "entropy_gain": 7.638170019537757
+    },
+    {
+      "time": 0,
+      "helper": 187,
+      "width": 9,
+      "source": [
+        1,
+        8,
+        81
+      ],
+      "destination": [
+        0,
+        10,
+        85
+      ],
+      "entropy_gain": 14.319939817739874
+    },
+    {
+      "time": 28,
+      "helper": 441,
+      "width": 4,
+      "source": [
+        0,
+        13,
+        85
+      ],
+      "destination": [
+        1,
+        15,
+        1
+      ],
+      "entropy_gain": 5.545177444479563
+    },
+    {
+      "time": 33,
+      "helper": 366,
+      "width": 7,
+      "source": [
+        0,
+        14,
+        2
+      ],
+      "destination": [
+        0,
+        13,
+        85
+      ],
+      "entropy_gain": 5.958252498192957
+    },
+    {
+      "time": 19,
+      "helper": 368,
+      "width": 9,
+      "source": [
+        1,
+        8,
+        81
+      ],
+      "destination": [
+        0,
+        14,
+        2
+      ],
+      "entropy_gain": 15.139580122002142
+    },
+    {
+      "time": 26,
+      "helper": 442,
+      "width": 4,
+      "source": [
+        1,
+        10,
+        93
+      ],
+      "destination": [
+        0,
+        14,
+        2
+      ],
+      "entropy_gain": 3.81908500976888
+    },
+    {
+      "time": 26,
+      "helper": 441,
+      "width": 4,
+      "source": [
+        1,
+        10,
+        94
+      ],
+      "destination": [
+        2,
+        14,
+        2
+      ],
+      "entropy_gain": 3.81908500976888
+    },
+    {
+      "time": 9,
+      "helper": 489,
+      "width": 5,
+      "source": [
+        0,
+        4,
+        2
+      ],
+      "destination": [
+        1,
+        10,
+        93
+      ],
+      "entropy_gain": 1.4845198668989692
+    },
+    {
+      "time": 8,
+      "helper": 366,
+      "width": 7,
+      "source": [
+        0,
+        4,
+        19
+      ],
+      "destination": [
+        0,
+        4,
+        2
+      ],
+      "entropy_gain": 4.7673557915188916
+    },
+    {
+      "time": 2,
+      "helper": 365,
+      "width": 9,
+      "source": [
+        0,
+        0,
+        70
+      ],
+      "destination": [
+        0,
+        4,
+        19
+      ],
+      "entropy_gain": 6.748021735425699
+    },
+    {
+      "time": 1,
+      "helper": 443,
+      "width": 4,
+      "source": [
+        0,
+        0,
+        70
+      ],
+      "destination": [
+        1,
+        10,
+        94
+      ],
+      "entropy_gain": 5.178277304132059
+    }
+  ],
+  "entropy_gain": 85.99537194568678,
+  "profile": {
+    "1": 181723,
+    "2": 30126,
+    "3": 31107,
+    "4": 11520,
+    "5": 4976,
+    "6": 576,
+    "8": 576,
+    "16": 1,
+    "48": 2216
+  }
+}

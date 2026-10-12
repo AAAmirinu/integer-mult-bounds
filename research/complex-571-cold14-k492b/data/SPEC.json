@@ -2,8 +2,8 @@
  "schema": "witness-spec/1",
  "name": "cold14",
  "data": {
-  "plan_sha256": "c919c366ef1d3528f1884e47dfce858ab3164b099740e4c17cde6f697b3ec458",
-  "owners_sha256": "d695529191cf0fba1caf813cbf0f19072df990b5bd5371abfecaf2ca37317745"
+  "plan_sha256": "40973c7ef7c5c08219ee02ef18bf39357f661c88e7d845ae90bb1be335d9a7af",
+  "owners_sha256": "51e6b63c560e910c755ec5bafbbbcab10432f01834bf775442f60bd5e967b426"
  },
  "providers": {
   "ck": {
@@ -636,70 +636,70 @@
    "inventory": {
     "4": 30,
     "5": 48,
-    "7": 36,
+    "7": 37,
     "8": 112,
-    "9": 266
+    "9": 265
    },
    "native_negative_controls": 25,
-   "phase_edges": 3015,
+   "phase_edges": 3017,
    "expected_profile": {
-    "1": 2512,
-    "2": 400,
+    "1": 2513,
+    "2": 401,
     "3": 448,
     "4": 160,
-    "5": 70,
+    "5": 69,
     "6": 8,
     "8": 8
    },
    "artifact_semantic_sha256": {
-    "CANONICAL-WORD.json.gz": "fb4a8d14ed2a8048698bea6ae16f86163a1aa6c80f2eb622222eee5cdbce9b3b",
-    "LOCAL-PROGRAMS.json.gz": "efe45ce7fb025a6f53cc9eb54e951ac2211a5ed927e689a049e4f68ca680654b",
-    "LOCAL-CHECKS.json": "e29bdcebdc2966979a9f5911f56b68c6f4942f6fdbeb6737e9db44e147d0193a",
-    "INDEPENDENT-LOCAL-REPLAY.json": "f31a73829f5de91fe98c3986bb2ad9b31e7b33881720029347051ab2b686af3c",
-    "CLIFFORD-RECIPES.json": "2799d73dd08c4435e5900ff2ae6ebc7f34535c153e173ab88d66d1f0b5e6dcde",
-    "CLIFFORD-REVIEW.json": "4231236ccc3bf45c469e4c98e3071a01ebf75f6366fb73b733e969fed65338b9",
-    "RESIDUAL-ADAPTERS.json": "99e1873464e8e718ea25fd80df5aaed0e5508b83e9bf2bdd094ea5c95fdf87c9"
+    "CANONICAL-WORD.json.gz": "345a663d7ae654c121d5178dc3ee7d67dd87cf8c6ff22a8458cc3ac9e2d9ccc3",
+    "LOCAL-PROGRAMS.json.gz": "bc9dbd2dcd26b476cd981142601c8c1558f1771f479400ed7924699605945c64",
+    "LOCAL-CHECKS.json": "a8706865c9ba920b9859cae6b154a7026e37b80196f141905e95e3556d01d89a",
+    "INDEPENDENT-LOCAL-REPLAY.json": "ff27fca99026683b0b030af428cababb6dd77a71fa0f77ef91dcb9140daeb605",
+    "CLIFFORD-RECIPES.json": "7e31020505a78b51648eb468178c2a19409a21f641808f994db0e0890070653c",
+    "CLIFFORD-REVIEW.json": "2bf7d7f740fc9be598d2aabda2da159a201e8e2d18405a1030d244d7e02faa44",
+    "RESIDUAL-ADAPTERS.json": "dbeec0747e538d76e7d51f0c78361cde272a29723dfee35c8670cd6d22a79323"
    },
    "entering": 204,
    "entrance": 380,
-   "width_digest": "d25e4a014d65faeb0b2ccdf152bc0a4f572d0dc3c17874c39d10382ce9881505",
+   "width_digest": "8f8f30523b8cb1ddc5c8f346d7b9417063b4719d8c63695e65057afcf5e75a2c",
    "program_hashes": {
-    "backward": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf",
-    "forward": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+    "backward": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b",
+    "forward": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
    },
-   "artifacts.LOCAL-CHECKS.json": "0fad744aa863eedb288a9f87b1c23225a36b316b6275cc3b1bcedd42afe28a67",
-   "artifacts.CLIFFORD-RECIPES.json": "2799d73dd08c4435e5900ff2ae6ebc7f34535c153e173ab88d66d1f0b5e6dcde",
-   "artifacts.RESIDUAL-ADAPTERS.json": "bdb44cf523636f307ebb3617da548f2e3a8af74321eabe24aef40186e280a917",
+   "artifacts.LOCAL-CHECKS.json": "feb0622aa96a780f91288f6533fe0bfbe5344e4529dad4571b44dafb4a2d34b5",
+   "artifacts.CLIFFORD-RECIPES.json": "7e31020505a78b51648eb468178c2a19409a21f641808f994db0e0890070653c",
+   "artifacts.RESIDUAL-ADAPTERS.json": "b14db49b23f26555d151690c99651349da5384e03b8b9ba8471d5c816dfd95ed",
    "complete_contract": {
     "local": {
      "backward": {
-      "events": 27909,
-      "macros": 22693,
-      "real_component_primitives": 257280,
-      "prefix_l1": "16753412757380464429924108070201913461/8388608",
-      "prefix_bits": 101,
-      "coefficient_work_primitive_count": 127930,
+      "events": 78206,
+      "macros": 72989,
+      "real_component_primitives": 824166,
+      "prefix_l1": "5821230709009067309549306682307338563610928345169/16384",
+      "prefix_bits": 148,
+      "coefficient_work_primitive_count": 411015,
       "all_exact_columns": 716,
       "dirty_helper_columns": 492,
       "all_dirty_helper_columns_restored": true,
       "private_centres_and_coefficient_work_cleared": true,
-      "pre_wrappers": 226,
-      "post_wrappers": 226,
+      "pre_wrappers": 227,
+      "post_wrappers": 227,
       "endpoint_evidence": "Hash-bound fresh INDEPENDENT-LOCAL-REPLAY.json"
      },
      "forward": {
-      "events": 27909,
-      "macros": 22693,
-      "real_component_primitives": 257232,
-      "prefix_l1": "4536094588619580433782972610869617/281474976710656",
-      "prefix_bits": 64,
-      "coefficient_work_primitive_count": 127898,
+      "events": 78206,
+      "macros": 72989,
+      "real_component_primitives": 824118,
+      "prefix_l1": "126406269883862282436367157138868223735070465076530550927/128",
+      "prefix_bits": 180,
+      "coefficient_work_primitive_count": 410983,
       "all_exact_columns": 716,
       "dirty_helper_columns": 492,
       "all_dirty_helper_columns_restored": true,
       "private_centres_and_coefficient_work_cleared": true,
-      "pre_wrappers": 226,
-      "post_wrappers": 226,
+      "pre_wrappers": 227,
+      "post_wrappers": 227,
       "endpoint_evidence": "Hash-bound fresh INDEPENDENT-LOCAL-REPLAY.json"
      }
     },
@@ -710,15 +710,15 @@
     "n": 716,
     "entering_helpers": 204,
     "entrance_rank": 380,
-    "terminal_codimension": 146,
-    "hyperplane_ended_helpers": 58,
-    "cold_hyperplane_ended_helpers": 22,
+    "terminal_codimension": 148,
+    "hyperplane_ended_helpers": 59,
+    "cold_hyperplane_ended_helpers": 23,
     "width_inventory": {
      "4": 30,
      "5": 48,
-     "7": 36,
+     "7": 37,
      "8": 112,
-     "9": 266
+     "9": 265
     },
     "widths": [
      9,
@@ -1087,7 +1087,7 @@
      8,
      8,
      9,
-     9,
+     7,
      9,
      9,
      7,
@@ -1214,48 +1214,48 @@
      5,
      5
     ],
-    "local_adapters": 437040,
-    "local_primitive_bound": 11334342462720,
+    "local_adapters": 1241792,
+    "local_primitive_bound": 32205051794278,
     "compiler": 25934336,
-    "children": 3606,
+    "children": 3607,
     "paid_profile": {
-     "1": 2512,
-     "2": 400,
+     "1": 2513,
+     "2": 401,
      "3": 448,
      "4": 160,
-     "5": 70,
+     "5": 69,
      "6": 8,
      "8": 8
     },
     "program_hashes": {
-     "backward": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf",
-     "forward": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+     "backward": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b",
+     "forward": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     "semantic_artifact_sha256": {
-     "CANONICAL-WORD.json.gz": "fb4a8d14ed2a8048698bea6ae16f86163a1aa6c80f2eb622222eee5cdbce9b3b",
-     "LOCAL-PROGRAMS.json.gz": "efe45ce7fb025a6f53cc9eb54e951ac2211a5ed927e689a049e4f68ca680654b",
-     "LOCAL-CHECKS.json": "e29bdcebdc2966979a9f5911f56b68c6f4942f6fdbeb6737e9db44e147d0193a",
-     "INDEPENDENT-LOCAL-REPLAY.json": "f31a73829f5de91fe98c3986bb2ad9b31e7b33881720029347051ab2b686af3c",
-     "CLIFFORD-RECIPES.json": "2799d73dd08c4435e5900ff2ae6ebc7f34535c153e173ab88d66d1f0b5e6dcde",
-     "CLIFFORD-REVIEW.json": "4231236ccc3bf45c469e4c98e3071a01ebf75f6366fb73b733e969fed65338b9",
-     "RESIDUAL-ADAPTERS.json": "99e1873464e8e718ea25fd80df5aaed0e5508b83e9bf2bdd094ea5c95fdf87c9"
+     "CANONICAL-WORD.json.gz": "345a663d7ae654c121d5178dc3ee7d67dd87cf8c6ff22a8458cc3ac9e2d9ccc3",
+     "LOCAL-PROGRAMS.json.gz": "bc9dbd2dcd26b476cd981142601c8c1558f1771f479400ed7924699605945c64",
+     "LOCAL-CHECKS.json": "a8706865c9ba920b9859cae6b154a7026e37b80196f141905e95e3556d01d89a",
+     "INDEPENDENT-LOCAL-REPLAY.json": "ff27fca99026683b0b030af428cababb6dd77a71fa0f77ef91dcb9140daeb605",
+     "CLIFFORD-RECIPES.json": "7e31020505a78b51648eb468178c2a19409a21f641808f994db0e0890070653c",
+     "CLIFFORD-REVIEW.json": "2bf7d7f740fc9be598d2aabda2da159a201e8e2d18405a1030d244d7e02faa44",
+     "RESIDUAL-ADAPTERS.json": "dbeec0747e538d76e7d51f0c78361cde272a29723dfee35c8670cd6d22a79323"
     }
    },
-   "semantic_phase_sha256": "4231236ccc3bf45c469e4c98e3071a01ebf75f6366fb73b733e969fed65338b9",
+   "semantic_phase_sha256": "2bf7d7f740fc9be598d2aabda2da159a201e8e2d18405a1030d244d7e02faa44",
    "expected_local.forward": {
-    "events": 27909,
-    "macros": 22693,
-    "real_component_primitives": 257232,
-    "prefix_l1": "4536094588619580433782972610869617/281474976710656",
-    "coefficient_work_primitive_count": 127898
+    "events": 78206,
+    "macros": 72989,
+    "real_component_primitives": 824118,
+    "prefix_l1": "126406269883862282436367157138868223735070465076530550927/128",
+    "coefficient_work_primitive_count": 410983
    },
-   "wrappers": 226,
+   "wrappers": 227,
    "expected_local.backward": {
-    "events": 27909,
-    "macros": 22693,
-    "real_component_primitives": 257280,
-    "prefix_l1": "16753412757380464429924108070201913461/8388608",
-    "coefficient_work_primitive_count": 127930
+    "events": 78206,
+    "macros": 72989,
+    "real_component_primitives": 824166,
+    "prefix_l1": "5821230709009067309549306682307338563610928345169/16384",
+    "coefficient_work_primitive_count": 411015
    }
   }
  },
@@ -1917,40 +1917,44 @@
    "jp8": 64
   },
   "global_profile": {
-   "1": 181658,
-   "2": 30017,
+   "1": 181686,
+   "2": 30082,
    "3": 31105,
    "4": 11520,
-   "5": 5040,
+   "5": 4976,
    "6": 576,
+   "7": 1,
    "8": 576,
-   "12": 1,
-   "21": 1,
-   "48": 2215
+   "16": 1,
+   "24": 4,
+   "28": 1,
+   "48": 2216
   },
   "owners_per_call": 716,
   "hosted_residuals": 35424,
   "rank_mass": 520704,
-  "actual_73column_sigmas": 6563,
-  "cross_replica_helper_roles": 27177,
-  "idle_remainders": 2341,
+  "actual_73column_sigmas": 6841,
+  "cross_replica_helper_roles": 26908,
+  "idle_remainders": 2312,
   "live": 7168,
   "physical": 7670,
   "deficit": 2560,
-  "entering_helper_roles": 16368,
+  "entering_helper_roles": 16432,
   "idle_remainder_profile": {
-   "1": 122,
-   "2": 1,
+   "1": 86,
+   "2": 2,
    "3": 1,
-   "12": 1,
-   "21": 1,
-   "48": 2215
+   "7": 1,
+   "16": 1,
+   "24": 4,
+   "28": 1,
+   "48": 2216
   },
-  "complex_lower": "409542469115240367371/250000000000000000000000",
-  "conservative_complex_lower": "1638169873582634644159/1000000000000000000000000",
-  "kappa": "327098132984091/200000000000000000",
-  "kappa_decimal": "0.001635490664920455",
-  "conservative_kappa_decimal": "0.001635490662051536",
+  "complex_lower": "819149473125753002519/500000000000000000000000",
+  "conservative_complex_lower": "40957473584314218731/25000000000000000000000",
+  "kappa": "1635619312854787/1000000000000000000",
+  "kappa_decimal": "0.001635619312854787",
+  "conservative_kappa_decimal": "0.00163561930998526",
   "gain_baseline_kappa": "0.001601260169988325",
   "mutations_rejected": 23,
   "assembly_controls_rejected": 114
@@ -2175,12 +2179,12 @@
       "type": "cold_end",
       "recipe": "pkg:data/recipes/k492-jp8-cold_end.json.gz",
       "input_content_sha256": "a51b37b5bd5e9e66ea14e9759f88cb6181bab041cb09aecd08e7a11956100016",
-      "recipe_sha256": "660d2438c5fd4dd4cc49eefff071ac53f50adb65f292005f182082d27555a6a9",
+      "recipe_sha256": "817aa73bef887a3e8eb00e2c3b87381663603c0758a14a5d332ea32dc5153775",
       "negative_controls": 38,
-      "output_content_sha256": "30ace4fbee52a519255724ecb5a2642a3f052fb588c1473ad73682070b2a8a23"
+      "output_content_sha256": "8312b4f41bb9761f7473dd7bf71512aa320cc11014222ce469e11a2866bb4167"
      }
     ],
-    "word_content_sha256": "30ace4fbee52a519255724ecb5a2642a3f052fb588c1473ad73682070b2a8a23"
+    "word_content_sha256": "8312b4f41bb9761f7473dd7bf71512aa320cc11014222ce469e11a2866bb4167"
    }
   },
   "shadows": {

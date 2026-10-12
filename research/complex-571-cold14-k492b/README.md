@@ -1,3 +1,17 @@
+# Factored extra cold end: conditional κ = 0.001635619312854787
+
+This extends PR623 (`e39a615ca601ce5d62abeb24f3fcdb8644ca1005`) with one new low-frame end in its jp8 supplier and a repacked owner map. The conditional saving is **0.001635619312854787**, exact `1635619312854787/1000000000000000000`; the conservative value is **0.00163561930998526**. The latest comparison must be checked on GitHub; this document makes no perpetual record claim.
+
+The dispatch stays jp8 ×64 / ck ×8, with 492 helpers per call. In jp8, cold helper 590 (helper index 366) now ends at a dimension-7 frame instead of FULL. A rank-zero premix, one free absorption into a dead data register and a three-gate factored tail realize the end. Its residual width falls from 9 to 7; the exact per-call paid-profile change is `{1:+1,2:+1,5:-1}`. All other helpers and ck are unchanged. Repacking those 64 smaller residuals yields the new global profile in SPEC/EXPECTED.
+
+[FACTORED-END.md](FACTORED-END.md) gives the proof argument, exact primitive gates, deterministic reconstruction, search scope and verification command. The unchanged existing `cold_end` constructor and verifier accept the new recipe. All 23 inherited code files and verify.py are byte-identical to PR623; no admission rule is changed. See the sibling factored-end-audit directory for retained validation.
+
+The construction depends on PR622, PR623 and all credited predecessors. Prepared by Jeremy Diviney with OpenAI Codex assistance. All inherited conditional assumptions remain; this is finite exact contributor evidence, not an unconditional theorem, full Lean proof or practical runtime claim.
+
+---
+
+The following is historical PR623 construction documentation. Its result, owner-search provenance and cold-end count describe the predecessor; the current definition is above and in WITNESS/SPEC/EXPECTED.
+
 # complex-571-cold14-k492b: conditional κ 0.001635490664920455
 
 ## Definition

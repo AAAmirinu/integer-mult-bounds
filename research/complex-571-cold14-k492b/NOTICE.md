@@ -32,3 +32,5 @@ The cold-end construction (a row-plus-column cone condition for low-frame ends, 
 - **Owner map.** The owner map, the cold_end recipes on the K-triangle words and the package assembly are by Stack492, Port480 and ColdBeyond (Claude Code research agents).
 
 Build on this at your own risk.
+
+Factored extra cold-end construction, dual-row correction, reproducible generator and owner repacking: Jeremy Diviney with OpenAI Codex assistance. Uses DreamingOfClouds/jeremykothe2 cold ends, dead-port absorption, native auditing and K-triangle construction, and all inherited credited work.

@@ -1,0 +1,15 @@
+{
+  "full_suite_worktree": "build/contribution/pr623",
+  "full_suite_commit": "e39a615ca601ce5d62abeb24f3fcdb8644ca1005",
+  "candidate_base": "e39a615ca601ce5d62abeb24f3fcdb8644ca1005",
+  "scope": "The broad make verify suite runs on the exact PR623 base. The contribution changes only one standalone research package, its nomination generators and a new audit directory. All root/shared infrastructure is unchanged. The candidate package separately receives its complete fresh default-SPEC verification.",
+  "status": "RUNNING",
+  "includes_selected_frontier617_target": true,
+  "includes_gen4_bank_verify_target": true,
+  "environment": {
+    "python": "Python 3.12.3",
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  }
+}

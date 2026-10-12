@@ -1,0 +1,32 @@
+{
+  "discovery_scope": "Search maps are nominations, with old artifact bindings retained until the final independently localized supplier is bound. They are not admitted witnesses. Decompress intermediate PLAN.json.gz before invoking the as-run scripts.",
+  "runs": [
+    {
+      "script": "repack_partial_owners.py",
+      "data": "k492-extra-cold-end51-owner-seed",
+      "out": "k492-extra-cold-end51-owner-greedy"
+    },
+    {
+      "script": "anneal_owner_pair_swaps.py",
+      "data": "k492-extra-cold-end51-owner-greedy",
+      "out": "k492-extra-cold-end51-owner-pairs",
+      "trials": 5000000,
+      "seed": 0,
+      "temperature": 1
+    },
+    {
+      "script": "search_pr610_patterns.py",
+      "data": "k492-extra-cold-end51-owner-greedy",
+      "out": "k492-extra-cold-end51-owner-patterns",
+      "seconds": 300,
+      "result": "No improvement; discarded"
+    }
+  ],
+  "abandoned_setup_attempts": [
+    "Direct PR617-to-K492 port failed exact helper row; added the free dual-row correction before independent admission.",
+    "Initial global discovery rejected stale per_call_widths metadata. The corrected nomination passed unchanged emit/physical/assembly checks.",
+    "Initial raw-word controls could not read generic experiment metadata. Final recipe retains required audit metadata and actual inserted A indices; all 38 unchanged controls pass.",
+    "A first full replay was stopped before completion after source review found the descriptive entering_helper_roles field still at16368. The actual emitted count of widths below9 is16432. This unused expected metadata was corrected in SPEC/EXPECTED and the manifest was refrozen; final-replay is a new no-reuse run. Circuit, map and all mathematical results unchanged."
+  ],
+  "extra_scope": "Two-helper extension passed native audit locally, but is not included in the submitted witness. No unbuilt gains are added."
+}

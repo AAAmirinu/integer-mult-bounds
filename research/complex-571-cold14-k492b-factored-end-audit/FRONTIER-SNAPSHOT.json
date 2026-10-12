@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-10-12T22:14:39.769491+00:00",
+  "open_prs_scanned": 455,
+  "strongest_comparable_open_proposal": {
+    "number": 626,
+    "head": "660de893d27bb7abd1d5b01b1640207528a5c851",
+    "kappa": "0.001635527380375392",
+    "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/626"
+  },
+  "candidate_kappa": "0.001635619312854787",
+  "source": "GitHub live PR listing and PR bodies; selected main certificate remains PR617",
+  "main_commit": "cda21fcefe541adfaad106a2766a900ab653f447"
+}

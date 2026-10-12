@@ -1,0 +1,63 @@
+{
+  "status": "EMITTED_MIXED_PROVIDER_ASYNCHRONOUS_WHOLE_OWNER_COMPLEX_TEMPLATE",
+  "template_sha256": "8c9fcd1d50bf60af6d1a7b1cfa942154f2e53616c9cab452244ddc5b7ccc5e1b",
+  "parent_template_sha256": "7db047a427a7979d69e163c78a1e32bd445628fb86723e131a3138361355a9c3",
+  "live": 7168,
+  "physical": 7670,
+  "global_profile": {
+    "1": 181686,
+    "2": 30082,
+    "3": 31105,
+    "4": 11520,
+    "5": 4976,
+    "6": 576,
+    "7": 1,
+    "8": 576,
+    "16": 1,
+    "24": 4,
+    "28": 1,
+    "48": 2216
+  },
+  "rank_mass": 520704,
+  "deficit": 2560,
+  "maxchild": 48,
+  "hosted_residuals": 35424,
+  "banks_per_stage": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "entering_helper_roles": 16432,
+  "unique_actual_73column_sigmas": 6841,
+  "sigma_stream_sha256": "75f86a5caf626e301d6ae42881993bdc99b0c6243c59386528ffa6433c182fa2",
+  "cross_replica_helper_roles": 26908,
+  "asynchronous_order_sha256": "2acd6b2004be3d3ef6645f3c968feb22b5167c400bb49eb446821e5cb7af6eee",
+  "source_artifacts": {
+    "work/complex-nine-native/DATA-PHASES.json": "c5916ff312678f12aba403847643fbbc29f643acec60bdf836fa56cd3e8251fa",
+    "providers/ck/CANONICAL-WORD.json.gz": "ae3018c0646be06f47d345bb8baf0e6ea9220096a949fa30a8f7656aa4ad6f45",
+    "providers/ck/LOCAL-PROGRAMS.json.gz": "b5da54e049cc127a1065190a647cb71cac0c6ba03d9ccdb71719f4fcbfa886f3",
+    "providers/ck/LOCAL-CHECKS.json": "059c4e59142bdf5c19dc7c0afebcddfec28e6e60cbc7299b8bdcc624afbc0cbe",
+    "providers/ck/INDEPENDENT-LOCAL-REPLAY.json": "ecefb9e661301d8081522be68bbe6640e175c011eb1177f643383d193c6fb2f0",
+    "providers/ck/RESIDUAL-ADAPTERS.json": "4697965c1b466fd3eaf37fa1fbbd45bb06c78cb0fe0b3a253744efb4013581b9",
+    "providers/ck/CLIFFORD-RECIPES.json": "dfb64e71409a395f9375d9cc2258365d462bab2d28b707dcfba38994dd5aa0b9",
+    "providers/ck/CLIFFORD-REVIEW.json": "2e0fabeff34a70ba1666c97e37992029f199182c1c8af112a82982401c0d494b",
+    "providers/jp8/CANONICAL-WORD.json.gz": "7f727ad35a891116c75e520e7c91e0f1d874ca52bbf1ac4abd82f74fb1badac5",
+    "providers/jp8/LOCAL-PROGRAMS.json.gz": "7880a8ebeaf75c48b1aa6608d1c4b56fd12366d077983b3188e9fd44e57c562d",
+    "providers/jp8/LOCAL-CHECKS.json": "feb0622aa96a780f91288f6533fe0bfbe5344e4529dad4571b44dafb4a2d34b5",
+    "providers/jp8/INDEPENDENT-LOCAL-REPLAY.json": "abc69e597997e5b6f39b6462aadd8275d2e3c810079e45a09fe9fdc5d9091d9a",
+    "providers/jp8/RESIDUAL-ADAPTERS.json": "b14db49b23f26555d151690c99651349da5384e03b8b9ba8471d5c816dfd95ed",
+    "providers/jp8/CLIFFORD-RECIPES.json": "7e31020505a78b51648eb468178c2a19409a21f641808f994db0e0890070653c",
+    "providers/jp8/CLIFFORD-REVIEW.json": "9bbc6d9c8bdc6d94136944e7cc6d7b66b2815d7d9638b3f6fea18effd96eecc0"
+  },
+  "provider_counts": {
+    "ck": 8,
+    "jp8": 64
+  },
+  "scope": "Two actual verified plain/width-seven providers dispatched per complete invocation; independent controller/spectator/normalization and complete finite invoice admission required."
+}

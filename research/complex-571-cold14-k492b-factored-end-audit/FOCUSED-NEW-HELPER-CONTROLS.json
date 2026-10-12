@@ -1,0 +1,42 @@
+{
+  "status": "PASS_FOCUSED_NEW_HELPER_CONTROLS",
+  "input_content_sha256": "8312b4f41bb9761f7473dd7bf71512aa320cc11014222ce469e11a2866bb4167",
+  "positive_pass": true,
+  "rejected": [
+    {
+      "name": "new_premix_omitted",
+      "status": "REJECTED",
+      "reason": "zero-frame precondition/compensation touches a cold hyperplane-ended helper before its wrapper"
+    },
+    {
+      "name": "new_absorption_omitted",
+      "status": "REJECTED",
+      "reason": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "first_accumulator_gate_omitted",
+      "status": "REJECTED",
+      "reason": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "last_helper_tail_gate_omitted",
+      "status": "REJECTED",
+      "reason": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "new_helper_end_dropped",
+      "status": "REJECTED",
+      "reason": "paid local profile differs from the reported local_profile"
+    },
+    {
+      "name": "new_helper_end_wrong_frame",
+      "status": "REJECTED",
+      "reason": "('hpe cone pre-check (row / column)', [('row', 590, 590)])"
+    },
+    {
+      "name": "new_tail_moved_to_full",
+      "status": "REJECTED",
+      "reason": "('cleanup on non-FULL end', ['add', 590, 13, 1, 2, 1037])"
+    }
+  ]
+}

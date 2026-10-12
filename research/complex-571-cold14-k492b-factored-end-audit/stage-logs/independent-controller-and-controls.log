@@ -1,0 +1,105 @@
+{
+  "status": "PASS_INDEPENDENT_ASYNC_WHOLE_OWNER_CONTROLLER_PHASES_AND_SPECTATORS",
+  "template_sha256": "8c9fcd1d50bf60af6d1a7b1cfa942154f2e53616c9cab452244ddc5b7ccc5e1b",
+  "complex_template_sha256": "8c9fcd1d50bf60af6d1a7b1cfa942154f2e53616c9cab452244ddc5b7ccc5e1b",
+  "complex_live": 7168,
+  "complex_profile": {
+    "1": 181686,
+    "2": 30082,
+    "3": 31105,
+    "4": 11520,
+    "5": 4976,
+    "6": 576,
+    "7": 1,
+    "8": 576,
+    "16": 1,
+    "24": 4,
+    "28": 1,
+    "48": 2216
+  },
+  "complex_hosted_residuals": 35424,
+  "physical": 7670,
+  "rank_mass": 520704,
+  "deficit": 2560,
+  "entering_helper_roles": 16432,
+  "cross_replica_helper_roles": 26908,
+  "one_owner_per_complete_invocation": true,
+  "helper_busy_family_window_checks": 35424,
+  "complete_invocations": 72,
+  "actual_orthogonal_73column_maps": 6841,
+  "actual_sigma_stream_sha256": "75f86a5caf626e301d6ae42881993bdc99b0c6243c59386528ffa6433c182fa2",
+  "all_actual_residual_and_spectator_charts": true,
+  "idle_remainders": 2312,
+  "mutations_rejected": [
+    "alias two whole owners",
+    "helper on active data family",
+    "owner in private namespace",
+    "wrong residual width",
+    "wrong spectator coordinate",
+    "omit idle remainder",
+    "understate physical reserve",
+    "ck: wrong provider at its invocation",
+    "ck: stale per-call local program hash",
+    "ck: stale serialized provider program",
+    "ck: unbound residual adapter hash",
+    "ck: partner width in provider width registry",
+    "ck: wrong per-call residual width",
+    "ck: wrong sweep provider",
+    "ck: entering helper width silently restored to nine",
+    "jp8: wrong provider at its invocation",
+    "jp8: stale per-call local program hash",
+    "jp8: stale serialized provider program",
+    "jp8: unbound residual adapter hash",
+    "jp8: partner width in provider width registry",
+    "jp8: wrong per-call residual width",
+    "jp8: wrong sweep provider",
+    "jp8: entering helper width silently restored to nine"
+  ],
+  "mutation_controls_run": true,
+  "provider_phase_semantic_sha256": {
+    "ck": "dceebd0983fdfe94922323ae6499fc2d9bfbb7886c6843af5673b0266ec5b609",
+    "jp8": "2bf7d7f740fc9be598d2aabda2da159a201e8e2d18405a1030d244d7e02faa44"
+  },
+  "provider_artifact_semantic_sha256": {
+    "ck": {
+      "CANONICAL-WORD.json.gz": "9bbc75dede090cfd7a0a0252424ea9d9f6211e2350d2a801d4e4f2f0784167c7",
+      "LOCAL-PROGRAMS.json.gz": "854f17274092263dc25e60367f4cd0d29f60a8446becd17cc1883ebed7a97900",
+      "LOCAL-CHECKS.json": "9e7be4f5eb567ffe886871b3fa434cc71f352e91cc9da07cb4e72c5742f24db4",
+      "INDEPENDENT-LOCAL-REPLAY.json": "ad854d9d15515cbcf7a2bee221d9c3cf0c7215770521866b12ce98aa777e310b",
+      "CLIFFORD-RECIPES.json": "dfb64e71409a395f9375d9cc2258365d462bab2d28b707dcfba38994dd5aa0b9",
+      "CLIFFORD-REVIEW.json": "dceebd0983fdfe94922323ae6499fc2d9bfbb7886c6843af5673b0266ec5b609",
+      "RESIDUAL-ADAPTERS.json": "8283dfa442fc7e7626f3356385bda8607b8d15eecfdc9515a6271c29da6caa7a"
+    },
+    "jp8": {
+      "CANONICAL-WORD.json.gz": "345a663d7ae654c121d5178dc3ee7d67dd87cf8c6ff22a8458cc3ac9e2d9ccc3",
+      "LOCAL-PROGRAMS.json.gz": "bc9dbd2dcd26b476cd981142601c8c1558f1771f479400ed7924699605945c64",
+      "LOCAL-CHECKS.json": "a8706865c9ba920b9859cae6b154a7026e37b80196f141905e95e3556d01d89a",
+      "INDEPENDENT-LOCAL-REPLAY.json": "ff27fca99026683b0b030af428cababb6dd77a71fa0f77ef91dcb9140daeb605",
+      "CLIFFORD-RECIPES.json": "7e31020505a78b51648eb468178c2a19409a21f641808f994db0e0890070653c",
+      "CLIFFORD-REVIEW.json": "2bf7d7f740fc9be598d2aabda2da159a201e8e2d18405a1030d244d7e02faa44",
+      "RESIDUAL-ADAPTERS.json": "dbeec0747e538d76e7d51f0c78361cde272a29723dfee35c8670cd6d22a79323"
+    }
+  },
+  "widths_by_provider": {
+    "ck": {
+      "4": 30,
+      "5": 48,
+      "7": 68,
+      "8": 92,
+      "9": 254
+    },
+    "jp8": {
+      "4": 30,
+      "5": 48,
+      "7": 37,
+      "8": 112,
+      "9": 265
+    }
+  },
+  "provider_counts": {
+    "ck": 8,
+    "jp8": 64
+  },
+  "all_provider_program_phase_and_wrapper_bindings": true,
+  "scope": "Independent exact asynchronous chronology, per-replica phase projection, owner/chart/paid-profile audit. Uses per-invocation local providers bound by exact scalar, phase and residual-wrapper receipts; all-size compilation and complete coefficient invoice are separate inherited obligations."
+}

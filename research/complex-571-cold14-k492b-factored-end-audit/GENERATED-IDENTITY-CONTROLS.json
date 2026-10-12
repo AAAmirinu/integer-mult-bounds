@@ -1,0 +1,300 @@
+{
+  "status": "PASS_GENERATED_ARTIFACT_RECOMPRESSION_AND_REBOUND_MUTATIONS",
+  "kappa": "1635619312854787/1000000000000000000",
+  "source_owner_sha256": "8c9a3de959044adb733b0c638e4f1c962f892a3758f85ac485767b565a9b07e2",
+  "source_invoice_sha256": "70a00c8380cfd40a184064797c781db02a162ae692d8fdab28f9180f5bcfd017",
+  "source_providers": {
+    "ck": {
+      "raw": {
+        "CANONICAL-WORD.json.gz": "ae3018c0646be06f47d345bb8baf0e6ea9220096a949fa30a8f7656aa4ad6f45",
+        "LOCAL-PROGRAMS.json.gz": "b5da54e049cc127a1065190a647cb71cac0c6ba03d9ccdb71719f4fcbfa886f3",
+        "LOCAL-CHECKS.json": "059c4e59142bdf5c19dc7c0afebcddfec28e6e60cbc7299b8bdcc624afbc0cbe",
+        "INDEPENDENT-LOCAL-REPLAY.json": "ecefb9e661301d8081522be68bbe6640e175c011eb1177f643383d193c6fb2f0",
+        "CLIFFORD-RECIPES.json": "dfb64e71409a395f9375d9cc2258365d462bab2d28b707dcfba38994dd5aa0b9",
+        "CLIFFORD-REVIEW.json": "2e0fabeff34a70ba1666c97e37992029f199182c1c8af112a82982401c0d494b",
+        "RESIDUAL-ADAPTERS.json": "4697965c1b466fd3eaf37fa1fbbd45bb06c78cb0fe0b3a253744efb4013581b9"
+      },
+      "semantic": {
+        "CANONICAL-WORD.json.gz": "9bbc75dede090cfd7a0a0252424ea9d9f6211e2350d2a801d4e4f2f0784167c7",
+        "LOCAL-PROGRAMS.json.gz": "854f17274092263dc25e60367f4cd0d29f60a8446becd17cc1883ebed7a97900",
+        "LOCAL-CHECKS.json": "9e7be4f5eb567ffe886871b3fa434cc71f352e91cc9da07cb4e72c5742f24db4",
+        "INDEPENDENT-LOCAL-REPLAY.json": "ad854d9d15515cbcf7a2bee221d9c3cf0c7215770521866b12ce98aa777e310b",
+        "CLIFFORD-RECIPES.json": "dfb64e71409a395f9375d9cc2258365d462bab2d28b707dcfba38994dd5aa0b9",
+        "CLIFFORD-REVIEW.json": "dceebd0983fdfe94922323ae6499fc2d9bfbb7886c6843af5673b0266ec5b609",
+        "RESIDUAL-ADAPTERS.json": "8283dfa442fc7e7626f3356385bda8607b8d15eecfdc9515a6271c29da6caa7a"
+      }
+    },
+    "jp8": {
+      "raw": {
+        "CANONICAL-WORD.json.gz": "7f727ad35a891116c75e520e7c91e0f1d874ca52bbf1ac4abd82f74fb1badac5",
+        "LOCAL-PROGRAMS.json.gz": "7880a8ebeaf75c48b1aa6608d1c4b56fd12366d077983b3188e9fd44e57c562d",
+        "LOCAL-CHECKS.json": "feb0622aa96a780f91288f6533fe0bfbe5344e4529dad4571b44dafb4a2d34b5",
+        "INDEPENDENT-LOCAL-REPLAY.json": "abc69e597997e5b6f39b6462aadd8275d2e3c810079e45a09fe9fdc5d9091d9a",
+        "CLIFFORD-RECIPES.json": "7e31020505a78b51648eb468178c2a19409a21f641808f994db0e0890070653c",
+        "CLIFFORD-REVIEW.json": "9bbc6d9c8bdc6d94136944e7cc6d7b66b2815d7d9638b3f6fea18effd96eecc0",
+        "RESIDUAL-ADAPTERS.json": "b14db49b23f26555d151690c99651349da5384e03b8b9ba8471d5c816dfd95ed"
+      },
+      "semantic": {
+        "CANONICAL-WORD.json.gz": "345a663d7ae654c121d5178dc3ee7d67dd87cf8c6ff22a8458cc3ac9e2d9ccc3",
+        "LOCAL-PROGRAMS.json.gz": "bc9dbd2dcd26b476cd981142601c8c1558f1771f479400ed7924699605945c64",
+        "LOCAL-CHECKS.json": "a8706865c9ba920b9859cae6b154a7026e37b80196f141905e95e3556d01d89a",
+        "INDEPENDENT-LOCAL-REPLAY.json": "ff27fca99026683b0b030af428cababb6dd77a71fa0f77ef91dcb9140daeb605",
+        "CLIFFORD-RECIPES.json": "7e31020505a78b51648eb468178c2a19409a21f641808f994db0e0890070653c",
+        "CLIFFORD-REVIEW.json": "2bf7d7f740fc9be598d2aabda2da159a201e8e2d18405a1030d244d7e02faa44",
+        "RESIDUAL-ADAPTERS.json": "dbeec0747e538d76e7d51f0c78361cde272a29723dfee35c8670cd6d22a79323"
+      }
+    }
+  },
+  "recompression_changed_raw_hashes": {
+    "ck": {
+      "CANONICAL-WORD.json.gz": [
+        "ae3018c0646be06f47d345bb8baf0e6ea9220096a949fa30a8f7656aa4ad6f45",
+        "596294d68a0f4bc1b6ec661f733fde4159a024014bf7ff2e708aa8f4c2374a2f"
+      ],
+      "LOCAL-PROGRAMS.json.gz": [
+        "b5da54e049cc127a1065190a647cb71cac0c6ba03d9ccdb71719f4fcbfa886f3",
+        "2ddc2bd33320eed9de29a791d20e7d9622f01a9f2d368d95a83c151078a59cff"
+      ]
+    },
+    "jp8": {
+      "CANONICAL-WORD.json.gz": [
+        "7f727ad35a891116c75e520e7c91e0f1d874ca52bbf1ac4abd82f74fb1badac5",
+        "2605c8b9379d38e863c9cb32111b40fa0625b9bfd6fd5eaac11e0120deb807ee"
+      ],
+      "LOCAL-PROGRAMS.json.gz": [
+        "7880a8ebeaf75c48b1aa6608d1c4b56fd12366d077983b3188e9fd44e57c562d",
+        "a6e89b7626c3ac88527ab2014b06c89c6dd3a535102ed86e15ebf8faf4d627e2"
+      ]
+    }
+  },
+  "accepted": [
+    {
+      "provider": "ck",
+      "case": "recompressed_same_payloads",
+      "changed_raw_artifacts": [
+        "CANONICAL-WORD.json.gz",
+        "LOCAL-PROGRAMS.json.gz"
+      ],
+      "all_seven_identities_unchanged": true,
+      "all_raw_links_rebound": true
+    },
+    {
+      "provider": "jp8",
+      "case": "recompressed_same_payloads",
+      "changed_raw_artifacts": [
+        "CANONICAL-WORD.json.gz",
+        "LOCAL-PROGRAMS.json.gz"
+      ],
+      "all_seven_identities_unchanged": true,
+      "all_raw_links_rebound": true
+    }
+  ],
+  "semantic_mutations_rejected": [
+    {
+      "provider": "ck",
+      "case": "changed_actual_scalar",
+      "changed_identity": "LOCAL-PROGRAMS.json.gz",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "ck",
+      "case": "changed_actual_start_frame_same_rank",
+      "changed_identity": "CANONICAL-WORD.json.gz",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "ck",
+      "case": "native_false_restoration",
+      "changed_identity": "INDEPENDENT-LOCAL-REPLAY.json",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "ck",
+      "case": "native_wrong_column_count",
+      "changed_identity": "INDEPENDENT-LOCAL-REPLAY.json",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "ck",
+      "case": "native_changed_profile",
+      "changed_identity": "INDEPENDENT-LOCAL-REPLAY.json",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "ck",
+      "case": "phase_false_global_equality",
+      "changed_identity": "CLIFFORD-REVIEW.json",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "ck",
+      "case": "local_event_hash_is_not_a_container_reference",
+      "changed_identity": "LOCAL-CHECKS.json",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "ck",
+      "case": "unrelated_native_root_seconds_retained",
+      "changed_identity": "INDEPENDENT-LOCAL-REPLAY.json",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "ck",
+      "case": "nested_phase_seconds_retained",
+      "changed_identity": "CLIFFORD-REVIEW.json",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "jp8",
+      "case": "changed_actual_scalar",
+      "changed_identity": "LOCAL-PROGRAMS.json.gz",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "jp8",
+      "case": "changed_actual_start_frame_same_rank",
+      "changed_identity": "CANONICAL-WORD.json.gz",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "jp8",
+      "case": "native_false_restoration",
+      "changed_identity": "INDEPENDENT-LOCAL-REPLAY.json",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "jp8",
+      "case": "native_wrong_column_count",
+      "changed_identity": "INDEPENDENT-LOCAL-REPLAY.json",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "jp8",
+      "case": "native_changed_profile",
+      "changed_identity": "INDEPENDENT-LOCAL-REPLAY.json",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "jp8",
+      "case": "phase_false_global_equality",
+      "changed_identity": "CLIFFORD-REVIEW.json",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "jp8",
+      "case": "local_event_hash_is_not_a_container_reference",
+      "changed_identity": "LOCAL-CHECKS.json",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "jp8",
+      "case": "unrelated_native_root_seconds_retained",
+      "changed_identity": "INDEPENDENT-LOCAL-REPLAY.json",
+      "all_raw_and_semantic_links_rebound": true
+    },
+    {
+      "provider": "jp8",
+      "case": "nested_phase_seconds_retained",
+      "changed_identity": "CLIFFORD-REVIEW.json",
+      "all_raw_and_semantic_links_rebound": true
+    }
+  ],
+  "invalid_references_or_metadata_rejected": [
+    {
+      "provider": "ck",
+      "case": "stale_native_word_link",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "ck",
+      "case": "stale_native_program_link",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "ck",
+      "case": "stale_phase_word_link",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "ck",
+      "case": "stale_phase_recipe_link",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "ck",
+      "case": "invalid_phase_seconds_negative",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "ck",
+      "case": "invalid_phase_seconds_boolean",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "ck",
+      "case": "invalid_phase_seconds_string",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "ck",
+      "case": "invalid_phase_seconds_nan",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "ck",
+      "case": "invalid_phase_seconds_infinity",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "jp8",
+      "case": "stale_native_word_link",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "jp8",
+      "case": "stale_native_program_link",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "jp8",
+      "case": "stale_phase_word_link",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "jp8",
+      "case": "stale_phase_recipe_link",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "jp8",
+      "case": "invalid_phase_seconds_negative",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "jp8",
+      "case": "invalid_phase_seconds_boolean",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "jp8",
+      "case": "invalid_phase_seconds_string",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "jp8",
+      "case": "invalid_phase_seconds_nan",
+      "rejected_before_projection": true
+    },
+    {
+      "provider": "jp8",
+      "case": "invalid_phase_seconds_infinity",
+      "rejected_before_projection": true
+    }
+  ],
+  "counts": {
+    "recompression_accepted": 2,
+    "semantic_rejected": 18,
+    "reference_or_metadata_rejected": 18
+  },
+  "scope": "Actual copied gzip streams and receipt JSON are changed. All seven content identities, raw source links and owner/invoice digests are recomputed consistently before assembly. Only identical decompressed payloads are accepted; scalar, same-rank frame, native proof fields, global phase, event hashes and unrelated seconds remain pinned. Literal references and invalid phase timing are rejected before normalization. Full physical replay remains a separate prerequisite."
+}

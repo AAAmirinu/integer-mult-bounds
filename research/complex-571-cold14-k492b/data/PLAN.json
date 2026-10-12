@@ -1,6 +1,6 @@
 {
   "status": "LITERAL_OWNER_NOMINATION_PENDING_ADMISSION",
-  "mode": "frozen-saturation-pattern-time-matching",
+  "mode": "literal-owner-width-swap-search",
   "K": 4,
   "T": 8,
   "M": 73,
@@ -8,16 +8,18 @@
   "live": 7168,
   "deficit": 2560,
   "profile": {
-    "1": 181658,
-    "2": 30017,
+    "1": 181686,
+    "2": 30082,
     "3": 31105,
     "4": 11520,
-    "5": 5040,
+    "5": 4976,
     "6": 576,
+    "7": 1,
     "8": 576,
-    "12": 1,
-    "21": 1,
-    "48": 2215
+    "16": 1,
+    "24": 4,
+    "28": 1,
+    "48": 2216
   },
   "order": [
     [
@@ -4029,7 +4031,7 @@
     "16": 2,
     "17": 2
   },
-  "solver_status": "relocate_swap_chain_flip_annealing_of_pr601_literal_map",
+  "solver_status": "FEASIBLE_NOT_OPTIMAL",
   "gap": null,
   "provider_calls": [
     {
@@ -4078,7 +4080,7 @@
       "replica": 0,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 6,
@@ -4102,7 +4104,7 @@
       "replica": 1,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 9,
@@ -4110,7 +4112,7 @@
       "replica": 0,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 10,
@@ -4118,7 +4120,7 @@
       "replica": 4,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 11,
@@ -4126,7 +4128,7 @@
       "replica": 3,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 12,
@@ -4134,7 +4136,7 @@
       "replica": 2,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 13,
@@ -4142,7 +4144,7 @@
       "replica": 1,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 14,
@@ -4150,7 +4152,7 @@
       "replica": 0,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 15,
@@ -4158,7 +4160,7 @@
       "replica": 5,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 16,
@@ -4166,7 +4168,7 @@
       "replica": 4,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 17,
@@ -4174,7 +4176,7 @@
       "replica": 3,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 18,
@@ -4182,7 +4184,7 @@
       "replica": 2,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 19,
@@ -4190,7 +4192,7 @@
       "replica": 1,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 20,
@@ -4198,7 +4200,7 @@
       "replica": 0,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 21,
@@ -4206,7 +4208,7 @@
       "replica": 6,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 22,
@@ -4214,7 +4216,7 @@
       "replica": 5,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 23,
@@ -4230,7 +4232,7 @@
       "replica": 3,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 25,
@@ -4238,7 +4240,7 @@
       "replica": 2,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 26,
@@ -4246,7 +4248,7 @@
       "replica": 1,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 27,
@@ -4254,7 +4256,7 @@
       "replica": 7,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 28,
@@ -4262,7 +4264,7 @@
       "replica": 0,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 29,
@@ -4270,7 +4272,7 @@
       "replica": 6,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 30,
@@ -4278,7 +4280,7 @@
       "replica": 5,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 31,
@@ -4286,7 +4288,7 @@
       "replica": 4,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 32,
@@ -4294,7 +4296,7 @@
       "replica": 3,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 33,
@@ -4302,7 +4304,7 @@
       "replica": 2,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 34,
@@ -4310,7 +4312,7 @@
       "replica": 1,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 35,
@@ -4318,7 +4320,7 @@
       "replica": 7,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 36,
@@ -4326,7 +4328,7 @@
       "replica": 0,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 37,
@@ -4334,7 +4336,7 @@
       "replica": 6,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 38,
@@ -4342,7 +4344,7 @@
       "replica": 5,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 39,
@@ -4350,7 +4352,7 @@
       "replica": 4,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 40,
@@ -4358,7 +4360,7 @@
       "replica": 3,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 41,
@@ -4366,7 +4368,7 @@
       "replica": 2,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 42,
@@ -4374,7 +4376,7 @@
       "replica": 1,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 43,
@@ -4382,7 +4384,7 @@
       "replica": 7,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 44,
@@ -4390,7 +4392,7 @@
       "replica": 0,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 45,
@@ -4398,7 +4400,7 @@
       "replica": 6,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 46,
@@ -4406,7 +4408,7 @@
       "replica": 5,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 47,
@@ -4414,7 +4416,7 @@
       "replica": 4,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 48,
@@ -4422,7 +4424,7 @@
       "replica": 3,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 49,
@@ -4430,7 +4432,7 @@
       "replica": 2,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 50,
@@ -4438,7 +4440,7 @@
       "replica": 1,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 51,
@@ -4446,7 +4448,7 @@
       "replica": 7,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 52,
@@ -4454,7 +4456,7 @@
       "replica": 6,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 53,
@@ -4462,7 +4464,7 @@
       "replica": 5,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 54,
@@ -4470,7 +4472,7 @@
       "replica": 4,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 55,
@@ -4478,7 +4480,7 @@
       "replica": 3,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 56,
@@ -4486,7 +4488,7 @@
       "replica": 2,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 57,
@@ -4494,7 +4496,7 @@
       "replica": 7,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 58,
@@ -4502,7 +4504,7 @@
       "replica": 6,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 59,
@@ -4510,7 +4512,7 @@
       "replica": 5,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 60,
@@ -4518,7 +4520,7 @@
       "replica": 4,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 61,
@@ -4526,7 +4528,7 @@
       "replica": 3,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 62,
@@ -4534,7 +4536,7 @@
       "replica": 7,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 63,
@@ -4542,7 +4544,7 @@
       "replica": 6,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 64,
@@ -4550,7 +4552,7 @@
       "replica": 5,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 65,
@@ -4558,7 +4560,7 @@
       "replica": 4,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 66,
@@ -4566,7 +4568,7 @@
       "replica": 7,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 67,
@@ -4574,7 +4576,7 @@
       "replica": 6,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 68,
@@ -4582,7 +4584,7 @@
       "replica": 5,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 69,
@@ -4590,7 +4592,7 @@
       "replica": 7,
       "provider": "jp8",
       "orientation": "backward",
-      "local_program_sha256": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+      "local_program_sha256": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
     },
     {
       "time": 70,
@@ -4598,7 +4600,7 @@
       "replica": 6,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     },
     {
       "time": 71,
@@ -4606,7 +4608,7 @@
       "replica": 7,
       "provider": "jp8",
       "orientation": "forward",
-      "local_program_sha256": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8"
+      "local_program_sha256": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b"
     }
   ],
   "per_call_widths": [
@@ -7470,7 +7472,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -8964,7 +8966,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -9462,7 +9464,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -9960,7 +9962,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -10458,7 +10460,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -10956,7 +10958,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -11454,7 +11456,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -11952,7 +11954,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -12450,7 +12452,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -12948,7 +12950,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -13446,7 +13448,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -13944,7 +13946,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -14442,7 +14444,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -14940,7 +14942,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -15438,7 +15440,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -15936,7 +15938,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -16932,7 +16934,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -17430,7 +17432,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -17928,7 +17930,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -18426,7 +18428,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -18924,7 +18926,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -19422,7 +19424,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -19920,7 +19922,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -20418,7 +20420,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -20916,7 +20918,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -21414,7 +21416,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -21912,7 +21914,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -22410,7 +22412,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -22908,7 +22910,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -23406,7 +23408,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -23904,7 +23906,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -24402,7 +24404,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -24900,7 +24902,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -25398,7 +25400,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -25896,7 +25898,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -26394,7 +26396,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -26892,7 +26894,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -27390,7 +27392,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -27888,7 +27890,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -28386,7 +28388,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -28884,7 +28886,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -29382,7 +29384,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -29880,7 +29882,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -30378,7 +30380,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -30876,7 +30878,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -31374,7 +31376,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -31872,7 +31874,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -32370,7 +32372,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -32868,7 +32870,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -33366,7 +33368,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -33864,7 +33866,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -34362,7 +34364,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -34860,7 +34862,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -35358,7 +35360,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -35856,7 +35858,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -36354,7 +36356,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -36852,7 +36854,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -37350,7 +37352,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -37848,7 +37850,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -38346,7 +38348,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -38844,7 +38846,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -39342,7 +39344,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -39840,7 +39842,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -40338,7 +40340,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -41123,13 +41125,13 @@
     "jp8": {
       "directory": "providers/jp8",
       "artifact_sha256": {
-        "CANONICAL-WORD.json.gz": "7a3fec1022d3b2b1bd986302a327735ec521d17b043f4a5acb96253a56f6193c",
-        "LOCAL-PROGRAMS.json.gz": "fa0c196f65bd6ec1424fdf7d789f6972075c7bb02bf43f573ea85eafab31be98",
-        "LOCAL-CHECKS.json": "0fad744aa863eedb288a9f87b1c23225a36b316b6275cc3b1bcedd42afe28a67",
-        "INDEPENDENT-LOCAL-REPLAY.json": "cb2f99ed351925dd35434b73de16f4085884fe81a35a69e1c7ce2d5e96cb975b",
-        "CLIFFORD-RECIPES.json": "2799d73dd08c4435e5900ff2ae6ebc7f34535c153e173ab88d66d1f0b5e6dcde",
-        "CLIFFORD-REVIEW.json": "ab106a9e110b2a1e433cc18a76732be44841096afd30fd1e3b109d8837b2ebaf",
-        "RESIDUAL-ADAPTERS.json": "bdb44cf523636f307ebb3617da548f2e3a8af74321eabe24aef40186e280a917"
+        "CANONICAL-WORD.json.gz": "a645b015470caf75c522a8bd7321c37b4e3f76122be225700654d4cad536afca",
+        "LOCAL-PROGRAMS.json.gz": "7880a8ebeaf75c48b1aa6608d1c4b56fd12366d077983b3188e9fd44e57c562d",
+        "LOCAL-CHECKS.json": "feb0622aa96a780f91288f6533fe0bfbe5344e4529dad4571b44dafb4a2d34b5",
+        "INDEPENDENT-LOCAL-REPLAY.json": "cdcfb60f1680cd2f575a974544876e7b773ff65430e2d259c874d48d897a4125",
+        "CLIFFORD-RECIPES.json": "7e31020505a78b51648eb468178c2a19409a21f641808f994db0e0890070653c",
+        "CLIFFORD-REVIEW.json": "e592e4df139b5accb952b6745c6bfdbeae25ac16eb17e1167bad066d4aa8ee1f",
+        "RESIDUAL-ADAPTERS.json": "b14db49b23f26555d151690c99651349da5384e03b8b9ba8471d5c816dfd95ed"
       },
       "ports": [
         11,
@@ -41622,7 +41624,7 @@
         8,
         8,
         9,
-        9,
+        7,
         9,
         9,
         7,
@@ -41750,30 +41752,30 @@
         5
       ],
       "actual_paid_profile": {
-        "1": 2512,
-        "2": 400,
+        "1": 2513,
+        "2": 401,
         "3": 448,
         "4": 160,
-        "5": 70,
+        "5": 69,
         "6": 8,
         "8": 8
       },
       "orientation_program_sha256": {
-        "forward": "3d92c93a12aaf6bafcc0bc5bee33e4a710f3439c5c43efcd91833e9a9da052b8",
-        "backward": "7fa2c16d9623ab39eeaf00f5ea03a8ff7aa099a3f62949d03d77bb44ac4d62cf"
+        "forward": "7ac3d5478100f5b41c4466b2217bff80cf9462563cea58e5fd7fa078069d088b",
+        "backward": "072f69b26fbd368fb71aa068fdd0535828625681b1999af5785851593b1e5f1b"
       },
       "artifact_semantic_sha256": {
-        "CANONICAL-WORD.json.gz": "fb4a8d14ed2a8048698bea6ae16f86163a1aa6c80f2eb622222eee5cdbce9b3b",
-        "LOCAL-PROGRAMS.json.gz": "efe45ce7fb025a6f53cc9eb54e951ac2211a5ed927e689a049e4f68ca680654b",
-        "LOCAL-CHECKS.json": "e29bdcebdc2966979a9f5911f56b68c6f4942f6fdbeb6737e9db44e147d0193a",
-        "INDEPENDENT-LOCAL-REPLAY.json": "f31a73829f5de91fe98c3986bb2ad9b31e7b33881720029347051ab2b686af3c",
-        "CLIFFORD-RECIPES.json": "2799d73dd08c4435e5900ff2ae6ebc7f34535c153e173ab88d66d1f0b5e6dcde",
-        "CLIFFORD-REVIEW.json": "4231236ccc3bf45c469e4c98e3071a01ebf75f6366fb73b733e969fed65338b9",
-        "RESIDUAL-ADAPTERS.json": "99e1873464e8e718ea25fd80df5aaed0e5508b83e9bf2bdd094ea5c95fdf87c9"
+        "CANONICAL-WORD.json.gz": "345a663d7ae654c121d5178dc3ee7d67dd87cf8c6ff22a8458cc3ac9e2d9ccc3",
+        "LOCAL-PROGRAMS.json.gz": "bc9dbd2dcd26b476cd981142601c8c1558f1771f479400ed7924699605945c64",
+        "LOCAL-CHECKS.json": "a8706865c9ba920b9859cae6b154a7026e37b80196f141905e95e3556d01d89a",
+        "INDEPENDENT-LOCAL-REPLAY.json": "ff27fca99026683b0b030af428cababb6dd77a71fa0f77ef91dcb9140daeb605",
+        "CLIFFORD-RECIPES.json": "7e31020505a78b51648eb468178c2a19409a21f641808f994db0e0890070653c",
+        "CLIFFORD-REVIEW.json": "2bf7d7f740fc9be598d2aabda2da159a201e8e2d18405a1030d244d7e02faa44",
+        "RESIDUAL-ADAPTERS.json": "dbeec0747e538d76e7d51f0c78361cde272a29723dfee35c8670cd6d22a79323"
       }
     }
   },
-  "source_plan_sha256": "1879679a44b373006907cbca8261a9cd187c7b868472afab04e002bf95331d9e",
-  "assignment_sha256": "d695529191cf0fba1caf813cbf0f19072df990b5bd5371abfecaf2ca37317745",
-  "source_owners_sha256": null
+  "source_plan_sha256": "d4c483c37c5456d42546570238faa43a34b9fb047fcc4c530821783d1fcade80",
+  "assignment_sha256": "51e6b63c560e910c755ec5bafbbbcab10432f01834bf775442f60bd5e967b426",
+  "source_owners_sha256": "7f7db24134bda2bfa4b2692733802ddb4fc2ce63985bf5e10212074e3fccfb96"
 }
