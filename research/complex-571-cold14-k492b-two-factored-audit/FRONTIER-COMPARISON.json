@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-10-12T22:34:00Z",
+  "comparison": {
+    "pr": 626,
+    "head": "660de893d27bb7abd1d5b01b1640207528a5c851",
+    "kappa": "0.001635527380375392",
+    "state": "MERGED",
+    "merged_at": "2026-10-12T22:36:46Z"
+  },
+  "candidate_kappa": "0.001635749838057164",
+  "delta": "0.000000222457681772",
+  "tracker_caveat": "Raw tracker has metric extraction false positives: merged PR602 reports an accounting ceiling, explicitly not an achieved construction; PR159 is closed. Comparison uses the recent open, achieved conditional witness chain. No independent replay of PR626 is claimed.",
+  "current_main": "ed49217ad6244f1d3bfe4588f122fa861849739c",
+  "current_selected_kappa": "0.001635527380375392",
+  "comparison_scope": "Newly selected main witness; candidate source package byte-identical to pinned PR623 on this main commit."
+}

@@ -1,0 +1,17 @@
+exact phase edges 0 / 3104 seconds 0.464962441008538
+exact phase edges 200 / 3104 seconds 5.712893908959813
+exact phase edges 400 / 3104 seconds 11.954192837933078
+exact phase edges 600 / 3104 seconds 18.191753036924638
+exact phase edges 800 / 3104 seconds 24.438168935012072
+exact phase edges 1000 / 3104 seconds 30.883800546987914
+exact phase edges 1200 / 3104 seconds 37.17949105298612
+exact phase edges 1400 / 3104 seconds 43.47034509794321
+exact phase edges 1600 / 3104 seconds 49.75546679995023
+exact phase edges 1800 / 3104 seconds 56.192591763916425
+exact phase edges 2000 / 3104 seconds 62.75087624392472
+exact phase edges 2200 / 3104 seconds 69.30363151291385
+exact phase edges 2400 / 3104 seconds 75.7850508709671
+exact phase edges 2600 / 3104 seconds 82.04288249800447
+exact phase edges 2800 / 3104 seconds 88.27951909892727
+exact phase edges 3000 / 3104 seconds 94.6774823089363
+PASS exact local phases 99.59884433599655 seconds

@@ -1,4 +1,6 @@
-# Contributor validation for the factored extra cold end
+# Historical contributor validation for one factored extra cold end
+
+This evidence applies to commit e3f977a755d8a0f633d08bbce0f2b0bcc5699562, not the current two-helper package. A later recursive source review found an outdated recipe hash in that commit's auxiliary WITNESS: its SPEC-based official replay used the correct recipe, but the historical SOURCE-REVIEW claim of full WITNESS correspondence was too broad. The current two-helper package corrects this pin and receives a complete fresh replay; see ../complex-571-cold14-k492b-two-factored-audit.
 
 This directory retains evidence for the single new jp8 end described in the sibling package's FACTORED-END.md. The base is PR623 at e39a615ca601ce5d62abeb24f3fcdb8644ca1005. The candidate's exact conditional κ is 1635619312854787/1000000000000000000.
 

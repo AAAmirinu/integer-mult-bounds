@@ -1,4 +1,4 @@
-"""Replay recorded simultaneous placements and the one proved helper-width change.
+"""Replay recorded simultaneous placements and the two proved helper-width changes.
 Nomination checks only; unchanged physical and exact global audits admit it.
 Jeremy Diviney with OpenAI Codex assistance; Apache-2.0.
 """
@@ -12,7 +12,7 @@ def main():
  plan=json.loads((p/'data/PLAN.json').read_text());base=json.loads((a.base_data/'PLAN.json').read_text());assert plan['order']==base['order']and plan['windows']==base['windows']
  dispatch={c['time']:c['provider']for c in plan['provider_calls']};assert dispatch=={c['time']:c['provider']for c in base['provider_calls']}
  for r in roles:
-  if dispatch[r['time']]=='jp8'and r['helper']==366:assert r['width']==9;r['width']=7
+  if dispatch[r['time']]=='jp8'and r['helper']in (357,366):assert r['width']==9;r['width']=7
   assert r['width']==plan['provider_registry'][dispatch[r['time']]]['widths'][r['helper']]
  seen=set()
  for t,h,before,after in d['moves']:

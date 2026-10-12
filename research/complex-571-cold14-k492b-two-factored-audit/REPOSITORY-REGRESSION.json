@@ -1,0 +1,19 @@
+{
+  "full_suite_worktree": "build/contribution/pr623",
+  "full_suite_commit": "e39a615ca601ce5d62abeb24f3fcdb8644ca1005",
+  "candidate_base": "e39a615ca601ce5d62abeb24f3fcdb8644ca1005",
+  "scope": "Full make verify completed on exact PR623 base, including gen4-bank-verify and selected frontier617 replay. All shared infrastructure is unchanged; the contributed standalone package receives its own complete fresh default-SPEC replay.",
+  "status": "PASS",
+  "includes_selected_frontier617_target": true,
+  "includes_gen4_bank_verify_target": true,
+  "environment": {
+    "python": "Python 3.12.3",
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "isolated_test_modules": 84,
+  "log_sha256": "c6af078dc66d607d0ce2625155a7de74c697fdca6b0db51d6d833a50d12255bc",
+  "log": "make-verify-pr623.log.gz"
+}

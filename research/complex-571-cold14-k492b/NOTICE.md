@@ -33,4 +33,4 @@ The cold-end construction (a row-plus-column cone condition for low-frame ends, 
 
 Build on this at your own risk.
 
-Factored extra cold-end construction, dual-row correction, reproducible generator and owner repacking: Jeremy Diviney with OpenAI Codex assistance. Uses DreamingOfClouds/jeremykothe2 cold ends, dead-port absorption, native auditing and K-triangle construction, and all inherited credited work.
+Two factored extra cold-end constructions, dual-row correction, reproducible generator and owner repacking: Jeremy Diviney with OpenAI Codex assistance. Uses DreamingOfClouds/jeremykothe2 cold ends, dead-port absorption, native auditing and K-triangle construction, and all inherited credited work.

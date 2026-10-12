@@ -1,0 +1,10 @@
+{
+  "exact_recipe_bytes": true,
+  "exact_recipe_content": true,
+  "exact_word_content": true,
+  "exact_owner_content": true,
+  "optimized_controls": {
+    "builder": "REJECTS_OPTIMIZED_MODE_BEFORE_OUTPUT",
+    "owner": "REJECTS_OPTIMIZED_MODE_BEFORE_OUTPUT"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS_PHASE_REVIEW_TIMING_PORTABILITY_AND_SEMANTIC_REJECTION",
+  "timing_only_accepted": [
+    "ck",
+    "jp8"
+  ],
+  "substantive_phase_failure_rejected": [
+    "ck",
+    "jp8"
+  ],
+  "kappa": "408937459514291/250000000000000000",
+  "source_owner_sha256": "fc780cf423776260b0629796e6ea6537d804a1c5239b16b0e216a955924ef8fa",
+  "source_invoice_sha256": "de79e2b26b5003fb366cf8375f02d3dc518feea21cb1b13a5924f2cbf58fcb53",
+  "scope": "Actual phase receipt JSON is changed, raw artifact bindings and owner digest are consistently recomputed, and all substantive semantics are freshly hashed. Only seconds may vary; no phase correctness field is omitted from the frozen digest."
+}

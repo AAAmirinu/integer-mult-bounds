@@ -1,0 +1,27 @@
+{
+  "discovery_scope": "Nominations only; final strict fresh replay independently binds the suppliers. Decompress search PLAN files before invoking the as-run scripts.",
+  "runs": [
+    {
+      "script": "seed_extra_cold_owner.py",
+      "note": "Add width 9 to 7 for helper357 to the prior single-helper map, whose search history is retained in the historical sibling audit.",
+      "data": "../complex-571-cold14-k492b-factored-end-audit/search/k492-extra-cold-end51-owner-pairs",
+      "helper": 357,
+      "out": "k492-two-extra-owner-seed"
+    },
+    {
+      "script": "repack_partial_owners.py",
+      "data": "k492-two-extra-owner-seed",
+      "out": "k492-two-extra-owner-greedy"
+    },
+    {
+      "script": "anneal_owner_pair_swaps.py",
+      "data": "k492-two-extra-owner-greedy",
+      "out": "k492-two-extra-owner-pairs",
+      "trials": 5000000,
+      "seed": 0,
+      "temperature": 1
+    }
+  ],
+  "structural_search": "156 dead-port absorption leads; factored tails expose 24 locally beneficial variants on four helpers. Two compatible helpers were ported onto K492 with exact cold dual-row repairs. A third restricted combination failed row repair; this is not an impossibility result.",
+  "setup_notes": "The historical single-helper run corrected unused width-below9 metadata before final replay. The two-helper package uses actual count16496 before its final fresh replay. Discovery reuse evidence is explicitly separated from final admission. A preliminary full replay was stopped to correct an auxiliary WITNESS recipe SHA; SPEC already had the correct pin. Final publication replay restarts from scratch after rebinding EXPECTED and the manifest."
+}

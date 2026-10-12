@@ -1,4 +1,4 @@
-"""Deterministically rebuild the factored extra cold-end recipe from pinned PR623.
+"""Deterministically rebuild the two factored extra cold-end recipe from pinned PR623.
 
 Nomination only. The unchanged cold-end constructor, native replay, phase,
 owner and exact global verifiers independently admit the resulting recipe.
@@ -30,14 +30,19 @@ def main():
     assert sha(a.base_recipe.read_bytes())==d['base_recipe_sha256']
     old=read(a.base_word);base=read(a.base_hpe);recipe=read(a.base_recipe)
     assert enc(b.apply(copy.deepcopy(base),copy.deepcopy(recipe)))==enc(old)
-    w=copy.deepcopy(old);v=w['report']['v'];n=2*v+w['report']['R'];h=d['helper'];U=d['terminal_frame']
-    assert str(h)not in w['start_extra']and str(h)not in w['helper_final']
+    w=copy.deepcopy(old);v=w['report']['v'];n=2*v+w['report']['R'];new_ends={z['helper']:z['terminal_frame']for z in d['helpers']}
+    assert len(new_ends)==2 and all(str(h)not in w['start_extra']and str(h)not in w['helper_final']for h in new_ends)
     for e in d['premix']:
         assert e[0]=='add'and e[-1]==[]
         assert all(2*v<=r<n and str(r)not in w['start_extra']for r in b.regs(e))
-    t=d['absorption_input_A_index'];gate=d['absorption_gate'];q=gate[1]
-    assert all(q not in b.regs(e)for e in w['A'][t+1:]+w['cut']+w['B'])
-    w['A'].insert(t+1,gate);w['A']=d['premix']+w['A'];w['helper_final'][str(h)]=U
+    A=copy.deepcopy(base['A'])
+    ins=recipe['forward_insertions']+d['additional_forward_insertions']
+    assert len({t for t,e in ins})==len(ins)
+    for t,gate in sorted(ins,key=lambda x:-x[0]):
+        assert all(gate[1]not in b.regs(e)for e in base['A'][t+1:]+base['cut']+base['B'])
+        A.insert(t+1,copy.deepcopy(gate))
+    w['A']=d['premix']+recipe['premix']+A
+    w['helper_final'].update({str(h):U for h,U in new_ends.items()})
     tail=[old['cleanup'][i][:-1]+[F]for i,F in old['early_cleanup']]+d['extra_tail']
     P,_=au.state_maps(w['A']+w['cut']+w['B']+tail,n);ended=set(map(int,w['helper_final']))
     for j in ended:
@@ -60,19 +65,19 @@ def main():
     assert all(P[j]=={j:Q(1)}for j in range(n)if not v<=j<2*v)
     w['cleanup']=tail+rest;w['early_cleanup']=[[i,e[-1]]for i,e in enumerate(tail)]
     recipe['premix']=d['premix']+recipe['premix']
-    recipe['forward_insertions'].append([d['absorption_base_A_index'],gate])
-    recipe['cold_ends'][str(h)]=U;recipe['cleanup']=w['cleanup'];recipe['early_cleanup']=w['early_cleanup']
+    recipe['forward_insertions'].extend(d['additional_forward_insertions'])
+    recipe['cold_ends'].update({str(h):U for h,U in new_ends.items()});recipe['cleanup']=w['cleanup'];recipe['early_cleanup']=w['early_cleanup']
     meta=copy.deepcopy(old['refactored_cleanup']);meta['cold_low_frame_ended_helpers']=sorted(map(int,recipe['cold_ends']))
     meta['premix_gates']=len(recipe['premix']);meta['lower_frame_gates']+=len(d['extra_tail'])
     meta['forward_absorptions']=len(recipe['forward_insertions'])
     meta['forward_absorption_A_indices']=[len(recipe['premix'])+t+1+j for j,(t,e)in enumerate(sorted(recipe['forward_insertions']))]
     for i,(_,e)in zip(meta['forward_absorption_A_indices'],sorted(recipe['forward_insertions'])):assert w['A'][i]==e
-    meta['construction']+='; factored extra cold end 590, with exact dual-row basis correction and a shared dim-4 accumulator before its dim-7 tail'
+    meta['construction']+='; two exploratory factored extra ends 590 and581'
     w['refactored_cleanup']=recipe['refactored_cleanup']=meta
     oldp,_=b.chain_profile(old);newp,_=b.chain_profile(w);prof=Counter({int(k):c for k,c in old['report']['local_profile'].items()});prof.subtract(oldp);prof.update(newp)
-    assert {k:newp[k]-oldp[k]for k in set(oldp)|set(newp)if newp[k]!=oldp[k]}=={1:1,2:1,5:-1}
+    assert {k:newp[k]-oldp[k]for k in set(oldp)|set(newp)if newp[k]!=oldp[k]}=={1:2,2:2,5:-2}
     w['report']['local_profile']={str(k):c for k,c in sorted(prof.items())if c};w['report']['local_rank_mass']=sum(k*c for k,c in prof.items())
-    inv=Counter({int(k):c for k,c in old['report']['width_inventory'].items()});inv[9]-=1;inv[7]+=1;w['report']['width_inventory']={str(k):c for k,c in sorted(inv.items())if c}
+    inv=Counter({int(k):c for k,c in old['report']['width_inventory'].items()});inv[9]-=2;inv[7]+=2;w['report']['width_inventory']={str(k):c for k,c in sorted(inv.items())if c}
     payload=enc(w);recipe['output_content_sha256']=sha(payload)
     assert sha(payload)==d['expected_output_content_sha256']
     assert enc(b.apply(copy.deepcopy(base),recipe))==payload

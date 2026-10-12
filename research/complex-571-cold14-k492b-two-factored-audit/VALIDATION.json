@@ -1,0 +1,53 @@
+{
+  "status": "PASS_FRESH_CONTRIBUTOR_REPLAY_AWAITING_INDEPENDENT_REVIEW",
+  "kappa": "408937459514291/250000000000000000",
+  "kappa_decimal": "0.001635749838057164",
+  "complex_lower": "819214949749969942743/500000000000000000000000",
+  "bit_lower": "413456747036699736067/250000000000000000000000",
+  "conservative_kappa_decimal": "0.001635749835187059",
+  "conservative_complex_lower": "20480373707755270471/12500000000000000000000",
+  "global_profile": {
+    "1": 181713,
+    "2": 30144,
+    "3": 31105,
+    "4": 11520,
+    "5": 4912,
+    "6": 576,
+    "8": 576,
+    "12": 1,
+    "16": 6,
+    "24": 5,
+    "40": 1,
+    "48": 2217
+  },
+  "provider_counts": {
+    "ck": 8,
+    "jp8": 64
+  },
+  "surcharge_model": {
+    "complex": false,
+    "bit": true
+  },
+  "seconds": 471.51228447898757,
+  "reused": {
+    "baseline": false,
+    "locals": []
+  },
+  "scope": "Conditional native exact-complex witness after complete conservative admission, moment and outer checks; PR559 exact-cover recurrence correction only, bit bad-residue surcharge and H1-H5 retained. The frozen PR582 plain-joint-prefix, added-kernel and entrance-promoted provider dispatch with the new frame coalescences composed with cited unchanged PR543 bit supplier. All-size compiler, common-label/mutable-source realization, whole-call hosting, precision/tape and analytic transfer remain assumptions. No unconditional theorem or full Lean certification.",
+  "replay_status": "PASS_COLD14_NATIVE_COMPLEX_AND_CITED_BIT",
+  "package_manifest_sha256": "4df4ffe961de2802897acae97679464f616b56d02495d32fc8ac69a09b7c4aab",
+  "spec_sha256": "61b5ca213c4421a813673b4b6a3e45c0ae74edb78b7440796f7034ba1f0068a3",
+  "base_commit": "e39a615ca601ce5d62abeb24f3fcdb8644ca1005",
+  "fresh_stages": 64,
+  "artifact_hashes_verified": 51,
+  "raw_stage_log_hashes_verified": 64,
+  "owner_mutations_rejected": 23,
+  "assembly_mutations_rejected": 114,
+  "inherited_changed_supplier_mutations_rejected": 38,
+  "additional_focused_new_helper_mutations_rejected": 14,
+  "all_inherited_verifier_code_unchanged": true,
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  }
+}

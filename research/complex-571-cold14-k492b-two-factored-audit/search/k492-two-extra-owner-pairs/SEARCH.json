@@ -1,0 +1,734 @@
+{
+  "status": "NOMINATION_REQUIRES_ADMISSION",
+  "seed": 0,
+  "trials": 5000000,
+  "temperature": 1.0,
+  "accepted_swaps": 111090,
+  "improving_swaps": 1123,
+  "entropy_gain": 372.13144312417717,
+  "seconds": 36.11191016691737,
+  "idle_profile": {
+    "1": 49,
+    "3": 1,
+    "12": 1,
+    "16": 6,
+    "24": 5,
+    "40": 1,
+    "48": 2217
+  },
+  "best_history": [
+    {
+      "trial": 4,
+      "entropy_gain": 0.5232481437633396
+    },
+    {
+      "trial": 6,
+      "entropy_gain": 2.4327906486505526
+    },
+    {
+      "trial": 29,
+      "entropy_gain": 2.9560387924138922
+    },
+    {
+      "trial": 66,
+      "entropy_gain": 4.865581297301105
+    },
+    {
+      "trial": 85,
+      "entropy_gain": 6.775123802188318
+    },
+    {
+      "trial": 103,
+      "entropy_gain": 9.547712524428789
+    },
+    {
+      "trial": 128,
+      "entropy_gain": 11.457255029316002
+    },
+    {
+      "trial": 146,
+      "entropy_gain": 13.366797534203215
+    },
+    {
+      "trial": 187,
+      "entropy_gain": 15.276340039090428
+    },
+    {
+      "trial": 191,
+      "entropy_gain": 15.799588182853768
+    },
+    {
+      "trial": 205,
+      "entropy_gain": 16.322836326617107
+    },
+    {
+      "trial": 216,
+      "entropy_gain": 18.23237883150432
+    },
+    {
+      "trial": 264,
+      "entropy_gain": 20.141921336391533
+    },
+    {
+      "trial": 417,
+      "entropy_gain": 22.120685310321278
+    },
+    {
+      "trial": 511,
+      "entropy_gain": 22.643933454084618
+    },
+    {
+      "trial": 581,
+      "entropy_gain": 24.030227815201215
+    },
+    {
+      "trial": 592,
+      "entropy_gain": 25.939770320088428
+    },
+    {
+      "trial": 680,
+      "entropy_gain": 27.84931282497564
+    },
+    {
+      "trial": 734,
+      "entropy_gain": 29.758855329862854
+    },
+    {
+      "trial": 809,
+      "entropy_gain": 31.668397834750067
+    },
+    {
+      "trial": 844,
+      "entropy_gain": 32.19164597851341
+    },
+    {
+      "trial": 959,
+      "entropy_gain": 34.10118848340062
+    },
+    {
+      "trial": 974,
+      "entropy_gain": 36.01073098828783
+    },
+    {
+      "trial": 999,
+      "entropy_gain": 38.7833197105283
+    },
+    {
+      "trial": 1206,
+      "entropy_gain": 40.692862215415516
+    },
+    {
+      "trial": 1334,
+      "entropy_gain": 42.60240472030273
+    },
+    {
+      "trial": 1363,
+      "entropy_gain": 44.51194722518994
+    },
+    {
+      "trial": 1375,
+      "entropy_gain": 45.03519536895328
+    },
+    {
+      "trial": 1392,
+      "entropy_gain": 47.537207486646366
+    },
+    {
+      "trial": 1475,
+      "entropy_gain": 50.30979620888684
+    },
+    {
+      "trial": 1496,
+      "entropy_gain": 50.83304435265018
+    },
+    {
+      "trial": 1547,
+      "entropy_gain": 51.356292496413516
+    },
+    {
+      "trial": 1548,
+      "entropy_gain": 52.219338713766774
+    },
+    {
+      "trial": 1610,
+      "entropy_gain": 54.468679292243905
+    },
+    {
+      "trial": 1707,
+      "entropy_gain": 58.627562375600974
+    },
+    {
+      "trial": 1748,
+      "entropy_gain": 61.992620710647316
+    },
+    {
+      "trial": 1773,
+      "entropy_gain": 63.37891507176391
+    },
+    {
+      "trial": 1812,
+      "entropy_gain": 65.28845757665113
+    },
+    {
+      "trial": 1877,
+      "entropy_gain": 67.79046969434421
+    },
+    {
+      "trial": 1913,
+      "entropy_gain": 69.17676405546081
+    },
+    {
+      "trial": 1918,
+      "entropy_gain": 71.88013130865875
+    },
+    {
+      "trial": 1975,
+      "entropy_gain": 74.12947188713588
+    },
+    {
+      "trial": 1994,
+      "entropy_gain": 74.65272003089922
+    },
+    {
+      "trial": 2015,
+      "entropy_gain": 76.56226253578643
+    },
+    {
+      "trial": 2138,
+      "entropy_gain": 77.08551067954977
+    },
+    {
+      "trial": 2196,
+      "entropy_gain": 79.58752279724285
+    },
+    {
+      "trial": 2283,
+      "entropy_gain": 82.2908900504408
+    },
+    {
+      "trial": 2298,
+      "entropy_gain": 83.15393626779405
+    },
+    {
+      "trial": 2465,
+      "entropy_gain": 84.54023062891065
+    },
+    {
+      "trial": 2547,
+      "entropy_gain": 87.90528896395699
+    },
+    {
+      "trial": 2734,
+      "entropy_gain": 90.08540807339159
+    },
+    {
+      "trial": 2879,
+      "entropy_gain": 91.47170243450819
+    },
+    {
+      "trial": 2954,
+      "entropy_gain": 92.85799679562479
+    },
+    {
+      "trial": 3176,
+      "entropy_gain": 94.767539300512
+    },
+    {
+      "trial": 3226,
+      "entropy_gain": 98.92642238386907
+    },
+    {
+      "trial": 3285,
+      "entropy_gain": 100.83596488875628
+    },
+    {
+      "trial": 3292,
+      "entropy_gain": 101.69901110610954
+    },
+    {
+      "trial": 3298,
+      "entropy_gain": 103.97735572131933
+    },
+    {
+      "trial": 3373,
+      "entropy_gain": 106.68072297451727
+    },
+    {
+      "trial": 3396,
+      "entropy_gain": 107.2039711182806
+    },
+    {
+      "trial": 3447,
+      "entropy_gain": 107.72721926204395
+    },
+    {
+      "trial": 3453,
+      "entropy_gain": 109.63676176693116
+    },
+    {
+      "trial": 3483,
+      "entropy_gain": 111.88610234540829
+    },
+    {
+      "trial": 3517,
+      "entropy_gain": 115.25116068045463
+    },
+    {
+      "trial": 3579,
+      "entropy_gain": 118.26532197050255
+    },
+    {
+      "trial": 3650,
+      "entropy_gain": 120.17486447538977
+    },
+    {
+      "trial": 3652,
+      "entropy_gain": 122.10231204560841
+    },
+    {
+      "trial": 4027,
+      "entropy_gain": 124.6043241633015
+    },
+    {
+      "trial": 4090,
+      "entropy_gain": 126.51386666818871
+    },
+    {
+      "trial": 4122,
+      "entropy_gain": 127.3880118569432
+    },
+    {
+      "trial": 4173,
+      "entropy_gain": 128.84352768710232
+    },
+    {
+      "trial": 4206,
+      "entropy_gain": 130.22982204821892
+    },
+    {
+      "trial": 4493,
+      "entropy_gain": 130.75307019198226
+    },
+    {
+      "trial": 4640,
+      "entropy_gain": 132.66261269686947
+    },
+    {
+      "trial": 4905,
+      "entropy_gain": 133.52565891423
+    },
+    {
+      "trial": 4976,
+      "entropy_gain": 135.43520141911722
+    },
+    {
+      "trial": 5031,
+      "entropy_gain": 136.82149578023382
+    },
+    {
+      "trial": 5198,
+      "entropy_gain": 137.68454199758708
+    },
+    {
+      "trial": 5462,
+      "entropy_gain": 141.84342508094414
+    },
+    {
+      "trial": 5604,
+      "entropy_gain": 142.36667322470748
+    },
+    {
+      "trial": 5830,
+      "entropy_gain": 144.09276565942127
+    },
+    {
+      "trial": 5947,
+      "entropy_gain": 148.25164874277834
+    },
+    {
+      "trial": 6117,
+      "entropy_gain": 153.54415464804333
+    },
+    {
+      "trial": 6121,
+      "entropy_gain": 154.67777746994398
+    },
+    {
+      "trial": 6247,
+      "entropy_gain": 160.78642049049085
+    },
+    {
+      "trial": 6329,
+      "entropy_gain": 164.28361249199952
+    },
+    {
+      "trial": 7170,
+      "entropy_gain": 165.48645678294997
+    },
+    {
+      "trial": 7211,
+      "entropy_gain": 166.87275114406657
+    },
+    {
+      "trial": 7422,
+      "entropy_gain": 169.5761183972645
+    },
+    {
+      "trial": 7476,
+      "entropy_gain": 171.82545897574164
+    },
+    {
+      "trial": 7539,
+      "entropy_gain": 174.96494783832895
+    },
+    {
+      "trial": 7557,
+      "entropy_gain": 181.410426639668
+    },
+    {
+      "trial": 8534,
+      "entropy_gain": 184.93996965673432
+    },
+    {
+      "trial": 9456,
+      "entropy_gain": 185.753813150317
+    },
+    {
+      "trial": 9799,
+      "entropy_gain": 189.8725932255329
+    },
+    {
+      "trial": 10202,
+      "entropy_gain": 191.35711309243197
+    },
+    {
+      "trial": 10256,
+      "entropy_gain": 193.6064536709091
+    },
+    {
+      "trial": 10897,
+      "entropy_gain": 194.2279273204549
+    },
+    {
+      "trial": 11056,
+      "entropy_gain": 195.98112182192563
+    },
+    {
+      "trial": 16621,
+      "entropy_gain": 196.3941968756335
+    },
+    {
+      "trial": 17922,
+      "entropy_gain": 199.99665784325043
+    },
+    {
+      "trial": 18818,
+      "entropy_gain": 201.56640227454773
+    },
+    {
+      "trial": 19112,
+      "entropy_gain": 206.0650834314947
+    },
+    {
+      "trial": 19761,
+      "entropy_gain": 209.00702109853592
+    },
+    {
+      "trial": 21725,
+      "entropy_gain": 210.55181700417597
+    },
+    {
+      "trial": 22741,
+      "entropy_gain": 212.4613595090632
+    },
+    {
+      "trial": 24169,
+      "entropy_gain": 215.05049816113024
+    },
+    {
+      "trial": 25254,
+      "entropy_gain": 215.1487236669127
+    },
+    {
+      "trial": 25932,
+      "entropy_gain": 216.63324353381176
+    },
+    {
+      "trial": 27954,
+      "entropy_gain": 218.81876587737497
+    },
+    {
+      "trial": 29116,
+      "entropy_gain": 220.09452811886877
+    },
+    {
+      "trial": 31384,
+      "entropy_gain": 222.60537124270195
+    },
+    {
+      "trial": 32429,
+      "entropy_gain": 224.586983085268
+    },
+    {
+      "trial": 34664,
+      "entropy_gain": 227.29035033846594
+    },
+    {
+      "trial": 36183,
+      "entropy_gain": 231.449233421823
+    },
+    {
+      "trial": 36707,
+      "entropy_gain": 234.84831434171792
+    },
+    {
+      "trial": 36804,
+      "entropy_gain": 238.2195611458519
+    },
+    {
+      "trial": 39149,
+      "entropy_gain": 238.2780683295059
+    },
+    {
+      "trial": 39805,
+      "entropy_gain": 239.76258819640498
+    },
+    {
+      "trial": 39965,
+      "entropy_gain": 241.75735526568315
+    },
+    {
+      "trial": 41749,
+      "entropy_gain": 247.6037912991087
+    },
+    {
+      "trial": 41809,
+      "entropy_gain": 248.9900856602253
+    },
+    {
+      "trial": 42514,
+      "entropy_gain": 252.80917066999245
+    },
+    {
+      "trial": 43463,
+      "entropy_gain": 254.7187131748724
+    },
+    {
+      "trial": 45614,
+      "entropy_gain": 255.55519629682385
+    },
+    {
+      "trial": 47875,
+      "entropy_gain": 259.7140793801809
+    },
+    {
+      "trial": 55305,
+      "entropy_gain": 260.84580023210583
+    },
+    {
+      "trial": 55536,
+      "entropy_gain": 261.67443917859055
+    },
+    {
+      "trial": 55769,
+      "entropy_gain": 268.90845391827315
+    },
+    {
+      "trial": 55980,
+      "entropy_gain": 271.41046603596624
+    },
+    {
+      "trial": 57564,
+      "entropy_gain": 278.9165023890382
+    },
+    {
+      "trial": 59977,
+      "entropy_gain": 280.18031704625173
+    },
+    {
+      "trial": 60632,
+      "entropy_gain": 281.6648369131508
+    },
+    {
+      "trial": 62573,
+      "entropy_gain": 282.88368429944967
+    },
+    {
+      "trial": 67403,
+      "entropy_gain": 285.1702800174389
+    },
+    {
+      "trial": 69479,
+      "entropy_gain": 288.9893650272061
+    },
+    {
+      "trial": 73341,
+      "entropy_gain": 291.3437372053886
+    },
+    {
+      "trial": 77117,
+      "entropy_gain": 291.86698534915195
+    },
+    {
+      "trial": 78360,
+      "entropy_gain": 292.5940540989177
+    },
+    {
+      "trial": 85117,
+      "entropy_gain": 293.1177990649958
+    },
+    {
+      "trial": 93530,
+      "entropy_gain": 294.2838701882429
+    },
+    {
+      "trial": 100531,
+      "entropy_gain": 294.7309934832447
+    },
+    {
+      "trial": 115547,
+      "entropy_gain": 296.2098686591344
+    },
+    {
+      "trial": 117928,
+      "entropy_gain": 296.6569919541362
+    },
+    {
+      "trial": 121052,
+      "entropy_gain": 297.59616302025097
+    },
+    {
+      "trial": 123622,
+      "entropy_gain": 297.61384406326397
+    },
+    {
+      "trial": 123655,
+      "entropy_gain": 301.2163050308809
+    },
+    {
+      "trial": 125877,
+      "entropy_gain": 301.3268371505037
+    },
+    {
+      "trial": 134626,
+      "entropy_gain": 301.7739604455055
+    },
+    {
+      "trial": 136009,
+      "entropy_gain": 303.61556582649064
+    },
+    {
+      "trial": 144013,
+      "entropy_gain": 306.2047044785577
+    },
+    {
+      "trial": 151395,
+      "entropy_gain": 310.8495805661805
+    },
+    {
+      "trial": 157194,
+      "entropy_gain": 314.3017654356008
+    },
+    {
+      "trial": 159250,
+      "entropy_gain": 315.7862853024999
+    },
+    {
+      "trial": 173776,
+      "entropy_gain": 319.51980730138894
+    },
+    {
+      "trial": 174776,
+      "entropy_gain": 320.8410501287144
+    },
+    {
+      "trial": 181026,
+      "entropy_gain": 322.81981410264416
+    },
+    {
+      "trial": 184816,
+      "entropy_gain": 324.3043339695432
+    },
+    {
+      "trial": 185107,
+      "entropy_gain": 330.05382884232677
+    },
+    {
+      "trial": 185968,
+      "entropy_gain": 331.44012320344336
+    },
+    {
+      "trial": 211137,
+      "entropy_gain": 331.9535056746754
+    },
+    {
+      "trial": 225614,
+      "entropy_gain": 332.45059765034966
+    },
+    {
+      "trial": 230190,
+      "entropy_gain": 335.1539649035476
+    },
+    {
+      "trial": 286888,
+      "entropy_gain": 335.2634436660592
+    },
+    {
+      "trial": 513866,
+      "entropy_gain": 337.77393090882106
+    },
+    {
+      "trial": 533208,
+      "entropy_gain": 339.16022526993765
+    },
+    {
+      "trial": 555457,
+      "entropy_gain": 345.86780555074074
+    },
+    {
+      "trial": 567796,
+      "entropy_gain": 346.7308517681013
+    },
+    {
+      "trial": 595043,
+      "entropy_gain": 349.23286388579436
+    },
+    {
+      "trial": 602428,
+      "entropy_gain": 351.9362311389923
+    },
+    {
+      "trial": 981555,
+      "entropy_gain": 353.11854651829344
+    },
+    {
+      "trial": 1110061,
+      "entropy_gain": 354.8056003581587
+    },
+    {
+      "trial": 1141043,
+      "entropy_gain": 357.16388072779955
+    },
+    {
+      "trial": 1173419,
+      "entropy_gain": 357.31832676123304
+    },
+    {
+      "trial": 1174522,
+      "entropy_gain": 362.19406113128207
+    },
+    {
+      "trial": 1174791,
+      "entropy_gain": 364.89742838448
+    },
+    {
+      "trial": 1477576,
+      "entropy_gain": 366.6844911854787
+    },
+    {
+      "trial": 2202862,
+      "entropy_gain": 372.13144312417717
+    }
+  ],
+  "changed_owner_records": 14101
+}
