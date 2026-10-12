@@ -24,6 +24,10 @@ Each known lower bound for multiplication fails for #109 on a stated hypothesis.
 | Harvey–van der Hoeven, FOCS 2025 (arXiv 2503.22848) | transposition ⇒ multiplication lower bound | #109 already notes its address procedure uses XOR and so lies outside data-movement models (`01`, "Lower-bound scope") |
 | Afshani–Freksen–Kamma–Larsen, ICALP 2019 (arXiv 1902.10935) | bounded-degree circuits, **conditional on the Li–Li conjecture** | the conjecture is false (§1.4), so the bound is void |
 
+On the Ailon row: #621 (merged) and #628 (open), both no-κ packages, prove conditioning bounds for the prime-power cyclic inverses
+that do not depend on the cyclic length but grow exponentially in the kernel order r. That is consistent with the row: such bounds
+are allowed by the guard width, and they are far outside the well-conditioned regime Ailon's bound needs.
+
 No unconditional superlinear lower bound is known for off-line multiplication on multitape TMs or for Boolean
 circuits [K].
 

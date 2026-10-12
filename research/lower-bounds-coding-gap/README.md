@@ -47,7 +47,8 @@ reading, not a formal check; **conjecture** = not established.
   - The AFKL reduction itself.
   - Route-specific ceilings: #183, #458, #203, #201, Swapnil Jain's P1/P2, and #595/#602.
   - Helper prices, descents and the log-gap decomposition (#595 §A.5, §C.7, §E).
-  - Lattice and label screens: #446; #595 C.6; #598 and #606 (DominikScholz); hipotures; Sussman.
+  - Lattice and label screens: #446; #595 C.6; #598 and #606 (DominikScholz); #620 (GamingPuzzled) with #630's E6 correction (vectorsss); hipotures; Sussman.
+  - Conditioning: #621 and #628 (chafreaky), cited on the Ailon row of note 1.
 - Our earlier "Hadamard-rank" observation (a saving needs different scalar and label characteristics) duplicates
   Swapnil Jain's closed-ideas list and Sussman's mod-2 argument, so it is **not** included.
 
@@ -83,4 +84,4 @@ values are recorded, not replayed.
 Prepared by ShikeChen01 with substantial assistance from Claude Opus 5.5 (Anthropic), via Claude Code; Apache-2.0.
 Upstream: OpenAI #109. Prior work used or cited: dysfunctor; Zhang, B. Li and Z. Li; Braverman and He; Afshani,
 Freksen, Kamma and Larsen; Harvey and van der Hoeven; Jacob Sussman; Swapnil Jain; hipotures; DreamingOfClouds (#446,
-#595, #589); artuskg (#602); DominikScholz (#598, #606); jeremykothe2 (#596); eumemic (#493, #501). See `NOTICE.md`.
+#595, #589); artuskg (#602); DominikScholz (#598, #606); GamingPuzzled (#620); vectorsss (#630); chafreaky (#621, #628); jeremykothe2 (#596); eumemic (#493, #501). See `NOTICE.md`.

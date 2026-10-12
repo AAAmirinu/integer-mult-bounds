@@ -95,6 +95,9 @@ scripts are not shipped.
   ranks root lattices by deficit; Sussman's notes close fat labels. Neither covers I_{n,1} for n > 9.
 - #598 (Leech / Turyn) and #606 (Niemeier), both DominikScholz, give scoped fitting bounds for other lattice
   families. This note is complementary: it is a complete minrank answer for one more family, with a proof.
+- #620 (GamingPuzzled, open) screens real ADE root systems and number-field label views and finds only E8 viable
+  among the ADE units; #630 (vectorsss, open) corrects its "E6" construction to D6 and confirms true E6 has no
+  saving. Neither covers Lorentzian I_{n,1} labels for n > 9.
 - **Scope.** The result is about the minrank of these two knowing graphs. It does not bound κ for any word, and it
   does not exclude other Lorentzian label sets. The general claim for odd n ≥ 7, n ≠ 9, is **conjecture**: the SAT
   step was run only for |X| ≤ 12.
