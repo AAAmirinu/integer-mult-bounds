@@ -248,7 +248,9 @@ def port_bindings(allow_pending=False, build_receipt=None):
             manifest['mathlibCommit'] == '308445d7985027f538e281e18df29ca16ede2ba3',
             'Port differs from exact upstream toolchain pins')
     modules = [row['module'] for row in manifest['modules']]
-    require(len(modules) == len(set(modules)) == 147, 'Wrong full-port module count')
+    require(len(modules) == len(set(modules)) ==
+            64 + len(manifest['supportModules']) == manifest['inventoryCounts']['localModules'],
+            'Wrong derived full-port module count')
     audit_counts = {'task_a': 21, 'task_b': 931, 'hosting': 47,
                     'source_invocation': 422, 'single_stream': 15}
     require(set(manifest['audits']) == set(audit_counts), 'Wrong port audit inventory')
@@ -260,6 +262,7 @@ def port_bindings(allow_pending=False, build_receipt=None):
                 'Current fresh Lean 4.21 receipt is absent; use --allow-pending-port only for preparation')
         return {'status': 'PENDING_PORT', 'task_b_verified': False,
                 'port_verified': False, 'local_modules': len(modules),
+                'support_modules': len(manifest['supportModules']),
                 'original_contribution_files': 66, 'archived_exclusions': 9,
                 'planned_audit_counts': audit_counts,
                 'notice': 'Full fresh Lean 4.21 replay and CI runtime qualification are pending.'}
@@ -324,7 +327,8 @@ def port_bindings(allow_pending=False, build_receipt=None):
                 digest_string(r['outputSha256']) for r in receipt['commands']),
             'Build command did not pass or lacks output fingerprint')
     return {'status': 'PASS', 'task_b_verified': True, 'port_verified': True,
-            'local_modules': len(modules), 'original_contribution_files': 66,
+            'local_modules': len(modules), 'support_modules': len(manifest['supportModules']),
+            'original_contribution_files': 66,
             'archived_exclusions': 9, 'audit_counts': audit_counts,
             'port_receipt_sha256': sha(receipt_path), 'port_replay_mode': 'fresh',
             'ci_runtime_qualification': 'Separate measured projection; not established by this integrity check.'}

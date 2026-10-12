@@ -13,7 +13,9 @@ From the repository root:
 ```sh
 python3 -m pip install -r research/lean-external-review/requirements.txt
 cd research/lean-multi-host-source
-lake exe cache get
+lake exe cache get Mathlib.Data.Matrix.Mul \
+  Mathlib.Algebra.BigOperators.Fin Mathlib.Tactic.FieldSimp \
+  Mathlib.Tactic.Ring Mathlib.Tactic.NormNum
 cd ../..
 make formal-pr442-verify
 ```
@@ -28,6 +30,9 @@ qualify against the more conservative approximately 30-minute projection,
 including a slower four-core runner and a safety margin; this has not yet
 been established by a full fresh build.
 
+The cache request selects the five imported Mathlib modules and their full
+dependency closure; it does not download unrelated Mathlib modules. These are
+cache selections, not compiler flags. The ordinary build remains `lake build`.
 The official Mathlib cache contains only pinned external dependency artifacts.
 It must not supply local contribution artifacts. If the cache is unavailable,
 ordinary Lake can compile the dependencies from source; the additional time

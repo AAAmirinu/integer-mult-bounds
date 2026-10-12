@@ -145,12 +145,16 @@ theorem projector_stack (K : Type*) [Field K] (h2 : (2 : K) ≠ 0) (f : Fin 944)
   rw [Matrix.smul_mul, h, smul_smul]
   simp [four_ne_zero K h2]
 
+-- Keep the literal lookup tables abstract while converting their checked
+-- entrywise identities into matrix multiplication identities.
+attribute [local irreducible] lookup transitionLookup in
 theorem transition_scaled_left (n : Fin 3357) :
     scaledMatrix (transition n).1 * scaledMatrix (transition n).2 = (4 : Int) • scaledMatrix (transition n).1 := by
   ext i j
   simpa [Matrix.mul_apply, Fin.sum_univ_succ, Matrix.smul_apply, dot8, scaledMatrix, stackMatrix, inverseMatrix] using
     (transition_absorbs n).1 i j
 
+attribute [local irreducible] lookup transitionLookup in
 theorem transition_scaled_right (n : Fin 3357) :
     scaledMatrix (transition n).2 * scaledMatrix (transition n).1 = (4 : Int) • scaledMatrix (transition n).1 := by
   ext i j

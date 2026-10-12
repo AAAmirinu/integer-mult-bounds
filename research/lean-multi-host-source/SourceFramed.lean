@@ -96,13 +96,23 @@ theorem actual_physical_endpoint {X : Type} (gauges : Nat → FramedReplay.Gauge
     ((final gauges input).get i).2 a =
       SourceMatrix.endpointPayload (normalizedInput gauges input) i
         ((gauges (SourceFrameTrace.state96.frames.get i)).inverse a) := by
-  have h := congrArg (fun t => Tree.get t i) (actual_decoded_endpoint gauges input)
-  rw [FramedReplay.decode, Tree.map_get, Tree.get_tabulate 10 _ i hi] at h
-  have hf := FrameTrace.matches_get gauges SourceFrameTrace.state96
-    (final gauges input) (final_matches gauges input) i
-  have ha := congrFun h ((gauges (SourceFrameTrace.state96.frames.get i)).inverse a)
-  simp only [FramedReplay.decodeRow, hf, FramedReplay.Gauge.forward_inverse] at ha
-  exact ha
+  -- Keep the literal execution abstract while deriving the row-level identity.
+  have physical_of_decode (s : FramedReplay.Store X) (f : Nat → X → Bool)
+      (g : FramedReplay.Gauge X)
+      (hd : FramedReplay.decode s = Tree.tabulate 10 f)
+      (hg : (s.get i).1 = g) : (s.get i).2 a = f i (g.inverse a) := by
+    have h := congrArg (fun t => Tree.get t i) hd
+    dsimp only at h
+    rw [FramedReplay.decode, Tree.map_get, Tree.get_tabulate 10 _ i hi] at h
+    have ha := congrFun h (g.inverse a)
+    simp only [FramedReplay.decodeRow, hg, FramedReplay.Gauge.forward_inverse] at ha
+    exact ha
+  exact physical_of_decode (final gauges input)
+    (SourceMatrix.endpointPayload (normalizedInput gauges input))
+    (gauges (SourceFrameTrace.state96.frames.get i))
+    (actual_decoded_endpoint gauges input)
+    (FrameTrace.matches_get gauges SourceFrameTrace.state96
+      (final gauges input) (final_matches gauges input) i)
 
 theorem actual_temporary_restored {X : Type} (gauges : Nat → FramedReplay.Gauge X)
     (input : Nat → X → Bool) :

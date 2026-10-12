@@ -52,8 +52,8 @@ The historical count of 75 Lean files means **66 contribution files plus nine
 archived third-party overlap snapshots**. Those nine snapshot files remain
 byte-for-byte unchanged and are inventory-hashed, but are excluded from this
 port's builds, CI and axiom audit. The 66 contribution files comprise 64
-compilable modules and two audit scripts. Certificate partitioning adds 83
-support modules, giving 147 Lake module roots. Both original audit scripts
+compilable modules and two audit scripts. Certificate partitioning adds 89
+support modules, giving 153 Lake module roots. Both original audit scripts
 are run separately because each is named `Audit.lean`.
 
 Every local dependency is included, particularly `CoordinateSwap.lean`,

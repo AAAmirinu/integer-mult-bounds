@@ -19,16 +19,40 @@ theorem oldRaw_data (gauges : Gauges K) (s : State K h2 d)
         (PhysicalSourceConnection.physicalData gauges
           (fun j => dataInput K h2 j (s.2.1 j))
           (fun h => oldInput K h2 h (bank h)) i) := by
-  funext a
-  have he := InvocationPayload.realized_payload (oldOwner K h2 d) (oldChart K h2)
-    (fun h => oldOwner_injective K h2 d h) gauges
-    (fun j => dataInput K h2 j (s.2.1 j))
-    (fun h => oldInput K h2 h (bank h)) (hostPayload K h2 d s)
-    (SourceLayouts.dataRole i) a
-  have hc : oldChart K h2 (SourceLayouts.dataRole i) =
-      newChart K h2 (SourceLayouts.dataRole i) := SourceLayouts.data_chart_eq K h2 i
-  rw [hc] at he
-  exact he
+  -- Rewrite whole-function wrappers before projecting a literal execution.
+  have raw_eq : oldRaw K h2 d gauges s bank =
+      SourceRaw.final (oldOwner K h2 d) (oldChart K h2) gauges
+        (InvocationPayload.realize (oldOwner K h2 d) (oldChart K h2)
+          (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => oldInput K h2 j (bank j))) (hostPayload K h2 d s)) := rfl
+  rw [raw_eq]
+  have select (L : SourceRaw.Role → Streams K) (R : Nat → Streams K)
+      (chart : SourceRaw.Role → Gauge (WholeHosting.Address SourceOwnership.Axis K))
+      (he : L = fun r a => R r.val ((chart r).inverse a))
+      (hc : chart (SourceLayouts.dataRole i) = newChart K h2 (SourceLayouts.dataRole i)) :
+      L (SourceLayouts.dataRole i) = fun a =>
+        R i.val ((newChart K h2 (SourceLayouts.dataRole i)).inverse a) := by
+    have h := congrFun he (SourceLayouts.dataRole i)
+    rw [hc] at h
+    exact h
+  have he := InvocationPayload.realized_payloads
+    (oldOwner K h2 d) (oldChart K h2) (fun h => oldOwner_injective K h2 d h)
+    gauges (fun j => dataInput K h2 j (s.2.1 j))
+    (fun j => oldInput K h2 j (bank j)) (hostPayload K h2 d s)
+  have he' := select
+    (fun r => (SourceRaw.final (oldOwner K h2 d) (oldChart K h2) gauges
+        (InvocationPayload.realize (oldOwner K h2 d) (oldChart K h2)
+          (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => oldInput K h2 j (bank j))) (hostPayload K h2 d s))
+      (oldOwner K h2 d r)).2)
+    (fun n => ((SourceFramed.final gauges (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => oldInput K h2 j (bank j)))).get n).2)
+    (oldChart K h2) he (SourceLayouts.data_chart_eq K h2 i)
+  have out_eq : dataOutput K h2 i = fun v a =>
+      v ((newChart K h2 (SourceLayouts.dataRole i)).inverse a) := rfl
+  have phys_eq : PhysicalSourceConnection.physicalData gauges
+      (fun j => dataInput K h2 j (s.2.1 j))
+      (fun j => oldInput K h2 j (bank j)) = fun i =>
+      ((SourceFramed.final gauges (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => oldInput K h2 j (bank j)))).get i.val).2 := rfl
+  rw [out_eq, phys_eq]
+  exact he'
 
 theorem newRaw_data (gauges : Gauges K) (s : State K h2 d) (i : Data) :
     (newRaw K h2 d gauges s (newOwner K h2 d (SourceLayouts.dataRole i))).2 =
@@ -36,12 +60,40 @@ theorem newRaw_data (gauges : Gauges K) (s : State K h2 d) (i : Data) :
         (PhysicalSourceConnection.physicalData gauges
           (fun j => dataInput K h2 j (s.2.1 j))
           (fun h => hostInput h (s.1 h)) i) := by
-  funext a
-  exact InvocationPayload.realized_payload (newOwner K h2 d) (newChart K h2)
-    (fun h => newOwner_injective K h2 d h) gauges
-    (fun j => dataInput K h2 j (s.2.1 j))
-    (fun h => hostInput h (s.1 h)) (tailPayload K h2 d s)
-    (SourceLayouts.dataRole i) a
+  -- Rewrite whole-function wrappers before projecting a literal execution.
+  have raw_eq : newRaw K h2 d gauges s =
+      SourceRaw.final (newOwner K h2 d) (newChart K h2) gauges
+        (InvocationPayload.realize (newOwner K h2 d) (newChart K h2)
+          (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => hostInput j (s.1 j))) (tailPayload K h2 d s)) := rfl
+  rw [raw_eq]
+  have select (L : SourceRaw.Role → Streams K) (R : Nat → Streams K)
+      (chart : SourceRaw.Role → Gauge (WholeHosting.Address SourceOwnership.Axis K))
+      (he : L = fun r a => R r.val ((chart r).inverse a))
+      (hc : chart (SourceLayouts.dataRole i) = newChart K h2 (SourceLayouts.dataRole i)) :
+      L (SourceLayouts.dataRole i) = fun a =>
+        R i.val ((newChart K h2 (SourceLayouts.dataRole i)).inverse a) := by
+    have h := congrFun he (SourceLayouts.dataRole i)
+    rw [hc] at h
+    exact h
+  have he := InvocationPayload.realized_payloads
+    (newOwner K h2 d) (newChart K h2) (fun h => newOwner_injective K h2 d h)
+    gauges (fun j => dataInput K h2 j (s.2.1 j))
+    (fun j => hostInput j (s.1 j)) (tailPayload K h2 d s)
+  have he' := select
+    (fun r => (SourceRaw.final (newOwner K h2 d) (newChart K h2) gauges
+        (InvocationPayload.realize (newOwner K h2 d) (newChart K h2)
+          (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => hostInput j (s.1 j))) (tailPayload K h2 d s))
+      (newOwner K h2 d r)).2)
+    (fun n => ((SourceFramed.final gauges (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => hostInput j (s.1 j)))).get n).2)
+    (newChart K h2) he rfl
+  have out_eq : dataOutput K h2 i = fun v a =>
+      v ((newChart K h2 (SourceLayouts.dataRole i)).inverse a) := rfl
+  have phys_eq : PhysicalSourceConnection.physicalData gauges
+      (fun j => dataInput K h2 j (s.2.1 j))
+      (fun j => hostInput j (s.1 j)) = fun i =>
+      ((SourceFramed.final gauges (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => hostInput j (s.1 j)))).get i.val).2 := rfl
+  rw [out_eq, phys_eq]
+  exact he'
 
 theorem oldRaw_bank (gauges : Gauges K) (s : State K h2 d)
     (bank : Host → Streams K) (h : Host) :
@@ -50,12 +102,37 @@ theorem oldRaw_bank (gauges : Gauges K) (s : State K h2 d)
         (PhysicalSourceConnection.physicalHelpers gauges
           (fun j => dataInput K h2 j (s.2.1 j))
           (fun j => oldInput K h2 j (bank j)) h) := by
-  funext a
-  exact InvocationPayload.realized_payload (oldOwner K h2 d) (oldChart K h2)
-    (fun he => oldOwner_injective K h2 d he) gauges
-    (fun j => dataInput K h2 j (s.2.1 j))
+  -- Rewrite whole-function wrappers before projecting a literal execution.
+  have raw_eq : oldRaw K h2 d gauges s bank =
+      SourceRaw.final (oldOwner K h2 d) (oldChart K h2) gauges
+        (InvocationPayload.realize (oldOwner K h2 d) (oldChart K h2)
+          (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => oldInput K h2 j (bank j))) (hostPayload K h2 d s)) := rfl
+  rw [raw_eq]
+  have select (L : SourceRaw.Role → Streams K) (R : Nat → Streams K)
+      (chart : SourceRaw.Role → Gauge (WholeHosting.Address SourceOwnership.Axis K))
+      (he : L = fun r a => R r.val ((chart r).inverse a))
+      : L (SourceLayouts.hostRole h) = fun a =>
+        R (240 + h.val) ((chart (SourceLayouts.hostRole h)).inverse a) := by
+    exact congrFun he (SourceLayouts.hostRole h)
+  have he := InvocationPayload.realized_payloads
+    (oldOwner K h2 d) (oldChart K h2) (fun h => oldOwner_injective K h2 d h)
+    gauges (fun j => dataInput K h2 j (s.2.1 j))
     (fun j => oldInput K h2 j (bank j)) (hostPayload K h2 d s)
-    (SourceLayouts.hostRole h) a
+  have he' := select
+    (fun r => (SourceRaw.final (oldOwner K h2 d) (oldChart K h2) gauges
+        (InvocationPayload.realize (oldOwner K h2 d) (oldChart K h2)
+          (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => oldInput K h2 j (bank j))) (hostPayload K h2 d s))
+      (oldOwner K h2 d r)).2)
+    (fun n => ((SourceFramed.final gauges (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => oldInput K h2 j (bank j)))).get n).2)
+    (oldChart K h2) he
+  have out_eq : oldOutput K h2 h = fun v a =>
+      v ((oldChart K h2 (SourceLayouts.hostRole h)).inverse a) := rfl
+  have phys_eq : PhysicalSourceConnection.physicalHelpers gauges
+      (fun j => dataInput K h2 j (s.2.1 j))
+      (fun j => oldInput K h2 j (bank j)) = fun h =>
+      ((SourceFramed.final gauges (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => oldInput K h2 j (bank j)))).get (240 + h.val)).2 := rfl
+  rw [out_eq, phys_eq]
+  exact he'
 
 theorem oldRaw_host (gauges : Gauges K) (s : State K h2 d)
     (bank : Host → Streams K) (h : Host) :
@@ -72,19 +149,50 @@ theorem newRaw_host (gauges : Gauges K) (s : State K h2 d) (h : Host)
         (PhysicalSourceConnection.physicalHelpers gauges
           (fun j => dataInput K h2 j (s.2.1 j))
           (fun j => hostInput j (s.1 j)) h) a := by
-  have he := InvocationPayload.realized_payload (newOwner K h2 d) (newChart K h2)
-    (fun he => newOwner_injective K h2 d he) gauges
-    (fun j => dataInput K h2 j (s.2.1 j))
+  -- Rewrite whole-function wrappers before projecting a literal execution.
+  have raw_eq : newRaw K h2 d gauges s =
+      SourceRaw.final (newOwner K h2 d) (newChart K h2) gauges
+        (InvocationPayload.realize (newOwner K h2 d) (newChart K h2)
+          (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => hostInput j (s.1 j))) (tailPayload K h2 d s)) := rfl
+  rw [raw_eq]
+  have owner_eq : hostOwner K h2 d = fun h =>
+      newOwner K h2 d (SourceLayouts.hostRole h) := rfl
+  rw [owner_eq]
+  have select (L : SourceRaw.Role → Streams K) (R : Nat → Streams K)
+      (chart : SourceRaw.Role → Gauge (WholeHosting.Address SourceOwnership.Axis K))
+      (he : L = fun r a => R r.val ((chart r).inverse a))
+      (hc : (chart (SourceLayouts.hostRole h)).inverse ((hostChart K h2 h).forward a) =
+        SourceOwnership.unindex (SourceOwnership.tag (role h)) a) :
+      L (SourceLayouts.hostRole h) ((hostChart K h2 h).forward a) =
+        R (240 + h.val) (SourceOwnership.unindex (SourceOwnership.tag (role h)) a) := by
+    exact (congrFun (congrFun he (SourceLayouts.hostRole h))
+      ((hostChart K h2 h).forward a)).trans
+      (congrArg (R (240 + h.val)) hc)
+  have he := InvocationPayload.realized_payloads
+    (newOwner K h2 d) (newChart K h2) (fun h => newOwner_injective K h2 d h)
+    gauges (fun j => dataInput K h2 j (s.2.1 j))
     (fun j => hostInput j (s.1 j)) (tailPayload K h2 d s)
-    (SourceLayouts.hostRole h) ((hostChart K h2 h).forward a)
   have hc : (newChart K h2 (SourceLayouts.hostRole h)).inverse
       ((hostChart K h2 h).forward a) =
       SourceOwnership.unindex (SourceOwnership.tag (role h)) a := by
     exact (SourceLayouts.host_chart_inverse K h2 h _).trans
       (congrArg (SourceOwnership.unindex (SourceOwnership.tag (role h)))
         ((hostChart K h2 h).inverse_forward a))
-  rw [hc] at he
-  exact he
+  have he' := select
+    (fun r => (SourceRaw.final (newOwner K h2 d) (newChart K h2) gauges
+        (InvocationPayload.realize (newOwner K h2 d) (newChart K h2)
+          (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => hostInput j (s.1 j))) (tailPayload K h2 d s))
+      (newOwner K h2 d r)).2)
+    (fun n => ((SourceFramed.final gauges (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => hostInput j (s.1 j)))).get n).2)
+    (newChart K h2) he hc
+  have out_eq : PhysicalSourceConnection.scatterHost h = fun (v : Streams K) a =>
+      v (SourceOwnership.unindex (SourceOwnership.tag (role h)) a) := rfl
+  have phys_eq : PhysicalSourceConnection.physicalHelpers gauges
+      (fun j => dataInput K h2 j (s.2.1 j))
+      (fun j => hostInput j (s.1 j)) = fun h =>
+      ((SourceFramed.final gauges (packed (fun j => dataInput K h2 j (s.2.1 j)) (fun j => hostInput j (s.1 j)))).get (240 + h.val)).2 := rfl
+  rw [out_eq, phys_eq]
+  exact he'
 
 theorem oldRaw_outside (gauges : Gauges K) (s : State K h2 d)
     (bank : Host → Streams K) (t : TailKey K h2 d) :

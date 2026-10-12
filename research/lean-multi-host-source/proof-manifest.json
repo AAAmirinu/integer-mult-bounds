@@ -30,7 +30,7 @@
     {
       "module": "FramedReplay",
       "source": "FramedReplay.lean",
-      "sha256": "29c8a3767d9c34d4496855f93aa9b82945e4ea18b3923096d2cad7e52c0fbefc",
+      "sha256": "d051b68253e9ffea22d09c644796ab64dd66ae4393bd592dc5c0aa6e80bbb122",
       "imports": [
         "TreeReplay"
       ]
@@ -463,7 +463,7 @@
     {
       "module": "FrameGeometry",
       "source": "FrameGeometry.lean",
-      "sha256": "9b3a3dd8be883911383ce8ce1beecedf0a3e0ba24434055b626d7eadbc4ed7d9",
+      "sha256": "57827f05176303b2818af9893fbeb1492181809d55af45cc08fbfc4a3ecdf5b5",
       "imports": [
         "FrameData",
         "FramedReplay",
@@ -629,7 +629,7 @@
     {
       "module": "FrameLabelData",
       "source": "FrameLabelData.lean",
-      "sha256": "9d3dac6340d136903ec092363afe017141c3916f9e6b4dc64aeed48430ebede3",
+      "sha256": "e30128d8a553c7c6d0a241785bf9af4dd22de319a0ccd07b39c8b69bc5e9173a",
       "imports": [
         "FrameTraceLiterals"
       ]
@@ -872,18 +872,69 @@
     {
       "module": "FrameTraceRoutes",
       "source": "FrameTraceRoutes.lean",
-      "sha256": "ecfab2d1002c9f610174451c77fcafb5668e0d2c732d76de20e4a2b71e14f500",
+      "sha256": "c40c69c0609519af41adde57856dacf7c62b0482748afeea77dcd511f530ff3e",
       "imports": [
         "FrameTraceLiterals",
         "OwnerTransport"
       ]
     },
     {
-      "module": "OwnershipData",
-      "source": "OwnershipData.lean",
-      "sha256": "9a18c91328362a6494b84e5825fcc31c15cc15a6e8445d6d9357b5e4bab4edf6",
+      "module": "OwnershipDatumCore",
+      "source": "OwnershipDatumCore.lean",
+      "sha256": "659ee29e140dacf28237ea208de50f32b3bfc00b8ea564f323d91789ea700c5b",
       "imports": [
         "Std"
+      ]
+    },
+    {
+      "module": "OwnershipCertificatePermutations",
+      "source": "OwnershipCertificatePermutations.lean",
+      "sha256": "a6ad472f5bf02437102dd0c41c64d0e0fae922867ec19251310f4036d11f4c65",
+      "imports": [
+        "OwnershipDatumCore"
+      ]
+    },
+    {
+      "module": "OwnershipCertificateMasks",
+      "source": "OwnershipCertificateMasks.lean",
+      "sha256": "d612dc4a1f84daa3028230dc1086f5f4461c7b0c544b90b0b940a4a6529ee328",
+      "imports": [
+        "OwnershipDatumCore"
+      ]
+    },
+    {
+      "module": "OwnershipInverseTable",
+      "source": "OwnershipInverseTable.lean",
+      "sha256": "f626c1e937c2c0f58c57a23254fc8825ed5908b0b5f395c13d7fb42d6c7fb805",
+      "imports": [
+        "OwnershipDatumCore"
+      ]
+    },
+    {
+      "module": "OwnershipCertificateOwner",
+      "source": "OwnershipCertificateOwner.lean",
+      "sha256": "1ee8493212a7178497ac44f8682defe6af269ced8393641d2b39e5ba5f74e869",
+      "imports": [
+        "OwnershipInverseTable"
+      ]
+    },
+    {
+      "module": "OwnershipCertificateHelpers",
+      "source": "OwnershipCertificateHelpers.lean",
+      "sha256": "ad9115ac6fc6de3c2eda19cfb17b811e1bcee2658a04fcaf4f306380d797b7e0",
+      "imports": [
+        "OwnershipDatumCore"
+      ]
+    },
+    {
+      "module": "OwnershipData",
+      "source": "OwnershipData.lean",
+      "sha256": "9bc403f8a05c166c97e4f621fd258c43872f2b7ed26aa48f86a366011e2b1729",
+      "imports": [
+        "OwnershipCertificatePermutations",
+        "OwnershipCertificateMasks",
+        "OwnershipCertificateOwner",
+        "OwnershipCertificateHelpers"
       ]
     },
     {
@@ -942,7 +993,7 @@
     {
       "module": "SourceFramed",
       "source": "SourceFramed.lean",
-      "sha256": "503b3eec4ed209f966495f7eaa63ef0a92c1c611356b548f45574491fc6c4e2e",
+      "sha256": "702abe211abfcf7e596e5bb21648fe2f1c186262ab206c21c75e09156a0a276c",
       "imports": [
         "FrameTraceData",
         "FrameTraceRefinement",
@@ -1037,9 +1088,9 @@
     {
       "module": "ParentOwnershipData",
       "source": "ParentOwnershipData.lean",
-      "sha256": "4d2b53fb74dd2153aa3265efb60356aac5c199474c4f89c65e1fa50b9fc2f54f",
+      "sha256": "40f00b0f98dd705fd9565221732e0083e7a7fb056d5774a4ff33b6dba7ecd762",
       "imports": [
-        "OwnershipData"
+        "OwnershipDatumCore"
       ]
     },
     {
@@ -1110,7 +1161,7 @@
     {
       "module": "SourceInvocationComparison",
       "source": "SourceInvocationComparison.lean",
-      "sha256": "2c85d4f9d80c4a6ef7dfdc95322d00773e256bd3dd1a3ebe55eb23fa603121f2",
+      "sha256": "fffd5315e94a20765dfd3e97f33577043d71f6321efa73e64edd0e1db4a4eccf",
       "imports": [
         "SourceInvocationState",
         "PhysicalSourceConnection"

@@ -9,7 +9,9 @@ set_option maxHeartbeats 0
 
 def indicesOK (e : FrameTrace.Entry) : Bool := e.scalar.x < 988 && e.scalar.y < 988
 
-theorem indices_checked : forward.all indicesOK = true := by decide
+theorem indices_checked : forward.all indicesOK = true := by
+  rw [forward, List.all_flatten]
+  decide +kernel
 
 theorem indices_bound (e : FrameTrace.Entry) (he : e ∈ forward) :
     e.scalar.x < 988 ∧ e.scalar.y < 988 := by

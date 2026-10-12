@@ -3,7 +3,7 @@
 Offline provenance bridge, not a kernel-verified JSON parser. Apache-2.0.
 Prepared with substantial OpenAI Codex assistance.
 """
-import argparse, gzip, hashlib, json
+import argparse, gzip, hashlib, json, re
 from pathlib import Path
 
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
@@ -16,8 +16,145 @@ def tree(xs, default=0):
   if all(x==v[0] for x in v):return f'(.leaf {v[0]})'
   return f'(.node {rec(v[::2])} {rec(v[1::2])})'
  return rec(xs)
+
+GENERATED_MODULES = (
+ 'OwnershipDatumCore', 'OwnershipInverseTable',
+ 'OwnershipCertificatePermutations', 'OwnershipCertificateMasks',
+ 'OwnershipCertificateOwner', 'OwnershipCertificateHelpers', 'OwnershipData',
+)
+
+def parse_lookup(text):
+ """Parse only literal Lookup trees and named subtree references."""
+ tokens = re.findall(r'\(|\)|\.leaf|\.node|[0-9]+|[A-Za-z_]\w*', text)
+ assert ''.join(tokens) == re.sub(r'\s+', '', text), 'Unparsed Lookup syntax'
+ index = 0
+ def parse():
+  nonlocal index
+  token = tokens[index]; index += 1
+  if token != '(':
+   assert re.fullmatch(r'[A-Za-z_]\w*', token), token
+   return token
+  kind = tokens[index]; index += 1
+  if kind == '.leaf':
+   value = int(tokens[index]); index += 1
+  else:
+   assert kind == '.node', kind
+   value = (parse(), parse())
+  assert tokens[index] == ')'
+  index += 1
+  return value
+ result = parse()
+ assert index == len(tokens), 'Unused Lookup syntax'
+ return result
+
+def literal_lookup(value):
+ return f'(.leaf {value})' if isinstance(value,int) else f'(.node {literal_lookup(value[0])} {literal_lookup(value[1])})'
+
+def lookup_signature(declaration):
+ match = re.match(r'def (\w+) : ([^\n]+?) :=\s*', declaration)
+ assert match, 'Expected an explicitly typed Lookup declaration'
+ return match[1], match[2], declaration[match.end():]
+
+def check_flattened_lookup(original, generated):
+ """Independently expand the emitted definitions and compare the full tree."""
+ public_name, type_name, literal = lookup_signature(original)
+ expected = parse_lookup(literal)
+ rows = re.findall(r'^def ('+re.escape(public_name)+r'(?:_part\d+)?) : '+re.escape(type_name)+r' := (.+)$', generated, re.M)
+ assert len(rows) == len(dict(rows)) and rows[-1][0] == public_name
+ parsed = {name:parse_lookup(body) for name,body in rows}
+ expanded, active, visited = {}, set(), set()
+ def expand(value):
+  if isinstance(value,int):return value
+  if isinstance(value,tuple):return (expand(value[0]),expand(value[1]))
+  assert value in parsed and value not in active, 'Missing or cyclic Lookup reference'
+  visited.add(value)
+  if value not in expanded:
+   active.add(value); expanded[value] = expand(parsed[value]); active.remove(value)
+  return expanded[value]
+ actual = expand(public_name)
+ assert visited == set(parsed), 'Unused Lookup subtree'
+ assert actual == expected, 'Flattened inverse-owner tree changed'
+ return {'original_literal_sha256':hashlib.sha256(literal_lookup(expected).encode()).hexdigest(),
+         'expanded_literal_sha256':hashlib.sha256(literal_lookup(actual).encode()).hexdigest(),
+         'subtree_definitions':len(rows)-1,
+         'max_literal_leaves_per_definition':max(body.count('(.leaf ') for _,body in rows),
+         'max_literal_nodes_per_definition':max(body.count('(.node ')+body.count('(.leaf ') for _,body in rows)}
+
+def flatten_lookup_declaration(original, leaf_budget=64):
+ """Keep every branch and leaf, bounding each emitted declaration's literal."""
+ assert leaf_budget > 0
+ public_name, type_name, literal = lookup_signature(original)
+ value = parse_lookup(literal)
+ def leaves(node):return 1 if isinstance(node,int) else leaves(node[0])+leaves(node[1])
+ lines = []
+ def emit(node, root=False):
+  if leaves(node) <= leaf_budget:
+   body = literal_lookup(node)
+  else:
+   left, right = emit(node[0]), emit(node[1])
+   body = f'(.node {left} {right})'
+  name = public_name if root else f'{public_name}_part{len(lines)}'
+  lines.append(f'def {name} : {type_name} := {body}\n\n')
+  return name
+ emit(value, root=True)
+ result = ''.join(lines)
+ check_flattened_lookup(original,result)
+ return result
+
+def split_rendered(monolith):
+ """Partition declarations; flatten the inverse table without changing its value.
+
+ The large inverse-owner table is needed only by owner_inverse. Keeping it
+ in a separate branch lets the other certificates compile independently.
+ """
+ start = monolith.index('inductive Lookup where\n')
+ end = monolith.index('end SourceOwnership\n')
+ text = monolith[start:end]
+ matches = list(re.finditer(r'^(inductive|def|abbrev|theorem) (\w+)\b', text, re.M))
+ declarations = {
+  match[2]: text[match.start():matches[i+1].start() if i+1 < len(matches) else len(text)]
+  for i,match in enumerate(matches)
+ }
+ assert len(matches) == len(declarations) and ''.join(declarations.values()) == text
+ groups = {
+  'OwnershipCertificatePermutations': ['perm_inverse', 'inverse_perm'],
+  'OwnershipCertificateMasks': ['perm_support', 'fingerprint_injective'],
+  'OwnershipCertificateOwner': ['owner_inverse'],
+  'OwnershipCertificateHelpers': ['family_data', 'helper_range', 'helper_frame', 'helper_child'],
+ }
+ theorems = {match[2] for match in matches if match[1] == 'theorem'}
+ assert theorems == {name for names in groups.values() for name in names} | {'family_tag_injective'}
+
+ def module(imports, names):
+  return ('\n'.join('import '+name for name in imports)+'\n\n'
+   '/-! Literal PR442 ownership certificate partition. Apache-2.0.\n'
+   'Prepared with substantial OpenAI Codex assistance.\n'
+   'Generated by generate_ownership_data.py; declarations are unchanged. -/\n'
+   'set_option maxRecDepth 1000000\nset_option maxHeartbeats 0\n'
+   'namespace SourceOwnership\n\n'
+   + ''.join(declarations[name] for name in names) + 'end SourceOwnership\n')
+
+ core = [name for name in declarations if name not in theorems and name != 'inverseOwnerTable']
+ files = {'OwnershipDatumCore.lean': monolith[:start]
+          + ''.join(declarations[name] for name in core) + 'end SourceOwnership\n'}
+ original_inverse = declarations['inverseOwnerTable']
+ declarations['inverseOwnerTable'] = flatten_lookup_declaration(original_inverse)
+ files['OwnershipInverseTable.lean'] = module(['OwnershipDatumCore'], ['inverseOwnerTable']).replace(
+  'declarations are unchanged.', 'the inverse-table literal is split into named subtrees.')
+ for name,names in groups.items():
+  dependency = 'OwnershipInverseTable' if name == 'OwnershipCertificateOwner' else 'OwnershipDatumCore'
+  files[name+'.lean'] = module([dependency], names)
+ files['OwnershipData.lean'] = (module(list(groups), ['family_tag_injective'])
+   + monolith[end+len('end SourceOwnership\n'):])
+ assert set(files) == {name+'.lean' for name in GENERATED_MODULES}
+ return files
+
+def render_files(monolith):
+ """Return all filename-to-source entries for an emitted ownership certificate."""
+ return split_rendered(monolith)
+
 def main():
- p=argparse.ArgumentParser();p.add_argument('--template',type=Path,required=True);p.add_argument('--states',type=Path,required=True);p.add_argument('--frames',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--receipt',type=Path);a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--template',type=Path,required=True);p.add_argument('--states',type=Path,required=True);p.add_argument('--frames',type=Path,required=True);p.add_argument('--out',type=Path,required=True);p.add_argument('--receipt',type=Path);p.add_argument('--check',action='store_true');a=p.parse_args()
  raw=gzip.decompress(a.template.read_bytes());t=json.loads(raw);s=json.loads(a.states.read_bytes());fs=json.loads(a.frames.read_bytes())['frames']
  c=next(c for c in t['calls'] if c['stage']==2 and c['replica']==0)
  assert c['orientation']=='forward' and c['pair']==0 and len(c['owners'])==987
@@ -91,8 +228,21 @@ end SourceOwnership
 #print axioms SourceOwnership.family_tag_injective
 #print axioms SourceOwnership.helper_frame
 '''
- a.out.write_text(out)
+ assert a.out.name == 'OwnershipData.lean', '--out must name the OwnershipData.lean facade'
+ generated = render_files(out)
+ existing = {path.name for pattern in ('OwnershipData.lean', 'OwnershipDatumCore.lean',
+  'OwnershipInverseTable.lean', 'OwnershipCertificate*.lean') for path in a.out.parent.glob(pattern)}
+ if a.check:
+  assert existing == set(generated), 'Ownership certificate module inventory differs'
+  for name,text in generated.items():
+   assert (a.out.parent/name).read_text() == text, name+' differs from the supplied source'
+ else:
+  assert not existing-set(generated), 'Remove obsolete ownership certificate modules before regeneration'
+  a.out.parent.mkdir(parents=True,exist_ok=True)
+  for name,text in generated.items():(a.out.parent/name).write_text(text)
  receipt=dict(source_commit='4e16d001d505d4f21dd2bcfc44591f9be4c279bd',template_sha256=sha(a.template),template_raw_sha256=hashlib.sha256(raw).hexdigest(),states_sha256=sha(a.states),frames_sha256=sha(a.frames),call={k:c[k] for k in ('stage','replica','pair','orientation','local_hash')},roles=[dict(role=i,family=fams[i],tag=tags[i],initial_frame=s['initial'][str(i)],source_route=c['owners'][i][1]) for i in range(987)],charts=details,construction='Map sorted local residual coordinate axes onto sorted actual pending axes; complete by order-preserving bijection of complements. For child2 postcompose by actual B_port⊕I56; child1 has identity postcomposition.',output_sha256=sha(a.out))
+ receipt['literal_monolith_sha256']=hashlib.sha256(out.encode()).hexdigest()
+ receipt['generated_module_sha256']={name:hashlib.sha256(text.encode()).hexdigest() for name,text in generated.items()}
  if a.receipt:a.receipt.write_text(json.dumps(receipt,indent=2)+'\n')
  print('PASS: 987 roles, 747 helpers, 317 helper families, 16 constructive chart permutations')
 if __name__=='__main__':main()

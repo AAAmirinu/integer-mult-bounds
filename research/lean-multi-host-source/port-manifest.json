@@ -133,8 +133,14 @@
         "MatrixNodes21",
         "OwnerTransport",
         "Ownership",
+        "OwnershipCertificateHelpers",
+        "OwnershipCertificateMasks",
+        "OwnershipCertificateOwner",
+        "OwnershipCertificatePermutations",
         "OwnershipData",
+        "OwnershipDatumCore",
         "OwnershipGeometry",
+        "OwnershipInverseTable",
         "ParentOwnership",
         "ParentOwnershipData",
         "PayloadGuards",
@@ -230,7 +236,7 @@
     {
       "module": "FramedReplay",
       "source": "FramedReplay.lean",
-      "sha256": "29c8a3767d9c34d4496855f93aa9b82945e4ea18b3923096d2cad7e52c0fbefc",
+      "sha256": "d051b68253e9ffea22d09c644796ab64dd66ae4393bd592dc5c0aa6e80bbb122",
       "imports": [
         "TreeReplay"
       ]
@@ -695,7 +701,7 @@
     {
       "module": "FrameGeometry",
       "source": "FrameGeometry.lean",
-      "sha256": "9b3a3dd8be883911383ce8ce1beecedf0a3e0ba24434055b626d7eadbc4ed7d9",
+      "sha256": "57827f05176303b2818af9893fbeb1492181809d55af45cc08fbfc4a3ecdf5b5",
       "imports": [
         "FrameData",
         "FramedReplay",
@@ -861,7 +867,7 @@
     {
       "module": "FrameLabelData",
       "source": "FrameLabelData.lean",
-      "sha256": "9d3dac6340d136903ec092363afe017141c3916f9e6b4dc64aeed48430ebede3",
+      "sha256": "e30128d8a553c7c6d0a241785bf9af4dd22de319a0ccd07b39c8b69bc5e9173a",
       "imports": [
         "FrameTraceLiterals"
       ]
@@ -1104,18 +1110,69 @@
     {
       "module": "FrameTraceRoutes",
       "source": "FrameTraceRoutes.lean",
-      "sha256": "ecfab2d1002c9f610174451c77fcafb5668e0d2c732d76de20e4a2b71e14f500",
+      "sha256": "c40c69c0609519af41adde57856dacf7c62b0482748afeea77dcd511f530ff3e",
       "imports": [
         "FrameTraceLiterals",
         "OwnerTransport"
       ]
     },
     {
-      "module": "OwnershipData",
-      "source": "OwnershipData.lean",
-      "sha256": "9a18c91328362a6494b84e5825fcc31c15cc15a6e8445d6d9357b5e4bab4edf6",
+      "module": "OwnershipDatumCore",
+      "source": "OwnershipDatumCore.lean",
+      "sha256": "659ee29e140dacf28237ea208de50f32b3bfc00b8ea564f323d91789ea700c5b",
       "imports": [
         "Std"
+      ]
+    },
+    {
+      "module": "OwnershipCertificatePermutations",
+      "source": "OwnershipCertificatePermutations.lean",
+      "sha256": "a6ad472f5bf02437102dd0c41c64d0e0fae922867ec19251310f4036d11f4c65",
+      "imports": [
+        "OwnershipDatumCore"
+      ]
+    },
+    {
+      "module": "OwnershipCertificateMasks",
+      "source": "OwnershipCertificateMasks.lean",
+      "sha256": "d612dc4a1f84daa3028230dc1086f5f4461c7b0c544b90b0b940a4a6529ee328",
+      "imports": [
+        "OwnershipDatumCore"
+      ]
+    },
+    {
+      "module": "OwnershipInverseTable",
+      "source": "OwnershipInverseTable.lean",
+      "sha256": "f626c1e937c2c0f58c57a23254fc8825ed5908b0b5f395c13d7fb42d6c7fb805",
+      "imports": [
+        "OwnershipDatumCore"
+      ]
+    },
+    {
+      "module": "OwnershipCertificateOwner",
+      "source": "OwnershipCertificateOwner.lean",
+      "sha256": "1ee8493212a7178497ac44f8682defe6af269ced8393641d2b39e5ba5f74e869",
+      "imports": [
+        "OwnershipInverseTable"
+      ]
+    },
+    {
+      "module": "OwnershipCertificateHelpers",
+      "source": "OwnershipCertificateHelpers.lean",
+      "sha256": "ad9115ac6fc6de3c2eda19cfb17b811e1bcee2658a04fcaf4f306380d797b7e0",
+      "imports": [
+        "OwnershipDatumCore"
+      ]
+    },
+    {
+      "module": "OwnershipData",
+      "source": "OwnershipData.lean",
+      "sha256": "9bc403f8a05c166c97e4f621fd258c43872f2b7ed26aa48f86a366011e2b1729",
+      "imports": [
+        "OwnershipCertificatePermutations",
+        "OwnershipCertificateMasks",
+        "OwnershipCertificateOwner",
+        "OwnershipCertificateHelpers"
       ]
     },
     {
@@ -1174,7 +1231,7 @@
     {
       "module": "SourceFramed",
       "source": "SourceFramed.lean",
-      "sha256": "503b3eec4ed209f966495f7eaa63ef0a92c1c611356b548f45574491fc6c4e2e",
+      "sha256": "702abe211abfcf7e596e5bb21648fe2f1c186262ab206c21c75e09156a0a276c",
       "imports": [
         "FrameTraceData",
         "FrameTraceRefinement",
@@ -1277,9 +1334,9 @@
     {
       "module": "ParentOwnershipData",
       "source": "ParentOwnershipData.lean",
-      "sha256": "4d2b53fb74dd2153aa3265efb60356aac5c199474c4f89c65e1fa50b9fc2f54f",
+      "sha256": "40f00b0f98dd705fd9565221732e0083e7a7fb056d5774a4ff33b6dba7ecd762",
       "imports": [
-        "OwnershipData"
+        "OwnershipDatumCore"
       ]
     },
     {
@@ -1392,7 +1449,7 @@
     {
       "module": "SourceInvocationComparison",
       "source": "SourceInvocationComparison.lean",
-      "sha256": "2c85d4f9d80c4a6ef7dfdc95322d00773e256bd3dd1a3ebe55eb23fa603121f2",
+      "sha256": "fffd5315e94a20765dfd3e97f33577043d71f6321efa73e64edd0e1db4a4eccf",
       "imports": [
         "SourceInvocationState",
         "PhysicalSourceConnection"
@@ -1474,6 +1531,105 @@
       ]
     }
   ],
+  "supportModules": [
+    "FrameDatumCore",
+    "FrameCertificateBatch00",
+    "FrameCertificateBatch01",
+    "FrameCertificateBatch02",
+    "FrameCertificateBatch03",
+    "FrameCertificateBatch04",
+    "FrameCertificateBatch05",
+    "FrameCertificateBatch06",
+    "FrameCertificateBatch07",
+    "FrameCertificateBatch08",
+    "FrameCertificateBatch09",
+    "FrameCertificateBatch10",
+    "FrameCertificateBatch11",
+    "FrameCertificateBatch12",
+    "FrameCertificateBatch13",
+    "FrameCertificateBatch14",
+    "FrameLookup",
+    "FrameTransitionBatch00",
+    "FrameTransitionBatch01",
+    "FrameTransitionBatch02",
+    "FrameTransitionBatch03",
+    "FrameTransitionBatch04",
+    "FrameTransitionBatch05",
+    "FrameTransitionBatch06",
+    "FrameTransitionBatch07",
+    "FrameTransitionBatch08",
+    "FrameTransitionBatch09",
+    "FrameTransitionBatch10",
+    "FrameTransitionBatch11",
+    "FrameTransitionBatch12",
+    "FrameTransitionBatch13",
+    "FrameTransitionBatch14",
+    "FrameTransitionBatch15",
+    "FrameTransitionBatch16",
+    "FrameTransitionBatch17",
+    "FrameTransitionBatch18",
+    "FrameTransitionBatch19",
+    "FrameTransitionBatch20",
+    "FrameTransitionBatch21",
+    "FrameTransitionBatch22",
+    "FrameTransitionBatch23",
+    "FrameTransitionBatch24",
+    "FrameTransitionBatch25",
+    "FrameTransitionBatch26",
+    "FrameTraceNodes00",
+    "FrameTraceNodes01",
+    "FrameTraceNodes02",
+    "FrameTraceNodes03",
+    "FrameTraceNodes04",
+    "FrameTraceNodes05",
+    "FrameTraceNodes06",
+    "FrameTraceNodes07",
+    "FrameTraceNodes08",
+    "FrameTraceNodes09",
+    "FrameTraceNodes10",
+    "FrameTraceNodes11",
+    "FrameTraceNodes12",
+    "FrameTraceNodes13",
+    "FrameTraceNodes14",
+    "FrameTraceNodes15",
+    "FrameTraceNodes16",
+    "MatrixNodes00",
+    "MatrixNodes01",
+    "MatrixNodes02",
+    "MatrixNodes03",
+    "MatrixNodes04",
+    "MatrixNodes05",
+    "MatrixNodes06",
+    "MatrixNodes07",
+    "MatrixNodes08",
+    "MatrixNodes09",
+    "MatrixNodes10",
+    "MatrixNodes11",
+    "MatrixNodes12",
+    "MatrixNodes13",
+    "MatrixNodes14",
+    "MatrixNodes15",
+    "MatrixNodes16",
+    "MatrixNodes17",
+    "MatrixNodes18",
+    "MatrixNodes19",
+    "MatrixNodes20",
+    "MatrixNodes21",
+    "OwnershipDatumCore",
+    "OwnershipCertificatePermutations",
+    "OwnershipCertificateMasks",
+    "OwnershipInverseTable",
+    "OwnershipCertificateOwner",
+    "OwnershipCertificateHelpers"
+  ],
+  "inventoryCounts": {
+    "originalContributionFiles": 66,
+    "originalCompiledModules": 64,
+    "originalAuditFiles": 2,
+    "supportModules": 89,
+    "localModules": 153,
+    "taskBModules": 141
+  },
   "audits": {
     "task_a": {
       "source": "TaskAAxioms.lean",
@@ -2918,7 +3074,7 @@
         "SourceInvocation.selected_original_matrix_realization",
         "SourceInvocation.selected_temporary_restoration"
       ],
-      "sha256": "5707155a7aece4553d2478204b9d5831f834aca5729b60d3e9ec5b48d874fe2b"
+      "sha256": "c8f4b7116280dacde55c6b2cb9b3a44cf6f4f07ddfab6738bccb88964c21272b"
     },
     "single_stream": {
       "source": "SingleStreamAxioms.lean",
@@ -2976,12 +3132,12 @@
     {
       "source": "FrameGeometry.lean",
       "baseline_sha256": "3fc83e60717189241a2656f70a98e0781536bea37f2727dad63b5cc0091e1c55",
-      "sha256": "9b3a3dd8be883911383ce8ce1beecedf0a3e0ba24434055b626d7eadbc4ed7d9"
+      "sha256": "57827f05176303b2818af9893fbeb1492181809d55af45cc08fbfc4a3ecdf5b5"
     },
     {
       "source": "FrameLabelData.lean",
       "baseline_sha256": "9d3dac6340d136903ec092363afe017141c3916f9e6b4dc64aeed48430ebede3",
-      "sha256": "9d3dac6340d136903ec092363afe017141c3916f9e6b4dc64aeed48430ebede3"
+      "sha256": "e30128d8a553c7c6d0a241785bf9af4dd22de319a0ccd07b39c8b69bc5e9173a"
     },
     {
       "source": "FrameMoveData.lean",
@@ -3016,7 +3172,7 @@
     {
       "source": "FrameTraceRoutes.lean",
       "baseline_sha256": "ecfab2d1002c9f610174451c77fcafb5668e0d2c732d76de20e4a2b71e14f500",
-      "sha256": "ecfab2d1002c9f610174451c77fcafb5668e0d2c732d76de20e4a2b71e14f500"
+      "sha256": "c40c69c0609519af41adde57856dacf7c62b0482748afeea77dcd511f530ff3e"
     },
     {
       "source": "FrameTraceTables.lean",
@@ -3026,7 +3182,7 @@
     {
       "source": "FramedReplay.lean",
       "baseline_sha256": "29c8a3767d9c34d4496855f93aa9b82945e4ea18b3923096d2cad7e52c0fbefc",
-      "sha256": "29c8a3767d9c34d4496855f93aa9b82945e4ea18b3923096d2cad7e52c0fbefc"
+      "sha256": "d051b68253e9ffea22d09c644796ab64dd66ae4393bd592dc5c0aa6e80bbb122"
     },
     {
       "source": "HelperGeometryData.lean",
@@ -3071,7 +3227,7 @@
     {
       "source": "OwnershipData.lean",
       "baseline_sha256": "fa08b345a9763529ff8ad62f58ed472362aadfd3410cbaf02774339e4f13ee6a",
-      "sha256": "9a18c91328362a6494b84e5825fcc31c15cc15a6e8445d6d9357b5e4bab4edf6"
+      "sha256": "9bc403f8a05c166c97e4f621fd258c43872f2b7ed26aa48f86a366011e2b1729"
     },
     {
       "source": "OwnershipGeometry.lean",
@@ -3086,7 +3242,7 @@
     {
       "source": "ParentOwnershipData.lean",
       "baseline_sha256": "737ae7eb42e3d287db5fcd840eecef3c80bc0e01238bba2c8ba8cfbd162c3220",
-      "sha256": "4d2b53fb74dd2153aa3265efb60356aac5c199474c4f89c65e1fa50b9fc2f54f"
+      "sha256": "40f00b0f98dd705fd9565221732e0083e7a7fb056d5774a4ff33b6dba7ecd762"
     },
     {
       "source": "PayloadGuards.lean",
@@ -3151,7 +3307,7 @@
     {
       "source": "SourceFramed.lean",
       "baseline_sha256": "503b3eec4ed209f966495f7eaa63ef0a92c1c611356b548f45574491fc6c4e2e",
-      "sha256": "503b3eec4ed209f966495f7eaa63ef0a92c1c611356b548f45574491fc6c4e2e"
+      "sha256": "702abe211abfcf7e596e5bb21648fe2f1c186262ab206c21c75e09156a0a276c"
     },
     {
       "source": "SourceInitialPayload.lean",
@@ -3166,7 +3322,7 @@
     {
       "source": "SourceInvocationComparison.lean",
       "baseline_sha256": "2c85d4f9d80c4a6ef7dfdc95322d00773e256bd3dd1a3ebe55eb23fa603121f2",
-      "sha256": "2c85d4f9d80c4a6ef7dfdc95322d00773e256bd3dd1a3ebe55eb23fa603121f2"
+      "sha256": "fffd5315e94a20765dfd3e97f33577043d71f6321efa73e64edd0e1db4a4eccf"
     },
     {
       "source": "SourceInvocationState.lean",
@@ -3360,8 +3516,8 @@
     "FrameCertificateBatch14.lean": "c409954e06d3e2acc2b1232a29ec5436fd11a905228ffc726823e218dbb7dc28",
     "FrameData.lean": "4ad78f3c14c02510076b0a7ec1dc4d5d0956c7da4e5abab707ad3843b037d989",
     "FrameDatumCore.lean": "e5366a4a48f372055f1fff636308143e59ea4112aa17a4f94ae2c272facb80ad",
-    "FrameGeometry.lean": "9b3a3dd8be883911383ce8ce1beecedf0a3e0ba24434055b626d7eadbc4ed7d9",
-    "FrameLabelData.lean": "9d3dac6340d136903ec092363afe017141c3916f9e6b4dc64aeed48430ebede3",
+    "FrameGeometry.lean": "57827f05176303b2818af9893fbeb1492181809d55af45cc08fbfc4a3ecdf5b5",
+    "FrameLabelData.lean": "e30128d8a553c7c6d0a241785bf9af4dd22de319a0ccd07b39c8b69bc5e9173a",
     "FrameLookup.lean": "de4c0437e67dbdcf9fabc4dd3440532311ee50a1e9b525bbde58e4d38193ed60",
     "FrameMoveData.lean": "93cd6f82c987072a3ebc791005ccf6ff497aad5b548fe27d1ab94f1f960d6e46",
     "FrameTraceCheckpoints.lean": "1c8a676a7522dba1e466785b41b67011ecf09a7a2a1b3e1d3b637d2f9331b625",
@@ -3386,7 +3542,7 @@
     "FrameTraceNodes15.lean": "2766c65fca721fb36c8f49c3c5ce0ec6202f6d092e324ac0b2d6c141180c8381",
     "FrameTraceNodes16.lean": "070b7d4d5cb4439a70c97f48df21daf2f8af246c18dc083a74bab71224ec19fe",
     "FrameTraceRefinement.lean": "9dd2c00b89db52e10a6031fabc95b47ccbf8a06c289f5f499516603bc369db18",
-    "FrameTraceRoutes.lean": "ecfab2d1002c9f610174451c77fcafb5668e0d2c732d76de20e4a2b71e14f500",
+    "FrameTraceRoutes.lean": "c40c69c0609519af41adde57856dacf7c62b0482748afeea77dcd511f530ff3e",
     "FrameTraceTables.lean": "f024344645891f85a073840da3e8546ba95ee5dbf5024a5db73136cf4e99f1c1",
     "FrameTransitionBatch00.lean": "a2163dcf7b91df3564b7120dbc161ac5b3e9322c661518c13e9203b6a970427b",
     "FrameTransitionBatch01.lean": "e0de45756bfd4fcb8dd173f7aba33b597174c4006ca8f9d5c0270e7ea0279e21",
@@ -3415,7 +3571,7 @@
     "FrameTransitionBatch24.lean": "c6fd7af383f9aacb4e80a3124e43a73e4afe05d2d3213e573b0c57284e344e46",
     "FrameTransitionBatch25.lean": "e7c0f78a9b3f1439e758cbfd673803f6557ca63aee46db0a26ea918917194648",
     "FrameTransitionBatch26.lean": "e7226d7bfacc0124771fa91274e1af769a5ff7c0a7f78be1f84a3d26b0ba926c",
-    "FramedReplay.lean": "29c8a3767d9c34d4496855f93aa9b82945e4ea18b3923096d2cad7e52c0fbefc",
+    "FramedReplay.lean": "d051b68253e9ffea22d09c644796ab64dd66ae4393bd592dc5c0aa6e80bbb122",
     "HelperGeometryData.lean": "41fdf73b03bcec19dc2455eb83b3ddbbd245e8b1c564dbef4676f25bd0a9c098",
     "InvocationPayload.lean": "9a481f2ca0c796f88d0dc1b8a6a9fd17654a0c4d1c6c33c6e626753132cab0dc",
     "LinearReplay.lean": "50df4826c9531e5139bcd0161f77ced299a448793d1c97fea76c9a696ef215da",
@@ -3446,10 +3602,16 @@
     "MatrixNodes21.lean": "cb146ece2b33d9dc8f378bc0f0c8e3050ea67a5417991161d4022100c22b4b4e",
     "OwnerTransport.lean": "cdc9374538c716c85a3dfed949395a92d738f2bf6cba108d1a9f0ea2270ffc5c",
     "Ownership.lean": "a18ecfb59c4641ecf86eb672764dc6491e524d01b74392f34549c6013f9c4f76",
-    "OwnershipData.lean": "9a18c91328362a6494b84e5825fcc31c15cc15a6e8445d6d9357b5e4bab4edf6",
+    "OwnershipCertificateHelpers.lean": "ad9115ac6fc6de3c2eda19cfb17b811e1bcee2658a04fcaf4f306380d797b7e0",
+    "OwnershipCertificateMasks.lean": "d612dc4a1f84daa3028230dc1086f5f4461c7b0c544b90b0b940a4a6529ee328",
+    "OwnershipCertificateOwner.lean": "1ee8493212a7178497ac44f8682defe6af269ced8393641d2b39e5ba5f74e869",
+    "OwnershipCertificatePermutations.lean": "a6ad472f5bf02437102dd0c41c64d0e0fae922867ec19251310f4036d11f4c65",
+    "OwnershipData.lean": "9bc403f8a05c166c97e4f621fd258c43872f2b7ed26aa48f86a366011e2b1729",
+    "OwnershipDatumCore.lean": "659ee29e140dacf28237ea208de50f32b3bfc00b8ea564f323d91789ea700c5b",
     "OwnershipGeometry.lean": "3acf8a6cfb8b086f06e65b79bd21aec3463723acc525dc69ae667fb5de4d7abd",
+    "OwnershipInverseTable.lean": "f626c1e937c2c0f58c57a23254fc8825ed5908b0b5f395c13d7fb42d6c7fb805",
     "ParentOwnership.lean": "dcff8654aee65aeee400fde68508a837f40acfc4214d21cf9061812ef9aa2968",
-    "ParentOwnershipData.lean": "4d2b53fb74dd2153aa3265efb60356aac5c199474c4f89c65e1fa50b9fc2f54f",
+    "ParentOwnershipData.lean": "40f00b0f98dd705fd9565221732e0083e7a7fb056d5774a4ff33b6dba7ecd762",
     "PayloadGuards.lean": "23ec801ecd085f21a5fe6162dbcac474ff59702fc26c08fbd42d9c2fc09a09af",
     "PhysicalSourceConnection.lean": "b32dfc5118a8de6fc0e8d52e13b06642927cc601c499865612207dd480ee92ae",
     "PortData.lean": "78352dcfb183e8a81d3118a1f0f46474dbad1b7eeb4bbe1f02b4ab205f8b363f",
@@ -3463,10 +3625,10 @@
     "SourceControls.lean": "39ce81e3fbe6294c89729d7e2dcf8d4d1148b935d659b46780c472340c90c389",
     "SourceDataBehavior.lean": "75c803c8ef2f6034a7f885514b1bcc98772bbe8336d37bbaaf01a5928b128632",
     "SourceEndpoint.lean": "77b72ee70ffaf36a3a9f7fff0cee7d6be964b54a855483d9503208a747230bf9",
-    "SourceFramed.lean": "503b3eec4ed209f966495f7eaa63ef0a92c1c611356b548f45574491fc6c4e2e",
+    "SourceFramed.lean": "702abe211abfcf7e596e5bb21648fe2f1c186262ab206c21c75e09156a0a276c",
     "SourceInitialPayload.lean": "c577217a4eff88a5d5c4d8925156dc7c916ef7f0c64fc69321272d09126b155d",
     "SourceInvocation.lean": "45ea3b2f9165a94a651f47beb93a5e74250b94538936ff18e81f8b5939e5e782",
-    "SourceInvocationComparison.lean": "2c85d4f9d80c4a6ef7dfdc95322d00773e256bd3dd1a3ebe55eb23fa603121f2",
+    "SourceInvocationComparison.lean": "fffd5315e94a20765dfd3e97f33577043d71f6321efa73e64edd0e1db4a4eccf",
     "SourceInvocationState.lean": "f5a6f137e6ba2508eb114fedab0015b997e0ec86fbe17205a0829803dce56487",
     "SourceLayouts.lean": "2c599203d826ad088103c93647de9ada2d38d73c0f508097b19f0dad0ca6ea42",
     "SourceMoveGeometry.lean": "21dd5f55077f2e92ebb023639f1a007ab5c3644b88b5fe238101ca71e2dd7a01",
@@ -3475,16 +3637,16 @@
     "SourceRawGuards.lean": "05f194304748c031bfdd9a452dba90bee6ee6a8c605e9ecd8fff853a6f514cd8",
     "SourceTables.lean": "ebddbb922cfacb255104f693d8ede32cfcff0e69a9c2dd9d99a118177a87d949",
     "TaskAAxioms.lean": "cc501dcf274ff97dc018771e6ddc2d24a0a0974bca828468ae3aba28ef4407f1",
-    "TaskBAxioms.lean": "5707155a7aece4553d2478204b9d5831f834aca5729b60d3e9ec5b48d874fe2b",
+    "TaskBAxioms.lean": "c8f4b7116280dacde55c6b2cb9b3a44cf6f4f07ddfab6738bccb88964c21272b",
     "TreeReplay.lean": "d804569626c5569f8e1200458662871fcc666069e837022a9dbbf1ec877d8579",
-    "check_sources.py": "91f8c5d505c03e91c9dfa1b3d3a64b80aff5e494bb877bf791001a87d95b4386",
+    "check_sources.py": "c1215b1fd6ca78e0b04a67f1013a93fe46c166013c8d8c260472914ad64ae417",
     "flat_data.py": "7b4c2b8af0df72cad5a653507306584749cea4ea8ab62bd9bdbf4d60d9e0b66d",
     "generate_frame_data.py": "193827bff3173ef49c4cf3b5421e7450887c6ee44fb4e7091240d3ed2455dcaa",
     "generate_frame_moves.py": "efb3aa9c586565941e6842847ab50300f15a31cceea7366c58ed2bac061b5aaf",
     "generate_frame_trace.py": "86b68e98b7319402124ad67c423f33cbd072467b1c47b452ee13bacddc58240e",
     "generate_matrix.py": "f288385725a022f0ca0e614053e6c4c3650de6712494cde4e374493f4d5917d3",
-    "generate_ownership_data.py": "7ef2fbe2bda96a0b9200a21b6ce5e79a9bda0c61cd092391d13869afa753cd6d",
-    "generate_parent_ownership.py": "1503dba3bef65c8e1730e32fbefd9619ca6808b5e5e126553e954be31ad38710",
+    "generate_ownership_data.py": "b444335b8160054609192a8934f448658d5891960878c7a80921b845eb4964f9",
+    "generate_parent_ownership.py": "eb7ef179c74d9e460b83533d05888ca5ece9c5fea99a197abff37706bbdeed70",
     "generate_port_data.py": "797f8b589ae08e09f06a58bbcffd501dffb69f9d568a1062f7f52e24e4a9f335",
     "inputs/frames.json.gz": "4a9e611806f5b9a09ca0ee009cbf6ff9105c2f9d1116f3b9276f3747bd0f8631",
     "inputs/geometry.json.gz": "c2bdd236e44fb868e4d2260b1fd7820aa7a565119532781904ebff90b9e852d7",
@@ -3493,17 +3655,17 @@
     "inputs/records.bin.gz": "31a1b5e46fbb6b392fdb8709b0440b7c98e9d120c3285ffc21070a3f6fc851ce",
     "inputs/states.json.gz": "772f1ea692bfe81f4caf711f12c1de53e25481d38cc5dde85a04f7937236ba2a",
     "lake-manifest.json": "829180ed94ce581c831579c201f6a8776a1ee16930cc9d4814ea1c350ebd6e91",
-    "lakefile.toml": "c62e0c8ee4000b32d97b9c1fe7d5d1dc863851437819dd63aff5662fd47a7089",
+    "lakefile.toml": "694f8e23568f04e2a8b331a2189ce816a13f1394fd0a750e19c7102918932136",
     "lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
     "mathlib-lake-manifest.json": "829180ed94ce581c831579c201f6a8776a1ee16930cc9d4814ea1c350ebd6e91",
-    "proof-manifest.json": "fbfc194ce48d5295255e3c027da22e78adc21381e60a951f0855ac0bb7c7cc83",
+    "proof-manifest.json": "c05e28674849b47b87916a4ed6c346dba018f18c92b67e78ef6f06cba8198d37",
     "replay.py": "17a5ab55a0253358461725d360f85ee11c1a4887a162e7e814d029b0c6934583",
     "requirements-probe.txt": "47fd19021144e071cc43b6e265aafada0056abe89724ad95bd6e3a8e37995b94",
     "source-versions.json": "ecab66abda7fce3a17c176e027334d30ae5ccfeea2099b00cab7110ca6243510",
     "test_flat_data.py": "b5c1183cab2083f5831235fea7796cfd4b0aff8cb8e78edb6cce38c32457c515",
     "update_manifest.py": "e1c35ac04ac806a37f196d541b216fc4ecd0d717c49f1fefd253b7081cf6a199",
-    "update_port_manifest.py": "e51c78caa022ecc0a44eb58008af762708aef164ea09fc2dd856157cee190f5d",
-    "verify.py": "aa84ee930878488cb44cde15512dcec85a8ff21e2fdd57d178938a0acdc23aa6",
+    "update_port_manifest.py": "a634b44b6e5f9e912cee0467846cac1018b4d3df1ab7ced104d91bc500da1c61",
+    "verify.py": "b79452abee21ddc82b07066fab26393fcc3cedc17a8aefcb0fe7bcb0348d927e",
     "../lean-single-stream-obstruction/lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
     "../lean-single-stream-obstruction/proof-manifest.json": "c809cf54611f371ffa873221f69de71a22d6761b6a2f970674f6ee3a8074c138",
     "../lean-source-invocation-audit/lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",

@@ -3,16 +3,21 @@
 Exact upstream base: `db0e57bc7f36b5ac0fc844ad7ce1396165ee6647`.
 The port is isolated from `lean/pr442-invocation-review` and PR #540.
 
-## Current status: stopped; full verification pending
+## Current status: development probes; full verification pending
 
-The Phase 2 probe stopped at the user-specified performance gate:
-`lake build FrameGeometry` was terminated at 17.199 seconds after reaching
-the 17.187-second cap (three times its 5.729-second historical module time).
-There is no FrameGeometry PASS. Lake overhead and compiler time were not
-separately measured. No compilation was retried after this stop condition.
-See [the Phase 2 report](../lean-multi-host-source/PORT-PHASE2.md) and its
-saved probe evidence. The successful split FrameData group is a bounded
-development result, not a full fresh Task B replay.
+The previously blocked ownership certificates now pass after partitioning and
+same-content lookup flattening. The split group took 13.080 seconds with its
+common core already built. FrameGeometry passes after proof-local lookup
+protection, and SourceFramed passes after abstracting its row-level argument.
+Source extraction and the static theorem-header preservation check pass.
+These results are incremental development evidence, not fresh-build receipts.
+
+Earlier stop records in `phase2-results/` belong to commit
+`553ac9c37e2de0e2792d3bf5364c7b073fc633fc`; their timing gates were
+subsequently revised. The current ownership allowance is 15 compiler minutes
+per module, subject to a total CI projection under about 30 minutes. Other
+modules use three times baseline when their 4.33 baseline exceeded 60 seconds,
+and otherwise a five-minute limit. See [the Phase 2 report](../lean-multi-host-source/PORT-PHASE2.md).
 
 The complete fresh Lean 4.21 package build, all audits and final CI runtime
 qualification are **not yet reported as passed**. The target versions are
@@ -27,7 +32,7 @@ cover a bounded subset only. They establish neither the full package nor
 its final CI runtime. Further isolated module probes likewise do not
 replace a complete fresh build.
 
-The full run must compile all 147 local module roots without reusing local
+The full run must compile all 153 local module roots without reusing local
 artifacts, then check the original 931 Task B declarations, 21 Task A
 declarations and three legacy contribution audits. Installed Lean, Mathlib,
 transitive dependencies and artifact fingerprints must be recorded. Ordinary
@@ -35,7 +40,7 @@ Lake commands must work with the inherited default external settings.
 Source heartbeat/recursion options remain permitted.
 
 The contribution comprises 66 original Lean files (64 compiled modules and
-two separately invoked audit scripts), with 83 additional modules from
+two separately invoked audit scripts), with 89 additional modules from
 same-content certificate partitioning. Nine archived third-party overlap
 snapshots account for the remainder of the historical 75-file count. They
 remain unchanged and inventory-hashed, but are outside this port's build,

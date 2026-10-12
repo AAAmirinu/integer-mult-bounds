@@ -4,7 +4,7 @@
 below apply only to review baseline `c4b1560a569f54064608bf88440f9e492c03fba3`.
 Current manifests and source-version fields target 4.21. For the current
 ordinary Lake route, use [the external build instructions](../lean-external-review/BUILD.md).
-The Phase 2 port is stopped at its performance gate; see
+The Phase 2 port is continuing with partitioned ownership certificates; see
 [PORT-PHASE2.md](PORT-PHASE2.md). The bounded Phase 1 results remain in
 [PORT-PHASE1.md](PORT-PHASE1.md).
 

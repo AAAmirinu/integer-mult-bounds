@@ -27,8 +27,9 @@ Main declarations include `MultiHosting.multi_hosting`,
 The package is being ported to the project's exact Lean 4.21.0 / Mathlib
 `308445d7985027f538e281e18df29ca16ede2ba3` setup. Full fresh replay and CI
 runtime qualification are pending; historical Lean 4.33 passes do not
-establish this port. The current probe stopped at the FrameGeometry
-three-times-baseline timing gate; no full-port PASS is claimed.
+establish this port. FrameGeometry now passes under the revised timing gate;
+OwnershipData now passes after same-content partitioning and lookup flattening.
+No full-port PASS is claimed.
 The intended reproduction command after the documented
 pinned dependency setup is:
 

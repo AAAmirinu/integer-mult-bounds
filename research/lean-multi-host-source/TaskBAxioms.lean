@@ -101,6 +101,12 @@ import PayloadGuards
 import FrameTraceRefinement
 import OwnerTransport
 import FrameTraceRoutes
+import OwnershipDatumCore
+import OwnershipCertificatePermutations
+import OwnershipCertificateMasks
+import OwnershipInverseTable
+import OwnershipCertificateOwner
+import OwnershipCertificateHelpers
 import OwnershipData
 import FrameTraceTables
 import HelperGeometryData

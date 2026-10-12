@@ -1,107 +1,110 @@
-# Lean 4.21 port: stopped at the performance gate
+# Lean 4.21 port: candidate awaiting fresh validation
 
-This branch is a local port of the contribution at
-`c4b1560a569f54064608bf88440f9e492c03fba3`. It has not been pushed. The
-original review branch and PR #540 are unchanged. This document does not yet
-claim a complete port, fresh full build, or CI pass.
+This is a local port of `c4b1560a569f54064608bf88440f9e492c03fba3`,
+on `lean/pr442-lean421-probe`. The public review branch and PR #540 are
+unchanged. All development module probes pass. Full fresh validation and CI qualification
+are still pending.
 
-Compilation stopped on 2026-10-12 at the requested three-times-baseline gate.
-The ordinary `lake build FrameGeometry` target did not finish within 17.187
-seconds (three times its recorded Lean 4.33 module time of 5.729 seconds).
-The harness terminated the process group at 17.199 seconds. Its log contains
-replayed dependency reports but no FrameGeometry success or compiler error.
-This is a Lake-target wall timeout, not a measured isolated Lean compiler
-duration or evidence that the theorem is false. There was no retry after
-this stop condition. Further compilation requires a decision on this blocker.
-
-The saved evidence is in [phase2-results/](phase2-results/). These are bounded
-development probes, not fresh full-package receipts. In particular:
-
-| Check | Lean 4.21 seconds | Lean 4.33 baseline seconds | Result |
-| --- | ---: | ---: | --- |
-| FrameData split certificate group | 645.939 | 2007.143 | Group built; common core reused |
-| CoordinateSwap Lake target | 1.017 | 0.458 | PASS |
-| AddressPairs Lake target | 0.866 | 0.418 | PASS |
-| EndpointInterpretation corrected proof | 1.171 | 1.971 | PASS after one default-stack failure |
-| FrameGeometry Lake target | 17.199 | 5.729 | Terminated at 17.187-second cap |
-
-FrameData's result includes rebuilding all 42 certificate batches, the lookup
-and facade, with the common core already available. Its seven public theorem
-reports use only `propext`. It is useful performance evidence, but differs from
-the old single-module measurement and does not establish a full-package speedup.
-EndpointInterpretation's proof fix locally prevents eager unfolding of
-`evalRow` and `Tree.tabulate`; it changes no theorem statement or external setting.
-
-No complete fresh Task A/Task B receipt exists for this port, and the 931- and
-21-declaration audits have not run for the full current package. The 30-minute
-CI qualification remains open. Applying the stated 1.5-times slowdown and
-20% margin to the FrameData group alone gives 19.38 minutes; remaining modules,
-audits, setup and dependency preparation must still be measured and included.
-This partial calculation is not a total CI projection.
-
-Possible next steps are a bounded default-setting diagnostic to isolate the
-FrameGeometry compiler time from Lake overhead, followed if necessary by
-proof-body optimization, or retaining the already checked Phase 1 package as
-the limited deliverable. Neither option permits weakening a theorem, raising
-external resource limits, or claiming the unfinished full port has passed.
-
-The target is upstream `formal/lean` at
+The exact target is upstream `formal/lean` at
 `db0e57bc7f36b5ac0fc844ad7ce1396165ee6647`: Lean 4.21.0, compiler commit
 `6741444a63eec253a7eae7a83f1beb3de015023d`, and Mathlib
-`308445d7985027f538e281e18df29ca16ede2ba3`. All nine Lake dependency revisions
-match the upstream manifest. Only ordinary Lake compilation is accepted:
-no externally raised stack limits, additional compiler options, or environment
-tuning. Existing source heartbeat and recursion options are permitted.
+`308445d7985027f538e281e18df29ca16ede2ba3`. All nine Lake dependency pins
+match that upstream manifest. Ordinary Lake commands use no externally
+raised stack, compiler flags or environment tuning. Source heartbeat and
+recursion options are retained as permitted.
 
-## Inventory
+## Inventory and preservation
 
-The earlier count of 75 Lean files consists of 66 contribution files and nine
-archived third-party snapshots. The nine files under
-`review-receipts/external-overlap/raw/` remain byte-for-byte unchanged. They
-are review evidence, excluded from Lake roots, CI compilation and axiom audits.
-Two of the contribution files are distinct `Audit.lean` scripts; they must be
-run separately, not merged into one module name.
+The 66 original contribution files comprise 64 compiled modules and two
+separate `Audit.lean` scripts. Certificate partitioning adds 89 modules,
+for 153 compiled modules and a 141-module Task B closure. The nine archived
+third-party snapshots are unchanged evidence, excluded from Lake roots,
+CI compilation and axiom audits. Task B retains its original 931-declaration
+inventory, including `SourceInvocation.actualContract`; Task A retains 21.
+The other inventories contain 47, 422 and 15 declarations.
 
-The original Task B inventory remains 931 named declaration closures,
-including `SourceInvocation.actualContract`. Task A has its separate inventory
-of 21 declarations. These counts must not be confused with module counts or
-compiler-generated auxiliary proof declarations.
+The lexical preservation check compares all 1,388 original named theorem
+headers and active variable contexts across moved declarations. It finds no
+changed, missing or added theorem statements and confirms all nine archive
+hashes. This is a static source comparison, not elaborated-type equality;
+name resolution and changed definition bodies still require separate review
+and Lean checking. Generators separately check the embedded literal data.
 
-## Certificate structure and permitted proof changes
+## Mechanical changes
 
-FrameData's 944 frame certificates and 3,357 transition certificates are split
-into 15 independent frame batches and 27 independent transition batches.
-Shared definitions precede the frame batches; a shared frame lookup precedes
-the transition batches. The existing `FrameData` import remains the facade.
-There are 44 added modules. Every existing declaration name and type, every
-literal witness, and the seven public theorem statements are preserved.
+- MatrixData and FrameTraceLiterals use 39 support modules to avoid deep
+  literal elaboration under the default stack.
+- FrameData has 944 frame and 3,357 transition certificates in 15 frame and
+  27 transition batches, with shared definitions and lookup. This adds
+  44 modules. All existing names, types and literal witnesses are preserved.
+- OwnershipData has a common core, an inverse table, four certificate groups
+  and its original facade: six added modules. The inverse tree is represented
+  by 510 named subtrees of at most 64 leaves each. Exact expansion reproduces
+  every original branch and leaf. The twelve ParentOwnershipData lookup
+  tables use the same verified flattening transformation.
+- Generated certificate bodies use `decide +kernel`, ordinary kernel
+  evaluation without duplicate tactic reduction. No native evaluation is used.
+- FrameGeometry keeps large lookup tables abstract in two transition proofs.
+  FrameLabelData and FrameTraceRoutes check existing chunks before flattening.
+  SourceFramed derives its endpoint identity on an arbitrary store before
+  applying it to the literal execution. SourceInvocationComparison selects
+  outputs on schematic functions and rewrites whole-function wrappers before
+  projecting the same literal folds. This avoids kernel conversion that would
+  evaluate an entire execution beneath a payload projection.
+  Other changes make beta reduction
+  explicit or prevent eager unfolding during proof elaboration.
 
-Generated certificate proof bodies use `decide +kernel`. Lean 4.21 documents
-this tactic as checking the decidable proposition in the kernel once, avoiding
-the duplicate reduction performed by ordinary `decide`. This is a source proof
-change, not an external compilation option. It does not use native evaluation.
-The same substitution is used in the generated port, frame-trace, ownership,
-parent-ownership and move-check certificates. The permanent axiom audits must
-still allow only `propext`, `Classical.choice` and `Quot.sound`.
+## Development measurements
 
-FrameGeometry also makes the beta reduction before `Matrix.map_mul` explicit,
-matching the proof adjustment established in the Phase 1 PortGeometry probe.
-No mathematical scope is added.
+These are incremental probes, not the final fresh package build. Compiler
+process durations are sampled at approximately 0.1-second intervals where
+available. The old 4.33 runner produced `.olean` files directly; ordinary Lake
+also requests generated C. Ratios compare required workflows as well as
+compiler versions.
 
-## Validation gates
+| Probe | Lean 4.21 seconds | Lean 4.33 seconds | Measurement |
+| --- | ---: | ---: | --- |
+| FrameData split group | 645.939 | 2007.143 | Lake wall; common core reused |
+| FrameGeometry | 12.2 | 5.729 | Compiler |
+| FrameLabelData | 11.5 | 13.925 | Compiler |
+| FrameTraceRoutes | 5.1 | 8.066 | Compiler |
+| FrameMoveData | 84.5 | 87.031 | Compiler |
+| FrameTraceCheckpoints | 146.1 | 104.650 | Compiler |
+| OwnershipData split group | 13.080 | 23.158 | Lake wall; common core reused |
+| SourceFramed | 2.528 | 7.365 | Lake wall |
+| ParentOwnershipData | 65.372 | 58.768 | Lake wall |
+| SourceInvocationComparison | 17.688 | 82.726 | Lake wall |
+| SourceWord | 154.946 | 43.316 | Lake wall; 300-second cap |
 
-Development probes and incremental builds do not count as the final fresh
-build. The final run must start with an empty local Lake build directory, use
-ordinary `lake build` and `lake env lean` audits, fingerprint the toolchain and
-dependencies, and recheck source extraction and package integrity.
+The monolithic OwnershipData attempt exceeded 300 compiler seconds. An
+isolated inverse-table diagnostic was deliberately stopped after 90 seconds;
+it had no certificate proofs. This identified data processing as a bottleneck
+without separating elaboration from C generation. After flattening, that
+table compiled in about six seconds and all ownership certificates passed.
 
-Compare module port performance against isolated 4.33 module timings. Use the
-complete parallel build for the CI projection. The planning model assumes
-four cores, a runner 1.5 times slower than this machine, and a further 20%
-safety margin, with setup and audit costs included explicitly. A projection
-above about 30 minutes blocks completion under the requested 45-minute CI
-budget; it is not a passing result.
+Historical `phase2-results/` describes the earlier snapshot at commit
+`553ac9c37e2de0e2792d3bf5364c7b073fc633fc`, including the superseded
+17.187-second FrameGeometry gate. Its source hashes and stop status are
+historical, not current validation. Resumed evidence belongs in
+`phase2-resumed-results/`; no historical receipt is reanchored as a fresh pass.
 
-The differential test is explicitly deferred to an independent Claude run on
-the ported branch. It is not part of this port's validation claim or a blocker
-for this phase.
+## Remaining validation gates
+
+A new clean checkout must compile all local modules from an empty local
+Lake build directory, run all five audits, check source extraction and
+package integrity, and record installed toolchain/dependency/artifact hashes.
+External pinned dependency artifacts may be reused with fingerprints.
+The official Mathlib cache endpoint is blocked in this environment; that
+restriction does not authorize network bypass or special compiler settings.
+
+For historical modules above 60 seconds, the compiler limit is three times
+the 4.33 baseline. Smaller modules have a 300-second limit, except ownership
+work has an authorized 900-second per-module limit. The final timing model
+uses a four-core runner at 1.5 times measured compute time, with a further
+20 percent safety margin and explicit setup/dependency allowance. Completion
+requires a total projection under about 30 minutes within upstream's
+45-minute hard limit. A component timing alone cannot establish that result.
+
+The differential test is delegated to an independent Claude run. It is
+neither a reported pass nor a blocker for this port. No mathematical scope,
+full-sweep claim, cost statement or κ result is added.

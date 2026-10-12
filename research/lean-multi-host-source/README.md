@@ -1,12 +1,12 @@
-## Lean 4.21 port stopped at the performance gate
+## Lean 4.21 port in progress
 
 The port covers all 66 contribution Lean files. The nine Lean files under
 `review-receipts/external-overlap/raw/` are archived snapshots of other authors’
 work, retained byte-for-byte as review evidence. They are excluded from Lake
 build targets, CI compilation, and axiom audits; they are not compatibility
 inputs. The full port and CI runtime validation are not yet complete.
-See [PORT-PHASE2.md](PORT-PHASE2.md) for the FrameGeometry timeout, successful
-bounded probes and remaining validation gates.
+See [PORT-PHASE2.md](PORT-PHASE2.md) for the revised timing gate, successful
+FrameGeometry diagnostic, OwnershipData partition and remaining validation gates.
 
 # One concrete invocation of whole-residual hosting
 

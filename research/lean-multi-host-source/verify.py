@@ -62,16 +62,50 @@ def validate_manifest():
         'rev': manifest['mathlibCommit']}], 'Changed Mathlib requirement')
     modules = {r['module']: r for r in manifest['modules']}
     configured = [name for lib in config['lean_lib'] for name in lib['roots']]
-    require(len(modules) == len(configured) == 147 and set(configured) == set(modules),
-            'Wrong complete module inventory')
-    require(len(manifest['originalContribution']) == 66, 'Wrong original contribution inventory')
+    configured_paths = {name: (ROOT / lib.get('srcDir', '.') /
+        (name.replace('.', '/') + '.lean')).resolve()
+        for lib in config['lean_lib'] for name in lib['roots']}
+    require(len(modules) == len(manifest['modules']) == len(configured) and
+            set(configured) == set(modules), 'Wrong complete module inventory')
+    originals = manifest['originalContribution']
+    require(len(originals) == 66, 'Wrong original contribution inventory')
+    original_sources = {(ROOT / row['source']).resolve() for row in originals}
+    module_sources = {(ROOT / row['source']).resolve() for row in manifest['modules']}
+    audit_sources = {(ROOT / row['source']).resolve() for row in manifest['audits'].values()}
+    require(len(original_sources) == 66 and len(module_sources) == len(modules),
+            'Duplicate original or module source')
+    require(len(original_sources & module_sources) == 64 and
+            len(original_sources - module_sources) == 2 and
+            original_sources <= module_sources | audit_sources,
+            'Original contribution is not fully covered by 64 modules and two audits')
+    for row in originals:
+        require(sha(ROOT / row['source']) == row['sha256'],
+                'Changed original contribution source: ' + row['source'])
+    supports = [row['module'] for row in manifest['modules']
+                if (ROOT / row['source']).resolve() not in original_sources]
+    require(manifest['supportModules'] == supports and len(modules) == 64 + len(supports),
+            'Wrong support-module inventory')
+    task_b = json.loads((ROOT / 'proof-manifest.json').read_text())
+    require(len(task_b['modules']) == len({r['module'] for r in task_b['modules']}) and
+            all(modules.get(row['module']) == row for row in task_b['modules']),
+            'Task B module inventory differs from the full package')
+    require(task_b['audit_declarations'] == manifest['audits']['task_b']['declarations'],
+            'Task B audit differs from the permanent inventory')
+    require(manifest['inventoryCounts'] == {'originalContributionFiles': 66,
+        'originalCompiledModules': 64, 'originalAuditFiles': 2,
+        'supportModules': len(supports), 'localModules': len(modules),
+        'taskBModules': len(task_b['modules'])}, 'Inconsistent derived module counts')
     require(len(manifest['archivedExclusions']) == 9, 'Wrong archival inventory')
     exclusions = {(ROOT / row['source']).resolve() for row in manifest['archivedExclusions']}
+    require(len(exclusions) == 9 and not exclusions & (module_sources | audit_sources),
+            'Archived evidence is duplicated or included in the build or audits')
     for row in manifest['archivedExclusions']:
         require(sha(ROOT / row['source']) == row['sha256'] == row['baseline_sha256'],
                 'Changed archived evidence: ' + row['source'])
     for row in manifest['modules']:
         source = ROOT / row['source']
+        require(source.resolve() == configured_paths[row['module']],
+                'Module source differs from its Lake root: ' + row['module'])
         require(source.resolve() not in exclusions, 'Archived evidence in build target')
         require(sha(source) == row['sha256'], 'Changed module: ' + row['module'])
         text = code(source.read_text())
@@ -147,6 +181,7 @@ def main():
 
     def run(arguments, display_output=True):
         start = time.monotonic()
+        cpu_before = resource.getrusage(resource.RUSAGE_CHILDREN)
         print('$ lake ' + ' '.join(arguments), flush=True)
         process = subprocess.Popen([args.lake, *arguments], cwd=ROOT, text=True,
             stdout=subprocess.PIPE, stderr=subprocess.STDOUT, start_new_session=True)
@@ -162,7 +197,10 @@ def main():
                 os.killpg(process.pid, signal.SIGKILL)
                 output, _ = process.communicate()
         elapsed = round(time.monotonic() - start, 3)
+        cpu_after = resource.getrusage(resource.RUSAGE_CHILDREN)
         receipt['commands'].append({'command': ['lake', *arguments], 'seconds': elapsed,
+            'cpuSeconds': round(cpu_after.ru_utime + cpu_after.ru_stime
+                - cpu_before.ru_utime - cpu_before.ru_stime, 3),
             'exitCode': process.returncode, 'timedOut': timed_out,
             'outputSha256': hashlib.sha256(output.encode()).hexdigest()})
         if display_output or process.returncode or timed_out:
@@ -233,7 +271,7 @@ def main():
             args.receipt.parent.mkdir(parents=True, exist_ok=True)
             args.receipt.write_text(json.dumps(receipt, indent=2) + '\n')
     kind = 'fresh' if receipt['freshLocalBuild'] else 'incremental (not a fresh-build receipt)'
-    print(f"PASS full Lean 4.21 port: 147 modules, five audits; {kind}")
+    print(f"PASS full Lean 4.21 port: {len(modules)} modules, five audits; {kind}")
 
 
 if __name__ == '__main__':

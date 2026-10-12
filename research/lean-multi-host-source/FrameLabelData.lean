@@ -13,7 +13,10 @@ def labelCheck (e : FrameTrace.Entry) : Bool :=
   decide (e.oldFrame < 944 ∧ e.newFrame < 944 ∧
     ((e.scalar.op = 2 ∨ e.scalar.op = 3) → e.oldFrame = 1 ∧ e.newFrame = 0))
 
-theorem labels_checked : SourceFrameTrace.forward.all labelCheck = true := by decide
+theorem labels_checked : SourceFrameTrace.forward.all labelCheck = true := by
+  -- Check the existing chunks before flattening the 19,002-entry word.
+  rw [SourceFrameTrace.forward, List.all_flatten]
+  decide +kernel
 
 theorem labels_valid (e : FrameTrace.Entry) (he : e ∈ SourceFrameTrace.forward) :
     e.oldFrame < 944 ∧ e.newFrame < 944 ∧

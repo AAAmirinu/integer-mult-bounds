@@ -20,9 +20,8 @@ namespace FramedReplay
 
 open TreeReplay (Tree)
 /- The same four-field address-gauge interface as main's FramedXor.lean.
-It is reproduced here to avoid importing unrelated fanout proofs that do
-not compile unchanged with this package's Lean version. No conclusion about
-those proofs is used here. -/
+It is reproduced here as a local dependency without importing unrelated
+fanout proofs. No conclusion about those proofs is used here. -/
 structure Gauge (X : Type) where
   forward : X → X
   inverse : X → X

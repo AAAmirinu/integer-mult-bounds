@@ -66,7 +66,6 @@ def main():
         for name in lib['roots']:
             assert name not in paths, name
             paths[name] = directory / (name.replace('.', '/') + '.lean')
-    assert len(paths) == 147, len(paths)
     records = {name: {'module': name, 'source': relative(path), 'sha256': digest(path),
                       'imports': imports(path)} for name, path in paths.items()}
     def closure(names):
@@ -88,9 +87,10 @@ def main():
         return ordered
     ordered = closure(sorted(paths))
     task_b = json.loads((ROOT / 'proof-manifest.json').read_text())
-    original_b_names = [r['module'] for r in task_b['modules']]
+    baseline_b = baseline_json('lean-multi-host-source')
+    original_b_names = [r['module'] for r in baseline_b['modules']]
+    assert len(original_b_names) == len(set(original_b_names)) == 52
     b_names = closure(original_b_names)
-    assert len(b_names) == 135, len(b_names)
     assert len(task_b['audit_declarations']) == 931
     assert task_b['audit_declarations'] == baseline_json('lean-multi-host-source')['audit_declarations']
     assert 'SourceInvocation.actualContract' in task_b['audit_declarations']
@@ -167,6 +167,19 @@ def main():
         else:
             contribution.append(row)
     assert len(contribution) == 66 and len(archives) == 9
+    original_sources = {row['source'] for row in contribution}
+    module_sources = {record['source'] for record in records.values()}
+    audit_sources = {audit['source'] for audit in audits.values()}
+    assert len(original_sources) == 66 and len(module_sources) == len(paths)
+    assert len(original_sources & module_sources) == 64
+    original_audits = original_sources - module_sources
+    assert len(original_audits) == 2 and original_audits <= audit_sources
+    assert not module_sources & {row['source'] for row in archives}
+    support_modules = [name for name in ordered if records[name]['source'] not in original_sources]
+    inventory_counts = {'originalContributionFiles': 66, 'originalCompiledModules': 64,
+        'originalAuditFiles': 2, 'supportModules': len(support_modules),
+        'localModules': len(paths), 'taskBModules': len(b_names)}
+    assert len(paths) == 64 + len(support_modules)
     selected = set(paths.values()) | {ROOT / a['source'] for a in audits.values()}
     selected.update(ROOT.glob('*.py'))
     selected.update(ROOT.glob('requirements*.txt'))
@@ -185,12 +198,14 @@ def main():
         'leanVersion': '4.21.0', 'leanCommit': LEAN_COMMIT, 'mathlibCommit': MATHLIB_COMMIT,
         'dependencyPins': pins, 'defaultTargets': config['defaultTargets'],
         'libraries': config['lean_lib'], 'modules': [records[n] for n in ordered],
+        'supportModules': support_modules, 'inventoryCounts': inventory_counts,
         'audits': audits, 'originalContribution': contribution,
         'archivedExclusions': archives,
         'archivePolicy': 'Preserve byte-for-byte; exclude from build targets and axiom audits.',
         'files': {relative(p): digest(p) for p in sorted(selected)}}
     write(ROOT / 'port-manifest.json', manifest)
-    print('Full port: 147 build modules; 66 original contribution files; 9 unchanged archival exclusions')
+    print(f'Full port: {len(paths)} build modules (64 original + {len(support_modules)} support); '
+          '66 original contribution files; 9 unchanged archival exclusions')
     print('Audits: ' + ', '.join(k + '=' + str(len(v['declarations'])) for k,v in audits.items()))
 
 

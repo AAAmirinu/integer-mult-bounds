@@ -143,9 +143,7 @@ def check():
             ROOT / 'inputs/hosted-template.json.gz', '--check')
         run('generate_ownership_data.py', '--template', ROOT / 'inputs/hosted-template.json.gz',
             '--states', work / 'states.json', '--frames', work / 'frames.json',
-            '--out', work / 'OwnershipData.lean')
-        require((work / 'OwnershipData.lean').read_bytes() == (ROOT / 'OwnershipData.lean').read_bytes(),
-                'Non-reproducible ownership data')
+            '--out', ROOT / 'OwnershipData.lean', '--check')
         run('generate_parent_ownership.py', '--template', ROOT / 'inputs/parent-template.json.gz',
             '--states', work / 'states.json', '--frames', work / 'frames.json',
             '--out', work / 'ParentOwnershipData.lean')
