@@ -1,0 +1,17 @@
+{
+  "status": "PENDING_TASK_B",
+  "completed_utc": "2026-10-12T02:39:44.505633+00:00",
+  "manifest_sha256": "06750464e1c2b65d460af064b52e655e1079cfc93c3fd0c7762cd7537542316b",
+  "files_checked": 252,
+  "task_b_verified": false,
+  "task_b_notice": "Fresh Task B replay in progress; receipt will be added to this PR.",
+  "task_a_modules": 6,
+  "task_b_modules": 52,
+  "task_a_theorem_closures": 21,
+  "task_b_planned_audit_declarations": 931,
+  "task_a_replay_mode": "fresh",
+  "task_b_replay_mode": "pending",
+  "task_a_receipt_sha256": "d1749aa810f710795aed4a5c88ec8ed5aedcce6616887defdddc686f1d5c1459",
+  "task_b_receipt_sha256": null,
+  "scope": "Inventory, manifested sources and available fresh receipt bindings; PENDING_TASK_B means Task B verification is unfinished. This verifier does not run Lean or authenticate build provenance."
+}
