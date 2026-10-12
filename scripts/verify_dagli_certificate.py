@@ -7,6 +7,7 @@ Authors: Volkan Dağlı, Zerrin Dağlı, Dağhan Dağlı
 License: Apache-2.0
 """
 
+import argparse
 import json
 from fractions import Fraction as Q
 from hashlib import sha256
@@ -15,19 +16,49 @@ from pathlib import Path
 import sys
 
 HERE = Path(__file__).resolve().parent
+REPO_ROOT = HERE.parent
 
-def verify_all():
+
+def find_data_dir(custom_path=None):
+    """Locate the research/climbed-48 data directory containing certificate.json."""
+    if custom_path:
+        p = Path(custom_path).resolve()
+        if p.is_file() and p.name == "certificate.json":
+            return p.parent, p
+        if p.is_dir() and (p / "certificate.json").exists():
+            return p, p / "certificate.json"
+        print(f"[FAIL] Specified path does not contain certificate.json: {custom_path}")
+        sys.exit(1)
+
+    candidates = [
+        Path.cwd() / "research" / "climbed-48",
+        REPO_ROOT / "research" / "climbed-48",
+        HERE.parent / "research" / "climbed-48",
+        Path.cwd(),
+        HERE,
+    ]
+    for c in candidates:
+        cert = c / "certificate.json"
+        if cert.exists():
+            return c, cert
+
+    print("[FAIL] certificate.json not found in candidate directories:")
+    for c in candidates:
+        print(f"  - {c}")
+    sys.exit(1)
+
+
+def verify_all(data_dir=None, cert_path=None, output_file=None):
     print("=" * 76)
     print("  SCHÖNHAGE TRILINEAR MULTIPLICATION TENSOR — ARITHMETIC VERIFIER")
     print("  Complexity Bound: T(n) = O(n (log n)^{1 - kappa})")
     print("=" * 76)
 
-    # 1. Load Certificate
-    cert_path = HERE / "certificate.json"
-    if not cert_path.exists():
-        print("[FAIL] certificate.json not found!")
-        sys.exit(1)
+    data_dir, cert_path = find_data_dir(data_dir)
+    print(f"[INFO] Using Data Directory: {data_dir}")
+    print(f"[INFO] Using Certificate   : {cert_path}")
 
+    # 1. Load Certificate
     with open(cert_path, "r", encoding="utf-8") as f:
         cert = json.load(f)
 
@@ -66,8 +97,11 @@ def verify_all():
     # 3. Check Original & Profiles Consistencies
     print("\n[STEP 2/5] Checking CRT Profiles, Loss, and Rank Mass Identities...")
     for h, v_exp, R_cert in [(23, 1771, 36287), (25, 2300, 48165)]:
-        orig_file = HERE / f"original-{h}.json"
-        prof_file = HERE / f"profiles-{h}.json"
+        orig_file = data_dir / f"original-{h}.json"
+        prof_file = data_dir / f"profiles-{h}.json"
+        assert orig_file.exists(), f"Missing required file: {orig_file}"
+        assert prof_file.exists(), f"Missing required file: {prof_file}"
+
         with open(orig_file, "r", encoding="utf-8") as f:
             orig = json.load(f)
         with open(prof_file, "r", encoding="utf-8") as f:
@@ -139,18 +173,27 @@ def verify_all():
     print(f"  * Next Grid Lower Moment      : {float(next_bit_grid_lower):.12f} > 1.0 (Strictly Excluded)")
     print("  --> [PASS] 47/47 Inequalities & 7/7 Safety Margins Certified!")
 
-    # 6. Check Local Hashes in Certificate
-    print("\n[STEP 5/5] Checking Cryptographic File Hashes...")
+    # 6. Check Local Hashes in Certificate (Strict Fail-Closed)
+    print("\n[STEP 5/5] Checking Cryptographic File Hashes (Strict Verification)...")
     for rel_path, expected_hash in cert["local_sha256"].items():
         fname = Path(rel_path).name
-        fpath = HERE / fname
-        if fpath.exists():
-            with open(fpath, "rb") as f:
-                actual_hash = sha256(f.read()).hexdigest()
-            assert actual_hash == expected_hash, f"Hash mismatch for {fname}: {actual_hash} != {expected_hash}"
-            print(f"  * {fname:25s} : SHA-256 OK ({actual_hash[:16]}...)")
-        else:
-            print(f"  * {fname:25s} : [Notice: Optional external repo artifact]")
+        # Try relative to repo root, then relative to data_dir
+        candidates = [
+            REPO_ROOT / rel_path,
+            data_dir / fname,
+            Path(rel_path),
+        ]
+        fpath = None
+        for c in candidates:
+            if c.exists():
+                fpath = c
+                break
+
+        assert fpath is not None, f"Required artifact missing: {rel_path}"
+        with open(fpath, "rb") as f:
+            actual_hash = sha256(f.read()).hexdigest()
+        assert actual_hash == expected_hash, f"Hash mismatch for {rel_path}: {actual_hash} != {expected_hash}"
+        print(f"  * {fname:25s} : SHA-256 OK ({actual_hash[:16]}...)")
 
     print("\n" + "=" * 76)
     print("  VERIFICATION RESULT: ALL CHECKS PASSED (100% MATHEMATICAL INTEGRITY)")
@@ -158,5 +201,49 @@ def verify_all():
     print(f"  WIRE WIDTH        : W = {W_CERT:,} (-377,890 wires)")
     print("=" * 76)
 
+    if output_file:
+        out_p = Path(output_file)
+        summary = {
+            "status": "PASS",
+            "W_certified": W_CERT,
+            "W_saved": delta_W,
+            "AB_certified": str(AB),
+            "kappa_certified": str(KAPPA),
+            "constraints_count": len(constraints),
+            "margins_count": len(margins),
+            "hash_verified_count": len(cert["local_sha256"]),
+        }
+        with open(out_p, "w", encoding="utf-8") as f:
+            json.dump(summary, f, indent=2)
+        print(f"[INFO] Summary written to {output_file}")
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Verify Daglı certificate for Schonhage multiplication tensor"
+    )
+    parser.add_argument(
+        "dir",
+        nargs="?",
+        default=None,
+        help="Optional directory containing certificate.json",
+    )
+    parser.add_argument(
+        "-d", "--dir",
+        dest="dir_opt",
+        default=None,
+        help="Optional directory containing certificate.json",
+    )
+    parser.add_argument(
+        "-O", "--out",
+        dest="out",
+        default=None,
+        help="Optional output JSON summary path",
+    )
+    args = parser.parse_args()
+    target_dir = args.dir or args.dir_opt
+    verify_all(data_dir=target_dir, output_file=args.out)
+
+
 if __name__ == "__main__":
-    verify_all()
+    main()

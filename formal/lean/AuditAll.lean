@@ -2,6 +2,7 @@ import KappaCheck
 import PRChecksA
 import PRChecksB
 import PRChecksC
+import SchonhageTensorMatch
 #print axioms KappaCheck.Certificates.exponent_certificate
 #print axioms KappaCheck.CrocSwap.log_le_of_pow
 #print axioms KappaCheck.CrocSwap.log_split
@@ -388,3 +389,8 @@ import PRChecksC
 #print axioms PRChecksC.PR9.constraints_strict
 #print axioms PRChecksC.PR9.margin_values
 #print axioms PRChecksC.PR9.kappa_witness
+#print axioms SchonhageTensor.wire_width_reduction
+#print axioms SchonhageTensor.certified_W_exact
+#print axioms SchonhageTensor.AB_strictly_improves
+#print axioms SchonhageTensor.kappa_strictly_improves
+#print axioms SchonhageTensor.kappa_gain_exceeds_prior_leap

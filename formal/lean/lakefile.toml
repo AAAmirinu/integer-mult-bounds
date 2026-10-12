@@ -1,5 +1,5 @@
 name = "KappaCheck"
-defaultTargets = ["KappaCheck", "PRChecksA", "PRChecksB", "PRChecksC"]
+defaultTargets = ["KappaCheck", "PRChecksA", "PRChecksB", "PRChecksC", "SchonhageTensorMatch"]
 
 [[require]]
 name = "mathlib"
@@ -18,3 +18,7 @@ name = "PRChecksB"
 
 [[lean_lib]]
 name = "PRChecksC"
+
+# Certificate arithmetic of PR #226 (bipartite carrier compression)
+[[lean_lib]]
+name = "SchonhageTensorMatch"
