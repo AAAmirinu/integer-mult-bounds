@@ -1,0 +1,25 @@
+{
+  "status": "PASS_FOUR_INDEPENDENT_OWNER_CHECK_CONTROLS",
+  "rejected": [
+    {
+      "name": "wrong_width",
+      "exit_code": 1,
+      "reason": "ValueError: actual width"
+    },
+    {
+      "name": "port_out_of_range",
+      "exit_code": 1,
+      "reason": "ValueError: owner/port range"
+    },
+    {
+      "name": "duplicate_helper",
+      "exit_code": 1,
+      "reason": "ValueError: helper uniqueness"
+    },
+    {
+      "name": "global_profile_wrong",
+      "exit_code": 1,
+      "reason": "ValueError: native plus idle profile"
+    }
+  ]
+}

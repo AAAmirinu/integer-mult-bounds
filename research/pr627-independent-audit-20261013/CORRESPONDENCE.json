@@ -1,0 +1,8 @@
+{
+  "status": "PASS_WITNESS_EXPECTED_SPEC_CORRESPONDENCE",
+  "compared_subset_leaves": 348,
+  "dispatch_sorted_equal": true,
+  "dispatch_note": "WITNESS is ordered by call chronology; SPEC dispatch is ordered lexicographically. Compare dispatch as stage/replica/provider tuples; call_order is separately exactly equal.",
+  "providers_and_global_exactly_equal": true,
+  "witness_sha256": "2f790306688c41f251b191987060c0af9d77f53bcd32adc9d47e129861fe71cd"
+}

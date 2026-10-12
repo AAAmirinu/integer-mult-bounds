@@ -1,0 +1,27 @@
+{
+  "status": "PASS_FOUR_ADDITIONAL_TAIL_CONTROLS",
+  "positive_pass": true,
+  "rejected": [
+    {
+      "name": "590_middle_accumulator_omitted",
+      "status": "REJECTED",
+      "reason": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "590_helper_write_sign_flipped",
+      "status": "REJECTED",
+      "reason": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "581_middle_accumulator_omitted",
+      "status": "REJECTED",
+      "reason": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "581_helper_write_sign_flipped",
+      "status": "REJECTED",
+      "reason": "('arbitrary-dirt endpoint', False)"
+    }
+  ],
+  "input_content_sha256": "d6077cccd14ef9799a43ca3f4077bd329a20623e9c98257c5ad0c617ab0bb698"
+}

@@ -1,0 +1,77 @@
+{
+  "status": "PASS_FOCUSED_TWO_HELPER_CONTROLS",
+  "input_content_sha256": "d6077cccd14ef9799a43ca3f4077bd329a20623e9c98257c5ad0c617ab0bb698",
+  "positive_pass": true,
+  "rejected": [
+    {
+      "name": "590_premix_omitted",
+      "status": "REJECTED",
+      "reason": "zero-frame precondition/compensation touches a cold hyperplane-ended helper before its wrapper"
+    },
+    {
+      "name": "590_absorption_omitted",
+      "status": "REJECTED",
+      "reason": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "590_first_accumulator_gate_omitted",
+      "status": "REJECTED",
+      "reason": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "590_last_helper_tail_gate_omitted",
+      "status": "REJECTED",
+      "reason": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "590_end_dropped",
+      "status": "REJECTED",
+      "reason": "paid local profile differs from the reported local_profile"
+    },
+    {
+      "name": "590_end_wrong_frame",
+      "status": "REJECTED",
+      "reason": "('hpe cone pre-check (row / column)', [('row', 590, 83), ('row', 590, 84), ('row', 590, 87), ('row', 590, 426), ('row', 590, 590)])"
+    },
+    {
+      "name": "590_tail_moved_to_full",
+      "status": "REJECTED",
+      "reason": "('cleanup on non-FULL end', ['add', 590, 13, 1, 2, 1037])"
+    },
+    {
+      "name": "581_premix_omitted",
+      "status": "REJECTED",
+      "reason": "zero-frame precondition/compensation touches a cold hyperplane-ended helper before its wrapper"
+    },
+    {
+      "name": "581_absorption_omitted",
+      "status": "REJECTED",
+      "reason": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "581_first_accumulator_gate_omitted",
+      "status": "REJECTED",
+      "reason": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "581_last_helper_tail_gate_omitted",
+      "status": "REJECTED",
+      "reason": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "581_end_dropped",
+      "status": "REJECTED",
+      "reason": "paid local profile differs from the reported local_profile"
+    },
+    {
+      "name": "581_end_wrong_frame",
+      "status": "REJECTED",
+      "reason": "('hpe cone pre-check (row / column)', [('row', 581, 91), ('row', 581, 92), ('row', 581, 95), ('row', 581, 410), ('row', 581, 581)])"
+    },
+    {
+      "name": "581_tail_moved_to_full",
+      "status": "REJECTED",
+      "reason": "('cleanup on non-FULL end', ['add', 581, 15, 1, 2, 1038])"
+    }
+  ]
+}

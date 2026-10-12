@@ -1,0 +1,58 @@
+{
+  "status": "PASS_INDEPENDENT_FRESH_PR627_AUDIT",
+  "reviewed_commit": "f95308a9afa5adc071fe75c8cd7feec172503d4f",
+  "python": "3.14.8 (main, Sep 30 2026, 17:55:09) [Clang 21.0.0 (clang-2100.3.34.2)]",
+  "executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "fresh_replay_stages": 64,
+  "seconds": 339.2114322920097,
+  "source_manifest_sha256": {
+    "multicold": "328ce8023d33deb308b0f1ae2320424050f836d791cf60a613ae8408e7d6f3ab",
+    "structural_gain": "eb0499a927665a48a25355075dcb7dc76d0fc43c67ea6d311d9e0242b6d4a25d",
+    "larger_gain": "54d67f45ad520f4a134e069336bd0ff639aaeada28d13539298e4f2655c9692d",
+    "joint_prefix": "fd30701bd9bd652985db18fa95bee08a34615ef417a2feb2f55efd60a0b5d665",
+    "frame_coalescing": "f336fd702c54422d79c1b9ba7d8699ae6c99518f66a5b5bbc5f3be331fa1fadd",
+    "direct_delivery": "c1997405c5c0ccd9bdb0a30b0eb9a5a2dc7dc7ce7b59c6a83a2152b80f6410d1"
+  },
+  "validated_receipt_artifacts": 51,
+  "validated_raw_stage_logs": 64,
+  "source_package_archive_sha256": "411790745f7c7d014b54648a3eff2b82c83cf0d4d2cc153c2b47edfe65937661",
+  "full_replay_archive_sha256": "b0ce2104d6f909d22f73eb84a79bffcc5c25dd30ad17bfc483140134c8dc5411",
+  "focused_contributor_controls_replayed": 14,
+  "additional_native_tail_controls": 4,
+  "independent_owner_checker_controls": 4,
+  "outer_inequalities": 47,
+  "baseline_reused": false,
+  "provider_locals_reused": [],
+  "bit_supplier": "PR543 cited and repriced, not rebuilt",
+  "environment_attempts": [
+    "Initial source selection larger_gain=research/larger-gain rejected its manifest pin; used retained exact-pinned complex-k492-owner-repair/vendor/larger_gain instead.",
+    "Initial system Python3.9 aborted on unsupported Path.write_text(newline=); final fresh directory used Python3.14. Neither initial attempt is counted as a mathematical failure."
+  ],
+  "limitations": [
+    "Finite conditional construction only; inherited all-size/compiler/common-label/mutable-source/whole-call hosting/precision/tape/exact recovery/analytic transfer and bit H1-H5 assumptions remain.",
+    "No full repository make verify run within this scoped independent PR627 audit.",
+    "No Linux run performed.",
+    "Newer PR629 observed by root agent; no latest-frontier or optimality claim."
+  ],
+  "audit_author": "Chi Zhao, with substantial OpenAI Codex assistance",
+  "first_execution_note": "Original independent commands; full replay archive and top-level evidence preserve this execution.",
+  "wrapper_execution": {
+    "status": "PASS_END_TO_END_WRAPPER",
+    "command": "PYTHON=/opt/homebrew/bin/python3 sh research/pr627-independent-audit-20261013/run_replay.sh /tmp/pr627-wrapper-final-20261013",
+    "exit_code": 0,
+    "strict_replay_seconds": 337.7983403749822,
+    "strict_stages": 64,
+    "receipt_artifact_hashes_checked": 51,
+    "raw_stage_log_hashes_checked": 64,
+    "result_equal_to_first_execution_except_seconds": true,
+    "independent_owner_report_byte_equal": true,
+    "focused_contributor_controls_replayed": 14,
+    "additional_native_controls": 4,
+    "evidence_directory": "evidence/wrapper-run",
+    "shell_sha256": "7cb76dc8f9023c459e3cddfa04c0763d18dbaa4fa4a1ab0c1a7646483e45e7d9",
+    "wrapper_log_sha256": "e95c8ed0b56b349b42d638d81513e968738d3c080d2525664b780090d599396c",
+    "archive_hash_guard": "Hardcoded original package archive SHA-256, checked before extraction.",
+    "preflight_controls": "WRAPPER-GUARD-CONTROLS.json"
+  }
+}

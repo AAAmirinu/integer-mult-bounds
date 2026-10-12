@@ -1,0 +1,33 @@
+{
+  "status": "PASS_DETERMINISTIC_EXPORT_PAYLOADS",
+  "checks": {
+    "recipe": {
+      "payload_sha256": "75d06f8300503070bf127be9421973ca480949214015538edeef715232f12e9f",
+      "payload_bytes": 2695339,
+      "decompressed_bytes_equal": true
+    },
+    "word": {
+      "payload_sha256": "d6077cccd14ef9799a43ca3f4077bd329a20623e9c98257c5ad0c617ab0bb698",
+      "payload_bytes": 2852188,
+      "decompressed_bytes_equal": true
+    },
+    "owners": {
+      "payload_sha256": "e194f2a137a8972711768a55763229c575dff72e6e870b37aa10086620acf79a",
+      "payload_bytes": 4653641,
+      "decompressed_bytes_equal": true
+    }
+  },
+  "predecessor_word_scope": "Reconstructed retained PR623 final recipe on fresh independently replayed identical HPE input; not a separate full PR623 replay.",
+  "profile_delta": {
+    "2": 2,
+    "1": 2,
+    "5": -2
+  },
+  "all_inherited_helper_ends_preserved": true,
+  "new_helpers": [
+    581,
+    590
+  ],
+  "global_freed_capacity": 256,
+  "owner_export_moves": 16519
+}

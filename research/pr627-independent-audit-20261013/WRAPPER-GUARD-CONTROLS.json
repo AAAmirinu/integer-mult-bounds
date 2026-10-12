@@ -1,0 +1,19 @@
+{
+  "status": "PASS_WRAPPER_PREFLIGHT_GUARDS",
+  "rejected": [
+    {
+      "name": "archive_corrupted",
+      "exit_code": 1,
+      "expected_reason": "Frozen PR627 package archive SHA-256 mismatch",
+      "work_directory_not_created": true,
+      "python_optimize": "1"
+    },
+    {
+      "name": "python39_under_optimization",
+      "exit_code": 1,
+      "expected_reason": "Python >=3.10 required",
+      "work_directory_not_created": true,
+      "python_optimize": "1"
+    }
+  ]
+}
