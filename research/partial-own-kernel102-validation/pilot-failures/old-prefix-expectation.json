@@ -1,0 +1,23 @@
+{
+  "error": "AssertionError(('invoice', 'Traceback (most recent call last):\\n  File \"/Users/chafreaky/Documents/personal/integer-mult-research-20261008/resume-20261011/kernel92/invoice102.py\", line 92, in <module>\\n    assert localbits==21 and bridge_sweeps==72 and required_prefix==206 and required_prefix<PAYLOAD\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError\\n'))",
+  "steps": [
+    {
+      "name": "emit",
+      "exit_code": 0,
+      "seconds": 1.7300129999639466,
+      "log_sha256": "9436099fe8f063af83cec54b3a050f9d08acff0a236f7e0a4804d7edf7d92032"
+    },
+    {
+      "name": "controller",
+      "exit_code": 0,
+      "seconds": 7.840341041912325,
+      "log_sha256": "9e0b001e6f55ca5c363c9bccd02012ccbeaf5650d2d19aeded1639a09c31bd60"
+    },
+    {
+      "name": "invoice",
+      "exit_code": 1,
+      "seconds": 0.7705250829458237,
+      "log_sha256": "b12efbf1e027c5c88fd40169d13f15e084c0f704d838e83d26d92b4d8baa271e"
+    }
+  ]
+}

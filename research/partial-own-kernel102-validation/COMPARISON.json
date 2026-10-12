@@ -1,0 +1,34 @@
+{
+  "status": "PASS_TWO_FRESH_COLD_REPLAYS_WITH_IDENTICAL_STABLE_RESULT",
+  "source_manifest_sha256": "79e39b395ba041ae6f26f7bc6fe9f5a1a8608f5e6b04ffb496c161ec6cc9a983",
+  "platforms": {
+    "macos": {
+      "stages": {
+        "root": 9,
+        "dependency": 21,
+        "local": 13
+      },
+      "python": "3.14.8",
+      "root_result_sha256": "879cd784dc605517283fb4762dfe3dd592a4218a537e29e5b177bc17d17997d7",
+      "kernel_omission_controls": 102,
+      "scalar_columns_each_orientation": 800,
+      "global_prefix_bits": 205,
+      "charged_prefix_bits": 512
+    },
+    "linux": {
+      "stages": {
+        "root": 9,
+        "dependency": 21,
+        "local": 13
+      },
+      "python": "3.14.8",
+      "root_result_sha256": "879cd784dc605517283fb4762dfe3dd592a4218a537e29e5b177bc17d17997d7",
+      "kernel_omission_controls": 102,
+      "scalar_columns_each_orientation": 800,
+      "global_prefix_bits": 205,
+      "charged_prefix_bits": 512
+    }
+  },
+  "comparison_head": "e0a071dce251eeca96d446f73147048cfebbd5c7",
+  "scope": "Both complete suppliers rebuilt, then changed102word, physical gates, actual owner controller, finite invoice,2engines/47outer and fixed-word dual. No cached supplier outputs accepted. All-size contracts remain conditional."
+}

@@ -1,0 +1,16 @@
+name: Partial own kernel102 asynchronous witness
+on:
+  pull_request:
+  push:
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - run: sudo apt-get update && sudo apt-get install -y libboost-dev
+      - run: python -m pip install numpy sympy
+      - run: python -B research/partial-own-kernel102-asynchronous/verify.py "$RUNNER_TEMP/partial-own-kernel102" --boost-include /usr/include

@@ -1,0 +1,36 @@
+{
+  "status": "PASS_INDEPENDENT_ASYNC_OWNERS_AND_PROFILE",
+  "template_sha256": "3c0bcfdbc2cacfb85ac5162eadf8f71e3ffe6d4ae85002b1e16101753e3a6948",
+  "paid_profile": {
+    "1": 182664,
+    "2": 13824,
+    "3": 39464,
+    "4": 6336,
+    "5": 25017,
+    "6": 4896,
+    "7": 149,
+    "8": 1224,
+    "16": 1,
+    "48": 808
+  },
+  "live": 7680,
+  "physical": 8258,
+  "rank_mass": 558144,
+  "deficit": 2496,
+  "hosted_residuals": 40320,
+  "banked_residuals": 0,
+  "all_800_owners_per_call_distinct": true,
+  "actual_helper_owner_charts": 40320,
+  "actual_73column_sigmas": 3399,
+  "cross_replica_helper_roles": 30998,
+  "explicit_idle_remainder_children": 7479,
+  "source_idle_children_charged": 17280,
+  "source_artifacts": {
+    "split-centres/CANONICAL-WORD.json.gz": "8687f152ed29b2c73271dce90df11735cb666d661f7f585d775e0434796084ab",
+    "split-centres/LOCAL-PROGRAMS.json.gz": "480e8073ca68fafba1b9a97a53d953679077c36a2b53896410bd456264512a49",
+    "split-centres/LOCAL-CHECKS.json": "c7fc51113c725069ea9d3f74ed07af8cca81197d5cabc8b3202b78a879f20ec1",
+    "split-centres/RESIDUAL-ADAPTERS.json": "83b01e8834fda8fa82250e0ae67bcd9ce9ea5fa487144c4b0e12cfaf298b85be",
+    "work/complex-nine-native/DATA-PHASES.json": "f621f6d4296cb215f334830356c5f79fe10d6d04d15b3ccda76ba0885ab67d0a"
+  },
+  "controller_audit_sha256": "9e0b001e6f55ca5c363c9bccd02012ccbeaf5650d2d19aeded1639a09c31bd60"
+}

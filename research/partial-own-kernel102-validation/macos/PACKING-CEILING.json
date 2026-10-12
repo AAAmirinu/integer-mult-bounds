@@ -1,0 +1,12 @@
+{
+  "status": "PASS_EXACT_FIXED_WORD_PACKING_CEILING",
+  "rejected_b": "6981767/5000000000",
+  "kappa_upper": "6981767/5006981767",
+  "patterns": 112,
+  "minimum_dual_slack": "0",
+  "mercator_margin": "5018732632837207528776629207053395657161124930651556382887178683773394978930474071061580109/6992010905200617916259958311373285650260497244962684928000000000000000000000000000000000000000000000",
+  "base_two_margin": "523980135563882060771452539918656982389/730000000000000000000000000000000000000000000000",
+  "word_sha256": "a56423fac9f06d864a42a32450a7dba22389330262551cd266066cb074202828",
+  "certificate_sha256": "fc5140e319385473e9ef7195009366fa71822c7f117b215059416ab95ee149a2",
+  "scope": "Only this emitted local word,72calls,m73,W7680 and unchanged idle stock. Every helper fits wholly inside one original idle child, leaving at most one paid remainder. Dropping timing/owner conflicts gives an optimistic relaxation. No bound on changed factories or algorithms."
+}

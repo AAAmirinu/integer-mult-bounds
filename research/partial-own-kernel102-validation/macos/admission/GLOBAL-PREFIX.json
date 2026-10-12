@@ -1,0 +1,13 @@
+{
+  "status": "PASS_ASYNC_GLOBAL_PREFIX",
+  "template_sha256": "3c0bcfdbc2cacfb85ac5162eadf8f71e3ffe6d4ae85002b1e16101753e3a6948",
+  "global_prefix_bits": 205,
+  "retained_payload_bits": 512,
+  "complete_invocation_cover_sweeps": 72,
+  "bridge_factor_two_sweeps": 72,
+  "local_scalar_coefficient_work_prefix_bits": 20,
+  "stream_input_sup_to_l2_bits": 37,
+  "primitive_arithmetic_margin_bits": 4,
+  "controller_audit_sha256": "9e0b001e6f55ca5c363c9bccd02012ccbeaf5650d2d19aeded1639a09c31bd60",
+  "proof": "Each complete normalized invocation has unitary helper endpoints and a data shear with at most two unitary summands. Distinct full orthogonal owner charts act by right-translation bijections on the retained cover group. Thus the maximum full-stream L2 norm grows by at most2per complete local cover sweep and individual bridge. All72local sweeps and72individual bridge sweeps are counted. Unit-modulus phases, idle children, terminal translations and normalized spectator endpoints are unitary. The independently replayed scalar/Horner envelope costs20bits, initial sup-to-L2 conversion37bits, primitive margin4bits: total205<512. All-size child/compiler and precision/tape interfaces remain inherited."
+}

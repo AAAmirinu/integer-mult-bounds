@@ -1,0 +1,85 @@
+{
+  "status": "PASS_FRESH_PARTIAL_OWN_KERNEL102_ASYNCHRONOUS",
+  "python": "3.14.8",
+  "steps": [
+    {
+      "name": "fresh-both-suppliers-and-partial-own",
+      "exit_code": 0,
+      "seconds": 947.051,
+      "log_sha256": "f8109e6451f576a14279cd3093fd7e6e3829e23279567e713069151b43c002fc"
+    },
+    {
+      "name": "construct-coordinated",
+      "exit_code": 0,
+      "seconds": 0.843,
+      "log_sha256": "1297d803b51ab3af6a448d6de754e41e38a6c472de3fa911ab6cd4ee3c13220e"
+    },
+    {
+      "name": "independent-all-kernel-corrections",
+      "exit_code": 0,
+      "seconds": 8.956,
+      "log_sha256": "db90a388ec2aca4ae6884c0b700f5ff630faadbd89f325d7af61234d205c2079"
+    },
+    {
+      "name": "fresh-coordinated-local",
+      "exit_code": 0,
+      "seconds": 292.534,
+      "log_sha256": "4edb3cddfc70e6794f5e926de34b974062f5752277cd731b249479787e658785"
+    },
+    {
+      "name": "emit-asynchronous",
+      "exit_code": 0,
+      "seconds": 2.091,
+      "log_sha256": "9436099fe8f063af83cec54b3a050f9d08acff0a236f7e0a4804d7edf7d92032"
+    },
+    {
+      "name": "independent-controller",
+      "exit_code": 0,
+      "seconds": 9.399,
+      "log_sha256": "9e0b001e6f55ca5c363c9bccd02012ccbeaf5650d2d19aeded1639a09c31bd60"
+    },
+    {
+      "name": "finite-invoice",
+      "exit_code": 0,
+      "seconds": 0.96,
+      "log_sha256": "a13c2297e2d195571c33ab5c9cba262ca87aad7d3bc89ddc8d4366ac67280f0f"
+    },
+    {
+      "name": "two-exact-engines-and-outer",
+      "exit_code": 0,
+      "seconds": 0.253,
+      "log_sha256": "9257673b55f511faba3fef1d765e8081a6e023dc43d8c155b1f17bc68418053f"
+    },
+    {
+      "name": "exact-fixed-word-ceiling",
+      "exit_code": 0,
+      "seconds": 0.406,
+      "log_sha256": "14550a01620e04a4365a37ec699d5f7bf270ecefcfca50501a26f9d623e61290"
+    }
+  ],
+  "source_manifest_sha256": "79e39b395ba041ae6f26f7bc6fe9f5a1a8608f5e6b04ffb496c161ec6cc9a983",
+  "artifacts": {
+    "PACKING-CEILING.json": "c93269945e756ca31f92ef87ce9b92f6ffcf8fa20e4069b3091a25029814683f",
+    "KERNEL-SCALAR.json": "f815d352527610664ac0850dd2b61ffde720db5229f49e8ec89b93220ebbeaf9",
+    "construction/CONSTRUCTION.json": "5214654ed159b9e90745c1e4f98c7471895f7d3a831bbd6f04a08eade76d861b",
+    "coordinated/gauge80-kernel42/RECEIPT.json": "5deb52e55939f1f4c3b29a8205d43e6d55173b14bfb623c02984a8ff76646aeb",
+    "coordinated/gauge80-kernel42/lemmaG/PREOP-GUARDS-lg_instances.json": "a89ff0e5e1e93293939f5c3264851990dbf13d7541c4564067d3d645f60be32d",
+    "coordinated/gauge80-kernel42/lemmaG/PREOP-GUARDS-lg_e2e.json": "5755c17c85eced0c72d09d1d875f0e631ba660fc752ad244d821c40d7871a0dd",
+    "coordinated/gauge80-kernel42/lemmaG/MUTANTS.json": "90a0c87e3989702352f7fc5791814d5d8c5c806caaf9642d2f9ae6decb41f46b",
+    "RESULT.json": "879cd784dc605517283fb4762dfe3dd592a4218a537e29e5b177bc17d17997d7",
+    "FRESH-BIT-INPUT.json": "865454092ca664ea3b8d92eb5946dfb42d62be7e5b149fb87ec574c8ccfa4ad1",
+    "dependency/RECEIPT.json": "158cf37d524e950a234c01ef31b30d8b193cfe8ecaccd099a1fb14a66cad04e5",
+    "dependency/EXACT-MATH.json": "90fd7d912c39187a6402e76d83e36f1cf2880a20e565a2c7c782bf19c3cc1f6c",
+    "dependency/RELEASE-ADMISSION.json": "fb5e7a5548cbeb4b840231c48e62d647b6913d57f52f7849a1811e0ed5f29083",
+    "dependency/TOOLCHAIN.json": "0f81afdfa662e23ac236c853cd76acf2f1491c1c6ed2269827a6ca302876cabb",
+    "dependency/partial-algebra/ALGEBRA.json": "a1d5a640e6bf67c7e43ae83626fd85a3e1107acb2475c251d30c0c7e79cc6342",
+    "dependency/PARTIAL-FRAME-REVIEW.json": "7e80508f3c8e7a5e145f21fcfc8c5d402f5e94e039b7905521266876db67a02b",
+    "dependency/retimed-guarded/PREOP-GUARDS-lg_instances.json": "4c88a41464237e5efcc0dbebaa37573738409c7d30d28e794a2ca315f9ce2f1e",
+    "dependency/retimed-guarded/PREOP-GUARDS-lg_e2e.json": "6a6dbd8aeb2c6dc0ba245662f647418dd18843f733ff1e2c0f7dbf813e8c39a4",
+    "admission/ASYNC-AUDIT.json": "9e0b001e6f55ca5c363c9bccd02012ccbeaf5650d2d19aeded1639a09c31bd60",
+    "admission/OWNERS-AND-PROFILE.json": "63a7c569f07875e0ebd49eaede720b3554516940c2b01c6f021a8bc24b8fad68",
+    "admission/GLOBAL-PREFIX.json": "93d27fdeff774655d5564b34d3f60d360d22cccf767bb44805a71691be90467f",
+    "admission/PREFIX-AND-INVOICE.json": "a13c2297e2d195571c33ab5c9cba262ca87aad7d3bc89ddc8d4366ac67280f0f",
+    "admission/EXACT-ASSEMBLY.json": "97eb5939f8e335cdefcdfbb2ac61487c8eb0d1b8bbe20d0735c4ea485419f6e4"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS_ALL_RELEASE_PROOF_OBJECTS_AND_FRESH_BINDINGS",
+  "word_sha256": "73afd6e5579644b131e5b1adef9a48b622affb6c17f26bad0eac2fcf086637ac",
+  "derivative_receipt_sha256": "9c74f9db3a58c1f4bc9c69e570d0d94f3e11d67c29228aa56f739d177aea5685",
+  "physical_template_sha256": "44b7779f98a4369bb590d8753eaebd77d30423c8726ba83f0b4ffc7d58489926",
+  "guarded_result_statuses_checked": true,
+  "source_and_derivative_bytes_bound": true,
+  "all800_dirty_columns": true,
+  "both_reflected_ledgers": true,
+  "whole_owners": 40320,
+  "necessity_controls": 14,
+  "controller_controls": 18,
+  "strict_outer_constraints": 47,
+  "kappa": "1363614743745701/1000000000000000000"
+}

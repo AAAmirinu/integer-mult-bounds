@@ -1,0 +1,30 @@
+{
+  "eleven": {
+    "bit": {
+      "charged_prefix_bits": 2176,
+      "charged_three_level_coefficient_bits": 6464,
+      "coefficient_bits": 2119,
+      "halving_depth": 3,
+      "hosted_residuals": 43032,
+      "live": 9600,
+      "maxchild": 56,
+      "physical": 9609,
+      "prefix_bits": 2119,
+      "rank_mass": 745536,
+      "row_coefficient": 19431,
+      "three_level_coefficient_bits": 6411
+    },
+    "bit_lower": "391360506745414227149/250000000000000000000000",
+    "emitted_program_sha256": "e37b52e4861c39154b5891460fb45df8651c92cd68961078f8f06596f057c822",
+    "profile": {
+      "1": 105600,
+      "2": 130560,
+      "4": 19680,
+      "48": 2,
+      "56": 2628,
+      "6": 14400,
+      "7": 7680,
+      "8": 1584
+    }
+  }
+}

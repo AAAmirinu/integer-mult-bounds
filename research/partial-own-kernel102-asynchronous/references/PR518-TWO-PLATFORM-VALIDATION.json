@@ -1,0 +1,37 @@
+{
+  "status": "PASS_PR518_TWO_PLATFORM_EXACT_RECONSTRUCTION",
+  "head": "e0a071dce251eeca96d446f73147048cfebbd5c7",
+  "result": {
+    "status": "PASS_CONDITIONAL_ASYNCHRONOUS_COMPLEX_DERIVATIVE",
+    "kappa": "1393662920776407/1000000000000000000",
+    "kappa_decimal": "0.001393662920776407",
+    "complex_lower": "697803963898659915203/500000000000000000000000",
+    "bit_lower": "391360506745414227149/250000000000000000000000",
+    "template_sha256": "83b8adca338e954e59170de7bc9c5b23e240655879d6719e593641aaba00e8fd",
+    "strict_constraints": 47,
+    "package_manifest_sha256": "425a6bf01189fb7f2250be7e776c36e3cb23cb1b336bfb09dde8b2d90fff0329"
+  },
+  "identical_exact_artifacts": {
+    "audit/EXACT-ASSEMBLY.json": "e32d4446ead55d3f2eebbfcc32856a330e14b20ac67530ef85d23230ef477615",
+    "audit/ASYNC-AUDIT.json": "515abbdff41bddcdd16428195a62b7f2262b7221b326a6eac843a56ef8508a4f",
+    "audit/PREFIX-AND-INVOICE.json": "c0cc1a411f4f42ad70d093de39ff43cb90f4bf2b4c733ef8cb2f1de435e4cbde"
+  },
+  "normalized_word_sha256": "bf26b8c3709039eb027430218f8b9bd3c369eb9c584e4ebfc2f9e350bab93f19",
+  "raw_word_sha256": [
+    "8527dba9d486ef157304158c6e4923b4246b59c2b2d2bdd5ceefeefba032ceca",
+    "bade29db5c15e3f6d8eef945404ce823005d2189e3d09ec68290ab63e01af7db"
+  ],
+  "only_parsed_word_differences": {
+    "complex_coarse_float": [
+      0.0011839865492062449,
+      0.0011839865492062444
+    ],
+    "gain_percent_float": [
+      18.471088665039947,
+      18.471088665039904
+    ]
+  },
+  "scalar_receipts_equal_except_word_hash": true,
+  "macos_guarded_receipt_sha256": "2a9eb7040e9ec4302d7a78dad953e3f6a0f828a37d1c2a77816dce07ab87655d",
+  "scope": "All14 upstream stages freshly pass on macOS and Linux. Actual word events and rational fields exactly equal; only two nonbinding float report fields differ. Three exact global audit/assembly files byte-identical. Additional7 guarded/structural stages only macOS. Bit remains cited upstream, all-size assumptions remain conditional."
+}

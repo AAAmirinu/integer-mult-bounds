@@ -1,0 +1,13 @@
+{
+  "status": "PASS_SELECTION_MUTATION_CONTROLS",
+  "refused": [
+    "gauge: entrance outside the first frame",
+    "gauge: non-nested entrances at one target",
+    "kernel: pivot outside the donor span",
+    "kernel: entrance outside a donor first frame"
+  ],
+  "omitted_essential_donor": 40,
+  "pivot": 526,
+  "source_sha256": "cf83aa95f03aa812c413905df9f75f13ac8f92f5db6a83cf9b1868aea2dd9de0",
+  "scope": "Original four controls, with historical last-donor mutation adapted to omit a proven-essential donor. Accepted selection and word unchanged."
+}

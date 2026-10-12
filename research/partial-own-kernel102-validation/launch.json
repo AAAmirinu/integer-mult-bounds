@@ -1,0 +1,10 @@
+{
+  "unit": "research-resume-20261012-kernel102",
+  "linux_output": "/home/cfky/offload/check-kernel102-fresh",
+  "linux_run": "/home/cfky/research/integer-mult/runs/resume-20261012-kernel102",
+  "macos_pid": 80339,
+  "macos_output": "/private/tmp/kernel102-macos314-fresh",
+  "manifest": "79e39b395ba041ae6f26f7bc6fe9f5a1a8608f5e6b04ffb496c161ec6cc9a983",
+  "linux_source": "/home/cfky/offload/kernel102-source/partial-own-kernel102-asynchronous",
+  "source_tar_sha256": "8109a0533f506f5b4f912c0b2d5bd03ed599724ab0fd64932cddb8c57c37493d"
+}

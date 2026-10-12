@@ -1,0 +1,8103 @@
+{
+  "results": [
+    {
+      "case": 0,
+      "released": [
+        0
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "EXACT_STRUCTURAL_ONLY",
+      "profile": {
+        "1": 2537,
+        "2": 192,
+        "3": 506,
+        "4": 88,
+        "5": 298,
+        "8": 17,
+        "6": 68,
+        "7": 1
+      }
+    },
+    {
+      "case": 1,
+      "released": [
+        0
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 2,
+      "released": [
+        0
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 3,
+      "released": [
+        1
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 4,
+      "released": [
+        1
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 5,
+      "released": [
+        1
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 6,
+      "released": [
+        2
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 7,
+      "released": [
+        2
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 8,
+      "released": [
+        2
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 9,
+      "released": [
+        3
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 10,
+      "released": [
+        3
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 11,
+      "released": [
+        3
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 12,
+      "released": [
+        4
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 13,
+      "released": [
+        4
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 14,
+      "released": [
+        4
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 15,
+      "released": [
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 16,
+      "released": [
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 17,
+      "released": [
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 18,
+      "released": [
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 19,
+      "released": [
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 20,
+      "released": [
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 21,
+      "released": [
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 22,
+      "released": [
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 23,
+      "released": [
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 24,
+      "released": [
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 25,
+      "released": [
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 26,
+      "released": [
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 27,
+      "released": [
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 28,
+      "released": [
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 29,
+      "released": [
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 30,
+      "released": [
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 31,
+      "released": [
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 32,
+      "released": [
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 33,
+      "released": [
+        0,
+        1
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 34,
+      "released": [
+        0,
+        1
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 35,
+      "released": [
+        0,
+        1
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 36,
+      "released": [
+        0,
+        2
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 37,
+      "released": [
+        0,
+        2
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 38,
+      "released": [
+        0,
+        2
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 39,
+      "released": [
+        0,
+        3
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 40,
+      "released": [
+        0,
+        3
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 41,
+      "released": [
+        0,
+        3
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 42,
+      "released": [
+        0,
+        4
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 43,
+      "released": [
+        0,
+        4
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 44,
+      "released": [
+        0,
+        4
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 45,
+      "released": [
+        0,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 46,
+      "released": [
+        0,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 47,
+      "released": [
+        0,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 48,
+      "released": [
+        0,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 49,
+      "released": [
+        0,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 50,
+      "released": [
+        0,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 51,
+      "released": [
+        0,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 52,
+      "released": [
+        0,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 53,
+      "released": [
+        0,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 54,
+      "released": [
+        0,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 55,
+      "released": [
+        0,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 56,
+      "released": [
+        0,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 57,
+      "released": [
+        0,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 58,
+      "released": [
+        0,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 59,
+      "released": [
+        0,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 60,
+      "released": [
+        0,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 61,
+      "released": [
+        0,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 62,
+      "released": [
+        0,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 63,
+      "released": [
+        1,
+        2
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 64,
+      "released": [
+        1,
+        2
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 65,
+      "released": [
+        1,
+        2
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 66,
+      "released": [
+        1,
+        3
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 67,
+      "released": [
+        1,
+        3
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 68,
+      "released": [
+        1,
+        3
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 69,
+      "released": [
+        1,
+        4
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 70,
+      "released": [
+        1,
+        4
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 71,
+      "released": [
+        1,
+        4
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 72,
+      "released": [
+        1,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 73,
+      "released": [
+        1,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 74,
+      "released": [
+        1,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 75,
+      "released": [
+        1,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 76,
+      "released": [
+        1,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 77,
+      "released": [
+        1,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 78,
+      "released": [
+        1,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 79,
+      "released": [
+        1,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 80,
+      "released": [
+        1,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 81,
+      "released": [
+        1,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 82,
+      "released": [
+        1,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 83,
+      "released": [
+        1,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 84,
+      "released": [
+        1,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 85,
+      "released": [
+        1,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 86,
+      "released": [
+        1,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 87,
+      "released": [
+        1,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 88,
+      "released": [
+        1,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 89,
+      "released": [
+        1,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 90,
+      "released": [
+        2,
+        3
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 91,
+      "released": [
+        2,
+        3
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 92,
+      "released": [
+        2,
+        3
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 93,
+      "released": [
+        2,
+        4
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 94,
+      "released": [
+        2,
+        4
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 95,
+      "released": [
+        2,
+        4
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 96,
+      "released": [
+        2,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 97,
+      "released": [
+        2,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 98,
+      "released": [
+        2,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 99,
+      "released": [
+        2,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 100,
+      "released": [
+        2,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 101,
+      "released": [
+        2,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 102,
+      "released": [
+        2,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 103,
+      "released": [
+        2,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 104,
+      "released": [
+        2,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 105,
+      "released": [
+        2,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 106,
+      "released": [
+        2,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 107,
+      "released": [
+        2,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 108,
+      "released": [
+        2,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 109,
+      "released": [
+        2,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 110,
+      "released": [
+        2,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 111,
+      "released": [
+        2,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 112,
+      "released": [
+        2,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 113,
+      "released": [
+        2,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 114,
+      "released": [
+        3,
+        4
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 115,
+      "released": [
+        3,
+        4
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 116,
+      "released": [
+        3,
+        4
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 117,
+      "released": [
+        3,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 118,
+      "released": [
+        3,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 119,
+      "released": [
+        3,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 120,
+      "released": [
+        3,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 121,
+      "released": [
+        3,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 122,
+      "released": [
+        3,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 123,
+      "released": [
+        3,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 124,
+      "released": [
+        3,
+        7
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 125,
+      "released": [
+        3,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 126,
+      "released": [
+        3,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 127,
+      "released": [
+        3,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 128,
+      "released": [
+        3,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 129,
+      "released": [
+        3,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 130,
+      "released": [
+        3,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 131,
+      "released": [
+        3,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 132,
+      "released": [
+        3,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 133,
+      "released": [
+        3,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 134,
+      "released": [
+        3,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 135,
+      "released": [
+        4,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 136,
+      "released": [
+        4,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 137,
+      "released": [
+        4,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 138,
+      "released": [
+        4,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 139,
+      "released": [
+        4,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 140,
+      "released": [
+        4,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 141,
+      "released": [
+        4,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 142,
+      "released": [
+        4,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 143,
+      "released": [
+        4,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 144,
+      "released": [
+        4,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 145,
+      "released": [
+        4,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 146,
+      "released": [
+        4,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 147,
+      "released": [
+        4,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 148,
+      "released": [
+        4,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 149,
+      "released": [
+        4,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 150,
+      "released": [
+        4,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 151,
+      "released": [
+        4,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 152,
+      "released": [
+        4,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 153,
+      "released": [
+        5,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 154,
+      "released": [
+        5,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 155,
+      "released": [
+        5,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 156,
+      "released": [
+        5,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 157,
+      "released": [
+        5,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 158,
+      "released": [
+        5,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 159,
+      "released": [
+        5,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 160,
+      "released": [
+        5,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 161,
+      "released": [
+        5,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 162,
+      "released": [
+        5,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 163,
+      "released": [
+        5,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 164,
+      "released": [
+        5,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 165,
+      "released": [
+        5,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 166,
+      "released": [
+        5,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 167,
+      "released": [
+        5,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 168,
+      "released": [
+        6,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 169,
+      "released": [
+        6,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 170,
+      "released": [
+        6,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 171,
+      "released": [
+        6,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 172,
+      "released": [
+        6,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 173,
+      "released": [
+        6,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 174,
+      "released": [
+        6,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 175,
+      "released": [
+        6,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 176,
+      "released": [
+        6,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 177,
+      "released": [
+        6,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 178,
+      "released": [
+        6,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 179,
+      "released": [
+        6,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 180,
+      "released": [
+        7,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 181,
+      "released": [
+        7,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 182,
+      "released": [
+        7,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 183,
+      "released": [
+        7,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 184,
+      "released": [
+        7,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 185,
+      "released": [
+        7,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 186,
+      "released": [
+        7,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 187,
+      "released": [
+        7,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 188,
+      "released": [
+        7,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 189,
+      "released": [
+        8,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 190,
+      "released": [
+        8,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 191,
+      "released": [
+        8,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 192,
+      "released": [
+        8,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 193,
+      "released": [
+        8,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 194,
+      "released": [
+        8,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 195,
+      "released": [
+        9,
+        10
+      ],
+      "seed": 0,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 196,
+      "released": [
+        9,
+        10
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 197,
+      "released": [
+        9,
+        10
+      ],
+      "seed": 2,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 198,
+      "released": [
+        0,
+        1,
+        2
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 199,
+      "released": [
+        0,
+        1,
+        2
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 200,
+      "released": [
+        0,
+        1,
+        2
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 201,
+      "released": [
+        0,
+        1,
+        3
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 202,
+      "released": [
+        0,
+        1,
+        3
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 203,
+      "released": [
+        0,
+        1,
+        3
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 204,
+      "released": [
+        0,
+        1,
+        4
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 205,
+      "released": [
+        0,
+        1,
+        4
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 206,
+      "released": [
+        0,
+        1,
+        4
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 207,
+      "released": [
+        0,
+        1,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 208,
+      "released": [
+        0,
+        1,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 209,
+      "released": [
+        0,
+        1,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 210,
+      "released": [
+        0,
+        1,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 211,
+      "released": [
+        0,
+        1,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 212,
+      "released": [
+        0,
+        1,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 213,
+      "released": [
+        0,
+        1,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 214,
+      "released": [
+        0,
+        1,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 215,
+      "released": [
+        0,
+        1,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 216,
+      "released": [
+        0,
+        1,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 217,
+      "released": [
+        0,
+        1,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 218,
+      "released": [
+        0,
+        1,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 219,
+      "released": [
+        0,
+        1,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 220,
+      "released": [
+        0,
+        1,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 221,
+      "released": [
+        0,
+        1,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 222,
+      "released": [
+        0,
+        1,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 223,
+      "released": [
+        0,
+        1,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 224,
+      "released": [
+        0,
+        1,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 225,
+      "released": [
+        0,
+        2,
+        3
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 226,
+      "released": [
+        0,
+        2,
+        3
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 227,
+      "released": [
+        0,
+        2,
+        3
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 228,
+      "released": [
+        0,
+        2,
+        4
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 229,
+      "released": [
+        0,
+        2,
+        4
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 230,
+      "released": [
+        0,
+        2,
+        4
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 231,
+      "released": [
+        0,
+        2,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 232,
+      "released": [
+        0,
+        2,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 233,
+      "released": [
+        0,
+        2,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 234,
+      "released": [
+        0,
+        2,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 235,
+      "released": [
+        0,
+        2,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 236,
+      "released": [
+        0,
+        2,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 237,
+      "released": [
+        0,
+        2,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 238,
+      "released": [
+        0,
+        2,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 239,
+      "released": [
+        0,
+        2,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 240,
+      "released": [
+        0,
+        2,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 241,
+      "released": [
+        0,
+        2,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 242,
+      "released": [
+        0,
+        2,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 243,
+      "released": [
+        0,
+        2,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 244,
+      "released": [
+        0,
+        2,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 245,
+      "released": [
+        0,
+        2,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 246,
+      "released": [
+        0,
+        2,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 247,
+      "released": [
+        0,
+        2,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 248,
+      "released": [
+        0,
+        2,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 249,
+      "released": [
+        0,
+        3,
+        4
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 250,
+      "released": [
+        0,
+        3,
+        4
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 251,
+      "released": [
+        0,
+        3,
+        4
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 252,
+      "released": [
+        0,
+        3,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 253,
+      "released": [
+        0,
+        3,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 254,
+      "released": [
+        0,
+        3,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 255,
+      "released": [
+        0,
+        3,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 256,
+      "released": [
+        0,
+        3,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 257,
+      "released": [
+        0,
+        3,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 258,
+      "released": [
+        0,
+        3,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 259,
+      "released": [
+        0,
+        3,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 260,
+      "released": [
+        0,
+        3,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 261,
+      "released": [
+        0,
+        3,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 262,
+      "released": [
+        0,
+        3,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 263,
+      "released": [
+        0,
+        3,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 264,
+      "released": [
+        0,
+        3,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 265,
+      "released": [
+        0,
+        3,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 266,
+      "released": [
+        0,
+        3,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 267,
+      "released": [
+        0,
+        3,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 268,
+      "released": [
+        0,
+        3,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 269,
+      "released": [
+        0,
+        3,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 270,
+      "released": [
+        0,
+        4,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 271,
+      "released": [
+        0,
+        4,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 272,
+      "released": [
+        0,
+        4,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 273,
+      "released": [
+        0,
+        4,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 274,
+      "released": [
+        0,
+        4,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 275,
+      "released": [
+        0,
+        4,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 276,
+      "released": [
+        0,
+        4,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 277,
+      "released": [
+        0,
+        4,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 278,
+      "released": [
+        0,
+        4,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 279,
+      "released": [
+        0,
+        4,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 280,
+      "released": [
+        0,
+        4,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 281,
+      "released": [
+        0,
+        4,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 282,
+      "released": [
+        0,
+        4,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 283,
+      "released": [
+        0,
+        4,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 284,
+      "released": [
+        0,
+        4,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 285,
+      "released": [
+        0,
+        4,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 286,
+      "released": [
+        0,
+        4,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 287,
+      "released": [
+        0,
+        4,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 288,
+      "released": [
+        0,
+        5,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 289,
+      "released": [
+        0,
+        5,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 290,
+      "released": [
+        0,
+        5,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 291,
+      "released": [
+        0,
+        5,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 292,
+      "released": [
+        0,
+        5,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 293,
+      "released": [
+        0,
+        5,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 294,
+      "released": [
+        0,
+        5,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 295,
+      "released": [
+        0,
+        5,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 296,
+      "released": [
+        0,
+        5,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 297,
+      "released": [
+        0,
+        5,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 298,
+      "released": [
+        0,
+        5,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 299,
+      "released": [
+        0,
+        5,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 300,
+      "released": [
+        0,
+        5,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 301,
+      "released": [
+        0,
+        5,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 302,
+      "released": [
+        0,
+        5,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 303,
+      "released": [
+        0,
+        6,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 304,
+      "released": [
+        0,
+        6,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 305,
+      "released": [
+        0,
+        6,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 306,
+      "released": [
+        0,
+        6,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 307,
+      "released": [
+        0,
+        6,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 308,
+      "released": [
+        0,
+        6,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 309,
+      "released": [
+        0,
+        6,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 310,
+      "released": [
+        0,
+        6,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 311,
+      "released": [
+        0,
+        6,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 312,
+      "released": [
+        0,
+        6,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 313,
+      "released": [
+        0,
+        6,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 314,
+      "released": [
+        0,
+        6,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 315,
+      "released": [
+        0,
+        7,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 316,
+      "released": [
+        0,
+        7,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 317,
+      "released": [
+        0,
+        7,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 318,
+      "released": [
+        0,
+        7,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 319,
+      "released": [
+        0,
+        7,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 320,
+      "released": [
+        0,
+        7,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 321,
+      "released": [
+        0,
+        7,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 322,
+      "released": [
+        0,
+        7,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 323,
+      "released": [
+        0,
+        7,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 324,
+      "released": [
+        0,
+        8,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 325,
+      "released": [
+        0,
+        8,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 326,
+      "released": [
+        0,
+        8,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 327,
+      "released": [
+        0,
+        8,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 328,
+      "released": [
+        0,
+        8,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 329,
+      "released": [
+        0,
+        8,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 330,
+      "released": [
+        0,
+        9,
+        10
+      ],
+      "seed": 0,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 331,
+      "released": [
+        0,
+        9,
+        10
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 332,
+      "released": [
+        0,
+        9,
+        10
+      ],
+      "seed": 2,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 333,
+      "released": [
+        1,
+        2,
+        3
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 334,
+      "released": [
+        1,
+        2,
+        3
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 335,
+      "released": [
+        1,
+        2,
+        3
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 336,
+      "released": [
+        1,
+        2,
+        4
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 337,
+      "released": [
+        1,
+        2,
+        4
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 338,
+      "released": [
+        1,
+        2,
+        4
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 339,
+      "released": [
+        1,
+        2,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 340,
+      "released": [
+        1,
+        2,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 341,
+      "released": [
+        1,
+        2,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 342,
+      "released": [
+        1,
+        2,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 343,
+      "released": [
+        1,
+        2,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 344,
+      "released": [
+        1,
+        2,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 345,
+      "released": [
+        1,
+        2,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 346,
+      "released": [
+        1,
+        2,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 347,
+      "released": [
+        1,
+        2,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 348,
+      "released": [
+        1,
+        2,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 349,
+      "released": [
+        1,
+        2,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 350,
+      "released": [
+        1,
+        2,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 351,
+      "released": [
+        1,
+        2,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 352,
+      "released": [
+        1,
+        2,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 353,
+      "released": [
+        1,
+        2,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 354,
+      "released": [
+        1,
+        2,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 355,
+      "released": [
+        1,
+        2,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 356,
+      "released": [
+        1,
+        2,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 357,
+      "released": [
+        1,
+        3,
+        4
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 358,
+      "released": [
+        1,
+        3,
+        4
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 359,
+      "released": [
+        1,
+        3,
+        4
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 360,
+      "released": [
+        1,
+        3,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 361,
+      "released": [
+        1,
+        3,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 362,
+      "released": [
+        1,
+        3,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 363,
+      "released": [
+        1,
+        3,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 364,
+      "released": [
+        1,
+        3,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 365,
+      "released": [
+        1,
+        3,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 366,
+      "released": [
+        1,
+        3,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 367,
+      "released": [
+        1,
+        3,
+        7
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 368,
+      "released": [
+        1,
+        3,
+        7
+      ],
+      "seed": 2,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 369,
+      "released": [
+        1,
+        3,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 370,
+      "released": [
+        1,
+        3,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 371,
+      "released": [
+        1,
+        3,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 372,
+      "released": [
+        1,
+        3,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 373,
+      "released": [
+        1,
+        3,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 374,
+      "released": [
+        1,
+        3,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 375,
+      "released": [
+        1,
+        3,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 376,
+      "released": [
+        1,
+        3,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 377,
+      "released": [
+        1,
+        3,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 378,
+      "released": [
+        1,
+        4,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 379,
+      "released": [
+        1,
+        4,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 380,
+      "released": [
+        1,
+        4,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 381,
+      "released": [
+        1,
+        4,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 382,
+      "released": [
+        1,
+        4,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 383,
+      "released": [
+        1,
+        4,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 384,
+      "released": [
+        1,
+        4,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 385,
+      "released": [
+        1,
+        4,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 386,
+      "released": [
+        1,
+        4,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 387,
+      "released": [
+        1,
+        4,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 388,
+      "released": [
+        1,
+        4,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 389,
+      "released": [
+        1,
+        4,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 390,
+      "released": [
+        1,
+        4,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 391,
+      "released": [
+        1,
+        4,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 392,
+      "released": [
+        1,
+        4,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 393,
+      "released": [
+        1,
+        4,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 394,
+      "released": [
+        1,
+        4,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 395,
+      "released": [
+        1,
+        4,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 396,
+      "released": [
+        1,
+        5,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 397,
+      "released": [
+        1,
+        5,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 398,
+      "released": [
+        1,
+        5,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 399,
+      "released": [
+        1,
+        5,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 400,
+      "released": [
+        1,
+        5,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 401,
+      "released": [
+        1,
+        5,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 402,
+      "released": [
+        1,
+        5,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 403,
+      "released": [
+        1,
+        5,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 404,
+      "released": [
+        1,
+        5,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 405,
+      "released": [
+        1,
+        5,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 406,
+      "released": [
+        1,
+        5,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 407,
+      "released": [
+        1,
+        5,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 408,
+      "released": [
+        1,
+        5,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 409,
+      "released": [
+        1,
+        5,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 410,
+      "released": [
+        1,
+        5,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 411,
+      "released": [
+        1,
+        6,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 412,
+      "released": [
+        1,
+        6,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 413,
+      "released": [
+        1,
+        6,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 414,
+      "released": [
+        1,
+        6,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 415,
+      "released": [
+        1,
+        6,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 416,
+      "released": [
+        1,
+        6,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 417,
+      "released": [
+        1,
+        6,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 418,
+      "released": [
+        1,
+        6,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 419,
+      "released": [
+        1,
+        6,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 420,
+      "released": [
+        1,
+        6,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 421,
+      "released": [
+        1,
+        6,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 422,
+      "released": [
+        1,
+        6,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 423,
+      "released": [
+        1,
+        7,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 424,
+      "released": [
+        1,
+        7,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 425,
+      "released": [
+        1,
+        7,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 426,
+      "released": [
+        1,
+        7,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 427,
+      "released": [
+        1,
+        7,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 428,
+      "released": [
+        1,
+        7,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 429,
+      "released": [
+        1,
+        7,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 430,
+      "released": [
+        1,
+        7,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 431,
+      "released": [
+        1,
+        7,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 432,
+      "released": [
+        1,
+        8,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 433,
+      "released": [
+        1,
+        8,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 434,
+      "released": [
+        1,
+        8,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 435,
+      "released": [
+        1,
+        8,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 436,
+      "released": [
+        1,
+        8,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 437,
+      "released": [
+        1,
+        8,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 438,
+      "released": [
+        1,
+        9,
+        10
+      ],
+      "seed": 0,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 439,
+      "released": [
+        1,
+        9,
+        10
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 440,
+      "released": [
+        1,
+        9,
+        10
+      ],
+      "seed": 2,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 441,
+      "released": [
+        2,
+        3,
+        4
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 442,
+      "released": [
+        2,
+        3,
+        4
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 443,
+      "released": [
+        2,
+        3,
+        4
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 444,
+      "released": [
+        2,
+        3,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 445,
+      "released": [
+        2,
+        3,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 446,
+      "released": [
+        2,
+        3,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 447,
+      "released": [
+        2,
+        3,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 448,
+      "released": [
+        2,
+        3,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 449,
+      "released": [
+        2,
+        3,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 450,
+      "released": [
+        2,
+        3,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 451,
+      "released": [
+        2,
+        3,
+        7
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 452,
+      "released": [
+        2,
+        3,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 453,
+      "released": [
+        2,
+        3,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 454,
+      "released": [
+        2,
+        3,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 455,
+      "released": [
+        2,
+        3,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 456,
+      "released": [
+        2,
+        3,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 457,
+      "released": [
+        2,
+        3,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 458,
+      "released": [
+        2,
+        3,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 459,
+      "released": [
+        2,
+        3,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 460,
+      "released": [
+        2,
+        3,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 461,
+      "released": [
+        2,
+        3,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 462,
+      "released": [
+        2,
+        4,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 463,
+      "released": [
+        2,
+        4,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 464,
+      "released": [
+        2,
+        4,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 465,
+      "released": [
+        2,
+        4,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 466,
+      "released": [
+        2,
+        4,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 467,
+      "released": [
+        2,
+        4,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 468,
+      "released": [
+        2,
+        4,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 469,
+      "released": [
+        2,
+        4,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 470,
+      "released": [
+        2,
+        4,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 471,
+      "released": [
+        2,
+        4,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 472,
+      "released": [
+        2,
+        4,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 473,
+      "released": [
+        2,
+        4,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 474,
+      "released": [
+        2,
+        4,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 475,
+      "released": [
+        2,
+        4,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 476,
+      "released": [
+        2,
+        4,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 477,
+      "released": [
+        2,
+        4,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 478,
+      "released": [
+        2,
+        4,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 479,
+      "released": [
+        2,
+        4,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 480,
+      "released": [
+        2,
+        5,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 481,
+      "released": [
+        2,
+        5,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 482,
+      "released": [
+        2,
+        5,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 483,
+      "released": [
+        2,
+        5,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 484,
+      "released": [
+        2,
+        5,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 485,
+      "released": [
+        2,
+        5,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 486,
+      "released": [
+        2,
+        5,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 487,
+      "released": [
+        2,
+        5,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 488,
+      "released": [
+        2,
+        5,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 489,
+      "released": [
+        2,
+        5,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 490,
+      "released": [
+        2,
+        5,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 491,
+      "released": [
+        2,
+        5,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 492,
+      "released": [
+        2,
+        5,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 493,
+      "released": [
+        2,
+        5,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 494,
+      "released": [
+        2,
+        5,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 495,
+      "released": [
+        2,
+        6,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 496,
+      "released": [
+        2,
+        6,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 497,
+      "released": [
+        2,
+        6,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 498,
+      "released": [
+        2,
+        6,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 499,
+      "released": [
+        2,
+        6,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 500,
+      "released": [
+        2,
+        6,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 501,
+      "released": [
+        2,
+        6,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 502,
+      "released": [
+        2,
+        6,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 503,
+      "released": [
+        2,
+        6,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 504,
+      "released": [
+        2,
+        6,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 505,
+      "released": [
+        2,
+        6,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 506,
+      "released": [
+        2,
+        6,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 507,
+      "released": [
+        2,
+        7,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 508,
+      "released": [
+        2,
+        7,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 509,
+      "released": [
+        2,
+        7,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 510,
+      "released": [
+        2,
+        7,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 511,
+      "released": [
+        2,
+        7,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 512,
+      "released": [
+        2,
+        7,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 513,
+      "released": [
+        2,
+        7,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 514,
+      "released": [
+        2,
+        7,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 515,
+      "released": [
+        2,
+        7,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 516,
+      "released": [
+        2,
+        8,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 517,
+      "released": [
+        2,
+        8,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 518,
+      "released": [
+        2,
+        8,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 519,
+      "released": [
+        2,
+        8,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 520,
+      "released": [
+        2,
+        8,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 521,
+      "released": [
+        2,
+        8,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 522,
+      "released": [
+        2,
+        9,
+        10
+      ],
+      "seed": 0,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 523,
+      "released": [
+        2,
+        9,
+        10
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 524,
+      "released": [
+        2,
+        9,
+        10
+      ],
+      "seed": 2,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 525,
+      "released": [
+        3,
+        4,
+        5
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 526,
+      "released": [
+        3,
+        4,
+        5
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 527,
+      "released": [
+        3,
+        4,
+        5
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 528,
+      "released": [
+        3,
+        4,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 529,
+      "released": [
+        3,
+        4,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 530,
+      "released": [
+        3,
+        4,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 531,
+      "released": [
+        3,
+        4,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 532,
+      "released": [
+        3,
+        4,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 533,
+      "released": [
+        3,
+        4,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 534,
+      "released": [
+        3,
+        4,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 535,
+      "released": [
+        3,
+        4,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 536,
+      "released": [
+        3,
+        4,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 537,
+      "released": [
+        3,
+        4,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 538,
+      "released": [
+        3,
+        4,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 539,
+      "released": [
+        3,
+        4,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 540,
+      "released": [
+        3,
+        4,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 541,
+      "released": [
+        3,
+        4,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 542,
+      "released": [
+        3,
+        4,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 543,
+      "released": [
+        3,
+        5,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 544,
+      "released": [
+        3,
+        5,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 545,
+      "released": [
+        3,
+        5,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 546,
+      "released": [
+        3,
+        5,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 547,
+      "released": [
+        3,
+        5,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 548,
+      "released": [
+        3,
+        5,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 549,
+      "released": [
+        3,
+        5,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 550,
+      "released": [
+        3,
+        5,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 551,
+      "released": [
+        3,
+        5,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 552,
+      "released": [
+        3,
+        5,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 553,
+      "released": [
+        3,
+        5,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 554,
+      "released": [
+        3,
+        5,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 555,
+      "released": [
+        3,
+        5,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 556,
+      "released": [
+        3,
+        5,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 557,
+      "released": [
+        3,
+        5,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 558,
+      "released": [
+        3,
+        6,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 559,
+      "released": [
+        3,
+        6,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 560,
+      "released": [
+        3,
+        6,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 561,
+      "released": [
+        3,
+        6,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 562,
+      "released": [
+        3,
+        6,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 563,
+      "released": [
+        3,
+        6,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 564,
+      "released": [
+        3,
+        6,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 565,
+      "released": [
+        3,
+        6,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 566,
+      "released": [
+        3,
+        6,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 567,
+      "released": [
+        3,
+        6,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 568,
+      "released": [
+        3,
+        6,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 569,
+      "released": [
+        3,
+        6,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 570,
+      "released": [
+        3,
+        7,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 571,
+      "released": [
+        3,
+        7,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 572,
+      "released": [
+        3,
+        7,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 573,
+      "released": [
+        3,
+        7,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 574,
+      "released": [
+        3,
+        7,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 575,
+      "released": [
+        3,
+        7,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 576,
+      "released": [
+        3,
+        7,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 577,
+      "released": [
+        3,
+        7,
+        10
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 578,
+      "released": [
+        3,
+        7,
+        10
+      ],
+      "seed": 2,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 579,
+      "released": [
+        3,
+        8,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 580,
+      "released": [
+        3,
+        8,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 581,
+      "released": [
+        3,
+        8,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 582,
+      "released": [
+        3,
+        8,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 583,
+      "released": [
+        3,
+        8,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 584,
+      "released": [
+        3,
+        8,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 585,
+      "released": [
+        3,
+        9,
+        10
+      ],
+      "seed": 0,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 586,
+      "released": [
+        3,
+        9,
+        10
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 587,
+      "released": [
+        3,
+        9,
+        10
+      ],
+      "seed": 2,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 588,
+      "released": [
+        4,
+        5,
+        6
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 589,
+      "released": [
+        4,
+        5,
+        6
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 590,
+      "released": [
+        4,
+        5,
+        6
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 591,
+      "released": [
+        4,
+        5,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 592,
+      "released": [
+        4,
+        5,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 593,
+      "released": [
+        4,
+        5,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 594,
+      "released": [
+        4,
+        5,
+        8
+      ],
+      "seed": 0,
+      "pivots": 99,
+      "entropy": 1784107.0771627743,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 595,
+      "released": [
+        4,
+        5,
+        8
+      ],
+      "seed": 1,
+      "pivots": 99,
+      "entropy": 1784107.0771627743,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 596,
+      "released": [
+        4,
+        5,
+        8
+      ],
+      "seed": 2,
+      "pivots": 99,
+      "entropy": 1784107.0771627743,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 597,
+      "released": [
+        4,
+        5,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 598,
+      "released": [
+        4,
+        5,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 599,
+      "released": [
+        4,
+        5,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 600,
+      "released": [
+        4,
+        5,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 601,
+      "released": [
+        4,
+        5,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 602,
+      "released": [
+        4,
+        5,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 603,
+      "released": [
+        4,
+        6,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 604,
+      "released": [
+        4,
+        6,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 605,
+      "released": [
+        4,
+        6,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 606,
+      "released": [
+        4,
+        6,
+        8
+      ],
+      "seed": 0,
+      "pivots": 99,
+      "entropy": 1784107.0771627743,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 607,
+      "released": [
+        4,
+        6,
+        8
+      ],
+      "seed": 1,
+      "pivots": 99,
+      "entropy": 1784107.0771627743,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 608,
+      "released": [
+        4,
+        6,
+        8
+      ],
+      "seed": 2,
+      "pivots": 99,
+      "entropy": 1784107.0771627743,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 609,
+      "released": [
+        4,
+        6,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 610,
+      "released": [
+        4,
+        6,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 611,
+      "released": [
+        4,
+        6,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 612,
+      "released": [
+        4,
+        6,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 613,
+      "released": [
+        4,
+        6,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 614,
+      "released": [
+        4,
+        6,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 615,
+      "released": [
+        4,
+        7,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 616,
+      "released": [
+        4,
+        7,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 617,
+      "released": [
+        4,
+        7,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 618,
+      "released": [
+        4,
+        7,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 619,
+      "released": [
+        4,
+        7,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 620,
+      "released": [
+        4,
+        7,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 621,
+      "released": [
+        4,
+        7,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 622,
+      "released": [
+        4,
+        7,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 623,
+      "released": [
+        4,
+        7,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 624,
+      "released": [
+        4,
+        8,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 625,
+      "released": [
+        4,
+        8,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 626,
+      "released": [
+        4,
+        8,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 627,
+      "released": [
+        4,
+        8,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 628,
+      "released": [
+        4,
+        8,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 629,
+      "released": [
+        4,
+        8,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 630,
+      "released": [
+        4,
+        9,
+        10
+      ],
+      "seed": 0,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 631,
+      "released": [
+        4,
+        9,
+        10
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 632,
+      "released": [
+        4,
+        9,
+        10
+      ],
+      "seed": 2,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 633,
+      "released": [
+        5,
+        6,
+        7
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 634,
+      "released": [
+        5,
+        6,
+        7
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 635,
+      "released": [
+        5,
+        6,
+        7
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 636,
+      "released": [
+        5,
+        6,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 637,
+      "released": [
+        5,
+        6,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 638,
+      "released": [
+        5,
+        6,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 639,
+      "released": [
+        5,
+        6,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 640,
+      "released": [
+        5,
+        6,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 641,
+      "released": [
+        5,
+        6,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 642,
+      "released": [
+        5,
+        6,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 643,
+      "released": [
+        5,
+        6,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 644,
+      "released": [
+        5,
+        6,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 645,
+      "released": [
+        5,
+        7,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 646,
+      "released": [
+        5,
+        7,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 647,
+      "released": [
+        5,
+        7,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 648,
+      "released": [
+        5,
+        7,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 649,
+      "released": [
+        5,
+        7,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 650,
+      "released": [
+        5,
+        7,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 651,
+      "released": [
+        5,
+        7,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 652,
+      "released": [
+        5,
+        7,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 653,
+      "released": [
+        5,
+        7,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 654,
+      "released": [
+        5,
+        8,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 655,
+      "released": [
+        5,
+        8,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 656,
+      "released": [
+        5,
+        8,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 657,
+      "released": [
+        5,
+        8,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 658,
+      "released": [
+        5,
+        8,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 659,
+      "released": [
+        5,
+        8,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 660,
+      "released": [
+        5,
+        9,
+        10
+      ],
+      "seed": 0,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 661,
+      "released": [
+        5,
+        9,
+        10
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 662,
+      "released": [
+        5,
+        9,
+        10
+      ],
+      "seed": 2,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 663,
+      "released": [
+        6,
+        7,
+        8
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 664,
+      "released": [
+        6,
+        7,
+        8
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 665,
+      "released": [
+        6,
+        7,
+        8
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 666,
+      "released": [
+        6,
+        7,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 667,
+      "released": [
+        6,
+        7,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 668,
+      "released": [
+        6,
+        7,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 669,
+      "released": [
+        6,
+        7,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 670,
+      "released": [
+        6,
+        7,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 671,
+      "released": [
+        6,
+        7,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 672,
+      "released": [
+        6,
+        8,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 673,
+      "released": [
+        6,
+        8,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 674,
+      "released": [
+        6,
+        8,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 675,
+      "released": [
+        6,
+        8,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 676,
+      "released": [
+        6,
+        8,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 677,
+      "released": [
+        6,
+        8,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 678,
+      "released": [
+        6,
+        9,
+        10
+      ],
+      "seed": 0,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 679,
+      "released": [
+        6,
+        9,
+        10
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 680,
+      "released": [
+        6,
+        9,
+        10
+      ],
+      "seed": 2,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 681,
+      "released": [
+        7,
+        8,
+        9
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 682,
+      "released": [
+        7,
+        8,
+        9
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 683,
+      "released": [
+        7,
+        8,
+        9
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 684,
+      "released": [
+        7,
+        8,
+        10
+      ],
+      "seed": 0,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 685,
+      "released": [
+        7,
+        8,
+        10
+      ],
+      "seed": 1,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 686,
+      "released": [
+        7,
+        8,
+        10
+      ],
+      "seed": 2,
+      "pivots": 102,
+      "entropy": 1783120.3380746362,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 687,
+      "released": [
+        7,
+        9,
+        10
+      ],
+      "seed": 0,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 688,
+      "released": [
+        7,
+        9,
+        10
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 689,
+      "released": [
+        7,
+        9,
+        10
+      ],
+      "seed": 2,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 690,
+      "released": [
+        8,
+        9,
+        10
+      ],
+      "seed": 0,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 691,
+      "released": [
+        8,
+        9,
+        10
+      ],
+      "seed": 1,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    },
+    {
+      "case": 692,
+      "released": [
+        8,
+        9,
+        10
+      ],
+      "seed": 2,
+      "pivots": 101,
+      "entropy": 1783632.5671844846,
+      "status": "MODULAR_NOMINATION_ONLY"
+    }
+  ],
+  "best_entropy": 1783120.3380746362,
+  "reference_entropy": 1783282.1548006642,
+  "elapsed": 5.396618749946356,
+  "scope": "Bounded released-kernel neighborhood; exact structural rebuild only for improving nominations, no physical or global admission."
+}
