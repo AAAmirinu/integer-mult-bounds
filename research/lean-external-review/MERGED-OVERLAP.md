@@ -93,6 +93,11 @@ global boundary premises of that proposed connection.
 
 ## Toolchain and provenance
 
+The following mismatch and effort estimate describe the pre-port review.
+The current package has since passed a fresh Lean 4.21.0 build with the exact
+upstream Mathlib pin; see [VALIDATION.md](VALIDATION.md). The overlap analysis
+and mathematical scope remain unchanged.
+
 The incorporated packages pin Lean **4.21.0** and Mathlib
 `308445d7985027f538e281e18df29ca16ede2ba3`. Task A/B pin Lean **4.33.0**;
 Task B pins Mathlib `db584cd6d46c92f209a44c0f1c829460d327499d`.

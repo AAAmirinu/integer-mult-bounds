@@ -1,9 +1,10 @@
 # External review: one literal PR442 R747 invocation
 
-**Lean 4.21 port in progress. The full fresh build and CI runtime qualification
-are pending.** This local port branch has not replaced the public PR #540
-branch. The historical Lean 4.33 receipts remain archived evidence, not proof
-that the current sources pass on Lean 4.21.
+**Lean 4.21 port: fresh verification PASS.** All 153 local modules and the
+five axiom inventories pass under the project's exact pins and default
+external settings. The total CI projection is 34.90 minutes under the
+explicit cache/setup assumptions in [VALIDATION.md](VALIDATION.md).
+This local port has not replaced the public PR #540 branch.
 
 Task A generalizes the hosting contract to multiple hosts and recovers the
 previous single-host theorems. Task B connects that framework to the literal
@@ -61,7 +62,8 @@ Every local dependency is included, particularly `CoordinateSwap.lean`,
 `research/lean-whole-residual-hosting/`. The permanent Task B audit still
 contains the same 931 declarations, including `SourceInvocation.actualContract`;
 Task A contains 21. Separate audits cover the earlier contribution files.
-No theorem statement is intentionally changed by the port.
+The original theorem statements are preserved; the static header/context check
+and full Lean build are documented separately.
 
 ## Reproduction
 
@@ -71,10 +73,10 @@ point. The current verification route uses ordinary `lake build` and
 There is no resume option. The differential test is separate work delegated
 to another verifier and is not part of this port's reported checks.
 
-[VALIDATION.md](VALIDATION.md) distinguishes current pending evidence from
+[VALIDATION.md](VALIDATION.md) distinguishes current fresh evidence from
 historical passes. [MERGED-OVERLAP.md](MERGED-OVERLAP.md) records the incorporated
 #442/#509/#516 comparison and draft #528; its historical port estimate predates
-this in-progress implementation. [DRAFT-PR.md](DRAFT-PR.md) retains the proposed
+this implementation. [DRAFT-PR.md](DRAFT-PR.md) retains the proposed
 technical pitch and maintainer questions.
 
 ## Review and delivery

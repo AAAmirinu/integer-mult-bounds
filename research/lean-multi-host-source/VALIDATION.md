@@ -4,7 +4,11 @@ Current fresh-build status and receipts are recorded in
 [`../lean-external-review/VALIDATION.md`](../lean-external-review/VALIDATION.md).
 The current permanent inventory contains 931 declarations, including
 `SourceInvocation.actualContract`. The 930-declaration historical receipts
-below do not certify the expanded inventory. No Lean proof source changed.
+below do not certify the expanded inventory. The Lean 4.21 port changed proof
+bodies and data partitioning while preserving the original theorem statements.
+Its current fresh receipt supersedes these historical build claims.
+
+## Historical Lean 4.33 build evidence
 
 The earlier external-review validation reran Task A and source extraction
 fresh; Task B explicitly reused all
@@ -83,7 +87,8 @@ regenerates the literal certificates. This extraction uses Python and SymPy;
 it is not a verified JSON parser or source compiler. Lean checks the resulting
 embedded mathematical statements. Exact versions are in `source-versions.json`.
 
-The package replay starts from manifested sources and uses `lean -t 0`.
+The historical package replay started from manifested sources and used `lean -t 0`.
+The current route uses ordinary `lake build`; see the linked validation report.
 It accepts only `propext`, `Quot.sound`, and `Classical.choice` in transitive
 axiom closures. No project axiom, `sorry`, `admit`, `native_decide`, or unsafe
 proof mechanism is permitted. Generated checkpoint theorems comprise much of

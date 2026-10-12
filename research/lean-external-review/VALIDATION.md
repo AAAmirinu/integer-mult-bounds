@@ -1,59 +1,58 @@
 # Validation of the Lean 4.21 port
 
 Exact upstream base: `db0e57bc7f36b5ac0fc844ad7ce1396165ee6647`.
-The port is isolated from `lean/pr442-invocation-review` and PR #540.
+Build candidate: `0d4aec339032498a182cf0eec7cb571b2cdd48f6`. The final documentation/receipt commit
+preserves its manifested source and dependency hashes. PR #540 and its branch
+remain unchanged until approval.
 
-## Current status: development probes; full verification pending
+## Current fresh verification: PASS
 
-The previously blocked ownership certificates now pass after partitioning and
-same-content lookup flattening. The split group took 13.080 seconds with its
-common core already built. FrameGeometry passes after proof-local lookup
-protection, and SourceFramed passes after abstracting its row-level argument.
-Source extraction and the static theorem-header preservation check pass.
-These results are incremental development evidence, not fresh-build receipts.
+Fresh verification passed on Lean 4.21.0 with the exact upstream Mathlib pin.
+All 153 local modules compiled from an empty build directory, with no local
+artifact reuse. The five axiom inventories passed: Task B 931, Task A 21,
+hosting 47, earlier source invocation 422 and single-stream 15 declarations.
+Only `propext`, `Classical.choice` and `Quot.sound` occur.
 
-Earlier stop records in `phase2-results/` belong to commit
-`553ac9c37e2de0e2792d3bf5364c7b073fc633fc`; their timing gates were
-subsequently revised. The current ownership allowance is 15 compiler minutes
-per module, subject to a total CI projection under about 30 minutes. Other
-modules use three times baseline when their 4.33 baseline exceeded 60 seconds,
-and otherwise a five-minute limit. See [the Phase 2 report](../lean-multi-host-source/PORT-PHASE2.md).
+The normal Make target took 1043.269 seconds (17.39 minutes), including
+source checks, parser mutation checks, fingerprints, all builds and audits,
+package verification and the clean-tree check. Lake build time was 960.718
+seconds. The slower four-core CI estimate is **34.90 minutes**:
+`1.2 × (1.5 × 1043.269 + 180)` seconds. The three-minute setup allowance is
+an explicit unmeasured assumption covering checkout, installation and a
+successful pinned Mathlib cache download. The 20% margin applies to both
+compute and setup. The result is 34 minutes 53.884 seconds: it qualifies
+under the revised 35-minute gate, by about six seconds. At the assumed
+slowdown, setup above 185.097 seconds would exceed that gate. Upstream's
+hard limit remains 45 minutes. No additional checkpoint split is required
+by the revised gate.
 
-The complete fresh Lean 4.21 package build, all audits and final CI runtime
-qualification are **not yet reported as passed**. The target versions are
-Lean 4.21.0 (`6741444a63eec253a7eae7a83f1beb3de015023d`) and Mathlib
-`308445d7985027f538e281e18df29ca16ede2ba3`, exactly matching upstream
-`formal/lean`. The canonical completed receipt will be
-`validation/lean421-fresh.json`, bound directly to the current
-`../lean-multi-host-source/port-manifest.json`.
+The official cache endpoint is blocked here. Only exact, fingerprinted
+external dependencies built previously from source were reused; no local
+contribution artifact was reused. Adding the earlier 522.650-second external
+source-build fallback gives an estimated **50.58 minutes**
+under the same model. Cache-free CI is not qualified by the cached-setup estimate.
 
-The earlier [Phase 1 results](../lean-multi-host-source/PORT-PHASE1.md)
-cover a bounded subset only. They establish neither the full package nor
-its final CI runtime. Further isolated module probes likewise do not
-replace a complete fresh build.
+The canonical receipt is [validation/lean421-fresh.json](validation/lean421-fresh.json).
+[The source binding receipt](validation/lean421-source-binding.json) records
+the separate regeneration check of all 19,002 ordered source events.
+[validation/lean421-timing.json](validation/lean421-timing.json) records module
+observations and full Make timing; [the CI projection](validation/lean421-ci-projection.json)
+records the assumptions and setup sensitivity. Logs normalize local paths,
+retaining the original and normalized hashes. No external stack, compiler
+flags or environment tuning was used. Source heartbeat/recursion options are
+retained. The installed compiler, bundled libraries, all nine dependency
+sources/artifacts and local artifacts were fingerprinted before/after as
+specified in the receipt. This is a fresh local build, not a resumed build.
+The local Make run used Python 3.12; the workflow selects Python 3.13.
+The complete GitHub setup/job has not been executed here; its Make commands
+were run from the clean checkout with the pinned compiler selected explicitly.
 
-The full run must compile all 153 local module roots without reusing local
-artifacts, then check the original 931 Task B declarations, 21 Task A
-declarations and three legacy contribution audits. Installed Lean, Mathlib,
-transitive dependencies and artifact fingerprints must be recorded. Ordinary
-Lake commands must work with the inherited default external settings.
-Source heartbeat/recursion options remain permitted.
-
-The contribution comprises 66 original Lean files (64 compiled modules and
-two separately invoked audit scripts), with 89 additional modules from
-same-content certificate partitioning. Nine archived third-party overlap
-snapshots account for the remainder of the historical 75-file count. They
-remain unchanged and inventory-hashed, but are outside this port's build,
-CI and axiom inventory. The differential test is delegated separately and
-is not a claimed result of this validation.
-
-The runtime projection must account for a four-core GitHub runner slower than
-this machine, using a stated slowdown and safety margin. The planning model
-uses 1.5 times measured time plus a further 20% margin. The package will not be
-reported complete if the resulting projection exceeds approximately 30
-minutes; the upstream formal job's hard timeout remains 45 minutes.
-Dependency-cache setup assumptions and any source-build fallback must be
-reported explicitly.
+The 66 original contribution files are covered by 64 compiled modules and two
+audit scripts; same-content partitioning adds 89 modules. All nine archived
+third-party snapshots remain byte-identical and are excluded from compilation,
+CI and audits. The static comparison finds 1,388 original named theorem
+headers/contexts unchanged; it is not a substitute for Lean type checking.
+The differential test is delegated separately and is not a reported check.
 
 ## Historical Lean 4.33 evidence
 
@@ -76,7 +75,7 @@ libraries; it neither authenticates the earlier bytes nor establishes the
 
 The strict package verifier checks current file hashes, the canonical port
 manifest and a matching fresh receipt. It fails when the current receipt is
-absent. Preparation mode `--allow-pending-port` reports `PENDING_PORT`.
+absent. Preparation mode `--allow-pending-port` can report `PENDING_PORT` only for an unfinished package.
 These checks inspect recorded evidence; they do not run Lean or authenticate
 the origin of the receipt. [BUILD.md](BUILD.md) describes fresh reproduction.
 

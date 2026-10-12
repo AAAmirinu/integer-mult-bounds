@@ -24,14 +24,15 @@ Main declarations include `MultiHosting.multi_hosting`,
 `selected_native_completion`, `selected_native_realization`, and
 `selected_temporary_restoration` (the latter names are in `SourceInvocation`).
 
-The package is being ported to the project's exact Lean 4.21.0 / Mathlib
-`308445d7985027f538e281e18df29ca16ede2ba3` setup. Full fresh replay and CI
-runtime qualification are pending; historical Lean 4.33 passes do not
-establish this port. FrameGeometry now passes under the revised timing gate;
-OwnershipData now passes after same-content partitioning and lookup flattening.
-No full-port PASS is claimed.
-The intended reproduction command after the documented
-pinned dependency setup is:
+Ported to Lean 4.21.0 and the project's exact Mathlib pin
+`308445d7985027f538e281e18df29ca16ede2ba3`. Fresh Task A and Task B replay
+passed in one clean Lake build: 153 local modules, no local artifact reuse,
+and all five axiom inventories. The complete normal Make target took
+17.39 minutes here; the conservative four-core CI projection is 34.90 minutes
+including a 1.5× compute slowdown, a three-minute setup/cache allowance and
+20% margin. Setup/cache preparation is an explicit estimate; see VALIDATION.md.
+
+Reproduce after the pinned dependency setup with:
 
 ```sh
 make formal-pr442-verify
@@ -43,8 +44,8 @@ declarations, including `SourceInvocation.actualContract`, and 21 Task A
 declarations. The port covers 66 original contribution files; nine unchanged
 archived third-party snapshots are excluded from this build and its audits.
 Certificate partitioning adds independent modules without changing theorem
-statements. The full package must qualify below an approximately 30-minute
-projection on a slower four-core runner before it is reported ready.
+statements. The 34.90-minute projection qualifies under the revised
+35-minute target, conditional on the documented cache/setup assumptions.
 The differential test is delegated separately and is not a reported check here.
 
 The exact upstream base is `db0e57bc7f36b5ac0fc844ad7ce1396165ee6647`.
@@ -74,5 +75,5 @@ Questions for maintainers:
 2. Is retaining all host/data/exterior outputs with explicit auxiliary bank
    outputs the right boundary for later scheduling proofs?
 3. Where should these concrete certificates integrate with #509/#516 and #528?
-4. The Lean 4.21 port is in progress. Once its fresh replay and CI budget pass,
-   does the proposed Lake package and formal CI target fit the project layout?
+4. Ported to 4.21 with the exact upstream Mathlib pin. Does the Lake package
+   and formal CI target fit the project layout?

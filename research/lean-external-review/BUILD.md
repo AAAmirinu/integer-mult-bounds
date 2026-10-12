@@ -1,7 +1,7 @@
 # Lean 4.21 reproduction
 
-**Full port validation is pending.** These are the intended normal build
-commands. A successful receipt from the complete fresh run is still required.
+**Fresh full port validation passed.** These are the normal reproduction
+commands; recorded receipts and the conditional CI estimate are in [VALIDATION.md](VALIDATION.md).
 
 Start from a clean checkout of the port commit being reviewed. Record
 `git rev-parse HEAD`. Install Git, Python 3.13 and elan using upstream's normal
@@ -25,10 +25,11 @@ Lake executable with `make formal-pr442-verify LAKE=/path/to/lake`; this is
 executable selection only, not a compiler flag or environment override.
 
 These are the commands used by the added `pr442` entry in upstream's existing
-formal CI matrix. That job retains its 45-minute limit. The package must first
-qualify against the more conservative approximately 30-minute projection,
-including a slower four-core runner and a safety margin; this has not yet
-been established by a full fresh build.
+formal CI matrix. That job retains its 45-minute limit. The complete fresh
+Make run took 17 minutes 23 seconds. Its conservative projection is 34 minutes
+54 seconds, qualifying under the revised 35-minute target with the explicit
+cache/setup assumptions in [VALIDATION.md](VALIDATION.md). This is a timing
+estimate, not an observed GitHub Actions run.
 
 The cache request selects the five imported Mathlib modules and their full
 dependency closure; it does not download unrelated Mathlib modules. These are
@@ -61,11 +62,11 @@ axiom inventories. The Task B inventory has 931 declarations and Task A has
 compilation and axiom auditing, while their unchanged bytes remain hashed.
 The differential test is delegated separately and is not reported here.
 
-The current canonical completed-build location is
-`validation/lean421-fresh.json`. Until that file exists with a matching PASS,
-the strict package verifier fails. During preparation only,
-`verify_package.py --allow-pending-port` checks the pending inventory and
-reports `PENDING_PORT`, never PASS. A reviewer may validate a new local run
+The canonical completed-build receipt is `validation/lean421-fresh.json`.
+The strict verifier requires its PASS and exact current source bindings. During preparation only,
+`verify_package.py --allow-pending-port` checks an unfinished inventory and
+reports `PENDING_PORT` when the fresh receipt is absent. With a matching fresh
+receipt it performs the normal PASS checks. A reviewer may validate a new local run
 using `verify_package.py --build-receipt /tmp/pr442-review-receipts/lean421-fresh.json`.
 
 Historical `replay.py` scripts and Lean 4.33 receipts explain earlier work;

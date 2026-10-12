@@ -1,20 +1,23 @@
 {
-  "status": "PENDING_PORT",
-  "completed_utc": "2026-10-12T14:24:26.442590+00:00",
-  "manifest_sha256": "b7e1d142abc0ba753f095e44ad3196430675a69ec0fd3f86635cf9332faeb58c",
-  "files_checked": 410,
-  "task_b_verified": false,
-  "port_verified": false,
-  "local_modules": 147,
+  "status": "PASS",
+  "completed_utc": "2026-10-12T16:30:15.028576+00:00",
+  "manifest_sha256": "d99fc305fea29b3f019e925493cd0e4503f72f24f9630ccb93aec60fc12a0b1d",
+  "files_checked": 538,
+  "task_b_verified": true,
+  "port_verified": true,
+  "local_modules": 153,
+  "support_modules": 89,
   "original_contribution_files": 66,
   "archived_exclusions": 9,
-  "planned_audit_counts": {
+  "audit_counts": {
     "task_a": 21,
     "task_b": 931,
     "hosting": 47,
     "source_invocation": 422,
     "single_stream": 15
   },
-  "notice": "Full fresh Lean 4.21 replay and CI runtime qualification are pending.",
+  "port_receipt_sha256": "8219e2238bd7e8fcd96cef3b13079fdaa52029d4e9501be81479d884a8fca7bd",
+  "port_replay_mode": "fresh",
+  "ci_runtime_qualification": "Separate measured projection; not established by this integrity check.",
   "scope": "Inventory, manifested sources and available fresh receipt bindings; PENDING_TASK_B or PENDING_PORT means current verification is unfinished. This verifier does not run Lean or authenticate build provenance."
 }

@@ -1,19 +1,15 @@
-## Lean 4.21 port in progress
-
-The port covers all 66 contribution Lean files. The nine Lean files under
-`review-receipts/external-overlap/raw/` are archived snapshots of other authors’
-work, retained byte-for-byte as review evidence. They are excluded from Lake
-build targets, CI compilation, and axiom audits; they are not compatibility
-inputs. The full port and CI runtime validation are not yet complete.
-See [PORT-PHASE2.md](PORT-PHASE2.md) for the revised timing gate, successful
-FrameGeometry diagnostic, OwnershipData partition and remaining validation gates.
-
 # One concrete invocation of whole-residual hosting
 
-**This branch contains a partial Lean 4.21 port.** See
-[PORT-PHASE1.md](PORT-PHASE1.md) for its separate Lake build, manifest and results.
-Historical 4.33 receipts are retained as the baseline; current manifests target
-4.21 and do not yet have a complete fresh-build receipt.
+**Lean 4.21 port: fresh verification PASS.** The exact upstream Mathlib pin,
+153 fresh local module builds and all five axiom inventories are recorded in
+[the current validation report](../lean-external-review/VALIDATION.md).
+No external stack, flags or environment tuning is needed. The CI projection
+is 34.90 minutes under its stated cache/setup assumptions.
+
+All 66 original contribution files are covered. Nine unchanged third-party
+snapshots under `review-receipts/external-overlap/raw/` are archival evidence,
+excluded from the Lake build, CI compilation and axiom audit. The historical
+4.33 receipts and Phase 1 probes are separate evidence, not reused local builds.
 
 This is Task B of the local verification contribution. Task A, the abstract
 multi-host theorem and recovery of the previous single-host theorem, is
@@ -74,7 +70,8 @@ The permanent axiom-audit inventory now includes the constructed definition
 `SourceInvocation.actualContract`, alongside the 930 named theorem declarations:
 931 declarations in total. The historical 930-declaration receipt does not
 certify that expanded inventory. The completed historical 4.33 fresh replay
-audits all 931 declarations; it does not certify this port. Status is reported in
+audits all 931 declarations. The fresh 4.21 replay also audits this complete
+inventory. Current status is reported in
 [`../lean-external-review/VALIDATION.md`](../lean-external-review/VALIDATION.md).
 
 The geometry uses exact integer witnesses, cast into any field with
