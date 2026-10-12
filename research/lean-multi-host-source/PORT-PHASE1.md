@@ -1,6 +1,11 @@
 # Lean 4.21 compatibility probe (Phase 1 only)
 
 This branch probes 12 existing modules and their 39 new generated node modules.
+**Phase 1 passed:** a clean checkout freshly compiled all 51 local modules in
+291.242 seconds and audited all 567 listed declarations in 17.800 seconds, with
+only standard axioms. See the [receipt and integrity checks](phase1-results/README.md)
+and [complete timing comparison](phase1-results/TIMINGS.md).
+
 It does **not** port or verify the complete Task A / Task B package. The original
 4.33 receipts, full-package manifests, replay scripts and PR description retain
 their historical meaning; they are not 4.21 validation receipts. Full-package
