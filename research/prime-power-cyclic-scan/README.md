@@ -14,7 +14,7 @@ Those worst-case algorithms are not implemented by the exploratory root
 nomination script. Exact rational phases and certified approximations of
 unit phases have explicit error and preparation budgets.
 
-The package separates four claims and their evidence:
+The package separates five claims and their evidence:
 
 - [SCAN-PROOF.md](SCAN-PROOF.md): two rounded scans solve a stable first-order
   periodic factor, with error independent of cycle length.
@@ -23,6 +23,9 @@ The package separates four claims and their evidence:
   achieving error at most `2^-128` for every cycle length.
 - [PROOF.md](PROOF.md): the general preparation, stability and precision
   argument, using the explicitly cited standard factorization theorem.
+- [WEIGHTED-PROOF.md](WEIGHTED-PROOF.md): independently varying unit phases
+  at every position, with the same length-independent precision bound.
+  Each phase oracle and its input cost is charged.
 - [LAYOUT.md](LAYOUT.md): arbitrary strides via two charged merge sorts.
   Their `O(L(B+log L)log L)` cost can become `O(Lp^2)` when `B` and `log L`
   scale with `p`; this is not a free tape permutation.
@@ -47,7 +50,8 @@ writes every stage log plus `RECEIPT.json`.
 
 Coverage includes 108 generic scan cases, 480 mixed-factor cases with 240
 independent dense comparisons, 345 budget instances, 8384 stride mappings,
-43 routed executions, and 22 malformed or corrupted controls in total.
+43 routed executions, 116 varying-coefficient/phase cases with 72 dense
+comparisons, and 28 malformed or corrupted controls in total.
 Small samples support the reference implementation; the written arguments
 and exact certificates establish the stated all-length bounds.
 

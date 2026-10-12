@@ -1,0 +1,11 @@
+{"radix": 3, "embedding": 1, "inner": 0, "status": "passed"}
+{"radix": 4, "embedding": 1, "inner": 0, "status": "passed"}
+{"radix": 5, "embedding": 1, "inner": 0, "status": "passed"}
+{"radix": 7, "embedding": 1, "inner": 0, "status": "passed"}
+{"radix": 8, "embedding": 1, "inner": 0, "status": "passed"}
+{"radix": 9, "embedding": 1, "inner": 1, "status": "passed"}
+{"radix": 9, "embedding": 2, "inner": 0, "status": "passed"}
+{"radix": 11, "embedding": 1, "inner": 2, "status": "passed"}
+{"radix": 13, "embedding": 1, "inner": 3, "status": "passed"}
+{"radix": 16, "embedding": 1, "inner": 4, "status": "passed"}
+{"status": "passed", "certificates": 10, "cases": 480, "dense_cases": 240, "controls": 7}

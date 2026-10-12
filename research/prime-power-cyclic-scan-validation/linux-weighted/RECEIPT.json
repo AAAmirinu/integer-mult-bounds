@@ -1,0 +1,64 @@
+{
+  "status": "PASS_ALL_FRESH_CYCLIC_SCAN_CERTIFICATES",
+  "manifest_sha256": "bccbfe9d741d2b19f50e7749f8b161fbd80de0bded2ab05047f705e58f03367d",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.17.0-1032-nvidia-aarch64-with-glibc2.39",
+  "seconds": 144.3436293040868,
+  "stages": [
+    {
+      "script": "scan.py",
+      "certificate": "GENERIC-CHECK.json",
+      "exit_code": 0,
+      "seconds": 0.17675260198302567,
+      "log_sha256": "0d4c689ef33e5814b965851ae61048daa0ca67b61f87b9cfb9b6df1b1ca5d195"
+    },
+    {
+      "script": "check.py",
+      "certificate": "CHECK.json",
+      "exit_code": 0,
+      "seconds": 127.46644192910753,
+      "log_sha256": "4c5012532bc3cf8478e07cded47c39f6023839cf0bb0097729b7680d8c314f46"
+    },
+    {
+      "script": "check_budgets.py",
+      "certificate": "BUDGETS.json",
+      "exit_code": 0,
+      "seconds": 0.09761045686900616,
+      "log_sha256": "c10847602c0bfd47b491bc4e1fe2094015576ddd914cf560a860d888a09c6844"
+    },
+    {
+      "script": "check_layout.py",
+      "certificate": "LAYOUT-CHECK.json",
+      "exit_code": 0,
+      "seconds": 3.067664606962353,
+      "log_sha256": "755150a81d929cee57c546b36aa15385b9aaabec176e78c6e231218b2d134659"
+    },
+    {
+      "script": "weighted.py",
+      "certificate": "WEIGHTED-CHECK.json",
+      "exit_code": 0,
+      "seconds": 13.530831523938105,
+      "log_sha256": "3c1edce0132112b148fbf897c787ed70c8cb24f41cda5be03d1e928f52337fdb"
+    }
+  ],
+  "artifacts": {
+    "GENERIC-CHECK.json": "fae46227f36d213872fc7f56e25952987377dfb1d93f6fcaf24a6744998e1819",
+    "CHECK.json": "a5029c74505ff454ce2587e159c4e4b96760b5064edcea735fcc4039170078b1",
+    "BUDGETS.json": "fcba284aabb7ef2305ff4ddacb2af8ba614ccd9d9735affe3af0c199658c7a9c",
+    "LAYOUT-CHECK.json": "a4a725575ad7fc6bc6db84f74d2a14d12700d2380597b8382ebe12ae1d152c54",
+    "WEIGHTED-CHECK.json": "e5bf83ef5a58e2a87712741b68615eee194a85039365e65e6c1426e805bf6f7d",
+    "STAGES.json": "c579e4318e52ff91c083204b732001a45e1c35a17a58a278af8ddedfc81c85d8"
+  },
+  "coverage": {
+    "generic_cases": 108,
+    "mixed_cases": 480,
+    "mixed_dense_comparisons": 240,
+    "budget_cases": 345,
+    "stride_mappings": 8384,
+    "stride_executions": 43,
+    "weighted_generic_cases": 36,
+    "weighted_kernel_cases": 80,
+    "weighted_dense_comparisons": 72
+  },
+  "scope": "Finite and symbolic-budget evidence; no new kappa, physical tape benchmark, Pan implementation or complete multiplication theorem."
+}

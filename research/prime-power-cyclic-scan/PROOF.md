@@ -224,9 +224,10 @@ For a phase exp(2 pi i h/m), [2] supplies that oracle after the cost of
 reading/reducing the integer phase description; a very long h or m is
 an extra input cost and is not covered by a bound that omits its length.
 
-This section is about a single constant unit phase. A varying diagonal
-gauge and the full transform's collection of phases still need their
-composition and preparation accounting.
+This section treats a single constant unit phase. WEIGHTED-PROOF.md
+extends the same bounds to a unit-weighted neighboring shift with an
+independent phase at each position. The full transform's collection of
+phases still needs its composition and preparation accounting.
 
 ## Scope and finite evidence
 

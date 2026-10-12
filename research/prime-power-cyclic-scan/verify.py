@@ -19,7 +19,7 @@ def main():
     need(a.work is not None,'--work is required')
     work=a.work.resolve();work.mkdir(parents=True,exist_ok=True);need(not any(work.iterdir()),'output directory must be empty')
     stages=[];start=time.monotonic()
-    for script,certificate in [('scan.py','GENERIC-CHECK.json'),('check.py','CHECK.json'),('check_budgets.py','BUDGETS.json'),('check_layout.py','LAYOUT-CHECK.json')]:
+    for script,certificate in [('scan.py','GENERIC-CHECK.json'),('check.py','CHECK.json'),('check_budgets.py','BUDGETS.json'),('check_layout.py','LAYOUT-CHECK.json'),('weighted.py','WEIGHTED-CHECK.json')]:
         stage_start=time.monotonic();log=work/(script+'.log')
         with log.open('w') as output:
             result=subprocess.run([sys.executable,'-I','-O','-B',str(P/script),'--out',str(work/certificate)],cwd=work,stdout=output,stderr=subprocess.STDOUT)
@@ -31,8 +31,8 @@ def main():
     need(pins()==manifest_hash,'source changed during replay')
     receipt=dict(status='PASS_ALL_FRESH_CYCLIC_SCAN_CERTIFICATES',manifest_sha256=manifest_hash,
                  python=sys.version,platform=platform.platform(),seconds=time.monotonic()-start,stages=stages,
-                 artifacts={name:sha(work/name) for name in ['GENERIC-CHECK.json','CHECK.json','BUDGETS.json','LAYOUT-CHECK.json','STAGES.json']},
-                 coverage=dict(generic_cases=108,mixed_cases=480,mixed_dense_comparisons=240,budget_cases=345,stride_mappings=8384,stride_executions=43),
+                 artifacts={name:sha(work/name) for name in ['GENERIC-CHECK.json','CHECK.json','BUDGETS.json','LAYOUT-CHECK.json','WEIGHTED-CHECK.json','STAGES.json']},
+                 coverage=dict(generic_cases=108,mixed_cases=480,mixed_dense_comparisons=240,budget_cases=345,stride_mappings=8384,stride_executions=43,weighted_generic_cases=36,weighted_kernel_cases=80,weighted_dense_comparisons=72),
                  scope='Finite and symbolic-budget evidence; no new kappa, physical tape benchmark, Pan implementation or complete multiplication theorem.')
     (work/'RECEIPT.json').write_text(json.dumps(receipt,indent=2)+'\n');print(json.dumps(receipt),flush=True)
 if __name__=='__main__':main()
