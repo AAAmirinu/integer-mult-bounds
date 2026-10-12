@@ -1,0 +1,36 @@
+name: Uniform rounded cyclic inverse
+on:
+  pull_request:
+    paths:
+      - 'research/prime-power-cyclic-scan/**'
+      - 'research/prime-power-cyclic-scan-validation/**'
+      - '.github/workflows/prime-power-cyclic-scan.yml'
+  push:
+    branches: ['codex/prime-power-cyclic-scan-20261012']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '${{ matrix.python }}'
+      - run: bash research/prime-power-cyclic-scan/verify.sh "${{ runner.temp }}/cyclic-scan"
+        env:
+          CYCLIC_SCAN_PYTHON: python
+      - run: git diff --exit-code
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cyclic-scan-python-${{ matrix.python }}
+          path: '${{ runner.temp }}/cyclic-scan'
