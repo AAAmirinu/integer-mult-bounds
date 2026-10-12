@@ -1,0 +1,32 @@
+[
+  {
+    "control": "changed-token",
+    "rejected": true,
+    "exit": 1,
+    "rejected_before_output": true
+  },
+  {
+    "control": "missing-input",
+    "rejected": true,
+    "exit": 1,
+    "rejected_before_output": true
+  },
+  {
+    "control": "missing-manifest",
+    "rejected": true,
+    "exit": 1,
+    "rejected_before_output": true
+  },
+  {
+    "control": "missing-expected",
+    "rejected": true,
+    "exit": 1,
+    "rejected_before_output": true
+  },
+  {
+    "control": "optimized-python",
+    "rejected": true,
+    "exit": 1,
+    "rejected_before_output": true
+  }
+]

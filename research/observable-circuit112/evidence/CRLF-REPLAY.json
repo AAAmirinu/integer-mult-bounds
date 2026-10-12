@@ -1,0 +1,163 @@
+{
+  "status": "PASS_FOUR_LEMMA_OBSERVABLE_CIRCUIT112",
+  "kappa": "366994670747703/250000000000000000",
+  "kappa_decimal": "0.001467978682990812",
+  "complex_lower": "735068406246315949703/500000000000000000000000",
+  "bit_lower": "391360506745414227149/250000000000000000000000",
+  "template_sha256": "59138bef1f8e23fb5f1b1692b137dbae801f51667da142973f7ec393f8b4c1dd",
+  "global_profile": {
+    "1": 176472,
+    "2": 13104,
+    "3": 40938,
+    "4": 6336,
+    "5": 20406,
+    "6": 9216,
+    "7": 132,
+    "8": 72,
+    "48": 230
+  },
+  "live": 7168,
+  "physical": 7738,
+  "deficit": 2560,
+  "stages": [
+    {
+      "stage": "01-factory",
+      "exit": 0,
+      "seconds": 0.5789999999979045
+    },
+    {
+      "stage": "02-kernel92-ancestry",
+      "exit": 0,
+      "seconds": 2.640999999974156
+    },
+    {
+      "stage": "03-pair35-ancestry",
+      "exit": 0,
+      "seconds": 1.687000000005355
+    },
+    {
+      "stage": "04-ranksector-ancestry",
+      "exit": 0,
+      "seconds": 1.672000000020489
+    },
+    {
+      "stage": "05-lemma1-circuit-retirement",
+      "exit": 0,
+      "seconds": 1.4689999999827705
+    },
+    {
+      "stage": "06-lemma2-observable-slice",
+      "exit": 0,
+      "seconds": 0.7810000000172295
+    },
+    {
+      "stage": "07-install-sliced-word",
+      "exit": 0,
+      "seconds": 0.2659999999741558
+    },
+    {
+      "stage": "08-exact-scalar-controls",
+      "exit": 0,
+      "seconds": 24.687000000005355
+    },
+    {
+      "stage": "09-scalar",
+      "exit": 0,
+      "seconds": 2.125
+    },
+    {
+      "stage": "10-emit-source120",
+      "exit": 0,
+      "seconds": 1.2030000000086147
+    },
+    {
+      "stage": "11-source-phases",
+      "exit": 0,
+      "seconds": 201.40599999998813
+    },
+    {
+      "stage": "12-source-wrappers",
+      "exit": 0,
+      "seconds": 1.312000000005355
+    },
+    {
+      "stage": "13-source-integration",
+      "exit": 0,
+      "seconds": 1.437999999994645
+    },
+    {
+      "stage": "14-source-replay",
+      "exit": 0,
+      "seconds": 8.578000000008615
+    },
+    {
+      "stage": "15-lemma3-isolated-restriction",
+      "exit": 0,
+      "seconds": 0.8440000000118744
+    },
+    {
+      "stage": "16-exact-word-transport",
+      "exit": 0,
+      "seconds": 0.5629999999946449
+    },
+    {
+      "stage": "17-emit-local112",
+      "exit": 0,
+      "seconds": 3.5
+    },
+    {
+      "stage": "18-independent-local112",
+      "exit": 0,
+      "seconds": 5.155999999988126
+    },
+    {
+      "stage": "19-local112-phases",
+      "exit": 0,
+      "seconds": 201.92199999999139
+    },
+    {
+      "stage": "20-local112-wrappers",
+      "exit": 0,
+      "seconds": 1.187000000005355
+    },
+    {
+      "stage": "21-restrict-global",
+      "exit": 0,
+      "seconds": 1.9070000000065193
+    },
+    {
+      "stage": "22-independent-global",
+      "exit": 0,
+      "seconds": 9.030999999988126
+    },
+    {
+      "stage": "23-lemma4-emit-whole-owners",
+      "exit": 0,
+      "seconds": 4.2810000000172295
+    },
+    {
+      "stage": "24-independent-whole-owners",
+      "exit": 0,
+      "seconds": 23.85899999999674
+    },
+    {
+      "stage": "25-independent-raw112",
+      "exit": 0,
+      "seconds": 4.157000000006519
+    },
+    {
+      "stage": "26-actual-prefix-invoice",
+      "exit": 0,
+      "seconds": 2.25
+    },
+    {
+      "stage": "27-two-moments-assembly",
+      "exit": 0,
+      "seconds": 1.2340000000258442
+    }
+  ],
+  "strict_constraints": 47,
+  "whole_owner_roles": 40320,
+  "scope": "Finite conditional construction, four mathematical lemma applications and complete independent replay. Unchanged PR493 bit operator and inherited all-size compiler/common-label/Lemma A/restored-row/precision/tape/analytic-transfer interfaces remain dependencies. No new Lean certification or unconditional multiplication theorem.",
+  "package_manifest_sha256": "0309620d5ee529ad05abb09fad6a6e78ba876604702f71a41782e63193a735ed"
+}

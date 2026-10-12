@@ -1,0 +1,485 @@
+{
+  "format": "sha256-lf-text-v1",
+  "files": {
+    "ADAPTATIONS.md": {
+      "mode": "lf-text",
+      "sha256": "abbf0c1008ed51f6a2158cdaa8f79f62c8e3674672f7e1f20ee7e9b93c6029dd"
+    },
+    "code/assemble.py": {
+      "mode": "lf-text",
+      "sha256": "71b4cbbbc5acdfe06ac67879cf54ea761e29e52143af1cd8410ad672a5cc190b"
+    },
+    "code/audit_112_independent.py": {
+      "mode": "lf-text",
+      "sha256": "9cbfa9b664ed515d06733eae7153e614cf6a5ebcadac627f602c0d46b10b0925"
+    },
+    "code/audit_async.py": {
+      "mode": "lf-text",
+      "sha256": "e17ad47bf9dd7ef7491b32f810007ee27183688d9bb588c17683e1927d336dcb"
+    },
+    "code/audit_async_invoice.py": {
+      "mode": "lf-text",
+      "sha256": "8d426c6ce104853b82c1a5a9c3230270773f82eb17975f32ee5b4e0ed1e71e72"
+    },
+    "code/audit_global_restriction.py": {
+      "mode": "lf-text",
+      "sha256": "8e409085c3b4d8dae28c2198852933e5a47ec56d1f61fb9245fe75120c283225"
+    },
+    "code/audit_local112.py": {
+      "mode": "lf-text",
+      "sha256": "62ffe854885457bf82b6c7f43526dc5902a9739721aaccdedfe6f5848feb8448"
+    },
+    "code/audit_port112_transport.py": {
+      "mode": "lf-text",
+      "sha256": "82c66ad6803d4356cac1472b7a8535826f95aba4fbc408d2f05d3a2b038fb97a"
+    },
+    "code/build_circuit_retirement.py": {
+      "mode": "lf-text",
+      "sha256": "78599e13a98ac0d91b3912e5f7bf84c0274312c541aa23dc70f73a342711be4a"
+    },
+    "code/build_port112.py": {
+      "mode": "lf-text",
+      "sha256": "0f13f01092b4c4494b86575a602b49f9ff02b6754de08d477fa5cc298326d290"
+    },
+    "code/emit_async.py": {
+      "mode": "lf-text",
+      "sha256": "e1afacfd0ddc5027d79837025c9d55e78cdd534c98b85fd16153f3dc9b6df452"
+    },
+    "code/emit_local112.py": {
+      "mode": "lf-text",
+      "sha256": "eefc76e0bee003015fe21ac685c2cce658033d5444add404d2d509c7d6f39bac"
+    },
+    "code/install_sliced_word.py": {
+      "mode": "lf-text",
+      "sha256": "55833feafa8e19b1cc17a78d3c3cf677b9ee36cde7b99182c11d0165b71e1aae"
+    },
+    "code/phases_local112.py": {
+      "mode": "lf-text",
+      "sha256": "a273c325ffd6793d5b63b79a289a9d2bbc9292e6940fb5a926924f3708627af4"
+    },
+    "code/restrict_global.py": {
+      "mode": "lf-text",
+      "sha256": "9c50f5aaabd5f9ab6c471b5e086616d85f84b0826d19f448487766b330d5d135"
+    },
+    "code/slice_reversible.py": {
+      "mode": "lf-text",
+      "sha256": "ac37ba795505024029240205d346c000dd5317a47f09069c7e02cf209c932489"
+    },
+    "evidence/CRLF-REPLAY.json": {
+      "mode": "lf-text",
+      "sha256": "0dc1b6a69a6e6fb05be4fd0fe9a0a7559fc70010357d3676e848cb2a49350f2b"
+    },
+    "evidence/EXACT-ASSEMBLY.json": {
+      "mode": "lf-text",
+      "sha256": "ba15a1ab2266c3b9b49460aa02f05d8425c1f007128efe5e706fa94b58dd8a85"
+    },
+    "evidence/INDEPENDENT-CRLF.json": {
+      "mode": "lf-text",
+      "sha256": "c2eecb12d2a442ba6a23785bcf9924daefc72663d21e26c9572b9f4516852917"
+    },
+    "evidence/INDEPENDENT-ENVELOPE.json": {
+      "mode": "lf-text",
+      "sha256": "aa80307dd02635136ae6e5fac207ee70f95b028f433bc530e8fc5ab689a0a375"
+    },
+    "evidence/INDEPENDENT-HOSTING.json": {
+      "mode": "lf-text",
+      "sha256": "e9ea83774566f2e0404f977deb9d4276077434dc4aaf87586a135365db0230b4"
+    },
+    "evidence/INDEPENDENT-PACKAGE.json": {
+      "mode": "lf-text",
+      "sha256": "18f52e95364286b16214899e36cf83f495caeb4e86d6ad7c9c9fbc50b7058cd1"
+    },
+    "evidence/INDEPENDENT-RAW112.json": {
+      "mode": "lf-text",
+      "sha256": "ceaed768ce48d812f3a0164d9772d6288afe1072669b095a03b3588433bf47d2"
+    },
+    "evidence/INDEPENDENT-TRANSFER.json": {
+      "mode": "lf-text",
+      "sha256": "415435b0cbb6eef346c04f4f71f96490a720bef0dda500d26b2dc366c974fdc5"
+    },
+    "evidence/OWNER-AND-CHARTS.json": {
+      "mode": "lf-text",
+      "sha256": "7f078441e1b78c8ba1e4c31535d986e0e8961944dba30ec91f2f3e13d4428062"
+    },
+    "evidence/PREFIX-AND-INVOICE.json": {
+      "mode": "lf-text",
+      "sha256": "20219b7276335966054cd92984eb460dff702ae55ff136e9e21d2ef450b9e182"
+    },
+    "evidence/RETIREMENT.json": {
+      "mode": "lf-text",
+      "sha256": "503a7bcb7c88538949ddbb7a1ac771099a8dcf991d0f25201781538de3102504"
+    },
+    "evidence/SCALAR-CONTROLS.json": {
+      "mode": "lf-text",
+      "sha256": "694562a51f8aa48752b18083a34dd5d13607eeaf04f83778e5a0275f90a71f37"
+    },
+    "evidence/SLICE.json": {
+      "mode": "lf-text",
+      "sha256": "3d0550ab4ef043a7ebe3a9ccbea80f47e04afca15a46dd6eed3cf798598af570"
+    },
+    "evidence/TRANSFER-CONTROLS.json": {
+      "mode": "lf-text",
+      "sha256": "faad5835ccd2c4ea4a40d880a9ad85c36dc40f6ffce68002b2c46d42aaab26d9"
+    },
+    "evidence/TRANSPORT-CONTROLS.json": {
+      "mode": "lf-text",
+      "sha256": "dee33f97a79032df835030bfece8ff1fe9376215157ed9bc0b3b4b3ade5e2f55"
+    },
+    "EXPECTED.json": {
+      "mode": "lf-text",
+      "sha256": "b0221dfebb7528e7fb86da3ca2a3cd24aac4793409f4671388c427fd2802b8d2"
+    },
+    "inputs/OWNERS.json.gz": {
+      "mode": "raw",
+      "sha256": "3d44ca39a391a90f06331f6857c0c79654f7c216c1f1ae3504856589249713de"
+    },
+    "inputs/PLAN.json": {
+      "mode": "lf-text",
+      "sha256": "ea47a91f9900662c7cda3a61397d39b5df69483f71668c938e256b42783de854"
+    },
+    "inputs/SELECTION.json": {
+      "mode": "lf-text",
+      "sha256": "8a73519dfba0dfd9ccbfc33efa4874cd60ae0330252c2ba5f26e2f19107e0c81"
+    },
+    "NOTICE.md": {
+      "mode": "lf-text",
+      "sha256": "170f2fa3e26f1b708566281d5eeff2ac660648ec0cab035e8057acaabef01a05"
+    },
+    "proof/LEMMA1-CIRCUIT-RETIREMENT.md": {
+      "mode": "lf-text",
+      "sha256": "4d5ee0ba58305a0157f0186e6e6586b8386ef61883cd11b6b0bc4770d632882e"
+    },
+    "proof/LEMMA2-OBSERVABLE-SLICE.md": {
+      "mode": "lf-text",
+      "sha256": "da6110ca4cd4b7a88a5dc2ec562a7f95f6d43e8c595e36d5a19e42beb5d89de0"
+    },
+    "proof/LEMMA3-RESTRICTION.md": {
+      "mode": "lf-text",
+      "sha256": "71f6ac7acbd1529ab3c60386bb62c73eb0c5b4d075cff4cd6bee5086fa560d5d"
+    },
+    "proof/LEMMA4-WHOLE-OWNERS.md": {
+      "mode": "lf-text",
+      "sha256": "feff6efc5217d100200c8e628f3bf4948126c1a74309f57964cc9f0c272dc314"
+    },
+    "PROOF.md": {
+      "mode": "lf-text",
+      "sha256": "227c8d974482039aaac0352a863d1d571eafa71988ba50120879f5244b15edd1"
+    },
+    "README.md": {
+      "mode": "lf-text",
+      "sha256": "b45ec13bceea9d1febc0afd114eb4fde9e3164c1a456c6f3dfd5dc83105e9f73"
+    },
+    "REPRODUCE.md": {
+      "mode": "lf-text",
+      "sha256": "892d55355ccb400eb30156984571991fb25cb7dcbb3a3fdc921689fbaebdd494"
+    },
+    "research-notes/HOSTING.md": {
+      "mode": "lf-text",
+      "sha256": "50a69cc54cfde7fd78f7afb534e5487b1d982e7c59ac554946280f13f548fbdc"
+    },
+    "RESEARCH.md": {
+      "mode": "lf-text",
+      "sha256": "192f9bebdd5630c89341f45da8a70806cd2179da89a88ddff99bf2bf103f2be8"
+    },
+    "SOURCES.json": {
+      "mode": "lf-text",
+      "sha256": "5cd4a3a39bfc53c331f18ef71bd2d330677219860c1a8b3db2ecf9e90c81a550"
+    },
+    "vendor/base120/code/assemble.py": {
+      "mode": "lf-text",
+      "sha256": "9db68cad2738d76052b25c8bdf6485edd6f14025bf47107d2425b10a2bdf69e0"
+    },
+    "vendor/base120/code/audit_async.py": {
+      "mode": "lf-text",
+      "sha256": "009494faa5470f2cf7099eef97b203ea59d0a2d703db7f9f5af49b78cf6fd56f"
+    },
+    "vendor/base120/code/audit_async_invoice.py": {
+      "mode": "lf-text",
+      "sha256": "75e30d516069140c958063e45905c84ad7e04c2029654592e5fa7c8725a7feba"
+    },
+    "vendor/base120/code/audit_kernel_scalar.py": {
+      "mode": "lf-text",
+      "sha256": "7a0e306013e8a198f2a77a0d582aab6cf14b5520756345143205272b9f1b0f3f"
+    },
+    "vendor/base120/code/build_kernel92.py": {
+      "mode": "lf-text",
+      "sha256": "6436f3dda352fcdaa772a84cf5c5825352b69f1322a1cfb04e9e785cd34954f0"
+    },
+    "vendor/base120/code/build_pair35.py": {
+      "mode": "lf-text",
+      "sha256": "4a36da4ee9407e5f84a0128ef49ed9e92bcdfc604d25a3c8b591b374eec65c62"
+    },
+    "vendor/base120/code/build_ranksector.py": {
+      "mode": "lf-text",
+      "sha256": "b73cbff0730a7182e3c4db75712de39ce2a14f01912a7a993ef9f66e3f720235"
+    },
+    "vendor/base120/code/construct_partial.py": {
+      "mode": "lf-text",
+      "sha256": "8b9a7f1bb69626d76fec9e915134cec7199a70b53656723ce49ecc47f4644afd"
+    },
+    "vendor/base120/code/construct_ranksector.py": {
+      "mode": "lf-text",
+      "sha256": "0b535b717ea3d15cf7e86b096a9a95fc92d71748cd5f937d1989001a3d2ec996"
+    },
+    "vendor/base120/code/emit_async.py": {
+      "mode": "lf-text",
+      "sha256": "830b3d8307e58b3c6daaf8f4ad6d96e4dadf1eaea2cd7cfeaf585d7de58a5d74"
+    },
+    "vendor/base120/code/run_portable.py": {
+      "mode": "lf-text",
+      "sha256": "322d29d43dbee8130cde15d4bf05396698b5e3dfe3735813899db91cc0ba7955"
+    },
+    "vendor/base120/evidence/EXACT-ASSEMBLY.json": {
+      "mode": "lf-text",
+      "sha256": "de523955c6389eaa3b04b1c1b148cd4fbd3f571ae4c099a22229082300ffd2e5"
+    },
+    "vendor/base120/evidence/INDEPENDENT-FINAL-REVIEW.json": {
+      "mode": "lf-text",
+      "sha256": "ab6d0f4956d9d549dddbc66399577751a73a9b668621adf3c59370aefcef0ab5"
+    },
+    "vendor/base120/evidence/INDEPENDENT-NOMINATION.json": {
+      "mode": "lf-text",
+      "sha256": "4e60b72694d34e52b8f9d359f2bb15e2632f2463319b9981d4ef2dbc0edfdbf4"
+    },
+    "vendor/base120/evidence/INDEPENDENT-PREFIX.json": {
+      "mode": "lf-text",
+      "sha256": "684afeb120c67adee465f2b697cf7edfa353093373abdf99c3e5e4543a96e258"
+    },
+    "vendor/base120/evidence/PAIR35-COMMUTATOR-SCREEN.json": {
+      "mode": "lf-text",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "vendor/base120/evidence/PORTABLE-REPLAY.json": {
+      "mode": "lf-text",
+      "sha256": "68baffddb477681f28cca2aba2fb40b5dc3aa56921c399b5604941a7aee9256d"
+    },
+    "vendor/base120/evidence/PREFIX-AND-INVOICE.json": {
+      "mode": "lf-text",
+      "sha256": "b4379c3dcafdae3afa0370cfc0c1e01b30470147bf42beb16e6a836ef9870347"
+    },
+    "vendor/base120/evidence/RANKSECTOR-COMMUTATOR-SCREEN.json": {
+      "mode": "lf-text",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "vendor/base120/evidence/TRANSPORT-CONTROLS.json": {
+      "mode": "lf-text",
+      "sha256": "dac6d930c28edfb65bcda7d3c311af64d64bb8665cb4495fe25813d488e4c3a7"
+    },
+    "vendor/base120/EXPECTED.json": {
+      "mode": "lf-text",
+      "sha256": "275e101f35d82bf075dccea2c64432cdb81785b4cfc395363a1937a6bcad9de2"
+    },
+    "vendor/base120/inputs/ASYNC-6.json": {
+      "mode": "lf-text",
+      "sha256": "9b4b8f125a19ec5741050ca62167c0a4ea2e7f80880f4635c1b6e6c99ea506e8"
+    },
+    "vendor/base120/inputs/ASYNC-OWNERS.json.gz": {
+      "mode": "raw",
+      "sha256": "5e1ac46a2390c8355ad4b05a154c8c95ed4dd47e87f620d549c5deb26bfa95f7"
+    },
+    "vendor/base120/inputs/KERNEL84-SELECTION.json": {
+      "mode": "lf-text",
+      "sha256": "08b2e803d4bbdd73e6c56b52a07990c4dc53ea4384955148dcca9f3317b5c9c7"
+    },
+    "vendor/base120/inputs/KERNEL92-SELECTION.json": {
+      "mode": "lf-text",
+      "sha256": "c8e6400a8f4780be3aef6a643d856f956e97447161d33493ae651070e2f033fb"
+    },
+    "vendor/base120/inputs/PAIR-SELECTION.json": {
+      "mode": "lf-text",
+      "sha256": "e818377083be1b581da718ae4cdb0741f074df313c0813e4239377b3754f25a5"
+    },
+    "vendor/base120/inputs/PAIR-SPEC.json": {
+      "mode": "lf-text",
+      "sha256": "751fad3214c819635216df2dab77b682c6a1798d1d71a959ba4e7392aab9b8c0"
+    },
+    "vendor/base120/inputs/PR493-EXPECTED.json": {
+      "mode": "lf-text",
+      "sha256": "3494ba83280cc86548fe0cc6695c50d23e6b6ffca85aeb1a33337c1196e280cb"
+    },
+    "vendor/base120/inputs/RETIME-FRAMES.json.gz": {
+      "mode": "raw",
+      "sha256": "b40337a563bd21c27240fa2742b53fd81a3ec94a414021e9f4a190983498d39a"
+    },
+    "vendor/base120/inputs/work/complex-network/hamming/PACKET-PROGRAMS.json.gz": {
+      "mode": "raw",
+      "sha256": "d833ae0390d165d7da0c639a3c7aeb77156c2ddb52447087cb49b9d03b19e9b9"
+    },
+    "vendor/base120/inputs/work/complex-network/hamming/PROTOTYPE.json": {
+      "mode": "lf-text",
+      "sha256": "327d2a868043e846381aa58a33053c24425e8cad522ff401b10ec8af1d649a3f"
+    },
+    "vendor/base120/inputs/work/complex-nine-native/DATA-PHASES.json": {
+      "mode": "lf-text",
+      "sha256": "f621f6d4296cb215f334830356c5f79fe10d6d04d15b3ccda76ba0885ab67d0a"
+    },
+    "vendor/base120/inputs/work/complex-nine-native/GLOBAL-TEMPLATE.json.gz": {
+      "mode": "raw",
+      "sha256": "1b84904a31a733aab9bfdda3f528c06719f590d2133a43687a8bded955dc991e"
+    },
+    "vendor/base120/inputs/work/higher-stage-e8/verified/gcert1-e8-retimed.json.gz": {
+      "mode": "raw",
+      "sha256": "77b0c0fa19ef3da1c7316010e13493aa5eea1a50c3506eddc08f7480e659878b"
+    },
+    "vendor/base120/inputs/work/odd-stages/clifford_exact.py": {
+      "mode": "lf-text",
+      "sha256": "2982ead07721e83358dc67c6f49c2b4c16a236a6bebdfd72f58221be1f5d0962"
+    },
+    "vendor/base120/inputs/work/pr361/code/engines/base_two_moment.py": {
+      "mode": "lf-text",
+      "sha256": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098"
+    },
+    "vendor/base120/inputs/work/pr361/code/engines/moment.py": {
+      "mode": "lf-text",
+      "sha256": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482"
+    },
+    "vendor/base120/inputs/work/pr361/code/engines/outer.py": {
+      "mode": "lf-text",
+      "sha256": "c1ebb52163a7219504c728a5c2b098bf1e50bf20148a2879c5a74c3cadc7c03c"
+    },
+    "vendor/base120/inputs/work/pr370-source/research/e8-bit/data/bit/bitE8-r865.json.gz": {
+      "mode": "raw",
+      "sha256": "1fb726ea3818fe0837cceb0dd22a71a0814f064e5e781628104610d6468e0e55"
+    },
+    "vendor/base120/LICENSE": {
+      "mode": "lf-text",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "vendor/base120/MANIFEST.json": {
+      "mode": "lf-text",
+      "sha256": "115cee362577680784b93bf749e75796239febffceb2a634f5a0cddcfe97fd75"
+    },
+    "vendor/base120/NOTICE.md": {
+      "mode": "lf-text",
+      "sha256": "4ffa0c80335f0756770719dd7e4952a9888158d8a6612ca11eb32ef7ed72c839"
+    },
+    "vendor/base120/PORTABILITY.md": {
+      "mode": "lf-text",
+      "sha256": "7a0e37d4e5c2de1532dd7e1e3fca694c426c078abc565b9a2038e238fdacddaa"
+    },
+    "vendor/base120/PROOF.md": {
+      "mode": "lf-text",
+      "sha256": "f85864df91f484145e3e03fb6319577d20ca3da2628f9f1ca9c98759920ab008"
+    },
+    "vendor/base120/README.md": {
+      "mode": "lf-text",
+      "sha256": "79d43a5749539e663087467767ca71a23519f56c365819d86fde2fa015890bd0"
+    },
+    "vendor/base120/references/PR493-NOTICE.md": {
+      "mode": "lf-text",
+      "sha256": "8fbdd13889f5bdd54f300f0e34e3d2ee5f720fc40d2178a06db6f551baee94d5"
+    },
+    "vendor/base120/research-notes/CORRELATED-REPAIR.md": {
+      "mode": "lf-text",
+      "sha256": "7f9030f1cc41ea665374983789b19b5bb8b3df8eb3d38220836ced261ffab103"
+    },
+    "vendor/base120/research-notes/PORTABLE-REPLAY.md": {
+      "mode": "lf-text",
+      "sha256": "3139b1e008548c0c3c95a066af824cd37bb4589272ed3d618f027b36eddfe80c"
+    },
+    "vendor/base120/research-notes/RANKSECTOR-PROOF.md": {
+      "mode": "lf-text",
+      "sha256": "04750cfbd56b5cc8c5e255c95b101ba47ba19f46e29b5d09836ea4a1662e9fc8"
+    },
+    "vendor/base120/research-notes/RANKSECTOR-SOURCES.json": {
+      "mode": "lf-text",
+      "sha256": "124139285b46df0152d1b7860d718d1cdf39cb4d89ce6ef71b95857ab707e69c"
+    },
+    "vendor/base120/research-notes/ROOT-WORD-PROOF.md": {
+      "mode": "lf-text",
+      "sha256": "a4d2a698b4689c1f47141455a3cc1bb99eed5d13127393bdbf9f8c410c92d19f"
+    },
+    "vendor/base120/research-notes/ROOT-WORD-SOURCES.json": {
+      "mode": "lf-text",
+      "sha256": "f2418eb3a17a24e440c371c574aad9bb5744def7d4a131168b14133dfc063f7a"
+    },
+    "vendor/base120/research-notes/ROUNDING-SOURCES.json": {
+      "mode": "lf-text",
+      "sha256": "fe265cc86d6d1ec9179cc507763ee6bf6a468dbb10436af69f92a05737699314"
+    },
+    "vendor/base120/research-notes/SWITCH-SCREEN.json": {
+      "mode": "lf-text",
+      "sha256": "e56131a1a73b658b21b55d07ebabf7fee4fd5c31ebd9db178e0575ceeee45124"
+    },
+    "vendor/base120/research-notes/SWITCH-SOURCES.json": {
+      "mode": "lf-text",
+      "sha256": "07a56cd5022f4d55f6d05e3ec37f18ceac239008e086f9d665b8f1f2a3a35e4a"
+    },
+    "vendor/base120/research-notes/transvection-window.cpp": {
+      "mode": "lf-text",
+      "sha256": "3d67c62b41434af7f004ff4785e2dd83ccd05d35dfd16868cc1b116bbb476033"
+    },
+    "vendor/base120/research-notes/Y-SWITCH-PROOF.md": {
+      "mode": "lf-text",
+      "sha256": "0d4d0b5efc79b1d4f43541a7a9134ba60a8790706211fb209efcccb15008a1ab"
+    },
+    "vendor/base120/RESEARCH.md": {
+      "mode": "lf-text",
+      "sha256": "642f32416dfe1b829ef30c1500340e4aaa234dcb56963b9bd928371384d84c67"
+    },
+    "vendor/base120/SOURCES.json": {
+      "mode": "lf-text",
+      "sha256": "75134bc6b58374f22c2804e54a9ce863a467aa9d6d6e5a275e7b0ddb8fac0f9e"
+    },
+    "vendor/base120/vendor/audit_scalar_invoice.py": {
+      "mode": "lf-text",
+      "sha256": "652eed65fe8f72ab486dcdbe761f401f8a2d43530f2fb0c5c7777be488cd4648"
+    },
+    "vendor/base120/vendor/complex/e8-complex-gauge-kernel/code/adapters_gk.py": {
+      "mode": "lf-text",
+      "sha256": "a8d6d9ccf20c261cb0b216baa9906f2f7689e1bb1dca070313a60b2cb6d3043c"
+    },
+    "vendor/base120/vendor/complex/e8-complex-gauge-kernel/code/audit_gk.py": {
+      "mode": "lf-text",
+      "sha256": "cb79c6b788333a031e14c7f134823f5f6147d7f1dcc6e5e3b1420743c32f8ebc"
+    },
+    "vendor/base120/vendor/complex/e8-complex-gauge-kernel/code/emit_gk.py": {
+      "mode": "lf-text",
+      "sha256": "4e415bff1d9f154496ed38e6889929b600aa0f3d583a375e8ca257ad8f51fa23"
+    },
+    "vendor/base120/vendor/complex/e8-complex-gauge-kernel/code/gk_common.py": {
+      "mode": "lf-text",
+      "sha256": "e68d190fd436b2f3955decb590adb53344d5d4ea0a19d62d86df1e4b55ecd198"
+    },
+    "vendor/base120/vendor/complex/e8-complex-gauge-kernel/code/gk_word.py": {
+      "mode": "lf-text",
+      "sha256": "f027a9273bcf4e0971258c160b7d3b3c196366b32a529cff6e6a0e666b03826b"
+    },
+    "vendor/base120/vendor/complex/e8-complex-gauge-kernel/code/integrate_gk.py": {
+      "mode": "lf-text",
+      "sha256": "2e807893180a3716b36a81f1a7d933bd55f2299489b6f236ba5c644d87739209"
+    },
+    "vendor/base120/vendor/complex/e8-complex-gauge-kernel/code/onehost_gk.py": {
+      "mode": "lf-text",
+      "sha256": "416b318c1b6b8c7b72e24713b1b18d8772ec368e042a321b4418c63a74711590"
+    },
+    "vendor/base120/vendor/complex/e8-complex-gauge-kernel/code/replay_gk.py": {
+      "mode": "lf-text",
+      "sha256": "2f064890bdde1eb9ea2c9a339e8ae9713dcffe0274be4b1ef6208ad2b7ba5a2a"
+    },
+    "vendor/base120/vendor/complex/e8-complex-gauge-kernel/data/selections/gauge80-kernel42.json": {
+      "mode": "lf-text",
+      "sha256": "436e4acadee227dbfcb66386c9ccaa38e68054e8ed4870bb174eeb41363375bb"
+    },
+    "vendor/base120/vendor/complex/split-centres-global/code/complex_phases_full.py": {
+      "mode": "lf-text",
+      "sha256": "0f2795aaffafe0c64d77f3748ef2109a3c42c58da867e4cf269a0a8cb6109466"
+    },
+    "vendor/base120/vendor/complex/split-centres-global/vendor/clifford_exact.py": {
+      "mode": "lf-text",
+      "sha256": "2982ead07721e83358dc67c6f49c2b4c16a236a6bebdfd72f58221be1f5d0962"
+    },
+    "vendor/base120/verify.py": {
+      "mode": "lf-text",
+      "sha256": "80e80f5caea4d803dcf720cc198ac20d39e5aeebf7596997820b478f93a0d461"
+    },
+    "vendor/base120/verify.sh": {
+      "mode": "lf-text",
+      "sha256": "2b1b51f757d8ddf81941c8c96007a2256336856c2e017bcf6c3a37576c82bc8b"
+    },
+    "verify.py": {
+      "mode": "lf-text",
+      "sha256": "97846058b48b8c661687b53666785d978b6ce8c6a7d268313b6b2f989449d650"
+    }
+  }
+}

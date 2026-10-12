@@ -1,0 +1,50 @@
+{
+  "status": "PASS_HOSTING_FINAL_BOUND_OUTPUT_REVIEW",
+  "kappa": "366994670747703/250000000000000000",
+  "kappa_decimal": "0.001467978682990812",
+  "complex_lower": "735068406246315949703/500000000000000000000000",
+  "template_sha256": "59138bef1f8e23fb5f1b1692b137dbae801f51667da142973f7ec393f8b4c1dd",
+  "roles": 40320,
+  "source_widths": {
+    "8": 154,
+    "9": 388,
+    "7": 18
+  },
+  "global_profile": {
+    "1": 176472,
+    "2": 13104,
+    "3": 40938,
+    "4": 6336,
+    "5": 20406,
+    "6": 9216,
+    "7": 132,
+    "8": 72,
+    "48": 230
+  },
+  "rank_deficit": 2560,
+  "physical": 7738,
+  "live": 7168,
+  "actual_prefix_bits": 206,
+  "charged_prefix_bits": 512,
+  "completed_stages": 27,
+  "receipts": {
+    "ASYNC-AUDIT.json": {
+      "sha256": "7f078441e1b78c8ba1e4c31535d986e0e8961944dba30ec91f2f3e13d4428062",
+      "status": "PASS_INDEPENDENT_ASYNC_WHOLE_OWNER_CONTROLLER_PHASES_AND_SPECTATORS"
+    },
+    "INDEPENDENT112-RAW-AUDIT.json": {
+      "sha256": "12aa69602c0e43bba2c3fb5867ce85188a2fe5066f99e8cc31e77bf694c0932b",
+      "status": "PASS_INDEPENDENT_RAW_112_RESTRICTION_LOCAL_COLUMNS_CHARTS_WINDOWS_OWNERS_AND_PROFILE"
+    },
+    "PREFIX-AND-INVOICE.json": {
+      "sha256": "20219b7276335966054cd92984eb460dff702ae55ff136e9e21d2ef450b9e182",
+      "status": "PASS_INDEPENDENT_ASYNC_SCALAR_PREFIX_AND_FINITE_INVOICE"
+    },
+    "EXACT-ASSEMBLY.json": {
+      "sha256": "51a11c4ae3baba6fbcf734bd1964620cf999e6efb2679ccdf1338ff4034394d8",
+      "status": "PASS_ASYNC_COMPLEX_AND_CITED_BIT_EXACT_ASSEMBLY"
+    }
+  },
+  "sigma_serialization_fix": "Emitter stream now sorts role records by actual call order and helper, matching independent auditor; complete chart dictionary and template were unchanged. Old raw file-order digest mismatch was caught and corrected, not bypassed.",
+  "scope": "Independent final source-width/profile/owner/template/receipt binding. Uses the completed full operator and invoice audits, without duplicating the complete pipeline. Full CRLF portability replay remains parent-owned."
+}

@@ -1,0 +1,95 @@
+{
+  "actual_orthogonal_charts": 3214,
+  "all_owners_per_call_distinct": 784,
+  "deficit": 2560,
+  "deleted_canonical_ports": [
+    0,
+    13,
+    22,
+    35,
+    40,
+    51,
+    54,
+    119
+  ],
+  "deleted_scalar_operations": {
+    "cut": 8
+  },
+  "helpers": 560,
+  "idle_remainders": {
+    "3": 3354,
+    "5": 3270,
+    "7": 60,
+    "48": 230
+  },
+  "inputs": {
+    "F:\\proof\\kappa-fourlemmas-20261011\\crlf-package\\research\\observable-circuit112\\inputs\\OWNERS.json.gz": "3d44ca39a391a90f06331f6857c0c79654f7c216c1f1ae3504856589249713de",
+    "F:\\proof\\kappa-fourlemmas-20261011\\crlf-replay\\local112\\CANONICAL-WORD.json.gz": "14e744f3459a71ead7eabad310dcfde6692c2fb67b63d35ad3a991bec137db23",
+    "F:\\proof\\kappa-fourlemmas-20261011\\crlf-replay\\local112\\LOCAL-PROGRAMS.json.gz": "dd7995ed040140c25a205623c81576fc192dc9e257e726f9117b22b2a562d160",
+    "F:\\proof\\kappa-fourlemmas-20261011\\crlf-replay\\local112\\RESIDUAL-ADAPTERS.json": "06a889a51fd2833dd465ed9c660b35fa8f68496ff7ed34c931d17c4f7551e1b2",
+    "F:\\proof\\kappa-fourlemmas-20261011\\crlf-replay\\source120\\base\\split-centres\\CANONICAL-WORD.json.gz": "af2a744105e2b0a6d024d0523217889c3cb83a4f97557256eb9f205d0e1ece22",
+    "F:\\proof\\kappa-fourlemmas-20261011\\crlf-replay\\source120\\base\\split-centres\\GLOBAL-TEMPLATE.json.gz": "6670098578c8649706d1d6016be2eab21bd2e4be6b6754b50d212c1c57e49ac1",
+    "F:\\proof\\kappa-fourlemmas-20261011\\crlf-replay\\source120\\base\\work\\complex-nine-native\\DATA-PHASES.json": "f621f6d4296cb215f334830356c5f79fe10d6d04d15b3ccda76ba0885ab67d0a"
+  },
+  "invocations": 72,
+  "live": 7168,
+  "local": {
+    "backward": {
+      "columns": 784,
+      "events": 21583,
+      "profile": {
+        "1": 2451,
+        "2": 182,
+        "3": 522,
+        "4": 88,
+        "5": 238,
+        "6": 128,
+        "7": 1,
+        "8": 1
+      },
+      "scalar_macros": 16223
+    },
+    "forward": {
+      "columns": 784,
+      "events": 21583,
+      "profile": {
+        "1": 2451,
+        "2": 182,
+        "3": 522,
+        "4": 88,
+        "5": 238,
+        "6": 128,
+        "7": 1,
+        "8": 1
+      },
+      "scalar_macros": 16223
+    }
+  },
+  "no_emitter_or_hosting_checker_imported": true,
+  "no_nominated_profile_or_windows_used": true,
+  "paid_profile": {
+    "1": 176472,
+    "2": 13104,
+    "3": 40938,
+    "4": 6336,
+    "5": 20406,
+    "6": 9216,
+    "7": 132,
+    "8": 72,
+    "48": 230
+  },
+  "pending_axes_covered": 349200,
+  "physical": 7738,
+  "rank_mass": 520704,
+  "residual_widths": {
+    "7": 18,
+    "8": 154,
+    "9": 388
+  },
+  "same_local_frames_and_residual_wrappers_as_PR514": true,
+  "scope": "Independent finite restriction, all rational scalar columns, nested local frames, fixed whole-owner schedule, actual port charts and paid histogram. The inherited all-size/compiler, common-label realization, precision/tape and analytic transfer interfaces remain conditions.",
+  "seconds": 3.687999999994645,
+  "status": "PASS_INDEPENDENT_RAW_112_RESTRICTION_LOCAL_COLUMNS_CHARTS_WINDOWS_OWNERS_AND_PROFILE",
+  "v": 112,
+  "whole_owner_roles": 40320
+}
