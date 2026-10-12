@@ -1,5 +1,7 @@
 Title: Check one literal PR442 invocation with multi-host Lean certificates
 
+[Plain-language explainer with diagrams](https://github.com/cheesegrader/integer-mult-bounds/blob/lean/pr442-explainer/research/lean-external-review/EXPLAINER.md).
+
 Upstream has incorporated #442 and the #509/#516 abstract stream-model
 results. This contribution checks concrete obligations for one literal PR442
 R747 invocation (stage 2, replica 0, pair 0 at
