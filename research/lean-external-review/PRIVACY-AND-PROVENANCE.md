@@ -24,10 +24,12 @@ No old identifying commit IDs or personal Git identity are repeated here.
 
 ## Current versus historical verification
 
-The current fresh-build receipts belong under `validation/`; their status is
-reported in [VALIDATION.md](VALIDATION.md). They must match the current
-manifests directly. Task B's receipt is pending until the ongoing fresh run
-succeeds. The permanent inventory now includes `actualContract`.
+The current fresh-build receipts are under `validation/`; their results are
+reported in [VALIDATION.md](VALIDATION.md). Both directly match their current
+manifests. The [Task B receipt](validation/task-b.json) records 52 fresh modules,
+zero reuse, and 931 axiom reports including `SourceInvocation.actualContract`.
+It fingerprints the installed external libraries used for this new compilation;
+it does not authenticate the library bytes used by the historical build.
 
 The old metadata-reanchoring helper and receipt were retired from this new
 delivery. Their [historical record](https://github.com/cheesegrader/integer-mult-bounds/blob/377012d9e1d350c29fc47669e82415249429f60c/research/lean-external-review/validation/metadata-reanchor.json)

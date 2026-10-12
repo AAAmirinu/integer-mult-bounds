@@ -13,7 +13,15 @@ forward orientation. It uses the inherited R747 word: 19,002 events,
 arbitrary, correlated dirty payloads. The original and relocated templates
 contain the identical local word.
 
-**Historical build status: PASS.** The coherent source build checked all 52 modules
+**Current fresh build: PASS.** The replay completed at 2026-10-12 03:19:37 UTC
+from an empty project build directory, without resume: all 52 modules were
+freshly compiled and all 931 declarations audited, including
+`SourceInvocation.actualContract`. No project artifacts were reused.
+The [fresh receipt](../lean-external-review/validation/task-b.json) directly
+matches the current manifest and records the installed Lean/Mathlib and
+dependency fingerprints. It does not claim a fresh build of Mathlib itself.
+
+**Historical build status: PASS.** The earlier coherent source build checked all 52 modules
 (50 in this directory and two local dependencies) with `lean -t 0` and
 audited 930 named theorem closures, using only standard
 Lean axioms. Hash-checked resume retained successful builds from the same
@@ -49,8 +57,8 @@ The final statements are collected in `SourceInvocation.lean`:
 The permanent axiom-audit inventory now includes the constructed definition
 `SourceInvocation.actualContract`, alongside the 930 named theorem declarations:
 931 declarations in total. The historical 930-declaration receipt does not
-certify that expanded inventory. The current fresh-build result and receipt
-are reported separately in
+certify that expanded inventory. The completed fresh replay audits all 931
+declarations; its result and receipt are reported separately in
 [`../lean-external-review/VALIDATION.md`](../lean-external-review/VALIDATION.md).
 
 The geometry uses exact integer witnesses, cast into any field with

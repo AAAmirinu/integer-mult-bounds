@@ -24,16 +24,19 @@ Main declarations include `MultiHosting.multi_hosting`,
 `selected_native_completion`, `selected_native_realization`, and
 `selected_temporary_restoration` (the latter names are in `SourceInvocation`).
 
-Fresh Task B replay in progress; receipt will be added to this PR.
-
-Task A passed fresh: six modules, zero reuse, 21 axiom reports. Task B is
-building all 52 modules from a new empty directory without `--resume`, with
-931 planned axiom reports including `actualContract`. No final Task B PASS
-is claimed. Reproduce after the [dependency setup](https://github.com/cheesegrader/integer-mult-bounds/blob/lean/pr442-invocation-review/research/lean-external-review/README.md):
+Both tasks passed fresh without resume: Task A compiled six modules and
+audited 21 declarations; Task B compiled 52 modules and audited 931
+declarations, including `SourceInvocation.actualContract`. No project modules
+were reused. Task B completed at 2026-10-12 03:19:37 UTC; its
+[fresh receipt](https://github.com/cheesegrader/integer-mult-bounds/blob/lean/pr442-invocation-review/research/lean-external-review/validation/task-b.json)
+matches the current manifest and records unchanged installed toolchain/library
+fingerprints before and after compilation. The replay used pinned, fingerprinted
+Lean/Mathlib dependencies; it does not claim a fresh Mathlib rebuild or a
+`leanchecker --fresh` audit of the complete imported environment.
+Reproduce after the [dependency setup](https://github.com/cheesegrader/integer-mult-bounds/blob/lean/pr442-invocation-review/research/lean-external-review/README.md):
 
 ```sh
 python3 research/lean-external-review/reproduce.py \
-  --allow-pending-task-b \
   --lean /path/to/lean-4.33.0-linux/bin/lean \
   --mathlib /path/to/mathlib4 \
   --build-dir /tmp/review-task-b-fresh \

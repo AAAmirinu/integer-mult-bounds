@@ -54,7 +54,7 @@ git clone --branch lean/pr442-invocation-review --single-branch \
   https://github.com/cheesegrader/integer-mult-bounds.git review-checkout
 cd review-checkout
 git rev-parse HEAD
-python3 research/lean-external-review/verify_package.py --allow-pending-task-b
+python3 research/lean-external-review/verify_package.py
 ```
 
 Record the printed commit to pin the reviewed snapshot, then follow the
@@ -73,15 +73,14 @@ cd review-checkout
 git checkout --detach db0e57bc7f36b5ac0fc844ad7ce1396165ee6647
 git apply --check /absolute/path/to/review.patch
 git apply /absolute/path/to/review.patch
-python3 research/lean-external-review/verify_package.py --allow-pending-task-b
+python3 research/lean-external-review/verify_package.py
 ```
 
 Alternatively, unpack the supplied `integer-mult-lean-review.tar.gz`, enter
 `integer-mult-lean-review/`, and run `sha256sum -c SHA256SUMS` followed by the
 same package check. This archive already contains the complete sources; do not
 apply the patch inside it. No private checkout or historical commit is needed.
-The explicit pending option reports `PENDING_TASK_B` while the fresh build is
-unfinished; it does not assert a Task B proof PASS.
+The ordinary package check requires matching fresh receipts for both tasks.
 
 Both routes include all local dependencies, particularly
 `research/lean-whole-residual-hosting/CoordinateSwap.lean`, `Hosting.lean`,
@@ -134,7 +133,6 @@ From the review root after dependency setup:
 
 ```sh
 /tmp/lean-review-python/bin/python research/lean-external-review/reproduce.py \
-  --allow-pending-task-b \
   --lean /tmp/lean-review-deps/lean-4.33.0-linux/bin/lean \
   --mathlib /tmp/lean-review-deps/mathlib4 \
   --build-dir /tmp/lean-review-task-b-fresh \
@@ -147,8 +145,12 @@ declarations with `lean -t 0`. Task A audits 21 declarations. Task B audits
 931, including `SourceInvocation.actualContract`. It records installed
 toolchain/library fingerprints and requires them to remain unchanged during
 execution. Only standard Lean axioms are accepted.
-The pending flag permits reproduction from this snapshot while its packaged
-Task B receipt is absent. It does not enable reuse or bypass an invalid receipt.
+The packaged [Task B receipt](validation/task-b.json) records 52 freshly
+compiled modules, zero reuse, and all 931 axiom reports; the
+[Task A receipt](validation/task-a.json) records six fresh modules and 21
+reports. "Fresh" describes project compilation against installed, fingerprinted
+dependencies. The project replay does not claim to rebuild Mathlib or run
+`leanchecker --fresh` across the complete imported environment.
 
 The current validation uses no resume option. An interrupted future build may
 use the runner's separately documented resume facility; its receipt must say
@@ -161,10 +163,9 @@ manifests directly; no metadata-reanchoring exception is used.
 From a clean, committed Git checkout:
 
 ```sh
-python3 research/lean-external-review/export_review.py --allow-pending-task-b \
+python3 research/lean-external-review/export_review.py \
   --output-dir /tmp/lean-review-delivery
 python3 research/lean-external-review/validate_delivery.py \
-  --allow-pending-task-b \
   --delivery-dir /tmp/lean-review-delivery \
   --receipt /tmp/lean-review-delivery/delivery-validation.json
 ```

@@ -166,9 +166,12 @@ ideas. This review inspected those receipts and hashes; it did not repeat
 the full approximately 46-minute package build. See [VALIDATION.md](VALIDATION.md)
 for the hash-checked resume history and [BUILD.md](BUILD.md) for reproduction.
 The current permanent inventory adds `SourceInvocation.actualContract`, a
-constructed definition, to those 930 named theorem declarations. That
-931-declaration inventory requires its own recorded audit; the historical
-receipt is not evidence that the added declaration was audited. Current
+constructed definition, to those 930 named theorem declarations. The separate
+fresh replay completed at 2026-10-12 03:19:37 UTC and audited all 931
+declarations, with 52 modules freshly compiled and zero reuse. Its
+[`actualContract` axiom report](../lean-external-review/validation/task-b.json)
+lists only `propext`, `Classical.choice`, and `Quot.sound`. The historical
+receipt is not evidence that this added declaration was audited. Current
 fresh-build evidence is recorded separately in
 [`../lean-external-review/VALIDATION.md`](../lean-external-review/VALIDATION.md).
 
