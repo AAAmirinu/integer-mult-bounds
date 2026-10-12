@@ -1,7 +1,7 @@
 {
   "status": "PENDING_TASK_B",
-  "completed_utc": "2026-10-12T02:39:44.505633+00:00",
-  "manifest_sha256": "06750464e1c2b65d460af064b52e655e1079cfc93c3fd0c7762cd7537542316b",
+  "completed_utc": "2026-10-12T02:45:55.014547+00:00",
+  "manifest_sha256": "a0f7af93ccc66ee617d6e75eaadb67a970dda65d877a8f8bfe41ca702b5e6570",
   "files_checked": 252,
   "task_b_verified": false,
   "task_b_notice": "Fresh Task B replay in progress; receipt will be added to this PR.",

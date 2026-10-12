@@ -14,7 +14,7 @@ helpers and one explicitly clean, restored private temporary.
 Merged #516 already proves abstract realization for arbitrary global state
 under hypotheses. The contribution here is checking selected concrete
 invocation obligations in Lean; it is not the first arbitrary-state theorem.
-The [overlap review](research/lean-external-review/MERGED-OVERLAP.md) covers
+The [overlap review](https://github.com/cheesegrader/integer-mult-bounds/blob/lean/pr442-invocation-review/research/lean-external-review/MERGED-OVERLAP.md) covers
 incorporated #509/#516 and draft #528.
 
 Main declarations include `MultiHosting.multi_hosting`,
@@ -29,7 +29,7 @@ Fresh Task B replay in progress; receipt will be added to this PR.
 Task A passed fresh: six modules, zero reuse, 21 axiom reports. Task B is
 building all 52 modules from a new empty directory without `--resume`, with
 931 planned axiom reports including `actualContract`. No final Task B PASS
-is claimed. Reproduce after the [dependency setup](research/lean-external-review/README.md):
+is claimed. Reproduce after the [dependency setup](https://github.com/cheesegrader/integer-mult-bounds/blob/lean/pr442-invocation-review/research/lean-external-review/README.md):
 
 ```sh
 python3 research/lean-external-review/reproduce.py \

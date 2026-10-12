@@ -128,12 +128,14 @@ and symlinked search subtrees. Its fixture bytes are explicitly not Lean proofs.
 The two additional original checks inspected the actual repository receipt and
 retained build. No full Task B rebuild was launched for these policy checks.
 
-The final validation receipts are
-[Task A](../lean-external-review/validation/task-a.json) and
-[Task B](../lean-external-review/validation/task-b.json). Task A recompiles its six
-modules. Task B's receipt distinguishes all historical modules reused from any
-newly compiled modules and reruns the 930-declaration axiom inventory through
-`lean -t 0`. The inventory permits only the documented standard axioms.
+The historical packaging receipts are
+[Task A](https://github.com/cheesegrader/integer-mult-bounds/blob/377012d9e1d350c29fc47669e82415249429f60c/research/lean-external-review/validation/task-a.json) and
+[Task B](https://github.com/cheesegrader/integer-mult-bounds/blob/377012d9e1d350c29fc47669e82415249429f60c/research/lean-external-review/validation/task-b.json).
+That run freshly compiled Task A's six modules; Task B reused 52 modules and
+reran the historical 930-declaration axiom inventory with `lean -t 0`.
+These are not the new upstream-based fresh replay. Its separate 931-entry
+inventory and current status are in
+[external-review validation](../lean-external-review/VALIDATION.md).
 
 This final inventory is not a `leanchecker --fresh` rechecking of every constant
 in the complete imported Lean/Std/Mathlib environment. Lean's supplied checker

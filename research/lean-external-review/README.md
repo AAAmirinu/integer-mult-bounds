@@ -2,7 +2,7 @@
 
 This package contains Task A (a multi-host contract with exact single-host
 recovery) and Task B (its connection to one literal PR442 forward invocation).
-The contribution is prepared on a new local branch based on upstream
+The contribution is prepared on a new review branch based on upstream
 `db0e57bc7f36b5ac0fc844ad7ce1396165ee6647`. This snapshot is prepared for
 a draft PR. The earlier public branch is unchanged.
 
@@ -44,13 +44,28 @@ remains unestablished.
 
 ## Delivery and patch order
 
-The new branch is `lean/pr442-invocation-review`. Its final commit is recorded
+The public branch is
+[`lean/pr442-invocation-review`](https://github.com/cheesegrader/integer-mult-bounds/tree/lean/pr442-invocation-review),
+proposed in [PR #540](https://github.com/CrocSwap/integer-mult-bounds/pull/540).
+Obtain the current sources directly:
+
+```sh
+git clone --branch lean/pr442-invocation-review --single-branch \
+  https://github.com/cheesegrader/integer-mult-bounds.git review-checkout
+cd review-checkout
+git rev-parse HEAD
+python3 research/lean-external-review/verify_package.py --allow-pending-task-b
+```
+
+Record the printed commit to pin the reviewed snapshot, then follow the
+dependency and fresh-build instructions below. The generated patch/archive
+are local exports, not published release assets. Their final commit is recorded
 in an exported `delivery.json`; embedding that commit's own hash in a tracked
 file would be circular. The historical public checkpoint
 [`377012d`](https://github.com/cheesegrader/integer-mult-bounds/tree/377012d9e1d350c29fc47669e82415249429f60c)
 does not contain this new validation.
 
-**Apply only the supplied cumulative `review.patch**, once, to this exact base:
+**Apply only the supplied cumulative `review.patch`**, once, to this exact base:
 
 ```sh
 git clone https://github.com/CrocSwap/integer-mult-bounds.git review-checkout
