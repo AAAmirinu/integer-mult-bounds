@@ -1,0 +1,9 @@
+PASS pivot-swap
+PASS cold44-exact
+PASS layered scalar word /home/cfky/offload/layered-cold60-20261013T0241/output/layered54/layers/FULL-WORD.json.gz
+PASS layer-end-controls
+PASS native
+PASS ledgers
+PASS local-replay
+PASS wrappers
+DONE /home/cfky/offload/layered-cold60-20261013T0241/output/layered54/local

@@ -1,0 +1,51 @@
+{
+  "status": "PASS_INDEPENDENT_ASYNC_OWNERS_AND_PROFILE",
+  "template_sha256": "8883b0b295c38b15c874daa8f60fcada6b3c7b8451515df4687827e73650d4f1",
+  "paid_profile": {
+    "1": 183456,
+    "2": 30672,
+    "3": 30384,
+    "4": 11088,
+    "5": 4032,
+    "8": 576,
+    "48": 2409
+  },
+  "live": 7168,
+  "physical": 7670,
+  "rank_mass": 520704,
+  "deficit": 2560,
+  "hosted_residuals": 35424,
+  "banked_residuals": 0,
+  "all_live_owners_per_call_distinct": true,
+  "owners_per_call": 716,
+  "actual_helper_owner_charts": 35424,
+  "actual_73column_sigmas": 8342,
+  "cross_replica_helper_roles": 27744,
+  "explicit_idle_remainder_children": 2409,
+  "source_idle_children_charged": 16128,
+  "source_artifacts": {
+    "work/complex-nine-native/DATA-PHASES.json": "c5916ff312678f12aba403847643fbbc29f643acec60bdf836fa56cd3e8251fa",
+    "providers/gauge44/CANONICAL-WORD.json.gz": "59974716995aa21b3ebcb5bd5ae08c4f6e355a061535d9492245ea72972b4074",
+    "providers/gauge44/LOCAL-PROGRAMS.json.gz": "cf659b69449c9cea8ab776a18bbd1b09149336af4342ddfaf532365c4d450454",
+    "providers/gauge44/LOCAL-CHECKS.json": "08a14daa7cb4b2762bb914cfc39c602bd3dd67dc4385918864f86c1cbc0cc276",
+    "providers/gauge44/INDEPENDENT-LOCAL-REPLAY.json": "3044f44a1032ba0a64be1cd07e3bae0449bc5c145e08b8243c94a6889f25e5ab",
+    "providers/gauge44/RESIDUAL-ADAPTERS.json": "0f2f39d58e7fb0844369dc0ea25e98ba35f0da9de4ee815015df66fad94af936",
+    "providers/gauge44/CLIFFORD-RECIPES.json": "d86f27e8e19477ef9d3bf2d93a59fc7f622d83dc8ffc393cf3648971282dc338",
+    "providers/gauge44/CLIFFORD-REVIEW.json": "65dbbc0feef4a0bba686bccc069be37dec437b1a13c09bb89cfd071bab697a71"
+  },
+  "provider_phase_semantic_sha256": {
+    "gauge44": "3c95ff51a1487ac00e8e794cd86bb23f4895700c0b115a5bebf645cb6a886282"
+  },
+  "provider_artifact_semantic_sha256": {
+    "gauge44": {
+      "CANONICAL-WORD.json.gz": "a8baac160ade1f8d14d0239a754a760fde00e449ab9697b447e0194e8a0ce4e4",
+      "LOCAL-PROGRAMS.json.gz": "1a5a83828bd3b46a58d62bd9877107d16c867e585640481f2a72f1600cb5560f",
+      "LOCAL-CHECKS.json": "ab46d0a19a26ed6ca240278cd5ffdc9e0a2b389fadd0b218d2a541e39bea48f0",
+      "INDEPENDENT-LOCAL-REPLAY.json": "5ad94fb3413ec176c4f1e663638ed3d87fef076c05f9588c3abe3be1062d1a21",
+      "CLIFFORD-RECIPES.json": "d86f27e8e19477ef9d3bf2d93a59fc7f622d83dc8ffc393cf3648971282dc338",
+      "CLIFFORD-REVIEW.json": "3c95ff51a1487ac00e8e794cd86bb23f4895700c0b115a5bebf645cb6a886282",
+      "RESIDUAL-ADAPTERS.json": "8b792e77a8eb993e48374aae4b98f22ced30f6deda3b05d0a753e0538ff3f32d"
+    }
+  },
+  "controller_audit_sha256": "4a6d4eb1bf90e9b6dc09f342fd8617aa62911dbee6881d6e584d3c06fb52c456"
+}

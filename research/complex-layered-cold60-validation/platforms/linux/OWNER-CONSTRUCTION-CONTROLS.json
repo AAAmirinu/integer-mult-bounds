@@ -1,0 +1,38 @@
+{
+  "status": "PASS_OWNER_RECONSTRUCTION_AND_MUTATIONS",
+  "positive": 1,
+  "rejected": [
+    {
+      "name": "window removed",
+      "reason": "complete unique windows"
+    },
+    {
+      "name": "wrong pattern count",
+      "reason": "pattern count"
+    },
+    {
+      "name": "invalid pattern width",
+      "reason": "pattern widths"
+    },
+    {
+      "name": "slot outside window",
+      "reason": "slot window"
+    },
+    {
+      "name": "wrong slot width",
+      "reason": "slot width multiset"
+    },
+    {
+      "name": "wrong flow count",
+      "reason": "integer flow ledger"
+    },
+    {
+      "name": "duplicate time",
+      "reason": "unique time in a physical bin"
+    }
+  ],
+  "owners_sha256": "26be4d793c1ce6b1df5c5d1b00fb9959682214d3c32c03b52a086c9ea609d9f3",
+  "idle": {
+    "48": 2409
+  }
+}

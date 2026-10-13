@@ -1,0 +1,74 @@
+{
+  "status": "PASS_INDEPENDENT_ASYNC_WHOLE_OWNER_CONTROLLER_PHASES_AND_SPECTATORS",
+  "template_sha256": "8883b0b295c38b15c874daa8f60fcada6b3c7b8451515df4687827e73650d4f1",
+  "complex_template_sha256": "8883b0b295c38b15c874daa8f60fcada6b3c7b8451515df4687827e73650d4f1",
+  "complex_live": 7168,
+  "complex_profile": {
+    "1": 183456,
+    "2": 30672,
+    "3": 30384,
+    "4": 11088,
+    "5": 4032,
+    "8": 576,
+    "48": 2409
+  },
+  "complex_hosted_residuals": 35424,
+  "physical": 7670,
+  "rank_mass": 520704,
+  "deficit": 2560,
+  "entering_helper_roles": 19008,
+  "cross_replica_helper_roles": 27744,
+  "one_owner_per_complete_invocation": true,
+  "helper_busy_family_window_checks": 35424,
+  "complete_invocations": 72,
+  "actual_orthogonal_73column_maps": 8342,
+  "actual_sigma_stream_sha256": "3907c300655757118b701314cfa8290bc2678079cae9c73b59c46ec3afd80e17",
+  "all_actual_residual_and_spectator_charts": true,
+  "idle_remainders": 2409,
+  "mutations_rejected": [
+    "alias two whole owners",
+    "helper on active data family",
+    "owner in private namespace",
+    "wrong residual width",
+    "wrong spectator coordinate",
+    "omit idle remainder",
+    "understate physical reserve",
+    "gauge44: wrong provider at its invocation",
+    "gauge44: stale per-call local program hash",
+    "gauge44: stale serialized provider program",
+    "gauge44: unbound residual adapter hash",
+    "gauge44: wrong provider width registry",
+    "gauge44: wrong per-call residual width",
+    "gauge44: wrong sweep provider",
+    "gauge44: entering helper width silently restored to nine"
+  ],
+  "mutation_controls_run": true,
+  "provider_phase_semantic_sha256": {
+    "gauge44": "3c95ff51a1487ac00e8e794cd86bb23f4895700c0b115a5bebf645cb6a886282"
+  },
+  "provider_artifact_semantic_sha256": {
+    "gauge44": {
+      "CANONICAL-WORD.json.gz": "a8baac160ade1f8d14d0239a754a760fde00e449ab9697b447e0194e8a0ce4e4",
+      "LOCAL-PROGRAMS.json.gz": "1a5a83828bd3b46a58d62bd9877107d16c867e585640481f2a72f1600cb5560f",
+      "LOCAL-CHECKS.json": "ab46d0a19a26ed6ca240278cd5ffdc9e0a2b389fadd0b218d2a541e39bea48f0",
+      "INDEPENDENT-LOCAL-REPLAY.json": "5ad94fb3413ec176c4f1e663638ed3d87fef076c05f9588c3abe3be1062d1a21",
+      "CLIFFORD-RECIPES.json": "d86f27e8e19477ef9d3bf2d93a59fc7f622d83dc8ffc393cf3648971282dc338",
+      "CLIFFORD-REVIEW.json": "3c95ff51a1487ac00e8e794cd86bb23f4895700c0b115a5bebf645cb6a886282",
+      "RESIDUAL-ADAPTERS.json": "8b792e77a8eb993e48374aae4b98f22ced30f6deda3b05d0a753e0538ff3f32d"
+    }
+  },
+  "widths_by_provider": {
+    "gauge44": {
+      "4": 52,
+      "5": 48,
+      "7": 42,
+      "8": 122,
+      "9": 228
+    }
+  },
+  "provider_counts": {
+    "gauge44": 72
+  },
+  "all_provider_program_phase_and_wrapper_bindings": true,
+  "scope": "Independent exact asynchronous chronology, per-replica phase projection, owner/chart/paid-profile audit. Uses per-invocation local providers bound by exact scalar, phase and residual-wrapper receipts; all-size compilation and complete coefficient invoice are separate inherited obligations."
+}

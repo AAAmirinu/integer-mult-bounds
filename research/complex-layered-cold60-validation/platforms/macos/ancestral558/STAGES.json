@@ -1,0 +1,56 @@
+[
+  {
+    "name": "reconstruct552-and-promote8",
+    "exit_code": 0,
+    "seconds": 11.575352458050475,
+    "log_sha256": "b7b035547780f64e33ea2432fd2cc79ed5795bf88c9791cbb913d9ec2a7c6a2b"
+  },
+  {
+    "name": "all-columns-native-frames",
+    "exit_code": 0,
+    "seconds": 0.38905254111159593,
+    "log_sha256": "8f0c4441c8848025758d25a7b8152e035933becdc43c2c259292c30b08bf34eb"
+  },
+  {
+    "name": "emit-both-reflected-ledgers",
+    "exit_code": 0,
+    "seconds": 0.3623643749160692,
+    "log_sha256": "f382385a67f705b446978a73fc6492ce127cb2ae76011e87e36fdbe9977f4347"
+  },
+  {
+    "name": "independent-local-and-controls",
+    "exit_code": 0,
+    "seconds": 1.1120871659368277,
+    "log_sha256": "b694b4b22abb9d1de9a70bbbdf9e9b0e030ec00a7eddc264e4c18376dd859cee"
+  },
+  {
+    "name": "normalized-wrappers",
+    "exit_code": 0,
+    "seconds": 0.7252114999573678,
+    "log_sha256": "284cce3149354d057b4e2f04163535c0d8b0a924898e5b771ba8af2740314154"
+  },
+  {
+    "name": "all-phase-recipes",
+    "exit_code": 0,
+    "seconds": 82.80062074994203,
+    "log_sha256": "22b953cb664b5fe252a0e3bbfec96c883367835edf340aa100ab7e7ff0994b46"
+  },
+  {
+    "name": "literal-owners-full-invoice",
+    "exit_code": 0,
+    "seconds": 5.863896124996245,
+    "log_sha256": "a3a241bd9052d250ef132177587b8281523398f952c9c227b501e8b8c77a2dc2"
+  },
+  {
+    "name": "two-engine-exact-assembly",
+    "exit_code": 0,
+    "seconds": 0.1589321669889614,
+    "log_sha256": "b50e71a1c084e221ca32b43001f5383c8cffb09d72e66b1436f22aa240795a9c"
+  },
+  {
+    "name": "assembly-admission-controls",
+    "exit_code": 0,
+    "seconds": 0.16580566694028676,
+    "log_sha256": "9cc0577eb648247a02f4352eaf5187000a8378657f388e8ffa8cbeb55a43b9ec"
+  }
+]

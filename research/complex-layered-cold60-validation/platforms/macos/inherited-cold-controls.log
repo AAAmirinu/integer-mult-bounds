@@ -1,0 +1,346 @@
+{
+  "status": "PASS_CHANGED_WORD_ALL_COLUMNS_AND_NATIVE_FRAMES",
+  "input_content_sha256": "31a26ced7b67d5570d71ac1b528145affda69025e68b502b7d1067ddc4fc63fa",
+  "routing_content_sha256": "7c84ac65c8b37173aa4293934f041915895e8ec30595844cc1534e2a19ae0d25",
+  "canonical_content_sha256": "a8baac160ade1f8d14d0239a754a760fde00e449ab9697b447e0194e8a0ce4e4",
+  "live_columns_each_orientation": 716,
+  "helpers": 492,
+  "compensation_additions": 7220,
+  "scalar_operations": 40451,
+  "center_rank_sum": 64,
+  "local_profile": {
+    "1": 2548,
+    "2": 426,
+    "3": 422,
+    "4": 154,
+    "5": 56,
+    "8": 8
+  },
+  "local_rank_mass": 5626,
+  "frames": 1041,
+  "directed_edges": 3017,
+  "tau": 43,
+  "target_port_order_matches_baseline": true,
+  "seconds": 1.530822042026557,
+  "scope": "Fresh exact forward and inverse-transpose scalar replay on every arbitrary input; all native frame chains and dyadic primitives. Phase lowering, wrappers, global owners and global assembly are separate.",
+  "hyperplane_ended_helpers": [
+    225,
+    227,
+    241,
+    243,
+    257,
+    259,
+    273,
+    275,
+    277,
+    282,
+    289,
+    291,
+    293,
+    298,
+    305,
+    307,
+    309,
+    310,
+    311,
+    314,
+    321,
+    323,
+    325,
+    327,
+    330,
+    337,
+    339,
+    341,
+    346,
+    353,
+    355,
+    357,
+    362,
+    369,
+    371,
+    373,
+    378,
+    385,
+    387,
+    389,
+    394,
+    401,
+    403,
+    417,
+    419,
+    433,
+    435,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    467,
+    468,
+    477,
+    490,
+    491,
+    504,
+    506,
+    514,
+    515,
+    516,
+    518,
+    519,
+    537,
+    538,
+    539,
+    549,
+    560,
+    561,
+    562,
+    563,
+    572,
+    573,
+    574,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    589,
+    590,
+    591,
+    592,
+    593,
+    594,
+    595,
+    596,
+    597,
+    598,
+    599,
+    600,
+    601,
+    602,
+    603
+  ],
+  "early_cleanup_gates": 132,
+  "cold_hyperplane_ended_helpers": [
+    225,
+    227,
+    241,
+    243,
+    257,
+    259,
+    273,
+    275,
+    277,
+    282,
+    289,
+    291,
+    293,
+    298,
+    305,
+    307,
+    309,
+    310,
+    311,
+    314,
+    321,
+    323,
+    325,
+    327,
+    330,
+    337,
+    339,
+    341,
+    346,
+    353,
+    355,
+    357,
+    362,
+    369,
+    371,
+    373,
+    378,
+    385,
+    387,
+    389,
+    394,
+    401,
+    403,
+    417,
+    419,
+    433,
+    435,
+    504,
+    506,
+    516,
+    518,
+    519,
+    579,
+    580,
+    581,
+    582,
+    589,
+    590,
+    591,
+    592
+  ],
+  "refactored_cleanup_gates": 27096,
+  "refactored_cleanup": {
+    "cold_low_frame_ended_helpers": [
+      225,
+      227,
+      241,
+      243,
+      257,
+      259,
+      273,
+      275,
+      277,
+      282,
+      289,
+      291,
+      293,
+      298,
+      305,
+      307,
+      309,
+      310,
+      311,
+      314,
+      321,
+      323,
+      325,
+      327,
+      330,
+      337,
+      339,
+      341,
+      346,
+      353,
+      355,
+      357,
+      362,
+      369,
+      371,
+      373,
+      378,
+      385,
+      387,
+      389,
+      394,
+      401,
+      403,
+      417,
+      419,
+      433,
+      435,
+      504,
+      506,
+      516,
+      518,
+      519,
+      579,
+      580,
+      581,
+      582,
+      589,
+      590,
+      591,
+      592
+    ],
+    "construction": "Exact grouped row-span tail and cold-coordinate repair; native admission required",
+    "entering_low_frame_ended_helpers": [
+      537,
+      549,
+      560,
+      561,
+      572,
+      573,
+      597,
+      599
+    ],
+    "exact_non_target_isolation_checked": true,
+    "forward_absorption_A_indices": [],
+    "forward_absorptions": 0,
+    "high_inverse": "dyadic_sparse_Gauss_Jordan",
+    "kind": "source_branch_gauge_and_retired_completion_cold44",
+    "lower_frame_gates": 132,
+    "new_cold_ends": 44,
+    "premix_gates": 1576,
+    "premix_target_writes": 0
+  }
+}
+rejected premix placed in the zero-frame precondition (before the cold wrappers) | touches a cold hyperplane-ended helper
+rejected one premix gate dropped (the compensation then reads a cold-ended helper) | touches a cold hyperplane-ended helper
+rejected one lower-frame cleanup gate dropped (gate and its early_cleanup entry) | 'arbitrary-dirt endpoint'
+rejected one FULL-remainder gate dropped | 'arbitrary-dirt endpoint'
+rejected lower-frame gate coefficient changed | 'arbitrary-dirt endpoint'
+rejected lower-frame gate moved into the FULL remainder (touches a cold-ended helper at FULL) | cleanup on non-FULL end
+rejected lower-frame gate frame below its registers' frames | 'nonmonotone'
+rejected cold end at another dim-4 frame | hpe cone pre-check (row / column)
+rejected profile pin: cold end dropped (valid FULL end, but the reported profile counts the low end) | paid local profile differs from the reported local_profile
+rejected extra cold end on a premixed partner (the compensation reads it before its wrapper) | touches a cold hyperplane-ended helper
+rejected refactored-cleanup marker removed (literal-inverse rule applies) | cleanup is not the literal reversed inverse
+rejected remainder gate retargeted to a target register | refactored cleanup touches a target
+rejected non-dyadic remainder coefficient | 'arbitrary-dirt endpoint'
+rejected profile not updated (paid climbs misreported) | paid local profile differs from the reported local_profile
+entering end 537 premix gate None
+rejected entering end 537: lower-frame gate dropped (gate and its early_cleanup entry) | 'arbitrary-dirt endpoint'
+rejected entering end 537: profile pin: end dropped (valid FULL end, but the reported profile counts the low end) | paid local profile differs from the reported local_profile
+rejected entering end 537: end at another hyperplane | hpe cone pre-check (row / column)
+entering end 549 premix gate None
+rejected entering end 549: lower-frame gate dropped (gate and its early_cleanup entry) | 'arbitrary-dirt endpoint'
+rejected entering end 549: profile pin: end dropped (valid FULL end, but the reported profile counts the low end) | paid local profile differs from the reported local_profile
+rejected entering end 549: end at another hyperplane | hpe cone pre-check (row / column)
+entering end 560 premix gate 82
+rejected entering end 560: premix gate dropped | 'arbitrary-dirt endpoint'
+rejected entering end 560: premix gate at frame [] instead of its entrance E | 'nonmonotone'
+rejected entering end 560: premix gate moved into the zero-frame precondition | zero-frame precondition/compensation touches an entering helper
+rejected entering end 560: lower-frame gate dropped (gate and its early_cleanup entry) | 'arbitrary-dirt endpoint'
+rejected entering end 560: profile pin: end dropped (valid FULL end, but the reported profile counts the low end) | paid local profile differs from the reported local_profile
+rejected entering end 560: end at another hyperplane | hpe cone pre-check (row / column)
+entering end 561 premix gate None
+rejected entering end 561: lower-frame gate dropped (gate and its early_cleanup entry) | 'arbitrary-dirt endpoint'
+rejected entering end 561: profile pin: end dropped (valid FULL end, but the reported profile counts the low end) | paid local profile differs from the reported local_profile
+rejected entering end 561: end at another hyperplane | hpe cone pre-check (row / column)
+entering end 572 premix gate None
+rejected entering end 572: lower-frame gate dropped (gate and its early_cleanup entry) | 'arbitrary-dirt endpoint'
+rejected entering end 572: profile pin: end dropped (valid FULL end, but the reported profile counts the low end) | paid local profile differs from the reported local_profile
+rejected entering end 572: end at another hyperplane | hpe cone pre-check (row / column)
+entering end 573 premix gate None
+rejected entering end 573: lower-frame gate dropped (gate and its early_cleanup entry) | 'arbitrary-dirt endpoint'
+rejected entering end 573: profile pin: end dropped (valid FULL end, but the reported profile counts the low end) | paid local profile differs from the reported local_profile
+rejected entering end 573: end at another hyperplane | hpe cone pre-check (row / column)
+entering end 597 premix gate 80
+rejected entering end 597: premix gate dropped | 'arbitrary-dirt endpoint'
+rejected entering end 597: premix gate at frame [] instead of its entrance E | 'nonmonotone'
+rejected entering end 597: premix gate moved into the zero-frame precondition | zero-frame precondition/compensation touches an entering helper
+rejected entering end 597: lower-frame gate dropped (gate and its early_cleanup entry) | 'arbitrary-dirt endpoint'
+rejected entering end 597: profile pin: end dropped (valid FULL end, but the reported profile counts the low end) | paid local profile differs from the reported local_profile
+rejected entering end 597: end at another hyperplane | hpe cone pre-check (row / column)
+entering end 599 premix gate 79
+rejected entering end 599: premix gate dropped | 'arbitrary-dirt endpoint'
+rejected entering end 599: premix gate at frame [] instead of its entrance E | 'nonmonotone'
+rejected entering end 599: premix gate moved into the zero-frame precondition | zero-frame precondition/compensation touches an entering helper
+rejected entering end 599: lower-frame gate dropped (gate and its early_cleanup entry) | 'arbitrary-dirt endpoint'
+rejected entering end 599: profile pin: end dropped (valid FULL end, but the reported profile counts the low end) | paid local profile differs from the reported local_profile
+rejected entering end 599: end at another hyperplane | hpe cone pre-check (row / column)
+rejected dim-8 cold end 310 (frame [256, 128, 66, 34, 16, 8, 6, 1]) at another dim-8 frame | hpe cone pre-check (row / column)
+rejected dim-8 cold end 310 (frame [256, 128, 66, 34, 16, 8, 6, 1]): one lower-frame gate dropped (gate and its early_cleanup entry) | 'arbitrary-dirt endpoint'
+rejected dim-8 cold end 310 (frame [256, 128, 66, 34, 16, 8, 6, 1]): profile pin (end dropped) | paid local profile differs from the reported local_profile
+rejected dim-8 cold end 311 (frame [256, 128, 72, 40, 24, 4, 2, 1]) at another dim-8 frame | hpe cone pre-check (row / column)
+rejected dim-8 cold end 311 (frame [256, 128, 72, 40, 24, 4, 2, 1]): one lower-frame gate dropped (gate and its early_cleanup entry) | 'arbitrary-dirt endpoint'
+rejected dim-8 cold end 311 (frame [256, 128, 72, 40, 24, 4, 2, 1]): profile pin (end dropped) | paid local profile differs from the reported local_profile
+rejected dim-8 cold end 327 (frame [256, 128, 66, 34, 18, 10, 6, 1]) at another dim-8 frame | hpe cone pre-check (row / column)
+rejected dim-8 cold end 327 (frame [256, 128, 66, 34, 18, 10, 6, 1]): one lower-frame gate dropped (gate and its early_cleanup entry) | 'arbitrary-dirt endpoint'
+rejected dim-8 cold end 327 (frame [256, 128, 66, 34, 18, 10, 6, 1]): profile pin (end dropped) | paid local profile differs from the reported local_profile
+rejected dim-8 cold end 518 (frame [256, 128, 96, 16, 8, 4, 2, 1]) at another dim-8 frame | hpe cone pre-check (row / column)
+rejected dim-8 cold end 518 (frame [256, 128, 96, 16, 8, 4, 2, 1]): one lower-frame gate dropped (gate and its early_cleanup entry) | 'arbitrary-dirt endpoint'
+rejected dim-8 cold end 518 (frame [256, 128, 96, 16, 8, 4, 2, 1]): profile pin (end dropped) | paid local profile differs from the reported local_profile
+PASS 59 cold-end raw-word mutations rejected

@@ -1,0 +1,187 @@
+{
+  "status": "PASS_COST_NEUTRAL_PIVOT_SWAPS",
+  "input_content_sha256": "989082402d2292a18328e86927c0a12d34fcab18ef4ff724bd1ce691cf4e7531",
+  "output_content_sha256": "3cc92394949871f1190353473bfb859242f3ea9456be000cbb4f68425ea3e016",
+  "swaps": [
+    {
+      "pivot": 488,
+      "new_pivot": 560,
+      "entrance": [
+        24
+      ],
+      "family_gates": 5
+    },
+    {
+      "pivot": 489,
+      "new_pivot": 561,
+      "entrance": [
+        24
+      ],
+      "family_gates": 3
+    },
+    {
+      "pivot": 500,
+      "new_pivot": 572,
+      "entrance": [
+        24
+      ],
+      "family_gates": 5
+    },
+    {
+      "pivot": 501,
+      "new_pivot": 573,
+      "entrance": [
+        24
+      ],
+      "family_gates": 3
+    },
+    {
+      "pivot": 513,
+      "new_pivot": 537,
+      "entrance": [
+        30
+      ],
+      "family_gates": 3
+    },
+    {
+      "pivot": 525,
+      "new_pivot": 549,
+      "entrance": [
+        30
+      ],
+      "family_gates": 3
+    }
+  ],
+  "local_profile": {
+    "1": 2376,
+    "2": 464,
+    "3": 440,
+    "4": 168,
+    "5": 56,
+    "6": 44,
+    "8": 8
+  },
+  "negative_controls_rejected": [
+    {
+      "control": "swap 488->560: another family gate keeps a wrong (unrescaled-sign) coefficient: new pivot response nonzero",
+      "reason": "new pivot dirty response not zero"
+    },
+    {
+      "control": "swap 488->560: wrong pivot coefficient (1/c doubled) on the new pivot gate",
+      "reason": "new pivot dirty response not zero"
+    },
+    {
+      "control": "swap 488->560: non-family gate in the recipe",
+      "reason": "recipe gate is not the word gate"
+    },
+    {
+      "control": "swap 488->560: new pivot replaced by another family donor (not a fresh cold helper)",
+      "reason": "new pivot already entering"
+    },
+    {
+      "control": "swap 488->560: wrong entrance frame for the moved entrance",
+      "reason": "pivot is not an entering helper at the entrance"
+    },
+    {
+      "control": "swap 489->561: another family gate keeps a wrong (unrescaled-sign) coefficient: new pivot response nonzero",
+      "reason": "new pivot dirty response not zero"
+    },
+    {
+      "control": "swap 489->561: wrong pivot coefficient (1/c doubled) on the new pivot gate",
+      "reason": "new pivot dirty response not zero"
+    },
+    {
+      "control": "swap 489->561: non-family gate in the recipe",
+      "reason": "recipe gate is not the word gate"
+    },
+    {
+      "control": "swap 489->561: new pivot replaced by another family donor (not a fresh cold helper)",
+      "reason": "new pivot must be a helper"
+    },
+    {
+      "control": "swap 489->561: wrong entrance frame for the moved entrance",
+      "reason": "pivot is not an entering helper at the entrance"
+    },
+    {
+      "control": "swap 500->572: another family gate keeps a wrong (unrescaled-sign) coefficient: new pivot response nonzero",
+      "reason": "new pivot dirty response not zero"
+    },
+    {
+      "control": "swap 500->572: wrong pivot coefficient (1/c doubled) on the new pivot gate",
+      "reason": "new pivot dirty response not zero"
+    },
+    {
+      "control": "swap 500->572: non-family gate in the recipe",
+      "reason": "recipe gate is not the word gate"
+    },
+    {
+      "control": "swap 500->572: new pivot replaced by another family donor (not a fresh cold helper)",
+      "reason": "new pivot already entering"
+    },
+    {
+      "control": "swap 500->572: wrong entrance frame for the moved entrance",
+      "reason": "pivot is not an entering helper at the entrance"
+    },
+    {
+      "control": "swap 501->573: another family gate keeps a wrong (unrescaled-sign) coefficient: new pivot response nonzero",
+      "reason": "new pivot dirty response not zero"
+    },
+    {
+      "control": "swap 501->573: wrong pivot coefficient (1/c doubled) on the new pivot gate",
+      "reason": "new pivot dirty response not zero"
+    },
+    {
+      "control": "swap 501->573: non-family gate in the recipe",
+      "reason": "recipe gate is not the word gate"
+    },
+    {
+      "control": "swap 501->573: new pivot replaced by another family donor (not a fresh cold helper)",
+      "reason": "new pivot must be a helper"
+    },
+    {
+      "control": "swap 501->573: wrong entrance frame for the moved entrance",
+      "reason": "pivot is not an entering helper at the entrance"
+    },
+    {
+      "control": "swap 513->537: another family gate keeps a wrong (unrescaled-sign) coefficient: new pivot response nonzero",
+      "reason": "new pivot dirty response not zero"
+    },
+    {
+      "control": "swap 513->537: wrong pivot coefficient (1/c doubled) on the new pivot gate",
+      "reason": "new pivot dirty response not zero"
+    },
+    {
+      "control": "swap 513->537: non-family gate in the recipe",
+      "reason": "recipe gate is not the word gate"
+    },
+    {
+      "control": "swap 513->537: new pivot replaced by another family donor (not a fresh cold helper)",
+      "reason": "new pivot must be a helper"
+    },
+    {
+      "control": "swap 513->537: wrong entrance frame for the moved entrance",
+      "reason": "pivot is not an entering helper at the entrance"
+    },
+    {
+      "control": "swap 525->549: another family gate keeps a wrong (unrescaled-sign) coefficient: new pivot response nonzero",
+      "reason": "new pivot dirty response not zero"
+    },
+    {
+      "control": "swap 525->549: wrong pivot coefficient (1/c doubled) on the new pivot gate",
+      "reason": "new pivot dirty response not zero"
+    },
+    {
+      "control": "swap 525->549: non-family gate in the recipe",
+      "reason": "recipe gate is not the word gate"
+    },
+    {
+      "control": "swap 525->549: new pivot replaced by another family donor (not a fresh cold helper)",
+      "reason": "new pivot must be a helper"
+    },
+    {
+      "control": "swap 525->549: wrong entrance frame for the moved entrance",
+      "reason": "pivot is not an entering helper at the entrance"
+    }
+  ],
+  "scope": "Exact family rewrite, exact zero dirty response of every new pivot, identical paid profile and widths, regenerated inverse-rule cleanup.  Native all-column audit, HPE/cold steps and global checks remain separate."
+}

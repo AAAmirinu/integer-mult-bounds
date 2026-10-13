@@ -1,0 +1,98 @@
+[
+  {
+    "name": "ancestral558-fresh",
+    "exit_code": 0,
+    "seconds": 126.29275567503646,
+    "log_sha256": "1e4ee5c6b7426d6503d338f2def74e807f039384a8778d7951d293aaf700e478"
+  },
+  {
+    "name": "gauge44-exact-construction",
+    "exit_code": 0,
+    "seconds": 3.1367672299966216,
+    "log_sha256": "79d6a2411cba81ea3705e5de4448f3d1647e463da9a0c85d5a94d3f500ede90c"
+  },
+  {
+    "name": "layered54-construction",
+    "exit_code": 0,
+    "seconds": 46.15848051989451,
+    "log_sha256": "1c9f86d6558fc8985bcec9d6ddfd49b427ed271cee2b4d10e68b085606fbfd88"
+  },
+  {
+    "name": "cold60-exact-construction",
+    "exit_code": 0,
+    "seconds": 0.24079613899812102,
+    "log_sha256": "c71fa1fd54990712472d0c1f618f3ffee06801466ca327704bac3a8b19c702be"
+  },
+  {
+    "name": "all716-columns-native",
+    "exit_code": 0,
+    "seconds": 1.8193007300142199,
+    "log_sha256": "5cb74beed7e962bb03074284b858fb1042bf083e560d6e950100daa14701c15c"
+  },
+  {
+    "name": "both-native-ledgers",
+    "exit_code": 0,
+    "seconds": 1.3679566159844398,
+    "log_sha256": "dd1f4bfe88eb787537f29801304b87aa70ec8171e92dff4e96879d0807b73fa4"
+  },
+  {
+    "name": "independent-native-controls",
+    "exit_code": 0,
+    "seconds": 7.224606980802491,
+    "log_sha256": "dd643a58258431c3b07d3b06d9060c49677fa23b4fafc9f10988ed1f6867bd9a"
+  },
+  {
+    "name": "residual-wrappers",
+    "exit_code": 0,
+    "seconds": 1.6903575609903783,
+    "log_sha256": "74b13cf8570ca2f32ce0018575b1b73e95af77a28e59d09556fec59260bdbba5"
+  },
+  {
+    "name": "all-native-phase-edges",
+    "exit_code": 0,
+    "seconds": 106.48901897994801,
+    "log_sha256": "ba43f1dd373b2bdc387a153fd66065ecd63b33532d4fc4d263b599eef2b0911e"
+  },
+  {
+    "name": "independent-scalar-frames-cones",
+    "exit_code": 0,
+    "seconds": 1.1633589039556682,
+    "log_sha256": "9f8736c12f5ff7f829e6808cff07d67c239f27c57d0b7f8d21531127ffca1493"
+  },
+  {
+    "name": "inherited-cold-controls",
+    "exit_code": 0,
+    "seconds": 78.14499598485418,
+    "log_sha256": "1e1ff3f9a9c7df423ff0fc908e26fe897eb1ad64e70a85d89a5f1c0fd6ccbf89"
+  },
+  {
+    "name": "six-end-controls",
+    "exit_code": 0,
+    "seconds": 35.75806457689032,
+    "log_sha256": "d626663f39bac2ffe9e8314135d01dbe19a00cb518c3b5a6fc5fca2ec1a246a8"
+  },
+  {
+    "name": "owner-construction-controls",
+    "exit_code": 0,
+    "seconds": 0.5207635581027716,
+    "log_sha256": "4cca5beba71e3eee029b8aff0ac3ec0fdd27879ed74b00c25925ddb94234ab0d"
+  },
+  {
+    "name": "strict-global-admission",
+    "exit_code": 0,
+    "seconds": 13.193955713883042,
+    "log_sha256": "4e246c7a15b80e8097551ad43fbc2132be22d3c2504f7bf1c8be57d1bdd5e8c1"
+  },
+  {
+    "name": "independent-literal-map-moment",
+    "exit_code": 0,
+    "seconds": 0.3333008929621428,
+    "log_sha256": "93cea9365a36af1296bd28fb58b25590d162387e9dd074bc800728472a23c1e4"
+  },
+  {
+    "name": "independent-two-engine-outer47",
+    "exit_code": 0,
+    "seconds": 0.3059988890308887,
+    "log_sha256": "0aa709a4b5ef1e58938fe418134fbc6ab1358b3cf9433b35e8b0f4cfb37dce49"
+  }
+]

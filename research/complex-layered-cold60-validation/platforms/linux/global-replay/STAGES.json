@@ -1,0 +1,50 @@
+[
+  {
+    "name": "restore-parent",
+    "seconds": 0.766,
+    "exit_code": 0,
+    "log_sha256": "fc3a01967636bd3173ee7e5049fae45b890e1fad4564b6acdd6aaca30a4e4ea5"
+  },
+  {
+    "name": "bind",
+    "seconds": 0.302,
+    "exit_code": 0,
+    "log_sha256": "71f679ce5a123fb58397fd6852ba64ce3832fd20e81a096bfda9a1cf3237237a"
+  },
+  {
+    "name": "emit",
+    "seconds": 2.141,
+    "exit_code": 0,
+    "log_sha256": "ad16240a91725e1d2f90dc4a0853cac4fb3e8dfd49af5639177ea2456d82fca7"
+  },
+  {
+    "name": "audit",
+    "seconds": 8.251,
+    "exit_code": 0,
+    "log_sha256": "f5e60c098392212e0a0ec5aebd9235ca0193a32ff420dd2be080dcc84c1b87ee"
+  },
+  {
+    "name": "invoice",
+    "seconds": 0.823,
+    "exit_code": 0,
+    "log_sha256": "3d54aafd7e7ebfd42e1b49d06f08a899b2beb3a0e7051a126b1186f07fc56e30"
+  },
+  {
+    "name": "assembly",
+    "seconds": 0.205,
+    "exit_code": 0,
+    "log_sha256": "415ef7b4f2e5c9cf142005c62fee2107562d21d415b787a4ac509962b9e1b764"
+  },
+  {
+    "name": "admission-controls",
+    "seconds": 0.246,
+    "exit_code": 0,
+    "log_sha256": "051d242318154827c1672ffbb63ad2bdc8ecc4033be650b791dd69cd57d716b3"
+  },
+  {
+    "name": "bit-supplier-controls",
+    "seconds": 0.408,
+    "exit_code": 0,
+    "log_sha256": "d54d260bf95bd8ae4ab8846314082b93b2e3d8f427eb35376691f2ce543a6b67"
+  }
+]

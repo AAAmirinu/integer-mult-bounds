@@ -1,0 +1,135 @@
+{
+  "status": "PASS_LAYERED_SIX_END_NATIVE_CONTROLS",
+  "positive": 1,
+  "helpers": [
+    519,
+    580,
+    581,
+    582,
+    590,
+    591
+  ],
+  "rejected": [
+    {
+      "name": "519-end-removed",
+      "rejected": "'paid local profile differs from the reported local_profile'"
+    },
+    {
+      "name": "519-wrong-terminal-frame",
+      "rejected": "('hpe cone pre-check (row / column)', [('row', 519, 324), ('row', 519, 519)])"
+    },
+    {
+      "name": "519-tail-zeroed",
+      "rejected": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "519-tail-dropped",
+      "rejected": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "519-rankzero-repair-doubled",
+      "rejected": "'zero-frame precondition/compensation touches a cold hyperplane-ended helper before its wrapper'"
+    },
+    {
+      "name": "580-end-removed",
+      "rejected": "'paid local profile differs from the reported local_profile'"
+    },
+    {
+      "name": "580-wrong-terminal-frame",
+      "rejected": "('hpe cone pre-check (row / column)', [('row', 580, 94), ('row', 580, 580)])"
+    },
+    {
+      "name": "580-tail-zeroed",
+      "rejected": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "580-tail-dropped",
+      "rejected": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "580-rankzero-repair-doubled",
+      "rejected": "'zero-frame precondition/compensation touches a cold hyperplane-ended helper before its wrapper'"
+    },
+    {
+      "name": "581-end-removed",
+      "rejected": "'paid local profile differs from the reported local_profile'"
+    },
+    {
+      "name": "581-wrong-terminal-frame",
+      "rejected": "('hpe cone pre-check (row / column)', [('row', 581, 412), ('row', 581, 581)])"
+    },
+    {
+      "name": "581-tail-zeroed",
+      "rejected": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "581-tail-dropped",
+      "rejected": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "581-rankzero-repair-doubled",
+      "rejected": "'zero-frame precondition/compensation touches a cold hyperplane-ended helper before its wrapper'"
+    },
+    {
+      "name": "582-end-removed",
+      "rejected": "'paid local profile differs from the reported local_profile'"
+    },
+    {
+      "name": "582-wrong-terminal-frame",
+      "rejected": "('hpe cone pre-check (row / column)', [('row', 582, 414), ('row', 582, 582)])"
+    },
+    {
+      "name": "582-tail-zeroed",
+      "rejected": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "582-tail-dropped",
+      "rejected": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "582-rankzero-repair-doubled",
+      "rejected": "'zero-frame precondition/compensation touches a cold hyperplane-ended helper before its wrapper'"
+    },
+    {
+      "name": "590-end-removed",
+      "rejected": "'paid local profile differs from the reported local_profile'"
+    },
+    {
+      "name": "590-wrong-terminal-frame",
+      "rejected": "('hpe cone pre-check (row / column)', [('row', 590, 86), ('row', 590, 590)])"
+    },
+    {
+      "name": "590-tail-zeroed",
+      "rejected": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "590-tail-dropped",
+      "rejected": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "590-rankzero-repair-doubled",
+      "rejected": "'zero-frame precondition/compensation touches a cold hyperplane-ended helper before its wrapper'"
+    },
+    {
+      "name": "591-end-removed",
+      "rejected": "'paid local profile differs from the reported local_profile'"
+    },
+    {
+      "name": "591-wrong-terminal-frame",
+      "rejected": "('hpe cone pre-check (row / column)', [('row', 591, 428), ('row', 591, 591)])"
+    },
+    {
+      "name": "591-tail-zeroed",
+      "rejected": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "591-tail-dropped",
+      "rejected": "('arbitrary-dirt endpoint', False)"
+    },
+    {
+      "name": "591-rankzero-repair-doubled",
+      "rejected": "'zero-frame precondition/compensation touches a cold hyperplane-ended helper before its wrapper'"
+    }
+  ],
+  "seconds": 35.66824137698859
+}

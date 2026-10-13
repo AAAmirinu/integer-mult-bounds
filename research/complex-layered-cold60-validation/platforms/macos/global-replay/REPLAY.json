@@ -1,0 +1,86 @@
+{
+  "status": "PASS_GAUGE44_STRICT_GLOBAL_REPLAY",
+  "kappa": "413567393922393/250000000000000000",
+  "kappa_decimal": "0.001654269575689572",
+  "complex_lower": "1657010718107129084353/1000000000000000000000000",
+  "bit_lower": "1733427039589844234749/1000000000000000000000000",
+  "bit_supplier": {
+    "pr": 589,
+    "repository": "CrocSwap/integer-mult-bounds",
+    "commit": "a5afc8c6169ea61ba7c51dfd3cade02cc7b13b46",
+    "merged_as": "b3eb785ac5b4b1ca2beea0f80db078a505626a90",
+    "path": "research/e8-bit-p111-tuned/tune/EXPECTED.json",
+    "git_blob_sha1": "e293ddc557742637f9f679f083a1a282d87b1b13",
+    "word": {
+      "v": 111,
+      "decoder_constant": 63,
+      "copy_ranks": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ]
+    },
+    "derived_deficit": 10272,
+    "deficit_formula": "T(2Kv-L*cst), L=9 T=32 K=4 M=64",
+    "replay_scope": "Cited unchanged supplier; this assembly reprices its full profile and does not rebuild its bit circuit."
+  },
+  "gain_over_pr635_percent": "1.101797876157974876935392666484483021159076321705008701576194432753176",
+  "spec_sha256": "ebcd740610b046d91198a04827108d3a602ae5af4ad226a454af501e2739444e",
+  "stages": [
+    {
+      "name": "restore-parent",
+      "seconds": 0.635,
+      "exit_code": 0,
+      "log_sha256": "fc3a01967636bd3173ee7e5049fae45b890e1fad4564b6acdd6aaca30a4e4ea5"
+    },
+    {
+      "name": "bind",
+      "seconds": 0.254,
+      "exit_code": 0,
+      "log_sha256": "71f679ce5a123fb58397fd6852ba64ce3832fd20e81a096bfda9a1cf3237237a"
+    },
+    {
+      "name": "emit",
+      "seconds": 1.966,
+      "exit_code": 0,
+      "log_sha256": "82430b54e17e0389c16bb936c1fba50b9ea872e975bc6b3203e5651b616f37ae"
+    },
+    {
+      "name": "audit",
+      "seconds": 7.724,
+      "exit_code": 0,
+      "log_sha256": "4a6d4eb1bf90e9b6dc09f342fd8617aa62911dbee6881d6e584d3c06fb52c456"
+    },
+    {
+      "name": "invoice",
+      "seconds": 0.703,
+      "exit_code": 0,
+      "log_sha256": "3d54aafd7e7ebfd42e1b49d06f08a899b2beb3a0e7051a126b1186f07fc56e30"
+    },
+    {
+      "name": "assembly",
+      "seconds": 0.21,
+      "exit_code": 0,
+      "log_sha256": "415ef7b4f2e5c9cf142005c62fee2107562d21d415b787a4ac509962b9e1b764"
+    },
+    {
+      "name": "admission-controls",
+      "seconds": 0.243,
+      "exit_code": 0,
+      "log_sha256": "051d242318154827c1672ffbb63ad2bdc8ecc4033be650b791dd69cd57d716b3"
+    },
+    {
+      "name": "bit-supplier-controls",
+      "seconds": 0.42,
+      "exit_code": 0,
+      "log_sha256": "d54d260bf95bd8ae4ab8846314082b93b2e3d8f427eb35376691f2ce543a6b67"
+    }
+  ],
+  "scope": "Conditional native exact-complex witness after complete conservative admission, moment and outer checks; PR559 exact-cover recurrence correction only, bit bad-residue surcharge and H1-H5 retained. The new source-branch gauge and retired-basis completion, 44 cold dimension-four ends, sixteen cold dimension-eight ends and eight additional entering ends, and explicit all72 whole-owner dispatch are composed with the cited unchanged merged PR589 bit supplier (PR555 punctured R439 word; derived bit deficit T(2Kv-L*cst)), replacing the PR543 supplier of PR635; this bit composition is unreviewed. All-size compiler, common-label/mutable-source realization, whole-call hosting, precision/tape and analytic transfer remain assumptions. No unconditional theorem or full Lean certification."
+}

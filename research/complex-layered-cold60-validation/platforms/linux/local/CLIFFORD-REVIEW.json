@@ -1,0 +1,19 @@
+{
+  "status": "PASS_NEW_WORD_EXACT_LOCAL_PHASE_RECIPES",
+  "canonical_word_sha256": "59974716995aa21b3ebcb5bd5ae08c4f6e355a061535d9492245ea72972b4074",
+  "frames": 1041,
+  "directed_edges": 3017,
+  "ranks": {
+    "1": 2035,
+    "2": 418,
+    "3": 386,
+    "8": 16,
+    "4": 148,
+    "5": 14
+  },
+  "endpoint_adapters": 224,
+  "all_child_equalities_include_global_phase": true,
+  "recipe_sha256": "d86f27e8e19477ef9d3bf2d93a59fc7f622d83dc8ffc393cf3648971282dc338",
+  "seconds": 106.43608297803439,
+  "scope": "Every local frame and center transition. Expanded scalar-interface integration and global emitted program are separate obligations."
+}

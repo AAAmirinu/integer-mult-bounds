@@ -1,0 +1,50 @@
+{
+  "status": "EMITTED_MIXED_PROVIDER_ASYNCHRONOUS_WHOLE_OWNER_COMPLEX_TEMPLATE",
+  "template_sha256": "59d5bb8f8a346f61e506cc29fd2774b810da92e9bdd9876011c8cbe69cff862c",
+  "parent_template_sha256": "7db047a427a7979d69e163c78a1e32bd445628fb86723e131a3138361355a9c3",
+  "live": 7168,
+  "physical": 7670,
+  "global_profile": {
+    "1": 183456,
+    "2": 30672,
+    "3": 30384,
+    "4": 11088,
+    "5": 4032,
+    "8": 576,
+    "48": 2409
+  },
+  "rank_mass": 520704,
+  "deficit": 2560,
+  "maxchild": 48,
+  "hosted_residuals": 35424,
+  "banks_per_stage": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "entering_helper_roles": 19008,
+  "unique_actual_73column_sigmas": 8342,
+  "sigma_stream_sha256": "3907c300655757118b701314cfa8290bc2678079cae9c73b59c46ec3afd80e17",
+  "cross_replica_helper_roles": 27744,
+  "asynchronous_order_sha256": "2acd6b2004be3d3ef6645f3c968feb22b5167c400bb49eb446821e5cb7af6eee",
+  "source_artifacts": {
+    "work/complex-nine-native/DATA-PHASES.json": "c5916ff312678f12aba403847643fbbc29f643acec60bdf836fa56cd3e8251fa",
+    "providers/gauge44/CANONICAL-WORD.json.gz": "59974716995aa21b3ebcb5bd5ae08c4f6e355a061535d9492245ea72972b4074",
+    "providers/gauge44/LOCAL-PROGRAMS.json.gz": "cf659b69449c9cea8ab776a18bbd1b09149336af4342ddfaf532365c4d450454",
+    "providers/gauge44/LOCAL-CHECKS.json": "08a14daa7cb4b2762bb914cfc39c602bd3dd67dc4385918864f86c1cbc0cc276",
+    "providers/gauge44/INDEPENDENT-LOCAL-REPLAY.json": "3044f44a1032ba0a64be1cd07e3bae0449bc5c145e08b8243c94a6889f25e5ab",
+    "providers/gauge44/RESIDUAL-ADAPTERS.json": "0f2f39d58e7fb0844369dc0ea25e98ba35f0da9de4ee815015df66fad94af936",
+    "providers/gauge44/CLIFFORD-RECIPES.json": "d86f27e8e19477ef9d3bf2d93a59fc7f622d83dc8ffc393cf3648971282dc338",
+    "providers/gauge44/CLIFFORD-REVIEW.json": "ca70e022c0d8bdb771df291e0e0d72d4b4a6bbf42fca343e308e1fe021248288"
+  },
+  "provider_counts": {
+    "gauge44": 72
+  },
+  "scope": "Two actual verified plain/width-seven providers dispatched per complete invocation; independent controller/spectator/normalization and complete finite invoice admission required."
+}

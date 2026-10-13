@@ -1,0 +1,9 @@
+PASS pivot-swap
+PASS cold44-exact
+PASS layered scalar word /private/tmp/layered60-macos-20261013/layered54/layers/FULL-WORD.json.gz
+PASS layer-end-controls
+PASS native
+PASS ledgers
+PASS local-replay
+PASS wrappers
+DONE /private/tmp/layered60-macos-20261013/layered54/local

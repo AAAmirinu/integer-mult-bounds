@@ -1,0 +1,19 @@
+{
+  "status": "PASS_FRESH_LAYERED_COLD60_COMPLETE_NATIVE_OWNER_AND_EXACT_GLOBAL_REPLAY",
+  "kappa": "413567393922393/250000000000000000",
+  "kappa_decimal": "0.001654269575689572",
+  "complex_lower": "1657010718107129084353/1000000000000000000000000",
+  "bit_lower": "1733427039589844234749/1000000000000000000000000",
+  "profile": {
+    "1": 183456,
+    "2": 30672,
+    "3": 30384,
+    "4": 11088,
+    "5": 4032,
+    "8": 576,
+    "48": 2409
+  },
+  "seconds": 423.9591274810955,
+  "reused": false,
+  "scope": "Finite conditional witness. Fresh ancestor, gauge44 exact recipe, six-pivot layered word and changed60-cold-end word, native scalar/phases/wrappers, physical owner map and strict finite/outer admission. PR589 bit supplier is cited and repriced; its separate bit-circuit replay is not run by this command. All-size realization and analytic transfer remain assumptions."
+}

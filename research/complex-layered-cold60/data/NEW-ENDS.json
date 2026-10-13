@@ -1,0 +1,408 @@
+[
+  {
+    "status": "EXACT_NOMINATION_NOT_NATIVE_ADMISSION",
+    "helper": 519,
+    "normal": 96,
+    "terminal": [
+      256,
+      128,
+      96,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "newtail": [
+      [
+        "add",
+        519,
+        324,
+        -1,
+        1,
+        [
+          256,
+          128,
+          96,
+          16,
+          8,
+          4,
+          2,
+          1
+        ]
+      ]
+    ],
+    "repair": [
+      [
+        "add",
+        258,
+        519,
+        -1,
+        2,
+        []
+      ],
+      [
+        "add",
+        260,
+        519,
+        1,
+        2,
+        []
+      ],
+      [
+        "add",
+        265,
+        519,
+        -1,
+        2,
+        []
+      ],
+      [
+        "add",
+        470,
+        519,
+        1,
+        1,
+        []
+      ]
+    ],
+    "swap": [],
+    "target_compensation": [],
+    "profile_delta": {
+      "1": 1,
+      "2": 2,
+      "3": -2
+    },
+    "cleanup_gates": 27320,
+    "word_content_sha256": "0430fc897c6eba75aa4002552ec7e900ca4b9d2c7f743e4308b094059bdd0273"
+  },
+  {
+    "status": "EXACT_NOMINATION_NOT_NATIVE_ADMISSION",
+    "helper": 580,
+    "normal": 102,
+    "terminal": [
+      256,
+      128,
+      66,
+      34,
+      16,
+      8,
+      6,
+      1
+    ],
+    "newtail": [
+      [
+        "add",
+        580,
+        94,
+        -1,
+        1,
+        [
+          256,
+          128,
+          66,
+          34,
+          16,
+          8,
+          6,
+          1
+        ]
+      ]
+    ],
+    "repair": [
+      [
+        "add",
+        317,
+        580,
+        -1,
+        1,
+        []
+      ],
+      [
+        "add",
+        509,
+        580,
+        1,
+        1,
+        []
+      ]
+    ],
+    "swap": [],
+    "target_compensation": [],
+    "profile_delta": {
+      "1": 1,
+      "2": 2,
+      "3": -2
+    },
+    "cleanup_gates": 27314,
+    "word_content_sha256": "c0fbdb3caecc8ead9409316f044f74eb1b13d30d963c36aa6656356d818cb2e4"
+  },
+  {
+    "status": "EXACT_NOMINATION_NOT_NATIVE_ADMISSION",
+    "helper": 581,
+    "normal": 96,
+    "terminal": [
+      256,
+      128,
+      96,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "newtail": [
+      [
+        "add",
+        581,
+        412,
+        -1,
+        1,
+        [
+          256,
+          128,
+          96,
+          16,
+          8,
+          4,
+          2,
+          1
+        ]
+      ]
+    ],
+    "repair": [
+      [
+        "add",
+        322,
+        581,
+        1,
+        1,
+        []
+      ],
+      [
+        "add",
+        517,
+        581,
+        -1,
+        1,
+        []
+      ],
+      [
+        "add",
+        520,
+        581,
+        1,
+        1,
+        []
+      ]
+    ],
+    "swap": [],
+    "target_compensation": [],
+    "profile_delta": {
+      "1": 1,
+      "2": 2,
+      "3": -2
+    },
+    "cleanup_gates": 27252,
+    "word_content_sha256": "626713e92b8af74a44cc26d93c3338c197518a1a1847e4819eeef10fc01dae88"
+  },
+  {
+    "status": "EXACT_NOMINATION_NOT_NATIVE_ADMISSION",
+    "helper": 582,
+    "normal": 96,
+    "terminal": [
+      256,
+      128,
+      96,
+      16,
+      8,
+      4,
+      2,
+      1
+    ],
+    "newtail": [
+      [
+        "add",
+        582,
+        414,
+        -1,
+        1,
+        [
+          256,
+          128,
+          96,
+          16,
+          8,
+          4,
+          2,
+          1
+        ]
+      ]
+    ],
+    "repair": [
+      [
+        "add",
+        333,
+        582,
+        -1,
+        1,
+        []
+      ],
+      [
+        "add",
+        521,
+        582,
+        1,
+        1,
+        []
+      ]
+    ],
+    "swap": [],
+    "target_compensation": [],
+    "profile_delta": {
+      "1": 1,
+      "2": 2,
+      "3": -2
+    },
+    "cleanup_gates": 27186,
+    "word_content_sha256": "3892eba409e0c6b9ee58b54916250c8acf79e50158d3262992ee4e726fca9aa4"
+  },
+  {
+    "status": "EXACT_NOMINATION_NOT_NATIVE_ADMISSION",
+    "helper": 590,
+    "normal": 126,
+    "terminal": [
+      256,
+      128,
+      66,
+      34,
+      18,
+      10,
+      6,
+      1
+    ],
+    "newtail": [
+      [
+        "add",
+        590,
+        86,
+        -1,
+        1,
+        [
+          256,
+          128,
+          66,
+          34,
+          18,
+          10,
+          6,
+          1
+        ]
+      ]
+    ],
+    "repair": [
+      [
+        "add",
+        324,
+        590,
+        1,
+        1,
+        []
+      ],
+      [
+        "add",
+        334,
+        590,
+        -1,
+        1,
+        []
+      ],
+      [
+        "add",
+        523,
+        590,
+        1,
+        1,
+        []
+      ]
+    ],
+    "swap": [],
+    "target_compensation": [],
+    "profile_delta": {
+      "1": 1,
+      "2": 2,
+      "3": -2
+    },
+    "cleanup_gates": 27179,
+    "word_content_sha256": "7a76f04bbd9ffd1cb030e6f21521c77dd0033605db95220d87b6bd20749588fe"
+  },
+  {
+    "status": "EXACT_NOMINATION_NOT_NATIVE_ADMISSION",
+    "helper": 591,
+    "normal": 120,
+    "terminal": [
+      256,
+      128,
+      72,
+      40,
+      24,
+      4,
+      2,
+      1
+    ],
+    "newtail": [
+      [
+        "add",
+        591,
+        428,
+        -1,
+        1,
+        [
+          256,
+          128,
+          72,
+          40,
+          24,
+          4,
+          2,
+          1
+        ]
+      ]
+    ],
+    "repair": [
+      [
+        "add",
+        316,
+        591,
+        -1,
+        1,
+        []
+      ],
+      [
+        "add",
+        505,
+        591,
+        1,
+        1,
+        []
+      ],
+      [
+        "add",
+        510,
+        591,
+        1,
+        1,
+        []
+      ]
+    ],
+    "swap": [],
+    "target_compensation": [],
+    "profile_delta": {
+      "1": 1,
+      "2": 2,
+      "3": -2
+    },
+    "cleanup_gates": 27096,
+    "word_content_sha256": "dee4dff4027685a072810f31691f13f9edee3d9ea7e47df70bb667967c35160a"
+  }
+]

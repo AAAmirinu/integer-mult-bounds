@@ -1,0 +1,59 @@
+{
+  "status": "PASS_EXACT_MATHEMATICAL_RESULT_AND_INDEPENDENT_OWNER_AGREEMENT",
+  "core_manifest_sha256": "b25520f18aa154359182232d55317c66e0609b06eb065c22d9d4f36e3ef57115",
+  "core_files": 374,
+  "result": {
+    "status": "PASS_FRESH_LAYERED_COLD60_COMPLETE_NATIVE_OWNER_AND_EXACT_GLOBAL_REPLAY",
+    "kappa": "413567393922393/250000000000000000",
+    "kappa_decimal": "0.001654269575689572",
+    "complex_lower": "1657010718107129084353/1000000000000000000000000",
+    "bit_lower": "1733427039589844234749/1000000000000000000000000",
+    "profile": {
+      "1": 183456,
+      "2": 30672,
+      "3": 30384,
+      "4": 11088,
+      "5": 4032,
+      "8": 576,
+      "48": 2409
+    },
+    "reused": false,
+    "scope": "Finite conditional witness. Fresh ancestor, gauge44 exact recipe, six-pivot layered word and changed60-cold-end word, native scalar/phases/wrappers, physical owner map and strict finite/outer admission. PR589 bit supplier is cited and repriced; its separate bit-circuit replay is not run by this command. All-size realization and analytic transfer remain assumptions."
+  },
+  "byte_identical_files": {
+    "INDEPENDENT-MAP.json": "33914bc0eec6d8bf70069fb85cd2e919008186298d5e436e0ee35fcb25eceea3",
+    "OWNER-CONSTRUCTION-CONTROLS.json": "e10c4cf42ee718b5aa0a0f6df7ad64f33b602fef0c2817d4719b9025e1c5772a",
+    "RECONSTRUCTED-OWNERS.json.gz": "26be4d793c1ce6b1df5c5d1b00fb9959682214d3c32c03b52a086c9ea609d9f3"
+  },
+  "platform_receipts": {
+    "macos": [
+      {
+        "directory": "",
+        "stages": 16,
+        "artifacts": 34,
+        "receipt_sha256": "f9b54b406e807711119e0e222582e55fe1c29b8178dab2731e116302670f2428"
+      },
+      {
+        "directory": "ancestral558",
+        "stages": 9,
+        "artifacts": 9,
+        "receipt_sha256": "b7239465a8dbf41404b24f8fc8766fecd3bb4d1ce2bf441a7e347d1d28dd1c6f"
+      }
+    ],
+    "linux": [
+      {
+        "directory": "",
+        "stages": 16,
+        "artifacts": 34,
+        "receipt_sha256": "b942d7e0ebe4c4d198e63015dbccd5525772d89e8b6371664477ba2f0850ddec"
+      },
+      {
+        "directory": "ancestral558",
+        "stages": 9,
+        "artifacts": 9,
+        "receipt_sha256": "c10086b9454cca5ab95a97b2cbad845d9589b42b7442de9c131eb262e16ba3c1"
+      }
+    ]
+  },
+  "normalization": "Only RESULT.seconds is omitted. Raw platform receipts and timing-dependent phase hashes are retained."
+}
