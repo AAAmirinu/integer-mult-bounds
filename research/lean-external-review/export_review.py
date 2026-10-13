@@ -19,7 +19,7 @@ PREFIXES = ['research/' + name for name in [
     'lean-contribution-archive',
 ]]
 ROOT_FILES = ['LICENSE', 'NOTICE', 'CONTRIBUTING.md', 'Makefile',
-              '.github/workflows/verify.yml']
+              '.github/workflows/verify.yml', 'certificates/mixed-point-audit.json']
 
 
 def git(*args):

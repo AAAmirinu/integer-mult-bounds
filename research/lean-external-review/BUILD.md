@@ -29,9 +29,9 @@ Lake executable with `make formal-pr442-verify LAKE=/path/to/lake`; this is
 executable selection only, not a compiler flag or environment override.
 
 These are the commands used by the added `pr442` entry in upstream's existing
-formal CI matrix. That job retains its 45-minute limit. The complete fresh
-Make run took 17 minutes 23 seconds. Its conservative projection is 34 minutes
-54 seconds, qualifying under the revised 35-minute target with the explicit
+formal CI matrix. That job retains its 45-minute limit. The fresh CI-repair
+Make run took 16 minutes 58 seconds. Its conservative projection is 34 minutes
+9 seconds, qualifying under the revised 35-minute target with the explicit
 cache/setup assumptions in [VALIDATION.md](VALIDATION.md). This is a timing
 estimate, not an observed GitHub Actions run.
 

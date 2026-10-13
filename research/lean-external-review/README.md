@@ -2,9 +2,10 @@
 
 **Lean 4.21 port: fresh verification PASS.** All 153 local modules and the
 five axiom inventories pass under the project's exact pins and default
-external settings. The total CI projection is 34.90 minutes under the
+external settings. The fresh CI-repair Make run took 16m58s; its CI projection is 34m09s under the
 explicit cache/setup assumptions in [VALIDATION.md](VALIDATION.md).
-This local port has not replaced the public PR #540 branch.
+The port and explainer are published on PR #540. The CI compatibility repair
+and its separate fresh receipt are described in [VALIDATION.md](VALIDATION.md).
 
 Task A generalizes the hosting contract to multiple hosts and recovers the
 previous single-host theorems. Task B connects that framework to the literal
@@ -46,8 +47,9 @@ The port targets upstream `formal/lean` exactly:
 - Mathlib `308445d7985027f538e281e18df29ca16ede2ba3`, with all transitive
   revisions fixed by `research/lean-multi-host-source/lake-manifest.json`.
 - Source `set_option maxHeartbeats` and `maxRecDepth` declarations are allowed.
-  No raised OS/Lean stack, build flags or environment overrides are required
-  or accepted by the verification route.
+  No resource limits are changed and no external Lean tuning is accepted.
+  Host OS stack defaults vary; their inherited values are recorded and
+  checked unchanged, rather than compared with one machine's default.
 
 The historical count of 75 Lean files means **66 contribution files plus nine
 archived third-party overlap snapshots**. Those nine snapshot files remain
@@ -82,8 +84,7 @@ technical pitch and maintainer questions.
 ## Review and delivery
 
 The original public review is [PR #540](https://github.com/CrocSwap/integer-mult-bounds/pull/540),
-on branch `lean/pr442-invocation-review`. This port is on a separate local
-branch and must not be described as published before approval.
+on branch `lean/pr442-invocation-review`, which includes the port and explainer.
 
 After committing a completed package, `export_review.py --output-dir` produces
 a cumulative patch, portable archive, commit IDs and checksums. Apply only

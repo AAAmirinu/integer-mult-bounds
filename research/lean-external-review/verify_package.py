@@ -23,7 +23,7 @@ DIRECTORIES = [
 EXCLUDED = {'research/lean-external-review/package-manifest.json',
             'research/lean-external-review/package-validation.json'}
 ROOT_FILES = ['LICENSE', 'NOTICE', 'CONTRIBUTING.md', 'Makefile',
-              '.github/workflows/verify.yml']
+              '.github/workflows/verify.yml', 'certificates/mixed-point-audit.json']
 
 
 def sha(path):

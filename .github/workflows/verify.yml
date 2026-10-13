@@ -93,3 +93,10 @@ jobs:
           Mathlib.Tactic.Ring Mathlib.Tactic.NormNum
       - name: Check formal package and theorem axiom dependencies
         run: make formal-${{ matrix.package }}-verify
+      - name: Preserve PR442 build receipt
+        if: always() && matrix.package == 'pr442'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: pr442-lean421-receipt
+          path: /tmp/pr442-lean421-fresh.json
+          if-no-files-found: warn

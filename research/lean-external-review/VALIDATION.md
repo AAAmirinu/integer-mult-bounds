@@ -13,10 +13,27 @@ it never changes resource limits. It still rejects external Lean tuning.
 A recorded limit alone cannot authenticate the caller's prior environment.
 The workflow and reproduction commands apply no resource overrides.
 
-The current receipt path is `validation/lean421-ci-fix-fresh.json`.
+The current fresh receipt is [validation/lean421-ci-fix-fresh.json](validation/lean421-ci-fix-fresh.json).
+The clean build candidate is `b86b4072edc15c717e762ebb5768905c78f4cf3f`.
+All 153 local modules compiled fresh and all five audits passed with standard
+axioms only. The normal Make target passed in **1018.396 seconds (16m58s)**.
+The same conservative model gives **2049.113 seconds (34m09s)**, within the
+35-minute target under its explicit setup/cache assumptions. This estimate
+is not an observed GitHub run. See [repair timing](validation/lean421-ci-fix-timing.json),
+[projection](validation/lean421-ci-fix-projection.json) and
+[normalized log](validation/lean421-ci-fix-make.log).
+The workflow uploads its own receipt as `pr442-lean421-receipt`; inspect that
+run independently of this local result.
+
+No local contribution artifacts were reused. External source/artifact and
+toolchain fingerprints matched the original receipt before reuse and were
+checked again by the fresh verifier. The inherited local limits were
+`[8388608, -1]` (8 MiB soft, unlimited hard), unchanged after verification.
+No resource settings, compilation flags, Lean files or theorem statements
+were changed.
 The original `validation/lean421-fresh.json`, timing and projection files below
 remain unchanged historical evidence for the original port manifest; they do
-not validate the revised Python verifier. Fresh repair verification is pending.
+not validate the revised Python verifier. The new receipt above does.
 
 The unrelated research CI failure came from an upstream stale fingerprint in
 `certificates/mixed-point-audit.json`. Regenerating it with

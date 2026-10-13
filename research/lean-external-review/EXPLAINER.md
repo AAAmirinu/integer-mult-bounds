@@ -250,7 +250,7 @@ The installed toolchain and imported library artifacts also matter. The fresh
 build recorded their fingerprints, but did not rebuild every external library
 or freshly audit every imported constant. Receipts and manifests document
 consistency; reading a PASS record is not independently rerunning Lean.
-<!-- source: validation/lean421-fresh.json, toolchain/dependencies/audits; VALIDATION.md, current fresh verification and integrity/limitations; ../e8-lemma-g-lean/README.md, trust boundary. -->
+<!-- source: validation/lean421-ci-fix-fresh.json, toolchain/dependencies/audits; VALIDATION.md, CI compatibility repair and integrity/limitations; ../e8-lemma-g-lean/README.md, trust boundary. -->
 
 A reader need not trust the AI's confidence, a claim of helper independence,
 or a few successful bit assignments as a substitute for the arbitrary-input

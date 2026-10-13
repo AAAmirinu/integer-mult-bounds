@@ -30,7 +30,8 @@ Ported to Lean 4.21.0 and the project's exact Mathlib pin
 `308445d7985027f538e281e18df29ca16ede2ba3`. Fresh Task A and Task B replay
 passed in one clean Lake build: 153 local modules, no local artifact reuse,
 and all five axiom inventories. The complete normal Make target took
-17.39 minutes here; the conservative four-core CI projection is 34.90 minutes
+16m58s here after the CI compatibility repair; the conservative four-core
+CI projection is 34m09s
 including a 1.5× compute slowdown, a three-minute setup/cache allowance and
 20% margin. Setup/cache preparation is an explicit estimate; see VALIDATION.md.
 
@@ -41,12 +42,15 @@ make formal-pr442-verify
 ```
 
 The ordinary Lake build uses no external resource overrides, extra compiler
-flags or environment settings. The permanent audits retain 931 Task B
+flags or environment settings. It records the inherited OS stack limits and
+checks that they stay unchanged, without assuming an 8 MiB host default.
+GitHub Actions preserves its own receipt as an artifact; the local timing
+projection does not establish a GitHub pass. The permanent audits retain 931 Task B
 declarations, including `SourceInvocation.actualContract`, and 21 Task A
 declarations. The port covers 66 original contribution files; nine unchanged
 archived third-party snapshots are excluded from this build and its audits.
 Certificate partitioning adds independent modules without changing theorem
-statements. The 34.90-minute projection qualifies under the revised
+statements. The 34m09s projection qualifies under the revised
 35-minute target, conditional on the documented cache/setup assumptions.
 The differential test is delegated separately and is not a reported check here.
 
