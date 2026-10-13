@@ -42,3 +42,23 @@ sprint instructions; no reservation issue was opened.
 
 Reserve the final quarter of the work window for verification and handoff.
 Prepared for Jason Willems (@at1as) with substantial OpenAI Codex assistance.
+
+## Result — 2026-10-13 03:22 UTC
+
+Completed: six exact Bézout identities establish unit-circle nonvanishing
+for radices 6, 10, 12, 14, 15, 18, symbolically covering all 30 primitive
+embeddings. The inherited Fourier argument gives explicit all-length
+inverse bounds for these fixed radices. No new κ or general-composite
+claim. All six nominated radices completed; no search was left pending.
+The independent checker rejects 39 mathematical/coverage controls; eight
+focused tests pass. Three Python versions give identical receipts, and
+fresh SymPy regeneration reproduces the certificate bytes. See
+[VALIDATION.md](VALIDATION.md) for the exact scope of execution.
+
+Submitted one focused contribution:
+[PR #666](https://github.com/CrocSwap/integer-mult-bounds/pull/666),
+initial implementation commit `237d7fda614174e0784cbb2a8c22dfe4015efc94`.
+The PR's base matches the recorded base exactly. GitHub reported no check
+results at this handoff; local verification and remote CI remain distinct.
+No pinned coordination issue existed, so this is the single local claim
+result update. No other PR was opened or modified, and nothing was merged.
