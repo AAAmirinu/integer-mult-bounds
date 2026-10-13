@@ -1,0 +1,1531 @@
+{
+  "status": "PASS_INDEPENDENT_BOUNDED_INTEGER_CRT",
+  "assignment_seed": 83,
+  "base_commit": "17ce0c79b7b51c2634b439ea5a2b754f09909693",
+  "cases": [
+    {
+      "radix": 3,
+      "prime": 3,
+      "primitive_powers": [
+        1,
+        2
+      ],
+      "resultant": [
+        "43",
+        "0"
+      ],
+      "resultant_norm": "1849",
+      "real_norm_absolute": "43",
+      "bezout_coefficients_sha256": "248682bd366c40b113a33092feb3799eeccdaad54b87ee4833f85920bf4250ab",
+      "bezout_identity": true,
+      "coefficient_bound": "4802",
+      "crt_modulus": "1082761",
+      "split_prime_transcript": [
+        {
+          "prime": 1082761,
+          "root": 355671,
+          "evaluations_sha256": "47e2dc5e9b2f399f4458950c18f9d64a390ef39270e46d1d0a1d5ecd3fab0dd7",
+          "interpolated_sha256": "cf5bb64550e74e4956cfc1fe7d74b223f6a92438b2ed38e94200f6b5f9951e8d"
+        }
+      ]
+    },
+    {
+      "radix": 4,
+      "prime": 2,
+      "primitive_powers": [
+        1,
+        3
+      ],
+      "resultant": [
+        "1369",
+        "0"
+      ],
+      "resultant_norm": "1874161",
+      "real_norm_absolute": "1369",
+      "bezout_coefficients_sha256": "5a96d7c2c334790d3fc182347d0b6191224d17643735d534f49cc764ce6827eb",
+      "bezout_identity": true,
+      "coefficient_bound": "22781250",
+      "crt_modulus": "1172388707297",
+      "split_prime_transcript": [
+        {
+          "prime": 1082761,
+          "root": 422505,
+          "evaluations_sha256": "2f00eebba55cfda2af4a096c52a7cd91f7e7b3f8642b78140a62948641f7c520",
+          "interpolated_sha256": "c9d344f0067e3887b0ceb8a60e074f06008b91b12ca5aad5a62b4afd69f1c409"
+        },
+        {
+          "prime": 1082777,
+          "root": 646775,
+          "evaluations_sha256": "2a90cd3ec2120a614767e97f953321fa79a860ea3fcb327a8a179d0a3a332c2e",
+          "interpolated_sha256": "b6953d32a163b5b61f0565fd584bcf8788a7281ded7d4a150815fd991a20b3e9"
+        }
+      ]
+    },
+    {
+      "radix": 5,
+      "prime": 5,
+      "primitive_powers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "resultant": [
+        "98873",
+        "0",
+        "17859",
+        "17859"
+      ],
+      "resultant_norm": "59153839714775462281",
+      "real_norm_absolute": "7691153341",
+      "bezout_coefficients_sha256": "cd48cb5f6c44a58b458242558b9e1703aff94d9dab6a96e55222457a6469c0b7",
+      "bezout_identity": true,
+      "coefficient_bound": "1705782074882",
+      "crt_modulus": "1269585595778029241",
+      "split_prime_transcript": [
+        {
+          "prime": 1082761,
+          "root": 416473,
+          "evaluations_sha256": "b99e5706f2554be1f4b49a173fe9f2e5f9d8f494cae0177d9a04f3f5e3b27ebe",
+          "interpolated_sha256": "fee4a1046834454f91e93ea9db4e4f6ad9bf8084b43e5a6ac37b79a3602a165f"
+        },
+        {
+          "prime": 1082801,
+          "root": 241447,
+          "evaluations_sha256": "7384831b36073199b0ff93a37da20c7fa6eee188543d413eedeaab299d8fd72b",
+          "interpolated_sha256": "6b46d67ec1c560e106cc7ff79d86582b412e709bcbec7da616e3292cd8f52662"
+        },
+        {
+          "prime": 1082881,
+          "root": 228724,
+          "evaluations_sha256": "99800ed9657409d5b02c5e25096fc67926bce562d01470f299add85e13dd3350",
+          "interpolated_sha256": "5458e82bdbc9e9f9dbab30ef54043e6e86e4b854180fb340e9e6d6badc462f5a"
+        }
+      ]
+    },
+    {
+      "radix": 7,
+      "prime": 7,
+      "primitive_powers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "resultant": [
+        "1614683133",
+        "0",
+        "309213807",
+        "655729995",
+        "655729995",
+        "309213807"
+      ],
+      "resultant_norm": "896102200453988723633857742480154998237297038581719649",
+      "real_norm_absolute": "946626748224446023990588593",
+      "bezout_coefficients_sha256": "001b55c16969f0f2c0f6e5f936062cea9a6a569c2ba8511051454d542f9aef3f",
+      "bezout_identity": true,
+      "coefficient_bound": "35210699032441528543933442",
+      "crt_modulus": "1489822904267522968863547816409",
+      "split_prime_transcript": [
+        {
+          "prime": 1082761,
+          "root": 707116,
+          "evaluations_sha256": "cbe8e2b48adcdae3aa7146ae3e53b09458f15a251e253511bade240295015b1f",
+          "interpolated_sha256": "ced01434b2a8518c98460e00ffc678a97fcf0392d790654ba6a2ad1e662fe619"
+        },
+        {
+          "prime": 1082971,
+          "root": 347503,
+          "evaluations_sha256": "2d3fe402f01be7349219c4cca8c9984729a79144248c6cafb6aff3859e62a538",
+          "interpolated_sha256": "451f5fe2a8492caf30ec016ff7adbb3db0cfdf284010f0ee34a3229eb97ec5e0"
+        },
+        {
+          "prime": 1082999,
+          "root": 204625,
+          "evaluations_sha256": "e5ffd5b92849728bdf6ce00fc54cd5a69ac3cad94fc25ea01ebd6960f5f6a7b8",
+          "interpolated_sha256": "0bcf797291a0383e3e275e3984334660cd87bb0a8458819bc61823db40d0ca79"
+        },
+        {
+          "prime": 1083083,
+          "root": 714807,
+          "evaluations_sha256": "4c8ac85f91b6d69d402661cf75c4e8cba97cf4784e4d5120af7c7de4ef263b2a",
+          "interpolated_sha256": "7e58f7727c6d7ef49fcec67f4c53a53431da3985967e1296744fd38f3053c623"
+        },
+        {
+          "prime": 1083167,
+          "root": 508304,
+          "evaluations_sha256": "05fe08cbe465f2d739fbafcc002f000de4bdcabcef54fa377d5292b8c75ed634",
+          "interpolated_sha256": "9b2ede847907b105597969837359951fc5aded6c1e93527b72c996b180c87aac"
+        }
+      ]
+    },
+    {
+      "radix": 8,
+      "prime": 2,
+      "primitive_powers": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "resultant": [
+        "215866660257",
+        "-150779063963",
+        "0",
+        "150779063963"
+      ],
+      "resultant_norm": "1276363874437731439164692657918376091146721",
+      "real_norm_absolute": "1129762751394172775311",
+      "bezout_coefficients_sha256": "2e336f30a7da75eaf88edd873cda0e8f729986616324f7c1a3862888d87c5074",
+      "bezout_identity": true,
+      "coefficient_bound": "9830882870129288354226086425781250",
+      "crt_modulus": "1612288228465742603298991501012071769",
+      "split_prime_transcript": [
+        {
+          "prime": 1082761,
+          "root": 194424,
+          "evaluations_sha256": "555c8eb24d01f49848e8e5b8e1e01478b8014de397dd94fc4b8eede34c62aa5e",
+          "interpolated_sha256": "230ecb3ae28d3227954faa074664ab784e331028ae55dabc46c636bda008e52b"
+        },
+        {
+          "prime": 1082777,
+          "root": 1677,
+          "evaluations_sha256": "425a19de7632d50e7b36d9848c6ad68e731cd19196196c58a3b7db75d7c0a071",
+          "interpolated_sha256": "b8859abe8d2d2f1ff956c972f6d60877b5b37b910e603092348196b85d91f8ac"
+        },
+        {
+          "prime": 1082801,
+          "root": 627559,
+          "evaluations_sha256": "50fc2bedc8cba46079e490a72bd8f7d64d69a4d6bdbf0b9edbdb00b3b7ad8ce5",
+          "interpolated_sha256": "1d95b4db88cf29f095d09e14d0784c8ce52714d64eb3656927ee747c706f12d5"
+        },
+        {
+          "prime": 1082881,
+          "root": 842264,
+          "evaluations_sha256": "151a82daac8c7fa981cc9971f8a05ba173c9ae6872f191e016756ccbc1f3d925",
+          "interpolated_sha256": "d44d7e259fd5d8e675e3a9afddec40ad41ffb231156353af1f9dbbbdb28ed9c1"
+        },
+        {
+          "prime": 1082969,
+          "root": 303664,
+          "evaluations_sha256": "923a3df9da2bf88b2199a458f0271fefa2bf38f5760e4f18fc20e57a8d617e2e",
+          "interpolated_sha256": "9817f022b260fd81743dfd79bff44ae225ac24157a2f5d9392a3ccec4604fc97"
+        },
+        {
+          "prime": 1082993,
+          "root": 909101,
+          "evaluations_sha256": "822545a567b3952eadb3e727ad0faf95a0bd0a2d95636aff412ce6b59e818416",
+          "interpolated_sha256": "35fb1a7f6f47b29819c52814c78054e0bd95881047284dfeb7829bd928dddd62"
+        }
+      ]
+    },
+    {
+      "radix": 9,
+      "prime": 3,
+      "primitive_powers": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8
+      ],
+      "resultant": [
+        "59159814381218",
+        "-3307909913661",
+        "3307909913661",
+        "0",
+        "31440493920592",
+        "34748403834253"
+      ],
+      "resultant_norm": "1638741103051297000626316645188867820673544521390620038445725172772672489106157489",
+      "real_norm_absolute": "40481367356492505225174465618562537045433",
+      "bezout_coefficients_sha256": "5a684a580fcbdbc1c991cf60e7d4b92d54888619ed26326746df7166daa6fa72",
+      "bezout_identity": true,
+      "coefficient_bound": "43227925847979137899754089375063004837560322",
+      "crt_modulus": "1893631575262690981121700752867405324328324489253",
+      "split_prime_transcript": [
+        {
+          "prime": 1082881,
+          "root": 356501,
+          "evaluations_sha256": "031e201eebf932076eaf1cb9590d4f0948111435939dc9295b768a90ffe2365f",
+          "interpolated_sha256": "1ce7d4ab5f918ce15b4a53b2d1953f5e310a8d7011bfdd6cd0fe0e81b855099d"
+        },
+        {
+          "prime": 1082971,
+          "root": 714958,
+          "evaluations_sha256": "befbcf05f45a9823a20d3329920dec2d2332b63437b9557d54776b0e787ba700",
+          "interpolated_sha256": "4f08b1b7f99a7d67d6c138801f0fbc50ed43dcbd027778c2cdf7c7c7f78c3c2f"
+        },
+        {
+          "prime": 1082989,
+          "root": 311863,
+          "evaluations_sha256": "e5ba5055cfcfcc75be0c15c6ecbf99bb7383c832fd94d0357bb46ff7e4ae6569",
+          "interpolated_sha256": "4e905c263304be7898e794ad528ae613ae966ff8bbd2919addcc14735f0d011b"
+        },
+        {
+          "prime": 1083007,
+          "root": 570765,
+          "evaluations_sha256": "00dee28c2900ae034578a39055b01220caa3cf5a12d73f84b3c9e753f93fa780",
+          "interpolated_sha256": "d1fb65af5a4b0defab7b9c7d6d7e19e3acb414d9359a95a2473b201ff39fb6bb"
+        },
+        {
+          "prime": 1083079,
+          "root": 759749,
+          "evaluations_sha256": "35c0c35371b271681b446d3f6c5e0aa30b821cb165854ce6ed17a4c6619efc36",
+          "interpolated_sha256": "3a40b63285d08e4f7febf86270f3db1d8aff1eb6551532387f1ed8f7c0fc4d7d"
+        },
+        {
+          "prime": 1083151,
+          "root": 676963,
+          "evaluations_sha256": "dbf51926a61b933459728363568df2ea95a756a77101d8ffd78b42a02ef1270e",
+          "interpolated_sha256": "760bbbf4f93202fe9faa1a64f9b4e9966cf944db05cec20ccc568242b7b184d9"
+        },
+        {
+          "prime": 1083241,
+          "root": 517854,
+          "evaluations_sha256": "e434aede16836420199d0110410bb15f4eff65ca83e9a185eba56617424398c1",
+          "interpolated_sha256": "97da39ef806b3a4ec33c87d2b7b1ed1597e50bb00ea1c18de5fedd2331be0808"
+        },
+        {
+          "prime": 1083349,
+          "root": 137013,
+          "evaluations_sha256": "48accf3f3e10b5251a7ca20a915892353578497153978aeec92f8775571a5a5c",
+          "interpolated_sha256": "03b5c060ec1628a6091901299b94cdaed8a4c4f1a5abc7d87947464d5c2a3e55"
+        }
+      ]
+    },
+    {
+      "radix": 11,
+      "prime": 11,
+      "primitive_powers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "resultant": [
+        "12907827676205015036",
+        "0",
+        "-2029333885163517958",
+        "3439567950330142109",
+        "2766330266681875563",
+        "3301184785656205524",
+        "3301184785656205524",
+        "2766330266681875563",
+        "3439567950330142109",
+        "-2029333885163517958"
+      ],
+      "resultant_norm": "68705653481322903084793971383554149663491194489598538458143218665031325379439989281390213288588888571201328622029234920886140306200642362747142917392132255817656377958585412388769690935849",
+      "real_norm_absolute": "8288887348813645391343539861599984645631714529842128591080399032645077283250270539745034069043",
+      "bezout_coefficients_sha256": "5a7a02614d4042b4c34fe9ea9da614104c461fa28bfc4459e9c6face96e4c8f5",
+      "bezout_identity": true,
+      "coefficient_bound": "3337235455044781007950177341311674856304960249800595815826949324802",
+      "crt_modulus": "2627526844750067082694417283718842834366874973294109993925675748180440299",
+      "split_prime_transcript": [
+        {
+          "prime": 1083083,
+          "root": 635200,
+          "evaluations_sha256": "1dcd1382b5470380f38970c6d0657465279b9fb146e144745168bce2788e4228",
+          "interpolated_sha256": "fd948b8dce5857e75b8739e45d5a62b6e230b4eccd86bccbc0a6ed7cb0daf9e3"
+        },
+        {
+          "prime": 1083193,
+          "root": 111150,
+          "evaluations_sha256": "b67c5ad2181f0ea3d898e9dd956ea2d02aa3add5370d3372ee3b1fbebc568585",
+          "interpolated_sha256": "d29d7940e09639621a937318186717221397b03ad2c83de80f5bf30df3a7e060"
+        },
+        {
+          "prime": 1083391,
+          "root": 1024934,
+          "evaluations_sha256": "605640c490d13592038ffcdc0499192501ef7b344b3fea402d2967a28191985e",
+          "interpolated_sha256": "de093927899907d31286d7801fb83d78a1ab24bf025d02e7b25d3b1e669c3364"
+        },
+        {
+          "prime": 1083611,
+          "root": 522307,
+          "evaluations_sha256": "c20da597f8f1f0870b763baeb6beb257f793af1b40862d180c090d78e9f77b44",
+          "interpolated_sha256": "d541faf2109ec5514ad1ec2b70dc5508031cb2a94be10d071694cf1fa777703f"
+        },
+        {
+          "prime": 1083721,
+          "root": 457511,
+          "evaluations_sha256": "66af4822e30c4ca4fdc887614d347ce0d327d357388004f7a0b548a219da6e13",
+          "interpolated_sha256": "7c0823ff715dd9a2bb7bf0a2aff2a59c72057c03d3303911c1b11669ef11aa94"
+        },
+        {
+          "prime": 1083743,
+          "root": 226918,
+          "evaluations_sha256": "09739c61258eeceb459df81ea56febd41bcff7e9e27eeffa9dacd3efb9fdc126",
+          "interpolated_sha256": "3730723efed11ee8657e3b0fbdb1f443d51a2730cf95fc5f524828e2b52589e9"
+        },
+        {
+          "prime": 1083809,
+          "root": 175308,
+          "evaluations_sha256": "3343f31baed56b9fbd9b035ca372cd51cebe8d211d03551716dec6be7355ab36",
+          "interpolated_sha256": "26fe3338084586ab12f563c5eda128735117cc8f60edd16680a220aa30dbcd53"
+        },
+        {
+          "prime": 1083941,
+          "root": 846040,
+          "evaluations_sha256": "04dbe8aeaead499450112cc39ecaff2a5a64899e19e123a1648e129ee96628c9",
+          "interpolated_sha256": "6741191c7351cc532fb4c069bf56010616b991b56704a76f4450ba768b2e4528"
+        },
+        {
+          "prime": 1084051,
+          "root": 809390,
+          "evaluations_sha256": "eba07354f22cee9df4e9fa9c2e6d1d7c0ecbcdac5760641513538340bb8e0dc4",
+          "interpolated_sha256": "6f49374046f6ea958c894285c01d935194b9e53801a843bf40a5c8fb2103e2ee"
+        },
+        {
+          "prime": 1084403,
+          "root": 520979,
+          "evaluations_sha256": "0c29149b404b0a8fa835f9a1e976f4b99fa78a1b62fed4a6457f1bc5f406b306",
+          "interpolated_sha256": "d8205df25f71ab4ab45996070dfc32b0c0700718678214b9af597ec24b908b5a"
+        },
+        {
+          "prime": 1084469,
+          "root": 193346,
+          "evaluations_sha256": "55b55bb936532154fe9a2fc50fcb1d71f761bc9fd2a581f50b5bf766bc4484a4",
+          "interpolated_sha256": "d7d1a58a026dc85fcd7592c86891672f54279f4eb0a84dc5c3695a45fe23630f"
+        },
+        {
+          "prime": 1084579,
+          "root": 263269,
+          "evaluations_sha256": "6e640951c19390ae93e53cc0219c4df458903999131df3f9b76d9a0672c03068",
+          "interpolated_sha256": "9b88b798a9b24cf7661321ade9289e5e50aed3a3f346728c4e7d2b1c0cb3acfa"
+        }
+      ]
+    },
+    {
+      "radix": 16,
+      "prime": 2,
+      "primitive_powers": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "resultant": [
+        "3284660719894727392294881101519231",
+        "-1160858983641429652867059743917066",
+        "1020093695790239275761244824566",
+        "-1398507029340547672282317193354491",
+        "0",
+        "1398507029340547672282317193354491",
+        "-1020093695790239275761244824566",
+        "1160858983641429652867059743917066"
+      ],
+      "resultant_norm": "13217418027564774723729962805961138755734679110002850865578034667839860730599694425228319413987717066386091893593292002972263855219685916555990914159883150314988692009123189515104413254563026599241589704577616097812621562531243006219319234267848156096585879945093601",
+      "real_norm_absolute": "3635576711825068163724578514493802804317216286768690416310671201172063668372481545546293773641057707990298788992795467996620380145551",
+      "bezout_coefficients_sha256": "80fa2efb1591eedaeb4d0ed0204c4209d4cdb9350340327db72774ac577e068d",
+      "bezout_identity": true,
+      "coefficient_bound": "6240639686733501349463755573648399547217584345602660769814190132581621298743964734008293577106601289337578845390273402937220409512519836425781250",
+      "crt_modulus": "7576475982401171325077805723313433005097756612105435794817356172258778758193174341677794162765886187110196308410212961775747574582928716031028478133953",
+      "split_prime_transcript": [
+        {
+          "prime": 1082801,
+          "root": 462140,
+          "evaluations_sha256": "5036176d7ef7b8848d106538cca3cab4c8c4693423cc74f39edee302a9b61b98",
+          "interpolated_sha256": "b383afa4d1b72824b411ee8f827826e2d7a011d44573ed7b32d1fd09e03e4779"
+        },
+        {
+          "prime": 1082881,
+          "root": 204665,
+          "evaluations_sha256": "0865500f988722eaafba6828464eb2b3e5d981b24654dc1298608214974dd0dc",
+          "interpolated_sha256": "a3c5b327848f70f0fdcfc563cb9d41e5872cfd377212f3ad22528d7e03c6da72"
+        },
+        {
+          "prime": 1082993,
+          "root": 952594,
+          "evaluations_sha256": "087cfc5c09e5d62e0c7aacf99862b4af4e2a27a75f8c57f2411febd9f61cd01a",
+          "interpolated_sha256": "e77d92faf8ef723715c465248b0725aa6144fcd1411ed0f3914f2f58dc459399"
+        },
+        {
+          "prime": 1083073,
+          "root": 707813,
+          "evaluations_sha256": "37f2c44a974b7414d700636ff325565fc4f6ecc6359456228b85812374120fbc",
+          "interpolated_sha256": "4e2ea7089f179251eb2e7856491271a4d84e2acf764a6fce05771ad2e4f3c338"
+        },
+        {
+          "prime": 1083377,
+          "root": 165141,
+          "evaluations_sha256": "5fd6d5721968ccd75eecef00856bbbc3d6775d3db798053457d4edb086e58830",
+          "interpolated_sha256": "12908a034871a02cd077d75bfff9060757154e600d808a2727d7e546547b9d86"
+        },
+        {
+          "prime": 1083409,
+          "root": 701016,
+          "evaluations_sha256": "fa948ae4ea47d3a58af13a67d97507044b7f6937f7a7042bade9e1bca94d394e",
+          "interpolated_sha256": "9b24c2a5f20ee36b6ef1d0245a9daf5d1527e222c5a66a3780e24794ad568fb0"
+        },
+        {
+          "prime": 1083473,
+          "root": 494671,
+          "evaluations_sha256": "69965bde33d647dc369378334abc8fa09831b352bcce25040f4a828c446aca8b",
+          "interpolated_sha256": "04b10fb3a9d68db4d99af9c15b27b09b1c0714264cca9fdb309f4ffd40880da4"
+        },
+        {
+          "prime": 1083601,
+          "root": 1009237,
+          "evaluations_sha256": "b3237f11a404a6c02e4536b56876ce5972cec0e6d1076ef73f96c4d446171769",
+          "interpolated_sha256": "65006a479f0261eaee7f6d74db31218a5a5d9292931119af0326360e45ae6a26"
+        },
+        {
+          "prime": 1083713,
+          "root": 723236,
+          "evaluations_sha256": "2ca5188acacfee3e6ea77d8fc62b42f9dfd278a5e98bb697f2f9cc19be01d366",
+          "interpolated_sha256": "80e9a1991dacda647641dbbea6688568fc121291957f1b4c7752d866673c86e5"
+        },
+        {
+          "prime": 1083793,
+          "root": 478192,
+          "evaluations_sha256": "dc036569a450ac01cbee98ab77167a9d7e5e8074134e095cdf180018c0f94b7b",
+          "interpolated_sha256": "12f4a24417186fa28b5c1d10015f3428ea2f51ee835afe875b15ca1b775846fc"
+        },
+        {
+          "prime": 1083809,
+          "root": 1022163,
+          "evaluations_sha256": "686075e0b39eb44767c328b6e3e47ef8483aa4985ac1b033e446bcf5bea764fa",
+          "interpolated_sha256": "25545bcdf49da2daa4545efc565f94fbccbc61d6ea7f00c661e444bb84160583"
+        },
+        {
+          "prime": 1084001,
+          "root": 647967,
+          "evaluations_sha256": "bce5226a0f7a3b3b6803260c183990cd7c0c84054e3e974717c5d343816defb9",
+          "interpolated_sha256": "d3a3db6ed84e9800f54eaae433e63735ca6b93b43397069811b2b79d6f2188fa"
+        },
+        {
+          "prime": 1084177,
+          "root": 918787,
+          "evaluations_sha256": "744ce57f72cc7e0a15ad7874132f0f1c26b39f71274e326cd832f6ee255e562a",
+          "interpolated_sha256": "167a772ab672867cc134e62e0b13966e9466e74469fc03590b7fd6879b98b82c"
+        },
+        {
+          "prime": 1084609,
+          "root": 40678,
+          "evaluations_sha256": "49b7f649b06fdfac487b19b8747c205faa14695aa8e181eeb79c037caf67b613",
+          "interpolated_sha256": "3bfb9e22abe51a56299c86f0c75f96c60465f60af501b9df5a3cfa23c8605b6d"
+        },
+        {
+          "prime": 1084673,
+          "root": 713172,
+          "evaluations_sha256": "13dc1444d34bdc56392943aa0a5db8fac17f93691832d84bf5310dcbe2635b6f",
+          "interpolated_sha256": "a9f1790a580ed5a4866e40a1fa17287d245464b7bf09c8827d9be7af3b7bf34e"
+        },
+        {
+          "prime": 1084817,
+          "root": 943616,
+          "evaluations_sha256": "8448e3f6ca43c4d9c2f03afb1031befe448ab5176495944d0f913ceb16b44e4b",
+          "interpolated_sha256": "2feede9c0b60955da76da46687dbfa61d4805dc707311ba031b6a4dd6af76818"
+        },
+        {
+          "prime": 1085137,
+          "root": 1068297,
+          "evaluations_sha256": "a5e97b1bdae04f1a2e411e09956d6f22dfeaf0be7c6b37e3d6d03cb39f83fa49",
+          "interpolated_sha256": "4d70de8bd6172224f59c4795c41569a7a52070cbac822e31260459d8082a2854"
+        },
+        {
+          "prime": 1085153,
+          "root": 445639,
+          "evaluations_sha256": "14dbcc78285b0254ad2958fde36c97e9daf3f3d92b538e06ab3e47fe14538352",
+          "interpolated_sha256": "4a75f6c8f5963237256ecb5b4a38a10c28e7c25fba4b894569d2ea02b0d0bac6"
+        },
+        {
+          "prime": 1085473,
+          "root": 811566,
+          "evaluations_sha256": "57fe576228552bb393b898d9a5610ada2f92a2f1b94bfe1681313a9b83896962",
+          "interpolated_sha256": "f4a00e9ade21d10587b97ed55ef48e95e86331b15dfbfd7a80fd31fad7f8fee4"
+        },
+        {
+          "prime": 1085521,
+          "root": 51116,
+          "evaluations_sha256": "e3a648f5245c583ed49e0e43857ac029562433bf6df2ad9d969e4591fdd918ea",
+          "interpolated_sha256": "aa9e2514a255e321a66bb92857c2e4c5a9bd1d5d32433604d3f3c1489cce455a"
+        },
+        {
+          "prime": 1085633,
+          "root": 793421,
+          "evaluations_sha256": "65ad3973c19ed7fd8db4e5eb14f6133ad841129f2a44064cbdf4f9ea591002dc",
+          "interpolated_sha256": "e0fc857afbe3e26cd88c2c913ef39ba38016b5bbdc8efe5c91b36cc348488916"
+        },
+        {
+          "prime": 1085681,
+          "root": 796614,
+          "evaluations_sha256": "8c4222050f2be483211c2c3424f2558680144225855690c910cc22da75c4967e",
+          "interpolated_sha256": "34842d47f80d698b02b9aca4b26ea725c47f2ca6b61848ea74d952ce543f4f09"
+        },
+        {
+          "prime": 1085809,
+          "root": 615528,
+          "evaluations_sha256": "b59da89f3f7fb544e02fd78d8b5df3bb2a99b84f8392b00648c572fe020091c2",
+          "interpolated_sha256": "8fbda1c0d9dacecda3531fb5672ba7398f7c6c7cd90e6059ea5c6594648903f7"
+        },
+        {
+          "prime": 1085857,
+          "root": 787510,
+          "evaluations_sha256": "26a8c253591269b01d232af07f3d54e898835444e737b7c1bda03096c186967c",
+          "interpolated_sha256": "c26abc0f581c758ce48c80f65bb88a538fa270b4735e4f853ea8a8ccbcd12954"
+        },
+        {
+          "prime": 1085873,
+          "root": 1045498,
+          "evaluations_sha256": "d42f03b860df08ebe6152e196b5c4ae16cc254b9884d32448f75e2ff35b0352f",
+          "interpolated_sha256": "02d1251302e4dc0ed3a49d008a1a0b89d07027f9b896aeaaf92199149070acdc"
+        }
+      ]
+    },
+    {
+      "radix": 25,
+      "prime": 5,
+      "primitive_powers": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22,
+        23,
+        24
+      ],
+      "resultant": [
+        "537090043038950205826923275939457429049966123304030590905944957",
+        "-124168755809426593290654291776393175124760699866819066844155545",
+        "-166987003594490714370374217705565681953751406195949713506062209",
+        "166987003594490714370374217705565681953751406195949713506062209",
+        "124168755809426593290654291776393175124760699866819066844155545",
+        "0",
+        "68594665110442118850465848614324021559854510720781104944215890",
+        "88920964440214219497879158081618746453397114766540831496321838",
+        "87573477840589088342204353881259922630387841171208823965936971",
+        "175874524870013691501793774995257994170900224183447210003690846",
+        "-207496180285668599544178932642201120361069472856124829823217541",
+        "439070884056096140715768011033296554515011269882905037490453076",
+        "-196571817940769223490169861169810269446040416958490901227074265",
+        "-29584814346278509119795643464244587492289010762541187721012056",
+        "563239639865522734006422302809689729639771969749724104334608621",
+        "-207496180285668599544178932642201120361069472856124829823217541",
+        "51705769060587098211139483218864819046139524316628143159535301",
+        "-79413525753901626028169863824305759323363565024740889540125238",
+        "255907968034704933868253375787184428407148520962490545002384047",
+        "192763420919868712141120140390717196684615210587600171788371435"
+      ],
+      "resultant_norm": "103610589916037839333214255040271929967496501363402894246222279859118613190793314390566030397287246779840622552076229550508137851020735294687772498600775656057559748179264603853429032666139290451489506153075310149061983114609090297945754673424344903619638373530980401655725553873016066209646522934649895435387762851393848230700361686353503868611162536715339226027555256102136135813937675537559482198424822641975253560530085462302711215863629537500210154762232383987125077605221366581379630077690083633928971340732065072690867098679208888741501546844072315009035319391952807782152748156107245598912605067880852266095546926603005350357224315103090831082682262630578865047440750422649359304672447048744069678860922481488264390862478771257597638629665039788963334682670466909413819600914340994180001475492389391223087473382282996744457707084617297617704610879974436978006240700213778104318526302303818723412203114035337309058435480801500287665831464537412164324442330801835388192006985882231626548886732945096041827705006418692468375845132738124713117705705131389963022293916664480960204167518654757587487674024372593589544235678376486148766774237619736159542343905161979805259988025487681673663564337397241328333799359972322193051398910401",
+      "real_norm_absolute": "321885989002376180364297572466175681575407784208592358527305434210234481183943265666047462396384677119835742286275747627898955263653161644883851381095593849999048770255262863553470407512790726974850830306723379486027826138052898420001512822032034166870594172213606996333101634855233364160376483448189300155496311122568015005244316940202563262894932300553445906334551282140633192214421043506612271032266013604774886859923031925742536418204113474005086907386838845496833890649284377393314467070357764881522015310448576942503204863226918748503549632107646294639179367926096797987562139527042144980229385155630196400064799",
+      "bezout_coefficients_sha256": "3954fa82b7250b602e6621f1aaf96fbeb695bd374006761fef9f45c51c5e4271",
+      "bezout_identity": true,
+      "coefficient_bound": "34436909650341127041855256886480473067162417921463349834051922101905637703452859521749660811997371289018688751534463250824341918023638493903060010744348404748094649075688744324358745277225226960974091906261161340198240796432729460202280115160778383612325166035349990993449533544966715820491400472298211862424692997111107114687159366540321390569846390587580743682",
+      "crt_modulus": "186929702147013036676036177117078406045043515224309562403862499279577800891124765773620990673010356729830602758514851342866445176375043509376044992319582540177611380496055987276910174883968681912234279015026817951301398629779985368774428586414395432515629924426938550961921147185751413105253798045422685468454886328718737851193913028850946590683155337922657641151",
+      "split_prime_transcript": [
+        {
+          "prime": 1082801,
+          "root": 999990,
+          "evaluations_sha256": "553f23021acabd4e51d386ac10bfdf58a8ecd5a9a5094da33e61cae65e43d0b8",
+          "interpolated_sha256": "12929b6ba27e9ee91ee4aaaba7d9ed0e7eab3bfff6e48bd5809f4993ce0b2dcb"
+        },
+        {
+          "prime": 1083151,
+          "root": 765911,
+          "evaluations_sha256": "4350cf9563216d62665552bb0a27793d663f14be2b041445a5fad35625dd959e",
+          "interpolated_sha256": "26acdf5bae5a9c8f9cba3a00d65f3216c16c2a6b13481a470fe7ace92140be08"
+        },
+        {
+          "prime": 1083301,
+          "root": 39932,
+          "evaluations_sha256": "7a64aa435d5660f365806697c9fd41b3ce706e2e1ecae8da9e8e3280b3371cc5",
+          "interpolated_sha256": "0900d2e09a475dfdda880fc485538e8a46511e84ddd499ed8b9e5ed3eb627c1d"
+        },
+        {
+          "prime": 1083451,
+          "root": 917213,
+          "evaluations_sha256": "532bc8bd0a8e87671631d71f607c12be241920ebe9f4300b26e75c3479f5fee3",
+          "interpolated_sha256": "570f1fe8244785ff7cd7147481f476df32859bb83d500e5f4b64991c47d1b029"
+        },
+        {
+          "prime": 1083601,
+          "root": 624425,
+          "evaluations_sha256": "0ef6e94d872392cb5562dda79041b3a8bbbc0fde7de27f1c366244a9bf500788",
+          "interpolated_sha256": "ce33c49a64c3867e5b7d8d381df59c78e89443a264bcc5bdce5448529b361d61"
+        },
+        {
+          "prime": 1083851,
+          "root": 34665,
+          "evaluations_sha256": "14531cd6ff47958db18e7ad2a30593db98a6d2f87fd6f18e074c59334305f7e0",
+          "interpolated_sha256": "95a3a045f63d1626873269de926ec43e01b68e7babc1ffdd5fa9bab988117480"
+        },
+        {
+          "prime": 1084001,
+          "root": 1042360,
+          "evaluations_sha256": "4f5ccb12d81d0f48bdf58d38de49bace8d9fd859f085a1233190e8a186b310ab",
+          "interpolated_sha256": "7265e537cb0a21f197feede54f962b8b1efd8d69bccc86e209ba06af5498a3b8"
+        },
+        {
+          "prime": 1084051,
+          "root": 1033247,
+          "evaluations_sha256": "67bb60b1b7114880549237f8205488b867b3e8dd1f7400f3564306cfd76dec7e",
+          "interpolated_sha256": "0cb95d43c00548fb2b0cad47bb45762e7369548c806601763e0a15b63b30578b"
+        },
+        {
+          "prime": 1084301,
+          "root": 657785,
+          "evaluations_sha256": "a698c1e4e2b722d630101466ed2216b67376d58f980d5137dad41bbbacea68c2",
+          "interpolated_sha256": "9d0ce8327c8bc976a1be84676d7de7b6d6e4b3770232ba8152b7993736740e6c"
+        },
+        {
+          "prime": 1084451,
+          "root": 1002428,
+          "evaluations_sha256": "a98ff00a9124955ce5180927fa41d9edc1b08c9a1360dffc5ae0d5875f406cda",
+          "interpolated_sha256": "993897d3180bc25418849ea8a73dc89bb55ea19fa8e37f5211c709417a85c4d7"
+        },
+        {
+          "prime": 1085101,
+          "root": 973697,
+          "evaluations_sha256": "d851f96b600991991da24a67a54b390ec227b0cec872aba03ee246bc2128959b",
+          "interpolated_sha256": "7434404258ebc8c4328342d89473062e272f78334422d146b7f32d97ebd865a6"
+        },
+        {
+          "prime": 1085351,
+          "root": 378975,
+          "evaluations_sha256": "16d8918288bc3b35a63717f05cdc8092f49528745778cc4766f12d43136db20c",
+          "interpolated_sha256": "06870dd5229c8bfaad51781a1ec419df8e48a29f70bd21c548745cea014616ed"
+        },
+        {
+          "prime": 1085551,
+          "root": 646629,
+          "evaluations_sha256": "4bf13a8a8fea6ccdcf20c336e95fc05c98c6cd00fdfe7bae44696304e33ba584",
+          "interpolated_sha256": "50742340465ef384065b61235eb1ce6ad31d653e421c4f66e3ae89b8de247a68"
+        },
+        {
+          "prime": 1085801,
+          "root": 566259,
+          "evaluations_sha256": "c6f833cb904072e2017be8740d950b53f3ca02893f4a68c8b7ceeaecae90955b",
+          "interpolated_sha256": "ef7201bd13c97dbc16fc5398af4cca9f6dc627b356783e8aca825024059a3000"
+        },
+        {
+          "prime": 1086101,
+          "root": 708853,
+          "evaluations_sha256": "619b3c2aa6cbfae08cfb3be137914cae3995c203a5297fe8cf58740a48c236e0",
+          "interpolated_sha256": "136eb72ffc58603952e6195bac705c090d6484e70ecf7aeb0a81f0461daec13e"
+        },
+        {
+          "prime": 1086251,
+          "root": 630694,
+          "evaluations_sha256": "94e916903853398bcda449b0e30427b98996aee52a8434ca5aab9ef838f92e4c",
+          "interpolated_sha256": "103ba0dc09301e2913a07ac4c2d8267f0065749c6b92ef985fcbb1b089dbaf54"
+        },
+        {
+          "prime": 1086301,
+          "root": 457333,
+          "evaluations_sha256": "b9c63bd0faa4e98f70b7ecf0b6c0f55757b490f1d172a2aaffa5ab103de65d8a",
+          "interpolated_sha256": "ddbce6bc9f82d46692015871ec1837d6cc3cba142e04d13ef99165b2b9ae8177"
+        },
+        {
+          "prime": 1086901,
+          "root": 443387,
+          "evaluations_sha256": "e5970b6240f9bb0f163b34c7f482c096304e7ef53cdb53233c8fe2721552cdc9",
+          "interpolated_sha256": "d0fa56255455851b239c72c8afb1743a7b8c559e6163fae2cbf2b3e803882a29"
+        },
+        {
+          "prime": 1087001,
+          "root": 255664,
+          "evaluations_sha256": "16acab2d2dc41ebe989b02840160e9a8ebbceec8fc44d43a89e42b8c498b7570",
+          "interpolated_sha256": "6e09a76f7cb35c514b7489903186a0736af7c07686296117856a26a71333e181"
+        },
+        {
+          "prime": 1087301,
+          "root": 95443,
+          "evaluations_sha256": "a2d5fa1d7ebc9f4eeedb010a80b63bf69f119fefed8616b21ae106a58e3ab5a6",
+          "interpolated_sha256": "ec7c9681e657a910b5a865fc1c7b866deeeba48a3495ef408cb2e74b4e54e012"
+        },
+        {
+          "prime": 1087451,
+          "root": 917911,
+          "evaluations_sha256": "75bf85fa2b456f17dc541349da9bc90899133f10ee6cbc0875e00635988b781d",
+          "interpolated_sha256": "df8a8c795cd270678e0b026e2c0add5c7f540f69e9acd7b7ba25acff0e67ee5c"
+        },
+        {
+          "prime": 1088251,
+          "root": 212445,
+          "evaluations_sha256": "e18935cc2c3a266e24fb77fdd4e1188aaae8d98cf8e48ab16339a7332abbb0e0",
+          "interpolated_sha256": "74fceb0bab9f9ebab8cf997f520163eb2093cd21911400a52bc564bf59219185"
+        },
+        {
+          "prime": 1088851,
+          "root": 899366,
+          "evaluations_sha256": "c959acb12bb5916c3cc100b472bf84d4c040fa2b83032eadc66f96af162b44ff",
+          "interpolated_sha256": "647db7a694a3092785e82f9e595a0224a7c5a2bacd7fb744f2730017755d5b31"
+        },
+        {
+          "prime": 1089401,
+          "root": 440037,
+          "evaluations_sha256": "51153abb98f6c85ba1aa7511b49bef5d92ffc538f60d002a5b722fcbe6b78662",
+          "interpolated_sha256": "97de40bcd4f024129e464dea4c12fd5d335c83477a1d227fbf962bf4624f4c3e"
+        },
+        {
+          "prime": 1089551,
+          "root": 836460,
+          "evaluations_sha256": "cf92f5e30f5d8708bc09f12fb293087e03f87c27bed2308909f955ac0bccb485",
+          "interpolated_sha256": "d8be9349f0f9b80df23a7eab164105139436c116c77b2f4951a69625e14b6894"
+        },
+        {
+          "prime": 1090151,
+          "root": 313015,
+          "evaluations_sha256": "eb4fa4094a92d4a321c971b278332246a5c3d685955d5e67ba6b8f37575134bb",
+          "interpolated_sha256": "259c71bad982c39f44728b13459e5e73eb52350219bdb0b2a4bf6fb0246a3c1a"
+        },
+        {
+          "prime": 1091401,
+          "root": 307983,
+          "evaluations_sha256": "df5b5ea8db57fb06e771d204ad65c6e28750b99a40684e3de1e48c0171aa4399",
+          "interpolated_sha256": "a0cf5b73adbeb6b4738179b557eeb2c95ee87d7e43a0f8b95a1a3d54d06e8800"
+        },
+        {
+          "prime": 1091551,
+          "root": 524342,
+          "evaluations_sha256": "57762b9cb9b24cfe9806cd8e07ea766750be6925c39f5028c0caf18dd2a3c468",
+          "interpolated_sha256": "a33e50cb197dbd5c230a17e91e659b148cad1c69e0762e037d89ba3cdcdb0f4f"
+        },
+        {
+          "prime": 1092151,
+          "root": 552039,
+          "evaluations_sha256": "db9182c3e7b30aa6217bdf9870ade1eed3012ef456ac821b8a2e0c2f45225e6f",
+          "interpolated_sha256": "d0610a7f7e812609aaa9df9eb1bfe10638e2c09176dabbf473c2f53274ea7c0f"
+        },
+        {
+          "prime": 1092251,
+          "root": 476100,
+          "evaluations_sha256": "2c63fd51b8e3694ddaeef4e7189a532c5d5c594d0ac02f3473c9e118b194ec3a",
+          "interpolated_sha256": "e96978215fdee63e157e3ff34ab72cfebb45297b010427ff675df358d94ac668"
+        },
+        {
+          "prime": 1092451,
+          "root": 1022785,
+          "evaluations_sha256": "9b862b88a5e6b32ea7aa2acf5ef80e6ee60bdd7e5200298257c170ad1c6e36bd",
+          "interpolated_sha256": "dfadbf829af754c055a09f944ff8f18f087ad97bd5b72f4f65e06bdbbc115795"
+        },
+        {
+          "prime": 1092601,
+          "root": 722773,
+          "evaluations_sha256": "5f830f9256e0891bd4cd8441dfd385aa50b405962c7c0cfaf89dd33a4c5d3db3",
+          "interpolated_sha256": "74a0072683f245b02fab8a93fb472674ce0dfb8018782b9898b245a54fa7c3a5"
+        },
+        {
+          "prime": 1092851,
+          "root": 58027,
+          "evaluations_sha256": "ab0b4d8e0006856db3a3b1d0647c968d9e8787d8850af3d3d369e04f3352d2d8",
+          "interpolated_sha256": "1fe665b120182732f6366c5bce3e3eb22083396b3eac69a9abb3ee28fe707c07"
+        },
+        {
+          "prime": 1092901,
+          "root": 183086,
+          "evaluations_sha256": "c356ff3a0946d02eaabd6d38769937aa5077b7204f4b5150b99bca50fe962fac",
+          "interpolated_sha256": "928d31826d25050b0b2d119b94054c278152d2505a40281d49dfb381adb42065"
+        },
+        {
+          "prime": 1093201,
+          "root": 57472,
+          "evaluations_sha256": "1de414eb7926575267f73bbd3f4291590f2ac8bda59414147fb42c337b1660bd",
+          "interpolated_sha256": "0f818a32a1884320af3e10653da284801dc467f2d369ef10897e3a75da1c3bcf"
+        },
+        {
+          "prime": 1093751,
+          "root": 160965,
+          "evaluations_sha256": "a758e8ac880e39696d18373b5da10e4f7c4b53308c0aee386c6d0e4ab6018200",
+          "interpolated_sha256": "f780474027d8fad7288033af1ba753e66f361ff3cea3d663a1b873f8dcd21012"
+        },
+        {
+          "prime": 1093901,
+          "root": 383669,
+          "evaluations_sha256": "329e98e44fa0c438bc12a3c9106b5eb80d1c158334d7bea344048cc8186944a6",
+          "interpolated_sha256": "0fcb976535848ba2c7306441cf0350f7f46addd97ca3637f0112cce4ae1ce4e0"
+        },
+        {
+          "prime": 1093951,
+          "root": 638955,
+          "evaluations_sha256": "54adcf68f575fcf41ddcf5fb4fde0ff27454c9d2798d3e1da14ba5d27be0948e",
+          "interpolated_sha256": "715f9f4efd63d60a32b8340edc664e9a9a08083896ae33be453484e883d2dc22"
+        },
+        {
+          "prime": 1094101,
+          "root": 150733,
+          "evaluations_sha256": "3c64e744616040a543c159c3d6e0ab767743b738abe76f121dac9dace909ee6c",
+          "interpolated_sha256": "4d9eb318aed2661828d5d053f136d90014b6968194ccb514de037c634ef9c263"
+        },
+        {
+          "prime": 1094551,
+          "root": 655541,
+          "evaluations_sha256": "048a22628ce40e6adcd0b05de5c72cde858772629488a9b4256e031d531292cd",
+          "interpolated_sha256": "643c12584efc74ab4457213397cffba29d5ca422412f7a3525be89d6a44af9aa"
+        },
+        {
+          "prime": 1094701,
+          "root": 161024,
+          "evaluations_sha256": "ebfc027a145f07ce564a59cfb321db284794963aa3252086b264cc68c9e0cf24",
+          "interpolated_sha256": "7e4db7b91bfe40e6fae249c46b13fa90fd83ba78a7d47e855200357f2c6f0d60"
+        },
+        {
+          "prime": 1094801,
+          "root": 820084,
+          "evaluations_sha256": "0ba0b461e09f24ec927420b77a30c9f1dac3ab5bf42c5b6b95eeeddd61ee133e",
+          "interpolated_sha256": "f319e8f5920611fe2df00a0880cf616111f9c7e9a6be37267f44d0dd61de37aa"
+        },
+        {
+          "prime": 1095251,
+          "root": 702823,
+          "evaluations_sha256": "a4e942d0bf7d665ac170daab16dc2bb3184967a6bab2d5f4023814c684f98346",
+          "interpolated_sha256": "d46dfb30ea63883c7c3129c0f153f749d0cccb40523354ab7d26b9576722062b"
+        },
+        {
+          "prime": 1095401,
+          "root": 361050,
+          "evaluations_sha256": "115d8d8db5fd79ee35ce66f16ac287ec83e036856e2afc2ebd0a09c009204086",
+          "interpolated_sha256": "f8865d86731a9f30d597627dcf3595a1ac618ef7b7a728a11574a5c802644073"
+        },
+        {
+          "prime": 1095551,
+          "root": 168363,
+          "evaluations_sha256": "8c47abfcc07b82f13e677bfc3a5cfade843e91e0ca82523960bdb66433f57414",
+          "interpolated_sha256": "14e9b8bcb90b8c84918a5725fb3fbe4a5ac4a30c6bdf62584af6cd30210d100a"
+        },
+        {
+          "prime": 1095751,
+          "root": 558081,
+          "evaluations_sha256": "855f4a2f09f024b57d1bb7c133d54580883d035befd81f7cd5203cd0fd5f7f17",
+          "interpolated_sha256": "75049640c81049e5f344be0cd1b697e9e077b28e6d5690a3d6763bf7b315ef10"
+        },
+        {
+          "prime": 1095851,
+          "root": 437546,
+          "evaluations_sha256": "2ffa09aea3e3070153f3c887b7bfec68595bdacf9bb4ef23f328b2c929c0da94",
+          "interpolated_sha256": "d15574e880e5c0132cfc7e78890972818945592d8bde068d93dffce2ea68dd88"
+        },
+        {
+          "prime": 1096201,
+          "root": 133871,
+          "evaluations_sha256": "11caeff7fe2a09727c9eadca94fcc8cf35ac0eede6af26523e9b3f2568c1e105",
+          "interpolated_sha256": "80345b40ca8d06573dd9cc9b70a4ea80814acfcc407808ac5be110f9937bab04"
+        },
+        {
+          "prime": 1096351,
+          "root": 263062,
+          "evaluations_sha256": "3090978ae55567b9485d959379456ba96bfc694d81320c22c3d7b1f62188dd4b",
+          "interpolated_sha256": "c09c53c787a8cc6e92fb79074ae38379a973a1092be2acaba097e328e2550a53"
+        },
+        {
+          "prime": 1096451,
+          "root": 1012907,
+          "evaluations_sha256": "14343319949f8ea33a0595dc2bf56a26dd870c5079545a53ebc52b721ed38a0d",
+          "interpolated_sha256": "2a061f372f56e3f06213829771077d9d5cb87b9ab1d29764e99946e73f893a3b"
+        },
+        {
+          "prime": 1096951,
+          "root": 426262,
+          "evaluations_sha256": "e925d0d713128ab29d6340878d8bdb5a95180d3e80c5c8c346fca35fbd2ca61b",
+          "interpolated_sha256": "7f60cfebc7871399568c62df19aa03eb3f21070da9f5809d3db89dc9a2473a06"
+        },
+        {
+          "prime": 1097051,
+          "root": 853936,
+          "evaluations_sha256": "31990f33afa702236ac425c03e9da8bef61085979169e86f93d9dee4cf25936e",
+          "interpolated_sha256": "d8a8af4646ef69fadd27394cf5bc2a555548d811b3c00e9e197b89c7f7b3ce6c"
+        },
+        {
+          "prime": 1097101,
+          "root": 950188,
+          "evaluations_sha256": "c400f05ced1988aeb3f1b69808be1ef1af581676c250d7ec0ad862808b12b3eb",
+          "interpolated_sha256": "9ddcd98ea55704c089be064a867705b19bb35858817bcd4ba19a2079865cd7b5"
+        },
+        {
+          "prime": 1097351,
+          "root": 729522,
+          "evaluations_sha256": "e3a966560b3dde88d304fa292f72061cdf5a04add6331d0da590c8fd498a6d50",
+          "interpolated_sha256": "426127488b207f102aebdfc4a4e207b3784b9f1a4160349f8408b30f1af612bd"
+        },
+        {
+          "prime": 1097501,
+          "root": 1060728,
+          "evaluations_sha256": "536e7d7447e8fd401d875a6fafd049fe692ce64d1c615f4a241c881021f1d925",
+          "interpolated_sha256": "6ba5835245bcdacc86275999042ecc5e5161c7de0d9dd27745787b4e75f10744"
+        },
+        {
+          "prime": 1097651,
+          "root": 343224,
+          "evaluations_sha256": "8c6bcefa2841569e0410f3d633a374fd2f67f43c0ed3b2baa2e0e104b41aeb54",
+          "interpolated_sha256": "c139c8c8cdf7e2dba7f3dcff3003fcc02d5a0a5f52641097233edb35f137ad83"
+        },
+        {
+          "prime": 1097851,
+          "root": 781304,
+          "evaluations_sha256": "b2a5727a756fd01081ef587ba2ff6c8bbed5192d34e51f188a3e880679837999",
+          "interpolated_sha256": "fce5c01fcef3cc030d1eddd1df2db4961c304ff9d4fffa49662cc570aab18a86"
+        },
+        {
+          "prime": 1098101,
+          "root": 184367,
+          "evaluations_sha256": "894616d3b585db9d566fec52235281d5d23cfdbcb35d8952b755c97447dfee57",
+          "interpolated_sha256": "c411cda964935f90a23230f963804971c6fb6d75fce3630264858061eeb8dee7"
+        },
+        {
+          "prime": 1098151,
+          "root": 431171,
+          "evaluations_sha256": "299da44b22fd6d7e56d8e1eda7c39a5b0fa24209ea6bfefc204a4fa584ec407e",
+          "interpolated_sha256": "24bb5a7f456336fc1b23d57bbf4cc1604196716962eb120347a7506168c8c72c"
+        },
+        {
+          "prime": 1098301,
+          "root": 820408,
+          "evaluations_sha256": "8d8273c33ddec869c62502cfe368005631ca099cd7ecb7dab9c27744ee199b42",
+          "interpolated_sha256": "bf8e49bed101d75ad56ebe90242e214257d813d490c445b4f12edfd3e11fceec"
+        }
+      ]
+    },
+    {
+      "radix": 27,
+      "prime": 3,
+      "primitive_powers": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11,
+        13,
+        14,
+        16,
+        17,
+        19,
+        20,
+        22,
+        23,
+        25,
+        26
+      ],
+      "resultant": [
+        "8143041384765746798096805062338524687587575409265181174665927073587410",
+        "387932678462660636289401260347695235059666693305147278361013331441204",
+        "-2763234444596039235145497043953044344852306827754382733943506994549747",
+        "-199390536784371620867910114648466173735717435868214499753683454515437",
+        "-1285433759137095022497590475295172977189607530590714260812949070460685",
+        "1285433759137095022497590475295172977189607530590714260812949070460685",
+        "199390536784371620867910114648466173735717435868214499753683454515437",
+        "2763234444596039235145497043953044344852306827754382733943506994549747",
+        "-387932678462660636289401260347695235059666693305147278361013331441204",
+        "0",
+        "3739498605736930238134633745635241267087455473375688350529118897977343",
+        "2315205350933195251415449126335239619141006973856974345622467341508806",
+        "-4904512623721861521083043677221066131966647372919675456019415691951017",
+        "8468211268908003048170991916252253189600327416904505712492089217373",
+        "1293901970406003025545761467211425230379207858007618766525441159678058",
+        "-4705122086937489900215133562572599958230929937051460956265732237435580",
+        "5078439795529234486560946170288283963993313801611357079565974336058553",
+        "3351565927274269601845232485287546032027788780070541072168105566536139"
+      ],
+      "resultant_norm": "832248684026662930977435321494832874673840281832415188997366928459830362072083769730906564097310236147135852828255627225782008046449915144784056942895814993274047144709784900309605231030706247182858364286758866545784054978633223850900426649902146158429764654027407069072722113061983766442014075899605568524221072653802051073039073940431832292923799515909436187850565514013891579792539446492064103504977357907504779697255228989767582582656938327367835461011107091751866875578729336609296880165265796020157031828387498816865193794774717690967780951686697934727554878818553762248441315506278014817561399948988789132564533325870913408580728710114859122602099524425440932648469769769017438026021915968369793155160256144230554840692312268646955261410800003572977152395724955440557194258036899746923632582187516064563346913288628025816330907412616877886075271207584641779195364437362786711859935662621848309800027526557157766488096399746168100081558490058383722490526871706455340887437620333854392996068724972058319946058217861307984297177011437196798775390534197567396981849637478523013920614894505805781558583640024825310971182412624972078088387950463029029342150696706998658870421025642256274966001937756486463838337519718966162752967578266921",
+      "real_norm_absolute": "28848720665337361385594072561108888295384570673859901985345516869894564569803693268344019069783718139737257164747130202499406780685821929283177610451200310801692439252435135358567146862693571428341000383345492222197568324138388077356428040934578100109208882199720087490234892442300082687506543073036659152202475487480600050317963753518206424957386977585083333811967109580697647323738284688367185154513417978419346367164936680074042915569703887521215410303450111758753337448726273141024440387865188171551600321282519445716069012610900270768015989041907250957570609467690098872712853896044830687464689114655605644891359411",
+      "bezout_coefficients_sha256": "71254a1415dca06f5f4f115b1308df63f58cc5f7560db3c410c1df95293da363",
+      "bezout_identity": true,
+      "coefficient_bound": "885408607454166181445671650728701790957503935459320007327450232468141084051739631261246984354948407704052137864673417854189202208296413464050090054957622527766641026463606791439217352734322748172684808982130815516840306644358276213994188003163818916225906548839528059825864295206842444277460920032404695886367565427993335681439674750196385650493565036556953733973355147748928947295896132033272677900632990174227325192765442",
+      "crt_modulus": "522911919067834968134942104405647732577581097028745751272184553171746509467761775858660388405168411909554326995778826112834741654530237376838410797660740077556293473519136201462878913970041564438021438387106635592941545210774551605176412033320962158798576758133295252446266484328180589572233649538028138609420272072039395024092627393658162911345735999323156913859666486561937396116648220097812923242480009802942637544567668840857",
+      "split_prime_transcript": [
+        {
+          "prime": 1082971,
+          "root": 175396,
+          "evaluations_sha256": "b00616a6264e37d0790be3304bbafafda2141aa3c5fded654e769177220cc783",
+          "interpolated_sha256": "d8281cabe9a3dcc8b059e9f8881cc6761cdc35359b0159dc85cf58bd9879e17e"
+        },
+        {
+          "prime": 1083079,
+          "root": 489463,
+          "evaluations_sha256": "cdd18cae594844a04760f9ddef3e0020f20bdc086ebcf39f657be749103fbd2f",
+          "interpolated_sha256": "b39f26d252e08aecc29221bb399c5a35429425443e452e4476b4c634e8a63c87"
+        },
+        {
+          "prime": 1083241,
+          "root": 58970,
+          "evaluations_sha256": "1df88f86b3b3c57ba836761a840da903d58b3f90a4dbd88bd84681e7ba1e775a",
+          "interpolated_sha256": "9d903dce0669d19f9579cafb27c1acdafc995b7ace8f6f18477fe52755c15dd6"
+        },
+        {
+          "prime": 1083349,
+          "root": 232946,
+          "evaluations_sha256": "e7509b3cf1d2e825cf057378c20c1c110d02148184c0c4117abf0bb56b18f33d",
+          "interpolated_sha256": "cf9f2ad5faea34c3d64c411e26eaebfb3a920a6f28eb0fe870beb7f040426497"
+        },
+        {
+          "prime": 1084051,
+          "root": 472670,
+          "evaluations_sha256": "252260dd50df7d97128145b47bf3c2d612ac0260a65e5c7624f8dcf20ebc467d",
+          "interpolated_sha256": "7cc2c37eac697df9db8e4e11a103d23db44dd0951669f7f2abc9f04d29f2abd3"
+        },
+        {
+          "prime": 1084267,
+          "root": 105157,
+          "evaluations_sha256": "9406a50a2487aefb90fe5732973202b023696b9cc81abdc7992b451ab880392f",
+          "interpolated_sha256": "a259d154f4f4e6fd5089541dfc704db91c782a0bfea054275b7ffbd3fa83acd3"
+        },
+        {
+          "prime": 1084429,
+          "root": 242743,
+          "evaluations_sha256": "e15416cf698265ff04131257fc5dd92dbdf2b68b087f50bae5f5267cac4917ef",
+          "interpolated_sha256": "7cd060aa34764233381047699d154fe366c7a3f2065e04907f5eb9c528038e9b"
+        },
+        {
+          "prime": 1084483,
+          "root": 447450,
+          "evaluations_sha256": "ab13d8290fa4f5e70d87db1336ea51ab221088a432ad3eb82f32cc7a25586c96",
+          "interpolated_sha256": "c7c54746090b940d90bb33bd7ffd4ad2272c1c5bf2096f505ca74591d371a699"
+        },
+        {
+          "prime": 1085023,
+          "root": 545603,
+          "evaluations_sha256": "d0ae81c64638843c7cba0c2f52392fc989876d4d3f9e3c5d4ec8c13ef0dcf233",
+          "interpolated_sha256": "66f4b7d0db6475be474a316febc012e2ed317df05f799047297ae4af27b654cb"
+        },
+        {
+          "prime": 1085131,
+          "root": 115222,
+          "evaluations_sha256": "7e4914f087554b492c5bfd9fec5c64bea6d5e700930432211b06592dc5d82cee",
+          "interpolated_sha256": "3e2d11c7a8654be034462fc62679f6bcc080df5797d64ca3915343ea4ee44420"
+        },
+        {
+          "prime": 1085509,
+          "root": 374233,
+          "evaluations_sha256": "d82e7712a038eefb34679ec93a721f1de3dda1913fc806e90c0638d6c84cff8b",
+          "interpolated_sha256": "1368ffb712b846a87fc521b3c19842dcd22c78ba9949e981d1f7c0e8ac2cf08a"
+        },
+        {
+          "prime": 1085779,
+          "root": 283716,
+          "evaluations_sha256": "0a464e30efbcc04e741121a3240ba54db5045f74ca913ab003124719b0e417d6",
+          "interpolated_sha256": "57e5b3479940a56c6aacaea7426e8a98d1cf993ccb919f3c20d8340e7e85d179"
+        },
+        {
+          "prime": 1086103,
+          "root": 1082076,
+          "evaluations_sha256": "fd7ffc1a952f04dbb8db828f12f72cc46ec0614e13b5280a88366003c1143dd0",
+          "interpolated_sha256": "be62be80b7cbed1dfd9b905ea4b7def70d345393b375007040cf9aec6ed1a2ca"
+        },
+        {
+          "prime": 1086373,
+          "root": 624282,
+          "evaluations_sha256": "4b38440f3fdf1b3e6a29e51fc58d7532bdd18d49edef17084243fc82a181abe0",
+          "interpolated_sha256": "22d67459b594d0d1a858d86ae45f9c822a578a84db98f52cc94f3ac7100b59d1"
+        },
+        {
+          "prime": 1086859,
+          "root": 98652,
+          "evaluations_sha256": "c264912aa629a26c6d11590067ef19935a3c3a104d369af2c1ca47fe19e1774c",
+          "interpolated_sha256": "62b2af828c41cfdab08277d0c7847bf19bda23eb9ce603c4002fbff838eed37b"
+        },
+        {
+          "prime": 1086913,
+          "root": 747069,
+          "evaluations_sha256": "2412e9b1752a5c72a37c94a12b4da3f657327e7160a05f051f15141b9a9116bc",
+          "interpolated_sha256": "f937385a9812419a99c32686543d4fe90f21d340c4c904e0d80f0ea5dd5159ce"
+        },
+        {
+          "prime": 1087129,
+          "root": 815771,
+          "evaluations_sha256": "2721a35476e89ea93c247387518c1f4f91b573c5fad0d731ae6507701a4dcf0f",
+          "interpolated_sha256": "6e01800ca684cf49bb1c61aaf512827b7bf314a0bae0d1e300f40865bf3ed13d"
+        },
+        {
+          "prime": 1087291,
+          "root": 1034449,
+          "evaluations_sha256": "f68b4908ebdecab990cf35a4dc2b1392feb8dd66ec893c2b531b37dbaf8b3f31",
+          "interpolated_sha256": "8e3c5412d42a5833c7fc7fc6068775471e4209385ae1928d9a5f4a899b16897d"
+        },
+        {
+          "prime": 1087453,
+          "root": 786834,
+          "evaluations_sha256": "a9e387bafa9b3b68811159f401cb68982316907f1a7c8424a4fe9e25484ab805",
+          "interpolated_sha256": "ecfae0b8dd1c5260b090a6d2deb5aab61804127e6be007429a91f46f6b0e99ba"
+        },
+        {
+          "prime": 1087561,
+          "root": 998985,
+          "evaluations_sha256": "4bf97e9042cfcc0c7ad4aec539cab7492c6b2a7069d1da6270b2839f791c1b69",
+          "interpolated_sha256": "c2d8d84414aa21d4473a11d791e679d97712905cee3b3e7fd790cb074bb53f45"
+        },
+        {
+          "prime": 1088209,
+          "root": 799361,
+          "evaluations_sha256": "a4903a7bbe861148909bb14815cd9d78f841fbd1b7bb2c8971eb3c067dad01c8",
+          "interpolated_sha256": "e9463da265150ad60f74a39a93ebdace5d2959007b920f3812adfea272c1550a"
+        },
+        {
+          "prime": 1088371,
+          "root": 328199,
+          "evaluations_sha256": "0d752afc34dcce044c71aeecef41c7d31aac2808455b467c422f67b57b38ae61",
+          "interpolated_sha256": "930a611b116e0b76e4eccc2813a6b626f12967b112b73ccad9c355d20e71dce1"
+        },
+        {
+          "prime": 1088533,
+          "root": 260320,
+          "evaluations_sha256": "c5902392d376a7cd3d786c7bbb83778eed7a1c8a96fd5bece6ccb5d776e95496",
+          "interpolated_sha256": "6b82a56b444f764b9c5e5c194081bfd682d5138833582a67a519af2c15e6003c"
+        },
+        {
+          "prime": 1088641,
+          "root": 88847,
+          "evaluations_sha256": "f60455d41e6d476e182d1228b156d614d784835157c152de380bd3533067484d",
+          "interpolated_sha256": "3cff1512328483bef7d49fca8b59394789be1be2ae81fa9d9f63d37d56f21586"
+        },
+        {
+          "prime": 1088749,
+          "root": 716681,
+          "evaluations_sha256": "09093c8043545df31760dd183643320fa1bbe0dd0eb3d90dcfe6d4c9d61f1776",
+          "interpolated_sha256": "8aef20ed2364c9403dd669304375d7efb97483d9c2a065a420b83edc7974254c"
+        },
+        {
+          "prime": 1089397,
+          "root": 788214,
+          "evaluations_sha256": "bf9d0e30166158ef354270155882d854e352502678d236ffb0aa3de3444eeff4",
+          "interpolated_sha256": "1b62b9d4488143b6307224e5ff4b4ed431e842dc054bdc03b18e7df6d5cbe056"
+        },
+        {
+          "prime": 1090099,
+          "root": 811748,
+          "evaluations_sha256": "ab7fa0d41b29a4f9091de7ad11aca2c302f4a30f43b665fdd92d2cd5c11706e5",
+          "interpolated_sha256": "d260a2da71e74dcd3f73fad6482fec62d4c1172c00d44e0a73694514e5ed8f1b"
+        },
+        {
+          "prime": 1090153,
+          "root": 1069398,
+          "evaluations_sha256": "34b525f78106cee349feb36df968d7304a5da731cfff1111676a688fd15e4cee",
+          "interpolated_sha256": "b51fbaba5f5a0b8eee6f4dc1ef82eae52b3a949e10139e29345a1fae3159b373"
+        },
+        {
+          "prime": 1090423,
+          "root": 672922,
+          "evaluations_sha256": "a331886b86381720f0feb63b43ca29107b662140af97a1e3aa80e60dd7e3edf8",
+          "interpolated_sha256": "ecd468fe18419786c2b83428f34449d71dff3b159bcec43819ca20551e43db1f"
+        },
+        {
+          "prime": 1090909,
+          "root": 620881,
+          "evaluations_sha256": "5f997171ed89cf7898cb8a7cc5020e439b91cb0447b7dcd392ddcfc91551a0a8",
+          "interpolated_sha256": "9adb5d3520cf6c23d4b38e029f89bac3fd25f35e7368d7354c9930dd829ea48d"
+        },
+        {
+          "prime": 1090963,
+          "root": 252451,
+          "evaluations_sha256": "525f8d350abc0418108d4f72d40cdbc28ec0094bc8c43e66c6c15058a342c5ee",
+          "interpolated_sha256": "a9ead467098d283b9119da0bc946557d1817c30d6897deee27f03f610faa974d"
+        },
+        {
+          "prime": 1091017,
+          "root": 529544,
+          "evaluations_sha256": "3fb4485e5ab4a0818aa7f5c1d12304fad66155b5efc66f4f1f424f4c4eab7c22",
+          "interpolated_sha256": "cc97caf6608ace202be4d100ba625bf19b60ad4e3a9f88f4eed045526bdf2546"
+        },
+        {
+          "prime": 1091071,
+          "root": 787226,
+          "evaluations_sha256": "7bde1eac0d1acfadeab95004c0b03f77c319705dbca7a2f94f5be9bace7790b1",
+          "interpolated_sha256": "aece0640c321fc3fd0a5dead8c7cfb705586356f49b12b0403e9eb645ace33fd"
+        },
+        {
+          "prime": 1091287,
+          "root": 764253,
+          "evaluations_sha256": "fd37deceb1f4a69bb5e45f2cd648505b1b6e93774427181f55a30be0bc246988",
+          "interpolated_sha256": "0c63e84378981b3e1d426e27b4a85ed723edaa5176a27d3c8b0ce8aeaa5f2b2d"
+        },
+        {
+          "prime": 1092043,
+          "root": 483896,
+          "evaluations_sha256": "4c15c24b84e621191cd5dcf50f99936b584eda1b14dea741586179fa3634c245",
+          "interpolated_sha256": "6e9429a8b7148d1fe50eef98ba8c42f9f9d1100b45406a93bf0d5986f403721d"
+        },
+        {
+          "prime": 1092151,
+          "root": 181642,
+          "evaluations_sha256": "c785a597a6e55c41cbf61fb0ec0841ed53ed880bc7c16ebf49e48441993c6fd6",
+          "interpolated_sha256": "548d6fd941cd20d5aa1127359ce9f243bacf0dae11f570945a03c39bc58da6ad"
+        },
+        {
+          "prime": 1092583,
+          "root": 931360,
+          "evaluations_sha256": "b49843c133e0225598ca781390758afa8e66db436335b01c67fb3e132a943b45",
+          "interpolated_sha256": "bb5f01f51a3ebfd5cc9095da918a40e1b8838ec48fc1d4591908d28de1cebe4c"
+        },
+        {
+          "prime": 1092853,
+          "root": 1044292,
+          "evaluations_sha256": "bf3db4ff8f0823418eea9557432ee204fce71b61b909c249e094d7aa2dd35b0f",
+          "interpolated_sha256": "c6ec4e2a28a898b183dca139b7ffe3d1af11d28098d8464edefce929c8d82c94"
+        },
+        {
+          "prime": 1092907,
+          "root": 875196,
+          "evaluations_sha256": "6b6f0a16942d516e96c15e3449343167d7fdbf43fa95aa5bd2207360343bbf5d",
+          "interpolated_sha256": "a79a6897003a90a4422827663cb4f0d33d64423ff942d4524f16a753c9f101d0"
+        },
+        {
+          "prime": 1092961,
+          "root": 109301,
+          "evaluations_sha256": "f9049324960834e0c6c028eff19a2c32fcfff3d420c72f2b5b81af9eb95532c5",
+          "interpolated_sha256": "c99f2b8d6d677cd0fd06943a3cc96812ac654a8c1adad109af2b10c72a1fa5d4"
+        },
+        {
+          "prime": 1093069,
+          "root": 426879,
+          "evaluations_sha256": "d0dd83f16814b6ef9a3fb44901f0d1e502b0d9540da9b926c08fd63a5c50ff93",
+          "interpolated_sha256": "71be89d044552f12c1d203899f2d17a7d58f41550cb34071bd85e5a0a9c2d040"
+        },
+        {
+          "prime": 1093177,
+          "root": 809576,
+          "evaluations_sha256": "aba97c45a8b7b1e42bd58cc412eed5aaabfa0060c79a0cd71608ace950e83465",
+          "interpolated_sha256": "ee59395995a8faa4bc950fdf8ed813fe48e2437e70eb9e39cee74ec6638cac1e"
+        },
+        {
+          "prime": 1093663,
+          "root": 1081795,
+          "evaluations_sha256": "0bc56a54399fbf71c29692d68b4867fcc686b71847504518dcf16626a70a96b1",
+          "interpolated_sha256": "ae98749932acbffcc58c53a52e81358b065269cee4808c5362462a53f8ee7120"
+        },
+        {
+          "prime": 1093717,
+          "root": 958078,
+          "evaluations_sha256": "94d69296d692d5493fc146f3cfb1a55bfb13024696a2206cca378c439ae304a7",
+          "interpolated_sha256": "57c30167e55f4e89f79114cc93dad91045c3658b3f757f080b5024be9581b942"
+        },
+        {
+          "prime": 1094473,
+          "root": 268971,
+          "evaluations_sha256": "813dda550f9efed20eab57fb10b493c3c8698ee221e2fa9c9b896250c7792253",
+          "interpolated_sha256": "d4e1bf1840d547b395ed6fa94d345570bb46741774f74e7f6f7dbb4b24708be3"
+        },
+        {
+          "prime": 1094689,
+          "root": 837869,
+          "evaluations_sha256": "a17c32195384320996b9c8bb2e79225a3aafaa5801034ccd6ba89dc100deae0d",
+          "interpolated_sha256": "f91944913e7ebf9a865e2065d4e7c138c974063b81445da57e8b1f33c832a652"
+        },
+        {
+          "prime": 1095067,
+          "root": 441253,
+          "evaluations_sha256": "b47a4302350d95276d3ff68f168e83a7142246ed52f9d231ca360739c3f3ffdc",
+          "interpolated_sha256": "61fad16550cc516c5c1b436bdd1d9c45c0450d8f2505c8bd9341ea6e038d4db3"
+        },
+        {
+          "prime": 1095229,
+          "root": 667723,
+          "evaluations_sha256": "5b8a785754689f18ecabcfa76ec8a33caac6f483995fcf9abbfb115d1148699f",
+          "interpolated_sha256": "cc191b8b65204ce88fb22f7c6bac7d670f76bfa2402589dd02d5bd43d64c2361"
+        },
+        {
+          "prime": 1095931,
+          "root": 25230,
+          "evaluations_sha256": "115a4b5dc30d3046c348a0d87356650ac7fe337fc6b0fe0ec6f4a54dccce0284",
+          "interpolated_sha256": "6ec536fa435eeb499d214b91b416f15c145803714913358999901326fd5de2ef"
+        },
+        {
+          "prime": 1096201,
+          "root": 171216,
+          "evaluations_sha256": "6bd5d47b3e44f925aff610e1d99ad19535018565be824ae48b6c5973ddd808e1",
+          "interpolated_sha256": "bc61d7c0c731b5bd7265485938945a0b85c7bdff100cef2ccb92d37609e490a1"
+        },
+        {
+          "prime": 1096363,
+          "root": 115284,
+          "evaluations_sha256": "31a12aba7b273937d3bd1f51297eb9304e3fbe006c25c4c6fc592ce6f06cd8cc",
+          "interpolated_sha256": "891cdef95c340d0d673388adf5a44abd88757430a813d054acb796d55aa71d08"
+        },
+        {
+          "prime": 1096741,
+          "root": 134120,
+          "evaluations_sha256": "c6197ab6dc4afcb2cf448a750dd9475cc1c458b68616901517f9db6bbec4ea36",
+          "interpolated_sha256": "16e85ab4396434c288c353267d032a78bc7f68865899f66a13788fa26f21185d"
+        },
+        {
+          "prime": 1096957,
+          "root": 512340,
+          "evaluations_sha256": "c39b9e0a9ec0b2653a9d27227c2338b558c689c7b1e64eaaf8650d2d8d2c781d",
+          "interpolated_sha256": "bc77ab4e5917f0e6690f337ba36507f67626ffb14e344c8d5c27afb8b6b6f27f"
+        },
+        {
+          "prime": 1097443,
+          "root": 579990,
+          "evaluations_sha256": "38b88886916d26b2c9483cd4567fcc38fee3cb426304d21e3aca5336b0b40909",
+          "interpolated_sha256": "cba6885a16bbca08d6c57524e9b3049da734d8dea6daffa5dcdad5c1f3d2b0fe"
+        },
+        {
+          "prime": 1097659,
+          "root": 389270,
+          "evaluations_sha256": "a603f2db527c1b8ff87cf3b57082e51b536f5df0a2a4b825937d63b9c7f0747d",
+          "interpolated_sha256": "1ccd13438adabebe4cb37b3ad427f579051ddb3b3925bf3b3a897e59f0591e4b"
+        },
+        {
+          "prime": 1097983,
+          "root": 311979,
+          "evaluations_sha256": "81d55f4d059e393b29293f92e5807c2b163004d8c227435c269eeec0f11d7507",
+          "interpolated_sha256": "5a2c52cecb5a7d866dc565b44e3ceeaeef50fb7e3f733f2f978fa432d12a37bc"
+        },
+        {
+          "prime": 1098037,
+          "root": 218861,
+          "evaluations_sha256": "c721724d60adf4e25922ea0f3b0e437a81545c5b683e216726b15d70d309ff84",
+          "interpolated_sha256": "e165a682214bf813ce8c6bbb4745ce5e67bfd229fad07c82bc4912bfef36ee8a"
+        },
+        {
+          "prime": 1098469,
+          "root": 1044731,
+          "evaluations_sha256": "966b748cd9c606b8d6612a6630f1dd87325dce2bd514503ccdbd5795fb7f2684",
+          "interpolated_sha256": "5e3375c019a98b0428c24066e55f868baa36b93a389ecfd0f6d2c72be424988e"
+        },
+        {
+          "prime": 1098631,
+          "root": 1059914,
+          "evaluations_sha256": "c6cf57046c6c9ec7e6b4a51f82c74fcd0b7376d3cd6a6895ed88b2da069572b3",
+          "interpolated_sha256": "7cf10e4e10e67804fb0dc4f7f91087008b1bd9f40032302a9874c84579bb95e9"
+        },
+        {
+          "prime": 1098847,
+          "root": 69895,
+          "evaluations_sha256": "80afc7dc25b819534e135029e4f972a481f6874e747066292c2c2e44840e4edb",
+          "interpolated_sha256": "e1d75886c3437bcfc44d95ec4e59244a0b848e3b86f9376e64e8e3d7dd0abe2c"
+        },
+        {
+          "prime": 1099117,
+          "root": 1007446,
+          "evaluations_sha256": "daf761809b17232a32d08f628029fd4618cba236201002b79ba5b567d1abfe2d",
+          "interpolated_sha256": "bc447aa75a095be8d92c080494a599cc09e899107a14e2cbce97fce41af9b783"
+        },
+        {
+          "prime": 1099171,
+          "root": 172393,
+          "evaluations_sha256": "9e724f3bf3d17ea34a8998110f86b9cf82b5a24e066c108e65568b1df24f37fc",
+          "interpolated_sha256": "eacf55c28dcc1175233a7d75a0059f43320354269617ad790c7fdc42de5b228d"
+        },
+        {
+          "prime": 1099279,
+          "root": 222413,
+          "evaluations_sha256": "9a923cb57d45a779372b827f36722d59dc837c6ff3dbd3011efddc58d568edf9",
+          "interpolated_sha256": "26f06068b5ffaf2f2f42e45dea15decb70fe264ea8bdc4340b010135d36c4dc5"
+        },
+        {
+          "prime": 1099711,
+          "root": 69046,
+          "evaluations_sha256": "17c9ebba375af9bd168cc6f9d452a0997cc02d38b4160d18ad9011cfa930bf27",
+          "interpolated_sha256": "824f06f05cc613c7b39a814bf4c5ae747eb9c5fdda4336c7d21ddbde4de6af09"
+        },
+        {
+          "prime": 1099927,
+          "root": 570414,
+          "evaluations_sha256": "a1f1b2ab824a1b34c736fc782d482b071aeae01bf2fc4ff3c41fe59a79112908",
+          "interpolated_sha256": "8fb9dd0ddbe28e11bb2761367b939db5c036020cbd8bf05060ba7df9024d3976"
+        },
+        {
+          "prime": 1100089,
+          "root": 257927,
+          "evaluations_sha256": "e5f59c577fd9a922f8d59cd5098e73c52b29dae4f1f3277c5397a8366345951e",
+          "interpolated_sha256": "0c1105d572aa31b984c4bb98c017878d60248895082bba38bdd48d98b08506ed"
+        },
+        {
+          "prime": 1100467,
+          "root": 764860,
+          "evaluations_sha256": "b3255a4c52209cc00ef057b82afe9cde5078ad6fc5d435b4725923a895adfe0c",
+          "interpolated_sha256": "ffa192b2d52aa0f4decaf5ea8885698322b481fa419136e2bb0ec7ce7fe8c3b8"
+        },
+        {
+          "prime": 1100683,
+          "root": 1017280,
+          "evaluations_sha256": "10fd817946d62348a3560d394b05307e78a6f29d7c26cc360d04a64126d4b9c1",
+          "interpolated_sha256": "e9ac4395319f62a1c0cd6795ae9f383b98cf939230d195065babc8221edcd3e8"
+        },
+        {
+          "prime": 1100899,
+          "root": 248441,
+          "evaluations_sha256": "4d6a0758dbf28113878488147b524b00c1d5f6be4305d208b5162a7dc3b6b075",
+          "interpolated_sha256": "010cc7248d20a22af6ba71f071beec2457444e3677df2a1bed2d014f510ecae6"
+        },
+        {
+          "prime": 1101169,
+          "root": 189303,
+          "evaluations_sha256": "e38b499a8cfacf0de5e06aa6a4166331a9c8a652af5ca0130dd25eee3d550044",
+          "interpolated_sha256": "8b8aa596eebbdf6eda91f663039e4192f30c34609c71777b09836abaf2174258"
+        },
+        {
+          "prime": 1101439,
+          "root": 318847,
+          "evaluations_sha256": "31354561169af47ac244549b5a7043c3381f46101a242fbb0fe5138902c2aa22",
+          "interpolated_sha256": "3ce3bf5de86d1b78073e8e791332677d2d413ed01e9fecdec25d4d37908ae767"
+        }
+      ]
+    }
+  ],
+  "primitive_embeddings_checked": 80,
+  "predecessor_exact_matches": [
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      11,
+      4
+    ]
+  ],
+  "negative_controls": [
+    "insufficient_CRT_modulus",
+    "CRT_coefficient_out_of_bound",
+    "non_prime_power_radix",
+    "nonsplit_field",
+    "changed_resultant",
+    "changed_cofactor",
+    "missing_conjugation_changes_resultant",
+    "unit_circle_common_root_is_singular"
+  ],
+  "scope": "Finite determinant, adjugate/Bezout, prime-ideal residue and integer norm identities; no uniform theorem, paid program or kappa claim."
+}
