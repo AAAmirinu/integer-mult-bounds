@@ -1,16 +1,124 @@
 # Reproducing the result
 
-The selected release is documented in the [joint-frame community review](research/community-round2-review.md)
+For the current reviewed checkpoint, use the [selected record](../certificates/selected-result.json).
+Its `reproduce`, `review` and `source_manifest` fields identify the command,
+scoped maintainer assessment and exact inputs. Read them before running a
+historical command from this page:
+
+```sh
+python3 - <<'PYTHON'
+import json
+from pathlib import Path
+record = json.loads(Path("certificates/selected-result.json").read_text())
+for field in ("reproduce", "review", "source_manifest"):
+    print(field + ":", record[field])
+PYTHON
+```
+
+The [published PR39 release](releases/community-kappa-15.md) is a historical
+release, distinct from the current reviewed main checkpoint. Older guides and
+commands below retain their original scope. This clarification follows
+[Anas Khan's PR #90](https://github.com/CrocSwap/integer-mult-bounds/pull/90).
+
+## Historical reviewed checkpoint: #596 with #543
+
+```sh
+python3 -m pip install numpy sympy scipy
+make frontier596-verify
+# Or choose a fresh output directory:
+python3 -B scripts/verify_frontier596.py --work /absolute/new/output --jobs 2
+```
+
+Use Python 3.11+, Make, C++17 and Boost headers; set `CXX` and `BOOST_INCLUDE`
+as needed. Keep assertions enabled. The output must be new and outside the
+checkout. This command rebuilds both suppliers, including the complex baseline,
+then verifies their exact composition. It does not use retained local proofs.
+The runner selects the pinned older #569 source subset already bundled in
+`research/promoted-kernel-coalescing/vendor/larger_gain`.
+
+The [review](research/community-hyperplane599-review.md) and
+[integration receipt](research/community-hyperplane599-integration.json)
+record the fresh selected replays and explicit reuse for intermediate PRs.
+Local macOS results and remote Linux CI are separate statuses. The configured
+selected workflow is `frontier596.yml`; historical frontier588 is manual.
+
+`make selected-record-check` checks metadata and exact source/proof hashes;
+it does not replay the operators. `make frontier588-verify` and
+[the frozen checkpoint](../certificates/checkpoints/family588.json) retain the
+previous composition. Older reproduction targets remain available.
+
+For Lean, run `python3 research/hyperplane-end-lean/verify.py`. It builds the
+combined #593/#599 package and checks theorem axioms. Use `--instances` with
+the generated `ck-local`, `atm3-local`, and optionally #591's `jp8-local`
+directories for finite label checks. Then run:
+
+```sh
+python3 scripts/verify_hpe_lean_binding.py /output/ck-local /output/atm3-local --out /output/LEAN-BINDING.json
+```
+
+This checks that emitted wrapper recipes equal the literals proved in Lean.
+It does not discharge all compiler, hosting or analytic hypotheses.
+
+#589's complete tuned package is preserved at `research/e8-bit-p111-tuned`;
+run `bash research/e8-bit-p111-tuned/tune/verify.sh /fresh/output` with the same
+Python/C++/Boost dependencies. #555 remains byte-identical at its old location.
+The format-limits and three Leech/Turyn research packages retain their own
+reproduction commands, scopes and dependency lists.
+
+## Historical coordinated-frame checkpoint and earlier targets
+
+For the historical coordinated-frame/entrance-bank construction, run
+`make entrance-bank-verify`. This runs the publication-to-certificate binding,
+the full frozen offline finite replay and the bank-scheduling diagnostic.
+The [construction](../research/coordinated-frames-and-entrance-banks/PROOF.md)
+and [scheduling supplement](../research/community-round8-audit/BANK-SCHEDULE.md)
+state the arguments and conditional interfaces. The supplement's small
+exhaustive model is a diagnostic, not a proof of the all-size machine.
+This target uses Python 3.11+ and the standard library only. Preserve the
+package bytes: `.gitattributes` prevents normalization of its hash-pinned JSON.
+`make selected-record-check` is a fast metadata/inventory check, not a replay.
+The complete Linux matrix includes this target on 3.11, 3.13 and 3.14.
+
+For the arithmetic-only parameter-domain diagnostic, see the
+[assembly-domain audit](research/assembly-domain-audit.md). Its pinned replay
+and tests distinguish hypothetical supplier values from the published witness;
+they do not extend the admitted theorem range.
+
+For the preceding recycled-bit composition, run `make recycled-bit-verify`.
+The [construction and scope](../research/recycled-bit-integration/PROOF.md)
+describe full formal-variable scalar replay, exact rational frame checks and
+all paid costs. Use `make recycled-bit-full-verify` to recheck every inherited
+frame inclusion as well. Earlier targets below reproduce their own checkpoints.
+
+For the paired-cube/shared-core extension, run `make paired-cube-verify`.
+The [incremental guide](paired-cube.md) covers the signed producer, selected
+bit gauges, exact moments and assembly.
+
+For the three-stage cover extension, run `make three-stage-cover-verify`.
+The [incremental guide](three-stage-cover.md) covers the new PR #117 local
+word, cover moments and exact assembly.
+
+For the partial-gauge extension, run `make partial-gauge-verify`. Its
+[incremental guide](partial-gauge.md) separates the pinned PR #97 bit input,
+new complex producer and exact assembly.
+
+For the new stopped product-ring extension, run `make stopped-product-verify`.
+Its [incremental reproduction guide](stopped-product.md) covers the h24
+rational-center producer, new moments, stopping parameters and assembly.
+The community checkpoint and historical targets below retain their own scope.
+
+That historical witness is documented in the [round-eight maintainer review](research/community-round8-review.md)
 and [current status](research/current-status.md), with the
-[selected parameter certificate](../research/matrix-exponent-synthesis/candidate/arithmetic.json).
+[selected certificate](../research/coordinated-frames-and-entrance-banks/certificate.json).
+The [joint-frame review](research/community-round2-review.md) remains a historical checkpoint.
 The bound is conditional on the retained original #109 framework. Earlier notes,
 patches, and the [preserved research](research/preserved-research.md) are historical
 reproduction targets. Run `make verify-research` to regenerate its certificates;
 the expanded tests also run in `make verify-tests`.
 
-## Requirements
+## Historical target requirements
 
-The verification path needs Python 3.11 or newer, Git, Make, and a C++17 compiler supporting
+The original verification path below needs Python 3.11 or newer, Git, Make, and a C++17 compiler supporting
 unsigned 128-bit integers and OpenMP (GCC, or Clang with libomp), with no
 third-party Python packages. The enlarged-frame profiler additionally needs Boost
 multiprecision headers (`libboost-dev` on Ubuntu); the ordinary joint-frame
@@ -20,6 +128,22 @@ source files are bundled, so verification runs without network access.
 The local preparation checks used Python 3.14.6 and Tectonic 0.16.9. The supplied
 GitHub workflow targets Python 3.11, 3.13, and 3.14 on Ubuntu 24.04; a workflow
 configuration is not a claim that those hosted runs have already passed.
+
+The shared finite-word replay and transition preparation require assertions:
+run without `-O`, `-OO` or a nonzero `PYTHONOPTIMIZE`. Both entry points reject
+an optimized interpreter before loading a word or writing profiler inputs.
+They also check physical index domains and bind the complete scatter multiset
+to the output records. Extra cancelling XORs cannot substitute for paid
+incidences; valid reorderings remain accepted because scatter gates change only
+output slots using unchanged scratch sources.
+
+The cancelling-scatter counterexample was identified by **rfu08** in
+[PR #64](https://github.com/CrocSwap/integer-mult-bounds/pull/64), at inspected
+head `2d970ab3ca0271cfb2b609dc9aae1b7073b7774d`. The common checkers now enforce
+that binding; the finite-word controls run in `make verify-joint` and
+`make verify-tests`. `make verify-pair` also replays the selected pair-assembly
+words through these helpers. This strengthens checker coverage while retaining
+the numerical witnesses and the stated full-theorem assumptions.
 
 ## Arithmetic, identities, and patches
 

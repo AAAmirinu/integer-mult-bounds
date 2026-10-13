@@ -1,44 +1,49 @@
 cff-version: 1.2.0
 message: >-
-  Please cite the final composition by Avi Eisenberg, eumemic and Alejandro Zarzuelo Urdiales, this project, the upstream
-  manuscript and the constituent contributions used. Project-level authorship
-  here identifies the maintainer; it does not assign sole authorship of the
-  community result. See CONTRIBUTORS.md, NOTICE and source-specific manifests.
+  Please cite the selected composition and its constituent contributions,
+  this project and the upstream manuscript. The selected checkpoint is PR626
+  with PR543; consult certificates/selected-result.json for publication status.
+  Project-level authorship identifies the maintainer, not sole authorship of
+  the community result. See CONTRIBUTORS.md and the frozen source notices.
 title: "A sharper exponent for integer multiplication"
 authors:
   - family-names: Colkitt
     given-names: Douglas
 license: Apache-2.0
 type: software
-version: "community-pr62-2026-10-08"
-date-released: 2026-10-08
+version: "community-k492-2026-10-12"
+date-released: 2026-10-12
 repository-code: "https://github.com/CrocSwap/integer-mult-bounds"
 url: "https://github.com/CrocSwap/integer-mult-bounds"
 abstract: >-
-  Community research on integer multiplication with conditional kappa =
-  25508460085039/500000000000000000 > 2^-15. Avi Eisenberg's interval strips
-  and core-aware pair assembly combine with eumemic's joint frame compiler
-  and Alejandro Zarzuelo Urdiales's exact parameter refinement. Includes
-  attributed alternative constructions, exact finite certificates, scoped
-  Lean checks and a conditional maintainer audit. The original OpenAI #109
-  framework remains assumed. No full formal verification, independent human
-  peer review or worldwide priority is claimed.
+  Community research on integer multiplication. The selected maintainer-reviewed
+  conditional finite composition has kappa = 51110230636731/31250000000000000
+  = 0.001635527380375392. Chafik Boukhalfa's PR626 allocation on Jeremy Kothe's PR622/PR623 construction composes
+  with eumemic's PR543 interleaved-source bit supplier, building on cold
+  kernels, entrance promotions, shared prefixes, exact owner allocation,
+  frame coalescences, hyperplane-ended helpers and the cumulative community framework. Parallel
+  constructions, verification tools and scoped research results are preserved.
+  All-size/compiler/common-label/mutable-basis, pooled-cell hosting, normalized
+  residual, precision/tape and analytic-transfer interfaces remain conditional.
+  Finite checks do not constitute a complete Lean multiplication theorem.
 preferred-citation:
-  type: unpublished
-  title: "Interval strips, core-aware pair assembly and exact exponent refinement"
+  type: software
+  title: "A sharper exponent for integer multiplication: community research repository"
   authors:
-    - family-names: Eisenberg
-      given-names: Avi
-    - name: eumemic
-    - family-names: Zarzuelo Urdiales
-      given-names: Alejandro
+    - family-names: Colkitt
+      given-names: Douglas
   year: 2026
-  url: "https://github.com/CrocSwap/integer-mult-bounds/pull/62"
+  url: "https://github.com/CrocSwap/integer-mult-bounds"
   notes: >-
-    Cite PR62 together with eumemic's PR57 compiler and Alejandro Zarzuelo
-    Urdiales's PR61 refinement. Full constituent, parallel, maintainer and
-    upstream credits and assistance disclosures are retained in CONTRIBUTORS.md
-    and NOTICE; this entry does not replace those credits.
+    Maintainer citation only, not sole authorship of the mathematical result.
+    Credit Chafik Boukhalfa (PR626), Jeremy Kothe (PR622/623/617), eumemic (PR543),
+    Dominik Scholz (PR569/571),
+    Jonathan Capalbo (PR567/575), Chafik Boukhalfa (PR583/586 and other work),
+    Dugongue (PR541/548/552 and other work), DreamingOfClouds (bit hosting and
+    assembly), Rohan Arun (PR559 and other work), and the full predecessor
+    lineage. CONTRIBUTORS.md records parallel and research contributions,
+    including artuskg. Cite constituent PRs where their results are used;
+    preserve their licenses and assistance disclosures.
 keywords:
   - integer multiplication
   - computational complexity

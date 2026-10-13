@@ -3,6 +3,349 @@
 **Community research maintained by Douglas Colkitt — conditional on the original
 OpenAI #109 framework.**
 
+**Donating inference or asking an agent to contribute? Start with
+[autoresearch.md](autoresearch.md)** for task selection, current priorities and
+how to avoid duplicating other agents' work. Agents should also read
+[AGENTS.md](AGENTS.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
+Coordinate claims, findings and handoffs on the
+[discussion board](https://github.com/CrocSwap/integer-mult-bounds/discussions),
+starting with [the coordination guide](https://github.com/CrocSwap/integer-mult-bounds/discussions/1163).
+New to the construction? Read [the bottleneck brief](docs/research/bottleneck-brief.md).
+Workflow feedback is welcome in [discussion #1200](https://github.com/CrocSwap/integer-mult-bounds/discussions/1200).
+
+## Current reviewed result: rare-pattern T16 owner exchanges
+
+**Rohan Arun's [#1094](https://github.com/CrocSwap/integer-mult-bounds/pull/1094)** gives
+
+$$
+T(n)=O\!\left(n(\log n)^{1-\kappa}\right),\qquad
+\kappa=\frac{836330098538459}{500000000000000000}=0.001672660197076918.
+$$
+
+This is about **0.02823% more exponent saving** than the [#1042 checkpoint](certificates/checkpoints/frontier1042.json), not measured runtime. It follows alternating packing improvements by **Jeremy Kothe and Rohan Arun**, on Jeremy's mutable-leaver construction, Rohan's #987 slot search, **Hao Yan's #858 controller**, and the credited frame/ownership work of **Chafik Boukhalfa, icekylinx, Jonathan Capalbo** and the retained lineage. The bit supplier remains **DreamingOfClouds' #589 on eumemic's #555**.
+
+All twelve packing candidates pass complete strict local admission, controller/invoice checks, both exact moment engines and all 47 assembly inequalities. Independent owner and pricing auditors by **Josie Elliston and Sagar Thakrar** also check the final candidate. Complete prior construction/bit evidence is explicitly reused and source-bound in the local review. All-size/compiler, common-label/mutable-source realization, whole-call hosting, precision/tape, exact recovery and analytic obligations remain conditional. This is **not a complete Lean multiplication theorem**. Hosted Linux CI is separate.
+
+[Forty-PR review and attribution](docs/research/community-batch1099-review.md) ·
+[Selected record](certificates/selected-result.json) ·
+[Exact assembly](research/community-frontier1094-audit/ASSEMBLY.json) ·
+[Integration receipt](docs/research/community-batch1099-integration.json) ·
+[PR ledger](docs/research/pr-ledger.md) · [Contributors](CONTRIBUTORS.md)
+
+```sh
+# Also requires a C++17 compiler and Boost headers.
+python3 -m pip install numpy sympy scipy
+make frontier1094-verify
+```
+
+The batch includes separate U10, rank-seven-end and E4 gap-filling constructions, finite bit circuits, exact decoder bounds, independent numerical and SAT-proof audits, and verification tools. These contributions retain individual credit even when they do not advance the selected κ. #1048 remains open with an exact counterexample and certification corrections documented in the review.
+
+The [preceding circuit/verification batch](docs/research/community-batch932-review.md)
+and [U8/T21 review](docs/research/community-frontier890-review.md) remain available,
+including their independent evidence-admission, precision, formalization and
+parallel-tooling contributions.
+
+The previous [fifteen-PR review](docs/research/community-frontier799-review.md)
+retains independent reconstruction, owner-optimality and verification-tooling
+work. [Alluri's #681 consolidation](docs/research/community-circuits681-review.md)
+and its six component contributors remain credited for historical circuit-count
+savings, independently of the selected exponent.
+
+## Historical checkpoint: K-triangle helpers and owner repair
+
+Chafik Boukhalfa's #626 on Jeremy Kothe's #622/#623 with eumemic's #543 gives
+κ = 0.001635527380375392. The [review](docs/research/community-k492-review.md),
+[checkpoint](certificates/checkpoints/k492626.json) and `make frontier626-verify`
+preserve the result, evidence and cumulative attribution.
+
+## Historical checkpoint: cold helper endpoints
+
+Jeremy Kothe's #617 with eumemic's #543 gives κ = 0.001635183729255778.
+The [review](docs/research/community-cold617-review.md),
+[checkpoint](certificates/checkpoints/cold617.json) and `make frontier617-verify`
+preserve the preceding result and its contribution record.
+
+## Historical checkpoint: mixed complex providers
+
+**Jeremy Kothe's #588 with eumemic's #543** gives κ = 0.001602278921983212.
+The [43-contribution review](docs/research/community-family588-review.md),
+[frozen record](certificates/checkpoints/family588.json) and
+`make frontier588-verify` preserve its construction, research and attribution.
+
+## Historical checkpoint: post-center kernels and nine-stage bit hosting
+
+**icekylinx's #535 with DreamingOfClouds' #503/#510** gives
+κ = 0.001584931111785787. The complete construction and review remain available:
+[review](docs/research/community-family533-review.md),
+[checkpoint](certificates/checkpoints/post-center535.json), and
+`make frontier535-verify`.
+
+## Historical checkpoint: direct delivery and source carriers
+
+**icekylinx's #531 on #523, with eumemic's #493**, gives
+κ = 0.001517760977820331. Its complete construction and verification record
+remain available: [review](docs/research/community-pr531-review.md),
+[checkpoint](certificates/checkpoints/direct531.json), and
+`make frontier531-verify`.
+
+## Historical checkpoint: gen4 circuits and common-delivery frames
+
+The composition of **DreamingOfClouds' [#276](https://github.com/CrocSwap/integer-mult-bounds/pull/276)**
+and **Rohan Arun's [#279](https://github.com/CrocSwap/integer-mult-bounds/pull/279)** gives
+
+$$
+T(n)=O\!\left(n(\log n)^{1-\kappa}\right),\qquad
+\kappa=\frac{90446448750933}{125000000000000000}=0.000723571590007464.
+$$
+
+DreamingOfClouds redesigned the local bit circuits to use fewer auxiliary
+registers. Rohan reassigned 880 mixing gates to their existing common delivery
+frames, applying eumemic's earlier retiming technique. The composition retains
+Henry Grant and Jacob Sussman's five-stage construction, Evan McKinney and
+Rohan's completed banks, Chafik Boukhalfa's physical checkers, Avi Eisenberg's
+complex supplier and the earlier community framework.
+
+This is **1.90% above the recently audited 0.000710046193349537 witness**,
+and **56.99% above 0.0004609169**. It is approximately `2^-10.43258`.
+These compare exponent savings, not practical runtime. The all-size compiler,
+chart, routing, restored-row, precision/recovery and analytic interfaces remain
+conditional. Finite replay and written review do not prove the complete
+asymptotic theorem in Lean.
+
+[Review and validation scope](docs/research/community-pr279-review.md) ·
+[Selected record](certificates/checkpoints/gen4-pr279.json) ·
+[Construction argument](research/five-stage-gen4-banks/PROOF.md) ·
+[Exact certificate](research/community-pr279-audit/certificate.json) ·
+[Integration checks](docs/research/community-pr279-integration.json) ·
+[Contributor record](CONTRIBUTORS.md)
+
+```sh
+python3 -m pip install -r research/five-stage-gen4-banks/requirements.txt
+make gen4-bank-verify
+```
+
+## Research notes and verification contributions
+
+[The research integration index](docs/research/research-notes-20261011.md)
+records accepted experiments, scoped obstructions, verification improvements,
+and attribution. These contributions can be valuable without changing the
+selected exponent. The [experiment archive](research/experiment-log/README.md)
+distinguishes failed searches, execution errors, proposals, and reported
+verification; inclusion does not independently certify every historical claim.
+
+## Historical audited checkpoint: 527 reused sources
+
+**eumemic's [#210](https://github.com/CrocSwap/integer-mult-bounds/pull/210)**,
+pinned at `298f7c1`, gives the conditional witness
+**κ = 710046193349537 / 10¹⁸ = 0.000710046193349537**.
+This is the intermediate result announced before the gen4 update above.
+Its complete source package and audit are now preserved on main; the newer
+gen4 result is preserved as a historical checkpoint.
+
+The construction combines internal response cancellations and source reuse
+with Henry Grant and Jacob Sussman's five-stage geometry, Evan McKinney's
+completed-bank method and Rohan Arun's width-120 banking work. Chafik
+Boukhalfa's physical helper/checkers, Avi Eisenberg's complex helper,
+Dugongue's refinements and Romyxen / sennemmi's operation frames remain
+credited in the source notices. All eight mandatory finite stages passed,
+with every one of the 121 pinned inputs unchanged. The retained all-size
+interfaces remain conditional.
+
+[Checkpoint and publication review](docs/research/community-pr210-review.md) ·
+[Exact certificate](research/community-round9-audit/pr210-certificate.json) ·
+[Construction source](research/five-stage-source527-banks/PROOF.md) ·
+[Full round-nine review](research/community-round9-audit/REPORT.md)
+
+```sh
+python3 -m pip install -r research/five-stage-source527-banks/requirements.txt
+make source527-verify
+```
+
+## Preceding reviewed result: coordinated frames and completed entrance banks
+
+[Dugongue's #186](https://github.com/CrocSwap/integer-mult-bounds/pull/186)
+gives the conditional witness
+
+$$
+T(n)=O\!\left(n(\log n)^{1-\kappa}\right),\qquad
+\kappa=\frac{330942774629799}{500000000000000000}=6.61885549259598\times10^{-4}.
+$$
+
+The construction combines Chafik Boukhalfa's shared-edge complex supplier
+(#181) with eumemic's physical bit word and searched modules (#168), then
+coordinates operation frames and completes shared entrance banks. The
+[bank scheduling supplement](research/community-round8-audit/BANK-SCHEDULE.md)
+supplies a conflict-free schedule and its additional finite prime exclusions.
+The source package, dependency notices and assistance disclosures are preserved.
+
+This is **43.60% above the preceding published saving**, and 40.18% above
+the intervening reviewed recycled-bit checkpoint. It is approximately
+`2^-10.56113`; a factor 2.95085 remains to `2^-9`. These compare asymptotic
+exponent savings, not measured runtime speedups. The retained analytic,
+uniform-recursion and fixed-tape hypotheses remain assumptions. Finite replay
+and written review do not formally verify the multiplication theorem.
+
+[Review and validation scope](docs/research/community-round8-review.md) ·
+[Selected record](certificates/selected-result.json) ·
+[Construction argument](research/coordinated-frames-and-entrance-banks/PROOF.md) ·
+[Exact certificate](research/coordinated-frames-and-entrance-banks/certificate.json) ·
+[Integration checks](docs/research/community-round8-integration.json) ·
+[Contributor record](CONTRIBUTORS.md)
+
+```sh
+make entrance-bank-verify
+```
+
+## Preceding reviewed result: recycled bit registers and shared cores
+
+The composition of [#147](https://github.com/CrocSwap/integer-mult-bounds/pull/147),
+[#150](https://github.com/CrocSwap/integer-mult-bounds/pull/150),
+[#146](https://github.com/CrocSwap/integer-mult-bounds/pull/146) and
+[#148](https://github.com/CrocSwap/integer-mult-bounds/pull/148), built on
+icekylinx's #144 construction, gives the conditional witness
+
+$$
+T(n)=O\!\left(n(\log n)^{1-\kappa}\right),\qquad
+\kappa=\frac{472154791}{1000000000000}=4.72154791\times10^{-4}.
+$$
+
+William Porter (hpst3r) eliminates unused terminal accumulators; DaysSky
+schedules dirty reads later and reuses dead bit registers. Thomas Marchand
+(Th0rgal) contributes the selected gauge subset and Rohan Gupta (gupt1156)
+the tighter stopping parameter. SovereignSteak's [#151](https://github.com/CrocSwap/integer-mult-bounds/pull/151)
+independently composes the same gauge refinement and recycling, and supplies
+the further atom tightening used here. The composition retains the actual complete
+word, exact restoration and every frame transition. James Chang's compensated
+birth-read reuse and SovereignSteak's terminal-elimination mechanism are
+explicit dependencies. All prior construction and framework credits remain.
+
+This is **2.44% above the preceding reviewed saving**. It is an asymptotic
+exponent improvement, not a measured runtime speedup. The retained analytic,
+uniform-recursion and fixed-tape hypotheses remain assumptions.
+
+[Review and validation scope](docs/research/community-round7-review.md) ·
+[Selected record](certificates/selected-result.json) ·
+[Construction argument](research/recycled-bit-integration/PROOF.md) ·
+[Exact certificate](research/recycled-bit-integration/certificate.json)
+
+```sh
+make recycled-bit-verify
+```
+
+## Preceding paired-cube and shared-core construction
+
+The construction contributed by **[icekylinx](https://github.com/icekylinx)** in
+[PR #144](https://github.com/CrocSwap/integer-mult-bounds/pull/144), building on
+[PR #130](https://github.com/CrocSwap/integer-mult-bounds/pull/130), gives
+
+$$
+T(n)=O\!\left(n(\log n)^{1-\kappa}\right),\qquad
+\kappa=\frac{4609169}{10000000000}=4.609169\times10^{-4}.
+$$
+
+A signed paired-cube producer and coordinate-star centers complete the
+identity using the original source registers. Completed dirty cores reuse
+one auxiliary bank across three orthogonal blocks, adopting an664's PR #128
+sharing principle. The bit branch selects certified gauges from the retained
+PR #97 / Swapnil word. All local transitions, copied centers, complement
+calls, finite routers and rare-class fallback remain charged. The analytic,
+uniform-recursion and fixed-tape hypotheses are retained.
+
+This is **9.03 times the preceding reviewed main saving**, approximately
+`2^-11.0832`: above `2^-12` and below `2^-11`. It measures the asymptotic
+exponent saving, not a practical runtime speedup.
+
+**[Maintainer review and validation scope](docs/research/community-round6-review.md)** ·
+[Current result record](certificates/selected-result.json) ·
+[Proof source](notes/paired-cube-note.tex) ·
+[Exact certificate](certificates/paired-cube-network.json) ·
+[Incremental reproduction](docs/paired-cube.md)
+
+```sh
+make paired-cube-verify
+```
+
+## Preceding three-stage cover extension
+
+The construction contributed by **icekylinx**, extending
+[PR #115](https://github.com/CrocSwap/integer-mult-bounds/pull/115), gives
+
+$$
+T(n)=O\!\left(n(\log n)^{1-\kappa}\right),\qquad
+\kappa=\frac{3146011}{10000000000}=3.146011\times10^{-4}.
+$$
+
+Three signed shears on a regular Cayley cover align all interstage data
+frames. The complex branch combines eumemic's PR #117 local DAG with
+arbitrary-subspace Clifford frames; the bit branch retains the PR #97 /
+Swapnil physical word and uses a batched weighted q-adic cover. Local
+transitions, copied centers, rare-class fallback, finite routers and
+internal row borrowing are charged. The retained analytic and fixed-tape
+hypotheses still apply.
+
+[Proof source](notes/three-stage-cover-note.tex) ·
+[Exact certificate](certificates/three-stage-cover-network.json) ·
+[Incremental reproduction](docs/three-stage-cover.md)
+
+```sh
+make three-stage-cover-verify
+```
+
+## Preceding partial-gauge extension
+
+The construction contributed by **icekylinx**, extending
+[PR #104](https://github.com/CrocSwap/integer-mult-bounds/pull/104), gives
+
+$$
+T(n)=O\!\left(n(\log n)^{1-\kappa}\right),\qquad
+\kappa=\frac{7237}{78125000}=9.26336\times10^{-5}.
+$$
+
+It applies the stopped whole-projector bit interface to the physical deferred
+word of Zhihao Chen's PR #97, based on Swapnil Jain's witness. The new complex
+producer combines cyclic interval contractions, pair-first cube assembly,
+compatible frame enlargement and partial source gauges. Every residual,
+endpoint correction and target-data transition is charged. The bound retains
+the analytic and fixed-tape hypotheses of the preceding construction.
+
+[Proof source](notes/partial-gauge-note.tex) ·
+[Exact certificate](certificates/partial-gauge-network.json) ·
+[Incremental reproduction](docs/partial-gauge.md)
+
+```sh
+make partial-gauge-verify
+```
+
+## Preceding stopped product-ring extension
+
+The new construction contributed by **icekylinx**, extending merged
+[PR #36](https://github.com/CrocSwap/integer-mult-bounds/pull/36), gives
+
+$$
+T(n)=O\!\left(n(\log n)^{1-\kappa}\right),\qquad
+\kappa=\frac{194869}{2500000000}=7.79476\times10^{-5}.
+$$
+
+It combines a stopped product-ring bit interchange on `(23,23)` with an
+all-disjoint rational-center complex network on `(24,24)`. The new generic
+opposite-bank factorization pays one reversed child per projector rank;
+atom adapters, ordinary leaves, endpoint copies and the exact denominator-21
+grid are included in the proof. The bound retains the original analytic
+and fixed-tape hypotheses.
+
+[Proof source](notes/stopped-product-note.tex) ·
+[Exact certificate](certificates/stopped-product-network.json) ·
+[Incremental reproduction](docs/stopped-product.md)
+
+```sh
+make stopped-product-verify
+```
+
+The maintainer-reviewed community checkpoint below remains its own result
+and validation record.
+
+## Historical reviewed community checkpoint
+
 The reviewed community witness gives
 
 $$
@@ -27,7 +370,7 @@ speedup. The model and general reduction are inherited from OpenAI's
 additions to allow more physical wire reuse. Combined with **eumemic's joint
 frame compiler (#57)**, this yields the strongest finite network in this batch.
 **Alejandro Zarzuelo Urdiales's exact parameter refinement and scoped Lean
-certificate (#61)** supply the selected numerical value.
+certificate (#61)** supply that historical numerical value.
 
 The bit network has m=575 and 137,151,806 physical roles; its certified recursive
 saving is 102039046058023/2000000000000000000. The complex network retains saving
@@ -46,6 +389,20 @@ split-pair recursion (#59)**. The review records the exact validation scope of e
 
 ## Attribution
 
+The historical #186 construction is contributed by Dugongue, building on
+Chafik Boukhalfa/chafreaky (#181/#175), eumemic (#168), and the cumulative
+framework and physical-word lineage. The [contributor ledger](CONTRIBUTORS.md)
+also credits reviewed parallel work, including Rohan Arun’s #185 bootstrap
+and Chafik’s #182 refinement, without adding their gains to this witness.
+
+Earlier incorporated contributions include **DaysSky** (#150), **William Porter /
+hpst3r** (#147), **Thomas Marchand / Th0rgal** (#146), and **Rohan Gupta /
+gupt1156** (#148), building on **James Chang / jamesyc** (#124) and
+**SovereignSteak** (#122). **Andrew Barnes / Bortlesboat** (#101) strengthens
+physical-word verification using **rfu08**'s counterexample. **rfu08** (#64)
+contributes the separately scoped formal-transfer and finite-audit package.
+See [CONTRIBUTORS.md](CONTRIBUTORS.md) for their roles and the retained credits.
+
 The names below identify GitHub contributors; they are not verified Twitter handles.
 
 - **[Avi Eisenberg (ikeboy)](https://github.com/ikeboy):** skip-prefix and interval strips, core-aware pair assembly ([#53](https://github.com/CrocSwap/integer-mult-bounds/pull/53), [#62](https://github.com/CrocSwap/integer-mult-bounds/pull/62)).
@@ -56,7 +413,10 @@ The names below identify GitHub contributors; they are not verified Twitter hand
 - **[Rohan Garg (rohangar1)](https://github.com/rohangar1):** split-pair recursion, order refinement and paid-clone composition ([#59](https://github.com/CrocSwap/integer-mult-bounds/pull/59)).
 - **[Alejandro Zarzuelo Urdiales (alejandrozu)](https://github.com/alejandrozu):** Gaussian parity and finite tensor proofs, matrix/search tools, exact refinement and scoped Lean arithmetic ([#45](https://github.com/CrocSwap/integer-mult-bounds/pull/45), [#61](https://github.com/CrocSwap/integer-mult-bounds/pull/61)).
 - **[RaD project (hipotures)](https://github.com/hipotures):** semantic precision, routing, phase-cell inversion, bulk resampling, alternating producers, physical compiler and enlarged-frame/clone machinery ([#41](https://github.com/CrocSwap/integer-mult-bounds/pull/41), [#51](https://github.com/CrocSwap/integer-mult-bounds/pull/51)).
-- **icekylinx:** recursive batching, partial swaps, fixed projector profiles, copied retained centers and the selected complex construction.
+- **[icekylinx](https://github.com/icekylinx):** stopped recursion, three-stage covers, weighted local-ring compilation, paired-cube construction and the selected integration ([#104](https://github.com/CrocSwap/integer-mult-bounds/pull/104), [#115](https://github.com/CrocSwap/integer-mult-bounds/pull/115), [#130](https://github.com/CrocSwap/integer-mult-bounds/pull/130), [#144](https://github.com/CrocSwap/integer-mult-bounds/pull/144)); earlier batching, partial swaps and copied centers.
+- **[an664](https://github.com/an664):** completed-core workspace sharing ([#128](https://github.com/CrocSwap/integer-mult-bounds/pull/128)), a substantial dependency of the current result.
+- **[eumemic](https://github.com/eumemic):** the restricted positive producer used by the paired-cube construction ([#117](https://github.com/CrocSwap/integer-mult-bounds/pull/117)), alongside the earlier work credited above.
+- **Zhihao Chen and Swapnil Jain:** the deferred physical bit ledger ([#97](https://github.com/CrocSwap/integer-mult-bounds/pull/97)) and underlying frozen word and lifted frames used by the selected bit construction.
 - **Zhihao Chen (jacklightChen):** controlled bases, translated frames, semantic/bulk compatibility and two-stage integration.
 - **James Chang (jamesyc):** reversed two-stage geometry and exact controls.
 - **Aurel Prosz (Paureel) and Swapnil Jain:** attributed two-stage development and paid copied-stream endpoints.
@@ -140,6 +500,12 @@ scoped negative results and reproducible certificates.
 | **[ternary-30](patches/ternary-30.patch)** | **`2^-30`** | **Ternary five-subset circuit, rational frames and fixed-alphabet interchange** |
 
 ## Citation and license
+
+The [independent rank-first pair verification](research/ranked-pair-verification/README.md)
+and [formal-transfer checkpoint](research/machine-transfer-verification/README.md)
+record exact word/profile checks and 298 audited declarations across 27 unique
+Lean modules. Literal profile instantiations concern historical checkpoints,
+not the new selected witness. They do not verify the full multiplication machine.
 
 Use [CITATION.cff](CITATION.cff), cite the individual contributions used and
 include the repository version or commit. [CONTRIBUTORS.md](CONTRIBUTORS.md),

@@ -15,6 +15,13 @@ community-followup-check:
 verify:
 	$(MAKE) verify-community
 	$(MAKE) verify-producers
+	$(MAKE) verify-partial-gauge
+	$(MAKE) verify-three-stage-cover
+	$(MAKE) verify-paired-cube
+	$(MAKE) verify-recycled-bit
+	$(MAKE) verify-entrance-banks
+	$(MAKE) gen4-bank-verify
+	$(MAKE) frontier741-verify
 	$(MAKE) verify-certificates
 	$(MAKE) verify-ternary
 	$(MAKE) verify-research
@@ -25,17 +32,56 @@ verify:
 	$(MAKE) verify-pair
 	$(MAKE) verify-tests
 
+.PHONY: selected-record-check entrance-bank-verify verify-entrance-banks
+selected-record-check:
+	python3 -B scripts/verify_selected_result.py
+
+entrance-bank-verify: selected-record-check
+	python3 -B research/coordinated-frames-and-entrance-banks/verify.py
+	python3 -B research/community-round8-audit/bank_schedule.py
+
+verify-entrance-banks: entrance-bank-verify
+
+.PHONY: gen4-bank-verify
+gen4-bank-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-gen4.XXXXXX"); \
+	python3 -B research/five-stage-gen4-banks/verify.py --output "$$work/replay"
+
+.PHONY: frontier531-verify
+frontier531-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier531.XXXXXX"); \
+	python3 -B scripts/verify_frontier531.py --work "$$work/replay"
+
+.PHONY: frontier535-verify
+frontier535-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier535.XXXXXX"); \
+	python3 -B scripts/verify_frontier535.py --work "$$work/replay"
+
+.PHONY: frontier588-verify
+frontier588-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier588.XXXXXX"); \
+	python3 -B scripts/verify_frontier588.py --work "$$work/replay"
+
+.PHONY: source527-record-check source527-verify
+source527-record-check:
+	python3 -B scripts/verify_selected_result.py --record certificates/checkpoints/source527.json
+
+source527-verify: source527-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-source527.XXXXXX"); \
+	python3 -B research/five-stage-source527-banks/verify.py --output "$$work/replay"
+
 verify-community: community-audit-check community-followup-check copied-reversed-producer copied-reversed-check copied-fixed-reversed-producer copied-fixed-reversed-check
 	$(MAKE) copied-fixed-verify
 	$(MAKE) climbed-48-verify
 
 verify-producers:
+	$(MAKE) stopped-product-verify
 	$(MAKE) copied-centers-verify
 	$(MAKE) structured-bulk-verify
 	$(MAKE) endpoint-gauge-producer endpoint-gauge-certificate
 	$(MAKE) partial-swap-producer partial-swap-certificate
 
-verify-certificates:
+verify-certificates: source527-record-check
 	python3 scripts/prime_field_network.py
 	python3 scripts/complex_network.py
 	python3 scripts/fast_gaussian.py
@@ -75,6 +121,36 @@ verify-certificates:
 	python3 scripts/audit_scratch_pooling.py
 	python3 scripts/reuse_network.py
 	python3 scripts/make_reuse_patch.py
+
+# Independent verification of the pending PR62/63 rank-first construction.
+# The offline check is separate from the pinned-source, C++/CRT replay.
+verify-certificates: ranked-pair-check
+
+.PHONY: ranked-pair-check ranked-pair-verify formal-ranked-pair-verify
+ranked-pair-check:
+	python3 research/ranked-pair-verification/verify.py
+
+ranked-pair-verify: ranked-pair-check
+	test -n "$(UPSTREAM)"
+	python3 research/ranked-pair-verification/audit/ranked-word-audit.py --upstream "$(UPSTREAM)" --generated build/ranked-pair
+
+formal-ranked-pair-verify:
+	python3 research/ranked-pair-verification/lean/check.py
+
+formal-historical-verify: formal-ranked-pair-verify
+
+# Later source-bound proof and finite-certificate checkpoint from PR64.
+verify-certificates: machine-transfer-check
+
+.PHONY: machine-transfer-check formal-machine-transfer-verify
+machine-transfer-check:
+	python3 research/machine-transfer-verification/verify.py
+
+LAKE_PROJECT ?= formal/lean
+formal-machine-transfer-verify:
+	python3 research/machine-transfer-verification/verify_lean.py --lake-project "$(LAKE_PROJECT)" --output build/machine-transfer/lean
+
+formal-historical-verify: formal-machine-transfer-verify
 
 verify-ternary:
 	python3 scripts/complex_compression.py
@@ -428,3 +504,157 @@ pair-assembly-verify: pair-assembly-producer pair-assembly-check
 .PHONY: verify-pair
 verify-pair: pair-assembly-verify
 	python3 scripts/audit_pair_candidate.py --check docs/research/community-pair-arithmetic.json
+
+.PHONY: stopped-product-producer stopped-product-certificate stopped-product-verify
+stopped-product-producer:
+	python3 scripts/stopped_product_producer.py
+
+stopped-product-certificate:
+	python3 scripts/stopped_product_network.py
+
+stopped-product-verify: stopped-product-producer stopped-product-certificate
+
+.PHONY: partial-gauge-bit partial-gauge-producer partial-gauge-certificate partial-gauge-verify
+partial-gauge-bit:
+	python3 scripts/partial_gauge_bit.py
+
+partial-gauge-producer:
+	python3 scripts/partial_gauge_producer.py
+
+partial-gauge-certificate:
+	python3 scripts/partial_gauge_network.py
+
+partial-gauge-verify: partial-gauge-bit partial-gauge-producer partial-gauge-certificate
+
+.PHONY: verify-partial-gauge
+verify-partial-gauge: partial-gauge-verify
+
+.PHONY: three-stage-cover-producer three-stage-cover-certificate three-stage-cover-verify verify-three-stage-cover
+three-stage-cover-producer:
+	python3 scripts/three_stage_cover_producer.py
+
+three-stage-cover-certificate:
+	python3 scripts/three_stage_cover_network.py
+
+three-stage-cover-verify: three-stage-cover-producer three-stage-cover-certificate
+
+verify-three-stage-cover: three-stage-cover-verify
+
+.PHONY: paired-cube-producer paired-cube-bit paired-cube-certificate paired-cube-verify verify-paired-cube
+paired-cube-producer:
+	python3 scripts/paired_cube_producer.py
+
+paired-cube-bit:
+	python3 scripts/paired_cube_bit.py
+
+paired-cube-certificate:
+	python3 scripts/paired_cube_network.py
+
+paired-cube-verify: paired-cube-producer paired-cube-bit paired-cube-certificate
+
+verify-paired-cube: paired-cube-verify
+
+.PHONY: recycled-bit-verify recycled-bit-full-verify verify-recycled-bit
+recycled-bit-verify:
+	python3 research/recycled-bit-integration/verify.py
+
+recycled-bit-full-verify:
+	python3 research/recycled-bit-integration/verify.py --all
+
+verify-recycled-bit: recycled-bit-full-verify
+	python3 -m unittest discover -s tests -p 'test_recycled_bit_integration.py' -v
+
+.PHONY: frontier596-verify
+frontier596-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier596.XXXXXX"); \
+	python3 -B scripts/verify_frontier596.py --work "$$work/replay"
+
+.PHONY: frontier617-verify
+frontier617-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier617.XXXXXX"); \
+	python3 -B scripts/verify_frontier617.py --work "$$work/replay"
+
+.PHONY: frontier626-verify
+frontier626-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier626.XXXXXX"); \
+	python3 -B scripts/verify_frontier626.py --work "$$work/replay"
+
+.PHONY: frontier741-verify
+frontier741-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier741.XXXXXX"); \
+	python3 -B scripts/verify_frontier_complete.py --frontier 741 --work "$$work/replay"
+
+.PHONY: frontier799-verify
+frontier799-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier799.XXXXXX"); \
+	python3 -B scripts/verify_frontier_complete.py --frontier 799 --work "$$work/replay"
+
+# Opt-in PR853 scheduling; the sequential replay remains the reference.
+.PHONY: complex741-parallel
+complex741-parallel:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-parallel741.XXXXXX"); \
+	python3 -B scripts/verify_complex741_parallel.py --work "$$work/replay" --jobs 3
+
+.PHONY: frontier890-verify
+frontier890-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier890.XXXXXX"); \
+	python3 -B scripts/verify_frontier890.py --work "$$work/replay"
+
+.PHONY: frontier942-verify
+frontier942-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier942.XXXXXX"); \
+	python3 -B scripts/verify_frontier942.py --work "$$work/replay"
+# Tooling: opt-in parallel exact U8 phase recipes, byte-identical to the pinned serial step (no new kappa).
+.PHONY: phase-recipes-parallel-verify phase-recipes-parallel-benchmark
+phase-recipes-parallel-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-phase-parallel.XXXXXX"); \
+	python3 -B research/phase-recipes-parallel/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/phase-recipes-parallel -p test_package.py
+phase-recipes-parallel-benchmark:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-phase-parallel.XXXXXX"); \
+	python3 -B research/phase-recipes-parallel/verify.py --work "$$work/replay" --serial
+
+.PHONY: frontier1042-verify
+frontier1042-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier1042.XXXXXX"); \
+	python3 -B scripts/verify_frontier1042.py --work "$$work/replay"
+
+# Independent verification: code-disjoint T37 moment endpoints and kappa reduction (no new kappa).
+.PHONY: t37-endpoints-independent-verify
+t37-endpoints-independent-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-t37-endpoints.XXXXXX"); \
+	python3 -B research/t37-endpoints-independent/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/t37-endpoints-independent -p test_package.py
+
+# Independent verification: code-disjoint pricing of the pending kappa claims (no new kappa).
+.PHONY: pending-claims-pricing-verify
+pending-claims-pricing-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-pending-claims.XXXXXX"); \
+	python3 -B research/pending-claims-independent-pricing/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/pending-claims-independent-pricing -p test_package.py
+
+# Tooling: opt-in parallel U8 layer-end controls with a byte-identical receipt (no new kappa).
+.PHONY: layer-end-controls-parallel-verify layer-end-controls-parallel-benchmark
+layer-end-controls-parallel-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-layer-end.XXXXXX"); \
+	python3 -B research/layer-end-controls-parallel/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/layer-end-controls-parallel -p test_package.py
+layer-end-controls-parallel-benchmark:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-layer-end.XXXXXX"); \
+	python3 -B research/layer-end-controls-parallel/verify.py --work "$$work/replay" --serial
+
+# Research note: width packing of the selected PR589 bit hosting (no new kappa).
+.PHONY: bit589-width-packing-verify
+bit589-width-packing-verify:
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-bit589-packing.XXXXXX"); \
+	python3 -B research/bit589-width-packing/verify.py --work "$$work/replay" && \
+	python3 -B -m unittest discover -s research/bit589-width-packing -p test_package.py
+
+.PHONY: frontier1094-verify
+frontier1094-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier1094.XXXXXX"); \
+	python3 -B scripts/verify_frontier1094.py --work "$$work/replay"
+
+.PHONY: verify-parallel
+verify-parallel:
+	python3 scripts/verify_parallel.py

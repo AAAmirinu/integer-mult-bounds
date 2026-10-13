@@ -1,4 +1,229 @@
-# Current release: joint-frame community checkpoint
+# Current reviewed status
+
+Selected conditional κ: **0.001672660197076918**, Rohan Arun's #1094 on Jeremy Kothe's #1087 packing and the cumulative k8/slot/T16 construction. The bit supplier remains #589 on #555.
+
+[Review and attribution](community-batch1099-review.md) · [Integration/CI receipt](community-batch1099-integration.json) · [Selected record](../../certificates/selected-result.json).
+
+Cold replay: `make frontier1094-verify`. This local review explicitly reuses the published, source-bound complete #1042 construction/bit evidence and freshly checks #1094. Exact native, hosting and arithmetic evidence remains conditional on the listed compiler/realization/precision/analytic interfaces. Linux CI is separate.
+
+#1048 remains open for the documented pricing and exact-certification corrections; no negative theorem from that proposal is accepted. Other historical deferrals, including #946, remain unchanged.
+
+# Historical status through #1042
+
+# Current reviewed status
+
+Selected conditional κ: **0.001672188119205421**, Jeremy Kothe's #1042 on the mutable-leaver/slot chain, Rohan Arun's #987 slot search and Hao Yan's T16 controller. The bit side remains #589 on #555.
+
+[Review and individual credit](community-batch1047-review.md) · [Publication/CI receipt](community-batch1047-integration.json) · [Selected record](../../certificates/selected-result.json) · [PR ledger](pr-ledger.md).
+
+Cold replay: `make frontier1042-verify`. Complete local finite construction and both exact moment engines pass, with source-bound retained ancestry reuse recorded. All-size/compiler, realization, hosting, precision/tape, analytic and bit-interface assumptions remain. Linux CI is separate; no complete Lean multiplication theorem is claimed.
+
+The forty-PR batch integrates constructions, parallel audits, circuit candidates, scoped negative results and verification tooling with individual attribution. #946 remains deferred, corroborated by #994's exact source-pin inventory.
+
+# Historical status through #942
+
+# Current reviewed status
+
+Selected conditional κ: **0.001661960547713947**, Jonathan Capalbo's #942 T37
+composition of the #890/#869/#870/#858 lineage, with unchanged #589 on #555.
+[Review and credit](community-batch952-review.md) ·
+[Publication/CI receipt](community-batch952-integration.json) ·
+[Selected record](../../certificates/selected-result.json) · [PR ledger](pr-ledger.md).
+Cold replay: `make frontier942-verify`.
+
+Seventeen of eighteen frozen PRs complete scoped review; #946 stays open
+pending source-pin migration for its broad encoding patch. Circuit candidates,
+scoped negative results, continuum owner bounds and exact-verifier tooling are
+integrated as research with separate attribution. The new circuit counts are
+not combined or installed as the selected bit supplier. The T37 all-replica
+bound applies only to its fixed family and outer grid recipe.
+
+Local full T37 execution passes with explicit checked ancestry reuse. Linux CI
+is tracked separately. All-size/compiler, realization, hosting, precision/tape,
+analytic and bit-interface assumptions remain; no full Lean multiplication proof.
+
+# Superseded status through #890
+
+Selected conditional κ: **0.001661957774647029**, PR890 on PR869/870 and
+Hao Yan's PR858 T16 mechanism, with PR589 on PR555.
+[Review](community-frontier890-review.md) ·
+[Integration/publication/CI receipt](community-frontier890-integration.json) ·
+[Selected record](../../certificates/selected-result.json) · [PR ledger](pr-ledger.md).
+Cold replay: `make frontier890-verify`.
+
+The frozen eighteen-PR round includes frontier constructions, complete-receipt
+and proof-pointer fixes, parallel replay, exact local bounds and independent
+finite audits. Source coverage, individual credit and review corrections are
+recorded separately. All-size/compiler, realization, hosting, precision/tape
+and analytic assumptions remain; no full Lean multiplication proof is claimed.
+The Linux integration job status is separate from the completed local replay.
+
+The [batch through #932](community-batch932-review.md) reviews eighteen circuit,
+precision and verification contributions without changing κ. It includes faster
+isolated tests, X4 scalar savings, R439 compensation candidates and independent
+outer/layout/provenance evidence. Full supplier adoption of the new bit circuits
+remains open; their finite boundary checks are not a new selected witness.
+
+# Superseded status through #799
+
+Selected conditional κ: **0.001661634653669567**, #799 with #589 on #555.
+See the [review](community-frontier799-review.md),
+[integration receipt](community-frontier799-integration.json),
+[selected record](../../certificates/selected-result.json) and [PR ledger](pr-ledger.md).
+Public cold replay: `make frontier799-verify`.
+
+The explicit X4 construction passes native scalar/frame/phase checks, physical
+owner admission, the full invoice, two independent moment engines and all 47
+outer constraints. Composition is bound to rebuilt SW4 ancestry and PR589.
+Local reuse and Linux CI are reported separately; inherited realization and
+analytic hypotheses remain. No full Lean multiplication theorem is claimed.
+
+This round completes #795/#777 reviews and the six individual #681 component
+reviews, integrates five verification-tooling packages, and narrows #806's
+hash-tracing claim to what its diagnostic actually establishes. Historical CI
+payloads remain unavailable. The ledger records exact-head publication status.
+
+The [#741 checkpoint](../../certificates/checkpoints/frontier741.json) remains
+reproducible with `make frontier741-verify`. Original component sources remain
+unchanged; `scripts/verify_supplier_consolidation.py --component-tests` provides
+the historical selected-record closure without changing the current selection.
+
+# Superseded status through #626
+
+Selected conditional κ: **0.001635527380375392**, #626 on #622/#623 with #543.
+See the [review](community-k492-review.md), [integration receipt](community-k492-integration.json),
+[selected record](../../certificates/selected-result.json) and [PR ledger](pr-ledger.md).
+Public cold replay: `make frontier626-verify`.
+
+The previously queued #626 Linux run completed successfully on 2026-10-13.
+The [preserved evidence and offline checker](../../research/selected626-linux-reconciliation/README.md)
+bind that run to its tested sources, six replay stages and exact assembly.
+Three generated provenance digests differ from the committed assembly; the
+linked reconciliation records their scope and the unavailable payloads.
+
+The frozen round covers #618–#626. Eight scoped reviews complete; #620 remains
+partial pending portable research replays and validation of its solver/barrier
+claims. Earlier open reviews retain their ledger status. Inherited uniform,
+physical and analytic assumptions remain; no full Lean multiplication proof.
+Local replay and remote Linux CI statuses are recorded separately.
+
+# Superseded status through #617
+
+The selected conditional saving is **κ=0.001635183729255778**, #617 with #543,
+building on #601/#604/#615. See the [review](community-cold617-review.md),
+[integration receipt](community-cold617-integration.json),
+[selected record](../../certificates/selected-result.json) and [PR ledger](pr-ledger.md).
+The public replay is `make frontier617-verify`.
+
+The frozen round covers #600–#617. Parallel allocations, replay reports,
+formalization and research retain attribution. #611's older branch diff and
+#605/#612 Linux harness and precursor reviews remain open. Scoped finite and
+Lean checks do not discharge the inherited uniform and analytic assumptions.
+Remote Linux CI is reported separately from local execution.
+
+# Superseded status through #599
+
+The selected conditional saving is **κ=0.0016127213726553**, Jeremy Kothe's
+#596 on #591/#592 with eumemic's #543 bit supplier. See the
+[review](community-hyperplane599-review.md),
+[integration receipt](community-hyperplane599-integration.json),
+[selected record](../../certificates/selected-result.json) and
+[PR ledger](pr-ledger.md). The public replay is `make frontier596-verify`.
+
+#593/#599 add scoped Lean proofs; #589 adds bit headroom; #595/#598 add research.
+#594's independent replay contribution is incorporated, while its older branch
+differences await reconciliation. All inherited all-size/realization/hosting/
+precision/tape/analytic conditions remain; this is not a full formal proof of
+multiplication. Remote Linux CI status is recorded separately from local checks.
+
+## Superseded status snapshot through #588
+
+### Historical reviewed record
+
+The selected reviewed conditional witness is
+**κ=400569730495803/250000000000000000=0.001602278921983212**, from
+Jeremy Kothe's #588 with eumemic's #543 bit supplier. The preceding
+[#535/#510 checkpoint](../../certificates/checkpoints/post-center535.json) is preserved.
+
+See the [selected record](../../certificates/selected-result.json),
+[review and assumptions](community-family588-review.md),
+[execution receipts](community-family588-integration.json), and
+[per-PR dispositions](../../research/community-family588-audit/DISPOSITIONS.json).
+The public `make frontier588-verify` command cold-rebuilt both finite suppliers
+and their exact composition. All-size/compiler/common-label/mutable-basis,
+pooled-cell hosting, normalized residual, precision/tape and analytic
+interfaces remain conditional. Linux CI is tracked separately; no full Lean
+multiplication theorem is claimed.
+
+The frozen round covers 43 construction, research and tooling PRs through
+#588. Separate Lean proposals and later arrivals stay in the next queue.
+Parallel and superseded mechanisms, exact diagnostics and negative results
+retain attribution in the [contributor record](../../CONTRIBUTORS.md).
+The [research integration index](research-notes-20261011.md) preserves earlier
+non-frontier contributions. Larger pending claims remain proposals until reviewed.
+
+Earlier “selected” statements below are historical snapshots.
+
+---
+
+# Selected construction: coordinated frames and completed entrance banks
+
+The selected conditional witness is **κ=330942774629799/500000000000000000
+=0.000661885549259598**, from Dugongue's #186, on chafreaky's #181 and
+eumemic's #168. It is approximately 2^-10.56113: 43.60% above the preceding
+published checkpoint and 40.18% above the recycled-bit review checkpoint.
+
+See the [round-eight review](community-round8-review.md),
+[selected record](../../certificates/selected-result.json),
+[construction](../../research/coordinated-frames-and-entrance-banks/PROOF.md),
+[bank scheduling supplement](../../research/community-round8-audit/BANK-SCHEDULE.md),
+and [integration validation](community-round8-integration.json).
+Reproduce with `make entrance-bank-verify`.
+Published on main on 2026-10-09; the receipt identifies the tested branch/head.
+The retained analytic, uniform-recursion and fixed-tape interfaces remain
+assumptions. Finite replay and scoped formal contributions do not formalize
+the multiplication theorem. #185's reviewed leaf bootstrap does not further
+raise this witness, whose complex supplier already binds.
+
+The [assembly-domain audit](assembly-domain-audit.md) distinguishes the
+enforced `b<1/32` range from the balance `kappa<a/(1+a)` and the independent
+retained Gaussian condition `kappa<1/4`. Its larger-supplier examples are
+arithmetic diagnostics, not new witnesses or an enlarged theorem domain.
+
+The preceding reviewed recycled-bit composition was κ=0.000472154791;
+its [round-seven review](community-round7-review.md) retains the evidence.
+
+Earlier local experiments and rounds-three-through-five reviews are now
+[preserved as dated historical records](preserved-local-history-20261009.md).
+Their old frontier and pending-work statements do not supersede this page;
+the retired shared-aggregate search remains retired.
+
+Everything below is historical and retains its checkpoint-specific scope.
+
+# Preceding main: reviewed paired-cube construction
+
+The selected conditional witness is **κ=4609169/10000000000=0.0004609169**,
+from icekylinx's [PR #144](https://github.com/CrocSwap/integer-mult-bounds/pull/144).
+This is about 9.03 times the preceding main saving, approximately `2^-11.0832`.
+It is above `2^-12` and below `2^-11`.
+
+The construction builds on icekylinx's compiler lineage, an664's #128
+completed-core sharing, eumemic's #117 producer, Zhihao Chen's #97 physical
+ledger and Swapnil Jain's underlying frozen word. See the
+[review and attribution](community-round6-review.md),
+[validation receipt](community-round6-validation.json),
+[selected result record](../../certificates/selected-result.json), and
+[reproduction guide](../paired-cube.md).
+
+The retained upstream analytic, semantic and fixed-tape interfaces remain
+assumed. The finite controls and written audit do not formally verify the
+full multiplication theorem. The review distinguishes local checks from
+head-pinned Linux CI evidence; no independent human peer review is claimed.
+
+Everything below is historical. Its “current” and “selected” statements refer
+to the corresponding checkpoint.
+
+# Previous checkpoint: joint-frame community construction
 
 The selected conditional witness is **κ=25508460085039/500000000000000000
 =5.1016920170078e-5 > 2^-15**, from Avi Eisenberg's #62 pair assembly, eumemic's
