@@ -1,0 +1,56 @@
+{
+ "spot": [
+  264,
+  276,
+  288,
+  300
+ ],
+ "jp8_expected": [
+  9,
+  9,
+  8,
+  8
+ ],
+ "baseline": {
+  "rejected": false
+ },
+ "a_swapped_pivot_spot": {
+  "spot_widths": [
+   8,
+   9,
+   8,
+   8
+  ],
+  "rejected": true,
+  "file": "assemble.py",
+  "line": "assert tuple(p['widths'][h]for h in SPOT)==spot_widths(pid)"
+ },
+ "b_unswapped_spot": {
+  "spot_widths": [
+   9,
+   9,
+   9,
+   8
+  ],
+  "rejected": true,
+  "file": "assemble.py",
+  "line": "assert tuple(p['widths'][h]for h in SPOT)==spot_widths(pid)"
+ },
+ "c_revert_assemble": {
+  "rejected": true,
+  "file": "assemble.py",
+  "line": "assert all(p['widths'][h]==8 for h in SPOT)"
+ },
+ "c_revert_word": {
+  "word_sha256": "81652b2098bda352dffc2786de56da2cbf98a90ec50849f6c5fa2f5ad7137e40",
+  "spot_widths": [
+   9,
+   9,
+   8,
+   8
+  ],
+  "old_check": false,
+  "new_check": true
+ },
+ "status": "PASS_SPOT_WIDTH_CONTROLS"
+}
