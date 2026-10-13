@@ -1,20 +1,149 @@
 # Reproducing the result
 
-The primary artifacts are the [compact-control note](../artifacts/compact-control-note.pdf),
-[combined patch](../patches/compact-control-34.patch), and
-[exact layer certificate](../certificates/compact-control-layer.json).
-They are conditional on the retained algorithmic interfaces and written
-extensions identified in the [review guide](research/compact-control-review.md).
+For the current reviewed checkpoint, use the [selected record](../certificates/selected-result.json).
+Its `reproduce`, `review` and `source_manifest` fields identify the command,
+scoped maintainer assessment and exact inputs. Read them before running a
+historical command from this page:
 
-## Requirements
+```sh
+python3 - <<'PYTHON'
+import json
+from pathlib import Path
+record = json.loads(Path("certificates/selected-result.json").read_text())
+for field in ("reproduce", "review", "source_manifest"):
+    print(field + ":", record[field])
+PYTHON
+```
 
-The verification path needs Python 3.11 or newer, Git, and Make, with no
-third-party Python packages. Run commands from the repository root. All input
+The [published PR39 release](releases/community-kappa-15.md) is a historical
+release, distinct from the current reviewed main checkpoint. Older guides and
+commands below retain their original scope. This clarification follows
+[Anas Khan's PR #90](https://github.com/CrocSwap/integer-mult-bounds/pull/90).
+
+## Historical reviewed checkpoint: #596 with #543
+
+```sh
+python3 -m pip install numpy sympy scipy
+make frontier596-verify
+# Or choose a fresh output directory:
+python3 -B scripts/verify_frontier596.py --work /absolute/new/output --jobs 2
+```
+
+Use Python 3.11+, Make, C++17 and Boost headers; set `CXX` and `BOOST_INCLUDE`
+as needed. Keep assertions enabled. The output must be new and outside the
+checkout. This command rebuilds both suppliers, including the complex baseline,
+then verifies their exact composition. It does not use retained local proofs.
+The runner selects the pinned older #569 source subset already bundled in
+`research/promoted-kernel-coalescing/vendor/larger_gain`.
+
+The [review](research/community-hyperplane599-review.md) and
+[integration receipt](research/community-hyperplane599-integration.json)
+record the fresh selected replays and explicit reuse for intermediate PRs.
+Local macOS results and remote Linux CI are separate statuses. The configured
+selected workflow is `frontier596.yml`; historical frontier588 is manual.
+
+`make selected-record-check` checks metadata and exact source/proof hashes;
+it does not replay the operators. `make frontier588-verify` and
+[the frozen checkpoint](../certificates/checkpoints/family588.json) retain the
+previous composition. Older reproduction targets remain available.
+
+For Lean, run `python3 research/hyperplane-end-lean/verify.py`. It builds the
+combined #593/#599 package and checks theorem axioms. Use `--instances` with
+the generated `ck-local`, `atm3-local`, and optionally #591's `jp8-local`
+directories for finite label checks. Then run:
+
+```sh
+python3 scripts/verify_hpe_lean_binding.py /output/ck-local /output/atm3-local --out /output/LEAN-BINDING.json
+```
+
+This checks that emitted wrapper recipes equal the literals proved in Lean.
+It does not discharge all compiler, hosting or analytic hypotheses.
+
+#589's complete tuned package is preserved at `research/e8-bit-p111-tuned`;
+run `bash research/e8-bit-p111-tuned/tune/verify.sh /fresh/output` with the same
+Python/C++/Boost dependencies. #555 remains byte-identical at its old location.
+The format-limits and three Leech/Turyn research packages retain their own
+reproduction commands, scopes and dependency lists.
+
+## Historical coordinated-frame checkpoint and earlier targets
+
+For the historical coordinated-frame/entrance-bank construction, run
+`make entrance-bank-verify`. This runs the publication-to-certificate binding,
+the full frozen offline finite replay and the bank-scheduling diagnostic.
+The [construction](../research/coordinated-frames-and-entrance-banks/PROOF.md)
+and [scheduling supplement](../research/community-round8-audit/BANK-SCHEDULE.md)
+state the arguments and conditional interfaces. The supplement's small
+exhaustive model is a diagnostic, not a proof of the all-size machine.
+This target uses Python 3.11+ and the standard library only. Preserve the
+package bytes: `.gitattributes` prevents normalization of its hash-pinned JSON.
+`make selected-record-check` is a fast metadata/inventory check, not a replay.
+The complete Linux matrix includes this target on 3.11, 3.13 and 3.14.
+
+For the arithmetic-only parameter-domain diagnostic, see the
+[assembly-domain audit](research/assembly-domain-audit.md). Its pinned replay
+and tests distinguish hypothetical supplier values from the published witness;
+they do not extend the admitted theorem range.
+
+For the preceding recycled-bit composition, run `make recycled-bit-verify`.
+The [construction and scope](../research/recycled-bit-integration/PROOF.md)
+describe full formal-variable scalar replay, exact rational frame checks and
+all paid costs. Use `make recycled-bit-full-verify` to recheck every inherited
+frame inclusion as well. Earlier targets below reproduce their own checkpoints.
+
+For the paired-cube/shared-core extension, run `make paired-cube-verify`.
+The [incremental guide](paired-cube.md) covers the signed producer, selected
+bit gauges, exact moments and assembly.
+
+For the three-stage cover extension, run `make three-stage-cover-verify`.
+The [incremental guide](three-stage-cover.md) covers the new PR #117 local
+word, cover moments and exact assembly.
+
+For the partial-gauge extension, run `make partial-gauge-verify`. Its
+[incremental guide](partial-gauge.md) separates the pinned PR #97 bit input,
+new complex producer and exact assembly.
+
+For the new stopped product-ring extension, run `make stopped-product-verify`.
+Its [incremental reproduction guide](stopped-product.md) covers the h24
+rational-center producer, new moments, stopping parameters and assembly.
+The community checkpoint and historical targets below retain their own scope.
+
+That historical witness is documented in the [round-eight maintainer review](research/community-round8-review.md)
+and [current status](research/current-status.md), with the
+[selected certificate](../research/coordinated-frames-and-entrance-banks/certificate.json).
+The [joint-frame review](research/community-round2-review.md) remains a historical checkpoint.
+The bound is conditional on the retained original #109 framework. Earlier notes,
+patches, and the [preserved research](research/preserved-research.md) are historical
+reproduction targets. Run `make verify-research` to regenerate its certificates;
+the expanded tests also run in `make verify-tests`.
+
+## Historical target requirements
+
+The original verification path below needs Python 3.11 or newer, Git, Make, and a C++17 compiler supporting
+unsigned 128-bit integers and OpenMP (GCC, or Clang with libomp), with no
+third-party Python packages. The enlarged-frame profiler additionally needs Boost
+multiprecision headers (`libboost-dev` on Ubuntu); the ordinary joint-frame
+witness does not use Boost. Run commands from the repository root. All input
 source files are bundled, so verification runs without network access.
 
 The local preparation checks used Python 3.14.6 and Tectonic 0.16.9. The supplied
 GitHub workflow targets Python 3.11, 3.13, and 3.14 on Ubuntu 24.04; a workflow
 configuration is not a claim that those hosted runs have already passed.
+
+The shared finite-word replay and transition preparation require assertions:
+run without `-O`, `-OO` or a nonzero `PYTHONOPTIMIZE`. Both entry points reject
+an optimized interpreter before loading a word or writing profiler inputs.
+They also check physical index domains and bind the complete scatter multiset
+to the output records. Extra cancelling XORs cannot substitute for paid
+incidences; valid reorderings remain accepted because scatter gates change only
+output slots using unchanged scratch sources.
+
+The cancelling-scatter counterexample was identified by **rfu08** in
+[PR #64](https://github.com/CrocSwap/integer-mult-bounds/pull/64), at inspected
+head `2d970ab3ca0271cfb2b609dc9aae1b7073b7774d`. The common checkers now enforce
+that binding; the finite-word controls run in `make verify-joint` and
+`make verify-tests`. `make verify-pair` also replays the selected pair-assembly
+words through these helpers. This strengthens checker coverage while retaining
+the numerical witnesses and the stated full-theorem assumptions.
 
 ## Arithmetic, identities, and patches
 
@@ -84,16 +213,12 @@ This command performs these steps:
    written [compact-control proof](../notes/compact-control-note.tex).
    `scripts/make_compact_control_patch.py` generates the independent combined
    patch, including the changed global exceptional-stream accounting.
-   `scripts/complex_network.py` builds the compressed complex side circuit of
-   `scripts/complex_circuit.py`, checks every side coefficient, binary label,
-   residual and compiled role in both stage directions, and records the
-   conditional `59/10^11 > 2^-31` witness. `scripts/make_complex_circuit_patch.py`
-   extends the compact-control patch with the new complex construction.
-   `scripts/fast_gaussian.py` checks the fast-resampling witness `1479/10^12`,
-   the exact step inequality behind the bound on powers of the resampling
-   correction, and the Neumann counts; `scripts/make_fast_gaussian_patch.py`
-   extends the compressed-complex patch with the chirped-correlation Gaussian
-   maps, the revised interfaces and the new assembly parameters.
+   `scripts/complex_compression.py` records the follow-up weighted complex
+   circuit, binary phase-frame audit and conditional `2^-31` witness.
+   `scripts/make_complex_compression_patch.py` integrates that interface and
+   all downstream constants into an independent complete upstream patch.
+   The earlier compact-control certificate and source patch remain unchanged;
+   see the [construction and integration boundary](research/complex-compression.md).
    `scripts/research_networks.py` and `scripts/search_network_variants.py`
    record scoped family bounds and clearly marked exploratory scores.
 4. The standard-library unittest suite checks certificate boundaries, selected
@@ -107,19 +232,14 @@ that the checked-in outputs reproduce exactly, run on a clean checkout:
 git diff --exit-code -- certificates patches
 ```
 
-The fast-resampling note builds with `make fast-gaussian-note`, the
-compressed-complex note with `make complex-note`, and the compact-control
-note with `make compact-note`. Their statements remain
+The compact-control note builds with `make compact-note`. Its statement remains
 conditional on the identified upstream interfaces and supplied written
 extensions. See the
 [current research status](research/current-status.md) before treating older
 research pages or preparation certificates as current conclusions.
 
 The theorem certificates and all-h bound comparisons use `fractions.Fraction`;
-no floating-point result controls their acceptance. The fast-resampling tests
-also compare explicit resampling matrices against the power bound at 160
-decimal digits; the certificate itself checks the underlying step inequality
-exactly. The separate exploratory
+no floating-point result controls their acceptance. The separate exploratory
 higher-subset screen uses floating point to select candidates, then encloses
 their scores exactly; it certifies neither a new construction nor optimality.
 Sampled finite identity tests use fixed random seeds.
@@ -134,7 +254,7 @@ existing one. It leaves the bundled source untouched:
 mkdir -p build
 mkdir build/review
 cp -R upstream/build build/review/build
-git apply --directory=build/review patches/compact-control-34.patch
+git apply --directory=build/review patches/ternary-30.patch
 ```
 
 Read `build/review/build/main.tex` and its included sections. The other patches
@@ -145,10 +265,11 @@ are alternatives based on the same original manuscript, not successive commits.
 With Tectonic installed:
 
 ```sh
-make compact-note
+make ternary-note
 ```
 
-The result is `artifacts/compact-control-note.pdf`. Build the earlier
+The result is `artifacts/ternary-note.pdf`. Build the preceding
+compact-control note with `make compact-note`. Build the earlier
 parameter-only note with `make note`, producing `artifacts/parameter-note.pdf`.
 Build the separate routing audit
 with `make audit-note`, producing `artifacts/nonadjacent-axis-note.pdf`.
@@ -162,6 +283,8 @@ Build the shared-computation note with `make dag-note`, producing
 Build the cross-group and paired notes with `make shared-point-note` and
 `make paired-note`, producing `artifacts/shared-point-note.pdf` and
 `artifacts/paired-note.pdf`, respectively.
+Build the local complex-network follow-up with `make complex-note`, producing
+`artifacts/complex-compression-note.pdf`.
 The first run may download fonts
 and TeX packages; the numerical verification does not use them. PDF builds may
 differ in metadata or typesetting across TeX environments. The exact-byte
@@ -189,5 +312,72 @@ and [setup-python](https://github.com/actions/setup-python) actions, with
 read-only repository permissions. The PDF is supplied for readers and can be
 rebuilt locally using the command above.
 
-Build the latest note with `make compact-note`. The earlier notes and
+Build the latest note with `make ternary-note`. The earlier notes and
 patches remain available as independent witnesses.
+
+## Ternary construction
+
+The full `audit_ternary_side.py` constructs about 21 million addition nodes
+and uses multiple gigabytes of memory. It verifies exact support keys,
+pruning and role counts, and independently expands complete h=8,9 controls.
+`make_ternary_patch.py` checks the certificate's source hashes before generating
+the independent patch. Its twelve focused tests are in `test_prime_core.py`,
+`test_ternary_side.py`, and `test_ternary_patch.py`. The source-hash manifest
+includes the standalone exact Kronecker-product helper used by the compiler.
+
+No exploratory overnight search is required by this release. All prior
+certificates, patches and bundled upstream files are preserved unchanged.
+
+## Imported candidate reproduction (pending maintainer review)
+
+The following contributor instructions are retained from PR #39 at
+`70ae24129649f6d6d4ec6360962a80c3c42a38f1`; their past validation statements
+describe contributor runs, not this integration run. See
+[the integration ledger](research/community-integration.md) for maintainer results.
+
+# Reproducing the current result
+
+Run from the repository root with Python 3.11+, a C++17 compiler supporting
+unsigned 128-bit integers (GCC or Clang), Git, and Make. No third-party
+Python package or network access is required.
+
+```sh
+make copied-centers-verify
+```
+
+The incremental target:
+
+- Matches the unchanged positive-label bit producers at h25 and h23 to
+  the previously verified partial-swap certificate.
+- Recomputes all 47 rational corner pivots and verifies all 315 symbolic
+  zero-minor partitions using 630 exact integer-rank calculations.
+- Regenerates the new h28, d19 mixed-center complex producer, checking its
+  scalar supports, center coefficients, binary frames, matching and histogram.
+- Applies the copied-center histogram replacement, reconstructs both complete
+  child lists and checks both strict moments, the semantic precision guard,
+  product row stock, seven margins and 47 strict assembly constraints.
+
+The copied-center scheduling and simultaneous rational-basis arguments are
+written proofs. The finite checks establish their selected arithmetic inputs.
+Unchanged historical producers and suites are skipped. Intermediate graphs
+and compiled tools are temporary; `--work-dir PATH` retains them if needed:
+
+```sh
+python3 scripts/copied_centers_producer.py --work-dir /tmp/copied-centers-producers
+```
+
+For arithmetic alone, use `make copied-centers-certificate`. `make verify`
+also runs inherited checks, including the previous structured-bulk target.
+
+## Proof and dependencies
+
+The proof is supplied as [LaTeX source](../notes/copied-centers-note.tex).
+No PDF is generated for this submission. The selected
+[two-stage and corner sources](../references/copied-centers/README.md) and
+[semantic/analytic sources](../references/semantic-bulk/README.md) retain
+original licenses, notices and hash manifests.
+
+[SOURCES.json](../SOURCES.json) pins the archive, parent and contribution
+sources. Raw graphs, alternatives, terminal-eligibility experiments and
+recursive copies of predecessor archives remain outside the submission.
+The [historical manuscript patch](../PATCHING.md) retains the #10 result.

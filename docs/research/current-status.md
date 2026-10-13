@@ -1,150 +1,415 @@
+# Current reviewed status
+
+Selected conditional κ: **0.001672660197076918**, Rohan Arun's #1094 on Jeremy Kothe's #1087 packing and the cumulative k8/slot/T16 construction. The bit supplier remains #589 on #555.
+
+[Review and attribution](community-batch1099-review.md) · [Integration/CI receipt](community-batch1099-integration.json) · [Selected record](../../certificates/selected-result.json).
+
+Cold replay: `make frontier1094-verify`. This local review explicitly reuses the published, source-bound complete #1042 construction/bit evidence and freshly checks #1094. Exact native, hosting and arithmetic evidence remains conditional on the listed compiler/realization/precision/analytic interfaces. Linux CI is separate.
+
+#1048 remains open for the documented pricing and exact-certification corrections; no negative theorem from that proposal is accepted. Other historical deferrals, including #946, remain unchanged.
+
+# Historical status through #1042
+
+# Current reviewed status
+
+Selected conditional κ: **0.001672188119205421**, Jeremy Kothe's #1042 on the mutable-leaver/slot chain, Rohan Arun's #987 slot search and Hao Yan's T16 controller. The bit side remains #589 on #555.
+
+[Review and individual credit](community-batch1047-review.md) · [Publication/CI receipt](community-batch1047-integration.json) · [Selected record](../../certificates/selected-result.json) · [PR ledger](pr-ledger.md).
+
+Cold replay: `make frontier1042-verify`. Complete local finite construction and both exact moment engines pass, with source-bound retained ancestry reuse recorded. All-size/compiler, realization, hosting, precision/tape, analytic and bit-interface assumptions remain. Linux CI is separate; no complete Lean multiplication theorem is claimed.
+
+The forty-PR batch integrates constructions, parallel audits, circuit candidates, scoped negative results and verification tooling with individual attribution. #946 remains deferred, corroborated by #994's exact source-pin inventory.
+
+# Historical status through #942
+
+# Current reviewed status
+
+Selected conditional κ: **0.001661960547713947**, Jonathan Capalbo's #942 T37
+composition of the #890/#869/#870/#858 lineage, with unchanged #589 on #555.
+[Review and credit](community-batch952-review.md) ·
+[Publication/CI receipt](community-batch952-integration.json) ·
+[Selected record](../../certificates/selected-result.json) · [PR ledger](pr-ledger.md).
+Cold replay: `make frontier942-verify`.
+
+Seventeen of eighteen frozen PRs complete scoped review; #946 stays open
+pending source-pin migration for its broad encoding patch. Circuit candidates,
+scoped negative results, continuum owner bounds and exact-verifier tooling are
+integrated as research with separate attribution. The new circuit counts are
+not combined or installed as the selected bit supplier. The T37 all-replica
+bound applies only to its fixed family and outer grid recipe.
+
+Local full T37 execution passes with explicit checked ancestry reuse. Linux CI
+is tracked separately. All-size/compiler, realization, hosting, precision/tape,
+analytic and bit-interface assumptions remain; no full Lean multiplication proof.
+
+# Superseded status through #890
+
+Selected conditional κ: **0.001661957774647029**, PR890 on PR869/870 and
+Hao Yan's PR858 T16 mechanism, with PR589 on PR555.
+[Review](community-frontier890-review.md) ·
+[Integration/publication/CI receipt](community-frontier890-integration.json) ·
+[Selected record](../../certificates/selected-result.json) · [PR ledger](pr-ledger.md).
+Cold replay: `make frontier890-verify`.
+
+The frozen eighteen-PR round includes frontier constructions, complete-receipt
+and proof-pointer fixes, parallel replay, exact local bounds and independent
+finite audits. Source coverage, individual credit and review corrections are
+recorded separately. All-size/compiler, realization, hosting, precision/tape
+and analytic assumptions remain; no full Lean multiplication proof is claimed.
+The Linux integration job status is separate from the completed local replay.
+
+The [batch through #932](community-batch932-review.md) reviews eighteen circuit,
+precision and verification contributions without changing κ. It includes faster
+isolated tests, X4 scalar savings, R439 compensation candidates and independent
+outer/layout/provenance evidence. Full supplier adoption of the new bit circuits
+remains open; their finite boundary checks are not a new selected witness.
+
+# Superseded status through #799
+
+Selected conditional κ: **0.001661634653669567**, #799 with #589 on #555.
+See the [review](community-frontier799-review.md),
+[integration receipt](community-frontier799-integration.json),
+[selected record](../../certificates/selected-result.json) and [PR ledger](pr-ledger.md).
+Public cold replay: `make frontier799-verify`.
+
+The explicit X4 construction passes native scalar/frame/phase checks, physical
+owner admission, the full invoice, two independent moment engines and all 47
+outer constraints. Composition is bound to rebuilt SW4 ancestry and PR589.
+Local reuse and Linux CI are reported separately; inherited realization and
+analytic hypotheses remain. No full Lean multiplication theorem is claimed.
+
+This round completes #795/#777 reviews and the six individual #681 component
+reviews, integrates five verification-tooling packages, and narrows #806's
+hash-tracing claim to what its diagnostic actually establishes. Historical CI
+payloads remain unavailable. The ledger records exact-head publication status.
+
+The [#741 checkpoint](../../certificates/checkpoints/frontier741.json) remains
+reproducible with `make frontier741-verify`. Original component sources remain
+unchanged; `scripts/verify_supplier_consolidation.py --component-tests` provides
+the historical selected-record closure without changing the current selection.
+
+# Superseded status through #626
+
+Selected conditional κ: **0.001635527380375392**, #626 on #622/#623 with #543.
+See the [review](community-k492-review.md), [integration receipt](community-k492-integration.json),
+[selected record](../../certificates/selected-result.json) and [PR ledger](pr-ledger.md).
+Public cold replay: `make frontier626-verify`.
+
+The previously queued #626 Linux run completed successfully on 2026-10-13.
+The [preserved evidence and offline checker](../../research/selected626-linux-reconciliation/README.md)
+bind that run to its tested sources, six replay stages and exact assembly.
+Three generated provenance digests differ from the committed assembly; the
+linked reconciliation records their scope and the unavailable payloads.
+
+The frozen round covers #618–#626. Eight scoped reviews complete; #620 remains
+partial pending portable research replays and validation of its solver/barrier
+claims. Earlier open reviews retain their ledger status. Inherited uniform,
+physical and analytic assumptions remain; no full Lean multiplication proof.
+Local replay and remote Linux CI statuses are recorded separately.
+
+# Superseded status through #617
+
+The selected conditional saving is **κ=0.001635183729255778**, #617 with #543,
+building on #601/#604/#615. See the [review](community-cold617-review.md),
+[integration receipt](community-cold617-integration.json),
+[selected record](../../certificates/selected-result.json) and [PR ledger](pr-ledger.md).
+The public replay is `make frontier617-verify`.
+
+The frozen round covers #600–#617. Parallel allocations, replay reports,
+formalization and research retain attribution. #611's older branch diff and
+#605/#612 Linux harness and precursor reviews remain open. Scoped finite and
+Lean checks do not discharge the inherited uniform and analytic assumptions.
+Remote Linux CI is reported separately from local execution.
+
+# Superseded status through #599
+
+The selected conditional saving is **κ=0.0016127213726553**, Jeremy Kothe's
+#596 on #591/#592 with eumemic's #543 bit supplier. See the
+[review](community-hyperplane599-review.md),
+[integration receipt](community-hyperplane599-integration.json),
+[selected record](../../certificates/selected-result.json) and
+[PR ledger](pr-ledger.md). The public replay is `make frontier596-verify`.
+
+#593/#599 add scoped Lean proofs; #589 adds bit headroom; #595/#598 add research.
+#594's independent replay contribution is incorporated, while its older branch
+differences await reconciliation. All inherited all-size/realization/hosting/
+precision/tape/analytic conditions remain; this is not a full formal proof of
+multiplication. Remote Linux CI status is recorded separately from local checks.
+
+## Superseded status snapshot through #588
+
+### Historical reviewed record
+
+The selected reviewed conditional witness is
+**κ=400569730495803/250000000000000000=0.001602278921983212**, from
+Jeremy Kothe's #588 with eumemic's #543 bit supplier. The preceding
+[#535/#510 checkpoint](../../certificates/checkpoints/post-center535.json) is preserved.
+
+See the [selected record](../../certificates/selected-result.json),
+[review and assumptions](community-family588-review.md),
+[execution receipts](community-family588-integration.json), and
+[per-PR dispositions](../../research/community-family588-audit/DISPOSITIONS.json).
+The public `make frontier588-verify` command cold-rebuilt both finite suppliers
+and their exact composition. All-size/compiler/common-label/mutable-basis,
+pooled-cell hosting, normalized residual, precision/tape and analytic
+interfaces remain conditional. Linux CI is tracked separately; no full Lean
+multiplication theorem is claimed.
+
+The frozen round covers 43 construction, research and tooling PRs through
+#588. Separate Lean proposals and later arrivals stay in the next queue.
+Parallel and superseded mechanisms, exact diagnostics and negative results
+retain attribution in the [contributor record](../../CONTRIBUTORS.md).
+The [research integration index](research-notes-20261011.md) preserves earlier
+non-frontier contributions. Larger pending claims remain proposals until reviewed.
+
+Earlier “selected” statements below are historical snapshots.
+
+---
+
+# Selected construction: coordinated frames and completed entrance banks
+
+The selected conditional witness is **κ=330942774629799/500000000000000000
+=0.000661885549259598**, from Dugongue's #186, on chafreaky's #181 and
+eumemic's #168. It is approximately 2^-10.56113: 43.60% above the preceding
+published checkpoint and 40.18% above the recycled-bit review checkpoint.
+
+See the [round-eight review](community-round8-review.md),
+[selected record](../../certificates/selected-result.json),
+[construction](../../research/coordinated-frames-and-entrance-banks/PROOF.md),
+[bank scheduling supplement](../../research/community-round8-audit/BANK-SCHEDULE.md),
+and [integration validation](community-round8-integration.json).
+Reproduce with `make entrance-bank-verify`.
+Published on main on 2026-10-09; the receipt identifies the tested branch/head.
+The retained analytic, uniform-recursion and fixed-tape interfaces remain
+assumptions. Finite replay and scoped formal contributions do not formalize
+the multiplication theorem. #185's reviewed leaf bootstrap does not further
+raise this witness, whose complex supplier already binds.
+
+The [assembly-domain audit](assembly-domain-audit.md) distinguishes the
+enforced `b<1/32` range from the balance `kappa<a/(1+a)` and the independent
+retained Gaussian condition `kappa<1/4`. Its larger-supplier examples are
+arithmetic diagnostics, not new witnesses or an enlarged theorem domain.
+
+The preceding reviewed recycled-bit composition was κ=0.000472154791;
+its [round-seven review](community-round7-review.md) retains the evidence.
+
+Earlier local experiments and rounds-three-through-five reviews are now
+[preserved as dated historical records](preserved-local-history-20261009.md).
+Their old frontier and pending-work statements do not supersede this page;
+the retired shared-aggregate search remains retired.
+
+Everything below is historical and retains its checkpoint-specific scope.
+
+# Preceding main: reviewed paired-cube construction
+
+The selected conditional witness is **κ=4609169/10000000000=0.0004609169**,
+from icekylinx's [PR #144](https://github.com/CrocSwap/integer-mult-bounds/pull/144).
+This is about 9.03 times the preceding main saving, approximately `2^-11.0832`.
+It is above `2^-12` and below `2^-11`.
+
+The construction builds on icekylinx's compiler lineage, an664's #128
+completed-core sharing, eumemic's #117 producer, Zhihao Chen's #97 physical
+ledger and Swapnil Jain's underlying frozen word. See the
+[review and attribution](community-round6-review.md),
+[validation receipt](community-round6-validation.json),
+[selected result record](../../certificates/selected-result.json), and
+[reproduction guide](../paired-cube.md).
+
+The retained upstream analytic, semantic and fixed-tape interfaces remain
+assumed. The finite controls and written audit do not formally verify the
+full multiplication theorem. The review distinguishes local checks from
+head-pinned Linux CI evidence; no independent human peer review is claimed.
+
+Everything below is historical. Its “current” and “selected” statements refer
+to the corresponding checkpoint.
+
+# Previous checkpoint: joint-frame community construction
+
+The selected conditional witness is **κ=25508460085039/500000000000000000
+=5.1016920170078e-5 > 2^-15**, from Avi Eisenberg's #62 pair assembly, eumemic's
+#57 compiler, and Alejandro Zarzuelo Urdiales's #61 parameter refinement.
+It is 23.71% above the previous #49 release, and remains below 2^-14.
+See the [review and contribution ledger](community-round2-review.md),
+[independent arithmetic](community-pair-arithmetic.json), and
+[selected certificate](../../research/matrix-exponent-synthesis/candidate/arithmetic.json).
+
+The original #109 framework and inherited all-size analytic/fixed-tape
+interfaces remain assumed. Scoped Lean checks do not prove the full algorithm.
+Submissions after #62 are not included in this review checkpoint.
+
+Everything below is historical; its numerical “current” and “latest” statements
+refer to the corresponding checkpoint.
+
+# Previous release: community follow-up witness
+
+The selected conditional witness is **κ=4123863984/10^14=4.123863984e-5 > 2^-15**,
+from PR #49 at `f95d2910e027495983b53cae1693cf535abf2569`. It improves the
+previous PR #39 release by 6.10%, retaining its analytic and fixed-tape contracts.
+See the [follow-up review](community-followup-review.md),
+[integration record](community-followup-integration.md),
+[exact certificate](../../research/climbed-48/certificate.json), and
+[contributor record](../../CONTRIBUTORS.md).
+
+PR #45 (Gaussian parity and finite tensor execution) and PR #26 (historical
+arithmetic and algebraic contracts) are incorporated as scoped formal verification.
+Their Lean builds and axiom audits do not prove the complete multiplication theorem.
+The original #109 framework remains assumed; no independent human peer review is claimed.
+
+The [preserved research index](preserved-research.md) collects the earlier
+compression and topology searches, with scoped exclusions and reproduction commands.
+
+The previous PR #39 release and tested 2^-30 checkpoint at `1a74950` remain
+preserved. Everything below is historical: “latest” and “current” refer to the
+checkpoint, not the selected community follow-up witness.
+
 # Current contracts and research status
 
-Updated October 7, 2026. Author: Douglas Colkitt. All results remain conditional
-on the pinned upstream algorithmic interfaces and the identified written
-extensions. Nothing in this page asserts formal or independent verification.
+Updated October 8, 2026. Author: Douglas Colkitt.
+
+The latest included conditional witness is **kappa=2^-30**. Its
+[note](../../artifacts/ternary-note.pdf),
+[certificate](../../certificates/ternary-side.json), and
+[independent patch](../../patches/ternary-30.patch) are described in the
+[review guide](ternary-review.md). The previous 2^-31 construction and all
+older witnesses remain unchanged.
+
+The bit circuit uses F3 scalar arithmetic and rational frames on five-subset
+labels at h=29. Its complete counts are
+
+    m_b=24389, W_b=589493540769997500,
+    s_b=14377157287342062574725,
+    a_b=467/10^11.
+
+The complex circuit is retained at a_c=5/10^9. Parameters are
+
+    epsilon=1999/10000, c=1, beta=1/100, zeta=1/1000,
+    delta=1/10^6, C1=4961/1000,
+    lambda=1-4669/10^12, lambda'=1-4668/10^12,
+    kappa=2^-30.
+
+The exact minimum assembly margin is
+`2332833/2500000000000000 > 2^-30`. The bound remains conditional on the
+pinned upstream theorem and the retained written extensions. Finite checks
+and manuscript compilation are not independent mathematical verification.
+
+Zhihao Chen's earlier PR #7 contains the same ternary motif with a different
+producer and stronger claimed bound. Further pending contributions claim
+larger improvements. See the [contribution-review index](contribution-review.md)
+for attribution, dependency order and the distinction between a submitted
+claim and a reviewed result. This checkpoint asserts neither priority nor a
+strongest-known algorithm.
+
+## Previous 2^-31 integration record
+
+Everything below records the preceding integration. Numerical uses of
+“current,” “latest,” or “retained” in that historical record refer to 2^-31;
+the parameters above supersede them for this checkpoint.
 
 ## Current and earlier results
 
 | State | Exponent saving kappa | Artifacts |
 | --- | --- | --- |
-| Published baseline | `2^-59` | [paired note](../../artifacts/paired-note.pdf), [certificate](../../certificates/paired-network.json), [patch](../../patches/h50-paired-59.patch) |
-| Preceding conditional research draft | `83/10^12 = 8.3e-11 > 2^-34` | [proof note](../../artifacts/compact-control-note.pdf), [source](../../notes/compact-control-note.tex), [certificate](../../certificates/compact-control-layer.json), [patch](../../patches/compact-control-34.patch) |
-| Preceding conditional research draft (contributed) | `59/10^11 = 5.9e-10 > 2^-31` | [proof note](../../artifacts/complex-circuit-note.pdf), [source](../../notes/complex-circuit-note.tex), [certificate](../../certificates/complex-network.json), [patch](../../patches/complex-circuit-31.patch), [summary](complex-circuit.md) |
-| Current conditional research draft (contributed) | `1479/10^12 = 1.479e-9 > 2^-30` | [proof note](../../artifacts/fast-gaussian-note.pdf), [source](../../notes/fast-gaussian-note.tex), [certificate](../../certificates/fast-gaussian.json), [patch](../../patches/fast-gaussian-30.patch), [summary](fast-gaussian.md) |
+| Earlier published baseline | `2^-59` | [paired note](../../artifacts/paired-note.pdf), [patch](../../patches/h50-paired-59.patch) |
+| Published compact-control checkpoint | `83/10^12 > 2^-34` | [note](../../artifacts/compact-control-note.pdf), [certificate](../../certificates/compact-control-layer.json), [patch](../../patches/compact-control-34.patch) |
+| Integrated follow-up, pending publication | `2^-31` | [note](../../artifacts/complex-compression-note.pdf), [certificate](../../certificates/complex-compression.json), [patch](../../patches/complex-compression-31.patch) |
 
-**Update (fast Gaussian resampling).** The Gaussian line maps, whose cost
-forced `epsilon < 1/5`, are replaced by chirped block correlations, and the
-Neumann series for the resampling inverse uses a sharper bound on the powers
-of its correction. The Gaussian cost per bit falls from
-`p^(3/4+delta+5eps/4)` to `O(d^2 p^delta)`, so `epsilon` may approach `1/2`;
-the compressed complex network supplies room for the larger guard parameter
-`beta = 19/25`. The witness becomes `1479/10^12 > 2^-30`, a factor 1479/590
-above `59/10^11`. The scoped ceiling for these networks is now
-`kappa < a_b/2 < 2^-29`. See [the summary](fast-gaussian.md).
+The latest witness increases kappa by approximately 5.61 times over the exact
+preceding witness; the dyadic comparison `2^-34` to `2^-31` is eightfold.
+These compare exponent savings, not practical runtime. All earlier certificates,
+patches and the pinned upstream source remain unchanged.
 
-**Update (compressed complex network).** The complex motif's side wires are
-replaced by a shared-sum circuit with binary coordinate and pair-star labels:
-108,195 side roles per invocation instead of 3,693,800. The certified complex
-saving rises from `418/10^12` to `14/10^9`, so the complex network no longer
-binds and the witness becomes `59/10^11 > 2^-31`, a factor 590/83 above
-`83/10^12`. The bit network now sets the scoped ceiling `kappa < a_b/5 < 2^-30`
-under the retained Gaussian margin. See [the summary](complex-circuit.md); the
-compact-control description below remains accurate for the movement, guard
-and assembly, which are unchanged.
+## What changed and what is retained
 
-The compact-control witness increased kappa by approximately 47,846,242 times over the
-published `2^-59`. This compares asymptotic exponent savings, not practical
-runtime. The dyadic statement `kappa=2^-34` is a weaker convenient corollary.
-The witness remains below `2^-33`. The earlier published artifacts and pinned
-source remain unchanged.
+The [complex-network construction](complex-compression.md) uses weighted
+rectangles for disjoint triples, shared sums for intersection-two triples,
+and binary phase frames valid in both signed directions. Transparent computation
+restores arbitrary auxiliary inputs. A matching shares the complete first/third
+auxiliary banks. At `h_c=26`, it has
 
-## What changed
+    m_c = 17576, W_c = 7082222160000,
+    s_c = 124477130005280000,
+    a_c = 1-sigma = 5/10^9.
 
-The finite bit network is unchanged: `h_b=50`, `m_b=125000`, with
-`a_b=1-tau=296/10^11`. The new movement construction swaps compact dirty
-control fields, rather than the full spaced slots. For f selected axes it
-costs `O(V*((f log p)^tau+1))`, including deterministic repair, under the
-layer's record regime and the supplied reservation layout.
+The bit network remains `h_b=50`, `m_b=125000`, with
+`a_b=1-tau=296/10^11`. Thus the complex interface now has the larger saving.
+The bit interface is the bottleneck.
 
-Two front fields and one back field are carved out of already existing
-address chunks. Their selected kernels are processed individually first.
-They remain outside the row index divided among roles, so each child retains
-the complete compact ranges and still receives exactly `V/W` volume. The
-extra preprocessing is `O(V*(log d+d^(1-c) log p+1))` for the chosen `c<1`.
-No independent address coordinates, zero-temporary assumption, or free
-gathering operation are used.
-
-The complex network uses its original construction independently at `h_c=25`,
-`m_c=15625`, supporting `a_c=1-sigma=418/10^12`. The separate-arity proof is
-now integrated into the source patch. The generalized stopped-depth guard
-has `C1=5-4 beta+zeta`. Compact operations only permute complete coefficient
-encodings, so they do not increase the coefficient arithmetic depth.
+The retained compact-control construction moves compact dirty fields instead
+of spaced windows, at cost `O(V*((f log p)^tau+1))`. It reserves two front
+fields and one back field from existing address coordinates, preserves complete
+ranges in every recursive child, restores arbitrary values, and charges
+exceptional-address repair at every node. All three movement/layout/guard
+proof sources are embedded verbatim in the new patch.
 
 ## Exact current parameters and bottleneck
 
 The certificate uses
 
-    epsilon = 1999/10000, c = 1/5,
-    beta = 1/1000, zeta = 1/10000, delta = 1/10^6,
-    C1 = 49961/10000,
-    lambda = 1-1671/(4*10^12),
-    lambda' = 1-167/(4*10^11),
-    kappa = 83/10^12.
+    epsilon = 199/1000, c = 1,
+    beta = 1/100, zeta = 1/1000, delta = 1/10000,
+    C1 = 4961/1000,
+    lambda = 1-293/10^11,
+    lambda' = 1-29/10^10,
+    kappa = 2^-31.
 
-The internal, leaf and reservation exponents are respectively
+The internal, leaf and reservation exponents are
 
-    chi = tau+(1-beta)*max(sigma-tau,0),
+    chi = tau+(1-beta)*max(sigma-tau,0) = tau,
     leaf = sigma+beta*(1-sigma),
-    reserve = max(1-c,0).
+    reserve = max(1-c,0) = 0.
 
-All lie strictly below lambda' after the stated intermediate-lambda checks.
-All seven final margins exceed kappa. Their minimum is
+All required comparisons are strict. The seven assembly margins have minimum
 
-    G = g3 = 333833/(4*10^15),
-    G-kappa = 1833/(4*10^15) > 0.
+    G = g3 = 5771/10^13 = 5.771e-10 > 2^-31.
 
-The former quadratic restriction from `K^tau` has been removed by this
-construction. The remaining limiting margin is the completed layer's saving,
-controlled here by the complex network's stopped leaves. The unchanged h=25
-complex motif and retained Gaussian/leaf inequalities have the scoped upper
-bound `kappa < 8.369598075e-11 < 2^-33`. Our simple rational witness is above
-99% of that upper enclosure. It is not an unrestricted algorithmic ceiling.
+The explicit new scalar-operation count fits the generalized guard's node
+charge `E=64*(W_c+m_c+1)^3`. The guard still has
+`C1=5-4*beta+zeta`, and `epsilon*C1=987239/1000000<1`.
+Reserved-axis processing costs `O(V log p)` for `c=1`.
+
+The old quadratic restriction from `K^tau` is absent. With the **retained
+certified bit exponent and Gaussian assembly inequality**, the current scoped
+ceiling is `kappa<a_b/5=5.92e-10<2^-30`. This is not an all-network limitation.
+The new complex saving provides numerical headroom for `2^-30` if a stronger
+bit construction is supplied; that is not another established witness.
 
 ## Verification boundary
 
-The general proofs are in the four included construction sources:
+The [integration review guide](complex-compression-review.md) identifies each
+new obligation and its tests. General arguments are supplied in:
 
+- [compressed complex construction](../../notes/complex-compression.tex);
 - [movement and deterministic repair](../../notes/compact-control-movement.tex);
 - [reservations, row splitting and recurrence](../../notes/compact-control-layout.tex);
-- [generalized guard](../../notes/compact-control-guard.tex);
-- [independent complex interface](../../notes/independent-complex.tex).
+- [generalized guard](../../notes/compact-control-guard.tex).
 
-The [publication review guide](compact-control-review.md) maps each new
-obligation to its proof and tests. Release copy and citation metadata have
-been updated for this draft. This preparation is not independent review.
+The new certificate records all four source hashes. The combined patch applies
+directly to the pinned original and includes the full retained refinements.
+It updates every complex constant, the exponent ordering, scalar guard charge,
+final parameters and derived powers. It preserves the legacy wide-slot lemma
+for the appendix and retains the corrected local exceptional-stream sum.
 
-The certificate stores their SHA-256 hashes. The standalone note supplies
-the complete assembly comparison and scope. The combined patch also updates
-the old global exceptional-stream paragraph: a `p^-3` bad fraction is charged
-locally through the volume-weighted recurrence, rather than incorrectly
-reusing its old global `o(V)` argument based on `2^-K`.
+Finite tests check exact signed scalar maps with independent dirty variables,
+rectangle partitions, binary residual bases, phase identities, matching,
+parameter inequalities and source integration. They do not simulate the entire
+multiplication machine or replace independent proof review. The retained
+compact-control arguments have the same review dependencies as before.
 
-Finite tests cover dirty address algebra, both slot orders, modular inverses,
-bad-set invariance, exceptional repair, actual two-piece stream rotation,
-complete-field preservation through padding and recursive row splits,
-recurrence summation for all exponent orderings, and negative parameter cases.
-Source integration checks preserve legacy appendix references and distinguish
-the bit and complex arities. These checks support the written conditional
-proof; they do not prove the upstream theorem or replace mathematical review.
+Completion checks passed: 176 tests, 18 patch-application checks, exact
+certificate/patch regeneration, and both note and manuscript builds.
 
-Completion checks passed: all 163 tests, all 17 patch-application checks,
-the nine-page standalone note build, and the combined manuscript build.
-Publication preparation also ran the full suite in a separate snapshot with
-all proposed files and confirmed exact regeneration against its Git index.
-These are reproducibility and consistency checks, not independent proof review.
-
-Reproduce with `make verify` and `make compact-note`. The combined manuscript
-can be materialized with `make_compact_control_patch.patched_files()` into a
-copy of `upstream/build`, then compiled with Tectonic after omitting the three
-original pdfTeX-only metadata commands in that disposable copy, as described
-in [the reproduction instructions](../reproducibility.md). The pinned source
-itself must remain unchanged.
+Reproduce with `make verify` and `make complex-note`. See the
+[reproduction instructions](../reproducibility.md) for applying the patch and
+building a manuscript preview without changing the pinned source.
 
 ## Next research priority
 
-First seek independent review of the new primitive, especially the temporary
-layout invariant, local repair summation and uniform tape bounds. A substantive
-flaw in one of those steps would revoke the new headline.
+The complex construction is integrated. The next improvement should target
+the bit finite network, especially methods transferable from the new circuit
+compression or a new topology. More complex-network tuning alone cannot cross
+the present bit/Gaussian ceiling. Independent review remains valuable for both
+the new phase-frame transfer and the retained compact-control tape proof.
 
-If the proof survives, improving the complex finite network is the next route
-to a stronger dyadic bound. The incidence/shared-sum/paired bit constructions
-cannot simply be copied into it: the scalar coefficients, binary phase labels,
-residual orthonormal bases and signed endpoint corrections require a new audit.
-
-The previous [joint-frame obstruction](joint-frame-audit.md) remains valid
-within its fixed-boundary, grouped-gate scope. Splitting central gates or
-changing boundaries between invocations are still possible finite-network
-experiments, but the compact-control movement goal has succeeded conditionally
-without needing that fallback. Older research pages retain their chronology;
-use this page when interpreting their stale numerical targets or priorities.
+The previous [joint-frame obstruction](joint-frame-audit.md) remains scoped to
+its fixed-boundary, grouped-gate model. Older research pages retain their
+chronology; use this page when interpreting superseded targets and barriers.

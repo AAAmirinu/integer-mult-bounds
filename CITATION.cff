@@ -1,23 +1,49 @@
 cff-version: 1.2.0
 message: >-
-  Please cite this project and the upstream manuscript. This is a conditional
-  research draft; include the repository commit used until a release is archived.
+  Please cite the selected composition and its constituent contributions,
+  this project and the upstream manuscript. The selected checkpoint is PR626
+  with PR543; consult certificates/selected-result.json for publication status.
+  Project-level authorship identifies the maintainer, not sole authorship of
+  the community result. See CONTRIBUTORS.md and the frozen source notices.
 title: "A sharper exponent for integer multiplication"
 authors:
   - family-names: Colkitt
     given-names: Douglas
 license: Apache-2.0
 type: software
+version: "community-k492-2026-10-12"
+date-released: 2026-10-12
 repository-code: "https://github.com/CrocSwap/integer-mult-bounds"
 url: "https://github.com/CrocSwap/integer-mult-bounds"
 abstract: >-
-  Exact rational certificates, source patches, and research notes for conditional
-  improvements to OpenAI's integer-multiplication manuscript. Compact dirty-control
-  fields remove the simultaneous layer's spacing penalty. Together with complete
-  temporary reservations, local exceptional repair, a separately sized complex
-  network, and retained refinements, the supplied written proofs support
-  kappa = 83/10^12 > 2^-34. The complete upstream algorithmic theorem is assumed;
-  the new arguments are not independently reviewed or formally verified.
+  Community research on integer multiplication. The selected maintainer-reviewed
+  conditional finite composition has kappa = 51110230636731/31250000000000000
+  = 0.001635527380375392. Chafik Boukhalfa's PR626 allocation on Jeremy Kothe's PR622/PR623 construction composes
+  with eumemic's PR543 interleaved-source bit supplier, building on cold
+  kernels, entrance promotions, shared prefixes, exact owner allocation,
+  frame coalescences, hyperplane-ended helpers and the cumulative community framework. Parallel
+  constructions, verification tools and scoped research results are preserved.
+  All-size/compiler/common-label/mutable-basis, pooled-cell hosting, normalized
+  residual, precision/tape and analytic-transfer interfaces remain conditional.
+  Finite checks do not constitute a complete Lean multiplication theorem.
+preferred-citation:
+  type: software
+  title: "A sharper exponent for integer multiplication: community research repository"
+  authors:
+    - family-names: Colkitt
+      given-names: Douglas
+  year: 2026
+  url: "https://github.com/CrocSwap/integer-mult-bounds"
+  notes: >-
+    Maintainer citation only, not sole authorship of the mathematical result.
+    Credit Chafik Boukhalfa (PR626), Jeremy Kothe (PR622/623/617), eumemic (PR543),
+    Dominik Scholz (PR569/571),
+    Jonathan Capalbo (PR567/575), Chafik Boukhalfa (PR583/586 and other work),
+    Dugongue (PR541/548/552 and other work), DreamingOfClouds (bit hosting and
+    assembly), Rohan Arun (PR559 and other work), and the full predecessor
+    lineage. CONTRIBUTORS.md records parallel and research contributions,
+    including artuskg. Cite constituent PRs where their results are used;
+    preserve their licenses and assistance disclosures.
 keywords:
   - integer multiplication
   - computational complexity

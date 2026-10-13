@@ -1,3 +1,5 @@
+% Modified by icekylinx, 8 October 2026: shifted chirp error enclosure.
+% Original fast-Gaussian construction: eumemic; see NOTICE.
 \subsection{Faster Gaussian maps}
 \label{sec:fast-gaussian}
 
@@ -181,21 +183,35 @@ $\lambda=\alpha^2$, the definition of $N$ gives
 and its term $j=\ell$ is exactly $u_\ell$. The inputs $f_j$ are formed by
 Lemma~2.14 of \cite{HarveyHoeven2021} for
 $2^{-\lceil1.14\alpha^2\rceil}e^{\pi\alpha^2\beta_j^2}$, a shift, and one
-product with $u_j$; their errors are at most $2^{4-P}F$. Let
+product with $u_j$. Put $B=\lceil1.14\alpha^2\rceil$ and $F=2^B$.
+The shift multiplies the generator's absolute error by $2^B$;
+including the product and rounding, the input errors are at most
+$2^{4-P}F$. This same $F$ also bounds $|f_j|$. Let
 $m=\lceil\sqrt p/(2\alpha)\rceil$, the window of
 \cite[Lemma~4.11]{HarveyHoeven2021}. Partition $0\le\ell<s$ into blocks
 of at most $m$ indices. For a block starting at $\ell_0$, take inputs
 $j=j_0+a$, $0\le a<L_A=3m+1$, with $j_0=\ell_0-m$, and evaluate the
 correlation at every integer $b=q_{\ell_0}+b'$, $0\le b'<L_B=2m+2$; these
 include all $q_\ell$ of the block because $\sigma<2$. Put
-$y=\sigma j_0-q_{\ell_0}$. Then $F=e^{\pi\alpha^2/4}<2^{1.14\alpha^2}\le2^{1.14p}$
-and
+$y=\sigma j_0-q_{\ell_0}$. The choice
+$F=2^{\lceil1.14\alpha^2\rceil}\le2^{1.15p}$ uses
+$\alpha^2<p$ and $p>100$. In particular it bounds the shifted
+approximation error as well as the exact chirp magnitude. Moreover,
 \[
  \pi\lambda\theta b'^2\le\pi\theta\alpha^2(2m+2)^2
    \le\frac\pi4\bigl(\sqrt p+4\alpha\bigr)^2<\frac{25\pi}4p,
 \]
-so $\Gamma=\lceil29p\rceil$ and $P=34p$ suffice, using
-$(\sqrt p+4\alpha)^2<25p$ and $\theta\le1/4$. Select the outputs
+so $\Gamma=29p$ suffices, using
+$(\sqrt p+4\alpha)^2<25p$ and $\theta\le1/4$.
+For $\alpha\ge2$ and integer $p>100$,
+$L_A=3\lceil\sqrt p/(2\alpha)\rceil+1\le p$ and
+$\lceil\log_2 L_A\rceil\le p-1$. Hence the block precision requirement is
+\[
+ p+\Gamma+\lceil\log_2(FL_A)\rceil+11
+ \le 32.14p+11<34p.
+\]
+Thus $P=34p$ still suffices with the enlarged error enclosure.
+Select the outputs
 $b=q_\ell$ in order, subtract the exact $u_\ell$, and round. The block
 contains every term $0<|h|\le m$ of the truncated sum in that lemma, so
 the computed $(\widetilde Eu)_\ell$ differs from $(Eu)_\ell$ by less than

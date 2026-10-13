@@ -1,4 +1,10 @@
-# Draft compact-control release
+# Release notes
+
+The current release is [Community result: conditional exponent saving above
+2^-15](releases/community-kappa-15.md), incorporating Rohan Arun's PR #39
+and its credited dependency chain after conditional maintainer review.
+
+## Historical compact-control release draft
 
 Repository: [CrocSwap/integer-mult-bounds](https://github.com/CrocSwap/integer-mult-bounds)
 
