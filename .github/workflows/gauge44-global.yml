@@ -1,0 +1,58 @@
+name: Verify Gauge44 global witness
+
+on:
+  push:
+    paths:
+      - 'research/gauge44-global/**'
+      - 'research/complex-k492-owner-repair/**'
+      - 'research/community-k492-audit/**'
+      - 'research/structural-gain/**'
+      - '.github/workflows/gauge44-global.yml'
+  pull_request:
+    paths:
+      - 'research/gauge44-global/**'
+      - 'research/complex-k492-owner-repair/**'
+      - 'research/community-k492-audit/**'
+      - 'research/structural-gain/**'
+      - '.github/workflows/gauge44-global.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Fetch the pinned PR635 construction dependency
+        run: |
+          git init "$RUNNER_TEMP/pr635"
+          git -C "$RUNNER_TEMP/pr635" fetch --depth=1 https://github.com/CrocSwap/integer-mult-bounds.git a6895a69f8ad98ab45777b03e9e6f48888c39f6f
+          git -C "$RUNNER_TEMP/pr635" archive FETCH_HEAD research/complex-571-cold14-st2 | tar -x -C "$RUNNER_TEMP/pr635"
+      - name: Check submitted file hashes
+        run: python -B research/gauge44-global/verify_manifest.py
+      - name: Rebuild the changed word, native ledgers, wrappers and phases
+        run: python -B research/gauge44-global/construction/reproduce.py --main . --pr635 "$RUNNER_TEMP/pr635" --out "$RUNNER_TEMP/gauge44-local" --until phases
+      - name: Independently audit the changed scalar word and retained guards
+        run: |
+          python -B research/gauge44-global/independent/audit_local.py --word "$RUNNER_TEMP/gauge44-local/cold44/FULL-WORD.json.gz" --main . --output "$RUNNER_TEMP/independent-local.json"
+          python -B research/gauge44-global/independent/review_guards.py --pr635 "$RUNNER_TEMP/pr635" --output "$RUNNER_TEMP/guard-review.json"
+      - name: Replay exact owner matching and its majorization certificates
+        run: python -B research/gauge44-global/hosting/reproduce.py --parent-plan "$RUNNER_TEMP/pr635/research/complex-571-cold14-st2/data/PLAN.json" --parent-owners "$RUNNER_TEMP/pr635/research/complex-571-cold14-st2/data/OWNERS.json.gz" --local44 "$RUNNER_TEMP/gauge44-local/local" --out "$RUNNER_TEMP/gauge44-hosting"
+      - name: Admit the fresh supplier and certify the global exponent
+        run: |
+          python -B research/gauge44-global/verify_global.py --main . --local "$RUNNER_TEMP/gauge44-local/local" --work "$RUNNER_TEMP/gauge44-global"
+          python -B research/gauge44-global/independent/price_profile.py --main . --output "$RUNNER_TEMP/independent-price.json"
+      - name: Require unchanged submitted artifacts
+        run: git diff --exit-code
