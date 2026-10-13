@@ -62,3 +62,10 @@ The PR's base matches the recorded base exactly. GitHub reported no check
 results at this handoff; local verification and remote CI remain distinct.
 No pinned coordination issue existed, so this is the single local claim
 result update. No other PR was opened or modified, and nothing was merged.
+
+## Authorized continuation
+
+The same PR now includes the specified infinite composite families proved
+in [LIFTING.md](LIFTING.md), with the original six certificates unchanged.
+See [CONTINUATION.md](CONTINUATION.md) for the extended claim, completed
+result and final verification handoff. No new κ or all-composite theorem.

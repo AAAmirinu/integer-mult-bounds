@@ -30,8 +30,8 @@ not independent human review or a full multiplication-theorem audit.
 ## Continued modular lifting checks
 
 - The exact seed identities at s=2,3,4 have denominators 3,43,37.
-  `verify_lifting.py -B -I -O --check LIFTING-EXPECTED.json` (with Python
-  flags before the script, as in the README) passed on **Python 3.9.6,
+  The public isolated, optimized lifting check from the README passed on
+  **Python 3.9.6,
   3.11.13 and 3.13.4** with identical receipt bytes: **54 admitted finite
   lifts, three excluded-prime common-factor witnesses and 173 rejected
   mutation/admission controls**.
@@ -62,10 +62,46 @@ and installed Boost headers in an isolated temporary environment:
 env PATH=/tmp/integer-mult-full-venv/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin BOOST_INCLUDE=/opt/homebrew/include CPATH=/opt/homebrew/include make verify
 ```
 
-RUN_STATUS_PENDING: The full repository run is still in progress; no full-suite
-or cold selected-supplier success is claimed until its terminal result.
-The scoped workflow requests Linux Python 3.11/3.14 checks; a requested
-workflow is not evidence of a completed remote run.
+The initial invocation passed the community/producer groups, earlier gen4
+construction, selected #543+#626 cold replay, historical certificates,
+ternary and research audits, and skip-strips checks. It then exited **2**
+in `skip-suffix-producer`: Apple clang rejected the existing `-fopenmp`
+option. This was a local compiler configuration failure, not a certificate
+failure. No repository source or expected artifact was changed to resolve it.
+
+The already installed **libomp 19.1.5** was used through a temporary CXX
+adapter. It forwards arguments to `/usr/bin/clang++`, translates `-fopenmp`
+to `-Xpreprocessor -fopenmp`, and adds the installed runtime's include/library
+paths, rpath and `-lomp`. An OpenMP compile/run smoke check passed. The failed
+stage and every remaining target were then resumed, preserving the completed
+prefix of the original run:
+
+```sh
+env PATH=/tmp/integer-mult-full-venv/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin BOOST_INCLUDE=/opt/homebrew/include CPATH=/opt/homebrew/include CXX=/tmp/integer-mult-openmp-cxx make skip-suffix-verify verify-clones verify-positive verify-joint verify-pair verify-tests
+```
+
+The resumed command exited **0**, completing **all 84 test modules in
+isolated interpreters** and all patch-application checks. Together, the
+initial run and resumed tail cover every component of the root verification
+sequence. Verification completed at 2026-10-13 **04:42 UTC**.
+
+The cold selected-composition replay separately returned
+`PASS_REBUILT_PR543_PR626_COMPOSITION` with exact
+κ = `51110230636731/31250000000000000`. All six steps passed: bit543,
+declarations, complex626, independent-owner, helper-interface and bindings.
+Its inherited all-size, realization, hosting, precision/tape and analytic
+assumptions remain conditional; finite replay does not discharge them.
+
+Local console-log digests (run identification, not mathematical admission):
+
+- Initial run, exit 2 at the OpenMP compiler flag:
+  `d3fca41f0dd3b013c04b0f22144083c3d8639613a2fb345c948faab891d64460`.
+- Resumed tail, exit 0:
+  `8da6eaa07cdf6897776fe82357241f499d5e2a97096ab00fbb9bd026e87f7fc7`.
+
+After regeneration, Git showed no changed files outside this research
+package and its scoped workflow. The workflow requests Linux Python
+3.11/3.14 checks, but GitHub reported no remote check results at handoff.
 
 ## Exact artifacts
 
@@ -97,3 +133,11 @@ obstructions, local XOR circuits, owner maps, exponential intervals, supplier
 boundaries, bit moments, selector batching and fixed Clifford words. No
 overlapping composite lifting claim was identified. Upstream still points
 to the recorded base and the pinned-issue list remains empty.
+
+At final handoff, **533 open PRs through #714** were refreshed. #692 concerns
+weighted-stride closure and bilinear duality and explicitly distinguishes
+this composite-lifting result; #695 consolidates selected Linux replay
+evidence. Later additions concern other suppliers, local circuits, moment
+or wrapper audits, tooling, and dirty-call scheduling. No duplicate
+composite seed-lifting mechanism was identified. The upstream base is still
+`66849e1475c930fd7732b1a0067ffee7e1e95f60`; there is still no pinned issue.

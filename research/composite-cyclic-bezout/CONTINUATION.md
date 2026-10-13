@@ -51,7 +51,21 @@ excluded-prime modular witnesses, and 173 rejection controls. Both public
 receipts and all 16 focused tests pass on Python 3.9.6, 3.11.13 and 3.13.4.
 Both optional generator modes reproduce their certificates byte for byte.
 Separate Codex agents reviewed the mathematics and checker; this does not
-constitute independent human review. Final overlap refresh covered 500 open
-PRs through #680, with no duplicate lifting mechanism identified and no
+constitute independent human review. Final overlap refresh covered 533 open
+PRs through #714, with no duplicate lifting mechanism identified and no
 pinned coordination issue. Broader repository execution is recorded in
 VALIDATION.md separately from these completed package checks.
+
+## Handoff — 2026-10-13 04:42 UTC
+
+The completed proof and checks were pushed to the existing
+[PR #666](https://github.com/CrocSwap/integer-mult-bounds/pull/666) in
+`8df1b593cb640380a194ac8d599f2ab1cba158a3`; no second PR was opened.
+Broader verification continued after that checkpoint. The selected cold
+replay passed exactly. The root run stopped on Apple clang's unsupported
+OpenMP flag; with the installed libomp and a temporary compiler adapter,
+the failed stage and all remaining targets passed, including 84 isolated
+test modules and every patch-application check. VALIDATION.md records both
+runs without claiming an uninterrupted root invocation. Only this package
+and its scoped workflow changed. GitHub has no reported
+remote checks or reviews at handoff; the contribution remains open.
