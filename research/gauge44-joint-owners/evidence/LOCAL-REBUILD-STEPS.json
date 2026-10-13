@@ -1,0 +1,67 @@
+[
+  {
+    "step": "shadow-early",
+    "exit_code": 0,
+    "seconds": 0.243
+  },
+  {
+    "step": "shadow-prefix",
+    "exit_code": 0,
+    "seconds": 0.374
+  },
+  {
+    "step": "gauge-forward",
+    "exit_code": 0,
+    "seconds": 0.462
+  },
+  {
+    "step": "port0",
+    "exit_code": 0,
+    "seconds": 0.345
+  },
+  {
+    "step": "port1",
+    "exit_code": 0,
+    "seconds": 0.346
+  },
+  {
+    "step": "port2",
+    "exit_code": 0,
+    "seconds": 0.347
+  },
+  {
+    "step": "port3",
+    "exit_code": 0,
+    "seconds": 0.38
+  },
+  {
+    "step": "cold44-exact",
+    "exit_code": 0,
+    "seconds": 2.902
+  },
+  {
+    "step": "native",
+    "exit_code": 0,
+    "seconds": 4.441
+  },
+  {
+    "step": "ledgers",
+    "exit_code": 0,
+    "seconds": 2.85
+  },
+  {
+    "step": "local-replay",
+    "exit_code": 0,
+    "seconds": 19.199
+  },
+  {
+    "step": "wrappers",
+    "exit_code": 0,
+    "seconds": 2.482
+  },
+  {
+    "step": "phases",
+    "exit_code": 0,
+    "seconds": 165.126
+  }
+]

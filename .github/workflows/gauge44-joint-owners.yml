@@ -1,0 +1,46 @@
+name: Verify Gauge44 joint-call owners
+
+on:
+  push:
+    paths:
+      - 'research/gauge44-joint-owners/**'
+      - '.github/workflows/gauge44-joint-owners.yml'
+  pull_request:
+    paths:
+      - 'research/gauge44-joint-owners/**'
+      - '.github/workflows/gauge44-joint-owners.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Fetch immutable supplier dependencies
+        run: |
+          git init "$RUNNER_TEMP/joint-pr645"
+          git -C "$RUNNER_TEMP/joint-pr645" fetch --depth=1 https://github.com/CrocSwap/integer-mult-bounds.git 638a5171dd1aca89ff50d07dcbe288b567769804
+          git -C "$RUNNER_TEMP/joint-pr645" archive FETCH_HEAD research/gauge44-global | tar -x -C "$RUNNER_TEMP/joint-pr645"
+          git init "$RUNNER_TEMP/joint-pr635"
+          git -C "$RUNNER_TEMP/joint-pr635" fetch --depth=1 https://github.com/CrocSwap/integer-mult-bounds.git a6895a69f8ad98ab45777b03e9e6f48888c39f6f
+          git -C "$RUNNER_TEMP/joint-pr635" archive FETCH_HEAD research/complex-571-cold14-st2 | tar -x -C "$RUNNER_TEMP/joint-pr635"
+      - name: Rebuild and admit the frozen witness
+        run: |
+          python -B research/gauge44-joint-owners/verify.py \
+            --main . --parent "$RUNNER_TEMP/joint-pr645/research/gauge44-global" \
+            --pr635 "$RUNNER_TEMP/joint-pr635" --out "$RUNNER_TEMP/joint-owner-replay"
+      - name: Require unchanged submitted files
+        run: git diff --exit-code

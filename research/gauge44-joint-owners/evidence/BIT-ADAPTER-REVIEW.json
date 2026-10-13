@@ -1,0 +1,34 @@
+{
+  "status": "PASS_NARROW_PR589_BIT_SUPPLIER_ADAPTER_REVIEW",
+  "parent_pr": 645,
+  "parent_commit": "638a5171dd1aca89ff50d07dcbe288b567769804",
+  "bit_pr": 589,
+  "bit_author": "DreamingOfClouds",
+  "bit_commit": "a5afc8c6169ea61ba7c51dfd3cade02cc7b13b46",
+  "bit_source_path": "research/e8-bit-p111/tune/EXPECTED.json",
+  "bit_main_path": "research/e8-bit-p111-tuned/tune/EXPECTED.json",
+  "bit_sha256": "b9f0e5ca038abe837b0007c8fe006f366a6f02009244ac57705a8a200e2301f4",
+  "bit_blob_sha1": "e293ddc557742637f9f679f083a1a282d87b1b13",
+  "adapter_sha256": {
+    "assemble.py": "5c3121f385ffc6964326d0f5eedadb3a77f9386db53d35e2c387a1b59f8996c6",
+    "price_profile.py": "101d52dc45db430feb6b268584d3417ecd4578918ddb0f41bec847f31845a2b4"
+  },
+  "unchanged_independent_functions": {
+    "require": "AST-identical",
+    "decimal": "AST-identical",
+    "sha": "AST-identical",
+    "load": "AST-identical",
+    "moment_checks": "AST-identical",
+    "outer47": "AST-identical"
+  },
+  "bit_rank_mass": 1808352,
+  "bit_m": 64,
+  "bit_live": 28416,
+  "bit_deficit": 10272,
+  "bit_two_level_coefficient_bits": 393,
+  "bit_charged_two_level_coefficient_bits": 512,
+  "bit_row_coefficient": 18355,
+  "bit_lower": "1733427039589844234749/1000000000000000000000000",
+  "scope": "Only the cited reviewed unchanged bit supplier/profile, its exact rank deficit and provenance are replaced. All conservative/native complex moments, two rational engines and 47 outer constraints are preserved. Assembly smoke uses the immutable parent receipts; it is not a fresh physical admission. Independent pricing does not rebuild the bit circuit.",
+  "standalone_default_profile": "data/PROFILE.json; checked without --profile"
+}
