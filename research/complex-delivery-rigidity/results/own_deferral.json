@@ -1,0 +1,29 @@
+{
+ "own_registers": 112,
+ "own_registers_that_are_sources": 56,
+ "writes_to_own_registers_after_their_last_target_read": 0,
+ "module_reads_of_own_registers_after_their_last_target_read": 64,
+ "end_of_module_frame_inside_own_cap": [
+  [
+   [
+    false,
+    3
+   ],
+   96
+  ],
+  [
+   [
+    false,
+    5
+   ],
+   8
+  ],
+  [
+   [
+    false,
+    6
+   ],
+   8
+  ]
+ ]
+}

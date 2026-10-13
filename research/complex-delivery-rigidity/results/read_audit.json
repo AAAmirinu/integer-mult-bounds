@@ -1,0 +1,20 @@
+{
+ "cap_violations": 0,
+ "registers_read_by_more_than_one_target": 120,
+ "kinds": [
+  [
+   [
+    2,
+    "cross-block"
+   ],
+   88
+  ],
+  [
+   [
+    3,
+    "cross-block"
+   ],
+   32
+  ]
+ ]
+}
