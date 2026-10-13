@@ -5,18 +5,19 @@ Executed on 2026-10-12 America/Los_Angeles (2026-10-13 UTC), on macOS
 This is local contributor validation with substantial OpenAI Codex assistance,
 not independent human review or a full multiplication-theorem audit.
 
-## Completed checks
+## Completed package checks
 
 - Standard-library verifier: **6 identities, all 30 primitive embeddings
   covered symbolically, 39 rejected mathematical/coverage controls**.
 - Public `-B -I -O --check EXPECTED.json` command passed under Python
   **3.9.6, 3.11.13 and 3.13.4**, with identical deterministic receipt bytes.
-- **8 focused tests** passed under each of those Python versions. They cover
+- **8 original focused tests** passed under each of those Python versions. They cover
   explicit cyclotomic formulas, conjugation, integer polynomial division,
   acceptance of an alternative valid scaled witness, outward dyadic bounds,
   corrupted-certificate CLI failures with and without optimization, malformed
   domain/encoding rejection, and full receipt recomputation.
-- Fresh regeneration using Python 3.9.6 / SymPy 1.14.0 / mpmath 1.3.0:
+- Fresh regeneration using Python 3.9.6 and, after the continuation,
+  Python 3.11.13 / SymPy 1.14.0 / mpmath 1.3.0:
   `CERTIFICATE.json` reproduced byte for byte and the independently checked
   receipt matched `EXPECTED.json` exactly.
 - The predecessor's standard-library `verify.py` reproduced
@@ -26,16 +27,52 @@ not independent human review or a full multiplication-theorem audit.
 - `upstream/`, selected certificates, supplier code and root Makefile were
   unchanged. Only this new package and its scoped workflow are submitted.
 
-The root `make verify` and cold selected-supplier replay were not run: this
-additive, standalone arithmetic package does not change their inputs or
-construction. The relevant new obligations, predecessor replay and selected
-source integrity were checked. The workflow requests Linux Python 3.11/3.14
-checks; a requested workflow is not evidence of a completed remote run.
+## Continued modular lifting checks
+
+- The exact seed identities at s=2,3,4 have denominators 3,43,37.
+  `verify_lifting.py -B -I -O --check LIFTING-EXPECTED.json` (with Python
+  flags before the script, as in the README) passed on **Python 3.9.6,
+  3.11.13 and 3.13.4** with identical receipt bytes: **54 admitted finite
+  lifts, three excluded-prime common-factor witnesses and 173 rejected
+  mutation/admission controls**.
+- **8 additional focused tests** passed on all three versions (16 tests
+  total). They cover excluded primes, exponent guards, division with
+  reducible cyclotomic coefficient rings, reciprocal degree loss, rejection
+  through the positive validation paths, and externally corrupted seed
+  certificates under normal and optimized Python.
+- Fresh `generate.py --lifting-seeds` with Python 3.11.13 / SymPy 1.14.0
+  reproduced LIFTING-SEEDS.json byte for byte. The original six-certificate
+  regeneration also remained byte-identical after adding this option.
+- A separate Codex agent reviewed the all-exponent proof in LIFTING.md,
+  including exact residue order, common-root integrality, Sylvester degree
+  loss, and the inherited norm/cofactor exponents; no mathematical errors
+  were found. A second agent reviewed the checker and improved the real
+  rejection controls and negative-exponent guard. These are AI reviews,
+  not independent human review or proof-assistant verification.
+- Documentation links and whitespace checks pass. All inherited source
+  pins still pass; the selected record and upstream content are unchanged.
+
+## Broader repository verification
+
+The initial sprint did not run root `make verify`. The continuation started
+it with Python 3.11.13, NumPy 2.2.6, SciPy 1.15.3, SymPy 1.14.0, mpmath 1.3.0
+and installed Boost headers in an isolated temporary environment:
+
+```sh
+env PATH=/tmp/integer-mult-full-venv/bin:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin BOOST_INCLUDE=/opt/homebrew/include CPATH=/opt/homebrew/include make verify
+```
+
+RUN_STATUS_PENDING: The full repository run is still in progress; no full-suite
+or cold selected-supplier success is claimed until its terminal result.
+The scoped workflow requests Linux Python 3.11/3.14 checks; a requested
+workflow is not evidence of a completed remote run.
 
 ## Exact artifacts
 
 - CERTIFICATE.json SHA256: `09623c781498d9c7df554f7e8f6e6c684cf3d9073db4198a4d647dcd2b6d4ab1`
 - EXPECTED.json SHA256: `a33ed6b23d43562032fd88ef9969fae069e4817c17c81ab33000fb12fea1c928`
+- LIFTING-SEEDS.json SHA256: `63fd8312f93d01818a9f43608f26844c2f1b65ab944a609f07994c4e766e02bb`
+- LIFTING-EXPECTED.json SHA256: `4c8aa560141f9b03b42953f2b8ab35bce5866ee90f40e93743543f90fc2319f3`
 
 These hash immutable submitted artifacts. Admission itself reconstructs and
 checks every proof-relevant identity rather than accepting an artifact hash.
@@ -43,10 +80,20 @@ A reader can replace the certificate with a different valid witness.
 
 ## Live overlap check
 
-Immediately before packaging, all **484 open PRs through #664** were refreshed.
+The initial packaging refreshed **484 open PRs through #664**.
 New #661 concerns fixed-order R420 frame optimality, #662 accelerates Clifford
 checks, and #663 audits PR628 dirty restoration/leaf counts. Their stated
 scopes do not duplicate the six non-prime-power Bézout certificates here.
 #621 has no review comments in the inspected issue-comment endpoint; its
 retained review and exact source head remain the dependencies. The repository
 has no pinned coordination issue, so the claim and result are recorded locally.
+
+The continuation refreshed **500 open PRs through #680**. New #673 develops
+a multiway dirty-echo schedule and phase-alias repair based on #628 and
+explicitly distinguishes this composite-nonvanishing package. #668 uses
+split-prime CRT for prime-power resultants through 27; it supplies no
+composite seed-lifting mechanism. The other new entries concern decoder
+obstructions, local XOR circuits, owner maps, exponential intervals, supplier
+boundaries, bit moments, selector batching and fixed Clifford words. No
+overlapping composite lifting claim was identified. Upstream still points
+to the recorded base and the pinned-issue list remains empty.

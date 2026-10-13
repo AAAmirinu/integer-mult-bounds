@@ -26,5 +26,9 @@ jobs:
         run: python -B -I -O research/composite-cyclic-bezout/verify.py --check research/composite-cyclic-bezout/EXPECTED.json
       - name: Check arithmetic and CLI failure detection
         run: python -B -I research/composite-cyclic-bezout/test_verify.py
+      - name: Check modular lifting seeds and finite diagnostics
+        run: python -B -I -O research/composite-cyclic-bezout/verify_lifting.py --check research/composite-cyclic-bezout/LIFTING-EXPECTED.json
+      - name: Check lifting arithmetic and failure detection
+        run: python -B -I research/composite-cyclic-bezout/test_lifting.py
       - name: Confirm verification leaves the checkout unchanged
         run: git diff --exit-code

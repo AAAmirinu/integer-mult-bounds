@@ -4,7 +4,7 @@
     "pr": 621,
     "author": "Ali Romman (@aliromman)",
     "reviewed_head": "520774462b19b29af41554b74def31f9d01e997e",
-    "scope": "Kernel definition, conjugate-reciprocal method, and Fourier inverse-norm transfer. No producer code is imported."
+    "scope": "Kernel definition, conjugate-reciprocal method, norm/cofactor lower bound, and Fourier inverse-norm transfer. No producer code is imported."
   },
   "generator": {
     "python_package": "sympy==1.14.0",
@@ -17,5 +17,6 @@
     "research/prime-power-cyclic-inverse/NOTICE.md": "96111c95cfec3c03a6f69c8e02c5d0bceff957d187e638d0534c676d6e3ffd77",
     "research/prime-power-cyclic-inverse/verify.py": "40e5e18cbd98d39ba6d0bb036778ccacc077dff009099a54b9c8f441af5d6a56",
     "research/prime-power-cyclic-inverse/independent_verify.py": "515d60fbbb28c025251b5a2929231b4b6124dabe357b8526fdb93c1456c847ce"
-  }
+  },
+  "lifting_verifier": "Python standard library; reuses the separate integer verifier for seed identities and implements arithmetic in (F_p[u]/Phi_s(u))[z] for finite lifting diagnostics. Excluded-prime witnesses use polynomial gcd only over F_p."
 }

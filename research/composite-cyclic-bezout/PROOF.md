@@ -41,9 +41,10 @@ to **check** the certificate.
 
 The generator uses extended Euclid in Q(u)[z] and clears rational
 denominators. Its algebra system is not part of the independent checking
-path. A nonzero gcd would have stopped this nomination method; that did
-not occur at any of the six stated radices. Nothing follows about an
-untested radix or about all composites from this completed finite domain.
+path. A nonconstant gcd would have stopped this nomination method; that did
+not occur at any of the six stated radices. These six identities alone imply nothing about an untested radix.
+[LIFTING.md](LIFTING.md) supplies a separate symbolic extension from three
+small seed certificates to specified infinite families.
 
 ## Why all primitive choices are covered
 
@@ -112,8 +113,9 @@ and the inherited Fourier argument, not the prime-power ideal argument.
 ## Limits and attribution
 
 The prime-power proof in #621 has a uniform dependence on the radix.
-Here there are six literal certificates and no general composite-radix
-asymptotic estimate. The bounds are sufficient, not optimal. This proves
+The six literal certificates here give stronger fixed-radix bounds.
+The separate lifting proof in LIFTING.md supplies a uniform estimate for
+three specified composite families, not all composites. The bounds are sufficient, not optimal. This proves
 no running-time, precision, preparation, reversible restoration, or tape
 claim, and gives no new integer-multiplication exponent. The finite checker
 is not a proof assistant or a formal verification of the full theorem.

@@ -66,14 +66,17 @@ def nominate(order):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--lifting-seeds', action='store_true',
+                        help='Generate the three small seeds for the lifting lemma')
     args = parser.parse_args()
     if sympy.__version__ != '1.14.0':
         raise ValueError('Regeneration is pinned to SymPy 1.14.0')
     cases = []
-    for order in ORDERS:
+    for order in ((2, 3, 4) if args.lifting_seeds else ORDERS):
         cases.append(nominate(order))
         print('Nominated order %d' % order, flush=True)
-    certificate = {'format': 'composite-cyclic-bezout-v1',
+    certificate = {'format': ('cyclic-lifting-seeds-v1' if args.lifting_seeds
+                              else 'composite-cyclic-bezout-v1'),
                    'coefficient_order': 'ascending z, ascending u', 'cases': cases}
     args.output.write_text(json.dumps(certificate, indent=2) + '\n')
 

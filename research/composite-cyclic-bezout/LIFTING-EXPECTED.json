@@ -1,0 +1,531 @@
+{
+  "status": "PASS",
+  "scope": "exact seed identities and finite checks of a separately proved all-exponent lifting lemma",
+  "seeds": [
+    {
+      "seed": 2,
+      "denominator": "3",
+      "excluded_prime_divisors": [
+        2,
+        3
+      ]
+    },
+    {
+      "seed": 3,
+      "denominator": "43",
+      "excluded_prime_divisors": [
+        3,
+        43
+      ]
+    },
+    {
+      "seed": 4,
+      "denominator": "37",
+      "excluded_prime_divisors": [
+        2,
+        37
+      ]
+    }
+  ],
+  "domain": {
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      43
+    ],
+    "max_exponent": 5,
+    "max_radix": 512
+  },
+  "finite_instances": [
+    {
+      "seed": 2,
+      "prime": 5,
+      "exponent": 1,
+      "radix": 10,
+      "modular_identity_sha256": "e9db250bc070a0cf802c485798234f079dbc1f55cc7d908500c22212e34cc209",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 5,
+      "exponent": 2,
+      "radix": 50,
+      "modular_identity_sha256": "d7a52b0c3b917970585222faa80f9208e9f273ec7bc7fc3e4a1c9ecf4bbe5761",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 5,
+      "exponent": 3,
+      "radix": 250,
+      "modular_identity_sha256": "561f8adaadf8b8cbc07eb502f4a243bfef7fb134de5158f087d8584fff6c4f00",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 7,
+      "exponent": 1,
+      "radix": 14,
+      "modular_identity_sha256": "d11f97465e59fc35159c55d6aa62115c381d6b08273f7a4f596adfcd2e3837b7",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 7,
+      "exponent": 2,
+      "radix": 98,
+      "modular_identity_sha256": "ef399e0b0c35dbaf0330e9c7a7d248285c608f30e44e1524d1b106c294b8c6ec",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 11,
+      "exponent": 1,
+      "radix": 22,
+      "modular_identity_sha256": "2baae05e7d982b119a1de9a63505fced3d8312e73018a0f6fb09508d07395fe6",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 11,
+      "exponent": 2,
+      "radix": 242,
+      "modular_identity_sha256": "cc7deddba3046578cca48d226d7f2fa2406962bff2fff9daac12affea3c24f98",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 13,
+      "exponent": 1,
+      "radix": 26,
+      "modular_identity_sha256": "195723c1250cb27f05cf950784e1193089bbc0432cf28cd5835f900e2fdb8b28",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 13,
+      "exponent": 2,
+      "radix": 338,
+      "modular_identity_sha256": "dcc2a14c4f352b1b9133597ffe82cc7f8c4d2a86cae002dc50084732839ff828",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 17,
+      "exponent": 1,
+      "radix": 34,
+      "modular_identity_sha256": "160fb2bdb0287e8d89b8c0ed6aa413997bccb7d4d9905ed6b5b8ebab9da17e73",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 19,
+      "exponent": 1,
+      "radix": 38,
+      "modular_identity_sha256": "f33bf23a22711731c6e9b1eeb85a721e05a75bf3e077d149f32d79c3438d9d08",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 23,
+      "exponent": 1,
+      "radix": 46,
+      "modular_identity_sha256": "76e10776589bd3c8e1b7ddf8c76b8730ce8008beadfcb5cf47ea1e46565d7f6b",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 29,
+      "exponent": 1,
+      "radix": 58,
+      "modular_identity_sha256": "08b5cb3b42c3e155414cb9bc37f2b43b14fc0b149084265506eb840f27771499",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 31,
+      "exponent": 1,
+      "radix": 62,
+      "modular_identity_sha256": "e882bab83f0ce486e8777341f63c2fa726725fb4f6fa5bb22e9e1ae6a6153645",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 37,
+      "exponent": 1,
+      "radix": 74,
+      "modular_identity_sha256": "e2264ff8a6f1670c27f340d6c3998bb593167de9c080cbf87e5051233b4215ce",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 2,
+      "prime": 43,
+      "exponent": 1,
+      "radix": 86,
+      "modular_identity_sha256": "2cd8066d73275e45773a75470740c8f3183033457fb950c3fd1dc2ab7f9cd08d",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 2,
+      "exponent": 1,
+      "radix": 6,
+      "modular_identity_sha256": "438a262ab6a80302efa5280f1109e3536fa488176537761e128c7c93e0c2eed2",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 2,
+      "exponent": 2,
+      "radix": 12,
+      "modular_identity_sha256": "3c30c1fb5c49c346d079166bec1234be810a8b406311494d3051fb98f4a0dac5",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 2,
+      "exponent": 3,
+      "radix": 24,
+      "modular_identity_sha256": "455c418c9ef4406f3d9e152aff2137ba57621ac4c3a254032b03ce9613e7ecb7",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 2,
+      "exponent": 4,
+      "radix": 48,
+      "modular_identity_sha256": "854cfdaf8333ed690cd50f843b865e99ef1312d72c8f142b585e535037f2ef35",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 2,
+      "exponent": 5,
+      "radix": 96,
+      "modular_identity_sha256": "8acba0f6dd06a3647f1247b513ec52fa627a8693dbcfd21a06a2b9ba285c38bf",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 5,
+      "exponent": 1,
+      "radix": 15,
+      "modular_identity_sha256": "8775054df6f87eb1a25b978189ec2a43ac8a9519fc62eb776c5a951192f57579",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 5,
+      "exponent": 2,
+      "radix": 75,
+      "modular_identity_sha256": "0f9a86ea241f6cb2c18f8d3c86bc66911468b782cf83fb213e284e07e9f8a9e9",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 5,
+      "exponent": 3,
+      "radix": 375,
+      "modular_identity_sha256": "66f669b1e7941144891d0f50efc0328740728851a7cb2370796c74ee929056e3",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 7,
+      "exponent": 1,
+      "radix": 21,
+      "modular_identity_sha256": "1cf8ecc2bfb7708d4f6822ab7f45f17706aae4a3efec4d9026dc7e5bcf887526",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 7,
+      "exponent": 2,
+      "radix": 147,
+      "modular_identity_sha256": "ff5ab8e7b350b5d18d44b4957b903168a725843fb7f802c5997d8a3fbe4b134e",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 11,
+      "exponent": 1,
+      "radix": 33,
+      "modular_identity_sha256": "b0225f39c0ddb830afd021b8594b075e509cf11601d94401008408c347baa370",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 11,
+      "exponent": 2,
+      "radix": 363,
+      "modular_identity_sha256": "a9c3343fe08caa7143ae149a4cd4b24accf73937b05b1429badfb4df8db6fea1",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 13,
+      "exponent": 1,
+      "radix": 39,
+      "modular_identity_sha256": "2ac61458843d09280202c53060cd394841ce72b7c2f7175506741c690fff9240",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 13,
+      "exponent": 2,
+      "radix": 507,
+      "modular_identity_sha256": "9a4e3d3d726236864e73341435b61d72d95ae9b3de1e7a09518b2f4e86f3fca8",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 17,
+      "exponent": 1,
+      "radix": 51,
+      "modular_identity_sha256": "5f6e53a869052d4ce2ccb8d029ed6cbfc1e44538f9e7aa85000d0325795ff8c4",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 19,
+      "exponent": 1,
+      "radix": 57,
+      "modular_identity_sha256": "2dd5085ca3ba5a3a6bda9d046c4a2a844c85410a762ccb2940737bb6c76dc047",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 23,
+      "exponent": 1,
+      "radix": 69,
+      "modular_identity_sha256": "47e43e27d3a8d520438e59b1a02b76b193f563a6a569396fcc0cdd8cf2f4852b",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 29,
+      "exponent": 1,
+      "radix": 87,
+      "modular_identity_sha256": "e2d6322bb5d217893a620afb76b1bcf93171cb843f5acf0b9f17afca21c3fcf8",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 31,
+      "exponent": 1,
+      "radix": 93,
+      "modular_identity_sha256": "24e6667bcac4eb9168353a330407e0daa68d723f3326381c339729e9bb9e727b",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 3,
+      "prime": 37,
+      "exponent": 1,
+      "radix": 111,
+      "modular_identity_sha256": "b47d2d028d934ca83326a21fc6a7c905c9c44839cb88b1d656b04a372952ac30",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 3,
+      "exponent": 1,
+      "radix": 12,
+      "modular_identity_sha256": "2db51ebde9e283c553c53300a2252fa68c615ce4aff3e17dff6b984da4cccf6c",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 3,
+      "exponent": 2,
+      "radix": 36,
+      "modular_identity_sha256": "ac64db027ea18d746a80f4b2c1149e9a6ed85a2a8f343e9c555e0842bc9e9d62",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 3,
+      "exponent": 3,
+      "radix": 108,
+      "modular_identity_sha256": "bdb22962544a3b7b9cde4a1d3f03ca37fbd514c5dc250921e3b3719c6345b937",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 3,
+      "exponent": 4,
+      "radix": 324,
+      "modular_identity_sha256": "1cb9ad48362e5081ad53476f7008fd0e20995151b82f3e515b729db48e419602",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 5,
+      "exponent": 1,
+      "radix": 20,
+      "modular_identity_sha256": "2ac21da417e27245a2a643cfff8a2eb7cbd14607fcabacee5f856d74dd261820",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 5,
+      "exponent": 2,
+      "radix": 100,
+      "modular_identity_sha256": "2354c46a5509762f431ba142a5960451e97d53602f6b22b13c35f640f098e146",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 5,
+      "exponent": 3,
+      "radix": 500,
+      "modular_identity_sha256": "7fa53da53eddda29178be7f2440d53bf24d2c70c20c5190855d2de318fb0a1e2",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 7,
+      "exponent": 1,
+      "radix": 28,
+      "modular_identity_sha256": "59b7cf59a5c89bd8920002f7cfbb0b2f638aae7698d87730bab46aa77c958cdb",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 7,
+      "exponent": 2,
+      "radix": 196,
+      "modular_identity_sha256": "3a3003bd70a5322415fad9293bc8f23a336098ba3dc36dabf71c466f3e6d2abc",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 11,
+      "exponent": 1,
+      "radix": 44,
+      "modular_identity_sha256": "9f260aab1a6387d0d590ce7192e44f747e568fe64f48278520fca8e019ae9c39",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 11,
+      "exponent": 2,
+      "radix": 484,
+      "modular_identity_sha256": "5a4916b869f8b8f99845f3a55d0a1e6d75d353836c7794240e94585bf371e14e",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 13,
+      "exponent": 1,
+      "radix": 52,
+      "modular_identity_sha256": "6c528ea70182f92707208496fb0cfeec993e6f600b065b026c110ebcaa2c8176",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 17,
+      "exponent": 1,
+      "radix": 68,
+      "modular_identity_sha256": "116a52ceeacb61b5a868d7ef33f17038ee4ad825c0e9f57b53aade564719da01",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 19,
+      "exponent": 1,
+      "radix": 76,
+      "modular_identity_sha256": "ed6baba7c2347199faf05788f2710b64e4d37b50b60779cce58459c18595ccb1",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 23,
+      "exponent": 1,
+      "radix": 92,
+      "modular_identity_sha256": "5165efca1c9473cb25bb92728edbab2248287fde38e7ba5a6c03c2fc65a1be4c",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 29,
+      "exponent": 1,
+      "radix": 116,
+      "modular_identity_sha256": "a6398554071555e27caa009bc7612ac28e775ea7c28c8516ca4b2fca9df7b567",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 31,
+      "exponent": 1,
+      "radix": 124,
+      "modular_identity_sha256": "87d0c563cce33f0588202cacf9c7b60c9655bb2b59160f1e85138641b091dcf6",
+      "mutation_controls": 3
+    },
+    {
+      "seed": 4,
+      "prime": 43,
+      "exponent": 1,
+      "radix": 172,
+      "modular_identity_sha256": "309fd264fef64760718e74777528a59af43ac73dee1d7ca95b44391e0515e354",
+      "mutation_controls": 3
+    }
+  ],
+  "instances_checked": 54,
+  "bad_prime_witnesses": [
+    {
+      "seed": 2,
+      "prime": 3,
+      "primitive_root": 2,
+      "common_factor": [
+        2,
+        1
+      ],
+      "scope": "common factor after reduction only; no complex-unit-circle counterexample"
+    },
+    {
+      "seed": 3,
+      "prime": 43,
+      "primitive_root": 6,
+      "common_factor": [
+        24,
+        1
+      ],
+      "scope": "common factor after reduction only; no complex-unit-circle counterexample"
+    },
+    {
+      "seed": 4,
+      "prime": 37,
+      "primitive_root": 6,
+      "common_factor": [
+        15,
+        24,
+        1
+      ],
+      "scope": "common factor after reduction only; no complex-unit-circle counterexample"
+    }
+  ],
+  "rejected_admission_and_seed_controls": [
+    "excluded_prime_s2",
+    "noncoprime_seed_s2",
+    "changed_seed_coefficient_s2",
+    "excluded_prime_s3",
+    "noncoprime_seed_s3",
+    "changed_seed_coefficient_s3",
+    "excluded_prime_s4",
+    "noncoprime_seed_s4",
+    "changed_seed_coefficient_s4",
+    "composite_modulus",
+    "zero_exponent"
+  ],
+  "mutation_controls_checked": 173
+}
