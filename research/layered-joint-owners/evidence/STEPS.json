@@ -1,0 +1,68 @@
+[
+  {
+    "name": "parent-manifest",
+    "exit_code": 0,
+    "seconds": 0.054,
+    "log_sha256": "84d3af581669219a35ce0807c2b9cc2b313bf07168760a80d8bb5eb220a99715"
+  },
+  {
+    "name": "word",
+    "exit_code": 0,
+    "seconds": 3.332,
+    "log_sha256": "b31877e807c4748ad59179231313b3c37181c6b4613afed99b4690ca9f75569f"
+  },
+  {
+    "name": "layers-and-native",
+    "exit_code": 0,
+    "seconds": 149.55,
+    "log_sha256": "b353f5a30bc7bc16d1921582dfe23b1f390e2a12c2a45940e6ee9ab14ce229ba"
+  },
+  {
+    "name": "independent-scalar",
+    "exit_code": 0,
+    "seconds": 0.655,
+    "log_sha256": "d3f17a7125edd3d9d72bedb646b498f8791609d84403c8087b652c5a14316bdc"
+  },
+  {
+    "name": "baseline-strict",
+    "exit_code": 0,
+    "seconds": 15.433,
+    "log_sha256": "9160163b7c291dcc26212e185c72fe5153116e90ef8e5bcfbfeb071552aed9fb"
+  },
+  {
+    "name": "owners",
+    "exit_code": 0,
+    "seconds": 0.831,
+    "log_sha256": "abb351df7056714a45cc614208c62be5a4d0603f93987b3e605e0c428b801eae"
+  },
+  {
+    "name": "independent-owners",
+    "exit_code": 0,
+    "seconds": 13.412,
+    "log_sha256": "7f8973e0aad35cbad2e43362a3a57beece8e65bb8335d88dcf3b71fe34ea2db9"
+  },
+  {
+    "name": "prepare",
+    "exit_code": 0,
+    "seconds": 0.114,
+    "log_sha256": "987b51820faf4b3803bbe7f365b21ab266dde65ae17086988c18217804c38b74"
+  },
+  {
+    "name": "global-strict",
+    "exit_code": 0,
+    "seconds": 15.431,
+    "log_sha256": "f0a01750c6ce4fbd625f35a4f517159e50494b177e78cf69ebfcc90c823a0ee1"
+  },
+  {
+    "name": "independent-price",
+    "exit_code": 0,
+    "seconds": 0.325,
+    "log_sha256": "db6a5f47d7a6cec6472d9055709882def6f2c5cfa18a6b0019ce2ea532b09679"
+  },
+  {
+    "name": "packing-ceiling",
+    "exit_code": 0,
+    "seconds": 0.29,
+    "log_sha256": "bf2fa9f2cdd5ddfb502bd1451cdbd2a896c9d854eb53d15779a480d0288eda52"
+  }
+]

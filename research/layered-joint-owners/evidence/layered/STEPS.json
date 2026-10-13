@@ -1,0 +1,42 @@
+[
+  {
+    "step": "pivot-swap",
+    "exit_code": 0,
+    "seconds": 6.842
+  },
+  {
+    "step": "cold44-exact",
+    "exit_code": 0,
+    "seconds": 1.317
+  },
+  {
+    "step": "layer-end-controls",
+    "exit_code": 0,
+    "seconds": 38.077
+  },
+  {
+    "step": "native",
+    "exit_code": 0,
+    "seconds": 0.935
+  },
+  {
+    "step": "ledgers",
+    "exit_code": 0,
+    "seconds": 0.626
+  },
+  {
+    "step": "local-replay",
+    "exit_code": 0,
+    "seconds": 5.326
+  },
+  {
+    "step": "wrappers",
+    "exit_code": 0,
+    "seconds": 1.537
+  },
+  {
+    "step": "phases",
+    "exit_code": 0,
+    "seconds": 94.682
+  }
+]

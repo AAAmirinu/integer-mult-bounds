@@ -1,0 +1,12 @@
+{
+  "main": "17ce0c79b7b51c2634b439ea5a2b754f09909693",
+  "parent_pr": 656,
+  "parent_head": "0805e78f5fecc700804d4766d7e3e1d7d7e6a2ba",
+  "parent_manifest_sha256": "04934a9d42a1f078dd0b23c8b05570184cd664a99f13625a0ada5c41cb324d0e",
+  "local_construction_pr": 655,
+  "local_construction_head": "3e669dc7987cb2295a71664b77e110c0cd979a87",
+  "pr635": "a6895a69f8ad98ab45777b03e9e6f48888c39f6f",
+  "search_and_auditors_pr653": "db9cbf96b13621c940a2f9db019da3378b52ed51",
+  "author": "Jeremy Diviney",
+  "assistance": "Substantial OpenAI Codex assistance"
+}

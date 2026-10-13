@@ -1,0 +1,13 @@
+{
+  "status": "PASS_EXACT_FIXED_PROVIDER_RELAXED_PACKING_CEILING",
+  "max_idle_dimension": 48,
+  "fixed_idle_rank": 115200,
+  "relaxed_idle": {
+    "48": 2400
+  },
+  "native_root_upper": "1656990187678871312389/1000000000000000000000000",
+  "kappa_upper_rational": "1656990187678871312389/1001656990187678871312389",
+  "kappa_upper_decimal": "0.001654249113130437701999323091781377471424000301759803157906768862937181",
+  "feasible_assignment_claimed": false,
+  "scope": "Upper bound for fixed local profile and controller capacities with retained outer transfer; not a universal multiplication bound. Exact root upper endpoint is independently signed. The retained outer transfer has kappa < b/(1+b)."
+}

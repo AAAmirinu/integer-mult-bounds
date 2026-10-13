@@ -1,0 +1,52 @@
+{
+  "status": "EMITTED_MIXED_PROVIDER_ASYNCHRONOUS_WHOLE_OWNER_COMPLEX_TEMPLATE",
+  "template_sha256": "2f11d6588a4014dbc12b7459c4c5f87869a826dc0b236db122342d9ffccb5678",
+  "parent_template_sha256": "7db047a427a7979d69e163c78a1e32bd445628fb86723e131a3138361355a9c3",
+  "live": 7168,
+  "physical": 7670,
+  "global_profile": {
+    "1": 183025,
+    "2": 29808,
+    "3": 31249,
+    "4": 11088,
+    "5": 4032,
+    "8": 576,
+    "28": 1,
+    "32": 2,
+    "48": 2398
+  },
+  "rank_mass": 520704,
+  "deficit": 2560,
+  "maxchild": 48,
+  "hosted_residuals": 35424,
+  "banks_per_stage": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "entering_helper_roles": 18576,
+  "unique_actual_73column_sigmas": 8428,
+  "sigma_stream_sha256": "ef0744394ad29fbf24782ebc5e06bf9b7dbf0430356c1a3d7f2b225a2357fd70",
+  "cross_replica_helper_roles": 26449,
+  "asynchronous_order_sha256": "2acd6b2004be3d3ef6645f3c968feb22b5167c400bb49eb446821e5cb7af6eee",
+  "source_artifacts": {
+    "work/complex-nine-native/DATA-PHASES.json": "c5916ff312678f12aba403847643fbbc29f643acec60bdf836fa56cd3e8251fa",
+    "providers/gauge44/CANONICAL-WORD.json.gz": "72a4952751383e2a5e84b967f1e76fdfda003fe5592df357a599232e586817e3",
+    "providers/gauge44/LOCAL-PROGRAMS.json.gz": "61a30dfb8f63a7d1b5d8ef5b7ded2b2440d8998151ee5686defc01fcc93088e3",
+    "providers/gauge44/LOCAL-CHECKS.json": "b855ab7f3ea15a2d318bfc2f5aa4612ea76c019fa91cf64bd99903cf646b5e0c",
+    "providers/gauge44/INDEPENDENT-LOCAL-REPLAY.json": "c7ec4af7ccdf4230a4e277913d30ee41f2cc592d2360e008a18d11abd975b630",
+    "providers/gauge44/RESIDUAL-ADAPTERS.json": "0f2f39d58e7fb0844369dc0ea25e98ba35f0da9de4ee815015df66fad94af936",
+    "providers/gauge44/CLIFFORD-RECIPES.json": "b23cb8aac87f19a27ac5c982022bec10bcb7f02774182b8c3ef8e529a167c1b0",
+    "providers/gauge44/CLIFFORD-REVIEW.json": "c17864a376f0f6293d2dd97436ea3cd4e9ba98762d5882e06ab0480613cf1ff3"
+  },
+  "provider_counts": {
+    "gauge44": 72
+  },
+  "scope": "Two actual verified plain/width-seven providers dispatched per complete invocation; independent controller/spectator/normalization and complete finite invoice admission required."
+}

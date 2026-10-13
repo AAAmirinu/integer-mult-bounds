@@ -1,0 +1,42 @@
+[
+  {
+    "step": "shadow-early",
+    "exit_code": 0,
+    "seconds": 0.195
+  },
+  {
+    "step": "shadow-prefix",
+    "exit_code": 0,
+    "seconds": 0.251
+  },
+  {
+    "step": "gauge-forward",
+    "exit_code": 0,
+    "seconds": 0.285
+  },
+  {
+    "step": "port0",
+    "exit_code": 0,
+    "seconds": 0.244
+  },
+  {
+    "step": "port1",
+    "exit_code": 0,
+    "seconds": 0.257
+  },
+  {
+    "step": "port2",
+    "exit_code": 0,
+    "seconds": 0.255
+  },
+  {
+    "step": "port3",
+    "exit_code": 0,
+    "seconds": 0.251
+  },
+  {
+    "step": "cold44-exact",
+    "exit_code": 0,
+    "seconds": 1.44
+  }
+]
