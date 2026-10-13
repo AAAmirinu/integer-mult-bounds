@@ -3665,12 +3665,13 @@
     "test_flat_data.py": "b5c1183cab2083f5831235fea7796cfd4b0aff8cb8e78edb6cce38c32457c515",
     "update_manifest.py": "e1c35ac04ac806a37f196d541b216fc4ecd0d717c49f1fefd253b7081cf6a199",
     "update_port_manifest.py": "a634b44b6e5f9e912cee0467846cac1018b4d3df1ab7ced104d91bc500da1c61",
-    "verify.py": "b79452abee21ddc82b07066fab26393fcc3cedc17a8aefcb0fe7bcb0348d927e",
+    "verify.py": "0c75c5fbc1dcc27515af8428a8546944008b8109b95cfc825216a159c517f075",
     "../lean-single-stream-obstruction/lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
     "../lean-single-stream-obstruction/proof-manifest.json": "c809cf54611f371ffa873221f69de71a22d6761b6a2f970674f6ee3a8074c138",
     "../lean-source-invocation-audit/lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
     "../lean-source-invocation-audit/proof-manifest.json": "db705074d8fd05a8abaa82df4cdddc875a495e23dc84987b879a647bf8c5fe8e",
     "../lean-whole-residual-hosting/lean-toolchain": "d24fed434d3b13adfaab57724a0a7f270ea8bf1c818b5ae5cf25cbce24dd685c",
-    "../lean-whole-residual-hosting/proof-manifest.json": "863b5d68e18ec9f47c5c1fae1c047d1cb3f1e357735e1561923be4371efb7a6a"
+    "../lean-whole-residual-hosting/proof-manifest.json": "863b5d68e18ec9f47c5c1fae1c047d1cb3f1e357735e1561923be4371efb7a6a",
+    "test_verifier_stack.py": "3d8cb00a457d51a7aabda3e91c89774014c6a946edae9e3fac4e601f0b56dd17"
   }
 }

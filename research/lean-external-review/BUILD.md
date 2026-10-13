@@ -7,6 +7,10 @@ Start from a clean checkout of the port commit being reviewed. Record
 `git rev-parse HEAD`. Install Git, Python 3.13 and elan using upstream's normal
 setup. Each project selects its compiler through `lean-toolchain`; no external
 resource settings, special compiler flags or environment overrides are used.
+The verifier inherits the host's OS stack limits unchanged and records them
+before and after the run. An 8 MiB limit is not assumed: host defaults differ.
+The receipt cannot determine whether a caller changed limits before launch;
+the reproduction commands and workflow must use their ordinary environment.
 
 From the repository root:
 
@@ -62,7 +66,7 @@ axiom inventories. The Task B inventory has 931 declarations and Task A has
 compilation and axiom auditing, while their unchanged bytes remain hashed.
 The differential test is delegated separately and is not reported here.
 
-The canonical completed-build receipt is `validation/lean421-fresh.json`.
+The canonical completed-build receipt is `validation/lean421-ci-fix-fresh.json`.
 The strict verifier requires its PASS and exact current source bindings. During preparation only,
 `verify_package.py --allow-pending-port` checks an unfinished inventory and
 reports `PENDING_PORT` when the fresh receipt is absent. With a matching fresh

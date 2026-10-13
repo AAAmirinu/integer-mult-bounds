@@ -33,6 +33,24 @@ def require(condition, message):
         raise RuntimeError(message)
 
 
+def inherited_stack_limits(expected=None):
+    """Observe the host's limits without imposing or changing a machine default.
+
+    A limit alone cannot establish whether the caller previously changed it.
+    The workflow must use its ordinary environment; the receipt records the
+    inherited values and checks that this verifier leaves them unchanged.
+    """
+    limits = resource.getrlimit(resource.RLIMIT_STACK)
+    require(all(type(n) is int and (n == resource.RLIM_INFINITY or n > 0)
+                for n in limits), 'Invalid inherited OS stack limit')
+    require(limits[1] == resource.RLIM_INFINITY or
+            (limits[0] != resource.RLIM_INFINITY and limits[0] <= limits[1]),
+            'Invalid inherited OS stack limit ordering')
+    require(expected is None or limits == expected,
+            'OS stack limit changed during verification')
+    return limits
+
+
 def sha(path):
     h = hashlib.sha256()
     with path.open('rb') as stream:
@@ -166,14 +184,14 @@ def main():
               'MATHLIB_CACHE_DIR', 'LAKE_OVERRIDE_LEAN', 'LEAN_GITHASH', 'LAKE_JOBS',
               'LEAN_STACK_SIZE', 'LEAN_MAX_MEMORY']
     require(not any(os.environ.get(key) for key in tuning), 'External Lean tuning detected')
-    stack = resource.getrlimit(resource.RLIMIT_STACK)
-    require(0 < stack[0] <= 8388608, 'Raised OS stack limit detected')
+    stack = inherited_stack_limits()
     manifest = validate_manifest()
     started = time.monotonic()
     receipt = {'schemaVersion': 1, 'status': 'RUNNING', 'scope': 'lean421-full-port',
         'manifestSha256': sha(ROOT / 'port-manifest.json'),
         'startedUtc': datetime.now(timezone.utc).isoformat(),
-        'stackLimit': list(stack), 'environmentOverrides': {}, 'commands': [], 'audits': {},
+        'stackLimit': list(stack), 'stackLimitPolicy': 'inherited-unchanged',
+        'environmentOverrides': {}, 'commands': [], 'audits': {},
         'sourceFiles': manifest['files'],
         'freshLocalBuild': not any(p.is_file() for p in (ROOT / '.lake/build').rglob('*')),
         'gitCommit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
@@ -258,6 +276,7 @@ def main():
         receipt['sourceFilesUnchanged'] = True
         receipt['localArtifacts'] = footprint(ROOT / '.lake/build')
         receipt['moduleOleanSha256'] = {name: sha(ROOT / '.lake/build/lib/lean' / (name.replace('.', '/') + '.olean')) for name in sorted(modules)}
+        receipt['stackLimitAfter'] = list(inherited_stack_limits(stack))
         require(time.monotonic() - started < 2700, 'Total verification exceeded 45 minutes')
         receipt['status'] = 'PASS'
     except Exception as exc:

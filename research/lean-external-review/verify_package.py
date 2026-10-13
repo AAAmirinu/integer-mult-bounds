@@ -256,7 +256,7 @@ def port_bindings(allow_pending=False, build_receipt=None):
     require(set(manifest['audits']) == set(audit_counts), 'Wrong port audit inventory')
     for key, count in audit_counts.items():
         require(len(manifest['audits'][key]['declarations']) == count, 'Wrong audit count: ' + key)
-    receipt_path = build_receipt or HERE / 'validation/lean421-fresh.json'
+    receipt_path = build_receipt or HERE / 'validation/lean421-ci-fix-fresh.json'
     if not receipt_path.exists():
         require(allow_pending and build_receipt is None,
                 'Current fresh Lean 4.21 receipt is absent; use --allow-pending-port only for preparation')
@@ -278,8 +278,14 @@ def port_bindings(allow_pending=False, build_receipt=None):
             'Invalid build commit')
     require(receipt['compiledLocalModules'] == sorted(modules) and
             receipt['replayedLocalModules'] == [], 'Port receipt reused or omitted local modules')
+    limits = receipt['stackLimit']
+    require(isinstance(limits, list) and len(limits) == 2 and
+            all(type(n) is int and (n == -1 or n > 0) for n in limits) and
+            (limits[1] == -1 or (limits[0] != -1 and limits[0] <= limits[1])),
+            'Invalid recorded OS stack limits')
     require(receipt['environmentOverrides'] == {} and
-            0 < receipt['stackLimit'][0] <= 8388608, 'Non-default external build settings')
+            receipt['stackLimitPolicy'] == 'inherited-unchanged' and
+            receipt['stackLimitAfter'] == limits, 'External build settings changed')
     toolchain = receipt['toolchain']
     require(toolchain['version'] == manifest['leanVersion'] and
             toolchain['leanCommit'] == manifest['leanCommit'] and

@@ -28,6 +28,7 @@ def main():
         ['research/lean-multi-host-source/check_sources.py',
          '--receipt', str(out / 'source-binding.json')],
         ['research/lean-multi-host-source/test_flat_data.py'],
+        ['research/lean-multi-host-source/test_verifier_stack.py'],
         ['research/lean-multi-host-source/verify.py', '--lake', args.lake,
          '--receipt', str(out / 'lean421-fresh.json')],
         ['research/lean-external-review/verify_package.py',

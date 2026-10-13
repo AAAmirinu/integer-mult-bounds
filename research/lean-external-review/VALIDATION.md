@@ -1,11 +1,29 @@
 # Validation of the Lean 4.21 port
 
 Exact upstream base: `db0e57bc7f36b5ac0fc844ad7ce1396165ee6647`.
-Build candidate: `0d4aec339032498a182cf0eec7cb571b2cdd48f6`. The final documentation/receipt commit
-preserves its manifested source and dependency hashes. PR #540 and its branch
-remain unchanged until approval.
+Original port build candidate: `0d4aec339032498a182cf0eec7cb571b2cdd48f6`. Its proof sources and dependency pins remain unchanged by the CI repair.
 
-## Current fresh verification: PASS
+## CI compatibility repair
+
+The original verifier incorrectly required an OS stack soft limit of at most
+8 MiB. GitHub job 114937263040 rejected the runner before compiling Lean,
+after the source and parser checks passed. The repair records inherited
+limits before and after verification and requires them to stay unchanged;
+it never changes resource limits. It still rejects external Lean tuning.
+A recorded limit alone cannot authenticate the caller's prior environment.
+The workflow and reproduction commands apply no resource overrides.
+
+The current receipt path is `validation/lean421-ci-fix-fresh.json`.
+The original `validation/lean421-fresh.json`, timing and projection files below
+remain unchanged historical evidence for the original port manifest; they do
+not validate the revised Python verifier. Fresh repair verification is pending.
+
+The unrelated research CI failure came from an upstream stale fingerprint in
+`certificates/mixed-point-audit.json`. Regenerating it with
+`python3 scripts/audit_mixed_point.py` updates only the hash of
+`scripts/rational_span_frames.py`; the mathematical certificate is unchanged.
+
+## Original port fresh verification: PASS
 
 Fresh verification passed on Lean 4.21.0 with the exact upstream Mathlib pin.
 All 153 local modules compiled from an empty build directory, with no local
@@ -32,7 +50,7 @@ contribution artifact was reused. Adding the earlier 522.650-second external
 source-build fallback gives an estimated **50.58 minutes**
 under the same model. Cache-free CI is not qualified by the cached-setup estimate.
 
-The canonical receipt is [validation/lean421-fresh.json](validation/lean421-fresh.json).
+The original receipt is [validation/lean421-fresh.json](validation/lean421-fresh.json).
 [The source binding receipt](validation/lean421-source-binding.json) records
 the separate regeneration check of all 19,002 ordered source events.
 [validation/lean421-timing.json](validation/lean421-timing.json) records module

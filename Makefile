@@ -560,6 +560,7 @@ LAKE ?= lake
 formal-pr442-verify:
 	python3 research/lean-multi-host-source/check_sources.py
 	python3 research/lean-multi-host-source/test_flat_data.py
+	python3 research/lean-multi-host-source/test_verifier_stack.py
 	python3 research/lean-multi-host-source/verify.py --lake "$(LAKE)" --receipt /tmp/pr442-lean421-fresh.json
 	python3 research/lean-external-review/verify_package.py --build-receipt /tmp/pr442-lean421-fresh.json
 	git diff --exit-code
