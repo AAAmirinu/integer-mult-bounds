@@ -1,0 +1,1344 @@
+{
+  "schema": "witness-spec/1",
+  "name": "gauge44-all72",
+  "data": {
+    "plan_sha256": "48c7f624ea73b317d20a31b23965a374020e6b5473c4c5c4f04f28d1df41976c",
+    "owners_sha256": "f0a9b0ec4163b0cd4ee211f6747801ad57a114adab7be636c34c1104a63b66a7"
+  },
+  "dispatch": [
+    [
+      0,
+      0,
+      "gauge44"
+    ],
+    [
+      0,
+      1,
+      "gauge44"
+    ],
+    [
+      0,
+      2,
+      "gauge44"
+    ],
+    [
+      0,
+      3,
+      "gauge44"
+    ],
+    [
+      0,
+      4,
+      "gauge44"
+    ],
+    [
+      0,
+      5,
+      "gauge44"
+    ],
+    [
+      0,
+      6,
+      "gauge44"
+    ],
+    [
+      0,
+      7,
+      "gauge44"
+    ],
+    [
+      1,
+      0,
+      "gauge44"
+    ],
+    [
+      1,
+      1,
+      "gauge44"
+    ],
+    [
+      1,
+      2,
+      "gauge44"
+    ],
+    [
+      1,
+      3,
+      "gauge44"
+    ],
+    [
+      1,
+      4,
+      "gauge44"
+    ],
+    [
+      1,
+      5,
+      "gauge44"
+    ],
+    [
+      1,
+      6,
+      "gauge44"
+    ],
+    [
+      1,
+      7,
+      "gauge44"
+    ],
+    [
+      2,
+      0,
+      "gauge44"
+    ],
+    [
+      2,
+      1,
+      "gauge44"
+    ],
+    [
+      2,
+      2,
+      "gauge44"
+    ],
+    [
+      2,
+      3,
+      "gauge44"
+    ],
+    [
+      2,
+      4,
+      "gauge44"
+    ],
+    [
+      2,
+      5,
+      "gauge44"
+    ],
+    [
+      2,
+      6,
+      "gauge44"
+    ],
+    [
+      2,
+      7,
+      "gauge44"
+    ],
+    [
+      3,
+      0,
+      "gauge44"
+    ],
+    [
+      3,
+      1,
+      "gauge44"
+    ],
+    [
+      3,
+      2,
+      "gauge44"
+    ],
+    [
+      3,
+      3,
+      "gauge44"
+    ],
+    [
+      3,
+      4,
+      "gauge44"
+    ],
+    [
+      3,
+      5,
+      "gauge44"
+    ],
+    [
+      3,
+      6,
+      "gauge44"
+    ],
+    [
+      3,
+      7,
+      "gauge44"
+    ],
+    [
+      4,
+      0,
+      "gauge44"
+    ],
+    [
+      4,
+      1,
+      "gauge44"
+    ],
+    [
+      4,
+      2,
+      "gauge44"
+    ],
+    [
+      4,
+      3,
+      "gauge44"
+    ],
+    [
+      4,
+      4,
+      "gauge44"
+    ],
+    [
+      4,
+      5,
+      "gauge44"
+    ],
+    [
+      4,
+      6,
+      "gauge44"
+    ],
+    [
+      4,
+      7,
+      "gauge44"
+    ],
+    [
+      5,
+      0,
+      "gauge44"
+    ],
+    [
+      5,
+      1,
+      "gauge44"
+    ],
+    [
+      5,
+      2,
+      "gauge44"
+    ],
+    [
+      5,
+      3,
+      "gauge44"
+    ],
+    [
+      5,
+      4,
+      "gauge44"
+    ],
+    [
+      5,
+      5,
+      "gauge44"
+    ],
+    [
+      5,
+      6,
+      "gauge44"
+    ],
+    [
+      5,
+      7,
+      "gauge44"
+    ],
+    [
+      6,
+      0,
+      "gauge44"
+    ],
+    [
+      6,
+      1,
+      "gauge44"
+    ],
+    [
+      6,
+      2,
+      "gauge44"
+    ],
+    [
+      6,
+      3,
+      "gauge44"
+    ],
+    [
+      6,
+      4,
+      "gauge44"
+    ],
+    [
+      6,
+      5,
+      "gauge44"
+    ],
+    [
+      6,
+      6,
+      "gauge44"
+    ],
+    [
+      6,
+      7,
+      "gauge44"
+    ],
+    [
+      7,
+      0,
+      "gauge44"
+    ],
+    [
+      7,
+      1,
+      "gauge44"
+    ],
+    [
+      7,
+      2,
+      "gauge44"
+    ],
+    [
+      7,
+      3,
+      "gauge44"
+    ],
+    [
+      7,
+      4,
+      "gauge44"
+    ],
+    [
+      7,
+      5,
+      "gauge44"
+    ],
+    [
+      7,
+      6,
+      "gauge44"
+    ],
+    [
+      7,
+      7,
+      "gauge44"
+    ],
+    [
+      8,
+      0,
+      "gauge44"
+    ],
+    [
+      8,
+      1,
+      "gauge44"
+    ],
+    [
+      8,
+      2,
+      "gauge44"
+    ],
+    [
+      8,
+      3,
+      "gauge44"
+    ],
+    [
+      8,
+      4,
+      "gauge44"
+    ],
+    [
+      8,
+      5,
+      "gauge44"
+    ],
+    [
+      8,
+      6,
+      "gauge44"
+    ],
+    [
+      8,
+      7,
+      "gauge44"
+    ]
+  ],
+  "call_order": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      7,
+      5
+    ],
+    [
+      8,
+      4
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      8,
+      5
+    ],
+    [
+      7,
+      7
+    ],
+    [
+      8,
+      6
+    ],
+    [
+      8,
+      7
+    ]
+  ],
+  "width_spot_helpers": [
+    270,
+    282,
+    294,
+    306
+  ],
+  "providers": {
+    "gauge44": {
+      "inventory": {
+        "4": 64,
+        "5": 48,
+        "7": 54,
+        "8": 116,
+        "9": 222
+      },
+      "native_negative_controls": 25,
+      "phase_edges": 2949,
+      "expected_profile": {
+        "1": 2534,
+        "2": 346,
+        "3": 458,
+        "4": 178,
+        "5": 56,
+        "8": 8
+      },
+      "artifact_semantic_sha256": {
+        "CANONICAL-WORD.json.gz": "1ae812a336178760071efe347e876e0102b5b71f799d957db15c5f3004c19d7a",
+        "LOCAL-PROGRAMS.json.gz": "80bdc9ea00f8c68381fa2bf8777b9875d6b44e001cd1c3305d8973593a0cd094",
+        "LOCAL-CHECKS.json": "dfa5bc560060f38596d53de03cf05704737a0423cf950c1237fc483a1c5e1c04",
+        "INDEPENDENT-LOCAL-REPLAY.json": "02a178424ba60a01970bb65205829016b192b7322a6216bcc5896c81a6989aaf",
+        "CLIFFORD-RECIPES.json": "890b60fc4ae183c773c51405e0f4ef6a945dc2aae55ba2480f134602e8296cda",
+        "CLIFFORD-REVIEW.json": "9ca6a02fd95c0d7afa2499da873c0b6874a74aa942a85eca88bd7eb939bad7e4",
+        "RESIDUAL-ADAPTERS.json": "7d72df0ec2d197a1ec54c810955d4f314cec958094a9cc5af75daf02a178ccca"
+      },
+      "entering": 216,
+      "entrance": 392,
+      "width_digest": "0f17c8bad5a7068665f2213258ffba3c66b111c7c6f3e57cd92e7e681eab4c99",
+      "program_hashes": {
+        "backward": "f67a3dc20c27fb39295b8030e951e9779109ef1537f6f8de9d08510b9ad6792a",
+        "forward": "a3882a428bdafab888072211d4ed8d34572746873d77c6ef900495853cc3fa11"
+      },
+      "artifacts": {
+        "LOCAL-CHECKS.json": "d1098b41e885ab9a9f07549b9d08783ff910365d450c412fb05ab701f6f4bf67",
+        "CLIFFORD-RECIPES.json": "890b60fc4ae183c773c51405e0f4ef6a945dc2aae55ba2480f134602e8296cda",
+        "RESIDUAL-ADAPTERS.json": "e1a0abe17bbcf8cf8c786ecf8860685d84cfcf8b7fc86c54cab2bd3ca8918b0c"
+      },
+      "complete_contract": {
+        "local": {
+          "backward": {
+            "events": 24271,
+            "macros": 19063,
+            "real_component_primitives": 186898,
+            "prefix_l1": "206088328825694774665/16",
+            "prefix_bits": 64,
+            "coefficient_work_primitive_count": 92279,
+            "all_exact_columns": 728,
+            "dirty_helper_columns": 504,
+            "all_dirty_helper_columns_restored": true,
+            "private_centres_and_coefficient_work_cleared": true,
+            "pre_wrappers": 282,
+            "post_wrappers": 282,
+            "endpoint_evidence": "Hash-bound fresh INDEPENDENT-LOCAL-REPLAY.json"
+          },
+          "forward": {
+            "events": 24271,
+            "macros": 19063,
+            "real_component_primitives": 186850,
+            "prefix_l1": "2506541245798870",
+            "prefix_bits": 52,
+            "coefficient_work_primitive_count": 92247,
+            "all_exact_columns": 728,
+            "dirty_helper_columns": 504,
+            "all_dirty_helper_columns_restored": true,
+            "private_centres_and_coefficient_work_cleared": true,
+            "pre_wrappers": 282,
+            "post_wrappers": 282,
+            "endpoint_evidence": "Hash-bound fresh INDEPENDENT-LOCAL-REPLAY.json"
+          }
+        },
+        "helpers": 504,
+        "centres": 8,
+        "v": 112,
+        "h": 9,
+        "n": 728,
+        "entering_helpers": 216,
+        "entrance_rank": 392,
+        "terminal_codimension": 344,
+        "hyperplane_ended_helpers": 120,
+        "cold_hyperplane_ended_helpers": 66,
+        "width_inventory": {
+          "4": 64,
+          "5": 48,
+          "7": 54,
+          "8": 116,
+          "9": 222
+        },
+        "widths": [
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          4,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          4,
+          9,
+          9,
+          9,
+          9,
+          9,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          7,
+          7,
+          7,
+          7,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          7,
+          7,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          7,
+          7,
+          8,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          8,
+          8,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          8,
+          9,
+          7,
+          7,
+          9,
+          9,
+          8,
+          8,
+          9,
+          9,
+          9,
+          9,
+          8,
+          9,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          9,
+          7,
+          7,
+          7,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          9,
+          7,
+          8,
+          8,
+          9,
+          9,
+          9,
+          9,
+          8,
+          8,
+          8,
+          8,
+          7,
+          7,
+          7,
+          7,
+          9,
+          8,
+          9,
+          8,
+          8,
+          8,
+          8,
+          8,
+          7,
+          7,
+          7,
+          7,
+          9,
+          8,
+          9,
+          8,
+          8,
+          8,
+          8,
+          8,
+          7,
+          7,
+          7,
+          7,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          8,
+          8,
+          8,
+          5,
+          8,
+          5,
+          5,
+          5,
+          8,
+          8,
+          8,
+          5,
+          8,
+          5,
+          5,
+          5,
+          8,
+          8,
+          8,
+          5,
+          8,
+          5,
+          5,
+          5,
+          8,
+          8,
+          8,
+          4,
+          8,
+          4,
+          4,
+          4,
+          8,
+          8,
+          8,
+          5,
+          8,
+          5,
+          5,
+          5,
+          8,
+          8,
+          8,
+          5,
+          8,
+          5,
+          5,
+          5,
+          8,
+          8,
+          8,
+          5,
+          8,
+          5,
+          5,
+          5,
+          8,
+          8,
+          8,
+          4,
+          8,
+          4,
+          4,
+          4,
+          8,
+          8,
+          8,
+          5,
+          8,
+          5,
+          5,
+          5,
+          8,
+          8,
+          8,
+          5,
+          8,
+          5,
+          5,
+          5,
+          8,
+          8,
+          8,
+          5,
+          8,
+          5,
+          5,
+          5,
+          8,
+          8,
+          8,
+          5,
+          8,
+          5,
+          5,
+          5,
+          8,
+          8,
+          8,
+          5,
+          8,
+          5,
+          5,
+          5,
+          8,
+          8,
+          8,
+          5,
+          8,
+          5,
+          5,
+          5
+        ],
+        "local_adapters": 378736,
+        "local_primitive_bound": 9822266866194,
+        "compiler": 25934336,
+        "children": 3580,
+        "paid_profile": {
+          "1": 2534,
+          "2": 346,
+          "3": 458,
+          "4": 178,
+          "5": 56,
+          "8": 8
+        },
+        "program_hashes": {
+          "backward": "f67a3dc20c27fb39295b8030e951e9779109ef1537f6f8de9d08510b9ad6792a",
+          "forward": "a3882a428bdafab888072211d4ed8d34572746873d77c6ef900495853cc3fa11"
+        },
+        "semantic_artifact_sha256": {
+          "CANONICAL-WORD.json.gz": "1ae812a336178760071efe347e876e0102b5b71f799d957db15c5f3004c19d7a",
+          "LOCAL-PROGRAMS.json.gz": "80bdc9ea00f8c68381fa2bf8777b9875d6b44e001cd1c3305d8973593a0cd094",
+          "LOCAL-CHECKS.json": "dfa5bc560060f38596d53de03cf05704737a0423cf950c1237fc483a1c5e1c04",
+          "INDEPENDENT-LOCAL-REPLAY.json": "02a178424ba60a01970bb65205829016b192b7322a6216bcc5896c81a6989aaf",
+          "CLIFFORD-RECIPES.json": "890b60fc4ae183c773c51405e0f4ef6a945dc2aae55ba2480f134602e8296cda",
+          "CLIFFORD-REVIEW.json": "9ca6a02fd95c0d7afa2499da873c0b6874a74aa942a85eca88bd7eb939bad7e4",
+          "RESIDUAL-ADAPTERS.json": "7d72df0ec2d197a1ec54c810955d4f314cec958094a9cc5af75daf02a178ccca"
+        }
+      },
+      "semantic_phase_sha256": "9ca6a02fd95c0d7afa2499da873c0b6874a74aa942a85eca88bd7eb939bad7e4",
+      "expected_local": {
+        "forward": {
+          "events": 24271,
+          "macros": 19063,
+          "real_component_primitives": 186850,
+          "prefix_l1": "2506541245798870",
+          "coefficient_work_primitive_count": 92247
+        },
+        "backward": {
+          "events": 24271,
+          "macros": 19063,
+          "real_component_primitives": 186898,
+          "prefix_l1": "206088328825694774665/16",
+          "coefficient_work_primitive_count": 92279
+        }
+      },
+      "wrappers": 282
+    }
+  },
+  "expected": {
+    "gain_baseline_kappa": "0.001636241501576388",
+    "hosted_residuals": 36288,
+    "rank_mass": 520704,
+    "actual_73column_sigmas": 9412,
+    "cross_replica_helper_roles": 27111,
+    "idle_remainders": 2364,
+    "idle_remainder_profile": {
+      "48": 2364
+    },
+    "global_profile": {
+      "1": 182448,
+      "2": 24912,
+      "3": 32976,
+      "4": 12816,
+      "5": 4032,
+      "8": 576,
+      "48": 2364
+    },
+    "live": 7168,
+    "physical": 7682,
+    "conservative_kappa_decimal": "0.001656193762539939",
+    "kappa_decimal": "0.001656193765416678",
+    "complex_lower": "331788258728880915239/200000000000000000000000",
+    "conservative_complex_lower": "1658941290758112743307/1000000000000000000000000",
+    "kappa": "828096882708339/500000000000000000",
+    "assembly_controls_rejected": 69,
+    "provider_counts": {
+      "gauge44": 72
+    },
+    "mutations_rejected": 15
+  },
+  "pivot_swap": {
+    "recipe": "construction/layers_np/PIVOT-SWAP-NP.json",
+    "sha256": "d49b8d316da1cbdaf995dd0e8314d3c67cc9cd4d5902e9d85ccb907be645bef5"
+  }
+}
