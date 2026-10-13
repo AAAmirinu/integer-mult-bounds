@@ -1,0 +1,59 @@
+{
+  "track": "verification engineering",
+  "assignment_seed": 89,
+  "assignment_source": "OS randomness via secrets.randbelow(100)",
+  "base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+  "scope": "Exact integer-Horner evaluation of the 80-term rational logarithm in base_two_moment.py; no precision reductions or source-engine changes.",
+  "method": "Homogenize the atanh polynomial with lcm(1,3,...,159), evaluate with integer Horner, retain the identical rational remainder.",
+  "candidates_considered": [
+    {
+      "task": "cache repeated immutable source hashes",
+      "decision": "not selected; risks stale-input acceptance and needs broader pipeline profiling"
+    },
+    {
+      "task": "repair path quoting in costly bit-supplier cold replay",
+      "decision": "not selected; PR653 already reports the issue and the full script has many affected call sites"
+    },
+    {
+      "task": "homogeneous integer Horner for exact logarithm intervals",
+      "decision": "selected; seed 89 mod 3 = 2; narrow algebraic equality and benchmarkable without a supplier rebuild"
+    }
+  ],
+  "coordination": "Open-issue query returned only issue 650 requesting Discussions; no sprint coordination issue found. Local claim only.",
+  "overlap_checked": [
+    "current PR ledger and review through 626",
+    "open PR metadata through 658",
+    "PR title search: moment",
+    "source search: log_bounds and Horner"
+  ],
+  "expected_deliverable": "Add-only Apache-2.0 package with exact equivalence derivation, pinned reference, deterministic checks, corruptions and before/after benchmarks.",
+  "publication": "Original ChatGPT run produced a clean ZIP/patch handoff without a writable fork. Codex subsequently imported and replayed that package in a full, base-pinned checkout on codex/exact-log-horner for a separate PR from yuj1r0/integer-mult-bounds.",
+  "negative_control_development": "Initial wrong-tail-exponent mutant escaped probes whose reduced numerator was always 1; adding x=9/5 (z=2/7) detects it. Full corrected suite passes.",
+  "handoff_overlap_refresh": {
+    "main_head": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+    "queries": [
+      {
+        "query": "repo:CrocSwap/integer-mult-bounds \"log_unit\" (all PRs)",
+        "result": "no matching PRs returned"
+      },
+      {
+        "query": "repo:CrocSwap/integer-mult-bounds logarithm (open PRs, top 6 by update)",
+        "returned_prs": [
+          605,
+          585,
+          573,
+          570,
+          375,
+          92
+        ]
+      }
+    ],
+    "interpretation": "The returned relevant PR605/585 are scoped Lean moment/logarithm proofs, not an integer-Horner Python evaluation optimization. No duplicate found in these bounded metadata/source searches; this is not an exhaustive novelty audit."
+  },
+  "submission_result": {
+    "status": "PASS_EXACT_LOG_HORNER and PASS_PACKAGE_CONTROLS",
+    "changed_scope": "None: opt-in exact arithmetic kernel; production engines and selected frontier unchanged.",
+    "fresh_evidence": "SUBMISSION.json",
+    "overlap_refresh": "Open PR metadata refreshed through #665, bounded Horner search and log_unit search (zero matches). No matching logarithm-kernel optimization found. #662 concerns Clifford helper validation, a different workload. Final pinned-issue query returned none."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PASS_PACKAGE_CONTROLS",
+  "rejected": 8,
+  "cases": [
+    {
+      "case": "changed_reference_with_updated_manifest",
+      "optimization_level": 0,
+      "rejection": "reference git blob mismatch"
+    },
+    {
+      "case": "changed_reference_with_updated_manifest",
+      "optimization_level": 1,
+      "rejection": "reference git blob mismatch"
+    },
+    {
+      "case": "changed_fixture",
+      "optimization_level": 0,
+      "rejection": "package hash mismatch: fixtures.json"
+    },
+    {
+      "case": "changed_fixture",
+      "optimization_level": 1,
+      "rejection": "package hash mismatch: fixtures.json"
+    },
+    {
+      "case": "missing_fixture",
+      "optimization_level": 0,
+      "rejection": "package file inventory mismatch"
+    },
+    {
+      "case": "missing_fixture",
+      "optimization_level": 1,
+      "rejection": "package file inventory mismatch"
+    },
+    {
+      "case": "unexpected_file",
+      "optimization_level": 0,
+      "rejection": "package file inventory mismatch"
+    },
+    {
+      "case": "unexpected_file",
+      "optimization_level": 1,
+      "rejection": "package file inventory mismatch"
+    }
+  ]
+}

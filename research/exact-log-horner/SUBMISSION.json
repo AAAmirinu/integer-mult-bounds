@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-10-13T03:20:58.128926+00:00",
+  "original_archive": "exact-log-horner-contribution.zip",
+  "archive_sha256": "f8626410e23d34015e830b79304c47a58d89fd4ea5276cc0b7dda7b8735d5e81",
+  "base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+  "branch": "codex/exact-log-horner",
+  "unchanged_zip_inputs_sha256": {
+    "log_horner.py": "2ac2759ca07ca9456c85869dc8ebe22363a9056f684b6234dc7df6df1ca93cd8",
+    "verify.py": "e0db83f49279ab4715a033f727a59529b82213ba5dde4ef6e601d568fda09e4c",
+    "test_package.py": "0bc6a4ee59ea7d86ca4ddc8700e0f76d2e7f4d7a765fcd315c512a2e14e20d90",
+    "PROOF.md": "cf0150bc8d6a185dd3d94b817b8bd259100d694a59b1da7dbc90568b4bb97bb7",
+    "fixtures.json": "cab28353eff3c0009ad6819ff7d1c67c2ddd54f82c1f9bf2772e0c2f9edb7318",
+    "reference/base_two_moment.py": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098",
+    "evidence/benchmark.json": "8047676315a56701b1c84c873f081ac3ab111c8c7d3525db04104bf8c1d340aa",
+    "evidence/isolated-optimized.json": "5df1fe94b1d8d8e1fe234f66360ff8291cc460bf28a86796787b0442784d72d4",
+    "evidence/package-controls.json": "dfbbf6c4972028cc5c39b2b32b71c55b1f25066360e4d581e605fd90ff31cc1e"
+  },
+  "commands": [
+    {
+      "command": "python3 -B research/exact-log-horner/verify.py --benchmark",
+      "receipt": "evidence/codex-benchmark.json"
+    },
+    {
+      "command": "python3 -I -O -B research/exact-log-horner/verify.py",
+      "receipt": "evidence/codex-optimized.json"
+    },
+    {
+      "command": "python3 -B research/exact-log-horner/test_package.py",
+      "receipt": "evidence/codex-package-controls.json"
+    }
+  ],
+  "source_binding_receipt": "evidence/codex-repository-binding.json",
+  "exact_comparison_digest_sha256": "c926bc76b11c982a477174b4c09ea0be2b4c549ae4dcd8215d7ac19deb91202a",
+  "normal_and_optimized_results_identical": true,
+  "scope": "Standalone package replay and repository source/fixture binding; production pipeline not modified or activated. No full supplier/assembly/repository-wide/Lean replay or remote CI result claimed.",
+  "assistance": "Original package prepared with OpenAI ChatGPT assistance; submission review, fresh replay, documentation updates and PR preparation with OpenAI Codex."
+}

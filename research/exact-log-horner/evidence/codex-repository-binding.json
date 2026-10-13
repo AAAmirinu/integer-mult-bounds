@@ -1,0 +1,50 @@
+{
+  "status": "PASS_REPOSITORY_SOURCE_AND_EXTRACTED_FIELDS",
+  "base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+  "verified_source_files": [
+    {
+      "path": "research/five-stage-gen4-banks/base_two_moment.py",
+      "git_blob_sha1": "14a90fa0e788217856f070382c9e61bd7c603c61",
+      "sha256": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098"
+    },
+    {
+      "path": "research/complex-allcold/engines/base_two_moment.py",
+      "git_blob_sha1": "14a90fa0e788217856f070382c9e61bd7c603c61",
+      "sha256": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098"
+    },
+    {
+      "path": "research/community-k492-audit/pr626/replay/ASSEMBLY.json",
+      "git_blob_sha1": "2e97b75bd8e74e8aa1b5fb83adcdc461aa07c398",
+      "sha256": "6127732e2fcdd470dab349c1c51d03cd9f0787ad0309b1b4a7c811a908028f4e"
+    },
+    {
+      "path": "research/e8-bit-r420/EXPECTED.json",
+      "git_blob_sha1": "b61d859826246e0c3dabbe096e57ad7015eadfd5",
+      "sha256": "06eccee9f6b77e140833df83407e7996dc948c17d49b0779ab171fbe463fd28d"
+    },
+    {
+      "path": "research/complex-k492-owner-repair/code/assemble.py",
+      "git_blob_sha1": "d1674e657ff046f9d55c917723002f270e05c42a",
+      "sha256": "1b1a9024ac910dc9b9d9e30150684e1fa9cb228a4c1c275b75ab04b57fdef1dd"
+    },
+    {
+      "path": "certificates/selected-result.json",
+      "git_blob_sha1": "92a10096dee76479af88a897714b3818d8263141",
+      "sha256": "b3bf402f31a69bde0629936a9b569bed48281568d7b16d5fba120b5311ea1f53"
+    },
+    {
+      "path": "docs/research/community-k492-review.md",
+      "git_blob_sha1": "11efcd07ae2b9d93d355c6adaf773dca70dbce91",
+      "sha256": "3b731d30e80010b15408a289b0b32192700885474c8b36d48ee3320a7a8c5c47"
+    }
+  ],
+  "field_checks": [
+    "both complete profiles",
+    "bit live stock",
+    "native complex endpoint",
+    "conservative complex endpoint",
+    "bit endpoint",
+    "selected kappa",
+    "vendored reference byte equality"
+  ]
+}

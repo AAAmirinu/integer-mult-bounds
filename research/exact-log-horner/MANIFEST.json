@@ -1,0 +1,22 @@
+{
+  ".gitattributes": "0505c14e71ca4c3505f5bd606e6667ee39a9114b71a9188aa868648b021c49bb",
+  "CLAIM.json": "4270cdc0851ef2a72f4234b866071fb3805761280792316a4788c58bcdfafb42",
+  "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "NOTICE.md": "d9872b4cd2bdcf38ff5f688b33a440cf34b22cc9d45fe1ae7689bb989fad8fc8",
+  "PROOF.md": "cf0150bc8d6a185dd3d94b817b8bd259100d694a59b1da7dbc90568b4bb97bb7",
+  "README.md": "fa2ab1ac2957c119f1dcd1037b90854ec88aa187f62e13a0905c2d5a2c33c447",
+  "SOURCE.json": "cc635c64c33360d9b0c02fd089cf8c2e678cb7752e70d832e742628fc85fcb1d",
+  "SUBMISSION.json": "b59e8eed2e3230c26e1e90fc0ee791d1f1f8d6f86a51f00b37f1d20313f6a24c",
+  "evidence/benchmark.json": "8047676315a56701b1c84c873f081ac3ab111c8c7d3525db04104bf8c1d340aa",
+  "evidence/codex-benchmark.json": "8d3ac463dd872d2501807f743bac3f289c5d87708f60f888c082855a5cccd2d9",
+  "evidence/codex-optimized.json": "0e70d6b2427408fe0b7ef5d3b577c7c6767db2a782b9f057dafc4154c763f94a",
+  "evidence/codex-package-controls.json": "dfbbf6c4972028cc5c39b2b32b71c55b1f25066360e4d581e605fd90ff31cc1e",
+  "evidence/codex-repository-binding.json": "5ef3ba2cbd28e5bee076863194df84596107ed40140d3b0ac33cf64968f24053",
+  "evidence/isolated-optimized.json": "5df1fe94b1d8d8e1fe234f66360ff8291cc460bf28a86796787b0442784d72d4",
+  "evidence/package-controls.json": "dfbbf6c4972028cc5c39b2b32b71c55b1f25066360e4d581e605fd90ff31cc1e",
+  "fixtures.json": "cab28353eff3c0009ad6819ff7d1c67c2ddd54f82c1f9bf2772e0c2f9edb7318",
+  "log_horner.py": "2ac2759ca07ca9456c85869dc8ebe22363a9056f684b6234dc7df6df1ca93cd8",
+  "reference/base_two_moment.py": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098",
+  "test_package.py": "0bc6a4ee59ea7d86ca4ddc8700e0f76d2e7f4d7a765fcd315c512a2e14e20d90",
+  "verify.py": "e0db83f49279ab4715a033f727a59529b82213ba5dde4ef6e601d568fda09e4c"
+}

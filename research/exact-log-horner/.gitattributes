@@ -1,0 +1,2 @@
+# Preserve the exact pinned upstream source, including its final blank line.
+reference/base_two_moment.py whitespace=-blank-at-eof

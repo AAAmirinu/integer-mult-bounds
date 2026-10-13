@@ -1,0 +1,204 @@
+{
+  "status": "PASS_EXACT_LOG_HORNER",
+  "seed": 89,
+  "base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+  "reference_git_blob_sha1": "14a90fa0e788217856f070382c9e61bd7c603c61",
+  "executed_input_sha256": {
+    "verify.py": "e0db83f49279ab4715a033f727a59529b82213ba5dde4ef6e601d568fda09e4c",
+    "log_horner.py": "2ac2759ca07ca9456c85869dc8ebe22363a9056f684b6234dc7df6df1ca93cd8",
+    "fixtures.json": "cab28353eff3c0009ad6819ff7d1c67c2ddd54f82c1f9bf2772e0c2f9edb7318",
+    "reference/base_two_moment.py": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098"
+  },
+  "environment": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "implementation": "CPython",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "optimization_level": 0,
+    "cpu_count": 12
+  },
+  "verification": {
+    "groups": {
+      "unit_grid_denominator_at_most_64": 1261,
+      "unit_adversarial_and_seeded_large_rationals": 30,
+      "range_reduction_all_children_m_2_through_96": 4560,
+      "range_reduction_power_of_two_boundaries": 21,
+      "charged_moment_endpoints": 6,
+      "pricing_negative_controls_per_engine": 5,
+      "inherited_domain_rejections_both_engines": 24,
+      "new_exact_input_type_rejections": 3,
+      "exact_integer_endpoints": 2,
+      "implementation_mutations_detected": 8
+    },
+    "exact_comparison_digest_sha256": "c926bc76b11c982a477174b4c09ea0be2b4c549ae4dcd8215d7ac19deb91202a",
+    "moments": [
+      {
+        "name": "complex626_native",
+        "accept": true,
+        "surcharge": false,
+        "interval_minus_one": [
+          "-2346073/1000000000000000000000000000000",
+          "-293259/125000000000000000000000000000"
+        ]
+      },
+      {
+        "name": "complex626_native",
+        "accept": false,
+        "surcharge": false,
+        "interval_minus_one": [
+          "64931/100000000000000000000000000000",
+          "649311/1000000000000000000000000000000"
+        ]
+      },
+      {
+        "name": "complex626_conservative",
+        "accept": true,
+        "surcharge": true,
+        "interval_minus_one": [
+          "-7010240519182780279647/2500000000000000000000000000000000000000000000",
+          "-5608190415346224223689/2000000000000000000000000000000000000000000000"
+        ]
+      },
+      {
+        "name": "complex626_conservative",
+        "accept": false,
+        "surcharge": true,
+        "interval_minus_one": [
+          "1912877923638794608283/10000000000000000000000000000000000000000000000",
+          "76515516945551784337/400000000000000000000000000000000000000000000"
+        ]
+      },
+      {
+        "name": "bit543",
+        "accept": true,
+        "surcharge": true,
+        "interval_minus_one": [
+          "-1120888283015460284783/2500000000000000000000000000000000000000000000",
+          "-4483543132061841139029/10000000000000000000000000000000000000000000000"
+        ]
+      },
+      {
+        "name": "bit543",
+        "accept": false,
+        "surcharge": true,
+        "interval_minus_one": [
+          "13153878434097279887307/5000000000000000000000000000000000000000000000",
+          "6576941717048639943679/2500000000000000000000000000000000000000000000"
+        ]
+      }
+    ],
+    "mutations_detected": [
+      "drop_last_series_term",
+      "erase_remainder_bound",
+      "wrong_homogeneous_denominator",
+      "wrong_horner_multiplier",
+      "freeze_denominator_power",
+      "damage_one_series_coefficient",
+      "wrong_tail_exponent",
+      "lossy_float_input_roundtrip"
+    ]
+  },
+  "verification_seconds": 3.7898530419915915,
+  "benchmark": {
+    "repeats": 7,
+    "timer": "perf_counter_ns",
+    "alternating_order": true,
+    "input_dependent_caching": false,
+    "unit_batch_repetitions": 20,
+    "unit_inputs": [
+      "73/64",
+      "8/7",
+      "4/3",
+      "73/48",
+      "32/21",
+      "8/5",
+      "73/40",
+      "73/37",
+      "2"
+    ],
+    "workloads": {
+      "log_unit_selected_ratios": {
+        "seconds": {
+          "reference": [
+            0.050443166,
+            0.050166875,
+            0.051424417,
+            0.051703667,
+            0.051398166,
+            0.051908917,
+            0.051550041
+          ],
+          "optimized": [
+            0.0046065,
+            0.004648125,
+            0.004685584,
+            0.004961333,
+            0.00484025,
+            0.004986291,
+            0.005216459
+          ]
+        },
+        "median_seconds": {
+          "reference": 0.051424417,
+          "optimized": 0.00484025
+        },
+        "speedup": 10.624330768038842
+      },
+      "complex626_native_endpoint_pair": {
+        "seconds": {
+          "reference": [
+            0.015044125,
+            0.015151125,
+            0.014880583,
+            0.014316125,
+            0.015104333,
+            0.014711959,
+            0.014610625
+          ],
+          "optimized": [
+            0.006244084,
+            0.005864,
+            0.006455375,
+            0.006035875,
+            0.006132834,
+            0.005834833,
+            0.006289625
+          ]
+        },
+        "median_seconds": {
+          "reference": 0.014880583,
+          "optimized": 0.006132834
+        },
+        "speedup": 2.426379549813349
+      },
+      "selected_three_charged_endpoint_pairs": {
+        "seconds": {
+          "reference": [
+            0.043811083,
+            0.043783333,
+            0.045112459,
+            0.043926333,
+            0.04353975,
+            0.042711375,
+            0.042941209
+          ],
+          "optimized": [
+            0.019233875,
+            0.018692833,
+            0.019203958,
+            0.018923625,
+            0.019363708,
+            0.019166708,
+            0.018678792
+          ]
+        },
+        "median_seconds": {
+          "reference": 0.043783333,
+          "optimized": 0.019166708
+        },
+        "speedup": 2.2843428824605665
+      }
+    }
+  },
+  "scope": "Exact arithmetic-kernel equivalence and extracted profile pricing only; no full supplier, assembly, repository, CI, or Lean replay. No new kappa."
+}
