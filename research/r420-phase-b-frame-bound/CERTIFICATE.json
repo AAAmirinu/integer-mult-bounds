@@ -1,0 +1,144 @@
+{
+  "gates": 837,
+  "registers": 660,
+  "gate_rank_intervals": {
+    "2:3": 120,
+    "3:4": 10,
+    "4:4": 457,
+    "4:5": 10,
+    "6:6": 120,
+    "7:7": 120
+  },
+  "b_and_exit_profile": {
+    "1": 720,
+    "2": 451,
+    "5": 120
+  },
+  "total_partitions": 918,
+  "schema": "r420-phase-b-frame-bound/1",
+  "status": "PASS_FIXED_ORDER_B_FRAME_BOUND",
+  "input_canonical_sha256": "e597e3885c0a8daa262afa5985ee2930443329126aece76d33159d81882bdcc2",
+  "all_register_paths_sha256": "ab116537182b1f7a6ca5b699725d4b48a82d761f3cf5cff8030ac2d0618cfe35",
+  "gap_registers": [],
+  "fixed_exterior_profile": {
+    "1": 600,
+    "2": 989,
+    "4": 60,
+    "8": 9
+  },
+  "full_local_profile": {
+    "1": 1320,
+    "2": 1440,
+    "4": 60,
+    "5": 120,
+    "8": 9
+  },
+  "full_rank_mass": 5112,
+  "variable_rank_mass": 2222,
+  "partition_types": [
+    {
+      "count": 89,
+      "baseline_partition": [],
+      "relaxed_partitions": [
+        []
+      ]
+    },
+    {
+      "count": 240,
+      "baseline_partition": [
+        1,
+        1
+      ],
+      "relaxed_partitions": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "count": 91,
+      "baseline_partition": [
+        2
+      ],
+      "relaxed_partitions": [
+        [
+          2
+        ]
+      ]
+    },
+    {
+      "count": 18,
+      "baseline_partition": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "relaxed_partitions": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "count": 102,
+      "baseline_partition": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "relaxed_partitions": [
+        [
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "count": 120,
+      "baseline_partition": [
+        5,
+        2
+      ],
+      "relaxed_partitions": [
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    }
+  ]
+}

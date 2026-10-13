@@ -1,0 +1,21 @@
+{
+  "base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+  "source_pr": 543,
+  "source_head": "2065fe4f72a914d907f1046603f5a36f17018535",
+  "inputs": {
+    "research/e8-bit-r420/data/bitE8mut-r420.json.gz": "9721a3819efd68307f66f00d84a952eb28eb7c3ad2ce79653ce295c98a764784",
+    "research/e8-bit-r420/code/xcheck.py": "5737d18a7826fd51e131035f2d7bebba2e2868af91dd7672a5f11208b036d424"
+  },
+  "context": {
+    "selected_result": "certificates/selected-result.json",
+    "selected_result_sha256": "b3bf402f31a69bde0629936a9b569bed48281568d7b16d5fba120b5311ea1f53",
+    "selected_kappa": "51110230636731/31250000000000000",
+    "selected_review": "docs/research/community-k492-review.md",
+    "related_pr589_head": "a5afc8c6169ea61ba7c51dfd3cade02cc7b13b46"
+  },
+  "dependencies": "Python 3.11+ standard library only; no network, optimizer, C++ or Lean required",
+  "input_git_blobs_verified_against_pr543": {
+    "research/e8-bit-r420/data/bitE8mut-r420.json.gz": "0c63ca62759dc63d302be6552aeeee1ede70350f",
+    "research/e8-bit-r420/code/xcheck.py": "fbff8607e4c61e18481f696b99dd38a32444e90d"
+  }
+}

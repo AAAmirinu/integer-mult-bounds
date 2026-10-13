@@ -1,0 +1,22 @@
+{
+  "track": "bit supplier",
+  "assignment_seed": 8,
+  "candidate_selection": "8 mod 3 selects the third narrow candidate below",
+  "seed_source": "Python secrets.randbelow(100), backed by operating-system randomness",
+  "base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+  "scope": "The fixed scalar gate order of PR543's R420 phase B, with A, scatter, cleanup, and boundary frames fixed. Derive an optimistic exact rank-path bound for simultaneous reframing, including frames outside the existing catalogue. Use seed 8 to rotate register processing and control selection.",
+  "method": "Forward span and backward subspace-intersection constraints, followed by per-register rank-path enumeration and exact majorization checks. If the relaxation has a gap, report that gap rather than an impossibility claim.",
+  "candidates": [
+    "Single-operation transports: rejected as too close to the PR589 tuner, which already supports both A and B.",
+    "Resynthesize one 12-wire block node: deferred because scalar gate count alone cannot improve the recursive profile and full invoice work is needed.",
+    "Simultaneous fixed-order B-frame scheduling: chosen; seek a checkable lower bound beyond a greedy fixed point."
+  ],
+  "expected_deliverable": "Scoped research result with standard-library exact checker, reproducible output, meaningful controls, explicit source pins and attribution; no kappa claim without a complete construction.",
+  "expected_finish_utc": "2026-10-13T03:45:00Z",
+  "coordination": "No pinned issues existed in the live GitHub GraphQL response. Local claim used as instructed; no separate reservation issue opened.",
+  "overlap_checked": "Live open PR metadata through #658; phase-B bit search; main review ledger; PR543, PR555, PR589, PR620 and format-limits notes. PR441 and PR589 are related frame-tuning predecessors, not claimed as new mechanisms.",
+  "status": "complete",
+  "result": "Sharp fixed-order B-frame paid-moment bound: 837 gates, 660 registers, all 918 relaxed partitions majorized; exact independent implementation and 12 controls pass. No new kappa.",
+  "result_link": "README.md",
+  "final_overlap_check": "Live open PR metadata refreshed through #660; no direct duplicate identified. PR612 concerns R420 B-XOR scalar formalization, not frame-cost optimality. No pinned coordination issue existed on the final check."
+}

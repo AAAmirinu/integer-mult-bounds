@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "command": "python3 -B research/r420-phase-b-frame-bound/verify.py",
+  "source_base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+  "checked": {
+    "predecessor_labels_and_frames": 672,
+    "predecessor_symbolic_columns": 660,
+    "B_gates": 837,
+    "registers": 660,
+    "complete_relaxed_partitions": 918,
+    "gap_registers": 0,
+    "controls": [
+      "rational_intersection_without_shared_generators",
+      "same_rank_unequal_subspaces",
+      "concavity_direction_and_equal_mass",
+      "1000_interval_domains_against_literal_path_enumeration",
+      "legal_rank3_promotion_detects_source13_and_target128_gaps",
+      "omitted_mandatory_target_read_exposes_rank7_gap",
+      "illegal_zero_frame_rejected",
+      "nonfull_cleanup_rejected",
+      "corrupted_total_partitions_rejected",
+      "corrupted_variable_rank_mass_rejected",
+      "omitted_gate_certificate_rejected",
+      "incorrect_source_pin_rejected"
+    ]
+  },
+  "new_python_source_sha256": {
+    "audit.py": "9fc5e91cc29d36ad311803bbc4cbd93bdad1dd787b505ee81cdcae5bc91dd934",
+    "check.py": "afeda449ee7dae87af550ae94e6feaaa3235e4d16b1469480e509f8a93f40b2c",
+    "verify.py": "bc4cd7074bcde3e6efdef02b15db4a9f5352053ec3460e08985666b12cd479ff"
+  },
+  "certificate_sha256": "d480c446e59ccb849d5acd7cf60eb984a4a1836db400e22d203a8ba015073ccc",
+  "remote_linux_ci": "Not observed. An optional dedicated workflow was removed before publication because the available GitHub OAuth token lacks workflow scope; no new workflow is included.",
+  "scope": "Only this new package and pinned R420 local baseline obligations were rerun. No frontier626 cold assembly or repository-wide make verify run is claimed; their inputs were not changed.",
+  "checked_utc": "2026-10-13T03:05:58.994907+00:00",
+  "additional_checks": [
+    "python3 -I research/r420-phase-b-frame-bound/audit.py: PASS",
+    "PYTHONOPTIMIZE=1 python3 -B research/r420-phase-b-frame-bound/verify.py: PASS (separate Codex worker)",
+    "python3 -B scripts/verify_selected_result.py: PASS; selected record unchanged",
+    "git diff --cached --check: PASS",
+    "PR543 Git blob identities match both locally read inputs",
+    "Latest main remains the exact recorded base at pre-submission check"
+  ]
+}
