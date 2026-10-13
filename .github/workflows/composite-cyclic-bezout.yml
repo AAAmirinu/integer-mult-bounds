@@ -1,0 +1,30 @@
+name: Composite cyclic Bezout certificates
+on:
+  pull_request:
+    paths:
+      - 'research/composite-cyclic-bezout/**'
+      - 'research/prime-power-cyclic-inverse/**'
+      - '.github/workflows/composite-cyclic-bezout.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        python: ['3.11', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: '${{ matrix.python }}'
+      - name: Check integer certificates and mathematical mutations
+        run: python -B -I -O research/composite-cyclic-bezout/verify.py --check research/composite-cyclic-bezout/EXPECTED.json
+      - name: Check arithmetic and CLI failure detection
+        run: python -B -I research/composite-cyclic-bezout/test_verify.py
+      - name: Confirm verification leaves the checkout unchanged
+        run: git diff --exit-code

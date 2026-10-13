@@ -1,0 +1,21 @@
+{
+  "base_commit": "66849e1475c930fd7732b1a0067ffee7e1e95f60",
+  "predecessor": {
+    "pr": 621,
+    "author": "Ali Romman (@aliromman)",
+    "reviewed_head": "520774462b19b29af41554b74def31f9d01e997e",
+    "scope": "Kernel definition, conjugate-reciprocal method, and Fourier inverse-norm transfer. No producer code is imported."
+  },
+  "generator": {
+    "python_package": "sympy==1.14.0",
+    "method": "Extended Euclidean algorithm over Q(u)[z]; clear rational denominators."
+  },
+  "independent_verifier": "Python standard library; integer arithmetic in Z[u,z]/(Phi_r(u)); tail products, no division in Q(u), polynomial gcd or symbolic-library imports.",
+  "input_sha256": {
+    "research/prime-power-cyclic-inverse/PROOF.md": "2b8056c88e66f692f407450fff0414d41bcd09db8597be22e274a6c3dc20eb9e",
+    "research/prime-power-cyclic-inverse/SOURCE.json": "81217e4ecbb1da767d6a23f043d66e69d53c9001c056176efc641ddadea275f2",
+    "research/prime-power-cyclic-inverse/NOTICE.md": "96111c95cfec3c03a6f69c8e02c5d0bceff957d187e638d0534c676d6e3ffd77",
+    "research/prime-power-cyclic-inverse/verify.py": "40e5e18cbd98d39ba6d0bb036778ccacc077dff009099a54b9c8f441af5d6a56",
+    "research/prime-power-cyclic-inverse/independent_verify.py": "515d60fbbb28c025251b5a2929231b4b6124dabe357b8526fdb93c1456c847ce"
+  }
+}
