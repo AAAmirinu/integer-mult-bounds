@@ -13,3 +13,5 @@ Both runs reconstruct the ancestral, gauge44 and layered54 sources, then the fin
 The independently replayed comparison PR658 at `a1f15d0c78e1ca44d3414d184e57637b36c6822d` gives kappa `0.001654192296855146`, below this result. PR656's fixed provider word admits our full-48 packing at `0.001654249113130437`; the six new ends improve the word beyond that fixed-provider packing endpoint. No claim is made about other words or schedules.
 
 All-size compilation, common-label/mutable-source realization, complete-invocation hosting, precision/tape accounting, punctured bit units and analytic transfer remain conditional obligations. This is not an unconditional multiplication theorem or kappa = 1.
+
+`DOCUMENTATION-CORRECTION.json` records a subsequent prose correction: the extension has six tail gates and 17 rank-zero repair gates. All executable and mathematical input bytes remain identical to the fresh replays above. Their original core manifest is retained in the receipts; the correction records the new manifest.

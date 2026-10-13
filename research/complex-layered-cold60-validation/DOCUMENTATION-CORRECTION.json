@@ -1,0 +1,13 @@
+{
+  "status": "DOCUMENTATION_ONLY_GATE_COUNT_CORRECTION",
+  "old_core_manifest_sha256": "b25520f18aa154359182232d55317c66e0609b06eb065c22d9d4f36e3ef57115",
+  "new_core_manifest_sha256": "407d76a5155abb4142dda787236455eb051229d3fc38c7e42ef024bf03f70b08",
+  "changed_core_files": [
+    "PROOF.md",
+    "MANIFEST.json"
+  ],
+  "early_cleanup_gates": 6,
+  "rank_zero_repair_gates": 17,
+  "evidence": "data/NEW-ENDS.json: sum(len(newtail))=6, sum(len(repair))=17. Every executable and mathematical input is byte-identical to the full fresh platform replays.",
+  "platform_receipts": "Retained platform receipts identify the original pre-correction core manifest. The correction changes only the prose gate count and manifests."
+}

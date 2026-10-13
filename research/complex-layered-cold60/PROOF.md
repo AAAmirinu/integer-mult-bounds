@@ -1,6 +1,6 @@
 # Six cold ends and a fixed-word packing certificate
 
-PR655/656's gauge44 source factories, six pivot swaps and eight entering-end extensions remain. The new change adds a rank-zero cold-helper basis repair, a12-gate early cleanup extension, a rederived exact full cleanup and a physical owner assignment. Mathematical local/global admission predicates are unchanged.
+PR655/656's gauge44 source factories, six pivot swaps and eight entering-end extensions remain. The new change adds 17 rank-zero cold-helper basis-repair gates, a six-gate early cleanup extension, a rederived exact full cleanup and a physical owner assignment. Mathematical local/global admission predicates are unchanged.
 
 ## Six terminal frames
 
