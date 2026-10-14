@@ -1,8 +1,0 @@
-mode none forbidden 0 []
-IMPROVE 0 20 [51] oldpiv 18 newpiv 22 oldscore -0.023454248916270348 newscore -0.0263930547419311
-IMPROVE 0 19 [204] oldpiv 16 newpiv 20 oldscore -0.024405423184283404 newscore -0.027344229009944154
-IMPROVE 0 18 [195] oldpiv 18 newpiv 21 oldscore -0.020569622369140728 newscore -0.02678568514194124
-ROUND 0 changes 3 pivots 205
-ROUND 1 changes 0 pivots 205
-ROUND 2 changes 0 pivots 205
-ROUND 3 changes 0 pivots 205
