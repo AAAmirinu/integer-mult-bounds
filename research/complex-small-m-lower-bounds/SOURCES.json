@@ -1,0 +1,135 @@
+{
+ "schema_version": 1,
+ "base_commit": "f626db5c3a3d781d8f7695038776c621651f75e1",
+ "upstream_repository": "https://github.com/CrocSwap/integer-mult-bounds",
+ "files": [
+  {
+   "path": "docs/research/agent-task-catalog.json",
+   "usage": "provenance",
+   "git_blob": "64bfc5af6709ed9811171e0a2108f05e1219cb65",
+   "sha256": "352a6184713b8843d96fd2c2071eb7aeaa655906b7c51d45ad444912666c8a96"
+  },
+  {
+   "path": "research/abelian-cayley-metric-scope/sources/pr288-README.md",
+   "usage": "provenance",
+   "git_blob": "dc04f533bd0f3b185969bb259e876a73714f7285",
+   "sha256": "c091e98c415e2a80bb28402b789363eb97dd3492061ca8875e421ae437de7482"
+  },
+  {
+   "path": "research/two-register-three-mix/README.md",
+   "usage": "provenance",
+   "git_blob": "593549db00fac1a10734868380eab28bcb584cc2",
+   "sha256": "3353fe948c75fbfc56841260db02d5e14aba966d157d3390fe3d4785e397af60"
+  }
+ ],
+ "inputs_note": "No live inputs from this repository. The two research provenance rows are the predecessor texts quoted in README.md section 2 (#288 by eumemic, retained on main; #2108 by jmbarrancoml). verify.py reads only files inside this package.",
+ "external_sources": [
+  {
+   "what": "every file under data/ and author-evidence/: copied unchanged from my public repository; verify.py checks each file's sha256 (part pins). The commit is not a Git object of this repository, so it cannot be pinned with a source pin; the byte equality is recorded here.",
+   "repository": "https://github.com/jacobalansussman/wht-power-saving-lean",
+   "commit": "86e575e28ed94890872dcff1bb2621d7ff559cbd",
+   "copies": [
+    {
+     "package_path": "data/cert_m3_dem.json",
+     "source_path": "research/block-bounds-and-new-rules/data/hook-certificates/cert_m3_dem.json",
+     "source_git_blob": "76678077d87cd677caf91d56e306e2df3aab2b38",
+     "sha256": "99235c4fbfb37a2205a888b18292edbfa3be07970dd0550c47f79bbe66e802c3"
+    },
+    {
+     "package_path": "data/cert_m3_B2.json",
+     "source_path": "research/block-bounds-and-new-rules/data/hook-certificates/cert_m3_B2.json",
+     "source_git_blob": "de6959c8ad45046f9a540c2c1c73051c75c8c9aa",
+     "sha256": "078eb2a6a481f5a176b2fce2331fb285dbe8e20b034c5bb4558abc2455a27cf6"
+    },
+    {
+     "package_path": "data/cert_m3_M0.json",
+     "source_path": "research/block-bounds-and-new-rules/data/hook-certificates/cert_m3_M0.json",
+     "source_git_blob": "3be65e03f6b3b2069ccc597f7caa48b17bb57d48",
+     "sha256": "325f47b568ce2fee4d1b8848f19b0e27772340de5b4a04702d8799b3b1763748"
+    },
+    {
+     "package_path": "data/cert_m3_M0_c.txt",
+     "source_path": "research/block-bounds-and-new-rules/data/hook-certificates/cert_m3_M0_c.txt",
+     "source_git_blob": "2f5a07b14cf103e178d706f877d4196af3a486f1",
+     "sha256": "82169f3e70bc11ebdabc9b573f82f50f92e0a8073c5e747deb64714a84c0e6bc"
+    },
+    {
+     "package_path": "data/cert_m2_M0.txt",
+     "source_path": "research/block-bounds-and-new-rules/data/hook-certificates/cert_m2_M0.txt",
+     "source_git_blob": "40be8de96cbfe05b688e1b8f5fe2b5bcbe032359",
+     "sha256": "884bc29dbaf3714cb23426f56e28039e1dafb9b13f63a6b595b8dc15423f3cf0"
+    },
+    {
+     "package_path": "data/neg_m3_29.txt",
+     "source_path": "research/block-bounds-and-new-rules/data/hook-certificates/neg_m3_29.txt",
+     "source_git_blob": "fc5c183f52c9f224f909528fcd3ad7ff461507f3",
+     "sha256": "1d89519b59d32f23ca4dd5355b45ed03a226bec430bc90aeafaac0d001bbfa36"
+    },
+    {
+     "package_path": "data/neg_m3_comp.txt",
+     "source_path": "research/block-bounds-and-new-rules/data/hook-certificates/neg_m3_comp.txt",
+     "source_git_blob": "742b35a6db984ad1eae2b36e48d8cbdfef539b4f",
+     "sha256": "4ebc926017f670b43345af6d984039b4b93327ddb387e6d95d8f861133f65a8c"
+    },
+    {
+     "package_path": "data/neg_m3_dup.txt",
+     "source_path": "research/block-bounds-and-new-rules/data/hook-certificates/neg_m3_dup.txt",
+     "source_git_blob": "7bc7ff614a149449b0caf8f88a7b724ba65446cc",
+     "sha256": "f6fe0a5d3025396dcfe168214a33e4730e20c46187b5b68a5aeaf86cabbfa928"
+    },
+    {
+     "package_path": "data/cert_m4_M0.txt",
+     "source_path": "research/block-bounds-and-new-rules/data/hook-certificates/cert_m4_M0.txt",
+     "source_git_blob": "254beec5222daedda500ecdaac28ca712a3d6d7f",
+     "sha256": "72530af84ea9a702b9e48b1dd8d5e69e9b0552840096f38b5caac9667c4236e2"
+    },
+    {
+     "package_path": "data/Dem3Data.lean",
+     "source_path": "research/block-bounds-and-new-rules/programs/lean-block2-block3/PfLean/Dem3Data.lean",
+     "source_git_blob": "13b707be01006223776af137c661eaaf090446d1",
+     "sha256": "0982f9cf408a7d2f930b4e65d1e2b1bd6a22b3c0601c372886fa7d9bf4c0cc52"
+    },
+    {
+     "package_path": "author-evidence/check_m0.c",
+     "source_path": "research/block-bounds-and-new-rules/programs/hook-certificates-blocks-2-to-6/check_m0.c",
+     "source_git_blob": "5748359d049c7a4e10479b5f1487e118acc4db41",
+     "sha256": "8242342188fe73eb8ab0db9e48727d086ec78c38032bdfb76b38a3af40ceef6e"
+    }
+   ]
+  },
+  {
+   "what": "the Lean proofs quoted in README.md section 5 (not copied; the hub's intake does not run Lean)",
+   "repository": "https://github.com/jacobalansussman/wht-power-saving-lean",
+   "commit": "86e575e28ed94890872dcff1bb2621d7ff559cbd",
+   "path": "research/block-bounds-and-new-rules/programs/lean-block2-block3",
+   "toolchain": "leanprover/lean4:v4.34.1; Mathlib d13f23b723b8a846827a245b89c10fc7d3f11612",
+   "build_log": "research/block-bounds-and-new-rules/programs/lean-block2-block3/logs/rebuild_2026-10-19.txt",
+   "statements_log": "research/block-bounds-and-new-rules/programs/lean-block2-block3/logs/statements.txt"
+  },
+  {
+   "what": "the written arguments condensed in PROOF.md sections 4 to 7, and the programs behind the statuses",
+   "repository": "https://github.com/jacobalansussman/wht-power-saving-lean",
+   "commit": "86e575e28ed94890872dcff1bb2621d7ff559cbd",
+   "paths": [
+    "research/block-bounds-and-new-rules/README.md",
+    "research/moonshot-small-blocks/README.md",
+    "research/theory-of-theories-and-logic/README.md",
+    "research/reed-muller-and-one-move/proofs/address-maps-per-array-targets-and-block3.md",
+    "research/existence-routes/proofs/families-commutative-slice.md",
+    "research/open-problems.md"
+   ]
+  },
+  {
+   "what": "David Harvey, 'On the recently proposed o(n log n) integer multiplication algorithm', UNSW Sydney, 20 October 2026 (quoted in README.md section 7)",
+   "url": "https://web.maths.unsw.edu.au/~davidharvey/research/subnlogn.pdf"
+  },
+  {
+   "what": "Swapnil Jain's papers P1 and P2, cited through #288",
+   "doi": [
+    "10.5281/zenodo.23265442",
+    "10.5281/zenodo.23266393"
+   ]
+  }
+ ],
+ "source_boundary": "Only this new package is submitted. No file outside research/complex-small-m-lower-bounds changes."
+}
