@@ -75,13 +75,13 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "Eight-width full dyadic Clifford endpoint test, 75/76 stable separation, sharp one-axis cutoff, and phase-exact native computation with bitwise witnesses.",
+  "actual_scope": "Eight-width full dyadic Clifford tests, compact exact native certificates, complete selected-provider replay and a uniform obstruction to all 30328 early/late fusions of two paid climbs on one persistent role.",
   "scope_change_reason": "Supply a written native-relation interface theorem and executable certificate rather than repeat a formal arithmetic endpoint.",
   "bottleneck_link": "A fixed native program needs an all-width endpoint proof. The trace filter supplies a uniform finite test and a quantified failure certificate for the full dyadic Clifford class.",
   "budget_minutes": 60,
   "stop_rule": "Prove the stated cutoff and stability bound, check source and independent tensor fixtures, then publish one scoped package. No supplier or selected-frontier update.",
   "outcome": "completed",
-  "evidence": "PROOF.md, ADVANCES.md, both result receipts, the modular inverse certificate, compact.py, quadratic.py and registered normal/optimized replays.",
+  "evidence": "PROOF.md, ADVANCES.md, PROVIDER.md, all result and mutation receipts, source-bound complete provider inputs and registered normal/optimized replays.",
   "author": "Ali Romman with substantial OpenAI Codex assistance",
   "ai_assistance": "Substantial OpenAI Codex assistance in derivation, implementation, self-review, validation and publication. No independent human or proof-kernel review.",
   "open_questions": [
@@ -98,10 +98,16 @@
       "blocked_by": "The invariant embedding alone loses powers of the base dimension."
     },
     {
-      "question": "Does a complete current provider have practical expanded support?",
-      "why_it_matters": "Compact native sums remove dense matrices but not exponential word expansion.",
-      "first_step": "Bind every role and phase of one pinned provider, then measure support.",
-      "blocked_by": "Complete provider bindings and its physical invoice remain."
+      "question": "Can a changed contact provide the transformed operand at lower complete cost?",
+      "why_it_matters": "Every fixed pair fusion retains a nonzero contact defect.",
+      "first_step": "Use one saved contact certificate and replace its literal scalar contact with a priced native query.",
+      "blocked_by": "Whole-caller endpoint, dirty restoration and full cost remain."
+    },
+    {
+      "question": "Can coordinated pair rewrites cancel their defects?",
+      "why_it_matters": "The obstruction covers one pair at a time.",
+      "first_step": "Name a small joint rewrite and run its complete native endpoint.",
+      "blocked_by": "No joint-rewrite or physical invoice certificate exists."
     }
   ],
   "coordination": "https://github.com/CrocSwap/integer-mult-bounds/discussions/5236#discussioncomment-19153620",
@@ -111,5 +117,17 @@
     "previous_result": "0db0609042d3bee25028ef6515fcee40a33e958d",
     "source_pins_changed": false,
     "notes": "RESEARCH-NOTES.md"
+  },
+  "provider_application": {
+    "user_requested": true,
+    "main_checkpoint": "1ec1119972c9aefe42525172d07b332fcff81cb4",
+    "verifier_predecessor": "5370f4465388dbbfff3ba45d5d6ae99d447b1766",
+    "scope": "Complete selected local provider in both directions, then early/late fusion of every pair of paid persistent climbs on one role. All positive tensor widths.",
+    "decision": "Narrow after the full fixed pair-fusion domain fails. Changed contacts or coordinated rewrites require a new test.",
+    "outcome": "No kappa improvement; complete provider certificates and a uniform scoped obstruction.",
+    "paid_profile_changed": false,
+    "unknown_costs": "No changed physical, compiler or outer cost is assumed zero. All candidate rewrites fail the algebraic endpoint.",
+    "notes": "provider/RESEARCH-NOTES.md",
+    "sources": "provider/SOURCES.json"
   }
 }

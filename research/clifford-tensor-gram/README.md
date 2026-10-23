@@ -24,6 +24,16 @@ For the source's nine binary axes, **eight tests at widths 69 through 76** suffi
 This is an algebraic bound, not a full supplier replay or a minimal cutoff.
 The complete kappa calculation and selected frontier are unchanged.
 
+The [complete-provider application](PROVIDER.md) now passes both directions
+of the selected PR4610 local provider: all 633 inputs and returns, 7,000
+oriented native recipe classes, and the full physical programs. It also
+excludes **30,328 early/late pair fusions at every positive tensor width**.
+The domain contains every pair of paid climbs on one persistent role, at
+all ranks and without an adjacency condition. The [result](provider/RESULT.json),
+[full-program witnesses](provider/WITNESSES.json), and
+[research notes](provider/RESEARCH-NOTES.md) preserve the evidence and limits.
+No paid job is removed and kappa does not increase.
+
 ## A concrete small-width trap
 
 The [Reynolds example](examples/reynolds.json) adds the average of the 96
@@ -43,6 +53,8 @@ python3.12 -B scripts/research_package.py --package research/clifford-tensor-gra
 
 The registered commands print `PASS_CLIFFORD_TENSOR_GRAM_NO_NEW_KAPPA` and
 `PASS_CLIFFORD_ADVANCES_NO_NEW_KAPPA` in normal and optimized Python.
+The provider commands also print
+`PASS_COMPLETE_PR4610_PROVIDER_AND_30328_FUSION_OBSTRUCTIONS`.
 Direct commands also work in a Git-free export:
 
 ```sh
@@ -50,6 +62,8 @@ python3.12 -I -W error -B research/clifford-tensor-gram/verify.py
 python3.12 -I -O -W error -B research/clifford-tensor-gram/verify.py
 python3.12 -I -W error -B research/clifford-tensor-gram/verify_advances.py
 python3.12 -I -O -W error -B research/clifford-tensor-gram/verify_advances.py
+python3.12 -I -W error -B research/clifford-tensor-gram/verify_provider.py
+python3.12 -I -O -W error -B research/clifford-tensor-gram/verify_provider.py
 python3.12 -I -B research/clifford-tensor-gram/compact.py \
   research/clifford-tensor-gram/examples/native-64.json
 python3.12 -I -B research/clifford-tensor-gram/certify.py \
@@ -155,8 +169,9 @@ human or proof-kernel acceptance. Compilation can expand exponentially many
 terms. The compact path and witness algorithms use polynomial work in the
 axis count, literal word length, tensor width and expanded support. The
 original dense frontend still uses base dimension 2^n. No polynomial-time claim in instruction
-length or practical full-supplier speedup follows. No complete provider,
-selected cold replay, native admission, Lean or Docker run is claimed.
+length or practical full-supplier speedup follows. The provider application
+checks the complete selected local word and its native recipes. A selected
+controller/compiler cold replay, new admission, Lean and Docker are not run.
 Physical storage, tapes, stock, precision and outer recovery remain separate.
 Programs that change with f, non-Clifford gates, continuous phases, nonunitary
 native operators, rounded leaves and restricted clean-input contracts are excluded.
@@ -165,6 +180,10 @@ native operators, rounded leaves and restricted clean-input contracts are exclud
 
 Base: canonical main `7c472563474e60185e6ca101a17622133d047e56`, priority 7.
 [SOURCES.json](SOURCES.json) binds exact sources. No predecessor is modified.
+The provider application has the separate current-main pin
+`1ec1119972c9aefe42525172d07b332fcff81cb4`; its source copies and full credit
+are in [provider/SOURCES.json](provider/SOURCES.json) and
+[provider/NOTICE.md](provider/NOTICE.md).
 Rohan Arun supplies the retained native compiler, following Jeremy Kothe and
 the native lineage. Tekalign's retention and Cinna Davis's borrowing work keep
 their credit. The complete [notice](vendor/NATIVE-LINEAGE-NOTICE) accompanies

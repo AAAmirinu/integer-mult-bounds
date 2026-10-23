@@ -57,6 +57,31 @@
       ],
       "timeout_seconds": 180,
       "checks": "Code invariant, stronger filter bound, one-axis rank certificate, quadratic sums, complete native programs, bitwise witnesses and large-axis phase cases."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-W",
+        "error",
+        "-B",
+        "{package}/verify_provider.py"
+      ],
+      "timeout_seconds": 240,
+      "checks": "All 7000 native recipe classes, both complete selected provider directions, all 30328 pair fusions, separate contact and coverage replays, literal full-program witnesses and controls."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-W",
+        "error",
+        "-B",
+        "{package}/verify_provider.py"
+      ],
+      "timeout_seconds": 240,
+      "checks": "All 7000 native recipe classes, both complete selected provider directions, all 30328 pair fusions, separate contact and coverage replays, literal full-program witnesses and controls."
     }
   ]
 }
