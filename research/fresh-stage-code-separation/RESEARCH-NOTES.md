@@ -47,6 +47,18 @@ unpriced. The family expansion decision is therefore: publish the theorem and
 small exact escape mechanism; require a complete two-stage budget before a
 larger synthesis campaign.
 
+A further local screen shared each of the eight possible old private axes
+between two actual source stages. In owner block (0,1), sharing old axis one
+merged 26 paths into 21 signed maps; all 21 coefficients stayed nonzero.
+The other seven choices retained 26 nonzero maps. Thus simple coordinate
+sharing did not supply a complete decoder. This bounded discovery screen is
+saved with the project record and is not used as a theorem premise. The
+positive two-path example instead changes the corresponding normalizers.
+
+The first commit normalized the CRLF end of the frozen CODE.json input.
+The committed-byte check caught the difference. Package attributes now keep
+all copied inputs byte-exact. The scientific data and proof are unchanged.
+
 Normal/optimized registered replays, committed bytes, export checks and
 publication evidence are reported in the final public handoff. This file does
 not treat a pending hosted check as a pass. The mathematical proof and finite
