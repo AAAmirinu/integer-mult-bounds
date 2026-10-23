@@ -17,7 +17,7 @@ its evidence join or claim to fund a candidate from declared histograms.
 
 ## Why this is timely
 
-The [last-100 assessment](ASSESSMENT.md) found a sharp current contrast: #5350's
+Recent contributions give a sharp contrast: #5350's
 largest scalar deletion worsens its recursive bill, #5383 improves it by owning
 relations while surrendering helper output credit, and #5387/#5390 tighten the
 compiler with that same bill. A scalar count, a paid-only histogram or another decimal
