@@ -16,8 +16,8 @@ interface, its independent tests and its current source-bound application.
 
 The [last-100 assessment](ASSESSMENT.md) found a sharp current contrast: #5350's
 largest scalar deletion worsens its recursive bill, #5383 improves it by owning
-relations while surrendering helper output credit, and #5387 tightens the compiler
-with that same bill. A scalar count, a paid-only histogram or another decimal
+relations while surrendering helper output credit, and #5387/#5390 tighten the
+compiler with that same bill. A scalar count, a paid-only histogram or another decimal
 root does not distinguish these cases.
 
 The newest centre-paired relation method also has a small, provable remaining
@@ -26,8 +26,8 @@ budget. Optimistically grant **all 144** original exchanges
 **.00302728824994**. The 128-exchange #5383/#5387 bill crosses in
 **(.00302667476807,.00302667476808)**. Thus this exact lever has less than
 **.00000061348187** raw saving left, and even its optimistic maximum misses .0034.
-The #5387 endpoint is already within 3.08×10^-12 of its own fixed-profile raw upper
-bracket. All basis choices or schedules with this same invoice obey that budget.
+The latest #5390 claimed endpoint is within 5.6×10^-15 of this fixed-profile raw
+upper bracket. All basis choices or schedules with this same invoice obey that budget.
 
 This gives an immediate stopping rule for a .0034-oriented continuation of this
 exchange family: change the paid ranks, target debits or caller before building

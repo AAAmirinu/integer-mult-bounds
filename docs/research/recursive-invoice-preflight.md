@@ -67,9 +67,11 @@ do not imply circuit equivalence, an admitted supplier or a compiler endpoint.
   [#5383](https://github.com/CrocSwap/integer-mult-bounds/pull/5383): removing H1+H8
   and debiting H9 gives a strict gain, 1+8^t-9^t>0. Leaving the H9 target credited
   produces a much larger, unsupported budget.
-* [#5387](https://github.com/CrocSwap/integer-mult-bounds/pull/5387): a reserve
-  refinement improves the funded endpoint with the same recursive invoice.
-  `equal` is therefore not a reason to dismiss that contribution.
+* [#5387](https://github.com/CrocSwap/integer-mult-bounds/pull/5387) and
+  [#5390](https://github.com/CrocSwap/integer-mult-bounds/pull/5390): compiler
+  refinements retain the same recursive invoice. #5390 also reports a smaller
+  sufficient compiler at a matched exponent. `equal` is therefore not a reason
+  to dismiss a compiler or implementation contribution.
 
 Run the source-bound current examples:
 

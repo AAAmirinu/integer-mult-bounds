@@ -1,10 +1,12 @@
 # Fresh assessment behind this contribution
 
 On 2026-10-23, read the 100 newest PR titles/bodies/heads/states, ordered by
-creation, frozen at #5388: #5268 through #5388 with the intervening Discussion
-numbers omitted. Their creation times span 15:01:16–21:02:55 UTC; 64 were merged
-and 36 open. This is metadata/claim coverage, not 100 independent scientific
-reviews. Relevant proofs and implementations were then inspected by mechanism.
+creation. The final refresh ends at #5390: #5272 through #5390 with intervening
+Discussion numbers omitted, created 15:15:17–21:23:08 UTC; 63 were merged and 37
+open. The initial 100 ended at #5388 and also included #5268/#5270; the two new
+bodies were read on refresh, for 102 distinct PRs considered. This is metadata/
+claim coverage, not 100 independent scientific reviews. Relevant proofs and
+implementations were then inspected by mechanism.
 No dormant maintainer holds were rereviewed, no backlog audit packet was copied,
 and no queue dispositions or selected result were changed.
 
@@ -25,7 +27,7 @@ recorded in the PR description. Discussion claims remain provisional evidence.
 
 | Candidate | Evidence and decision |
 |---|---|
-| Signed complete-invoice check plus current exchange budget | **Implement.** #5350, #5377, #5383 and #5387 give contemporaneous opposite outcomes that counts alone confuse. A shared exact CLI decides every concave tariff when applicable; the new finite-family cap supplies a concrete current stop rule. |
+| Signed complete-invoice check plus current exchange budget | **Implement.** #5350, #5377, #5383 and #5387/#5390 give contemporaneous opposite outcomes that counts alone confuse. A shared exact CLI decides every concave tariff when applicable; the new finite-family cap supplies a concrete current stop rule. |
 | Physical-reference/controller mismatch | #5349 already finds it; #5385 repairs transcription, while #5380 already explains the fresh-stage/rank invoice failure. Repeating that headline would be stale. |
 | Universal finite tensor-width test | #5369 and #5376 already provide monomial and full-Clifford criteria. A second cutoff proposal would overlap; their proof/adaptor audits remain valuable. |
 | More chart optimization with fixed contact heights | #5324 already excludes a broad class; #5301 is a narrower predecessor. Changed ownership in #5383 escapes that premise. Do not extrapolate either barrier to it. |
@@ -44,6 +46,13 @@ neither portfolio weights nor the task catalogue.
 * #5377 one relation: `c448d13c71908647f968b06cddb795ce7d288139`.
 * #5383 eight relations: `4bd6efa51a495a7c7b7754915cf0244e7e60969e`.
 * #5387 reserve refinement: `b1ab650d36f59e5be682a813145b7c67e219e341`.
+* #5390 direct-tail compiler: `654ab79238e957eb20eced5197c3c38d5738183f`.
+
+The final refresh found #5390 on the unchanged 128-exchange invoice, including
+a smaller matched compiler and an endpoint extremely close to its raw crossing.
+This reinforces the distinction between useful compiler work and a changed
+recursive budget. #5389's historical-input exporter is complementary replay
+tooling; it does not overlap the signed-invoice comparator.
 
 Only sources declared in SOURCES.json/VERIFY.json are replay inputs. The other
 PRs are attribution, assessment and scope comparisons; this package does not
