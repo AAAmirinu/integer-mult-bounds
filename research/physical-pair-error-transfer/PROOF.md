@@ -62,4 +62,3 @@ Expected verifier marker: PASS_PHYSICAL_PAIR_ERROR_TRANSFER.
 Source-number note: some retained package prose calls the finite-grid kernel PR5037. The actual kernel contribution is PR5035, as its PR body and package paths confirm. Links here use that verified identity.
 
 Credit: JoyboyBrian supplied the physical pair and finite-grid kernel; Dillon supplied the actual normalizers and code factorization; Dugongue supplied the center-free producer; Cayden Burkart supplied the coded controller. Cinna Davis, Cao Yifan, zxv, Jacob Alan Sussman and retained native/precision/compiler contributors keep their source credit. New residual derivation and checker: Ali Romman with OpenAI Codex assistance, Apache-2.0. This is author-checked evidence, not independent human or proof-kernel review.
-
