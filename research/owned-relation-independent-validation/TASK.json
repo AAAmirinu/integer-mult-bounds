@@ -87,7 +87,7 @@
   "stop_rule": "One exact-head packet, narrow independent replays and recorded cold evidence; no construction search, selected-record change or historical suites.",
   "outcome": "completed",
   "evidence": "README.md; evidence/physical and evidence/cost complete reports; evidence/cold/VALIDATION.json and full logs/receipts; registered fresh independent engine replay",
-  "author": "Independent review prepared for roger-sato",
+  "author": "Chris R / Clear1nsight, with substantial OpenAI Codex assistance",
   "ai_assistance": "Substantial OpenAI Codex assistance; no independent human or formal-kernel acceptance claimed.",
   "open_questions": [
     {
