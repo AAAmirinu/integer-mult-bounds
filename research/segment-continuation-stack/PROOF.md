@@ -181,7 +181,7 @@ encoding: no numeric size or head needs to be decoded to move a physical head.
 The calibration executes the unchanged retained `compact.execute` at two
 nested levels, for both source field orders and complete reduced f=2,
 K=G=1 rectangles. All sixteen enclosing roles contain nonzero-length dirty
-data, with nonzero heads where possible. The Python `SourceRole/SourceArena`
+data, with a mix of zero and nonzero heads. The Python `SourceRole/SourceArena`
 facade carries logical sizes/handles and uses weak references for source
 lifetimes. It is not part of the finite-state controller theorem. Snapshot
 lists, absolute-address observers and expected operator outputs are test

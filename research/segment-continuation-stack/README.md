@@ -92,6 +92,14 @@ coverage is claimed. The existing fixed-bank recursive-row caller uses a
 one-bit dyadic continuation; the PR3385 parent-return audit covers dense
 parking. Both are credited precedents, not the same descriptor/head contract.
 
+The submission refresh retained the same canonical main and unchanged
+guidance/inputs. Its remote snapshot covered 310 open PRs at 19:20 UTC and
+4,641 Discussion records at 19:21 UTC. A supplementary Git-tree search across
+all top-level package READMEs checked continuation/physical-stack/unary-distance
+terms, including sparse omissions; the additional hits concern different BIT
+coefficient stacks or scoped logical lifetimes. This supplements the stated
+search coverage without claiming novelty or arbitrary-diff coverage.
+
 ## Reproduce
 
 From the repository root with CPython 3.12 and only the standard library:
@@ -108,6 +116,17 @@ package export retains the repository-relative declared inputs and supports
 the same direct command without Git. The stored receipt is evidence of one
 run, not an input to the proof decision. All new files remain in this package;
 no source archive, shared verifier or selected record is changed.
+
+Validation on CPython 3.12.0, 64-bit Windows 11: metadata/source pins and both
+registered modes passed. The committed-byte preflight passed after normalizing
+three working JSON files to their committed LF bytes. The official 18-file
+export and integrity check passed. Normal and optimized Git-free replays with
+an empty PATH reproduced RESULT.json and left all exported file bytes unchanged
+(6.30/6.22 seconds on this machine). A byte-corrupted exported predecessor was
+rejected by source authentication before predecessor execution; the frozen
+repository source was never edited. Full source-history preflight was not run
+in this shallow checkout. These local checks are not hosted CI or scientific
+acceptance.
 
 ## Open next questions
 
