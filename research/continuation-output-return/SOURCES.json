@@ -45,18 +45,20 @@
       "sha256": "718a582a50aee8f1f04945ed942be1d4162962fe47dbf05c6ff37b7fb8c61257"
     },
     {
-      "path": "research/delimited-continuation-stack/stack.py",
+      "path": "research/continuation-output-return/vendor/stack.py",
       "usage": "provenance",
-      "pin": "head:ef1cc26e1e9a08c11cf382de948ee433bebab16d:research/delimited-continuation-stack/stack.py",
+      "pin": "head:1362d9350b733af1c8a8822e0a013c1ff7de64dc:research/continuation-output-return/vendor/stack.py",
       "git_blob": "a5d6753b901901a5b2d1a4dd72134e53af70c666",
-      "sha256": "21a2213aa850c55e5eace4cd10b72b958d7ee84d83a014567902ce8ee9b3f4f2"
+      "sha256": "21a2213aa850c55e5eace4cd10b72b958d7ee84d83a014567902ce8ee9b3f4f2",
+      "upstream_pin": "head:ef1cc26e1e9a08c11cf382de948ee433bebab16d:research/delimited-continuation-stack/stack.py"
     },
     {
-      "path": "research/delimited-continuation-stack/adapter.py",
+      "path": "research/continuation-output-return/vendor/adapter.py",
       "usage": "provenance",
-      "pin": "head:ef1cc26e1e9a08c11cf382de948ee433bebab16d:research/delimited-continuation-stack/adapter.py",
+      "pin": "head:1362d9350b733af1c8a8822e0a013c1ff7de64dc:research/continuation-output-return/vendor/adapter.py",
       "git_blob": "d860b58c603fc600f95e3413f9230398e9b957b3",
-      "sha256": "e13823e4124caa4b25050ddd9ac960db59c81e2db369b9ec7b201aca7efbebb8"
+      "sha256": "e13823e4124caa4b25050ddd9ac960db59c81e2db369b9ec7b201aca7efbebb8",
+      "upstream_pin": "head:ef1cc26e1e9a08c11cf382de948ee433bebab16d:research/delimited-continuation-stack/adapter.py"
     }
   ]
 }

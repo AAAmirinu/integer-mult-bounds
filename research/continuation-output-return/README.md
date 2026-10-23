@@ -47,9 +47,11 @@ arbitrary historical diffs and unpublished work remain outside coverage.
 
 The byte-exact stack and adapter in vendor/ are consumed from Ali Romman's
 pending PR #5356, head ef1cc26e1e9a08c11cf382de948ee433bebab16d. They are pinned
-explicitly in [SOURCES.json](SOURCES.json); they are not claimed as main-branch
-or independently accepted results. The complete linear theorem is conditional
-on that retained stack contract. JoyboyBrian supplied the segment refinement
+in [SOURCES.json](SOURCES.json). Replay pins resolve to the byte-exact copies
+in this PR history. Each upstream_pin retains the original pending source.
+Thus a clean checkout does not need an unmerged predecessor commit. They are
+not claimed as main-branch or independently accepted results. The complete
+linear theorem is conditional on that retained stack contract. JoyboyBrian supplied the segment refinement
 and locality invoice. Jose Manuel/jmbarrancoml supplied the retained sequential
 compact source. Douglas Colkitt supplied guard/repair, Cinna Davis the caller,
 and Matarener the cover/stock lineage. Original notices remain unchanged.
