@@ -34,7 +34,7 @@ JSON serialization with a final newline, has SHA256
 The verifier reconstructs and checks that exact word before transposition.
 It does not consume a later PR head or an unpublished helper relation.
 The exact source files are retained in commit
-`7dd93dc61ed01b06199ea21e66036e960ba9c7aa` in this branch. The live pins use
+`5eb314069417db1f4305430b6b14f20e9251e509` in this branch. The live pins use
 that ancestor; each `source_pin` retains the original PR source and hash.
 A clean checkout does not need either pending PR commit in its object store.
 

@@ -61,7 +61,7 @@
       "usage": "input",
       "git_blob": "8872f540e108010cdf6d143fa9d89729693a3ed6",
       "sha256": "9e30aa82ce17e41d04db81f140475b6f782f274e017c2a32996bd71e4aa9c751",
-      "pin": "head:7dd93dc61ed01b06199ea21e66036e960ba9c7aa:research/native-transpose-owned/source/cutoff/native.py",
+      "pin": "head:5eb314069417db1f4305430b6b14f20e9251e509:research/native-transpose-owned/source/cutoff/native.py",
       "source_pin": "head:18354f41de4dc7bfda4692e814cf1d91a6d619ef:research/native-tensor-cutoff/native.py"
     },
     {
@@ -69,7 +69,7 @@
       "usage": "input",
       "git_blob": "85376a935d1e9b19202d773c78d09c9025e8a899",
       "sha256": "3ca738030aedad5c173579f99254b88aa5edccd02e575945511679ef7b44d452",
-      "pin": "head:7dd93dc61ed01b06199ea21e66036e960ba9c7aa:research/native-transpose-owned/source/cutoff/native_identity.py",
+      "pin": "head:5eb314069417db1f4305430b6b14f20e9251e509:research/native-transpose-owned/source/cutoff/native_identity.py",
       "source_pin": "head:18354f41de4dc7bfda4692e814cf1d91a6d619ef:research/native-tensor-cutoff/native_identity.py"
     },
     {
@@ -77,7 +77,7 @@
       "usage": "input",
       "git_blob": "4f8514d1a2ab211b46e820e030e2feda36a4882c",
       "sha256": "6d918d23200b7603b620fbe0a3efefd5d05a20d0b99ad8bb9a43b8fcb9e39130",
-      "pin": "head:7dd93dc61ed01b06199ea21e66036e960ba9c7aa:research/native-transpose-owned/source/cutoff/exact.py",
+      "pin": "head:5eb314069417db1f4305430b6b14f20e9251e509:research/native-transpose-owned/source/cutoff/exact.py",
       "source_pin": "head:18354f41de4dc7bfda4692e814cf1d91a6d619ef:research/native-tensor-cutoff/exact.py"
     },
     {
@@ -85,23 +85,23 @@
       "usage": "input",
       "git_blob": "929ccceeff54218a6b834a838ffb05c18aff4aad",
       "sha256": "a6d73b8cefb3c26e39661e6d6eedabfe2c15df123695ba19386daa11d93142aa",
-      "pin": "head:7dd93dc61ed01b06199ea21e66036e960ba9c7aa:research/native-transpose-owned/source/cutoff/check_certificate.py",
+      "pin": "head:5eb314069417db1f4305430b6b14f20e9251e509:research/native-transpose-owned/source/cutoff/check_certificate.py",
       "source_pin": "head:18354f41de4dc7bfda4692e814cf1d91a6d619ef:research/native-tensor-cutoff/check_certificate.py"
     },
     {
       "path": "research/native-transpose-owned/source/owned/native.py",
       "usage": "input",
-      "git_blob": "c3d6a42e5358cd8c91dc8c975c61615ef9df592c",
-      "sha256": "35d3eaab351a1e6bdc62ab62d6a9669e1224abaaa7a0f9c694509b5c8d020382",
-      "pin": "head:7dd93dc61ed01b06199ea21e66036e960ba9c7aa:research/native-transpose-owned/source/owned/native.py",
+      "git_blob": "cbff46fe6e7d71c10fe439610f1916ad07fa3cd8",
+      "sha256": "3c8efab1f830868c054d33391ee2f8bc74f9bae9c134edf5b455790eb674c1c4",
+      "pin": "head:5eb314069417db1f4305430b6b14f20e9251e509:research/native-transpose-owned/source/owned/native.py",
       "source_pin": "head:4bd6efa51a495a7c7b7754915cf0244e7e60969e:research/kappa-joint-relations-20261023/native.py"
     },
     {
       "path": "research/native-transpose-owned/source/owned/WITNESS.json",
       "usage": "input",
-      "git_blob": "c2fd2e99d9efa5fb984269aac2120be48fb4febd",
-      "sha256": "9dba23f294e3c78de56f922c5726942aa740b6f41566488c2d6a158a01d90a07",
-      "pin": "head:7dd93dc61ed01b06199ea21e66036e960ba9c7aa:research/native-transpose-owned/source/owned/WITNESS.json",
+      "git_blob": "19665f9eac2238d709758e0296eb6016e71b2b1a",
+      "sha256": "24599011da06325e1012619b2b84a4dd3aceb90ab42d3caaf6414879e7d16591",
+      "pin": "head:5eb314069417db1f4305430b6b14f20e9251e509:research/native-transpose-owned/source/owned/WITNESS.json",
       "source_pin": "head:4bd6efa51a495a7c7b7754915cf0244e7e60969e:research/kappa-joint-relations-20261023/WITNESS.json"
     },
     {
@@ -125,9 +125,9 @@
     {
       "path": "research/native-transpose-owned/source/owned/RESULT.json",
       "usage": "input",
-      "git_blob": "e3c7e2dcfe8f98f7972dbd0e0d2d86bd203e9895",
-      "sha256": "34df5132f0c66ecae8b2deb793d5012841966f99864ef855234eb81b0271d620",
-      "pin": "head:7dd93dc61ed01b06199ea21e66036e960ba9c7aa:research/native-transpose-owned/source/owned/RESULT.json",
+      "git_blob": "b6c9cd0da1889ed92f3f1066127a203246f303d8",
+      "sha256": "d6a99bd75c6b7a2146b0fc4cfa038890aaf1d4adcdef42d767fdb40b687e61aa",
+      "pin": "head:5eb314069417db1f4305430b6b14f20e9251e509:research/native-transpose-owned/source/owned/RESULT.json",
       "source_pin": "head:4bd6efa51a495a7c7b7754915cf0244e7e60969e:research/kappa-joint-relations-20261023/RESULT.json"
     }
   ]
