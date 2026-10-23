@@ -61121,7 +61121,7 @@
       },
       "reviewed_head": "20bb93cd990d2ff683e4d0fc56b87a42cd5d3296",
       "current_head": "20bb93cd990d2ff683e4d0fc56b87a42cd5d3296",
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "github_state": "MERGED",
       "integration_location": [
         "research/kappa-interface-round2-20261022",
@@ -61142,18 +61142,23 @@
         "research/kappa-search-20261022",
         "research/query-projector-interface-20261022",
         "research/scalar-reorder-20261022",
-        "research/warp-interface-20261022"
+        "research/warp-interface-20261022",
+        "certificates/selected-result.json",
+        "docs/research/pr-intake-evidence/pr4610/PROOF-REVIEW.md"
       ],
-      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
-      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "unresolved_question": "No blocking obligation in the admitted change. The five inherited framework assumptions remain conditional; no full Lean/human verification or materialized uniform word is claimed. Other exploratory variants and global-optimality claims are outside this admission.",
+      "scope": "Selected conditional PR4610 round3 native word and round6 compiler point, through the complete PR5241 admission audit. All eleven stages independently replayed; operator/phase, all dirty helpers, chronological identity, complete invoice, tensor/physical specialization, compiler and outer inequalities reviewed. Source-identical foundation reused explicitly. Other exploratory claims in PR4610 remain archival, not independently admitted.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": true
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct22a-20261022.json"
+        "docs/research/pr-intake-evidence/queue-oct22a-20261022.json",
+        "docs/research/pr-intake-evidence/pr4610/PROOF-REVIEW.md",
+        "docs/research/pr-intake-evidence/pr4610/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr4610/INTEGRATION.json"
       ],
       "closure": {
         "kind": "merged_for_archive_only",
@@ -83550,21 +83555,26 @@
       },
       "reviewed_head": "13efb5fc5f3b7c14ec2cfa181dd9eb6480972cf2",
       "current_head": "13efb5fc5f3b7c14ec2cfa181dd9eb6480972cf2",
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "github_state": "MERGED",
       "integration_location": [
-        "research/final4610-independent-admission"
+        "research/final4610-independent-admission",
+        "certificates/selected-result.json",
+        "docs/research/pr-intake-evidence/pr4610/PROOF-REVIEW.md"
       ],
-      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa. Priority follow-up: assess this independent admission audit of Cao Yifan/intqwq PR4610 at kappa 0.0030217758; source intake alone does not select that result.",
-      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "unresolved_question": "No blocking obligation in the admitted change. The five inherited framework assumptions remain conditional; no full Lean/human verification or materialized uniform word is claimed. Other exploratory variants and global-optimality claims are outside this admission.",
+      "scope": "Selected conditional PR4610 round3 native word and round6 compiler point, through the complete PR5241 admission audit. All eleven stages independently replayed; operator/phase, all dirty helpers, chronological identity, complete invoice, tensor/physical specialization, compiler and outer inequalities reviewed. Source-identical foundation reused explicitly. Other exploratory claims in PR4610 remain archival, not independently admitted.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": true
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct23o-20261023.json"
+        "docs/research/pr-intake-evidence/queue-oct23o-20261023.json",
+        "docs/research/pr-intake-evidence/pr4610/PROOF-REVIEW.md",
+        "docs/research/pr-intake-evidence/pr4610/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr4610/INTEGRATION.json"
       ],
       "closure": {
         "kind": "merged_for_archive_only",

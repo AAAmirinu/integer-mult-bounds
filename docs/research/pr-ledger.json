@@ -55,8 +55,8 @@
     "docs/research/pr-intake-decisions.json"
   ],
   "counts": {
-    "incorporated": 2115,
-    "partially_reviewed": 2499,
+    "incorporated": 2117,
+    "partially_reviewed": 2497,
     "superseded": 2,
     "unreviewed": 60
   },
@@ -123,7 +123,7 @@
     "research/community-efficient2400-audit/DISPOSITIONS.json": "2602f88f4a333ade0b654645a3126fcde85f16c41f25f36a397f8c760f8acf4c",
     "research/community-efficient2500-audit/DISPOSITIONS.json": "23d12152b20bd788c5fb1e1935543185dc3772634cf26efbfad88f6d78ed6e15",
     "research/community-efficient2600-audit/DISPOSITIONS.json": "d7816f0e79c421d750d691cb1edfc4646accae0a47dc817fb32409745795765c",
-    "docs/research/pr-intake-decisions.json": "ffebbaaf1a4f53f7473eceddf460da1a580b2a7bdb74425c03a4562520bfbc33",
+    "docs/research/pr-intake-decisions.json": "8485d542dfee101a5749648a68f9801896cef2d7501d745ea665607e0388353f",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353",
     "research/pr116-evidence-reconciliation/PARENT-EVIDENCE.json": "62a666dac3e67ba8d388820c92e0cd4495657a20b6eae280a5367af8e89d769c",
@@ -223376,7 +223376,7 @@
         {
           "head": "20bb93cd990d2ff683e4d0fc56b87a42cd5d3296",
           "evidence": "docs/research/pr-intake-decisions.json",
-          "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+          "scope": "Selected conditional PR4610 round3 native word and round6 compiler point, through the complete PR5241 admission audit. All eleven stages independently replayed; operator/phase, all dirty helpers, chronological identity, complete invoice, tensor/physical specialization, compiler and outer inequalities reviewed. Source-identical foundation reused explicitly. Other exploratory claims in PR4610 remain archival, not independently admitted.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -223387,7 +223387,7 @@
       },
       "reviewed_head": "20bb93cd990d2ff683e4d0fc56b87a42cd5d3296",
       "current_head": "20bb93cd990d2ff683e4d0fc56b87a42cd5d3296",
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "github_state": "MERGED",
       "integration_location": [
         "research/kappa-interface-round2-20261022",
@@ -223408,17 +223408,22 @@
         "research/kappa-search-20261022",
         "research/query-projector-interface-20261022",
         "research/scalar-reorder-20261022",
-        "research/warp-interface-20261022"
+        "research/warp-interface-20261022",
+        "certificates/selected-result.json",
+        "docs/research/pr-intake-evidence/pr4610/PROOF-REVIEW.md"
       ],
-      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "unresolved_question": "No blocking obligation in the admitted change. The five inherited framework assumptions remain conditional; no full Lean/human verification or materialized uniform word is claimed. Other exploratory variants and global-optimality claims are outside this admission.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": true
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct22a-20261022.json"
+        "docs/research/pr-intake-evidence/queue-oct22a-20261022.json",
+        "docs/research/pr-intake-evidence/pr4610/PROOF-REVIEW.md",
+        "docs/research/pr-intake-evidence/pr4610/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr4610/INTEGRATION.json"
       ],
       "current_head_observed_in": "docs/research/pr-intake-decisions.json",
       "reconciliation_evidence": [
@@ -252097,7 +252102,7 @@
         {
           "head": "13efb5fc5f3b7c14ec2cfa181dd9eb6480972cf2",
           "evidence": "docs/research/pr-intake-decisions.json",
-          "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+          "scope": "Selected conditional PR4610 round3 native word and round6 compiler point, through the complete PR5241 admission audit. All eleven stages independently replayed; operator/phase, all dirty helpers, chronological identity, complete invoice, tensor/physical specialization, compiler and outer inequalities reviewed. Source-identical foundation reused explicitly. Other exploratory claims in PR4610 remain archival, not independently admitted.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -252108,20 +252113,25 @@
       },
       "reviewed_head": "13efb5fc5f3b7c14ec2cfa181dd9eb6480972cf2",
       "current_head": "13efb5fc5f3b7c14ec2cfa181dd9eb6480972cf2",
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "github_state": "MERGED",
       "integration_location": [
-        "research/final4610-independent-admission"
+        "research/final4610-independent-admission",
+        "certificates/selected-result.json",
+        "docs/research/pr-intake-evidence/pr4610/PROOF-REVIEW.md"
       ],
-      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa. Priority follow-up: assess this independent admission audit of Cao Yifan/intqwq PR4610 at kappa 0.0030217758; source intake alone does not select that result.",
+      "unresolved_question": "No blocking obligation in the admitted change. The five inherited framework assumptions remain conditional; no full Lean/human verification or materialized uniform word is claimed. Other exploratory variants and global-optimality claims are outside this admission.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": true
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct23o-20261023.json"
+        "docs/research/pr-intake-evidence/queue-oct23o-20261023.json",
+        "docs/research/pr-intake-evidence/pr4610/PROOF-REVIEW.md",
+        "docs/research/pr-intake-evidence/pr4610/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr4610/INTEGRATION.json"
       ],
       "current_head_observed_in": "docs/research/pr-intake-decisions.json",
       "reconciliation_evidence": [
