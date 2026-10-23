@@ -1,0 +1,3 @@
+# Preserve exact retained source exports, including original line endings.
+source/** -text
+WITNESS.json -text
