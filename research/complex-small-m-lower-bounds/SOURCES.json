@@ -25,7 +25,7 @@
  "inputs_note": "No live inputs from this repository. The two research provenance rows are the predecessor texts quoted in README.md section 2 (#288 by eumemic, retained on main; #2108 by jmbarrancoml). verify.py reads only files inside this package.",
  "external_sources": [
   {
-   "what": "every file under data/ and author-evidence/: copied unchanged from my public repository; verify.py checks each file's sha256 (part pins). The commit is not a Git object of this repository, so it cannot be pinned with a source pin; the byte equality is recorded here.",
+   "what": "the files under data/ and author-evidence/ listed here: copied unchanged from my public repository (the files added on 23 October 2026 are listed in the next two entries); verify.py checks each file's sha256 (part pins). The commit is not a Git object of this repository, so it cannot be pinned with a source pin; the byte equality is recorded here.",
    "repository": "https://github.com/jacobalansussman/wht-power-saving-lean",
    "commit": "86e575e28ed94890872dcff1bb2621d7ff559cbd",
    "copies": [
@@ -117,6 +117,67 @@
     "research/reed-muller-and-one-move/proofs/address-maps-per-array-targets-and-block3.md",
     "research/existence-routes/proofs/families-commutative-slice.md",
     "research/open-problems.md"
+   ]
+  },
+  {
+   "what": "the certificates for the block-4 inputs of section 7 (a_2 >= 48,576 and a_3 >= 68,320, one nonsingular minor per character, 16 characters each), their checker and its outputs, added on 23 October 2026 after #4643: copied unchanged; verify.py checks each file's sha256 (part pins) and their format (part depth)",
+   "repository": "https://github.com/jacobalansussman/wht-power-saving-lean",
+   "commit": "ce3c2615cff7fc524c1fde3ddb99d151ba4ceee4",
+   "copies": [
+    {
+     "package_path": "data/cert_m4_g2_M0.txt",
+     "source_path": "research/block-bounds-and-new-rules/data/hook-certificates/cert_m4_g2_M0.txt",
+     "source_git_blob": "c205e36cd1112391cfe026c2c6d454bc8b02ad06",
+     "sha256": "1961d7482576245953e4b0368603ecf6295b02a8543334816e5c0139d64601c3"
+    },
+    {
+     "package_path": "data/cert_m4_g3_M0.txt",
+     "source_path": "research/block-bounds-and-new-rules/data/hook-certificates/cert_m4_g3_M0.txt",
+     "source_git_blob": "85151a1fb2fa087141b287296f32101090e7ce75",
+     "sha256": "b04afdc7cb060c96605aeff19ee8a1ceb0968785208f6e66a938ebec7c3125ca"
+    },
+    {
+     "package_path": "author-evidence/check_mj.c",
+     "source_path": "research/block-bounds-and-new-rules/programs/hook-certificates-blocks-2-to-6/check_mj.c",
+     "source_git_blob": "31f01fa28312aa2f0c1fa350c03f6c37b9b6fdf5",
+     "sha256": "ca59130c3153da31eac93282126c797afd555d9a0934f60ecb38e304f46e82e0"
+    },
+    {
+     "package_path": "author-evidence/out_check_m4_g2.txt",
+     "source_path": "research/block-bounds-and-new-rules/data/hook-certificates/outputs/out_check_m4_g2.txt",
+     "source_git_blob": "faecc5517d04475dcfe394e2b98b64289b6513c8",
+     "sha256": "7c4291efee95581d491be507e3f024d8ad36095d58440efd37c2ce9a1e5ea3c1"
+    },
+    {
+     "package_path": "author-evidence/out_check_m4_g3.txt",
+     "source_path": "research/block-bounds-and-new-rules/data/hook-certificates/outputs/out_check_m4_g3.txt",
+     "source_git_blob": "fa9efe468f0eb034cea724ff49306eda96aefa9b",
+     "sha256": "f82df0cd636ac90734699b2d4cf269354b59e4332687732a027f6bffe254f97a"
+    }
+   ]
+  },
+  {
+   "what": "the written proof of section 7 (my induction note, kept as written; its relative links refer to that repository), published on 23 October 2026: copied unchanged; verify.py checks its sha256",
+   "repository": "https://github.com/jacobalansussman/wht-power-saving-lean",
+   "commit": "f08d308ff93f4867165a1e80765fe985c06b4edf",
+   "copies": [
+    {
+     "package_path": "author-evidence/induction-across-block-sizes.md",
+     "source_path": "research/block-bounds-and-new-rules/proofs/induction-across-block-sizes.md",
+     "source_git_blob": "9343bbd87a8e2d2b5b2b8fbca34da04033d95ce7",
+     "sha256": "0c2f6f5a07f1deccfa2b838c6d29bc6d86567069569890c37c820b03f7d888ef"
+    }
+   ]
+  },
+  {
+   "what": "the two AI reviewers' reports on that proof, their programs (fcheck.py is the split that part depth uses) and Fact A's matrices (not copied)",
+   "repository": "https://github.com/jacobalansussman/wht-power-saving-lean",
+   "commit": "f08d308ff93f4867165a1e80765fe985c06b4edf",
+   "paths": [
+    "research/block-bounds-and-new-rules/proofs/induction-across-block-sizes-skeptics.md",
+    "research/block-bounds-and-new-rules/programs/engine-bounds-blocks-5-and-6/skeptic-checks/",
+    "research/block-bounds-and-new-rules/programs/engine-bounds-blocks-5-and-6/fact-a/",
+    "research/block-bounds-and-new-rules/data/engine-bounds-blocks-5-and-6/"
    ]
   },
   {

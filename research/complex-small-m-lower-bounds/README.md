@@ -17,7 +17,7 @@ collects them in one place, with their status, so that others can use them or st
 | Block 2 never saves: s ≥ 2W | engine game; every game with bounded free steps | proved in Lean; argued by hand in the bounded games (one AI reviewer) |
 | Block 3: s ≥ 14W/5, so a block-3 unit saves at most 6.28e-2 and every unit with 4 or fewer arrays is excluded | engine game; widened game | proved in Lean; argued by hand in the widened game (three AI reviewers) |
 | Block 4: s ≥ 41W/13, so a block-4 unit saves at most 1.71e-1 | engine and widened games | checked by computer; in the widened game it also rests on the keptness argument, argued by hand |
-| From block 4 on: at least 2.9447 calls per array (2.99172 at block 5, 2.97290 at block 6) | engine game | argued by hand (two AI reviewers reproduced every number) |
+| From block 4 on: at least 2.9447 calls per array (2.99172 at block 5, 2.97290 at block 6) | engine game | argued by hand (two AI reviewers reproduced every number); its block-4 inputs are checked by computer here |
 | Block 3 without phase letters: s ≥ 3W, whatever the address maps | no-phase game | argued by hand (one AI reviewer); its certificate is checked by computer here |
 | One array needs m calls | every game with bounded free steps | argued by hand (AI reviewers in two rounds) |
 | Two or more arrays need at least max(W + m, 2W) calls | every game with bounded free steps | argued by hand (one AI reviewer for each half) |
@@ -260,17 +260,26 @@ Standard library only; both parts together take a few seconds and under 50 MB. `
 and block-3 caps (exact vectors over the Gaussian integers, and attained), the block-2 demand, the block-3 demand
 (a certified minor and the rank of the whole block), the two-call cap 144, the character block of rank at least 28 (two file
 formats, two routines), the eight Lean data blocks, the face certificate of the no-phase bound, the block-4
-arithmetic and the format of its certificate, the width-1 program, and every figure in sections 1 and 6.
+arithmetic and the format of its certificate, the inputs 48,576 and 68,320 of the bound from block 4 on (re-derived
+from small ranks, PROOF.md section 7) with the exact block-5 and block-6 bounds and the format of their two
+certificates, the width-1 program, and every figure in sections 1 and 6.
 `--part controls` feeds it corrupted certificates and false claims (a repeated row, a composite modulus, a row
 inside the hook, a 225 × 225 minor, a changed vector, a repeated vector, a cap of 79, the three corrupted certificates of my
 repository, one Lean inverse entry plus 1, a face cap of 7, a CNOT that should keep the face span, the width-1
-program at width 2, and three shapes on either side of a bound); each must be rejected.
+program at width 2, three shapes on either side of a bound, a two-move certificate with a repeated pair or with the
+wrong moves in its header, and two moves in the same direction claimed to count as two); each must be rejected.
 
 Not registered (author evidence, outside the hub's limits):
 - the block-4 demand: `cc -O2 -o check_m0 author-evidence/check_m0.c && ./check_m0 data/cert_m4_M0.txt` checks
   the 5,412 × 5,412 minor modulo 2,147,483,629 (determinant 1797789153; about an hour and 250 MB);
+- the inputs 48,576 and 68,320 on all 16 characters: `cc -O2 -o check_mj author-evidence/check_mj.c`, then
+  `./check_mj data/cert_m4_g2_M0.txt A` and `./check_mj data/cert_m4_g3_M0.txt A` for every character A = 0 to 15
+  (32 runs, 42 minutes with six at a time on an Apple M4, at most 146 MB each; outputs in
+  `author-evidence/out_check_m4_g2.txt` and `out_check_m4_g3.txt`, every one PASS);
 - the Lean build (section 5; about 10 GB of memory);
-- the bounds argued by hand and their programs, in my repository.
+- the written proof of the bound from block 4 on (`author-evidence/induction-across-block-sizes.md`; its AI
+  reviewers' reports and programs are beside it in my repository), and the other bounds argued by hand, in my
+  repository.
 
 ## 9. Limits of this work
 
@@ -318,7 +327,8 @@ No independent human review of this package or of the work behind it is claimed.
 Credit: eumemic (#288) for the certificate method and the m = 2 and m = 3 results it builds on; Swapnil Jain (P1,
 P2); jmbarrancoml (#2108); the bit-side authors above (aliromman, davidgovea, waynenilsen, navinor, huxint,
 thakrarsagar); OpenAI for the Lean engine and cost model this game extends; Ryan Shea for the Lean tree the files were
-built in; David Harvey for the questions of section 7.
+built in; David Harvey for the questions of section 7; Maximilian Lutz (#4643) for an independent check of the bound
+from block 4 on, which found that two of its inputs had no stored certificate and proved its tail for every k.
 
 ## Files
 
@@ -327,7 +337,13 @@ built in; David Harvey for the questions of section 7.
 - `data/`: certificates copied unchanged from my repository: `cert_m3_dem.json`, `cert_m3_B2.json`,
   `cert_m3_M0.json`, `cert_m3_M0_c.txt`, `cert_m2_M0.txt`, `cert_m4_M0.txt`, the three corrupted ones `neg_m3_*.txt`,
   and `Dem3Data.lean` (the certificate data of the Lean proof).
+- `data/cert_m4_g2_M0.txt`, `data/cert_m4_g3_M0.txt`: the minor certificates for the inputs 48,576 and 68,320 of
+  the bound from block 4 on (copied unchanged from my repository, added on 23 October 2026).
 - `author-evidence/check_m0.c`: the C checker of the block-4 demand certificate (not registered).
+- `author-evidence/check_mj.c`, `out_check_m4_g2.txt`, `out_check_m4_g3.txt`: the C checker of those two
+  certificates and its output on all 16 characters (not registered).
+- `author-evidence/induction-across-block-sizes.md`: the written proof of PROOF.md section 7, an unchanged copy (its
+  relative links refer to my repository).
 
 ## Sources
 
@@ -358,6 +374,13 @@ built in; David Harvey for the questions of section 7.
   - Commutative slice at block 4: `existence-routes/proofs/families-commutative-slice.md` (Theorem 17) and
     `results.json` finding 35.
   - Open cases: `open-problems.md`; `moonshot-block4-block5/results.json` findings 1 and 7 (the 640).
+- Added on 23 October 2026, after #4643, in the same repository and folder: commit
+  `ce3c2615cff7fc524c1fde3ddb99d151ba4ceee4` (the certificates for 48,576 and 68,320:
+  `block-bounds-and-new-rules/programs/hook-certificates-blocks-2-to-6/` `gen_mj.c`, `check_mj.c`, `run_depth.sh`,
+  and `data/hook-certificates/cert_m4_g2_M0.txt`, `cert_m4_g3_M0.txt`, `outputs/`) and commit
+  `f08d308ff93f4867165a1e80765fe985c06b4edf` (`block-bounds-and-new-rules/proofs/induction-across-block-sizes.md`
+  and its AI reviewers' reports beside it; `programs/engine-bounds-blocks-5-and-6/skeptic-checks/fcheck.py`, the
+  split that part `depth` uses).
 - An update to my earlier hub pull request #4268: its A-fc figure (1.7887046e-3, computed when that pull request was
   opened) has since been proved in Lean at 1.7887045e-3 and verified on the bigospeedrun board
   (https://github.com/bigospeedrun/verifier/pull/29; final verification result `lean_and_axiom_passed`, 21 October 2026).

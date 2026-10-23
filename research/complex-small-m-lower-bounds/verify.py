@@ -16,7 +16,8 @@ in Lean). The kept-subspace bound then gives W * demand <= cap * s.
 
 Parts of --part main:
   pins      sha256 of every data file (equal, byte for byte, to files of
-            jacobalansussman/wht-power-saving-lean at commit 86e575e; SOURCES.json)
+            jacobalansussman/wht-power-saving-lean at commits 86e575e, ce3c261 and f08d308;
+            SOURCES.json)
   block2    m = 2, f = 3: cap <= 4 in all 3 directions (exact Z[i] vectors), attained
             (rank mod p), demand >= 8 (rank mod p of the whole block): s >= 2W
   block3    m = 3, f = 5: cap <= 80 in all 7 directions (exact Z[i] vectors) and attained
@@ -31,6 +32,13 @@ Parts of --part main:
   block4    cap formula (16/2) C(14,7) = 27,456; 16 x 5,412 = 86,592; ratio 41/13; the
             format of the 5,412 x 5,412 demand certificate (its determinant is author
             evidence: author-evidence/check_m0.c, about an hour)
+  depth     the inputs of section 7: two and three moves in independent directions raise the
+            block-4 hook by a_2 >= 48,576 and a_3 >= 68,320 (the hook split over the untouched
+            address bits into ranks of at most 280 x 280, mod p; one move gives the cap 27,456
+            and block 3 gives 80 and 144 the same way); the exact block-5 and block-6 bounds
+            834241/278850 and 1188222/399685 from that profile; the format of the two minor
+            certificates for a_2 and a_3 (their determinants on all 16 characters are author
+            evidence: author-evidence/check_mj.c, 42 minutes)
   width     with one zero scratch array, C^(x)3 costs zero calls at width f = 1, and the
             same program is wrong at f = 2; every entry of C^(x)3 is nonzero
   table     every saving, exclusion and open shape printed in README.md and PROOF.md
@@ -63,6 +71,12 @@ PINS = {
     "data/neg_m3_comp.txt": "4ebc926017f670b43345af6d984039b4b93327ddb387e6d95d8f861133f65a8c",
     "data/neg_m3_dup.txt": "f6fe0a5d3025396dcfe168214a33e4730e20c46187b5b68a5aeaf86cabbfa928",
     "author-evidence/check_m0.c": "8242342188fe73eb8ab0db9e48727d086ec78c38032bdfb76b38a3af40ceef6e",
+    "data/cert_m4_g2_M0.txt": "1961d7482576245953e4b0368603ecf6295b02a8543334816e5c0139d64601c3",
+    "data/cert_m4_g3_M0.txt": "b04afdc7cb060c96605aeff19ee8a1ceb0968785208f6e66a938ebec7c3125ca",
+    "author-evidence/check_mj.c": "ca59130c3153da31eac93282126c797afd555d9a0934f60ecb38e304f46e82e0",
+    "author-evidence/out_check_m4_g2.txt": "7c4291efee95581d491be507e3f024d8ad36095d58440efd37c2ce9a1e5ea3c1",
+    "author-evidence/out_check_m4_g3.txt": "f82df0cd636ac90734699b2d4cf269354b59e4332687732a027f6bffe254f97a",
+    "author-evidence/induction-across-block-sizes.md": "0c2f6f5a07f1deccfa2b838c6d29bc6d86567069569890c37c820b03f7d888ef",
 }
 
 RESULTS = []
@@ -670,6 +684,119 @@ def m4_format(text):
                   "its determinant 1797789153 mod p is author evidence (check_m0.c), not re-run here")
 
 
+# ------------------------------------------------------------------ depth (block 4)
+# The inputs a_2 = f(dir e1 dir e2) and a_3 = f(dir e1 dir e2 dir e3) of PROOF.md section 7. A product g of
+# moves on the low j bits acts as G (x) I on V = C^(2^j) (x) C^(2^(4-j)): V = (+)_c W_c over the 2^(4-j) values c
+# of the untouched bits, W_c = C^d (d = 2^j), and g = G on every W_c. So Lambda^k V = (+) over (k_c) of
+# (x)_c Lambda^(k_c) W_c, and the hook splits the same way: N = (+) over (c0, (k_c)) of
+# N1(W_c0, k_c0) (x) (x)_(c != c0) Lambda^(k_c) W_c, with N1(W, s) = span{e_x (x) e_S : x in S} in W (x) Lambda^s W.
+# g keeps every summand and is invertible on the full factors, so
+#   f(g) = sum over (k_c) with sum k_c = k, and over c0, of phi_d(k_c0) * prod_(c != c0) C(d, k_c),
+# phi_d(s) = rank of G (x) Lambda^s G from N1(W, s) to its complement (at most 280 x 280 here). G is
+# ((1+i)/2)^j times Q_j[u][v] = (-i)^popcount(u xor v), entries in Z[i]; a rank mod p (p = 1 mod 4, i -> sqrt(-1))
+# is at most the rank over Q(i), so every value below is a lower bound. (The split is the route of an AI
+# reviewer of my repository, skeptic-checks/fcheck.py there.)
+
+DEPTH_CERTS = {2: ("cert_m4_g2_M0.txt", 3, 3036, 48576), 3: ("cert_m4_g3_M0.txt", 7, 4270, 68320)}
+
+
+def local_rank(G, s, p):
+    d = len(G)
+    subs = list(itertools.combinations(range(d), s))
+    minor = {(S, T): (det_modp([[G[x][y] for y in T] for x in S], p) if s else 1) for S in subs for T in subs}
+    rows = [(y, S) for S in subs for y in range(d) if y not in S]
+    cols = [(x, T) for T in subs for x in T]
+    if not rows or not cols:
+        return 0
+    return rank_modp([[G[y][x] * minor[(S, T)] % p for (x, T) in cols] for (y, S) in rows], p)
+
+
+def q_moves(j, p, I):
+    mi = [1, p - I, p - 1, I]                       # (-i)^0..3 mod p
+    d = 1 << j
+    return [[mi[popc(u ^ v) & 3] for v in range(d)] for u in range(d)]
+
+
+def split_demand(m, k, j, phi):
+    d, nb = 1 << j, 1 << (m - j)
+    tot = 0
+    for comp in itertools.product(range(d + 1), repeat=nb):
+        if sum(comp) != k:
+            continue
+        for c0 in range(nb):
+            prod = 1
+            for c in range(nb):
+                if c != c0:
+                    prod *= math.comb(d, comp[c])
+            tot += phi[comp[c0]] * prod
+    return tot
+
+
+def demand_of_moves(m, k, j, p, G=None):
+    I = sqrt_minus_one(p)
+    G = q_moves(j, p, I) if G is None else G
+    phi = {s: local_rank(G, s, p) for s in range((1 << j) + 1)}
+    return split_demand(m, k, j, phi)
+
+
+def n_counts(k, r):
+    """Projection counts of PROOF.md section 7 (the closed form of the induction note, its Lemma 2), block k."""
+    return {r: (2 ** (k - r) - 1) + (4 ** k - 2 ** (k + r)),
+            r - 1: 2 * (2 ** k - 2 ** (k - r)) + (2 ** r - 1) * 2 ** (r - 1) * 2 ** (k - r),
+            r - 2: (2 ** r - 1) * (2 ** (r - 1) - 1) * 2 ** (k - r)}
+
+
+def projected_bounds(profile, upto):
+    prof, out = dict(profile), {}
+    for k in range(5, upto + 1):
+        prof = {r: sum(c * prof.get(s, 0) for s, c in n_counts(k, r).items() if s >= 0) for r in range(1, k + 1)}
+        out[k] = Fraction(prof[k], prof[1])
+    return out
+
+
+def depth_format(text, lab, size):
+    tok = text.split()
+    try:
+        hdr = dict(zip(tok[0:14:2], tok[1:14:2]))
+        m, k, lb, alpha = int(hdr["m"]), int(hdr["k"]), int(hdr["lab"]), int(hdr["alpha"])
+        p, I, sz = int(hdr["p"]), int(hdr["I"]), int(hdr["size"])
+        pairs = [(int(tok[14 + 2 * i]), int(tok[15 + 2 * i])) for i in range(sz)]
+    except (KeyError, ValueError, IndexError):
+        return False, "header or body rejected"
+    n = 1 << m
+    rows = [r for r, _ in pairs]
+    cols = [c for _, c in pairs]
+    good = (m == 4 and k == 8 and lb == lab and alpha == 0 and sz == size and is_prime(p) and I * I % p == p - 1
+            and len(set(rows)) == sz and len(set(cols)) == sz
+            and all(r >> n == 0 and popc(r) == k and not (r & 1) for r in rows)
+            and all(c >> n == 0 and popc(c) == k and (c & 1) for c in cols)
+            and len(tok) == 14 + 2 * sz)
+    return good, (f"lab = {lb} (wanted {lab}), p = {p} (prime: {is_prime(p)}), size {sz}: {len(set(rows))} distinct "
+                  f"rows and {len(set(cols))} distinct columns; its determinants on all 16 characters are author "
+                  "evidence (check_mj.c), not re-run here")
+
+
+def part_depth():
+    ok = True
+    got = {j: demand_of_moves(4, 8, j, P1) for j in (1, 2, 3)}
+    ok &= report("block4 one move", got[1] == 27456, f"split ranks mod p give {got[1]} = the cap 27,456")
+    for j in (2, 3):
+        name, lab, size, want = DEPTH_CERTS[j]
+        ok &= report(f"block4 {j} moves in independent directions", got[j] >= want,
+                     f"split ranks mod p give a_{j} >= {got[j]} (section 7 uses {want:,})")
+    b3 = (demand_of_moves(3, 4, 1, P1), demand_of_moves(3, 4, 2, P1))
+    ok &= report("same split at block 3", b3 == (80, 144), f"one move {b3[0]}, two moves {b3[1]} (part block3: 80 and 144)")
+    T = projected_bounds({0: 0, 1: 27456, 2: got[2], 3: got[3], 4: 86592}, 6)
+    ok &= report("block 5 and 6 bounds from this profile", T[5] == BOUNDS[5] and T[6] == BOUNDS[6],
+                 f"T_5 = {T[5]}, T_6 = {T[6]} (each grows with a_2, a_3, a_4; the denominator uses only the exact a_1)")
+    for j in (2, 3):
+        name, lab, size, want = DEPTH_CERTS[j]
+        good, msg = depth_format(open(os.path.join(DATA, name)).read(), lab, size)
+        ok &= report(f"block4 {j}-move certificate format ({size} x 16 = {16 * size:,})",
+                     good and 16 * size == want, msg)
+    return ok
+
+
 # ------------------------------------------------------------------------- width
 
 A_ = (Fraction(1, 2), Fraction(1, 2))       # (1+i)/2
@@ -898,6 +1025,17 @@ def part_controls():
     ok &= control("claim '4 in 11 at block 3 is allowed'", excluded(3, 4, 11), "5 x 11 = 55 < 56 = 14 x 4")
     ok &= control("claim '5 in 14 at block 3 is excluded'", not excluded(3, 5, 14), "5 x 14 = 70 = 14 x 5: on the bound, not below it")
     ok &= control("claim '2 in 7 at block 4 is excluded'", not excluded(4, 2, 7), "13 x 7 = 91 >= 82 = 41 x 2")
+    text = open(os.path.join(DATA, "cert_m4_g2_M0.txt")).read()
+    lines = text.split("\n")
+    dup = "\n".join(lines[:2] + [lines[1]] + lines[3:])
+    good, msg = depth_format(dup, 3, 3036)
+    ok &= control("two-move certificate with a repeated row and column pair", not good, msg)
+    good, msg = depth_format(text.replace("lab 3", "lab 1", 1), 3, 3036)
+    ok &= control("two-move certificate relabelled as a one-move certificate", not good, msg)
+    X = [[0, 1], [1, 0]]                   # dir(e1)^2 = X_e1 up to a scalar: a free shift
+    same = demand_of_moves(4, 8, 1, P1, G=X)
+    ok &= control("claim 'two moves in the same direction raise the hook by 48,576'", same < 48576,
+                  f"(dir e1)^2 is the shift X_e1 (times a scalar); the split gives {same}")
     return ok
 
 
@@ -910,7 +1048,7 @@ def main():
     if args.part in ("main", "all"):
         for name, fn in [("pins", part_pins), ("block2", part_block2), ("block3", part_block3),
                          ("leandata", part_leandata), ("face3", part_face3), ("block4", part_block4),
-                         ("width", part_width), ("table", part_table)]:
+                         ("depth", part_depth), ("width", part_width), ("table", part_table)]:
             t = time.time()
             print(f"--- {name}", flush=True)
             ok &= fn()

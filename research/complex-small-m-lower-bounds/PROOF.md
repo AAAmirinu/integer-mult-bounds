@@ -184,8 +184,16 @@ At block 2 this gives s ≥ 2W, the plain cost, in every such game. At larger m 
 ## 7. From block 4 on: 2.9447 calls per array in the engine game
 
 *Status: argued by hand from exact computations, not checked by a person; two AI reviewers reproduced every number
-with their own code.* The block-4 hook is carried upward through projections between the frame graphs of the
-engine, controlled by a coupling argument; the exact values are 834,241/278,850 = 2.99172 at block 5 and
-1,188,222/399,685 = 2.97290 at block 6, and the bound stays above 2.9447 at every block. The programs and the
-written argument are in my repository (README, Sources). The projections use the engine's frames, so nothing here
-carries it to the widened game; there the bounds at blocks 5 and 6 are 62/29 and 63/31 (checked by computer).
+with their own code, and Maximilian Lutz checked it independently (#4643).* The block-4 hook is carried upward
+through projections between the frame graphs of the engine, controlled by a coupling argument; the exact values are
+834,241/278,850 = 2.99172 at block 5 and 1,188,222/399,685 = 2.97290 at block 6, and the bound stays above 2.9447 at
+every block. Its inputs are the exact cap a_1 = 27,456 and lower bounds on what two, three and four moves in
+independent directions do to the block-4 hook: a_2 ≥ 48,576, a_3 ≥ 68,320 and a_4 ≥ 86,592 (a_1 and a_4 as in section 2). For a_2 and
+a_3, part `depth` of `verify.py` splits the hook over the address bits the moves leave untouched, which turns each
+into ranks of at most 280 × 280 that it computes modulo a prime (a lower bound over Q(i)), and it recomputes
+834,241/278,850 and 1,188,222/399,685 from that profile; two stored minor certificates, checked on all 16 characters,
+are author evidence (`author-evidence/check_mj.c`). The written proof is
+`author-evidence/induction-across-block-sizes.md`, an unchanged copy of the file of my repository named in
+SOURCES.json, headed by the corrections its AI reviewers asked for; none of them touches this bound. The projections
+use the engine's frames, so nothing here carries it to the widened game; there the bounds at blocks 5 and 6 are 62/29
+and 63/31 (checked by computer).
