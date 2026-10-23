@@ -184,24 +184,51 @@ obligations are not re-established by this module replay.
 
 ## Provenance and credit
 
-Copied-center reuse predates this package; see
-[copied-reversed](../copied-reversed/README.md). Matarener supplies the
-owned-center intersection argument and fixed-word interval engine. Dugongue
-supplies the owned-C retiming contract. Cinna Davis supplies #4470's selected
-word, retaining zxv's native supplier, Jacob Alan Sussman's Clifford work and
-the complete credited source chain. The live split-contact and paid-history
-discussions supply the application context, not mathematical inputs to the
-verifier. Metric geometry, memoization, Steiner trees and subadditivity are
-classical; this package claims their explicit costed application and scoped
-extension here.
+Prepared by zxv with substantial OpenAI Codex assistance. The predecessor
+contributions used here are:
+
+- **zxv:** the native and uniform supplier in
+  [PR #4359](https://github.com/CrocSwap/integer-mult-bounds/pull/4359),
+  logarithmic compiler in
+  [PR #4411](https://github.com/CrocSwap/integer-mult-bounds/pull/4411), and
+  higher-moment strictification and rational interval engine in
+  [PR #4433](https://github.com/CrocSwap/integer-mult-bounds/pull/4433).
+- **Matarener:** the owned-center intersection argument and fixed-word
+  interval engine in
+  [PR #5060](https://github.com/CrocSwap/integer-mult-bounds/pull/5060).
+- **Dugongue:** the owned-C retiming contract in
+  [PR #4534](https://github.com/CrocSwap/integer-mult-bounds/pull/4534).
+- **Cinna Davis:** the selected word in
+  [PR #4470](https://github.com/CrocSwap/integer-mult-bounds/pull/4470), building
+  on [PR #4440](https://github.com/CrocSwap/integer-mult-bounds/pull/4440),
+  [PR #4441](https://github.com/CrocSwap/integer-mult-bounds/pull/4441) and
+  [PR #4447](https://github.com/CrocSwap/integer-mult-bounds/pull/4447).
+  [PR #5220](https://github.com/CrocSwap/integer-mult-bounds/pull/5220)
+  supplies the active-feedback application context and coupling warning.
+- **Jacob Alan Sussman:** the mixed-target recursion in
+  [PR #4268](https://github.com/CrocSwap/integer-mult-bounds/pull/4268).
+- **icekylinx:** copied-center reuse in
+  [PR #36](https://github.com/CrocSwap/integer-mult-bounds/pull/36) and the
+  exact Clifford compiler lineage retained from
+  [PR #531](https://github.com/CrocSwap/integer-mult-bounds/pull/531).
+  See also the retained [copied-reversed attribution](../copied-reversed/README.md).
+- **Tekalign:** the source-pinned T74 package in
+  [PR #2768](https://github.com/CrocSwap/integer-mult-bounds/pull/2768), from
+  which the unchanged exact Clifford kernel is loaded. Its retained notices
+  preserve the complete native, phase and compiler contributor chain.
+
+The live split-contact and paid-history discussions supply application context,
+not mathematical inputs to the verifier. Metric geometry, memoization, Steiner
+trees and subadditivity are classical; this package claims their explicit
+costed application and scoped extension here. All retained source notices
+and predecessor attribution remain in force.
 
 Overlap checks on 2026-10-23 covered 347 PR records, 4,456 Discussion records
 and 6,999 local package notes in the second bounded search. They do not cover
 every diff, every comment or unpublished work. Live claims are provisional.
 No external claim or publication was made in this session; this is local
 evidence until shared. Exact canonical source pins are in
-[SOURCES.json](SOURCES.json). Prepared for the repository user with substantial
-OpenAI Codex assistance. Apache-2.0.
+[SOURCES.json](SOURCES.json). Apache-2.0.
 
 The final upstream checkpoint is `ff3cc58e370d0f678e529246f8c73e8094e18fcf`.
 Selection, catalogue, family guidance and every existing declared source pin
