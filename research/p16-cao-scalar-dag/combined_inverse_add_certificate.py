@@ -59,6 +59,15 @@ def run():
     a,b=paid(modified['forward']),paid(modified['backward'])
     old=paid(original['programs']['forward'])
     assert a==b==old,('paid_tariff_changed',dict(a),dict(b),dict(old))
+    # Preserve every native Clifford chart trajectory and all owned operations.
+    def role_edge_trace(word):
+        return [(e[2],e[3],e[4],e[5]) for e in word if e[0]=='climb']
+    def non_scalar_trace(word):
+        return [e for e in word if e[0] in ('warp','center','adapter','residual_adapter','phase')]
+    assert all(role_edge_trace(modified[d])==role_edge_trace(original['programs'][d])
+               for d in modified), 'Chronological paid chart trajectories changed'
+    assert all(non_scalar_trace(modified[d])==non_scalar_trace(original['programs'][d])
+               for d in modified), 'Native warp, owner, adapter or phase changed'
     V=F.load(ROOT/'research/kappa-causal-continuation/buffer-borrowing/verify_buffers.py','dag_all_columns')
     X=F.load(ROOT/'research/kappa-rebuild/complex/native_extensions.py','dag_all_native')
     literal={}
@@ -67,12 +76,36 @@ def run():
         assert all(rows['L',i]==V.expected(('L',i),[],d=='backward',False)
                    for i in range(632))
         assert r['arbitrary_owned_C0_cleared'] and r['scalar_frames_checked']
+        second=V.replay(modified[d],deepcopy(c),[],d=='backward',False)
+        assert second['all_scalar_frames_checked']
+        assert second['paid_profile']==r['paid_profile']
+        assert not second['mismatch_examples']
         literal[d]={'event_count':len(modified[d]),
                     'real_scalar_allowance':r['real_scalar_allowance'],
                     'paid_profile':r['paid_profile'],
                     'paid_rank_mass':r['paid_rank_mass']}
     assert literal['forward']['real_scalar_allowance']<158120
     assert literal['backward']['real_scalar_allowance']<158168
+    # Deliberately remove just one of the inverse ADD pair, and ensure the
+    # exact all-column interpreter does not silently accept the wrong operator.
+    lone=chosen[0][0]
+    false_word=W.synthesize(c,[deepcopy(e) for i,e in enumerate(program['forward'])
+                               if i!=lone])
+    rejected=False
+    try:
+        false_rows,check=X.literal_replay(V,c,false_word,False)
+        rejected=any(false_rows['L',i]!=V.expected(('L',i),[],False,False)
+                     for i in range(632))
+    except (AssertionError,ValueError):
+        rejected=True
+    assert rejected,'Unpaired deliberate wrong ADD did not fail'
+    # Patch has no mutable binary or trust in discovery / solver output.
+    (HERE/'SCALAR_CANCEL_PATCH.json').write_text(json.dumps({
+      'source':'20bb93cd990d2ff683e4d0fc56b87a42cd5d3296',
+      'removed_raw_scalar_event_pairs':chosen,
+      'precondition':'Frozen Cao round3 word; unchanged native frames and warps',
+      'original_native_payload':json.loads((ROOT/'research/kappa-round3-warp-20261022/ACTUAL-WORD-FREEZE.json').read_text())['canonical_payload_sha256']
+    },sort_keys=True,indent=2)+'\\n')
     def native_pairs(p):
         return {(e[3],e[4],e[-1]) for e in p if e[0]=='climb'}
     same_pairs={d:native_pairs(modified[d])==native_pairs(original['programs'][d])
@@ -88,6 +121,8 @@ def run():
         'native_paid_histogram_unchanged':True,
         'same_native_climb_pair_sets':same_pairs,
         'dual_literal_checks':literal,
+        'negative_control_one_unpaired_add_rejected':rejected,
+        'two_independent_632_column_interpreters_each_orientation':True,
         'new_kappa':False,
         'required_next_checks':'Full absolute-phase native audit, whole controller and uniform compiler at changed scalar word.'}
     (HERE/'COMBINED_SCALAR_CANCEL_RECEIPT.json').write_text(
