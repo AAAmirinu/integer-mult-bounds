@@ -58,11 +58,11 @@ def scan():
     for right in range(len(f)):
         x=operand(f[right])
         if x is None:continue
-        tgt,src,c=x
+        tgt,src,coeff=x
         for left in range(max(0,right-160),right):
             y=operand(f[left])
             if y is None:continue
-            if y[:2]!=(tgt,src) or y[2]!=-c:continue
+            if y[:2]!=(tgt,src) or y[2]!=-coeff:continue
             considered+=1
             if any(not commute_with_pair(f[k],src[1],tgt[1])
                    for k in range(left+1,right)):continue
