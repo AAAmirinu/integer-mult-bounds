@@ -1649,5 +1649,29 @@
       ]
     },
     "next_action": "PR5235 arrived during publication and remains new/actionable. Resume delta-only intake; do not rereview unchanged revision holds or deferred replays."
+  },
+  "bulk_intake_20261023_tenth_pass": {
+    "observed_at": "2026-10-23T18:38:01.799626+00:00",
+    "publication_commit": "3b785d5197a073ea3304f19587fd65f2b670928f",
+    "reviewed_heads": 93,
+    "merged": 91,
+    "new_revision_holds": [
+      5298,
+      5347
+    ],
+    "fresh_queue": {
+      "open_count": 304,
+      "actionable_count": 0,
+      "counts": {
+        "draft": 178,
+        "waiting_revision": 119,
+        "deferred_replay": 7
+      }
+    },
+    "evidence": "docs/research/pr-intake-evidence/queue-oct23o-20261023.json",
+    "closures": "docs/research/pr-intake-evidence/queue-oct23o-closures.json",
+    "scientific_scope": "90 source archives and one reviewed replay-planner optimization. Targeted PR4628 Python certificate replay passed; no Lean, Docker or full supplier replay. Selected kappa unchanged.",
+    "next": "No actionable routine intake. Dedicated scientific follow-up: PR5241 admission audit of Cao Yifan/intqwq PR4610 at kappa 0.0030217758; archive acceptance is not frontier admission. Existing seven deferred replays remain deferred.",
+    "live_processes": []
   }
 }
