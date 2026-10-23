@@ -11,7 +11,7 @@ The proof below gives exact state, cost, and retained-storage refinement.
 RESULT.json records 68 full entry comparisons over 16 sessions, including
 eight independent payload columns, caller install, and a growing then
 shrinking call history. The verifier also checks 153 local instruction cases,
-three unused codewords, and six failure controls. Finite checks support the
+three unused codewords, and seven failure controls. Finite checks support the
 written proof; they do not replace it.
 
 Run from the repository root with Python 3.12 and the standard library:

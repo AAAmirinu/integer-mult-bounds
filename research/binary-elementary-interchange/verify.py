@@ -71,6 +71,8 @@ def micro_checks():
         need(heads['t'] == 6+3*step and tapes['t'] == encode([2]), 'move frame')
         need(receipt['steps'] == 5 and receipt['moves'] == 3, 'move meter')
         checked += 1
+    negative_move, _ = lower((('move', 't', -1), ('halt', 'returned')), {'run': 0}, ('t',))
+    reject(lambda: execute(negative_move, {'t': encode([2])}, {'t': 0}, 0))
     code, entries = lower((('test', 't', 4, 1, 2), ('halt', 'returned'), ('halt', 'closed')), {'run': 0}, ('t',))
     tapes, heads = {'t': bytearray()}, {'t': 21}
     need(execute(code, tapes, heads, 0)['status'] == 'returned' and not tapes['t'] and heads['t'] == 21, 'unallocated blank')
@@ -95,7 +97,7 @@ def micro_checks():
     reject(lambda: admit((('jump', 0),), {'run': 0}, ('t',), (0, 1)))
     reject(lambda: admit((('write', 't', 2), ('halt', 'closed')), {'run': 0}, ('t',), (0, 1)))
     return dict(positive=checked+1, invalid_codewords=3,
-                rejected=['missing_alignment_move', 'wrong_bit', 'missing_tail_write',
+                rejected=['left_origin_crossing', 'missing_alignment_move', 'wrong_bit', 'missing_tail_write',
                           'host_callback', 'control_only_cycle', 'nonbinary_write'])
 
 def fixture(h, a=1, g=1, s=1, bits=None, install=False):

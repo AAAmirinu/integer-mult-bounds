@@ -27,6 +27,7 @@
     "positive": 153,
     "invalid_codewords": 3,
     "rejected": [
+      "left_origin_crossing",
       "missing_alignment_move",
       "wrong_bit",
       "missing_tail_write",
