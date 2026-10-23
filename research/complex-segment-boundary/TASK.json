@@ -1,0 +1,46 @@
+{
+  "id": "b2_complex_local_suspend",
+  "priority": 2,
+  "kind": "constructive mathematical physical interface",
+  "card": "uniform-transfer-audit",
+  "sources": [
+    {
+      "pr": 5041,
+      "head": "1284449d107e87353bbded5f78f413d3dfe746d6",
+      "path": "research/complex-node-nonchild-invoice"
+    },
+    {
+      "pr": 2250,
+      "path": "exact archived monomial/compact implementation pinned in PR5041 SOURCES.json"
+    },
+    {
+      "pr": 4100,
+      "head": "337d04939571a637aeab54a0f58f54fde811663a",
+      "path": "research/unconditional-batched-crt/COMPLEX.md"
+    }
+  ],
+  "scope": "Implement a segment-relative fixed-tape continuation adapter for one actual FOUR/base child boundary. Bind every reached PR2250 compact/monomial role to its current-node segment, save complete current roles and the exact return descriptor, run the child ABI, restore and erase local work, and return all heads without traversing or erasing arbitrary dirty ancestor prefixes. Prove this for arbitrary f/current payload extent and arbitrary ancestor extent, with a source-derived finite role inventory and no hidden whole-backing rewind.",
+  "changed_premise": "PR5041 proves that geometric parked space does not imply node-local time and its source simulator rewinds/erases whole local tapes. Replace the missing segment-origin/view implementation with actual bounded operations and a constructive local invoice.",
+  "first_bounded_fixture": "Use the same real FOUR/base f=2 rank-3 boundary as the packet task, right/left compact slots and actual width (f-1)G, with current-node roles dirty and ancestor prefixes of lengths16,257,4096. Actually execute the inherited monomial/compact tape boundary under a segment view; supply the recursive child by an explicitly labelled oracle only where necessary. Compare local operation counts across ancestor sizes and restore exact role bytes/head origins.",
+  "success": "Uniform segment/refinement invariant and literal count O(current volume*e^(1-a2)*polylog p) for this boundary, including origin installation, delimiters, descriptor size, every rewrite/rewind, child return and cleanup; source-reaching controls prove the old unbounded rewind/full-backing erase fails. Demonstrate nested two-level use, not merely a synthetic stack copy.",
+  "stop": "Stop if a literal primitive accesses outside its segment or if origin relocation itself costs ancestor extent and cannot be removed. Do not call an unimplemented locality contract proved, and do not repeat PR5041's rank-one countermodel as the sole result.",
+  "prior_coverage_insufficient": "PR5041's 5604-operation examples use a hand-written transport fixture and a supplied child output; they do not implement actual reached PR2250 boundaries.",
+  "canonical_discussion": "https://github.com/CrocSwap/integer-mult-bounds/discussions/5012",
+  "credit": "Jose Manuel/jmbarrancoml PR2250 and physical caller lineage; Cinna Davis PR4100/4088; Douglas Colkitt compact guard/repair; JoyboyBrian PR5041; Matarener cover/stock work.",
+  "separation": "Owns local tape views, inventory serialization and continuation costs. Reuse packet task's descriptor contract, do not derive its chart theorem or mutate its files.",
+  "number": 7,
+  "base": "4c0a359d88f22f05189d51f48387750b801a45d4",
+  "worktree": "/private/tmp/imb-brian-b2/task07",
+  "branch": "brian/imb-b2-07",
+  "status": "executing",
+  "claim_file": "/tmp/imb-brian-b2/claim-07.md",
+  "discussion": 5012,
+  "claim_url": "https://github.com/CrocSwap/integer-mult-bounds/discussions/5012#discussioncomment-19140803",
+  "claim_id": "DC_kwDOU-508s4BJBDD",
+  "claim_discussion": 5012,
+  "agent": "/root/b2_task07",
+  "bounded_execution": "Only literal compact/monomial primitive calls on current segments; no full native replay.",
+  "outcome": "partial-scoped-segment-refinement",
+  "scope_status": "refined",
+  "scope_reason": "Complete local payload views and nested retained-source execution, conditional on a Python control-stack oracle. Physical descriptor frames, actual recursive child output installation and finalized packet hosting remain open."
+}

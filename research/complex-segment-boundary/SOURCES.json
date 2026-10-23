@@ -1,0 +1,47 @@
+{
+  "base_commit": "4c0a359d88f22f05189d51f48387750b801a45d4",
+  "files": [
+    {
+      "path": "research/selected-complex-compact-adapters/NOTICE.md",
+      "retained": "source/NOTICE.md",
+      "sha256": "74a9f03e9ce467c75f5f7cf1b8465d349ea38ef114afad261824c3bcf13da00f",
+      "source_commit": "4c0a359d88f22f05189d51f48387750b801a45d4"
+    },
+    {
+      "path": "research/selected-complex-compact-adapters/PROOF.md",
+      "retained": "source/PROOF.md",
+      "sha256": "804446e22304540eb02a5f4da3f71464a217be830a33b11420ea31eea878782c",
+      "source_commit": "4c0a359d88f22f05189d51f48387750b801a45d4"
+    },
+    {
+      "path": "research/selected-complex-compact-adapters/compact.py",
+      "retained": "source/compact.py",
+      "sha256": "0e1027a60f38c21cfd808c8ce44dcc2423810efdab0e15f02b07f261ad48fc3c",
+      "source_commit": "4c0a359d88f22f05189d51f48387750b801a45d4"
+    },
+    {
+      "path": "research/selected-complex-compact-adapters/monomial.py",
+      "retained": "source/monomial.py",
+      "sha256": "394f9a465ac9148af0c20844d375e4befbef17d92b2fcc840d83419480dd4740",
+      "source_commit": "4c0a359d88f22f05189d51f48387750b801a45d4"
+    },
+    {
+      "path": "research/selected-complex-compact-adapters/streams.py",
+      "retained": "source/streams.py",
+      "sha256": "718a582a50aee8f1f04945ed942be1d4162962fe47dbf05c6ff37b7fb8c61257",
+      "source_commit": "4c0a359d88f22f05189d51f48387750b801a45d4"
+    }
+  ],
+  "supplied_artifacts": [
+    {
+      "retained": "RIGHT-RECIPE.json",
+      "sha256": "fe4736e77996c627f024d464626fb58d2181fd595281332e8296b36544393080",
+      "provenance": "Cooperating batch2 task06 local export; actual dispatcher-to-recipe chain not independently authenticated here."
+    },
+    {
+      "retained": "BOUNDARY.json",
+      "sha256": "41374b4ecf3169b9a205d340eca97e36969e16d1eaf403afe4b13832b243c8e5",
+      "provenance": "Cooperating batch2 task06 local export; actual dispatcher-to-recipe chain not independently authenticated here."
+    }
+  ]
+}
