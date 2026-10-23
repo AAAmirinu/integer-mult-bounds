@@ -1,24 +1,37 @@
 # Current reviewed status
 
-Selected conditional κ: **0.0023 = 23/10000**, zxv’s #4359 productive-helper construction, using Jacob Alan Sussman’s mixed-target recursion and the credited cumulative native/outer lineage.
+Selected conditional κ: **0.00302015** = 60403/20000000, Cinna Davis's #4470
+joint-helper construction on the query-thinned controller, zxv's productive-helper
+native/compiler machinery and Jacob Alan Sussman's mixed-target recursion.
 
-[Selected record](../../certificates/selected-result.json) · [Proof review](pr-intake-evidence/pr4359/PROOF-REVIEW.md) · [Integration receipt](pr-intake-evidence/pr4359/INTEGRATION.json) · [Contributors](community-productive4359-contributors.md).
+[Selected record](../../certificates/selected-result.json) ·
+[Proof review](pr-intake-evidence/pr4470/PROOF-REVIEW.md) ·
+[Selection/integration receipt](pr-intake-evidence/pr4470/INTEGRATION.json) ·
+[Contributors](community-joint4470-contributors.md).
 
-Cold replay: `make frontier4359-verify`. The fresh 23-stage replay and 59 normalized artifacts pass; the changed interfaces have an AI-assisted proof review under retained analytic/native/fixed-tape hypotheses. Winning uniform templates are not materialized. This is not a complete formal or independent human verification. #4404 independently checks a narrower arithmetic/flow scope.
+Replay: `make frontier4470-verify`. Eight scoped jobs run serially in a fresh
+closed export with a sampled 1 GiB descendant-memory limit. The source-identical
+PR4359/PR4416 foundation reviews are explicitly reused, not rerun. The new
+selected metadata and orientation bind the raw, uniform, ordinary BIT and
+outer budgets separately. Read the integration receipt for execution and hosted
+CI status; a workflow definition is not a successful Linux run.
 
-**Newer conditional review, pending selection migration:** Cinna Davis's #4470
-supports **κ = 0.00302015** under the retained hypotheses, following the
-[cumulative proof review and bounded replays](pr-intake-evidence/pr4470/PROOF-REVIEW.md).
-It builds on the query-thinned controller and joint helper retiming, zxv's
-native and compiler lineage, and Jacob Alan Sussman's mixed-target recursion.
-Mihir Srivastava and Ryanson Jonathan's independent audits are included in the
-review, with Mark / Matarener credited for the commutation question.
-The earlier [#4416/#4433 review](pr-intake-evidence/pr4416/PROOF-REVIEW.md)
-supports 0.00268647. Neither review alone changes the selected record or its
-cold-replay command above. #4483/#4507 compiler-size improvements remain a
-separate review; they are not premises of the #4470 verdict.
+All-column/native, whole-job matching, owned erasure, compiler closure,
+precision/fixed-tape, analytic, prime and recovery hypotheses remain explicit.
+This is not a full Lean or independent human verification of multiplication,
+and the winning uniform templates are not materialized.
 
-## Historical selected status through #1094
+The preceding selected [#4359 checkpoint](../../certificates/checkpoints/frontier4359.json)
+is preserved at 0.0023. The [#4416/#4433 review](pr-intake-evidence/pr4416/PROOF-REVIEW.md)
+supports the intermediate 0.00268647. The frozen #4470 review's statement that
+selection had not yet migrated describes its review-time state; the current
+integration receipt supersedes that publication status. #4483/#4507 compiler-size
+improvements remain a separate review and are not premises of this selection.
+
+The remaining sections form a **historical snapshot**; their “current” wording
+is local to their checkpoint, not the selected record above.
+
+## Historical status through #1094
 
 Historical selected conditional κ: **0.001672660197076918**, Rohan Arun's #1094 on Jeremy Kothe's #1087 packing and the cumulative k8/slot/T16 construction. The bit supplier remains #589 on #555.
 

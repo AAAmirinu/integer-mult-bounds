@@ -89,8 +89,77 @@ closures; guessing them from imports is outside this tool's contract.
 Tekalign, with substantial OpenAI Codex assistance. Apache-2.0.
 
 The drive-prefix containment check and five regression methods were prepared
-for roger-sato with substantial OpenAI Codex assistance. Real Git exports are
-tested on POSIX; platform-independent handcrafted archive checks invoke the actual CLI.
-The tests use `ntpath` for Windows path semantics without extracting archives;
-they do not claim a Windows runtime replay. The original exporter and its
-transport-integrity contract retain Tekalign's attribution.
+for roger-sato with substantial OpenAI Codex assistance. Their two real-Git
+fixtures now create blobs, NUL-delimited trees and a commit directly, following
+[PR4579](https://github.com/CrocSwap/integer-mult-bounds/pull/4579)'s object-tree
+precedent. This retains the literal colon-bearing names without materializing
+them on the host filesystem. Both tests run on Windows without platform skips:
+drive-qualified inputs fail through the actual CLI before publication, while
+nondrive colons retain their names and exact binary/CRLF payloads. The accepted
+archive also passes the CLI integrity check with Git absent from `PATH`.
+
+Run the drive-path module with ordinary and optimized Python:
+
+```sh
+python -W error -B -m unittest discover -s tests -p 'test_research_export_drive_paths.py' -v
+python -O -W error -B -m unittest discover -s tests -p 'test_research_export_drive_paths.py' -v
+```
+
+At main base `b58ad9ef4d4e861b0eaa5dba41742bdc072dca51`, the repair passes all
+five methods with no skips on Windows / CPython 3.12.14 and Ubuntu under WSL2 /
+CPython 3.12.3, in both modes. This is local test evidence, not hosted CI or a
+mathematical replay. These tests do not extract colon-bearing members or promise
+that Windows can materialize every accepted archive name. Production exporter
+code and source pins are unchanged.
+
+This completes the bounded drive-fixture handoff in
+[Discussion #4578](https://github.com/CrocSwap/integer-mult-bounds/discussions/4578);
+[Discussion #4675](https://github.com/CrocSwap/integer-mult-bounds/discussions/4675)
+records its scope and evidence. Prepared for Mihir Srivastava with substantial
+OpenAI Codex assistance; Apache-2.0. The original exporter and its
+transport-integrity contract retain Tekalign's attribution, and the boundary
+regressions retain roger-sato's attribution.
+
+## Native Windows fixture replay
+
+At main `f626db5c3a3d781d8f7695038776c621651f75e1`, all nine tests in
+`test_research_export.py` fail during setup on Windows because the common
+fixture name `inputs/a\n雪[*].bin` cannot be materialized there. Substituting a
+portable name exposes a second mismatch: the replay prints CRLF on Windows,
+while the test expects an LF-only byte string.
+
+The repaired suite uses a portable Unicode filename for extraction and direct
+replay. A separate real Git object-tree fixture retains the original newline,
+Unicode and wildcard name, without checking it out. It verifies the literal
+Git inventory, deterministic repeated export, offline receipt check and exact
+binary payload. The symlink rejection uses committed mode `120000`, following
+the publication-byte test's existing approach, so OS symlink privileges are
+unnecessary. Only console output is read as text; artifact and extracted input
+bytes, including CRLF, remain exact.
+
+The command below runs all three exporter test modules; repeat with `-O` to
+check optimized Python too:
+
+```sh
+python -W error -B -m unittest discover -s tests -p 'test_research_export*.py' -v
+```
+
+On Windows 11 / CPython 3.12.0 / Git 2.47.1, normal and optimized runs each
+pass 18 tests with the two existing POSIX-colon fixture skips. The repaired
+ten-test module has no skips. Ubuntu under WSL2 / CPython 3.12.3 / Git 2.43.0
+passes all 20 tests in both modes. This is local test-suite evidence, not a
+hosted CI or mathematical cold replay. Production exporter code and immutable
+source pins are unchanged.
+
+Open next question: can the two skipped drive-path Git fixtures also be built
+from object trees? Start with their existing colon filenames and retain all
+CLI rejection and byte-preservation checks; Windows cannot materialize those
+names directly. Arbitrary-name extraction support is outside this repair.
+
+Task `portable-replay`, priority revision 7, chooser seed
+`78c5bb9d763460ad101abdb809786566`; scope refined to one reproduced environment
+failure. Coordination and limitations are recorded in
+[Discussion #4578](https://github.com/CrocSwap/integer-mult-bounds/discussions/4578).
+Prepared for Mihir Srivastava with substantial OpenAI Codex assistance;
+Apache-2.0. Retains Tekalign's #3138 exporter and tests, and roger-sato's
+#3629/#3641 path-boundary regressions.

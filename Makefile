@@ -34,7 +34,7 @@ verify:
 
 .PHONY: selected-record-check entrance-bank-verify verify-entrance-banks
 selected-record-check:
-	python3 -B scripts/verify_selected_result.py
+	env -u PYTHONPATH python3 -B scripts/verify_selected_result.py
 
 entrance-bank-verify: selected-record-check
 	python3 -B research/coordinated-frames-and-entrance-banks/verify.py
@@ -700,3 +700,11 @@ frontier1042-capsule-closure-verify:
 frontier4359-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier4359.XXXXXX"); \
 	python3 -B scripts/verify_frontier4359.py --work "$$work/replay"
+
+# Current selected changed-construction replay; prior foundation reuse is explicit.
+.PHONY: frontier4470-verify
+# PYTHONPATH precedes the standard library in every replay child; a stray
+# same-named module could exit 0 before a check runs.
+frontier4470-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier4470.XXXXXX"); \
+	env -u PYTHONPATH python3 -B scripts/verify_frontier4470.py --work "$$work/replay"

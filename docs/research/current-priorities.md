@@ -6,17 +6,19 @@ at each research checkpoint.
 
 **Priority revision 7 — October 20, 2026**, assessed against main
 `9200177938843d92957bbfe6f1fdbe88768d8cc5`.
-**Selection refresh — October 21, 2026:** the
+**Selection refresh — October 22, 2026:** the
 [selected conditional result](../../certificates/selected-result.json) is now
-**κ = 0.0023 (#4359)**. Its productive-helper compiler uses mixed-target
-recursion and changes the recursive interface. Read the
-[changed-interface review](pr-intake-evidence/pr4359/PROOF-REVIEW.md) and
-[contributor map](community-productive4359-contributors.md) before building on
-this checkpoint. The nine-cost outer ledger is bound in the selected record.
-The revision-7 allocation below predates this selection; weights and cards have
-not yet been reassessed against the new mechanism. Do not treat old-inventory
-ceilings or the earlier κ as constraints on #4359. Its retained analytic/native
-assumptions remain explicit; #4100's unconditional claim is not selected.
+**κ = 0.00302015 (#4470)**. Read the
+[cumulative changed-construction review](pr-intake-evidence/pr4470/PROOF-REVIEW.md)
+and [contributor map](community-joint4470-contributors.md). The fresh helper
+frames and query-thinned controller improve the productive-helper mixed-target
+interface, with the full nine-row outer ledger. Use
+`python3 -B scripts/research_selected_baseline.py` for source-bound orientation;
+the older `research_baseline.py` uses a historical balanced-transfer schema.
+The revision-7 allocation below is retained pending a separate strategic review.
+Its old-inventory ceilings, stale admission tasks and a/(1+a) conversion are
+not constraints on #4470. Check the selected assumptions and latest handoffs
+before adopting an old card. #4483/#4507 compiler-size proposals are not selected.
 
 **Keep broad mechanism exploration; update the exact missing work.** Roughly
 60% of the portfolio remains on bit mechanisms, complex mechanisms and recursive
