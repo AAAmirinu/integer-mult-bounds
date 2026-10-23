@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "python": "3.12",
+  "requirements": [],
+  "inputs": [
+    "research/productive-helper-fusion-certificate/COMBINED-WORD.json.gz"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/verify.py"
+      ],
+      "timeout_seconds": 180,
+      "checks": "Exact source-bound local and whole scalar-encoder inverse/annihilator identities, both suffix orientations, coalescing checks, explicit native-free terminal paths and semantic corruption controls."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-B",
+        "{package}/verify.py"
+      ],
+      "timeout_seconds": 180,
+      "checks": "Exact source-bound local and whole scalar-encoder inverse/annihilator identities, both suffix orientations, coalescing checks, explicit native-free terminal paths and semantic corruption controls."
+    }
+  ]
+}
