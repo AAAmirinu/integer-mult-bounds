@@ -76,7 +76,10 @@ def run():
         assert all(rows['L',i]==V.expected(('L',i),[],d=='backward',False)
                    for i in range(632))
         assert r['arbitrary_owned_C0_cleared'] and r['scalar_frames_checked']
-        second=V.replay(modified[d],deepcopy(c),[],d=='backward',False)
+        rebound=deepcopy(c)
+        rebound['R']=len(c['start'])-2*c['v']
+        rebound['local_profile']={int(k):v for k,v in r['paid_profile'].items()}
+        second=V.replay(modified[d],rebound,[],d=='backward',False)
         assert second['all_scalar_frames_checked']
         assert second['paid_profile']==r['paid_profile']
         assert not second['mismatch_examples']
