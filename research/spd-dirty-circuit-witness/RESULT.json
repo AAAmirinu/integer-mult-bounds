@@ -1,0 +1,70 @@
+{
+  "controls": 15,
+  "files": {
+    "NOTICE.md": "8f341e0ee30f8ce5370501c16d240a0aed5010a5c99c1f8975a3b9fa0e006887",
+    "PROOF.md": "b11c7bd44ceb7783e1e58d1f32e6a5c979f8be02b7ed91f7203a86cfbf7a19d9",
+    "README.md": "d4767132f4a6349742d2b61c2b16b84df80631a1d3c7d486946c23cb620bd9a5",
+    "SOURCES.json": "f2d2f71029276fdb1334bc872d018c30422715b041d5ab8628fbc9b4dc7d718e",
+    "TASK.json": "318d8c21d6b7b88793bdb34446a492598cfcca8b99107ee76c77108adf80a385",
+    "VERIFY.json": "d26d07c535953e4f972577c1e3b9a7bf58539254cb10661a0160876f465c4b3e",
+    "literal.py": "89f1b1e039119627ac512be9407e456fdb513adbe5104027a6d65865e1f598b9",
+    "vendor/fields.py": "0829ad6ed3775ba6e3d11cf04cfb3513ac763549b730aaed74958b1238e660d7",
+    "vendor/linear_words.py": "fe825cf7c886de61bb5ec5a02171c5a392a7bddc185280726f4c359b3f289584",
+    "verify.py": "eed7802377767720f7f6a677d0d07e1d7889b0e3e567ee6a13831f1500a1c83d",
+    "witness.py": "ce52e13ba5fc038d484ced01c615e49172e0cd8eb3dd44d477f0aedbd8b2ee39",
+    "wrong-order.json": "137def9876c1195456a312b8c232d656ff063cc5caae645be6afc3d06709742c"
+  },
+  "fixtures": {
+    "differential_circuits": 240,
+    "equivalent_circuits": 48,
+    "literal_replays": 384,
+    "negative_circuits": 192
+  },
+  "source_example": {
+    "certificate": {
+      "coefficient": "1",
+      "dimension": 4,
+      "epsilon": "1/4",
+      "equivalent": false,
+      "input": 0,
+      "output": 1,
+      "problem_sha256": "d32cd250d576afa157b04f24b9583bec75b113fafddfc831a86079ce5e583ae9",
+      "schema": "spd-dirty-witness/v1",
+      "spectral_interval": [
+        "1/2",
+        "1"
+      ],
+      "statistics": {
+        "alphabet": [
+          "A0",
+          "A1",
+          "A2"
+        ],
+        "layer_dimensions": [
+          4,
+          2,
+          2,
+          2,
+          0
+        ],
+        "states": 19
+      },
+      "word": [
+        "A2",
+        "A1",
+        "A0"
+      ]
+    },
+    "discrepancy": "1/512"
+  },
+  "spectral_matrices": 96,
+  "stress": {
+    "degree": 64,
+    "dimension": 65,
+    "discrepancy": "1/6277101735386680763835789423207666416102355444464034512896",
+    "expanded_top_words": 18446744073709551616,
+    "maximum_layer_dimension": 2,
+    "states": 132,
+    "sum_layer_dimensions": 129
+  }
+}
