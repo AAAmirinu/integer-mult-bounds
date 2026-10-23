@@ -40,7 +40,12 @@ no independent human or formal proof-kernel acceptance is claimed.
 The package starts at main ff3cc58e370d0f678e529246f8c73e8094e18fcf, priority
 revision 7. Two vendor files and the example are frozen copies from pending
 head 48976daa4dce59b4867ef046da72a370e389925d. [SOURCES.json](SOURCES.json)
-records this dependency explicitly. No dependency is silently promoted to main.
+records original upstream locations and pins the exact retained copies in this
+publication history. The original proof and attribution are retained with the
+compiler. No pending upstream Git object is required by a fresh checkout.
+The first hosted replay failed before mathematical execution because that
+pending Git object was absent. The source-history repair preserves all bytes
+and all mathematical checks. No dependency is promoted to main.
 The full-history wrapper was not run in the shallow checkout. No selected cold
 replay, native/Lean/Docker run, physical implementation or kappa change is claimed.
 
