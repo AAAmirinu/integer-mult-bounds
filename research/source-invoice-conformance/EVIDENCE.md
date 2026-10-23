@@ -95,3 +95,13 @@ this tool's domain, not as mathematical impossibility results.
 The checkout is shallow. Optional full source-history checking is unavailable;
 metadata/source pins, direct base ancestry, committed bytes and portable export
 verification are separate checks and do not imply full publication history.
+
+Final transport checks passed at scientific-code commit
+`1d9608a86ac1f0b6ea51475874021fc49d5338dd`: committed-byte verification,
+the official nineteen-file export and its integrity check, and a complete
+optimized isolated replay from that Git-free export with empty PATH. Every
+exported file remained byte-identical after replay. Direct base ancestry passes;
+the optional history command reports `source-history check requires full Git
+history`. A final static assisted review confirmed the native boundary and
+symbolic-growth issues resolved, with no residual blocking issue. Subsequent
+changes only record these validation results.
