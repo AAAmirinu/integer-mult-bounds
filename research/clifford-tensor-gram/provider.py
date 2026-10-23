@@ -135,7 +135,8 @@ class Provider:
         """Check every event, frame contact, owned lifetime and paid charge."""
         c, program = self.c, self.word["programs"][direction]
         current = list(c["start"]) + [None]
-        live, paid, counts, adapters, pairs, warps = False, Counter(), Counter(), set(), {}, set()
+        live, paid, counts, adapters, pairs, warps = False, Counter(), Counter(), {}, {}, set()
+        contacts = {r: [] for r in range(224)}
         for j, event in enumerate(program):
             kind = event[0]
             counts[kind] += 1
@@ -152,11 +153,15 @@ class Provider:
                 need(current[target] == a and r == abs(len(u)-len(v)) > 0
                      and rank(u+v) == max(len(u), len(v)), "Chronological nested paid edge")
                 current[target] = b
+                if target < 224:
+                    contacts[target].append(j)
                 paid[r] += 1
                 pairs[a, b] = r
             elif kind == "warp":
                 _, register, signed, a, b = event
                 target = role(register)
+                if target < 224:
+                    contacts[target].append(j)
                 need(current[target] == a and abs(signed) in self.maps, "Chronological signed warp")
                 rows = transpose(next(row["G_columns"] for row in c["warps"] if row["op"] == abs(signed)))
                 if signed < 0:
@@ -170,6 +175,8 @@ class Provider:
             elif kind == "scalar":
                 gate, f = event[1:]
                 target = role(gate[1])
+                if target < 224:
+                    contacts[target].append(j)
                 op = gate[0]
                 if op in ("clear", "copy"):
                     need(target == OWNED, "Only owned storage can be overwritten")
@@ -180,6 +187,8 @@ class Provider:
                 need(current[target] == f, "Scalar receiver frame")
                 if op in ("add", "copy"):
                     source = role(gate[2])
+                    if source < 224:
+                        contacts[source].append(j)
                     need(source != target and current[source] == f, "Scalar source frame")
                     need(source != OWNED or live, "Owned source is initialized")
                     if op == "copy":
@@ -204,12 +213,18 @@ class Provider:
                 need(current[target] == f or self.old_frame(target, entrance) == self.frame(f),
                      "A moved adapter must be exactly the identity")
                 need((side, target) not in adapters, "No repeated main adapter")
-                adapters.add((side, target))
+                adapters[side, target] = j
             else:
                 need(kind == "phase", "Known provider event")
         need(not live and current[:PERSISTENT] == c["final"], "Complete final frame and owned return")
-        need(adapters == {(side, r) for side in ("old_to_new", "new_to_old") for r in range(224)},
+        need(set(adapters) == {(side, r) for side in ("old_to_new", "new_to_old") for r in range(224)},
              "All 448 main adapter events")
+        for (side, target), position in adapters.items():
+            entrance = side == "old_to_new"
+            f = c["start" if entrance else "final"][target]
+            if self.old_frame(target, entrance) != self.frame(f):
+                need(all(position < j if entrance else j < position for j in contacts[target]),
+                     "Nonidentity adapters surround every use of their role")
         need(dict(paid) == {int(k): v for k, v in c["local_profile"].items()}, "Complete paid profile")
         return dict(events=dict(counts), paid=dict(sorted(paid.items())), pairs=pairs, warps=warps)
 

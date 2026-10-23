@@ -66,6 +66,14 @@ historical novelty certificate.
    width. The full-provider norm need not have that bound, because its
    prefix and suffix can be nonunitary. Invertibility transfers nonzero
    defect, not a condition-number estimate.
+9. The final proof audit checks the positions of all 224 nonidentity main
+   adapters in each direction. Each entrance precedes all uses of its role;
+   each exit follows all uses. This check is part of the importer. It makes
+   the interval's logical-frame interpretation explicit. All receipts keep
+   the same mathematical values.
+   A separate negative check moved role 112's nonidentity exit adapter from
+   event 15,723 to event 14,298, before its last scalar contact. The audit
+   rejected it with `Nonidentity adapters surround every use of their role`.
 
 No promising fusion survived the exact endpoint test. The source remains
 unchanged. The hypothetical invoice delta is not an achieved saving, so a

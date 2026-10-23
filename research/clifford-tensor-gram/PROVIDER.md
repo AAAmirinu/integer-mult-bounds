@@ -85,6 +85,10 @@ that must not be hidden: some identity exit markers precede the final climb.
 The importer permits a marker at a different current frame only when the
 adapter circuit is exactly the identity. A nonidentity marker must use its
 actual current frame.
+Every nonidentity entrance adapter must precede all uses of its role. Every
+nonidentity exit adapter must follow all uses. The word audit checks both
+conditions. Thus an adapter inside a candidate interval changes its endpoint
+frame and has the identity logical map.
 
 The sparse interpreter expands all independent inputs together. The existing
 `compact.certify` interpreter expands one input at a time. Both complete
