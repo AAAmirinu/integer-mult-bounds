@@ -34,7 +34,16 @@ The source interchanges use complete compact fields of width (f-1)G and preserve
 
 ## Evidence and limitations
 
-Run from any directory with Python 3.12:
+The standard metadata and registered replay commands (from the repository root) are:
+
+```sh
+python3.12 -B scripts/research_package.py --package research/complex-segment-boundary --check-only
+python3.12 -B scripts/research_package.py --package research/complex-segment-boundary
+```
+
+`TASK.json` pins the exact revision-7 catalogue card at the original canonical base. `SOURCES.json` pins the five retained predecessors, catalogue and selected record as historical provenance; the verifier authenticates the five package-local retained copies and two supplied artifacts before importing code. `VERIFY.json` has no external live inputs because direct replay uses only files inside this package. The registered runner checks Git provenance; direct replay remains Git-free. These packaging checks do not change the partial scientific scope.
+
+Run the direct verifier from any directory with Python 3.12:
 
 ```sh
 python3.12 -B /absolute/path/to/research/complex-segment-boundary/verify.py

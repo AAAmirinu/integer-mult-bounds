@@ -7,7 +7,7 @@ from hashlib import sha256
 
 HERE = Path(__file__).resolve().parent
 manifest = json.loads((HERE / 'SOURCES.json').read_text())
-for item in manifest['files'] + manifest['supplied_artifacts']:
+for item in [row for row in manifest['files'] if 'retained' in row] + manifest['supplied_artifacts']:
     if sha256((HERE / item['retained']).read_bytes()).hexdigest() != item['sha256']:
         raise ValueError('retained source hash')
 sys.path.insert(0, str(HERE))

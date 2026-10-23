@@ -40,7 +40,95 @@
   "claim_discussion": 5012,
   "agent": "/root/b2_task07",
   "bounded_execution": "Only literal compact/monomial primitive calls on current segments; no full native replay.",
-  "outcome": "partial-scoped-segment-refinement",
+  "outcome": "partial",
   "scope_status": "refined",
-  "scope_reason": "Complete local payload views and nested retained-source execution, conditional on a Python control-stack oracle. Physical descriptor frames, actual recursive child output installation and finalized packet hosting remain open."
+  "scope_reason": "Complete local payload views and nested retained-source execution, conditional on a Python control-stack oracle. Physical descriptor frames, actual recursive child output installation and finalized packet hosting remain open.",
+  "schema_version": 1,
+  "task_id": "uniform-transfer-audit",
+  "priority_revision": 7,
+  "base_commit": "4c0a359d88f22f05189d51f48387750b801a45d4",
+  "original_card": {
+    "id": "uniform-transfer-audit",
+    "question": "Does one quantified step of the proposed #4100 all-size construction hold at its actual caller?",
+    "starting_points": [
+      "docs/research/research-family-status.md",
+      "certificates/selected-result.json",
+      "research/unconditional-batched-crt/README.md"
+    ],
+    "methods": [
+      "Prove one missing implication with explicit quantified hypotheses.",
+      "Find an exact counterexample at the claimed interface boundary."
+    ],
+    "acceptance_gate": "Identify the proposition and what would change downstream; do not equate a finite replay with a universal proof.",
+    "first_step": {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/research_baseline.py"
+      ],
+      "expected": "PASS_RESEARCH_BASELINE_BINDINGS_ONLY",
+      "inspect": "Read PROOF.md and AUDIT.md in #4100. Select one distinct obligation: CRT total repair, native/free-algebra lifting, precision/conditioning, or complete fixed-tape cost. This is an author-submitted proof, not an accepted unconditional theorem.",
+      "scope": "Source-binding orientation only; no scientific replay, theorem acceptance or supplier admission. Budget any heavy replay separately."
+    },
+    "first_experiment": "Check live handoffs; name one proposition, its caller, quantified domain and dependency closure. Independently prove the implication or exhibit a precise gap/counterexample. Prioritize CRT.md total repair or COMPLEX.md free-algebra lift only if unclaimed. Stop at the chosen obligation; do not substitute finite samples or root arithmetic for an all-size proof, or launch the complete package by default.",
+    "bottleneck_link": "Finite supplier improvements are useful only under the retained transfer obligations.",
+    "allowed_variations": [
+      "One CRT repair, native lift, precision/conditioning or tape-cost proposition, with its exact caller."
+    ],
+    "scope_change_triggers": [
+      "Replacing a quantified obligation with another finite smoke test.",
+      "Treating archive intake, an author PASS receipt or a finite composed fixture as discharge of the universal hypotheses."
+    ],
+    "overlap_terms": [
+      "uniform transfer",
+      "all-size",
+      "precision",
+      "4100",
+      "unconditional-batched-crt"
+    ],
+    "existing_checks": [
+      {
+        "scope": "PR #4100: proposed unconditional construction and finite checks, without independent acceptance.",
+        "evidence": "research/unconditional-batched-crt/README.md",
+        "remaining": "Independent proof audit of one caller-bound all-size implication; all other premises remain explicit.",
+        "status": "author-checked",
+        "source_commit": "337d04939571a637aeab54a0f58f54fde811663a",
+        "selected_record_sha256": "bb2eaa58647b353f88d0aec2eafb9d30df1be53589231b23e12ceef3e4bad129"
+      }
+    ]
+  },
+  "actual_scope": "Scoped PR2250 payload-segment locality refinement and nested actual-source replay, conditional on a Python control-stack oracle; no physical descriptor-stack implementation or child-output return integration.",
+  "scope_change_reason": "Complete local payload views and nested retained-source execution, conditional on a Python control-stack oracle. Physical descriptor frames, actual recursive child output installation and finalized packet hosting remain open.",
+  "bottleneck_link": "Source-local tape movement must preserve arbitrary dirty ancestor prefixes before it can support the recursive COMPLEX caller. This package closes the payload-view sub-obligation only.",
+  "budget_minutes": 60,
+  "stop_rule": "Stop at a scoped payload-locality refinement and bounded retained-source fixtures; preserve physical control frames, real child output delivery and full packet binding as open obligations.",
+  "evidence": "README.md states the scoped refinement and explicit oracle limits. RESULT.json records unchanged-source nested compact replays and the actual right-recipe phase fibre. VERIFY.json registers identical normal and optimized bounded checks.",
+  "author": "JoyboyBrian",
+  "ai_assistance": "Substantial OpenAI Codex assistance in implementation, mathematical analysis, verification and writing.",
+  "open_questions": [
+    {
+      "question": "Can finalized actual rho, cover and return descriptors be bound to this adapter?",
+      "why_it_matters": "A local tape refinement does not establish the complete real caller boundary.",
+      "first_step": "Compare final packet source pins with the retained provisional BOUNDARY.json.",
+      "blocked_by": "Completed source-bound packet and hosting interface."
+    },
+    {
+      "question": "Can the designated child output be installed into the parent packet before retirement?",
+      "why_it_matters": "Current child context retires every child payload and does not implement recursive C output delivery.",
+      "first_step": "Bind one selected output role and charge a sequential transfer with dirty spectators.",
+      "blocked_by": "Completed packet/child return ABI."
+    },
+    {
+      "question": "Can a delimited physical control stack replace the Python frame oracle?",
+      "why_it_matters": "The 6D descriptor charge assumes known frame boundaries and lengths; it is not a total continuation bound.",
+      "first_step": "Encode two unequal-length nested frames and account for locating and removing each boundary.",
+      "blocked_by": "No external dependency; implementation and independent control-boundary validation remain."
+    },
+    {
+      "question": "Can finite slot scheduling replace weak-reference lifetime simulation?",
+      "why_it_matters": "The fixed source call graph supplies a bounded role argument, but the executable simulator uses Python object lifetimes.",
+      "first_step": "Generate the finite slot schedule at the repair/radix maximum live cut.",
+      "blocked_by": "Explicit finite-control schedule and validation."
+    }
+  ]
 }
