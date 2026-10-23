@@ -31,6 +31,16 @@ from receipt_guard import validate
 HERE=Path(__file__).resolve().parent
 COMMANDS_SHA256='a1137cf53296d6b56db2a785a1e923e4b807e799e1de41a911353ed5e7aa0433'
 
+def prepare_scratch(source,root):
+    # copytree preserves source directory modes. Read-only exports must remain
+    # read-only, but this new private execution tree owns its regenerated files.
+    shutil.copytree(source,root,dirs_exist_ok=True)
+    root.chmod(0o700)
+    for path in root.rglob('*'):
+        if path.is_dir():
+            path.chmod(0o700)
+
+
 def main():
     ap=argparse.ArgumentParser()
     ap.add_argument('--bindings-only',action='store_true')
@@ -50,7 +60,7 @@ def main():
     require(not destination.is_relative_to(HERE.resolve()),'Receipt output must be outside frozen package')
     report={'status':'RUNNING','optimization':sys.flags.optimize,'source_bindings':before,'runs':[],'python':sys.version,'scratch':str(root)}
     try:
-        shutil.copytree(HERE/'capsule',root,dirs_exist_ok=True)
+        prepare_scratch(HERE/'capsule',root)
         manifest=json.loads((HERE/'SOURCE-BINDINGS.json').read_bytes())
         for row in manifest['files']:
             if row['path'].startswith('capsule/'):

@@ -41,9 +41,11 @@ The standalone verifier authenticates both helper modules before import, rejects
 missing/symlinked/mutated working inputs and wrong claim/head/payload/premises,
 then copies the minimal capsule into a private scratch tree. It creates fresh
 bytecode caches, propagates explicit optimization to every child and runs the
-eight scientific commands serially. Fresh outputs are parsed for exact source
-bindings and complete scientific coverage; a child exit code alone is
-insufficient. It uses no runtime Git reader or Git-blob fallback. Normal and
+eight scientific commands serially. After copying a read-only export, it sets
+only the new private scratch directories to mode 0700 so caches and regenerated
+outputs can be created; frozen/exported source bytes and permissions stay
+unchanged. Fresh outputs are parsed for exact source bindings and complete
+scientific coverage; a child exit code alone is insufficient. It uses no runtime Git reader or Git-blob fallback. Normal and
 optimized executions remain separate recorded runs. Receipt destinations must
 be outside the package and free of symlink/hardlink aliases. Cold receipts stay
 outside frozen inputs, avoiding a source-hash cycle.
