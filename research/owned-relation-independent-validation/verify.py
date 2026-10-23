@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Independent PR5377 packet replay, standard-library Python, no Git/network.
 
-Prepared for roger-sato with substantial OpenAI Codex assistance. Apache-2.0.
+Chris R / Clear1nsight, with substantial OpenAI Codex assistance. Apache-2.0.
 The two frozen review engines retain their attribution and exact source bytes.
 """
 from pathlib import Path, PurePosixPath
