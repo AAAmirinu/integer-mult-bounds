@@ -2,8 +2,9 @@
 
 Several required reads of the same logical snapshot can share a transformed
 owned copy. A small exact example replaces **two rank-2 Gaussian jobs by three
-rank-1 jobs**, with no new productive-output credit. Its predicted moment saving
-was frozen before construction and then verified. The same geometry extends
+rank-1 jobs**, with no new productive-output credit. The tree, word skeleton
+and moment prediction were frozen before exact Clifford realization and
+all-column verification. The same geometry extends
 Matarener's selected-center lower bound to non-nested Clifford transports and
 typed-copy trees: **each of the 16 block-orientations still costs at least one
 rank-8 job** under the original common-contact constraints.
@@ -36,6 +37,15 @@ repository's owned-copy and Gaussian-job contracts.
 The simplest useful example has source frame 0 and two target planes
 \(\langle1,2\rangle,\langle1,4\rangle\). Going separately costs \(2\,2^s\).
 Sharing their line \(\langle1\rangle\) costs three rank-1 edges, hence 3.
+The shared paid-transfer graph is:
+
+```mermaid
+flowchart LR
+  S["Source frame 0"] -->|"rank 1"| M["Retained line cache"]
+  M -->|"rank 1"| A["First target plane"]
+  M -->|"rank 1"| B["Second target plane"]
+```
+
 The exact optimum over typed cache trees, even with arbitrary intermediate
 Clifford charts, is
 
@@ -49,7 +59,9 @@ At the selected exponent the shared tree saves
 `0.9916351247756209043` moment units. **One additional rank-1 repair job
 exhausts that saving.** [PLAN.json](PLAN.json) fixes the prediction and geometry
 hash; [RESULT.json](RESULT.json) contains outward rational sign certificates.
-This is a prospective module-cost prediction, not a held-out κ improvement.
+This tests a predeclared module-cost prediction. The word skeleton was already
+specified at the freeze; it is not a blind structural discovery or a held-out
+κ improvement.
 
 ## Exact ownership and lifetime contract
 

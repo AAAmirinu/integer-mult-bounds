@@ -38,9 +38,11 @@ proofs, not kernel-checked theorems or an independently reviewed admission.
 
 ## Frozen evidence
 
-The plan was frozen at `2026-10-23T13:12:01.622494+00:00` before the literal
-construction/checker. Its prediction is a module moment saving, not a new
-kappa. The observation variant and final proof are subsequent derivations.
+The plan was frozen at `2026-10-23T13:12:01.622494+00:00` before exact Clifford
+realization and the all-column checker. The frozen geometry file already
+contains the word skeleton. Its prediction is a module moment saving, not
+a blind design forecast or a new kappa. The observation variant and final
+proof are subsequent derivations.
 
 | File | SHA256 |
 | --- | --- |
@@ -61,3 +63,28 @@ active-feedback README is a separately pinned provenance source.
 The overlap search and relevant live claims are recorded in TASK.json.
 No external post, PR, selected-frontier update or maintainer queue action was
 performed. This package is local author-checked evidence.
+
+## Committed bytes and Git free replay
+
+The byte preflight passed for all 24 package/input files at
+`40eeaa2a363ec8f9bc420b3bb6e337234949b308`:
+
+```sh
+python3 -B scripts/check_research_commit.py --package research/gaussian-cache-reuse
+python3 -B scripts/export_research_package.py export --package research/gaussian-cache-reuse --ref 40eeaa2a363ec8f9bc420b3bb6e337234949b308 --output /tmp/gaussian-cache-reuse-40eeaa2a36.tar
+python3 -B scripts/export_research_package.py check /tmp/gaussian-cache-reuse-40eeaa2a36.tar
+```
+
+The 580 KiB export passed its exact inventory/hash check. It was extracted
+into a fresh temporary directory with no Git checkout and replayed normally
+and with `-O`, using the same Python 3.12 interpreter, `PATH=/nonexistent`,
+`-I -W error -B` and fresh `-X pycache_prefix` directories. Both mathematical
+replays passed and the temporary extracted files were removed. Subsequent
+documentation refinements leave the verifier, plan and result bytes unchanged.
+This is evidence for the declared mathematical replay inputs, not hosted CI.
+
+The additional `--check-source-history` preflight did not pass: this checkout
+is shallow and the tool requires full Git history. It reported
+`source-history check requires full Git history`. No full-history download
+or weaker replacement check was used. The successful byte/export checks do
+not substitute for that separate publication-history requirement.

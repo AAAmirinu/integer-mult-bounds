@@ -117,7 +117,9 @@ attain them. Ordinary monomial costs are outside this rank-only optimum.
 At \(s=1-0.00302015\), the frozen gain is
 \(2\,2^s-3=0.9916351247756209043\ldots\).
 The exact rational interval engine certifies its positive sign and the
-negative sign after charging one more H1. At \(s=1/2\) the separate
+negative sign after charging one more H1. In fact the repaired saving is
+\(4(2^{-\kappa}-1)<0\) for every \(\kappa>0\).
+At \(s=1/2\) the separate
 transfers win. This sign reversal is a useful control on treating rank mass
 as a sufficient cost statistic.
 
