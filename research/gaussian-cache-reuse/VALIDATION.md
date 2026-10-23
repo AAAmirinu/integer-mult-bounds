@@ -1,0 +1,63 @@
+# Local validation
+
+Checked on 2026-10-23 on Darwin arm64 with CPython 3.12.14, standard library
+only. The bundled interpreter was
+`/Users/temp/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3`.
+No new dependency installation was required.
+
+## Commands and outcomes
+
+```sh
+python3.12 -B scripts/research_package.py --package research/gaussian-cache-reuse --check-only
+python3.12 -B scripts/research_package.py --package research/gaussian-cache-reuse
+python3 -B scripts/research_selected_baseline.py
+```
+
+The metadata/source-pin check passed. The registered replay passed both
+`-I -W error -B verify.py` and `-I -O -W error -B verify.py`, each in its
+launcher-supplied private bytecode-cache namespace. They reproduced all saved
+mathematical fields read-only and ended with
+`PASS_REGISTERED_RESEARCH_PACKAGE research/gaussian-cache-reuse outcome=partial`.
+Explicit guards and all-column comparisons remain active under optimization.
+Result comparison uses the JSON representation, including string rank keys.
+
+Coverage: 256 exact canonical frame pairs including 140 non-nested pairs;
+40 independent input columns in each main orientation and in the supplied
+observation module; eight correlated observation fixtures; wrong phase,
+wrong raw-dual orientation and stale-snapshot controls; restored/proportional
+row controls; all 15 two-qubit Lagrangians and 6,750 paths/trees; all 16
+selected center block-orientations with 22 targets each; complete local paid
+profile reconstruction; outward rational moment signs at four exponents
+and a losing half-exponent control.
+
+The selected-baseline command passed source/metadata orientation only. It is
+not the full selected replay. No new selected supplier was installed, so
+native, Lean, Docker, full compiler/precision/tape and multiplication-theorem
+replays were not run. The all-width identities and lower bound are written
+proofs, not kernel-checked theorems or an independently reviewed admission.
+
+## Frozen evidence
+
+The plan was frozen at `2026-10-23T13:12:01.622494+00:00` before the literal
+construction/checker. Its prediction is a module moment saving, not a new
+kappa. The observation variant and final proof are subsequent derivations.
+
+| File | SHA256 |
+| --- | --- |
+| `PLAN.json` | `9d914483465b5da9952a8c2ad3c1017ad231ffa6b1c2681eb846d4b98b6fd649` |
+| `geometry.py` | `20c217d44893d2cc3b517af826936fc8a4c58f498f5bf76b833e5599a25d9084` |
+| `RESULT.json` | `127aaacd8c24043129f224f56f14f436826c218091c82bde647ef9f46fe9c3c5` |
+
+## Upstream checkpoint and scope
+
+The investigation started at canonical main
+`ec2780e8aeb1c88acaf5e9e470ef8c68e7fbbb6c` and refreshed to
+`ff3cc58e370d0f678e529246f8c73e8094e18fcf`. Selection, catalogue,
+family guidance and every pre-existing declared source pin were unchanged.
+Upstream was merged without modifying frozen evidence, and the package was
+replayed with its updated Git-reader cleanup. The newly archived
+active-feedback README is a separately pinned provenance source.
+
+The overlap search and relevant live claims are recorded in TASK.json.
+No external post, PR, selected-frontier update or maintainer queue action was
+performed. This package is local author-checked evidence.
