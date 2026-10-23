@@ -16,13 +16,13 @@ from syntax import fingerprint, validate
 
 def check(program, witness):
     if validate(program).characteristic:
-        raise ValueError("the SPD construction requires Q")
+        raise ValueError("the orthogonal construction requires Q")
     keys = {"schema", "program_sha256", "word", "dimension", "input", "output",
-            "epsilon", "epsilon_cap", "numerator_degree_bound", "grid_size",
+            "parameter", "parameter_cap", "numerator_degree_bound", "grid_size",
             "grid_index", "endpoint_difference"}
     if not isinstance(witness, dict) or set(witness) != keys:
         raise ValueError("invalid witness fields")
-    if witness["schema"] != "spd-inverse-witness/v1":
+    if witness["schema"] != "orthogonal-inverse-witness/v1":
         raise ValueError("invalid witness schema")
     if witness["program_sha256"] != fingerprint(program):
         raise ValueError("program binding mismatch")
@@ -41,13 +41,13 @@ def check(program, witness):
     degree = degree_bound(program, n)
     if witness["numerator_degree_bound"] != degree or witness["grid_size"] != degree + 1:
         raise ValueError("grid bound mismatch")
-    cap, epsilon = Fraction(witness["epsilon_cap"]), Fraction(witness["epsilon"])
+    cap, parameter = Fraction(witness["parameter_cap"]), Fraction(witness["parameter"])
     index = witness["grid_index"]
     if not 0 < cap <= Fraction(1, 4) or not 1 <= index <= degree + 1:
         raise ValueError("invalid grid range")
-    if epsilon != cap * (degree + 2 - index) / (degree + 1):
+    if parameter != cap * (degree + 2 - index) / (degree + 1):
         raise ValueError("invalid grid point")
-    difference = replay(program, word, epsilon, witness["input"])
+    difference = replay(program, word, parameter, witness["input"])
     if witness["endpoint_difference"] != [[str(x) for x in row] for row in difference]:
         raise ValueError("literal endpoint mismatch")
     if not difference[witness["output"]][0]:
@@ -61,7 +61,7 @@ def main():
     parser.add_argument("witness", type=Path)
     args = parser.parse_args()
     check(json.loads(args.program.read_text()), json.loads(args.witness.read_text()))
-    print("PASS_SPD_INVERSE_WITNESS_CHECKED")
+    print("PASS_ORTHOGONAL_INVERSE_WITNESS_CHECKED")
 
 
 if __name__ == "__main__":

@@ -69,21 +69,44 @@ def matvec(matrix, vector):
     return [sum((a * b for a, b in zip(row, vector)), Q(0)) for row in matrix]
 
 
+def mm(a, b):
+    return [[sum((x * y for x, y in zip(row, col)), Q(0))
+             for col in zip(*b)] for row in a]
+
+
+def determinant(matrix):
+    a = [row[:] for row in matrix]
+    value = Q(1)
+    for j in range(len(a)):
+        pivot = next((i for i in range(j, len(a)) if a[i][j]), None)
+        if pivot is None:
+            return Q(0)
+        if pivot != j:
+            a[j], a[pivot] = a[pivot], a[j]
+            value = -value
+        value *= a[j][j]
+        for i in range(j + 1, len(a)):
+            ratio = a[i][j] / a[j][j]
+            a[i] = [x - ratio * y for x, y in zip(a[i], a[j])]
+    return value
+
+
 def dense_replay(p, w):
-    n, e = w["dimension"], Q(w["epsilon"])
+    n, t = w["dimension"], Q(w["parameter"])
     matrices = {}
+    identity = [[Q(i == j) for j in range(n)] for i in range(n)]
     for a in p["operators"]:
-        matrix = [[Q(i == j) * (1 - e) for j in range(n)] for i in range(n)]
+        plus, minus = deepcopy(identity), deepcopy(identity)
         for j, label in enumerate(w["word"]):
             if label == a:
-                matrix[j][j + 1] = matrix[j + 1][j] = e / 2
+                plus[j][j + 1], plus[j + 1][j] = t / 2, -t / 2
+                minus[j][j + 1], minus[j + 1][j] = -t / 2, t / 2
+        matrix = mm(dense_inverse(minus), plus)
         inverse = dense_inverse(matrix)
-        for j in range(n):
-            radius = sum(abs(matrix[j][k]) for k in range(n) if k != j)
-            require(matrix[j][j] - radius >= 1 - 2 * e, "lower spectral bound")
-            require(matrix[j][j] + radius <= 1, "upper spectral bound")
-            column = [inverse[k][j] for k in range(n)]
-            require(matvec(matrix, column) == [Q(k == j) for k in range(n)], "true inverse")
+        transpose = list(map(list, zip(*matrix)))
+        require(inverse == transpose, "inverse must be transpose")
+        require(mm(transpose, matrix) == identity, "exact orthogonality")
+        require(determinant(matrix) == 1, "special orthogonal determinant")
         matrices[a, 1], matrices[a, -1] = matrix, inverse
     results = []
     for side in ("left", "right"):
@@ -138,11 +161,15 @@ def group_difference(p):
 
 def grid_roots(count):
     p = program(["x", "h"])
+    p["left"] = [linear("h", [["x", 1]]), apply("x", "A", 1),
+                 linear("x", [["x", 1], ["h", -1]])]
+    grid = 4 * count + 3
     for j in range(1, count + 1):
-        root = Q(count + 2 - j, 4 * (count + 1))
-        alpha = 1 / (1 - root)
-        p["left"] += [linear("h", [["x", 1]]), apply("x", "A", -1),
-                      linear("x", [["x", 1], ["h", str(-alpha)]]), linear("h", [])]
+        root = Q(grid + 1 - j, 4 * grid)
+        alpha = 2 * (1 - root**2 / 4) / (1 + root**2 / 4)
+        p["left"] += [linear("h", [["x", 1]]), linear("x", [["h", str(-alpha)]]),
+                      query("x", "h", "A", 1, 1), query("x", "h", "A", -1, 1)]
+    p["left"].append(linear("h", []))
     p["right"] = [linear("x", []), linear("h", [])]
     return p
 
@@ -174,7 +201,7 @@ def run(small):
     wrong_witness = inspect(wrong)
     require(wrong_witness["dimension"] == 3, "commutator must have degree two")
     tiny = inspect(wrong, Q(1, 2**40))
-    require(Q(tiny["epsilon"]) <= Q(1, 2**40), "arbitrary small cap")
+    require(Q(tiny["parameter"]) <= Q(1, 2**40), "arbitrary small cap")
     sandwich = json.loads((ROOT / "vendor/dirty-sandwich.json").read_text())
     rejected(lambda: construct(sandwich))
     deletion_count = 0
@@ -189,11 +216,27 @@ def run(small):
     for count in (1, 2, 4, 7):
         p = grid_roots(count)
         w = inspect(p)
-        require(w["word"] == [] and w["grid_index"] == count + 1, "must use last grid point")
+        require(w["word"] == ["A"] and w["grid_index"] == count + 1, "must skip all grid roots")
         for j in range(1, count + 1):
-            require(replay(p, [], Q(count + 2 - j, 4 * (count + 1)), 0)[0][0] == 0, "grid root")
+            require(replay(p, ["A"], Q(4 * count + 4 - j, 4 * (4 * count + 3)), 0)[0][0] == 0, "grid root")
         roots.append({"roots": count, "grid_size": w["grid_size"],
                       "accepted_index": w["grid_index"], "difference": w["endpoint_difference"][0][0]})
+
+    difference = program()
+    difference["left"] = [apply("x", "A", 1)]
+    difference["right"] = [apply("x", "A", -1)]
+    short = inspect(difference)
+    require(short["word"] == ["A"], "shortest coefficient is required")
+    for t in (Q(1, 4), Q(1, 7), Q(1, 100)):
+        require(replay(difference, ["A", "A"], t, 0)[0][0] == 0,
+                "a longer nonzero coefficient need not survive Cayley substitution")
+    nested = [("A", 1), ("B", 1), ("A", -1), ("B", -1)]
+    for degree in range(2, 6):
+        p = program()
+        p["left"] = [apply("x", a, sign) for a, sign in nested]
+        w = inspect(p)
+        require(w["dimension"] == degree + 1, "nested commutator leading degree")
+        nested = nested + [("A", 1)] + [(a, -sign) for a, sign in reversed(nested)] + [("A", -1)]
 
     # This case returns a changed dirty role even though x is unchanged.
     dirty = program(["x", "h"])
@@ -212,7 +255,7 @@ def run(small):
 
     controls = 0
     changes = {"program_sha256": "0" * 64, "dimension": 4, "input": True,
-               "output": 7, "word": ["C"], "epsilon": "0", "epsilon_cap": "1/2",
+               "output": 7, "word": ["C"], "parameter": "0", "parameter_cap": "1/2",
                "numerator_degree_bound": -1, "grid_index": 0, "grid_size": 0,
                "endpoint_difference": [["0"] * 3]}
     for key, value in changes.items():
@@ -264,13 +307,14 @@ def run(small):
             for j in range(length + 1):
                 vector = [Q(i == j) for i in range(length + 1)]
                 require(action(band, action(band, vector, -1), 1) == vector, "solve residual")
+                require(sum(x*x for x in action(band, vector, 1)) == 1, "exact Euclidean norm")
                 vector_checks += 1
-    result = {"schema": "spd-inverse-verification/v1", "status": "PASS",
+    result = {"schema": "orthogonal-inverse-verification/v1", "status": "PASS",
               "random_programs": random_count, "random_equal": equal_count,
               "random_different": negative_count, "dense_full_replays": dense_count,
               "sandwich_deletions": deletion_count, "rejecting_controls": controls,
-              "true_inverse_basis_checks": vector_checks, "forced_grid_examples": roots,
-              "commutator": wrong_witness, "near_identity_epsilon": tiny["epsilon"],
+              "true_inverse_basis_checks": vector_checks, "nested_commutators": 4, "nonshortest_zero_controls": 3, "forced_grid_examples": roots,
+              "commutator": wrong_witness, "near_identity_parameter": tiny["parameter"],
               "stress": {"lowest_degree_words": 2**depth, "states": 2 + 2 * depth,
                          "dimension": sw["dimension"], "degree_bound": sw["numerator_degree_bound"],
                          "grid_size": sw["grid_size"], "accepted_index": sw["grid_index"]},
@@ -295,7 +339,7 @@ def main():
         else:
             require(result == json.loads((ROOT / "RESULT.json").read_text()), "committed receipt")
     print(json.dumps(result, sort_keys=True))
-    print("PASS_SPD_INVERSE_CIRCUIT_WITNESS")
+    print("PASS_ORTHOGONAL_INVERSE_CIRCUIT_WITNESS")
 
 
 if __name__ == "__main__":
