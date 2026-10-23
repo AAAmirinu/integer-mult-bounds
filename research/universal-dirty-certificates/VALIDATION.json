@@ -91,5 +91,6 @@
     "No inverse/commutation/Clifford relation-aware decision procedure.",
     "No rounded backend, native supplier, hosting, stock, fixed-tape, moment, outer or full multiplication replay."
   ],
-  "earlier_runs": "The final registered transcript supersedes earlier prototype runs. Metadata scaffolding and sparse-orientation failures were corrected; no scientific predecessor was modified."
+  "earlier_runs": "The final registered transcript supersedes earlier prototype runs. Metadata scaffolding and sparse-orientation failures were corrected; no scientific predecessor was modified.",
+  "replay_transcript": "REPLAY.txt"
 }
