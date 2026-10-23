@@ -43,7 +43,7 @@ python3 -I -B research/owned-relation-independent-validation/verify.py
 python3 -I -O -B research/owned-relation-independent-validation/verify.py
 ```
 
-`--integrity-only` checks the full inventory, Merkle paths and frozen cold receipts without running mathematical engines. Full replay runs unchanged independent engines from private temporary directories with read-only source inputs and fresh bytecode namespaces. Every stable mathematical result field must equal its frozen original receipt; runtime seconds alone are excluded. The cost receipt predates additional provenance captures: its original 12 source hashes must match and the current 25-file map is authenticated separately. All inputs are rechecked after execution.
+`--integrity-only` checks the full inventory, Merkle paths and frozen cold receipts without running mathematical engines. Full replay runs unchanged independent engines from private temporary directories with read-only source inputs and fresh bytecode namespaces. Every stable mathematical result field must equal its frozen original receipt; runtime seconds alone are excluded. The cost receipt predates additional provenance captures: its original 12 source hashes must match and the current 24-file map is authenticated separately. All inputs are rechecked after execution.
 
 Fresh controls include the physical engine's wrong-relation and wrong-snapshot checks; the cost engine's old BIT, closed uniform gap, unfunded endpoint and closed epsilon checks; an actual altered-WORD-byte inventory rejection; and a private copied receipt falsely crediting 16 surrendered rank-nine outputs, rejected by the literal census. No source guard is bypassed or mutant repinned. All checks remain active under optimized Python.
 
