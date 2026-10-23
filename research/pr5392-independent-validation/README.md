@@ -72,6 +72,9 @@ After checking and extracting the committed export into a fresh Git-free directo
 python3 -I -B research/pr5392-independent-validation/verify.py --integrity-only
 python3 -I -B research/pr5392-independent-validation/verify.py
 python3 -I -O -B research/pr5392-independent-validation/verify.py
+# Separate short oracle stage imports the included sibling core helpers:
+python3 -B research/pr5392-independent-validation/verify_oracle.py
+python3 -O -B research/pr5392-independent-validation/verify_oracle.py
 ```
 
 Expected independent mathematical replay is approximately 55 seconds per mode, with a 240-second registered timeout per mode. `--integrity-only` authenticates sources, static gate bindings and frozen cold evidence without mathematical replay. Full execution provenance and publication-byte checks are recorded in RESULT/HANDOFF and the operational publication receipts.
