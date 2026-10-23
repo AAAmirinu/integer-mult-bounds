@@ -374,6 +374,12 @@ pins. Use exact arithmetic or certified bounds for acceptance; finite-field and
 floating-point searches can propose candidates but cannot certify a rational
 rank identity or universal theorem on their own.
 
+For scalar linear programs with independent noncommuting unary operators, the
+[universal dirty-circuit guide](universal-dirty-circuit-guide.md) offers compact
+exact certificates for complete dirty endpoints and termwise tensor substitution.
+Its grammar and independent-symbol hypotheses must match the actual caller;
+native, inverse/group, nonlinear and physical cost obligations remain separate.
+
 Run checks relevant to your change, with a positive fixture and meaningful
 failure controls when adding a verifier. State which obligations were **not**
 checked. Supplier adoption needs the applicable complete cold replay and source

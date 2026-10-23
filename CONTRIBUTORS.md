@@ -3935,3 +3935,99 @@ Source archives retain attribution; mathematical review remains open.
 - **Nick Petalas (@petalas)** — [#5232](https://github.com/CrocSwap/integer-mult-bounds/pull/5232): Prove sharp COPY71 for the coordinate-frame A7+A1 puncture (source archive).
 - **Nick Petalas (@petalas)** — [#5233](https://github.com/CrocSwap/integer-mult-bounds/pull/5233): Prove the unique rank-800 H6 bivariate fitting kernel (no new κ) (source archive).
 - **Nick Petalas (@petalas)** — [#5234](https://github.com/CrocSwap/integer-mult-bounds/pull/5234): Prove an eight-source singleton floor of 28 calls (no new κ) (source archive).
+
+## Queue intake, 23 October 2026 (chunk O)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **jacobalansussman (@jacobalansussman)** — [#4628](https://github.com/CrocSwap/integer-mult-bounds/pull/4628): Research: lower bounds for small complex units: m = 2 never saves, m = 3 needs 14W/5 calls (Lean, engine game), m = 4 needs 41W/13, and the smallest open cases (no new κ) (source archive).
+- **zxv (@zxv)** — [#5235](https://github.com/CrocSwap/integer-mult-bounds/pull/5235): Add compact universal certificates for dirty linear circuits (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5237](https://github.com/CrocSwap/integer-mult-bounds/pull/5237): Prove exact four-plane COPY mass 16 for one open class (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5238](https://github.com/CrocSwap/integer-mult-bounds/pull/5238): Prove sharp trace-zero E7 support twelve (no new κ) (source archive).
+- **Krzysztof Wójt (@krzysztofwojt)** — [#5239](https://github.com/CrocSwap/integer-mult-bounds/pull/5239): Classify fifteen-owner equality graphs with six-cycles (no new κ) (source archive).
+- **Armin Pourshafeie (@apoursh)** — [#5240](https://github.com/CrocSwap/integer-mult-bounds/pull/5240): Audit rounded matching-layer execution and stored-coordinate widths (source archive).
+- **Chris R (@Clear1nsight)** — [#5241](https://github.com/CrocSwap/integer-mult-bounds/pull/5241): Independently verify #4610’s conditional κ gain over selected #4470 (source archive).
+- **Krzysztof Wójt (@krzysztofwojt)** — [#5242](https://github.com/CrocSwap/integer-mult-bounds/pull/5242): Prove exact mixed-target costs for binary semilinear groups (source archive).
+- **Chris R (@Clear1nsight)** — [#5243](https://github.com/CrocSwap/integer-mult-bounds/pull/5243): Verify a one-native-fusion conditional compiler construction target (source archive).
+- **Cinna Davis (@1337isnot1337)** — [#5244](https://github.com/CrocSwap/integer-mult-bounds/pull/5244): Prove no free completion of the stated fresh-input fourteen-call schedule (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5245](https://github.com/CrocSwap/integer-mult-bounds/pull/5245): Prove sharp commuting repair for Hermitian qubit triples (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5246](https://github.com/CrocSwap/integer-mult-bounds/pull/5246): Prove the exact F4 hyperplane intersection law (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5247](https://github.com/CrocSwap/integer-mult-bounds/pull/5247): Prove sharp integer inertia for two-facet downsets (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5248](https://github.com/CrocSwap/integer-mult-bounds/pull/5248): Prove exact spectral completion for deficiency-two symplectic spreads (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5249](https://github.com/CrocSwap/integer-mult-bounds/pull/5249): Prove sharp rank-59 boundary for P112 diagonal completions (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5250](https://github.com/CrocSwap/integer-mult-bounds/pull/5250): Extract exact matrix-pencil stabilizer determinant images (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5251](https://github.com/CrocSwap/integer-mult-bounds/pull/5251): Construct a uniform 42-ray design with exactly one basis (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5252](https://github.com/CrocSwap/integer-mult-bounds/pull/5252): Extract exact finite etale tensor determinant images (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5253](https://github.com/CrocSwap/integer-mult-bounds/pull/5253): Prove characteristic-two odd-type rank floors 22 and 53 (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5254](https://github.com/CrocSwap/integer-mult-bounds/pull/5254): Prove a sharp entropy threshold for adaptive tail gates (no new κ) (source archive).
+- **Ali Romman (@aliromman)** — [#5255](https://github.com/CrocSwap/integer-mult-bounds/pull/5255): Prove the sharp graph-support inverse norm envelope (source archive).
+- **Malik Safwan (@ssafwann)** — [#5256](https://github.com/CrocSwap/integer-mult-bounds/pull/5256): Prove block Schur central action and the exact sharp restriction (no κ) (source archive).
+- **lee-phys (@lee-phys)** — [#5259](https://github.com/CrocSwap/integer-mult-bounds/pull/5259): Prove exact nineteen-term tariffs for nonprincipal zero-sum triples (source archive).
+- **Ali Romman (@aliromman)** — [#5260](https://github.com/CrocSwap/integer-mult-bounds/pull/5260): Replace 119 periodic inverse updates with a certified direct solve (source archive).
+- **Krzysztof Wójt (@krzysztofwojt)** — [#5262](https://github.com/CrocSwap/integer-mult-bounds/pull/5262): Add inverse-aware universal certificates for dirty linear circuits (no new κ) (source archive).
+- **Chrisbryan17 (@Chrisbryan17)** — [#5265](https://github.com/CrocSwap/integer-mult-bounds/pull/5265): Cao P16: remove 34 commuting inverse ADDs with dual 632-column replay (no new kappa) (source archive).
+- **Malik Safwan (@ssafwann)** — [#5267](https://github.com/CrocSwap/integer-mult-bounds/pull/5267): Prove nilpotent Schur residual normal form and fixed-H weights (no κ) (source archive).
+- **Ali Romman (@aliromman)** — [#5268](https://github.com/CrocSwap/integer-mult-bounds/pull/5268): Construct positive-definite circuit counterexamples with condition number at most two (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5272](https://github.com/CrocSwap/integer-mult-bounds/pull/5272): Price rank-8 E8 Gram factorizations at 9 per term. (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5273](https://github.com/CrocSwap/integer-mult-bounds/pull/5273): Prove the height-1 truncated-source count and its endpoint gaps. (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5274](https://github.com/CrocSwap/integer-mult-bounds/pull/5274): Prove the depth-first continuation stack is O_q(V) at the new c. (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5275](https://github.com/CrocSwap/integer-mult-bounds/pull/5275): Prove the printed #4100 ledger boundary row uses tau_eff (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5276](https://github.com/CrocSwap/integer-mult-bounds/pull/5276): Record that the R437 parent blank-return exceeds the 972-bit child. (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5277](https://github.com/CrocSwap/integer-mult-bounds/pull/5277): Certify the SOURCE87 parent fibre count on the R437 carrier. (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5278](https://github.com/CrocSwap/integer-mult-bounds/pull/5278): Price the closed six-tape head moves of L546 -= L561. (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5279](https://github.com/CrocSwap/integer-mult-bounds/pull/5279): Price the shared chart-1 centre visit (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5280](https://github.com/CrocSwap/integer-mult-bounds/pull/5280): Record that the #4091 ceiling still bounds the 1090-call fill (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5281](https://github.com/CrocSwap/integer-mult-bounds/pull/5281): Record that monotone selected entrances miss the rank-8/u2 16-child c… (source archive).
+- **Matarener (@Matarener)** — [#5282](https://github.com/CrocSwap/integer-mult-bounds/pull/5282): research/window-break-even-4470: short label windows under the #4470 invoice vs the Theorem B line cap (no new kappa) (source archive).
+- **zxv (@zxv)** — [#5283](https://github.com/CrocSwap/integer-mult-bounds/pull/5283): Gaussian cache reuse for cross-frame ADDs and paid history (no new κ) (source archive).
+- **Ali Romman (@aliromman)** — [#5284](https://github.com/CrocSwap/integer-mult-bounds/pull/5284): Prove variable-gap precision and linear storage for cyclic band solves (source archive).
+- **Matarener (@Matarener)** — [#5285](https://github.com/CrocSwap/integer-mult-bounds/pull/5285): h=8 BIT receiver census of the PR555/PR589 family (negative result) (source archive).
+- **Hiroki KUMAZAKI (@kumagi)** — [#5286](https://github.com/CrocSwap/integer-mult-bounds/pull/5286): Bound retained backing across literal interchange call histories (source archive).
+- **Ali Romman (@aliromman)** — [#5287](https://github.com/CrocSwap/integer-mult-bounds/pull/5287): Recover the whole sharp Schur central class and characteristic-two partition (source archive).
+- **Ali Romman (@aliromman)** — [#5288](https://github.com/CrocSwap/integer-mult-bounds/pull/5288): Prove structure-dependent shear perturbation bounds (no new kappa) (source archive).
+- **James Reed (@jwr404)** — [#5292](https://github.com/CrocSwap/integer-mult-bounds/pull/5292): Bound two 3-cycles with a dirty third register below by eleven (no new κ) (source archive).
+- **Hiroki KUMAZAKI (@kumagi)** — [#5295](https://github.com/CrocSwap/integer-mult-bounds/pull/5295): Audit five-stage Tensor expansion accuracy at computed inputs (source archive).
+- **Ali Romman (@aliromman)** — [#5296](https://github.com/CrocSwap/integer-mult-bounds/pull/5296): Construct near-identity SPD witnesses for true inverse circuits (source archive).
+- **Matarener (@Matarener)** — [#5299](https://github.com/CrocSwap/integer-mult-bounds/pull/5299): Research: nonlinear messages keep the A7+A1 nine-term COPY floor at 72 (no new kappa) (source archive).
+- **flyingviper (@flyingviper)** — [#5301](https://github.com/CrocSwap/integer-mult-bounds/pull/5301): Certify no gain in a joint productive-helper/native fusion family (source archive).
+- **lee-phys (@lee-phys)** — [#5304](https://github.com/CrocSwap/integer-mult-bounds/pull/5304): Prove exact twenty-two-term tariffs for Boolean fanout triples (source archive).
+- **Ali Romman (@aliromman)** — [#5306](https://github.com/CrocSwap/integer-mult-bounds/pull/5306): Exact inverse envelope for unequal row contraction budgets (source archive).
+- **Ali Romman (@aliromman)** — [#5307](https://github.com/CrocSwap/integer-mult-bounds/pull/5307): Exact minimum-bit allocation for a fixed dyadic error budget (source archive).
+- **Ali Romman (@aliromman)** — [#5308](https://github.com/CrocSwap/integer-mult-bounds/pull/5308): Nearest coefficient rounding attains quadratic closed-word error (source archive).
+- **Ali Romman (@aliromman)** — [#5309](https://github.com/CrocSwap/integer-mult-bounds/pull/5309): Joint safety criterion and least-barrier update for coefficient changes (source archive).
+- **Ali Romman (@aliromman)** — [#5310](https://github.com/CrocSwap/integer-mult-bounds/pull/5310): Exact dirty-fanout source counts over finite associative rings (source archive).
+- **Ali Romman (@aliromman)** — [#5311](https://github.com/CrocSwap/integer-mult-bounds/pull/5311): Speed up full replay planning 19.37x with identical selection (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5312](https://github.com/CrocSwap/integer-mult-bounds/pull/5312): Exact two-row dirty-fanout tariffs over finite noncommutative rings (source archive).
+- **Ali Romman (@aliromman)** — [#5313](https://github.com/CrocSwap/integer-mult-bounds/pull/5313): Exact common-chart multiplicities for square-zero radical targets (source archive).
+- **Ali Romman (@aliromman)** — [#5315](https://github.com/CrocSwap/integer-mult-bounds/pull/5315): Construct rational orthogonal witnesses for complete inverse circuits (source archive).
+- **Ali Romman (@aliromman)** — [#5316](https://github.com/CrocSwap/integer-mult-bounds/pull/5316): Exact determinant characters for truncated-polynomial multiplication tensors (source archive).
+- **Matarener (@Matarener)** — [#5317](https://github.com/CrocSwap/integer-mult-bounds/pull/5317): centre-nonlinear-fresh-floor: mark the terminal-only question as answered (historical source archive).
+- **Ali Romman (@aliromman)** — [#5318](https://github.com/CrocSwap/integer-mult-bounds/pull/5318): Prove the all-height source floor K/N > 3.054 for selected nested widths (source archive).
+- **Hiroki KUMAZAKI (@kumagi)** — [#5319](https://github.com/CrocSwap/integer-mult-bounds/pull/5319): Audit actual Schur boundary residual and inverse bound (source archive).
+- **Ali Romman (@aliromman)** — [#5320](https://github.com/CrocSwap/integer-mult-bounds/pull/5320): Exact reachability of quadratic lifts of a split radical pencil (source archive).
+- **Ali Romman (@aliromman)** — [#5321](https://github.com/CrocSwap/integer-mult-bounds/pull/5321): Lower inverse-code arithmetic to a smaller complete local tape bound (source archive).
+- **Ali Romman (@aliromman)** — [#5322](https://github.com/CrocSwap/integer-mult-bounds/pull/5322): Prove local inverse-pair error cancellation and a sharper precision guard (source archive).
+- **Ali Romman (@aliromman)** — [#5323](https://github.com/CrocSwap/integer-mult-bounds/pull/5323): Give the rounded inverse code exact recovery with a sharp state bound (source archive).
+- **flyingviper (@flyingviper)** — [#5324](https://github.com/CrocSwap/integer-mult-bounds/pull/5324): Prove fixed chart heights cannot lower the productive-helper invoice (source archive).
+- **Ali Romman (@aliromman)** — [#5325](https://github.com/CrocSwap/integer-mult-bounds/pull/5325): Join Tensor error bounds through compression and final restoration (source archive).
+- **Ali Romman (@aliromman)** — [#5326](https://github.com/CrocSwap/integer-mult-bounds/pull/5326): Bind the periodic Gaussian Reference family to a cyclic direct solver (source archive).
+- **Brian (@JoyboyBrian)** — [#5327](https://github.com/CrocSwap/integer-mult-bounds/pull/5327): Bind actual FOUR/base data-climb packet to native chart and source owner (source archive).
+- **Brian (@JoyboyBrian)** — [#5328](https://github.com/CrocSwap/integer-mult-bounds/pull/5328): PR4174 production layout lacks the split-axis same-color caller fixture (source archive).
+- **Brian (@JoyboyBrian)** — [#5329](https://github.com/CrocSwap/integer-mult-bounds/pull/5329): research: add segment-local PR2250 refinement and nested source replays (source archive).
+- **Brian (@JoyboyBrian)** — [#5330](https://github.com/CrocSwap/integer-mult-bounds/pull/5330): Implement QQ16 finite-schema adoption updates with alias preservation (source archive).
+- **Ali Romman (@aliromman)** — [#5331](https://github.com/CrocSwap/integer-mult-bounds/pull/5331): Lower all five interchange entries to literal binary tapes (source archive).
+- **Brian (@JoyboyBrian)** — [#5332](https://github.com/CrocSwap/integer-mult-bounds/pull/5332): Implement source-bound BIT old-low carry descriptor frontend (partial lowering) (source archive).
+- **Ali Romman (@aliromman)** — [#5333](https://github.com/CrocSwap/integer-mult-bounds/pull/5333): Prove a complete local residual budget for the physical inverse pair (source archive).
+- **Ali Romman (@aliromman)** — [#5339](https://github.com/CrocSwap/integer-mult-bounds/pull/5339): Prove finite separation and fund dyadic detection of orthogonal witnesses (source archive).
+- **Ali Romman (@aliromman)** — [#5340](https://github.com/CrocSwap/integer-mult-bounds/pull/5340): Speed up the enabled matching-capacity census 4.92x with exact traversal (source archive).
+- **Ali Romman (@aliromman)** — [#5341](https://github.com/CrocSwap/integer-mult-bounds/pull/5341): Prove single crossing for every fixed p16 fragmentation invoice (source archive).
+- **Ali Romman (@aliromman)** — [#5342](https://github.com/CrocSwap/integer-mult-bounds/pull/5342): Minimum native Gaussian rank for a partial Pauli contract (source archive).
+- **Ali Romman (@aliromman)** — [#5343](https://github.com/CrocSwap/integer-mult-bounds/pull/5343): Recover sharp Schur kernel sectors directly from original header data (source archive).
+- **Ali Romman (@aliromman)** — [#5344](https://github.com/CrocSwap/integer-mult-bounds/pull/5344): Prove P104 helper endpoint stops retain the 208-lifetime floor (source archive).
+- **Ali Romman (@aliromman)** — [#5345](https://github.com/CrocSwap/integer-mult-bounds/pull/5345): Sharp adaptive tail gate with prescribed interior mass (source archive).
+- **Ali Romman (@aliromman)** — [#5346](https://github.com/CrocSwap/integer-mult-bounds/pull/5346): Classify all first nonadditive P112 rank-59 diagonal completions (source archive).
+- **Ali Romman (@aliromman)** — [#5348](https://github.com/CrocSwap/integer-mult-bounds/pull/5348): Whole ordered Schur normal form for the H=1 primary component (source archive).
+- **ahrazzle (@ahrazzle)** — [#5349](https://github.com/CrocSwap/integer-mult-bounds/pull/5349): Audit #5270: exact counterexample to the physical-reference/controller binding (source archive).
+- **ahrazzle (@ahrazzle)** — [#5350](https://github.com/CrocSwap/integer-mult-bounds/pull/5350): Compress final #4610 scalar word by 151 ADDs per orientation (source archive).
+- **Ali Romman (@aliromman)** — [#5351](https://github.com/CrocSwap/integer-mult-bounds/pull/5351): Complete finite all-height exit decision beyond coefficient domination (source archive).
+- **Ali Romman (@aliromman)** — [#5352](https://github.com/CrocSwap/integer-mult-bounds/pull/5352): Prove polynomial bit bounds for complete inverse-circuit certificates (source archive).
