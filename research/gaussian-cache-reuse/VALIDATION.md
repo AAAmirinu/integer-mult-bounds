@@ -61,8 +61,9 @@ replayed with its updated Git-reader cleanup. The newly archived
 active-feedback README is a separately pinned provenance source.
 
 The overlap search and relevant live claims are recorded in TASK.json.
-No external post, PR, selected-frontier update or maintainer queue action was
-performed. This package is local author-checked evidence.
+At the initial validation checkpoint no external post or PR had been made.
+zxv subsequently authorized this focused contribution PR. No selected-frontier
+update or maintainer queue action is included.
 
 ## Committed bytes and Git free replay
 
@@ -87,4 +88,31 @@ The additional `--check-source-history` preflight did not pass: this checkout
 is shallow and the tool requires full Git history. It reported
 `source-history check requires full Git history`. No full-history download
 or weaker replacement check was used. The successful byte/export checks do
-not substitute for that separate publication-history requirement.
+not substitute for that separate optional publication-history preflight.
+
+## Focused publication replay
+
+The publication branch starts at canonical main
+`ff3cc58e370d0f678e529246f8c73e8094e18fcf` and contains only this package.
+Earlier exploratory packages stay on the development branch. Frozen PLAN,
+geometry and RESULT bytes are unchanged. PLAN's `base_commit` records that
+local development checkpoint; it is not a replay dependency. The consumed
+source pins are the canonical commits declared in SOURCES.json.
+
+The registered normal and optimized commands above passed again from the
+focused branch. A fresh committed export at its reachable commit
+`5a40115affefff6a6811996e7c175a4e4ab10a40` passed inventory/hash checks and
+both Git-free mathematical replays, using the same isolated Python flags,
+fresh bytecode directories and `PATH=/nonexistent` described above.
+
+For publication, this reachable snapshot replaces the development-only
+`40eeaa2a36` reference in the historical export example:
+
+```sh
+python3 -B scripts/export_research_package.py export --package research/gaussian-cache-reuse --ref 5a40115affefff6a6811996e7c175a4e4ab10a40 --output /tmp/gaussian-cache-reuse-publication-5a40115aff.tar
+python3 -B scripts/export_research_package.py check /tmp/gaussian-cache-reuse-publication-5a40115aff.tar
+```
+
+Publication status and credit refinements after that snapshot change no
+scientific input, verifier, frozen plan or result. Metadata and committed-byte
+checks cover the final publication commit separately.

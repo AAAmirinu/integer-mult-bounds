@@ -91,7 +91,7 @@
       "discussion_records": 4456,
       "local_notes": 6999
     },
-    "overlap_limits": "Bounded cached text search plus selected live discussion and open-PR reads, not exhaustive diffs/comments/unpublished work. Existing claims advisory. No external post authorized or made.",
+    "overlap_limits": "Bounded cached text search plus selected live discussion and open-PR reads, not exhaustive diffs/comments/unpublished work. Existing claims advisory. The initial investigation was local; zxv subsequently authorized submitting this focused package as a PR.",
     "relevant_active_context": [
       "https://github.com/CrocSwap/integer-mult-bounds/discussions/5125",
       "https://github.com/CrocSwap/integer-mult-bounds/discussions/4930",

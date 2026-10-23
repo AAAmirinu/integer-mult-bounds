@@ -226,8 +226,8 @@ and predecessor attribution remain in force.
 Overlap checks on 2026-10-23 covered 347 PR records, 4,456 Discussion records
 and 6,999 local package notes in the second bounded search. They do not cover
 every diff, every comment or unpublished work. Live claims are provisional.
-No external claim or publication was made in this session; this is local
-evidence until shared. Exact canonical source pins are in
+This contribution publishes author-checked evidence with its remaining
+obligations explicit. Exact canonical source pins are in
 [SOURCES.json](SOURCES.json). Apache-2.0.
 
 The final upstream checkpoint is `ff3cc58e370d0f678e529246f8c73e8094e18fcf`.
