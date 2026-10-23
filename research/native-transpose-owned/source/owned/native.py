@@ -342,4 +342,3 @@ def controls(c, candidate):
         else:
             raise ValueError('Control accepted: ' + name)
     return controls
-
