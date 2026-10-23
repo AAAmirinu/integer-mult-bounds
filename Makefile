@@ -703,6 +703,11 @@ frontier4359-verify: selected-record-check
 
 # Current selected changed-construction replay; prior foundation reuse is explicit.
 .PHONY: frontier4470-verify
+
+.PHONY: frontier4610-verify
+frontier4610-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier4610.XXXXXX"); \
+		env -u PYTHONPATH python3 -B scripts/verify_frontier4610.py --work "$$work/replay"
 # PYTHONPATH precedes the standard library in every replay child; a stray
 # same-named module could exit 0 before a check runs.
 frontier4470-verify: selected-record-check

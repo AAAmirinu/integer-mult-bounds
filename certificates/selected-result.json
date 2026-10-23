@@ -1,8 +1,10 @@
 {
-  "status": "Selected maintainer-reviewed conditional joint-helper construction; source-bound foundation reuse is explicit",
-  "kappa": "60403/20000000",
-  "decimal": "0.00302015",
+  "status": "Selected maintainer-reviewed conditional PR4610 construction, with independent PR5241 admission evidence and explicit inherited foundation reuse",
+  "kappa": "15108879/5000000000",
+  "decimal": "0.0030217758",
   "source_prs": [
+    4610,
+    5241,
     4470,
     4447,
     4441,
@@ -23,10 +25,10 @@
     555,
     589
   ],
-  "source_manifest": "certificates/frontier4470-source.json",
-  "certificate": "certificates/frontier4470/CLAIM.json",
-  "certificate_sha256": "d962932a6971b8f0054462c59f4ad699dcf3d1fbf886e1f856a6fa9e97491232",
-  "proof": "docs/research/pr-intake-evidence/pr4470/PROOF-REVIEW.md",
+  "source_manifest": "certificates/frontier4610-source.json",
+  "certificate": "certificates/frontier4610/CLAIM.json",
+  "certificate_sha256": "c48376a8365a4c7b67adb368bafa128bede4cd5589a41fa276f96a350d45606c",
+  "proof": "docs/research/pr-intake-evidence/pr4610/PROOF-REVIEW.md",
   "proof_supplements": {
     "notes/batched-bit-rows.tex": "ef72c0ead19373cbc19c8a3aacb44dd0f75353ee5f4d055f775a986a4878022c",
     "notes/batched-complex-rows.tex": "64c70926a8705874f1c9b42a2f703e42cad4e90f927f544458cfdf729540236c",
@@ -46,20 +48,23 @@
     "research/t74-native-fast/vendor/native/new/code/borrow/vendor/clifford/clifford_exact.py": "2982ead07721e83358dc67c6f49c2b4c16a236a6bebdfd72f58221be1f5d0962",
     "docs/research/pr-intake-evidence/pr4359/PROOF-REVIEW.md": "7d67bb814285f7634029fbd378c6457156545f0b38858cc1c6ec34b68cd9d162",
     "docs/research/pr-intake-evidence/pr4470/PROOF-REVIEW.md": "5c111dd56beb53dc44ab727d96e1af03aaf50f3023d4342e2b0a89ede6cf585b",
-    "docs/research/pr-intake-evidence/pr4416/PROOF-REVIEW.md": "2c2bbe6fe1bab44778192118f27e59a0d23dbe02c47aa8a42845093f1ce46f49"
+    "docs/research/pr-intake-evidence/pr4416/PROOF-REVIEW.md": "2c2bbe6fe1bab44778192118f27e59a0d23dbe02c47aa8a42845093f1ce46f49",
+    "docs/research/pr-intake-evidence/pr4610/PROOF-REVIEW.md": "b84f833e3072cbab372fbda2ece98fbc031c15e590cf73003ddea35a5222e148",
+    "research/final4610-independent-admission/PROOF.md": "e573cbbe6fa5481c0533e773de404e10f4dc7907b5ebfe404bdcd02dcf9844d8",
+    "research/final4610-independent-admission/SPECIALIZATION.md": "70430114f744108223bc1d44b98bc25b696c4b408b7b044c2a8bbdfdb434ac5c"
   },
-  "review": "docs/research/pr-intake-evidence/pr4470/PROOF-REVIEW.md",
-  "validation": "docs/research/pr-intake-evidence/pr4470/VALIDATION.json",
-  "integration": "docs/research/pr-intake-evidence/pr4470/INTEGRATION.json",
-  "reproduce": "make frontier4470-verify",
-  "scope": "Maintainer-reviewed conditional PR4470 construction. Inherited native/all-column, owned-erasure, whole-job, compiler, precision/tape, analytic, prime and recovery hypotheses remain. Uniform words are not materialized.",
-  "previous_kappa": "23/10000",
-  "previous_record": "certificates/checkpoints/frontier4359.json",
-  "audited_source_head": "b9a13c1673e0e9697de410de16e8bbf3207a7363",
-  "source_certificate": "research/joint-helper-lattice/RESULT.json",
-  "source_certificate_sha256": "c7b2388f6511c19976b337d8c8ac374610af616866a249d75dace704eb5d9e21",
-  "replay_mode": "fresh changed-construction replay with exact-source prior foundation review reuse",
-  "contributors": "docs/research/community-joint4470-contributors.md",
+  "review": "docs/research/pr-intake-evidence/pr4610/PROOF-REVIEW.md",
+  "validation": "docs/research/pr-intake-evidence/pr4610/VALIDATION.json",
+  "integration": "docs/research/pr-intake-evidence/pr4610/INTEGRATION.json",
+  "reproduce": "make frontier4610-verify",
+  "scope": "Maintainer-reviewed conditional PR4610 construction using the PR5241 independent audit. The five PR4470 framework assumptions are unchanged. Uniform words are not materialized.",
+  "previous_kappa": "60403/20000000",
+  "previous_record": "certificates/checkpoints/frontier4470.json",
+  "audited_source_head": "20bb93cd990d2ff683e4d0fc56b87a42cd5d3296",
+  "source_certificate": "research/kappa-round6-compiler-tightening-20261022/ARITHMETIC.json",
+  "source_certificate_sha256": "b4f720a7ccbb5b46e472eaf85dc8739a40598986f19b37d26c4f9ecfbd31f0de",
+  "replay_mode": "Fresh complete independent admission replay; source-bound preceding controller, ordinary BIT and physical/compiler foundation reuse",
+  "contributors": "docs/research/community-native4610-contributors.md",
   "assumptions": [
     {
       "id": "native_all_columns",
@@ -81,5 +86,7 @@
       "id": "analytic_recovery",
       "statement": "Analytic decomposition, fine-prime avoidance and exact integer recovery follow the retained upstream/outer framework."
     }
-  ]
+  ],
+  "audit_pr": 5241,
+  "audit_head": "13efb5fc5f3b7c14ec2cfa181dd9eb6480972cf2"
 }

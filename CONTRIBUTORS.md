@@ -4031,3 +4031,7 @@ Source archives retain attribution; mathematical review remains open.
 - **ahrazzle (@ahrazzle)** — [#5350](https://github.com/CrocSwap/integer-mult-bounds/pull/5350): Compress final #4610 scalar word by 151 ADDs per orientation (source archive).
 - **Ali Romman (@aliromman)** — [#5351](https://github.com/CrocSwap/integer-mult-bounds/pull/5351): Complete finite all-height exit decision beyond coefficient domination (source archive).
 - **Ali Romman (@aliromman)** — [#5352](https://github.com/CrocSwap/integer-mult-bounds/pull/5352): Prove polynomial bit bounds for complete inverse-circuit certificates (source archive).
+
+## Selected PR4610 admission, 23 October 2026
+
+**Cao Yifan (@intqwq)** supplied κ=0.0030217758 in PR4610. **Chris R (@Clear1nsight)** supplied PR5241's complete independent admission audit. Cinna Davis, zxv, Jacob Alan Sussman, Dugongue and the cumulative BIT/geometry/physical/analytic and verification contributors retain credit. See the [selection contributor map](docs/research/community-native4610-contributors.md) for roles and the [maintainer review](docs/research/pr-intake-evidence/pr4610/PROOF-REVIEW.md) for scope. Conditional AI-assisted acceptance is not a full formal or independent human theorem verification.

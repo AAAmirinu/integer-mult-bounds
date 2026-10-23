@@ -1048,7 +1048,7 @@
         {
           "number": 5235,
           "head": "48976daa4dce59b4867ef046da72a370e389925d",
-          "title": "Add compact universal certificates for dirty linear circuits (no new \u03ba)",
+          "title": "Add compact universal certificates for dirty linear circuits (no new κ)",
           "lane": "new",
           "changes": [],
           "reason": "No cached intake decision.",
@@ -1208,7 +1208,7 @@
       {
         "number": 5235,
         "head": "48976daa4dce59b4867ef046da72a370e389925d",
-        "title": "Add compact universal certificates for dirty linear circuits (no new \u03ba)",
+        "title": "Add compact universal certificates for dirty linear circuits (no new κ)",
         "lane": "new",
         "changes": [],
         "reason": "No cached intake decision.",
@@ -1640,7 +1640,7 @@
         {
           "number": 5235,
           "head": "48976daa4dce59b4867ef046da72a370e389925d",
-          "title": "Add compact universal certificates for dirty linear circuits (no new \u03ba)",
+          "title": "Add compact universal certificates for dirty linear circuits (no new κ)",
           "lane": "new",
           "changes": [],
           "reason": "No cached intake decision.",
@@ -1673,5 +1673,13 @@
     "scientific_scope": "90 source archives and one reviewed replay-planner optimization. Targeted PR4628 Python certificate replay passed; no Lean, Docker or full supplier replay. Selected kappa unchanged.",
     "next": "No actionable routine intake. Dedicated scientific follow-up: PR5241 admission audit of Cao Yifan/intqwq PR4610 at kappa 0.0030217758; archive acceptance is not frontier admission. Existing seven deferred replays remain deferred.",
     "live_processes": []
+  },
+  "selected_admission_20261023": {
+    "construction": 4610,
+    "independent_audit": 5241,
+    "kappa": "15108879/5000000000",
+    "evidence": "docs/research/pr-intake-evidence/pr4610/INTEGRATION.json",
+    "status": "Admitted conditional change; frozen foundation reused; no research campaign resumed.",
+    "next": "Resume delta-only PR intake at the next queue request. PR5241 scientific follow-up completed; do not repeat unchanged holds or historical suites."
   }
 }
