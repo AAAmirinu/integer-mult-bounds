@@ -174,12 +174,11 @@ operator replay were not run. No unknown physical cost is priced as zero.
 The first verified improvement ends discovery; no construction expansion
 or larger-rank classification follows.
 
-The engineering-mode autonomous-run playbook uses Build the Lever and
-Prove It Works: the exact verifier is the retained evidence artifact.
-Functions have fewer than 60 lines, with no recursion or dynamic code
+The exact verifier is the retained evidence artifact. Functions have
+fewer than 60 lines, with no recursion or dynamic code
 execution. Root lists have at most 120 elements, normal pairs number 7,140,
 and elimination matrices have at most 112 rows and columns with integer
-inputs bounded in absolute value by 224. Power of Ten rule 3 requires a
+inputs bounded in absolute value by 224. Fixed allocation requires a
 managed-runtime deviation: Python allocates integers, fractions and lists
 during these finite computations. The fixed dimensions bound live storage;
 Hadamard's bound controls the elimination minors. This deviation is
