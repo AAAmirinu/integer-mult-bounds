@@ -94,6 +94,12 @@ covered 305 open PR bodies, 4620 Discussion records and all 7267 tracked
 top-level note/metadata records, with complete reported pagination. That is
 public text coverage, not a guarantee of novelty or coverage of arbitrary diffs.
 
+The final refresh at 2026-10-23 19:18 UTC covered 307 open PR bodies, 4638
+Discussion records and all 7267 tracked notes. It found a
+[complementary numerical `new_context` scratch/installation claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/4744#discussioncomment-19152915),
+which explicitly released the overlapping restoration implementation. That
+producer investigation is separate; no result from it is assumed here.
+
 ## Credit
 
 Prepared by Mihir Srivastava (@mihir-s-05) with substantial OpenAI Codex
