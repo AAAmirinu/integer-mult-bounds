@@ -96,3 +96,12 @@ stock/precision, scientific frontier update or physical allocator is claimed.
 Full source-history preflight requires a non-shallow checkout and is unavailable
 here. Metadata/source pins, direct base ancestry, committed-byte checks and
 portable export checks are separate from that unavailable history check.
+
+Final transport checks passed at scientific-code commit
+`668d3bb200587de389ec9ede20fb5c1a630a15fc`: committed-byte verification,
+official19-file export and integrity validation, and an isolated optimized
+Git-free replay from the export with empty PATH. Every exported file remained
+byte-identical after replay. Direct base ancestry passes; the optional full
+history command reports `source-history check requires full Git history`.
+The final canonical-main fetch still returned the pinned base, and both pending
+source heads remained unchanged. Subsequent changes only record these checks.
