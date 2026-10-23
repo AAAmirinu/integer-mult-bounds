@@ -11,6 +11,9 @@ order, covering every power r^(1-C), 0<C<1. It needs no root search, native word
 replay or compiler. See the [guide](../../docs/research/recursive-invoice-preflight.md).
 The mathematics is classical and credited; the new work is the portable signed
 interface, its independent tests and its current source-bound application.
+Concurrent [#5391](https://github.com/CrocSwap/integer-mult-bounds/pull/5391) supplies
+the later receipt-compatibility/funding oracle. This preflight does not duplicate
+its evidence join or claim to fund a candidate from declared histograms.
 
 ## Why this is timely
 
@@ -79,6 +82,8 @@ All scientific inputs are self-contained committed exports with exact hashes in
 does not require that pending PR's Git objects or a network fetch. The shared CLI
 is an explicit replay input. Normal/O success corroborates the written proof;
 it is not independent human or proof-kernel acceptance.
+Executed environments and the shallow-history limitation are recorded in
+[VALIDATION.md](VALIDATION.md).
 
 Full physical/native phase replay of the source word, compiler and BIT supplier,
 physical tape/precision execution, analytic decomposition and the full selected

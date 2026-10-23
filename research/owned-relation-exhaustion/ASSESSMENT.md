@@ -54,6 +54,14 @@ This reinforces the distinction between useful compiler work and a changed
 recursive budget. #5389's historical-input exporter is complementary replay
 tooling; it does not overlap the signed-invoice comparator.
 
+A subsequent publication overlap check read #5391 at
+`96f193143a7a2ff8a4e6b9d574d7f551d68a7da3` (created 21:27:15 UTC), bringing
+the distinct PRs considered to 103. Its six-plane oracle joins trusted physical,
+census, closure and funding evidence at specified source points. It complements
+this earlier signed concave-order screen; this patch does not implement another
+receipt join, funding engine or review-policy mechanism. Its existence is linked
+in the guide rather than presenting our declarations as source-certified funding.
+
 Only sources declared in SOURCES.json/VERIFY.json are replay inputs. The other
 PRs are attribution, assessment and scope comparisons; this package does not
 certify all their mathematical claims. The fixed-eight census independently

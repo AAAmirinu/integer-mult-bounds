@@ -14,6 +14,10 @@ concave rank tariff with f(0)=0, including r^(1-C), 0<C<1. The method is classic
 concave order, already used by mightyOil's
 [T16 audit](../../research/t16-moment-order-audit/README.md) and its predecessors.
 The shared interface adds signed target accounting; it is not a new theorem.
+The concurrent [source-bound pricing oracle #5391](https://github.com/CrocSwap/integer-mult-bounds/pull/5391)
+checks compatibility of reviewed physical, invoice, closure and funding receipts.
+This comparator is an earlier arithmetic screen, not a replacement for that
+evidence join or its trusted policies.
 
 ## Input and meaning
 
