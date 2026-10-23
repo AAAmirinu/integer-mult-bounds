@@ -136,6 +136,85 @@
       "44": "1"
     }
   ],
+  "common_native_basis_family": {
+    "both_changed_rows_removed_rank": 5,
+    "changed_dirty_outputs": [
+      419,
+      421
+    ],
+    "corruption_controls": [
+      "changed_shear_row_coefficient",
+      "lost_unaffected_column_rank",
+      "wrong_role_binding"
+    ],
+    "covers_invertible_complement_mixing": true,
+    "hot_columns": [
+      13,
+      16,
+      43,
+      44,
+      51,
+      78,
+      99,
+      104
+    ],
+    "kernel_constant": [
+      "2",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "-1",
+      "-1",
+      "1"
+    ],
+    "kernel_lambda": [
+      "0",
+      "0",
+      "-1",
+      "0",
+      "-2",
+      "1",
+      "1",
+      "1"
+    ],
+    "kernel_mu": [
+      "0",
+      "1",
+      "-1",
+      "1",
+      "0",
+      "0",
+      "0",
+      "-1"
+    ],
+    "maximum_single_color_span_dimension": 6,
+    "new_kappa": false,
+    "pair_dimension_formula": "4 + [lambda=1] + [mu=0] + [lambda=-1 and mu=0]",
+    "rank_for_every_parameter": 7,
+    "status": "RULED_OUT_FOR_ALL_RATIONAL_LAMBDA_MU",
+    "symbolic_coefficients_checked_per_row": [
+      "1",
+      "lambda",
+      "mu",
+      "lambda^2",
+      "lambda*mu",
+      "mu^2"
+    ],
+    "unaffected_seven_columns_rank": 7
+  },
+  "complete_equal_native_map_class": {
+    "lenders": [
+      417,
+      419,
+      421
+    ],
+    "operators": [
+      34,
+      35,
+      36
+    ]
+  },
   "corruption_and_scope_controls": {
     "changed_source_bytes_rejected": true,
     "changed_target_coefficient_rejected": true,

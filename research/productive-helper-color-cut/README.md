@@ -35,6 +35,15 @@ Direct exact calculation gives `rank(G)=7` and intersection dimensions `1,1,2,1`
 
 A row supported on group 13/51 must therefore have `beta13=0`; rows supported on any other group also have that coordinate zero. But `G` has a nonzero 13 column. [PROOF.md](PROOF.md) states all hypotheses and the complete argument.
 
+The obstruction also covers every invertible basis change within the complete
+three-helper common-native-map class that preserves the desired output
+`u=entry13+dirty_entry416`. After an invertible mixing of the other two rows,
+the only remaining choices are `419 += lambda*u` and `421 += mu*u`. Their hot
+block always has rank 7, while the single-group intersections span at most 6
+dimensions for every rational `lambda,mu`. This is an exact symbolic family,
+not a parameter grid. [PROOF-FAMILY.md](PROOF-FAMILY.md) gives the affine kernel
+certificate and precise boundary assumptions.
+
 The proof fixes the 24-register local boundary, pure invertible scalar ADD/SCALE operations, common canonical charts at contacts, and chart inclusion on every paid edge. The proof also survives adding independent zero-chart workspace that must be returned unchanged. It does not rule out paid nonascending steps, a changed productive output or boundary, a native-bearing region, or other productive-helper targets. No physical supplier, compiler admission, multiplication theorem or new kappa is claimed.
 
 ## Reproduction

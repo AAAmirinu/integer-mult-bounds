@@ -11,6 +11,7 @@ import argparse
 from fractions import Fraction as Q
 import gzip
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
 
@@ -167,6 +168,10 @@ def reconstruct(word):
     maps = {x["op"]: x for x in word["canonical"]["warps"]}
     need(maps[34]["lender"] == 417 and maps[35]["lender"] == 419, "native role binding")
     need(maps[34]["G_columns"] == maps[35]["G_columns"], "equal native maps34/35 motivation")
+    need(maps[36]["lender"] == 421, "third native role binding")
+    need(sorted(op for op, row in maps.items()
+                if row["G_columns"] == maps[34]["G_columns"]) == [34, 35, 36],
+         "complete common native-map class")
     return M, H, program, segment
 
 
@@ -317,6 +322,10 @@ def run(source_path=None, *, controls=True):
     frames, entries, exits, entry_labels, source_exits = source_boundaries(word, program)
     clean_colors = check_clean_caps(exits, entries)
     G, parts, masks, annihilators = analyze(H)
+    family_spec = importlib.util.spec_from_file_location("productive_color_family", Path(__file__).with_name("check_family.py"))
+    family = importlib.util.module_from_spec(family_spec)
+    family_spec.loader.exec_module(family)
+    family_result = family.verify(G, DIRTY, HOT)
     Hi = inverse(H)
     for output in LOCAL:
         for input_role in LOCAL:
@@ -332,6 +341,7 @@ def run(source_path=None, *, controls=True):
         "monochrome_outputs": CLEAN, "remaining_outputs": DIRTY,
         "M_sha256": matrix_hash(M, LOCAL, LOCAL), "H_sha256": matrix_hash(H, LOCAL, LOCAL),
         "both_M_and_H_inverse_products": True, "native34_35_equal_source_maps": True,
+        "complete_equal_native_map_class": {"operators": [34, 35, 36], "lenders": [417, 419, 421]},
         "all_forward_and_inverse_support_containments": True,
         "protected_output_row": {"13": "1", "416": "1"},
         "source_entry_frames": {str(r): value for r, value in entry_labels.items()},
@@ -347,10 +357,12 @@ def run(source_path=None, *, controls=True):
         "allowed_capture_preimage_span_rank": 13,
         "common_annihilators": [sparse(v, DIRTY) for v in annihilators], "masks": masks,
         "original_source_positive_control": positive,
+        "common_native_basis_family": family_result,
         "scope": "No ascending canonical-chart ADD/SCALE circuit on these24 registers realizes H=P*T*M from the source entry charts to the fixed exit charts. Arbitrary rational coefficients and arbitrary intermediate charts/interleavings are allowed. No preparation prefix is assumed. No new registers or native maps inside the scalar interval; enlarged boundaries, nonascending transports and different target words are not excluded. No tariff or improved-bound claim.",
     }
     if controls:
         receipt["corruption_and_scope_controls"] = corruption_controls(raw, H, G, exits, entries)
+        family_result["corruption_controls"] = family.controls(G, DIRTY, HOT)
     return receipt
 
 
