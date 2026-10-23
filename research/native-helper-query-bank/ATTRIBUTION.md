@@ -41,9 +41,12 @@ rewritten by this package.
 The distinct result is the invertible **358-by-358 matrix of actual chronological
 first departures**, selecting **112 funded H1 observations of common Q** with
 literal exact phases, together with **26 H5 + 6 H1** cold-return completion,
-full358-input decoding, unchanged50-hot-helper return contract, and explicit
-ordinary work and owned observation storage. That interface remains separate
-from the still-unproved main/helper caller.
+full 358-input decoding, unchanged 50-hot-helper return contract, and explicit
+ordinary work and owned observation storage. The entrance-prologue extension
+relocates those same children, using exact first-departure identities and
+whole-field swaps with chart transport. It adds explicit storage and movement,
+with the same Gaussian calls. That interface remains separate from the
+still-unproved main/helper caller.
 
 Submission checkpoint: canonical `1ec1119972c9aefe42525172d07b332fcff81cb4`;
 source-manifest baseline: `7c472563474e60185e6ca101a17622133d047e56`;

@@ -106,11 +106,70 @@ field into a distinct owned zero field and apply O_s to that copy. It is exactly
 `Q ξ_s`. The persistent native owner continues along its original paid path.
 This adds **no Gaussian child and no paid split** to obtain the observation.
 
-The chronology is part of the ABI. Each response becomes available only after
-its listed event; all may be retained until the source word finishes. An outside
-caller may consume them at those times only if its own chronology permits it.
-The observations are copies of existing paid history. Their 112 fields are
-owned storage, not independent input jobs and not extra productive credit.
+In this chronological version, each response becomes available after its listed
+event and may be retained until the source word finishes. The following exact
+rescheduling makes every response available in an entrance prologue instead.
+In both versions, observations are owned copies of existing paid history, not
+independent input jobs or extra productive credit.
+
+## An entrance prologue with the same 112 paid children
+
+After the diagonal K maps, but **before** the existing T^-1 scalar program,
+the cold coordinates are `w=D_K ξ`. For each selected coordinate s:
+
+1. Initialize a new owned raw field and COPY `w_s` into it.
+2. Execute the complete adapted H1 child from the listed source event on that
+   field. Its physical value is `E_s w_s`. This is the original child relocated,
+   not a second invocation or a bare C gate without its source adapters.
+3. COPY its value into the owned observation field and apply the already
+   compiled monomial O_s. This gives `Q ξ_s` immediately. Keep the raw field
+   `E_s w_s` unchanged for its later replacement cut.
+
+Now execute T^-1 and the source word, omitting the 112 selected child events.
+At such an event the original persistent field has chart zero and value
+
+    (T T^-1 w)_s = w_s.
+
+The first-departure proof establishes this identity on every original input;
+it contains no main-input coefficient. SWAP that entire physical field with
+its stored raw field, **transporting the chart tags with the data**. The
+persistent field now has exactly the chart E_s and value E_s w_s that the
+omitted original child would have produced. The owned raw slot contains the
+old duplicate w_s in chart zero; CLEAR that owned slot. No persistent field is
+cleared, and its input information remains in the invertibly transformed
+E_s w_s. A whole-field permutation works between these two charts; it is not
+the three-ADD common-chart swap used by the scalar basis program.
+
+All other source instructions are unchanged. Induction at the 112 replacement
+cuts therefore restores the complete source state, with exactly its original
+paid inventory. Completion and return decoding below apply unchanged. All
+responses are available after the 112 prologue children, before the original
+native operations and even before T^-1. This is an early-query interface, not
+a claim that the prologue has zero cost.
+
+The helper arguments are fixed before the prologue and thereafter follow only
+the declared basis program and source word. A caller may recode its **main**
+entrance values after receiving the responses: the replacement identities hold
+for arbitrary main values and have zero main coefficients. Such a recoding
+changes the main input to which the producer contract applies. It does not
+automatically preserve a caller's original jobs. Later interventions in the
+native word, changes to helper arguments, or mutation of held raw fields require
+a new integrated proof.
+
+[HOIST.json](HOIST.json) emits an **ordered patch recipe**, not a standalone
+instruction stream. After its prologue, insert the existing BANK scalar
+T^-1 entrance program. Then replay the pinned forward source in order, replacing
+only the listed child events and retaining every intervening source segment.
+Afterward apply the unchanged BANK completion and return decoder. The final
+observation clears are obligations after the consumer's last use.
+The verifier executes that program on all 632 original inputs and 225 arbitrary
+owned inputs (the native center, 112 held raw fields and 112 observation fields).
+It checks all 112 replacement cuts, every persistent endpoint, unchanged paid
+counts, and clearing of every owned input. Observation copies are tracked in
+their raw representation; the independent signed-tableau and absolute-phase
+identities above verify their O_s readouts. The native word never reads those
+copies, so normalizing them immediately cannot affect the replay. Wrong held
+arguments and a swap that fails to transport chart tags are rejected.
 
 ## Returning every independent helper
 
@@ -163,7 +222,8 @@ invoice includes those terminal clears. A demonstration that simply clears all
 responses at the end leaves only the independent original jobs, without
 turning the observations into productive outputs.
 
-Additional field passes, relative to the pinned center-free producer:
+Additional field passes for the chronological version, relative to the pinned
+center-free producer:
 
 | Operation | Count |
 |---|---:|
@@ -178,13 +238,24 @@ Additional field passes, relative to the pinned center-free producer:
 | Extra simultaneously owned fields | at most 112 |
 | Paid completion children | 26 H5 + 6 H1 |
 
+For the entrance-prologue version, keep the same scalar, monomial and completion
+counts. Replace the observation-storage rows by **224 owned COPYs, 448 owned
+CLEARs, 112 whole-field SWAPs and at most 224 extra simultaneous fields**. These
+totals include observation creation and the recipient's final observation
+clears. Each SWAP requires ordinary movement of two complete fields. Thus the
+prologue adds 112 copies, 224 clears, 112 swaps and 112 held
+fields over the chronological interface, with **zero additional scalar passes
+and zero additional Gaussian children**. Copying the selected w coordinates
+before T^-1 avoids reconstructing the dense T rows afterward. The source's
+original owned center remains separately charged as before.
+
 A monomial field map is the complete emitted P/D/X/phase word, not a single
 machine instruction; its indexed movement and phase arithmetic must be priced
 using the retained source implementation. Each rational ADD/SCALE must likewise
 be implemented at the chosen precision. The lists are fixed finite programs,
 so they admit width-independent algebraic suffix bounds: charge each scalar
-ADD or SCALE coefficient c the bound `1+|c|`, and each unitary or owned COPY/
-CLEAR the bound one in maximum-over-fields Euclidean fiber norm. The finite
+ADD or SCALE coefficient c the bound `1+|c|`, and each unitary, whole-field SWAP
+or owned COPY/CLEAR the bound one in maximum-over-fields Euclidean fiber norm. The finite
 product bounds propagation of local rounding errors. This is a local existence
 bound, not a complete precision allocation, optimized ordinary-work tariff or
 outer multiplication budget. The new Gaussian children also require the source
@@ -213,6 +284,12 @@ that tensor powers preserve sums. Thus the ABI is an all-width consequence of
 explicit fixed scalar programs and inherited source semantics, not merely a
 512-dimensional numerical experiment.
 
+The hoist uses those same evaluated first-departure identities. COPY and SWAP
+move complete f-column fields, with their frames, and the relocated child is the
+same lifted E_s. Hence the equality at each replacement cut and the source-state
+induction hold at every f as well. Neither scalar T nor an owner sum is tensor
+powered in this rescheduling argument.
+
 ## Evidence boundaries
 
 The registered verifier authenticates every live source file before importing
@@ -222,7 +299,9 @@ completion words, and compares the deterministic receipt. It also rejects:
 main-input contamination of a claimed helper-only departure; a singular basis;
 a phase-only wrong response with the same tableau; and omission of a required
 cold-H8 completion. These checks use explicit exceptions and also run under
-Python `-O`.
+Python `-O`. The additional hoist replay checks all 857 raw-state input columns,
+the 112 matching physical replacement cuts, the unchanged Gaussian inventory,
+and the two rescheduling controls described above.
 
 The inherited native physical compiler and multiplication analytic hypotheses
 are not independently audited here. No full historical suite, selected cold

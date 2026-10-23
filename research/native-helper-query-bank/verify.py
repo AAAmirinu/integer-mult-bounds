@@ -199,6 +199,173 @@ def reject(test, label):
     raise ValueError('Mutation was not rejected: ' + label)
 
 
+def verify_hoist(coded, core, owners, inv, entrance, queries):
+    """Move the selected children before the scalar entrance program.
+
+    Cold input labels here denote w = D_K xi.  Observation copies are tracked
+    before their separately phase-checked monomial readouts; the native word
+    never reads those copies, so their readouts can run immediately.
+    """
+    c = coded['canonical']
+    raw_start, observation_start, count = 633, 745, 112
+    rows = [core.identity(i) for i in range(observation_start + count)]
+    charts = c['start'][:] + [None] * (1 + 2 * count)
+    paid, ordinary = Counter(), Counter()
+    program, cuts = [], []
+
+    def clear(slot, chart):
+        need(slot >= 632, 'Hoist cannot clear a persistent owner')
+        rows[slot], charts[slot] = {}, chart
+        ordinary['owned_clear'] += 1
+        program.append(['owned_clear', slot, chart])
+
+    def copy(dst, src, chart):
+        need(dst >= 633 and charts[src] == chart, 'Owned copy chart')
+        rows[dst], charts[dst] = rows[src].copy(), chart
+        ordinary['owned_copy'] += 1
+        program.append(['owned_copy', dst, src, chart])
+
+    def replacement(owner, raw, target_chart, transport_charts=True):
+        need(charts[owner] == 0 and charts[raw] == target_chart,
+             'Hoist replacement chart')
+        need(rows[owner] == rows[raw], 'Hoist replacement input row')
+        rows[owner], rows[raw] = rows[raw], rows[owner]
+        if transport_charts:
+            charts[owner], charts[raw] = charts[raw], charts[owner]
+        need(charts[owner] == target_chart and charts[raw] == 0,
+             'Whole-field swap must transport physical chart tags')
+
+    for query in queries:
+        q, owner, chart = (query[k] for k in ('query_index', 'native_role', 'first_chart'))
+        event = coded['programs']['forward'][query['coded_event']]
+        need(event[0] == 'climb' and event[2:] == [owner, 0, chart, 1],
+             'Hoisted event is the exact funded first H1 child')
+        raw, observation = raw_start + q, observation_start + q
+        clear(raw, 0)
+        copy(raw, owner, 0)
+        charts[raw] = chart
+        paid[1] += 1
+        program.append(['relocated_child', raw, query['coded_event']])
+        clear(observation, chart)
+        copy(observation, raw, chart)
+        # Its O_s readout is checked in the base bank.  Leave this isolated
+        # copy in its raw representation for the all-input symbolic replay.
+        program.append(['readout_on_observation', observation, q])
+
+    for op in entrance:
+        dst = owners[op[1]]
+        need(charts[dst] == 0, 'Hoist entrance target chart')
+        if op[0] == 'add':
+            src = owners[op[2]]
+            need(charts[src] == 0, 'Hoist entrance source chart')
+            core.add(rows[dst], rows[src], Q(op[3]))
+        else:
+            need(op[0] == 'scale' and Q(op[2]), 'Hoist entrance SCALE')
+            rows[dst] = {key: Q(op[2]) * value for key, value in rows[dst].items()}
+    for i, owner in enumerate(owners):
+        need(rows[owner] == {(owners[j], ()): a for j, a in inv[i].items()},
+             'Hoist entrance on every cold input')
+
+    by_event = {q['coded_event']: q for q in queries}
+    need(len(by_event) == count, 'Distinct hoisted child events')
+    controls = []
+    for event_index, e in enumerate(coded['programs']['forward']):
+        if event_index in by_event:
+            query = by_event[event_index]
+            owner, raw = query['native_role'], raw_start + query['query_index']
+            need(rows[owner] == core.identity(owner), 'First departure after T inverse')
+            if not controls:
+                original_row = rows[raw]
+                rows[raw] = core.identity(0)
+                controls.append(reject(lambda: replacement(owner, raw, query['first_chart']),
+                                       'wrong held query argument'))
+                rows[raw] = original_row
+                controls.append(reject(lambda: replacement(owner, raw, query['first_chart'], False),
+                                       'swap without physical chart transport'))
+                # The rejected no-tag swap exchanged equal rows only.
+            replacement(owner, raw, query['first_chart'])
+            ordinary['physical_field_swap'] += 1
+            program.append(['replace_child_by_swap', event_index, owner, raw])
+            clear(raw, 0)
+            cuts.append([event_index, owner, query['first_chart'], raw])
+            continue
+        kind = e[0]
+        if kind == 'scalar':
+            gate, chart = e[1:]
+            dst = gate[1][1] + (632 if gate[1][0] == 'C' else 0)
+            if gate[0] == 'clear':
+                need(dst == 632, 'Native persistent owner erasure')
+                rows[dst], charts[dst] = {}, chart
+                continue
+            need(charts[dst] == chart, 'Native scalar destination chart after hoist')
+            if gate[0] in ('copy', 'add'):
+                src = gate[2][1] + (632 if gate[2][0] == 'C' else 0)
+                need(charts[src] == chart, 'Native scalar source chart after hoist')
+                if gate[0] == 'copy':
+                    need(dst == 632, 'Native persistent owner overwrite')
+                    rows[dst] = rows[src].copy()
+                else:
+                    core.add(rows[dst], rows[src], Q(gate[3], gate[4]))
+            elif gate[0] == 'scale':
+                rows[dst] = {key: Q(gate[2], gate[3])*a for key, a in rows[dst].items()}
+            else:
+                raise ValueError('Unknown native scalar instruction')
+        elif kind == 'warp':
+            _, ref, op, before, after = e
+            owner = ref[1] + (632 if ref[0] == 'C' else 0)
+            need(charts[owner] == before, 'Native warp chart after hoist')
+            rows[owner], charts[owner] = core.warp(rows[owner], op, False), after
+        elif kind == 'climb':
+            _, _, owner, before, after, rank = e
+            need(charts[owner] == before, 'Native child chart after hoist')
+            need(rank == len(c['frames'][after]) - len(c['frames'][before]) and rank > 0,
+                 'Native child rank after hoist')
+            charts[owner] = after
+            paid[rank] += 1
+        else:
+            need(kind in ('phase', 'adapter', 'residual_adapter'), 'Unknown native marker')
+
+    A = json.loads((ROOT / 'research/native-center-free-code/CODE.json').read_text())['A']
+    oi = {owner: i for i, owner in enumerate(owners)}
+    for owner in range(632):
+        expected = core.identity(owner)
+        if owner in oi:
+            expected = {(owners[j], ()): a for j, a in inv[oi[owner]].items()}
+        elif 112 <= owner < 224:
+            for j in range(112):
+                core.add(expected, core.identity(j), Q(A[owner-112][j]))
+        need(rows[owner] == expected, 'Hoisted arbitrary-input endpoint ' + str(owner))
+    need(charts[:632] == c['final'], 'Hoisted final physical charts')
+    need(all(not row for row in rows[632:observation_start]), 'Hoisted raw workspace and native center zero')
+    for query in queries:
+        observation = observation_start + query['query_index']
+        need(rows[observation] == core.identity(query['native_role']) and
+             charts[observation] == query['first_chart'], 'Early observation retained intact')
+        clear(observation, query['first_chart'])
+    need(all(not row for row in rows[632:]), 'All arbitrary owned inputs removed and outputs cleared')
+    need(paid == Counter({1:2201, 2:412, 3:510, 4:127, 5:40}), 'Hoist paid inventory unchanged')
+    need(ordinary == {'owned_clear':448, 'owned_copy':224, 'physical_field_swap':112},
+         'Hoist ordinary-work invoice')
+    return dict(schema='native-helper-query-hoist/1', status='PASS_EARLY_112_FUNDED_HELPER_QUERIES',
+                original_inputs_checked=632, arbitrary_owned_inputs_checked=225,
+                raw_observation_rows_checked=112, replacement_cuts_checked=112,
+                all_owned_outputs_zero_after_consumer_clear=True,
+                source_paid=dict(sorted(paid.items())), added_gaussian_children=0,
+                ordinary_work=dict(ordinary), extra_scalar_passes=0,
+                owned_fields_additional_to_native=224,
+                added_owned_fields_over_chronological_observer=112,
+                prologue_after='All diagonal K maps, before the existing T-inverse program.',
+                source_readout_boundary='Observation copies are tracked raw; the same 112 exact-phase O_s identities normalize them independently.',
+                recipe_semantics='Ordered patch recipe, not a standalone instruction stream.',
+                splice=dict(source='research/native-center-free-code/CODED-WORDS.json.gz:programs.forward',
+                            prologue_items=6 * count,
+                            after_prologue='Execute BANK.json entrance_scalar_program on the cold owners.',
+                            source_events='Replay every original source event in order; replace only the listed child events by their tagged SWAP and owned CLEAR.',
+                            after_source='Apply unchanged BANK.json cold_completions, exit_scalar_program and inverse K maps.',
+                            observation_clears='The final 112 recipe items are consumer obligations after each observation last use.'),
+                program=program, replacement_cuts=cuts, rejected_controls=controls)
+
+
 def run():
     source, coded, core, ce = authenticate()
     c, first, paid = replay(source, coded, core)
@@ -252,6 +419,7 @@ def run():
         line = c['frames'][record['chart']][0]
         K = ks[line]
         E = ce.canonical_frame(N, c['frames'][record['chart']])
+        need(rank(E) == 1, 'Physical rank of the relocated first child')
         response = common_Q.adjoint().then(K).then(E).adjoint()
         need(rank(K) == rank(response) == 0, 'Monomial query wrappers')
         need(equal(K.then(E).then(response), common_Q), 'Exact common-Q response')
@@ -335,20 +503,25 @@ def run():
                   inherited_obligations=['Physical implementation of authenticated native operations and their cost model.',
                                          'All-width evaluation lemma from CODED-PROOF.md and PHYSICAL.md.',
                                          'No backward observer, complete caller, global rounding budget, TM tariff or new kappa.'])
-    return json.loads(json.dumps(result))
+    hoist = verify_hoist(coded, core, owners, inv, entrance, queries)
+    return json.loads(json.dumps(result)), json.loads(json.dumps(hoist))
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--write', action='store_true')
     args = parser.parse_args()
-    result = run()
-    path = HERE / 'BANK.json'
-    if args.write:
-        path.write_text(json.dumps(result, sort_keys=True, separators=(',', ':')) + '\n')
-    else:
-        need(json.loads(path.read_text()) == result, 'Changed mathematical BANK.json receipt')
+    result, hoist = run()
+    for filename, receipt in [('BANK.json', result), ('HOIST.json', hoist)]:
+        path = HERE / filename
+        if args.write:
+            path.write_text(json.dumps(receipt, sort_keys=True, separators=(',', ':')) + '\n')
+        else:
+            need(json.loads(path.read_text()) == receipt, 'Changed mathematical ' + filename + ' receipt')
     print(result['status'], json.dumps(result['checks'], sort_keys=True))
+    print(hoist['status'], json.dumps({key: hoist[key] for key in
+          ('original_inputs_checked', 'arbitrary_owned_inputs_checked',
+           'replacement_cuts_checked', 'ordinary_work', 'rejected_controls')}, sort_keys=True))
 
 
 if __name__ == '__main__':

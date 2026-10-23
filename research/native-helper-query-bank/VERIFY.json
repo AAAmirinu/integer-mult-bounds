@@ -22,7 +22,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 120,
-      "checks": "Authenticated source-bound all632forward rows,358-owner invertible scalar basis,112 exact signed-tableau/absolute-phase native responses,32 charged cold completions, literal ordinary-work bill and four semantic mutation controls."
+      "checks": "Authenticated 632-row native endpoint, 358-owner scalar basis, 112 exact-phase responses, 32 charged completions and four base controls; entrance-prologue replay on 632 original plus 225 arbitrary owned inputs, 112 physical replacement cuts, unchanged paid inventory, explicit ordinary-work bill and two rescheduling controls."
     },
     {
       "argv": [
