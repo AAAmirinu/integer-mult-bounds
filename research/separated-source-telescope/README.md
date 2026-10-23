@@ -135,6 +135,14 @@ omitted root/nonroot terms, omitted subtraction, `Q<W`, failed rank separation,
 a changed height and a false 3.055 endpoint. All checks use explicit exceptions
 and remain active under `-O`.
 
+Registered normal and optimized checks pass on CPython 3.12.13. Optimized
+CPython 3.14.7 also passes. The committed-byte check and the official 11-file
+export check pass. A fresh Git-free export passes optimized verification and
+rejects deliberate input-byte and receipt changes. The optional source-history
+preflight refuses this shallow checkout; no full-history pass is claimed. All
+source pins use the recorded base, which is the initial contribution commit's
+direct parent. The portable export contains every declared live input.
+
 The proof is uniform in height; the finite checks corroborate it. They do not
 prove every native operator or the full multiplication theorem. Exact B_N,
 optimal batching, the physical compiler, all-column operators, whole-job
@@ -146,11 +154,16 @@ of this package. The new claim does not change the selected frontier.
 
 The [advance claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/5061#discussioncomment-19150437)
 records this refinement of the selected-stock-envelope card, priority 7.
+The final overlap snapshot covers 363 open PRs, 4,582 Discussion records
+and all 7,091 base-tracked README/TASK notes, plus this package's two notes.
+No omission warning was reported. Unpublished work and arbitrary diffs are
+outside that check. Canonical main still matched the pinned base.
 The older physical-stock question is not discharged by this mathematical result.
 The task followed the source-count handoff after checking its completed
 successors and current claims. No later task is reserved.
 
-Credit JoyboyBrian for the exact source census in PR #5067; Sagar Thakrar for
+Credit JoyboyBrian for the exact source census in
+[PR #5067](https://github.com/CrocSwap/integer-mult-bounds/pull/5067); Sagar Thakrar for
 the coefficient bracket and handoff in
 [PR #5026](https://github.com/CrocSwap/integer-mult-bounds/pull/5026); Nick
 Petalas for the fractional upper bound; and unpaidmoon for the height-one
