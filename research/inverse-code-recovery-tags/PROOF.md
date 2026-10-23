@@ -41,4 +41,3 @@ python3.12 -B scripts/research_package.py --package research/inverse-code-recove
 Expected verifier marker: PASS_SHARP_INVERSE_KERNEL_TAGS. The checker proves the large zero-fiber count by the exact Gram/scalar identities; it does not enumerate 815 million vectors.
 
 Credit: JoyboyBrian's PR5035 supplies the finite kernel, rounding rule and original collision; Dillon's [PR #4933](https://github.com/CrocSwap/integer-mult-bounds/pull/4933) supplies the mode factorization and physical wrappers; Dugongue and the retained native, ownership, precision and compiler authors keep their source credit. Some retained package prose uses the wrong number PR5037 for this kernel; the verified PR is 5035. New exact recovery formula and sharp fiber count: Ali Romman with OpenAI Codex assistance, Apache-2.0. Author-checked, not independent human or proof-kernel acceptance.
-
