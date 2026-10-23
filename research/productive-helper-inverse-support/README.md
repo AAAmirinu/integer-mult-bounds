@@ -1,4 +1,4 @@
-# Inverse support blocks a source-consuming productive helper
+# Support obstructions for a source-consuming productive helper
 
 **Scoped obstruction; no improved bound.** A proposed encoder would prepare
 native input 34 on the one-dimensional chart `span(73)`, replacing its source
@@ -17,10 +17,19 @@ suffix. It even drops every suffix native relation, every helper final-frame
 constraint, and every intermediate adapter pin. Two retained paths to fixed
 main outputs still force the contradiction.
 
-The proof closes these families of factorizations, rather than reporting an unsuccessful
-pivot search. It does not exclude changed scalar suffix contacts, compensation
-interleaved with the outside computation, paid nonmonotone transports, or other
-productive-helper constructions. Ascending means inclusion of the actual binary
+There is also a simpler, stronger obstruction for this same retained suffix:
+the required transfer from main input 51 to main output 51 is `1/2`, its input
+chart is `span(100)`, but the greatest permitted output chart is `span(45,76)`.
+It excludes 100. This rules out **every ascending pure-scalar realization of
+the nominated whole-encoder map**, including interleaved compensation and
+preparation on cold inputs. The original encoder and original suffix pass all
+forward and inverse support checks, providing a positive control.
+
+These are proofs about specified families, not conclusions from an unsuccessful
+pivot search. They do not exclude changed scalar suffix contacts, paid
+nonmonotone transports, or other productive-helper constructions. In particular,
+undoing `T` immediately after the paired native operations changes the suffix
+and falls outside both theorems. Ascending means inclusion of the actual binary
 subspaces, not merely nondecreasing dimension. There is no new physical supplier,
 compiler admission, multiplication theorem, or value of kappa.
 
@@ -79,6 +88,14 @@ annihilator identity holds on all 457 zero-chart entry coordinates; the
 compensation now has seven nonzero entries. Fresh suffix graphs from cut 10315
 give the same excluding caps at 78 and 431. The proof is therefore unchanged.
 
+The main-input obstruction uses the same whole-encoder interval. Since `P T`
+fixes output 51, its required coefficient on input 51 remains `1/2`. An explicit
+13-edge paid path from output 51 to main 114 at fixed frame 144 excludes input
+direction 100, even after every native relation, helper final pin and adapter
+pin is released. Both declared suffix variants and orientations are checked.
+The original source control checks all 3352 forward and 3168 inverse nonzero
+coefficients with no violation. See section 6 of [PROOF.md](PROOF.md).
+
 ## Reproduction
 
 From the repository root, using Python 3.12 and its standard library:
@@ -91,7 +108,7 @@ python3 -I -O -B research/productive-helper-inverse-support/verify.py
 The default replay is read-only and needs no solver, network, Git history, or
 discovery artifacts. It authenticates its live source, reconstructs the local
 matrix and Schur factorization, verifies the exact annihilator, rebuilds both
-suffix graphs, and validates explicit paths to main pins. Thirteen corruption
+suffix graphs, and validates explicit paths to main pins. Sixteen corruption
 controls address source coefficients, compensation, the identity, native pairing,
 path continuity, and terminal constraints. The checked source preserves all
 632 arbitrary inputs; this local result never treats dirty helpers as zero data.
@@ -104,7 +121,7 @@ are listed in [SOURCES.json](SOURCES.json) and [VERIFY.json](VERIFY.json).
 ## Open next questions
 
 The structured questions are in [TASK.json](TASK.json). A useful next test is
-to change an actual suffix dependency or the timing of compensation, then check
+to change an actual suffix dependency, then check
 the corresponding exact inverse-support equations before synthesis. Another
 escape is to price a nonmonotone realization; it must beat the complete
 paid-minus-helper invoice, including any return transport and native changes.

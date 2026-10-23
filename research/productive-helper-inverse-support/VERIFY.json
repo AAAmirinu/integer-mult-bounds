@@ -15,7 +15,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 180,
-      "checks": "Exact source-bound local and whole scalar-encoder inverse/annihilator identities, both suffix orientations, coalescing checks, explicit native-free terminal paths and semantic corruption controls."
+      "checks": "Exact local and whole scalar-encoder inverse/annihilator identities, stronger main-input support obstruction, original-source positive control, both suffix orientations/variants, explicit native-free terminal paths and sixteen corruption controls."
     },
     {
       "argv": [
@@ -26,7 +26,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 180,
-      "checks": "Exact source-bound local and whole scalar-encoder inverse/annihilator identities, both suffix orientations, coalescing checks, explicit native-free terminal paths and semantic corruption controls."
+      "checks": "Exact local and whole scalar-encoder inverse/annihilator identities, stronger main-input support obstruction, original-source positive control, both suffix orientations/variants, explicit native-free terminal paths and sixteen corruption controls."
     }
   ]
 }

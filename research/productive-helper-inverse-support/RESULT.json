@@ -13,6 +13,14 @@
         "suffix_terminal_contains73"
       ]
     },
+    "main_support": {
+      "count": 3,
+      "passed": [
+        "required_main_coefficient_changed",
+        "main_witness_edge_omitted",
+        "main_terminal_admits100"
+      ]
+    },
     "whole_encoder": {
       "count": 5,
       "passed": [
@@ -849,6 +857,327 @@
     "source_local_matrix_sha256": "e2add2fd3ff9cee196c91461b430cd8fb9a5b66573467ff7a870b36eb8e4721f",
     "source_sha256": "aa4a8241da76abd2c06e6576a3ac09e77781321deaac3ad7d3ce4519342a36e6",
     "status": "PASS_SCOPED_INVERSE_SUPPORT_OBSTRUCTION"
+  },
+  "main_support": {
+    "B_fixes_output51": true,
+    "directions": {
+      "backward": {
+        "coalescing": {
+          "cancellations": 4,
+          "crossed_checks": 38,
+          "merges": 22
+        },
+        "variants": {
+          "coalesced": {
+            "output51_cap": [
+              45,
+              76
+            ],
+            "suffix_sha256": "6e6f607c5f03227d5bd30f9b1533dcfd3b240f0e2aeb0dd429480dac3513ca1e",
+            "witness100": {
+              "length": 13,
+              "roles": [
+                51,
+                51,
+                447,
+                223,
+                121,
+                121,
+                173,
+                173,
+                173,
+                419,
+                419,
+                596,
+                114
+              ],
+              "source_ordinals": [
+                10919,
+                10923,
+                10926,
+                10927,
+                10931,
+                11876,
+                11877,
+                12101,
+                12101,
+                12102,
+                12103,
+                12104,
+                null
+              ],
+              "suffix_ordinals": [
+                604,
+                608,
+                611,
+                612,
+                616,
+                1565,
+                1566,
+                1792,
+                1793,
+                1795,
+                1797,
+                1798,
+                7823
+              ],
+              "terminal_basis": [
+                3,
+                4,
+                8,
+                16,
+                33,
+                64,
+                128,
+                256
+              ],
+              "terminal_frame": 144,
+              "terminal_kind": "main_final",
+              "terminal_role": 114
+            }
+          },
+          "uncoalesced": {
+            "output51_cap": [
+              45,
+              76
+            ],
+            "suffix_sha256": "48ee616f081302b9d219a7d595add10cca3e6121d46176f6a5d1ebac337e0774",
+            "witness100": {
+              "length": 13,
+              "roles": [
+                51,
+                51,
+                447,
+                223,
+                121,
+                121,
+                173,
+                173,
+                173,
+                419,
+                419,
+                596,
+                114
+              ],
+              "source_ordinals": [
+                10919,
+                10923,
+                10926,
+                10927,
+                10931,
+                11876,
+                11877,
+                12101,
+                12101,
+                12102,
+                12103,
+                12104,
+                null
+              ],
+              "suffix_ordinals": [
+                604,
+                608,
+                611,
+                612,
+                616,
+                1569,
+                1570,
+                1796,
+                1797,
+                1799,
+                1801,
+                1802,
+                7849
+              ],
+              "terminal_basis": [
+                3,
+                4,
+                8,
+                16,
+                33,
+                64,
+                128,
+                256
+              ],
+              "terminal_frame": 144,
+              "terminal_kind": "main_final",
+              "terminal_role": 114
+            }
+          }
+        }
+      },
+      "forward": {
+        "coalescing": {
+          "cancellations": 4,
+          "crossed_checks": 38,
+          "merges": 21
+        },
+        "variants": {
+          "coalesced": {
+            "output51_cap": [
+              45,
+              76
+            ],
+            "suffix_sha256": "ce119ec1542cddff43ee7b92eeafa81398c3628dbe1ac8ad4ca7e301fcb295e1",
+            "witness100": {
+              "length": 13,
+              "roles": [
+                51,
+                51,
+                447,
+                223,
+                121,
+                121,
+                121,
+                173,
+                173,
+                419,
+                419,
+                596,
+                114
+              ],
+              "source_ordinals": [
+                10919,
+                10923,
+                10926,
+                10927,
+                10931,
+                11876,
+                11877,
+                12101,
+                12101,
+                12102,
+                12103,
+                12104,
+                null
+              ],
+              "suffix_ordinals": [
+                604,
+                608,
+                611,
+                612,
+                616,
+                1565,
+                1566,
+                1792,
+                1793,
+                1795,
+                1797,
+                1798,
+                7822
+              ],
+              "terminal_basis": [
+                3,
+                4,
+                8,
+                16,
+                33,
+                64,
+                128,
+                256
+              ],
+              "terminal_frame": 144,
+              "terminal_kind": "main_final",
+              "terminal_role": 114
+            }
+          },
+          "uncoalesced": {
+            "output51_cap": [
+              45,
+              76
+            ],
+            "suffix_sha256": "13ef7921eb50f6f402e179a1333ebb7c906be52f061f8834d91c67beae63e680",
+            "witness100": {
+              "length": 13,
+              "roles": [
+                51,
+                51,
+                447,
+                223,
+                121,
+                121,
+                121,
+                173,
+                173,
+                419,
+                419,
+                596,
+                114
+              ],
+              "source_ordinals": [
+                10919,
+                10923,
+                10926,
+                10927,
+                10931,
+                11876,
+                11877,
+                12101,
+                12101,
+                12102,
+                12103,
+                12104,
+                null
+              ],
+              "suffix_ordinals": [
+                604,
+                608,
+                611,
+                612,
+                616,
+                1569,
+                1570,
+                1796,
+                1797,
+                1799,
+                1801,
+                1802,
+                7847
+              ],
+              "terminal_basis": [
+                3,
+                4,
+                8,
+                16,
+                33,
+                64,
+                128,
+                256
+              ],
+              "terminal_frame": 144,
+              "terminal_kind": "main_final",
+              "terminal_role": 114
+            }
+          }
+        }
+      }
+    },
+    "encoder_interval": [
+      6347,
+      10315
+    ],
+    "positive_control": {
+      "forward_violations": 0,
+      "inverse_violations": 0,
+      "original_forward_support_checks": 3352,
+      "original_inverse_support_checks": 3168,
+      "original_output51_cap": [
+        5,
+        40,
+        73
+      ]
+    },
+    "required_coefficient": {
+      "input_basis": [
+        100
+      ],
+      "input_role": 51,
+      "output_role": 51,
+      "value": "1/2"
+    },
+    "scope": "With the actual scalar-A input charts, the required transfer H=P*T*M has a nonzero main51-to-main51 coefficient. No pure-scalar realization whose paid canonical chart spaces grow by inclusion can feed either declared globally B-conjugated suffix. This is independent of cold prefix choices and compensation interleaving. All suffix native edges/helper-final/adapter pins are released. It does not cover a changed suffix, including transient T undone immediately after the paired natives, or nonmonotone paid transports. No new bound is claimed.",
+    "source_sha256": "aa4a8241da76abd2c06e6576a3ac09e77781321deaac3ad7d3ce4519342a36e6",
+    "status": "PASS_MAIN_SUPPORT_RETAINED_SUFFIX_OBSTRUCTION"
   },
   "status": "PASS_PRODUCTIVE_HELPER_INVERSE_SUPPORT",
   "whole_encoder": {

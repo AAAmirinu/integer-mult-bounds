@@ -1,4 +1,4 @@
-# Proof of the scoped cold-basis obstruction
+# Proof of the scoped support obstructions
 
 ## 1. Reverse-support necessity
 
@@ -135,14 +135,52 @@ and every distribution of the complete upfront compensation, followed by an
 ascending outside scalar circuit and that suffix. This closes enlargement to
 the whole scalar encoder under the same scheduling premise.
 
-## 6. Limits
+## 6. Stronger main-input obstruction for the same suffix
 
-The theorem fixes the nominated source-consuming block, prefix placement of
+Let `M` now denote the whole scalar encoder from section 5. Direct exact replay
+of its input-51 column gives `M[51,51]=1/2`. Independently constructing the full
+sparse matrix gives the same coefficient. Its actual input chart is `span(100)`.
+The output change `B=P T` fixes role 51, so `H=B M` also has `H[51,51]=1/2`.
+
+For either declared globally conjugated suffix, the greatest relaxed chart at
+output 51 is `span(45,76)`, which excludes 100. A separately checked 13-edge
+paid-only path leads from this output to main 114's fixed frame 144, also
+excluding 100. As in section 3, native relations, helper final constraints and
+intermediate adapter pins are absent from the relaxation. Section 1's forward
+support condition alone is contradicted:
+
+```
+H[51,51] != 0, but span(100) is not contained in the allowed output chart.
+```
+
+Consequently no pure-scalar realization of this required whole-encoder map
+with ascending paid charts and the actual entry charts can feed either
+declared suffix. This argument does not require upfront compensation, a cold
+basis, or a particular factorization. It includes compensation interleaved
+within the encoder and cold preparation before the protected value is formed.
+The forward obstruction suffices; checking both suffix orientations and both
+coalescing variants adds source validation.
+
+As a positive control, the checker rebuilds the original unmodified suffix and
+tests all 3352 nonzero entries of `M` and all 3168 of `M^-1` against its caps.
+Every containment holds. Three additional corruption controls change the
+required main coefficient, omit a path edge and release the terminal exclusion.
+
+This stronger result still fixes the suffix contact graph. For example,
+undoing `T` immediately after the common paired native operations gives a
+different graph and is not ruled out. Nor does it rule out nonascending paid
+transports or native operations inside the replacement.
+
+## 7. Limits
+
+Sections 2--5 fix the nominated source-consuming block, prefix placement of
 all compensation, and one of the two explicitly generated suffix contact
-graphs. It does not fix local exit charts beyond necessary suffix caps. It
+graphs. Section 6 removes the prefix-placement restriction for the nominated
+whole-encoder map, while keeping those suffix graphs. Neither theorem fixes
+local exit charts beyond necessary suffix caps. Each
 assumes subspace inclusion on paid edges; equal-dimensional rotations and
 downward transports must be charged and are outside this proof. Different
 scalar suffixes, main interfaces, native-bearing replacement blocks, larger
-encoder regions crossing native operations, or a different interleaving require
+encoder regions crossing native operations require
 a fresh calculation.
 No global lower bound on productive-helper algorithms or kappa is inferred.

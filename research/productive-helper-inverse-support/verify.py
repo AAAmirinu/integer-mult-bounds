@@ -29,12 +29,14 @@ def run():
     for row in inputs:
         data = (REPO / row['path']).read_bytes()
         need(hashlib.sha256(data).hexdigest() == row['sha256'], 'live source byte hash')
-    local, whole = load('check'), load('check_whole')
+    local, whole, main = load('check'), load('check_whole'), load('check_main')
     payload = local.read_source()
     result = {'status': 'PASS_PRODUCTIVE_HELPER_INVERSE_SUPPORT',
               'local': local.verify(payload), 'whole_encoder': whole.verify(payload),
-              'controls': {'local': local.controls(payload), 'whole_encoder': whole.controls(payload)}}
-    need(sum(r['count'] for r in result['controls'].values()) == 13, 'all thirteen controls ran')
+              'main_support': main.verify(payload),
+              'controls': {'local': local.controls(payload), 'whole_encoder': whole.controls(payload),
+                           'main_support': main.controls(payload)}}
+    need(sum(r['count'] for r in result['controls'].values()) == 16, 'all sixteen controls ran')
     return result
 
 
@@ -50,4 +52,4 @@ if __name__ == '__main__':
         need(result == json.loads(path.read_bytes()), 'fresh proof result matches committed receipt')
     print(json.dumps({'status': result['status'], 'cold_roles_local': len(result['local']['cold_roles']),
                       'cold_roles_whole_encoder': result['whole_encoder']['cold_role_count'],
-                      'corruption_controls': 13, 'new_bound': False}, sort_keys=True))
+                      'corruption_controls': 16, 'new_bound': False}, sort_keys=True))
