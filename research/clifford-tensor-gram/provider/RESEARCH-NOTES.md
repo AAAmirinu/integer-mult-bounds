@@ -74,6 +74,13 @@ historical novelty certificate.
    A separate negative check moved role 112's nonidentity exit adapter from
    event 15,723 to event 14,298, before its last scalar contact. The audit
    rejected it with `Nonidentity adapters surround every use of their role`.
+10. The first hosted replay on Linux / CPython 3.12.15 passed the four earlier
+    checks, all native recipe classes and both complete provider endpoints.
+    Its 240-second provider limit then expired during the remaining checks.
+    No mathematical failure was reported. The manifest now assigns 90 seconds
+    to each earlier check and 420 seconds to each provider check. The total
+    stays 1,200 seconds. Source code, proof and scientific receipts are
+    unchanged by this budget correction.
 
 No promising fusion survived the exact endpoint test. The source remains
 unchanged. The hypothetical invoice delta is not an achieved saving, so a
