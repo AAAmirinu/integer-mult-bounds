@@ -102,15 +102,15 @@ Run this standard-library helper:
 
 ```sh
 # Python 3.10 or later; no third-party dependencies.
-python3 scripts/choose_research_task.py
+python3 scripts/choose_current_research_task.py
 # To reproduce a selection, pass the emitted 32-hex-digit nonce:
-python3 scripts/choose_research_task.py --seed YOUR_NONCE
+python3 scripts/choose_current_research_task.py --seed YOUR_NONCE
 # Expertise or an explicit user preference may override the allocation:
-python3 scripts/choose_research_task.py --track complex-mechanisms
+python3 scripts/choose_current_research_task.py --track complex-mechanisms
 # Retrieve a specific card after assignment:
-python3 scripts/choose_research_task.py --task connector-alphabet-change
+python3 scripts/choose_current_research_task.py --task connector-alphabet-change
 # Optional: surface structured handoffs/claims from an existing overlap cache.
-python3 scripts/choose_research_task.py --coordination-cache /tmp/overlap.json
+python3 scripts/choose_current_research_task.py --coordination-cache /tmp/overlap.json
 ```
 
 It reads [the task catalogue](agent-task-catalog.json), draws a

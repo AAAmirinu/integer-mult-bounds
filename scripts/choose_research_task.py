@@ -179,29 +179,6 @@ def select(catalog, seed, track_id=None, task_id=None):
     return {"seed": seed, "track": track["id"], "suggestions": suggestions}
 
 
-def resolve_current_first_steps(result, root):
-    """Resolve generic orientation at the CLI boundary; keep the source card."""
-    old = ["python3", "-B", "scripts/research_baseline.py"]
-    current = "scripts/research_selected_baseline.py"
-    cards = [card for card in result["suggestions"]
-             if card["first_step"]["command"] == old]
-    if not cards:
-        return []
-    omitted = check_catalog_files(root, [
-        (current, "missing current first-step script: " + current),
-    ])
-    for card in cards:
-        original = card["first_step"]
-        card["catalog_first_step"] = original
-        card["first_step"] = {**original, "command": ["python3", "-B", current]}
-        card["first_step_resolution"] = (
-            "The current CLI uses the selected-certificate baseline for generic "
-            "orientation. catalog_first_step is the exact frozen card entry. "
-            "The task, scientific checks and acceptance gate are unchanged."
-        )
-    return omitted
-
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--seed", help="32 hex digits; default: fresh OS-random 128-bit nonce")
@@ -215,7 +192,6 @@ def main():
         catalog = json.loads(catalog_bytes)
         omitted = validate_catalog(catalog, ROOT)
         result = select(catalog, args.seed if args.seed is not None else secrets.token_hex(16), args.track, args.task)
-        current_omitted = resolve_current_first_steps(result, ROOT)
         selected_bytes = (ROOT / "certificates/selected-result.json").read_bytes()
         selected = json.loads(selected_bytes)
         try:
@@ -251,11 +227,10 @@ def main():
             "status": "SUGGESTIONS_ONLY_NOT_RESERVED",
             "next_step": "First check #1166 for a suitable open handoff. Use these suggestions if none fits, check live overlap and existing coverage, then record a bounded scope. Claims never exclude independent audits.",
         })
-        if omitted or current_omitted:
+        if omitted:
             result["sparse_checkout"] = {
                 "omitted_catalogue_paths": omitted,
-                "omitted_current_first_step_paths": current_omitted,
-                "scope": "These absent regular files match HEAD and skip-worktree index entries. Materialize the chosen task's inputs before running it; this validates first-step references, not replay dependencies.",
+                "scope": "These absent regular files match HEAD and skip-worktree index entries. Materialize the chosen task's inputs before running it; this validates catalogue references, not replay dependencies.",
             }
     except (OSError, ValueError, KeyError, TypeError) as exc:
         parser.error(str(exc))

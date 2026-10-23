@@ -87,7 +87,7 @@ run for this reporting adapter.
 
 ## Current task-picker commands
 
-The task-picker CLI now resolves the exact generic command
+The current task-picker CLI, `scripts/choose_current_research_task.py`, resolves the exact generic command
 `python3 -B scripts/research_baseline.py` to the current selected baseline.
 Each affected suggestion retains its complete original entry in
 `catalog_first_step` and explains the change in `first_step_resolution`.
@@ -97,8 +97,12 @@ not changed. The CLI checks that the current helper exists, or is an exact
 HEAD file omitted by a sparse checkout, before it emits the resolved command.
 A sparse result names the missing helper for materialization.
 
-The catalogue bytes, `select()` result and package `TASK.json` original-card
-receipts remain exact. This distinction is deliberate: the CLI gives current
+The historical `scripts/choose_research_task.py`, catalogue bytes, `select()`
+result and package `TASK.json` original-card receipts remain exact. The current
+entry point runs the historical CLI with unchanged arguments and resolves its
+JSON output. Help and error output keep the child status and text. This separate
+entry point is necessary because a frozen package also pins the picker script
+as a runtime input. It must not be changed or silently repinned. This distinction is deliberate: the CLI gives current
 orientation, while the stored card records the historical assignment. Do not
 copy the resolved command into an old package or repin its frozen inputs.
 [PR4906](https://github.com/CrocSwap/integer-mult-bounds/pull/4906) found 57
@@ -111,7 +115,7 @@ The displayed scientific starting points still need a current overlap and
 scope check. Command resolution is not a strategic reassessment or scientific
 acceptance. Tests cover all 16 generic cards, unchanged other cards, exact
 command matching, missing/deleted/sparse helpers and actual CLI output.
-Run them with `python3 -B -m unittest discover -s tests -p test_research_assignment.py`.
+Run them with `python3 -B -m unittest discover -s tests -p test_research_current_assignment.py`.
 Current CLI resolution and these controls: Ali Romman with substantial OpenAI
 Codex assistance; Apache-2.0.
 
