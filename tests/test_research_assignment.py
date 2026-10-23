@@ -107,6 +107,55 @@ class ResearchAssignmentTests(unittest.TestCase):
         self.assertEqual(receipt["priority_log"], CATALOG["priority_log"])
         self.assertEqual(len(receipt["catalog_sha256"]), 64)
 
+    def test_current_commands_preserve_every_frozen_card(self):
+        before = copy.deepcopy(CATALOG)
+        resolved = 0
+        for track in CATALOG["tracks"]:
+            for task in track["tasks"]:
+                result = assignment.select(CATALOG, "a1" * 16, task_id=task["id"])
+                original = copy.deepcopy(result)
+                assignment.resolve_current_first_steps(result, ROOT)
+                card = result["suggestions"][0]
+                if task["first_step"]["command"] == ["python3", "-B", "scripts/research_baseline.py"]:
+                    resolved += 1
+                    self.assertEqual(card["catalog_first_step"], task["first_step"])
+                    self.assertEqual(card["first_step"]["command"],
+                                     ["python3", "-B", "scripts/research_selected_baseline.py"])
+                    self.assertTrue(card.pop("first_step_resolution"))
+                    card["first_step"] = card.pop("catalog_first_step")
+                self.assertEqual(result, original)
+        self.assertEqual(resolved, 16)
+        self.assertEqual(CATALOG, before)
+
+    def test_resolution_requires_exact_generic_command(self):
+        result = assignment.select(CATALOG, "0" * 32, task_id="portable-replay")
+        result = copy.deepcopy(result)
+        result["suggestions"][0]["first_step"]["command"].append("--historical-fixture")
+        original = copy.deepcopy(result)
+        self.assertEqual(assignment.resolve_current_first_steps(result, ROOT), [])
+        self.assertEqual(result, original)
+
+    def test_resolution_rejects_missing_current_helper(self):
+        result = assignment.select(CATALOG, "0" * 32, task_id="portable-replay")
+        original = copy.deepcopy(result)
+        with tempfile.TemporaryDirectory() as directory:
+            with self.assertRaisesRegex(ValueError, "missing current first-step script"):
+                assignment.resolve_current_first_steps(result, Path(directory))
+        self.assertEqual(result, original)
+
+    def test_cli_emits_current_and_original_commands(self):
+        output = subprocess.run(
+            [sys.executable, "-B", str(ROOT / "scripts/choose_research_task.py"),
+             "--seed", "0" * 32, "--task", "portable-replay"],
+            cwd=ROOT, capture_output=True, text=True, check=True,
+        )
+        card = json.loads(output.stdout)["suggestions"][0]
+        self.assertEqual(card["first_step"]["command"],
+                         ["python3", "-B", "scripts/research_selected_baseline.py"])
+        self.assertEqual(card["catalog_first_step"]["command"],
+                         ["python3", "-B", "scripts/research_baseline.py"])
+
+
 
 class SparseResearchAssignmentTests(unittest.TestCase):
     def setUp(self):
@@ -154,6 +203,22 @@ class SparseResearchAssignmentTests(unittest.TestCase):
             cwd=self.root, capture_output=True, text=True, check=True,
         )
         return json.loads(result.stdout)
+
+    def test_current_helper_sparse_omission_and_deletion(self):
+        name = "scripts/research_selected_baseline.py"
+        path = self.root / name
+        path.write_text("print('fixture')\n", encoding="utf-8")
+        self.git("add", name)
+        self.git("-c", "user.name=Fixture", "-c", "user.email=fixture@example.invalid",
+                 "-c", "core.hooksPath=/dev/null", "commit", "-qm", "helper")
+        self.git("update-index", "--skip-worktree", name)
+        path.unlink()
+        result = assignment.select(CATALOG, "0" * 32, task_id="portable-replay")
+        self.assertEqual(assignment.resolve_current_first_steps(result, self.root), [name])
+        self.git("update-index", "--no-skip-worktree", name)
+        result = assignment.select(CATALOG, "0" * 32, task_id="portable-replay")
+        with self.assertRaisesRegex(ValueError, "missing current first-step script"):
+            assignment.resolve_current_first_steps(result, self.root)
 
     def test_sparse_cli_preserves_assignment_and_reports_omitted_inputs(self):
         full = self.receipt()
