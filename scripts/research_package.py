@@ -895,6 +895,12 @@ def plan_details(root, changed):
     replay_changed = sorted(changed.intersection({
         "scripts/research_package.py", ".github/workflows/research-packages.yml",
         ".github/workflows/research-package-batch.yml"}))
+    # Group literal Git paths once. Keep removed paths and exact spellings.
+    changed_packages = {}
+    for name in sorted(changed):
+        parts = name.split("/", 2)
+        if len(parts) == 3 and parts[0] == "research":
+            changed_packages.setdefault("/".join(parts[:2]), []).append(name)
     packages = []
     sparse_count = 0
     for path, raw, sparse in planning_manifests(root, head_tracked):
@@ -910,7 +916,7 @@ def plan_details(root, changed):
             require_tracked_input(name, tracked)
         causes = {
             "declared_inputs": sorted(changed.intersection(inputs)),
-            "package_files": sorted(p for p in changed if p.startswith(package + "/")),
+            "package_files": changed_packages.get(package, []),
             "shared_controls": replay_changed,
         }
         if any(causes.values()):
