@@ -26,3 +26,20 @@ Both pass. The registered command reports
 The initial isolated run could not import the local constructor. The verifier
 now loads it by its explicit file path; the isolated and registered commands
 above both passed after that correction. No scientific receipt changed.
+
+The committed scientific package at
+`821204fa55bb686d76152a9d9564203a4c981876` passed:
+
+```sh
+python3 scripts/check_research_commit.py --package research/native-gauge-cancellation
+python3 scripts/export_research_package.py export --package research/native-gauge-cancellation --output /tmp/native-gauge-cancellation-publication.tar.gz
+python3 scripts/export_research_package.py check /tmp/native-gauge-cancellation-publication.tar.gz
+PATH=/nonexistent python3.12 -I -O -B /tmp/native-gauge-cancellation-replay-20261023/research/native-gauge-cancellation/verify.py
+```
+
+The last command used the absolute interpreter path because PATH was empty.
+The export contained 19 files. A fresh extraction had no Git directory. The
+optimized scientific replay passed there. The whitespace check also passed.
+The later validation-only commit changes this report, not the scientific code
+or RESULT.json. The full-history ancestry check was not run in this shallow
+checkout. Hosted CI and independent human review remain unclaimed here.
