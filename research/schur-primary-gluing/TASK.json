@@ -147,14 +147,14 @@
   "overlap": {
     "scope": "All open PR bodies and Discussions through the reported complete snapshots, plus partial local notes and targeted all-state GitHub Schur/gluing search; relevant predecessor notes materialized and read.",
     "open_prs": {
-      "fetched_at": "2026-10-23T19:00:24.760499+00:00",
+      "fetched_at": "2026-10-23T19:12:56.555770+00:00",
       "complete_pagination": true,
       "records": 305
     },
     "discussions": {
-      "fetched_at": "2026-10-23T19:02:14.934078+00:00",
+      "fetched_at": "2026-10-23T19:14:31.495535+00:00",
       "complete_pagination": true,
-      "records": 4623
+      "records": 4638
     },
     "local": {
       "head": "7c472563474e60185e6ca101a17622133d047e56",
@@ -167,9 +167,23 @@
       "#5267 nilpotent whole pair",
       "#5287 whole central class",
       "#5348 H=1 primary whole pair",
-      "#5337 released general-H gluing"
+      "#5337 released general-H gluing",
+      "Concurrent independent general-H proof by Ali Romman at 49373a6f433fef560a4297f65f3826a8add7cd44; author moved primary contribution to fixed-H header weights."
     ],
     "added_value": "Justified sector00 primary split, extension of the W-invertible model, and explicit intertwiners that glue the entire ordered pair for arbitrary H.",
-    "limits": "No matches is not proof of novelty. Local inventory is incomplete; arbitrary historical diffs, nested notes and unpublished work are not covered."
+    "limits": "No matches is not proof of novelty. Local inventory is incomplete; arbitrary historical diffs, nested notes and unpublished work are not covered. The independent concurrent gluing proof was found and credited, not suppressed. Its executable checks were not replayed here."
+  },
+  "submission_refresh": {
+    "canonical_main": "7c472563474e60185e6ca101a17622133d047e56",
+    "checked_at_utc": "2026-10-23T19:14:54Z",
+    "priority_revision": 7,
+    "result": "No main, relevant guidance, selected record or pinned predecessor change."
+  },
+  "concurrent_work": {
+    "author": "Ali Romman",
+    "head": "49373a6f433fef560a4297f65f3826a8add7cd44",
+    "proof": "https://github.com/aliromman/integer-mult-bounds/blob/49373a6f433fef560a4297f65f3826a8add7cd44/research/general-ordered-schur/PROOF.md",
+    "coordination": "https://github.com/CrocSwap/integer-mult-bounds/discussions/5337#discussioncomment-19153030",
+    "relationship": "Independent matching gluing proof, read after our proof/checker commit f69863ddefafa183babe2b59a8e5c91a92786fd1; no code imported, no runtime or theorem dependency; their reported checks not replayed here. Complementary header weights remain their scope."
   }
 }

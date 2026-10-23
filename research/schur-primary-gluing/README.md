@@ -20,6 +20,17 @@ an improvement to kappa. Distinct H/profile data may yield the same residual
 orbit: the result is sufficiency of fixed data, not an injective classification
 of all parameter choices. The selected conditional kappa remains 0.00302015.
 
+**Concurrent independent work.** The final overlap refresh found Ali Romman's
+[independent proof and constructive map](https://github.com/aliromman/integer-mult-bounds/blob/49373a6f433fef560a4297f65f3826a8add7cd44/research/general-ordered-schur/PROOF.md).
+It reaches the same Fitting decomposition and ordered representative.
+[The coordination reply](https://github.com/CrocSwap/integer-mult-bounds/discussions/5337#discussioncomment-19153030)
+records that Ali moved the primary focus of that contribution to the
+complementary fixed-H header weights. Our proof and separate checker were
+frozen at `f69863ddefafa183babe2b59a8e5c91a92786fd1` before reading that proof.
+The concurrent code is not imported or an executable dependency, and its
+reported checks were not replayed here. Credit is shared for the independently
+obtained gluing result; no exclusive discovery claim is made.
+
 ## Contract and explicit representative
 
 Work over any field F. Let P0,Q0 be commuting idempotents on V, with ordered
