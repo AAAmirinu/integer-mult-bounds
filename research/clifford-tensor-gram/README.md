@@ -2,19 +2,25 @@
 
 **A uniform algebraic interface theorem and an exact verifier; no new kappa.**
 For fixed scalar register programs on n binary axes, with unitary dyadic
-Clifford operators and every dirty input/return retained, equality at widths
-**1 through 8n+4 is equivalent to equality at every positive width**. This
+Clifford operators and every dirty input/return retained, equality at the
+**eight widths 8n-3 through 8n+4 implies equality at every positive width**
+for n>=2. For one axis, **widths 5,6,7,8 suffice**, and both the maximum
+cutoff eight and the number of tests four are sharp. For zero axes use
+widths 1,2,3,4. This
 covers Gaussian and Hadamard gates as well as phase-monomial maps. The cutoff
 does not depend on program length or expanded support.
 
-The [proof](PROOF.md) also gives a stable test. Let M be the squared coefficient
+The [original proof](PROOF.md) and [extensions](ADVANCES.md) give a stable test.
+Let M be the squared coefficient
 norm after equal exact native operators are combined. Some tested width has
-normalized squared Hilbert-Schmidt residual at least **(14/15)M**. An explicit
+normalized squared Hilbert-Schmidt residual at least **(75/76)M** among all
+widths 1 through 8n+4. An explicit
 rational polynomial recovers M from the finite norm sequence. Base-space pair
-traces suffice. A conditional norm procedure finds a nonzero tensor entry
-without allocating a tensor matrix.
+traces suffice. The compact implementation uses exact quadratic sums and
+bitwise conditional norms. It builds **neither a dense base matrix nor a
+tensor matrix**, and it removes the original D^2 coordinate scan.
 
-For the source's nine binary axes, the sufficient tensor-width cutoff is **76**.
+For the source's nine binary axes, **eight tests at widths 69 through 76** suffice.
 This is an algebraic bound, not a full supplier replay or a minimal cutoff.
 The complete kappa calculation and selected frontier are unchanged.
 
@@ -35,30 +41,56 @@ Python 3.12 and the standard library suffice. From the repository root:
 python3.12 -B scripts/research_package.py --package research/clifford-tensor-gram
 ```
 
-Both registered modes print `PASS_CLIFFORD_TENSOR_GRAM_NO_NEW_KAPPA`.
+The registered commands print `PASS_CLIFFORD_TENSOR_GRAM_NO_NEW_KAPPA` and
+`PASS_CLIFFORD_ADVANCES_NO_NEW_KAPPA` in normal and optimized Python.
 Direct commands also work in a Git-free export:
 
 ```sh
 python3.12 -I -W error -B research/clifford-tensor-gram/verify.py
 python3.12 -I -O -W error -B research/clifford-tensor-gram/verify.py
+python3.12 -I -W error -B research/clifford-tensor-gram/verify_advances.py
+python3.12 -I -O -W error -B research/clifford-tensor-gram/verify_advances.py
+python3.12 -I -B research/clifford-tensor-gram/compact.py \
+  research/clifford-tensor-gram/examples/native-64.json
 python3.12 -I -B research/clifford-tensor-gram/certify.py \
   research/clifford-tensor-gram/examples/native-relation.json
 python3.12 -I -B research/clifford-tensor-gram/check_witness.py \
   research/clifford-tensor-gram/examples/reynolds.json \
   research/clifford-tensor-gram/examples/reynolds.certificate.json
 python3.12 -I -B research/clifford-tensor-gram/audit_mutations.py
+python3.12 -I -B research/clifford-tensor-gram/audit_advances.py
 ```
 
 The producer prints JSON. Read `equivalent_at_all_positive_widths`; a successful
 process means the decision completed, and a counterexample is a valid result.
 The independent witness checker prints `PASS_LITERAL_TENSOR_WITNESS 5/24`.
-It uses a separate signed-word interpreter and literal matrix entries, with
+Relative to the original dense producer, it uses a separate signed-word
+interpreter and literal matrix entries, with
 no producer import, trace calculation or interpolation argument. Only the
 frozen scalar arithmetic is shared.
 It checks the literal nonzero entry, not the claimed norms or the universal
 cutoff theorem.
 
+The compact producer reuses that signed-word expansion. Its differential
+checks use the original dense compiler, frozen source matrices and literal
+entries. It is not an independent checker of itself. The research record is
+saved in [RESEARCH-NOTES.md](RESEARCH-NOTES.md).
+
 ## Input contract
+
+`compact.py` uses the same roles and instructions below, but each value in
+`operators` is a literal native circuit. See the
+[64-axis example](examples/native-64.json) and
+[65-axis phase relation](examples/native-65.json). The native gate forms are
+`["P", rows]`, `["X", offset]`, `["D", rows, alpha]`, `["C", mask, sign]`
+and `["phase", exponent]`. Binary matrix rows are integer masks. Diagonal
+alpha values belong to 0,1,2,3 and have the diagonal row parity. C signs
+are +1 or -1. The parser checks the native gate conditions.
+
+The compact certificate records the reduced decision widths. For a negative
+result it still computes all 8n+4 norm values to use the stronger stability
+bound and select its witness. The eight-width theorem alone does not give
+that dimension-free bound on the selected eight norms.
 
 The [native relation example](examples/native-relation.json) gives the format.
 `axes` is n; `roles` counts arbitrary independent inputs and returns.
@@ -86,6 +118,16 @@ be dyadic.
 
 ## Evidence and limits
 
+[ADVANCES-RESULT.json](ADVANCES-RESULT.json) records the continuation:
+256 code Fourier values, exact filter bounds for n=0,...,64, a rank-96
+modular inverse certificate, 640 exhaustive small quadratic sums, 3,328
+native entries, 128 native traces, 304 partial inner products, 48 complete
+program comparisons and literal witnesses, nine exact native relations,
+a scalar-phase trap and eight rejection controls. The large cases use
+64 and 65 axes. Their base dimensions are 2^64 and 2^65; no dense base
+array is allocated. The 64-axis witness is the exact entry 1/4294967296.
+The 65-axis relation retains H^2=iI as a native operator identity.
+
 [RESULT.json](RESULT.json) records 96 group elements, 689 exact trace-filter
 values, 2,124 source columns, 48 entangling trace cases, 60 explicit tensor
 norms, 72 complete endpoint comparisons, 24 full tensor program comparisons,
@@ -102,15 +144,22 @@ dirty return and a missing Gram normalization. The audit prints
 `PASS_CLIFFORD_GRAM_MUTATIONS`. The local runs used CPython 3.12.13 on macOS
 with no third-party packages.
 
+[ADVANCES-MUTATIONS.json](ADVANCES-MUTATIONS.json) records four additional
+defects rejected in both modes: a wrong native C phase, an ignored native
+inverse sign, a missing prefix constraint and an omitted dirty return.
+The audit prints `PASS_CLIFFORD_ADVANCE_MUTATIONS`.
+
 The written proof supplies the universal quantifiers. Finite tests corroborate
 it. This is author-checked with substantial AI assistance, not independent
 human or proof-kernel acceptance. Compilation can expand exponentially many
-terms; the base dimension is also 2^n. No polynomial-time claim in instruction
+terms. The compact path and witness algorithms use polynomial work in the
+axis count, literal word length, tensor width and expanded support. The
+original dense frontend still uses base dimension 2^n. No polynomial-time claim in instruction
 length or practical full-supplier speedup follows. No complete provider,
 selected cold replay, native admission, Lean or Docker run is claimed.
 Physical storage, tapes, stock, precision and outer recovery remain separate.
 Programs that change with f, non-Clifford gates, continuous phases, nonunitary
-scalings, rounded leaves and restricted clean-input contracts are excluded.
+native operators, rounded leaves and restricted clean-input contracts are excluded.
 
 ## Sources and credit
 
@@ -149,15 +198,17 @@ and unpublished work remain outside coverage.
 Classical ingredients are credited in [PROOF.md](PROOF.md). No new general
 Burnside-Brauer theorem, general circuit identity algorithm or global priority
 is claimed. The contribution is the explicit native trace filter, stable
-cutoff, program frontend, compressed witness and source-bound validation.
+cutoff, program frontend, compact witness and source-bound validation.
+The code invariant follows Runge and Nebe, Rains and Sloane. The binary
+quadratic-form method follows Dehaene and De Moor. [ADVANCES.md](ADVANCES.md)
+links those sources and derives the native phase conventions used here.
 
 ## Open next questions
 
-1. Replace dense matrices with phase-exact Clifford tableaux and a proved
-   trace/entry routine. Start with the complete one-axis and entangling fixtures.
-   Exact global-phase binding is the remaining blocker.
-2. Find the sharp cutoff. Start with one-axis Gram kernels. The width-eight
-   example is a lower bound; this package does not prove twelve is necessary.
+1. Find the sharp maximum cutoff for n>=2. The one-axis maximum eight is
+   now sharp. The general eight-width test still reaches 8n+4.
+2. Prove a useful stability constant on the eight selected widths. The
+   present 75/76 bound uses the full range 1,...,8n+4.
 3. Bind a complete current provider and measure support growth. Retain every
    input/return and native phase. Physical admission and a full bill remain open.
 

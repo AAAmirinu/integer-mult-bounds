@@ -1,5 +1,9 @@
 # A finite and stable tensor test for dyadic Clifford programs
 
+The [continuation](ADVANCES.md) reduces the number of tested widths,
+improves 14/15 to 75/76, proves the sharp one-axis cutoff, and supplies
+a compact native implementation. This note retains the original proof.
+
 ## Result
 
 Let R = Z[i,1/2], let D = 2^n, and let C_n be the unitary matrices in

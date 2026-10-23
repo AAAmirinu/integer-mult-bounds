@@ -204,15 +204,16 @@ def compile_difference(problem):
 
 def cutoff_polynomial(n):
     require(type(n) is int and n >= 0, "Nonnegative axis count")
-    out = [Q(0), Q(1, 4), Q(1, 4), Q(1, 4), Q(1, 4)]
+    coefficients, denominator = [1], 1
     for j in range(1, 2*n+1):
-        root = Q((-1)**j, 4**j)
-        new = [Q(0)]*(len(out)+4)
-        for f, coefficient in enumerate(out):
-            new[f] -= root*coefficient/(1-root)
-            new[f+4] += coefficient/(1-root)
-        out = new
-    return out
+        scale, sign = 4**j, (-1)**j
+        new = [0]*(len(coefficients)+1)
+        for degree, coefficient in enumerate(coefficients):
+            new[degree] -= sign*coefficient
+            new[degree+1] += scale*coefficient
+        coefficients = new
+        denominator *= scale-sign
+    return [Q(0)]+[Q(a, 4*denominator) for a in coefficients for _ in range(4)]
 
 
 def gram(matrices):

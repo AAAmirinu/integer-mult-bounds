@@ -32,6 +32,31 @@
       ],
       "timeout_seconds": 180,
       "checks": "Exact trace filter, complete one-axis group, source columns, independent tensor norms and endpoints, literal witnesses and rejection controls."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-W",
+        "error",
+        "-B",
+        "{package}/verify_advances.py"
+      ],
+      "timeout_seconds": 180,
+      "checks": "Code invariant, stronger filter bound, one-axis rank certificate, quadratic sums, complete native programs, bitwise witnesses and large-axis phase cases."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-W",
+        "error",
+        "-B",
+        "{package}/verify_advances.py"
+      ],
+      "timeout_seconds": 180,
+      "checks": "Code invariant, stronger filter bound, one-axis rank certificate, quadratic sums, complete native programs, bitwise witnesses and large-axis phase cases."
     }
   ]
 }

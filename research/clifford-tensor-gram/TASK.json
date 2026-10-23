@@ -75,34 +75,41 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "Finite stable tensor test for complete dyadic Clifford register programs, with exact base-space Gram certificates and literal tensor entries.",
+  "actual_scope": "Eight-width full dyadic Clifford endpoint test, 75/76 stable separation, sharp one-axis cutoff, and phase-exact native computation with bitwise witnesses.",
   "scope_change_reason": "Supply a written native-relation interface theorem and executable certificate rather than repeat a formal arithmetic endpoint.",
   "bottleneck_link": "A fixed native program needs an all-width endpoint proof. The trace filter supplies a uniform finite test and a quantified failure certificate for the full dyadic Clifford class.",
   "budget_minutes": 60,
   "stop_rule": "Prove the stated cutoff and stability bound, check source and independent tensor fixtures, then publish one scoped package. No supplier or selected-frontier update.",
   "outcome": "completed",
-  "evidence": "PROOF.md, RESULT.json, certify.py, check_witness.py and the registered replay.",
+  "evidence": "PROOF.md, ADVANCES.md, both result receipts, the modular inverse certificate, compact.py, quadratic.py and registered normal/optimized replays.",
   "author": "Ali Romman with substantial OpenAI Codex assistance",
   "ai_assistance": "Substantial OpenAI Codex assistance in derivation, implementation, self-review, validation and publication. No independent human or proof-kernel review.",
   "open_questions": [
     {
-      "question": "Can exact tableaux replace dense native matrices?",
-      "why_it_matters": "The base dimension is exponential in the axis count.",
-      "first_step": "Match traces and entries on the complete one-axis group and entangling fixtures.",
-      "blocked_by": "A phase-exact trace and entry algorithm needs a source-bound proof."
+      "question": "What is the sharp maximum cutoff for n>=2?",
+      "why_it_matters": "Eight tests still reach width 8n+4.",
+      "first_step": "Find a smaller representation-theoretic bound or a matching explicit residual.",
+      "blocked_by": "The one-axis modular certificate does not generalize."
     },
     {
-      "question": "What is the sharp full-group cutoff?",
-      "why_it_matters": "The sufficient bound need not be minimal.",
-      "first_step": "Compute exact one-axis cumulative Gram kernels.",
-      "blocked_by": "A lower bound beyond width eight is not proved."
+      "question": "Can the eight selected widths retain a dimension-free stability constant?",
+      "why_it_matters": "The 75/76 bound uses the full range of widths.",
+      "first_step": "Bound the selected-width Gram spectrum.",
+      "blocked_by": "The invariant embedding alone loses powers of the base dimension."
     },
     {
-      "question": "Does a complete current provider fit this fixed-word grammar at practical support size?",
-      "why_it_matters": "The new algebraic theorem does not run a complete supplier.",
-      "first_step": "Bind every input and return, then measure expansion on one pinned word.",
-      "blocked_by": "Phase bindings, support size and the physical invoice remain."
+      "question": "Does a complete current provider have practical expanded support?",
+      "why_it_matters": "Compact native sums remove dense matrices but not exponential word expansion.",
+      "first_step": "Bind every role and phase of one pinned provider, then measure support.",
+      "blocked_by": "Complete provider bindings and its physical invoice remain."
     }
   ],
-  "coordination": "https://github.com/CrocSwap/integer-mult-bounds/discussions/5236#discussioncomment-19153620"
+  "coordination": "https://github.com/CrocSwap/integer-mult-bounds/discussions/5236#discussioncomment-19153620",
+  "continuation": {
+    "user_requested": true,
+    "main_checkpoint": "1ec1119972c9aefe42525172d07b332fcff81cb4",
+    "previous_result": "0db0609042d3bee25028ef6515fcee40a33e958d",
+    "source_pins_changed": false,
+    "notes": "RESEARCH-NOTES.md"
+  }
 }
