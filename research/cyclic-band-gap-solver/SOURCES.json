@@ -38,13 +38,6 @@
       "pin": "head:ff3cc58e370d0f678e529246f8c73e8094e18fcf:research/capped-phase-fusion/evidence/radical_reduction_ultra/README.md",
       "git_blob": "7d0b3a41bf0ed48385ddcefc6203651e8959d674",
       "sha256": "4d65ea3c8b6a0d5faef819a58c8b8277681d11bed54686e9a7f78de29736e68e"
-    },
-    {
-      "path": "research/periodic-gaussian-direct-solve/README.md",
-      "usage": "provenance",
-      "pin": "head:65cdd6b36e002ce9d13bd96dbc504da90f77f2c9:research/periodic-gaussian-direct-solve/README.md",
-      "git_blob": "b6ee76a87a8aaa8a9de696a7151f205e254f02c4",
-      "sha256": "8afaf9b26ef2febc5c95ae3c7ec144b30079826900a0174bbff453b1df94d913"
     }
   ]
 }

@@ -48,8 +48,9 @@ original-matrix residuals for 257, 1,025 and 4,097 rows with gap 1/4096.
 
 The source proofs and attribution are pinned in [SOURCES.json](SOURCES.json).
 They are provenance, not imported runtime code. The base is canonical main
-ff3cc58e370d0f678e529246f8c73e8094e18fcf, priority revision7. The #5260 note
-has its own explicit pending-head pin. No other package is edited.
+ff3cc58e370d0f678e529246f8c73e8094e18fcf, priority revision7. The #5260 result is prior-work context, not an imported runtime or proof
+assumption. Every declared source commit is an ancestor of this publication.
+No other package is edited.
 The full-history wrapper, selected cold replay, Lean and Docker were not run.
 No independent human or proof-kernel review is claimed. Dictionary/indexing
 and Python allocation overhead are outside the arithmetic count.
