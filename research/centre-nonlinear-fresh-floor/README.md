@@ -72,7 +72,8 @@ its constant witness gives a bounded dyadic counterexample but supplies no fixed
   any regrouping of that mass could gain.
 - The screen uses the fixed selected local word, 112 ports, the nine-stage template and the coverage law.
   Changed words, templates or coverage laws are outside it.
-- A terminal-only consumer that never forms the internal call-10 query is a changed contract and is not covered.
+- A terminal-only consumer that never forms the internal call-10 query is a changed contract and is not covered by
+  Theorems 1–2. It has since been specified and priced elsewhere; see Open next question 1.
 
 ## Reproduce
 
@@ -91,9 +92,18 @@ predecessor digest are rejected. `--write` regenerates `RESULT.json`.
 
 Structured in [TASK.json](TASK.json):
 
-1. **Terminal-only consumer.** Can a changed consumer avoid forming the internal call-10 query? First step:
-   state the complete varying-source-and-target terminal map and test the 112 kernel witnesses of
-   centre-history-innovation. Blocked by: no priced changed terminal contract.
+1. **Terminal-only consumer (answered by later packages, 2026-10-23).** The changed contract is the centre-free
+   coded word of [#4929](https://github.com/CrocSwap/integer-mult-bounds/pull/4929): with the centre deleted the call exit is
+   `Y <- Y + A X`, `A = I - R^T R/4`, so the terminal repair is `(I - A) X = R^T R X/4 = 14PX`. On the 112 kernel witnesses
+   of centre-history-innovation, `R w^p = 0` makes the call-0 repair vanish (`A w^p = w^p`), while at call 10 the routed
+   witnesses `52 phi_p e_p`, `p in J`, give repair `13 R^T P` of rank 8 (`det P = 32`). So the terminal map is information-
+   recoverable (`A^-1 = (A+12I)/13`), but it still needs 8 fresh dimensions per call that no earlier call carries, i.e. rank
+   144 per 18-call stage. Its price is already bounded: [fragmentation-ceiling](../fragmentation-ceiling/PROOF.md) §6.3–6.5
+   gives at least `8 f(8) = 63.5989` per call against the budget `63.5780`, and any mix of at-stage and post-hoc decoding
+   at least `18 · 8 f(8) = 1144.780` against `1144.404` (conditional on P-ATOM, owned carriers and fixed main chains).
+   See also coded-port-adapter-ceiling, coded-native-caller (TERMINAL.md), two-stage-coded-terminal and
+   coded-reverse-physical-pair-gap. Remaining doors lie outside that scope: decoders that read X directly (no P-ATOM),
+   network-coded carriers, and a typed recursive product for coded jobs.
 2. **Carrier premise.** Does `8d` fresh coordinates force 64 rank-mass units for carriers other than rank-8
    channels? First step: price one alternative carrier with its restoration and hosting bill. The screen
    here caps its ideal gain at +0.67%.
