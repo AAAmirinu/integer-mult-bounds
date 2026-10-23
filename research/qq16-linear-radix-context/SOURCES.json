@@ -39,11 +39,12 @@
       "sha256": "b2c72707bebb9ecdba2b89675830439393e6e13c76f68dad20d42d6ef70e539a"
     },
     {
-      "path": "research/qq16-high-count-installation/verify.py",
+      "path": "research/qq16-linear-radix-context/vendor/installation_source.py",
       "usage": "provenance",
-      "pin": "head:5ac02c05ad29f4b136cab8fb787985a1ea64de80:research/qq16-high-count-installation/verify.py",
+      "pin": "head:ba57b98b3e76b7f557bef6faa82a9d75d49af9e5:research/qq16-linear-radix-context/vendor/installation_source.py",
       "git_blob": "6a661a1062409f527baaff94ff68f5677881e3cc",
-      "sha256": "7ca1094ad0a3d6d33c1c51f651c87d1ce10bc2f5aee03e6bae2f93aea7bb325f"
+      "sha256": "7ca1094ad0a3d6d33c1c51f651c87d1ce10bc2f5aee03e6bae2f93aea7bb325f",
+      "upstream_pin": "head:5ac02c05ad29f4b136cab8fb787985a1ea64de80:research/qq16-high-count-installation/verify.py"
     }
   ]
 }

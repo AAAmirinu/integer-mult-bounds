@@ -49,7 +49,10 @@ Base 7c472563474e60185e6ca101a17622133d047e56, priority 7. Current main, the liv
 Context handoff, all-state numerical-producer PR search and relevant main notes
 were checked. Arbitrary historical diffs and unpublished work remain outside
 coverage. [SOURCES.json](SOURCES.json) pins all inputs. The byte-exact fixture
-in vendor/ is consumed from pending PR5363; its status is explicit.
+in vendor/ is consumed from pending PR5363; its status is explicit. Replay
+pins resolve to that retained copy in this PR history. The upstream_pin
+retains the original commit and path. Thus a clean checkout does not need
+the unmerged predecessor commit.
 
 ToikY supplied shared traversal; Chris R/Clear1nsight applied it to Context.
 Mihir Srivastava supplied the high-count installation audit and source loader.
