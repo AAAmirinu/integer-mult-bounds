@@ -4118,3 +4118,24 @@ Source archives retain attribution; mathematical review remains open.
 Source archives retain attribution; mathematical review remains open.
 
 - **Nicholas Stone (@NicholasStone)** — [#5416](https://github.com/CrocSwap/integer-mult-bounds/pull/5416): Research: exact parity constants and q-series for the projection recurrence (source archive).
+
+## Queue intake, 24 October 2026 (chunk A)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **James Reed (@jwr404)** — [#5417](https://github.com/CrocSwap/integer-mult-bounds/pull/5417): Freeze the selected record as provenance in 138 more replay checks (no new κ) (reviewed tooling).
+- **Chris R (@Clear1nsight)** — [#5418](https://github.com/CrocSwap/integer-mult-bounds/pull/5418): Explicit-profile ceiling: eight-H17 standalone completion fails for .0033 <= C < 1 (source archive).
+- **zxv (@zxv)** — [#5419](https://github.com/CrocSwap/integer-mult-bounds/pull/5419): Research: 25-paper coupled-output sweep and catalytic consumer circuits (source archive).
+- **Chris R (@Clear1nsight)** — [#5420](https://github.com/CrocSwap/integer-mult-bounds/pull/5420): Conditional integer-profile envelope for the 8/9 compiler moment tails (source archive).
+- **Ali Romman (@aliromman)** — [#5421](https://github.com/CrocSwap/integer-mult-bounds/pull/5421): BIT saving 0.00344412 from nine owned helper relations (source archive).
+- **Matarener (@Matarener)** — [#5422](https://github.com/CrocSwap/integer-mult-bounds/pull/5422): Certify no H1+H1->H2 fusion pair in the #4610 word by free scalar rewiring (negative result, no new kappa) (source archive).
+- **Chris R (@Clear1nsight)** — [#5423](https://github.com/CrocSwap/integer-mult-bounds/pull/5423): Save eight H1 queries with a verified deferred-K correction (no new κ) (source archive).
+- **Chris R (@Clear1nsight)** — [#5424](https://github.com/CrocSwap/integer-mult-bounds/pull/5424): Certify an optimistic Global120 decoder allowance of 916.0289 (no new κ) (source archive).
+- **Chris R (@Clear1nsight)** — [#5425](https://github.com/CrocSwap/integer-mult-bounds/pull/5425): Prove the scoped 112-call standalone fanout optimum (no new κ) (source archive).
+- **Matarener (@Matarener)** — [#5426](https://github.com/CrocSwap/integer-mult-bounds/pull/5426): Certify that the fragmentation of the #4610 word is rigid under free scalar reordering (negative result, no new kappa) (source archive).
+- **zxv (@zxv)** — [#5428](https://github.com/CrocSwap/integer-mult-bounds/pull/5428): Observation, state, and geometry: building complete suppliers for larger κ (source archive).
+- **Chris R (@Clear1nsight)** — [#5429](https://github.com/CrocSwap/integer-mult-bounds/pull/5429): Certify the fixed complex five-FULL/one-THIN ceiling (no new κ) (source archive).
+- **Nicholas Stone (@NicholasStone)** — [#5430](https://github.com/CrocSwap/integer-mult-bounds/pull/5430): Research: projection matching obstruction for eight-source singleton lifts (partial result) (source archive).
+- **Matarener (@Matarener)** — [#5433](https://github.com/CrocSwap/integer-mult-bounds/pull/5433): Certify that no owned-helper relation subspace pays after #5421 (BIT) or #5383 (complex) (negative result, no new kappa) (source archive).
+- **Matarener (@Matarener)** — [#5434](https://github.com/CrocSwap/integer-mult-bounds/pull/5434): Replay physical-ordinary-interchange against its pinned selected record (no scientific change) (reviewed tooling).
+- **Matarener (@Matarener)** — [#5435](https://github.com/CrocSwap/integer-mult-bounds/pull/5435): Certify the exact internal grid of the selected complex word: ceil(9 lambda/2)+6 bits, attained (no new kappa) (source archive).
