@@ -4099,3 +4099,9 @@ Source archives retain attribution; mathematical review remains open.
 - **Chris R (@Clear1nsight)** — [#5413](https://github.com/CrocSwap/integer-mult-bounds/pull/5413): Complete coupled-output caller: conditional κ = 0.003027288235 (+5e-12 over #5400) (source archive).
 - **Chris R (@Clear1nsight)** — [#5414](https://github.com/CrocSwap/integer-mult-bounds/pull/5414): Independently verify PR5413 neutrality, necessary pricing and source application (source archive).
 - **zxv (@zxv)** — [#5415](https://github.com/CrocSwap/integer-mult-bounds/pull/5415): Test coupled returns through two query consumers and price a compressed exit (source archive).
+
+## Queue intake, 23 October 2026 (chunk Q)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **Nicholas Stone (@NicholasStone)** — [#5416](https://github.com/CrocSwap/integer-mult-bounds/pull/5416): Research: exact parity constants and q-series for the projection recurrence (source archive).
