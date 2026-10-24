@@ -11,6 +11,7 @@ from algebra import need,eye,replay,coupled_program,coupled_program_dual
 from experiments import run,HERE,ROOT
 from costs import screen
 from construction import build
+from current_profile import screen as current_screen
 
 def payload(obj):return json.dumps(obj,indent=2,sort_keys=True)+'\n'
 
@@ -33,7 +34,9 @@ def compute():
     need(replay(bad,eye(120))!=expected,'altered coupling coefficient rejected')
     evidence={'schema_version':1,'status':'PASS_25_PAPER_INTERFACE_SWEEP',
         'scope':'Scoped exact adaptations and candidate screens, not a complete multiplication construction.',
-        'papers':results,'composition':build(f),'recursive_screen':screen(f),
+        'papers':results,'composition':build(f),
+        'frozen_reference_recursive_screen':screen(f),
+        'current_selected_recursive_screen':current_screen(f),
         'failure_controls':['altered coupled ADD coefficient','same-tableau global phase',
             'zero-address false positive versus nonzero residual','missing owned observation initialization',
             'whole-bank ADD replacing main-only ADD','wrong observer owner or version',

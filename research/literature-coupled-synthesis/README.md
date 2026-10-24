@@ -40,9 +40,10 @@ implementations of the papers or an exhaustive literature review.
   Gram entry 2,422 and exact signed phases. This extends the previous transport
   witness into a generator-state representation; it is not a whole-field cost
   lower bound.
-- An exact source-relative 0.004 moment cap: the **combined new observer and
-  extra termination** must cost below 48.387169… H1-equivalents per applicable
-  backward call. There are sixteen such calls. Buying 112 fresh observations
+- An exact source-relative 0.004 moment cap against the newly selected
+  PR5413 profile: the **combined new observer and extra termination** must cost
+  below 50.063024… H1-equivalents per backward call, across eighteen calls.
+  The frozen earlier sixteen-call comparison is retained separately. Buying 112 fresh observations
   fails; unknown bridges receive no exponent credit. Other numerical regime
   screens and precision sensitivity are recorded separately.
 - Executable catalytic, interpolation, reversible-pebbling, I/O, low-rank
@@ -92,7 +93,9 @@ See [VALIDATION.md](VALIDATION.md) for commands, environment, access/overlap
 coverage and unrun obligations. Exact matrix/word checks establish only their
 stated scopes. Finite physical witnesses disprove the corresponding universal
 ansatz; finite positive probes alone do not establish a complete theorem.
-The native endpoint, selected profile and physical normalizer relations are
+Main now selects conditional κ=0.003027288235 (promotion `1a3ced60b`). Its
+declared full price profile is independently reconstructed here; its full
+admission replay is inherited, not rerun. The native endpoint and physical normalizer relations are
 pinned premises. The full native implementation, full recursion precision,
 ordinary BIT compiler and outer supplier admission are not replayed here.
 Nothing changes `certificates/selected-result.json`.

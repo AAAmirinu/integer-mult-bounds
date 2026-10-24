@@ -121,6 +121,34 @@
       "usage": "provenance",
       "git_blob": "24e581d872bd8838c63ed8f986bbf2071516d9ef",
       "sha256": "f50f6af325d71b070f4f368f9e69fd7de080322b6dfb395ddd636e231db1813c"
+    },
+    {
+      "path": "research/literature-coupled-synthesis/inputs/CURRENT-SELECTED.json",
+      "usage": "input",
+      "pin": "head:2a554d25ff0898802a48af626657853b7c0ca6b5:research/literature-coupled-synthesis/inputs/CURRENT-SELECTED.json",
+      "git_blob": "fc3d4ba105e1f097d0d7d051a308281e86ab1446",
+      "sha256": "66974efdced4083c00025f97d95d83909a226cdf801edb9301c195c6641f6903",
+      "origin": {
+        "commit": "1a3ced60b2f7a46bc70280a04f2eeb8ca027c700",
+        "path": "certificates/selected-result.json",
+        "git_blob": "fc3d4ba105e1f097d0d7d051a308281e86ab1446",
+        "sha256": "66974efdced4083c00025f97d95d83909a226cdf801edb9301c195c6641f6903",
+        "checked": "Exact canonical Git bytes retained at submission refresh; price receipt only, full new selected admission not replayed."
+      }
+    },
+    {
+      "path": "research/literature-coupled-synthesis/inputs/CURRENT-FUNDING.json",
+      "usage": "input",
+      "pin": "head:2a554d25ff0898802a48af626657853b7c0ca6b5:research/literature-coupled-synthesis/inputs/CURRENT-FUNDING.json",
+      "git_blob": "ffc2de2792f51111f73500be3a2e4e8f6bf55a57",
+      "sha256": "70ab7d13548962097ad83ad393b8482f52e827b8996869011ce6d071146bd3eb",
+      "origin": {
+        "commit": "1a3ced60b2f7a46bc70280a04f2eeb8ca027c700",
+        "path": "research/coupled-helper-neutral-completion/reports/expected/funding.json",
+        "git_blob": "ffc2de2792f51111f73500be3a2e4e8f6bf55a57",
+        "sha256": "70ab7d13548962097ad83ad393b8482f52e827b8996869011ce6d071146bd3eb",
+        "checked": "Exact canonical Git bytes retained at submission refresh; price receipt only, full new selected admission not replayed."
+      }
     }
   ]
 }

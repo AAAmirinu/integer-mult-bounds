@@ -61,3 +61,9 @@ obstruction in `research/coded-native-caller/GAUGE.md` and `TERMINAL.md` are pri
 results. A global Y/Q gauge and the typed positive/negative output family are
 not new proposals here. Our candidate still owes its native observation,
 restricted junction and endpoint closure; it does not bypass those obstructions.
+
+The final refresh selected PR5413 at canonical commit
+`1a3ced60b2f7a46bc70280a04f2eeb8ca027c700`. The new selected record and funding
+profile are retained verbatim. We acknowledge the maintainer's complete
+conditional promotion review and its contributor map; this package rechecks
+prices and does not repeat that review or claim its admission as new work.

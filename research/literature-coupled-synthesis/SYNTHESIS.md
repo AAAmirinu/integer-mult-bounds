@@ -241,40 +241,55 @@ observations, rather than buy a second full query bank.
 
 ## 5. One combined allowance, then the compiler
 
-The selected source has target rank mass 239,886 and paid rank mass 239,134.
-There are sixteen applicable backward calls, although eighteen FULLs exist.
-For these sixteen, the supplied-observer exit removes 128 H8 children from the
-selected paid profile, with all targets and old thin queries retained.
-`costs.py` encloses r^(249/250) with directed integer roots, so the 0.004 sign
-and cap below do not depend on floating-point rounding.
+At the final submission refresh, canonical main selected **conditional
+κ=0.003027288235** from PR5413, at promotion commit
+`1a3ced60b2f7a46bc70280a04f2eeb8ca027c700`. Its reviewed conditional status is
+acknowledged; this sweep does not rerun or replace that admission.
+`current_profile.py` authenticates the selected price receipt and reconstructs
+its full chronological invoice from the successor: **18 backward FULLs**,
+64,260 paid jobs, 10,928 productive fields, paid rank mass 238,990 and target
+rank mass 239,742. Its existing neutral completion returns eight H8 helpers
+per FULL. The initial frozen PR4610 reference remains independently replayable
+in costs.py and RESULT.json; it has sixteen applicable backward calls and the
+earlier 48.387169… per-call cap.
+
+The new conditional supplied-observer exit explicitly pays eight H1 per FULL
+and returns eight H9 helpers. Relative to the newly selected profile, the paid
+delta is **+144 H1 -144 H8**, and the target delta is **+144 H9 -144 H8**.
+The target upgrade is valid only after the actual observer and return contract
+are proved. All existing thin queries and IDLEs stay paid. Thus no neutral H8
+completion receives unearned H9 credit.
+
+The exact 0.004 signed-moment allowance for the combined observer and extra
+termination is **901.134447… total**, or **50.063024… per backward FULL**.
+Directed integer roots enclose every r^(249/250); the sign and cap do not
+depend on floating-point rounding. The following other regime screens are
+numerical, with explicit full price arrays retained:
 
 | Desired saving | Combined observer + extra termination H1/call cap | Uniform paid-precision factor ceiling |
 |---|---:|---:|
-| 0.0033 | 59.266 (numerical) | 1.004029 (numerical) |
-| 0.004 | **48.387169… (exact enclosure recorded)** | 1.003298 (numerical) |
-| 0.006 | 17.487 (numerical) | 1.001200 (numerical) |
-| 0.007 | 2.137 (numerical) | 1.000147 (numerical) |
+| 0.0033 | 59.743 (numerical) | 1.004572 (numerical) |
+| 0.004 | **50.063024… (exact enclosure recorded)** | 1.003840 (numerical) |
+| 0.006 | 22.567 (numerical) | 1.001743 (numerical) |
+| 0.007 | 8.908 (numerical) | 1.000691 (numerical) |
 
 These are ceilings under the conditional supplied-observer profile. Observer,
-restoration and additional paid work share the same allowance. No extra
+restoration and all additional paid work share one allowance. No extra
 original helper target, free inverse, saved center or observation credit can
-be stacked on top. A different source profile requires recomputation. The
-precision-factor model is a sensitivity screen, not a compiler theorem.
-A 1% uniform paid-precision increase fails all four rows.
+be stacked on top. A different profile requires recomputation. The precision
+factor is a sensitivity model, not a compiler theorem. A 1% paid-precision
+increase exceeds each conditional ceiling.
 
-Buying all 112 QY values independently makes the exact 0.004 moment negative.
-The selected ordinary BIT admission only supplies 0.0034, so reaching 0.004
-also requires improved ordinary-work/compiler admission. A sensible first
-milestone is **0.0033**, with a design budget of at most 32 H1-equivalents per
-backward call for the *joint* observer and extra termination; this allocation
-is a target, not a supplied algorithm. It leaves room relative to the 59.266
-conditional ceiling while staying below the existing ordinary exponent cap.
-Do not claim it is achieved: precision, volume, constants and physical routing
-still need their full proof. The illustrative 16+16 observer/termination
-allocation leaves numerical margin 436.256 at 0.0033 and only a 1.001850 uniform
-paid-precision ceiling; its 0.004 moment remains positive by exact enclosure.
-This is an allocation screen for an unimplemented bridge, not evidence that
-two observer layers and two termination layers physically realize the map.
+Buying 112 fresh QY values for every backward FULL makes the exact 0.004
+moment negative. The newly selected ordinary BIT admission still supplies
+0.0034, so reaching 0.004 also requires improved ordinary-work/compiler
+admission. A sensible first milestone remains **0.0033**, with a design budget
+of at most 32 H1-equivalents per FULL for the joint observer and extra
+termination. This is an allocation target, not a supplied algorithm. It leaves
+numerical moment margin 499.380 at 0.0033, but only a 1.002118 uniform paid
+precision ceiling. At 0.004 its margin is 325.134447… by exact enclosure.
+The same allocation fails at 0.006 and 0.007. Precision, volume, constants,
+stocking and physical routing still require their complete proof.
 
 ## Ranked next experiments and stopping rules
 

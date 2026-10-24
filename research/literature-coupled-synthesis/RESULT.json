@@ -169,6 +169,85 @@
       "Do not pursue a kappa claim until unknown supplier/compiler/admission costs are discharged."
     ]
   },
+  "current_selected_recursive_screen": {
+    "applicable_backward_FULLs": 18,
+    "canonical_promotion_commit": "1a3ced60b2f7a46bc70280a04f2eeb8ca027c700",
+    "conditional_numeric_allowances": [
+      {
+        "combined_observer_and_extra_termination_H1_per_call_cap_numeric": "59.74335499979287401644638453",
+        "conditional_margin_numeric": "1075.38038999627173229603492151696621663868755236507606654726492",
+        "margin_with_unimplemented_32_H1_allocation_numeric": "499.38038999627173229603492151696621663868755236507606654726492",
+        "precision_ceiling_with_32_H1_allocation_numeric": "1.0021177780873748890129018874444923205835580808437728831672900526",
+        "saving": "0.0033",
+        "uniform_paid_precision_factor_ceiling_numeric": "1.0045716341938464501391632918099678677134064198342340874149806182"
+      },
+      {
+        "combined_observer_and_extra_termination_H1_per_call_cap_numeric": "50.06302486956001524446177062",
+        "conditional_margin_numeric": "901.13444765208027440031187123804644808402182439553438546370396",
+        "margin_with_unimplemented_32_H1_allocation_numeric": "325.13444765208027440031187123804644808402182439553438546370396",
+        "precision_ceiling_with_32_H1_allocation_numeric": "1.0013822289303939017741786244040459676929355623031090307293807057",
+        "saving": "0.004",
+        "uniform_paid_precision_factor_ceiling_numeric": "1.0038403359710895108940891335603403246947991945000039892861455729"
+      },
+      {
+        "combined_observer_and_extra_termination_H1_per_call_cap_numeric": "22.56655754965388726197401587",
+        "conditional_margin_numeric": "406.19803589376997071553228573815205780683020869469195764289001",
+        "margin_with_unimplemented_32_H1_allocation_numeric": "-169.80196410623002928446771426184794219316979130530804235710999",
+        "precision_ceiling_with_32_H1_allocation_numeric": "0.99927304431086307234830255155726487924460669349806705112074927194",
+        "saving": "0.006",
+        "uniform_paid_precision_factor_ceiling_numeric": "1.0017432999073974764179285000667356793757300201389609295655654459"
+      },
+      {
+        "combined_observer_and_extra_termination_H1_per_call_cap_numeric": "8.907623768255144414357551085",
+        "conditional_margin_numeric": "160.33722782859259945843591952260182920812277968617533901008015",
+        "margin_with_unimplemented_32_H1_allocation_numeric": "-415.66277217140740054156408047739817079187722031382466098991985",
+        "precision_ceiling_with_32_H1_allocation_numeric": "0.99821421711180560087248067173614540110459895100248579395408604433",
+        "saving": "0.007",
+        "uniform_paid_precision_factor_ceiling_numeric": "1.0006905484868525149054755565498290571988200710888334323720637570"
+      }
+    ],
+    "conditional_paid_delta": {
+      "H1": 144,
+      "H8": -144
+    },
+    "conditional_restored_target_credit_requires_proved_observer": true,
+    "conditional_target_delta": {
+      "H8": -144,
+      "H9": 144
+    },
+    "exact_signed_moment_at_004": {
+      "combined_observer_and_extra_termination_H1_per_call_cap": [
+        "544702350355383647321396005/10880332376531662572355584",
+        "544702350355383647321433095/10880332376531662572355584"
+      ],
+      "conditional_supplied_observer": [
+        "544702350355383647321396005/604462909807314587353088",
+        "544702350355383647321433095/604462909807314587353088"
+      ],
+      "current_selected": [
+        "-144784007731465132168949315/604462909807314587353088",
+        "-144784007731465132168912369/604462909807314587353088"
+      ],
+      "fresh_112_field_observer": [
+        "-673894875816162560782430411/604462909807314587353088",
+        "-673894875816162560782392313/604462909807314587353088"
+      ],
+      "unimplemented_32_H1_allocation": [
+        "196531714306370445006017029/604462909807314587353088",
+        "196531714306370445006054407/604462909807314587353088"
+      ]
+    },
+    "maximum_certifiably_affordable_integer_H1_per_call": 50,
+    "new_kappa": null,
+    "ordinary_BIT_selected_admitted_saving": "17/5000",
+    "paid_jobs": 64260,
+    "paid_rank_mass": 238990,
+    "productive_fields": 10928,
+    "scope": "New selected promotion acknowledged; price profile replayed here, not complete admission.",
+    "selected_kappa": "0.003027288235",
+    "selected_review": "docs/research/pr-intake-evidence/pr5413-promotion/PROMOTION.md",
+    "target_rank_mass": 239742
+  },
   "failure_controls": [
     "altered coupled ADD coefficient",
     "same-tableau global phase",
@@ -178,6 +257,153 @@
     "wrong observer owner or version",
     "fresh-decoder recursive bill fails exact .004 screen"
   ],
+  "frozen_reference_recursive_screen": {
+    "applicable_backward_calls": 16,
+    "candidate_combinations": [
+      {
+        "admissible_new_kappa": null,
+        "name": "independent decoder",
+        "observer": "fresh 112 QY fields per backward call",
+        "verdict": "fails exact .004 recursive screen"
+      },
+      {
+        "admissible_new_kappa": null,
+        "name": "forward query bank with no displacement/restoration proof",
+        "verdict": "not composable yet: only independent helper xi, forward direction, all paid calls and upgrades retained"
+      },
+      {
+        "admissible_new_kappa": null,
+        "name": "eight-mode rebasing alone",
+        "verdict": "fails actual second-generation subspace witness"
+      },
+      {
+        "admissible_new_kappa": null,
+        "conditional_numeric_allowances_reference": "conditional_numeric_allowances",
+        "known_boundary_ordinary_per_application": {
+          "ADD": 1344,
+          "MONOMIAL": 240,
+          "SCALE": 16,
+          "new_owned_fields": 0
+        },
+        "name": "balanced history-augmented coupled transducer",
+        "unknown_costs": [
+          "joint observation at actual paid source versions",
+          "history termination/restoration",
+          "typed caller including thin queries and endpoints",
+          "precision and tape compiler",
+          "outer admission"
+        ],
+        "verdict": "priority candidate; local boundary compiled, joint endogenous observer and bounded termination unproved"
+      }
+    ],
+    "conditional_numeric_allowances": [
+      {
+        "conditional_margin_numeric": "948.25573927638857350662487802188632071186407977141770486699830",
+        "joint_observer_plus_termination_H1_per_call_numeric": "59.26598370477428584416405488",
+        "saving": "0.0033",
+        "uniform_paid_precision_factor_ceiling_numeric": "1.0040290307836521373969563262432764485369996369267134265326557500"
+      },
+      {
+        "conditional_margin_numeric": "774.19470611757874518935741997869552652154512882019351238615810",
+        "joint_observer_plus_termination_H1_per_call_numeric": "48.38716913234867157433483875",
+        "saving": "0.004",
+        "uniform_paid_precision_factor_ceiling_numeric": "1.0032975805855426747620086080376722374099933526567080494511910354"
+      },
+      {
+        "conditional_margin_numeric": "279.78512562876229272461376389444653736426212793357713003631936",
+        "joint_observer_plus_termination_H1_per_call_numeric": "17.48657035179764329528836024",
+        "saving": "0.006",
+        "uniform_paid_precision_factor_ceiling_numeric": "1.0012001183115588832645078775925616840482116550914312417584985519"
+      },
+      {
+        "conditional_margin_numeric": "34.18691270035314246549180456659690839424835681364192670731804",
+        "joint_observer_plus_termination_H1_per_call_numeric": "2.136682043772071404093237785",
+        "saving": "0.007",
+        "uniform_paid_precision_factor_ceiling_numeric": "1.0001471582529629592324977704264493906379955206908842046519735942"
+      }
+    ],
+    "exact_signed_moment_at_004": {
+      "combined_observer_and_termination_H1_per_call_strict_cap_interval": [
+        "467971984817250424053960261/9671406556917033397649408",
+        "467971984817250424053997343/9671406556917033397649408"
+      ],
+      "compressed_observer_supplied_conditionally": [
+        "467971984817250424053960261/604462909807314587353088",
+        "467971984817250424053997343/604462909807314587353088"
+      ],
+      "full_QY_bought_independently": [
+        "-615225549557457316482774331/604462909807314587353088",
+        "-615225549557457316482736353/604462909807314587353088"
+      ],
+      "maximum_certifiably_affordable_integer_H1_per_call": 48,
+      "selected": [
+        "-145870939487815362085525691/604462909807314587353088",
+        "-145870939487815362085488673/604462909807314587353088"
+      ]
+    },
+    "forward_bank_completion_paid_rank": 136,
+    "forward_bank_completion_target_rank": 136,
+    "new_kappa": null,
+    "ordinary_BIT_needs_new_admission_for_004": true,
+    "ordinary_BIT_selected_admitted_saving": "17/5000",
+    "precision_sensitivity": [
+      {
+        "margin_if_paid_precision_multiplied_by_1_01_numeric": "-1405.27912161666556226851315293057428734146798170490954507791001",
+        "saving": "0.0033"
+      },
+      {
+        "margin_if_paid_precision_multiplied_by_1_01_numeric": "-1573.53980391757597365596284349336617501749525238357371523266260",
+        "saving": "0.004"
+      },
+      {
+        "margin_if_paid_precision_multiplied_by_1_01_numeric": "-2051.46642082736671810472592758525396702387303443112710642642804",
+        "saving": "0.006"
+      },
+      {
+        "margin_if_paid_precision_multiplied_by_1_01_numeric": "-2288.87258774108009826701398465582636160255059651963437290904572",
+        "saving": "0.007"
+      }
+    ],
+    "scope": "All costs source-relative. Observer and termination share one allowance; no independent stacking of optimistic credits.",
+    "selected_to_conditional_compressed_exit_delta": {
+      "H8": -128
+    },
+    "source_paid_rank_mass": 239134,
+    "source_target_rank_mass": 239886,
+    "unimplemented_design_allocation_32_H1_per_call": {
+      "exact_signed_moment_interval_at_004": [
+        "158486974995905355329178949/604462909807314587353088",
+        "158486974995905355329216287/604462909807314587353088"
+      ],
+      "numeric_regime_screens": [
+        {
+          "conditional_margin_numeric": "436.25573927638857350662487802188632071186407977141770486699830",
+          "saving": "0.0033",
+          "uniform_paid_precision_ceiling_numeric": "1.0018495840292403314909574974465243224520598413204566175789358440"
+        },
+        {
+          "conditional_margin_numeric": "262.19470611757874518935741997869552652154512882019351238615810",
+          "saving": "0.004",
+          "uniform_paid_precision_ceiling_numeric": "1.0011143585641649731072803957138112140008964059071455822553536764"
+        },
+        {
+          "conditional_margin_numeric": "-232.21487437123770727538623610555346263573787206642286996368064",
+          "saving": "0.006",
+          "uniform_paid_precision_ceiling_numeric": "0.99900610710960645602673768408738421021319343174242875218944543779"
+        },
+        {
+          "conditional_margin_numeric": "-477.81308729964685753450819543340309160575164318635807329268196",
+          "saving": "0.007",
+          "uniform_paid_precision_ceiling_numeric": "0.99794775112068907360527307788122946833368852964176937583924855714"
+        }
+      ],
+      "status": "Design budget, not an algorithm or achieved saving",
+      "suggested_split_H1_per_call": {
+        "extra_termination": 16,
+        "joint_observer": 16
+      }
+    }
+  },
   "native_endpoint_status": "Pinned premises; original native words not replayed.",
   "new_kappa": null,
   "papers": [
@@ -688,153 +914,6 @@
       "paper_id": "P25"
     }
   ],
-  "recursive_screen": {
-    "applicable_backward_calls": 16,
-    "candidate_combinations": [
-      {
-        "admissible_new_kappa": null,
-        "name": "independent decoder",
-        "observer": "fresh 112 QY fields per backward call",
-        "verdict": "fails exact .004 recursive screen"
-      },
-      {
-        "admissible_new_kappa": null,
-        "name": "forward query bank with no displacement/restoration proof",
-        "verdict": "not composable yet: only independent helper xi, forward direction, all paid calls and upgrades retained"
-      },
-      {
-        "admissible_new_kappa": null,
-        "name": "eight-mode rebasing alone",
-        "verdict": "fails actual second-generation subspace witness"
-      },
-      {
-        "admissible_new_kappa": null,
-        "conditional_numeric_allowances_reference": "conditional_numeric_allowances",
-        "known_boundary_ordinary_per_application": {
-          "ADD": 1344,
-          "MONOMIAL": 240,
-          "SCALE": 16,
-          "new_owned_fields": 0
-        },
-        "name": "balanced history-augmented coupled transducer",
-        "unknown_costs": [
-          "joint observation at actual paid source versions",
-          "history termination/restoration",
-          "typed caller including thin queries and endpoints",
-          "precision and tape compiler",
-          "outer admission"
-        ],
-        "verdict": "priority candidate; local boundary compiled, joint endogenous observer and bounded termination unproved"
-      }
-    ],
-    "conditional_numeric_allowances": [
-      {
-        "conditional_margin_numeric": "948.25573927638857350662487802188632071186407977141770486699830",
-        "joint_observer_plus_termination_H1_per_call_numeric": "59.26598370477428584416405488",
-        "saving": "0.0033",
-        "uniform_paid_precision_factor_ceiling_numeric": "1.0040290307836521373969563262432764485369996369267134265326557500"
-      },
-      {
-        "conditional_margin_numeric": "774.19470611757874518935741997869552652154512882019351238615810",
-        "joint_observer_plus_termination_H1_per_call_numeric": "48.38716913234867157433483875",
-        "saving": "0.004",
-        "uniform_paid_precision_factor_ceiling_numeric": "1.0032975805855426747620086080376722374099933526567080494511910354"
-      },
-      {
-        "conditional_margin_numeric": "279.78512562876229272461376389444653736426212793357713003631936",
-        "joint_observer_plus_termination_H1_per_call_numeric": "17.48657035179764329528836024",
-        "saving": "0.006",
-        "uniform_paid_precision_factor_ceiling_numeric": "1.0012001183115588832645078775925616840482116550914312417584985519"
-      },
-      {
-        "conditional_margin_numeric": "34.18691270035314246549180456659690839424835681364192670731804",
-        "joint_observer_plus_termination_H1_per_call_numeric": "2.136682043772071404093237785",
-        "saving": "0.007",
-        "uniform_paid_precision_factor_ceiling_numeric": "1.0001471582529629592324977704264493906379955206908842046519735942"
-      }
-    ],
-    "exact_signed_moment_at_004": {
-      "combined_observer_and_termination_H1_per_call_strict_cap_interval": [
-        "467971984817250424053960261/9671406556917033397649408",
-        "467971984817250424053997343/9671406556917033397649408"
-      ],
-      "compressed_observer_supplied_conditionally": [
-        "467971984817250424053960261/604462909807314587353088",
-        "467971984817250424053997343/604462909807314587353088"
-      ],
-      "full_QY_bought_independently": [
-        "-615225549557457316482774331/604462909807314587353088",
-        "-615225549557457316482736353/604462909807314587353088"
-      ],
-      "maximum_certifiably_affordable_integer_H1_per_call": 48,
-      "selected": [
-        "-145870939487815362085525691/604462909807314587353088",
-        "-145870939487815362085488673/604462909807314587353088"
-      ]
-    },
-    "forward_bank_completion_paid_rank": 136,
-    "forward_bank_completion_target_rank": 136,
-    "new_kappa": null,
-    "ordinary_BIT_needs_new_admission_for_004": true,
-    "ordinary_BIT_selected_admitted_saving": "17/5000",
-    "precision_sensitivity": [
-      {
-        "margin_if_paid_precision_multiplied_by_1_01_numeric": "-1405.27912161666556226851315293057428734146798170490954507791001",
-        "saving": "0.0033"
-      },
-      {
-        "margin_if_paid_precision_multiplied_by_1_01_numeric": "-1573.53980391757597365596284349336617501749525238357371523266260",
-        "saving": "0.004"
-      },
-      {
-        "margin_if_paid_precision_multiplied_by_1_01_numeric": "-2051.46642082736671810472592758525396702387303443112710642642804",
-        "saving": "0.006"
-      },
-      {
-        "margin_if_paid_precision_multiplied_by_1_01_numeric": "-2288.87258774108009826701398465582636160255059651963437290904572",
-        "saving": "0.007"
-      }
-    ],
-    "scope": "All costs source-relative. Observer and termination share one allowance; no independent stacking of optimistic credits.",
-    "selected_to_conditional_compressed_exit_delta": {
-      "H8": -128
-    },
-    "source_paid_rank_mass": 239134,
-    "source_target_rank_mass": 239886,
-    "unimplemented_design_allocation_32_H1_per_call": {
-      "exact_signed_moment_interval_at_004": [
-        "158486974995905355329178949/604462909807314587353088",
-        "158486974995905355329216287/604462909807314587353088"
-      ],
-      "numeric_regime_screens": [
-        {
-          "conditional_margin_numeric": "436.25573927638857350662487802188632071186407977141770486699830",
-          "saving": "0.0033",
-          "uniform_paid_precision_ceiling_numeric": "1.0018495840292403314909574974465243224520598413204566175789358440"
-        },
-        {
-          "conditional_margin_numeric": "262.19470611757874518935741997869552652154512882019351238615810",
-          "saving": "0.004",
-          "uniform_paid_precision_ceiling_numeric": "1.0011143585641649731072803957138112140008964059071455822553536764"
-        },
-        {
-          "conditional_margin_numeric": "-232.21487437123770727538623610555346263573787206642286996368064",
-          "saving": "0.006",
-          "uniform_paid_precision_ceiling_numeric": "0.99900610710960645602673768408738421021319343174242875218944543779"
-        },
-        {
-          "conditional_margin_numeric": "-477.81308729964685753450819543340309160575164318635807329268196",
-          "saving": "0.007",
-          "uniform_paid_precision_ceiling_numeric": "0.99794775112068907360527307788122946833368852964176937583924855714"
-        }
-      ],
-      "status": "Design budget, not an algorithm or achieved saving",
-      "suggested_split_H1_per_call": {
-        "extra_termination": 16,
-        "joint_observer": 16
-      }
-    }
-  },
   "schema_version": 1,
   "scope": "Scoped exact adaptations and candidate screens, not a complete multiplication construction.",
   "status": "PASS_25_PAPER_INTERFACE_SWEEP"

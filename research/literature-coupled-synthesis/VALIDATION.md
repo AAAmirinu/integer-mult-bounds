@@ -24,7 +24,16 @@ python3 -O -B research/literature-coupled-synthesis/verify.py
 Expected tokens: `PASS_25_PAPER_INTERFACE_SWEEP` and
 `PASS_REGISTERED_RESEARCH_PACKAGE ... outcome=partial`. The registered runner
 also authenticates source pins and frozen card metadata; its metadata success
-is not scientific acceptance. Optimized Python is checked because important
+is not scientific acceptance. The updated signed-invoice preflight was also run against the complete newly
+selected histogram: conditional free-observer profile `uniformly_better`,
+fresh-112-query profile `uniformly_worse`, and the unimplemented 32-H1
+allocation `inconclusive` in general concave order. The last case is decided
+only at the stated powers by the exact/numerical screens; it is not claimed
+uniformly better. Tool: `scripts/compare_recursive_invoices.py`, following
+`docs/research/recursive-invoice-preflight.md`. These are declared accounting
+contracts, not physical supplier acceptance.
+
+Optimized Python is checked because important
 new checks use explicit exceptions, not removable `assert` statements.
 
 Controls include a changed coupled ADD coefficient, missing owned observation
@@ -44,6 +53,16 @@ family status and priority revision were unchanged in the inspected guidance;
 AGENTS added a current-picker entry point, which does not reroll this explicit
 assignment. The new commits include archival queue work and the prior transport
 package. Frozen evidence and manifest bases remain unchanged.
+
+The final submission refresh then reached
+`1a3ced60b2f7a46bc70280a04f2eeb8ca027c700`, which promotes conditional
+κ=0.003027288235 from PR5413. Its promotion review was read and acknowledged.
+The new selected record and exact funding receipt are retained in inputs/
+and pinned to archive ancestor `2a554d25f`. `current_profile.py` reconstructs
+all eighteen backward FULLs and the complete 64,260-paid/10,928-target price
+profile, then recomputes the conditional observer cap. The earlier source
+comparison remains frozen and labelled; the new selected full admission is
+not rerun, and no frontier change is made by this package.
 
 The refreshed overlap snapshot at 2026-10-24 03:26 UTC covered 306 open PRs and
 4,702 Discussion records, with complete remote pagination. The broad card
@@ -68,7 +87,7 @@ deck. Five are primary-record/abstract-only. PAPERS.json records access levels,
 reading locators and temporary PDF hashes. Downloads are temporary research
 material and are not part of the exported package or needed for replay.
 
-Archive inputs were byte-compared against each original commit/path at creation.
+All archive inputs were byte-compared against each original commit/path at creation.
 SOURCES.json pins the local copies to publication ancestor
 `37df81b28e4253cd3c69d95ea16d36d282f2879a`; ORIGINS.json records remote/source
 attribution. The selected arithmetic's original CRLF bytes are retained with
@@ -77,6 +96,8 @@ re-authenticate remote Git history.
 
 ## Unrun or unresolved
 
+- Full newly selected PR5413 admission replay: inherited from the maintainer
+  promotion, not rerun here.
 - Full coupled native-provider replay and full PR5388 first-departure source
   replay: not run; endpoints, the bank receipt and inherited native semantics
   remain premises. The 112 used query wrapper identities are rechecked.
