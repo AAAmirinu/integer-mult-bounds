@@ -27,6 +27,12 @@
       "sha256": "b963c3d2f4e1b7059aa289bb4b4ac89b688920bcf42f5b20d7698cdef0132cc6"
     },
     {
+      "path": "research/coupled-helper-neutral-completion/capsule/workspace/swarm-coupled-caller-sol-high-20261024/agents/caller/NEUTRAL-BACKWARD-v16c.json",
+      "usage": "input",
+      "git_blob": "04c6c7f36cb1b9fcf0b464bad3d3d83aaae7c864",
+      "sha256": "cc297ee54c2743615dfe857838d5f40424ccd33fdb08ecfafbc41b1710416d91"
+    },
+    {
       "path": "research/coupled-helper-neutral-completion/capsule/workspace/swarm-coupled-caller-sol-high-20261024/agents/challenge/WHOLECALLER-PLAN-v1.json",
       "usage": "input",
       "git_blob": "b868fe46ce7ff96a51f7b612758685a23014d31d",
@@ -37,6 +43,12 @@
       "usage": "input",
       "git_blob": "bca92c222c395d3d75c047fbb678f3cd0947c60f",
       "sha256": "ae8aad06aa5d1811d725895b3ab5a4f4daa9dcdd88294aa0d5f723e78bb1e0da"
+    },
+    {
+      "path": "research/coupled-helper-neutral-completion/capsule/workspace/swarm-provider-audit-sol-high-20261024/repository/research/native-rank8-helper-provider/PROVIDER.json",
+      "usage": "input",
+      "git_blob": "0afd30ed01202eb6ce62462dcf8bc9164f3b0455",
+      "sha256": "676de7551d3364598f4a7e29ae97cae0e4364348786bbe70435b84294ba7dd65"
     },
     {
       "path": "research/final4610-independent-admission/SPECIALIZATION.md",

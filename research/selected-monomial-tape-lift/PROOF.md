@@ -72,6 +72,14 @@ tariff per record is inherited from the Proposition, not re-derived here.
   for two wrappers, and on 48 random addresses at `f = 2, 3, 4` for every wrapper, with random
   spectator bits. Every wrapper is within the §2 bound; the largest list has 107 records
   (69 movement, 38 phase).
+- The body's own monomials, which are not port wrappers: all 1,072 `MONOMIAL` operations of
+  `NEUTRAL-BACKWARD-v16c` (800 whole-job helper normalizers, 240 Z-map block maps, 16 paid C8 axis
+  routes and 16 mode aliases) and the 8 `output_N` words of the #5402 provider's mode boundaries,
+  which #5442's mode-output certificate binds (the 8 `input_K` words coincide with alias words).
+  These are 283 distinct words. Each is read off the exact engine as a monomial `(G, b, Q, alpha, a)`
+  on 46 basis states and certified to be the same group element (Pauli tableau and image of `|0>`);
+  its record list is then executed on all 512 addresses at `f = 1` and on 48 random addresses at
+  `f = 2, 3, 4`. The largest list has 76 records (60 movement), within the §2 bound.
 - The central translation `X0` is one `NOT(0)` record. `C0` (cgate on axis 0) and `D`
   (Fourier on axes 1..8) are positive-rank Gaussians: in the retained framework they are paid
   children of the recursion (`FINITE-PRECOMPILATION.md` §1, "one ordinary positive rank-r f
@@ -87,6 +95,7 @@ tariff per record is inherited from the Proposition, not re-derived here.
 The Proposition's proof (the four-update rotation scheme with dirty compact fields, its
 overflow repair and the chunk-swap primitive) is not executed; the reservations of the control
 fields for the 145-axis layout are taken from `compact-control-layout.tex` as written. No
-numerical tariff, no new κ, no change to the selected record. The 400 helper alias monomials
-of #5442 are products of wrapper pairs and are covered by the wrapper lists; the forward body
-is not replayed.
+numerical tariff, no new κ, no change to the selected record. The body monomials, including the
+400 helper alias pairs of #5442, are executed separately above (an earlier version said they
+were covered by the port-wrapper lists; none of them is a port wrapper). The forward body is not
+replayed.

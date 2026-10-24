@@ -35,6 +35,8 @@ CAP = ROOT / "research/coupled-helper-neutral-completion/capsule/workspace"
 NORM = CAP / "swarm-provider-audit-sol-high-20261024/agents/budget/inputs/NORMALIZERS.json"
 PLAN = CAP / "swarm-coupled-caller-sol-high-20261024/agents/challenge/WHOLECALLER-PLAN-v1.json"
 CLIFFORD = ROOT / "research/t74-native-fast/vendor/native/new/code/borrow/vendor/clifford/clifford_exact.py"
+BODY = CAP / "swarm-coupled-caller-sol-high-20261024/agents/caller/NEUTRAL-BACKWARD-v16c.json"
+PROVIDER = CAP / "swarm-provider-audit-sol-high-20261024/repository/research/native-rank8-helper-provider/PROVIDER.json"
 N9 = 9
 N145 = 145
 
@@ -207,6 +209,78 @@ def wrappers():
     for p, port in enumerate(nz["ports"]):
         for name, w in sorted(port["compiled_wrappers"].items()):
             out.append((f"port{p}:{name}", Monomial.from_recipe(w["recipe"])))
+    return out
+
+
+def literal_op(ce, word):
+    """Exact engine operator of a literal monomial word (primitives D, P, X, phase, applied in order)."""
+    op = ce.ident(N9)
+    for e in word:
+        if e[0] == "D":
+            op = op.then(ce.diag(N9, e[1], e[2]))
+        elif e[0] == "P":
+            op = op.then(ce.perm(N9, e[1]))
+        elif e[0] == "X":
+            op = op.then(ce.xgate(N9, e[1]))
+        elif e[0] == "phase":
+            op = op.then(ce.Op(N9, ce.identity(N9), [("phase", e[1])]))
+        else:
+            raise ValueError("unknown monomial primitive " + repr(e[0]))
+    return op
+
+
+def from_engine(ce, op):
+    """The monomial (G, b, Q, alpha, a) of an exact engine operator, read off its action on the 46 basis states
+    0, e_i, e_i + e_j, then certified as the same exact group element (Pauli tableau and image of |0>, which fixes
+    the absolute phase) as the engine operator of the read-off monomial.  Raises if op is not that monomial."""
+    units = {(1, 0): 0, (0, 1): 1, (-1, 0): 2, (0, -1): 3}
+
+    def act(x):
+        vec, den = op.zero_state(x)
+        nz = [(y, v) for y, v in enumerate(vec) if v != (0, 0)]
+        if den != 0 or len(nz) != 1 or nz[0][1] not in units:
+            raise ValueError("not a dyadic-free monomial")
+        return nz[0][0], units[nz[0][1]]
+    b, a = act(0)
+    single = [act(1 << i) for i in range(N9)]
+    cols = [single[i][0] ^ b for i in range(N9)]
+    rows = [sum(((cols[i] >> r) & 1) << i for i in range(N9)) for r in range(N9)]
+    alpha = [(single[i][1] - a) % 4 for i in range(N9)]
+    Q = [0] * N9
+    for i in range(N9):
+        Q[i] |= (alpha[i] & 1) << i
+        for j in range(i + 1, N9):
+            d = (act((1 << i) | (1 << j))[1] - single[i][1] - single[j][1] + a) % 4
+            if d % 2:
+                raise ValueError("odd quadratic phase")
+            if d == 2:
+                Q[i] |= 1 << j
+                Q[j] |= 1 << i
+    m = Monomial(N9, rows, b, Q, alpha, a)
+    mine = ce.diag(N9, m.Q, m.alpha).then(ce.perm(N9, m.G)).then(ce.xgate(N9, m.b)).then(ce.Op(N9, ce.identity(N9), [("phase", m.a)]))
+    if mine.tab != op.tab or mine.zero_state() != op.zero_state():
+        raise ValueError("read-off monomial is a different group element")
+    return m
+
+
+def body_monomials(ce):
+    """Every literal monomial word the selected caller's body applies besides the port wrappers: the 1,072
+    MONOMIAL operations of NEUTRAL-BACKWARD-v16c (800 whole-job helper normalizers, 240 Z-map block maps,
+    16 paid C8 axis routes, 16 mode aliases) and the 16 mode words input_K / output_N of the #5402 provider,
+    which #5442's mode-output certificate binds.  Returns (name, Monomial, occurrences) per distinct word."""
+    body = json.loads(BODY.read_text(encoding="utf-8"))
+    prov = json.loads(PROVIDER.read_text(encoding="utf-8"))
+    words = {}
+    for i, o in enumerate(body["operations"]):
+        if o["op"] == "MONOMIAL":
+            kind = o.get("purpose") or ("whole_job" if "whole_job_boundary" in o else "block")
+            words.setdefault(json.dumps(o["word"]), [kind, 0])[1] += 1
+    for m in prov["mode_boundaries"]:
+        for key in ("input_K", "output_N"):
+            words.setdefault(json.dumps(m[key]["literal_word"]), ["mode_" + key, 0])[1] += 1
+    out = []
+    for k, (kind, n) in words.items():
+        out.append((kind, from_engine(ce, literal_op(ce, json.loads(k))), n))
     return out
 
 

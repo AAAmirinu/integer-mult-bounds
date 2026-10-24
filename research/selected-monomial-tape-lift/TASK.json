@@ -81,7 +81,7 @@
   "budget_minutes": 240,
   "stop_rule": "Stop after executing all 896 wrappers (f=1 exhaustive, f=2 exhaustive on two, f=2..4 sampled), X0 and all 119 plan routes at f=2; do not simulate the Proposition's internal rotation scheme or re-derive the tariff.",
   "outcome": "completed",
-  "evidence": "PROOF.md (record lemma, uniform in f); verify.py binds SPECIALIZATION s2-s3, the Proposition and the monomial convention, executes the record lists against the lift formula and the exact Clifford engine, and freezes RESULT.json; test_verify.py has rejecting controls.",
+  "evidence": "PROOF.md (record lemma, uniform in f); verify.py binds SPECIALIZATION s2-s3, the Proposition and the monomial convention, executes the record lists of the 896 port wrappers, the 119 J routes and the 283 distinct body and mode words against the lift formula and the exact Clifford engine, and freezes RESULT.json; test_verify.py has rejecting controls.",
   "author": "Mark (Matarener)",
   "ai_assistance": "Prepared with substantial Claude Code (Claude) assistance.",
   "open_questions": [

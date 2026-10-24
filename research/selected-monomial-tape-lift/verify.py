@@ -103,6 +103,22 @@ def main():
             swaps[w["kind"]] += len(w[key])
         central += w["central_X"]
     need(central == 16, "16 central X corrections (negative Q powers)")
+    # 4. the body's own monomials and the provider's mode words (not port wrappers; #5442's mode-output certificate
+    #    binds output_N, and the body applies whole-job helper normalizers, Z-map block maps, C8 routes and aliases)
+    B = L.body_monomials(ce)
+    need(sum(n for _, _, n in B) == 1072 + 16 and len(B) == 283, "1,088 body and mode words, 283 distinct")
+    bmx, btot, bocc = Counter(), Counter(), Counter()
+    for i, (kind, m, n) in enumerate(B):
+        ok, info = L.check_monomial(m, 1, L.all_addresses(L.N9, 1))
+        need(ok, f"body word {i} ({kind}): f=1 exhaustive, {info}")
+        need(info["total"] <= 171 and info["XROW"] <= 96, f"body word {i}: within the s2 grammar bound")
+        for f in (2, 3, 4):
+            ok, _ = L.check_monomial(m, f, L.random_addresses(L.N9, f, 48, 7000 + 1000 * f + i))
+            need(ok, f"body word {i} ({kind}): f={f} sampled")
+        for k, v in info.items():
+            bmx[k] = max(bmx[k], v)
+            btot[k] += v * n
+        bocc[kind] += n
     out = {"status": "PASS", "bindings": sum(map(len, BINDINGS.values())),
            "wrappers": {"count": len(W), "max_records": dict(mx), "sum_records": dict(tot),
                         "bound_s2": 171, "histogram_total": dict(sorted(Counter(per_wrapper.values()).items()))},
@@ -110,7 +126,9 @@ def main():
            "routes": {"targets": len(words), "swap_bits_events": dict(swaps), "xrow_records": dict(route_counts),
                       "central_X_records": central,
                       "conventions": {f"{k[0]}:{'|'.join(k[1])}": v for k, v in conventions.items()}},
-           "checks": {"f1_exhaustive_wrappers": 896, "f2_exhaustive_wrappers": 2, "sampled_f": [2, 3, 4],
+           "body_words": {"occurrences": 1088, "distinct": len(B), "occurrences_by_first_kind": dict(sorted(bocc.items())),
+                          "max_records": dict(bmx), "sum_records_over_occurrences": dict(btot)},
+           "checks": {"f1_exhaustive_body_words": len(B), "f1_exhaustive_wrappers": 896, "f2_exhaustive_wrappers": 2, "sampled_f": [2, 3, 4],
                       "engine_agreement_wrappers": 8, "route_f": 2, "route_addresses": 12}}
     path = HERE / "RESULT.json"
     out = json.loads(json.dumps(out))      # JSON-normal form: tuples become lists, keys become strings

@@ -103,7 +103,38 @@
    "post:permutation": 15
   }
  },
+ "body_words": {
+  "occurrences": 1088,
+  "distinct": 283,
+  "occurrences_by_first_kind": {
+   "block": 248,
+   "mode_output_N": 8,
+   "originalmodecanonicalC8inputalias": 32,
+   "whole_job": 800
+  },
+  "max_records": {
+   "XROW": 60,
+   "NOT": 6,
+   "S": 21,
+   "CZ": 19,
+   "I": 3,
+   "movement_records": 60,
+   "phase_records": 29,
+   "total": 76
+  },
+  "sum_records_over_occurrences": {
+   "XROW": 9575,
+   "NOT": 96,
+   "S": 16317,
+   "CZ": 536,
+   "I": 399,
+   "movement_records": 9671,
+   "phase_records": 17252,
+   "total": 26923
+  }
+ },
  "checks": {
+  "f1_exhaustive_body_words": 283,
   "f1_exhaustive_wrappers": 896,
   "f2_exhaustive_wrappers": 2,
   "sampled_f": [

@@ -99,6 +99,17 @@ class Controls(unittest.TestCase):
         with self.assertRaises(AssertionError):
             L.Monomial(3, [1, 2, 4], 0, [2, 0, 0], [0, 0, 0], 0)
 
+    def test_body_word_read_off_rejects_wrong_words(self):
+        ce = L.load_clifford()
+        word = [["P", [2, 1, 4, 8, 16, 32, 64, 128, 256]], ["D", [0] * 9, [2, 0, 0, 0, 0, 0, 0, 0, 0]], ["X", 3], ["phase", 1]]
+        m = L.from_engine(ce, L.literal_op(ce, word))
+        ok, _ = L.check_monomial(m, 2, L.random_addresses(L.N9, 2, 48, 3))
+        self.assertTrue(ok)
+        with self.assertRaises(ValueError):           # a Gaussian is not a monomial: no record list is claimed
+            L.from_engine(ce, ce.cgate(L.N9, 1, 1))
+        with self.assertRaises(ValueError):           # unknown primitive
+            L.literal_op(ce, [["H", 0]])
+
     def test_tampered_result_rejected(self):
         here = Path(__file__).resolve().parent
         res = json.loads((here / "RESULT.json").read_text(encoding="utf-8"))

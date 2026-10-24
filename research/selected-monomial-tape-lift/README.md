@@ -11,6 +11,10 @@ physical half, following the written realization of `SPECIALIZATION.md` §2–§
   is 171), each an `XROW` / `NOT` movement record (one compact-control selected-bit addition
   or translation) or a phase record (`S`, `CZ`, global `i`); the list is independent of `f`
   and realizes the lift `m^(tensor f)` exactly, spectators untouched;
+- the body's **1,088 own monomial words** (283 distinct: 800 whole-job helper normalizers, 240
+  Z-map block maps, 32 C8 routes and aliases, and the provider's 8 mode `output_N` words that
+  #5442's mode-output certificate binds) are fixed lists of at most 76 records each, read off
+  the exact engine as group elements;
 - the **central translation** `X0` is one record; `C0` and `D` are positive-rank children of
   the recursion, not adapters;
 - the **16,748 `SWAP_BITS` events** of the plan's 119 `J` routes (main, helper and idle
@@ -32,6 +36,7 @@ layout (`compact-control-layout.tex`). [PROOF.md](PROOF.md) has the lemma and it
 | wrappers, engine agreement | 8 wrappers x 512 basis states against `clifford_exact` |
 | wrappers, `f = 2`, exhaustive | 2 wrappers x 262,144 addresses |
 | wrappers, `f = 2, 3, 4`, sampled | 896 x 48 addresses each |
+| body and mode words | 283 distinct words (1,088 uses), engine read-off certified as group elements, `f = 1` exhaustive, `f = 2, 3, 4` sampled |
 | `X0` | one `NOT(0)` record, `f = 3` |
 | `J` routes | 119 targets x (pre, post) literal words, 145 axes, `f = 2`, 12 addresses each |
 | controls (`test_verify.py`) | unlifted global phase fails at `f = 2`; a dropped row addition, a removed swap, a single-column phase record and an asymmetric `Q` are rejected; spectators untouched |
