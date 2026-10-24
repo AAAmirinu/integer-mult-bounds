@@ -1,0 +1,11 @@
+{
+  "status": "PASS_REPEATED_NATIVE_CODE_DEGREE32_NO_NEW_KAPPA",
+  "prime": 65521,
+  "degree": 32,
+  "independent_words": 64,
+  "determinant_mod_prime": 52006,
+  "moment_entries": 7280,
+  "rejection_and_boundary_controls": 6,
+  "moment_sha256": "72bb759dd8aea7bb83fc9137fc2fde7ef6ffb5887f82d975ed3be74c90771710",
+  "selected_kappa_unchanged": "0.0030217758"
+}
