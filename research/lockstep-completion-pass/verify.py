@@ -170,6 +170,7 @@ def main():
     out = {"status": "PASS", "bindings": sum(map(len, BINDINGS.values())), "histograms": hist,
            "executed": rows, "counts": cnt}
     path = HERE / "RESULT.json"
+    out = json.loads(json.dumps(out))      # JSON-normal form: tuples become lists, keys become strings
     if write:
         path.write_text(json.dumps(out, indent=1) + "\n", encoding="utf-8")
     else:
