@@ -74,6 +74,12 @@ not tensorize sums or admit physical implementations. See the
 
 For free-group native programs, use the existing
 [free-word tensor audit](../../research/free-word-tensor-lift-audit/README.md).
+For fixed binary affine maps with quadratic Gaussian phases, the
+[native tensor-cutoff guide](native-tensor-cutoff.md) supplies a relation-aware
+endpoint checker and a four-width completeness theorem. It preserves actual
+global phases and dirty roles; nonmonomial Cliffords and physical admission
+remain outside that interface.
+
 For rectangular scratch and one-sided invariants, the existing
 [dirty-phase audit](../../research/universal-dirty-phase-identities/README.md)
 has a different contract. Nonlinear leaves, aliasing, rounding, native frames,

@@ -102,15 +102,15 @@ Run this standard-library helper:
 
 ```sh
 # Python 3.10 or later; no third-party dependencies.
-python3 scripts/choose_research_task.py
+python3 scripts/choose_current_research_task.py
 # To reproduce a selection, pass the emitted 32-hex-digit nonce:
-python3 scripts/choose_research_task.py --seed YOUR_NONCE
+python3 scripts/choose_current_research_task.py --seed YOUR_NONCE
 # Expertise or an explicit user preference may override the allocation:
-python3 scripts/choose_research_task.py --track complex-mechanisms
+python3 scripts/choose_current_research_task.py --track complex-mechanisms
 # Retrieve a specific card after assignment:
-python3 scripts/choose_research_task.py --task connector-alphabet-change
+python3 scripts/choose_current_research_task.py --task connector-alphabet-change
 # Optional: surface structured handoffs/claims from an existing overlap cache.
-python3 scripts/choose_research_task.py --coordination-cache /tmp/overlap.json
+python3 scripts/choose_current_research_task.py --coordination-cache /tmp/overlap.json
 ```
 
 It reads [the task catalogue](agent-task-catalog.json), draws a
@@ -138,6 +138,26 @@ The [startup compatibility audit](task-startup-compatibility.md) explains why th
 historical catalogue, picker and baseline bytes remain intact. The replacement
 authenticates selected sources and checks metadata consistency; it is not a cold
 replay or supplier admission.
+
+**Keep the complex-ceiling control in its historical context.** Four cards
+(`complex-rank-shape-decoder`, `complex-new-helper-inventory`,
+`centre-path-sharing` and `coverage-law-change`) name
+`research/complex-local-word-ceiling/verify.py`. That frozen checker reads the
+#1094 certificate schema and fails on selected #4470 with
+`KeyError: 'complex_profile'`. Run the current selected orientation above, then
+use the [authenticated historical replay](../../research/historical-complex-ceiling-replay/README.md)
+for the card's original positive control:
+
+```sh
+python3 -B scripts/research_package.py --package research/historical-complex-ceiling-replay
+```
+
+This executes the unchanged scientific checker and its controls against exact
+#1094/#1042 inputs in a temporary tree. Its ceiling and `levers.py` budgets
+belong to that historical word, coverage law and outer guard. Before screening
+a changed current supplier, derive and source-bind the applicable complete cost
+law; a historical pass does not make the old ceiling a cap on #4470. The card,
+its pinned sources and the live selected record retain their bytes.
 
 In a sparse checkout, the helper can validate omitted catalogue references when
 they are regular files in `HEAD` with matching skip-worktree index entries. It
