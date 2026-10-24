@@ -19,6 +19,12 @@
       "usage": "input",
       "git_blob": "bca92c222c395d3d75c047fbb678f3cd0947c60f",
       "sha256": "ae8aad06aa5d1811d725895b3ab5a4f4daa9dcdd88294aa0d5f723e78bb1e0da"
+    },
+    {
+      "path": "research/native-center-free-code/SOURCE-WORD.json.gz",
+      "usage": "input",
+      "git_blob": "46d929df83817b85a5387bcdb9745e0627d6366e",
+      "sha256": "7679daa4ec6a40f56fc7f0202379a6f454310e94945aba4f48beaaaafb838d05"
     }
   ]
 }

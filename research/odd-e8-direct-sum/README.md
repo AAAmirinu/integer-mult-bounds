@@ -16,6 +16,15 @@ has positive allowance at 0.0031: between 1/4 and 3/10 per port, or less
 than 1/10 per local invocation. This gives a possible alternative to the
 smaller pairing-rank service; it does not supply a chronological program.
 
+The [native-lift cost proof](NATIVE-LIFT.md) rejects separated use of the
+frozen base helper banks under the declared main paths and caller invoice.
+The three-factor case needs at least 10,752 base-module channels, even with
+arbitrary linear coefficient maps on the other port indices. Exact bounds
+and written monotonicity proofs exclude every odd k>=3 and N>=3 at exponent
+0.00302 in that model. This does not exclude a joint producer, a changed
+helper word, address-dependent coefficients or a different caller inventory.
+The [cost certificate](NATIVE-LIFT.json) is checked by [native_lift.py](native_lift.py).
+
 The [proof](PROOF.md) gives the all-odd-factor construction, the support
 pairing formula, a local scalar involution, and the budget assumptions.
 The [certificate](RESULT.json) and [verifier](verify.py) give exact finite
@@ -39,21 +48,28 @@ Use Python 3.12 and the standard library, from the repository root:
 
 ```sh
 python3.12 -I -W error -B research/odd-e8-direct-sum/verify.py
+python3.12 -I -W error -B research/odd-e8-direct-sum/native_lift.py
 python3.12 -B scripts/research_package.py --package research/odd-e8-direct-sum
 ```
 
-The direct command prints:
+The geometry command prints:
 
 ```text
 PASS_ODD_E8_DIRECT_SUM_COMPONENT ports=1404928 dimension=25 rank=20480 pairing_mass=311296
 ```
 
-The verifier checks all 12,544 base entries, all eight feature support
+The geometry verifier checks all 12,544 base entries, all eight feature support
 contracts, 7,168 feature-pair/fixed-label supports, 512 feature triples,
 all 2,744 product-cube parity spans, and exact majority coefficients and
 eigenvalues for odd k from 1 through 15. It regenerates RESULT.json and
 compares it in full. Altered root and binary-label data, a reversed cubic
 sign and an omitted degree-two layer must fail.
+
+The native-lift verifier authenticates both orientations of all 408 helper
+paths, checks three operator-pencil fixtures and two additional rejection
+controls, and encloses the finite cost tests with rational arithmetic. The
+written rank and monotonicity arguments cover the infinite parameter ranges.
+It does not replay the native operator word.
 
 The proof handles the full fitting mask by a tensor support argument.
 The enormous fitting matrix is not materialized or exhaustively enumerated.
@@ -70,11 +86,11 @@ physical charts, dirty reads, returns and paid/target profile. Stop that
 schedule if its optimistic complete profile already exceeds the allowance.
 The local K involution and decoder tariff cannot stand in for this program.
 
-Can the degenerate source supports be gathered and read at the pairing
-tariff with a complete physical COPY word? First implement one actual
-rank-14 feature-pair term, including the 15-dimensional source support,
-dirty compensation and cleanup. A rank calculation alone does not settle
-this question. [TASK.json](TASK.json) records the structured obligations.
+Can a changed main-path or caller inventory remove this cost obstruction?
+First state the new target jobs, paid paths and readout order. The all-factor
+result grants copies and helpers for free when k>=7, so a decoder tariff
+change alone cannot fix those cases under the declared paths.
+[TASK.json](TASK.json) records the structured obligations.
 
 ## Credit and scope
 
