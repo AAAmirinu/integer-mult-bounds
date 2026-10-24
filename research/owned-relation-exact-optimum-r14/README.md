@@ -17,8 +17,11 @@ helper-relation subspace on Cao Yifan's #4610 word, in both orientations. The se
 - pivots on the 26 rank-4 and 6 rank-8 frame-0 helpers;
 - rows that carry warp words.
 
-The optimum is exactly #5383's span, at **8 (8^t + 1 − 9^t) = 0.07570927 raw moment per backward
-local**. The forward optimum is 0. No ninth relation and no better joint set exists. The 144 exchanges of the
+The optimum is **8 (8^t + 1 − 9^t) = 0.07570927 raw moment per backward local**, and #5383's span
+attains it. It is an optimum, not the unique one. Replacing component 194 by 207 (the relation
+h288 − h294 − h296 − h297 + h300 + h303 = 0) gives a different eight-dimensional space with the same
+value; zxv found this tie in review, and `relations.py` checks it as a regression. The forward optimum
+is 0. No ninth relation and no better joint set exists. The 144 exchanges of the
 #5398/#5413 controller are the maximum.
 
 ## Part B: model and certificate (`relations.py`)
@@ -39,7 +42,7 @@ loses its productive target.
 | distinct components, linearly independent over Q | 225 | 358 |
 | centre snapshot options (all in the component span, rank-9 support) | 56 (8 centres) | 0 |
 | connected pieces (components joined by climbs/options) | 110×1, 1×3, 8×7, 4×14 | 358×1 |
-| exact optimum per local call | **8(8^t+1−9^t)**, attained by the span of #5383's relations | **0** |
+| exact optimum per local call | **8(8^t+1−9^t)**, attained by the span of #5383's relations (not uniquely; see the 194→207 tie) | **0** |
 
 The certificate has four steps:
 
@@ -80,8 +83,9 @@ circuits), gives the same optimum. That check is not part of the registered repl
      - raw root ∈ (.0030272882499, .00302728825);
      - reserve-limited tested saving ∈ (.00302728824897, .00302728824898).
 
-At the same carrier, the reserve-limited maximum is κ < 0.00302728823898. The chosen κ is 8×10⁻¹⁶ below that
-bound. A smaller unit gap, such as 1/7·10¹² (κ ≈ 0.0030272882479), also passes the endpoint arithmetic. It
+At the same carrier, the reserve-limited maximum is κ < 0.00302728823898. The chosen κ is 8×10⁻¹⁴ below that
+bound; against the certified bracket it sits between 7×10⁻¹⁴ and 8×10⁻¹⁴ below the actual reserve-limited
+maximum (corrected from 8×10⁻¹⁶ after review). A smaller unit gap, such as 1/7·10¹² (κ ≈ 0.0030272882479), also passes the endpoint arithmetic. It
 would change H, however, and #5413's precision checker pins the gap. It is not claimed here.
 
 **Assumptions.** The κ is conditional on exactly the five retained selected premises of #5413:

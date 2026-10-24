@@ -20,7 +20,10 @@ Certificate:
   4. for independent S, any pivot set has a perfect matching to S inside supports (Laplace), so the lost target moment
      is >= sum_{c in S} min-target(c)^t;
   5. the climb/centre/component incidence splits into small connected pieces; each piece is enumerated exactly.
-The optimum is 8 (8^t + 1 - 9^t) per backward local, attained only by #5383's eight relations; forward optimum 0.
+The optimum is 8 (8^t + 1 - 9^t) per backward local; #5383's eight relations attain it (an optimum, not
+the unique one: replacing component 194 by 207, i.e. h288 - h294 - h296 - h297 + h300 + h303 = 0, gives a
+different eight-dimensional optimal space; checked below as a regression, found in review by zxv).
+Forward optimum 0.
 Usage: python3 -I -B relations.py [--write]
 """
 import argparse, collections, gzip, hashlib, itertools, json
@@ -181,11 +184,12 @@ def optimum(climbs, options, trank, pw):
     pieces = collections.defaultdict(list)
     for i in range(len(keys)):
         pieces[find(i)].append(i)
-    total = D(0); best_sets = []; sizes = collections.Counter()
+    total = D(0); best_sets = []; sizes = collections.Counter(); piece_data = {}
     for root, comps in pieces.items():
         sizes[len(comps)] += 1
         cl = [(pw(climbs[j][1]), set(need[j])) for j in range(len(climbs)) if find(need[j][0]) == root]
         ce = [[set(o) for o in ol] for ol in centres.values() if find(ol[0][0]) == root]
+        piece_data[root] = (cl, ce)
         require(len(comps) <= 20, 'piece small enough for exact enumeration')
         best, arg = D(0), ()
         for k in range(1, len(comps) + 1):
@@ -198,8 +202,19 @@ def optimum(climbs, options, trank, pw):
         if arg:
             best_sets.append(sorted(arg))
         total += best
+
+    def score(S):
+        """Exact score of an arbitrary component set, summed piece by piece with the same formula."""
+        S_ = set(S); g = D(0)
+        for root, (cl, ce) in piece_data.items():
+            Sp = {i for i in S_ if find(i) == root}
+            if not Sp:
+                continue
+            g += sum((w for w, nd in cl if nd <= Sp), D(0)) - sum(cost[i] for i in Sp)
+            g += sum(pw(8) for ol in ce if any(o <= Sp for o in ol))
+        return g
     return dict(components=len(keys), climbs=len(climbs), options=len(options), centres=len(centres),
-                piece_sizes=dict(sorted(sizes.items())), optimum=total, chosen=best_sets, keys=keys)
+                piece_sizes=dict(sorted(sizes.items())), optimum=total, chosen=best_sets, keys=keys, score=score)
 
 
 def build():
@@ -231,8 +246,19 @@ def build():
             for i, k in enumerate(V0):
                 require(span.add(dict(k), i), 'eight independent #5383 relations')
             require(len(chosen) == 8 and all(not span.reduce(dict(k))[0] for k in chosen),
-                    'the optimum is attained exactly by the span of #5383 relations')
-            row['optimum_attained_by'] = 'span of the eight #5383 relations'
+                    'the span of the #5383 relations attains the optimum')
+            row['optimum_attained_by'] = 'span of the eight #5383 relations (an optimum; not unique)'
+            # Regression for the tie found in review (zxv): replace component 194 by 207.
+            orig = sorted(i for s in res['chosen'] for i in s)
+            require(orig == [56, 65, 66, 194, 200, 203, 205, 212], 'component numbering matches the reviewed head')
+            tied = sorted([i for i in orig if i != 194] + [207])
+            tE = Echelon()
+            require(all(tE.add(dict(res['keys'][i]), i) for i in tied), 'tied set is independent (eight-dimensional)')
+            require(span.reduce(dict(res['keys'][207]))[0], 'tied space differs from the #5383 span')
+            require(abs(res['score'](tied) - res['score'](orig)) < D('1e-40')
+                    and abs(res['score'](tied) - per_local) < D('1e-40'), 'tied space attains the same optimum')
+            row['tied_optimum_regression'] = dict(original=orig, tied=tied, swapped='194 -> 207',
+                                                  relation='h288 - h294 - h296 - h297 + h300 + h303 = 0')
         else:
             require(res['optimum'] == 0 and res['options'] == 0, 'forward: no centre option and optimum 0')
         out[orient] = row

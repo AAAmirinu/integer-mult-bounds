@@ -21,13 +21,37 @@
    "components_independent": true,
    "distinct_components": 225,
    "helper_only_climbs": 224,
-   "optimum_attained_by": "span of the eight #5383 relations",
+   "optimum_attained_by": "span of the eight #5383 relations (an optimum; not unique)",
    "optimum_per_local": "0.075709271555986216366649243749",
    "piece_sizes": {
     "1": 110,
     "3": 1,
     "7": 8,
     "14": 4
+   },
+   "tied_optimum_regression": {
+    "original": [
+     56,
+     65,
+     66,
+     194,
+     200,
+     203,
+     205,
+     212
+    ],
+    "relation": "h288 - h294 - h296 - h297 + h300 + h303 = 0",
+    "swapped": "194 -> 207",
+    "tied": [
+     56,
+     65,
+     66,
+     200,
+     203,
+     205,
+     207,
+     212
+    ]
    }
   },
   "forward": {
