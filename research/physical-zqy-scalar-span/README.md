@@ -1,24 +1,28 @@
-# Actual-phase native history scalar spans
+# An explicit full-frame native-history kernel
 
-This package resolves the physical scalar-span question left open by
+## Stronger complete-channel kernel
+
+[KERNEL-PROOF.md](KERNEL-PROOF.md) gives a short all-width information barrier for the exact full-frame-only channels. Every raw-backward history is invariant under logical `(X,Y,H) -> (X+v,Y+v,H)`; the forward histories are invariant under `Y -> Y+v`. The small [kernel certificate](KERNEL.json) and [fresh direct replay](KERNEL-RESULT.json) therefore exclude arbitrary postprocessing of these retained values, including unrestricted left operators. Helpers remain fixed. The statement does not include partial-frame values, original X, new paid observations or changed input relations.
+
+This stronger proof needs no independence of monomial matrices. The earlier scalar-span and finite-image results below remain separately replayable evidence, with their original restricted statements. No new kappa is claimed.
+
+## Earlier scalar-span certificate
+
+The earlier certificate resolves the physical scalar-span question left open by
 [Mark/Matarener's #5427](https://github.com/CrocSwap/integer-mult-bounds/pull/5427).
 At **every positive tensor width**, no nonzero pure-Y observation is a scalar
 combination of all retained full-frame versions of the frozen #5402 backward
 word or either orientation of the final #4610 word. All original inputs remain
 independent. The complete history is granted, including versions after an exit.
 
-The new point is the actual operator algebra. The 215 signed operators have
+That certificate tests the actual operator algebra. The 215 signed operators have
 one genuine four-term linear relation at width one. After including that
 relation the observation still does not exist. A full-rank tensor-square Gram
 certificate and the shared zero-state anchor cover every larger width. Exact
 rational projection ranks and nonzero modular minors play separate roles;
 modular nonmembership alone is not used as a rational exclusion.
 
-**This is a restricted negative theorem, with no new kappa.** It does not close
-the history under independently chosen free left monomial maps, including the
-concrete Z-ABI transports. It does not exclude changed native schedules,
-partial-frame histories, new paid queries or an endogenous observer in those
-larger models. The independent inputs, observation version and these limits
+**The scalar certificate alone is a restricted negative theorem.** The new input kernel above closes arbitrary postprocessing of the same full-frame channel. Changed native schedules, partial-frame histories and new paid observations supply different data and remain outside the channel. The independent inputs, observation version and these limits
 are part of the claim. See [PROOF.md](PROOF.md).
 
 ## Reproduce
@@ -29,31 +33,26 @@ Python 3.12, standard library only, read-only default:
 python3 -B scripts/research_package.py --package research/physical-zqy-scalar-span
 ```
 
-Expected mathematical marker:
+The registered checks verify the direct all-width input kernel, repeat it over formal free words, independently regenerate the provider kernel with a separate native/group/frame implementation, and compare exact physical phases against the retained Clifford implementation. All run in normal and optimized modes. The ordinary command compares frozen receipts without writing; `--write` explicitly authors outputs.
 
-```text
-PASS_ALL_WIDTH_PHYSICAL_NATIVE_SCALAR_SPAN_NO_NEW_KAPPA
+The initial scalar-rank/Gram and fixed-image certificates are retained unchanged from publication head `6d81d47e6d107e3c52b4583526d31e102b219bdc`. They are no longer dependencies of the stronger kernel proof or default registered replay. They remain optional direct checks:
+
+```sh
+python3 -B research/physical-zqy-scalar-span/verify.py
+python3 -B research/physical-zqy-scalar-span/abi_closure.py
 ```
 
-The registered checks recompute the finite ABI left-image certificate, all
-source-bound row ranks, the one-column operator relation/rank and the tensor-square Gram certificate, in normal and
-optimized modes. The separate phase audit compares actual columns against the
-retained exact Clifford implementation. `--write` explicitly regenerates the
-local result; ordinary replay compares it without writing. Mathematical/runtime
-checks are recorded in VALIDATION.md; publication byte/export transport results
-are recorded in the PR. [INTERNAL-REVIEW.md](INTERNAL-REVIEW.md) separates internal
-corroboration from external acceptance. No full native admission, selected cold
-replay, compiler/outer, precision/tape, Lean or Docker run is claimed.
+Mathematical/runtime checks are recorded in VALIDATION.md; exact publication byte/export results are recorded in the PR. [INTERNAL-REVIEW.md](INTERNAL-REVIEW.md) distinguishes AI corroboration from external acceptance. No selected cold replay, fresh complete native admission, compiler/outer, precision/tape, Lean or Docker run is claimed.
 
-## Concrete Z-ABI left-image extension
+## Earlier concrete Z-ABI certificate
 
-A separate bounded continuation grants each backward-provider version one
+The earlier bounded continuation grants each backward-provider version one
 left image from `{I, Kp_i, Km_a, Km_a^-1 Kp_i}`. The 1,012 distinct physical
 maps and 59 actual history operators give 59,708 pairwise nonproportional
 products, with exact F9 commutation and phase checks. The resulting span has
 no nonzero pure-Y observation for **every f>=59,707**. Thus this fixed bank
 cannot implement an all-width observer. This does not assert small-width
-nonmembership or closure under arbitrary further products. The proof and
+nonmembership or closure under arbitrary further products on its own. The new kernel separately excludes this whole channel at every positive width. The proof and
 [ABI-CLOSURE.json](ABI-CLOSURE.json) state this as a separate theorem.
 
 ## Open next questions

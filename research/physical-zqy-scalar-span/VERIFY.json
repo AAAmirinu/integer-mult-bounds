@@ -18,31 +18,6 @@
         "-W",
         "error",
         "-B",
-        "{package}/verify.py"
-      ],
-      "timeout_seconds": 300,
-      "checks": "Exact rational history ranks, width-one physical quotient rank sandwich, absolute-phase control and tensor-square all-width certificate."
-    },
-    {
-      "argv": [
-        "{python}",
-        "-I",
-        "-O",
-        "-W",
-        "error",
-        "-B",
-        "{package}/verify.py"
-      ],
-      "timeout_seconds": 300,
-      "checks": "Exact rational history ranks, width-one physical quotient rank sandwich, absolute-phase control and tensor-square all-width certificate."
-    },
-    {
-      "argv": [
-        "{python}",
-        "-I",
-        "-W",
-        "error",
-        "-B",
         "{package}/phase_audit.py"
       ],
       "timeout_seconds": 90,
@@ -68,10 +43,10 @@
         "-W",
         "error",
         "-B",
-        "{package}/abi_closure.py"
+        "{package}/verify_kernel.py"
       ],
       "timeout_seconds": 90,
-      "checks": "Checks fixed1012 physical Z-ABI left maps, exact F9 commutation,59708 distinct signed products and zero anchors; consumes the freshly replayed primary exact546/546 rank certificate. Eventual-width proof is in PROOF.md."
+      "checks": "Fresh actual-signed full native history kernel in all three frozen words; exact all-width ambiguity K_Y=I, HK=0; four target/compensator/sign/side-information controls. No width-one sum or rank inference."
     },
     {
       "argv": [
@@ -81,10 +56,60 @@
         "-W",
         "error",
         "-B",
-        "{package}/abi_closure.py"
+        "{package}/verify_kernel.py"
       ],
       "timeout_seconds": 90,
-      "checks": "Checks fixed1012 physical Z-ABI left maps, exact F9 commutation,59708 distinct signed products and zero anchors; consumes the freshly replayed primary exact546/546 rank certificate. Eventual-width proof is in PROOF.md."
+      "checks": "Fresh actual-signed full native history kernel in all three frozen words; exact all-width ambiguity K_Y=I, HK=0; four target/compensator/sign/side-information controls. No width-one sum or rank inference."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-W",
+        "error",
+        "-B",
+        "{package}/independent_kernel.py"
+      ],
+      "timeout_seconds": 90,
+      "checks": "Independent native/frame/group replay and Fraction-derived kernel, then original operator-coefficient HK=0 over all4891 histories, target and compensation controls. Does not import primary native/monomial/search code or consume the module decomposition."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-W",
+        "error",
+        "-B",
+        "{package}/independent_kernel.py"
+      ],
+      "timeout_seconds": 90,
+      "checks": "Independent native/frame/group replay and Fraction-derived kernel, then original operator-coefficient HK=0 over all4891 histories, target and compensation controls. Does not import primary native/monomial/search code or consume the module decomposition."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-W",
+        "error",
+        "-B",
+        "{package}/formal_kernel.py"
+      ],
+      "timeout_seconds": 90,
+      "checks": "Same complete history invariant over72 formal free generators, cancelling only adjacent inverses. No actual-operator identifications, matrix independence or width-one linear relations; verifies all three cases."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-W",
+        "error",
+        "-B",
+        "{package}/formal_kernel.py"
+      ],
+      "timeout_seconds": 90,
+      "checks": "Same complete history invariant over72 formal free generators, cancelling only adjacent inverses. No actual-operator identifications, matrix independence or width-one linear relations; verifies all three cases."
     }
   ]
 }

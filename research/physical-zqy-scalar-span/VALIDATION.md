@@ -1,49 +1,74 @@
 # Validation scope
 
-Python 3.12.14, standard library only, macOS arm64. No dependency install,
-Lean, Docker, selected cold replay or unrelated historical suite was run.
+Python 3.12.14, standard library only, macOS arm64. The current registered
+suite consists of eight commands. All eight pass on the kernel extension.
+Default replay compares frozen receipts and writes no package files.
 
-## Mathematical checks
+## Current kernel checks
 
-- Exact source-bound native rows, all full-frame history versions and rational
-  ranks: 4,891 /546, 5,019 /554 and 4,968 /554. Non-Y projection ranks match.
-- The actual width-one operator rank is 214, with the exact four-term relation
-  and a separate nonzero Gaussian-integer minor. Physical quotient projection
-  lower bounds match exact rational upper bounds; no modular nonmembership
-  shortcut is used.
-- Width-two 215-by-215 Gram determinant is 298401053 modulo 1000000009.
-  Every literal operator has zero-state coefficient one. The written
-  contraction proof covers every larger width.
-- Independent Clifford phase audit: 147,456 native columns, 36,864 product
-  columns; wrong-phase and backward-direction controls.
-- Fixed Z-ABI bank: 1,012 distinct left maps, 59 provider operators, 59,708
-  pairwise distinct products and exact zero anchors. Exact signed F9 kernel
-  checks authenticate physical/logical left multiplication. The written
-  separating-functional proof has the explicit guard f>=59,707.
-- Additional exact width-one Fraction audit passes without modular rank
-  inference; its portable optional script and separate receipt are included.
-  It ran in 90.663 seconds after import adaptation and 105.727 seconds after
-  final whitespace normalization. Internal audit is distinct
-  from external scientific acceptance; see INTERNAL-REVIEW.md.
+- `verify_kernel.py` freshly replays the actual signed native histories in
+  all three frozen words: 4,891 provider-backward, 5,019 source-backward and
+  4,968 source-forward distinct nonzero full-frame values. It checks the
+  explicit input kernel against every operator coefficient and verifies
+  `K_Y=I`. Four failure controls reject a vacuous kernel, missing X
+  compensation, one corrupted coefficient and added original-Y information.
+- `independent_kernel.py` imports neither `native.py`, `monomial.py` nor the
+  discovery code. Its separate native/group/frame implementation regenerates
+  all 4,891 provider histories, derives the 224-entry kernel using exact
+  Fraction elimination of scalar augmentations, then checks the kernel
+  against every original operator-valued row. The final check, rather than
+  the augmentation alone, certifies the claimed identity.
+- `formal_kernel.py` repeats all three identities over 72 free generator
+  names, cancelling only adjacent inverses. It uses the primary event/frame
+  interpreter with a different word algebra; it is corroboration rather than
+  an independently implemented parser. No matrix independence or width-one
+  matrix-sum relation is required.
+- `phase_audit.py` compares 147,456 native columns and 36,864 product columns
+  with the retained exact Clifford evaluator, including absolute-phase and
+  backward-direction controls.
 
-All six registered normal/optimized commands PASS. The primary normal and
-optimized mathematical runs took 134.403 and 157.388 seconds respectively.
-Phase and fixed-ABI replays also PASS in both modes. Publication byte/export
-transport checks are recorded separately in the pull request after commit. Individual commands use explicit
-exceptions; mathematical checks are not disabled by `-O`. The retained
-Clifford engine has its own assertion-based internals, while the audit's
-literal column comparisons and negative controls remain explicit.
+All four scripts pass in normal and optimized Python, with `-I -W error -B`.
+Checks use explicit exceptions and remain active under `-O`. The retained
+Clifford engine also contains its own assertion-based internals; literal
+column comparisons and the audit's failure controls remain explicit.
 
-Development record: the first registered attempt rejected the result's JSON
-key representation after completing its mathematical checks. Integer relation
-indices are now serialized as strings. The revised result compares identically;
-this repair changes no rank, source operator or scientific conclusion.
+The small kernel and source-bound row identities are the proof dependencies.
+The 13 MB discovery module factorization is neither shipped nor required.
+See KERNEL-PROOF.md for the all-width and physical-coordinate argument.
+These are internal AI-assisted checks, not external human acceptance or a
+proof-kernel result. Exact committed-byte, export, read-only replay and hosted
+CI receipts are recorded at the publication commit in the pull request.
+
+## Historical scalar and finite-image checks
+
+The initial publication at `6d81d47e6d107e3c52b4583526d31e102b219bdc`
+passed its then-registered six commands, its committed-byte/export checks,
+a read-only Git-free replay and hosted CI. Those commands ran `verify.py`,
+`phase_audit.py` and `abi_closure.py`, each normally and with optimization.
+Their scalar/Gram/ABI scripts and frozen results remain byte-identical to
+that commit, but the rank and ABI checks are no longer in the default suite
+or dependencies of the stronger kernel theorem.
+
+That historical result includes exact projection ranks 546/546, 554/554 and
+554/554; physical width-one operator rank 214 with a four-term relation;
+the width-two 215-by-215 Gram determinant 298401053 modulo 1000000009; and
+1,012 left maps producing 59,708 distinct products with the explicit
+finite-family guard `f>=59,707`. The optional independent Fraction width-one
+audit remains available via `independent_width1.py`. Its final source replay
+passed in 105.727 seconds. See PROOF.md and INTERNAL-REVIEW.md for these older
+restricted statements; they are not new kernel-extension replay claims.
 
 ## Limits
 
-No runtime measurement here is a physical fixed-tape benchmark. The frozen
-source words and inherited Clifford realization are reused, not readmitted as
-a new complete native supplier. No new paid or productive profile, exponent,
-precision/tape/stock/compiler funding or multiplication theorem is claimed.
-The finite ABI theorem is not arbitrary monomial group/module closure and
-makes no enlarged-family small-width exclusion.
+The channel includes only complete-frame values of the frozen native bodies.
+Original X/Y, partial-frame caches, changed words or new paid transformations
+are additional information requiring their own source-bound analysis. Fixing
+helpers or owned inputs alone does not remove this kernel. No approximation
+or finite-precision lower bound is proved.
+
+No fixed-tape benchmark, selected cold replay, fresh complete native admission,
+new paid/productive profile, exponent, precision/tape/stock/compiler funding,
+Lean, Docker or complete multiplication theorem is claimed. No dependency
+installation or unrelated historical suite was run. The optional full-history
+ancestry preflight was not run in the shallow checkout; source blob pins and
+the ordinary committed-byte preflight are separate checks.
