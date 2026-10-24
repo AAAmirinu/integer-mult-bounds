@@ -81,7 +81,21 @@
         "sha256": "29756f86ebad2a957d8073bea173306f00e7d957828a5bab9f7832faf5815543",
         "checked": "Byte-equality and Git blob checked at creation against the fetched exact source. Remote side head is not assumed to be a publication ancestor."
       }
+    },
+    {
+      "path": "research/coupled-query-transport/inputs/SUCCESSOR-CONTROLLER.json",
+      "usage": "input",
+      "pin": "head:ee1c65091e56c2c0aec8e2fb700dc14d71639b3b:research/coupled-query-transport/inputs/SUCCESSOR-CONTROLLER.json",
+      "git_blob": "01775a36ae1238350bf8cd859b04cb8c4589873b",
+      "sha256": "60cc512b39cdb9ea2c2ac6c6634c8d3f9627d96ace08ffa659a9d9472444122b",
+      "origin": {
+        "commit": "174fb211493b43a42210434083e9702b4fb7a2ce",
+        "path": "research/kappa-backward-controller-20261023/CONTROLLER.json",
+        "git_blob": "01775a36ae1238350bf8cd859b04cb8c4589873b",
+        "sha256": "60cc512b39cdb9ea2c2ac6c6634c8d3f9627d96ace08ffa659a9d9472444122b",
+        "checked": "Compared with the original fetched Git blob at creation."
+      }
     }
   ],
-  "vendored_origin_policy": "Working copies are pinned to source-only ancestor acb8cb0c90d1eae7f8201da87e6de8346f362c20 for portable checkout replay. Each origin records the separately fetched original commit/path/blob/hash; that origin was checked at creation, not asserted as an ancestor or re-fetched by offline verification."
+  "vendored_origin_policy": "Each vendored input is pinned to the ancestor containing its exact frozen bytes. Each origin records the separately fetched original commit/path/blob/hash. Origin equality was checked at creation; offline verification does not reauthenticate remote history or assume side-head ancestry."
 }

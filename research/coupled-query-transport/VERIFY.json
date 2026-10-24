@@ -9,7 +9,8 @@
     "research/coupled-query-transport/inputs/PROVIDER.json",
     "research/coupled-query-transport/inputs/PROVIDER-PROOF.md",
     "research/coupled-query-transport/inputs/SELECTED-ARITHMETIC.json",
-    "research/coupled-query-transport/inputs/PROVIDER-ATTRIBUTION.md"
+    "research/coupled-query-transport/inputs/PROVIDER-ATTRIBUTION.md",
+    "research/coupled-query-transport/inputs/SUCCESSOR-CONTROLLER.json"
   ],
   "commands": [
     {

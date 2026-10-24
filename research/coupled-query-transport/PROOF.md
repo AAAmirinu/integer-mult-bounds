@@ -116,6 +116,8 @@ physical events (indices in its physical_events array):
 | 12 | lower thin shear Y1+=Q^-1 X1 |
 | 13,14 | X1-=X2; Y2+=Y1 |
 
+These fourteen instructions are also exactly the PR5398 successor caller's events 5 through 18, checked against its pinned literal controller. The two wrapped endpoint calls do not alter this clip. We leave those other FULLs completed; no claim is made for additional coupled substitutions at the wrapped endpoints.
+
 Stage 0, the RIGHT boundary and all original inputs preceding this clip are
 unchanged. Compare main outputs with the ordinary uncoupled main interfaces,
 and let independent h1,h3 be the two new coupled mode input banks. Fresh D1,D3
@@ -223,8 +225,7 @@ eight missing H1 calls would instead delete only the centers at these sixteen
 FULLs, giving rank surplus 1776 and a positive moment screen at .004. The
 observation's production, retention and consumer corrections are **unknown**,
 not zero; this is a conditional allowance rather than a supplier or new κ.
-PR5413's different paid H8 completion is an economically neutral predecessor
-comparison, not an additional saving claimed here.
+The checker also reconstructs PR5413's declared economically neutral comparison profile: provider plus eight paid H8 and eight H8 mode targets at each of eighteen FULLs. Its 64,260 paid calls, 10,928 targets and masses 238,990/239,742 match the declared comparison. Replacing only the sixteen unwrapped calls with the purchased-response exit still gives surplus -16 and a strictly negative .004 signed moment. This is a conditional price comparison, not a replay or admission of PR5413's native completion, source application or compiler. No additional saving is claimed from its neutrality.
 
 ## Open next questions
 

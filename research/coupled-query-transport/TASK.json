@@ -53,7 +53,7 @@
   "budget_minutes": 60,
   "stop_rule": "Stop the eight-mode-only helper feed if W3 T=D1 W1 fails even with arbitrary linear T; stop independently purchased QY if the complete retained-query moment fails at a=.004. Do not enlarge this fixed grammar by seeds.",
   "outcome": "partial",
-  "evidence": "Exact source-bound two-generation symbolic replay; 17-bit rank-eight residual Gram; charged all-input native-return exit; exact selected-invoice reconstruction and directed .004 screen.",
+  "evidence": "Exact source-bound two-generation symbolic replay; 17-bit rank-eight residual Gram; charged all-input native-return exit; exact selected-invoice reconstruction and directed .004 screen. The successor caller preserves the same fourteen contacts exactly; a declared-profile-only neutral completion price comparison also fails the purchased-response screen.",
   "author": "zxv, with OpenAI Codex assistance",
   "ai_assistance": "Substantial OpenAI Codex assistance for research, code, proof and verification; no subagents. Author-checked, without independent human or kernel acceptance.",
   "open_questions": [
@@ -80,13 +80,15 @@
     "canonical_main": "1ec1119972c9aefe42525172d07b332fcff81cb4",
     "provider_pr5402": "3348fccea855082786d5f0fc5558b73d4974e745",
     "inverse_pr5411_context_only": "123ffa6aa7c1866ac60c67739841f71d95b3edf7",
-    "neutral_completion_pr5413_context_only": "0c1fa2f47fb5ea17b93a4b67063d08e49cc38e51"
+    "neutral_completion_pr5413_context_only": "0c1fa2f47fb5ea17b93a4b67063d08e49cc38e51",
+    "direct_successor_pr5398": "174fb211493b43a42210434083e9702b4fb7a2ce",
+    "neutral_audit_pr5414_context_only": "bc37fb01c58d20e799d3299dec63e654f67d9d1b"
   },
   "expansion_decision": "Narrow: reject the helper-only feed and separately purchased response at the tested saving; retain the compressed observation contract as a distinct missing bridge. No larger search in the rejected grammar.",
   "overlap": {
-    "open_prs": 362,
+    "open_prs": 363,
     "discussion_records": 4701,
-    "discussion_snapshot_utc": "2026-10-24T02:10:45Z",
+    "discussion_snapshot_utc": "2026-10-24T02:35:32Z",
     "canonical_thread": "https://github.com/CrocSwap/integer-mult-bounds/discussions/4930",
     "coverage_limits": [
       "Sparse local notes",
@@ -97,7 +99,7 @@
   "freshness": {
     "upstream_commit": "1ec1119972c9aefe42525172d07b332fcff81cb4",
     "priority_revision": 7,
-    "checked_utc": "2026-10-24T02:31:00Z",
+    "checked_utc": "2026-10-24T02:37:00Z",
     "decision": "Continue same scoped source question; PR5402/5411/5413 heads and canonical main unchanged."
   }
 }

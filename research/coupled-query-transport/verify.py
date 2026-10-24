@@ -239,12 +239,27 @@ def budget(provider,controller):
   return [str(F(lo,scale)),str(F(hi,scale))]
  supplied_margin=margin(supplied);bought_margin=margin(bought)
  need(F(supplied_margin[0])>0>F(bought_margin[1]),'charged .004 budget decision')
+ # PR5413's declared neutral completion: provider+8 H8 paid, and the
+ # eight coupled modes restored as H8 targets. This is a price comparison,
+ # not a replay or admission of that completion's native implementation.
+ neutral_paid=paid.copy();neutral_paid[1]-=18*8
+ neutral_targets=targets.copy();neutral_targets[9]-=18*8;neutral_targets[8]+=18*8
+ need(sum(neutral_paid.values())==64260 and sum(neutral_targets.values())==10928,'declared neutral comparison counts')
+ need(sum(r*n for r,n in neutral_paid.items())==238990 and sum(r*n for r,n in neutral_targets.items())==239742,'declared neutral comparison masses')
+ neutral_bought=neutral_paid.copy();neutral_bought[1]+=120*backward;neutral_bought[8]-=8*backward
+ new_targets=neutral_targets.copy();new_targets[9]+=8*backward;new_targets[8]-=8*backward
+ old_targets=targets;targets=new_targets
+ neutral_bought_margin=margin(neutral_bought);targets=old_targets
+ need(F(neutral_bought_margin[1])<0,'purchased response also fails neutral comparison')
  return {'saving_tested':'1/250','applicable_backward_FULLs':backward,
   'target_rank_mass':sum(r*n for r,n in targets.items()),'selected_paid_rank_mass':sum(r*n for r,n in paid.items()),
   'selected_rank_surplus':752,'compressed_response_supplied_rank_surplus':1776,
   'compressed_response_bought_rank_surplus':-16,
   'supplied_response_signed_moment_interval':supplied_margin,'bought_response_signed_moment_interval':bought_margin,
   'bought_response_delta_over_selected':{'H1':1792,'H8':-128},
+  'neutral_completion_comparison':{'source_PR':5413,'head':'0c1fa2f47fb5ea17b93a4b67063d08e49cc38e51','scope':'Declared price profile only; no primary native or admission replay.',
+   'replaced_unwrapped_backward_calls':16,'signed_moment_interval_at_004':neutral_bought_margin,
+   'bought_response_rank_surplus':sum(r*(new_targets[r]-neutral_bought[r]) for r in set(new_targets)|set(neutral_bought))},
   'interpretation':'Supplying b is an unresolved enabling assumption. Buying QY independently fails the charged screen; all old thin queries remain paid.'}
 
 def exit_program(m,kind):
@@ -345,7 +360,11 @@ def compute():
  v,zv=experiment(m,w,z,1);gram=residual_gram(v,zv);det,pivots=determinant(gram)
  need(gram[0][0]==F(173,14),'nonzero-address physical witness')
  need(det==F(1389039784345493055,26985857024),'full-rank eight-mode residual')
+ successor=json.loads((HERE/'inputs/SUCCESSOR-CONTROLLER.json').read_text())
+ need(successor['physical_events'][5:19]==controller['physical_events'][1:15],'successor preserves both actual query contacts')
  trace=chronology(controller)
+ trace['successor_event_indices_inclusive']=[5,18]
+ trace['successor_clip_is_identical']=True
  try:chronology(controller,wrong_query=True)
  except ValueError:pass
  else:raise ValueError('accepted reversed query')

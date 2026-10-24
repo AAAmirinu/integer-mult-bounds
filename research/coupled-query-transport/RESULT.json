@@ -382,7 +382,12 @@
       "IDLE_H16": 224,
       "IDLE_H24": 224
     },
-    "extra_coupled_target_credit": 0
+    "extra_coupled_target_credit": 0,
+    "successor_event_indices_inclusive": [
+      5,
+      18
+    ],
+    "successor_clip_is_identical": true
   },
   "exit_contract": {
     "required_response": "b = Z Q Y (eight fields)",
@@ -471,6 +476,17 @@
     "bought_response_delta_over_selected": {
       "H1": 1792,
       "H8": -128
+    },
+    "neutral_completion_comparison": {
+      "source_PR": 5413,
+      "head": "0c1fa2f47fb5ea17b93a4b67063d08e49cc38e51",
+      "scope": "Declared price profile only; no primary native or admission replay.",
+      "replaced_unwrapped_backward_calls": 16,
+      "signed_moment_interval_at_004": [
+        "-615104779362307290936488067/604462909807314587353088",
+        "-615104779362307290936450097/604462909807314587353088"
+      ],
+      "bought_response_rank_surplus": -16
     },
     "interpretation": "Supplying b is an unresolved enabling assumption. Buying QY independently fails the charged screen; all old thin queries remain paid."
   },
