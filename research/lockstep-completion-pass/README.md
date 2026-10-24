@@ -42,7 +42,8 @@ counted:
   width: 12,048 and 112,738 bank allocations with peaks 732 and 8,751), two
   p7-shaped rules (`J=10, L=15`, N = 1815) and three selected-shaped rules with the
   caller's chronology shape and random, all-on-centre and one-owner chronologies
-  (`J=20, L=21`, N = 3045). Peak, total, unit instances, pieces, completions,
+  (`J=20, L=21`, N = 3045), and a two-generation rule with path-dependent class
+  sizes and exit ranks (N = 45 and 69, full width, peaks 2048 and 16,386). Peak, total, unit instances, pieces, completions,
   normalizer and relocation records all equal the formulas.
 - **Complete profiles, compiled counts.** p7 at N = 1815 and the selected profile
   at N = 3045 (one generation each): width, leaves, units per copy, peak units per
@@ -53,7 +54,8 @@ counted:
   short completion are rejected or break the mass law; a foreign completion owner
   is refused; the release-early allocator, the per-depth allocation, an eager
   parent and a repeated exit field are rejected; the peak recursion without its
-  nested term undercounts; a wrong tax breaks identity (1); a tampered
+  nested term undercounts, and the one that adds the largest path to the largest
+  exit peak from a different path overcounts (2050 against the executed 2048); a wrong tax breaks identity (1); a tampered
   RESULT.json is rejected.
 
 ```sh

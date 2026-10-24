@@ -63,6 +63,9 @@ def cases():
     for seed, adv in ((0, None), (1, "centre"), (2, "one_owner")):
         roles, rounds, owned, nm = E.selected_shaped(seed, adversarial=adv)
         out.append((E.complete_and_split(E.RawRule(nm, roles, rounds, owned), J=20, L=21), 3045))
+    # multi-generation regression with path-dependent class sizes and exit ranks (#5443 review)
+    out += [(E.complete_and_split(E.RawRule("two ranks", (("a", 3), ("b", 5)), ((1, "C0"), (2, "C0"))), J=2, L=3), n)
+            for n in (45, 69)]
     return out
 
 

@@ -92,11 +92,18 @@ and a single LIFO stack of bank slots suffices; its peak occupancy is
 
 ```
 peak(N) = max( max_s peak(N-s) ,
-               a * nb * max_paths sum_{j=0..G} |C_j(path)| + max_exits peak(e) ),
+               max_path ( a * nb * sum_{j=0..G} |C_j(path)| + max_{r paid} peak(r * dil(path)) ) ),
 ```
 
-with `nb` banks per unit, `a` the replication factor and `|C_j|` the class sizes of
-one lockstep copy (`counts.py`, `Counts.banks`). The total number of instances is
+with `nb` banks per unit, `a` the replication factor, `|C_j|` the class sizes of
+one lockstep copy and `dil(path)` the product of the paid ranks along the path, so
+that the exit programs of a path have ranks `r * dil(path)` (`counts.py`,
+`Counts.banks`; `FlowCounts.exit_paths` keeps, for each deepest dilation, the
+largest live inventory of a path reaching it). The maximum is over compatible
+(path, exit) pairs: the path inventory and the exit rank are tied by the same paid
+ranks, and adding the two separate maxima can overestimate (review of #5443: a
+two-generation rule at N = 45 executes with peak 2048, the decoupled sum gives 2050;
+it is a regression case in `verify.py` and a control in `test_verify.py`). The total number of instances is
 `total(N) = a nb sum_classes |C| + sum_s (a S_s / B_{N-s}) total(N-s) + sum_e (a t_e / B_e) total(e)`.
 
 *Proof.* A class allocates the banks of all its units when it starts and frees them
@@ -107,7 +114,8 @@ and returns before the next exit group; a complement program runs before the flo
 and returns before any class starts. Every program restores all stacks on return
 (I4). Hence the live set at any event is as claimed, allocation and release are
 LIFO, and the peak over the execution is the maximum over the finitely many
-(path, nested chain) combinations of the live counts, which is the displayed
+(path, nested chain) combinations of the live counts, where a nested exit
+program belongs to the path whose deepest class runs it; this is the displayed
 recursion. The executor implements the stack allocator (`owned_policy="stack"`),
 requires at every class end that the class's banks are exactly the top of the
 stack (I7) and that a bank is free when allocated (its live-role stack is empty,

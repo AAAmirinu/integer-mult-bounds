@@ -281,6 +281,34 @@
    "relocation_records": 512,
    "completion_jobs": 384,
    "piece_jobs": 128
+  },
+  "two ranks | completed L=3, split J=2 | N=45": {
+   "generations": 2,
+   "width_B_log10": 3,
+   "executed_tree_copies": 512,
+   "full_width_executed": true,
+   "events": 131078,
+   "peak_banks": 2048,
+   "total_bank_allocations": 11249,
+   "units": 11249,
+   "adapter_records": 0,
+   "relocation_records": 0,
+   "completion_jobs": 0,
+   "piece_jobs": 0
+  },
+  "two ranks | completed L=3, split J=2 | N=69": {
+   "generations": 2,
+   "width_B_log10": 4,
+   "executed_tree_copies": 4096,
+   "full_width_executed": true,
+   "events": 1465216,
+   "peak_banks": 16386,
+   "total_bank_allocations": 127838,
+   "units": 127838,
+   "adapter_records": 0,
+   "relocation_records": 0,
+   "completion_jobs": 0,
+   "piece_jobs": 0
   }
  },
  "counts": {

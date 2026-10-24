@@ -105,19 +105,21 @@ class FlowCounts:
         self.round_mult = _round_mult(rule)                          # distinct paid ranks and multiplicities
         self.sources = Counter()                                    # source rank -> count (one copy)
         self.exits = Counter()                                      # exit rank -> jobs (one copy)
+        self.exit_paths = {}                                        # deepest dilation -> max live units on such a path
         self.units_total = 0
         self.classes_total = 0
-        self.peak_units = self._cls(0, 1, None)
+        self.peak_units = self._cls(0, 1, None, 0)
 
     @lru_cache(None)
     def _class_points(self, d, dil):
         R = self.R
         return tuple(a for a in R.lattice(self.n, dil) if sum(a) == self.G - d)
 
-    def _cls(self, d, dil, incoming):
+    def _cls(self, d, dil, incoming, above):
         """Returns the peak number of simultaneously live units (one copy) on the subtree
         rooted at this class, including this class; accumulates sources/exits/totals.
-        `incoming` is a Counter point -> number of parent jobs aimed at that point."""
+        `incoming` is a Counter point -> number of parent jobs aimed at that point;
+        `above` is the number of live units of the ancestor classes on this path."""
         R = self.R
         pts = self._class_points(d, dil)
         size = sum(R.u(a) for a in pts)
@@ -142,13 +144,16 @@ class FlowCounts:
         for r, mult in sorted(self.round_mult.items()):
             if d < self.G:
                 # all `mult` rounds of rank r produce identical child classes
-                peak_child = self._cls(d + 1, dil * r, own)
+                peak_child = self._cls(d + 1, dil * r, own, above + size)
                 for _ in range(mult - 1):
-                    self._cls(d + 1, dil * r, own)
+                    self._cls(d + 1, dil * r, own, above + size)
                 best_child = max(best_child, peak_child)
             else:
                 assert all(x == 0 for a in pts for x in a), "deepest class is the zero point"
                 self.exits[r * dil] += mult * size
+        if d == self.G:
+            # the path's exit ranks r * dil are tied to the units live on this same path
+            self.exit_paths[dil] = max(self.exit_paths.get(dil, 0), above + size)
         return size + best_child
 
 
@@ -217,15 +222,17 @@ class Counts:
                 tot_c, pk_c = self.banks(n - s)
                 total += (a * cnt // Bc) * tot_c
                 peak = max(peak, pk_c)
-        nested_exit_peak = 0
         for e, t in F.exits.items():
             Be = self.compile(e)[0]
-            tot_e, pk_e = self.banks(e)
+            tot_e, _ = self.banks(e)
             total += (a * t // Be) * tot_e
-            nested_exit_peak = max(nested_exit_peak, pk_e)
-        # every path reaches the deepest class, where its exit batches run while the whole
-        # path is live; the executor runs exit groups one after another
-        peak = max(peak, a * F.peak_units * nb + nested_exit_peak)
+        # a path's exit batches run at its deepest class while that whole path is live; the
+        # executor runs exit groups one after another, so the maximum is over compatible
+        # (path, exit) pairs: exit ranks r * dil of a path with deepest dilation dil
+        peak = max(peak, a * F.peak_units * nb)
+        for dil, U in F.exit_paths.items():
+            for r in F.round_mult:
+                peak = max(peak, a * U * nb + self.banks(r * dil)[1])
         return (total, peak)
 
     @lru_cache(None)

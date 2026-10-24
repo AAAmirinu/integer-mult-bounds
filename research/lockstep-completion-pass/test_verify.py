@@ -83,6 +83,21 @@ class Controls(unittest.TestCase):
         self.assertGreater(pk, a * F.peak_units)          # nested exit programs are live too
         self.assertEqual(E.audit(rule, 28, owned_policy="stack")["peak_banks"], pk)
 
+    def test_peak_pairs_exit_with_its_own_path(self):
+        # largest live path and largest nested exit peak sit on different paths here
+        raw = E.RawRule("two ranks", (("a", 3), ("b", 5)), ((1, "C0"), (2, "C0")))
+        rule = E.complete_and_split(raw, J=2, L=3)
+        cc = C.Counts(rule)
+        F = cc.flow(45)
+        B, a, P, cost = cc.compile(45)
+        run = E.audit(rule, 45, owned_policy="stack")
+        self.assertTrue(run["full_width_executed"])
+        self.assertEqual(F.G, 2)
+        decoupled = a * F.peak_units * len(rule.owned) + max(cc.banks(e)[1] for e in F.exits)
+        self.assertEqual(decoupled, 2050)                 # unconditioned sum overestimates
+        self.assertEqual(cc.banks(45)[1], run["peak_banks"])
+        self.assertEqual(run["peak_banks"], 2048)
+
     def test_identity_fails_for_a_wrong_tax(self):
         T, P = Counter({4: 3, 9: 2}), Counter({1: 5, 7: 2})
         left, right = C.gap_identity(T, P, 3, 5, Fraction(99, 100))

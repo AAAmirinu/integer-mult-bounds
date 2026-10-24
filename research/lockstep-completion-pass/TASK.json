@@ -68,7 +68,7 @@
   "budget_minutes": 240,
   "stop_rule": "Stop after event-level execution of the passed rules with the stack allocator on toy, p7-shaped and selected-shaped rules, the histogram identities on the complete p7 and selected profiles at v=1..3, and one-generation compiled counts; do not materialize the 1024-fold template or bind the literal selected chronology.",
   "outcome": "completed",
-  "evidence": "PROOF.md (Lemmas A and B); verify.py binds the source statements, checks counting parity with #4691, identity (1), surplus, separation and record counts on the complete profiles, executes the pass with the LIFO allocator and compares peak/total/records with the formulas, and freezes RESULT.json; test_verify.py has twelve rejecting controls.",
+  "evidence": "PROOF.md (Lemmas A and B); verify.py binds the source statements, checks counting parity with #4691, identity (1), surplus, separation and record counts on the complete profiles, executes the pass with the LIFO allocator and compares peak/total/records with the formulas, and freezes RESULT.json; test_verify.py has thirteen rejecting controls.",
   "author": "Mark (Matarener)",
   "ai_assistance": "Prepared with substantial Claude Code (Claude) assistance.",
   "open_questions": [

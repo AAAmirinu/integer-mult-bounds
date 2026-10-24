@@ -30,7 +30,7 @@
         "{package}/test_verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Rejecting controls: overlapping rule before the pass, cutoff not below floor, dropped remainder, short completion, foreign completion owner, release-early allocator, per-depth bank, eager parent, repeated exit field, peak recursion without nested term, wrong tax, tampered RESULT.json."
+      "checks": "Rejecting controls: overlapping rule before the pass, cutoff not below floor, dropped remainder, short completion, foreign completion owner, release-early allocator, per-depth bank, eager parent, repeated exit field, peak recursion without nested term, peak recursion with decoupled path/exit maxima, wrong tax, tampered RESULT.json."
     }
   ]
 }
