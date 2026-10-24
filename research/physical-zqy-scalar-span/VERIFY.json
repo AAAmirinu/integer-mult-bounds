@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "python": "3.12",
+  "requirements": [],
+  "inputs": [
+    "research/kappa-round3-warp-20261022/ACTUAL-WORD.json.gz",
+    "research/native-rank8-helper-provider/WORD.json.gz",
+    "research/t74-native-fast/vendor/native/new/code/borrow/vendor/clifford/clifford_exact.py",
+    "research/coded-native-caller/NORMALIZERS.json",
+    "research/native-rank8-helper-provider/PROVIDER.json"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-W",
+        "error",
+        "-B",
+        "{package}/verify.py"
+      ],
+      "timeout_seconds": 300,
+      "checks": "Exact rational history ranks, width-one physical quotient rank sandwich, absolute-phase control and tensor-square all-width certificate."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-W",
+        "error",
+        "-B",
+        "{package}/verify.py"
+      ],
+      "timeout_seconds": 300,
+      "checks": "Exact rational history ranks, width-one physical quotient rank sandwich, absolute-phase control and tensor-square all-width certificate."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-W",
+        "error",
+        "-B",
+        "{package}/phase_audit.py"
+      ],
+      "timeout_seconds": 90,
+      "checks": "Independent retained Clifford/tableau/absolute-phase comparison of147456 native columns and36864 product columns, with phase/orientation controls."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-W",
+        "error",
+        "-B",
+        "{package}/phase_audit.py"
+      ],
+      "timeout_seconds": 90,
+      "checks": "Independent retained Clifford/tableau/absolute-phase comparison of147456 native columns and36864 product columns, with phase/orientation controls."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-W",
+        "error",
+        "-B",
+        "{package}/abi_closure.py"
+      ],
+      "timeout_seconds": 90,
+      "checks": "Checks fixed1012 physical Z-ABI left maps, exact F9 commutation,59708 distinct signed products and zero anchors; consumes the freshly replayed primary exact546/546 rank certificate. Eventual-width proof is in PROOF.md."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-W",
+        "error",
+        "-B",
+        "{package}/abi_closure.py"
+      ],
+      "timeout_seconds": 90,
+      "checks": "Checks fixed1012 physical Z-ABI left maps, exact F9 commutation,59708 distinct signed products and zero anchors; consumes the freshly replayed primary exact546/546 rank certificate. Eventual-width proof is in PROOF.md."
+    }
+  ]
+}
