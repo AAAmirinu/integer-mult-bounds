@@ -28,7 +28,9 @@ for ranks 1 through 9. No independent human or formal-kernel review is claimed.
 
 ## Reproduce
 
-Python 3.12 and its standard library suffice, from the repository root:
+Python 3.12 and its standard library suffice for mathematical replay.
+The optional source-history preflight also needs full Git history. From the
+repository root:
 
 ```sh
 python3.12 -B scripts/research_package.py --package research/native-coupled-inverse
