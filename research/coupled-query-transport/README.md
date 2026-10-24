@@ -35,7 +35,7 @@ explicit checks. They authenticate inputs, interpret all 120 monomial maps on
 all 512 addresses including phase, replay the two source consumers, reconstruct
 the selected whole invoice, calculate the exact residual Gram matrix, reject
 semantic mutations, and compare every result field. Expected token:
-`PASS_TWO_GENERATION_COUPLED_QUERY_TRANSPORT`. Runtime is a few seconds.
+`PASS_TWO_GENERATION_COUPLED_QUERY_TRANSPORT`. Runtime is a few seconds. All three literal exit programs are generated and replayed on every adapter input column; their exact operation counts and payload hashes are recorded. To inspect their instruction arrays, add `--emit-exits /tmp/coupled-exits.json` to a direct verifier call.
 
 The mathematical native endpoint and its uniform physical model are explicit
 pinned premises. No full native provider replay, selected cold replay, all-history
@@ -57,7 +57,7 @@ completion, the active broader caller claim in Discussion4930, and the released
 claim the inverse as new, or supply that handoff's missing decoder. Full remote
 pagination covered 362 open PRs and 4701 Discussion records at entry; sparse
 local notes and unpublished work remain coverage limits. Exact source origins
-are in [SOURCES.json](SOURCES.json).
+are in [SOURCES.json](SOURCES.json). The vendored files are pinned to source-only ancestor `acb8cb0c90d1eae7f8201da87e6de8346f362c20`; each origin records its separately fetched source commit, path, Git blob and byte hash. This makes the replay independent of fetching a pending side branch. Origin equality was checked at creation; the offline replay does not reauthenticate remote history.
 
 ## Open next questions
 
@@ -84,5 +84,5 @@ native word; Dugongue / mdumitrean: center-free code; Cinna Davis /1337isnot1337
 helper/controller construction; Ryanson Jonathan, Jacob Alan Sussman, zxv and
 the complete native/Clifford/compiler/analytic lineage retain their source
 credit. The frozen [provider proof](inputs/PROVIDER-PROOF.md) retains its exact
-source text. New contracts, transport calculation and witness/checker by zxv
+source text and [complete provider attribution](inputs/PROVIDER-ATTRIBUTION.md). New contracts, transport calculation and witness/checker by zxv
 with substantial OpenAI Codex assistance, no subagents; Apache-2.0.

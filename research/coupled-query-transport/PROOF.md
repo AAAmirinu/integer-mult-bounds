@@ -59,7 +59,7 @@ M has 448 nonzero entries. Once b is supplied, the exit uses:
 
 This costs **8 H1, 456 ADDs, 240 monomial field maps**, no new owned fields,
 and no new target credit except restoration of the original eight H9 jobs.
-Each ADD coefficient is an exterior dyadic scalar. A monomial field map is
+The generator emits the literal field programs for these three contracts and the checker replays every adapter input, borrowed observation and dirty owned entry, checks every owned zero return, and recounts all instructions. Each ADD coefficient is an exterior dyadic scalar. A monomial field map is
 charged ordinary work, not a zero-cost operation or a single tape step.
 
 If a preserved full V=QY is supplied instead, fuse the common K_m pass:

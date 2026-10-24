@@ -418,6 +418,40 @@
       "outer admission"
     ]
   },
+  "literal_exit_program_checks": {
+    "compressed": {
+      "operation_counts": {
+        "H1": 8,
+        "ADD": 456,
+        "MONOMIAL": 240
+      },
+      "literal_operations": 704,
+      "program_payload_sha256": "1bcd3975fbcea7df9637122b77131928975e868e7994e4844738e96e948a5cae",
+      "all_adapter_input_columns_checked": 240
+    },
+    "full_response": {
+      "operation_counts": {
+        "H1": 8,
+        "MONOMIAL": 464,
+        "ADD": 896
+      },
+      "literal_operations": 1368,
+      "program_payload_sha256": "88e92ad74831eec9b4233f58067922ca36b51f1624a8769e2c78c974abc0a44d",
+      "all_adapter_input_columns_checked": 344
+    },
+    "purchased": {
+      "operation_counts": {
+        "CLEAR": 224,
+        "COPY": 112,
+        "H1": 120,
+        "MONOMIAL": 464,
+        "ADD": 896
+      },
+      "literal_operations": 1816,
+      "program_payload_sha256": "4fc3279a141a6baece2d2af164737733ef749ff00aa62763be3a89d05c7e81a7",
+      "all_adapter_input_columns_checked": 344
+    }
+  },
   "complete_recursive_screen": {
     "saving_tested": "1/250",
     "applicable_backward_FULLs": 16,
@@ -448,7 +482,8 @@
     "absolute-phase-only stage mutation rejected",
     "wrong chronological query rejected",
     "dirty response rejected",
-    "wrong repair sign rejected"
+    "wrong repair sign rejected",
+    "missing owned observation initialization rejected"
   ],
   "provider_native_replay": "Not run; source endpoint is an explicit premise.",
   "new_kappa": null

@@ -48,6 +48,11 @@ def power(a,k):
  for _ in range(k):v=mul(v,a)
  return v
 def experiment(m,w,z,address):
+ """D1 W1 columns on central 0, private 1..8, private 9..16.
+ V uses Gaussian integer numerators /512; Z3 V uses /1024.
+ Each of the eight independent mode columns is tested on the same input
+ address. Owner coefficients stay outside the columnwise tensor product.
+ """
  VS=[];ZS=[]
  M=m
  for mode in range(8):
@@ -242,6 +247,75 @@ def budget(provider,controller):
   'bought_response_delta_over_selected':{'H1':1792,'H8':-128},
   'interpretation':'Supplying b is an unresolved enabling assumption. Buying QY independently fails the charged screen; all old thin queries remain paid.'}
 
+def exit_program(m,kind):
+ """Literal field program; monomials reference the pinned Kp/Km words."""
+ ops=[]
+ def mono(bank,n,label,sign=1):
+  ops.extend([['MONOMIAL',bank+str(i),label+str(i),sign] for i in range(n)])
+ if kind=='purchased':
+  for i in range(112):ops.extend([['CLEAR','v'+str(i)],['COPY','v'+str(i),'y'+str(i)],['H1','v'+str(i)]])
+ ops.extend([['H1','h'+str(k)] for k in range(8)])
+ if kind=='compressed':ops.extend([['ADD','h'+str(k),'b'+str(k),'1'] for k in range(8)])
+ mono('h',8,'Km')
+ if kind!='compressed':
+  mono('v',112,'Kp')
+  for k in range(8):
+   for i in range(112):
+    if m[k][i]:ops.append(['ADD','h'+str(k),'v'+str(i),str(F(m[k][i],2))])
+  mono('v',112,'Kp',-1)
+ mono('x',112,'Kp')
+ for i in range(112):
+  for k in range(8):
+   if m[k][i]:ops.append(['ADD','x'+str(i),'h'+str(k),str(F(-m[k][i],2))])
+ mono('x',112,'Kp',-1);mono('h',8,'Km',-1)
+ if kind=='purchased':ops.extend([['CLEAR','v'+str(i)] for i in range(112)])
+ return ops
+
+def check_exit_program(m,kind,ops):
+ # Free signed monomial words retain the source index and operator order.
+ def reduce(word):
+  out=[]
+  for x in word:
+   if out and out[-1]==(x[0],-x[1]):out.pop()
+   else:out.append(x)
+  return tuple(out)
+ def app(row,*word):
+  out={}
+  for (s,w),c in row.items():
+   key=s,reduce(word+w);out[key]=out.get(key,F(0))+c
+  return {k:v for k,v in out.items() if v}
+ names=['x'+str(i) for i in range(112)]+['y'+str(i) for i in range(112)]+['h'+str(k) for k in range(8)]
+ names+=['b'+str(k) for k in range(8)] if kind=='compressed' else ['v'+str(i) for i in range(112)]
+ original={name:{(name,()):F(1)} for name in names};rows={k:dict(v) for k,v in original.items()};counts=Counter()
+ for e in ops:
+  op,dst=e[:2];need(dst in rows,'actual exit field ID');counts[op]+=1
+  if op=='CLEAR':need(kind=='purchased' and dst.startswith('v'),'CLEAR only owned observation');rows[dst]={}
+  elif op=='COPY':need(kind=='purchased' and not rows[dst] and e[2] in rows,'COPY owned zero');rows[dst]=dict(rows[e[2]])
+  elif op=='H1':rows[dst]=app(rows[dst],('Q',1))
+  elif op=='ADD':need(dst!=e[2] and e[2] in rows,'distinct exit ADD');rows[dst]=plus(rows[dst],rows[e[2]],F(e[3]))
+  elif op=='MONOMIAL':need(e[2].startswith(('Kp','Km')) and e[3] in (-1,1),'source signed monomial');rows[dst]=app(rows[dst],(e[2],e[3]))
+  else:raise ValueError('unknown exit instruction')
+ expected={k:dict(v) for k,v in original.items()};ho=[]
+ for k in range(8):
+  h=app(original['h'+str(k)],('Q',1))
+  if kind=='compressed':h=plus(h,original['b'+str(k)])
+  else:
+   for i in range(112):
+    if m[k][i]:
+     value=app(original['y'+str(i)],('Q',1)) if kind=='purchased' else original['v'+str(i)]
+     h=plus(h,app(value,('Km'+str(k),-1),('Kp'+str(i),1)),F(m[k][i],2))
+  ho.append(h);expected['h'+str(k)]=h
+ for i in range(112):
+  for k in range(8):
+   if m[k][i]:expected['x'+str(i)]=plus(expected['x'+str(i)],app(ho[k],('Kp'+str(i),-1),('Km'+str(k),1)),F(-m[k][i],2))
+ if kind=='purchased':
+  for i in range(112):expected['v'+str(i)]={}
+ need(rows==expected,'all exit inputs, borrowed values and owned returns')
+ expected_counts={'compressed':{'H1':8,'ADD':456,'MONOMIAL':240},'full_response':{'H1':8,'ADD':896,'MONOMIAL':464},'purchased':{'H1':120,'ADD':896,'MONOMIAL':464,'COPY':112,'CLEAR':224}}
+ need(dict(counts)==expected_counts[kind],'literal complete exit census')
+ payload=json.dumps(ops,separators=(',',':')).encode()
+ return {'operation_counts':dict(counts),'literal_operations':len(ops),'program_payload_sha256':sha256(payload).hexdigest(),'all_adapter_input_columns_checked':len(names)}
+
 def compute():
  pins=json.loads((HERE/'SOURCES.json').read_text())
  for p in pins['files']:
@@ -263,7 +337,7 @@ def compute():
  v,zv=experiment(m,w,z,0);g0=residual_gram(v,zv);need(g0==[[0]*8 for _ in range(8)],'zero-address false positive')
  # A one-stage absolute-phase mismatch preserves all address permutations.
  badw=[[list(t) for t in row] for row in w]
- badw[0][0]=[(a,(ph+1)%4) for a,ph in badw[0][0]]
+ for k in range(8):badw[k][0]=[(a,(ph+1)%4) for a,ph in badw[k][0]]
  bv,bz=experiment(m,badw,z,0)
  try:phase_rejected=residual_gram(bv,bz)!=g0
  except ValueError:phase_rejected=True
@@ -275,22 +349,31 @@ def compute():
  try:chronology(controller,wrong_query=True)
  except ValueError:pass
  else:raise ValueError('accepted reversed query')
+ programs={kind:exit_program(m,kind) for kind in ('compressed','full_response','purchased')}
+ adapter_checks={kind:check_exit_program(m,kind,ops) for kind,ops in programs.items()}
+ bad=[e[:] for e in programs['purchased']];bad.pop(next(i for i,e in enumerate(bad) if e[0]=='CLEAR'))
+ try:check_exit_program(m,'purchased',bad)
+ except ValueError:pass
+ else:raise ValueError('accepted uncleared borrowed observation input')
  return {'schema_version':1,'status':'PASS_TWO_GENERATION_COUPLED_QUERY_TRANSPORT',
   'scope':'First two backward FULLs and following thin consumers. No complete supplier or kappa.',
   'physical_witness':{'fiber_width':1,'global_address_bits':17,'input_address':1,'input_modes':8,
    'zero_address_residual_rank':0,'nonzero_address_residual_Gram':[[str(x) for x in r] for r in gram],
    'positive_elimination_pivots':list(map(str,pivots)),'determinant':str(det),'residual_rank':8,
    'conclusion':'No linear T, including arbitrary address operators, satisfies W3 T = D1 W1.'},
-  'chronology':trace,'exit_contract':exit_contract(m),'complete_recursive_screen':budget(provider,controller),
+  'chronology':trace,'exit_contract':exit_contract(m),'literal_exit_program_checks':adapter_checks,'complete_recursive_screen':budget(provider,controller),
   'controls':['120 signed monomial inverse identities','Z = W adjoint','M transpose M = 56 I',
-   'zero-address acceptance and nonzero-address rejection','absolute-phase-only stage mutation rejected','wrong chronological query rejected','dirty response rejected','wrong repair sign rejected'],
+   'zero-address acceptance and nonzero-address rejection','absolute-phase-only stage mutation rejected','wrong chronological query rejected','dirty response rejected','wrong repair sign rejected','missing owned observation initialization rejected'],
   'provider_native_replay':'Not run; source endpoint is an explicit premise.','new_kappa':None}
 
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--write-result',action='store_true');args=ap.parse_args()
+ ap=argparse.ArgumentParser();ap.add_argument('--write-result',action='store_true');ap.add_argument('--emit-exits',type=Path);args=ap.parse_args()
  result=compute();path=HERE/'RESULT.json'
  if args.write_result:path.write_text(json.dumps(result,indent=2)+'\n')
  else:need(json.loads(path.read_text())==result,'result does not reproduce')
+ if args.emit_exits:
+  m=json.loads((ROOT/'research/coded-native-caller/NORMALIZERS.json').read_text())['mode_columns']
+  args.emit_exits.write_text(json.dumps({kind:exit_program(m,kind) for kind in ('compressed','full_response','purchased')},indent=2)+'\n')
  print(result['status'])
 
 if __name__=='__main__':main()
