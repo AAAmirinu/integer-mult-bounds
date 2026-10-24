@@ -15,7 +15,7 @@ The q targets have fixed invertible one-column maps h_i on **distinct** input co
 | Statement | Allowed scalar/program dependence | Width requirement | Target exclusion |
 | --- | --- | --- | --- |
 | [Central Laurent](proofs/central-lemma-v1.md) | One fixed finite columnwise word; exterior c·2^(n f), with c in K and integer n fixed per instruction independently of f; paid one-column operators fixed | Exactness at every positive width, or throughout a consecutive infinite tail | h_i is outside `<2I>G` |
-| [Eventual pointwise](proofs/pointwise-lemma-v1.md) | Arbitrary exterior c(f) in K; finite ordinary words, their lengths and finite independent dirty-input counts may vary arbitrarily with f; ordinary G and geometry remain fixed | **Each integer f ≥ 2p−1**, with p=|G/(G∩K×I)| | h_i is outside `K×G` |
+| [Eventual pointwise](proofs/pointwise-lemma-v1.md) | Arbitrary exterior c(f) in K; finite ordinary words, their lengths and finite independent dirty-input counts may vary arbitrarily with f; ordinary G and geometry remain fixed | **Each integer f ≥ 2p−1**, with p=\|G/(G∩K×I)\| | h_i is outside `K×G` |
 
 Under the respective hypotheses, the program needs at least q paid returns. The pointwise statement needs neither a common word across widths nor exactness at consecutive widths once its guard is met. It does not assert a bound at arbitrary smaller widths. For the conservative fourth-root monomial enlargement on a d-dimensional V, p=4^(d−1)d!; in the nominated source geometry d=2^625. These are symbolic finiteness bounds, not a computation of a usable cutoff. No application at f=1, f=2 or f=1024 is certified.
 
