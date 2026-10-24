@@ -55,8 +55,8 @@
     "docs/research/pr-intake-decisions.json"
   ],
   "counts": {
-    "incorporated": 2124,
-    "partially_reviewed": 2551,
+    "incorporated": 2127,
+    "partially_reviewed": 2548,
     "superseded": 2,
     "unreviewed": 60
   },
@@ -123,7 +123,7 @@
     "research/community-efficient2400-audit/DISPOSITIONS.json": "2602f88f4a333ade0b654645a3126fcde85f16c41f25f36a397f8c760f8acf4c",
     "research/community-efficient2500-audit/DISPOSITIONS.json": "23d12152b20bd788c5fb1e1935543185dc3772634cf26efbfad88f6d78ed6e15",
     "research/community-efficient2600-audit/DISPOSITIONS.json": "d7816f0e79c421d750d691cb1edfc4646accae0a47dc817fb32409745795765c",
-    "docs/research/pr-intake-decisions.json": "57912c6a928ea523f71ab846b1aa94d7140872c647d15aa8ae8a4ddae50d0701",
+    "docs/research/pr-intake-decisions.json": "536f0fc634271e01a5a480eaf7aa2a9065517dd56809e9ee18a2353480f8e20e",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353",
     "research/pr116-evidence-reconciliation/PARENT-EVIDENCE.json": "62a666dac3e67ba8d388820c92e0cd4495657a20b6eae280a5367af8e89d769c",
@@ -258791,6 +258791,12 @@
           "evidence": "docs/research/pr-intake-decisions.json",
           "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "3348fccea855082786d5f0fc5558b73d4974e745",
+          "evidence": "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md",
+          "scope": "Source-bound component review through independent PR5407, including all 632 original inputs, nine owned zero returns and 1240 phase bindings. Coupled eight-mode outputs receive no autonomous credit; completion is supplied separately by PR5413.",
+          "kind": "scoped_scientific_review"
         }
       ],
       "closure": {
@@ -258805,15 +258811,17 @@
       "integration_location": [
         "research/native-rank8-helper-provider"
       ],
-      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "unresolved_question": "Required coupled component validated for PR5413, with no autonomous credit for its eight coupled outputs. Original author verifier and unrelated full package claims were not independently rerun; native/tape foundations remain conditional.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
+        "scoped_mechanism_review": true,
         "required_execution_complete": false,
         "published": true
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json"
+        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json",
+        "docs/research/pr-intake-evidence/pr5413/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md"
       ],
       "current_head_observed_in": "docs/research/pr-intake-decisions.json",
       "reconciliation_evidence": [
@@ -259041,6 +259049,12 @@
           "evidence": "docs/research/pr-intake-decisions.json",
           "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "b62252c61113d2863b36ce2419aa81a07f393c42",
+          "evidence": "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md",
+          "scope": "Fresh five-engine provider audit: algebra/phase and same-chart controls, conditional budget, norm envelope, bounded Clifford oracle; source proof review. Darwin arithmetic continuation reused only fresh source-bound successes from this session.",
+          "kind": "scoped_scientific_review"
         }
       ],
       "closure": {
@@ -259050,20 +259064,22 @@
       },
       "reviewed_head": "b62252c61113d2863b36ce2419aa81a07f393c42",
       "current_head": "b62252c61113d2863b36ce2419aa81a07f393c42",
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "github_state": "MERGED",
       "integration_location": [
         "research/coupled-provider-independent-audit"
       ],
-      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "unresolved_question": "Scoped independent audit accepted. Clifford executable checks are bounded and native all-column/tape foundations remain conditional. No whole PR5376 census or new kappa from this audit alone.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": true
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json"
+        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json",
+        "docs/research/pr-intake-evidence/pr5413/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md"
       ],
       "current_head_observed_in": "docs/research/pr-intake-decisions.json",
       "reconciliation_evidence": [
@@ -259440,6 +259456,12 @@
           "evidence": "docs/research/pr-intake-decisions.json",
           "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "0c1fa2f47fb5ea17b93a4b67063d08e49cc38e51",
+          "evidence": "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md",
+          "scope": "Fresh all-eight-engine conditional replay, complete caller and source-application review under the five selected assumptions. Darwin RLIMIT_AS adaptation is recorded. No selected-record change.",
+          "kind": "scoped_scientific_review"
         }
       ],
       "closure": {
@@ -259449,20 +259471,22 @@
       },
       "reviewed_head": "0c1fa2f47fb5ea17b93a4b67063d08e49cc38e51",
       "current_head": "0c1fa2f47fb5ea17b93a4b67063d08e49cc38e51",
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "github_state": "MERGED",
       "integration_location": [
         "research/coupled-helper-neutral-completion"
       ],
-      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "unresolved_question": "Conditional claim passes. Selected-frontier promotion and unified reproduction entry point remain separate; all five inherited assumptions persist. Unmodified Linux replay not run.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": true
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json"
+        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json",
+        "docs/research/pr-intake-evidence/pr5413/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md"
       ],
       "current_head_observed_in": "docs/research/pr-intake-decisions.json",
       "reconciliation_evidence": [
@@ -259490,6 +259514,12 @@
           "evidence": "docs/research/pr-intake-decisions.json",
           "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
           "kind": "integration_or_partial_review"
+        },
+        {
+          "head": "bc37fb01c58d20e799d3299dec63e654f67d9d1b",
+          "evidence": "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md",
+          "scope": "Fresh independent literal invoice/two-point screen and source/application joins; written applicability report reviewed. Darwin RLIMIT_AS adaptation recorded. This companion does not independently prove the whole multiplication theorem.",
+          "kind": "scoped_scientific_review"
         }
       ],
       "closure": {
@@ -259499,20 +259529,22 @@
       },
       "reviewed_head": "bc37fb01c58d20e799d3299dec63e654f67d9d1b",
       "current_head": "bc37fb01c58d20e799d3299dec63e654f67d9d1b",
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "github_state": "MERGED",
       "integration_location": [
         "research/neutral632-independent-verification"
       ],
-      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "unresolved_question": "Narrow independent screen and retained written applicability evidence accepted. No new formal-kernel or unconditional theorem; original Linux wrapper not run on Linux.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": true
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json"
+        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json",
+        "docs/research/pr-intake-evidence/pr5413/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md"
       ],
       "current_head_observed_in": "docs/research/pr-intake-decisions.json",
       "reconciliation_evidence": [

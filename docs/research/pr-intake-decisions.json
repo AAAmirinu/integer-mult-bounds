@@ -88784,16 +88784,18 @@
       "integration_location": [
         "research/native-rank8-helper-provider"
       ],
-      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
-      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "unresolved_question": "Required coupled component validated for PR5413, with no autonomous credit for its eight coupled outputs. Original author verifier and unrelated full package claims were not independently rerun; native/tape foundations remain conditional.",
+      "scope": "Source-bound component review through independent PR5407, including all 632 original inputs, nine owned zero returns and 1240 phase bindings. Coupled eight-mode outputs receive no autonomous credit; completion is supplied separately by PR5413.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
+        "scoped_mechanism_review": true,
         "required_execution_complete": false,
         "published": true
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json"
+        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json",
+        "docs/research/pr-intake-evidence/pr5413/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md"
       ],
       "closure": {
         "kind": "merged_for_archive_only",
@@ -88974,21 +88976,23 @@
       },
       "reviewed_head": "b62252c61113d2863b36ce2419aa81a07f393c42",
       "current_head": "b62252c61113d2863b36ce2419aa81a07f393c42",
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "github_state": "MERGED",
       "integration_location": [
         "research/coupled-provider-independent-audit"
       ],
-      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
-      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "unresolved_question": "Scoped independent audit accepted. Clifford executable checks are bounded and native all-column/tape foundations remain conditional. No whole PR5376 census or new kappa from this audit alone.",
+      "scope": "Fresh five-engine provider audit: algebra/phase and same-chart controls, conditional budget, norm envelope, bounded Clifford oracle; source proof review. Darwin arithmetic continuation reused only fresh source-bound successes from this session.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": true
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json"
+        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json",
+        "docs/research/pr-intake-evidence/pr5413/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md"
       ],
       "closure": {
         "kind": "merged_for_archive_only",
@@ -89307,21 +89311,23 @@
       },
       "reviewed_head": "0c1fa2f47fb5ea17b93a4b67063d08e49cc38e51",
       "current_head": "0c1fa2f47fb5ea17b93a4b67063d08e49cc38e51",
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "github_state": "MERGED",
       "integration_location": [
         "research/coupled-helper-neutral-completion"
       ],
-      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
-      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "unresolved_question": "Conditional claim passes. Selected-frontier promotion and unified reproduction entry point remain separate; all five inherited assumptions persist. Unmodified Linux replay not run.",
+      "scope": "Fresh all-eight-engine conditional replay, complete caller and source-application review under the five selected assumptions. Darwin RLIMIT_AS adaptation is recorded. No selected-record change.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": true
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json"
+        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json",
+        "docs/research/pr-intake-evidence/pr5413/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md"
       ],
       "closure": {
         "kind": "merged_for_archive_only",
@@ -89346,21 +89352,23 @@
       },
       "reviewed_head": "bc37fb01c58d20e799d3299dec63e654f67d9d1b",
       "current_head": "bc37fb01c58d20e799d3299dec63e654f67d9d1b",
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "github_state": "MERGED",
       "integration_location": [
         "research/neutral632-independent-verification"
       ],
-      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
-      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "unresolved_question": "Narrow independent screen and retained written applicability evidence accepted. No new formal-kernel or unconditional theorem; original Linux wrapper not run on Linux.",
+      "scope": "Fresh independent literal invoice/two-point screen and source/application joins; written applicability report reviewed. Darwin RLIMIT_AS adaptation recorded. This companion does not independently prove the whole multiplication theorem.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": true
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json"
+        "docs/research/pr-intake-evidence/queue-oct23p-20261023.json",
+        "docs/research/pr-intake-evidence/pr5413/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md"
       ],
       "closure": {
         "kind": "merged_for_archive_only",
