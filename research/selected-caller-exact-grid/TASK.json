@@ -81,14 +81,14 @@
   "budget_minutes": 300,
   "stop_rule": "Stop at the exact attained guard of one controller level; the recursive price of the guard is a separate question.",
   "outcome": "completed",
-  "evidence": "verify.py expands the #5402 provider inside the #5413 backward body (no odd division, owned fields zero, max v2 = 6 attained: body guard ceil(9 lambda/2)+6), derives the per-port Q from the port wrappers (rank 1, square rank 0, final rows x_p - y_p), replays the controller in its exact Laurent ring and evaluates every cut of the last call with exact nine-plane ranks: the maximum is 73, equal to the requirement of the 224 rank-145 targets, so one controller level needs exactly 73 extra bits. test_verify.py rejects six mutations.",
+  "evidence": "verify.py expands the #5402 provider inside the #5413 backward body (no odd division, owned fields zero, max v2 = 6 attained: body guard ceil(9 lambda/2)+6), derives the per-port Q from the port wrappers (rank 1, square rank 0, final rows x_p - y_p), replays the controller in its exact Laurent ring and evaluates the cuts of the last call (after every scalar, warp and climb of the provider word, the t-field cut after the paid C8 job and the cache cuts) with exact nine-plane ranks: the maximum is 74, attained by a Gaussian-climb cut where bank 31 reaches y70 alone (review of #5438), one bit above the 73 of the 224 rank-145 targets, so one controller level needs 74 extra bits at these cuts. test_verify.py rejects eight mutations.",
   "author": "Mark (Matarener)",
   "ai_assistance": "Prepared with substantial Claude Code (Claude) assistance.",
   "open_questions": [
     {
-      "question": "What does the attained 73-bit controller guard cost in the recursive invoice?",
+      "question": "What does the attained 74-bit controller guard cost in the recursive invoice?",
       "why_it_matters": "PR #5419 shows that a uniform paid-precision factor above about 1.0046 removes the 0.0033 margin; the guard is now exact, so its price can be computed.",
-      "first_step": "Express 73 bits per controller level as storage per packed word at the recursion's word width and compare with the retained precision_tape prescription.",
+      "first_step": "Express 74 bits per controller level as storage per packed word at the recursion's word width and compare with the retained precision_tape prescription.",
       "blocked_by": "The retained packing and tape prescription have to be read from the compiler sources."
     }
   ]

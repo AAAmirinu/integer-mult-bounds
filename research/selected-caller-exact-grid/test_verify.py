@@ -67,15 +67,34 @@ def missing_owned_clear():
     B = V.Body(body, PROV, WORD, CAN); B.run()
 
 
+def mutated_build(old, new):
+    src = (HERE / 'verify.py').read_text(encoding='utf-8')
+    V.require(src.count(old) == 1, 'mutation site present')
+    ns = {'__file__': str(HERE / 'verify.py'), '__name__': 'selected_caller_mutant'}
+    exec(compile(src.replace(old, new), str(HERE / 'verify.py'), 'exec'), ns)
+    ns['build']()
+
+
+def dropped_cache():
+    # the review of #5438: a SWAP that discards the transformed cache row instead of moving it
+    mutated_build('self.rows[cs], self.rows[o] = self.rows[o], self.rows[cs]', 'self.rows[cs], self.rows[o] = self.rows[o], {}')
+
+
+def unobserved_climb():
+    # the review of #5438: climbs change the chart without entering the census; the 74-bit cut is missed
+    mutated_build("self.stat(('climb', t), e[2])", 'pass')
+
+
 def tampered_result():
     stored = json.loads((HERE / 'RESULT.json').read_text(encoding='utf-8'))
-    stored['controller']['guard'] = 72
-    V.require(stored['controller']['guard'] == 73, 'stored RESULT.json equals the rebuild')
+    stored['controller']['guard'] = 73
+    V.require(stored['controller']['guard'] == 74, 'stored RESULT.json equals the rebuild')
 
 
 for name, fn in [('drifted input hash', drift), ('an odd division in a body ADD', odd_division),
                  ('a block map that is not inverted', broken_block_inverse),
                  ('a missing controller Q_POWER', missing_q_power), ('a missing owned CLEAR', missing_owned_clear),
+                 ('a cache SWAP that drops the cache row', dropped_cache), ('an unobserved climb cut', unobserved_climb),
                  ('tampered RESULT.json', tampered_result)]:
     rejects(name, fn)
 print('PASS_SELECTED_CALLER_EXACT_GRID_CONTROLS')

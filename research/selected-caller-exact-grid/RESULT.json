@@ -14,11 +14,21 @@
   ],
   "identity_monomial_pairs": 224,
   "max_v2": 6,
+  "mode_owner_terms": [
+   56,
+   56,
+   56,
+   56,
+   56,
+   56,
+   56,
+   56
+  ],
   "odd_denominators": 0
  },
  "controller": {
   "early_calls_bound": 73,
-  "guard": 73,
+  "guard": 74,
   "last_call": {
    "bank31": {
     "x": [
@@ -31,13 +41,13 @@
     ]
    },
    "cache_cut_max": 73,
-   "in_word_max": 73,
+   "in_word_max": 74,
    "in_word_witness": [
-    "13/16",
-    137,
+    "1/4",
+    143,
     31,
-    53,
-    0,
+    70,
+    254,
     []
    ],
    "pair": 15,

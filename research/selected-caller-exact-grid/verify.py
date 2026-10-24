@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact grid of the complete selected #5413 caller: body ceil(9 lambda/2)+6, controller level exactly 73 bits.
+"""Exact grid of the complete selected #5413 caller: body ceil(9 lambda/2)+6, controller level 74 bits (attained).
 
 Standard library only; about three minutes.  Inputs pinned by SHA256 in SOURCES.json, all on main: the #5413 capsule
 (NEUTRAL-BACKWARD-v16c body, NEUTRAL-CALLER-v16c controller), the #5402 PROVIDER.json and provider WORD.json.gz, the
@@ -13,7 +13,8 @@ reduced denominator exactly 2^ceil(r/2).
 Part A, body.  The only runtime local direction is backward (18 calls). Execute the body with PROVIDER_5402 expanded
 by its schedule; monomials, Gaussians and warps stay symbols (adjacent inverse warps cancel; each y-field monomial of
 the 240-map block is followed by its exact inverse with only ADDs in between, so the pair is the identity and is
-omitted). Checks: no odd denominator, 17 owned fields zero at exit, maximum v2 = 6 attained by a single-occurrence
+omitted). Every warp and Gaussian climb is a cut of its own (the climb changes the row's chart); each mode cache
+SWAP moves the transformed 56-term cache row to its owner. Checks: no odd denominator, 17 owned fields zero at exit, maximum v2 = 6 attained by a single-occurrence
 rank-9 helper term (body guard ceil(9 lambda/2)+6), main-data terms v2 <= 4, helper terms local rank <= 9.
 
 Part B, controller.  Per port p let A_x = (backward_input_X wrapper, then Delta_{I_x}^-1), A_y likewise, and
@@ -23,11 +24,13 @@ exact Laurent ring of check_wholecaller_v1 (32 banks, integer coefficients). Glo
 axis 0 plus eight private axes per LOCAL stage; a component Q^q prod_{t in T} D_t has 8|T| private Fourier rank.
   * calls before the last: |T| <= 16, so every term needs <= 4 + ceil((128+9)/2) = 73 (main) or <= 11 (helper);
   * last call (stage 32, pair 15): original bank 31 enters x as Q^2 D_T and y as Q D_T with |T| = 17. Its x- and
-    y-paths merge (Phi_y = Phi_x Q_p) on Phi_x Q^2 with coefficient c_x + c_y; every in-word cut is evaluated with
-    exact nine-plane ranks (warps via the native table), plus the t-field cut after the paid C8 job and the cache cuts;
+    y-paths merge (Phi_y = Phi_x Q_p) on Phi_x Q^2 with coefficient c_x + c_y; every in-word cut (after each scalar,
+    warp and climb) is evaluated with exact nine-plane ranks (warps via the native table), plus the t-field cut after
+    the paid C8 job and the cache cuts;
   * after the last call the controller only applies integer ADD/SCALE/SWAP and monomials; 224 targets have rank 145.
-Result: the maximum over every cut is 73, attained by the rank-145 targets: one controller level needs exactly 73
-extra fractional bits.
+Result: the climb output of provider event 11204 (row 63, frame 254) holds y70 alone with coefficient 1/4; bank 31
+reaches it as Q D_T with nine-plane rank 7, so 2 + ceil((136+7)/2) = 74 bits are necessary. The maximum over every
+observed cut is 74: one controller level needs 74 extra fractional bits at these cuts (review of #5438).
 Usage: python3 -I -B verify.py [--write]
 """
 import argparse, collections, gzip, hashlib, importlib.util, json
@@ -133,7 +136,7 @@ class Body:
         self.rows = {i: {(i, ()): F(1)} for i in range(body['physical_field_count'])}
         self.sym = 0; self.S = 0; self.odd = 0; self.cls = {}; self.frames = {}; self.inword = False
         self.groups = []      # in-word: (frame, port, warp word, c_x, c_y)
-        self.helper_witness = None; self.cache = {}
+        self.helper_witness = None; self.cache = {}; self.mode_terms = []
 
     def newsym(self, tag):
         self.sym += 1
@@ -215,8 +218,11 @@ class Body:
                 self.apply(self.role(e[1]), ('W', e[2]))
                 if e[1][0] == 'L':
                     self.frames[e[1][1]] = e[4]
+                self.stat(('warp', t), self.role(e[1]))
             elif k == 'climb':
+                # a Gaussian climb changes the row's chart: its output is a cut of its own
                 self.frames[e[2]] = e[4]
+                self.stat(('climb', t), e[2])
             elif k == 'scalar':
                 g = e[1]; d_ = self.role(g[1])
                 if g[1][0] == 'L' and e[2] is not None:
@@ -245,7 +251,9 @@ class Body:
             cs, o = m['cache_slot'], m['owner']
             self.scale(cs, F(m['cache_scalar']), 'cache_scalar'); self.apply(cs, self.newsym('N'))
             require(not self.rows[o], 'mode owner zero before the cache SWAP')
-            self.rows[cs], self.rows[o] = self.rows[o], {}
+            self.rows[cs], self.rows[o] = self.rows[o], self.rows[cs]
+            require(not self.rows[cs] and self.rows[o], 'cache SWAP transfers the nonzero cache row to its owner')
+            self.mode_terms.append(len(self.rows[o]))
         for f in range(224):
             self.apply(f, self.newsym('Nout'))
 
@@ -373,6 +381,7 @@ def build():
     B = Body(body, prov, word, canonical)
     B.run()
     require(B.dropped == 224, 'the 224 y-field block maps are identity pairs')
+    require(B.mode_terms == [56] * 8, 'each of the eight owners receives its 56-term transformed cache row')
     require(B.odd == 0, 'every coefficient of the complete body is dyadic')
     require(B.S == 6 and B.helper_witness is not None, 'body maximum v2 = 6 with a single-occurrence rank-9 helper term')
     require(B.cls['main'] == 4 and B.cls['helper'] == 6, 'class maxima: main 4, helper 6')
@@ -450,11 +459,15 @@ def build():
     final_rank = max((1 if d[0] else 0) + 8 * sum(d[1:]) for d in caller['controller']['diagonal'])
     targets = ceil2(final_rank)
     require(caller['productive_profile']['145'] == 224 and final_rank == 145 and targets == 73, '224 rank-145 targets need 73')
-    require(best[0] == 73 and tbest <= 73 and cbest <= 73, 'last call: every cut needs at most 73')
+    # review of #5438: the climb output of provider event 11204 (row 63, frame 254) carries y70 alone with
+    # coefficient 1/4; original bank 31 reaches it as Q D_T with 17 stages and nine-plane rank 7: 2 + ceil(143/2) = 74
+    require(best[:6] == (74, '1/4', 143, 31, 70, 254), 'last call: the climb cut of bank 31, port 70 needs 74')
+    require(tbest <= 74 and cbest <= 74, 'last call: every observed cut needs at most 74')
     guard = max(early, best[0], tbest, cbest, targets, 6 + ceil2(9))
-    require(guard == 73, 'controller-level guard is exactly 73')
+    require(guard == 74, 'controller-level guard over the observed cuts is 74')
     return dict(body=dict(max_v2=B.S, helper_witness=B.helper_witness, class_max_v2=B.cls, odd_denominators=0,
                           identity_monomial_pairs=B.dropped, final_X_rows='x_p - y_p on all 112 ports',
+                          mode_owner_terms=B.mode_terms,
                           guard='ceil(9 lambda/2) + 6 (attained)'),
                 controller=dict(early_calls_bound=early, last_call=dict(stage=32, pair=15, in_word_max=best[0],
                                 in_word_witness=best[1:], t_cut_max=tbest, cache_cut_max=cbest,
@@ -472,7 +485,7 @@ def main():
     if args.write:
         path.write_bytes(text.encode('utf-8'))
     require(path.exists() and json.loads(path.read_text(encoding='utf-8')) == json.loads(text), 'stored RESULT.json equals the rebuild')
-    print('PASS_SELECTED_CALLER_BODY_6_CONTROLLER_EXACTLY_73')
+    print('PASS_SELECTED_CALLER_BODY_6_CONTROLLER_74')
 
 
 if __name__ == '__main__':
