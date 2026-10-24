@@ -3,6 +3,19 @@
 The [selected record](certificates/selected-result.json) identifies the current
 frontier; numbered checkpoints below retain their historical attribution.
 
+## Complete neutral caller: κ = 0.003027288235
+
+**Chris R / Clear1nsight (#5413/#5414/#5407)** supplies the completion,
+source application and independent checks; **Dillon Amburgey / dillona (#5402)**
+supplies the coupled provider; **Ali Romman / aliromman (#5398)** supplies the
+retained direct controller and cached-relation work. **Cao Yifan / intqwq
+(#4610)**, **Cinna Davis**, **zxv**, **Jacob Alan Sussman** and the full preceding
+native, BIT, Clifford, compiler, analytic and verification lineage retain credit.
+The [contributor map](docs/research/community-neutral5413-contributors.md)
+distinguishes their roles and links the earlier maps. This is a conditional
+result; the final neutral step improves compiler headroom rather than the raw
+recursive-price ceiling.
+
 ## Joint-helper selected checkpoint: κ = 0.00302015
 
 **Cinna Davis / 1337isnot1337 (#4470)** supplies the selected joint-helper patch,

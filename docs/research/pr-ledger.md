@@ -4776,7 +4776,7 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#5410](https://github.com/CrocSwap/integer-mult-bounds/pull/5410) | jwr404 | incorporated | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5411](https://github.com/CrocSwap/integer-mult-bounds/pull/5411) | aliromman | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5412](https://github.com/CrocSwap/integer-mult-bounds/pull/5412) | aliromman | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
-| [#5413](https://github.com/CrocSwap/integer-mult-bounds/pull/5413) | Clear1nsight | incorporated | [record 1](../../docs/research/pr-intake-decisions.json) · [record 2](../../docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md) |
+| [#5413](https://github.com/CrocSwap/integer-mult-bounds/pull/5413) | Clear1nsight | incorporated | [record 1](../../docs/research/pr-intake-decisions.json) · [record 2](../../docs/research/pr-intake-evidence/pr5413-promotion/PROMOTION.md) · [record 3](../../docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md) |
 | [#5414](https://github.com/CrocSwap/integer-mult-bounds/pull/5414) | Clear1nsight | incorporated | [record 1](../../docs/research/pr-intake-decisions.json) · [record 2](../../docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md) |
 | [#5415](https://github.com/CrocSwap/integer-mult-bounds/pull/5415) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5416](https://github.com/CrocSwap/integer-mult-bounds/pull/5416) | NicholasStone | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |

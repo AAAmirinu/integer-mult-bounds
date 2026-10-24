@@ -89316,8 +89316,8 @@
       "integration_location": [
         "research/coupled-helper-neutral-completion"
       ],
-      "unresolved_question": "Conditional claim passes. Selected-frontier promotion and unified reproduction entry point remain separate; all five inherited assumptions persist. Unmodified Linux replay not run.",
-      "scope": "Fresh all-eight-engine conditional replay, complete caller and source-application review under the five selected assumptions. Darwin RLIMIT_AS adaptation is recorded. No selected-record change.",
+      "unresolved_question": "Selected conditional construction. Five inherited framework assumptions persist; uniform word is not materialized. Unmodified Linux and end-to-end formal verification are not claimed.",
+      "scope": "Selected conditional frontier \u03ba=0.003027288235 after explicit promotion authorization; fresh serial closed-export provider/primary/companion replay, source-bound earlier foundation reuse, five unchanged assumptions. Darwin resource adapter recorded.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": true,
@@ -89327,7 +89327,9 @@
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct23p-20261023.json",
         "docs/research/pr-intake-evidence/pr5413/VALIDATION.json",
-        "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md"
+        "docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md",
+        "docs/research/pr-intake-evidence/pr5413-promotion/PROMOTION.md",
+        "docs/research/pr-intake-evidence/pr5413-promotion/VALIDATION.json"
       ],
       "closure": {
         "kind": "merged_for_archive_only",
