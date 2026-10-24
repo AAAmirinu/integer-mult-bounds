@@ -52,7 +52,7 @@
   "bottleneck_link": "Tests whether center-call deletion survives the first real chronological query and a second generation, and identifies the exact observation and restoration bill.",
   "budget_minutes": 60,
   "stop_rule": "Stop the eight-mode-only helper feed if W3 T=D1 W1 fails even with arbitrary linear T; stop independently purchased QY if the complete retained-query moment fails at a=.004. Do not enlarge this fixed grammar by seeds.",
-  "outcome": "scoped-result",
+  "outcome": "partial",
   "evidence": "Exact source-bound two-generation symbolic replay; 17-bit rank-eight residual Gram; charged all-input native-return exit; exact selected-invoice reconstruction and directed .004 screen.",
   "author": "zxv, with OpenAI Codex assistance",
   "ai_assistance": "Substantial OpenAI Codex assistance for research, code, proof and verification; no subagents. Author-checked, without independent human or kernel acceptance.",
@@ -102,5 +102,11 @@
       "Arbitrary diffs and unpublished work not searched"
     ],
     "public_participation": "No Discussion post sent; the broader active caller claim remains predecessor context."
+  },
+  "freshness": {
+    "upstream_commit": "1ec1119972c9aefe42525172d07b332fcff81cb4",
+    "priority_revision": 7,
+    "checked_utc": "2026-10-24T02:31:00Z",
+    "decision": "Continue same scoped source question; PR5402/5411/5413 heads and canonical main unchanged."
   }
 }
