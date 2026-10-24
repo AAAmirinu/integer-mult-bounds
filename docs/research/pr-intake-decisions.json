@@ -89425,7 +89425,7 @@
       "reviewed_head": "f0cdec0f1de417323a2a4680de3ecce333e8e820",
       "current_head": "f0cdec0f1de417323a2a4680de3ecce333e8e820",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/projection-parity-constants"
       ],
@@ -89435,12 +89435,16 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct23q-20261023.json"
       ],
-      "closure": null
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5416",
+        "merge_commit": "15ec75e15661cb7374fbf496e65500d03b9bd58c"
+      }
     }
   ]
 }

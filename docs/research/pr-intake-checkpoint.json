@@ -1681,5 +1681,49 @@
     "evidence": "docs/research/pr-intake-evidence/pr4610/INTEGRATION.json",
     "status": "Admitted conditional change; frozen foundation reused; no research campaign resumed.",
     "next": "Resume delta-only PR intake at the next queue request. PR5241 scientific follow-up completed; do not repeat unchanged holds or historical suites."
+  },
+  "bulk_intake_20261023_eleventh_pass": {
+    "commits": [
+      "e36f78358ea8995b49050ffc399c900f1b674ee5",
+      "15ec75e15661cb7374fbf496e65500d03b9bd58c"
+    ],
+    "reviewed_heads": 61,
+    "merged": 60,
+    "archive_count": 53,
+    "reviewed_tooling": [
+      5357,
+      5358,
+      5359,
+      5378,
+      5389,
+      5397,
+      5410
+    ],
+    "new_revision_holds": [
+      5386
+    ],
+    "selected_frontier_changed": false,
+    "selected_kappa": "15108879/5000000000",
+    "evidence": [
+      "docs/research/pr-intake-evidence/queue-oct23p-20261023.json",
+      "docs/research/pr-intake-evidence/queue-oct23p-tooling-tests.json",
+      "docs/research/pr-intake-evidence/queue-oct23p-closures.json",
+      "docs/research/pr-intake-evidence/queue-oct23q-20261023.json",
+      "docs/research/pr-intake-evidence/queue-oct23q-closures.json"
+    ],
+    "fresh_queue": {
+      "base": "15ec75e15661cb7374fbf496e65500d03b9bd58c",
+      "observed_at": "2026-10-24T02:56:52.219773+00:00",
+      "counts": {
+        "draft": 178,
+        "waiting_revision": 120,
+        "deferred_replay": 7
+      },
+      "open_count": 305,
+      "actionable_count": 0
+    },
+    "next": "Routine actionable intake is empty. Dedicated scientific next step: review Ali Romman PR5398 direct backward caller via Chris R/Clear1nsight PR5400, and its owned-relation predecessors PR5377/5383, Dugongue compiler refinements PR5387/5390. Distinct coupled completion PR5413 and audit PR5414 claim 0.003027288235, only 5e-12 above PR5398; preserve construction/audit credit and independent source-applicability review. All remain source archives, not selected suppliers. Do not repeat unchanged holds or deferred replays.",
+    "validation_scope": "150 normal and 60 optimized tooling tests (4 platform skips in each mode); 99 mathematical AST-equivalence and package metadata/source checks; normal/optimized historical #1094 control under 1 GiB /180s guards. No full supplier replay, Lean, Docker or hosted workflow; initial sparse-fixture and macOS cleanup failures retained.",
+    "live_processes": []
   }
 }
