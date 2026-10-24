@@ -713,3 +713,9 @@ frontier4610-verify: selected-record-check
 frontier4470-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier4470.XXXXXX"); \
 	env -u PYTHONPATH python3 -B scripts/verify_frontier4470.py --work "$$work/replay"
+
+# Current conditional completion: provider, primary and companion, serially.
+.PHONY: frontier5413-verify
+frontier5413-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier5413.XXXXXX"); \
+		env -u PYTHONPATH python3 -I -B scripts/verify_frontier5413.py --work "$$work/replay"
