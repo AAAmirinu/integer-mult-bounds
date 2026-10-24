@@ -36,16 +36,21 @@ P₀–Q₁ and P₁–Q₀ products are ±4. Each collinearity group of K₁ is
 one point of P₀ and one of P₁. The two points of P₀ are non-collinear.
 
 **Step 3 (A-parts).** Let U_i, V_i be the A-parts of P_i, Q_i, with N_i = Σ_{U_i} uuᵀ. Hadamard columns are
-orthogonal, so N₀ + N₁ = 32I = M₀ + M₁. From U₀ ⟂ V₀, U₁ ⟂ V₁ and the full rank of the sums, all four
-dimensions are 4, S₀ := span U₀ = (span U₁)^⊥ and V₁ ⊆ S₀.
-(a) A 4-space holds at most 16 vectors of {±1}⁸. U₀ and V₁ both span S₀ and share no line (products ±4, not
-±8). So S₀ holds exactly 8 lines and is the graph of a signed permutation, with (s, Ms)·(t, Mt) = 2 s·t.
+orthogonal, so N₀ + N₁ = 32I = M₀ + M₁. Put S_i = span U_i. For x ⟂ S₁, N₁x = 0 gives N₀x = 32x, so
+S₀ = S₁^⊥ and N₀ = 32·P_{S₀}; taking traces, 16·8 = 32·dim S₀, so dim S₀ = dim S₁ = 4. In the same way
+U₀ ⟂ V₀ and U₁ ⟂ V₁ give span V₀ = S₁ and span V₁ = S₀.
+(a) A k-space holds at most 2^k vectors of {±1}⁸ (project to an information set). U₀ and V₁ both span S₀ and
+share no line (products ±4, not ±8), so S₀ holds exactly 8 lines, and likewise S₁ = S₀^⊥ (spanned by U₁ and
+V₀). In this equality case S₀ = {(s, Ms)} on an information set, with each row of M having a single ±1 entry.
+Of the 4⁴·2⁴ = 4096 such maps, the 3712 that are not signed permutations leave no ±1 vector in S₀^⊥ (checked);
+so M is a signed permutation, and (s, Ms)·(t, Mt) = 2 s·t.
 (b) Cross products ±4 force odd Hamming distance, so U₀ is one parity class: 4 pairwise orthogonal directions.
 (c) A point's group partner has A-parts in S₀^⊥, so each point of P₀ uses each direction exactly twice.
 
 **Step 4 (contradiction).** The two lines of p ∈ P₀ on a direction e are twins, so they are (e, w) and (e, −w)
-up to sign. Take a line (±e, w′) of the other point p′ ∈ P₀; it exists by (c). Non-collinearity needs
-|±8 + w·w′| = |±8 − w·w′| = 4, so w·w′ = 0 and both values equal 8. Contradiction. ∎
+up to sign. Take a line (±e, w′) of the other point p′ ∈ P₀; it exists by (c). Non-collinearity with both
+twins needs |8 + x| = 4 and |8 − x| = 4 for x = ±w·w′. The first gives x ∈ {−4, −12} and the second
+x ∈ {4, 12}; no x satisfies both. Contradiction. ∎
 
 The proof uses only two classes sharing one block. This is why the two-class CP-SAT sub-test below is already
 infeasible.
@@ -55,7 +60,8 @@ infeasible.
 `verify.py` (registered, about 1 s, standard library only) checks:
 - that #2244 states the question as open;
 - the Step 2 combinatorics exhaustively on W(3,2);
-- lemmas (a) and (b) by enumeration, and the Step 4 arithmetic;
+- lemmas (a) and (b) by enumeration, including that M is a signed permutation (all 4096 one-entry-per-row
+  signed maps: only the 384 signed permutations leave ±1 vectors in S₀^⊥), and the Step 4 arithmetic;
 - a positive control: the k′ = 1 rung exists, 48 lines in ℝ¹⁶ (frame + Sylvester H₁₆ + bent-shifted H₁₆) built
   and checked exactly, plus two failure controls;
 - the Delsarte inequalities. For each rung the forced distance distribution passes every Gegenbauer
@@ -93,6 +99,9 @@ Structured versions are in `TASK.json`.
 - **Non-dense pairings** (#2244 §11.4) are untouched and remain the larger lever.
 
 ## Credit
+
+James Reed (jwr404) reviewed the proof and supplied the signed-permutation step of (a), the dimension count of
+Step 3 and the cleaner form of Step 4.
 
 The question, the descent proposition, Theorem G and the counts used here are from `line-system-saturation`
 (#2244). This package adds the frame reduction, the hand proof and the checks. Prepared for Mark (Matarener)

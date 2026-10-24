@@ -99,11 +99,26 @@ def check_lemmas():
     ok &= all(dot(lines[i], lines[j]) == 0 for U in parts for i, j in itertools.combinations(U, 2))
     check("(b) only the parity split works, and each parity class is pairwise orthogonal", ok,
           f"{len(parts)} ordered splits")
-    # inner products in S0 = {(s, Ms)} are 2 s.t for a signed permutation M
-    M = [(2, 1), (0, -1), (3, 1), (1, -1)]
-    emb = lambda s: tuple(s) + tuple(sgn * s[i] for i, sgn in M)
-    check("(a') (s,Ms).(t,Mt) = 2 s.t for a signed permutation M",
-          all(dot(emb(s), emb(t)) == 2 * dot(s, t) for s in S for t in S))
+    # (a') M is forced to be a signed permutation: S1 = S0^perp must also hold exactly 8 lines (U1 and V0 span it
+    # and share none), and among all 4^4 * 2^4 one-entry-per-row signed maps only the signed permutations leave
+    # any +-1 vector in S0^perp.  For those, (s,Ms).(t,Mt) = 2 s.t.
+    S8 = list(itertools.product((1, -1), repeat=8))
+    tally = {}
+    perm_ok = True
+    for cols in itertools.product(range(4), repeat=4):
+        for sg in itertools.product((1, -1), repeat=4):
+            emb = lambda s: tuple(s) + tuple(sg[r] * s[cols[r]] for r in range(4))
+            basis = [emb(s) for s in ((1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1))]
+            inside = {emb(s) for s in S}
+            perp = [v for v in S8 if all(dot(v, w) == 0 for w in basis)]
+            is_perm = len(set(cols)) == 4
+            key = (is_perm, len(inside) // 2, len(perp) // 2)
+            tally[key] = tally.get(key, 0) + 1
+            if is_perm:
+                perm_ok &= all(dot(emb(s), emb(t)) == 2 * dot(s, t) for s in S for t in S)
+    check("(a') S0 and S0^perp both hold 8 lines only for the 384 signed permutations (3712 other maps: 0)",
+          tally == {(True, 8, 8): 384, (False, 8, 0): 3712}, str(sorted(tally.items())))
+    check("(a') (s,Ms).(t,Mt) = 2 s.t for every signed permutation M", perm_ok)
 
 
 # ---------------------------------------------------------------- 3. the contradiction (Step 4)
