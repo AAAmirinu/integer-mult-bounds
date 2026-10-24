@@ -11,6 +11,10 @@ native producer, its complete helper and restoration cost, and physical
 COPY at the stated pairing tariff. The exact planning gate leaves less
 than 1/9 per port per local call for the omitted work at exponent 0.0031.
 This package supplies no complete invoice or multiplication theorem.
+A second exact gate charges copies by source dimensions 15 and 22. It still
+has positive allowance at 0.0031: between 1/4 and 3/10 per port, or less
+than 1/10 per local invocation. This gives a possible alternative to the
+smaller pairing-rank service; it does not supply a chronological program.
 
 The [proof](PROOF.md) gives the all-odd-factor construction, the support
 pairing formula, a local scalar involution, and the budget assumptions.

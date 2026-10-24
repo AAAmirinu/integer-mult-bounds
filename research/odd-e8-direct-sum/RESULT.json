@@ -46,6 +46,7 @@
   "budget": {
     "ambient_rank": 73,
     "complete_kappa_claim": false,
+    "copy_tariff_kind": "pairing_rank",
     "granted_paid": {
       "1": 42147840,
       "14": 64512,
@@ -523,6 +524,40 @@
       }
     }
   ],
+  "full_source_copy_budget": {
+    "ambient_rank": 73,
+    "complete_kappa_claim": false,
+    "copy_tariff_kind": "source_dimension",
+    "granted_paid": {
+      "1": 42147840,
+      "15": 8494080,
+      "22": 1536,
+      "8": 4214784
+    },
+    "granted_targets": {
+      "73": 2809856
+    },
+    "proved_coarse_interval_per_port": [
+      "1/4",
+      "3/10"
+    ],
+    "remaining_margin_per_port": [
+      "267882440313842674497736930927160502131836586467737680930258306588871566617039283651002254201290/989406803315791554779851257108851448857779061719659050157500910508322060666932023878299924859957",
+      "1448013190885636078367512563550866938929930224693820047337698343293904829432698294213551119670/5348144882788062458269476891517223501693813596225407077227037478393711132768910056859548296011"
+    ],
+    "remaining_margin_per_port_per_local_call": [
+      "267882440313842674497736930927160502131836586467737680930258306588871566617039283651002254201290/2968220409947374664339553771326554346573337185158977150472502731524966182000796071634899774579871",
+      "482671063628545359455837521183622312976643408231273349112566114431301609810899431404517039890/5348144882788062458269476891517223501693813596225407077227037478393711132768910056859548296011"
+    ],
+    "stages": 3,
+    "test_exponent": "31/10000",
+    "unknown_obligations": [
+      "physical COPY at the source-dimension tariff",
+      "cross-cube producer and all helper lifetimes",
+      "old-value compensation and source restoration",
+      "caller, compiler, precision and outer admission"
+    ]
+  },
   "source_sha256": "ae8aad06aa5d1811d725895b3ab5a4f4daa9dcdd88294aa0d5f723e78bb1e0da",
   "status": "PASS_ODD_E8_DIRECT_SUM_COMPONENT"
 }

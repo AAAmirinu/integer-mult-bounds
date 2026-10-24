@@ -246,21 +246,28 @@ def power_interval(rank):
     return F(rank*unit,lower+1), F(rank*unit,lower)
 
 
-def budget():
+def budget(full_source_copy=False):
     # The complete omitted lifecycle is an unknown signed-moment charge.
     v = 112**3
-    paid = {1:30*v, 8:3*v, 15:6*v, 14:3*21504, 20:3*512}
+    if full_source_copy:
+        paid = {1:30*v, 8:3*v, 15:6*v+3*21504, 22:3*512}
+        coarse = (F(1,4), F(3,10))
+    else:
+        paid = {1:30*v, 8:3*v, 15:6*v, 14:3*21504, 20:3*512}
+        coarse = (F(3,10), F(1,3))
     targets = {73:2*v}
     powers = {r:power_interval(r) for r in set(paid)|set(targets)}
     lower = sum(n*powers[r][0] for r,n in targets.items()) - sum(n*powers[r][1] for r,n in paid.items())
     upper = sum(n*powers[r][1] for r,n in targets.items()) - sum(n*powers[r][0] for r,n in paid.items())
-    need(F(3,10) < lower/v < upper/v < F(1,3), 'The declared remaining budget failed')
+    need(coarse[0] < lower/v < upper/v < coarse[1], 'The declared remaining budget failed')
     return {'test_exponent':'31/10000', 'stages':3, 'ambient_rank':73,
             'granted_paid':paid, 'granted_targets':targets,
             'remaining_margin_per_port':[str(lower/v),str(upper/v)],
             'remaining_margin_per_port_per_local_call':[str(lower/(3*v)),str(upper/(3*v))],
-            'proved_coarse_interval_per_port':['3/10','1/3'],
-            'unknown_obligations':['physical COPY at the pairing tariff',
+            'copy_tariff_kind':'source_dimension' if full_source_copy else 'pairing_rank',
+            'proved_coarse_interval_per_port':[str(x) for x in coarse],
+            'unknown_obligations':['physical COPY at the source-dimension tariff' if full_source_copy
+                                   else 'physical COPY at the pairing tariff',
                                    'cross-cube producer and all helper lifetimes',
                                    'old-value compensation and source restoration',
                                    'caller, compiler, precision and outer admission'],
@@ -304,7 +311,8 @@ def run():
               'source_sha256':SOURCE_HASH,
               'base':geometry(data), 'core':core(data),
               'families':[family(k) for k in range(1,16,2)],
-              'budget':budget(), 'controls':controls(data)}
+              'budget':budget(), 'full_source_copy_budget':budget(True),
+              'controls':controls(data)}
     triple = result['families'][1]
     need((triple['ports'],triple['fitting_rank'],triple['factor_terms'],triple['pairing_mass'])
          == (1404928,20480,22016,311296), 'The triple certificate changed')

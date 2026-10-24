@@ -58,7 +58,7 @@
   "budget_minutes": null,
   "stop_rule": "Complete and publish this source-bound geometry component. Do not expand a native schedule until its whole helper and boundary ledger fits the stated allowance. A failed candidate schedule does not exclude other producers.",
   "outcome": "partial",
-  "evidence": "Exact base mask and covariance; eight feature support contracts; 7168 feature-pair and 512 feature-triple spans; all 2744 product-cube parity spans; exact coefficients and spectra for odd k through 15; integer-certified 0.0031 budget brackets and four rejecting controls. No native word or complete kappa calculation.",
+  "evidence": "Exact base mask and covariance; eight feature support contracts; 7168 feature-pair and 512 feature-triple spans; all 2744 product-cube parity spans; exact coefficients and spectra for odd k through 15; integer-certified 0.0031 budget brackets and four rejecting controls. No native word or complete kappa calculation. A second exact gate with full source-dimension copies retains moment between v/4 and 3v/10 at the same exponent.",
   "author": "Ali Romman",
   "ai_assistance": "Substantial OpenAI Codex assistance with construction, proof and verification. No separate human or formal-kernel review is claimed.",
   "open_questions": [
@@ -71,7 +71,7 @@
     {
       "question": "Can one rank-14 feature-pair term be copied at its pairing tariff?",
       "why_it_matters": "The source support has dimension15 and is degenerate. Pairing rank14 alone does not supply physical acquisition and cleanup.",
-      "first_step": "Implement one actual feature-pair COPY with exact phases, source access, old-value compensation and owned cleanup.",
+      "first_step": "Implement one actual feature-pair COPY with exact phases, source access, old-value compensation and owned cleanup. Alternatively, use source-dimension copies and the smaller remaining allowance in PROOF.md section 8.",
       "blocked_by": "The package proves the binary tariff but does not emit the physical COPY service."
     }
   ]

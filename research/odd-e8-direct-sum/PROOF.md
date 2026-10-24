@@ -243,4 +243,27 @@ by assumption of the result. The favorable incomplete moment is not a
 supplier exponent, an outer exponent or an admission certificate. No
 balanced-interface a/(1+a) conversion is applied.
 
+## 8. A gate with full source-dimension copies
+
+The positive allowance does not require the smaller pairing tariff. Replace
+one rank-14 copy by rank 15 for every feature pair, and one rank-20 copy by
+rank 22 for every feature triple. The copy mass becomes
+
+```
+15*21504 + 22*512 = 333824 = (163/686)*v.
+paid:    H1:30v, H8:3v, H15:6v+64512, H22:1536
+targets: H73:2v.
+```
+
+At the same exponent 31/10000, the exact remaining moment lies between
+v/4 and 3v/10. Its value per port is about 0.2707505542. Thus less than
+1/10 per port per local invocation remains for all omitted work.
+
+This is a second planning gate. It does not assert that these copies have
+been scheduled. A producer could use it without implementing the smaller
+pairing-rank service. It would still need to supply the source totals at
+their actual frames, compatible target reads, compensation for arbitrary
+old values, and every helper return. All other assumptions of section 7
+remain in force.
+
 Prepared by Ali Romman with substantial OpenAI Codex assistance. Apache-2.0.
