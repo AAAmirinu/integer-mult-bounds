@@ -70,13 +70,13 @@
     ]
   },
   "scope_status": "refined",
-  "actual_scope": "Is the current-version observation b = Z Q Y, which makes the #5415 coupled-provider exit cost 8 H1 instead of 120 H1 per backward FULL, already present in any retained native or caller observation of the selected p16 caller (PR5402 provider word, #4610 word, #5415 successor controller)?",
+  "actual_scope": "Is the current-version observation b = Z Q Y, which makes the #5415 coupled-provider exit cost 8 H1 instead of 120 H1 per backward FULL, already present in any retained native or caller observation of the selected p16 caller (PR5402 provider word, #4610 word, #5415 successor controller)? Part 2: can any paid native climb or paid caller output be replaced by reusing earlier responses (the global occurrence ledger of #5423)?",
   "scope_change_reason": "The card asks for a changed demand or a recovered query with legal reads. #5415 (open question 1), #5419 (ranked experiment 1) and #5425 (open question 1) name the concrete instance: supply Z Q Y from already paid observations. This package answers that instance negatively in the formal free-word grammar.",
-  "bottleneck_link": "Negative result: the supplied-observation branch of #5415 section 4 (rank surplus 1776, positive .004 screen) has no free producer; every route to the coupled exit must pay new Gaussian work for b, and the purchased route already fails.",
+  "bottleneck_link": "Negative result: the supplied-observation branch of #5415 section 4 (rank surplus 1776, positive .004 screen) has no free producer; every route to the coupled exit must pay new Gaussian work for b, and the purchased route already fails. Part 2: no paid job of the frozen words is a free combination of earlier responses, so response reuse gives no recursive saving without a changed word or input relations.",
   "budget_minutes": 120,
-  "stop_rule": "Stop at the exact span certificates (native: three words; caller: 18 backward FULLs at return and with whole history) and their controls; do not start a new native word or a decoder search.",
+  "stop_rule": "Stop at the exact span certificates (native: three words; caller: 18 backward FULLs at return and with whole history) and the part 2 reuse census with its controls; do not start a new native word or a decoder search.",
   "outcome": "negative-result",
-  "evidence": "verify.py binds the three inputs by SHA256, replays exact rows, and certifies dim(V cap pure y)=0 for the full-frame span of every native word and Q Y outside the free-factor span at every caller return; controls (endpoints, injected pure y, Y, Q^2 Y) show the tests can answer yes; RESULT.json records the depth-2 caller run.",
+  "evidence": "verify.py binds the three inputs by SHA256, replays exact rows, and certifies dim(V cap pure y)=0 for the full-frame span of every native word and Q Y outside the free-factor span at every caller return; controls (endpoints, injected pure y, Y, Q^2 Y) show the tests can answer yes; RESULT.json records the depth-2 caller run. Part 2: reuse census, EARLY and LATE windows, 0 of 3,282/3,298/3,298 native paid events and 0 of 63 caller paid outputs, with injected-copy and repeated-query controls.",
   "author": "Mark (Matarener)",
   "ai_assistance": "Prepared with substantial Claude Code (Claude) assistance.",
   "open_questions": [

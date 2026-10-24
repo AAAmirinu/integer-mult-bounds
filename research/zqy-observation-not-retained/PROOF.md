@@ -39,3 +39,21 @@ All coefficients are dyadic. Reduction modulo the odd prime `2^61 − 1` is a
 ring map on such rationals, so a rational identity `target = Σ c_i v_i` maps to
 an identity modulo p. The computed non-membership modulo p therefore implies
 non-membership over the rationals.
+
+## Part 2: response reuse
+
+Native: with the same rows and frames, a paid climb of f (A → B) producing row r
+can be removed iff (r, B) can be built for free before f is next read or written.
+Free values in B are the span of the versions that stood in B, kept by owned
+copies. f itself can always be emptied by COPY C←f, f −= C, CLEAR C, followed by a
+zero-retag A → B. The test of r against that span is therefore exactly the
+removal criterion in this grammar (EARLY: versions before the climb; LATE:
+versions before the next touch of f). To exclude f's own new value from the LATE
+span, it enters as r + e_tag with a fresh coordinate. Then e_tag is in the span
+iff r is a combination of the other versions. Within LATE, other climbs' results
+also carry their own tags. A reuse of another climb's raw result is then seen by
+the EARLY test of whichever of the two climbs comes later.
+
+Caller: a paid caller output can be removed iff it is a free image of earlier
+versions. Free left factors are `Q^{±2}`, `W_t` and `Z_t`; combinations use
+scalar ADD.

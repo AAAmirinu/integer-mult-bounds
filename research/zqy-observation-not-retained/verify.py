@@ -28,6 +28,14 @@ Arithmetic is modulo the prime 2^61-1. All coefficients are dyadic, so an identi
 the rationals reduces to one modulo p; non-membership modulo p therefore implies
 non-membership over the rationals. Controls show that both tests can say yes.
 
+Part 2 (response reuse, the "global occurrence ledger" of #5423): no paid job can be
+replaced by an earlier response.
+ R1 native: for every paid climb/centre (frame A -> B, row r), r is not in the span of the
+    versions that stood in B before it (EARLY), nor of the other B versions that exist before
+    the next event touching the field (LATE; own result tagged). Injected-copy controls.
+ R2 caller: no thin QUERY response, IDLE bank output or LOCAL Y output lies in the span of
+    the earlier versions after free left factors Q^{+-2}, W_t, Z_t. Repeated-query control.
+
 Usage: python3 -I -W error -B verify.py [--write] [--left-depth 2]
 Exit 0 and marker PASS_ZQY_OBSERVATION_NOT_RETAINED iff every check passes and RESULT.json matches.
 """
@@ -349,6 +357,188 @@ def caller_level(ctl, depth):
     return out
 
 
+# ---------------------------------------------------------------- part 2: response reuse
+def native_events(canon, program, backward):
+    """Per event: (index, kind, role, row after, frame before, frame after, rank, source role)."""
+    rows = {('L', i): {(('L', i), ()): Fr(1)} for i in range(632)}
+    frames = {('L', i): canon['start'][i] for i in range(632)}
+
+    def get(r):
+        if r not in rows:
+            rows[r] = {(r, ()): Fr(1)}
+            frames[r] = None
+        return rows[r]
+    out = []
+    for idx, e in enumerate(program):
+        k = e[0]
+        if k == 'scalar':
+            g, frame = e[1], e[2]
+            dst = tuple(g[1]); get(dst); old = frames[dst]; src = None
+            if g[0] == 'clear':
+                rows[dst] = {}; frames[dst] = frame
+            elif g[0] == 'copy':
+                src = tuple(g[2]); rows[dst] = dict(get(src)); frames[dst] = frame
+            elif g[0] == 'add':
+                src = tuple(g[2]); q = Fr(g[3], g[4]); r = rows[dst]
+                for key, v in get(src).items():
+                    nv = r.get(key, 0) + q * v
+                    if nv:
+                        r[key] = nv
+                    else:
+                        r.pop(key, None)
+            elif g[0] == 'scale':
+                q = Fr(g[2], g[3]); rows[dst] = {a: q * v for a, v in rows[dst].items()}
+            out.append((idx, 'scalar', dst, dict(rows[dst]), old, frames[dst], None, src))
+        elif k == 'warp':
+            _, role, op, old, new = e
+            dst = tuple(role); get(dst)
+            sym = (1 if op > 0 else -1) * (abs(op) + (10 ** 6 if backward else 0))
+            rows[dst] = {(r, w[1:] if w and w[0] == -sym else (sym,) + w): q for (r, w), q in rows[dst].items()}
+            frames[dst] = new
+            out.append((idx, 'warp', dst, dict(rows[dst]), old, new, None, None))
+        elif k in ('climb', 'center'):
+            dst = ('L', e[2]) if k == 'climb' else ('C', e[1]); get(dst)
+            old, new, rank = (e[3], e[4], e[5]) if k == 'climb' else (e[2], e[3], e[4])
+            frames[dst] = new
+            out.append((idx, k, dst, dict(rows[dst]), old, new, rank, None))
+        elif k == 'zero_retag':
+            dst = ('L', e[1]); old = frames[dst]; frames[dst] = e[3]
+            out.append((idx, 'zero_retag', dst, dict(rows[dst]), old, e[3], None, None))
+    return out
+
+
+def reuse_census(ev, inject=None):
+    """EARLY: a paid result r (frame A->B) lies in the span of every version that stood in B
+    before the climb. LATE: r lies in the span of the other B versions that exist before the
+    next event touching the field; the own result is stored as r + e_tag, so e_tag is in the
+    span iff r is a combination of the others."""
+    touches = {}
+    for j, x in enumerate(ev):
+        touches.setdefault(x[2], []).append(j)
+        if x[7] is not None:
+            touches.setdefault(x[7], []).append(j)
+    index, spans, tspans, pending = {}, {}, {}, []
+    early, late, paid, by_rank = [], [], 0, {}
+    for j, (idx, kind, dst, row, a, b, rank, src) in enumerate(ev):
+        while pending and pending[0][0] <= j:
+            _, tag, fr, info = pending.pop(0)
+            if not tspans[fr].reduce({tag: 1}):
+                late.append(info)
+        tag = None
+        if kind in ('climb', 'center'):
+            paid += 1
+            by_rank[str(rank)] = by_rank.get(str(rank), 0) + 1
+            info = {'event': idx, 'role': list(dst), 'from': a, 'to': b, 'rank': rank}
+            m = modrow(row, index) if row else {}
+            if not row or not spans.setdefault(b, Span()).reduce(m):
+                early.append(info)
+            else:
+                nxt = [t for t in touches[dst] if t > j]
+                tag = (1 << 40) + j
+                pending.append((nxt[0] if nxt else len(ev), tag, b, info))
+                pending.sort(key=lambda x: x[0])
+        if inject is not None and idx == inject[0]:
+            v = modrow(inject[2], index)
+            spans.setdefault(inject[1], Span()).add(v)
+            tspans.setdefault(inject[1], Span()).add(v)
+        if row and b is not None:
+            v = modrow(row, index)
+            spans.setdefault(b, Span()).add(v)
+            tv = dict(v)
+            if tag is not None:
+                tv[tag] = 1
+            tspans.setdefault(b, Span()).add(tv)
+    for _, tag, fr, info in pending:
+        if not tspans[fr].reduce({tag: 1}):
+            late.append(info)
+    return {'paid_events': paid, 'paid_by_rank': by_rank, 'early_reuse': early, 'late_reuse': late}
+
+
+def native_reuse(name, canon, program, backward, control):
+    ev = native_events(canon, program, backward)
+    out = reuse_census(ev)
+    need(not out['early_reuse'] and not out['late_reuse'], name + ': a paid result is reusable')
+    if control:
+        j, first = next((j, x) for j, x in enumerate(ev) if x[1] == 'climb' and x[6] == 1 and x[3])
+        before = reuse_census(ev, inject=(ev[j - 1][0], first[5], first[3]))
+        after = reuse_census(ev, inject=(first[0], first[5], first[3]))
+        need([x['event'] for x in before['early_reuse']] == [first[0]], name + ': EARLY control')
+        need([x['event'] for x in after['late_reuse']] == [first[0]] and not after['early_reuse'], name + ': LATE control')
+        out['controls'] = {'injected_before_climb_found_early': first[0], 'injected_after_climb_found_late_only': first[0]}
+    out['early_reuse'] = len(out['early_reuse'])
+    out['late_reuse'] = len(out['late_reuse'])
+    return out
+
+
+def caller_reuse(ev, nf):
+    """Each paid caller output (QUERY response, IDLE bank output, LOCAL Y output) against the
+    span of all earlier versions after free left factors Q^{+-2}, W_t, Z_t (length <= 1)."""
+    rows = [{(('in', j), ()): Fr(1)} for j in range(nf)]
+    versions = [dict(r) for r in rows]
+    stages = sorted({e[1] for e in ev if e[0] == 'LOCAL'})
+    frees = [(), (('Q', 1), ('Q', 1)), (('Q', -1), ('Q', -1))]
+    frees += [(('W%d' % t, 1),) for t in stages] + [(('Z%d' % t, 1),) for t in stages]
+    index, V, hits = {}, Span(), []
+    tested = {'QUERY': 0, 'IDLE': 0, 'LOCAL_Y': 0}
+    done = [0]
+
+    def test(i, kind, out):
+        for v in versions[done[0]:]:
+            for f in frees:
+                V.add(modrow(left(v, *f) if f else v, index))
+        done[0] = len(versions)
+        tested[kind] += 1
+        if not V.reduce(modrow(out, index)):
+            hits.append([i, kind])
+    for i, e in enumerate(ev):
+        k = e[0]
+        if k == 'LOCAL':
+            s, p = e[1], e[2]
+            x, y = 2 * p, 2 * p + 1
+            D, h = ('D%d' % s, 1), {(('h', s), ()): Fr(1)}
+            yold = rows[y]
+            newx = plus(plus(left(rows[x], D), left(yold, D, ('Q', 1)), -1), left(h, D, ('Q', 1), ('W%d' % s, 1)))
+            newy = left(yold, D)
+            test(i, 'LOCAL_Y', newy)
+            rows[x], rows[y] = newx, newy
+            versions += [dict(newx), dict(newy), plus(left(h, D), left(yold, D, ('Z%d' % s, 1)), -1)]
+        elif k == 'IDLE':
+            for j in (2 * e[1], 2 * e[1] + 1):
+                out = left(rows[j], *[('D%d' % st, 1) for st in reversed(e[2])])
+                test(i, 'IDLE', out)
+                rows[j] = out
+                versions.append(dict(out))
+        elif k == 'ADD':
+            rows[e[1]] = plus(rows[e[1]], rows[e[2]], e[3])
+            versions.append(dict(rows[e[1]]))
+        elif k == 'QUERY_SHEAR':
+            resp = left(rows[2 * e[2]], ('Q', -1))
+            test(i, 'QUERY', resp)
+            versions.append(resp)
+            rows[2 * e[2] + 1] = plus(rows[2 * e[2] + 1], resp)
+            versions.append(dict(rows[2 * e[2] + 1]))
+        elif k == 'SIGNED_SWAP':
+            a, b = e[1], e[2]
+            rows[a], rows[b] = rows[b], {kk: -v for kk, v in rows[a].items()}
+        elif k == 'Q_POWER':
+            rows[e[1]] = left(rows[e[1]], *([('Q', 1 if e[2] > 0 else -1)] * abs(e[2])))
+            versions.append(dict(rows[e[1]]))
+        else:
+            raise AssertionError('unknown caller event ' + repr(k))
+    return tested, hits
+
+
+def caller_reuse_level(ctl):
+    ev, nf = ctl['physical_events'], 2 * ctl['pairs']
+    qi = next(i for i, e in enumerate(ev) if e[0] == 'QUERY_SHEAR')
+    _, chits = caller_reuse(ev[:qi + 1] + [ev[qi]] + ev[qi + 1:], nf)
+    need(chits == [[qi + 1, 'QUERY']], 'control: a repeated thin query is found')
+    tested, hits = caller_reuse(ev, nf)
+    need(tested == {'QUERY': 15, 'IDLE': 30, 'LOCAL_Y': 18}, 'paid caller output census')
+    need(not hits, 'a paid caller output is reusable: %r' % hits)
+    return {'paid_outputs_tested': tested, 'reusable': 0, 'control_repeated_query_found_at_event': qi + 1}
+
+
 def main():
     write = '--write' in sys.argv
     depth = 1
@@ -359,7 +549,7 @@ def main():
     ctl = read_input('caller')
     need(prov['source_sha256'] == 'cfcd36b40326d7a5815e1db5313444379b3fb756b27d5201c561574c085cc0dd'
          and prov['direction'] == 'backward', 'provider word is the PR5402 backward word over the #4610 canonical frames')
-    result = {'schema': 'zqy-observation-not-retained/1', 'native': {}, 'caller': None,
+    result = {'schema': 'zqy-observation-not-retained/2', 'native': {}, 'caller': None,
               'arithmetic': 'exact dyadic rows, spans modulo 2^61-1 (non-membership mod p implies non-membership over Q)'}
     for name, prog, bw in (('pr5402_provider_backward', prov['word'], True),
                            ('pr4610_backward', word['programs']['backward'], True),
@@ -369,6 +559,15 @@ def main():
         print('[native %s] %s' % (name, json.dumps(out, sort_keys=True)), flush=True)
     result['caller'] = caller_level(ctl, depth)
     print('[caller] %s' % json.dumps({k: v for k, v in result['caller'].items() if k != 'per_call'}, sort_keys=True), flush=True)
+    result['reuse'] = {'native': {}, 'caller': None}
+    for name, prog, bw in (('pr5402_provider_backward', prov['word'], True),
+                           ('pr4610_backward', word['programs']['backward'], True),
+                           ('pr4610_forward', word['programs']['forward'], False)):
+        out = native_reuse(name, word['canonical'], prog, bw, control=(name == 'pr5402_provider_backward'))
+        result['reuse']['native'][name] = out
+        print('[reuse native %s] %s' % (name, json.dumps(out, sort_keys=True)), flush=True)
+    result['reuse']['caller'] = caller_reuse_level(ctl)
+    print('[reuse caller] %s' % json.dumps(result['reuse']['caller'], sort_keys=True), flush=True)
     if depth != 1:
         print('left depth %d run: RESULT.json is recorded at depth 1; not compared' % depth)
         print('PASS_ZQY_OBSERVATION_NOT_RETAINED')

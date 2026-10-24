@@ -158,5 +158,60 @@
    "versions_with_y_content": 1851
   }
  },
- "schema": "zqy-observation-not-retained/1"
+ "reuse": {
+  "caller": {
+   "control_repeated_query_found_at_event": 10,
+   "paid_outputs_tested": {
+    "IDLE": 30,
+    "LOCAL_Y": 18,
+    "QUERY": 15
+   },
+   "reusable": 0
+  },
+  "native": {
+   "pr4610_backward": {
+    "early_reuse": 0,
+    "late_reuse": 0,
+    "paid_by_rank": {
+     "1": 2201,
+     "2": 412,
+     "3": 510,
+     "4": 127,
+     "5": 40,
+     "8": 8
+    },
+    "paid_events": 3298
+   },
+   "pr4610_forward": {
+    "early_reuse": 0,
+    "late_reuse": 0,
+    "paid_by_rank": {
+     "1": 2201,
+     "2": 412,
+     "3": 510,
+     "4": 127,
+     "5": 40,
+     "8": 8
+    },
+    "paid_events": 3298
+   },
+   "pr5402_provider_backward": {
+    "controls": {
+     "injected_after_climb_found_late_only": 6276,
+     "injected_before_climb_found_early": 6276
+    },
+    "early_reuse": 0,
+    "late_reuse": 0,
+    "paid_by_rank": {
+     "1": 2193,
+     "2": 412,
+     "3": 510,
+     "4": 127,
+     "5": 40
+    },
+    "paid_events": 3282
+   }
+  }
+ },
+ "schema": "zqy-observation-not-retained/2"
 }
