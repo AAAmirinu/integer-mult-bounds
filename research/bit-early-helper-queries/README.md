@@ -110,7 +110,7 @@ supplies the regenerated word and actual route binding used here.
 The entrance prologue follows
 [PR #5388](https://github.com/CrocSwap/integer-mult-bounds/pull/5388) and its
 [pinned proof](https://github.com/CrocSwap/integer-mult-bounds/blob/568717635d8d11175a80024c9c596e16f54b1ea4/research/native-helper-query-bank/PROOF.md).
-That pending proof is conceptual credit, not an executable dependency.
+That proof is conceptual credit, not an executable dependency.
 [PR #5421](https://github.com/CrocSwap/integer-mult-bounds/pull/5421) instead
 uses nine owned BIT relations in the reverse word. This package preserves
 arbitrary forward helper inputs and does not delete their target credits.
