@@ -54,7 +54,8 @@
       "path": "research/physical-ordinary-interchange/SOURCES.json",
       "usage": "input",
       "git_blob": "f0e1877ea78229c360341de588d0a25860bc81cb",
-      "sha256": "9bd482ede96f1d554aa9e5f6a826684d551c9847679400df6c1cca2570fdf475"
+      "sha256": "9bd482ede96f1d554aa9e5f6a826684d551c9847679400df6c1cca2570fdf475",
+      "pin": "head:32890bc5de034ab8fc93ac88ead7279a6a416d04:research/physical-ordinary-interchange/SOURCES.json"
     },
     {
       "path": "research/selected-bit-fast-primitives/SOURCES.json",
