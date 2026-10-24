@@ -51,7 +51,39 @@ def tampered_result():
     V.require(stored['quotient']['tight'] == 0, 'stored RESULT.json equals the rebuild')
 
 
+import complex as CX  # noqa: E402
+
+
+def complex_missing_relation():
+    rel = json.loads(CX.RELATIONS.read_text(encoding='utf-8'))
+    word = json.loads(CX.gzip.decompress(CX.WORD.read_bytes()))
+    A, B = CX.candidates(word)
+    V0 = CX.Echelon()
+    for row in rel['rows'][:-1]:
+        V0.add({int(k): CX.Q(s) for k, s in row.items()})
+    CX.require(len({t for t, _, v in B if not V0.reduce(v)}) == 8, 'V0 frees all eight centre jobs')
+
+
+def complex_dependent_row():
+    word = json.loads(CX.gzip.decompress(CX.WORD.read_bytes()))
+    A, B = CX.candidates(word)
+    rows = [v for _, _, v in A]
+    rows.append({k: 2 * x for k, x in rows[0].items()})
+    E = CX.Echelon()
+    CX.require(all(E.add(v) for v in rows), 'remaining pure-cold climb rows are linearly independent modulo V0')
+
+
+def complex_corrupted_rank():
+    word = json.loads(CX.gzip.decompress(CX.WORD.read_bytes()))
+    e = next(ev for ev in word['programs']['backward'] if ev[0] == 'climb')
+    e[5] += 1
+    CX.candidates(word)
+
+
 for name, fn in [('drifted input hash', drift), ('corrupted MOVE rank in the source records', corrupted_record),
-                 ('dependent part in the partition certificate', dependent_part), ('tampered RESULT.json', tampered_result)]:
+                 ('dependent part in the partition certificate', dependent_part), ('tampered RESULT.json', tampered_result),
+                 ('complex: one #5383 relation dropped', complex_missing_relation),
+                 ('complex: injected dependent row', complex_dependent_row),
+                 ('complex: corrupted climb rank', complex_corrupted_rank)]:
     rejects(name, fn)
 print('PASS_BIT_RELATION_SUBSPACES_CONTROLS')

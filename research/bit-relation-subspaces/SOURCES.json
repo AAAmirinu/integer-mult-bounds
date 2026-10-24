@@ -25,6 +25,18 @@
       "usage": "input",
       "git_blob": "bdf9ab4ca0fd74cde6837f95f5f4e88133704e0e",
       "sha256": "ea44aa047a2a9cf034de8b56b2166c49cf2dbdf9cd9ed6a20299a4f2b05ef09a"
+    },
+    {
+      "path": "research/kappa-round3-warp-20261022/ACTUAL-WORD.json.gz",
+      "usage": "input",
+      "git_blob": "46d929df83817b85a5387bcdb9745e0627d6366e",
+      "sha256": "7679daa4ec6a40f56fc7f0202379a6f454310e94945aba4f48beaaaafb838d05"
+    },
+    {
+      "path": "research/eight-owned-relations/RELATIONS.json",
+      "usage": "input",
+      "git_blob": "f558b9ddd903badb2301944cb978824b32ad42f7",
+      "sha256": "bc9ba05595497f399da5e5a548b2d2c83696e539fa1257ab7e2cb49d438cd9dd"
     }
   ]
 }

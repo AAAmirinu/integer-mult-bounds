@@ -1,4 +1,4 @@
-# No further BIT helper relation subspace after #5421
+# No further owned-helper relation subspace after #5421 (BIT) and #5383 (complex)
 
 **Negative result; no new κ and no new BIT saving.**
 
@@ -47,16 +47,43 @@ A row in a tight subspace (`w = 8 dim`) is one for which an extra copy cannot be
 Since `r^t <= r` for `r >= 1`, the moment change is at most `(7.5 - 8^t) dim V < 0`.
 [RESULT.json](RESULT.json) holds the rebuilt numbers.
 
+## Part 2: the complex word
+
+The binding complex side uses Cao Yifan's #4610 word with the eight owned relations of
+[PR #5383](https://github.com/CrocSwap/integer-mult-bounds/pull/5383) (Ali Romman), carried through #5392,
+#5398 and the selected #5413 caller. The #5413 caller adds 144 paid and 144 target rank-8 jobs, which
+cancel rank by rank. [complex.py](complex.py) replays the backward word exactly over Q with warp words.
+The model is #5377/#5383's: 326 cold helpers carry rank-9 targets. A climb is freed when its row lies
+in V. A centre job is freed when its row minus an earlier same-frame snapshot lies in V.
+
+| Check | Result |
+|---|---|
+| Backward paid profile | `{1:2201, 2:412, 3:510, 4:127, 5:40, 8:8}` |
+| Candidates | 163 pure-cold climb rows, 56 centre snapshot options |
+| #5383's eight relations | free all eight centres and exactly eight rank-1 zero-site climbs |
+| Remaining climb rows modulo them | 155 rows, linearly independent over Q, rank mass at most 3 |
+
+Because the remaining rows are independent, any further subspace V contains at most `dim V` of them.
+It frees at most `3 dim V` of paid mass, against `9^t dim V = 8.9403 dim V` of lost targets. Every
+extension of #5383's relations therefore loses at least 5.94 raw moment per local call at the
+selected `C = 0.003027288235`. [RESULT-COMPLEX.json](RESULT-COMPLEX.json) holds the rebuild. The result
+does not cover a relation set that omits #5383's eight relations. Snapshot options are alternatives for
+one centre, so they are not single matroid elements. The centre-exchange cap of
+[owned-relation-exhaustion](../owned-relation-exhaustion/README.md) already limits that family, and all
+eight centres are already used.
+
 ## Reproduce
 
 ```sh
 python3.12 -B scripts/research_package.py --package research/bit-relation-subspaces
 python3.12 -I -B research/bit-relation-subspaces/verify.py
+python3.12 -I -B research/bit-relation-subspaces/complex.py
 python3.12 -I -B research/bit-relation-subspaces/test_verify.py
 ```
 
 The verifier uses only the standard library and finishes in about half a minute. It prints
-`PASS_BIT_RELATION_SUBSPACES_NO_FURTHER_GAIN_AFTER_5421`. The controls print
+`PASS_BIT_RELATION_SUBSPACES_NO_FURTHER_GAIN_AFTER_5421`. Part 2 prints
+`PASS_COMPLEX_RELATION_SUBSPACES_NO_FURTHER_GAIN_AFTER_5383` in a few seconds. The controls print
 `PASS_BIT_RELATION_SUBSPACES_CONTROLS`.
 
 ## Scope
@@ -71,13 +98,12 @@ removes. The nine relations come from the source word itself, so #5421 is not a 
 - Does a changed chronological order or a different BIT word admit a relation subspace of density
   above `8^t`? First run the same 8- and 15-part splits on its job rows. No frozen changed BIT word with an
   admitted invoice is available yet.
-- Does the same certificate close relation subspaces on the selected complex word, which is the binding
-  side? Complex relation searches so far tested single relations. A subspace of density above `9^t` there
-  would raise κ directly. The partition must run over Q with rank-9 targets.
+- Can a complex relation set that omits #5383's eight relations beat them? First enumerate one
+  snapshot option per centre and run the same independence test on each choice.
 
 ## Credit
 
 DreamingOfClouds (PR #589) and eumemic (PR #555) supplied the source word and port construction.
-Ali Romman's PR #5421 and PR #5383 supplied the owned-helper relation method that this package
+Cao Yifan supplied the #4610 word. Ali Romman's PR #5421, PR #5377 and PR #5383 supplied the owned-helper relation method that this package
 generalises. zxv's PR #5428 named relation-space selection as a target. Prepared by Mark (Matarener)
 with substantial Claude Code assistance. New work is Apache-2.0.

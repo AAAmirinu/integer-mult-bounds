@@ -5,7 +5,9 @@
   "requirements": [],
   "inputs": [
     "research/kappa-rebuild/bit/sources/pr589-regenerated/WORD.json.gz",
-    "research/kappa-rebuild/bit/sources/pr589-regenerated/records/249-records.bin"
+    "research/kappa-rebuild/bit/sources/pr589-regenerated/records/249-records.bin",
+    "research/kappa-round3-warp-20261022/ACTUAL-WORD.json.gz",
+    "research/eight-owned-relations/RELATIONS.json"
   ],
   "commands": [
     {
@@ -23,10 +25,20 @@
         "{python}",
         "-I",
         "-B",
+        "{package}/complex.py"
+      ],
+      "timeout_seconds": 300,
+      "checks": "Part 2 (complex #4610 backward word): pinned inputs; backward paid profile; #5383's eight relations free all eight centres and exactly eight rank-1 zero-site climbs; modulo them the 155 remaining pure-cold climb rows are linearly independent over Q with rank mass <= 3, so any further relation subspace frees <= 3 dim V (moment loss >= 5.94 per dimension at C = 0.003027288235); stored RESULT-COMPLEX.json equals the rebuild."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
         "{package}/test_verify.py"
       ],
       "timeout_seconds": 300,
-      "checks": "Rejecting controls: drifted input hash, corrupted MOVE rank in the source records, a dependent part in the partition certificate, tampered RESULT.json."
+      "checks": "Rejecting controls: drifted input hash, corrupted MOVE rank in the source records, a dependent part in the partition certificate, tampered RESULT.json. Complex: one #5383 relation dropped, an injected dependent row, a corrupted climb rank."
     }
   ]
 }

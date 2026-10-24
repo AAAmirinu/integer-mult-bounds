@@ -41,13 +41,13 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "On the PR589 reverse BIT word used by PR #5421, can any subspace of owned helper relations (any dimension, any combination, not only single relations) make more paid jobs free than it costs in lost rank-8 helper targets, after #5421's nine COPY relations?",
+  "actual_scope": "On the PR589 reverse BIT word used by PR #5421, can any subspace of owned helper relations (any dimension, any combination, not only single relations) make more paid jobs free than it costs in lost rank-8 helper targets, after #5421's nine COPY relations? Part 2: the same question on the complex #4610 backward word (the local word of the selected #5383 -> #5398 -> #5413 chain) after #5383's eight relations.",
   "scope_change_reason": "PR #5421 removes nine COPY jobs with nine owned helper relations and states that a further BIT gain needs a new relation space; PR #5428 (target 6) proposes systematic relation-space selection. This package answers that question exactly for the fixed source word by a matroid-union certificate instead of a search, rather than constructing a new helper interface.",
-  "bottleneck_link": "Side result; no new kappa and no new BIT saving. It closes the relation-space extension of #5421 on its own word: every additional relation dimension loses at least 0.44 raw moment per local call.",
+  "bottleneck_link": "Side result; no new kappa and no new BIT saving. It closes the relation-space extension of #5421 on its BIT word (each extra relation dimension loses >= 0.44 raw moment per local call) and of #5383 on the binding complex word (>= 5.94).",
   "budget_minutes": 120,
   "stop_rule": "Stop at the exact certificate for the fixed word; do not change the chronology, the word or the helper inventory.",
   "outcome": "negative-result",
-  "evidence": "verify.py replays the reversed PR589 records over GF(2) (2,920 paid jobs, 2,384 with a legal relation row), recovers exactly #5421's nine relations as the only tight subspaces of the source word, and certifies modulo them that 2E' splits into 15 linearly independent sets, i.e. w(V) <= 7.5 dim V < 8^t dim V for every relation subspace V; two live controls fail as required and test_verify.py rejects four mutations.",
+  "evidence": "verify.py replays the reversed PR589 records over GF(2) (2,920 paid jobs, 2,384 with a legal relation row), recovers exactly #5421's nine relations as the only tight subspaces of the source word, and certifies modulo them that 2E' splits into 15 linearly independent sets, i.e. w(V) <= 7.5 dim V < 8^t dim V for every relation subspace V; two live controls fail as required and test_verify.py rejects four mutations. Part 2: complex.py frees all eight centres and eight zero-site climbs with #5383's relations and proves exactly over Q that the 155 remaining pure-cold climb rows are linearly independent with rank mass <= 3, so any further relation loses >= 5.94 per dimension; test_verify.py adds three complex mutations.",
   "author": "Mark (Matarener)",
   "ai_assistance": "Prepared with substantial Claude Code (Claude) assistance.",
   "open_questions": [
@@ -58,10 +58,10 @@
       "blocked_by": "No changed BIT word with an admitted invoice is available as a frozen input."
     },
     {
-      "question": "Does the same certificate close relation subspaces on the selected complex word (the binding side)?",
-      "why_it_matters": "Complex relation searches so far tested single relations; a relation subspace of density above 9^t there would raise kappa directly.",
-      "first_step": "Build the rational job-row multiset of the selected complex caller and run the matroid partition over Q.",
-      "blocked_by": "Rows are rational and the helper targets have rank 9; the partition must run over Q with the matching target rank."
+      "question": "Can a complex relation set that does not contain #5383's eight relations beat them?",
+      "why_it_matters": "Part 2 certifies only extensions of the selected relations; a different basis could free other snapshot options.",
+      "first_step": "Enumerate one snapshot option per centre (at most 8 centres) and run the same independence test on each choice.",
+      "blocked_by": "Snapshot options are alternatives for one centre, so they are not single matroid elements; the research/owned-relation-exhaustion centre-exchange cap already limits this family."
     }
   ]
 }
