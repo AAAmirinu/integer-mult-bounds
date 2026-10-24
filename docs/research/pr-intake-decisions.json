@@ -59988,18 +59988,18 @@
           "login": "Matarener",
           "name": ""
         },
-        "headRefOid": "08f93ced6f304e8804cf31cfd6db0d6869752fed",
+        "headRefOid": "55de56abdfd9cd7fb83758241793c18b9ae9ce71",
         "isDraft": false,
         "number": 4580,
         "title": "Price the p3 H-branch boundary at kappa 0.00302015 (322/397 calls) and close four repair routes (no new \u03ba)",
         "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/4580"
       },
-      "reviewed_head": "08f93ced6f304e8804cf31cfd6db0d6869752fed",
-      "current_head": "08f93ced6f304e8804cf31cfd6db0d6869752fed",
+      "reviewed_head": "55de56abdfd9cd7fb83758241793c18b9ae9ce71",
+      "current_head": "55de56abdfd9cd7fb83758241793c18b9ae9ce71",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "PR4589 identifies two printed negative_at values rounded below their roots: complex bill 0 and BIT bill 222. They cannot serve as certified negative endpoints. Relabel them as rounded estimates or round outward and regenerate the receipt. The 322/397 budget conclusions are not disputed.",
+      "unresolved_question": "Earlier bracket objection is unchanged: verify.py still prints both endpoints through round-to-nearest float .10f, and README still calls RESULT.json certified brackets. Repair outward rounding with sign checks at the emitted endpoints or relabel them as estimates. The latest shared CI-document edit does not address PR4589; 322/397 budget conclusions are not disputed.",
       "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -60008,7 +60008,7 @@
         "published": false
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct22a-20261022.json"
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
       ],
       "closure": null
     },
@@ -61175,18 +61175,18 @@
           "login": "Matarener",
           "name": ""
         },
-        "headRefOid": "7e362114fa41570bffe74dbb32896f13354a54cd",
+        "headRefOid": "0e0df631da41a1f9ed3489e8df532189c2643cbf",
         "isDraft": false,
         "number": 4612,
         "title": "Audit #4359 BIT row stock and its #4470 atom change (no new \u03ba)",
         "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/4612"
       },
-      "reviewed_head": "7e362114fa41570bffe74dbb32896f13354a54cd",
-      "current_head": "7e362114fa41570bffe74dbb32896f13354a54cd",
+      "reviewed_head": "0e0df631da41a1f9ed3489e8df532189c2643cbf",
+      "current_head": "0e0df631da41a1f9ed3489e8df532189c2643cbf",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
       "integration_location": [],
-      "unresolved_question": "PR4618 supplies a concrete small-prime counterexample to the claimed all-C threshold: p=2, C=2^40 can violate R<=h/16 at the displayed H. Amend H to cover the logarithmic term, e.g. the proposed H-prime, and include small-prime controls. This is a threshold repair, not a kappa change.",
+      "unresolved_question": "Earlier small-prime/large-C counterexample remains unresolved: README still asserts the displayed H=(1024*C*L^3)^(1/(1-delta)) alone bounds C(log2 h+2) by h/1024. Add the logarithmic threshold term and p=2,C=2^40 regression or narrow the parameter domain. The latest shared CI-document edit does not address PR4618.",
       "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -61195,7 +61195,7 @@
         "published": false
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct22a-20261022.json"
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
       ],
       "closure": null
     },
@@ -89455,6 +89455,912 @@
         "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5416",
         "merge_commit": "15ec75e15661cb7374fbf496e65500d03b9bd58c"
       }
+    },
+    {
+      "number": 5417,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjkxNzkyOQ==",
+          "is_bot": false,
+          "login": "jwr404",
+          "name": "James Reed"
+        },
+        "headRefOid": "f649e9006179215cbae43cbbd628b48aa3c95de4",
+        "isDraft": false,
+        "number": 5417,
+        "title": "Freeze the selected record as provenance in 138 more replay checks (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5417"
+      },
+      "reviewed_head": "f649e9006179215cbae43cbbd628b48aa3c95de4",
+      "current_head": "f649e9006179215cbae43cbbd628b48aa3c95de4",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/address-operator-composition/SOURCES.json",
+        "research/address-operator-composition/verify.py",
+        "research/alternating-shear-exchange/SOURCES.json",
+        "research/alternating-shear-exchange/verify.py",
+        "research/alternation-lemma/SOURCES.json",
+        "research/alternation-lemma/verify.py",
+        "research/basis-gap-minimum/SOURCES.json",
+        "research/basis-gap-minimum/verify.py",
+        "research/bit-row-allowance/SOURCES.json",
+        "research/bit-row-allowance/verify.py",
+        "research/bit0-budget-gap/SOURCES.json",
+        "research/bit0-budget-gap/verify.py",
+        "research/boundary-half-bandwidth/SOURCES.json",
+        "research/boundary-half-bandwidth/verify.py",
+        "research/braid-triple-count/SOURCES.json",
+        "research/braid-triple-count/verify.py",
+        "research/bridge-block-form/SOURCES.json",
+        "research/bridge-block-form/verify.py",
+        "research/bridge-reducer-gap/SOURCES.json",
+        "research/bridge-reducer-gap/verify.py",
+        "research/c5-cancellation-floors/SOURCES.json",
+        "research/c5-cancellation-floors/verify.py",
+        "research/ceiling-bracket-gap/SOURCES.json",
+        "research/ceiling-bracket-gap/verify.py",
+        "research/central-triple-rank-floor/SOURCES.json",
+        "research/central-triple-rank-floor/verify.py",
+        "research/centre-column-relation/SOURCES.json",
+        "research/centre-column-relation/verify.py",
+        "research/chirp-budget-clearance/SOURCES.json",
+        "research/chirp-budget-clearance/verify.py",
+        "research/chirp-field-width/SOURCES.json",
+        "research/chirp-field-width/verify.py",
+        "research/chirp-residue-step/SOURCES.json",
+        "research/chirp-residue-step/verify.py",
+        "research/chirp-scalar-invoice/SOURCES.json",
+        "research/chirp-scalar-invoice/verify.py",
+        "research/codelivery-repair-bill/SOURCES.json",
+        "research/codelivery-repair-bill/verify.py",
+        "research/coefficient-width-bound/SOURCES.json",
+        "research/coefficient-width-bound/verify.py",
+        "research/compression-error-sum/SOURCES.json",
+        "research/compression-error-sum/verify.py",
+        "research/confinement-multiplicity/SOURCES.json",
+        "research/confinement-multiplicity/verify.py",
+        "research/controlled-block-shear/SOURCES.json",
+        "research/controlled-block-shear/verify.py",
+        "research/convolution-slot-bound/SOURCES.json",
+        "research/convolution-slot-bound/verify.py",
+        "research/copy-floor-arithmetic/SOURCES.json",
+        "research/copy-floor-arithmetic/verify.py",
+        "research/core-section-capacity/SOURCES.json",
+        "research/core-section-capacity/verify.py",
+        "research/count-exponent-budget/SOURCES.json",
+        "research/count-exponent-budget/verify.py",
+        "research/countdown-ripple-sum/SOURCES.json",
+        "research/countdown-ripple-sum/verify.py",
+        "research/cutoff-sequence-location/SOURCES.json",
+        "research/cutoff-sequence-location/verify.py",
+        "research/degree-gap-clearance/SOURCES.json",
+        "research/degree-gap-clearance/verify.py",
+        "research/direct-frame-stage-bills/SOURCES.json",
+        "research/direct-frame-stage-bills/verify.py",
+        "research/dual-basis-gram/SOURCES.json",
+        "research/dual-basis-gram/verify.py",
+        "research/e7-generator-span/SOURCES.json",
+        "research/e7-generator-span/verify.py",
+        "research/e8-minor-units/SOURCES.json",
+        "research/e8-minor-units/verify.py",
+        "research/e8-reflection-transport/SOURCES.json",
+        "research/e8-reflection-transport/verify.py",
+        "research/e8-sparse-coset-budget/SOURCES.json",
+        "research/e8-sparse-coset-budget/verify.py",
+        "research/even-return-lengths/SOURCES.json",
+        "research/even-return-lengths/verify.py",
+        "research/expansion-axis-margin/SOURCES.json",
+        "research/expansion-axis-margin/verify.py",
+        "research/factor-perturbation-margin/SOURCES.json",
+        "research/factor-perturbation-margin/verify.py",
+        "research/fano-incidence-cycles/SOURCES.json",
+        "research/fano-incidence-cycles/verify.py",
+        "research/fft-carry-recovery/SOURCES.json",
+        "research/fft-carry-recovery/verify.py",
+        "research/fft-setup-sum/SOURCES.json",
+        "research/fft-setup-sum/verify.py",
+        "research/fft-space-ratio/SOURCES.json",
+        "research/fft-space-ratio/verify.py",
+        "research/fft-time-constants/SOURCES.json",
+        "research/fft-time-constants/verify.py",
+        "research/fft-word-parameter-bounds/SOURCES.json",
+        "research/fft-word-parameter-bounds/verify.py",
+        "research/five-cell-basis-obstruction/SOURCES.json",
+        "research/five-cell-basis-obstruction/verify.py",
+        "research/format-width-bound/SOURCES.json",
+        "research/format-width-bound/verify.py",
+        "research/gate-dest-free-agreement/SOURCES.json",
+        "research/gate-dest-free-agreement/verify.py",
+        "research/gate-operand-agreement/SOURCES.json",
+        "research/gate-operand-agreement/verify.py",
+        "research/h6-sector-dimensions/SOURCES.json",
+        "research/h6-sector-dimensions/verify.py",
+        "research/h6-smith-exponents/SOURCES.json",
+        "research/h6-smith-exponents/verify.py",
+        "research/helper544-root-sign/SOURCES.json",
+        "research/helper544-root-sign/verify.py",
+        "research/idle-aggregation-gap/SOURCES.json",
+        "research/idle-aggregation-gap/verify.py",
+        "research/idle-rank-sum/SOURCES.json",
+        "research/idle-rank-sum/verify.py",
+        "research/integer-idle-histogram/SOURCES.json",
+        "research/integer-idle-histogram/verify.py",
+        "research/k8-four-end-ceiling/SOURCES.json",
+        "research/k8-four-end-ceiling/verify.py",
+        "research/kernel-grid-erasure/SOURCES.json",
+        "research/kernel-grid-erasure/verify.py",
+        "research/kronecker-mask-weight/SOURCES.json",
+        "research/kronecker-mask-weight/verify.py",
+        "research/l22-split-domain/SOURCES.json",
+        "research/l22-split-domain/verify.py",
+        "research/log-absorption-bound/SOURCES.json",
+        "research/log-absorption-bound/verify.py",
+        "research/lost-free-cover-bound/SOURCES.json",
+        "research/lost-free-cover-bound/verify.py",
+        "research/mantel-edge-cap/SOURCES.json",
+        "research/mantel-edge-cap/verify.py",
+        "research/manuscript-exponent-clearance/SOURCES.json",
+        "research/manuscript-exponent-clearance/verify.py",
+        "research/minor-bit-budget/SOURCES.json",
+        "research/minor-bit-budget/verify.py",
+        "research/negacyclic-sign-cancellation/SOURCES.json",
+        "research/negacyclic-sign-cancellation/verify.py",
+        "research/neumann-tail-bound/SOURCES.json",
+        "research/neumann-tail-bound/verify.py",
+        "research/nilpotent-call-floor/SOURCES.json",
+        "research/nilpotent-call-floor/verify.py",
+        "research/nonfano-invoice-floor/SOURCES.json",
+        "research/nonfano-invoice-floor/verify.py",
+        "research/odd-kernel-bit-margin/SOURCES.json",
+        "research/odd-kernel-bit-margin/verify.py",
+        "research/odd-kernel-bit-tariff/SOURCES.json",
+        "research/odd-kernel-bit-tariff/verify.py",
+        "research/one-coset-orbit-budget/SOURCES.json",
+        "research/one-coset-orbit-budget/verify.py",
+        "research/ordinary-rate-gap/SOURCES.json",
+        "research/ordinary-rate-gap/verify.py",
+        "research/ordinary-rate-threshold/SOURCES.json",
+        "research/ordinary-rate-threshold/verify.py",
+        "research/overlapping-window-bill/SOURCES.json",
+        "research/overlapping-window-bill/verify.py",
+        "research/owned-zero-mass-screen/SOURCES.json",
+        "research/owned-zero-mass-screen/verify.py",
+        "research/owner-slice-ledger/SOURCES.json",
+        "research/owner-slice-ledger/verify.py",
+        "research/p104-hosting-threshold/SOURCES.json",
+        "research/p104-hosting-threshold/verify.py",
+        "research/p112-frame-bound/SOURCES.json",
+        "research/p112-frame-bound/verify.py",
+        "research/pair-collision-identity/SOURCES.json",
+        "research/pair-collision-identity/verify.py",
+        "research/permutation-lds-product/SOURCES.json",
+        "research/permutation-lds-product/verify.py",
+        "research/prefix-budget-counterexample/SOURCES.json",
+        "research/prefix-budget-counterexample/verify.py",
+        "research/prefix-mask-basis/SOURCES.json",
+        "research/prefix-mask-basis/verify.py",
+        "research/product-exponent-gap/SOURCES.json",
+        "research/product-exponent-gap/verify.py",
+        "research/production-domain-gap/SOURCES.json",
+        "research/production-domain-gap/verify.py",
+        "research/q-toeplitz-factorization/SOURCES.json",
+        "research/q-toeplitz-factorization/verify.py",
+        "research/q8-bound-attainment/SOURCES.json",
+        "research/q8-bound-attainment/verify.py",
+        "research/q8-rank-floor/SOURCES.json",
+        "research/q8-rank-floor/verify.py",
+        "research/qadic-row-excess/SOURCES.json",
+        "research/qadic-row-excess/verify.py",
+        "research/qq16-output-turn/SOURCES.json",
+        "research/qq16-output-turn/verify.py",
+        "research/r437-histogram-mass/SOURCES.json",
+        "research/r437-histogram-mass/verify.py",
+        "research/r438-rank-drop/SOURCES.json",
+        "research/r438-rank-drop/verify.py",
+        "research/r480-leaver-rank-bill/SOURCES.json",
+        "research/r480-leaver-rank-bill/verify.py",
+        "research/rank-one-idempotent-count/SOURCES.json",
+        "research/rank-one-idempotent-count/verify.py",
+        "research/rank-unit-deletion-order/SOURCES.json",
+        "research/rank-unit-deletion-order/verify.py",
+        "research/rank1-deletion-target/SOURCES.json",
+        "research/rank1-deletion-target/verify.py",
+        "research/rank7-basis-cover/SOURCES.json",
+        "research/rank7-basis-cover/verify.py",
+        "research/rank7-frame-lines/SOURCES.json",
+        "research/rank7-frame-lines/verify.py",
+        "research/rank7-hyperplane-count/SOURCES.json",
+        "research/rank7-hyperplane-count/verify.py",
+        "research/rank7-v45-margin/SOURCES.json",
+        "research/rank7-v45-margin/VERIFY.json",
+        "research/rank7-v45-margin/verify.py",
+        "research/retained-schedule-deficit/SOURCES.json",
+        "research/retained-schedule-deficit/verify.py",
+        "research/retimed-pair-moment/SOURCES.json",
+        "research/retimed-pair-moment/verify.py",
+        "research/revisit-length-witness/SOURCES.json",
+        "research/revisit-length-witness/verify.py",
+        "research/riding-shear-sandwich/SOURCES.json",
+        "research/riding-shear-sandwich/verify.py",
+        "research/rotating-address-walk/SOURCES.json",
+        "research/rotating-address-walk/verify.py",
+        "research/rotating-normal-closure/SOURCES.json",
+        "research/rotating-normal-closure/verify.py",
+        "research/row-ledger-readings/SOURCES.json",
+        "research/row-ledger-readings/verify.py",
+        "research/scatter-basis-identity/SOURCES.json",
+        "research/scatter-basis-identity/verify.py",
+        "research/schur-weight-cancellation/SOURCES.json",
+        "research/schur-weight-cancellation/verify.py",
+        "research/selected-record-parse-cache/README.md",
+        "research/selected-record-parse-cache/SOURCES.json",
+        "research/selected-record-parse-cache/verify.py",
+        "research/shared-centre-k2/SOURCES.json",
+        "research/shared-centre-k2/verify.py",
+        "research/six-label-central-floor/SOURCES.json",
+        "research/six-label-central-floor/verify.py",
+        "research/six-owner-repair-count/SOURCES.json",
+        "research/six-owner-repair-count/verify.py",
+        "research/source-window-index/SOURCES.json",
+        "research/source-window-index/verify.py",
+        "research/span-entrance-width/SOURCES.json",
+        "research/span-entrance-width/verify.py",
+        "research/split-budget-survivors/SOURCES.json",
+        "research/split-budget-survivors/verify.py",
+        "research/stage2-breakeven/SOURCES.json",
+        "research/stage2-breakeven/verify.py",
+        "research/stock-coefficient-nulls/SOURCES.json",
+        "research/stock-coefficient-nulls/verify.py",
+        "research/stock-rho-ledger/SOURCES.json",
+        "research/stock-rho-ledger/verify.py",
+        "research/storage-spare-bits/SOURCES.json",
+        "research/storage-spare-bits/verify.py",
+        "research/supplier-saving-half/SOURCES.json",
+        "research/supplier-saving-half/verify.py",
+        "research/t360-role-gap/SOURCES.json",
+        "research/t360-role-gap/verify.py",
+        "research/t450-replica-count/SOURCES.json",
+        "research/t450-replica-count/verify.py",
+        "research/t488-moment-straddle/SOURCES.json",
+        "research/t488-moment-straddle/verify.py",
+        "research/t740-histogram-mass/SOURCES.json",
+        "research/t740-histogram-mass/verify.py",
+        "research/ten-term-copy-cost/SOURCES.json",
+        "research/ten-term-copy-cost/verify.py",
+        "research/twelve-call-central-triple/SOURCES.json",
+        "research/twelve-call-central-triple/verify.py",
+        "research/two-hub-tariff-54/SOURCES.json",
+        "research/two-hub-tariff-54/verify.py",
+        "research/two-hub-tariff-minimum/SOURCES.json",
+        "research/two-hub-tariff-minimum/verify.py",
+        "research/two-unpaid-idle-mass/SOURCES.json",
+        "research/two-unpaid-idle-mass/verify.py",
+        "research/uniform-cover-counts/SOURCES.json",
+        "research/uniform-cover-counts/verify.py",
+        "research/v45-margin-ladder/SOURCES.json",
+        "research/v45-margin-ladder/verify.py",
+        "research/v45-triple-intersection/SOURCES.json",
+        "research/v45-triple-intersection/verify.py",
+        "research/width-k-power-cut/SOURCES.json",
+        "research/width-k-power-cut/verify.py",
+        "research/window-chain-source-count/SOURCES.json",
+        "research/window-chain-source-count/verify.py",
+        "research/xor-mask-lds/SOURCES.json",
+        "research/xor-mask-lds/verify.py",
+        "research/zero-remainder-calls/SOURCES.json",
+        "research/zero-remainder-calls/verify.py",
+        "research/zero-saving-centre-moment/SOURCES.json",
+        "research/zero-saving-centre-moment/verify.py",
+        "research/zero-xor-return/SOURCES.json",
+        "research/zero-xor-return/verify.py"
+      ],
+      "unresolved_question": "Reviewed 138 provenance repairs: 136 normalized verifier ASTs preserve all downstream mathematics at their pinned selected values; all 138 SOURCES changes preserve exact blobs/hashes. Two manual verifier variants reviewed, with historical/current cache-mutation controls. No selected source pins overlap. Full 138 scientific replays were not rerun; author execution remains distinct.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5418,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjIyNjMwMzU0",
+          "is_bot": false,
+          "login": "Clear1nsight",
+          "name": "Chris R"
+        },
+        "headRefOid": "fe4c345778554ec5c02368b1ddf2f6918eeb0df5",
+        "isDraft": false,
+        "number": 5418,
+        "title": "Explicit-profile ceiling: eight-H17 standalone completion fails for .0033 <= C < 1",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5418"
+      },
+      "reviewed_head": "fe4c345778554ec5c02368b1ddf2f6918eeb0df5",
+      "current_head": "fe4c345778554ec5c02368b1ddf2f6918eeb0df5",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/kappa0033-standalone-tail-ceiling"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5419,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjM2NjQ3NA==",
+          "is_bot": false,
+          "login": "zxv",
+          "name": ""
+        },
+        "headRefOid": "d94f60b3b603782fce40f1911b3b094847d0f45a",
+        "isDraft": false,
+        "number": 5419,
+        "title": "Research: 25-paper coupled-output sweep and catalytic consumer circuits",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5419"
+      },
+      "reviewed_head": "d94f60b3b603782fce40f1911b3b094847d0f45a",
+      "current_head": "d94f60b3b603782fce40f1911b3b094847d0f45a",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/literature-coupled-synthesis"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5420,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjIyNjMwMzU0",
+          "is_bot": false,
+          "login": "Clear1nsight",
+          "name": "Chris R"
+        },
+        "headRefOid": "baa8fbb8345c2fab0bc213479539c338d4c80443",
+        "isDraft": false,
+        "number": 5420,
+        "title": "Conditional integer-profile envelope for the 8/9 compiler moment tails",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5420"
+      },
+      "reviewed_head": "baa8fbb8345c2fab0bc213479539c338d4c80443",
+      "current_head": "baa8fbb8345c2fab0bc213479539c338d4c80443",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/kappa0033-robust-tail-envelope"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5421,
+      "metadata": {
+        "author": {
+          "id": "U_kgDODYXfmQ",
+          "is_bot": false,
+          "login": "aliromman",
+          "name": "Ali Romman"
+        },
+        "headRefOid": "295b00764305694b3c510d3b0bebc2ab024a7809",
+        "isDraft": false,
+        "number": 5421,
+        "title": "BIT saving 0.00344412 from nine owned helper relations",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5421"
+      },
+      "reviewed_head": "295b00764305694b3c510d3b0bebc2ab024a7809",
+      "current_head": "295b00764305694b3c510d3b0bebc2ab024a7809",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/bit-nine-owned-relations"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5422,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjUyOTEyMzI1",
+          "is_bot": false,
+          "login": "Matarener",
+          "name": ""
+        },
+        "headRefOid": "f5f10fc1ce4d753628faa78eda3af5c87a82f690",
+        "isDraft": false,
+        "number": 5422,
+        "title": "Certify no H1+H1->H2 fusion pair in the #4610 word by free scalar rewiring (negative result, no new kappa)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5422"
+      },
+      "reviewed_head": "f5f10fc1ce4d753628faa78eda3af5c87a82f690",
+      "current_head": "f5f10fc1ce4d753628faa78eda3af5c87a82f690",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/fusion-pair-scalar-rewiring"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa. Collateral docs/ci-verification.md retained only in original source ancestry; not installed.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5423,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjIyNjMwMzU0",
+          "is_bot": false,
+          "login": "Clear1nsight",
+          "name": "Chris R"
+        },
+        "headRefOid": "bb81dd1f8aa34d5ee89a43f3c19d4b50606d6287",
+        "isDraft": false,
+        "number": 5423,
+        "title": "Save eight H1 queries with a verified deferred-K correction (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5423"
+      },
+      "reviewed_head": "bb81dd1f8aa34d5ee89a43f3c19d4b50606d6287",
+      "current_head": "bb81dd1f8aa34d5ee89a43f3c19d4b50606d6287",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/deferred-k-query-sharing-component"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa. Collateral docs/ci-verification.md retained only in original source ancestry; not installed.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5424,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjIyNjMwMzU0",
+          "is_bot": false,
+          "login": "Clear1nsight",
+          "name": "Chris R"
+        },
+        "headRefOid": "e638ed60241c7a04e49c79ab1f98d612a94e0c11",
+        "isDraft": false,
+        "number": 5424,
+        "title": "Certify an optimistic Global120 decoder allowance of 916.0289 (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5424"
+      },
+      "reviewed_head": "e638ed60241c7a04e49c79ab1f98d612a94e0c11",
+      "current_head": "e638ed60241c7a04e49c79ab1f98d612a94e0c11",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/global120-optimistic-budget"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa. Collateral docs/ci-verification.md retained only in original source ancestry; not installed.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5425,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjIyNjMwMzU0",
+          "is_bot": false,
+          "login": "Clear1nsight",
+          "name": "Chris R"
+        },
+        "headRefOid": "00005c8c5e81c7f27b5769f9309ff88758e26f51",
+        "isDraft": false,
+        "number": 5425,
+        "title": "Prove the scoped 112-call standalone fanout optimum (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5425"
+      },
+      "reviewed_head": "00005c8c5e81c7f27b5769f9309ff88758e26f51",
+      "current_head": "00005c8c5e81c7f27b5769f9309ff88758e26f51",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/fanout-optimality-support"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa. Collateral docs/ci-verification.md retained only in original source ancestry; not installed.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5426,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjUyOTEyMzI1",
+          "is_bot": false,
+          "login": "Matarener",
+          "name": ""
+        },
+        "headRefOid": "cd8cb828172c9ffaf5962bb7217f4118e5d57440",
+        "isDraft": false,
+        "number": 5426,
+        "title": "Certify that the fragmentation of the #4610 word is rigid under free scalar reordering (negative result, no new kappa)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5426"
+      },
+      "reviewed_head": "cd8cb828172c9ffaf5962bb7217f4118e5d57440",
+      "current_head": "cd8cb828172c9ffaf5962bb7217f4118e5d57440",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/fragmentation-reorder-rigidity"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa. Collateral docs/ci-verification.md retained only in original source ancestry; not installed.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5427,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjUyOTEyMzI1",
+          "is_bot": false,
+          "login": "Matarener",
+          "name": ""
+        },
+        "headRefOid": "389578f2d3ef075495ce76f08100ac50e18f7d40",
+        "isDraft": false,
+        "number": 5427,
+        "title": "Certify that b = Z Q Y is not retained and no paid response is reusable (negative result, no new kappa)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5427"
+      },
+      "reviewed_head": "389578f2d3ef075495ce76f08100ac50e18f7d40",
+      "current_head": "389578f2d3ef075495ce76f08100ac50e18f7d40",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Part 1 claims rational-span/intersection consequences from a single finite-field calculation without an exact rational rank lift or annihilator. Integer/dyadic source entries alone do not justify this inference (A=[p], b=1 is a counterexample). Qualify the target obstruction to dyadic/p-integral reconstruction and the dimensions to Fp, or provide a Q certificate. The detailed source-bound reviewer comment is retained; Part 2 is not independently accepted.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5428,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjM2NjQ3NA==",
+          "is_bot": false,
+          "login": "zxv",
+          "name": ""
+        },
+        "headRefOid": "a8e0467c60fc851f7a94b1ad5524fd562f5922bd",
+        "isDraft": false,
+        "number": 5428,
+        "title": "Observation, state, and geometry: building complete suppliers for larger \u03ba",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5428"
+      },
+      "reviewed_head": "a8e0467c60fc851f7a94b1ad5524fd562f5922bd",
+      "current_head": "a8e0467c60fc851f7a94b1ad5524fd562f5922bd",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/outside-input-research-targets"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5429,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjIyNjMwMzU0",
+          "is_bot": false,
+          "login": "Clear1nsight",
+          "name": "Chris R"
+        },
+        "headRefOid": "a72db1fdffc9532b075f3706ed2c6e8654d6c978",
+        "isDraft": false,
+        "number": 5429,
+        "title": "Certify the fixed complex five-FULL/one-THIN ceiling (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5429"
+      },
+      "reviewed_head": "a72db1fdffc9532b075f3706ed2c6e8654d6c978",
+      "current_head": "a72db1fdffc9532b075f3706ed2c6e8654d6c978",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/fivefull-sixcall-complex-ceiling"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa. Collateral docs/ci-verification.md retained only in original source ancestry; not installed.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5430,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjk0NjMxMDU=",
+          "is_bot": false,
+          "login": "NicholasStone",
+          "name": "Nicholas Stone"
+        },
+        "headRefOid": "259fb2685e8264836df944e892d26476a65d789d",
+        "isDraft": false,
+        "number": 5430,
+        "title": "Research: projection matching obstruction for eight-source singleton lifts (partial result)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5430"
+      },
+      "reviewed_head": "259fb2685e8264836df944e892d26476a65d789d",
+      "current_head": "259fb2685e8264836df944e892d26476a65d789d",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/eight-source-lift-obstruction"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5432,
+      "metadata": {
+        "author": {
+          "id": "U_kgDOBjZOrA",
+          "is_bot": false,
+          "login": "hevlyo",
+          "name": "Riquelme Soares"
+        },
+        "headRefOid": "6532b45ce9f3259d7408594ec480a140ec81e0e2",
+        "isDraft": false,
+        "number": 5432,
+        "title": "Research: the PR5413 caller publishes no stock coefficient",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5432"
+      },
+      "reviewed_head": "6532b45ce9f3259d7408594ec480a140ec81e0e2",
+      "current_head": "6532b45ce9f3259d7408594ec480a140ec81e0e2",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [],
+      "unresolved_question": "Narrow the absence claim to the four inspected records and cite the selected-bound V16-APPLICATION-PROOF-v3 sections 5/7: these give an F16 inventory majorant and parent/private/depth stock prescription. Their existence prevents the present broad missing-lemma wording. Compiler headroom is still not stock; a remaining gap must identify its stage, unit and width domain. No selected-result regression is established by this PR.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5433,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjUyOTEyMzI1",
+          "is_bot": false,
+          "login": "Matarener",
+          "name": ""
+        },
+        "headRefOid": "285013bb011c41899bd346632aed03a9c5310917",
+        "isDraft": false,
+        "number": 5433,
+        "title": "Certify that no owned-helper relation subspace pays after #5421 (BIT) or #5383 (complex) (negative result, no new kappa)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5433"
+      },
+      "reviewed_head": "285013bb011c41899bd346632aed03a9c5310917",
+      "current_head": "285013bb011c41899bd346632aed03a9c5310917",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/bit-relation-subspaces"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa. Collateral docs/ci-verification.md retained only in original source ancestry; not installed.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5434,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjUyOTEyMzI1",
+          "is_bot": false,
+          "login": "Matarener",
+          "name": ""
+        },
+        "headRefOid": "1a61b69b87e8e1269446f0a874c08503bde9339a",
+        "isDraft": false,
+        "number": 5434,
+        "title": "Replay physical-ordinary-interchange against its pinned selected record (no scientific change)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5434"
+      },
+      "reviewed_head": "1a61b69b87e8e1269446f0a874c08503bde9339a",
+      "current_head": "1a61b69b87e8e1269446f0a874c08503bde9339a",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/physical-ordinary-interchange/SOURCES.json",
+        "research/physical-ordinary-interchange/VERIFY.json",
+        "research/physical-ordinary-interchange/inputs/selected-result-pinned.json",
+        "research/physical-ordinary-interchange/source.py"
+      ],
+      "unresolved_question": "Reviewed private historical-record view and exact pinned bytes, unchanged declared-input copies, rejection of corrupt pinned payload and missing inputs. Existing loader/archive authentication remains in place. No selected source pins overlap. Heavy engine replay not rerun; author/hosted evidence remains separate. Collateral docs/ci-verification.md retained only in original source ancestry; not installed.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 5435,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjUyOTEyMzI1",
+          "is_bot": false,
+          "login": "Matarener",
+          "name": ""
+        },
+        "headRefOid": "4e9ba544996a2f5d17ad62ad292d501c824a746d",
+        "isDraft": false,
+        "number": 5435,
+        "title": "Certify the exact internal grid of the selected complex word: ceil(9 lambda/2)+6 bits, attained (no new kappa)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5435"
+      },
+      "reviewed_head": "4e9ba544996a2f5d17ad62ad292d501c824a746d",
+      "current_head": "4e9ba544996a2f5d17ad62ad292d501c824a746d",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/selected-word-exact-grid"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa. Collateral docs/ci-verification.md retained only in original source ancestry; not installed.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct24a-20261024.json"
+      ],
+      "closure": null
     }
   ]
 }
