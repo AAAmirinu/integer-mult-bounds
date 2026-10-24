@@ -58,6 +58,25 @@ def leftover_warp():
     V.body_endpoint(B, V.Ops(CE, CAN, NORM))
 
 
+def dropped_cache():
+    # the review of #5442: a cache SWAP that discards the transformed cache row instead of moving it
+    src = (HERE / 'verify.py').read_text(encoding='utf-8')
+    old, new = 'self.rows[cs], self.rows[o] = self.rows[o], self.rows[cs]', 'self.rows[cs], self.rows[o] = self.rows[o], {}'
+    V.require(src.count(old) == 1, 'mutation site present')
+    ns = {'__file__': str(HERE / 'verify.py'), '__name__': 'allwidth_mutant'}
+    exec(compile(src.replace(old, new), str(HERE / 'verify.py'), 'exec'), ns)
+    B = ns['Body'](BODY, PROV, WORD, CAN); B.run()
+    ns['body_endpoint'](B, ns['Ops'](CE, CAN, NORM))
+
+
+def mode_output_phase():
+    prov = copy.deepcopy(PROV)
+    word = prov['mode_boundaries'][3]['output_N']['literal_word']
+    ph = next(e for e in word if e[0] == 'phase'); ph[1] = (ph[1] + 2) % 4
+    B = V.Body(BODY, prov, WORD, CAN); B.run()
+    V.body_endpoint(B, V.Ops(CE, CAN, NORM))
+
+
 def owned_not_cleared():
     body = copy.deepcopy(BODY)
     body['operations'] = [o for o in body['operations'] if o['op'] != 'CLEAR']
@@ -88,6 +107,8 @@ def main():
     rejects('wrapper phase mutation (port 7)', wrapper_phase)
     rejects('mixed orientation convention', mixed_convention)
     rejects('leftover native warp at the endpoint', leftover_warp)
+    rejects('cache SWAP that drops the cache row', dropped_cache)
+    rejects('sign flip in one mode output word', mode_output_phase)
     rejects('owned field not cleared', owned_not_cleared)
     rejects('overlapping private planes', overlapping_planes)
     rejects('missing controller Q_POWER', missing_q_power)

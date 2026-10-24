@@ -70,9 +70,23 @@ are statements about elements of `G`, so by consequence 1 they hold at every wid
 every native warp cancelled, the main rows `X_p = Nout_x (Nin_x x_p - Nin_y y_p)` and `Y_p = Nout_y Nin_y y_p`
 carrying only the port wrappers, the 400 autonomous helpers returned as their own input under an alias pair of exact
 signed monomials (318 pure central phases, 82 with an address action; none is the identity) with the recorded exit
-frame reached by their paid climbs, the eight mode owners returned as the paid rank-eight Gaussian of `h - Z y` (own input plus 56 `y`
-inputs with `±1/2` entries), and all seventeen owned fields zero. By consequence 2 this endpoint is the same at
-every width. Combined with A, the body's physical endpoint on main data is exactly `D x - D C_0 y`, `D y`.
+frame reached by their paid climbs, and all seventeen owned fields zero. By consequence 2 this endpoint is the same
+at every width. Combined with A, the body's physical endpoint on main data is exactly `D x - D C_0 y`, `D y`.
+
+The eight mode owners need one more step, because two different operator paths reach them. Each mode's cache SWAP
+moves the provider's transformed cache row into the owner (it holds the source's `-D Z y`), and the body then adds
+the owned field `T = D(S z + Z y)`, computed through one positive `C8` between alias and route monomials. As free
+words the owner has 113 terms: its own input, 56 `y` terms through `C8` and 56 cached `y` terms through the
+provider, which carry no `C8` symbol. The free group cannot see that they cancel, so [verify.py](verify.py) binds
+every symbol to its exact element of `G`: monomials to their literal words, `G` to the positive `C8` on axes
+`0..7`, `Nin_f` to the input wrapper of `f` followed by the inverse canonical chart of its entrance frame, and
+`N_o` to the canonical chart of the recorded mode frame followed by the literal `output_N` word. Charts are read
+in the backward (entrywise conjugate) convention, as for the ports. Summing like elements in `C[G]`, all 448
+pairs of `y` terms cancel and each owner is exactly `C8 z` with coefficient `+1` and absolute phase, which is the
+source proof's `S(-DZy + D(Sz+Zy)) = S D S z = C8 z`. This is an identity in `C[G]`, so it lifts by the Lemma.
+The unconjugated reading leaves all 896 `y` terms, and a sign change in one `output_N` word breaks the
+cancellation; both are checked. (An earlier version of this package dropped the cache row at the SWAP and
+certified `C8(h - Zy)` instead; the review of #5442 found the error.)
 
 **C. Controller (free commutative identity, abelian realization).** The controller's thirty-two bank rows are
 replayed in the free commutative Laurent ring on `Q` and `D_1, ..., D_33` (the semantics of
@@ -98,4 +112,4 @@ Reynolds-type relation and the scalar phase trap vanish at width one and fail at
 reports three and two distinct elements; exponent two is one element written two ways and vanishes at widths one to
 three; reversed noncommuting factors are distinct elements and already differ at width one. [test_verify.py](test_verify.py)
 rejects: input drift, a wrapper phase mutation, a mixed-convention reading, a leftover native warp in the body
-endpoint, an owned field left nonzero, overlapping private planes, a missing `Q_POWER`, and a tampered result.
+endpoint, a cache SWAP that drops the cache row, a sign change in one mode output word, an owned field left nonzero, overlapping private planes, a missing `Q_POWER`, and a tampered result.

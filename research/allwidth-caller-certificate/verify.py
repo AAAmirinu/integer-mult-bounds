@@ -274,7 +274,8 @@ class Body:
             cs, o = m['cache_slot'], m['owner']
             self.scale(cs, F(m['cache_scalar'])); self.apply(cs, self.newsym('N', o))
             require(not self.rows[o], 'mode owner zero before the cache SWAP')
-            self.rows[cs], self.rows[o] = self.rows[o], {}
+            self.rows[cs], self.rows[o] = self.rows[o], self.rows[cs]
+            require(not self.rows[cs] and self.rows[o], 'cache SWAP moves the nonzero cache row to its owner')
         for f in range(224):
             self.apply(f, self.newsym('Nout', f))
 
@@ -333,19 +334,14 @@ def body_endpoint(B, ops):
         require(inp == p + 112 and q == 1 and tuple(s[0] for s in wd) == ('Nin', 'Nout')
                 and B.meaning[wd[0]] == p + 112 and B.meaning[wd[1]] == p + 112, 'Y row is the wrapped y_p')
     # the 400 autonomous helpers return as their own input under an alias pair of monomials (an exact group
-    # element pair, inverse to each other); the 8 mode owners return the paid rank-8 Gaussian of h_mode - Z y with
-    # fixed +-1/2 entries over 56 y inputs (the restored coupled outputs, counted as paid+productive by #5413).
-    autonomous = 0; alias_pairs_identity = 0; modes = 0; mode_terms = 0
+    # element pair, inverse to each other); the 8 mode owners return C8 z (NEUTRAL-PROOF-v16c: S(-DZy + D(Sz+Zy))).
+    autonomous = 0; alias_pairs_identity = 0
     mode_owners = set(B.prov['mode_owners'])
+    modes = mode_outputs(B, ops, backward=True)
+    require(mode_outputs(B, ops, backward=False)['y_terms_left'] == 896, 'the unconjugated reading leaves every y term of the modes')
     for h in range(224, 632):
         r = B.rows[h]
         if h in mode_owners:
-            modes += 1; mode_terms += len(r)
-            # H = D (h - Z y): own input with coefficient 1 and 56 y inputs with +-1/2 (Z = diag M^T diag / 2), one C8.
-            require(len(r) == 57 and sum(1 for (inp, wd) in r if inp == h) == 1, 'mode output: own input plus 56 y inputs')
-            for (inp, wd), q in r.items():
-                require((q == 1 if inp == h else 112 <= inp < 224 and abs(q) == F(1, 2)) and [s[0] for s in wd].count('G') == 1,
-                        'mode output: one paid Gaussian of h_mode - Z y with +-1/2 entries')
             continue
         require(len(r) == 1, 'autonomous helper returns one term')
         (inp, wd), q = next(iter(r.items()))
@@ -356,14 +352,74 @@ def body_endpoint(B, ops):
         if m.tab == ops.I.tab:
             alias_pairs_identity += 1          # identity tableau: a pure central phase i^k
         autonomous += 1
-    require(autonomous == 400 and modes == 8, '400 autonomous helpers, 8 modes')
+    require(autonomous == 400, '400 autonomous helpers')
     # the paid climbs of every persistent role telescope to the recorded exit frame (frame changes are inert in rows)
     require(all(B.frames[i] == B.c['final'][i] for i in range(632)), 'every persistent role ends in its recorded exit frame')
     return dict(warps_cancelled=True, main_rows='X_p = Nout_x(Nin_x x_p - Nin_y y_p), Y_p = Nout_y Nin_y y_p on all 112 ports',
                 block_monomials_identity=block_maps, exit_frames_recorded=632,
                 autonomous_helpers=400, helper_alias_pairs_pure_phase=alias_pairs_identity,
-                helper_alias_pairs_with_address_action=400 - alias_pairs_identity, mode_outputs=8, mode_terms=mode_terms,
+                helper_alias_pairs_with_address_action=400 - alias_pairs_identity, mode_outputs=modes,
                 distinct_warp_symbols=len({abs(e[2]) for e in B.word['word'] if e[0] == 'warp'}), owned_zero=17)
+
+
+def mode_outputs(B, ops, backward):
+    """Mode owners in C[G]: every free-word term is bound to its exact group element and like elements are summed.
+
+    Body symbols: M = its literal monomial word, G = the positive C8 on axes 0..7. Provider symbols (the cache path):
+    Nin_f = input wrapper of f, then the inverse canonical chart of f's entrance frame; N_o = canonical chart of the
+    recorded mode frame, then the literal output_N word.  Charts follow the orientation (backward: entrywise
+    conjugate), as for the port paths.  The 56 cached y terms (provider path, no G) must cancel the 56 y terms of
+    D(Sz+Zy) (one G) element by element, leaving C8 z with coefficient +1.
+    """
+    ce = ops.ce
+    C8 = ce.fourier(N9, range(0, 8))
+    mb = {m['owner']: m for m in B.prov['mode_boundaries']}
+
+    def wrapper(f):
+        wr = ops.nz['ports'][f % 112]['compiled_wrappers']
+        return wr[('backward_' if backward else '') + ('input_X' if f < 112 else 'input_Y')]['word']
+    cache = {}
+
+    def element(wd):
+        if wd not in cache:
+            op = ops.I
+            for s in wd:
+                t, mean = s[0], B.meaning[s]
+                if t == 'M':
+                    op = op.then(ops.mono(mean))
+                elif t == 'G':
+                    require(mean == 'C_rank8_bits0to7_positive', 'mode Gaussian is the positive C8')
+                    op = op.then(C8)
+                elif t == 'Nin':
+                    op = op.then(ops.mono(wrapper(mean))).then(ops.chart(B.c['start'][mean], backward).adjoint())
+                elif t == 'N':
+                    m = mb[mean]
+                    op = op.then(ops.chart(m['frame'], backward)).then(ops.mono(m['output_N']['literal_word']))
+                else:
+                    require(False, 'unexpected symbol on a mode output: ' + t)
+            cache[wd] = elem(op)
+        return cache[wd]
+    terms = cached = paid = left = 0
+    for o in B.prov['mode_owners']:
+        r = B.rows[o]
+        terms += len(r)
+        cached += sum(1 for (inp, wd) in r if 'N' in [s[0] for s in wd])
+        paid += sum(1 for (inp, wd) in r if [s[0] for s in wd].count('G') == 1)
+        acc = {}
+        for (inp, wd), q in r.items():
+            k = (inp, element(wd))
+            acc[k] = acc.get(k, 0) + q
+        nz = {k: v for k, v in acc.items() if v}
+        left += sum(1 for (inp, e) in nz if inp != o)
+        if backward:
+            require(len(r) == 113, 'mode owner: 113 free-word terms (own input, 56 paid y terms, 56 cached y terms)')
+            require(nz == {(o, elem(C8)): 1},
+                    'mode output is C8 z: all y contributions cancel in C[G], own input with C8 and coefficient +1')
+    if backward:
+        require((terms, cached, paid, left) == (904, 448, 456, 0), 'mode census: 904 terms, 448 cached, 456 through C8, none left')
+    return dict(free_word_terms=terms, cached_terms=cached, paid_C8_terms=paid, y_terms_left=left,
+                cancelled_y_pairs=448 if backward else None,
+                output='C8 z on all 8 modes (positive C8 on axes 0..7, absolute phase)') if backward else dict(y_terms_left=left)
 
 
 def laurent(controller):
@@ -560,7 +616,7 @@ def build():
     D = lemma_controls()
     return dict(lemma='sum_g c_g g^{(x)f} = 0 for all f >= 1  <=>  sum_g c_g g = 0 in C[G]; group identities lift by g -> g^{(x)f}',
                 port_bindings=A, body_endpoint=Bres, controller=C, lemma_controls=D,
-                conclusion='The complete #5413 caller identity is a composition of (i) a free-word identity of the body, (ii) 896 exact group identities binding the ports to C_0 and D, (iii) a free commutative Laurent identity realized by commuting exact elements on disjoint axes. Each lifts to every positive column multiplicity; the algebraic half of native_all_columns holds for this caller. The physical half is not addressed.')
+                conclusion='The complete #5413 caller identity is a composition of (i) a free-word identity of the body whose 8 mode outputs reduce to C8 z in C[G] once the cached provider path and the paid C8 path are bound to exact elements, (ii) 896 exact group identities binding the ports to C_0 and D, (iii) a free commutative Laurent identity realized by commuting exact elements on disjoint axes. Each lifts to every positive column multiplicity; the algebraic half of native_all_columns holds for this caller. The physical half is not addressed.')
 
 
 def main():

@@ -25,7 +25,7 @@ which `clifford_exact.py` does (Pauli tableau plus the image of `|0>`, fixing th
 | Layer | Identity | Count | Lifts because |
 |---|---|---|---|
 | Ports | `x->X = D`, `y->Y = D`, `y->X = D C_0`, `Q_p = C_0`, both orientations, absolute phase | 896 | group identities |
-| Body | free-word endpoint of `NEUTRAL-BACKWARD-v16c` with `PROVIDER_5402` expanded: all warps cancel, main rows carry only the port wrappers, 400 autonomous helpers under exact signed alias monomials (318 pure phases, 82 with address action) in their recorded exit frames, 8 mode outputs `C8 (h - Z y)`, 17 owned fields zero | 649 rows | free-word identity |
+| Body | free-word endpoint of `NEUTRAL-BACKWARD-v16c` with `PROVIDER_5402` expanded: all warps cancel, main rows carry only the port wrappers, 400 autonomous helpers under exact signed alias monomials (318 pure phases, 82 with address action) in their recorded exit frames, 17 owned fields zero; the 8 mode outputs are `C8 z`: their 448 cached provider `y` terms cancel the 448 `y` terms through `C8` element by element | 649 rows | free-word identity; modes in `C[G]` |
 | Controller | Laurent replay in free commuting `Q, D_1..D_33` reproduces the diagonal; 18 private planes disjoint and disjoint from axis 0; `C_0^2 = X_0`, `C_0^-1 X_0 = C_0`, `[C_0, D] = 0` exact | 32 banks | commutative identity, abelian realization |
 
 Backward uses the entrywise-conjugate semantics of PR5376 `PROVIDER.md`. Reading the backward wrappers against
@@ -35,7 +35,8 @@ of the certificate.
 Controls on dense `Q(i)` matrices: the Reynolds-type relation `C_0 = (1+i)/2 I + (1-i)/2 X_0` and the scalar trap
 `i = iI` vanish at width 1 and fail at width 2 while the census counts three and two distinct elements; exponent two
 (`C_0^2 = X_0`) is one element and lifts; reversed noncommuting factors differ already at width 1.
-[test_verify.py](test_verify.py) rejects eight mutations.
+[test_verify.py](test_verify.py) rejects ten mutations, including a cache SWAP that drops the cache row (the error of
+an earlier version, found in the review of this PR) and a sign change in one mode output word.
 
 ## Reproduce
 

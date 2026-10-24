@@ -7,12 +7,18 @@
   "helper_alias_pairs_pure_phase": 318,
   "helper_alias_pairs_with_address_action": 82,
   "main_rows": "X_p = Nout_x(Nin_x x_p - Nin_y y_p), Y_p = Nout_y Nin_y y_p on all 112 ports",
-  "mode_outputs": 8,
-  "mode_terms": 456,
+  "mode_outputs": {
+   "cached_terms": 448,
+   "cancelled_y_pairs": 448,
+   "free_word_terms": 904,
+   "output": "C8 z on all 8 modes (positive C8 on axes 0..7, absolute phase)",
+   "paid_C8_terms": 456,
+   "y_terms_left": 0
+  },
   "owned_zero": 17,
   "warps_cancelled": true
  },
- "conclusion": "The complete #5413 caller identity is a composition of (i) a free-word identity of the body, (ii) 896 exact group identities binding the ports to C_0 and D, (iii) a free commutative Laurent identity realized by commuting exact elements on disjoint axes. Each lifts to every positive column multiplicity; the algebraic half of native_all_columns holds for this caller. The physical half is not addressed.",
+ "conclusion": "The complete #5413 caller identity is a composition of (i) a free-word identity of the body whose 8 mode outputs reduce to C8 z in C[G] once the cached provider path and the paid C8 path are bound to exact elements, (ii) 896 exact group identities binding the ports to C_0 and D, (iii) a free commutative Laurent identity realized by commuting exact elements on disjoint axes. Each lifts to every positive column multiplicity; the algebraic half of native_all_columns holds for this caller. The physical half is not addressed.",
  "controller": {
   "central_axis": 0,
   "group_identities": [
