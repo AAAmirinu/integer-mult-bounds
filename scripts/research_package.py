@@ -41,7 +41,7 @@ def canonical_relative_path(name):
 
 
 def symlink_free_relative_path(root, name):
-    """Reject symlink components without requiring a deleted input to exist.
+    """Reject symlink/junction components without requiring a deleted input to exist.
 
     Git reports changes under the target's path, not a symlink alias declared
     by its consumer. Inspect existing components below the repository root;
@@ -52,10 +52,14 @@ def symlink_free_relative_path(root, name):
     for part in parts:
         current = current / part
         try:
-            mode = current.lstat().st_mode
+            info = current.lstat()
         except (FileNotFoundError, NotADirectoryError):
             break
-        require(not stat.S_ISLNK(mode), "symlink in repository-relative path: " + name)
+        require(not stat.S_ISLNK(info.st_mode), "symlink in repository-relative path: " + name)
+        # Windows junctions have directory mode, not S_IFLNK. Inspect the same
+        # lstat result so even a dangling junction is rejected before traversal.
+        require(getattr(info, "st_reparse_tag", 0) != getattr(stat, "IO_REPARSE_TAG_MOUNT_POINT", None),
+                "junction in repository-relative path: " + name)
     return root / name
 
 

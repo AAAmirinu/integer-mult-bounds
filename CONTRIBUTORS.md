@@ -3,6 +3,19 @@
 The [selected record](certificates/selected-result.json) identifies the current
 frontier; numbered checkpoints below retain their historical attribution.
 
+## Complete neutral caller: κ = 0.003027288235
+
+**Chris R / Clear1nsight (#5413/#5414/#5407)** supplies the completion,
+source application and independent checks; **Dillon Amburgey / dillona (#5402)**
+supplies the coupled provider; **Ali Romman / aliromman (#5398)** supplies the
+retained direct controller and cached-relation work. **Cao Yifan / intqwq
+(#4610)**, **Cinna Davis**, **zxv**, **Jacob Alan Sussman** and the full preceding
+native, BIT, Clifford, compiler, analytic and verification lineage retain credit.
+The [contributor map](docs/research/community-neutral5413-contributors.md)
+distinguishes their roles and links the earlier maps. This is a conditional
+result; the final neutral step improves compiler headroom rather than the raw
+recursive-price ceiling.
+
 ## Joint-helper selected checkpoint: κ = 0.00302015
 
 **Cinna Davis / 1337isnot1337 (#4470)** supplies the selected joint-helper patch,
@@ -4035,3 +4048,73 @@ Source archives retain attribution; mathematical review remains open.
 ## Selected PR4610 admission, 23 October 2026
 
 **Cao Yifan (@intqwq)** supplied κ=0.0030217758 in PR4610. **Chris R (@Clear1nsight)** supplied PR5241's complete independent admission audit. Cinna Davis, zxv, Jacob Alan Sussman, Dugongue and the cumulative BIT/geometry/physical/analytic and verification contributors retain credit. See the [selection contributor map](docs/research/community-native4610-contributors.md) for roles and the [maintainer review](docs/research/pr-intake-evidence/pr4610/PROOF-REVIEW.md) for scope. Conditional AI-assisted acceptance is not a full formal or independent human theorem verification.
+
+## Queue intake, 23 October 2026 (chunk P)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **Ali Romman (@aliromman)** — [#5353](https://github.com/CrocSwap/integer-mult-bounds/pull/5353): Construct actual mixed-width CRT row entry with complete lifecycle (source archive).
+- **Ali Romman (@aliromman)** — [#5356](https://github.com/CrocSwap/integer-mult-bounds/pull/5356): Implement a local continuation stack with exact linear cost (source archive).
+- **mihir-s-05 (@mihir-s-05)** — [#5357](https://github.com/CrocSwap/integer-mult-bounds/pull/5357): Reject Windows junction aliases in replay input paths (reviewed tooling).
+- **mihir-s-05 (@mihir-s-05)** — [#5358](https://github.com/CrocSwap/integer-mult-bounds/pull/5358): Test actual older Git for Windows source-reader fallback (reviewed tooling).
+- **mihir-s-05 (@mihir-s-05)** — [#5359](https://github.com/CrocSwap/integer-mult-bounds/pull/5359): Restore authenticated replay of the historical complex-ceiling control (reviewed tooling).
+- **mihir-s-05 (@mihir-s-05)** — [#5360](https://github.com/CrocSwap/integer-mult-bounds/pull/5360): Prove general-H gluing for sharp ordered Schur residuals (no κ) (source archive).
+- **flyingviper (@flyingviper)** — [#5361](https://github.com/CrocSwap/integer-mult-bounds/pull/5361): Certify support obstructions for source-consuming productive helpers (source archive).
+- **mihir-s-05 (@mihir-s-05)** — [#5362](https://github.com/CrocSwap/integer-mult-bounds/pull/5362): Implement finite-handle QQ16 context restoration with bounded record reuse (source archive).
+- **mihir-s-05 (@mihir-s-05)** — [#5363](https://github.com/CrocSwap/integer-mult-bounds/pull/5363): Audit QQ16 high-count scratch and exact installation costs (source archive).
+- **mihir-s-05 (@mihir-s-05)** — [#5364](https://github.com/CrocSwap/integer-mult-bounds/pull/5364): Add delimited continuation primitive with a complete local tape bill (source archive).
+- **Ali Romman (@aliromman)** — [#5365](https://github.com/CrocSwap/integer-mult-bounds/pull/5365): Evaluate dependent multi-shift nullities by exact convolution (source archive).
+- **Ali Romman (@aliromman)** — [#5366](https://github.com/CrocSwap/integer-mult-bounds/pull/5366): Count complete headers for nonidentity scalar Schur pivots (source archive).
+- **Ali Romman (@aliromman)** — [#5367](https://github.com/CrocSwap/integer-mult-bounds/pull/5367): Execute the actual FOUR packet boundary with a complete payload bill (source archive).
+- **Ali Romman (@aliromman)** — [#5368](https://github.com/CrocSwap/integer-mult-bounds/pull/5368): Deliver child output through the physical continuation boundary (source archive).
+- **Ali Romman (@aliromman)** — [#5369](https://github.com/CrocSwap/integer-mult-bounds/pull/5369): Prove a complete four-width criterion for affine-quadratic native identities (source archive).
+- **Ali Romman (@aliromman)** — [#5370](https://github.com/CrocSwap/integer-mult-bounds/pull/5370): Reduce Gaussian phase payload work by 25–50 percent (source archive).
+- **Ali Romman (@aliromman)** — [#5371](https://github.com/CrocSwap/integer-mult-bounds/pull/5371): Reduce actual QQ16 Context construction from cubic to quadratic scans (source archive).
+- **Ali Romman (@aliromman)** — [#5372](https://github.com/CrocSwap/integer-mult-bounds/pull/5372): Prove and execute the paid clean-row Gray optimum (source archive).
+- **flyingviper (@flyingviper)** — [#5373](https://github.com/CrocSwap/integer-mult-bounds/pull/5373): Prove a color-cut obstruction for a source-consuming productive helper (source archive).
+- **Ali Romman (@aliromman)** — [#5374](https://github.com/CrocSwap/integer-mult-bounds/pull/5374): Validate P104 Newton membership with five-bit residues (source archive).
+- **Ali Romman (@aliromman)** — [#5375](https://github.com/CrocSwap/integer-mult-bounds/pull/5375): Compile actual monomial phases with sequential counters (source archive).
+- **Ali Romman (@aliromman)** — [#5376](https://github.com/CrocSwap/integer-mult-bounds/pull/5376): Verify a complete Clifford provider and exclude 30,328 paid-pair fusions (source archive).
+- **Ali Romman (@aliromman)** — [#5377](https://github.com/CrocSwap/integer-mult-bounds/pull/5377): Conditional κ = 0.00302235 (+5.742e-7 over #4610): one owned helper relation (source archive).
+- **Ali Romman (@aliromman)** — [#5378](https://github.com/CrocSwap/integer-mult-bounds/pull/5378): Provide current task commands without changing frozen entry points (reviewed tooling).
+- **James Reed (@jwr404)** — [#5379](https://github.com/CrocSwap/integer-mult-bounds/pull/5379): Prove two 3-cycles with a spectator coordinate cost exactly twelve (no new κ) (source archive).
+- **zxv (@zxv)** — [#5380](https://github.com/CrocSwap/integer-mult-bounds/pull/5380): Observer Limits and Physical Costs in Native Constructions (source archive).
+- **Ali Romman (@aliromman)** — [#5382](https://github.com/CrocSwap/integer-mult-bounds/pull/5382): Prove new two-slot centre spectrum and degree at least 1093 (source archive).
+- **Ali Romman (@aliromman)** — [#5383](https://github.com/CrocSwap/integer-mult-bounds/pull/5383): Conditional κ = 0.00302666 (+4.31e-6 over #5377): eight joint helper relations (source archive).
+- **Chris R (@Clear1nsight)** — [#5384](https://github.com/CrocSwap/integer-mult-bounds/pull/5384): Independently validate κ = 0.00302235 and the owned-relation price ceiling (source archive).
+- **ahrazzle (@ahrazzle)** — [#5385](https://github.com/CrocSwap/integer-mult-bounds/pull/5385): Correct the #5270 reference transcription at gate level (successor to #5349) (source archive).
+- **David Ganz (@Dugongue)** — [#5387](https://github.com/CrocSwap/integer-mult-bounds/pull/5387): Raise conditional κ to 0.003026674765 with a smaller completion reserve (source archive).
+- **Dillon Amburgey (@dillona)** — [#5388](https://github.com/CrocSwap/integer-mult-bounds/pull/5388): Expose 112 funded native helper queries in an entrance prologue (source archive).
+- **Ali Romman (@aliromman)** — [#5389](https://github.com/CrocSwap/integer-mult-bounds/pull/5389): Export frozen inputs from an explicit historical commit (reviewed tooling).
+- **David Ganz (@Dugongue)** — [#5390](https://github.com/CrocSwap/integer-mult-bounds/pull/5390): Certify κ = 0.0030266747680744 and a smaller matched compiler using direct tails (source archive).
+- **Chris R (@Clear1nsight)** — [#5391](https://github.com/CrocSwap/integer-mult-bounds/pull/5391): Add a source-bound six-plane pricing oracle with funded-candidate checks (no new κ) (source archive).
+- **Ali Romman (@aliromman)** — [#5392](https://github.com/CrocSwap/integer-mult-bounds/pull/5392): Conditional κ = 0.00302725 (+5.75235e-7 over #5387): owned circuit transposition (source archive).
+- **Chris R (@Clear1nsight)** — [#5393](https://github.com/CrocSwap/integer-mult-bounds/pull/5393): Certify frozen eight-relation zero-row and controller ceilings (no new κ) (source archive).
+- **Ali Romman (@aliromman)** — [#5394](https://github.com/CrocSwap/integer-mult-bounds/pull/5394): Prove the all-group rank-one triple floor with free scalar workspace (source archive).
+- **Chris R (@Clear1nsight)** — [#5395](https://github.com/CrocSwap/integer-mult-bounds/pull/5395): Independently validate κ = 0.003026674765 and the eight-relation price plane (source archive).
+- **Chris R (@Clear1nsight)** — [#5396](https://github.com/CrocSwap/integer-mult-bounds/pull/5396): Independently validate joint relations and conditional κ = 0.003026674765 (source archive).
+- **zxv (@zxv)** — [#5397](https://github.com/CrocSwap/integer-mult-bounds/pull/5397): Screen recursive cost edits and certify centre-exchange headroom (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5398](https://github.com/CrocSwap/integer-mult-bounds/pull/5398): Conditional κ = 0.00302728823 (+3.823e-8 over #5392): direct backward caller (source archive).
+- **Chris R (@Clear1nsight)** — [#5399](https://github.com/CrocSwap/integer-mult-bounds/pull/5399): Independently validate κ = 0.00302725 and the owned-transpose phase/cost proof (source archive).
+- **Chris R (@Clear1nsight)** — [#5400](https://github.com/CrocSwap/integer-mult-bounds/pull/5400): Independently validate κ = 0.00302728823 for the direct backward caller (source archive).
+- **zxv (@zxv)** — [#5401](https://github.com/CrocSwap/integer-mult-bounds/pull/5401): Prove restoration-generation lifetime for the literal QQ16 ordinary caller (source archive).
+- **Dillon Amburgey (@dillona)** — [#5402](https://github.com/CrocSwap/integer-mult-bounds/pull/5402): Preserve all 632 native inputs in an eight-mode coupled helper provider (source archive).
+- **Ali Romman (@aliromman)** — [#5403](https://github.com/CrocSwap/integer-mult-bounds/pull/5403): Remove 60 native maps and 42 more ADDs after PR5350; kappa unchanged (source archive).
+- **zxv (@zxv)** — [#5404](https://github.com/CrocSwap/integer-mult-bounds/pull/5404): Bound all nineteen continuation tapes across recursive call histories (source archive).
+- **Ali Romman (@aliromman)** — [#5405](https://github.com/CrocSwap/integer-mult-bounds/pull/5405): Prove an unbounded FULL/QUERY controller ceiling (no κ gain) (source archive).
+- **zxv (@zxv)** — [#5406](https://github.com/CrocSwap/integer-mult-bounds/pull/5406): Derive source-bound recursive invoices from literal p16 recipes (source archive).
+- **Chris R (@Clear1nsight)** — [#5407](https://github.com/CrocSwap/integer-mult-bounds/pull/5407): Independently audit the coupled provider and conditional closure budget (no new κ) (source archive).
+- **Ali Romman (@aliromman)** — [#5408](https://github.com/CrocSwap/integer-mult-bounds/pull/5408): Prove all-length terminal separation and exhibit two-axis path cancellation (source archive).
+- **Chris R (@Clear1nsight)** — [#5409](https://github.com/CrocSwap/integer-mult-bounds/pull/5409): Independently verify the controller-family ceiling by convexity (no new κ) (source archive).
+- **James Reed (@jwr404)** — [#5410](https://github.com/CrocSwap/integer-mult-bounds/pull/5410): Treat the selected record as provenance in 99 replay checks (no new κ) (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5411](https://github.com/CrocSwap/integer-mult-bounds/pull/5411): Construct the coupled native inverse without extra Gaussian calls (source archive).
+- **Ali Romman (@aliromman)** — [#5412](https://github.com/CrocSwap/integer-mult-bounds/pull/5412): Exclude repeated two-stage scalar decoders through 32 power blocks (source archive).
+- **Chris R (@Clear1nsight)** — [#5413](https://github.com/CrocSwap/integer-mult-bounds/pull/5413): Complete coupled-output caller: conditional κ = 0.003027288235 (+5e-12 over #5400) (source archive).
+- **Chris R (@Clear1nsight)** — [#5414](https://github.com/CrocSwap/integer-mult-bounds/pull/5414): Independently verify PR5413 neutrality, necessary pricing and source application (source archive).
+- **zxv (@zxv)** — [#5415](https://github.com/CrocSwap/integer-mult-bounds/pull/5415): Test coupled returns through two query consumers and price a compressed exit (source archive).
+
+## Queue intake, 23 October 2026 (chunk Q)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **Nicholas Stone (@NicholasStone)** — [#5416](https://github.com/CrocSwap/integer-mult-bounds/pull/5416): Research: exact parity constants and q-series for the projection recurrence (source archive).
