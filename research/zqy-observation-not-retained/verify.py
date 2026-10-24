@@ -24,9 +24,11 @@ formal free-word grammar used by the #5377 / #5397 row engines, at two levels:
     (products of length <= LEFT_DEPTH). Certify 0 of 18 at the return and 0 of 18 with
     the whole caller history (a delayed exit).
 
-Arithmetic is modulo the prime 2^61-1. All coefficients are dyadic, so an identity over
-the rationals reduces to one modulo p; non-membership modulo p therefore implies
-non-membership over the rationals. Controls show that both tests can say yes.
+Arithmetic is exact over the rationals (Fraction echelon forms): every rank, intersection
+dimension and (non-)membership below is a statement over Q, so no reconstruction with
+arbitrary rational coefficients exists. (An earlier version reduced modulo 2^61-1, which
+only proves the obstruction for p-integral coefficients; review of #5427.) Controls show
+that both tests can say yes.
 
 Part 2 (response reuse, the "global occurrence ledger" of #5423): no paid job can be
 replaced by an earlier response.
@@ -48,7 +50,6 @@ from fractions import Fraction as Fr
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
-P = (1 << 61) - 1
 INPUTS = {
     'provider': ('research/native-rank8-helper-provider/WORD.json.gz',
                  '7dc356001ed597ad6fc9fd3e0bc6ff7e3ec3a580a579a956827aa17fccfdd2dc'),
@@ -72,9 +73,9 @@ def read_input(name):
     return json.loads(gzip.decompress(raw) if rel.endswith('.gz') else raw)
 
 
-# ---------------------------------------------------------------- exact span modulo p
+# ---------------------------------------------------------------- exact span over Q
 class Span:
-    """Sparse reduced echelon basis modulo P."""
+    """Sparse reduced echelon basis over Q (exact Fractions)."""
 
     def __init__(self):
         self.piv = {}
@@ -87,7 +88,7 @@ class Span:
                 return v
             f = v[hit]
             for c, x in self.piv[hit].items():
-                nv = (v.get(c, 0) - f * x) % P
+                nv = v.get(c, 0) - f * x
                 if nv:
                     v[c] = nv
                 else:
@@ -98,13 +99,13 @@ class Span:
         if not v:
             return False
         c = min(v)
-        inv = pow(v[c], P - 2, P)
-        v = {k: x * inv % P for k, x in v.items()}
+        inv = 1 / Fr(v[c])
+        v = {k: x * inv for k, x in v.items()}
         for b in self.piv.values():
             if c in b:
                 f = b[c]
                 for k, x in v.items():
-                    nv = (b.get(k, 0) - f * x) % P
+                    nv = b.get(k, 0) - f * x
                     if nv:
                         b[k] = nv
                     else:
@@ -119,11 +120,12 @@ class Span:
 
 
 def modrow(row, index):
+    """Exact rational coordinates of a row (dyadic coefficients checked)."""
     out = {}
     for key, q in row.items():
         c = index.setdefault(key, len(index))
         need(q.denominator & (q.denominator - 1) == 0, 'dyadic coefficient')
-        out[c] = q.numerator % P * pow(q.denominator % P, P - 2, P) % P
+        out[c] = Fr(q)
     return out
 
 
@@ -550,7 +552,7 @@ def main():
     need(prov['source_sha256'] == 'cfcd36b40326d7a5815e1db5313444379b3fb756b27d5201c561574c085cc0dd'
          and prov['direction'] == 'backward', 'provider word is the PR5402 backward word over the #4610 canonical frames')
     result = {'schema': 'zqy-observation-not-retained/2', 'native': {}, 'caller': None,
-              'arithmetic': 'exact dyadic rows, spans modulo 2^61-1 (non-membership mod p implies non-membership over Q)'}
+              'arithmetic': 'exact rational arithmetic: dyadic rows, spans as exact echelon forms over Q; ranks, intersections and non-membership are over Q'}
     for name, prog, bw in (('pr5402_provider_backward', prov['word'], True),
                            ('pr4610_backward', word['programs']['backward'], True),
                            ('pr4610_forward', word['programs']['forward'], False)):
@@ -573,7 +575,7 @@ def main():
         print('PASS_ZQY_OBSERVATION_NOT_RETAINED')
         return
     result['caller_depth2_evidence'] = {
-        'note': 'same test with free left factors of length <= 2 (419 factors), run with --left-depth 2 (about 2 minutes); not part of the registered replay',
+        'note': 'same test with free left factors of length <= 2 (419 factors), run with --left-depth 2 (about 5 minutes, exact over Q); not part of the registered replay',
         'available_at_return': 0, 'available_with_whole_history': 0, 'closure_rank_at_end': 56405}
     path = os.path.join(HERE, 'RESULT.json')
     text = json.dumps(result, indent=1, sort_keys=True) + '\n'

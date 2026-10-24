@@ -35,10 +35,13 @@ with every version of the whole caller history.
 
 ## Arithmetic
 
-All coefficients are dyadic. Reduction modulo the odd prime `2^61 − 1` is a
-ring map on such rationals, so a rational identity `target = Σ c_i v_i` maps to
-an identity modulo p. The computed non-membership modulo p therefore implies
-non-membership over the rationals.
+All coefficients are dyadic, and `verify.py` computes every span as an exact
+reduced echelon form over Q (Python `Fraction`). A target outside that span has
+no expression `target = Σ c_i v_i` with any rational `c_i`, and the reported
+ranks and intersection dimensions are Q-dimensions. (Reduction modulo a prime
+would not suffice: for `A = [p]`, `b = 1` the target is outside the modular
+image but equals `(1/p)·p`. The first version of this package used arithmetic
+modulo `2^61 − 1`; the exact recomputation gives identical numbers.)
 
 ## Part 2: response reuse
 

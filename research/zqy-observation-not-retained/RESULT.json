@@ -1,5 +1,5 @@
 {
- "arithmetic": "exact dyadic rows, spans modulo 2^61-1 (non-membership mod p implies non-membership over Q)",
+ "arithmetic": "exact rational arithmetic: dyadic rows, spans as exact echelon forms over Q; ranks, intersections and non-membership are over Q",
  "caller": {
   "available_at_return": 0,
   "available_with_whole_history": 0,
@@ -124,7 +124,7 @@
   "available_at_return": 0,
   "available_with_whole_history": 0,
   "closure_rank_at_end": 56405,
-  "note": "same test with free left factors of length <= 2 (419 factors), run with --left-depth 2 (about 2 minutes); not part of the registered replay"
+  "note": "same test with free left factors of length <= 2 (419 factors), run with --left-depth 2 (about 5 minutes, exact over Q); not part of the registered replay"
  },
  "native": {
   "pr4610_backward": {

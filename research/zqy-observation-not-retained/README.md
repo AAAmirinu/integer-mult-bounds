@@ -36,16 +36,20 @@ versions. No version word begins with a `Z` letter, so `b = Z_s Q Y` is availabl
 iff `Q Y` lies in the span of all versions after free left factors `Q^{±2}`,
 `W_t`. Result: **0 of 18** backward FULL returns, and **0 of 18** when the whole
 caller history may be used (a delayed exit). Registered replay uses factors of
-length ≤ 1 (21 factors); `--left-depth 2` (419 factors, about 2 minutes) gives
+length ≤ 1 (21 factors); `--left-depth 2` (419 factors, about 5 minutes, exact over Q) gives
 the same 0/0 and is recorded in `RESULT.json`.
 
 **Controls.** Every final full-frame endpoint row lies in `V`; one injected
 pure-y version is detected (intersection 1); at every caller return the current
 `Y` is found, and at the end `Q² Y` is found. So both tests can answer yes.
 
-**Arithmetic.** All coefficients are dyadic; spans are computed modulo the prime
-2^61 − 1. An identity over the rationals reduces to one modulo p, so
-non-membership modulo p implies non-membership over the rationals.
+**Arithmetic.** All coefficients are dyadic, and every span is an exact echelon
+form over the rationals. All ranks, intersection dimensions and non-memberships
+in this package (both parts) are therefore statements over Q: no combination of
+the versions with arbitrary rational coefficients gives the target. An earlier
+version computed modulo 2^61 − 1, which proves the obstruction only for
+dyadic or p-integral coefficients; Clear1nsight's review pointed this out. The
+exact recomputation gives the same numbers in every row.
 
 ## Part 2: no paid response can be reused
 
