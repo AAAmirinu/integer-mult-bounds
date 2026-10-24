@@ -113,3 +113,28 @@ re-authenticate remote Git history.
 No new κ is claimed. The 32-H1 design allocation and the numerical regime
 screens are necessary-budget experiments for an unimplemented bridge, not
 constructed algorithms.
+
+## Committed publication and portable replay
+
+Scientific snapshot `f59763a6218a0f0fba253b4907f1eb837b8e2ba3` passed:
+
+```sh
+python3 -B scripts/check_research_commit.py --package research/literature-coupled-synthesis
+python3 -B scripts/export_research_package.py export --package research/literature-coupled-synthesis --ref f59763a6218a0f0fba253b4907f1eb837b8e2ba3 --output /tmp/literature-coupled-synthesis-publication.tar
+python3 -B scripts/export_research_package.py check /tmp/literature-coupled-synthesis-publication.tar
+```
+
+Tokens: `PASS_RESEARCH_COMMIT_BYTES`, `PASS_RESEARCH_EXPORT`; 32 exported files.
+The archive was extracted into a fresh tree and every file/directory made
+read-only. Both normal and optimized CPython 3.12.8 replays passed with
+`PATH=/nonexistent`, `-W error -B` and no Git executable available. The
+junction emitter then produced all three literal instruction streams into a
+separate temporary path. Their SHA256 payloads matched RESULT.json, and an
+attempt to overwrite that output was rejected. The scientific code and
+generated evidence are unchanged by this documentation-only receipt update.
+
+The latest complete direct/registered replays include the newly selected
+PR5413 reprice, both coupled programs, the 240-column ADD and 352-column thin
+query with restored originals/owned zeros, exact-phase inverse lowering, and
+all 25 paper probes. Export integrity is byte transport, not scientific
+acceptance or an independent replay of the selected frontier.
