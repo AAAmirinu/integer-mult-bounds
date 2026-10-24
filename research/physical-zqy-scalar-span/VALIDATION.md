@@ -1,6 +1,6 @@
 # Validation scope
 
-Python 3.12.14, standard library only, macOS arm64. The current registered
+Python 3.12.13, standard library only, macOS arm64. The current registered
 suite consists of eight commands. All eight pass on the kernel extension.
 Default replay compares frozen receipts and writes no package files.
 
