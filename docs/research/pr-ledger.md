@@ -8,8 +8,8 @@ The ledger separates historical review from integration. A prior snapshot or a m
 
 | Disposition | Count |
 |---|---:|
-| incorporated | 2127 |
-| partially reviewed | 2566 |
+| incorporated | 2129 |
+| partially reviewed | 2564 |
 | superseded | 2 |
 | unreviewed | 60 |
 
@@ -4780,7 +4780,7 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#5414](https://github.com/CrocSwap/integer-mult-bounds/pull/5414) | Clear1nsight | incorporated | [record 1](../../docs/research/pr-intake-decisions.json) · [record 2](../../docs/research/pr-intake-evidence/pr5413/PROOF-REVIEW.md) |
 | [#5415](https://github.com/CrocSwap/integer-mult-bounds/pull/5415) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5416](https://github.com/CrocSwap/integer-mult-bounds/pull/5416) | NicholasStone | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
-| [#5417](https://github.com/CrocSwap/integer-mult-bounds/pull/5417) | jwr404 | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5417](https://github.com/CrocSwap/integer-mult-bounds/pull/5417) | jwr404 | incorporated | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5418](https://github.com/CrocSwap/integer-mult-bounds/pull/5418) | Clear1nsight | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5419](https://github.com/CrocSwap/integer-mult-bounds/pull/5419) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5420](https://github.com/CrocSwap/integer-mult-bounds/pull/5420) | Clear1nsight | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
@@ -4796,5 +4796,5 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#5430](https://github.com/CrocSwap/integer-mult-bounds/pull/5430) | NicholasStone | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5432](https://github.com/CrocSwap/integer-mult-bounds/pull/5432) | hevlyo | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5433](https://github.com/CrocSwap/integer-mult-bounds/pull/5433) | Matarener | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
-| [#5434](https://github.com/CrocSwap/integer-mult-bounds/pull/5434) | Matarener | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5434](https://github.com/CrocSwap/integer-mult-bounds/pull/5434) | Matarener | incorporated | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5435](https://github.com/CrocSwap/integer-mult-bounds/pull/5435) | Matarener | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
