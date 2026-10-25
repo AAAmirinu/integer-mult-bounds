@@ -3,7 +3,7 @@
 from itertools import product,permutations
 from pathlib import Path
 from collections import Counter
-import json,gzip,hashlib,random
+import json,gzip,hashlib,random,argparse
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1]
 
 
@@ -140,7 +140,11 @@ def authenticate():
     return data
 
 
-def main():
+def typed_match(expected, observed):
+    need(json.dumps(expected,sort_keys=True,separators=(",",":"))==json.dumps(observed,sort_keys=True,separators=(",",":")),'typed exact receipt')
+
+
+def main(emit=False):
     data=authenticate();local=exception=0
     for n in (1,2,3):
         for a in product(range(1<<n),repeat=n):
@@ -205,7 +209,14 @@ def main():
         except ValueError:controls+=1
         else:raise ValueError('control failed to reject')
     result={'status':'PASS_MULTIGRAPH_FUNDING_OBSTRUCTION','local_spectral_cases':local,'exceptional_cases':exception,'graph_fixtures':len(graphs),'chronologies':orders,'restricted_entry_checks':blockpairs,'literal_positive_words':3,'paid_rank_per_FULL':paidrank,'untouched_helpers_per_FULL':untouched,'distinct_selected_helper_owners':len(selected),'rank_deficit_per_FULL':63,'rejecting_controls':controls,'solver_run':False,'all_flags_covered':True,'new_kappa':False}
-    if (HERE/'RESULT.json').exists():need(result==json.loads((HERE/'RESULT.json').read_text()),'typed exact receipt')
+    forged=dict(result);forged['new_kappa']=0
+    try:typed_match(result,forged)
+    except ValueError:pass
+    else:raise ValueError('bool/integer receipt control escaped')
+    if not emit:
+        need((HERE/'RESULT.json').is_file(),'required receipt missing')
+        typed_match(result,json.loads((HERE/'RESULT.json').read_text()))
     print(json.dumps(result,sort_keys=True,indent=2))
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser();parser.add_argument('--emit',action='store_true');args=parser.parse_args();main(args.emit)

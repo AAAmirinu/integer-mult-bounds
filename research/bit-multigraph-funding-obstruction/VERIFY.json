@@ -32,6 +32,27 @@
       ],
       "timeout_seconds": 30,
       "checks": "Same checks and explicit rejecting controls with assertions disabled."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/controls.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Missing and bool/integer-corrupt receipts reject for the intended reason."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-B",
+        "{package}/controls.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Receipt faults reject with optimization enabled."
     }
   ]
 }
