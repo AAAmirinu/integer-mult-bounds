@@ -8,7 +8,8 @@ supports) whenever the refit is exact (max residual < 1e-9).  Fixed mask cells: 
 between non-orthogonal planes; entries between orthogonal planes are free.  A real solution space contains every
 rational one, so a cost below 4|D| would be an escape for every denominator.  "No escape" is local-search evidence.
 
-usage:  real_escape.py triples-open STARTS | quads-open N STARTS SEED | groups "a,b,c;d,e,f,g" STARTS
+usage:  real_escape.py triples-open STARTS | quads-open N STARTS SEED | quads-degenerate N STARTS
+        | c5 STARTS | groups "a,b,c;d,e,f,g" STARTS
 """
 import gzip, io, itertools, json, random, sys, tarfile, time, multiprocessing as mp
 from pathlib import Path
@@ -136,6 +137,24 @@ def open_quads():
     idx = gzip.decompress(QUAD.read_bytes())
     return [q for n, q in enumerate(itertools.combinations(range(NP), 4)) if (idx[2 * n] | idx[2 * n + 1] << 8) == 0]
 
+def degenerate_quads(n):
+    """the n quadruples with the smallest whole-group tariff t(D, D), ties broken by more non-orthogonal pairs"""
+    cand = [(tar(D, D), -sum(not ORTH[a][b] for a, b in itertools.combinations(D, 2)), D)
+            for D in itertools.combinations(range(NP), 4)]
+    return [D for _, _, D in sorted(cand)[:n]]
+
+def c5_groups():
+    """the induced 5-cycles of the non-orthogonality graph, each also extended by its 1 and 2 most degenerate planes"""
+    non = [[i != j and not ORTH[i][j] for j in range(NP)] for i in range(NP)]
+    holes = sorted(S for S in itertools.combinations(range(NP), 5) if all(sum(non[a][b] for b in S) == 2 for a in S))
+    out = []
+    for H in holes:
+        out.append(H); cur = list(H)
+        for _ in range(2):
+            best = min((x for x in range(NP) if x not in cur), key=lambda x: (tar(cur + [x], cur + [x]), x))
+            cur = cur + [best]; out.append(tuple(cur))
+    return holes, out
+
 if __name__ == '__main__':
     mode = sys.argv[1]
     if mode == 'triples-open':
@@ -144,6 +163,10 @@ if __name__ == '__main__':
         n, starts, seed = int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4])
         oq = open_quads(); print('open quadruples', len(oq), flush=True)
         groups = random.Random(seed).sample(oq, n)
+    elif mode == 'quads-degenerate':
+        groups, starts = degenerate_quads(int(sys.argv[2])), int(sys.argv[3])
+    elif mode == 'c5':
+        holes, groups = c5_groups(); starts = int(sys.argv[2]); print('induced C5s', len(holes), 'groups', len(groups), flush=True)
     else:
         groups = [tuple(int(x) for x in g.split(',')) for g in sys.argv[2].split(';')]; starts = int(sys.argv[3])
     t0 = time.time()
