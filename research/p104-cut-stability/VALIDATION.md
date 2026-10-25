@@ -38,8 +38,21 @@ python3.12 -B scripts/research_package.py --package research/p104-cut-stability 
 
 The official registered replay also passed both manifest commands, ending in
 `PASS_REGISTERED_RESEARCH_PACKAGE research/p104-cut-stability outcome=partial`.
-Committed-byte/source-history and closed-export checks are recorded below
-after they run; no unexecuted transport check is implied by this replay.
+The committed-byte/source-history preflight passed for scientific commit
+`1ce6038f8d3c669f686c8f73ac537b214dd6b94f`: all 55 package files matched
+their Git blobs and the declared canonical source base was an ancestor.
+The official export/check pair passed for exactly those 55 files.
+
+That export was relocated into a directory with no `.git`, an empty PATH,
+file modes 0444 and directory modes 0555. Fresh `-I -B` and `-I -O -B`
+runs both exited zero in 4.943 and 4.960 wall seconds. Their stdout matched
+the direct runs byte for byte, and the complete inventory and file hashes
+were unchanged afterward. The raw tar SHA256 was
+`43a9a2da3208eeb14e6401675249132b392542e08e6209d6a3205e97229be04d`.
+The direct, registered, initial committed-byte and cold receipts are retained
+in `validation/`. Subsequent changes only add these validation/review records
+and update this prose; mathematical code, inputs and receipts are unchanged.
+The final publication receives its own committed-byte and export preflight.
 
 ## Proof and implementation scope
 
@@ -67,3 +80,4 @@ whole-caller proof found no scoped mathematical blocker. The sealed
 whole-caller proof's bare `HILBERT-FIBER-REVIEW.md` reference resolves to
 `whole-caller/inputs/HILBERT-FIBER-REVIEW.md`; the sealed capsule bytes are
 retained rather than silently editing that historical reference.
+The complete assembled review is retained in `ASSEMBLED-REVIEW.md`.
