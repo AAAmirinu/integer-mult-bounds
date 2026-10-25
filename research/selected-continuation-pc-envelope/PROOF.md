@@ -6,11 +6,13 @@ Fix the PR2753/PR589 **historical source-selected** caller at base
 32890bc5de034ab8fc93ac88ead7279a6a416d04, prime q=213·2^80+1 and dimension64.
 Its unchanged `SelectedTopology`, `Catalogue.low_classes`, `SelectedBinding`,
 `Specifications.plan`, `compile_plan`, `Cursor` and `compile_node` are the
-source interface. Assume their admitted mathematical inputs and successful
-finite source construction, including the inherited chart/denominator and
-prime premises. Let N be the length of the complete original tuple emitted
-by `compile_node` in selected mode0. There are no axis-specialized residuals
-in this binding. Plans and code remain immutable during the run.
+source interface. Assume admitted mathematical inputs and successful individual
+plan construction, including the inherited chart/denominator and prime premises.
+Let N be the length of the finite mathematical instruction sequence specified
+by the `compile_node` loops in selected mode0. This does not assume CPython can
+materialize that sequence as a tuple; the host-length obstruction below shows
+why it cannot. There are no axis-specialized residuals in this binding. Plans
+and code remain immutable during the run.
 
 Put G=product_(i=0..63)(q^64-q^i). Then
 
