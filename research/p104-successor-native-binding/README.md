@@ -84,6 +84,20 @@ Use `--jobs 1` for serial operator execution.
 Use `--write` to regenerate both scientific receipts.
 The `--inventory-only` mode reports coverage without a mathematical pass.
 
+## Validation
+
+CPython 3.12.3 on Linux passed the final normal receipt generation in 219.15 seconds.
+The registered normal and optimized commands passed serially in 365.99 seconds.
+Both commands reproduced the same scientific receipts and all 14 controls.
+The package outcome is `partial` because complete supplier admission remains outside its scope.
+
+The committed-byte and source-history checks passed for all 16 package and input files.
+The export integrity check also passed at scientific commit `907876616f90ce65af6f5abfc23c865f568296e2`.
+Optimized replay passed in 146.61 seconds in a read-only, Git-free export whose path contains spaces.
+All 16 exported file hashes remained unchanged.
+Separate word and prior-receipt corruption controls failed authentication before operator replay.
+Hosted validation remains separate from these local checks.
+
 ## Sources and limits
 
 The base is canonical main `5e0052ca0aa3036a3afa8b0438927377c8d97d53`, priority revision seven.
@@ -109,12 +123,20 @@ It does not prove tensor substitution at every width, whole-caller admission, ow
 Precision, fixed-tape costs, stock, funding, and analytic recovery remain separate obligations.
 The package does not transfer evidence automatically to another successor.
 
+The final overlap check found concurrent PR5580 at `6efa248cf456d6101d757e9d09ba29711d18a13a`.
+That contribution changes one contact in the PR5569 word.
+This package retains its exact PR5569 scope. PR5580 needs its own descriptor and occurrence comparison.
+
 ## Open next questions
 
 The next useful task is complete admission of the exact successor caller.
 Its first step is a join between this occurrence inventory and the physical caller and funding evidence.
 This matters because matrix equality alone does not establish a legal, funded supplier.
 The inherited framework assumptions remain blockers. `TASK.json` records this question and the overlap scope.
+
+A separate next step is native evidence transfer to PR5580.
+Start with its exact word and compare every descriptor and occurrence against this package.
+Fresh comparisons are necessary for unmatched specifications. The present receipt does not authorize automatic transfer.
 
 ## Credit and license
 

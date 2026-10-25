@@ -85,8 +85,8 @@
   "bottleneck_link": "Prevents unverified operator changes from inheriting predecessor coverage and supplies a bounded replay of the actual new maps.",
   "budget_minutes": 60,
   "stop_rule": "Stop after exact-source coverage, uncovered-map replay and mutation controls. Do not claim full supplier admission, all-width lifting or a new kappa.",
-  "outcome": "completed",
-  "evidence": "RESULT.json and BINDINGS.json: 499 new native specifications pass all 512 columns, 2631 specifications reuse exact PR5572 evidence, and all 14 controls pass. Normal replay: CPython 3.12.3, 219.15 seconds. Registered and export checks are recorded in README.md after completion.",
+  "outcome": "partial",
+  "evidence": "Completed finite native audit in RESULT.json and BINDINGS.json: 499 new specifications pass all 512 columns, 2631 specifications reuse exact PR5572 evidence, and all 14 controls pass. CPython 3.12.3: normal receipt generation 219.15 seconds; registered normal and optimized replay 365.99 seconds with identical scientific receipts. Outcome is partial relative to complete supplier admission. Final source/export checks are recorded in README.md.",
   "author": "Scratch-net",
   "ai_assistance": "Substantial OpenAI Codex assistance.",
   "open_questions": [
@@ -95,6 +95,12 @@
       "why_it_matters": "Finite native-map equality does not admit a complete supplier.",
       "first_step": "Join this exact native inventory to the PR5569 caller and funding evidence at the same source head.",
       "blocked_by": "Separate all-width, owned-erasure, precision/tape and analytic assumptions."
+    },
+    {
+      "question": "Which native specifications change in concurrent PR5580?",
+      "why_it_matters": "Its stronger paid profile cannot inherit this finite evidence by ancestry alone.",
+      "first_step": "Compare the exact PR5580 word at 6efa248cf456d6101d757e9d09ba29711d18a13a against this occurrence and descriptor inventory.",
+      "blocked_by": "A separate exact-source binding and fresh replay for unmatched specifications."
     }
   ],
   "handoff": "https://github.com/CrocSwap/integer-mult-bounds/pull/5573#issuecomment-6402512076",
@@ -133,5 +139,30 @@
     },
     "warnings": [],
     "limits": "Remote PR scope is open PRs including drafts. Closed work is searched through local READMEs, TASK metadata and ledger only. Local coverage compares searched working-tree notes with regular note paths at coverage.local.head; it does not certify HEAD contents or historical coverage. No code diffs or arbitrary package files are searched. Recheck relevant heads before submission."
+  },
+  "final_overlap": {
+    "searched_at": "2026-10-25T20:30:35.679082+00:00",
+    "coverage": {
+      "local": {
+        "head": "5e0052ca0aa3036a3afa8b0438927377c8d97d53",
+        "records": 7613,
+        "head_records": 7611,
+        "complete_head_inventory": true,
+        "unsearched_head_paths": []
+      },
+      "open_prs": {
+        "fetched_at": "2026-10-25T20:28:57.686209+00:00",
+        "complete_pagination": true,
+        "records": 325
+      },
+      "discussions": {
+        "fetched_at": "2026-10-25T20:30:35.441738+00:00",
+        "complete_pagination": true,
+        "records": 4849
+      }
+    },
+    "warnings": [],
+    "limits": "Remote PR scope is open PRs including drafts. Closed work is searched through local READMEs, TASK metadata and ledger only. Local coverage compares searched working-tree notes with regular note paths at coverage.local.head; it does not certify HEAD contents or historical coverage. No code diffs or arbitrary package files are searched. Recheck relevant heads before submission.",
+    "decision": "Continue the exact PR5569 audit. Concurrent PR5580 at 6efa248cf456d6101d757e9d09ba29711d18a13a changes a parent contact and needs separate transfer; it does not duplicate this evidence binding."
   }
 }
