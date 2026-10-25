@@ -65,6 +65,6 @@ def main():
  bad=[list(x)for x in g];j=next(i for i,x in enumerate(bad)if x[0]=='add');bad[j][3]*=-1
  need(replay(bad)[-1]!=raw[-1],'actual ADD sign fault detection')
  result=dict(fused_gates=len(g),retained_cuts=len(cuts),rows_observable=5*len(cuts),grade3_image_dimension='4 dim(B_f)',raw_first_pivot_cut=11,raw_stack_dimension='5 dim(B_f)',paid_profile={'1':2,'3':4},scope='fixed producer; recording-only native gate boundaries; sufficiently-large-width obstruction to all-width completion')
- need(result==json.loads((p/'RESULT.json').read_text()),'receipt equality')
+ need(json.dumps(result,sort_keys=True)==json.dumps(json.loads((p/'RESULT.json').read_text()),sort_keys=True),'receipt equality')
  print(json.dumps(result,sort_keys=True))
 if __name__=='__main__':main()
