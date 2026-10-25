@@ -82,5 +82,5 @@ def verify():
 if __name__=='__main__':
     result=verify()
     if '--write' in sys.argv: (P/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
-    else:r.need(result==json.loads((P/'RESULT.json').read_text()),'receipt mismatch')
+    else:r.need(json.dumps(result,sort_keys=True)==json.dumps(json.loads((P/'RESULT.json').read_text()),sort_keys=True),'receipt mismatch')
     print(result['status'])

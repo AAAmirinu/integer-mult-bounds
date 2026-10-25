@@ -152,3 +152,12 @@ lengths/fixed phases exhaust addresses through four tensor factors; exact lane
 counts are checked against the formula. Eight actual f=2 columns cross digit
 carries and verify source composition. Full actual f=2 arrays, common native
 child/supplier replays, formal kernels and machine timing are not claimed.
+
+## Executable-reference versus RAM tariff
+
+Python is a semantic and route-counter reference, not an instruction-for-instruction
+implementation of the scalar tariff. In particular `rotate` eagerly constructs
+phase alternatives in Python, while the stated RAM schedule selects/reuses the
+required signed operands. The exact NEG categories are for that declared schedule,
+not measured Python unary operations or CPU instructions. Only explicitly
+instrumented route/store counts are reported as executable counters.
