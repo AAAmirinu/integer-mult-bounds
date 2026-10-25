@@ -16,7 +16,7 @@ integers l<=u such that, with eta=2^-P,
     u-l <= 2.
 
 Consequently coefficient, which returns l, has downward error <2eta. All
-constructor, Taylor-range, interval-width and final-width checks succeed
+Exponentials constructor, Taylor-range, interval-width and final-width checks succeed
 mathematically. Termination is for every finite represented input, with the
 encoded Count/Rational operations and ownership semantics retained. There
 is no assertion that arbitrary non-admitted input succeeds. In particular
@@ -108,7 +108,8 @@ keeps the original enclosure. Both branches therefore have width <eta/2.
 Scaling by 2^-sigma does not increase it. Final outward P-grid rounding adds
 less than 2eta to width. The endpoint difference is an integer number of
 eta units and is strictly below 5eta/2, hence at most 2eta. The actual source
-accepts difference<=3; the proved tighter bound implies that check. The
+accepts difference<=3; the proved tighter bound implies that check. The pre-final normalized interval has width <eta/2 and the final
+lower floor loses <eta, so coefficient error is <3eta/2<2eta. The
 lower coefficient is an approximation, not necessarily the exact irrational
 floor. Changing this contract to exact-floor equality would be unjustified.
 
@@ -134,7 +135,9 @@ For a cross-cell entry let delta be the chosen signed cyclic distance,
 The nearest-integer property gives |beta_j+m|>=|beta_j|, including ties.
 Thus f=u[(rho*delta+beta_i)^2-beta_j^2]>=0, while
 f<=u(rho*w+1/2)^2. Direct and wrapped branches both satisfy the prepared
-domain. Zero kernel/diagonal entries bypass the backend exactly as in source.
+domain. The zero-distance kernel and the H matrix diagonal bypass the backend
+by returning exactly one. The normalized diagonal still invokes growth,
+including at beta=0.
 This proves the coefficient-call domain for every admitted Axis tuple. It
 does not prove nonzero rounded weights for arbitrary P: positive exact
 weights may truncate to zero. That is a separate Axis admission check and

@@ -31,6 +31,10 @@ frozen oracle are authenticated before imports. RESULT.json is mandatory and
 compared as complete typed JSON. The original source and nested archives remain
 unchanged; source-history and export checks use explicit input base32890bc.
 
+Actual finite replay passed with 19 Axis calls and 10 isolated calls,
+including P=1, growth/decay, scale513 and four domain rejections. All
+source intervals contain the independent finer intervals.
+
 ## Limits
 
 This audits the encoded physical backend, distinct from the normalized host
