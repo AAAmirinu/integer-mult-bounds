@@ -1,0 +1,31 @@
+{
+ "schema_version": 1,
+ "status": "ready",
+ "python": "3.12",
+ "requirements": [],
+ "inputs": [],
+ "commands": [
+  {
+   "argv": [
+    "{python}",
+    "-B",
+    "{package}/verify.py",
+    "--part",
+    "headline"
+   ],
+   "timeout_seconds": 600,
+   "checks": "Main claim: retime.py legality of WORD.json.gz against PR5551's word; unmodified PR5545 replay, transposed columns, native maps, physical caller; literal-only pricing; both moment engines; 54 strict + 4 functional outer checks; exact crossing interval."
+  },
+  {
+   "argv": [
+    "{python}",
+    "-B",
+    "{package}/verify.py",
+    "--part",
+    "starts-only"
+   ],
+   "timeout_seconds": 600,
+   "checks": "Supporting: the same chain for WORD-STARTS-ONLY.json.gz (helper finals unchanged), which needs only free helper start frames."
+  }
+ ]
+}
