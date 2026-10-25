@@ -34,6 +34,7 @@ python3.12 -I -B /path/to/package/verify.py
 python3.12 -I -O -B /path/to/package/verify.py
 python3.12 -I -B /path/to/package/check_modular.py
 python3.12 -I -O -B /path/to/package/check_modular.py
+python3.12 -I -B /path/to/package/test_mutations.py
 ```
 
 All commands use only the standard library and explicit checks active under
@@ -56,6 +57,13 @@ These finite-field checks exercise the algebra; they are not physical Q(i)
 input tests. Neither executable proves the all-width theorem: that reasoning
 is in PROOF.md. Separate peer review and any limitations are reported with
 the publication rather than inferred from a PASS marker.
+
+Six additional semantic mutants run in disposable files under optimized Python,
+with receipt comparison disabled. They must fail at named predicates when
+width-dependent phase is dropped, the odd algebra is made commutative, the
+smaller projector is reused, the target coefficient sign changes, singular
+targets are accepted, or a cached target is charged again. These controls
+change no frozen source and cannot pass merely because RESULT.json differs.
 
 The package has no external executable input and imports no predecessor code.
 Public proof citations are not Git-object replay dependencies, so the
