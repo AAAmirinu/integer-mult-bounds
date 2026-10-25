@@ -1,13 +1,13 @@
-# Conditional kappa 0.00310432 from composed helper splits
+# Conditional kappa 0.00310440546 from composed helper splits
 
-This construction gives complete conditional **kappa 0.00310432**.
+This construction gives complete conditional **kappa 0.00310440546**.
 It improves the merged [PR5599](https://github.com/CrocSwap/integer-mult-bounds/pull/5599)
-claim of 0.00310045 by **0.00000387**. It also improves the consumed
+claim of 0.00310045 by **0.00000395546**. It also improves the consumed
 [PR5601](https://github.com/CrocSwap/integer-mult-bounds/pull/5601)
-claim by **0.00001837** and the released
+claim by **0.00001845546** and the released
 [PR5608](https://github.com/CrocSwap/integer-mult-bounds/pull/5608) claim by
-**0.00000248**. The gain over selected 0.003027288235 is **0.000077031765**
-(about **2.5446%**). The selected record is unchanged.
+**0.00000256546**. The gain over selected 0.003027288235 is **0.000077117225**
+(about **2.5474%**). The selected record is unchanged.
 
 At a common-frame cut, a pure helper input functional and a pure helper
 output direction can have unit pairing. Explicit scalar bases then let one
@@ -15,7 +15,8 @@ independent target finish early and a fresh independent input use the rest
 of the program. Both complete boundary supports must be proved. A pure
 intermediate row alone does not earn a second target.
 
-The construction combines the released PR5605 shared relay with PR5601,
+The construction combines the released PR5605 shared relay and PR5612 delayed
+relay with PR5601,
 then applies five fixed PR5602 boundary relations and nine independent helper
 splits. Finally it applies PR5606's two preparation identities in the new
 basis. The preparation removes two paid rank-one queries and debits the
@@ -30,13 +31,13 @@ Read the [proof](PROOF.md), [five fixed relations](BOUNDARIES.json),
 | --- | ---: |
 | Local public inputs / independent helpers | 743 / 535 |
 | Owned roles / lifetimes / peak | 9 / 11 / 2 |
-| Local events | 25,428 |
+| Local events | 25,448 |
 | Complete paid calls | 66,546 |
 | Complete productive fields | 12,958 |
 | Complete rank-mass surplus | 760 |
-| Tested saving | 0.0031043205 |
-| Complete conditional kappa | 0.00310432 |
-| Raw crossing | (0.00310432143397, 0.00310432143398) |
+| Tested saving | 0.003104405465 |
+| Complete conditional kappa | 0.00310440546 |
+| Raw crossing | (0.00310440547057, 0.00310440547058) |
 | Exact native maps | 2,916 |
 
 Every helper normalizer, main adapter, scalar basis operation, route,
@@ -45,7 +46,7 @@ count enters the completion-tail bound. Tail decay is 39/40 and the compiler
 logarithm power is 1024. The ordinary BIT saving stays at 0.0034. Two exact
 moment engines, every compiler condition, 54 strict outer conditions and
 four functional conditions are checked. The finite compiler threshold is
-`N = 2^707182000000000`; that word is not materialized.
+`N = 2^80511200000000000`; that word is not materialized.
 
 A negative derivative bound gives the raw ceiling for this fixed invoice
 on [0,0.0034]. The final discovery screen finds no further tested basis pair
@@ -61,7 +62,7 @@ python3 -B scripts/research_package.py --package research/p104-helper-subspace-s
 ```
 
 The registered hook runs normally and with `-O`. Success markers are
-`PASS_P104_HELPER_SUBSPACE_KAPPA_00310432` and
+`PASS_P104_HELPER_SUBSPACE_KAPPA_00310440546` and
 `PASS_REGISTERED_RESEARCH_PACKAGE`. Direct replay needs no Git or network:
 
 ```sh
@@ -70,7 +71,7 @@ python3 -I -O -B research/p104-helper-subspace-splits/verify.py
 ```
 
 Normal replay is read-only. `--write` explicitly regenerates the word and
-receipt. Seventeen live inputs are authenticated before any source import.
+receipt. Eighteen live inputs are authenticated before any source import.
 The checks reject a wrong boundary event, contaminated prefix or suffix,
 missing basis work, unearned target credit, a missing paid call, a wrong
 native phase, a missing central translation, an inadequate cutoff and
@@ -100,12 +101,21 @@ constructor and witnesses are from PR5602 at
 Only the five published relations with helpers 652, 341, 596, 668 and 684
 are used. The sixth relation uses a contact removed by PR5565 and is omitted.
 The relay constructor is from PR5605 at
-`4a57d245ac3918ccc9947a867ece24573605e243`. Its eight source edits are disjoint
-from PR5601's 21 source edits against their common PR5580 input. The preparation
+`4a57d245ac3918ccc9947a867ece24573605e243`. The delayed-relay constructor is
+from PR5612 at `faa9f6dbe6b8cc4a996d3edeca71823056453e1a`. Both are retained
+unchanged. Their 13 combined source edits are disjoint from PR5601's 21 source
+edits against their common PR5580 input. The preparation
 identities are from PR5606 at `cd7d89345c6c5d2114625e5ce912a52ecd5e1d27`;
 they are checked on the new split word before the retired helper is renamed
 into the owned range. PR5608 supplied a useful earlier relay/split composition.
 No new boundary, relay, preparation or frame search is introduced.
+
+PR5613 at `32f23af8790cc3c435bb1f495d861332b4f000e3` combines the delayed relay
+with one fixed boundary relation already used here. It gives the same signed
+recursive moment with 72 more paid calls and 72 more targets. The tighter
+compiler reserve `10^-12` gives **0.00000000546** above that PR's rounded
+0.00310440 claim. This last gain uses numerical headroom in the common invoice;
+it is not a new physical mechanism.
 
 The verifier also replays the retained PR5580 and PR5565 words and checks
 both source deltas. Each retained input is pinned to an ancestor of this
@@ -124,7 +134,8 @@ added: this word, its full native interface and its complete bill are checked.
 - **Ali Romman**, with OpenAI Codex assistance: independent helper splits;
   the separate PR5602 boundary relations and PR5601 three-contact change;
   PR5580 contact step and PR5544/5545 complete P104 caller and replay.
-- **flyingviper**: PR5605 shared relay and PR5608 earlier composition.
+- **flyingviper**: PR5605 shared relay, PR5612 delayed relay, and the
+  PR5608/PR5613 compositions.
   **Scratch-net**: PR5606 prepared-helper identities and target debit.
 - **Pierre-Loic Doulcet / hexapode**: PR5565 commuting-contact cascade.
 - **Joel Pulikkan / GamingPuzzled**: PR5569 priced handoff and PR5472 successor

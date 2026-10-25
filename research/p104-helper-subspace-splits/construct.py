@@ -13,7 +13,16 @@ import local as L
 def merge_relay(original, changed):
     """Merge disjoint published edits against their common PR5580 source."""
     C = L.load(L.HERE/'inputs/PR5605-construct.py', 'released_relay_constructor')
+    D = L.load(L.HERE/'inputs/PR5612-delayed.py', 'released_delayed_constructor')
     relay = C.construct(original)
+    shared = L.replay(relay)
+    relay = D.construct(relay)
+    delayed = L.replay(relay)
+    delta = Counter(delayed['paid'])
+    delta.subtract(shared['paid'])
+    delta = {r:n for r,n in delta.items() if n}
+    L.need(delta == {4:1,5:-1,6:-1,7:1}, 'Exact published delayed-relay paid delta')
+    L.need(delayed['helpers'] == shared['helpers'], 'The delayed relay retains every target')
     L.need(all(relay[k] == original[k] for k in original if k != 'program'),
            'The relay changes only the scalar program and transports')
 
@@ -35,7 +44,8 @@ def merge_relay(original, changed):
         start = j
     word['program'] = deepcopy(program+original['program'][start:])
     L.replay(word)
-    return word, {'frame_edits':len(frame_edits), 'relay_edits':len(relay_edits)}
+    return word, {'frame_edits':len(frame_edits), 'relay_edits':len(relay_edits),
+                  'delayed_paid_delta':delta}
 
 
 def prepare_helper(source, declaration):

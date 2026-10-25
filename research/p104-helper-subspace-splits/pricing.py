@@ -8,7 +8,7 @@ Helper-subspace targets were added by Ali Romman with OpenAI Codex assistance.
 The source commuting-contact construction is by Pierre-Loic Doulcet (hexapode) in PR5565.
 The source coupled-frame change is by Ali Romman with OpenAI Codex in PR5601.
 Five fixed boundary relations are from Ali Romman's PR5602.
-The shared relay is from flyingviper's PR5605. The preparation is from
+The shared and delayed relays are from flyingviper's PR5605 and PR5612. The preparation is from
 Scratch-net's PR5606. Their costs and target debit are included.
 Ali Romman's complete caller/price proof and all predecessor credit are retained.
 Apache-2.0.
@@ -17,7 +17,7 @@ from collections import Counter
 from fractions import Fraction as Q
 import local as L
 
-KAPPA, TESTED = Q('.00310432'), Q('.0031043205')
+KAPPA, TESTED = Q('.00310440546'), Q('.003104405465')
 PREVIOUS = Q('.00308595')
 
 
@@ -107,7 +107,7 @@ def run(local,native,word,physical):
     alpha = E.divide(paid,target)
     gamma = E.divide(E.moment(P,t+u),E.mul(E.power(c,u),target))
     delta = E.divide((Q(sum(T.values())*b),)*2,E.mul(E.power(c,TESTED),target))
-    reserve,decay = Q(1,10**10),Q(39,40)
+    reserve,decay = Q(1,10**12),Q(39,40)
     L.need(alpha[1] < 1-reserve and gamma[1] < decay and delta[1] < decay, 'All three charged tail ratios')
     L.need(decay**128 < Q(1,16), 'Both tail decay blocks')
     normalized = 1/(1+v*reserve)+Q(4,2**32)
@@ -155,7 +155,7 @@ def run(local,native,word,physical):
     L.need(wrong_cutoff[0] > 1, 'Old cutoff fails with this helper inventory')
     bad=outer_module.ledger(dict(params,bit_saving=Q('.0027')))
     L.need(any(x <= 0 for x in bad['strict_checks'].values()), 'Insufficient BIT contract rejected')
-    return encode({'kappa':KAPPA,'kappa_decimal':'.00310432','previous_open_pr5601':PREVIOUS,'gain':KAPPA-PREVIOUS,
+    return encode({'kappa':KAPPA,'kappa_decimal':'.00310440546','previous_open_pr5601':PREVIOUS,'gain':KAPPA-PREVIOUS,
                    'relative_gain_percent':100*(KAPPA/PREVIOUS-1),'raw_root_interval':[lower,upper],
                    'raw_headroom':[lower-KAPPA,upper-KAPPA],
                    'raw_ceiling':{'interval':[Q(0),cap],'derivative_upper':derivative_upper},'margin_at_previous':E.display(margin(PREVIOUS)),

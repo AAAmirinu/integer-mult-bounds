@@ -134,6 +134,13 @@
       "git_blob": "e2c1473be00e78b91b4139493e31e47b591ac0df",
       "sha256": "037d5f00f1c92b6f59020f90f11345251b429ba2bb2c39a65966b5e73094756a",
       "pin": "head:4ae31ae93e86d6ab7ddd75e42fee86cf21cdb8c8:research/p104-helper-subspace-splits/inputs/PR5606-construct.py"
+    },
+    {
+      "path": "research/p104-helper-subspace-splits/inputs/PR5612-delayed.py",
+      "usage": "input",
+      "git_blob": "afd1bd8e084a31071d3ae6002e7183f6e3c8e891",
+      "sha256": "fcb8b97785ae05db6f60c38d8d75ee4fe856ea41a1327b772eff7a6ee388b3c8",
+      "pin": "head:a692fd471ee7c47fa30ae755b80e51ef7e022689:research/p104-helper-subspace-splits/inputs/PR5612-delayed.py"
     }
   ],
   "external_inputs": [
@@ -184,6 +191,14 @@
       "source_path": "research/p104-shared-residual-relay/construct.py",
       "sha256": "5831eb6f88cd6ed8200f32d2794dd9535ea06aa0d3ae6dd111a58bc01b611cbd",
       "git_blob": "31f9b76c9b3d9c410aec1d0945d967ed985154c3"
+    },
+    {
+      "local_path": "inputs/PR5612-delayed.py",
+      "source_repository": "flyingviper/integer-mult-bounds",
+      "source_commit": "faa9f6dbe6b8cc4a996d3edeca71823056453e1a",
+      "source_path": "research/p104-delayed-shared-relay/delayed.py",
+      "sha256": "fcb8b97785ae05db6f60c38d8d75ee4fe856ea41a1327b772eff7a6ee388b3c8",
+      "git_blob": "afd1bd8e084a31071d3ae6002e7183f6e3c8e891"
     }
   ],
   "code_derivation": [

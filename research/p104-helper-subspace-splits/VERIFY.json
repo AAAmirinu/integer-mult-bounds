@@ -20,7 +20,8 @@
     "research/p104-helper-subspace-splits/inputs/PR5601-WORD.json.gz",
     "research/p104-helper-subspace-splits/inputs/PR5602-construct.py",
     "research/p104-helper-subspace-splits/inputs/PR5602-WITNESS.json",
-    "research/p104-helper-subspace-splits/inputs/PR5605-construct.py"
+    "research/p104-helper-subspace-splits/inputs/PR5605-construct.py",
+    "research/p104-helper-subspace-splits/inputs/PR5612-delayed.py"
   ],
   "commands": [
     {
@@ -30,7 +31,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Check the disjoint relay merge, five fixed boundaries, nine independent splits, both preparation identities and target debit, every rational row and column, all native maps, the physical caller, full invoice, two moment engines, compiler and outer predicates. Reject false identities, support, credits and costs."
+      "checks": "Check the disjoint shared/delayed relay merge, five fixed boundaries, nine independent splits, both preparation identities and target debit, every rational row and column, all native maps, the physical caller, full invoice, two moment engines, compiler and outer predicates. Reject false identities, support, credits and costs."
     },
     {
       "argv": [
@@ -40,7 +41,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Check the disjoint relay merge, five fixed boundaries, nine independent splits, both preparation identities and target debit, every rational row and column, all native maps, the physical caller, full invoice, two moment engines, compiler and outer predicates. Reject false identities, support, credits and costs."
+      "checks": "Check the disjoint shared/delayed relay merge, five fixed boundaries, nine independent splits, both preparation identities and target debit, every rational row and column, all native maps, the physical caller, full invoice, two moment engines, compiler and outer predicates. Reject false identities, support, credits and costs."
     }
   ]
 }

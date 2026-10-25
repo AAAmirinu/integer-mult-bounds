@@ -75,11 +75,19 @@ positive width; it is not a test at width one alone.
 The geometric input is PR5601 at `8f7e870b22885a367b347dc12791da98fd53f83d`.
 The PR5605 constructor at `4a57d245ac3918ccc9947a867ece24573605e243` first
 reconstructs its exact relay word on the common PR5580 source. Its eight
-changed intervals are disjoint from PR5601's 21 changed intervals, including
-insertions. A strict merge rejects overlap, retains PR5601's frame metadata,
-and replays the complete result. The relay changes the local paid profile by
-`H6-H1-H2-H3` and preserves every independent target. The source's explicit
-input preconditioning and late cleanup remain in the merged program.
+changed intervals give paid change `H6-H1-H2-H3`.
+The unchanged PR5612 constructor at
+`faa9f6dbe6b8cc4a996d3edeca71823056453e1a` then delays helper 696's preparation
+through the complementary component in helper 700. It removes the remaining
+owned-738 contact into 159. Four initial ADDs cancel the nuisance input sum
+on outputs 159 and 222; nine full-frame operations restore helpers 696,
+697, 698, 700 and 703. Its exact source and output hashes are checked.
+The paid delta is `H4+H7-H5-H6`, with every target retained.
+
+The combined relay's 13 changed intervals are disjoint from PR5601's 21
+changed intervals, including insertions. A strict merge rejects overlap,
+retains PR5601's frame metadata, and replays the complete result. Both
+sources' input corrections and late cleanup remain in the merged program.
 The retained PR5602 constructor and witness come from
 `6c224aa720203c4f4615e6538d8038a275387db8`. No coefficient, helper, frame,
 cancellation vector or output vector in those relations changes. Only the
@@ -104,7 +112,7 @@ frame-597 contact absent from the PR5565 cascade; it is not used.
 ## 3. Nine independent splits
 
 After those five changes, the first split uses the cut after zero-based
-event 12516, chart 306 of dimension four, and pivot 259. Its helper group
+event 12520, chart 306 of dimension four, and pivot 259. Its helper group
 has initial chart 3 (dimension zero) and final chart 127 (dimension nine).
 With e_r the coordinate at role r, the exact vectors are
 
@@ -134,7 +142,7 @@ transpose replay checks all 565,504 entries of the final 752 by 752 interface.
 The nine splits are two H9 to H4+H5, five H9 to H2+H7, and two H9 to H1+H8.
 They add nine independent inputs before preparation. The 735 public fields
 become 744, with 536 helpers and 208 main fields. The source has 25,132 events;
-the relay has 25,159; the boundary step has 25,164; the split word has 25,420.
+the relay has 25,179; the boundary step has 25,184; the split word has 25,440.
 The split step adds 256 scalar events. Its helper profile is
 
 ```text
@@ -151,19 +159,22 @@ The preparation below adds one more strictly positive term. Against the
 consumed PR5601 word, the complete target-minus-paid moment increases by
 
 ```math
-18[7g(4,5)+5g(2,7)+2g(1,8)+g(1,2)+g(3,3)+g(1,1)].
+18[7g(4,5)+5g(2,7)+2g(1,8)+g(1,2)+g(3,3)+g(1,1)
+  +5^t+6^t-4^t-7^t].
 ```
 
 The five boundary relations supply five g(4,5) terms. The nine splits supply
 the next two g(4,5), five g(2,7) and two g(1,8) terms. The relay supplies
 `g(1,2)+g(3,3)=1+2^t+3^t-6^t`. Preparation supplies `g(1,1)=2-2^t`.
+The delayed relay supplies `5^t+6^t-4^t-7^t>0`, since strict concavity gives
+`5^t-4^t>7^t-6^t`.
 Every target debit and removed paid call enters the final invoice. The old
 components' reported kappa gains are not added.
 
 ## 3a. Prepare the rank-two prefix
 
 PR5606 supplies two exact value identities for prefix helper 573. In the
-new split word, its input is set to zero. At events 13640 and 13665, the
+new split word, its input is set to zero. At events 13651 and 13676, the
 complete normalized rows satisfy
 
 ```math
@@ -188,7 +199,7 @@ nine owned roles, eleven initialization/erasure lifetimes and peak occupancy
 two. Earlier frozen inputs retain their original eight-role format. The
 checker derives matrix width and ownership bounds from this declared inventory.
 
-The final word has 743 independent public inputs, 535 helpers and 25,428
+The final word has 743 independent public inputs, 535 helpers and 25,448
 events. Its 752 by 752 matrix includes all nine owned roles. The final helper
 profile is
 
@@ -235,16 +246,24 @@ It is not left at the old 12,814 value.
 ## 5. Strictification, compiler and outer transfer
 
 Two independent rational interval engines evaluate the complete moments.
-The exact raw crossing is in (0.00310432143397, 0.00310432143398).
-`RESULT.json` gives its rational endpoints and the strict tested margin. The claimed kappa is 0.00310432 and the tested saving is
-0.0031043205. Their gap funds the finite compiler and outer parameters. An exact negative
+The exact raw crossing is in (0.00310440547057, 0.00310440547058).
+`RESULT.json` gives its rational endpoints and the strict tested margin. The claimed kappa is 0.00310440546 and the tested saving is
+0.003104405465. Their gap funds the finite compiler and outer parameters. An exact negative
 derivative bound on [0,0.0034] makes this crossing the raw ceiling for this
 fixed invoice under the retained BIT cap. It is not a global optimum.
+
+PR5613 reaches the same signed recursive moment with a different inventory:
+its word has 72 more rank-five paid calls and 72 more rank-five targets. Thus the
+delayed relay adds no new moment beyond that released construction. This
+package retains the five fixed boundaries and nine splits and gives a smaller
+complete inventory. The tighter compiler reserve below permits a saving
+0.00000000546 above PR5613's rounded claim of 0.00310440. This is rounding
+headroom in the common invoice, not another physical mechanism.
 
 Power 1024, cutoff 17, target floor 18 and tail offset 1/5 are retained.
 The extra independent fields require a different tail bound: both charged
 tail ratios are below 39/40, and `(39/40)^128 < 1/16`. Eight such blocks still
-give the retained `2^-32` remainder. The fixed reserve is `10^-10`.
+give the retained `2^-32` remainder. The fixed reserve is `10^-12`.
 The complete normalized cost is strictly less than one. The old cutoff 20
 fails and is retained as a control.
 

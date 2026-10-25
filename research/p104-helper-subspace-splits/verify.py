@@ -79,7 +79,7 @@ def run():
     relay_local = L.replay(source)
     relay_delta = Counter(relay_local['paid'])
     relay_delta.subtract(baseline['paid'])
-    need({r:n for r,n in relay_delta.items() if n} == {1:-1,2:-1,3:-1,6:1}, 'Exact published relay paid delta')
+    need({r:n for r,n in relay_delta.items() if n} == {1:-1,2:-1,3:-1,4:1,5:-1,7:1}, 'Exact combined relay paid delta')
     need(relay_local['helpers'] == baseline['helpers'], 'The relay retains every independent target')
     boundaries = L.read(HERE/'BOUNDARIES.json')
     boundary_word, boundary_receipts = R.boundary_changes(
@@ -102,7 +102,7 @@ def run():
     prepared_paid[1] -= 2
     need(local['paid'] == prepared_paid, 'Both replaced rank-one Gaussian calls are removed')
     columns = L.reverse_columns(word)
-    print('PASS shared relay, 5 boundaries, 9 splits, 2 prepared queries, all rows and columns', flush=True)
+    print('PASS shared and delayed relays, 5 boundaries, 9 splits, 2 prepared queries, all rows and columns', flush=True)
     native = L.native(word)
     controller = C.construct()
     need(controller == L.read(ROOT/'research/p104-productive-controller/CONTROLLER.json'), 'Same complete caller')
@@ -143,7 +143,7 @@ def run():
     bad = deepcopy(local)
     bad['paid'][1] -= 1
     controls['unpaid_gaussian'] = rejected(lambda: P.assemble(bad, native, controller, physical))
-    result = {'status':'PASS_P104_HELPER_SUBSPACE_KAPPA_00310432',
+    result = {'status':'PASS_P104_HELPER_SUBSPACE_KAPPA_00310440546',
               'authenticated_inputs':pins, 'splits':cuts, 'local_helper_delta':delta,
               'boundaries':boundary_receipts,
               'relay':relay_receipt, 'preparation':prepared_receipt,
