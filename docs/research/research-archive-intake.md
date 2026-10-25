@@ -327,3 +327,11 @@ The [exact-head delta](pr-intake-evidence/queue-oct25b-20261025.json) records 6 
 ## Delta intake through PR5561
 
 The [exact-head delta](pr-intake-evidence/queue-oct25c-20261025.json) records 10 decisions: {'archive': 7, 'waiting_revision': 2, 'reviewed_tooling': 1}. Source-only retention preserves attribution and open scientific obligations. Historical-only files and any workflow configuration resolutions are explicit in that receipt. No scientific replay or selected-frontier change.
+
+## Delta intake through PR5605
+
+The [exact-head delta](pr-intake-evidence/queue-oct25d-20261025.json) records 34 decisions: {'archive': 34}. Source-only retention preserves attribution and open scientific obligations. Historical-only files and any workflow configuration resolutions are explicit in that receipt. No scientific replay or selected-frontier change.
+
+## Original checkout research checkpoint
+
+The [25 October local research archive](../../research/local-research-checkpoint-20261025/README.md) preserves 12 unpublished commits and 88 unique or differing source files from the old checkout. Another 174 identical files are indexed at their canonical locations. Historical claims are not current supplier admissions; the original branch head is retained in ancestry.

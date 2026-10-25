@@ -4266,3 +4266,42 @@ Source archives retain attribution; mathematical review remains open.
 - **CubeJerry (@CubeJerry)** — [#5558](https://github.com/CrocSwap/integer-mult-bounds/pull/5558): Qualify PR5285's h8 family closure with exact coverage (source archive).
 - **DreamingOfClouds (@DreamingOfClouds)** — [#5559](https://github.com/CrocSwap/integer-mult-bounds/pull/5559): Research: partial theorems on the P112 decoder wall (no kappa) (source archive).
 - **Matarener (@Matarener)** — [#5560](https://github.com/CrocSwap/integer-mult-bounds/pull/5560): Prove a global all-field COPY floor 140 for the 56-plane port decoder (no new κ) (source archive).
+
+## Queue intake, 25 October 2026 (chunk D)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **David Ganz (@Dugongue)** — [#5562](https://github.com/CrocSwap/integer-mult-bounds/pull/5562): Compile programmable native stages and coded-thin fusion with exact precision (no new kappa) (source archive).
+- **David Ganz (@Dugongue)** — [#5563](https://github.com/CrocSwap/integer-mult-bounds/pull/5563): Close central-Q endpoints with explicit paid decoders (no kappa gain) (source archive).
+- **David Ganz (@Dugongue)** — [#5564](https://github.com/CrocSwap/integer-mult-bounds/pull/5564): Construct prime-free native tensor grids with exact CRT replay (no new kappa) (source archive).
+- **Pierre-Loic Doulcet (@hexapode)** — [#5565](https://github.com/CrocSwap/integer-mult-bounds/pull/5565): Conditional κ = 0.00308520 (+3.31e-6 over #5580): P104 commuting-contact cascade (source archive).
+- **David Ganz (@Dugongue)** — [#5566](https://github.com/CrocSwap/integer-mult-bounds/pull/5566): Prove faster periodic Gaussian inversion through Beatty-run blocks (source archive).
+- **Matarener (@Matarener)** — [#5567](https://github.com/CrocSwap/integer-mult-bounds/pull/5567): Audit #5561 free helper endpoints against the #5550 P104 endpoint contract (no new κ) (source archive).
+- **DreamingOfClouds (@DreamingOfClouds)** — [#5568](https://github.com/CrocSwap/integer-mult-bounds/pull/5568): Toolkit: exact pricing, legality oracle and free-endpoint retime for P104-family words (no kappa) (source archive).
+- **Joel Pulikkan (@GamingPuzzled)** — [#5569](https://github.com/CrocSwap/integer-mult-bounds/pull/5569): Conditional κ .00308181 (+3.94e-7 over #5561): priced successor hand-off of helper 706 on the P104 word (source archive).
+- **josecarlosgonzalezroque-design (@josecarlosgonzalezroque-design)** — [#5570](https://github.com/CrocSwap/integer-mult-bounds/pull/5570): Independently audit the paid-return approximation and invoice bridge (source archive).
+- **David Ganz (@Dugongue)** — [#5571](https://github.com/CrocSwap/integer-mult-bounds/pull/5571): Extend fine-grid Gaussian inversion and batch coded-boundary queries (source archive).
+- **Matarener (@Matarener)** — [#5572](https://github.com/CrocSwap/integer-mult-bounds/pull/5572): P104: independent native-map inventory, caller and funding audit of PR5551 (no kappa) (source archive).
+- **Chris R (@Clear1nsight)** — [#5573](https://github.com/CrocSwap/integer-mult-bounds/pull/5573): Verify 182 additional P104 native frame maps (no new κ) (source archive).
+- **Chris R (@Clear1nsight)** — [#5577](https://github.com/CrocSwap/integer-mult-bounds/pull/5577): Bound the joint pooled P104 exchange family below κ .0033 (source archive).
+- **David Ganz (@Dugongue)** — [#5578](https://github.com/CrocSwap/integer-mult-bounds/pull/5578): Close full-rank coded Gaussian terminals with one rank-two query (source archive).
+- **Ali Romman (@aliromman)** — [#5579](https://github.com/CrocSwap/integer-mult-bounds/pull/5579): Close P104 owned-holder handoffs with public frame separators (no new kappa) (source archive).
+- **Ali Romman (@aliromman)** — [#5580](https://github.com/CrocSwap/integer-mult-bounds/pull/5580): Conditional κ = 0.00308189 (+7.6453e-8 raw over #5569) (source archive).
+- **Ali Romman (@aliromman)** — [#5581](https://github.com/CrocSwap/integer-mult-bounds/pull/5581): Preserve native-history and odd-E8 research handoff (no new kappa) (source archive).
+- **flyingviper (@flyingviper)** — [#5584](https://github.com/CrocSwap/integer-mult-bounds/pull/5584): P104: prove owned-block cost floors and public delivery obstructions (no kappa) (source archive).
+- **Alex (@Scratch-net)** — [#5585](https://github.com/CrocSwap/integer-mult-bounds/pull/5585): Verify 499 new P104 native maps and bind predecessor evidence (no new kappa) (source archive).
+- **David Ganz (@Dugongue)** — [#5586](https://github.com/CrocSwap/integer-mult-bounds/pull/5586): Formulate 27 research targets for conditional kappa >= 0.0035 (source archive).
+- **Ali Romman (@aliromman)** — [#5587](https://github.com/CrocSwap/integer-mult-bounds/pull/5587): Bound the complete coded p2 repair between 225 and 240 arbitrary returns (no new kappa) (source archive).
+- **Ali Romman (@aliromman)** — [#5588](https://github.com/CrocSwap/integer-mult-bounds/pull/5588): Prove native tariff obstructions beyond frozen paid inputs (source archive).
+- **Ali Romman (@aliromman)** — [#5590](https://github.com/CrocSwap/integer-mult-bounds/pull/5590): Prove the sharp P104 price floor for all fixed-contact frame paths (source archive).
+- **flyingviper (@flyingviper)** — [#5591](https://github.com/CrocSwap/integer-mult-bounds/pull/5591): P104: classify rational owned recodings and prove a joint sharing floor (no kappa) (source archive).
+- **Chris R (@Clear1nsight)** — [#5592](https://github.com/CrocSwap/integer-mult-bounds/pull/5592): Bound the PR5580 κ .0033 budget and ideal isolated-tail edit counts (source archive).
+- **Shep (@MatShep)** — [#5594](https://github.com/CrocSwap/integer-mult-bounds/pull/5594): Sharp one-qubit Clifford tensor conditioning: exact spectrum and constant 5 (source archive).
+- **Chris R (@Clear1nsight)** — [#5596](https://github.com/CrocSwap/integer-mult-bounds/pull/5596): Verify the new PR5580 rank-four paid native map on all 512 inputs (source archive).
+- **Chris R (@Clear1nsight)** — [#5597](https://github.com/CrocSwap/integer-mult-bounds/pull/5597): Bound the original n18 ABCD family by joint raw-price and compiler funding (source archive).
+- **Ali Romman (@aliromman)** — [#5598](https://github.com/CrocSwap/integer-mult-bounds/pull/5598): Exclude passive reuse of every frozen P104 paid query in both orientations (source archive).
+- **Ali Romman (@aliromman)** — [#5599](https://github.com/CrocSwap/integer-mult-bounds/pull/5599): Raise conditional kappa to 0.00310045 with independent helper splits (source archive).
+- **Ali Romman (@aliromman)** — [#5601](https://github.com/CrocSwap/integer-mult-bounds/pull/5601): Conditional κ = 0.00308595 (+7.4120e-7 raw over #5565) (source archive).
+- **Ali Romman (@aliromman)** — [#5602](https://github.com/CrocSwap/integer-mult-bounds/pull/5602): Conditional κ = 0.00309980 (+1.41e-6 over #5599): coupled helper bases (source archive).
+- **Ali Romman (@aliromman)** — [#5604](https://github.com/CrocSwap/integer-mult-bounds/pull/5604): Bound every joint G20 entry kernel and check partial-helper capture epochs (source archive).
+- **flyingviper (@flyingviper)** — [#5605](https://github.com/CrocSwap/integer-mult-bounds/pull/5605): Conditional kappa 0.00308326 (+1.37e-6 over #5580): compensated shared P104 relay (source archive).
