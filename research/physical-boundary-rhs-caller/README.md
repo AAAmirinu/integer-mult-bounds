@@ -34,6 +34,7 @@ Run with Python 3.12 and the standard library:
 ```sh
 python3.12 -I -B research/physical-boundary-rhs-caller/verify.py
 python3.12 -I -O -B research/physical-boundary-rhs-caller/verify.py
+python3.12 -I -O -B research/physical-boundary-rhs-caller/test_integrity.py
 python3.12 -B scripts/research_package.py --package research/physical-boundary-rhs-caller
 ```
 

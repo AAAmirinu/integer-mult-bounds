@@ -44,6 +44,17 @@
       ],
       "timeout_seconds": 60,
       "checks": "Actual first-pass pair, unchanged rounded block consumer, physical layout/return, independent oracle and corruption controls optimized"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-B",
+        "{package}/test_integrity.py"
+      ],
+      "timeout_seconds": 60,
+      "checks": "Actual optimized CLI rejects changed/missing source and malformed/missing receipt in Git-free relocation"
     }
   ]
 }
