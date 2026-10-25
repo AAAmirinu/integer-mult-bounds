@@ -29,6 +29,13 @@ checks do not cover unpublished work and do not prove novelty. This work does
 not take the event-retime scope in #5574 or the basis and private-COPY scope
 in #5125.
 
+The submission refresh also found the concurrent claim in
+[Discussion #5575](https://github.com/CrocSwap/integer-mult-bounds/discussions/5575).
+That task changes the scalar realization at the owned boundary. This package
+keeps that realization and all its scalar anchors fixed. The separator result
+was sent there as supporting evidence. It does not close that changed-program
+scope or reserve a new search.
+
 The two compressed words are byte-exact inputs from GamingPuzzled's
 [PR #5569](https://github.com/CrocSwap/integer-mult-bounds/pull/5569), head
 `af9f091ac6f30c6eaacb9c27777bfbe2d0e5ffdf`. `INPUTS.json` records the exact
