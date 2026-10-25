@@ -172,7 +172,7 @@ def main():
     if '--write' in sys.argv:
         (HERE/'RESULT.json').write_text(json.dumps(results, indent=1, sort_keys=True)+'\n')
     else:
-        need(results == expected, 'complete result equals RESULT.json')
+        need(json.loads(json.dumps(results)) == expected, 'complete result equals RESULT.json')
     print('PASS_P104_FREE_ENDPOINT_CONTRACT_AUDIT')
 
 
