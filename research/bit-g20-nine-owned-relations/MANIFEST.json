@@ -113,8 +113,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "b52c1fd8439cb5af71cdccbc5b0a6acd03d4756b0380d23e62d90d50275df914",
-      "bytes": 3611
+      "sha256": "9957e5190f066be42e70fdf9f62edc24dad471039ffeec801e24236aa5c84dd4",
+      "bytes": 3609
     },
     {
       "path": "RECORD.json",
@@ -123,8 +123,8 @@
     },
     {
       "path": "REPLAY.json",
-      "sha256": "bde67b665187d9939c62b5edfa739d936e37b3af00cf6d7f26f3cdf71b54ff7b",
-      "bytes": 2691
+      "sha256": "b97a2ccccfeb957005bc041eda35ecf272c6781668aff91bbadfec9711052a8f",
+      "bytes": 3092
     },
     {
       "path": "replay_common.py",

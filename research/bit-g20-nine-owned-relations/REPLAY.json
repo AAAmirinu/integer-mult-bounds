@@ -3,7 +3,7 @@
   "evidence_kind": "Separate internal AI cold validation; not external or maintainer acceptance.",
   "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
   "source_manifest_sha256_at_cold_run": "b3a62011ed854709c04976a214d041be5339cc02cac4549532462de632008ca8",
-  "source_change_after_run": "Only package-local .gitattributes and this receipt are added; scientific sources/wrappers/evidence are byte-identical. Final registered replay is required at publication commit.",
+  "source_change_after_run": "Only package-local .gitattributes, this receipt and the README rounded gain label are changed after the four cold runs; all mathematical sources, wrappers, immutable inputs and proof payloads are byte-identical. Registered replay and Git-free committed export cold replay passed on ancestor62b41a07894bf1b0042b9dd3f0c0e8060391fb22.",
   "canonical_comparison": "Every proof-relevant JSON value and decompressed complete stream; only CPU_seconds/at_utc are excluded. Every unchanged vendor byte is authenticated before and after replay.",
   "runs": [
     {
@@ -72,5 +72,12 @@
         "scope": "Separate internal AI audits, not external or complete theorem verification."
       }
     }
-  ]
+  ],
+  "git_free_committed_export": {
+    "commit": "62b41a07894bf1b0042b9dd3f0c0e8060391fb22",
+    "primary": "PASS_G20_NINE_OWNED_RELATIONS_COLD_PRIMARY",
+    "separate_audit": "PASS_G20_NINE_OWNED_RELATIONS_COLD_SEPARATE_AUDIT",
+    "export_integrity": "PASS_RESEARCH_EXPORT",
+    "external_runtime_dependencies": false
+  }
 }

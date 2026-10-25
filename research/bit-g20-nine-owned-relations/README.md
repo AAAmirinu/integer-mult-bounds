@@ -1,7 +1,7 @@
 # Ordinary BIT saving 0.003483969976
 
 This conditional ordinary BIT supplier admits **435496247/125000000000 =
-0.003483969976**, a **0.2449166755%** gain over the completed PR4814 endpoint
+0.003483969976**, a **0.24491667%** gain over the completed PR4814 endpoint
 1737729/500000000. The native program changes: private G20 shadow retiming
 is combined with Ali Romman's nine owned capture-relation method from PR5421.
 The actual G20 generators and source closure are published here for the first
