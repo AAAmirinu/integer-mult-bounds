@@ -4242,3 +4242,14 @@ Source archives retain attribution; mathematical review remains open.
 - **Joseph Anglada (@fluorine)** — [#5543](https://github.com/CrocSwap/integer-mult-bounds/pull/5543): Tooling: preserve exact moment bounds with a 15× faster integer kernel (source archive).
 - **Ali Romman (@aliromman)** — [#5544](https://github.com/CrocSwap/integer-mult-bounds/pull/5544): Conditional κ = 0.00304057 (+1.3281765e-5 over #5413) (source archive).
 - **Ali Romman (@aliromman)** — [#5545](https://github.com/CrocSwap/integer-mult-bounds/pull/5545): Conditional κ = 0.00304117 (+6.0e-7 over #5544) (source archive).
+
+## Queue intake, 25 October 2026 (chunk B)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **Chris R (@Clear1nsight)** — [#5546](https://github.com/CrocSwap/integer-mult-bounds/pull/5546): Verify the L300/L301 fixed-cut shared-handoff obstruction (no new κ) (source archive).
+- **D Lam (@DLamdata)** — [#5547](https://github.com/CrocSwap/integer-mult-bounds/pull/5547): Independently audit Clifford pointwise overlap and phase bounds (source archive).
+- **Chris R (@Clear1nsight)** — [#5548](https://github.com/CrocSwap/integer-mult-bounds/pull/5548): Independently verify P104 contact phases and bound repeated H5 retiming (no new κ) (source archive).
+- **Shep (@MatShep)** — [#5549](https://github.com/CrocSwap/integer-mult-bounds/pull/5549): Sharp one-qubit full-Clifford tensor threshold: width 5 (source archive).
+- **Chris R (@Clear1nsight)** — [#5550](https://github.com/CrocSwap/integer-mult-bounds/pull/5550): Independently verify the P104 forward caller and target bindings (no new κ) (source archive).
+- **THU New Media Research Center· Prof. Shen Yang (@thu-nmrc)** — [#5551](https://github.com/CrocSwap/integer-mult-bounds/pull/5551): Improve complete conditional κ to 0.00304153 via coupled P104 contacts (source archive).
