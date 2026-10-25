@@ -53,8 +53,23 @@ audited outputs to this publication. Their science digest is
 Every complete replay compares all saved semantic
 artifacts. Compression streams are not mathematical equality checks;
 retained immutable source/peer inputs keep their exact byte hashes.
-Publication byte/source-history preflight and a relocated Git-free,
-read-only export replay are recorded here when completed.
+Committed-byte/source-history preflight passed at scientific commit
+`5109e17d3f8b7cdc54c01362098d06d622e2fc96`: all43 package files,
+canonical source ancestor`32890bc5de034ab8fc93ac88ead7279a6a416d04`.
+The official committed export and its integrity checker both passed.
+
+That exact export was relocated to a new directory with spaces, without
+Git. Every file was set read-only(0444), PATH was empty and the interpreter
+was absolute, isolated and bytecode-write-disabled. All four commands
+passed: full normal169.510s, full optimized99.029s, independent funding
+normal0.191s and optimized0.150s. All44 exported files including the export
+manifest remained byte-identical, with no new runtime files. The normal
+and optimized full logs have the same SHA256:
+`219d7d9082668896579616e33d4ea65ff4a33d8c3e282f32ae2d2ece100bcde1`.
+The two funding logs also match:
+`13f7b14d9cdffeebe73b1c8a62dd9d8654df1fd1ab9a9bb1834b7c71164e8c06`.
+This paragraph records that completed run; its addition changes only this
+documentation, with every scientific code/input/output byte retained.
 
 ## Limits
 
