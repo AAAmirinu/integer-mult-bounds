@@ -1,7 +1,10 @@
 # Research: the productive-helper path (#4440 lineage) can't pass κ ≈ .00304 without cheaper helpers
 
-**No new κ.** No selected construction, frontier, allocation or queue
-disposition changes. Checkpoint: canonical main `32890bc5`; source bills bound
+We prove all-length caps and a per-FULL price frontier for rank-eight
+productive-helper paths, identifying the local savings needed for further
+growth beyond controller-only changes.
+
+Checkpoint: canonical main `32890bc5`; source bills bound
 at [#5544](https://github.com/CrocSwap/integer-mult-bounds/pull/5544) `e2a6cce2`, [#5545](https://github.com/CrocSwap/integer-mult-bounds/pull/5545) `18968423`, [#5551](https://github.com/CrocSwap/integer-mult-bounds/pull/5551) `1123635a` and [#5440](https://github.com/CrocSwap/integer-mult-bounds/pull/5440) `c0f52b5b`
 (full hashes in [SOURCES.json](SOURCES.json) and [ORIGINS.json](ORIGINS.json)).
 
@@ -137,6 +140,8 @@ as lower bounds. They cover one word or commutation poset, not a redesigned
 native word.
 
 ## Evidence and scope
+
+The selected construction, frontier, allocation and queue dispositions remain unchanged.
 
 See [the proof](PROOF.md), [claim map](CLAIMS.md), [exact receipt](RESULT.json),
 [source origins](ORIGINS.json) and [validation](VALIDATION.md). The checks use
