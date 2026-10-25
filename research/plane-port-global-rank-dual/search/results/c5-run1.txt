@@ -1,4 +1,4 @@
-# Kaggle v4-real-c5 run 1 (69 groups, 15 starts, 2026-10-25): 49 of 69 finished, no escape; crashed on SVD (fixed), rest in run 2
+# Kaggle v4-real-c5 run 1 (69 groups, 15 starts, 2026-10-25): 49 of 69 finished, no escape; stopped on an SVD error in a refit; the other 20 are in c5-run2.txt
 group (3, 6, 7, 10, 13) size 5 baseline 20 best exact real decoder cost 24 -> no escape 236s
 group (3, 4, 6, 10, 13) size 5 baseline 20 best exact real decoder cost 22 -> no escape 245s
 group (3, 4, 6, 10, 13, 0) size 6 baseline 24 best exact real decoder cost 26 -> no escape 262s
