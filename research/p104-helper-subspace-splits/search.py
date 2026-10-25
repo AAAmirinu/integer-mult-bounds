@@ -111,8 +111,7 @@ def candidates(word, group, entry, exit_frame):
         if op == 'INIT':
             columns[r] = {}
         elif op == 'CLEAR':
-            # This screen also rejects directions lost at an owned erasure.
-            columns[r] = {r:Q(1)}
+            columns[r] = {}
         elif op == 'COPY':
             add(columns[event[2]], columns[r], Q(event[-2]))
             columns[r] = {}

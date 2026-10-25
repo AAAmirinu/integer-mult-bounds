@@ -136,8 +136,8 @@ def split(word, h):
     out['final'][p] = f
     out['program'] = inverse(boundary)
     out['program'] += [shift_owned(e) for e in word['program'][:cut+1]]
-    out['program'] += middle
-    out['program'] += [use_successor(e) for e in inverse(middle)]
+    out['program'] += [shift_owned(e) for e in middle]
+    out['program'] += [use_successor(shift_owned(e)) for e in inverse(middle)]
     out['program'] += [use_successor(shift_owned(e)) for e in word['program'][cut+1:]]
     out['program'] += [use_successor([*e[:-1], v]) for e in boundary]
     return out

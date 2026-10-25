@@ -80,7 +80,11 @@ The consumed PR5580 word is pinned to
 `6efa248cf456d6101d757e9d09ba29711d18a13a`. It retains the released PR5569
 handoff and PR5561 helper endpoints. The new basis splits were first found
 on PR5569. Two different greedy cut orders reached the same fifteen-split
-histogram. All fifteen were then composed with PR5580 and checked again.
+histogram. All fifteen were then composed with PR5580 and checked again. The exact
+source copy is retained in this branch at commit
+`29fe88ba218b5d2192d8e31f07a01d1141afdacd`. Its SHA256 and Git blob match the
+recorded PR5580 source. Registered replay needs only this branch history;
+it does not need cached objects from unmerged PR branches.
 No new Gaussian itinerary is introduced. Active frame-extension work in
 [Discussion5575](https://github.com/CrocSwap/integer-mult-bounds/discussions/5575)
 is a separate investigation.

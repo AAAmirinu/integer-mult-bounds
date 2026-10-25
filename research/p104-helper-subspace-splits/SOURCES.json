@@ -81,24 +81,17 @@
       "sha256": "6ebfc8c0f09166f4834e9d7427410cb31aefff2cd4d4ce588c8e52c9c70e9a0f"
     },
     {
-      "path": "research/p104-event-contact-step/WORD.json.gz",
-      "usage": "provenance",
+      "path": "research/p104-helper-subspace-splits/inputs/PR5580-WORD.json.gz",
+      "usage": "input",
       "git_blob": "9434855e7dad0d0236d23210b3e71a2b83a9ae64",
       "sha256": "b2a98c4bd0dbe86c09e9d15ee060dcf1aab09dbef90aa1e2127676f4039f406b",
-      "pin": "head:6efa248cf456d6101d757e9d09ba29711d18a13a:research/p104-event-contact-step/WORD.json.gz"
+      "pin": "head:29fe88ba218b5d2192d8e31f07a01d1141afdacd:research/p104-helper-subspace-splits/inputs/PR5580-WORD.json.gz"
     },
     {
       "path": "research/p104-productive-controller/local.py",
       "usage": "provenance",
       "git_blob": "dbb3d56a4f5b733bb0c32a91249d1f6a7e1ab5d2",
       "sha256": "878734dfd64c4b9d362d0ae476cc5c2a19fe93e48b7378763b23f3e0dd0a5a71"
-    },
-    {
-      "path": "research/p104-priced-handoff/pricing.py",
-      "usage": "provenance",
-      "git_blob": "bb135338f1c57c48147cb214d14f542cdfe4e533",
-      "sha256": "a4df92b46234bb56a966df30d9c1d43251e1346e9a1ad06cf5ee30a79c7ae591",
-      "pin": "head:af9f091ac6f30c6eaacb9c27777bfbe2d0e5ffdf:research/p104-priced-handoff/pricing.py"
     }
   ],
   "external_inputs": [
@@ -109,6 +102,16 @@
       "source_path": "research/p104-event-contact-step/WORD.json.gz",
       "sha256": "b2a98c4bd0dbe86c09e9d15ee060dcf1aab09dbef90aa1e2127676f4039f406b",
       "git_blob": "9434855e7dad0d0236d23210b3e71a2b83a9ae64"
+    }
+  ],
+  "code_derivation": [
+    {
+      "source_repository": "GamingPuzzled/integer-mult-bounds",
+      "source_commit": "af9f091ac6f30c6eaacb9c27777bfbe2d0e5ffdf",
+      "source_path": "research/p104-priced-handoff/pricing.py",
+      "sha256": "a4df92b46234bb56a966df30d9c1d43251e1346e9a1ad06cf5ee30a79c7ae591",
+      "git_blob": "bb135338f1c57c48147cb214d14f542cdfe4e533",
+      "scope": "Pricing code attribution; this predecessor file is not executed."
     }
   ]
 }

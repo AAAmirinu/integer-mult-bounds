@@ -33,16 +33,11 @@ def authenticate():
                  'Source Git blob: '+row['path'])
             count += 1
     for row in manifest['external_inputs']:
-        source, = [r for r in manifest['files'] if r['path'] == row['source_path']]
-        need(source['pin'] == 'head:'+row['source_commit']+':'+row['source_path'],
-             'Published source path and commit')
-        need((source['sha256'],source['git_blob']) == (row['sha256'],row['git_blob']),
-             'Copied input has the published source pins')
-        raw = (HERE/row['local_path']).read_bytes()
-        need(sha256(raw).hexdigest() == row['sha256'], 'Copied source SHA256')
-        need(sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest() == row['git_blob'],
-             'Copied source Git blob')
-        count += 1
+        retained_path = (HERE.relative_to(ROOT)/row['local_path']).as_posix()
+        retained, = [r for r in manifest['files'] if r['path'] == retained_path]
+        need(retained['usage'] == 'input', 'Copied source is a declared live input')
+        need((retained['sha256'],retained['git_blob']) == (row['sha256'],row['git_blob']),
+             'Retained bytes equal the recorded published source')
     return count
 
 
