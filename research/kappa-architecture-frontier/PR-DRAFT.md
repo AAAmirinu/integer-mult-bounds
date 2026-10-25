@@ -2,7 +2,7 @@
 
 The productive-helper architecture that moved κ from .0023 to about .003
 contains both exhausted controller derivatives and open native/state changes.
-I prove a reusable distinction between them: an exact local-debt threshold for
+We prove a reusable distinction between them: an exact local-debt threshold for
 all lengths, splits and FULL/QUERY masks of the rank-eight prefix/suffix path,
 plus source-bound ceilings for the selected neutral bill and the newer P104 bills.
 
@@ -19,14 +19,14 @@ The universal exchange/convexity reduction builds on
 [#5405](https://github.com/CrocSwap/integer-mult-bounds/pull/5405) and
 [Chris R](https://github.com/Clear1nsight)'s independent
 [#5409](https://github.com/CrocSwap/integer-mult-bounds/pull/5409).
-My new per-FULL price frontier eliminates the infinite controller search for
-changed providers: with local debt L(t), a raw win exists exactly when
+Our per-FULL price frontier eliminates the infinite controller search for
+changed providers: with local debt L(t), a favorable raw moment exists exactly when
 L(t)<v*lambda_8(t). Three rational signs certify the optimal discount over all
 FULL counts. For example, reaching C=.0034 from the latest P104 bill requires
 more than **4.91394927369 net moment units saved per FULL**, before compiler
 and outer losses. Even freeing the neutral bill's eight H8 calls cannot reach .01.
 
-I also prove that the stated moment closure—disjoint combinations, positive
+We also prove that the stated moment closure—disjoint combinations, positive
 scaling, declared tensor products, exact typed cancellation and charged
 splitting/completion—cannot amplify a failed bill. Compatible autonomous
 provider menus cannot beat their best member. These statements do not cover a
@@ -70,7 +70,7 @@ replay, proof-kernel theorem or independent human acceptance is claimed.
 - Independently validate the written ratio-frontier proof, especially the
   small-count junction and its universal sign gate.
 
-I retain the productive/compiler lineage of
+We retain the productive/compiler lineage of
 [Cinna Davis](https://github.com/1337isnot1337),
 [Cao Yifan](https://github.com/intqwq),
 [Dillon Amburgey](https://github.com/dillona),
