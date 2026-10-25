@@ -43,5 +43,16 @@ ceiling explicitly excludes the target-changing PR5561/PR5569 line. The
 canonical claim received no conflicting reply at this checkpoint.
 
 The repository is shallow. The publication-base ancestry is checked directly;
-no full-history source-preflight claim is made. Committed-byte and Git-free
-export results are added after those checks. Hosted CI remains separate.
+no full-history source-preflight claim is made. The committed-byte preflight passed for all 17 package files at
+`f42e4d5a8e4574b7a9fb3b780fe85b434e5849d8`. The official export and its
+inventory check passed for that commit.
+
+A separate CPython 3.12.13 run used the exported package, read-only files,
+an empty working directory, an empty PATH and an invalid GIT_DIR. The
+command used `-I -O -B -W error` and passed in 71.229 seconds. All 18
+exported files, including the export manifest, retained their hashes.
+It printed `PASS_P104_EVENT_CONTACT_KAPPA_00308189` and the wrapper printed
+`PASS_READ_ONLY_GIT_FREE_REPLAY`. No Git checkout, network or solver was
+used. This paragraph is a later documentation-only change; the verifier,
+word, price code, pins and complete receipt are the tested bytes.
+Hosted CI remains separate.
