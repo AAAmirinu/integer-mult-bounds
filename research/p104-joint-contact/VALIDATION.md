@@ -1,0 +1,67 @@
+# Validation scope and reproduction
+
+Environment: macOS arm 64, CPython 3.12.13, standard library. Author-side
+checks include parallel Codex agents; they are not independent human or
+proof-kernel acceptance. No selected record or frozen predecessor is edited.
+
+## Completed scientific checks
+
+1. The exact official 33-file PR5545 export was checked and its full original
+   verifier replayed before searching the successor. It reproduced
+   `PASS_P104_CONTACT_COMPLETE_KAPPA_00304117`.
+2. The successor passed sparse exact forward rows and dense exact reverse
+   columns, all 743 rows/552,049 coefficients, all 527 helpers, all 735 arbitrary
+   public inputs, eight owned lifetimes and peak one. Scalar coefficients
+   and order are exactly unchanged.
+3. A separate peer implementation, importing neither constructor nor native
+   checker, passed normal and optimized read-only execution. It confirms
+   six ADD and fifteen SCALE chart edits, both new contact invoices and
+   three real endpoint/chart/owned mutants. Its complete receipt and fixed
+   inputs are retained under `peer/`.
+4. Fresh native lowering and the separate Gaussian/absolute-phase interpreter
+   passed 2,979 maps, 1,054 helper normalizers and 208 main adapters. The source
+   phase mutant is rejected. Fresh caller construction and 265-axis physical
+   checking passed with all 104 ports, both orientations and the exact
+   retained controller.
+5. Both full invoice counts, both rational moment engines, strictification,
+   compiler grid with rejected predecessor, ordinary/admitted BIT stock and
+   all 58 outer predicates passed. Complete paid/target counts are 69,912/12,814.
+   The raw crossing lies in (.00304153116714, .00304153116715); tested saving
+   is .0030415305; claimed conditional saving is .00304153.
+6. The complete publication verifier ran with `--write`, regenerating WORD
+   and RESULT and repeating the actual source reconstruction, peer, native,
+   caller, price and semantic controls. It emitted
+   `PASS_P104_JOINT_CONTACT_COMPLETE_KAPPA_00304153`.
+
+## Registered and cold replay
+
+The registered normal/optimized pair is run with
+
+```sh
+python3.12 -B scripts/research_package.py --package research/p104-joint-contact
+```
+
+The complete verifier passed in normal and optimized modes, comparing all
+saved semantic artifacts and executing every listed native/caller/price
+and semantic control. The final manifest retains these exact argument
+arrays with a 540-second bound each and adds normal/optimized 30-second
+funding-review commands. Those two new commands also passed. They use
+an independently written third rational interval engine and bind its
+audited outputs to this publication. Their science digest is
+`611b766fc6bfe599b9ae56d5e78b90f6608b5ed3a14baf1d119ca630a5829c9c`.
+
+Every complete replay compares all saved semantic
+artifacts. Compression streams are not mathematical equality checks;
+retained immutable source/peer inputs keep their exact byte hashes.
+Publication byte/source-history preflight and a relocated Git-free,
+read-only export replay are recorded here when completed.
+
+## Limits
+
+All five framework premises in PROOF.md remain. Native algebra is checked
+without materializing exponential-size matrices. The uniform compiler word,
+rounded integer multiplier and machine tape are not materialized. A passing
+certificate, package runner or CI job does not establish scientific adoption,
+selected promotion, a complete multiplication theorem or contributor status.
+
+Retain the predecessor and new-work attribution in README.md/PROOF.md.
