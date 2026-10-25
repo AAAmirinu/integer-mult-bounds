@@ -55,3 +55,25 @@ not run. No finite program here verifies the universal written proof, proves a
 native lower bound over all factorizations, or discharges the five inherited
 framework assumptions. No hosted CI, independent human review or frontier
 promotion is claimed. The PR description is a local Markdown draft only.
+
+## Committed transport and offline export
+
+The committed-byte preflight passed on scientific commit
+`83d5c58c9556065c95556cfc645cf7bd89fcd44a` for all 28 package files.
+The official exporter and archive checker both passed:
+
+```sh
+python3.12 -B scripts/check_research_commit.py --package research/kappa-architecture-frontier
+python3.12 -B scripts/export_research_package.py export --package research/kappa-architecture-frontier --ref 83d5c58c9556065c95556cfc645cf7bd89fcd44a --output /tmp/kappa-architecture-frontier-83d5c58c9.tar.gz
+python3.12 -B scripts/export_research_package.py check /tmp/kappa-architecture-frontier-83d5c58c9.tar.gz
+```
+
+The exported archive SHA256 is
+`c741d2d29a36fccd43a089e79b0a8ff3ff0b2bc1a6f4ee7ef82393decccefd87`.
+Its 28 payload files plus export manifest were made read-only. With empty PATH,
+no Git checkout and no network calls, `/opt/local/bin/python3.12 -I -B` and
+`-I -O -B` both passed the fresh checker. A source-byte mutation was rejected;
+after restoring it, every file hash and mode matched the pre-run census.
+No archive container hash determines mathematical equality: the complete typed
+scientific receipt is compared independently. Later validation-only prose does
+not alter the scientific code, source inputs or expected results at this commit.
