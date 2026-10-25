@@ -126,6 +126,8 @@ preserves the original card and states the changed scope. Canonical main was
 refreshed from `5e0052ca0aa3036a3afa8b0438927377c8d97d53` to
 `d7633ce230196a1d5d061347de7a0fd8be512ed6`; the frozen source pins remain.
 Priorities and the selected record did not change at that checkpoint.
+The final refresh to `6cf7a683f447b9f1e2333791907fd92be5009a63` also found
+no change in those authorities. The source pins stay fixed.
 [Discussion5593](https://github.com/CrocSwap/integer-mult-bounds/discussions/5593)
 is the canonical investigation. Local contact, helper-basis and G20 claims
 are separate. No selected-frontier change or scientific acceptance is implied.
@@ -134,8 +136,9 @@ are separate. No selected-frontier change or scientific acceptance is implied.
 
 - Extend the intersection bound to a quantitative rank loss that grows with
   caller size. Start from the rank-two complement and allow unsaturated
-  stage classes. This could close the remaining large paired-stage cases.
-  The present proof only forces one lost stage occurrence.
+  stage classes and permit coupled ports. This could close more of the
+  longer-caller domain. The separate-port proof only forces one lost
+  stage occurrence; its complete size bound does not cover coupled ports.
 - Search a changed caller with more queries, mixed calls or partially
   overlapping axis blocks. Apply both cuts before a full polynomial search,
   then verify the whole endpoint and complete bill. The filter is necessary

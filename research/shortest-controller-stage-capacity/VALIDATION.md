@@ -25,8 +25,24 @@ non-idempotent use of the kernel identity. A six-query positive word
 detects an incorrect extension of the shortest bound. The reusable CLI
 accepts that word's necessary data and rejects both committed false targets.
 
-The direct source-export and publication checks are recorded after the
-committed export is made. No native source word, huge uniform compiler word,
+The committed export at `7537009c656e441ad943ed75a4b32b010433b582` contains
+42 package files and five external inputs. Its manifest check passed. An
+isolated optimized replay passed in about 1.23 seconds with read-only files,
+no Git metadata and PATH set to `/nonexistent`. Changing one source byte
+was rejected by SHA256 before source code was loaded. The original bytes
+were restored. [VALIDATION.json](VALIDATION.json) records the exact archive
+hash, commit, runtime and source hash. Later validation prose does not
+change the scientific files checked by that export.
+
+Canonical main was refreshed to `6cf7a683f447b9f1e2333791907fd92be5009a63`
+before publication. AGENTS.md, autoresearch.md, the task catalogue, family
+guidance and selected result did not change from the previous refresh.
+The updated active claims were read. The p2 fixed-leakage projection-rank
+claim, P104 scalar rewrites and helper-basis work use different sources
+and contracts. Publication links and readbacks are saved with the project
+handoff after the PR is opened.
+
+No native source word, huge uniform compiler word,
 full integer multiplier, independent human review or proof-assistant kernel
 was run. Full-history provenance preflight was not run in this partial
 checkout; the required pinned source objects and bytes were checked.
