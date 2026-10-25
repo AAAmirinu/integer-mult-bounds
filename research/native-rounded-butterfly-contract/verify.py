@@ -61,7 +61,10 @@ def verify():
                 # Tiny grid-residue plus a macroscopic dirty component exercises nonzero rounding.
                 x=[((i%5-2)*(1<<(g-2))+(i%3), (i%7-3)*(1<<(g-3))+1)for i in range(N)]
                 y=[((i%3-1)*(1<<(g-2))+1,(i%5-2)*(1<<(g-3))-(i%2))for i in range(N)]
-                a,b,tr,cuts=r.port(x,y,f,kind,reverse,width)
+                a,b,tr,cuts=r.port(x,y,f,kind,reverse,width,capture=True)
+                xx,yy=list(x),list(y)
+                direct_a,direct_b,direct_trace,no_cuts=r.port(xx,yy,f,kind,reverse,width)
+                r.need(direct_a is xx and direct_b is yy and no_cuts==[] and (direct_a,direct_b,direct_trace)==(a,b,tr),'production in-place and optional cut instrumentation')
                 exact=reference([(Q(s),Q(t))for s,t in x],[(Q(s),Q(t))for s,t in y],f,kind,reverse)
                 err=max(error2(a,exact[0]),error2(b,exact[1]))
                 r.need(err<=Q(1<<(2*g),1<<(2*precision)),'full port target on actual rounded execution')

@@ -93,10 +93,14 @@ def mix(t,y,f,width,sign):
         monomial(t,name,f,width,True)
 
 
-def port(x,y,f,kind,reverse,width):
-    need(kind in (2,3),'two or three calls');x=list(x);y=list(y);trace={};cuts=[]
+def port(x,y,f,kind,reverse,width,capture=False):
+    need(kind in (2,3),'two or three calls')
+    if capture:x=list(x);y=list(y)
+    trace={};cuts=[]
     def paid(v,axis,adj=False):
-        before=list(v);call(v,f,axis,width,adj,trace);cuts.append((axis,adj,before,list(v)))
+        before=list(v) if capture else None
+        call(v,f,axis,width,adj,trace)
+        if capture:cuts.append((axis,adj,before,list(v)))
     if reverse:
         if kind==3:
             monomial(y,'M',f,width,True);paid(y,2,True);monomial(y,'W',f,width,True)

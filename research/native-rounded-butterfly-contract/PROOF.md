@@ -175,3 +175,14 @@ wrong-axis, adjoint, overflow and domain controls reject. The all-f theorem is
 the recurrence proof above, not the finite checks. Complete recursive substitution,
 fast Gaussian call implementation, fixed tapes, native supplier/outer admission,
 and selected5413 reproduction remain outside scope.
+
+## Register allocation and instrumentation distinction
+
+The eight-word butterfly allocation is an explicit overwrite schedule: load
+a,b,c,d into slots0..3; place sr,si,dr,di in slots4..7; overwrite0..3 with the
+four numerators; round/store those four slots. Python retains extra named
+intermediate objects as a semantic reference and is not the register allocator.
+`port` defaults to in-place operation with no cut snapshots. Only the verifier
+requests `capture=True`, making copied inputs and per-call before/after arrays
+for independent checks. The verifier separately requires the production default
+to return the identical objects, outputs and trace with no captured arrays.
