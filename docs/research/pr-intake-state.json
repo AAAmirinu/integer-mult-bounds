@@ -32798,6 +32798,136 @@
       "baseline": "d99b37998150aa3719496e2a1d6287bc88c48249",
       "watch_paths": {},
       "watch_prs": {}
+    },
+    {
+      "number": 5552,
+      "head": "fb607e2385980dd36cd4bfc53885cb2ffab5d5dc",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct25c-20261025.json"
+      ],
+      "policy_version": 1,
+      "baseline": "13be6ac685845c1ff671f5d26e7166165abd998e",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5553,
+      "head": "d0ac06f6fe72b83ea8bf3bac7f9e4d76bb25e2f1",
+      "status": "waiting_revision",
+      "reason": "Advertised complete kappa .0030428242 is a truncation of the raw crossing, while pricing.py and the complete-cost receipt set KAPPA=.00304282 and TESTED=.0030428205. The larger headline exceeds even that tested supplier saving. State the actually certified .00304282 endpoint or regenerate the full strictification/outer certificate at the advertised value. Mid-frame-start admissibility and the #5551 parent remain explicit separate hypotheses, not discharged by an archive merge.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct25c-20261025.json"
+      ],
+      "policy_version": 1,
+      "baseline": "13be6ac685845c1ff671f5d26e7166165abd998e",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5554,
+      "head": "18c1770246340e9f4aaac5a9ebd712e23498d0a3",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct25c-20261025.json"
+      ],
+      "policy_version": 1,
+      "baseline": "13be6ac685845c1ff671f5d26e7166165abd998e",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5555,
+      "head": "c53bff3f3f7b9251d939d16ba43a26213743a987",
+      "status": "ready_to_integrate",
+      "reason": "Reviewed exact one-field path correction to a real Git-tracked package manifest; targeted planner/matrix tests pass normally and optimized. This fixes selection only. The retained standalone VERIFY format is still not a valid registered replay schema; no NTT/scientific execution or package replay admission is claimed.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct25c-20261025.json"
+      ],
+      "policy_version": 1,
+      "baseline": "13be6ac685845c1ff671f5d26e7166165abd998e",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5556,
+      "head": "f87b6ac80fce79eb83c005d9b33d0a06597aeb50",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct25c-20261025.json"
+      ],
+      "policy_version": 1,
+      "baseline": "13be6ac685845c1ff671f5d26e7166165abd998e",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5557,
+      "head": "3b154c52cb05922fc10eb8ce656a2a314bbb8187",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct25c-20261025.json"
+      ],
+      "policy_version": 1,
+      "baseline": "13be6ac685845c1ff671f5d26e7166165abd998e",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5558,
+      "head": "3ce75dcac77004beff6ece24076636462fa991c6",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa. Collateral docs/research/research-family-status.md retained only in original source ancestry; not installed.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct25c-20261025.json"
+      ],
+      "policy_version": 1,
+      "baseline": "13be6ac685845c1ff671f5d26e7166165abd998e",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5559,
+      "head": "687c25962abdee0dadf36c0fc078ff655cc2946d",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa. Collateral research/wordram-ntt-kernel/VERIFY.json retained only in original source ancestry; not installed.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct25c-20261025.json"
+      ],
+      "policy_version": 1,
+      "baseline": "13be6ac685845c1ff671f5d26e7166165abd998e",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5560,
+      "head": "c0a3ffd0e4a2f33702204953444b88505752ea1d",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct25c-20261025.json"
+      ],
+      "policy_version": 1,
+      "baseline": "13be6ac685845c1ff671f5d26e7166165abd998e",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5561,
+      "head": "452d27dde67ee9f772dbbd3be129db97a8ecb9c1",
+      "status": "waiting_revision",
+      "reason": "Advertised complete kappa .0030814243 exceeds pricing.py KAPPA=.00308142 and TESTED=.0030814205; the raw crossing is not the fully checked outer endpoint. Starts-only .0030768801 is additionally above its own upper root .00307688008013, as the author comment acknowledges; its checker sets KAPPA=.003076879 and TESTED=.0030768795. Correct all summary/README/receipt claims or rerun the full strict funding at consistent endpoints. Free helper-start/final-frame admissibility remains a separate unverified hypothesis.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct25c-20261025.json"
+      ],
+      "policy_version": 1,
+      "baseline": "13be6ac685845c1ff671f5d26e7166165abd998e",
+      "watch_paths": {},
+      "watch_prs": {}
     }
   ]
 }

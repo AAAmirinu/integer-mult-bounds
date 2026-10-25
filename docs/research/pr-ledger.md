@@ -1,6 +1,6 @@
 # PR review and integration ledger
 
-The immutable starting snapshot contains **446 PRs**. Explicit later family rounds extend the current inventory to **4858**; unrelated arrivals remain outside the round.
+The immutable starting snapshot contains **446 PRs**. Explicit later family rounds extend the current inventory to **4868**; unrelated arrivals remain outside the round.
 
 [Machine-readable ledger](pr-ledger.json) · [Starting snapshot](../../research/pr-reconciliation-20261012/starting-snapshot.json)
 
@@ -9,7 +9,7 @@ The ledger separates historical review from integration. A prior snapshot or a m
 | Disposition | Count |
 |---|---:|
 | incorporated | 2133 |
-| partially reviewed | 2663 |
+| partially reviewed | 2673 |
 | superseded | 2 |
 | unreviewed | 60 |
 
@@ -4901,3 +4901,13 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#5549](https://github.com/CrocSwap/integer-mult-bounds/pull/5549) | MatShep | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5550](https://github.com/CrocSwap/integer-mult-bounds/pull/5550) | Clear1nsight | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5551](https://github.com/CrocSwap/integer-mult-bounds/pull/5551) | thu-nmrc | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5552](https://github.com/CrocSwap/integer-mult-bounds/pull/5552) | NicholasStone | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5553](https://github.com/CrocSwap/integer-mult-bounds/pull/5553) | DreamingOfClouds | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5554](https://github.com/CrocSwap/integer-mult-bounds/pull/5554) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5555](https://github.com/CrocSwap/integer-mult-bounds/pull/5555) | DreamingOfClouds | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5556](https://github.com/CrocSwap/integer-mult-bounds/pull/5556) | NicholasStone | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5557](https://github.com/CrocSwap/integer-mult-bounds/pull/5557) | thu-nmrc | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5558](https://github.com/CrocSwap/integer-mult-bounds/pull/5558) | CubeJerry | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5559](https://github.com/CrocSwap/integer-mult-bounds/pull/5559) | DreamingOfClouds | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5560](https://github.com/CrocSwap/integer-mult-bounds/pull/5560) | Matarener | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5561](https://github.com/CrocSwap/integer-mult-bounds/pull/5561) | DreamingOfClouds | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |

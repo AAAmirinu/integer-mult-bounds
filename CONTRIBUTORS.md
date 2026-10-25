@@ -4253,3 +4253,16 @@ Source archives retain attribution; mathematical review remains open.
 - **Shep (@MatShep)** — [#5549](https://github.com/CrocSwap/integer-mult-bounds/pull/5549): Sharp one-qubit full-Clifford tensor threshold: width 5 (source archive).
 - **Chris R (@Clear1nsight)** — [#5550](https://github.com/CrocSwap/integer-mult-bounds/pull/5550): Independently verify the P104 forward caller and target bindings (no new κ) (source archive).
 - **THU New Media Research Center· Prof. Shen Yang (@thu-nmrc)** — [#5551](https://github.com/CrocSwap/integer-mult-bounds/pull/5551): Improve complete conditional κ to 0.00304153 via coupled P104 contacts (source archive).
+
+## Queue intake, 25 October 2026 (chunk C)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **Nicholas Stone (@NicholasStone)** — [#5552](https://github.com/CrocSwap/integer-mult-bounds/pull/5552): Close the 24 coordinate-kernel span-six pools by a 3+1 restriction (source archive).
+- **zxv (@zxv)** — [#5554](https://github.com/CrocSwap/integer-mult-bounds/pull/5554): Research: the productive-helper path (#4440 lineage) can't pass κ ≈ .00304 without cheaper helpers (source archive).
+- **DreamingOfClouds (@DreamingOfClouds)** — [#5555](https://github.com/CrocSwap/integer-mult-bounds/pull/5555): Fix wordram-ntt-kernel VERIFY.json input path (unbreaks CI planner) (reviewed tooling).
+- **Nicholas Stone (@NicholasStone)** — [#5556](https://github.com/CrocSwap/integer-mult-bounds/pull/5556): Count optimal second callees for a two-dimensional Jordan first map (source archive).
+- **THU New Media Research Center· Prof. Shen Yang (@thu-nmrc)** — [#5557](https://github.com/CrocSwap/integer-mult-bounds/pull/5557): P104: certify residual-preserving all-cut stability and 265-axis range bounds (source archive).
+- **CubeJerry (@CubeJerry)** — [#5558](https://github.com/CrocSwap/integer-mult-bounds/pull/5558): Qualify PR5285's h8 family closure with exact coverage (source archive).
+- **DreamingOfClouds (@DreamingOfClouds)** — [#5559](https://github.com/CrocSwap/integer-mult-bounds/pull/5559): Research: partial theorems on the P112 decoder wall (no kappa) (source archive).
+- **Matarener (@Matarener)** — [#5560](https://github.com/CrocSwap/integer-mult-bounds/pull/5560): Prove a global all-field COPY floor 140 for the 56-plane port decoder (no new κ) (source archive).
