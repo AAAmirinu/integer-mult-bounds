@@ -62,7 +62,7 @@
   "outcome": "completed",
   "evidence": "PROOF.md, verify.py, RESULT.json",
   "author": "JoyboyBrian",
-  "ai_assistance": "TODO: disclose tools used",
+  "ai_assistance": "Substantial OpenAI Codex assistance in source analysis, proof, exact controls and review.",
   "open_questions": [
     {
       "question": "Can an actual rounded full-cell reference use this inverse bound?",
