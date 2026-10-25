@@ -1775,5 +1775,22 @@
       "remaining_actionable": 0,
       "selected": []
     }
+  },
+  "latest_p104_cleanup": {
+    "publication": "300ee91bc0d8dc3ec1517bb6d139421d02ea55d6",
+    "closures": "docs/research/pr-intake-evidence/queue-oct25d-closures.json",
+    "clean_main": "docs/research/pr-intake-evidence/local-cleanup-20261025.json",
+    "audit": "docs/research/pr-intake-evidence/pr5599/VALIDATION.json",
+    "next_new_heads_at_snapshot": [
+      5608,
+      5609
+    ],
+    "open_snapshot_counts": {
+      "draft": 179,
+      "waiting_revision": 122,
+      "deferred_replay": 7,
+      "new": 2
+    },
+    "selected_frontier_changed": false
   }
 }

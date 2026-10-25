@@ -123,7 +123,7 @@
     "research/community-efficient2400-audit/DISPOSITIONS.json": "2602f88f4a333ade0b654645a3126fcde85f16c41f25f36a397f8c760f8acf4c",
     "research/community-efficient2500-audit/DISPOSITIONS.json": "23d12152b20bd788c5fb1e1935543185dc3772634cf26efbfad88f6d78ed6e15",
     "research/community-efficient2600-audit/DISPOSITIONS.json": "d7816f0e79c421d750d691cb1edfc4646accae0a47dc817fb32409745795765c",
-    "docs/research/pr-intake-decisions.json": "a323da2087d7fb7d62b54e95041675d3859f21cf7ece8663146e820c0dd0a6d2",
+    "docs/research/pr-intake-decisions.json": "1fc69397e92d9c9528aafe2c11960b50ae7501a47f20420c91f619525f6d6095",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353",
     "research/pr116-evidence-reconciliation/PARENT-EVIDENCE.json": "62a666dac3e67ba8d388820c92e0cd4495657a20b6eae280a5367af8e89d769c",
@@ -266476,13 +266476,19 @@
           "kind": "integration_or_partial_review"
         }
       ],
-      "closure": null,
+      "closure": {
+        "kind": "ancestry_only_with_unresolved_claim_objections",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5561",
+        "merge_commit": "452d27dde67ee9f772dbbd3be129db97a8ecb9c1"
+      },
       "reviewed_head": "452d27dde67ee9f772dbbd3be129db97a8ecb9c1",
       "current_head": "452d27dde67ee9f772dbbd3be129db97a8ecb9c1",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Advertised complete kappa .0030814243 exceeds pricing.py KAPPA=.00308142 and TESTED=.0030814205; the raw crossing is not the fully checked outer endpoint. Starts-only .0030768801 is additionally above its own upper root .00307688008013, as the author comment acknowledges; its checker sets KAPPA=.003076879 and TESTED=.0030768795. Correct all summary/README/receipt claims or rerun the full strict funding at consistent endpoints. Free helper-start/final-frame admissibility remains a separate unverified hypothesis.",
+      "github_state": "MERGED",
+      "integration_location": [
+        "https://github.com/CrocSwap/integer-mult-bounds/tree/452d27dde67ee9f772dbbd3be129db97a8ecb9c1"
+      ],
+      "unresolved_question": "Advertised complete kappa .0030814243 exceeds pricing.py KAPPA=.00308142 and TESTED=.0030814205; the raw crossing is not the fully checked outer endpoint. Starts-only .0030768801 is additionally above its own upper root .00307688008013, as the author comment acknowledges; its checker sets KAPPA=.003076879 and TESTED=.0030768795. Correct all summary/README/receipt claims or rerun the full strict funding at consistent endpoints. Free helper-start/final-frame admissibility remains a separate unverified hypothesis. GitHub auto-closed this ancestor when accepted descendant source heads became reachable. Its default-tree package was deliberately omitted. The headline corrections remain unresolved; this is not scientific acceptance.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
@@ -266490,7 +266496,8 @@
         "published": false
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct25c-20261025.json"
+        "docs/research/pr-intake-evidence/queue-oct25c-20261025.json",
+        "docs/research/pr-intake-evidence/pr5561-ancestry-status.json"
       ],
       "current_head_observed_in": "docs/research/pr-intake-decisions.json",
       "reconciliation_evidence": [
@@ -267968,7 +267975,7 @@
         {
           "head": "09dd0965711ca7eeb169057a420abab1c9052137",
           "evidence": "docs/research/pr-intake-decisions.json",
-          "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+          "scope": "Exact-source archival intake plus preliminary mechanism review and a partial maintainer replay. Thirteen split checks and complete scalar endpoints passed; 600-second resource stop before the native/caller and funding checkpoints. No selected-frontier admission.",
           "kind": "integration_or_partial_review"
         }
       ],
@@ -267984,7 +267991,7 @@
       "integration_location": [
         "research/p104-helper-subspace-splits"
       ],
-      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "unresolved_question": "Finish source-bound native/caller/funding and the independent caller positive control/candidate check in a revised resource plan. Current 600-second run timed out; do not retry unchanged automatically. See docs/research/pr-intake-evidence/pr5599/VALIDATION.json",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
@@ -267992,7 +267999,9 @@
         "published": true
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct25d-20261025.json"
+        "docs/research/pr-intake-evidence/queue-oct25d-20261025.json",
+        "docs/research/pr-intake-evidence/pr5599/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr5599/PROOF-REVIEW.md"
       ],
       "current_head_observed_in": "docs/research/pr-intake-decisions.json",
       "reconciliation_evidence": [

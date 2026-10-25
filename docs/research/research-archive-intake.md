@@ -335,3 +335,5 @@ The [exact-head delta](pr-intake-evidence/queue-oct25d-20261025.json) records 34
 ## Original checkout research checkpoint
 
 The [25 October local research archive](../../research/local-research-checkpoint-20261025/README.md) preserves 12 unpublished commits and 88 unique or differing source files from the old checkout. Another 174 identical files are indexed at their canonical locations. Historical claims are not current supplier admissions; the original branch head is retained in ancestry.
+
+PR5561 also became reachable as an ancestor of accepted successor source heads, so GitHub marked it merged automatically. Its held package was **not** installed in the default tree and its claim-line objections remain in the ledger; see [ancestry status](pr-intake-evidence/pr5561-ancestry-status.json). The [PR5599 partial maintainer audit](pr-intake-evidence/pr5599/README.md) records fresh endpoint checks and a resource stop, not a frontier promotion.

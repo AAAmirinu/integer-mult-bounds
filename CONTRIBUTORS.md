@@ -4305,3 +4305,5 @@ Source archives retain attribution; mathematical review remains open.
 - **Ali Romman (@aliromman)** — [#5602](https://github.com/CrocSwap/integer-mult-bounds/pull/5602): Conditional κ = 0.00309980 (+1.41e-6 over #5599): coupled helper bases (source archive).
 - **Ali Romman (@aliromman)** — [#5604](https://github.com/CrocSwap/integer-mult-bounds/pull/5604): Bound every joint G20 entry kernel and check partial-helper capture epochs (source archive).
 - **flyingviper (@flyingviper)** — [#5605](https://github.com/CrocSwap/integer-mult-bounds/pull/5605): Conditional kappa 0.00308326 (+1.37e-6 over #5580): compensated shared P104 relay (source archive).
+
+- **DreamingOfClouds** — [#5561](https://github.com/CrocSwap/integer-mult-bounds/pull/5561): free helper endpoint retiming used by the later P104 lineage. Original source retained in descendant ancestry; the default-tree package is omitted and the recorded headline-correction objections remain open. GitHub ancestry closure is not scientific approval.
