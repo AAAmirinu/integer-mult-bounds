@@ -206,6 +206,17 @@ def main():
                 solutions+=1
                 need(u==v==ident,'three-term rigidity')
     need(solutions==210,'all and only common transports')
+    zero_cases=0
+    for a in range(1,16):
+        for u in us:
+            for zero_slot in range(3):
+                forms=[a,a,a];transports=[u,ident,ident]
+                forms[zero_slot]=0
+                active=[i for i in range(3) if i!=zero_slot]
+                transports[active[0]]=u;transports[active[1]]=ident
+                need(relation(forms,transports,4)==(u==ident), 'two active terms')
+                zero_cases+=1
+    need(relation((0,0,0),(us[0],us[1],us[2]),4), 'all zero reductions')
     # The rank-distance hypothesis is essential: arbitrary GL(V) admits rank1 gaps.
     u=list(ident);u[2]^=2
     v=list(ident);v[2]^=1
@@ -250,7 +261,7 @@ def main():
     need(controls==4,'controls complete')
     return {'status':'PASS_THREE_TERM_TWIST_RIGIDITY','two_sided_maps_m2':36,
             'rank_distance_histogram':distances,'normalized_three_term_cases':checks,
-            'normalized_solutions':solutions,'full_sparse_oracle_cases':oracle_cases,
+            'normalized_solutions':solutions,'zero_reduction_cases':zero_cases+1,'full_sparse_oracle_cases':oracle_cases,
             'first_order_feasible_eight_call_obstructions':obstructions,
             'orders_sampled':len(orders),'rejection_controls':controls,
             'arbitrary_GL_counterexample':True,'quantified_result':'written proof; finite checks corroborate',

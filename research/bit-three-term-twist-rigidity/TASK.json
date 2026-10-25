@@ -49,7 +49,7 @@
   "bottleneck_link": "Scoped exclusion of a first-order-feasible two-sided-twist pattern; no native price or full register-model barrier.",
   "budget_minutes": 60,
   "stop_rule": "Stop at rank-distance/source-compatibility failure; no unrestricted synthesis or large twist census.",
-  "outcome": "scoped-proof",
+  "outcome": "completed",
   "evidence": "PROOF.md and verify.py: all-m proof; finite independent sparse group-ring corroboration.",
   "author": "JoyboyBrian, with substantial OpenAI Codex assistance",
   "ai_assistance": "OpenAI Codex assisted derivation, source analysis, implementation and writing.",
