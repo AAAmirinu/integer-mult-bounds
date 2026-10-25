@@ -71,8 +71,8 @@ a missing central translation, an inadequate cutoff and insufficient BIT stock.
 The scientific base is canonical main
 `5e0052ca0aa3036a3afa8b0438927377c8d97d53`, priority revision 7.
 The [canonical claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19183208)
-records the changed question and local screens. The latest pre-package overlap
-cache covered 329 open PRs and 4,851 Discussion records, with complete remote
+records the changed question and local screens. The final publication overlap
+cache covered 334 open PRs and 4,863 Discussion records, with complete remote
 pagination and incomplete sparse local coverage. Source and coverage details
 are coordination evidence, not a novelty proof.
 
@@ -88,6 +88,14 @@ it does not need cached objects from unmerged PR branches.
 No new Gaussian itinerary is introduced. Active frame-extension work in
 [Discussion5575](https://github.com/CrocSwap/integer-mult-bounds/discussions/5575)
 is a separate investigation.
+
+The final refresh also found [parallel coupled-basis and handoff work](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19154639).
+It uses the same rank-one mechanism and separately changes paid boundary
+work. The [public composition handoff](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19183908)
+releases these fifteen cuts and leaves the six paid-boundary changes with
+the parallel claim. No exclusive method novelty or combined gain is claimed.
+The new scalar contacts and input count change the hypotheses of
+[PR5590](https://github.com/CrocSwap/integer-mult-bounds/pull/5590)’s fixed-contact floor.
 
 The scope changes the scalar word, the input count and the target contract.
 It therefore differs from a scalar-only simplification or a fixed-input

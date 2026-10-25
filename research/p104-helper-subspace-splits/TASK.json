@@ -67,6 +67,12 @@
       "why_it_matters": "The two greedy orders found the same invoice but do not prove a global maximum.",
       "first_step": "Use the new word and test both prefix and suffix support before assigning credit. Coordinate with Discussion5575 for any changed frame itinerary.",
       "blocked_by": "Every added target must have a clean independent input/output contract and a complete caller bill."
+    },
+    {
+      "question": "Can the fifteen released target splits compose with the six paid-boundary changes in the parallel Discussion claim?",
+      "why_it_matters": "The target gain and paid gain could be compatible, but the input bases and cuts must be checked together.",
+      "first_step": "Use the public handoff at discussioncomment-19183908. Obtain the exact other word, pin it, reconstruct the common helper groups, then replay the full combined caller and price.",
+      "blocked_by": "The parallel update was local-only at this publication checkpoint. No combined certificate exists here."
     }
   ]
 }
