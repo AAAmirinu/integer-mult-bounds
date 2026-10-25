@@ -19,11 +19,24 @@ Read [the proof](PROOF.md), [the fixed witness](WITNESS.json),
 The complete bill has **66726 paid jobs and 12976 productive fields**.
 This is a changed invoice. Its rank-mass surplus remains 760.
 
-At the overlap checkpoint, the separate commuting-contact construction in
-[PR #5565](https://github.com/CrocSwap/integer-mult-bounds/pull/5565), head
-`9af814164b9dfc21f19ec737959d67cb71488c95`, claimed 0.00308520. This result
-is 0.00001460 above that claim. This package does not consume or duplicate
-that scalar-order construction. Composition with it is not checked.
+The final overlap refresh found parallel helper splitting in
+[PR #5599](https://github.com/CrocSwap/integer-mult-bounds/pull/5599), head
+`0644592d421b375c221045954fdf13932575ffa8`, with complete claim 0.00309839.
+Its author [released the 15 splits for composition](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19183908)
+and left the paid-boundary work with this claim. This package credits the
+shared mechanism and claims no exclusive discovery of it.
+
+Against that pinned word, the new complete moment improves by exactly
+`18 * g(4,5)`, where `g(a,b) = a^(1-k) + b^(1-k) - (a+b)^(1-k)`.
+The claimed gain is **0.00000141**. It uses **126 fewer paid calls and
+108 fewer productive fields**. The source word is retained for an exact
+arbitrary-input and complete-invoice comparison. It is not a constructor
+input. A direct composition screen gave the same raw moment with more
+fields and calls, so this package retains the smaller complete construction.
+
+The separate commuting-contact result in
+[PR #5565](https://github.com/CrocSwap/integer-mult-bounds/pull/5565)
+claims 0.00308520. Composition with that scalar-order change is not checked.
 
 ## Reproduction
 
@@ -55,7 +68,7 @@ power, the old cutoff and an insufficient BIT contract.
 
 The PR5545 source capsule is unchanged. Its SHA256, export manifest and
 all 33 payload files are checked before import. The PR5580 word and price
-source are checked by SHA256 and Git blob ID. The caller is unchanged.
+source and the PR5599 comparison word are checked by SHA256 and Git blob ID. The caller is unchanged.
 [VERIFIER-CHANGES.diff](VERIFIER-CHANGES.diff) shows the explicit public
 width change and removal of the unused old constructor. It does not change
 the endpoint, frame, native-phase or scalar-cost rules. The old and new
@@ -92,8 +105,8 @@ The branch starts at canonical main
 `5e0052ca0aa3036a3afa8b0438927377c8d97d53`, priority revision 7.
 The [canonical claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19154639)
 reserves the coupled helper basis scope. [TASK.json](TASK.json) records
-the overlap checkpoint and exclusions. The 21:23/21:24 UTC refresh covers
-334 open PRs and 4863 Discussion records with complete remote pagination.
+the overlap checkpoint and exclusions. The final refresh covers 338 open PRs and all Discussion records listed
+in TASK.json, with complete remote pagination.
 Local note coverage is sparse; this is not an exhaustive novelty claim.
 
 The fixed-contact price floor in
@@ -101,8 +114,9 @@ The fixed-contact price floor in
 keeps scalar contacts fixed. This construction changes scalar bases,
 independent input expressions and target inventory. The owned recoding
 work in [PR #5591](https://github.com/CrocSwap/integer-mult-bounds/pull/5591)
-and the active private-fanout, native-history, changed-contact and global
-controller claims remain separate. No other contributor's files are edited.
+and the native-history, changed-contact and global controller claims
+remain separate. The former private-fanout claim changed scope to the
+released PR5599 helper-split component and is credited above. No other contributor's files are edited.
 
 - Ali Romman supplied the complete caller and source closure in
   [PR #5544](https://github.com/CrocSwap/integer-mult-bounds/pull/5544) and
@@ -128,6 +142,11 @@ controller claims remain separate. No other contributor's files are edited.
   recursion. The source notices credit zxv and Cao Yifan for the interval,
   compiler and native framework. The capsule preserves the earlier
   geometry, BIT and analytic notices.
+
+Credit the parallel PR5599 helper-split construction and public composition
+handoff. The paid-boundary changes and the cheaper complete construction
+are this package's contribution. The elementary scalar basis identity is
+not claimed as a new general theorem.
 
 New coupled-basis construction, proof and verification by Ali Romman with
 substantial OpenAI Codex assistance. Apache-2.0. The same assistant performed

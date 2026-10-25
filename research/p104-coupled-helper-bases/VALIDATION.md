@@ -45,7 +45,16 @@ Separate copies with one changed byte in the PR5580 word or the retained
 source capsule were rejected before construction in normal and optimized
 modes. Each rejection identified the corrupted source path.
 
-The committed Git-free export check is recorded here after it runs.
+The scientific package at commit
+`8384fb9eda5a2fd47556364b26185f3ba3cbd050` also passed an official Git-free
+export check and optimized replay with empty PATH. All 21 exported files,
+including the export manifest, were read-only and retained their hashes.
+That replay took 99.87 seconds. Exact checks matched all 20 package files
+to the commit and confirmed its immediate canonical-main parent.
+
+The final comparison extension adds the pinned PR5599 word. Its exact
+scalar endpoint, complete invoice, crossing and signed difference pass.
+The final registered and export checks include this extension.
 The full-history ancestry mode cannot run in this shallow checkout.
 Exact retained bytes and the branch's immediate canonical-main parent
 are checked separately.

@@ -14,7 +14,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Authenticate source bytes and all 33 retained payloads; reconstruct fifteen basis changes; replay all arbitrary inputs, dense transpose, exact native maps and physical caller; check the complete invoice, two rational moment engines, compiler, fixed-invoice ceiling, 58 outer predicates and negative controls; compare the complete receipt."
+      "checks": "Authenticate source bytes and all 33 retained payloads; reconstruct fifteen basis changes; replay all arbitrary inputs, dense transpose, exact native maps and physical caller; check the complete invoice, two rational moment engines, compiler, fixed-invoice ceiling, pinned PR5599 comparison, 58 outer predicates and negative controls; compare the complete receipt."
     },
     {
       "argv": [
@@ -26,7 +26,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Authenticate source bytes and all 33 retained payloads; reconstruct fifteen basis changes; replay all arbitrary inputs, dense transpose, exact native maps and physical caller; check the complete invoice, two rational moment engines, compiler, fixed-invoice ceiling, 58 outer predicates and negative controls; compare the complete receipt."
+      "checks": "Authenticate source bytes and all 33 retained payloads; reconstruct fifteen basis changes; replay all arbitrary inputs, dense transpose, exact native maps and physical caller; check the complete invoice, two rational moment engines, compiler, fixed-invoice ceiling, pinned PR5599 comparison, 58 outer predicates and negative controls; compare the complete receipt."
     }
   ]
 }

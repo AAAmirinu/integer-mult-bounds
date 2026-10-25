@@ -56,6 +56,15 @@
       "source_path": "research/p104-event-contact-step/inputs/pr5545-source-closure.tar.gz",
       "sha256": "59768da554e11b11fae52d07f520f50684cc7a9ee0bec2873edbcd6b63814837",
       "git_blob": "3084088544d1e3136e1f38b8011b9e24edc969c6"
+    },
+    {
+      "local_path": "inputs/pr5599-WORD.json.gz",
+      "source_repository": "aliromman/integer-mult-bounds",
+      "source_commit": "0644592d421b375c221045954fdf13932575ffa8",
+      "source_path": "research/p104-helper-subspace-splits/WORD.json.gz",
+      "sha256": "4924640fa7fcbb3895a43bf5f07e7274260feac06ecc95285f77dd8eaee30fa1",
+      "git_blob": "d9ebf6cace13279bba2fd662d941ddebb4c61278",
+      "usage": "Comparison with released parallel work; not a constructor input"
     }
   ],
   "retained_source_scope": "The unchanged official PR5545 export supplies the caller, native compiler, independent phase interpreter, moment engines, BIT input and outer ledger. All 33 files are authenticated before import."

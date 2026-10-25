@@ -206,6 +206,38 @@ operations, thin queries, caller boundaries and the retained layout terms.
 The scalar growth bound remains 2^(16*26000). The actual local native
 rank sum 5987 is used in the tensor growth bound.
 
+## Comparison with the released parallel split component
+
+[PR #5599](https://github.com/CrocSwap/integer-mult-bounds/pull/5599), head
+`0644592d421b375c221045954fdf13932575ffa8`, independently uses the same
+input/cut/output basis mechanism. Its author released the 15-split component
+for composition. The present package credits that work and makes no claim
+of exclusive method discovery. The six paid-boundary changes remain a
+separate construction component.
+
+The parallel word has 750 public inputs, 542 local helper targets, 66852
+complete paid calls and 13084 complete productive fields. Its exact raw
+crossing is (0.00309839352211, 0.00309839352212). Its local targets are
+`{1:4, 2:5, 4:90, 5:10, 7:5, 8:18, 9:410}` and its paid profile is the
+PR5580 profile. Relative to that word, this construction has local changes
+
+```text
+targets: -2 H1 - 3 H5 - H9
+paid:    -2 H1 - H4 - 4 H5.
+```
+
+The complete signed-moment gain is therefore exactly `18 * g(4,5) > 0`.
+The raw gain lies in (0.00000140768321, 0.00000140768323). The claimed
+endpoint increases by 0.00000141. It also removes 108 productive fields
+and 126 paid calls from the complete bill. The comparison checker binds
+that exact word, replays its arbitrary inputs, recounts its full invoice
+and isolates its crossing. It does not repeat that package's native and
+compiler checks or count them as independent review.
+
+The nine handoffs here and the 15 parallel splits are not additive gains.
+This package retains its fully verified smaller construction. Any different
+combined word still needs its own full replay and compiler bounds.
+
 ## Compiler and outer transfer
 
 Two exact rational moment engines check the endpoint. The complete

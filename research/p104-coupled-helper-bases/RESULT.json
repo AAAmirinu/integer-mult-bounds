@@ -401,6 +401,28 @@
     "recipe_payload_sha256": "7a9003650ed834a233a0f7416976e245c0df0bf93db8eab3a03a462475eb021e",
     "wrong_phase_rejected": true
   },
+  "parallel_comparison": {
+    "claim": "309839/100000000",
+    "claim_gain": "141/100000000",
+    "paid_calls": 66852,
+    "pr": 5599,
+    "productive_fields": 13084,
+    "raw_gain_interval": [
+      "140768321/100000000000000",
+      "140768323/100000000000000"
+    ],
+    "raw_interval": [
+      "309839352211/100000000000000",
+      "77459838053/25000000000000"
+    ],
+    "scope": "Pinned parallel word; exact scalar endpoint and full invoice comparison. Its native and compiler checks are not repeated.",
+    "signed_moment_delta": {
+      "4": 18,
+      "5": 18,
+      "9": -18
+    },
+    "source_commit": "0644592d421b375c221045954fdf13932575ffa8"
+  },
   "parent_raw_interval": [
     "154094748433/50000000000000",
     "308189496867/100000000000000"

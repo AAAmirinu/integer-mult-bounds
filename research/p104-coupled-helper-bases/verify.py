@@ -170,11 +170,32 @@ def main():
         gain = [lo-parent_interval[1], hi-parent_interval[0]]
         need(gain[0] > 0, 'Strict gain over the parent raw ceiling')
         fixed_ceiling = ceiling(E, targets, paid)
+        split_word = read(HERE/'inputs/pr5599-WORD.json.gz')
+        split_local = L.replay(split_word)
+        split_t, split_p = complete_profiles(split_local)
+        split_interval = [Q('.00309839352211'), Q('.00309839352212')]
+        need(margin(split_t, split_p, split_interval[0])[0] > 0 >
+             margin(split_t, split_p, split_interval[1])[1], 'Exact PR5599 crossing')
+        difference = {r: targets.get(r, 0)-paid.get(r, 0)-split_t.get(r, 0)+split_p.get(r, 0)
+                      for r in targets.keys() | paid.keys() | split_t.keys() | split_p.keys()}
+        need({r: c for r, c in difference.items() if c} == {4: 18, 5: 18, 9: -18},
+             'Strict gain of eighteen g(4,5) over the released split component')
+        need(sum(split_p.values())-sum(paid.values()) == 126 and
+             sum(split_t.values())-sum(targets.values()) == 108,
+             'Fewer paid calls and productive fields than PR5599')
+        parallel = {'pr': 5599, 'source_commit': '0644592d421b375c221045954fdf13932575ffa8',
+                    'claim': Q('.00309839'), 'claim_gain': P.KAPPA-Q('.00309839'),
+                    'raw_interval': split_interval,
+                    'raw_gain_interval': [lo-split_interval[1], hi-split_interval[0]],
+                    'paid_calls': sum(split_p.values()), 'productive_fields': sum(split_t.values()),
+                    'signed_moment_delta': {4: 18, 5: 18, 9: -18},
+                    'scope': 'Pinned parallel word; exact scalar endpoint and full invoice comparison. Its native and compiler checks are not repeated.'}
     receipt = P.encode({'status': 'PASS_P104_COUPLED_HELPER_KAPPA_00309980',
                         'construction': steps, 'inventory': inv, 'local': local,
                         'transpose': reverse, 'native': native, 'physical': physical,
                         'controls': rejected, 'parent_raw_interval': parent_interval,
                         'raw_gain_interval': gain, 'fixed_invoice_ceiling': fixed_ceiling,
+                        'parallel_comparison': parallel,
                         'result': result})
     if '--write' in sys.argv:
         (HERE/'RESULT.json').write_text(json.dumps(receipt, indent=2, sort_keys=True)+'\n')

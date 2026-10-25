@@ -113,8 +113,8 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "Six helper boundary basis changes and nine coupled productive handoffs on the exact PR5580 P104 word. Certify the changed complete invoice and conditional kappa 0.00309980.",
-  "scope_change_reason": "The user requires a further complete kappa improvement. Coupled helper input, cut and output bases change the independent channel contract beyond fixed helper coordinates and fixed scalar contacts.",
+  "actual_scope": "Six helper boundary basis changes and nine coupled productive handoffs on the exact PR5580 P104 word. Certify the changed complete invoice and conditional kappa 0.00309980. Credit the released parallel PR5599 split component and prove the additional eighteen g(4,5) complete moment gain with fewer fields and calls.",
+  "scope_change_reason": "The user requires a further complete kappa improvement. Coupled helper input, cut and output bases change the independent channel contract beyond fixed helper coordinates and fixed scalar contacts. The final refresh found overlapping helper splitting in PR5599. Its public handoff releases composition; the submitted paid-boundary construction is credited and compared against it.",
   "bottleneck_link": "https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19154639",
   "budget_minutes": null,
   "stop_rule": "Finish only after the changed full invoice, native caller, compiler and outer calculation pass, then publish one focused reviewable PR. Do not change the selected frontier.",
@@ -126,17 +126,16 @@
     "claim": "https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19154639",
     "base_main": "5e0052ca0aa3036a3afa8b0438927377c8d97d53",
     "priority_revision": 7,
-    "open_prs_checked": 334,
-    "discussion_records_checked": 4863,
+    "open_prs_checked": 338,
+    "discussion_records_checked": 4866,
     "remote_pagination_complete": true,
-    "open_prs_checked_utc": "2026-10-25T21:23:08.431867+00:00",
-    "discussions_checked_utc": "2026-10-25T21:24:18.534058+00:00",
+    "open_prs_checked_utc": "2026-10-25T21:34:30.115889+00:00",
+    "discussions_checked_utc": "2026-10-25T21:35:33.495718+00:00",
     "local_coverage": "Sparse; relevant source words and proof scopes were read. No exhaustive novelty claim.",
     "presubmission_main": "5e0052ca0aa3036a3afa8b0438927377c8d97d53",
     "excluded_scopes": [
       "PR5565 commuting contact cascade",
       "Discussion5575 coupled frame composition",
-      "Private fanout independent-input completion",
       "PR5590 fixed-contact path floor",
       "PR5591 fixed owned-producer recoding",
       "Discussion5595 complete native query history",
@@ -145,7 +144,10 @@
       "Global120",
       "Global border grading",
       "p19 compiler"
-    ]
+    ],
+    "parallel_component": "https://github.com/CrocSwap/integer-mult-bounds/pull/5599",
+    "composition_release": "https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19183908",
+    "resolution": "The former private-fanout claim changed scope to helper splitting. Its released PR5599 component is credited; no exclusive discovery or additive composition gain is claimed."
   },
   "open_questions": [
     {
