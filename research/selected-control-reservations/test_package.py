@@ -58,6 +58,18 @@ def main():
             result = run(script, optimized)
             require(result.returncode != 0 and 'receipt changed' in result.stderr, 'receipt mutation survived')
             checks.append('receipt_rejection_' + ('optimized' if optimized else 'normal'))
+        receipt.unlink()
+        for optimized in (False, True):
+            result = run(script, optimized)
+            require(result.returncode != 0 and 'missing result receipt' in result.stderr, 'missing receipt accepted')
+            checks.append('missing_receipt_rejection_' + ('optimized' if optimized else 'normal'))
+        data = json.loads((PACKAGE / 'RESULT.json').read_text())
+        data['placement_families'][0]['f'] = True
+        receipt.write_text(json.dumps(data))
+        for optimized in (False, True):
+            result = run(script, optimized)
+            require(result.returncode != 0 and 'receipt changed' in result.stderr, 'bool/int receipt accepted')
+            checks.append('typed_receipt_rejection_' + ('optimized' if optimized else 'normal'))
     print(json.dumps({'status': 'PASS_PORTABLE_RESERVATION_CONTROLS', 'checks': checks}, indent=2))
 
 

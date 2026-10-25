@@ -215,8 +215,10 @@ def verify():
     result['semantic_controls'] = mutations
     result['scope'] = 'raw5413 route/reservation binding; expanded compiler injection and stock unverified'
     expected = PACKAGE / 'RESULT.json'
-    if expected.exists():
-        need(result == json.loads(expected.read_text()), 'receipt changed')
+    need(expected.is_file(), 'missing result receipt')
+    frozen = json.loads(expected.read_text())
+    need(json.dumps(result, sort_keys=True, separators=(',', ':')) ==
+         json.dumps(frozen, sort_keys=True, separators=(',', ':')), 'receipt changed')
     print(json.dumps(result, indent=2, sort_keys=True))
     print('PASS_SELECTED_CONTROL_RESERVATIONS')
     return result
