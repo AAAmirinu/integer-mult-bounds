@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Free helper endpoints of PR5561 under the audited P104 endpoint contract.  Apache-2.0.
 
-Prepared for Matarener with Claude Opus 5.5 (Anthropic), via Claude Code.
+Prepared for Matarener with Claude (Anthropic), via Claude Code.
 The scientific checker is Chris R / Clear1nsight's byte-pinned PR5550 caller and
 target-binding audit (research/p104-caller-independent-audit, substantial OpenAI
 Codex assistance).  This file changes only four literal input lines of a temporary

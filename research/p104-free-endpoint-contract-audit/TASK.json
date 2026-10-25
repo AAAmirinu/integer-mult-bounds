@@ -94,7 +94,7 @@
   "outcome": "completed",
   "evidence": "research/p104-free-endpoint-contract-audit/RESULT.json",
   "author": "Matarener",
-  "ai_assistance": "Prepared with Claude Opus 5.5 (Anthropic) via Claude Code.",
+  "ai_assistance": "Prepared with Claude (Anthropic) via Claude Code.",
   "open_questions": [
     {
       "question": "Is the PR5551 parent word admitted?",

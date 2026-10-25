@@ -85,5 +85,5 @@ or proof-kernel acceptance.
 Chris R / Clear1nsight (#5550 checker, used unchanged except the four input lines). DreamingOfClouds
 (#5561, #5553). thu-nmrc (#5551). Ali Romman (#5544/#5545 and the P104 caller). chafreaky (#458
 wrappers). The P104 lineage (#2305, #2152, #2219) and all retained native, Clifford, compiler and analytic
-contributors are credited in the cited packages. This package was prepared for Matarener with Claude Opus 5.5 (Anthropic), via
+contributors are credited in the cited packages. This package was prepared for Matarener with Claude (Anthropic), via
 Claude Code. Apache-2.0.
