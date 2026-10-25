@@ -98,6 +98,12 @@ incorporation; reconcile actual GitHub state and retained sources separately.
 - Bulk archive eligible isolated research after source/integrity intake, preserving
   authors and explicit unverified scientific obligations. Shared tooling and known
   correctness failures cannot enter through the archive lane.
+  For each newly added or changed top-level `research/*/VERIFY.json`, check
+  that every declared input is an exact repository-relative Git path at the
+  reviewed source head. Even a standalone receipt using this filename enters
+  the shared planner. An invalid path can break unrelated PR planning (#5555);
+  syntax and historical source-pin checks alone do not catch it. This is a
+  metadata check, not permission to launch every registered scientific replay.
 - Group related construction chains; review the strongest relevant descendant and
   each unique delta, retaining predecessor credit. This is not automatic approval
   or closure of ancestors.

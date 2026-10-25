@@ -8,8 +8,8 @@ The ledger separates historical review from integration. A prior snapshot or a m
 
 | Disposition | Count |
 |---|---:|
-| incorporated | 2133 |
-| partially reviewed | 2673 |
+| incorporated | 2134 |
+| partially reviewed | 2672 |
 | superseded | 2 |
 | unreviewed | 60 |
 
@@ -4904,7 +4904,7 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#5552](https://github.com/CrocSwap/integer-mult-bounds/pull/5552) | NicholasStone | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5553](https://github.com/CrocSwap/integer-mult-bounds/pull/5553) | DreamingOfClouds | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5554](https://github.com/CrocSwap/integer-mult-bounds/pull/5554) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
-| [#5555](https://github.com/CrocSwap/integer-mult-bounds/pull/5555) | DreamingOfClouds | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5555](https://github.com/CrocSwap/integer-mult-bounds/pull/5555) | DreamingOfClouds | incorporated | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5556](https://github.com/CrocSwap/integer-mult-bounds/pull/5556) | NicholasStone | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5557](https://github.com/CrocSwap/integer-mult-bounds/pull/5557) | thu-nmrc | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5558](https://github.com/CrocSwap/integer-mult-bounds/pull/5558) | CubeJerry | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
