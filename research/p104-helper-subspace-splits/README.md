@@ -1,7 +1,9 @@
 # Conditional kappa 0.00310432 from composed helper splits
 
 This construction gives complete conditional **kappa 0.00310432**.
-It improves the consumed [PR5601](https://github.com/CrocSwap/integer-mult-bounds/pull/5601)
+It improves the merged [PR5599](https://github.com/CrocSwap/integer-mult-bounds/pull/5599)
+claim of 0.00310045 by **0.00000387**. It also improves the consumed
+[PR5601](https://github.com/CrocSwap/integer-mult-bounds/pull/5601)
 claim by **0.00001837** and the released
 [PR5608](https://github.com/CrocSwap/integer-mult-bounds/pull/5608) claim by
 **0.00000248**. The gain over selected 0.003027288235 is **0.000077031765**
@@ -76,8 +78,14 @@ insufficient BIT stock. The complete nine-role owned inventory and all eleven li
 
 ## Sources and coordination
 
-The branch starts from canonical main
+The scientific inputs start from canonical main
 `5e0052ca0aa3036a3afa8b0438927377c8d97d53`, priority revision 7.
+This follow-up branch starts from refreshed canonical main
+`6cf7a683f447b9f1e2333791907fd92be5009a63`. That main revision contains the
+earlier PR5599 result at `09dd0965711ca7eeb169057a420abab1c9052137`.
+A maintainer merged that earlier result while this composition was in progress.
+This follow-up preserves the frozen scientific inputs. The priority, selected
+result and all shared executable inputs are unchanged at the refreshed base.
 The [canonical claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19183208)
 records the changed question, released components and composition checks.
 The last full overlap snapshot covered 340 open PRs and 4,874 Discussion

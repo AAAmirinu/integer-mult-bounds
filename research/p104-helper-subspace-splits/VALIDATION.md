@@ -1,9 +1,19 @@
 # Validation record
 
 Environment: macOS, CPython 3.12.14, standard library only. Scientific
-replays run serially in the isolated `codex/kappa-structural-20261025` worktree.
+replays ran serially on the isolated `codex/kappa-structural-20261025` branch.
 The scientific base is canonical main
 `5e0052ca0aa3036a3afa8b0438927377c8d97d53`.
+The verified scientific commit is
+`baf2921bede71664d201e055e5ba34fe5f979674`.
+
+The follow-up branch `codex/kappa-composed-00310432` starts from refreshed
+canonical main `6cf7a683f447b9f1e2333791907fd92be5009a63` and incorporates that
+scientific commit. Main contains the earlier PR5599 result at
+`09dd0965711ca7eeb169057a420abab1c9052137`, merged by a maintainer during this
+work. The scientific files and shared runtime inputs retain their exact bytes.
+Only this validation record and the README change after the scientific replay.
+Priority revision 7 and the selected frontier are unchanged.
 
 ## Current complete replay
 
@@ -42,8 +52,33 @@ is monkey-patched.
 
 The final discovery run tested 46 boundary groups and found no further
 candidate in its finite basis-pair class. This is not a global optimum.
-Registered normal/optimized replay, the committed-byte check and a fresh
-read-only Git-free replay are pending for this final composition.
+
+The registered normal and optimized replays both passed:
+
+```sh
+python3 -B scripts/research_package.py --package research/p104-helper-subspace-splits --check-only
+python3 -B scripts/research_package.py --package research/p104-helper-subspace-splits
+python3 -B scripts/check_research_commit.py --package research/p104-helper-subspace-splits
+```
+
+The metadata and source-pin check passed. The committed-byte check passed
+for all 35 package and declared-input files at the scientific commit.
+The exporter and its integrity check also passed:
+
+```sh
+python3 -B scripts/export_research_package.py export --package research/p104-helper-subspace-splits --ref baf2921bede71664d201e055e5ba34fe5f979674 --output /tmp/helper-splits.tar
+python3 -B scripts/export_research_package.py check /tmp/helper-splits.tar
+```
+
+The exported package passed a fresh isolated optimized replay with no Git
+directory, an empty PATH, file mode 0444 and directory mode 0555. The run
+used an absolute Python executable with `-I -O -B`. All 36 files, including
+the export manifest, kept their hashes and modes. A one-byte change to the
+retained PR5605 constructor then failed at its SHA256 check before import.
+The test restored the exact source bytes and mode and checked all files again.
+The harness returned `PASS_READ_ONLY_GIT_FREE_REPLAY_AND_SOURCE_FAULT`.
+No pre-existing branch objects or writable source files were needed for this
+replay. These are author-side checks, not independent scientific acceptance.
 
 ## Source history and limits
 
