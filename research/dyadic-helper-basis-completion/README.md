@@ -48,7 +48,11 @@ No exhaustive novelty claim is made.
 
 Ali Romman's [PR5599](https://github.com/CrocSwap/integer-mult-bounds/pull/5599)
 and PR5602 supply the helper handoff, source witnesses and compiler interface.
-The Euclidean method is standard. The P104/native/controller/compiler lineage
+Nick Petalas's [PR5115](https://github.com/CrocSwap/integer-mult-bounds/pull/5115)
+already uses Euclidean row preparation for a different single-hub shear
+contract. Its [proof](https://github.com/CrocSwap/integer-mult-bounds/blob/391355b8e537b82cedabd45af509177496e7a7a6/research/dyadic-rankone-borrowing/README.md)
+is related prior work. The present interface prescribes both a row and a
+column. It does not claim row preparation as new. The Euclidean method is standard. The P104/native/controller/compiler lineage
 retains its source credit; it is not re-proved here. New implementation,
 interface proof and checks: Ali Romman with substantial OpenAI Codex assistance.
 Apache-2.0. No independent human or formal-kernel acceptance is claimed.

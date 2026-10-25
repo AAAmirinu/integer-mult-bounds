@@ -5,7 +5,9 @@ For any index p there is an invertible R over D such that a R = e_p^T
 and R e_p = b. The compiler emits R as ordinary ADDs with coefficients
 in D and SCALEs by units of D. All operations use the same physical chart.
 This is an application of the Euclidean algorithm, not a new theorem about
-principal ideal domains.
+principal ideal domains. Nick Petalas used Euclidean row preparation in
+[PR5115](https://github.com/CrocSwap/integer-mult-bounds/pull/5115)
+for a single-hub shear. Here both the row and column are prescribed.
 
 First clear all denominators of a by a common power of two, d. Each
 column scaling is invertible over D. Apply the integer Euclidean algorithm
