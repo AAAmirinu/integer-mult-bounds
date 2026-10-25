@@ -24,13 +24,25 @@ def need(ok, why):
 
 def authenticate():
     count = 0
-    for row in json.loads((HERE/'SOURCES.json').read_bytes())['files']:
+    manifest = json.loads((HERE/'SOURCES.json').read_bytes())
+    for row in manifest['files']:
         if row['usage'] == 'input':
             raw = (ROOT/row['path']).read_bytes()
             need(sha256(raw).hexdigest() == row['sha256'], 'Source SHA256: '+row['path'])
             need(sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest() == row['git_blob'],
                  'Source Git blob: '+row['path'])
             count += 1
+    for row in manifest['external_inputs']:
+        source, = [r for r in manifest['files'] if r['path'] == row['source_path']]
+        need(source['pin'] == 'head:'+row['source_commit']+':'+row['source_path'],
+             'Published source path and commit')
+        need((source['sha256'],source['git_blob']) == (row['sha256'],row['git_blob']),
+             'Copied input has the published source pins')
+        raw = (HERE/row['local_path']).read_bytes()
+        need(sha256(raw).hexdigest() == row['sha256'], 'Copied source SHA256')
+        need(sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest() == row['git_blob'],
+             'Copied source Git blob')
+        count += 1
     return count
 
 
