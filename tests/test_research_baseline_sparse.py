@@ -1,4 +1,7 @@
-"""The sparse preflight names omitted selected inputs instead of failing opaquely."""
+"""The sparse preflight names omitted selected inputs instead of failing opaquely.
+
+Non-cone repair regressions for Joseph Anglada, with OpenAI Codex assistance.
+"""
 import contextlib
 import io
 import json
@@ -147,6 +150,46 @@ class SparseBaselineTests(unittest.TestCase):
         code, result = self.run_main()
         self.assertEqual(code, 2)
         self.assertEqual(result["next"], ["python3", "-B", "scripts/research_selected_baseline.py"])
+
+    def test_non_cone_command_restores_root_inputs_without_unrelated_files(self):
+        self.explicit_manifest()
+        unusual = "license [copy] .txt"
+        manifest = self.root / self.record["source_manifest"]
+        inventory = json.loads(manifest.read_text(encoding="utf-8"))
+        inventory["files"][unusual] = "0"
+        inventory["files"]["research/pkg [a]/proof.md"] = "0"
+        manifest.write_text(json.dumps(inventory), encoding="utf-8")
+        decoys = ("license c .txt", "unrelated.txt", "other/LICENSE",
+                  "research/pkg a/decoy.md", "other/research/pkg [a]/proof.md")
+        for name in (unusual, "research/pkg [a]/proof.md", *decoys):
+            path = self.root / name
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text("unrelated or literal input\n", encoding="utf-8")
+        self.git("add", ".")
+        self.commit("root inputs and decoys")
+        self.git("sparse-checkout", "set", "--no-cone", "/scripts/", "/docs/",
+                 "/certificates/selected-result.json")
+        code, result = self.run_main()
+        self.assertEqual(code, 2)
+        self.assertIn("LICENSE", sparse.sparse_omissions(self.record, self.root))
+        self.git(*result["materialize"][1:])
+        self.assertEqual(self.run_main()[0], 0)
+        self.assertTrue((self.root / "LICENSE").is_file())
+        self.assertTrue((self.root / unusual).is_file())
+        self.assertTrue((self.root / "research/pkg [a]/proof.md").is_file())
+        for name in decoys:
+            self.assertFalse((self.root / name).exists(), name)
+
+    def test_invalid_sparse_mode_does_not_publish_a_command(self):
+        self.git("sparse-checkout", "set", "--cone", "scripts", "docs", "certificates")
+        original_run = subprocess.run
+        def fail_mode(argv, **kwargs):
+            if argv[:3] == ["git", "config", "--bool"]:
+                return subprocess.CompletedProcess(argv, 128, "", "injected config failure")
+            return original_run(argv, **kwargs)
+        with mock.patch.object(subprocess, "run", side_effect=fail_mode):
+            with self.assertRaises(subprocess.CalledProcessError):
+                self.run_main()
 
     def test_cone_sparse_names_packages_and_reads_manifest_from_head(self):
         self.git("sparse-checkout", "set", "--cone", "scripts", "docs", "certificates")
