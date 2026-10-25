@@ -54,7 +54,8 @@ The full selected/native/outer replays, all-history suites, Lean and Docker were
 not run. No finite program here verifies the universal written proof, proves a
 native lower bound over all factorizations, or discharges the five inherited
 framework assumptions. No hosted CI, independent human review or frontier
-promotion is claimed. The PR description is a local Markdown draft only.
+promotion is claimed. The initial PR description was prepared locally;
+publication status is tracked in README.md.
 
 ## Committed transport and offline export
 

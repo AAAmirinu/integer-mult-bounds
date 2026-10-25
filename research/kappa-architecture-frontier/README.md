@@ -22,7 +22,9 @@ histogram. Canonical provenance is in [SOURCES.json](SOURCES.json);
 [ORIGINS.json](ORIGINS.json) includes the exact commit/tree/blob paths for all
 retained extracts, including pending PR heads. Their offline checks need no
 cached PR branch and make no publication-ancestry claim for those pending heads. [RESEARCH-CONTEXT.json](RESEARCH-CONTEXT.json) records overlap coverage
-and live heads; this is a local research draft, with nothing posted externally.
+and live heads. Submitted for review as
+[PR5554](https://github.com/CrocSwap/integer-mult-bounds/pull/5554);
+publication does not imply scientific acceptance.
 
 ## What is actually proved
 

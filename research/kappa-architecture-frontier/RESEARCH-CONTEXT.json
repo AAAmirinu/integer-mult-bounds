@@ -73,6 +73,12 @@
       "Relevant frozen notes additionally read through exact Git objects; not an exhaustive literature or queue census."
     ]
   },
-  "publication": "LOCAL_DRAFT_ONLY",
-  "intake_decisions_changed": false
+  "publication": {
+    "status": "SUBMITTED_FOR_REVIEW",
+    "pull_request": "https://github.com/CrocSwap/integer-mult-bounds/pull/5554",
+    "is_draft": false,
+    "initial_head": "739e3095c9864f53af1da7c7af5a634c7a369d2c"
+  },
+  "intake_decisions_changed": false,
+  "initial_publication": "LOCAL_DRAFT_ONLY"
 }
