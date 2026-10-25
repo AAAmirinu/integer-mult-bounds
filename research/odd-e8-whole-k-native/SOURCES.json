@@ -49,6 +49,50 @@
   },
   "schema_version": 1,
   "scope": "Complete local native K forward/backward components only; no new selected result, H producer or outer-caller admission.",
+  "terminal_bound": {
+    "files": [
+      {
+        "git_blob": "13269f7b1f98535151de173477f9e7d9a0d81079",
+        "path": "research/coded-native-caller/GAUGE.md",
+        "sha256": "09c4e86d99245734761569efd13473623ffdd857e9eae092bd7f54bfd2f42f06",
+        "usage": "Terminal-bound source or support-method predecessor; provenance only, not loaded at runtime."
+      },
+      {
+        "git_blob": "da8837ba67423ef08ef1afb8e8297a8032aafe9f",
+        "path": "research/coded-native-caller/PHYSICAL.md",
+        "sha256": "4321b159ff8d3fe705419adaaa1beef75606e869e34341bda553f17d598a6078",
+        "usage": "Terminal-bound source or support-method predecessor; provenance only, not loaded at runtime."
+      },
+      {
+        "git_blob": "228baac8d81081e32995a3596e9a913924801d9a",
+        "path": "research/two-stage-coded-terminal/PROOF.md",
+        "sha256": "5a8d0b3f6179c6b5892d55638a6cb8d58ab0135224da07ac181b6edad4cf4e8e",
+        "usage": "Terminal-bound source or support-method predecessor; provenance only, not loaded at runtime."
+      },
+      {
+        "git_blob": "05250589174e598fc9e6aeb00b2f6b8c04de8db1",
+        "path": "research/fresh-stage-code-separation/PROOF.md",
+        "sha256": "aa8e61ca5232ad62cdeb35f671093953e7b9dede6f9e048418b6f8ff48ba5e0a",
+        "usage": "Terminal-bound source or support-method predecessor; provenance only, not loaded at runtime."
+      },
+      {
+        "git_blob": "91165052d5d437c8940f6911f3726f6594f4097c",
+        "path": "research/terminal-approximation-floor/PROOF.md",
+        "sha256": "36328319e54d046e9969c382b204d1aa716f0fae7665af51fb5890803ed8b361",
+        "usage": "Terminal-bound source or support-method predecessor; provenance only, not loaded at runtime."
+      },
+      {
+        "git_blob": "b151bb966d6761b1acfc786513e36cf7c18602ff",
+        "path": "research/coupled-tail-support-floor/README.md",
+        "sha256": "3317a2c14b7c9c6cf8ee4bd15189452ea1f84aba3661b096d4f23433c6398890",
+        "usage": "Terminal-bound source or support-method predecessor; provenance only, not loaded at runtime."
+      }
+    ],
+    "methods_credit": "Coded-native normalizers; coupled-tail row-support counting; PR5065, PR5408 and PR5111 terminal predecessors. No new general support method claimed.",
+    "scientific_K_payload_unchanged": "98941b295d428462b82dae52a369de97dcbf5be1dd7a369f6c495cda5fc6ac8a",
+    "scope": "Scoped negative endpoint Q^-1 B D support upper bound; fixed finite single-cohort ordinary adapters only. Written proof with finite corroboration; no full caller/kappa admission.",
+    "source_base": "32890bc5de034ab8fc93ac88ead7279a6a416d04"
+  },
   "vendored_runtime_inputs": {
     "inputs/NORMALIZERS.json": {
       "origin": "research/coded-native-caller/NORMALIZERS.json",

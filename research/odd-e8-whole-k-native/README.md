@@ -74,9 +74,22 @@ The backward verifier also runs four executed controls on actual emitted
 operations: changed K coefficient, overwritten source, wrong source chart,
 and a phase-i change invisible to signed tableaux.
 
-Python 3.12 and its standard library suffice. `VERIFY.json` registers eight
+A scoped [terminal support bound](TERMINAL-BOUND.md) now distinguishes the
+constructed K word from a completed caller. For distinct fresh-stage proper
+K codes in real signed orthogonal gauges, every path of the negative endpoint
+Q^-1 B D has Gaussian row support of rank n-2. A fixed finite ordinary
+monomial/owner-scalar decoder on that cohort cannot produce a larger-rank
+Gaussian job at all positive widths. The permitted n-2 target has not itself
+been decoded. This is not a full-caller lower bound; paid correction, earlier
+native readout, changed code support and mixed cohorts remain separate gates.
+The proof includes a scoped approximation bound. Its verifier checks all
+38,912 edges of the committed root K plus 1,344 small actual paths; a separate
+portable reviewer reconstructs 672 paths in the old normalizer gauges.
+See [the separate review](TERMINAL-REVIEW.md) for exact scope and credit.
+
+Python 3.12 and its standard library suffice. `VERIFY.json` registers eight grouped
 bounded, read-only normal/optimized commands for the family geometry,
-forward word, independent review and backward word. With the repository
+forward word, independent review, backward word and both terminal-bound engines. With the repository
 runner, use:
 
 ```sh
@@ -84,7 +97,8 @@ python3.12 -B scripts/research_package.py --package research/odd-e8-whole-k-nati
 python3.12 -B scripts/check_research_commit.py --package research/odd-e8-whole-k-native
 ```
 
-Direct `--write` flags are reserved for explicit artifact authoring.
+The grouped forward and terminal hooks each serialize two explicit engines,
+for twelve scientific subcommands in total. Direct `--write` flags are reserved for explicit artifact authoring.
 Scientific words compare canonical decompressed JSON, avoiding dependence
 on gzip container bytes or local paths. Exact source pins and credits are
 in [SOURCES.json](SOURCES.json). Original task provenance, scope change and

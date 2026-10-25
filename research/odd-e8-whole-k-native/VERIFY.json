@@ -7,9 +7,10 @@
         "-W",
         "error",
         "-B",
-        "{package}/family_geometry.py"
+        "{package}/replay_group.py",
+        "forward"
       ],
-      "checks": "All2744 cube scalar/orthogonal nine-space geometry and real physical port ranks.",
+      "checks": "All2744 cube geometry then exact normalized forward program, serialized.",
       "timeout_seconds": 150
     },
     {
@@ -20,34 +21,10 @@
         "-W",
         "error",
         "-B",
-        "{package}/family_geometry.py"
+        "{package}/replay_group.py",
+        "forward"
       ],
-      "checks": "All2744 cube scalar/orthogonal nine-space geometry and real physical port ranks.",
-      "timeout_seconds": 150
-    },
-    {
-      "argv": [
-        "{python}",
-        "-I",
-        "-W",
-        "error",
-        "-B",
-        "{package}/core.py"
-      ],
-      "checks": "Exact forward root cube with every literal phase, paid path, virtual-Q input and normalized reader exit; structured forall-family template.",
-      "timeout_seconds": 150
-    },
-    {
-      "argv": [
-        "{python}",
-        "-I",
-        "-O",
-        "-W",
-        "error",
-        "-B",
-        "{package}/core.py"
-      ],
-      "checks": "Exact forward root cube with every literal phase, paid path, virtual-Q input and normalized reader exit; structured forall-family template.",
+      "checks": "All2744 cube geometry then exact normalized forward program, serialized.",
       "timeout_seconds": 150
     },
     {
@@ -59,7 +36,7 @@
         "-B",
         "{package}/independent_review.py"
       ],
-      "checks": "Independent emitted 512x512 K,1024 columns, charts, counts and generic phase/Lagrangian corroboration.",
+      "checks": "Independent emitted512x512K,1024columns, charts/counts and phase/Lagrangian corroboration.",
       "timeout_seconds": 150
     },
     {
@@ -72,7 +49,7 @@
         "-B",
         "{package}/independent_review.py"
       ],
-      "checks": "Independent emitted 512x512 K,1024 columns, charts, counts and generic phase/Lagrangian corroboration.",
+      "checks": "Independent emitted512x512K,1024columns, charts/counts and phase/Lagrangian corroboration.",
       "timeout_seconds": 150
     },
     {
@@ -84,7 +61,7 @@
         "-B",
         "{package}/backward.py"
       ],
-      "checks": "Literal backward inverse-transpose and all boundary factors; actual forward coefficient/chart/source/phase mutants; full paid/ordinary invoice.",
+      "checks": "Literal inverse-transpose, boundary factors, actual coefficient/chart/source/phase mutants and invoice.",
       "timeout_seconds": 150
     },
     {
@@ -97,7 +74,34 @@
         "-B",
         "{package}/backward.py"
       ],
-      "checks": "Literal backward inverse-transpose and all boundary factors; actual forward coefficient/chart/source/phase mutants; full paid/ordinary invoice.",
+      "checks": "Literal inverse-transpose, boundary factors, actual coefficient/chart/source/phase mutants and invoice.",
+      "timeout_seconds": 150
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-W",
+        "error",
+        "-B",
+        "{package}/replay_group.py",
+        "terminal"
+      ],
+      "checks": "Terminal proper-K proof corroboration, all38912 published edges,1344 new paths, then independent672 old-gauge paths and exact phase/once-only coefficient controls, serialized.",
+      "timeout_seconds": 150
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-W",
+        "error",
+        "-B",
+        "{package}/replay_group.py",
+        "terminal"
+      ],
+      "checks": "Terminal proper-K proof corroboration, all38912 published edges,1344 new paths, then independent672 old-gauge paths and exact phase/once-only coefficient controls, serialized.",
       "timeout_seconds": 150
     }
   ],
