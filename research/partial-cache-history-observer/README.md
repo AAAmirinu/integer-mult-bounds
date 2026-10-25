@@ -52,7 +52,15 @@ python3.12 -I -B research/partial-cache-history-observer/verify.py
 python3.12 -I -O -B research/partial-cache-history-observer/verify.py
 python3.12 -I -B research/partial-cache-history-observer/check_displacement.py
 python3.12 -I -O -B research/partial-cache-history-observer/check_displacement.py
+python3.12 -I -B research/partial-cache-history-observer/test_package.py
 ```
+
+Six disposable on-disk controls reject a changed Y coefficient, a vacuous
+kernel, changed input bytes, a missing receipt, a Boolean changed to integer
+one, and a wrong event count. Kernel/source controls bypass stored-receipt
+comparison; all child checks run under optimization. Typed canonical JSON
+comparison prevents Python Boolean/integer equality from authenticating an
+altered receipt.
 
 Four actual JSON/gzip inputs are declared in VERIFY.json and authenticated by
 SOURCES.json. The official exporter includes them at their exact paths; no

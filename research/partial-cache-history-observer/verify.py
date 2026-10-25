@@ -235,5 +235,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     result = verify()
     if not args.emit:
-        need(result == json.loads((HERE/'RESULT.json').read_text()), 'receipt mismatch')
+        need(json.dumps(result, sort_keys=True) == json.dumps(json.loads((HERE/'RESULT.json').read_text()), sort_keys=True), 'typed receipt mismatch')
     print(json.dumps(result, sort_keys=True, indent=2))

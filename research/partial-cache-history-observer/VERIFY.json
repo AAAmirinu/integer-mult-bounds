@@ -51,6 +51,16 @@
       ],
       "timeout_seconds": 60,
       "checks": "Separate direct-displacement replay of all5897fullframe events and allendpointcaches without primary imports"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/test_package.py"
+      ],
+      "timeout_seconds": 120,
+      "checks": "Six on-disk optimized kernel/source/missing/typed receipt controls; semantic kernel controls bypass stored receipt"
     }
   ]
 }
