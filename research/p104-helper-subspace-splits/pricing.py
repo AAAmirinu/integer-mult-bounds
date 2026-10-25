@@ -6,6 +6,10 @@ Adapted from Ali Romman's PR5544/5545 for the two coupled contact changes.
 Successor choices were prepared for thu-nmrc with OpenAI Codex assistance.
 Helper-subspace targets were added by Ali Romman with OpenAI Codex assistance.
 The source commuting-contact construction is by Pierre-Loic Doulcet (hexapode) in PR5565.
+The source coupled-frame change is by Ali Romman with OpenAI Codex in PR5601.
+Five fixed boundary relations are from Ali Romman's PR5602.
+The shared relay is from flyingviper's PR5605. The preparation is from
+Scratch-net's PR5606. Their costs and target debit are included.
 Ali Romman's complete caller/price proof and all predecessor credit are retained.
 Apache-2.0.
 """
@@ -13,8 +17,8 @@ from collections import Counter
 from fractions import Fraction as Q
 import local as L
 
-KAPPA, TESTED = Q('.00310045'), Q('.0031004505')
-PREVIOUS = Q('.00308520')
+KAPPA, TESTED = Q('.00310432'), Q('.0031043205')
+PREVIOUS = Q('.00308595')
 
 
 def encode(x):
@@ -63,7 +67,7 @@ def assemble(local, native, word, physical):
             second_p[8*(j+1)] += 208
     L.need((targets,paid) == (second_t,second_p), 'Independent full invoice')
     L.need(max(targets) == 145 and max(paid) == 72, 'Maximum recursive ranks')
-    L.need(sum(targets.values()) == 13048 and sum(paid.values()) == 66726, 'Complete field and call counts')
+    L.need(sum(targets.values()) == 12958 and sum(paid.values()) == 66546, 'Complete field and call counts')
     L.need(sum(r*n for r,n in targets.items())-sum(r*n for r,n in paid.items()) == 760, 'Complete rank surplus')
     return targets,paid,counts
 
@@ -151,7 +155,7 @@ def run(local,native,word,physical):
     L.need(wrong_cutoff[0] > 1, 'Old cutoff fails with this helper inventory')
     bad=outer_module.ledger(dict(params,bit_saving=Q('.0027')))
     L.need(any(x <= 0 for x in bad['strict_checks'].values()), 'Insufficient BIT contract rejected')
-    return encode({'kappa':KAPPA,'kappa_decimal':'.00310045','previous_open_pr5565':PREVIOUS,'gain':KAPPA-PREVIOUS,
+    return encode({'kappa':KAPPA,'kappa_decimal':'.00310432','previous_open_pr5601':PREVIOUS,'gain':KAPPA-PREVIOUS,
                    'relative_gain_percent':100*(KAPPA/PREVIOUS-1),'raw_root_interval':[lower,upper],
                    'raw_headroom':[lower-KAPPA,upper-KAPPA],
                    'raw_ceiling':{'interval':[Q(0),cap],'derivative_upper':derivative_upper},'margin_at_previous':E.display(margin(PREVIOUS)),
@@ -162,7 +166,7 @@ def run(local,native,word,physical):
                    'compiler':{'theta':theta,'logarithm_power':power,'eta':E.display(eta),'gap':gap,'H':H,'N':'2^'+str(H),
                                'integer_test_exponent':right,'uniform_saving':params['complex_uniform_saving'],'word_materialized':False},
                    'nonrecursive':{'local_scalar':local['real_scalar_allowance'],'local_routes':local_routes,
-                                   'raw_scalar_upper':raw,'raw_budget':10**9,'peak_owned_fields':1,
+                                   'raw_scalar_upper':raw,'raw_budget':10**9,'peak_owned_fields':local['peak_owned_fields'],
                                    'fixed_scalar_growth_bound':'At most 2^(16*26000) before native factors; a declared constant, not an attained norm.',
                                    'local_paid_rank_mass':local['paid_rank_mass'],
                                    'tensor_native_growth_bound':'Each rank-r Gaussian has row l1 norm at most 2^(rf); use local_paid_rank_mass for the whole word.'},

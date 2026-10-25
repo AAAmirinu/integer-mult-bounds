@@ -56,8 +56,9 @@ def candidates(word, group, entry, exit_frame):
     if not valid:
         return []
     public = word['public']
+    owned = word.get('owned_fields', 8)
     snapshots, at = defaultdict(list), defaultdict(set)
-    rows = [{r:Q(1)} if r < public else {} for r in range(public+8)]
+    rows = [{r:Q(1)} if r < public else {} for r in range(public+owned)]
     for r,f in enumerate(word['initial']):
         at[f].add(r)
     for index,event in enumerate(word['program']):
@@ -84,7 +85,7 @@ def candidates(word, group, entry, exit_frame):
             rows[r] = {k:v*Q(event[-2]) for k,v in rows[r].items()}
         else:
             add(rows[r], rows[event[2]], Q(event[-2]))
-    columns = [{r:Q(1)} if r < public else {} for r in range(public+8)]
+    columns = [{r:Q(1)} if r < public else {} for r in range(public+owned)]
     hits = []
     for index in range(len(word['program'])-1, -1, -1):
         for frame,roles,prefix_basis in snapshots.get(index, []):

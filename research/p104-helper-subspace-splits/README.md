@@ -1,45 +1,53 @@
-# Conditional kappa 0.00310045 from independent helper splits
+# Conditional kappa 0.00310432 from composed helper splits
 
-This construction raises complete conditional **kappa to 0.00310045**.
-The gain over [PR5565](https://github.com/CrocSwap/integer-mult-bounds/pull/5565)
-(0.00308520) is **0.00001525**, about **0.4943%**. The gain over selected
-0.003027288235 is **0.000073161765**. The selected record is unchanged.
+This construction gives complete conditional **kappa 0.00310432**.
+It improves the consumed [PR5601](https://github.com/CrocSwap/integer-mult-bounds/pull/5601)
+claim by **0.00001837** and the released
+[PR5608](https://github.com/CrocSwap/integer-mult-bounds/pull/5608) claim by
+**0.00000248**. The gain over selected 0.003027288235 is **0.000077031765**
+(about **2.5446%**). The selected record is unchanged.
 
-The mechanism changes the independent helper basis. At a common-frame cut,
-one helper combination can finish early and a fresh independent input can
-use the remaining program. Thirteen explicit splits replace 527 helper
-jobs by 540 helper jobs. They add 342 scalar events and no recursive Gaussian
-call. Both input and output support are checked over every field; a local
-pure row alone does not earn a new target.
+At a common-frame cut, a pure helper input functional and a pure helper
+output direction can have unit pairing. Explicit scalar bases then let one
+independent target finish early and a fresh independent input use the rest
+of the program. Both complete boundary supports must be proved. A pure
+intermediate row alone does not earn a second target.
 
-Read the [proof](PROOF.md), [exact cuts](SPLITS.json), [complete word](WORD.json.gz),
-[receipt](RESULT.json), [source pins](SOURCES.json), and [validation record](VALIDATION.md).
-The first split is an explicit 22-event change from one H9 target to independent
-H5 and H4 targets. The complete caller uses the new word at all 18 full sites.
+The construction combines the released PR5605 shared relay with PR5601,
+then applies five fixed PR5602 boundary relations and nine independent helper
+splits. Finally it applies PR5606's two preparation identities in the new
+basis. The preparation removes two paid rank-one queries and debits the
+rank-two helper target. Its extra owned work is charged.
+
+Read the [proof](PROOF.md), [five fixed relations](BOUNDARIES.json),
+[nine exact cuts](SPLITS.json), [preparation sites](PREPARATION.json),
+[complete word](WORD.json.gz), [receipt](RESULT.json),
+[source pins](SOURCES.json), and [validation record](VALIDATION.md).
 
 | Quantity | Result |
 | --- | ---: |
-| Local public inputs | 748 |
-| Independent helpers per full call | 540 |
-| Owned lifetimes / peak owned fields | 8 / 1 |
-| Local events | 25,475 |
-| Complete paid calls | 66,726, unchanged |
-| Complete productive fields | 13,048 |
-| Complete rank-mass surplus | 760, unchanged |
-| Tested saving | 0.0031004505 |
-| Complete conditional kappa | 0.00310045 |
-| Raw crossing | (0.00310045630724, 0.00310045630725) |
-| Exact native maps | 2,923 |
+| Local public inputs / independent helpers | 743 / 535 |
+| Owned roles / lifetimes / peak | 9 / 11 / 2 |
+| Local events | 25,428 |
+| Complete paid calls | 66,546 |
+| Complete productive fields | 12,958 |
+| Complete rank-mass surplus | 760 |
+| Tested saving | 0.0031043205 |
+| Complete conditional kappa | 0.00310432 |
+| Raw crossing | (0.00310432143397, 0.00310432143398) |
+| Exact native maps | 2,916 |
 
-The added helpers enter the complete completion-tail calculation. The tail
-bound changes to 39/40, with `(39/40)^128 < 1/16`. The compiler logarithm
-power changes from 1000 to 1024. Every native map, helper normalizer, main
-adapter, scalar basis operation, route, COPY/CLEAR cost, thin query and
-whole idle is included. The ordinary BIT saving remains 0.0034. Two exact
-moment engines and all 54 strict plus four functional outer conditions are
-checked. The receipt gives the raw crossing and the finite compiler threshold.
-A negative derivative bound supplies the raw ceiling for this fixed invoice
-on [0,0.0034]; it does not bound other constructions.
+Every helper normalizer, main adapter, scalar basis operation, route,
+COPY/CLEAR path, thin query and whole idle is charged. The independent field
+count enters the completion-tail bound. Tail decay is 39/40 and the compiler
+logarithm power is 1024. The ordinary BIT saving stays at 0.0034. Two exact
+moment engines, every compiler condition, 54 strict outer conditions and
+four functional conditions are checked. The finite compiler threshold is
+`N = 2^707182000000000`; that word is not materialized.
+
+A negative derivative bound gives the raw ceiling for this fixed invoice
+on [0,0.0034]. The final discovery screen finds no further tested basis pair
+in 46 boundary groups. Neither result proves a global optimum.
 
 ## Reproduce
 
@@ -50,8 +58,8 @@ python3 -B scripts/research_package.py --package research/p104-helper-subspace-s
 python3 -B scripts/research_package.py --package research/p104-helper-subspace-splits
 ```
 
-The registered hook runs normally and with `-O`. Its success markers are
-`PASS_P104_HELPER_SUBSPACE_KAPPA_00310045` and
+The registered hook runs normally and with `-O`. Success markers are
+`PASS_P104_HELPER_SUBSPACE_KAPPA_00310432` and
 `PASS_REGISTERED_RESEARCH_PACKAGE`. Direct replay needs no Git or network:
 
 ```sh
@@ -59,109 +67,92 @@ python3 -I -B research/p104-helper-subspace-splits/verify.py
 python3 -I -O -B research/p104-helper-subspace-splits/verify.py
 ```
 
-Normal replay is read-only. `--write` explicitly regenerates the two result
-artifacts. Inputs are authenticated before imported source code executes.
-Each replay uses a fresh bytecode-cache path. The checks reject contaminated
-prefix and suffix vectors, missing boundary basis operations, an unearned
-whole target, extra helper credit, a missing paid call, a wrong native phase,
-a missing central translation, an inadequate cutoff and insufficient BIT stock.
+Normal replay is read-only. `--write` explicitly regenerates the word and
+receipt. Seventeen live inputs are authenticated before any source import.
+The checks reject a wrong boundary event, contaminated prefix or suffix,
+missing basis work, unearned target credit, a missing paid call, a wrong
+native phase, a missing central translation, an inadequate cutoff and
+insufficient BIT stock. The complete nine-role owned inventory and all eleven lifetimes are checked.
 
-## Scope and coordination
+## Sources and coordination
 
-The scientific base is canonical main
+The branch starts from canonical main
 `5e0052ca0aa3036a3afa8b0438927377c8d97d53`, priority revision 7.
 The [canonical claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19183208)
-records the changed question and local screens. The final publication overlap
-cache covered 334 open PRs and 4,863 Discussion records, with complete remote
-pagination and incomplete sparse local coverage. Source and coverage details
-are coordination evidence, not a novelty proof.
+records the changed question, released components and composition checks.
+The last full overlap snapshot covered 340 open PRs and 4,874 Discussion
+records, with complete remote pagination and incomplete sparse local coverage.
+These counts describe coverage; they are not a novelty proof.
 
-The consumed PR5565 word is pinned to
-`9af814164b9dfc21f19ec737959d67cb71488c95`. It includes Pierre-Loic Doulcet's published
-commuting-contact cascade and the released PR5580/PR5569/PR5561 lineage.
-The source copy is retained in this branch at commit
-`bf64e66656843a64e798b8374cd9f53add3f6f46`. Its SHA256 and Git blob match
-the recorded PR5565 source. The PR5580 copy remains an active comparison
-input: replay checks the exact paid and helper changes supplied by PR5565.
-Registered replay needs this branch history and its main base; it does not
-need cached objects from unmerged PR branches.
+The main input is PR5601 at
+`8f7e870b22885a367b347dc12791da98fd53f83d`. It contains Pierre-Loic Doulcet's
+PR5565 cascade and the PR5580/PR5569/PR5561 lineage. The fixed boundary
+constructor and witnesses are from PR5602 at
+`6c224aa720203c4f4615e6538d8038a275387db8`. Their bytes are retained unchanged.
+Only the five published relations with helpers 652, 341, 596, 668 and 684
+are used. The sixth relation uses a contact removed by PR5565 and is omitted.
+The relay constructor is from PR5605 at
+`4a57d245ac3918ccc9947a867ece24573605e243`. Its eight source edits are disjoint
+from PR5601's 21 source edits against their common PR5580 input. The preparation
+identities are from PR5606 at `cd7d89345c6c5d2114625e5ce912a52ecd5e1d27`;
+they are checked on the new split word before the retired helper is renamed
+into the owned range. PR5608 supplied a useful earlier relay/split composition.
+No new boundary, relay, preparation or frame search is introduced.
+
+The verifier also replays the retained PR5580 and PR5565 words and checks
+both source deltas. Each retained input is pinned to an ancestor of this
+branch. Registered replay needs no cached unmerged-branch objects.
 
 The earlier fifteen-split component on PR5580 remains frozen at
-`31a4de233bbdd65c04c63dc3398ecf0eed8e1375`. Two cuts are absent from this
-composition. PR5565's lower paid cost more than offsets that lost target
-gain. The complete claim increases by 0.00000206 over that component.
-This package introduces no new commuting-contact search.
-No new Gaussian itinerary is introduced. Active frame-extension work in
-[Discussion5575](https://github.com/CrocSwap/integer-mult-bounds/discussions/5575)
-is a separate investigation.
+`31a4de233bbdd65c04c63dc3398ecf0eed8e1375`. The
+[parallel claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19154639)
+released PR5602 before this final composition check. The shared rank-one
+mechanism and every reused boundary relation are credited. No exclusive
+method discovery is claimed. The old components' reported gains are not
+added: this word, its full native interface and its complete bill are checked.
 
-The final refresh also found [parallel coupled-basis and handoff work](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19154639).
-It uses the same rank-one mechanism and separately changes paid boundary
-work. The [public composition handoff](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19183908)
-releases the earlier fifteen cuts and leaves the six paid-boundary changes
-with the parallel claim. That claim is testing their composition. This
-package composes only the released PR5565 source with helper splits. No
-exclusive method novelty or gain from the parallel paid changes is claimed.
-The new scalar contacts and input count change the hypotheses of
-[PR5590](https://github.com/CrocSwap/integer-mult-bounds/pull/5590)’s fixed-contact floor.
+## Credit and limits
 
-The scope changes the scalar word, the input count and the target contract.
-It therefore differs from a scalar-only simplification or a fixed-input
-helper stop. The unchanged paid histogram now supports a different,
-fully independent target histogram.
+- **Ali Romman**, with OpenAI Codex assistance: independent helper splits;
+  the separate PR5602 boundary relations and PR5601 three-contact change;
+  PR5580 contact step and PR5544/5545 complete P104 caller and replay.
+- **flyingviper**: PR5605 shared relay and PR5608 earlier composition.
+  **Scratch-net**: PR5606 prepared-helper identities and target debit.
+- **Pierre-Loic Doulcet / hexapode**: PR5565 commuting-contact cascade.
+- **Joel Pulikkan / GamingPuzzled**: PR5569 priced handoff and PR5472 successor
+  construction. **DreamingOfClouds**: PR5561 free endpoints and PR5568 tools.
+  **thu-nmrc**: PR5551 contact improvements.
+- **Gareth Davidson / bitplane**, **David Arias** and **Cinna Davis**: PR2305
+  composition, PR2152 coalesced word, PR2219 private reuse and controller
+  lineage. **Jacob Alan Sussman**: productive mixed-target recursion.
+  **zxv** and **Cao Yifan**: retained interval, compiler and native/pricing
+  lineage. Earlier geometry, BIT and analytic credit remains in source notices.
+
+The elementary basis identity is not claimed as a new general theorem.
+This package supplies an explicit independent-target construction and a
+complete conditional price. The same AI-assisted author constructed and
+checked it; no subagents or independent human review. Apache-2.0. See [NOTICE](NOTICE).
 
 The five selected framework assumptions remain: native implementation at
 all widths, owned erasure, uniform compiler closure, precision and tape cost,
-and analytic recovery. The helper-endpoint contract also remains.
-The complete rounded multiplier and enormous uniform compiler word are not
-materialized. The same AI-assisted author constructed and checked this
-package. Independent human review, proof-kernel acceptance and global
-optimality are not claimed.
-
-## Sources and credit
-
-- **Pierre-Loic Doulcet / hexapode**: [PR5565](https://github.com/CrocSwap/integer-mult-bounds/pull/5565)
-  supplies the exact commuting-contact source word.
-- **Ali Romman**: [PR5580](https://github.com/CrocSwap/integer-mult-bounds/pull/5580)
-  supplies its preceding contact step; [PR5544](https://github.com/CrocSwap/integer-mult-bounds/pull/5544)
-  and [PR5545](https://github.com/CrocSwap/integer-mult-bounds/pull/5545) supply
-  the complete P104 caller and source replay.
-- **Joel Pulikkan / GamingPuzzled**: [PR5569](https://github.com/CrocSwap/integer-mult-bounds/pull/5569)
-  supplies the priced helper handoff; [PR5472](https://github.com/CrocSwap/integer-mult-bounds/pull/5472)
-  supplies an earlier successor-handoff construction.
-- **DreamingOfClouds**: [PR5561](https://github.com/CrocSwap/integer-mult-bounds/pull/5561)
-  supplies free helper endpoints and PR5568 supplies search tools.
-  **thu-nmrc** supplies the PR5551 contact improvements.
-- **Gareth Davidson / bitplane**, **David Arias** and **Cinna Davis** supply
-  the PR2305 composition, PR2152 coalesced word and PR2219 private reuse.
-  Cinna Davis also supplies the controller lineage.
-- **Jacob Alan Sussman** supplies productive mixed-target recursion.
-  **zxv** and **Cao Yifan** supply the retained interval, compiler and
-  native/pricing lineage. Source notices preserve earlier geometry, BIT
-  and analytic credit.
-
-The elementary rank-one basis identity is not claimed as a new general
-linear-algebra theorem. The contribution is this explicit independent-target
-construction and its complete conditional price. New work is by Ali Romman
-with substantial OpenAI Codex assistance; no subagents. Apache-2.0.
-See [NOTICE](NOTICE).
+and analytic recovery. The helper-endpoint contract also remains. The full
+rounded multiplier and huge uniform word are not materialized. Independent
+scientific acceptance and global optimality are not claimed.
 
 ## Open next questions
 
-An independent reviewer can check the first split and then replay the complete
-package. Further gains could use a different compatible cut order, basis or
-frame itinerary. Both prefix and suffix support must be proved before a
-new target receives credit. The finite discovery screen does not establish a global
-maximum. [TASK.json](TASK.json) gives the first checks and remaining obligations.
+An independent reviewer can check the fixed boundary relations and the first
+split, then replay the complete package. More general bases, cut orders or
+new frame paths remain open. Every additional target needs a clean independent
+input/output contract and a complete caller bill. [TASK.json](TASK.json)
+records the remaining obligations.
 
-The optional continuation screen is reproducible with:
+The finite continuation screen is available with:
 
 ```sh
 python3 -I -B research/p104-helper-subspace-splits/search.py
 ```
 
-It tests exact elimination-basis pairs at cuts immediately after MOVE events,
-inside equal-boundary helper groups. On the final word it finds no further
-candidate in 52 groups. This result covers those tested pairs. It does not
-exclude different cut sequences, arbitrary basis combinations or new frames.
-The complete-kappa verifier does not depend on a discovery search failure.
+It tests exact elimination-basis pairs after MOVE events within equal-boundary
+helper groups. Its failure to find another candidate is not an optimum proof.
+The complete-kappa verifier does not depend on that search failure.

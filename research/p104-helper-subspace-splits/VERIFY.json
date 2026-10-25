@@ -16,7 +16,11 @@
     "research/pr4359-p7-padding/dependencies/compiler-refill/endpoint.py",
     "research/query-thinned-controllers/RESULT.json",
     "research/p104-helper-subspace-splits/inputs/PR5580-WORD.json.gz",
-    "research/p104-helper-subspace-splits/inputs/PR5565-WORD.json.gz"
+    "research/p104-helper-subspace-splits/inputs/PR5565-WORD.json.gz",
+    "research/p104-helper-subspace-splits/inputs/PR5601-WORD.json.gz",
+    "research/p104-helper-subspace-splits/inputs/PR5602-construct.py",
+    "research/p104-helper-subspace-splits/inputs/PR5602-WITNESS.json",
+    "research/p104-helper-subspace-splits/inputs/PR5605-construct.py"
   ],
   "commands": [
     {
@@ -26,7 +30,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Check all 13 independent cuts, every rational row and reverse column, native maps, complete caller and invoice, two moment engines, compiler and outer predicates; reject false inputs, outputs, target credit and cost."
+      "checks": "Check the disjoint relay merge, five fixed boundaries, nine independent splits, both preparation identities and target debit, every rational row and column, all native maps, the physical caller, full invoice, two moment engines, compiler and outer predicates. Reject false identities, support, credits and costs."
     },
     {
       "argv": [
@@ -36,7 +40,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Check all 13 independent cuts, every rational row and reverse column, native maps, complete caller and invoice, two moment engines, compiler and outer predicates; reject false inputs, outputs, target credit and cost."
+      "checks": "Check the disjoint relay merge, five fixed boundaries, nine independent splits, both preparation identities and target debit, every rational row and column, all native maps, the physical caller, full invoice, two moment engines, compiler and outer predicates. Reject false identities, support, credits and costs."
     }
   ]
 }

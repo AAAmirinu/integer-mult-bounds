@@ -1,9 +1,10 @@
 # Independent helper splits and the complete cost
 
-This proof changes the helper input and output contract of the exact PR5565
-word. It retains every main endpoint, paid Gaussian call and owned lifetime.
-All scalar identities below are over the rationals. The native check supplies
-exact phases and the rule for every positive tensor width.
+This proof changes the helper input and output contract of the exact PR5601
+word. It composes released relay and boundary changes, nine independent
+splits and two prepared queries. Every main endpoint is retained. Every
+owned operation and removed target is checked and charged. Scalar identities
+are rational; the native check supplies exact phases at every positive width.
 
 ## 1. A split criterion
 
@@ -59,7 +60,8 @@ one U-to-V target by a U-to-F target and an F-to-V target.
 This uses a new input, not two outputs computed from one input. It does not
 assume a helper is zero. The early output is a public field and stays live
 until the caller returns. The successor input is public from the start and
-is first used at the cut. No new COPY, CLEAR or owned lifetime is introduced.
+is first used at the cut. The split itself introduces no new COPY, CLEAR
+or owned lifetime.
 The source's owned erasures remain charged under the inherited contract.
 
 All three basis changes use common physical charts. They therefore commute
@@ -68,70 +70,135 @@ with the relevant chart operator. Native normalization gives ranks
 stay outside the tensor substitution. The frame induction applies at every
 positive width; it is not a test at width one alone.
 
-## 2. The first explicit split
+## 2. Five released boundary relations
 
-The source is PR5565 at `9af814164b9dfc21f19ec737959d67cb71488c95`.
-Use the cut after zero-based event 13775, chart 120 of dimension five, and
-pivot 648. The boundary group has initial chart 3 (dimension zero) and final
-chart 127 (dimension nine). With e_r the coordinate at role r, the exact
-vectors are
+The geometric input is PR5601 at `8f7e870b22885a367b347dc12791da98fd53f83d`.
+The PR5605 constructor at `4a57d245ac3918ccc9947a867ece24573605e243` first
+reconstructs its exact relay word on the common PR5580 source. Its eight
+changed intervals are disjoint from PR5601's 21 changed intervals, including
+insertions. A strict merge rejects overlap, retains PR5601's frame metadata,
+and replays the complete result. The relay changes the local paid profile by
+`H6-H1-H2-H3` and preserves every independent target. The source's explicit
+input preconditioning and late cleanup remain in the merged program.
+The retained PR5602 constructor and witness come from
+`6c224aa720203c4f4615e6538d8038a275387db8`. No coefficient, helper, frame,
+cancellation vector or output vector in those relations changes. Only the
+chronological cut indices change, with explicit event anchors in `BOUNDARIES.json`.
+
+For a forward boundary relation, the complete prefix gives a helper input
+combination after cancellation by coframed fields. A scalar input basis
+makes this combination one independent input. The helper has no later source
+read, so it can finish at that frame. The reverse relations supply the
+corresponding early-input rule. The source constructor uses an algebraic
+transpose to derive that rule; it does not execute the owned program backward.
+The final program restores the eight COPY opcodes. Its complete subsequence
+of operations involving owned fields equals the original chronological
+subsequence of the merged relay source, byte for byte, before the independent
+splits rename owned roles. The final preparation adds its own owned role.
+
+The five fixed relations use helpers 652, 341, 596, 668 and 684. Each replaces
+one H9 helper target by H4 and removes one paid H5. The complete arbitrary-input
+interface is checked after every relation. The sixth PR5602 relation uses a
+frame-597 contact absent from the PR5565 cascade; it is not used.
+
+## 3. Nine independent splits
+
+After those five changes, the first split uses the cut after zero-based
+event 12516, chart 306 of dimension four, and pivot 259. Its helper group
+has initial chart 3 (dimension zero) and final chart 127 (dimension nine).
+With e_r the coordinate at role r, the exact vectors are
 
 ```math
-a=e_{652}^T,\quad b=e_{652}-e_{648}+e_{650}-e_{649},
+a=e_{261}^T+(e_{256}^T+e_9^T)/2+2e_{259}^T,\qquad b=e_{259}/2,
 ```
 
 ```math
-c=e_{652}^T,\quad d=e_{652}-2e_{205}-e_{648}+e_{650}-e_{649}.
+c=2(e_{259}^T+e_{61}^T+e_{265}^T),
+```
+
+```math
+d=(e_{262}-e_{270}+e_{265}+e_{264}-e_{256}-e_{271}+e_{263})/2.
 ```
 
 The complete prefix gives aP=c; the complete suffix gives Sb=d.
-Both pairings are one. The boundary basis uses six scalar events and the
-local basis uses five. With their inverses, the split adds eighteen ADDs
-and four sign SCALEs. It replaces H9 by independent H5 and H4 targets.
-The full sequence, including each updated event index, is in `SPLITS.json`.
+Both pairings are one. The boundary basis has 14 scalar events and the
+local basis has four. With their inverses, this adds 30 ADDs and six dyadic
+SCALEs. It replaces one H9 target by independent H4 and H5 targets.
+`SPLITS.json` gives every subsequent cut and all four exact vectors.
 
 `check_cut` reconstructs each prefix functional and propagates each suffix
-column. It checks that all other input and output coefficients are zero.
-The verifier then checks every public and owned row after each complete
-split. A separate dense-integer transpose replay checks all 571,536 entries
-of the final 756 by 756 interface.
+column. It checks zero support on every other input and output. Full row
+replay checks each intermediate construction. A separate dense-integer
+transpose replay checks all 565,504 entries of the final 752 by 752 interface.
 
-## 3. The complete target change
-
-The thirteen splits are
-
-- six H9 to H4 + H5;
-- five H9 to H2 + H7;
-- two H9 to H1 + H8.
-
-They add 13 independent helper inputs. The source's 735 public fields become
-748, of which 540 are helpers and 208 are main fields. Eight owned lifetime
-roles remain; only one is live at a time. The 25,133 source events become
-25,475. Every source paid occurrence remains, with the same ordered pair of
-charts, rank and ownership. Some register names change to identify the
-successor input. The new local helper profile is
+The nine splits are two H9 to H4+H5, five H9 to H2+H7, and two H9 to H1+H8.
+They add nine independent inputs before preparation. The 735 public fields
+become 744, with 536 helpers and 208 main fields. The source has 25,132 events;
+the relay has 25,159; the boundary step has 25,164; the split word has 25,420.
+The split step adds 256 scalar events. Its helper profile is
 
 ```text
-{1:2, 2:5, 4:89, 5:11, 7:5, 8:16, 9:412}.
+{1:2, 2:5, 4:91, 5:6, 7:5, 8:16, 9:411}.
 ```
 
-The verifier also replays the retained PR5580 source. It checks that PR5565
-changes its local paid profile by `-8H1-H3-2H4+4H5` and its helper profile
-by `-H8+H9`. These source changes are by Pierre-Loic Doulcet (hexapode). The new splits retain
-that paid profile. The earlier fifteen-split component on PR5580 is frozen
-at `31a4de233bbdd65c04c63dc3398ecf0eed8e1375`. Two of its cuts are absent
-from the PR5565 composition, but the lower paid cost gives a larger kappa.
+The verifier replays the retained PR5580 and PR5565 words. It checks the
+PR5565 paid delta `-8H1-H3-2H4+4H5` and helper delta `-H8+H9`, then the
+PR5601 paid delta `-2H2+2H3-2H4+H5` and helper delta `H4-H5`. These are
+credited source changes, not new discoveries in this package.
 
-For every 0<t<1 and positive a,b, strict concavity gives
-`a^t+b^t>(a+b)^t`. Each split strictly increases the target moment and leaves
-the paid moment fixed. The signed local target change is
+For 0<t<1, define `g(a,b)=a^t+b^t-(a+b)^t`. Strict concavity gives g(a,b)>0.
+The preparation below adds one more strictly positive term. Against the
+consumed PR5601 word, the complete target-minus-paid moment increases by
 
 ```math
-2H_1+5H_2+6H_4+6H_5+5H_7+2H_8-13H_9.
+18[7g(4,5)+5g(2,7)+2g(1,8)+g(1,2)+g(3,3)+g(1,1)].
 ```
 
-Its rank mass is zero, as required. A source-bound complete caller, not a
-standalone packing relaxation, supplies the resulting exponent claim.
+The five boundary relations supply five g(4,5) terms. The nine splits supply
+the next two g(4,5), five g(2,7) and two g(1,8) terms. The relay supplies
+`g(1,2)+g(3,3)=1+2^t+3^t-6^t`. Preparation supplies `g(1,1)=2-2^t`.
+Every target debit and removed paid call enters the final invoice. The old
+components' reported kappa gains are not added.
+
+## 3a. Prepare the rank-two prefix
+
+PR5606 supplies two exact value identities for prefix helper 573. In the
+new split word, its input is set to zero. At events 13640 and 13665, the
+complete normalized rows satisfy
+
+```math
+r_{573}=r_{572}-2r_{732} \quad\hbox{at chart 595},
+```
+
+```math
+r_{573}=r_{572}+2r_{710} \quad\hbox{at chart 603}.
+```
+
+The suppliers are live in the destination chart at each site. These are
+checks on the new word; they are not assumed from the old source. Each
+rank-one query is replaced by CLEAR, INIT, COPY and ADD. The helper is owned
+from the start, and its final normalized row is zero before the last CLEAR.
+The rank-two productive target is removed. Thus the local paid profile loses
+two H1 calls, and the target profile loses one H2.
+
+The constructor renames retired role 573 to owned role 751. Public roles above
+573 shift down by one; the eight original owned roles shift down by one.
+All main roles are below 573 and keep their labels. The final word declares
+nine owned roles, eleven initialization/erasure lifetimes and peak occupancy
+two. Earlier frozen inputs retain their original eight-role format. The
+checker derives matrix width and ownership bounds from this declared inventory.
+
+The final word has 743 independent public inputs, 535 helpers and 25,428
+events. Its 752 by 752 matrix includes all nine owned roles. The final helper
+profile is
+
+```text
+{1:2, 2:4, 4:91, 5:6, 7:5, 8:16, 9:411}.
+```
+
+The added COPY/ADD work and all three new lifetimes enter the scalar and
+route bounds. The complete bill uses the smaller target count and peak two;
+it does not retain the old target credit or one-owned-field bound.
 
 ## 4. Native maps and the caller
 
@@ -152,8 +219,8 @@ contacts, 53,248 central-square column checks, 3,328 main Gaussian targets,
 spectators, exact phases and every whole target. The complete counts are
 
 ```text
-paid calls:         66726
-productive fields:  13048 = 18*540 + 32*104
+paid calls:         66546
+productive fields:  12958 = 18*535 + 32*104
 rank mass surplus:  760
 maximum target:     145
 maximum paid rank:  72
@@ -168,9 +235,9 @@ It is not left at the old 12,814 value.
 ## 5. Strictification, compiler and outer transfer
 
 Two independent rational interval engines evaluate the complete moments.
-The exact raw crossing is in (0.00310045630724, 0.00310045630725).
-`RESULT.json` gives its rational endpoints and the strict tested margin. The claimed kappa is 0.00310045 and the tested saving is
-0.0031004505. Their gap funds the finite compiler and outer parameters. An exact negative
+The exact raw crossing is in (0.00310432143397, 0.00310432143398).
+`RESULT.json` gives its rational endpoints and the strict tested margin. The claimed kappa is 0.00310432 and the tested saving is
+0.0031043205. Their gap funds the finite compiler and outer parameters. An exact negative
 derivative bound on [0,0.0034] makes this crossing the raw ceiling for this
 fixed invoice under the retained BIT cap. It is not a global optimum.
 
@@ -202,7 +269,7 @@ identities and every new numerical condition within that framework.
 The enormous uniform word and complete rounded multiplier are not
 materialized. These are author-side checks by the same AI-assisted author.
 They are not independent human acceptance or a proof-kernel theorem.
-The final exact discovery screen tests 52 boundary groups and finds no
+The final exact discovery screen tests 46 boundary groups and finds no
 further candidate in its finite basis-pair class. It does not prove a maximum
 over bases, cuts, scalar programs,
 frames, controllers or multiplication algorithms.
