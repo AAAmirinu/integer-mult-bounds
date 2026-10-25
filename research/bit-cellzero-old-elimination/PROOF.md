@@ -65,7 +65,8 @@ visited cells but does not prove a global recursive allocator.
 The program has 17+d tapes and seven symbols, independent of runtime T,Q,Z.
 Each instruction is a local symbol branch/write, unit head move, fixed jump,
 halt or reject. Pre-input Python assembly resolves labels and finite q-dependent
-branches; the running program has no integer addressing or host arithmetic.
+branches using iterative pre-input loop assembly (no Python recursion-depth
+limit); the running program has no integer addressing or host arithmetic.
 The authenticated PR2776 counter/shear macros are executed directly as emitted
 instructions, not invoked as unpriced runtime functions.
 
@@ -148,7 +149,8 @@ actual-T initializer adds <=4Db+6 separately, or may be absorbed by unused
 slack in 32K. No data-dependent host step is omitted from these paths.
 
 For space, the global source/output consume 2V, and local source/output/buckets
-at most 3H. The suffix counter has S cells; Q-loop counters have (d-1)Q,
+at most 4H. Across different fibers the separate bucket maxima can sum to H+S, so their
+visited regions are not bounded by a single live H. The suffix counter has S cells; Q-loop counters have (d-1)Q,
 the split counters at most Q+1, type/Z counters T+Z, conversion scratch at
 most max(log2 T,log2 Q,log2 Z)+1, and descriptor widths at most T+Q+Z.
 The old cache and retained low0 result total K+Tb<=2K. Markers, endpoints,

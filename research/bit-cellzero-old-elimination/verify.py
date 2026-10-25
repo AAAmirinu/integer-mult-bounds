@@ -115,6 +115,8 @@ def main():
         other,steps,visited=dense(p,[({},0)],run.steps+1)
         need(other==[(expected.cells,1)] and steps==run.steps,'independent T initialization')
         initializers.append({'q':q,'f':f,'steps':steps,'bits':T.bit_length()})
+    large=build(mod,3,4)
+    need(large.tapes==1041,'default f4/D1024 compiler has no recursion limit')
     cases=[]
     for q in (3,5,7):
         for inverse in (False,True):
@@ -143,7 +145,7 @@ def main():
         try:run_case(mod,5,1,5,2,1,[3,0,4],**options)
         except ValueError:controls+=1
         else:raise ValueError('semantic mutation escaped')
-    receipt={'status':'PASS_ACTUAL_CELLZERO_WHOLE_T_JOIN','cases':len(cases),'total_steps':sum(c['steps'] for c in cases),'max_steps':max(c['steps'] for c in cases),'dual_interpreter_cases':len(cases),'source_columns':'2e5 and e4; tensor lane proven','rejecting_controls':controls,'full_GL8_materialized':False,'new_kappa':False,'cases_detail':cases,'actual_T_initializers':initializers}
+    receipt={'status':'PASS_ACTUAL_CELLZERO_WHOLE_T_JOIN','cases':len(cases),'total_steps':sum(c['steps'] for c in cases),'max_steps':max(c['steps'] for c in cases),'dual_interpreter_cases':len(cases),'source_columns':'2e5 and e4; tensor lane proven','rejecting_controls':controls,'full_GL8_materialized':False,'new_kappa':False,'cases_detail':cases,'actual_T_initializers':initializers,'large_depth_compile':{'f':4,'depth':1024,'instructions':len(large.instructions)}}
     if (HERE/'RESULT.json').exists():need(receipt==json.loads((HERE/'RESULT.json').read_text()),'committed receipt')
     print(json.dumps(receipt,sort_keys=True,indent=2))
 

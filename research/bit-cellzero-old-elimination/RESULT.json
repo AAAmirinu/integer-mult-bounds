@@ -544,6 +544,11 @@
   ],
   "dual_interpreter_cases": 40,
   "full_GL8_materialized": false,
+  "large_depth_compile": {
+    "depth": 1024,
+    "f": 4,
+    "instructions": 96762
+  },
   "max_steps": 83881,
   "new_kappa": false,
   "rejecting_controls": 7,

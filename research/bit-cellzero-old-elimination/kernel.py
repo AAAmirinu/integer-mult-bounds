@@ -27,15 +27,16 @@ def build(modules, q, f=1, inverse=False, depth=None):
     for tape in [LOW,GLOBAL]+persistent:initialize(tape)
     for src,dst in [(b.P_INPUT,b.P_COUNT),(b.S_INPUT,b.G_COUNT)]+[(b.Q_INPUT,t) for t in loops]:
         c.emit_binary_to_unary(a,src,b.BINARY_WORK,dst,a.fresh('extent'))
-    def nest(level):
-        tape=(loops+[b.G_COUNT])[level]
+    nested=[]
+    for tape in loops+[b.G_COUNT]:
         c.emit_rewind(a,tape,a.fresh('product_return'))
         loop,body,end=(a.fresh(s) for s in ('product_loop','product_body','product_end'))
         a.label(loop);a.branch(tape,{m.UNIT:body,m.RIGHT:end},fail);a.label(body)
-        if level==len(loops):a.write(b.S_COUNT,m.UNIT);a.move(b.S_COUNT,1)
-        else:nest(level+1)
+        nested.append((tape,loop,end))
+    a.write(b.S_COUNT,m.UNIT);a.move(b.S_COUNT,1)
+    for tape,loop,end in reversed(nested):
         a.move(tape,1);a.goto(loop);a.label(end)
-    nest(0);a.write(b.S_COUNT,m.RIGHT)
+    a.write(b.S_COUNT,m.RIGHT)
     outer,body,done,rotate0,rotate1,after=(a.fresh(s) for s in ('types','type','types_done','rotate0','rotate1','after_rotate'))
     a.label(outer);a.branch(b.P_COUNT,{m.UNIT:body,m.RIGHT:done},fail);a.label(body)
     for tape in private:initialize(tape)
