@@ -12,7 +12,7 @@ restores = 4*hops (SIGNHOP model constant: restore adds per node).  Reference: u
 import os,sys,json,pickle,subprocess
 from tkcommon import *
 D=(HERE+'/data/') if PACKAGE else W+'/cards/WILD/DESIGNER/'
-UNS_DEFAULT=D+('rc1.txt' if PACKAGE else 'HOPILP/rc1.txt'); SGN_DEFAULT=D+('S.out' if PACKAGE else 'SIGNHOP/S.out')
+UNS_DEFAULT=D+('rc1.txt' if PACKAGE else 'HOPILP/rc1.txt'); SGN_DEFAULT=D+('S.txt' if PACKAGE else 'SIGNHOP/S.out')
 class Mat:
     """minimal 2-D matrix (stdlib): .shape and m[i,j]"""
     def __init__(s,rows): s.rows=rows; s.shape=(len(rows),len(rows[0]) if rows else 0)

@@ -61,7 +61,7 @@ MOVE stops deleted/added per role, whether the scalar program is identical, alig
 
 ## `tk hops MATRIX [--signed] [--program FILE] [--points vu.pkl] [--json] [--recomb]`
 Delivery-program verifier/counter (HOPILP / SIGNHOP). MATRIX (npy/json/text; rows outputs, columns leaves; zeros = support, signs for `--signed`, e.g. `SIGNHOP/Smodel.npy`).
-Program lines `hi lo a` (unsigned) or `hi lo keyhex a` (signed) as written by `sa*.cpp` / `rc1.txt` / `srecomb.py`; defaults `HOPILP/rc1.txt` and `SIGNHOP/S.out`.
+Program lines `hi lo a` (unsigned) or `hi lo keyhex a` (signed) as written by `sa*.cpp` / `rc1.txt` / `srecomb.py`; defaults `HOPILP/rc1.txt` and `SIGNHOP/S.out` (package copy `data/S.txt`).
 Checks cancellation-freeness (each node = disjoint union of two children given by an affine functional; children leaves or program nodes with the induced normalised sign pattern; every row present), then prints
 HOPS (non-leaf nodes), ROLES (= hops - outputs; cap 400), RESTORES (= 4 x hops, SIGNHOP model constant) and dead nodes. Reference: unsigned 916 (590 lower bound), signed 2797 in file (best fixed DAG 2704, pool bound 2521).
 `--recomb` queues the CP-SAT recombination (`SIGNHOP/srecomb.py`, 1 h, 4 threads) for `Smodel.npy` only.
