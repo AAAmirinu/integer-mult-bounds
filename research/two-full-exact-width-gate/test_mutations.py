@@ -24,7 +24,8 @@ def main():
     with tempfile.TemporaryDirectory(prefix='two-band-width-mutations-') as temp:
         root = Path(temp)
         package = root / 'research' / PACKAGE.name
-        shutil.copytree(PACKAGE, package, ignore=shutil.ignore_patterns('__pycache__'))
+        shutil.copytree(PACKAGE, package, copy_function=shutil.copyfile,
+                        ignore=shutil.ignore_patterns('__pycache__'))
         for name in inputs:
             target = root / name
             target.parent.mkdir(parents=True, exist_ok=True)
