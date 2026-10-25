@@ -32,6 +32,16 @@
       ],
       "timeout_seconds": 30,
       "checks": "Same evidence with assertions disabled"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/test_package.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Portable empty-PATH normal/optimized replay and altered source/receipt rejection"
     }
   ]
 }

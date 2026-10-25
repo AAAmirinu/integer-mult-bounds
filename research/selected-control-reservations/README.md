@@ -24,15 +24,16 @@ Python3.12+, standard library only:
 ```sh
 python3 -I -B research/selected-control-reservations/verify.py
 python3 -I -O -B research/selected-control-reservations/verify.py
-python3 -B scripts/research_package.py --package research/selected-control-reservations
+python3.12 -B scripts/research_package.py --package research/selected-control-reservations
 ```
 
 Direct replay works without Git or network and authenticates every declared
 source input. [RESULT.json](RESULT.json) records the exact census, six interval
 families (including f=10^30 without materialization), literal lifted-coordinate
 checks,45 IDLE child cases, whole-row boundary controls and eight rejecting
-semantic mutations. Source-byte and export controls are recorded separately in
-[VALIDATION.json](VALIDATION.json). Finite executions corroborate the written
+semantic mutations. Source-byte and portable replay controls are recorded separately in
+[VALIDATION.json](VALIDATION.json). The fixed q0=11, G=3, K=64 interval fixtures are synthetic address controls,
+not production row-stock or physical-tariff instances. Finite executions corroborate the written
 quantified proposition; they are not proof-assistant verification.
 
 ## Scope and prior coverage
