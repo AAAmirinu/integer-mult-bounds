@@ -1,0 +1,7 @@
+{
+  "python": "3.12.0",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "normal_optimized_identical": true,
+  "source_base": "32890bc5de034ab8fc93ac88ead7279a6a416d04",
+  "scope": "Local native Windows execution. Registered replay and export evidence are reported in README.md. Finite controls are not a proof kernel."
+}
