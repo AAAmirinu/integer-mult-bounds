@@ -15,7 +15,8 @@
     "research/kappa-rebuild/architecture/mixed_target_probe.py",
     "research/pr4359-p7-padding/dependencies/compiler-refill/endpoint.py",
     "research/query-thinned-controllers/RESULT.json",
-    "research/p104-helper-subspace-splits/inputs/PR5580-WORD.json.gz"
+    "research/p104-helper-subspace-splits/inputs/PR5580-WORD.json.gz",
+    "research/p104-helper-subspace-splits/inputs/PR5565-WORD.json.gz"
   ],
   "commands": [
     {
@@ -25,7 +26,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Check all 15 independent cuts, every rational row and reverse column, native maps, complete caller and invoice, two moment engines, compiler and outer predicates; reject false inputs, outputs, target credit and cost."
+      "checks": "Check all 13 independent cuts, every rational row and reverse column, native maps, complete caller and invoice, two moment engines, compiler and outer predicates; reject false inputs, outputs, target credit and cost."
     },
     {
       "argv": [
@@ -35,7 +36,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Check all 15 independent cuts, every rational row and reverse column, native maps, complete caller and invoice, two moment engines, compiler and outer predicates; reject false inputs, outputs, target credit and cost."
+      "checks": "Check all 13 independent cuts, every rational row and reverse column, native maps, complete caller and invoice, two moment engines, compiler and outer predicates; reject false inputs, outputs, target credit and cost."
     }
   ]
 }

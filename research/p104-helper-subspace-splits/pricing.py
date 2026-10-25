@@ -5,6 +5,7 @@ recursion is by Jacob Alan Sussman. The controller is by Cinna Davis.
 Adapted from Ali Romman's PR5544/5545 for the two coupled contact changes.
 Successor choices were prepared for thu-nmrc with OpenAI Codex assistance.
 Helper-subspace targets were added by Ali Romman with OpenAI Codex assistance.
+The source commuting-contact construction is by Pierre-Loic Doulcet (hexapode) in PR5565.
 Ali Romman's complete caller/price proof and all predecessor credit are retained.
 Apache-2.0.
 """
@@ -12,8 +13,8 @@ from collections import Counter
 from fractions import Fraction as Q
 import local as L
 
-KAPPA, TESTED = Q('.00309839'), Q('.0030983905')
-PREVIOUS = Q('.00308189')
+KAPPA, TESTED = Q('.00310045'), Q('.0031004505')
+PREVIOUS = Q('.00308520')
 
 
 def encode(x):
@@ -62,7 +63,7 @@ def assemble(local, native, word, physical):
             second_p[8*(j+1)] += 208
     L.need((targets,paid) == (second_t,second_p), 'Independent full invoice')
     L.need(max(targets) == 145 and max(paid) == 72, 'Maximum recursive ranks')
-    L.need(sum(targets.values()) == 13084 and sum(paid.values()) == 66852, 'Complete field and call counts')
+    L.need(sum(targets.values()) == 13048 and sum(paid.values()) == 66726, 'Complete field and call counts')
     L.need(sum(r*n for r,n in targets.items())-sum(r*n for r,n in paid.items()) == 760, 'Complete rank surplus')
     return targets,paid,counts
 
@@ -93,7 +94,7 @@ def run(local,native,word,physical):
         derivative_upper -= count*(low if count >= 0 else high)
     L.need(derivative_upper < 0, 'Unique raw crossing below the retained BIT cap')
     L.need(margin(lower)[0] > 0 and margin(upper)[1] < 0, 'Strict rational crossing enclosure')
-    L.need(PREVIOUS < KAPPA < TESTED < lower and margin(PREVIOUS)[0] > 0, 'Changed complete bill improves selected kappa')
+    L.need(PREVIOUS < KAPPA < TESTED < lower and margin(PREVIOUS)[0] > 0, 'Changed complete bill improves the source claim')
     t,u,v,c,b = 1-TESTED,Q(1,5),1024,17,18
     target,paid = E.moment(T,t),E.moment(P,t)
     tl,th = other.moment(T,TESTED)
@@ -150,7 +151,7 @@ def run(local,native,word,physical):
     L.need(wrong_cutoff[0] > 1, 'Old cutoff fails with this helper inventory')
     bad=outer_module.ledger(dict(params,bit_saving=Q('.0027')))
     L.need(any(x <= 0 for x in bad['strict_checks'].values()), 'Insufficient BIT contract rejected')
-    return encode({'kappa':KAPPA,'kappa_decimal':'.00309839','previous_open_pr5580':PREVIOUS,'gain':KAPPA-PREVIOUS,
+    return encode({'kappa':KAPPA,'kappa_decimal':'.00310045','previous_open_pr5565':PREVIOUS,'gain':KAPPA-PREVIOUS,
                    'relative_gain_percent':100*(KAPPA/PREVIOUS-1),'raw_root_interval':[lower,upper],
                    'raw_headroom':[lower-KAPPA,upper-KAPPA],
                    'raw_ceiling':{'interval':[Q(0),cap],'derivative_upper':derivative_upper},'margin_at_previous':E.display(margin(PREVIOUS)),

@@ -92,6 +92,13 @@
       "usage": "provenance",
       "git_blob": "dbb3d56a4f5b733bb0c32a91249d1f6a7e1ab5d2",
       "sha256": "878734dfd64c4b9d362d0ae476cc5c2a19fe93e48b7378763b23f3e0dd0a5a71"
+    },
+    {
+      "path": "research/p104-helper-subspace-splits/inputs/PR5565-WORD.json.gz",
+      "usage": "input",
+      "git_blob": "4ebe6fcb7adf319bf6b247cf23d89eb1ca4cd914",
+      "sha256": "3d62828f53e654e3db218bf4611a47aed4a677d48043713dc004db0f8a32990d",
+      "pin": "head:bf64e66656843a64e798b8374cd9f53add3f6f46:research/p104-helper-subspace-splits/inputs/PR5565-WORD.json.gz"
     }
   ],
   "external_inputs": [
@@ -102,6 +109,14 @@
       "source_path": "research/p104-event-contact-step/WORD.json.gz",
       "sha256": "b2a98c4bd0dbe86c09e9d15ee060dcf1aab09dbef90aa1e2127676f4039f406b",
       "git_blob": "9434855e7dad0d0236d23210b3e71a2b83a9ae64"
+    },
+    {
+      "local_path": "inputs/PR5565-WORD.json.gz",
+      "source_repository": "CrocSwap/integer-mult-bounds",
+      "source_commit": "9af814164b9dfc21f19ec737959d67cb71488c95",
+      "source_path": "research/p104-commuting-contact/WORD.json.gz",
+      "sha256": "3d62828f53e654e3db218bf4611a47aed4a677d48043713dc004db0f8a32990d",
+      "git_blob": "4ebe6fcb7adf319bf6b247cf23d89eb1ca4cd914"
     }
   ],
   "code_derivation": [

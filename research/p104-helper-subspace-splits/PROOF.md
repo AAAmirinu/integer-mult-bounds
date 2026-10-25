@@ -1,6 +1,6 @@
 # Independent helper splits and the complete cost
 
-This proof changes the helper input and output contract of the exact PR5580
+This proof changes the helper input and output contract of the exact PR5565
 word. It retains every main endpoint, paid Gaussian call and owned lifetime.
 All scalar identities below are over the rationals. The native check supplies
 exact phases and the rule for every positive tensor width.
@@ -70,61 +70,64 @@ positive width; it is not a test at width one alone.
 
 ## 2. The first explicit split
 
-The source is PR5580 at `6efa248cf456d6101d757e9d09ba29711d18a13a`.
-Use the cut after zero-based event 13778, chart 120 of dimension five, and
+The source is PR5565 at `9af814164b9dfc21f19ec737959d67cb71488c95`.
+Use the cut after zero-based event 13775, chart 120 of dimension five, and
 pivot 648. The boundary group has initial chart 3 (dimension zero) and final
 chart 127 (dimension nine). With e_r the coordinate at role r, the exact
 vectors are
 
 ```math
-a=e_{651}^T+(e_{648}^T+e_{649}^T)/2,\quad
-b=e_{648}+e_{649}-e_{650}-e_{652},
+a=e_{652}^T,\quad b=e_{652}-e_{648}+e_{650}-e_{649},
 ```
 
 ```math
-c=(e_{648}^T+e_{649}^T)/2,\quad
-d=e_{648}+e_{649}-e_{650}-e_{652}+2e_{205}.
+c=e_{652}^T,\quad d=e_{652}-2e_{205}-e_{648}+e_{650}-e_{649}.
 ```
 
 The complete prefix gives aP=c; the complete suffix gives Sb=d.
-Both pairings are one. The first basis change uses five ADDs, the local
-basis uses five ADDs, and their two inverses use ten more ADDs. The first
-split therefore adds 20 scalar events and replaces H9 by H5 and H4.
-A later split divides this particular H5 target further. The full sequence,
-including each updated event index, is in `SPLITS.json`.
+Both pairings are one. The boundary basis uses six scalar events and the
+local basis uses five. With their inverses, the split adds eighteen ADDs
+and four sign SCALEs. It replaces H9 by independent H5 and H4 targets.
+The full sequence, including each updated event index, is in `SPLITS.json`.
 
 `check_cut` reconstructs each prefix functional and propagates each suffix
 column. It checks that all other input and output coefficients are zero.
 The verifier then checks every public and owned row after each complete
-split. A separate dense-integer transpose replay checks all 574,564 entries
-of the final 758 by 758 interface.
+split. A separate dense-integer transpose replay checks all 571,536 entries
+of the final 756 by 756 interface.
 
 ## 3. The complete target change
 
-The fifteen splits are
+The thirteen splits are
 
 - six H9 to H4 + H5;
 - five H9 to H2 + H7;
-- three H9 to H1 + H8;
-- one H5 to H1 + H4.
+- two H9 to H1 + H8.
 
-They add 15 independent helper inputs. The source's 735 public fields become
-750, of which 542 are helpers and 208 are main fields. Eight owned lifetime
-roles remain; only one is live at a time. The 25,140 source events become
-25,502. Every source paid occurrence remains, with the same ordered pair of
+They add 13 independent helper inputs. The source's 735 public fields become
+748, of which 540 are helpers and 208 are main fields. Eight owned lifetime
+roles remain; only one is live at a time. The 25,133 source events become
+25,475. Every source paid occurrence remains, with the same ordered pair of
 charts, rank and ownership. Some register names change to identify the
 successor input. The new local helper profile is
 
 ```text
-{1:4, 2:5, 4:90, 5:10, 7:5, 8:18, 9:410}.
+{1:2, 2:5, 4:89, 5:11, 7:5, 8:16, 9:412}.
 ```
+
+The verifier also replays the retained PR5580 source. It checks that PR5565
+changes its local paid profile by `-8H1-H3-2H4+4H5` and its helper profile
+by `-H8+H9`. These source changes are by Pierre-Loic Doulcet (hexapode). The new splits retain
+that paid profile. The earlier fifteen-split component on PR5580 is frozen
+at `31a4de233bbdd65c04c63dc3398ecf0eed8e1375`. Two of its cuts are absent
+from the PR5565 composition, but the lower paid cost gives a larger kappa.
 
 For every 0<t<1 and positive a,b, strict concavity gives
 `a^t+b^t>(a+b)^t`. Each split strictly increases the target moment and leaves
 the paid moment fixed. The signed local target change is
 
 ```math
-4H_1+5H_2+7H_4+5H_5+5H_7+3H_8-14H_9.
+2H_1+5H_2+6H_4+6H_5+5H_7+2H_8-13H_9.
 ```
 
 Its rank mass is zero, as required. A source-bound complete caller, not a
@@ -149,8 +152,8 @@ contacts, 53,248 central-square column checks, 3,328 main Gaussian targets,
 spectators, exact phases and every whole target. The complete counts are
 
 ```text
-paid calls:         66852
-productive fields:  13084 = 18*542 + 32*104
+paid calls:         66726
+productive fields:  13048 = 18*540 + 32*104
 rank mass surplus:  760
 maximum target:     145
 maximum paid rank:  72
@@ -165,9 +168,9 @@ It is not left at the old 12,814 value.
 ## 5. Strictification, compiler and outer transfer
 
 Two independent rational interval engines evaluate the complete moments.
-The exact raw crossing is in (0.00309839352211, 0.00309839352212).
-`RESULT.json` gives its rational endpoints and the strict tested margin. The claimed kappa is 0.00309839 and the tested saving is
-0.0030983905. Their gap funds the finite compiler and outer parameters. An exact negative
+The exact raw crossing is in (0.00310045630724, 0.00310045630725).
+`RESULT.json` gives its rational endpoints and the strict tested margin. The claimed kappa is 0.00310045 and the tested saving is
+0.0031004505. Their gap funds the finite compiler and outer parameters. An exact negative
 derivative bound on [0,0.0034] makes this crossing the raw ceiling for this
 fixed invoice under the retained BIT cap. It is not a global optimum.
 
@@ -199,6 +202,7 @@ identities and every new numerical condition within that framework.
 The enormous uniform word and complete rounded multiplier are not
 materialized. These are author-side checks by the same AI-assisted author.
 They are not independent human acceptance or a proof-kernel theorem.
-Two greedy cut orders on PR5569 reached the same fifteen-split histogram.
-That observation does not prove a maximum over bases, cuts, scalar programs,
+The final exact discovery screen tests 52 boundary groups and finds no
+further candidate in its finite basis-pair class. It does not prove a maximum
+over bases, cuts, scalar programs,
 frames, controllers or multiplication algorithms.

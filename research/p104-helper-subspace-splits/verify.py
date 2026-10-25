@@ -56,22 +56,30 @@ def run():
     import construct as R
     import pricing as P
     C = L.load(ROOT/'research/p104-productive-controller/caller.py', 'subspace_p104_caller')
-    source = L.read(HERE/'inputs/PR5580-WORD.json.gz')
+    predecessor = L.replay(L.read(HERE/'inputs/PR5580-WORD.json.gz'))
+    source = L.read(HERE/'inputs/PR5565-WORD.json.gz')
     witnesses = L.read(HERE/'SPLITS.json')
-    need(len(witnesses) == 15, 'Fifteen explicit independent splits')
+    need(len(witnesses) == 13, 'Thirteen explicit independent splits')
     baseline = L.replay(source)
+    source_delta = {}
+    for name, expected in (('paid', {1:-8, 3:-1, 4:-2, 5:4}),
+                           ('helpers', {8:-1, 9:1})):
+        delta = Counter(baseline[name])
+        delta.subtract(predecessor[name])
+        source_delta[name] = {r:n for r,n in delta.items() if n}
+        need(source_delta[name] == expected, 'Exact published PR5565 '+name+' change')
     word, cuts = R.construct(source, witnesses)
     local = L.replay(word)
-    need((local['public_inputs'], local['owned_lifetimes'], local['peak_owned_fields']) == (750, 8, 1),
+    need((local['public_inputs'], local['owned_lifetimes'], local['peak_owned_fields']) == (748, 8, 1),
          'Complete public and owned inventory')
-    need(local['helpers'] == {1:4, 2:5, 4:90, 5:10, 7:5, 8:18, 9:410}, 'Exact helper histogram')
+    need(local['helpers'] == {1:2, 2:5, 4:89, 5:11, 7:5, 8:16, 9:412}, 'Exact helper histogram')
     delta = Counter(local['helpers'])
     delta.subtract(baseline['helpers'])
     delta = {r:n for r,n in delta.items() if n}
-    need(delta == {1:4, 2:5, 4:7, 5:5, 7:5, 8:3, 9:-14}, 'All split credits and removed targets')
+    need(delta == {1:2, 2:5, 4:6, 5:6, 7:5, 8:2, 9:-13}, 'All split credits and removed targets')
     need(local['paid'] == baseline['paid'], 'Same complete local paid histogram')
     columns = L.reverse_columns(word)
-    print('PASS 15 prefix/suffix cuts, every independent row and dense reverse columns', flush=True)
+    print('PASS 13 prefix/suffix cuts, every independent row and dense reverse columns', flush=True)
     native = L.native(word)
     controller = C.construct()
     need(controller == L.read(ROOT/'research/p104-productive-controller/CONTROLLER.json'), 'Same complete caller')
@@ -102,8 +110,9 @@ def run():
     bad = deepcopy(local)
     bad['paid'][1] -= 1
     controls['unpaid_gaussian'] = rejected(lambda: P.assemble(bad, native, controller, physical))
-    result = {'status':'PASS_P104_HELPER_SUBSPACE_KAPPA_00309839',
+    result = {'status':'PASS_P104_HELPER_SUBSPACE_KAPPA_00310045',
               'authenticated_inputs':pins, 'splits':cuts, 'local_helper_delta':delta,
+              'published_source_delta':source_delta,
               'local':local, 'separate_columns':columns, 'native':native,
               'physical_caller':physical, 'complete_cost':costs, 'negative_controls':controls,
               'limits':['The five selected framework assumptions and helper-endpoint contract remain.',

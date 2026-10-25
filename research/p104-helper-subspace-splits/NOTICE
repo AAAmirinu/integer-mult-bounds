@@ -3,6 +3,7 @@ Ali Romman with substantial OpenAI Codex assistance. Apache-2.0.
 The same assistant performed the construction and author-side checks.
 
 Retained contributions:
+Pierre-Loic Doulcet (hexapode): PR5565 commuting-contact construction, used as the exact source.
 Ali Romman: PR5580 contact step and PR5544/5545 complete P104 caller.
 Joel Pulikkan (GamingPuzzled): PR5569 priced helper handoff.
 DreamingOfClouds: PR5561 free helper endpoints and PR5568 search tools.

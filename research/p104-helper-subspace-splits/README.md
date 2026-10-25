@@ -1,35 +1,35 @@
-# Conditional kappa 0.00309839 from independent helper splits
+# Conditional kappa 0.00310045 from independent helper splits
 
-This construction raises complete conditional **kappa to 0.00309839**.
-The gain over [PR5580](https://github.com/CrocSwap/integer-mult-bounds/pull/5580)
-(0.00308189) is **0.00001650**, about **0.5354%**. The gain over selected
-0.003027288235 is **0.000071101765**. The selected record is unchanged.
+This construction raises complete conditional **kappa to 0.00310045**.
+The gain over [PR5565](https://github.com/CrocSwap/integer-mult-bounds/pull/5565)
+(0.00308520) is **0.00001525**, about **0.4943%**. The gain over selected
+0.003027288235 is **0.000073161765**. The selected record is unchanged.
 
 The mechanism changes the independent helper basis. At a common-frame cut,
 one helper combination can finish early and a fresh independent input can
-use the remaining program. Fifteen explicit splits replace 527 helper
-jobs by 542 helper jobs. They add 362 scalar events and no recursive Gaussian
+use the remaining program. Thirteen explicit splits replace 527 helper
+jobs by 540 helper jobs. They add 342 scalar events and no recursive Gaussian
 call. Both input and output support are checked over every field; a local
 pure row alone does not earn a new target.
 
 Read the [proof](PROOF.md), [exact cuts](SPLITS.json), [complete word](WORD.json.gz),
 [receipt](RESULT.json), [source pins](SOURCES.json), and [validation record](VALIDATION.md).
-The first split is an explicit 20-ADD change from one H9 target to independent
+The first split is an explicit 22-event change from one H9 target to independent
 H5 and H4 targets. The complete caller uses the new word at all 18 full sites.
 
 | Quantity | Result |
 | --- | ---: |
-| Local public inputs | 750 |
-| Independent helpers per full call | 542 |
+| Local public inputs | 748 |
+| Independent helpers per full call | 540 |
 | Owned lifetimes / peak owned fields | 8 / 1 |
-| Local events | 25,502 |
-| Complete paid calls | 66,852, unchanged |
-| Complete productive fields | 13,084 |
+| Local events | 25,475 |
+| Complete paid calls | 66,726, unchanged |
+| Complete productive fields | 13,048 |
 | Complete rank-mass surplus | 760, unchanged |
-| Tested saving | 0.0030983905 |
-| Complete conditional kappa | 0.00309839 |
-| Raw crossing | (0.00309839352211, 0.00309839352212) |
-| Exact native maps | 2,926 |
+| Tested saving | 0.0031004505 |
+| Complete conditional kappa | 0.00310045 |
+| Raw crossing | (0.00310045630724, 0.00310045630725) |
+| Exact native maps | 2,923 |
 
 The added helpers enter the complete completion-tail calculation. The tail
 bound changes to 39/40, with `(39/40)^128 < 1/16`. The compiler logarithm
@@ -51,7 +51,7 @@ python3 -B scripts/research_package.py --package research/p104-helper-subspace-s
 ```
 
 The registered hook runs normally and with `-O`. Its success markers are
-`PASS_P104_HELPER_SUBSPACE_KAPPA_00309839` and
+`PASS_P104_HELPER_SUBSPACE_KAPPA_00310045` and
 `PASS_REGISTERED_RESEARCH_PACKAGE`. Direct replay needs no Git or network:
 
 ```sh
@@ -76,15 +76,21 @@ cache covered 334 open PRs and 4,863 Discussion records, with complete remote
 pagination and incomplete sparse local coverage. Source and coverage details
 are coordination evidence, not a novelty proof.
 
-The consumed PR5580 word is pinned to
-`6efa248cf456d6101d757e9d09ba29711d18a13a`. It retains the released PR5569
-handoff and PR5561 helper endpoints. The new basis splits were first found
-on PR5569. Two different greedy cut orders reached the same fifteen-split
-histogram. All fifteen were then composed with PR5580 and checked again. The exact
-source copy is retained in this branch at commit
-`29fe88ba218b5d2192d8e31f07a01d1141afdacd`. Its SHA256 and Git blob match the
-recorded PR5580 source. Registered replay needs only this branch history;
-it does not need cached objects from unmerged PR branches.
+The consumed PR5565 word is pinned to
+`9af814164b9dfc21f19ec737959d67cb71488c95`. It includes Pierre-Loic Doulcet's published
+commuting-contact cascade and the released PR5580/PR5569/PR5561 lineage.
+The source copy is retained in this branch at commit
+`bf64e66656843a64e798b8374cd9f53add3f6f46`. Its SHA256 and Git blob match
+the recorded PR5565 source. The PR5580 copy remains an active comparison
+input: replay checks the exact paid and helper changes supplied by PR5565.
+Registered replay needs this branch history and its main base; it does not
+need cached objects from unmerged PR branches.
+
+The earlier fifteen-split component on PR5580 remains frozen at
+`31a4de233bbdd65c04c63dc3398ecf0eed8e1375`. Two cuts are absent from this
+composition. PR5565's lower paid cost more than offsets that lost target
+gain. The complete claim increases by 0.00000206 over that component.
+This package introduces no new commuting-contact search.
 No new Gaussian itinerary is introduced. Active frame-extension work in
 [Discussion5575](https://github.com/CrocSwap/integer-mult-bounds/discussions/5575)
 is a separate investigation.
@@ -92,8 +98,10 @@ is a separate investigation.
 The final refresh also found [parallel coupled-basis and handoff work](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19154639).
 It uses the same rank-one mechanism and separately changes paid boundary
 work. The [public composition handoff](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19183908)
-releases these fifteen cuts and leaves the six paid-boundary changes with
-the parallel claim. No exclusive method novelty or combined gain is claimed.
+releases the earlier fifteen cuts and leaves the six paid-boundary changes
+with the parallel claim. That claim is testing their composition. This
+package composes only the released PR5565 source with helper splits. No
+exclusive method novelty or gain from the parallel paid changes is claimed.
 The new scalar contacts and input count change the hypotheses of
 [PR5590](https://github.com/CrocSwap/integer-mult-bounds/pull/5590)’s fixed-contact floor.
 
@@ -112,8 +120,10 @@ optimality are not claimed.
 
 ## Sources and credit
 
+- **Pierre-Loic Doulcet / hexapode**: [PR5565](https://github.com/CrocSwap/integer-mult-bounds/pull/5565)
+  supplies the exact commuting-contact source word.
 - **Ali Romman**: [PR5580](https://github.com/CrocSwap/integer-mult-bounds/pull/5580)
-  supplies the exact source word; [PR5544](https://github.com/CrocSwap/integer-mult-bounds/pull/5544)
+  supplies its preceding contact step; [PR5544](https://github.com/CrocSwap/integer-mult-bounds/pull/5544)
   and [PR5545](https://github.com/CrocSwap/integer-mult-bounds/pull/5545) supply
   the complete P104 caller and source replay.
 - **Joel Pulikkan / GamingPuzzled**: [PR5569](https://github.com/CrocSwap/integer-mult-bounds/pull/5569)
@@ -141,7 +151,7 @@ See [NOTICE](NOTICE).
 An independent reviewer can check the first split and then replay the complete
 package. Further gains could use a different compatible cut order, basis or
 frame itinerary. Both prefix and suffix support must be proved before a
-new target receives credit. The two greedy runs do not establish a global
+new target receives credit. The finite discovery screen does not establish a global
 maximum. [TASK.json](TASK.json) gives the first checks and remaining obligations.
 
 The optional continuation screen is reproducible with:
@@ -152,6 +162,6 @@ python3 -I -B research/p104-helper-subspace-splits/search.py
 
 It tests exact elimination-basis pairs at cuts immediately after MOVE events,
 inside equal-boundary helper groups. On the final word it finds no further
-candidate in 53 groups. This result covers those tested pairs. It does not
+candidate in 52 groups. This result covers those tested pairs. It does not
 exclude different cut sequences, arbitrary basis combinations or new frames.
 The complete-kappa verifier does not depend on a discovery search failure.

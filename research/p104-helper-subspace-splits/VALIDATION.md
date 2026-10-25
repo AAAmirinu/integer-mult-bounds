@@ -1,11 +1,11 @@
 # Validation record
 
-Environment: macOS, CPython 3.12.14, standard library only. All scientific
+Environment: macOS, CPython 3.12.14, standard library only. Scientific
 replays run serially in the isolated `codex/kappa-structural-20261025` worktree.
 The scientific base is canonical main
 `5e0052ca0aa3036a3afa8b0438927377c8d97d53`.
 
-## Completed checks
+## Current composition
 
 The direct isolated normal replay passed with explicit artifact generation:
 
@@ -13,65 +13,39 @@ The direct isolated normal replay passed with explicit artifact generation:
 python3 -I -B research/p104-helper-subspace-splits/verify.py --write
 ```
 
-It checked all 15 prefix and suffix witnesses, every intermediate complete
-interface, 574,564 final transpose coefficients, 2,926 exact native maps,
-1,084 helper normalizers, 208 main adapters and the complete physical caller.
+It checked 13 prefix and suffix witnesses, each complete arbitrary-input
+interface, 571,536 final transpose coefficients, 2,923 exact native maps,
+1,080 helper normalizers, 208 main adapters and the complete physical caller.
 Two exact moment engines, all compiler conditions, 54 strict outer conditions
 and four functional conditions passed. All eight local/controller mutation
 controls rejected. The retained wrong-phase, old-cutoff and old-BIT controls
 also rejected. The raw crossing is in
-(0.00309839352211, 0.00309839352212).
+(0.00310045630724, 0.00310045630725).
 
-The first parameter trial failed the compiler complement-capacity condition
-with logarithm power 1000. The final power 1024 passes that condition and the
-complete compiler check. The old count and growth constants are not reused
-for the changed helper inventory.
+The verifier authenticates 13 live inputs before importing any source code.
+It replays both retained source words and checks the exact paid and helper
+deltas supplied by PR5565. All new splits preserve the PR5565 paid profile.
+The new local paid rank mass is 6014 and enters the native growth bound.
+The exact discovery run tested 52 final boundary groups and found no further
+candidate in its finite basis-pair class. This is not a global optimum.
 
-The optional final-word discovery screen returned 53 tested boundary groups
-and no further candidate. The screen restricts the cut locations and tested
-basis pairs; it is not an optimality certificate.
+Registered normal/optimized replay is in progress. The committed-byte check
+and fresh read-only Git-free export will follow. These checks are not yet
+claimed for this composition in this revision.
 
-## Committed and exported replay
+## Retained evidence
 
-The final scientific files at commit
-`31a4de233bbdd65c04c63dc3398ecf0eed8e1375` passed the registered normal and
-optimized replays:
+The earlier fifteen-split component on PR5580 passed normal, optimized,
+registered and read-only Git-free replay at scientific commit
+`31a4de233bbdd65c04c63dc3398ecf0eed8e1375`. That evidence applies to its
+0.00309839 claim. It is not substituted for the new composition checks.
 
-```sh
-python3 -W error -B scripts/research_package.py --package research/p104-helper-subspace-splits --check-only
-python3 -W error -B scripts/research_package.py --package research/p104-helper-subspace-splits
-python3 -B scripts/check_research_commit.py --package research/p104-helper-subspace-splits --ref 31a4de233bbdd65c04c63dc3398ecf0eed8e1375
-```
-
-The package metadata, source pins and exact committed bytes passed.
-The registered hook ended with `PASS_REGISTERED_RESEARCH_PACKAGE`.
-Both scientific modes ended with `PASS_P104_HELPER_SUBSPACE_KAPPA_00309839`.
-Later publication edits affect only documentation and TASK metadata.
-
-The official exporter produced a 27-file payload plus its export manifest
-from that commit. Its integrity check passed. In a fresh directory with no
-Git repository, empty PATH, read-only files and read-only directories, the
-isolated optimized verifier passed. Every file hash and mode stayed fixed.
-A temporary one-byte source corruption was rejected at SHA256 authentication
-before any imported source code ran. The original bytes and mode were then
-restored and checked. The final harness marker was
-`PASS_READ_ONLY_GIT_FREE_REPLAY_AND_SOURCE_FAULT` (28 files with the manifest).
-
-```sh
-python3 -B scripts/export_research_package.py export --package research/p104-helper-subspace-splits --ref 31a4de233bbdd65c04c63dc3398ecf0eed8e1375 --output /tmp/helper-splits.tar
-python3 -B scripts/export_research_package.py check /tmp/helper-splits.tar
-```
-
-The copied source is pinned to its retained path at ancestor commit
-`29fe88ba218b5d2192d8e31f07a01d1141afdacd`. Its SHA256 and Git blob equal the
-recorded PR5580 source. The original PR5580 Git object was checked before
-this retention change. The final registered replay does not require cached
-unmerged-branch objects. The base and retained-source commits were both
-confirmed as ancestors of the contribution. Full-history preflight was not
-run because this checkout is shallow.
-
-The final continuation screen also allows the source's owned erasures. It
-still returns 53 tested boundary groups and no further candidate.
+The source copies are pinned to their retained paths at ancestor commits
+`29fe88ba218b5d2192d8e31f07a01d1141afdacd` (PR5580) and
+`bf64e66656843a64e798b8374cd9f53add3f6f46` (PR5565). Each SHA256 and Git blob
+equals the recorded published source. Registered replay needs no cached
+unmerged-branch objects. Full-history preflight was not run because this
+checkout is shallow.
 
 Independent human review and hosted CI are pending. No complete rounded
 multiplier or enormous uniform word was materialized.
