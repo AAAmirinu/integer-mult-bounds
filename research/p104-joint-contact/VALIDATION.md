@@ -87,6 +87,18 @@ import. It registers two extra 30-second commands; all six declared command
 timeouts total 1,200s. The source arithmetic interpreter is credited
 unchanged reuse from PR5548, not a newly authored independent engine.
 
+The bound native wrapper at scientific appendix commit
+`b8581ee21af9b4bde69112ad6f5b921bb9f34c68` also passed an official-export
+cold replay: new path with spaces, files0444, no Git, empty PATH, absolute
+isolated Python. Normal/optimized runs took2.286/2.203s and produced
+identical stdout SHA256
+`754f8bd5d5d3bc31acbea201f5705cdfcab9da3693e05d24afd5019b52d24e68`.
+All69 exported files including the manifest remained byte-identical.
+The wrapper makes only its own temporary mutation copies writable.
+Of the previous43 files, only README, PROOF, VALIDATION and VERIFY changed;
+all earlier scientific code, inputs and outputs stayed exact. This final
+paragraph is a documentation-only record of that completed cold run.
+
 ## Limits
 
 All five framework premises in PROOF.md remain. Native algebra is checked
