@@ -25,6 +25,16 @@
       ],
       "timeout_seconds": 30,
       "checks": "All-prefix algebra rank certificate, raw internal pivot, exact endpoint and three scientific controls"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/test_package.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Isolated normal and optimized source-before-import authentication, typed receipt and native recipe mutations"
     }
   ]
 }

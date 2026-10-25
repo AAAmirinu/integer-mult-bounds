@@ -9,3 +9,5 @@ A decisive positive control exposes one internal raw C2 cut: its stacked grade-t
 ## Open next questions
 
 Can the raw cut be exposed by an actual recursively priced child while retaining the remaining state, precision and cleanup contract? Can its lower-grade contamination be removed without losing the apparent saving? These need a new complete producer/observer invoice before construction expansion. No selected result or kappa change is claimed.
+
+Package-boundary controls run with `python3 -I -B research/shared-port-prefix-observation/test_package.py`: copied-source mutation must fail before import; receipt mutation must fail in normal and optimized Python. All executable inputs are local to this package. Frozen predecessor bytes retain their attribution.
