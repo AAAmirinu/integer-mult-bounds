@@ -11,6 +11,19 @@ Their mathematics was **not independently replayed in this pass**. Merged archiv
 retain contributors' work; they do not certify the claims. Pin and validate any
 pending dependency your work uses. Check live heads and handoffs before assignment.
 
+## Scoped qualification: PR5285 receiver-census coverage (October 25)
+
+The [source-bound coverage correction](../../research/h8-census-coverage/README.md)
+qualifies PR5285's full h=8 BIT-family closure statement. Its recorded tables
+represent 43,122 of 344,019,474 declared puncture-set/receiver pairs; only
+PR589's one puncture set has exhaustive receiver coverage. The check independently
+reconstructs all 17,478 admissible sets and supplies an omitted input. This is
+a missing exclusion/equivalence argument, not a better word or a counterexample to the
+claimed optimum. The original sampled search, prices and transfer evidence
+retain their credit and scope. A separate driver/description effort mismatch
+is documented. No new κ; archive-only status and frozen sources are unchanged.
+Do not treat this correction as a request for an unbounded replacement census.
+
 ## Current leads
 
 | Family | Decision and next useful work | Stop / reopening condition |
