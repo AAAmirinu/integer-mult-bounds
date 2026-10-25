@@ -38,6 +38,17 @@
       ],
       "timeout_seconds": 30,
       "checks": "optimized-source-equivalence"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-B",
+        "{package}/test_integrity.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Git-free optimized replay, missing/changed source, altered archive and typed-receipt corruption"
     }
   ]
 }
