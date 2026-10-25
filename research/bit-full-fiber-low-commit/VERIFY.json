@@ -35,6 +35,16 @@
       ],
       "timeout_seconds": 60,
       "checks": "Complete GL2 full-payload forward/inverse tape execution, independent interpreter, actual S8 source map, descriptors/owned erasure, full movement bill and failure controls"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/test_sources.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Modified declared source rejection in a copied Git-free closure under normal and optimized Python"
     }
   ]
 }

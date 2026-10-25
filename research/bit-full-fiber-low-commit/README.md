@@ -8,8 +8,8 @@ All runtime instructions are local symbol operations and unit head moves.
 
 [PROOF.md](PROOF.md) specifies the actual layout and universal loop invariants.
 For T low types, D high coordinates, runtime Q,Z, V=T Q^D Z and K=TDb old-cache
-bits, the commit costs at most `128(T+D+1)V+8K+128D` transitions and
-`(D+5)V+2K+64(D+1)` visited cells. A separate literal initializer prepares the
+bits, the commit costs at most `128(T+D+1)V+16K+16+128D` transitions and
+`(D+8)V+2K+64(D+1)` visited cells. A separate literal initializer prepares the
 complete old cache in at most `5K+16` transitions. Runtime extent multiplication
 is performed by nested tape loops, not a host arithmetic instruction. Finite
 compilation and repeated source scans are explicitly charged; these large
@@ -43,7 +43,9 @@ complete cases; all eight inputs of a three-block bit example are exhausted.
 Actual S8 source checks use q=3,5,7 and w=2,4. They bind the mathematical source
 map, not a materialization of the enormous full GL8 payload. Six controls reject
 invalid type tables, dimensions, cache bits, stale old data, short payloads and
-zero extents. The written invariants establish all-width correctness; bounded
+zero extents. A K=1000, T=D=V=1 regression exceeds the superseded 8K
+cache formula and passes the corrected 16K+16 charge. A separate copied
+Git-free test rejects source changes in normal and optimized modes. The written invariants establish all-width correctness; bounded
 fixtures are not presented as its proof.
 
 ## Source and scope

@@ -69,7 +69,7 @@ def check(program,permutation,D,cache,Q,Z,payload,modules,translated=False,prima
     prep=compile_cache(modules['machine'],cache,program.tapes)
     prepared,prepare_steps,_=execute(prep,empty,5*len(cache)+16)
     need(prepared==bank,'literal full old-cache preparation')
-    bound=128*(len(permutation)+D+1)*V+8*K+128*D
+    bound=128*(len(permutation)+D+1)*V+16*K+16+128*D
     output,steps,space=execute(program,bank,bound)
     expected=[0]*V
     for src,dst in enumerate(permutation):
@@ -79,7 +79,7 @@ def check(program,permutation,D,cache,Q,Z,payload,modules,translated=False,prima
     for i in (1,4,*range(5,program.tapes)):
         origin=bank[i][1]-(1 if i==4 else 0)
         need(output[i]==({},origin),'owned storage or head not erased: '+str(i))
-    need(space<=(D+5)*V+2*K+64*(D+1),'visited-space envelope')
+    need(space<=(D+8)*V+2*K+64*(D+1),'visited-space envelope')
     if primary:
         m=modules['machine']
         machine=m.Machine(program,[m.Tape(c,h) for c,h in bank]).run(bound)
@@ -105,6 +105,13 @@ def main():
     perm=[2,0,1];cache=[0,1,1,0];program=compile_commit(m,c,perm,1,cache)
     for value in range(8):
         records.append(check(program,perm,1,cache,1,1,[(value>>i)&1 for i in range(3)],modules,primary=True))
+    # The generic cache length is independent of V. This rejects the old 8K
+    # invoice even at the exact requested K=1000, T=D=V=1 boundary.
+    long_cache=[i%2 for i in range(1000)]
+    long_program=compile_commit(m,c,[0],1,long_cache)
+    long_record=check(long_program,[0],1,long_cache,1,1,[1],modules,True)
+    need(long_record['steps']>128*3+8*1000+128,'long-cache undercharge control')
+    records.append(long_record)
     # Read actual S8 and bind both modular directions to the actual source ABI.
     source=json.loads(gzip.decompress(raw['research/bit-row-route-generator/PROGRAM.json.gz']))
     S=[[Fraction(v) for v in row] for row in source['matcher']]

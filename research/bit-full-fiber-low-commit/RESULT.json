@@ -1,10 +1,10 @@
 {
   "code_hashes": {
-    "PROOF.md": "505a8470fcaae2dcf000f6427ec9d8926f34115ca17391cc928260b4f927c60f",
+    "PROOF.md": "82cf7fb98db939fc06523282b2516357d6f8f17494bddd46de31d2fe37de8d62",
     "controller.py": "21112808749b1894715e27f2f5b12e04b405ebdd0fa38805ccaf530fe9864c49",
     "loader.py": "adee3e66f16cf3e98eb1bf0faab036042cf9b7fe4c5075b8dd028fec32143465",
     "type_compiler.py": "f12d827b3655981f9149d1b523bf009c30306d2bc5f89d135a386443d8ab5dfb",
-    "verify.py": "3becb634a2b6f34796b8340c1e4f57efc982ef0cc728185c4c9a271d90b8bda2"
+    "verify.py": "3d7208d4a091ed800673d9a13cc55d9922f6a1879eb849543525e9277abc4c2c"
   },
   "controls": [
     "duplicate_type",
@@ -182,6 +182,18 @@
       "types": 3,
       "visited": 34,
       "volume": 3
+    },
+    {
+      "Q": 1,
+      "Z": 1,
+      "cache_prepare_steps": 4008,
+      "dimensions": 1,
+      "endpoint_sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a",
+      "instructions": 2281,
+      "steps": 12250,
+      "types": 1,
+      "visited": 1026,
+      "volume": 1
     }
   ],
   "schema_version": 1,

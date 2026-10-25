@@ -50,7 +50,7 @@ single-cache ABI unchanged.
 
 The instruction program unrolls pi^-1 as finite state control, with no runtime
 permutation table lookup. Its length is O(T^2+K+D). A conservative pre-input
-work envelope is O(q^D N^3 (log q)^2 + T D log q + T^2 + D) exact bit operations,
+work envelope is O(q^D N^3 (log q)^3 + T^2 D log q + D) exact bit operations,
 plus rational source reduction and inverse preparation. Schoolbook modular
 elimination may be bounded more loosely by an additional log q factor without
 changing the fixed-parameter conclusion. No GL8(Fq) enumeration is executed in
@@ -124,20 +124,28 @@ A segment costs at most 16H+8 including its H-counter rewind, whether copied
 or skipped. Validation uses T segments. Gathering uses
 `sum_k (pi^-1(k)+1)=T(T+1)/2` segments, plus T source rewinds, each at most
 3V+3. Output/source installation, marker removal and returns cost at most
-24V+24. Cache validation and retirement cost at most 8K+8. With H>=1 and
+24V+24. Cache validation and return use 5K+4 transitions; erasure from its first
+bit uses 7K+5, hence 12K+9 together. We allow 16K+16 independently
+of payload volume, including arbitrarily long generic caches. With H>=1 and
 V=TH, the following deliberately loose envelope covers all these instructions:
 
-`transitions <= 128(T+D+1)V + 8K + 128D`.
+`transitions <= 128(T+D+1)V + 16K + 16 + 128D`.
 
-The implemented separate cache initializer adds at most 5K+16. For fixed
+The implemented separate cache initializer adds at most 5K+16. It visits
+K+3 cache cells because it steps one cell beyond RIGHT before returning;
+the commit alone visits K+2. The combined space envelope below absorbs that
+extra cell. For fixed
 N,q, both terms are O_(N,q)(V), since K=TDb<=Db V. This does not assert a small
 constant or a whole supplier recurrence.
 
 Source and output consume at most 2V+4 visited cells; the H counter consumes
-H+2; D Q counters, Z counter, binary work and input descriptors consume at most
-(D+3)H+O(D); old cache consumes K+2. The conservative checked envelope is
+H+2; the D Q counters and one Z counter consume at most (D+1)H
+plus their markers. The two input descriptor lengths and the maximum binary
+work length are each at most H, adding at most 3H and their markers. Old cache
+consumes K+2. Thus the payload-dependent part is at most (D+7)V;
+the following envelope leaves another V plus explicit marker/head slack. The conservative checked envelope is
 
-`visited cells <= (D+5)V + 2K + 64(D+1)`.
+`visited cells <= (D+8)V + 2K + 64(D+1)`.
 
 It includes cells subsequently erased. Tape translations change no interval
 length. Runtime width enters through Q and payload H, not program size.
