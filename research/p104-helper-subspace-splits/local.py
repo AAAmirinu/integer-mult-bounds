@@ -49,17 +49,19 @@ def span(basis):
 
 def replay(w):
     public = w['public']
+    owned = w.get('owned_fields', 8)
+    need(type(owned) is int and 8 <= owned <= 9, 'Owned inventory bound')
     need(type(public) is int and 735 <= public <= 750, 'Public inventory bound')
     need(len(w['initial']) == len(w['final']) == public, 'Public boundary size')
     need(len(w['program']) < 26000, 'Fixed operation bound')
     frames = [span(x) for x in w['frames']]
-    rows = [{r:Q(1)} for r in range(public+8)]
-    current = list(w['initial']) + [None]*8
+    rows = [{r:Q(1)} for r in range(public+owned)]
+    current = list(w['initial']) + [None]*owned
     paid, scalar, live_owned, peak = Counter(), 0, set(), 0
     lifetimes = 0
     for e in w['program']:
         op, r = e[:2]
-        need(0 <= r < public+8, 'Role index')
+        need(0 <= r < public+owned, 'Role index')
         if op == 'MOVE':
             _, r, a, b, private = e
             need(current[r] == a and (r in live_owned) == private, 'Transport source and ownership')
@@ -92,7 +94,7 @@ def replay(w):
                 scalar += 2*(abs(n.bit_length()-d.bit_length()) + int(q < 0))
             else:
                 s = e[2]
-                need(s != r and 0 <= s < public+8 and current[s] == f, 'Common scalar chart')
+                need(s != r and 0 <= s < public+owned and current[s] == f, 'Common scalar chart')
                 if op == 'COPY':
                     need(r in live_owned and not rows[r], 'COPY into cleared owned field')
                     rows[r] = {k:q*x for k,x in rows[s].items()}
@@ -100,7 +102,7 @@ def replay(w):
                     need(op == 'ADD', 'Scalar opcode')
                     add(rows[r], rows[s], q)
                 scalar += 2*(3+n.bit_length()-1+n.bit_count()+d.bit_length()-1)
-    need(not live_owned and peak == 1 and current[:public] == w['final'], 'All public and owned exits')
+    need(not live_owned and 0 < peak <= 2 and current[:public] == w['final'], 'All public and owned exits')
     live = set(w['live'])
     for r,row in enumerate(rows):
         expected = {r:Q(1)} if r < public else {}
@@ -110,14 +112,14 @@ def replay(w):
     main = live | {r+112 for r in live}
     helpers = Counter(len(w['frames'][w['final'][r]])-len(w['frames'][w['initial'][r]]) for r in range(public) if r not in main)
     need(len(live) == len(w['ports']) == 104 and len(main) == 208 and min(helpers) > 0, 'Independent productive inputs')
-    return {'paid':dict(paid), 'helpers':dict(helpers), 'public_inputs':public, 'owned_lifetimes':lifetimes,
-            'peak_owned_fields':peak, 'real_scalar_allowance':scalar, 'endpoint_coefficients':(public+8)*(public+8),
+    return {'paid':dict(paid), 'helpers':dict(helpers), 'public_inputs':public, 'owned_fields':owned, 'owned_lifetimes':lifetimes,
+            'peak_owned_fields':peak, 'real_scalar_allowance':scalar, 'endpoint_coefficients':(public+owned)*(public+owned),
             'paid_rank_mass':sum(r*count for r,count in paid.items())}
 
 def reverse_columns(w):
     """Check the transpose with dense dyadic rows and the reverse chronology."""
     public = w['public']
-    n = public+8
+    n = public+w.get('owned_fields', 8)
     rows = [[int(i == j) for j in range(n)] for i in range(n)]
     exponents = [0]*n
     for e in reversed(w['program']):

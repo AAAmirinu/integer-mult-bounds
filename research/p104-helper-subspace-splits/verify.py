@@ -56,7 +56,8 @@ def run():
     import construct as R
     import pricing as P
     C = L.load(ROOT/'research/p104-productive-controller/caller.py', 'subspace_p104_caller')
-    predecessor = L.replay(L.read(HERE/'inputs/PR5580-WORD.json.gz'))
+    predecessor_word = L.read(HERE/'inputs/PR5580-WORD.json.gz')
+    predecessor = L.replay(predecessor_word)
     cascade = L.replay(L.read(HERE/'inputs/PR5565-WORD.json.gz'))
     source = L.read(HERE/'inputs/PR5601-WORD.json.gz')
     witnesses = L.read(HERE/'SPLITS.json')
@@ -74,22 +75,34 @@ def run():
             delta.subtract(before[name])
             source_delta[label][name] = {r:n for r,n in delta.items() if n}
             need(source_delta[label][name] == profile, 'Exact published '+label+' '+name+' change')
+    source, relay_receipt = R.merge_relay(predecessor_word, source)
+    relay_local = L.replay(source)
+    relay_delta = Counter(relay_local['paid'])
+    relay_delta.subtract(baseline['paid'])
+    need({r:n for r,n in relay_delta.items() if n} == {1:-1,2:-1,3:-1,6:1}, 'Exact published relay paid delta')
+    need(relay_local['helpers'] == baseline['helpers'], 'The relay retains every independent target')
     boundaries = L.read(HERE/'BOUNDARIES.json')
     boundary_word, boundary_receipts = R.boundary_changes(
         source, boundaries, L.read(HERE/'inputs/PR5602-WITNESS.json'))
     baseline = L.replay(boundary_word)
-    word, cuts = R.construct(boundary_word, witnesses)
-    local = L.replay(word)
-    need((local['public_inputs'], local['owned_lifetimes'], local['peak_owned_fields']) == (744, 8, 1),
-         'Complete public and owned inventory')
-    need(local['helpers'] == {1:2, 2:5, 4:91, 5:6, 7:5, 8:16, 9:411}, 'Exact helper histogram')
-    delta = Counter(local['helpers'])
+    split_word, cuts = R.construct(boundary_word, witnesses)
+    split_local = L.replay(split_word)
+    delta = Counter(split_local['helpers'])
     delta.subtract(baseline['helpers'])
     delta = {r:n for r,n in delta.items() if n}
     need(delta == {1:2, 2:5, 4:2, 5:2, 7:5, 8:2, 9:-9}, 'All split credits and removed targets')
-    need(local['paid'] == baseline['paid'], 'Same complete local paid histogram')
+    need(split_local['paid'] == baseline['paid'], 'Same paid histogram after independent splits')
+    preparation = L.read(HERE/'PREPARATION.json')
+    word, prepared_receipt = R.prepare_helper(split_word, preparation)
+    local = L.replay(word)
+    need((local['public_inputs'], local['owned_fields'], local['owned_lifetimes'], local['peak_owned_fields']) == (743,9,11,2),
+         'Complete independent input, owned role, lifetime and peak counts')
+    need(local['helpers'] == {1:2,2:4,4:91,5:6,7:5,8:16,9:411}, 'Exact final helper histogram with H2 debited')
+    prepared_paid = Counter(split_local['paid'])
+    prepared_paid[1] -= 2
+    need(local['paid'] == prepared_paid, 'Both replaced rank-one Gaussian calls are removed')
     columns = L.reverse_columns(word)
-    print('PASS 5 fixed boundary changes, 9 independent cuts, every row and reverse column', flush=True)
+    print('PASS shared relay, 5 boundaries, 9 splits, 2 prepared queries, all rows and columns', flush=True)
     native = L.native(word)
     controller = C.construct()
     need(controller == L.read(ROOT/'research/p104-productive-controller/CONTROLLER.json'), 'Same complete caller')
@@ -109,11 +122,14 @@ def run():
     bad[0]['witness']['cut'] += 1
     controls['wrong_boundary_event'] = rejected(lambda: R.boundary_changes(
         source, bad, L.read(HERE/'inputs/PR5602-WITNESS.json')))
+    bad = deepcopy(preparation)
+    bad['replacements'][0]['suppliers'][1][1] = '-1'
+    controls['false_preparation_identity'] = rejected(lambda: R.prepare_helper(split_word, bad))
     bad = deepcopy(word)
-    bad['program'].pop(0)
+    bad['program'].pop(next(i for i,e in enumerate(bad['program']) if e[0] in ('ADD','SCALE')))
     controls['missing_input_basis'] = rejected(lambda: L.replay(bad))
     bad = deepcopy(word)
-    bad['program'].pop()
+    bad['program'].pop(max(i for i,e in enumerate(bad['program']) if e[0] in ('ADD','SCALE')))
     controls['missing_output_basis'] = rejected(lambda: L.replay(bad))
     bad = deepcopy(word)
     bad['final'][259] = 127
@@ -122,11 +138,15 @@ def run():
     bad['helpers'][1] += 1
     controls['extra_helper_credit'] = rejected(lambda: P.assemble(bad, native, controller, physical))
     bad = deepcopy(local)
+    bad['helpers'][2] += 1
+    controls['unremoved_prepared_target'] = rejected(lambda: P.assemble(bad, native, controller, physical))
+    bad = deepcopy(local)
     bad['paid'][1] -= 1
     controls['unpaid_gaussian'] = rejected(lambda: P.assemble(bad, native, controller, physical))
-    result = {'status':'PASS_P104_HELPER_SUBSPACE_KAPPA_00310261',
+    result = {'status':'PASS_P104_HELPER_SUBSPACE_KAPPA_00310432',
               'authenticated_inputs':pins, 'splits':cuts, 'local_helper_delta':delta,
               'boundaries':boundary_receipts,
+              'relay':relay_receipt, 'preparation':prepared_receipt,
               'published_source_delta':source_delta,
               'local':local, 'separate_columns':columns, 'native':native,
               'physical_caller':physical, 'complete_cost':costs, 'negative_controls':controls,

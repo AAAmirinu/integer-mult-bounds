@@ -1,10 +1,10 @@
 # Independent helper splits and the complete cost
 
 This proof changes the helper input and output contract of the exact PR5601
-word. Five fixed PR5602 boundary relations remove five paid H5 calls. Nine
-independent target splits then retain all remaining calls. Every main endpoint
-and chronological owned path is preserved. Scalar identities are rational;
-the native check supplies exact phases and the rule for every positive width.
+word. It composes released relay and boundary changes, nine independent
+splits and two prepared queries. Every main endpoint is retained. Every
+owned operation and removed target is checked and charged. Scalar identities
+are rational; the native check supplies exact phases at every positive width.
 
 ## 1. A split criterion
 
@@ -60,7 +60,8 @@ one U-to-V target by a U-to-F target and an F-to-V target.
 This uses a new input, not two outputs computed from one input. It does not
 assume a helper is zero. The early output is a public field and stays live
 until the caller returns. The successor input is public from the start and
-is first used at the cut. No new COPY, CLEAR or owned lifetime is introduced.
+is first used at the cut. The split itself introduces no new COPY, CLEAR
+or owned lifetime.
 The source's owned erasures remain charged under the inherited contract.
 
 All three basis changes use common physical charts. They therefore commute
@@ -71,7 +72,14 @@ positive width; it is not a test at width one alone.
 
 ## 2. Five released boundary relations
 
-The input is PR5601 at `8f7e870b22885a367b347dc12791da98fd53f83d`.
+The geometric input is PR5601 at `8f7e870b22885a367b347dc12791da98fd53f83d`.
+The PR5605 constructor at `4a57d245ac3918ccc9947a867ece24573605e243` first
+reconstructs its exact relay word on the common PR5580 source. Its eight
+changed intervals are disjoint from PR5601's 21 changed intervals, including
+insertions. A strict merge rejects overlap, retains PR5601's frame metadata,
+and replays the complete result. The relay changes the local paid profile by
+`H6-H1-H2-H3` and preserves every independent target. The source's explicit
+input preconditioning and late cleanup remain in the merged program.
 The retained PR5602 constructor and witness come from
 `6c224aa720203c4f4615e6538d8038a275387db8`. No coefficient, helper, frame,
 cancellation vector or output vector in those relations changes. Only the
@@ -85,7 +93,8 @@ corresponding early-input rule. The source constructor uses an algebraic
 transpose to derive that rule; it does not execute the owned program backward.
 The final program restores the eight COPY opcodes. Its complete subsequence
 of operations involving owned fields equals the original chronological
-subsequence, byte for byte, before the independent splits rename owned roles.
+subsequence of the merged relay source, byte for byte, before the independent
+splits rename owned roles. The final preparation adds its own owned role.
 
 The five fixed relations use helpers 652, 341, 596, 668 and 684. Each replaces
 one H9 helper target by H4 and removes one paid H5. The complete arbitrary-input
@@ -95,7 +104,7 @@ frame-597 contact absent from the PR5565 cascade; it is not used.
 ## 3. Nine independent splits
 
 After those five changes, the first split uses the cut after zero-based
-event 12504, chart 306 of dimension four, and pivot 259. Its helper group
+event 12516, chart 306 of dimension four, and pivot 259. Its helper group
 has initial chart 3 (dimension zero) and final chart 127 (dimension nine).
 With e_r the coordinate at role r, the exact vectors are
 
@@ -123,11 +132,10 @@ replay checks each intermediate construction. A separate dense-integer
 transpose replay checks all 565,504 entries of the final 752 by 752 interface.
 
 The nine splits are two H9 to H4+H5, five H9 to H2+H7, and two H9 to H1+H8.
-They add nine independent inputs. The source's 735 public fields become 744,
-with 536 helpers and 208 main fields. Eight owned lifetimes remain, with
-one live at a time. The source has 25,132 events; the boundary step has
-25,137; the final word has 25,393. The split step adds 256 scalar events.
-The new local helper profile is
+They add nine independent inputs before preparation. The 735 public fields
+become 744, with 536 helpers and 208 main fields. The source has 25,132 events;
+the relay has 25,159; the boundary step has 25,164; the split word has 25,420.
+The split step adds 256 scalar events. Its helper profile is
 
 ```text
 {1:2, 2:5, 4:91, 5:6, 7:5, 8:16, 9:411}.
@@ -139,18 +147,58 @@ PR5601 paid delta `-2H2+2H3-2H4+H5` and helper delta `H4-H5`. These are
 credited source changes, not new discoveries in this package.
 
 For 0<t<1, define `g(a,b)=a^t+b^t-(a+b)^t`. Strict concavity gives g(a,b)>0.
-Against the consumed PR5601 word, the complete target-minus-paid moment
-increases by
+The preparation below adds one more strictly positive term. Against the
+consumed PR5601 word, the complete target-minus-paid moment increases by
 
 ```math
-18[7g(4,5)+5g(2,7)+2g(1,8)].
+18[7g(4,5)+5g(2,7)+2g(1,8)+g(1,2)+g(3,3)+g(1,1)].
 ```
 
-Five g(4,5) terms come from the fixed boundary relations; two come from
-independent splits. All new target credits and removed paid calls are
-counted in the final invoice. The two complete rank masses both change;
-their difference stays 760. The old components' reported kappa gains are
-not added.
+The five boundary relations supply five g(4,5) terms. The nine splits supply
+the next two g(4,5), five g(2,7) and two g(1,8) terms. The relay supplies
+`g(1,2)+g(3,3)=1+2^t+3^t-6^t`. Preparation supplies `g(1,1)=2-2^t`.
+Every target debit and removed paid call enters the final invoice. The old
+components' reported kappa gains are not added.
+
+## 3a. Prepare the rank-two prefix
+
+PR5606 supplies two exact value identities for prefix helper 573. In the
+new split word, its input is set to zero. At events 13640 and 13665, the
+complete normalized rows satisfy
+
+```math
+r_{573}=r_{572}-2r_{732} \quad\hbox{at chart 595},
+```
+
+```math
+r_{573}=r_{572}+2r_{710} \quad\hbox{at chart 603}.
+```
+
+The suppliers are live in the destination chart at each site. These are
+checks on the new word; they are not assumed from the old source. Each
+rank-one query is replaced by CLEAR, INIT, COPY and ADD. The helper is owned
+from the start, and its final normalized row is zero before the last CLEAR.
+The rank-two productive target is removed. Thus the local paid profile loses
+two H1 calls, and the target profile loses one H2.
+
+The constructor renames retired role 573 to owned role 751. Public roles above
+573 shift down by one; the eight original owned roles shift down by one.
+All main roles are below 573 and keep their labels. The final word declares
+nine owned roles, eleven initialization/erasure lifetimes and peak occupancy
+two. Earlier frozen inputs retain their original eight-role format. The
+checker derives matrix width and ownership bounds from this declared inventory.
+
+The final word has 743 independent public inputs, 535 helpers and 25,428
+events. Its 752 by 752 matrix includes all nine owned roles. The final helper
+profile is
+
+```text
+{1:2, 2:4, 4:91, 5:6, 7:5, 8:16, 9:411}.
+```
+
+The added COPY/ADD work and all three new lifetimes enter the scalar and
+route bounds. The complete bill uses the smaller target count and peak two;
+it does not retain the old target credit or one-owned-field bound.
 
 ## 4. Native maps and the caller
 
@@ -171,8 +219,8 @@ contacts, 53,248 central-square column checks, 3,328 main Gaussian targets,
 spectators, exact phases and every whole target. The complete counts are
 
 ```text
-paid calls:         66618
-productive fields:  12976 = 18*536 + 32*104
+paid calls:         66546
+productive fields:  12958 = 18*535 + 32*104
 rank mass surplus:  760
 maximum target:     145
 maximum paid rank:  72
@@ -187,9 +235,9 @@ It is not left at the old 12,814 value.
 ## 5. Strictification, compiler and outer transfer
 
 Two independent rational interval engines evaluate the complete moments.
-The exact raw crossing is in (0.00310261511129, 0.00310261511130).
-`RESULT.json` gives its rational endpoints and the strict tested margin. The claimed kappa is 0.00310261 and the tested saving is
-0.0031026105. Their gap funds the finite compiler and outer parameters. An exact negative
+The exact raw crossing is in (0.00310432143397, 0.00310432143398).
+`RESULT.json` gives its rational endpoints and the strict tested margin. The claimed kappa is 0.00310432 and the tested saving is
+0.0031043205. Their gap funds the finite compiler and outer parameters. An exact negative
 derivative bound on [0,0.0034] makes this crossing the raw ceiling for this
 fixed invoice under the retained BIT cap. It is not a global optimum.
 
@@ -221,7 +269,7 @@ identities and every new numerical condition within that framework.
 The enormous uniform word and complete rounded multiplier are not
 materialized. These are author-side checks by the same AI-assisted author.
 They are not independent human acceptance or a proof-kernel theorem.
-The final exact discovery screen tests 47 boundary groups and finds no
+The final exact discovery screen tests 46 boundary groups and finds no
 further candidate in its finite basis-pair class. It does not prove a maximum
 over bases, cuts, scalar programs,
 frames, controllers or multiplication algorithms.

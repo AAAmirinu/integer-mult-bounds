@@ -1,9 +1,9 @@
 {
-  "authenticated_inputs": 16,
+  "authenticated_inputs": 17,
   "boundaries": [
     {
-      "cut": 11355,
-      "events": 25134,
+      "cut": 11373,
+      "events": 25161,
       "helper": 652,
       "helpers": {
         "4": 85,
@@ -12,19 +12,19 @@
         "9": 424
       },
       "paid": {
-        "1": 2203,
-        "2": 457,
-        "3": 495,
+        "1": 2202,
+        "2": 456,
+        "3": 494,
         "4": 90,
         "5": 168,
-        "6": 18,
+        "6": 19,
         "7": 14
       },
       "reverse": true
     },
     {
-      "cut": 11151,
-      "events": 25131,
+      "cut": 11163,
+      "events": 25158,
       "helper": 341,
       "helpers": {
         "4": 86,
@@ -33,19 +33,19 @@
         "9": 423
       },
       "paid": {
-        "1": 2203,
-        "2": 457,
-        "3": 495,
+        "1": 2202,
+        "2": 456,
+        "3": 494,
         "4": 90,
         "5": 167,
-        "6": 18,
+        "6": 19,
         "7": 14
       },
       "reverse": false
     },
     {
-      "cut": 11373,
-      "events": 25133,
+      "cut": 11391,
+      "events": 25160,
       "helper": 596,
       "helpers": {
         "4": 87,
@@ -54,19 +54,19 @@
         "9": 422
       },
       "paid": {
-        "1": 2203,
-        "2": 457,
-        "3": 495,
+        "1": 2202,
+        "2": 456,
+        "3": 494,
         "4": 90,
         "5": 166,
-        "6": 18,
+        "6": 19,
         "7": 14
       },
       "reverse": true
     },
     {
-      "cut": 11444,
-      "events": 25135,
+      "cut": 11462,
+      "events": 25162,
       "helper": 668,
       "helpers": {
         "4": 88,
@@ -75,19 +75,19 @@
         "9": 421
       },
       "paid": {
-        "1": 2203,
-        "2": 457,
-        "3": 495,
+        "1": 2202,
+        "2": 456,
+        "3": 494,
         "4": 90,
         "5": 165,
-        "6": 18,
+        "6": 19,
         "7": 14
       },
       "reverse": true
     },
     {
-      "cut": 11488,
-      "events": 25137,
+      "cut": 11506,
+      "events": 25164,
       "helper": 684,
       "helpers": {
         "4": 89,
@@ -96,12 +96,12 @@
         "9": 420
       },
       "paid": {
-        "1": 2203,
-        "2": 457,
-        "3": 495,
+        "1": 2202,
+        "2": 456,
+        "3": 494,
         "4": 90,
         "5": 164,
-        "6": 18,
+        "6": 19,
         "7": 14
       },
       "reverse": true
@@ -112,23 +112,23 @@
       "H": 707182000000000,
       "N": "2^707182000000000",
       "eta": {
-        "lower": "0.000000135464721119037040631275",
-        "upper": "0.000000135464721119037040631276"
+        "lower": "0.000000134289117704980399764023",
+        "upper": "0.000000134289117704980399764024"
       },
       "gap": "1/14000000000",
       "integer_test_exponent": 50513,
       "logarithm_power": 1024,
       "theta": "63/64",
-      "uniform_saving": "21718273/7000000000",
+      "uniform_saving": "21730243/7000000000",
       "word_materialized": false
     },
     "full_forward_calls": 18,
-    "gain": "833/50000000",
-    "kappa": "310261/100000000",
-    "kappa_decimal": ".00310261",
+    "gain": "1837/100000000",
+    "kappa": "9701/3125000",
+    "kappa_decimal": ".00310432",
     "margin_at_previous": {
-      "lower": "4.055279776144727228742393529621",
-      "upper": "4.055279776144727228742393529622"
+      "lower": "4.468029934945026807026803638220",
+      "upper": "4.468029934945026807026803638221"
     },
     "negative_controls": {
       "old_BIT": "Rejected by outer inequalities",
@@ -136,10 +136,10 @@
     },
     "nonrecursive": {
       "fixed_scalar_growth_bound": "At most 2^(16*26000) before native factors; a declared constant, not an attained norm.",
-      "local_paid_rank_mass": 5988,
-      "local_routes": 5169000,
-      "local_scalar": 219666,
-      "peak_owned_fields": 1,
+      "local_paid_rank_mass": 5986,
+      "local_routes": 5175000,
+      "local_scalar": 219990,
+      "peak_owned_fields": 2,
       "raw_budget": 1000000000,
       "raw_scalar_upper": 184647552,
       "tensor_native_growth_bound": "Each rank-r Gaussian has row l1 norm at most 2^(rf); use local_paid_rank_mass for the whole word."
@@ -160,82 +160,82 @@
         "new_semantic_group_guard": "3/14000000000"
       },
       "margins": {
-        "boundary_algebraic_matrix": "608111615956563457/196000000000000000000",
-        "fused_gaussian": "608111615869690371/196000000000000000000",
-        "global_coordinate_router": "84837/27343750",
-        "group_bit_router": "1187718027089239/382812500000000000",
+        "boundary_algebraic_matrix": "608446775956539517/196000000000000000000",
+        "fused_gaussian": "608446775869618551/196000000000000000000",
+        "global_coordinate_router": "10865121/3500000000",
+        "group_bit_router": "152111697467404637/49000000000000000000",
         "group_scans": "6999999999/7000000000",
-        "main_transform": "608111601956563457/196000000000000000000",
+        "main_transform": "608446761956539517/196000000000000000000",
         "microbox_face_corrections": "269500000001/3500000000",
         "polynomial_products": "13999999999/14000000000",
-        "sparse_union_movement": "80233111615956563457/196000000000000000000"
+        "sparse_union_movement": "80233446775956539517/196000000000000000000"
       },
       "parameters": {
-        "a": "84837/27343750",
-        "b": "8687309/2800000000",
+        "a": "10865121/3500000000",
+        "b": "8692097/2800000000",
         "beta": "13999999997/14000000000",
         "bit_saving": "17/5000",
-        "cap_xi": "178233111601956563457/196000000000000000000",
-        "complex_uniform_saving": "21718273/7000000000",
+        "cap_xi": "178233446761956539517/196000000000000000000",
+        "complex_uniform_saving": "21730243/7000000000",
         "d": "1/14000000000",
         "epsilon": "13999999999/14000000000",
-        "kappa": "310261/100000000",
-        "lambda_": "3987589559/4000000000",
-        "lambda_prime": "13956563457/14000000000",
+        "kappa": "9701/3125000",
+        "lambda_": "3987582719/4000000000",
+        "lambda_prime": "13956539517/14000000000",
         "layout": "1/14000000000",
-        "q": "43436543/14000000000",
+        "q": "43460483/14000000000",
         "r0": "1/140000000000",
         "stop": "1/14000000000",
-        "tested_saving": "6205221/2000000000"
+        "tested_saving": "6208641/2000000000"
       },
       "strict_checks": {
-        "actual_bit_above_effective": "32527/109375000",
+        "actual_bit_above_effective": "1034879/3500000000",
         "actual_logarithmic_gamma_guard": "1/14000000000",
-        "actual_logarithmic_group_guard": "17766888419043436543/98000000000000000000",
+        "actual_logarithmic_group_guard": "17766553259043460483/98000000000000000000",
         "alpha_logarithm_absorption": "1/140000000000",
-        "boundary_algebraic_matrix_above_kappa": "55956563457/196000000000000000000",
-        "cap_above_band": "80233111601956563457/196000000000000000000",
-        "cap_below_cell": "17766888384043436543/196000000000000000000",
-        "cap_below_phase_cell_power": "213766888398043436543/196000000000000000000",
+        "boundary_algebraic_matrix_above_kappa": "55956539517/196000000000000000000",
+        "cap_above_band": "80233446761956539517/196000000000000000000",
+        "cap_below_cell": "17766553224043460483/196000000000000000000",
+        "cap_below_phase_cell_power": "213766553238043460483/196000000000000000000",
         "complex_above_effective": "1/14000000000",
-        "complex_below_one_over_32": "78812691/2800000000",
+        "complex_below_one_over_32": "78807903/2800000000",
         "complex_endpoint": "1/7000000000",
         "epsilon_below_one": "1/14000000000",
         "epsilon_positive": "13999999999/14000000000",
         "fine_prime_halo_umbrella": "7/2",
-        "fused_gaussian_above_kappa": "55869690371/196000000000000000000",
-        "gaussian_above_main": "6956563457/98000000000000000000",
+        "fused_gaussian_above_kappa": "55869618551/196000000000000000000",
+        "gaussian_above_main": "6956539517/98000000000000000000",
         "global_coordinate_router_above_kappa": "1/3500000000",
         "global_gamma_power_slack": "9/140000000000",
         "group_below_dimension": "1/7000000000",
-        "group_bit_router_above_kappa": "136464239/382812500000000000",
-        "group_gauge_power_slack": "17766888418343436543/98000000000000000000",
+        "group_bit_router_above_kappa": "17467404637/49000000000000000000",
+        "group_gauge_power_slack": "17766553258343460483/98000000000000000000",
         "group_key_fits_record": "1/7000000000",
         "group_positive": "13999999997/14000000000",
-        "group_scans_above_kappa": "6978281729/7000000000",
+        "group_scans_above_kappa": "6978269759/7000000000",
         "halo_covers_generic_inverse_radius": "5",
-        "improvement_over_user_baseline": "685819790400418148631/500000000000000000000000",
+        "improvement_over_user_baseline": "686674790400418148631/500000000000000000000000",
         "lambda_above_internal": "1/28000000000",
         "lambda_above_sigma": "3/28000000000",
         "lambda_above_tau": "1/28000000000",
         "lambda_prime_above_lambda": "1/28000000000",
-        "lambda_prime_above_leaf": "5591312691/39200000000000000000",
-        "leaf_saving_above_effective": "2791312691/39200000000000000000",
-        "main_transform_above_kappa": "41956563457/196000000000000000000",
+        "lambda_prime_above_leaf": "5591307903/39200000000000000000",
+        "leaf_saving_above_effective": "2791307903/39200000000000000000",
+        "main_transform_above_kappa": "41956539517/196000000000000000000",
         "membership_arithmetic_fits_record": "1/14000000000",
-        "microbox_face_corrections_above_kappa": "134744570433/1750000000",
+        "microbox_face_corrections_above_kappa": "269489134881/3500000000",
         "microbox_halo_volume": "1106000000003/14000000000",
         "new_complex_uniform_saving_above_b": "1/14000000000",
         "new_semantic_guard_with_C1_one": "1/14000000000",
-        "polynomial_products_above_kappa": "13956563459/14000000000",
+        "polynomial_products_above_kappa": "13956539519/14000000000",
         "positive_layout_slack": "1/14000000000",
         "q_below_effective": "1/14000000000",
         "q_below_internal": "1/14000000000",
-        "q_below_leaf": "5591312691/39200000000000000000",
-        "q_positive": "43436543/14000000000",
-        "short_record_fallback": "2791312691/2800000000",
+        "q_below_leaf": "5591307903/39200000000000000000",
+        "q_positive": "43460483/14000000000",
+        "short_record_fallback": "2791307903/2800000000",
         "source_axis_superpolynomial": "1/14000000000",
-        "sparse_union_movement_above_kappa": "79625000055956563457/196000000000000000000",
+        "sparse_union_movement_above_kappa": "79625000055956539517/196000000000000000000",
         "stop_below_one": "13999999999/14000000000",
         "stop_positive": "1/14000000000",
         "strassen_integer_power_gap": "1951441519231",
@@ -246,57 +246,57 @@
       }
     },
     "paid": {
-      "1": 41214,
+      "1": 41160,
       "16": 416,
-      "2": 8226,
+      "2": 8208,
       "24": 416,
-      "3": 8910,
+      "3": 8892,
       "32": 416,
       "4": 1620,
       "40": 416,
       "48": 416,
       "5": 2952,
       "56": 416,
-      "6": 324,
+      "6": 342,
       "64": 416,
       "7": 252,
       "72": 208
     },
-    "paid_calls": 66618,
+    "paid_calls": 66546,
     "previous_open_pr5601": "61719/20000000",
-    "productive_fields": 12976,
+    "productive_fields": 12958,
     "query_shears": 15,
     "rank_mass_surplus": 760,
     "raw_ceiling": {
-      "derivative_upper": "-741137887493541669102966595261937530737206077417060081274735543/3138550867693340381917894711603833208051177722232017256448",
+      "derivative_upper": "-370358370586881449395115822226048097199323097673243505428230887/1569275433846670190958947355801916604025588861116008628224",
       "interval": [
         "0",
         "17/5000"
       ]
     },
     "raw_headroom": [
-      "511129/100000000000000",
-      "51113/10000000000000"
+      "143397/100000000000000",
+      "71699/50000000000000"
     ],
     "raw_root_interval": [
-      "310261511129/100000000000000",
-      "31026151113/10000000000000"
+      "310432143397/100000000000000",
+      "155216071699/50000000000000"
     ],
-    "relative_gain_percent": "4760/8817",
+    "relative_gain_percent": "36740/61719",
     "strictification": {
       "alpha": {
-        "lower": "0.999999995305110567061964349881",
-        "upper": "0.999999995305110567061964349882"
+        "lower": "0.999999999049474625783957794482",
+        "upper": "0.999999999049474625783957794483"
       },
       "cutoff": 17,
       "delta": {
-        "lower": "0.968727156203994946664783179549",
-        "upper": "0.968727156203994946664783179550"
+        "lower": "0.967529781940241705641563296151",
+        "upper": "0.967529781940241705641563296152"
       },
       "floor": 18,
       "gamma": {
-        "lower": "0.967922322455985687870219506154",
-        "upper": "0.967922322455985687870219506155"
+        "lower": "0.968048237661919455481808674966",
+        "upper": "0.968048237661919455481808674967"
       },
       "normalized_paid_upper": "5242880004882813/5242880536870912",
       "power": 1024,
@@ -304,13 +304,13 @@
       "tail_block": 128,
       "tail_decay": "39/40",
       "tail_offset": "1/5",
-      "tested": "6205221/2000000000"
+      "tested": "6208641/2000000000"
     },
     "targets": {
       "1": 36,
       "145": 208,
       "17": 416,
-      "2": 90,
+      "2": 72,
       "25": 416,
       "33": 416,
       "4": 1638,
@@ -335,27 +335,28 @@
     "endpoint_coefficients": 565504,
     "helpers": {
       "1": 2,
-      "2": 5,
+      "2": 4,
       "4": 91,
       "5": 6,
       "7": 5,
       "8": 16,
       "9": 411
     },
-    "owned_lifetimes": 8,
+    "owned_fields": 9,
+    "owned_lifetimes": 11,
     "paid": {
-      "1": 2203,
-      "2": 457,
-      "3": 495,
+      "1": 2200,
+      "2": 456,
+      "3": 494,
       "4": 90,
       "5": 164,
-      "6": 18,
+      "6": 19,
       "7": 14
     },
-    "paid_rank_mass": 5988,
-    "peak_owned_fields": 1,
-    "public_inputs": 744,
-    "real_scalar_allowance": 219666
+    "paid_rank_mass": 5986,
+    "peak_owned_fields": 2,
+    "public_inputs": 743,
+    "real_scalar_allowance": 219990
   },
   "local_helper_delta": {
     "1": 2,
@@ -367,11 +368,11 @@
     "9": -9
   },
   "native": {
-    "distinct_maps": 2920,
-    "helper_normalizers": 1072,
+    "distinct_maps": 2916,
+    "helper_normalizers": 1070,
     "helpers": {
       "1": 2,
-      "2": 5,
+      "2": 4,
       "4": 91,
       "5": 6,
       "7": 5,
@@ -380,18 +381,20 @@
     },
     "main_adapters": 208,
     "proof": "Every signed Pauli image and exact global phase; frame induction at every positive tensor width",
-    "recipe_payload_sha256": "5bdbaf3edb3e9d13449afbb202fb284533928a276abeb40f6300ef7bf8194a06",
+    "recipe_payload_sha256": "ef3c9a6c7c271f7383919fe8d20c1e051df0313dd4833015f4d387cc2459116a",
     "wrong_phase_rejected": true
   },
   "negative_controls": {
     "contaminated_prefix": "Exact prefix functional; no other input",
     "contaminated_suffix": "Exact suffix direction; no other output",
     "extra_helper_credit": "Every productive helper has a native target",
+    "false_preparation_identity": "Exact current-value preparation identity",
     "missing_central_translation": "Rejected by the complete Laurent endpoint",
     "missing_input_basis": "All public and owned rows",
     "missing_output_basis": "All public and owned rows",
     "unearned_whole_target": "All public and owned exits",
     "unpaid_gaussian": "Complete field and call counts",
+    "unremoved_prepared_target": "Every productive helper has a native target",
     "wrong_boundary_event": "Exact boundary event anchor"
   },
   "physical_caller": {
@@ -442,6 +445,21 @@
       31
     ]
   },
+  "preparation": {
+    "debited_target_rank": 2,
+    "new_owned_role": 751,
+    "old_helper": 573,
+    "sites": [
+      {
+        "event": 13640,
+        "rank": 1
+      },
+      {
+        "event": 13665,
+        "rank": 1
+      }
+    ]
+  },
   "published_source_delta": {
     "PR5565": {
       "helpers": {
@@ -468,6 +486,10 @@
       }
     }
   },
+  "relay": {
+    "frame_edits": 21,
+    "relay_edits": 8
+  },
   "separate_columns": {
     "arithmetic": "Dense integer rows with binary denominators; reverse chronology",
     "coefficients": 565504,
@@ -475,8 +497,8 @@
   },
   "splits": [
     {
-      "cut_after": 12504,
-      "events": 25173,
+      "cut_after": 12516,
+      "events": 25200,
       "pivot": 259,
       "public": 736,
       "ranks": [
@@ -485,8 +507,8 @@
       ]
     },
     {
-      "cut_after": 12426,
-      "events": 25205,
+      "cut_after": 12438,
+      "events": 25232,
       "pivot": 432,
       "public": 737,
       "ranks": [
@@ -495,8 +517,8 @@
       ]
     },
     {
-      "cut_after": 13893,
-      "events": 25219,
+      "cut_after": 13902,
+      "events": 25246,
       "pivot": 722,
       "public": 738,
       "ranks": [
@@ -505,8 +527,8 @@
       ]
     },
     {
-      "cut_after": 13611,
-      "events": 25237,
+      "cut_after": 13618,
+      "events": 25264,
       "pivot": 14,
       "public": 739,
       "ranks": [
@@ -515,8 +537,8 @@
       ]
     },
     {
-      "cut_after": 13612,
-      "events": 25255,
+      "cut_after": 13619,
+      "events": 25282,
       "pivot": 76,
       "public": 740,
       "ranks": [
@@ -525,8 +547,8 @@
       ]
     },
     {
-      "cut_after": 13612,
-      "events": 25287,
+      "cut_after": 13619,
+      "events": 25314,
       "pivot": 345,
       "public": 741,
       "ranks": [
@@ -535,8 +557,8 @@
       ]
     },
     {
-      "cut_after": 13600,
-      "events": 25337,
+      "cut_after": 13607,
+      "events": 25364,
       "pivot": 573,
       "public": 742,
       "ranks": [
@@ -545,8 +567,8 @@
       ]
     },
     {
-      "cut_after": 12055,
-      "events": 25363,
+      "cut_after": 12067,
+      "events": 25390,
       "pivot": 405,
       "public": 743,
       "ranks": [
@@ -555,8 +577,8 @@
       ]
     },
     {
-      "cut_after": 12587,
-      "events": 25393,
+      "cut_after": 12599,
+      "events": 25420,
       "pivot": 225,
       "public": 744,
       "ranks": [
@@ -565,5 +587,5 @@
       ]
     }
   ],
-  "status": "PASS_P104_HELPER_SUBSPACE_KAPPA_00310261"
+  "status": "PASS_P104_HELPER_SUBSPACE_KAPPA_00310432"
 }

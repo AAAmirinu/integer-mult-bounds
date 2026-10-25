@@ -3,6 +3,8 @@ Ali Romman with substantial OpenAI Codex assistance. Apache-2.0.
 The same assistant performed the construction and author-side checks.
 
 Retained contributions:
+flyingviper: PR5605 shared relay and PR5608 earlier relay/split composition.
+Scratch-net: PR5606 prepared-helper identities and target debit.
 Pierre-Loic Doulcet (hexapode): PR5565 commuting-contact construction, used as the exact source.
 Ali Romman: PR5602 fixed boundary relations, PR5601 three-contact frame
 change, PR5580 contact step,
