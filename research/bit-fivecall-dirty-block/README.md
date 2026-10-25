@@ -41,7 +41,8 @@ formal engines check the six-call arbitrary-input endpoint, all six deletions,
 a changed address, and non-coordinate dirty cancellation. Exact rational conic
 fixtures check all secant incidences; all 17,576 triples of five-vertex matchings
 check the graph reduction. Singular-target and nine-bad-edge controls show why
-its assumptions matter. The finite checks corroborate the written universal
+its assumptions matter. A separate behavioral test runs a closed Git-free copy
+and rejects changed proof, source, receipt and checker bytes in both modes. The finite checks corroborate the written universal
 argument; they are not a five-call word enumeration or a new proof of inherited
 lemmas. No 120^5 search, historical supplier replay, Lean or Docker was run.
 

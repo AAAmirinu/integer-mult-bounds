@@ -29,6 +29,16 @@
       ],
       "timeout_seconds": 30,
       "checks": "Conic incidence, all matching triples, two formal endpoint engines, deletion/dirty/singular-target controls and source/proof/receipt hashes"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/test_verify.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Git-free relocation and normal/optimized source, proof, receipt and code corruption rejection"
     }
   ]
 }

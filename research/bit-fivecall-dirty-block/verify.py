@@ -203,7 +203,7 @@ def main():
         (HERE/'RESULT.json').write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
     else:
         need(not sys.argv[1:], 'unknown arguments')
-        need(json.loads((HERE/'RESULT.json').read_text()) == result, 'receipt differs')
+        need((HERE/'RESULT.json').read_text() == json.dumps(result,indent=2,sort_keys=True)+'\n', 'receipt differs')
     print('PASS_FIVECALL_DIRTY_BLOCK six_call_floor arbitrary_diagonal_auxiliary_outputs')
 
 

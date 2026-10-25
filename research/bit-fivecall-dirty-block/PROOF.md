@@ -24,6 +24,9 @@ nonzero calls and rational address span V of dimension three. Indeed the only
 possible pair below six is (call count, span)=(5,3). The proof below excludes
 that pair without bounding R or enumerating words. Scalar coefficients are
 binary, but address linear algebra, rank and projective geometry are rational.
+Chronological factors act on column vectors, so later factors multiply on the
+left: P = P_after D_j P_before. Every endpoint address lies in V because a
+nonzero endpoint monomial occurs among subset sums of the paid addresses.
 
 ## Projection and image lemma
 

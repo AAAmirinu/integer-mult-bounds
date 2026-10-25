@@ -49,7 +49,7 @@
   "bottleneck_link": "Closes the sole surviving 1+2 equality branch of the arbitrary-auxiliary span-four theorem; no kappa or physical supplier inference.",
   "budget_minutes": 60,
   "stop_rule": "20-minute structural gate passed; stop at the scoped proof, diagnostics and source-bound reproduction, without expanding to spans five or six.",
-  "outcome": "scoped-proof",
+  "outcome": "negative-result",
   "evidence": "PROOF.md and RESULT.json",
   "author": "JoyboyBrian",
   "ai_assistance": "Substantial OpenAI Codex assistance; no independent human review claimed.",
