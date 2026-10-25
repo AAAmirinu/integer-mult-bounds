@@ -4,8 +4,43 @@ Ali Romman with substantial OpenAI Codex assistance. Apache-2.0.
 The source word and caller retain the credits in README.md.
 """
 from copy import deepcopy
+from collections import Counter
 from fractions import Fraction as Q
 import local as L
+
+
+def boundary_changes(source, changes, published):
+    """Apply five fixed PR5602 relations at checked PR5601 event positions."""
+    C = L.load(L.HERE/'inputs/PR5602-construct.py', 'released_boundary_constructor')
+    L.need([c['source_step'] for c in changes] == list(range(5)), 'Five published boundary relations')
+    word, evidence = deepcopy(source), []
+    public = word['public']
+
+    def owned_events(w):
+        return [e for e in w['program'] if e[1] >= public or
+                (e[0] in ('ADD', 'COPY') and e[2] >= public)]
+
+    owned = owned_events(source)
+    before = L.replay(word)
+    for item in changes:
+        c = item['witness']
+        original = published['steps'][item['source_step']]
+        L.need(dict(c, cut=original['cut']) == original, 'Unchanged published boundary relation')
+        oriented = C.transpose(word) if c['reverse'] else word
+        L.need(oriented['program'][c['cut']] == item['anchor'], 'Exact boundary event anchor')
+        word = C.boundary_basis(word, c)
+        after = L.replay(word)
+        for name, expected in (('paid', {5:-1}), ('helpers', {4:1, 9:-1})):
+            delta = Counter(after[name])
+            delta.subtract(before[name])
+            L.need({r:n for r,n in delta.items() if n} == expected, 'Exact boundary '+name+' delta')
+        evidence.append({'helper':c['helper'], 'cut':c['cut'], 'reverse':c['reverse'],
+                         'events':len(word['program']), 'paid':after['paid'], 'helpers':after['helpers']})
+        before = after
+    C.restore_copy_opcodes(word)
+    L.need(owned_events(word) == owned, 'The complete chronological owned paths are unchanged')
+    L.replay(word)
+    return word, evidence
 
 
 def inverse(program):

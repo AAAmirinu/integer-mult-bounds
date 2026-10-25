@@ -16,7 +16,10 @@
     "research/pr4359-p7-padding/dependencies/compiler-refill/endpoint.py",
     "research/query-thinned-controllers/RESULT.json",
     "research/p104-helper-subspace-splits/inputs/PR5580-WORD.json.gz",
-    "research/p104-helper-subspace-splits/inputs/PR5565-WORD.json.gz"
+    "research/p104-helper-subspace-splits/inputs/PR5565-WORD.json.gz",
+    "research/p104-helper-subspace-splits/inputs/PR5601-WORD.json.gz",
+    "research/p104-helper-subspace-splits/inputs/PR5602-construct.py",
+    "research/p104-helper-subspace-splits/inputs/PR5602-WITNESS.json"
   ],
   "commands": [
     {
@@ -26,7 +29,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Check all 13 independent cuts, every rational row and reverse column, native maps, complete caller and invoice, two moment engines, compiler and outer predicates; reject false inputs, outputs, target credit and cost."
+      "checks": "Check five published boundary changes and nine independent cuts, every rational row and reverse column, native maps, complete caller and invoice, two moment engines, compiler and outer predicates; reject false inputs, outputs, target credit and cost."
     },
     {
       "argv": [
@@ -36,7 +39,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Check all 13 independent cuts, every rational row and reverse column, native maps, complete caller and invoice, two moment engines, compiler and outer predicates; reject false inputs, outputs, target credit and cost."
+      "checks": "Check five published boundary changes and nine independent cuts, every rational row and reverse column, native maps, complete caller and invoice, two moment engines, compiler and outer predicates; reject false inputs, outputs, target credit and cost."
     }
   ]
 }

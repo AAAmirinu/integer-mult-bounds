@@ -57,29 +57,39 @@ def run():
     import pricing as P
     C = L.load(ROOT/'research/p104-productive-controller/caller.py', 'subspace_p104_caller')
     predecessor = L.replay(L.read(HERE/'inputs/PR5580-WORD.json.gz'))
-    source = L.read(HERE/'inputs/PR5565-WORD.json.gz')
+    cascade = L.replay(L.read(HERE/'inputs/PR5565-WORD.json.gz'))
+    source = L.read(HERE/'inputs/PR5601-WORD.json.gz')
     witnesses = L.read(HERE/'SPLITS.json')
-    need(len(witnesses) == 13, 'Thirteen explicit independent splits')
+    need(len(witnesses) == 9, 'Nine explicit independent splits')
     baseline = L.replay(source)
     source_delta = {}
-    for name, expected in (('paid', {1:-8, 3:-1, 4:-2, 5:4}),
-                           ('helpers', {8:-1, 9:1})):
-        delta = Counter(baseline[name])
-        delta.subtract(predecessor[name])
-        source_delta[name] = {r:n for r,n in delta.items() if n}
-        need(source_delta[name] == expected, 'Exact published PR5565 '+name+' change')
-    word, cuts = R.construct(source, witnesses)
+    for label, before, after, expected in (
+            ('PR5565', predecessor, cascade,
+             {'paid':{1:-8, 3:-1, 4:-2, 5:4}, 'helpers':{8:-1, 9:1}}),
+            ('PR5601', cascade, baseline,
+             {'paid':{2:-2, 3:2, 4:-2, 5:1}, 'helpers':{4:1, 5:-1}})):
+        source_delta[label] = {}
+        for name, profile in expected.items():
+            delta = Counter(after[name])
+            delta.subtract(before[name])
+            source_delta[label][name] = {r:n for r,n in delta.items() if n}
+            need(source_delta[label][name] == profile, 'Exact published '+label+' '+name+' change')
+    boundaries = L.read(HERE/'BOUNDARIES.json')
+    boundary_word, boundary_receipts = R.boundary_changes(
+        source, boundaries, L.read(HERE/'inputs/PR5602-WITNESS.json'))
+    baseline = L.replay(boundary_word)
+    word, cuts = R.construct(boundary_word, witnesses)
     local = L.replay(word)
-    need((local['public_inputs'], local['owned_lifetimes'], local['peak_owned_fields']) == (748, 8, 1),
+    need((local['public_inputs'], local['owned_lifetimes'], local['peak_owned_fields']) == (744, 8, 1),
          'Complete public and owned inventory')
-    need(local['helpers'] == {1:2, 2:5, 4:89, 5:11, 7:5, 8:16, 9:412}, 'Exact helper histogram')
+    need(local['helpers'] == {1:2, 2:5, 4:91, 5:6, 7:5, 8:16, 9:411}, 'Exact helper histogram')
     delta = Counter(local['helpers'])
     delta.subtract(baseline['helpers'])
     delta = {r:n for r,n in delta.items() if n}
-    need(delta == {1:2, 2:5, 4:6, 5:6, 7:5, 8:2, 9:-13}, 'All split credits and removed targets')
+    need(delta == {1:2, 2:5, 4:2, 5:2, 7:5, 8:2, 9:-9}, 'All split credits and removed targets')
     need(local['paid'] == baseline['paid'], 'Same complete local paid histogram')
     columns = L.reverse_columns(word)
-    print('PASS 13 prefix/suffix cuts, every independent row and dense reverse columns', flush=True)
+    print('PASS 5 fixed boundary changes, 9 independent cuts, every row and reverse column', flush=True)
     native = L.native(word)
     controller = C.construct()
     need(controller == L.read(ROOT/'research/p104-productive-controller/CONTROLLER.json'), 'Same complete caller')
@@ -90,11 +100,15 @@ def run():
     bad = deepcopy(witnesses[0])
     key = next(iter(bad['a']))
     bad['a'][key] = str(L.Q(bad['a'][key])+1)
-    controls['contaminated_prefix'] = rejected(lambda: R.check_cut(source, bad))
+    controls['contaminated_prefix'] = rejected(lambda: R.check_cut(boundary_word, bad))
     bad = deepcopy(witnesses[0])
     key = next(iter(bad['b']))
     bad['b'][key] = str(L.Q(bad['b'][key])+1)
-    controls['contaminated_suffix'] = rejected(lambda: R.check_cut(source, bad))
+    controls['contaminated_suffix'] = rejected(lambda: R.check_cut(boundary_word, bad))
+    bad = deepcopy(boundaries)
+    bad[0]['witness']['cut'] += 1
+    controls['wrong_boundary_event'] = rejected(lambda: R.boundary_changes(
+        source, bad, L.read(HERE/'inputs/PR5602-WITNESS.json')))
     bad = deepcopy(word)
     bad['program'].pop(0)
     controls['missing_input_basis'] = rejected(lambda: L.replay(bad))
@@ -102,7 +116,7 @@ def run():
     bad['program'].pop()
     controls['missing_output_basis'] = rejected(lambda: L.replay(bad))
     bad = deepcopy(word)
-    bad['final'][648] = 127
+    bad['final'][259] = 127
     controls['unearned_whole_target'] = rejected(lambda: L.replay(bad))
     bad = deepcopy(local)
     bad['helpers'][1] += 1
@@ -110,8 +124,9 @@ def run():
     bad = deepcopy(local)
     bad['paid'][1] -= 1
     controls['unpaid_gaussian'] = rejected(lambda: P.assemble(bad, native, controller, physical))
-    result = {'status':'PASS_P104_HELPER_SUBSPACE_KAPPA_00310045',
+    result = {'status':'PASS_P104_HELPER_SUBSPACE_KAPPA_00310261',
               'authenticated_inputs':pins, 'splits':cuts, 'local_helper_delta':delta,
+              'boundaries':boundary_receipts,
               'published_source_delta':source_delta,
               'local':local, 'separate_columns':columns, 'native':native,
               'physical_caller':physical, 'complete_cost':costs, 'negative_controls':controls,
