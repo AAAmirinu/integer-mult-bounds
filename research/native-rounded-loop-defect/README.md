@@ -9,3 +9,5 @@ Run `python3 -I -B research/native-rounded-loop-defect/verify.py` and the same c
 ## Open next questions
 
 Can coherent frame potentials replace independently rounded native edges without exceeding the recursive budget? Can a changed child ABI retain correction information around this actual loop? Additivity and endpoint correctness remain separate obligations even after graph flatness is achieved. No complete caller, recursive child tariff or new kappa is claimed.
+
+Package-boundary controls run with `python3 -I -B research/native-rounded-loop-defect/test_package.py`: copied-source mutation must fail before import; receipt mutation must fail in normal and optimized Python. All executable inputs are local to this package. Frozen predecessor bytes retain their attribution.

@@ -25,6 +25,16 @@
       ],
       "timeout_seconds": 30,
       "checks": "Exact signed source loop, independent integer and rational replay, inverse and lattice positives, absolute-phase rejection"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/test_package.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Isolated normal and optimized source-before-import authentication, typed receipt and native recipe mutations"
     }
   ]
 }

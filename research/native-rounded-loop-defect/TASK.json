@@ -59,7 +59,7 @@
   "bottleneck_link": "Closes a specific missing interface obligation before another construction round; no selected-frontier change.",
   "budget_minutes": 60,
   "stop_rule": "20-minute source-bound proof gate, then finish exact quantified result and controls; stop if only an old theorem or finite extrapolation survives.",
-  "outcome": "scoped-proof",
+  "outcome": "negative-result",
   "evidence": "PROOF.md; source-pinned verify.py; RESULT.json; VERIFY.json",
   "author": "JoyboyBrian",
   "ai_assistance": "OpenAI Codex substantial proof and implementation assistance",
