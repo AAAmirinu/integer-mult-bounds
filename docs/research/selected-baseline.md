@@ -92,10 +92,36 @@ The current task-picker CLI, `scripts/choose_current_research_task.py`, resolves
 Each affected suggestion retains its complete original entry in
 `catalog_first_step` and explains the change in `first_step_resolution`.
 Only the command changes. The inspection text, scope, task, method, scope key
-and acceptance gate stay the same. Other scientific first-step commands are
-not changed. The CLI checks that the current helper exists, or is an exact
+and acceptance gate stay the same for these generic cards.
+The CLI checks that the current helper exists, or is an exact
 HEAD file omitted by a sparse checkout, before it emits the resolved command.
 A sparse result names the missing helper for materialization.
+
+Four cards instead name `research/complex-local-word-ceiling/verify.py`:
+`complex-rank-shape-decoder`, `complex-new-helper-inventory`,
+`centre-path-sharing` and `coverage-law-change`. Their current `first_step`
+is the selected baseline above, with its own expected status and inspection
+instructions. Run the emitted `follow_up_steps` afterward, in order. For these
+cards the single follow-up is:
+
+```sh
+python3 -B scripts/research_package.py --package research/historical-complex-ceiling-replay
+```
+
+It expects `PASS_REGISTERED_RESEARCH_PACKAGE` and checks the historical #1094
+ceiling against #1042. That ceiling and its lever budgets do not bound the
+current supplier without a new source-bound cost law. The complete original
+command, expectation, inspection text and scope remain in `catalog_first_step`.
+The task, method, scope key and acceptance gate remain unchanged. Other scientific
+commands, including variants with extra flags, are not reinterpreted.
+
+All route references are validated before any suggestion changes. Missing or
+deleted runner, replay manifest or verifier files fail; exact HEAD-matching
+sparse omissions appear in `omitted_current_first_step_paths`. Materialize the
+selected closure and the historical package's declared inputs before executing
+them. The CLI validates entry references, not the full replay dependency closure
+or source authenticity. See [the four-card routing evidence](ceiling-task-startup.md)
+for the reproduced failure, compatibility inventory and bounded checks.
 
 The historical `scripts/choose_research_task.py`, catalogue bytes, `select()`
 result and package `TASK.json` original-card receipts remain exact. The current
@@ -109,15 +135,17 @@ copy the resolved command into an old package or repin its frozen inputs.
 runtime consumers of the catalogue and requested this receipt-preserving
 migration. [PR5359](https://github.com/CrocSwap/integer-mult-bounds/pull/5359)
 provides the separate authenticated historical complex-ceiling replay.
-That scientific command is outside this generic-baseline resolution rule.
+The four-card route uses that unchanged replay as its historical positive control.
 
 The displayed scientific starting points still need a current overlap and
 scope check. Command resolution is not a strategic reassessment or scientific
-acceptance. Tests cover all 16 generic cards, unchanged other cards, exact
-command matching, missing/deleted/sparse helpers and actual CLI output.
+acceptance. Tests cover all 16 generic cards and four historical-ceiling cards,
+unchanged other cards, exact command matching, missing/deleted/sparse references,
+staged reference drift and actual CLI output.
 Run them with `python3 -B -m unittest discover -s tests -p test_research_current_assignment.py`.
 Current CLI resolution and these controls: Ali Romman with substantial OpenAI
-Codex assistance; Apache-2.0.
+Codex assistance. Four-card historical routing and additional controls: Mihir
+Srivastava with substantial OpenAI Codex assistance; Apache-2.0.
 
 ## Open next questions
 

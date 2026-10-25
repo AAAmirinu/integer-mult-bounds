@@ -22,6 +22,7 @@ Exit codes: 0 when no selected input is omitted, 2 when some are.
 
 Douglas Colkitt, with Claude Opus 5.5 assistance. Apache-2.0. The sparse
 contract follows Arham-Tahir64's PR3102.
+Non-cone materialization repair for Joseph Anglada, with OpenAI Codex assistance.
 """
 import argparse
 import json
@@ -83,16 +84,30 @@ def sparse_omissions(record, root=ROOT):
     return omitted
 
 
-def materialize_command(omitted):
-    """Cone-mode directories covering the omitted files (one research package each)."""
+def materialize_command(omitted, cone=True):
+    """Cover omitted inputs using the checkout's existing pattern mode."""
     dirs = set()
+    root_files = set()
     for name in omitted:
         parts = name.split("/")
+        if not cone and len(parts) == 1:
+            root_files.add(name)
+            continue
         if parts[0] == "research" and len(parts) > 2:
             dirs.add("/".join(parts[:2]))
         else:
             dirs.add("/".join(parts[:-1]) or ".")
-    return ["git", "sparse-checkout", "add", *sorted(dirs)]
+    if cone:
+        patterns = sorted(dirs)
+    else:
+        # A bare '.' is a literal pattern here: it does not restore LICENSE
+        # or any other root input. Anchor and escape patterns so root files
+        # and package names cannot select unrelated paths through wildcards.
+        def literal(name):
+            return "".join("\\" + c if c in "\\*?[] " else c for c in name)
+        patterns = sorted(["/" + literal(name) for name in root_files]
+                          + ["/" + literal(name) + "/" for name in dirs])
+    return ["git", "sparse-checkout", "add", *patterns]
 
 
 def report(record, root=ROOT):
@@ -107,10 +122,15 @@ def report(record, root=ROOT):
             "next": next_command,
             "scope": "Every selected input is present. Nothing was verified; run the baseline next.",
         }
+    mode = subprocess.run(["git", "config", "--bool", "--get", "core.sparseCheckoutCone"],
+                          cwd=root, capture_output=True, text=True)
+    if mode.returncode not in (0, 1):
+        mode.check_returncode()
+    cone = mode.returncode == 0 and mode.stdout.strip() == "true"
     return 2, {
         "status": "SPARSE_SELECTED_INPUTS_ABSENT",
         "omitted_files": len(omitted), "first_omitted": omitted[:5],
-        "materialize": materialize_command(omitted),
+        "materialize": materialize_command(omitted, cone=cone),
         "next": next_command,
         "scope": "This sparse checkout omits selected inputs (skip-worktree entries matching HEAD). "
                  "Run the materialize command, then " + baseline + "; nothing was verified.",
