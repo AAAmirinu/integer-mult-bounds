@@ -118,6 +118,26 @@ The claimed endpoint is below the new crossing by between
 The stated endpoint gain `.00000060` also reflects the different safety
 margins below the two crossings; it is not the exact raw-root difference.
 
+This mixed-target caller is outside the historical fixed-rank packing model
+in `research/complex-local-word-ceiling/ceiling.py`. It retains independent
+productive helpers and targets of unequal ranks, rather than one target rank
+and the old hosted coverage law. The replacement bound is the exact crossing
+of this complete fixed invoice. The endpoint attains between
+99.9999402697% and 99.9999402701% of that crossing.
+
+For this invoice the crossing is unique for `0 < kappa < 1`. To see this,
+put `t=1-kappa` and divide its signed moment by `6^t`. The signed coefficients
+at ranks 1 through 6 are negative; those at ranks 7 through 9 are positive.
+Each of these normalized terms increases with t, except the constant rank-six
+term. The other terms are 416 copies of `((r+1)/6)^t-(r/6)^t` for
+`r=16,24,...,64`, 208 copies at r=72, and `208*(145/6)^t`.
+They also increase for `t >= 0`: the derivative of each difference is positive
+because `x^t*log(x)` increases for `x > 1`. The full normalized moment is
+strictly increasing. Its values at t=0 and t=1 have opposite signs, since
+the count difference is -57,098 and the rank surplus is 760. Thus the upper
+crossing endpoint bounds the saving allowed by this fixed invoice. It does
+not bound a changed word, caller, target contract or invoice.
+
 The local scalar program is unchanged. There is one fewer native call and
 no new owned field. Native ranks stay at most nine locally; complete maximum
 target and child ranks stay 145 and 72. The source's finite bound of fewer

@@ -47,8 +47,30 @@ The earlier source PR5544 also passed its own
 at the pinned head. That run does not test this new change.
 
 Publication checks: registered normal and optimized replay, metadata/pins
-and whitespace checks passed. Committed-byte and export checks follow below.
-Hosted status for the new contribution is separate from local validation.
+and whitespace checks passed. The committed-byte check passed for all 33
+package and declared input files at scientific commit
+`bea205d91409506c794ababd81454ca42450d5d2`. The committed export and its
+separate integrity check passed.
+
+The export then passed an optimized replay in a fresh directory without Git.
+The environment had an empty PATH and no inherited Python or Git variables.
+All exported files were read-only. The command used the absolute Python path
+with `-I -O -B research/p104-full-frame-contact/verify.py`. It finished in
+72.75 seconds. All 34 files, including the export manifest, kept the same
+bytes and modes. A separate altered-source control failed at authentication
+before source imports, with no scientific output.
+
+The fixed-invoice decomposition in PROOF.md was checked against the complete
+saved histograms. Exact rational division also checked the stated fraction
+of the crossing attained by the endpoint. This is a bound for this invoice,
+not the historical fixed-rank packing model or other constructions.
+
+The optional full source-history preflight was attempted. It stopped because
+this checkout is shallow, so no full-history pass is claimed. Direct Git
+ancestry checks passed for canonical main and the immediate predecessor.
+All declared source bytes and Git blob identities passed authentication and
+the Git-free replay. Hosted status for this contribution is separate from
+local validation.
 
 The five inherited framework assumptions remain. Independent human review,
 formal-kernel verification, the enormous uniform compiler word and the full
