@@ -5,6 +5,24 @@ on a scaled-down instance and prices what it is worth on the selected #5413 prof
 the current #4610 word admits no hand-off. **No κ is claimed.** The mechanism only gains inside a new native word,
 and this package does not build one.
 
+> **Addendum (follow-up, `addendum-r19-neutrality/`): a local hand-off is gain-neutral once re-flagging is priced.**
+> Between two anchors a register's paid rank mass is fixed. Routing any register through a mid frame F therefore costs
+> g(p,q) = f(p) + f(q) − f(p+q), the same concave function as the hand-off gain.
+> - **Screen (exact rows):** all 408 helpers of the #4610 word, every event and every mid frame, both orientations,
+>   about 1.88M points per orientation, with holder and cancellation lifts priced. **0 net-positive.** Wherever all
+>   holders can be lifted, the carried data contains port inputs held only by registers on dim 5–8 frames not
+>   contained in F, which climbs can never bring back.
+> - **Designed F2^9 conduit blocks (exact replay):** a hand-off is **exactly neutral** (dM = 0) when the helper starts
+>   at its load frame. With a bottom holder, a later entrance with no hand-off dominates by at least 0.004192.
+> - **Consequence:** the 0.0035309 ceiling below counts the hand-off gain without the re-flagging cost, so it is
+>   **not** an achievable estimate. A gain needs a new *main* transform, whose port flags pass through the helpers'
+>   mid frames with the carried data unchanged; a local helper block is not enough.
+>
+> `addendum-r20-p19-repricing/` separately prices the p19 line of #5270/#5440 with the reviewed costs charged. The
+> corrected complex saving is 0: the 4,256 missing letter-Q rank-1 jobs per unit are about 3.5× the 1,202 tolerance,
+> and merging cannot rescue it (≥ 4,179). This agrees with zxv's and Matarener's numbers and adds the merge-robust
+> bound, the idle-Q count and the literal middle-idle pricing.
+
 Labels used below:
 - **checked**: an exact computation in this package, reproduced by `verify.sh`.
 - **screen**: an exact computation whose interpretation covers only the stated rewrite family.
@@ -79,7 +97,7 @@ Three mutation controls are each rejected:
 | 9 → 1+8 | 0.009464 | 0.0030279787 |
 | a single hand-off anywhere | ≥ 0.0084 | ≥ 0.0030273222 (> U = 0.00302728825) |
 
-The ceiling, with every rank-9 helper handed off once at 4+5, is 0.0035309.
+The ceiling, with every rank-9 helper handed off once at 4+5, is 0.0035309 (gain-only; see the addendum: re-flagging costs cancel it locally).
 
 The table shows that a **single** legal hand-off would raise the raw root by about 3.3×10⁻⁸. That is far more
 than U's 6×10⁻¹⁴ gap and than the roughly 10⁻¹¹ that the strict compiler reserves below the raw root. This is
