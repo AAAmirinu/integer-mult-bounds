@@ -1,4 +1,4 @@
-# Research: all-length caps and a per-FULL price frontier for rank-eight productive-helper paths
+# Research: the productive-helper path (#4440 lineage) can't pass κ ≈ .00304 without cheaper helpers
 
 **No new κ.** No selected construction, frontier, allocation or queue
 disposition changes. Checkpoint: canonical main `32890bc5`; source bills bound
