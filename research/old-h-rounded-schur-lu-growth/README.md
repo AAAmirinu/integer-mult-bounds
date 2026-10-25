@@ -16,6 +16,9 @@ arbitrary principal interiors. The source adapter observes unchanged encoded
 Axis/Window setup, including every write of the actual Doolittle call, then
 compares it with independent rational trailing-Schur elimination. Its retained
 p16/P24 period-crossing fixture is finite source-binding evidence only.
+It passed with eight source rows, three interior rows, five boundary rows
+and all 30 actual factor-write states checked. The separate rational family
+covers 144 systems and 504 elimination stages.
 Nearest-rounding, wrong-reference, zero-gap and norm-hypothesis controls
 separate the proof from nearby false claims.
 
@@ -35,12 +38,14 @@ Source hashes are authenticated before source imports. The source contract,
 pins and declared input closure are in TASK/SOURCES/VERIFY.json. Historical
 catalogue and selected-result provenance are not live scientific inputs.
 
-## Limits and Open next questions
+## Limits
 
 Exact rational setup, reductions, serialization, page preparation and cleanup
 retain their original costs. Verification observations are not free algorithm
 storage. No online BandedSolve, inverse-block application, normalization,
 changed headroom allocation or selected-frontier update is claimed.
+
+## Open next questions
 
 Bind the original-H coefficient gap/norm and period-cut boundary bandwidth
 to production coefficient receipts. Start with directed weight/kernel
