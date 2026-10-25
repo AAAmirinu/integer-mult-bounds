@@ -994,7 +994,7 @@
     "summary": "37 copied manifest failures trace the same JSON/manifest mismatch to upstream PR1673; broader bundles differ. Provenance does not repair integrity. Preserve holds.",
     "upstream_head": "85ddaa312e463cfaca98d49a2a262994551cec4e"
   },
-  "next": "Delta-only intake caught up: 307 open, zero actionable at the recorded snapshot. Resume with plan --refresh; leave unchanged drafts, revision holds and deferred reviews alone. Selected conditional kappa remains 0.003027288235, published on main; do not repeat the #5413 admission or historical suites.",
+  "next": "Delta-only intake caught up: 306 open, zero actionable at the recorded snapshot. Resume with plan --refresh; do not reopen unchanged drafts, revision holds or deferred reviews. Selected conditional kappa remains 0.003027288235. P104 #5544/#5545/#5551 and audits #5548/#5550 are retained on main, awaiting separate substantive admission.",
   "publication": {
     "source_commit": "484a8adea580345a7c37d8ac772cedfd47bcde92",
     "merged": [
@@ -1012,35 +1012,36 @@
   },
   "latest_publication": {
     "commits": [
-      "f76b55e894885f0f5b72f75d942b7b0299fc9db3"
+      "d99b37998150aa3719496e2a1d6287bc88c48249",
+      "19bba71d576191a1b39f8f512461b4bd3572d477"
     ],
-    "decisions": 20,
-    "merged": 16,
-    "archive_count": 14,
-    "reviewed_tooling_count": 2,
+    "decisions": 106,
+    "merged": 104,
+    "archive_count": 100,
+    "reviewed_tooling_count": 4,
     "revision_holds": [
-      4580,
-      4612,
-      5427,
-      5432
+      5298,
+      5440
     ],
     "actionable_remaining": 0,
     "selected_frontier_changed": false,
     "scientific_replays": 0,
     "evidence": [
-      "docs/research/pr-intake-evidence/queue-oct24a-20261024.json",
-      "docs/research/pr-intake-evidence/queue-oct24a-closures.json",
-      "docs/research/pr-intake-evidence/queue-oct24a-final-snapshot.json"
+      "docs/research/pr-intake-evidence/queue-oct25a-20261025.json",
+      "docs/research/pr-intake-evidence/queue-oct25b-20261025.json",
+      "docs/research/pr-intake-evidence/queue-oct25a-closures.json",
+      "docs/research/pr-intake-evidence/queue-oct25b-closures.json",
+      "docs/research/pr-intake-evidence/queue-oct25-final-snapshot.json"
     ],
     "remaining_queue": {
-      "base": "f76b55e894885f0f5b72f75d942b7b0299fc9db3",
-      "observed_at": "2026-10-24T13:07:58.794092+00:00",
+      "base": "19bba71d576191a1b39f8f512461b4bd3572d477",
+      "observed_at": "2026-10-25T14:19:34.309538+00:00",
       "counts": {
         "draft": 178,
-        "waiting_revision": 122,
+        "waiting_revision": 121,
         "deferred_replay": 7
       },
-      "open_count": 307,
+      "open_count": 306,
       "actionable_count": 0,
       "remaining_actionable": 0,
       "selected": []
@@ -1181,14 +1182,14 @@
     }
   ],
   "latest_queue": {
-    "base": "f76b55e894885f0f5b72f75d942b7b0299fc9db3",
-    "observed_at": "2026-10-24T13:07:58.794092+00:00",
+    "base": "19bba71d576191a1b39f8f512461b4bd3572d477",
+    "observed_at": "2026-10-25T14:19:34.309538+00:00",
     "counts": {
       "draft": 178,
-      "waiting_revision": 122,
+      "waiting_revision": 121,
       "deferred_replay": 7
     },
-    "open_count": 307,
+    "open_count": 306,
     "actionable_count": 0,
     "remaining_actionable": 0,
     "selected": []
@@ -1252,8 +1253,31 @@
     "selected_frontier_changed": true
   },
   "next_substantive_review": {
-    "status": "No new global frontier candidate admitted or scheduled by this intake. Historical #4610 and #5413 admissions are complete.",
-    "scope": "Seven unchanged deferred reviews remain separate; resolve current exact heads from the intake state rather than this historical checkpoint. BIT-only #5421 is archived and would require separate supplier/assembly admission; it does not raise global kappa."
+    "source_pr": 5551,
+    "source_head": "1123635a6f63f23638df9459c994160e5e649d30",
+    "claim": "Conditional kappa 0.00304153; source archive only, not selected.",
+    "dependencies": [
+      {
+        "pr": 5544,
+        "head": "e2a6cce2f9db5a2c5f9714f4b9e5292dd3a10581"
+      },
+      {
+        "pr": 5545,
+        "head": "18968423711fd902aaee1099979497d55603e1dc"
+      }
+    ],
+    "supporting_audits": [
+      {
+        "pr": 5548,
+        "head": "b038f9d9b5cf0ce92184da909e57a3be476fc812"
+      },
+      {
+        "pr": 5550,
+        "head": "6125c07ae8ba4b8550e2a0a28a2c6be503153059"
+      }
+    ],
+    "plan": "Review the complete P104 producer/caller and the coupled-contact delta together. Reuse independently checked exact-source coverage only; supporting audits concern #5545 and do not certify #5551 automatically. Check native paid-map inventory, actual compiler/consumer obligations, all productive targets, precision/tape and complete funding. Do not invent a raw-inverse-transpose requirement without tracing actual all-forward assembly consumers. Use serial bounded replay; no admission or scientific execution performed by bulk intake.",
+    "other_claims": "#5440 has a concrete missing-Q payment hold. #5462/#5468 are archived numerical-headroom proposals; #5512 is a separate BIT supplier claim. None changes the selected result."
   },
   "bulk_intake_20261022_completed": {
     "merged": 236,
@@ -1672,5 +1696,42 @@
     "next": "Routine actionable intake is empty. Dedicated scientific next step: review Ali Romman PR5398 direct backward caller via Chris R/Clear1nsight PR5400, and its owned-relation predecessors PR5377/5383, Dugongue compiler refinements PR5387/5390. Distinct coupled completion PR5413 and audit PR5414 claim 0.003027288235, only 5e-12 above PR5398; preserve construction/audit credit and independent source-applicability review. All remain source archives, not selected suppliers. Do not repeat unchanged holds or deferred replays.",
     "validation_scope": "150 normal and 60 optimized tooling tests (4 platform skips in each mode); 99 mathematical AST-equivalence and package metadata/source checks; normal/optimized historical #1094 control under 1 GiB /180s guards. No full supplier replay, Lean, Docker or hosted workflow; initial sparse-fixture and macOS cleanup failures retained.",
     "live_processes": []
+  },
+  "bulk_intake_20261025_completed": {
+    "commits": [
+      "d99b37998150aa3719496e2a1d6287bc88c48249",
+      "19bba71d576191a1b39f8f512461b4bd3572d477"
+    ],
+    "decisions": 106,
+    "merged": 104,
+    "archive_count": 100,
+    "reviewed_tooling_count": 4,
+    "revision_holds": [
+      5298,
+      5440
+    ],
+    "actionable_remaining": 0,
+    "selected_frontier_changed": false,
+    "scientific_replays": 0,
+    "evidence": [
+      "docs/research/pr-intake-evidence/queue-oct25a-20261025.json",
+      "docs/research/pr-intake-evidence/queue-oct25b-20261025.json",
+      "docs/research/pr-intake-evidence/queue-oct25a-closures.json",
+      "docs/research/pr-intake-evidence/queue-oct25b-closures.json",
+      "docs/research/pr-intake-evidence/queue-oct25-final-snapshot.json"
+    ],
+    "remaining_queue": {
+      "base": "19bba71d576191a1b39f8f512461b4bd3572d477",
+      "observed_at": "2026-10-25T14:19:34.309538+00:00",
+      "counts": {
+        "draft": 178,
+        "waiting_revision": 121,
+        "deferred_replay": 7
+      },
+      "open_count": 306,
+      "actionable_count": 0,
+      "remaining_actionable": 0,
+      "selected": []
+    }
   }
 }

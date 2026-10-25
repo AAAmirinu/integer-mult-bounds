@@ -94256,7 +94256,7 @@
       "reviewed_head": "d91b568b54bba63f1c15a34560afb78b0c7b02cf",
       "current_head": "d91b568b54bba63f1c15a34560afb78b0c7b02cf",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/shared-crossing-cut9047-20261025"
       ],
@@ -94266,12 +94266,16 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct25b-20261025.json"
       ],
-      "closure": null
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5546",
+        "merge_commit": "19bba71d576191a1b39f8f512461b4bd3572d477"
+      }
     },
     {
       "number": 5547,
@@ -94291,7 +94295,7 @@
       "reviewed_head": "1c1c04d1302d109a838faf96b925e4020b215b24",
       "current_head": "1c1c04d1302d109a838faf96b925e4020b215b24",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/clifford-pointwise-audit"
       ],
@@ -94301,12 +94305,16 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct25b-20261025.json"
       ],
-      "closure": null
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5547",
+        "merge_commit": "19bba71d576191a1b39f8f512461b4bd3572d477"
+      }
     },
     {
       "number": 5548,
@@ -94326,7 +94334,7 @@
       "reviewed_head": "b038f9d9b5cf0ce92184da909e57a3be476fc812",
       "current_head": "b038f9d9b5cf0ce92184da909e57a3be476fc812",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/p104-contact-independent-audit"
       ],
@@ -94336,12 +94344,16 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct25b-20261025.json"
       ],
-      "closure": null
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5548",
+        "merge_commit": "19bba71d576191a1b39f8f512461b4bd3572d477"
+      }
     },
     {
       "number": 5549,
@@ -94361,7 +94373,7 @@
       "reviewed_head": "7f104c00852346f0d07c4e87e830284e8daab67b",
       "current_head": "7f104c00852346f0d07c4e87e830284e8daab67b",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/full-clifford-one-qubit"
       ],
@@ -94371,12 +94383,16 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct25b-20261025.json"
       ],
-      "closure": null
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5549",
+        "merge_commit": "19bba71d576191a1b39f8f512461b4bd3572d477"
+      }
     },
     {
       "number": 5550,
@@ -94396,7 +94412,7 @@
       "reviewed_head": "6125c07ae8ba4b8550e2a0a28a2c6be503153059",
       "current_head": "6125c07ae8ba4b8550e2a0a28a2c6be503153059",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/p104-caller-independent-audit"
       ],
@@ -94406,12 +94422,16 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct25b-20261025.json"
       ],
-      "closure": null
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5550",
+        "merge_commit": "19bba71d576191a1b39f8f512461b4bd3572d477"
+      }
     },
     {
       "number": 5551,
@@ -94431,7 +94451,7 @@
       "reviewed_head": "1123635a6f63f23638df9459c994160e5e649d30",
       "current_head": "1123635a6f63f23638df9459c994160e5e649d30",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/p104-joint-contact"
       ],
@@ -94441,12 +94461,16 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct25b-20261025.json"
       ],
-      "closure": null
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5551",
+        "merge_commit": "19bba71d576191a1b39f8f512461b4bd3572d477"
+      }
     }
   ]
 }
