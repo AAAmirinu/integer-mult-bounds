@@ -1,4 +1,4 @@
-# Pointwise Clifford tensor faithfulness with explicit error bounds
+# Pointwise Clifford tensor faithfulness and a complete frozen-repair obstruction
 
 **Enabling proof and exact verification tools; no new kappa.**
 For the full n-axis Clifford group, projectively distinct operators have
@@ -20,6 +20,18 @@ the retained passive saved-query ceiling: failure holds at every **f>=72**,
 with worst-case operator error at least **1/3** in each affected coefficient.
 At every f>=84 its normalized squared error is at least **125/126**.
 The old observation contract and both source clarifications remain binding.
+
+The [paid-repair extension](REPAIR.md) now proves that this caller needs
+**at least 104 additional field returns**, even with feedback among new
+calls. With q returns, the selected block has squared operator norm error
+at least **(1-q/104)_+/9** from width 72. The cheapest possible 104-return
+repair makes the complete frozen invoice adverse for **every r^p tariff,
+0<p<=1**. Thus paying for added repairs cannot rescue this frozen word.
+Changing an original paid input, capacity, free alphabet or target contract
+requires a new analysis. The selected frontier does not change.
+At the reference tariff from the pinned selected value, positive margin
+permits at most 36 added returns. From width 84 every such approximate
+repair has squared operator error at least **2125/3276**.
 
 ## What changes
 
@@ -87,6 +99,7 @@ The registered normal and optimized isolated checks print:
 ```text
 PASS_POINTWISE_CLIFFORD_AND_STABILIZER_NO_NEW_KAPPA
 PASS_PASSIVE_CEILING_FROM_WIDTH_72_NO_NEW_KAPPA
+PASS_104_RETURN_FLOOR_ERROR_TRADEOFF_AND_ADVERSE_REPAIR_INVOICE
 ```
 
 The first check includes:
@@ -110,18 +123,28 @@ finite bounds. [PASSIVE-REPLAY.json](PASSIVE-REPLAY.json) and
 Every consumed predecessor file is SHA-256 authenticated before import.
 Ordinary replay compares results; it does not regenerate them.
 
-The separate [mutation audit](audit_mutations.py) rejects four deliberate
+The repair check binds the actual diagonal target and optimistic invoice
+through the unchanged source loader. It checks all nine exact concave-order
+hinges, 576 literal group products, 18,432 phase covariance identities,
+48 history prefixes and 12 exact physical approximation cases. Controls
+include cached targets, wrong input versions, singular targets that share
+one return, and small-width dependence. [REPAIR-RESULT.json](REPAIR-RESULT.json)
+and [REPAIR-INVOICE.json](REPAIR-INVOICE.json) retain the complete results.
+
+The separate [mutation audit](audit_mutations.py) rejects six deliberate
 scientific defects in both normal and optimized Python: the wrong first
 overlap count, a native phase outside its tensor power, a projection scale
-outside its tensor power and a fixed-Pauli count with signs omitted. The
-[eight rejection receipts](MUTATIONS.json) bind the checked Python sources.
+outside its tensor power, a fixed-Pauli count with signs omitted, a repair
+phase outside its tensor power and a missing paid repair charge. The
+[twelve rejection receipts](MUTATIONS.json) bind the checked Python sources.
 Run it with `python3.12 -I -W error -B research/clifford-pointwise-faithfulness/audit_mutations.py`.
 
 These are author checks using distinct computational paths. The all-axis
 and all-width statements are written proofs, not proof-kernel results or
 independent human acceptance. The inherited parser and scalar kernel are
 shared. No selected cold replay, new provider run, Lean, Docker, physical
-emission, complete pricing, outer admission or changed frontier is claimed.
+emission, constructive complete price, outer admission or changed frontier
+is claimed. The repair result is a complete adverse optimistic invoice test.
 The base selected conditional value remains 605457647/200000000000 =
 0.003027288235, with the five framework assumptions unchanged.
 
@@ -144,10 +167,15 @@ the consumed passive ceiling, based on Dugongue's PR #4948 and its credited
 controller/native predecessors. Its complete package and notices are declared
 inputs. No predecessor file is changed.
 
-Chris R's [PR #5446](https://github.com/CrocSwap/integer-mult-bounds/pull/5446)
-is related work on width-dependent paid histories. Its general target
-alphabet has not been shown here to satisfy the Clifford premise. No claim
-in that PR is upgraded by this package. Krzysztof Wojt and Nick Petalas
+Chris R's [PR #5425](https://github.com/CrocSwap/integer-mult-bounds/pull/5425)
+and [PR #5446](https://github.com/CrocSwap/integer-mult-bounds/pull/5446)
+supply the paid-history method. Ali Romman's
+[PR #5449](https://github.com/CrocSwap/integer-mult-bounds/pull/5449) supplies
+the explicit relative-history quotient. The repair extension applies these
+methods to the retained PR4948 caller. It does not assert the Clifford
+premise for every alphabet in those papers. The exact invoice comparator
+credits classical concave order, mightyOil and retained predecessors.
+Krzysztof Wojt and Nick Petalas
 supply related residual-form and partial-Pauli work, as credited in the
 [retained singular-completion proof](https://github.com/CrocSwap/integer-mult-bounds/blob/32890bc5de034ab8fc93ac88ead7279a6a416d04/research/singular-rank-two-pauli/PROOF.md).
 Those executables are not dependencies.
@@ -156,7 +184,8 @@ The stabilizer normal form is classical work of
 [Dehaene and De Moor](https://arxiv.org/abs/quant-ph/0304125). The symplectic
 residual form, character orthogonality, Gram bound and Fourier inversion
 are classical tools. The contribution is the explicit quantitative theorem,
-its exact frontends and its source-bound corollary in this repository.
+its exact frontends, source-bound repair floor, error tradeoff and complete
+adverse invoice in this repository.
 No global literature-priority claim is made.
 
 New work by Ali Romman with substantial OpenAI Codex assistance; Apache-2.0.
@@ -170,6 +199,8 @@ spectrum; it does not by itself prove a general threshold.
 Apply the pointwise theorem to one actual changed caller, with its paid
 history, ownership and full invoice. First prove that its entire operator
 alphabet satisfies the hypothesis. A nominal sum of Cliffords need not do so.
+The frozen PR4948 word cannot be repaired profitably under the contract in
+REPAIR.md. An active change to an original paid input changes that premise.
 
 Bind the stabilizer-map frontend to one actual projection or rectangular
 caller. Its native scales, complete endpoint and physical implementation

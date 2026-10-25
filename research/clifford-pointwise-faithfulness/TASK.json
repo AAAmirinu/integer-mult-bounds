@@ -75,13 +75,13 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "Prove uniform pointwise tensor faithfulness for Clifford and stabilizer maps, implement exact residual decisions, and apply it to one retained passive ceiling.",
-  "scope_change_reason": "The full-Clifford fixed-program extension already exists in PR #5376. Its pointwise width, selected-window stability and nonunitary interface gaps lead to a written theorem instead of a proof-assistant formalization.",
-  "bottleneck_link": "Native-interface equalities and finite-alphabet obstructions need explicit uniform thresholds and correct scalar phases. This supplies those tools and one quantitative passive-caller corollary; it does not discharge the complete multiplication framework.",
+  "actual_scope": "Prove pointwise Clifford and stabilizer tensor bounds, implement exact residual decisions, and derive a source-bound 104-return repair floor, error tradeoff and complete adverse invoice.",
+  "scope_change_reason": "The full-Clifford fixed-program extension already exists in PR #5376. Its pointwise width, selected-window stability and nonunitary interface gaps lead to a written theorem instead of a proof-assistant formalization. The user requested a further significant contribution. The retained passive caller permits a relative-history application: PR5449 already supplies the dimension method, but its source binding, quantitative approximation consequence and complete repair budget were open here.",
+  "bottleneck_link": "Explicit native-interface thresholds and complete source-bound obstructions prevent unsupported endpoint and repair-cost claims. The frozen repair now fails for all positive concave power tariffs. The complete multiplication framework remains conditional.",
   "budget_minutes": 180,
   "stop_rule": "Finish the symbolic proof, independent finite counting paths, source-bound corollary, registered replay, publication-byte checks and focused handoff. Do not start an active caller construction.",
   "outcome": "completed",
-  "evidence": "PROOF.md, RESULT.json, APPLICATION.md, APPLICATION-RESULT.json, PASSIVE-REPLAY.json and source-authenticated normal/optimized replays.",
+  "evidence": "PROOF.md, RESULT.json, APPLICATION.md, APPLICATION-RESULT.json, PASSIVE-REPLAY.json and source-authenticated normal/optimized replays. REPAIR.md, REPAIR-RESULT.json and REPAIR-INVOICE.json add the quantitative paid-repair result.",
   "author": "Ali Romman with substantial OpenAI Codex assistance",
   "ai_assistance": "Substantial OpenAI Codex assistance with task selection, derivation, exact Python implementation, source audit, verification and documentation. One agent; no independent human or proof-kernel review.",
   "open_questions": [
@@ -92,10 +92,10 @@
       "blocked_by": "The present row-sum bound is sufficient and does not determine optimal eigenvalues."
     },
     {
-      "question": "Can one changed actual caller use this theorem with a favorable complete invoice?",
+      "question": "Can an active change to an original paid input escape the proved frozen-history obstruction at a favorable complete price?",
       "why_it_matters": "Only a source-bound endpoint and complete price can affect the multiplication result.",
       "first_step": "Check current ownership, then bind one complete operator alphabet and its available paid history.",
-      "blocked_by": "No new caller, physical implementation or complete price is supplied here."
+      "blocked_by": "The frozen PR4948 word requires at least 104 additional returns and fails every positive concave power tariff. A changed paid input needs a new complete dependency and price audit."
     },
     {
       "question": "Can the stabilizer-map residual frontend certify an actual projection or rectangular caller?",

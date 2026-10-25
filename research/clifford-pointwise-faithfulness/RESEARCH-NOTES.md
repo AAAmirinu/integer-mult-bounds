@@ -93,3 +93,70 @@ provides bounded corroboration, not independent universal acceptance.
 The check receipts state exact counts. Publication checks and final remote
 overlap freshness are recorded in the PR handoff; no hosted result is
 assumed from a local pass.
+
+## Paid-repair extension on 2026-10-25
+
+The donor requested another significant result or a deeper extension.
+Canonical main was fetched again and remained at the same base. The
+07:03..07:04 UTC overlap refresh covered 388 open PRs and 4,808 Discussion
+records with complete remote pagination. A targeted main-tree search
+included tracked research READMEs, proofs and research guidance beyond
+the sparse tree. The helper itself covered only 13 of 7,404 note paths.
+Unpublished work and arbitrary historical diffs remain outside coverage.
+
+The first candidate was a relative paid-history lemma. That principle
+already exists in PR5449 at `30ff28bfa7986b5534794f58de0a6359feb474cf`,
+with explicit credit to Chris R's PR5425/PR5446. Its proof was read. It
+provides a finite rational audit and asks for an actual source binding;
+it does not bind the present retained caller or provide this error and
+price conclusion. It is credited rather than duplicated. PR5427 at
+`e0192de5d97e5ac09f42d26d9ceedee6377c77e2` concerns other frozen words and
+free-word observations. PR5517 and the older P104 terminal correction
+floor concern different capacity and target contracts. The active-feed
+work around PR4948 changes original paid inputs and remains outside scope.
+
+A prospective continuation CLAIM was posted in the existing canonical
+comment before the implementation. It preserves the completed original
+result and records the source heads, boundary, cost allowance and stop
+test. The chosen extension supplies what the relative dimension method
+needs here: an actual 104-column quotient of dimension 104h at each
+width f>=72. One new field row adds at most h dimensions even when it is
+arbitrary and uses previous returns. This does not require a domain or
+cancellation law for the ordinary algebra.
+
+The quantitative extension projects the target frame off the initial
+history. The full Clifford Gram lower bound survives this projection
+because the source and target coefficient supports are disjoint. A
+classical rank approximation inequality then gives the deficit error
+bound. The argument counts all H-translates of all target rows. It does
+not sum separate worst-case inputs as if they were the same input.
+
+The actual frozen target is the first diagonal block D1 Q^-1 on original
+bank 0. The same source supplies P and T, including all helper credits.
+The mandatory clarification permits free owned CLEAR; no reset lower
+bound is used. Source-declared invoice entries are loaded through the
+unchanged portable loader, not reconstructed from a new physical word.
+Its rank-mass surplus is 96, while the added-return lower bound is 104.
+All nine signed concave-order hinges are positive after the cheapest
+repair, so the adverse cost conclusion holds on the whole stated power
+interval. The existing exact comparator supplies that arithmetic method.
+
+The interval engine also encloses the raw margin between 36 and 37 at
+the pinned selected value used as a reference tariff. Thus an affordable
+repair there has at most 36 new returns and a fixed nonzero operator
+error floor. This is a tariff comparison, not selected-frontier replay.
+
+Exact small-group checks include central phases at four width residues,
+feedback and overwrite histories, cached targets, wrong input versions,
+least-squares approximation, complementary idempotents that share one
+return, and width-one physical dependence. These controls check the
+distinctions that the proof needs. The all-width proof, source extraction
+and invoice assumptions remain separate from finite corroboration.
+
+The 07:29..07:30 UTC prepublication refresh found main unchanged and
+covered 398 open PRs and 4,826 Discussion records. PR5531 uses the original
+pointwise theorem on a different, 73-axis negative E endpoint. Its fixed
+observation contract and norm-only conclusion do not overlap the present
+104-column paid-repair and invoice result. Its pinned source remains the
+unchanged original theorem commit. No new competing claim on this repair
+scope was found. This is still a bounded overlap check, not global novelty.

@@ -57,7 +57,9 @@
     "research/passive-saved-query-ceiling/licenses/native-involutive-dual/ORIGINS.json",
     "research/passive-saved-query-ceiling/portable.py",
     "research/passive-saved-query-ceiling/verify.py",
-    "research/clifford-tensor-gram/LICENSE"
+    "research/clifford-tensor-gram/LICENSE",
+    "scripts/compare_recursive_invoices.py",
+    "certificates/selected-result.json"
   ],
   "commands": [
     {
@@ -109,6 +111,31 @@
       ],
       "timeout_seconds": 180,
       "checks": "Replay the pinned passive ceiling and check the explicit width-72 and width-84 error bounds."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-W",
+        "error",
+        "-B",
+        "{package}/verify_repair.py"
+      ],
+      "timeout_seconds": 180,
+      "checks": "Replay actual source targets and invoice; check exact module, phase, approximation and concave-order examples for the 104-return repair floor."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-W",
+        "error",
+        "-B",
+        "{package}/verify_repair.py"
+      ],
+      "timeout_seconds": 180,
+      "checks": "Replay actual source targets and invoice; check exact module, phase, approximation and concave-order examples for the 104-return repair floor."
     }
   ]
 }
