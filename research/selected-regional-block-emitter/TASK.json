@@ -74,13 +74,13 @@
       }
     ]
   },
-  "scope_status": "narrowed",
+  "scope_status": "refined",
   "actual_scope": "Source-bound direct emission of inner Cursor regions preserving factory trace, original residual identity, exact PCs and suspended continuations.",
   "scope_change_reason": "PR4791 explicitly leaves block enumeration open; outer LOW scheduling is a separate task.",
   "bottleneck_link": "Removes the remaining block-count compile loop from the existing compact itinerary while retaining its exact continuation interface.",
   "budget_minutes": 60,
   "stop_rule": "Stop after exact source-word/factory equivalence and bounded physical continuation comparison; no selected admission or outer compiler claim.",
-  "outcome": "scoped-proof-and-finite-checks",
+  "outcome": "completed",
   "evidence": "PROOF.md, RESULT.json, PHYSICAL.json",
   "author": "JoyboyBrian, with substantial OpenAI Codex assistance",
   "ai_assistance": "Substantial OpenAI Codex assistance with proof, implementation, checks and documentation.",
