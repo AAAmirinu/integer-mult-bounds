@@ -70,6 +70,18 @@ through its Laurent identity, 265-axis phase polynomial, 104 ports, both
 orientations and actual orthogonal routes. This algebraic check is distinct
 from materializing exponential-size all-column matrices.
 
+The added independent dense audit checks all 512 columns of each of the
+four new MOVE maps: `17 -> 720` (rank 2), `17 -> 782` (rank 3),
+`615 -> 207` (rank 5), and `775 -> 207` (rank 2). It compares
+1,048,576 exact complex entries, including
+absolute phase, column norm and support. The unchanged credited PR5548
+arithmetic engine executes the literal source charts and lowered recipes;
+the source/vendor tableau is not used for matrix equality. Phase-only
+faults invisible to signed Pauli images are rejected. The exact base
+equalities tensor factorwise, with phase i^theta lifted as i^(f theta).
+This checks the new map interfaces only, and retains the old native and
+uniform implementation premises.
+
 ## Complete moment and transfer
 
 The new local paid profile is

@@ -42,6 +42,25 @@
       ],
       "timeout_seconds": 30,
       "checks": "A separately written rational log/exp interval engine proves claimed/tested and both raw-crossing endpoint signs; recount all paid/target jobs and ordinary stock, authenticate the source capsule, compare executable funding logic, and bind every reviewed output to this publication. No native/outer framework is independently reimplemented."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "{package}/native_review.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Reuse the credited PR5548 dense interpreter to compare all512columns of the four actual added native maps, including absolute phase, exact norm and measured rank; verify all signed-phase/sign/boundary/rank controls, mutate two actual source files before import, and bind the audit to this publication. Old paid-map and framework foundations remain inherited."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-O",
+        "-B",
+        "{package}/native_review.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Reuse the credited PR5548 dense interpreter to compare all512columns of the four actual added native maps, including absolute phase, exact norm and measured rank; verify all signed-phase/sign/boundary/rank controls, mutate two actual source files before import, and bind the audit to this publication. Old paid-map and framework foundations remain inherited."
     }
   ]
 }

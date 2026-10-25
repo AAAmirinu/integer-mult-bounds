@@ -44,7 +44,8 @@ python3.12 -B scripts/research_package.py --package research/p104-joint-contact
 
 [VERIFY.json](VERIFY.json) registers normal and optimized execution of the
 same complete verifier, with a 540-second bound per command, plus two
-30-second independent funding checks. The verifier
+30-second independent funding checks and two 30-second dense native checks.
+The verifier
 authenticates the retained predecessor, reconstructs the literal replacement,
 checks the complete scalar and signed native endpoints, checks the physical
 caller and full invoices, and evaluates both rational moment engines,
@@ -58,6 +59,15 @@ moment engine. It independently recounts the complete invoice and ordinary
 allowances and proves the signs at the claimed/tested savings and both raw
 crossing endpoints. [funding_review.py](funding_review.py) binds that audit
 to this publication's exact receipt, source capsule, pricing code and word.
+
+The [four-map dense audit](native-peer/README.md) reuses Chris R/Clear1nsight's
+credited PR5548 arithmetic interpreter to compare every complex entry in
+all 512 columns of each newly introduced MOVE map. It checks absolute phase,
+norm and support rank, totaling 1,048,576 entries per mode.
+[native_review.py](native_review.py) binds it to the actual published word
+and authenticated native sources and rejects two actual corrupted source
+files before import. This covers the four new interfaces, preserving the
+inherited old-map and framework premises. The conditional endpoint is unchanged.
 
 The source is Ali Romman's PR5545 at
 `18968423711fd902aaee1099979497d55603e1dc`. Its **unchanged official source

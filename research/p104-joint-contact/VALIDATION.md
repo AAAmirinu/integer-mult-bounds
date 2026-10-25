@@ -71,6 +71,22 @@ The two funding logs also match:
 This paragraph records that completed run; its addition changes only this
 documentation, with every scientific code/input/output byte retained.
 
+The scientific core at publication head
+`79072da5404a01056df2af2e4132324b01c72366` also passed hosted run
+40194668767: plan in 3m55s and full registered replay in 8m18s, with committed
+inputs unchanged. This is a historical exact-head result, not a claim about
+later heads or scientific adoption.
+
+The subsequent verification-only appendix leaves WORD, RESULT, pricing,
+source capsule and complete construction code unchanged. Its four-map
+dense audit passed normal/optimized read-only replay in 2.23/2.15s. Each mode
+checks all 2,048 columns and 1,048,576 complex entries, phase/sign/boundary/rank
+controls and source pins. The parent wrapper additionally binds it to this
+publication and checks two actual temporary source corruptions before
+import. It registers two extra 30-second commands; all six declared command
+timeouts total 1,200s. The source arithmetic interpreter is credited
+unchanged reuse from PR5548, not a newly authored independent engine.
+
 ## Limits
 
 All five framework premises in PROOF.md remain. Native algebra is checked
