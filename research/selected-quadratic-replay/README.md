@@ -38,7 +38,9 @@ independent actual-state cross-check, serially. The benchmark runs six fresh
 processes in literal/new/new/literal/literal/new order. It requires identical
 complete scientific stdout and rejects a changed implementation between runs.
 The extra adapter corpus and literal cross-check are separate from the timed
-complete source replay. OS caches can be warm and host load can vary.
+complete source replay. The two-command package audit includes extra literal
+work; no speedup is claimed for that larger audit. OS caches can be warm and
+host load can vary.
 
 `binding.py` compares every derived syntax tree with the exact source plus a
 small declared transformation. Three omitted scientific checks reject. The

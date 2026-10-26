@@ -38,6 +38,26 @@ read priority 8. At 16:25 UTC, the overlap cache covered all 312 open PRs and
 The local scan covered 7,840 main notes at the frozen base. Later main notes
 require a separate search before submission.
 
-Pending: committed export, sealed read-only optimized registered commands,
-actual source-corruption controls and published artifact checks.
+The scientific commit is `83823449895cb1126c246570b92992d45157fe02`.
+The byte/mode preflight and official 53-file export pass. Its sealed export
+(including the export manifest) passes both registered commands serially with
+Python 3.12.14, `-I -O -B`, empty PATH, no Git, files mode 444 and directories
+mode 555. All 54 file bytes and modes remain unchanged. PORTABILITY.json records
+the export digest. Separate corruptions of the actual quadratic engine, selected
+WORD and native compiler each reject before evaluation and restore exactly.
+
+A second live overlap refresh at 16:35 UTC covers 313 open PRs and 5,114
+Discussion records. Only this investigation matches the scoped terms. A separate
+Git search of the latest canonical main at de5ec2e7 finds no matching package;
+all 31 exact input bytes still match that main. Priority 8 is unchanged.
+
+The checkout is shallow. The optional full-history source-ancestry preflight
+is not run. Explicit source bytes and Git blobs, committed export and Git-free
+replay are checked. This is an export-availability check, not full Git history.
+
+The standard `scripts/research_package.py --package` runner also passes both
+commands under Python 3.12.14 with `PASS_REGISTERED_RESEARCH_PACKAGE`.
+Only documentation, TASK wording and the portability receipt change after the
+scientific commit. All 12 Python implementation hashes still match BENCHMARK.json.
+See the canonical Discussion for the final published head and readback status.
 Hosted CI, independent human review and proof-kernel acceptance are separate.

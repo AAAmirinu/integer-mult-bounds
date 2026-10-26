@@ -42,12 +42,12 @@
   },
   "scope_status": "refined",
   "actual_scope": "Complete selected P104 replay with exact quadratic-state format adapters and bounded input-keyed memoization",
-  "scope_change_reason": "The selected native compiler is the measured bottleneck. A full uncached quadratic replay passed in180.42s; bounded pure-function reuse is added after that complete result, with typed-key and mutation controls. The public claim records this refinement.",
+  "scope_change_reason": "The selected native compiler is the measured bottleneck. A full uncached quadratic replay passed in 180.42 seconds. Bounded pure-function reuse was then added, with typed-key and mutation controls. The public claim records this change.",
   "bottleneck_link": "Faster full selected native and invoice verification reduces the cost of checking changed P104 constructions.",
   "budget_minutes": 120,
   "stop_rule": "Stop if complete source checks or exact scientific results differ, or if the whole source replay does not improve.",
   "outcome": "completed",
-  "evidence": "All complete source checks pass with unchanged RESULT and WORD. Six alternating fresh processes give median269.00s literal and98.37s new (2.7346x). Both original literal interpreters independently match all17651 distinct actual inputs and9037312 amplitude entries each. See RESULT.json, CROSS.json and BENCHMARK.json.",
+  "evidence": "All complete source checks pass with unchanged RESULT and WORD. Six alternating fresh processes give medians of 269.00 seconds literal and 98.37 seconds new (2.7346x). Both original literal interpreters independently match all 17,651 distinct actual inputs and 9,037,312 amplitude entries each. See RESULT.json, CROSS.json and BENCHMARK.json.",
   "author": "Ali Romman with substantial OpenAI Codex assistance",
   "ai_assistance": "Ali Romman with substantial OpenAI Codex assistance; no subagents.",
   "open_questions": [
@@ -67,6 +67,6 @@
   "priority_refresh": {
     "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
     "revision": 8,
-    "decision": "Keep the assigned verification optimization. Revision8 requests measured replay gains with exact coverage; the selected admission itself is already complete."
+    "decision": "Keep the assigned verification optimization. Revision 8 requests measured replay gains with exact coverage. The selected admission itself is already complete."
   }
 }
