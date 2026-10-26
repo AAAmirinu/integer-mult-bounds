@@ -243,14 +243,38 @@ def error_summary(exc):
     return str(exc)[:700]
 
 
+def validate_cached_source(source, name):
+    """Check cached containers before search code uses their fields."""
+    if not isinstance(source, dict) or not isinstance(source.get("records"), list):
+        raise ValueError("source must contain a records list")
+    if type(source.get("complete_pagination")) is not bool:
+        raise ValueError("source must declare pagination coverage")
+    stamp = datetime.fromisoformat(source["fetched_at"])
+    if stamp.tzinfo is None:
+        raise ValueError("source timestamp needs a UTC offset")
+    for row in source["records"]:
+        if not isinstance(row, dict) or type(row.get("number")) is not int:
+            raise ValueError("record needs an integer number")
+        if name == "pr_files":
+            if not isinstance(row.get("paths"), list) or not all(isinstance(p, str) for p in row["paths"]):
+                raise ValueError("file record needs a list of paths")
+        elif not all(isinstance(row.get(key), str) for key in ("kind", "title", "body", "url", "updated_at")):
+            raise ValueError("record text fields must be strings")
+    return stamp
+
+
 def remote_snapshot(cache, offline=False, refresh=False, max_age=300, need_files=False,
                     include_closed=False):
     warnings = []
     try:
         snapshot = json.loads(cache.read_text(encoding="utf-8"))
-        if snapshot.get("schema_version") != 1 or snapshot.get("repository") != REPO:
+        if (not isinstance(snapshot, dict) or snapshot.get("schema_version") != 1
+                or snapshot.get("repository") != REPO or not isinstance(snapshot.get("sources"), dict)):
             raise ValueError("cache schema or repository mismatch")
-    except (OSError, ValueError):
+    except FileNotFoundError:
+        snapshot = {"schema_version": 1, "repository": REPO, "sources": {}}
+    except (OSError, ValueError) as exc:
+        warnings.append("cache: unusable snapshot: " + error_summary(exc))
         snapshot = {"schema_version": 1, "repository": REPO, "sources": {}}
     sources = snapshot.setdefault("sources", {})
     fetches = [("open_prs", lambda: pull_records(gh_json([
@@ -267,10 +291,13 @@ def remote_snapshot(cache, offline=False, refresh=False, max_age=300, need_files
     for name, fetch in fetches:
         cached = sources.get(name)
         age = None
-        if cached:
+        if cached is not None:
             try:
-                age = (datetime.now(timezone.utc) - datetime.fromisoformat(cached["fetched_at"])).total_seconds()
-            except (KeyError, ValueError, TypeError):
+                stamp = validate_cached_source(cached, name)
+                age = (datetime.now(timezone.utc) - stamp).total_seconds()
+            except (KeyError, ValueError, TypeError) as exc:
+                warnings.append(f"{name}: unusable cached source: {error_summary(exc)}")
+                sources.pop(name, None)
                 cached = None
         fresh = cached is not None and age is not None and 0 <= age <= max_age
         if need_files and name in ("pr_files", "open_prs") and cached:
