@@ -25,7 +25,10 @@ under optimized Python. For each direct source and the current source export,
 flip its middle byte with XOR 1, enter `sources.sources()`, require ValueError,
 and restore the bytes. SOURCE-CONTROLS.json records every file and rejection.
 Each failure occurs at source authentication before scientific source import.
-The frozen source files are unchanged.
+The frozen source files are unchanged. Two further actual middle-byte flips
+in PR5756 WORD.json.gz and RESULT.json also reject at the audit-source hash
+check under isolated optimized Python. There are eleven actual source-byte
+corruption controls in total.
 
 That exact scientific commit passed committed-byte and official export checks.
 Its separate sealed replay passed under Python 3.12 with `-I -O -W error -B`,
@@ -39,9 +42,12 @@ and verifies every recorded dominance and interval certificate. The six commands
 are now registered. The original four were run through the runner; the added
 two were run directly. No single six-command runner pass is claimed. The
 primary code, local word, native interval code and original scientific receipts
-are unchanged from the scientific commit. A final integrated sealed export
-replay follows this proof checkpoint; its result will be recorded before
-publication.
+are unchanged from the scientific commit. The final integrated sealed replay at proof commit
+`f884d5eccd02b9fc7ff3125c5a884657ac0d38f7` passed all three scripts: 98.44
+seconds for verify.py, .46 seconds for native_interval.py and 2.20 seconds
+for optimal_tariff.py. All 36 exported files kept their bytes and modes. The
+run used `-I -O -W error -B`, empty PATH, read-only files and no Git directory.
+Only this validation prose changes after that proof checkpoint.
 
 The PR5718-only composition passed a full primary replay at .00311036741.
 The seventeen-split composition passed all registered and sealed checks at
