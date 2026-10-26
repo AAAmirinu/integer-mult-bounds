@@ -85,6 +85,9 @@ class PebbleTests(unittest.TestCase):
             self.assertEqual(out.returncode, 0, out.stderr); c.write_text(out.stdout)
             check = subprocess.run(cmd + ['--check', str(c)], cwd=tmp, capture_output=True, text=True)
             self.assertEqual(check.returncode, 0, check.stderr)
+            saved = c.read_text(); c.write_text('[]')
+            self.assertEqual(subprocess.run(cmd+['--check',str(c)], capture_output=True).returncode, 2)
+            c.write_text(saved)
             p.write_text(p.read_text()+'\n')
             self.assertEqual(subprocess.run(cmd+['--check',str(c)], capture_output=True).returncode, 2)
 

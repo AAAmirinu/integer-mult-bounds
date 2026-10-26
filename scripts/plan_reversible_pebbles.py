@@ -134,7 +134,7 @@ def main(argv=None):
         value, digest = read_json(args.problem, 1024**2)
         if args.check:
             result, _ = read_json(args.check, 16 * 1024**2)
-            require(result.get('input_sha256') == digest, 'Problem bytes changed')
+            require(type(result) is dict and result.get('input_sha256') == digest, 'Problem bytes changed')
             verify(value, result)
             print('PASS_REVERSIBLE_PEBBLE_CERTIFICATE')
         else:
