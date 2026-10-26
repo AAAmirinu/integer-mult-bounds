@@ -116,6 +116,9 @@ zxv's comparator, mightyOil's T16 audit and all credited predecessors.
 
 ## Open next questions
 
+The [multi-candidate region checker](candidate-power-regions.md) uses this
+reduction to choose among up to eight complete invoices across the domain.
+
 - Can an actual proposed exchange with an inconclusive concave screen use this
   certificate? Supply the complete changed paid and target terms and the same
   consumer contract before applying the tool.
