@@ -65,6 +65,10 @@ on the checker to print sparse operators, input payload and discrepancy.
 These disprove the **independent-operator** identity. Symbols named `G` and
 `G_inverse` acquire no inverse relation.
 
+For a scalar rational interface matrix, use the
+[rank and kernel certificate tool](rational-rank-certificates.md) to export
+independent coordinates and complete linear relations before circuit synthesis.
+
 ## Scope of the bridge
 
 Universal acceptance permits termwise substitution `X_a=G_a^(tensor f)` for every
