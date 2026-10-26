@@ -96194,6 +96194,41 @@
         "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5605",
         "merge_commit": "300ee91bc0d8dc3ec1517bb6d139421d02ea55d6"
       }
+    },
+    {
+      "number": 5703,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjIyNjMwMzU0",
+          "is_bot": false,
+          "login": "Clear1nsight",
+          "name": "Chris R"
+        },
+        "headRefOid": "475cfff509e3369926c5b2ee258fc8f1f9c3c6a1",
+        "isDraft": false,
+        "number": 5703,
+        "title": "Restore selected review and source links in the CI guide",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5703"
+      },
+      "reviewed_head": "475cfff509e3369926c5b2ee258fc8f1f9c3c6a1",
+      "current_head": "475cfff509e3369926c5b2ee258fc8f1f9c3c6a1",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "docs/ci-verification.md"
+      ],
+      "unresolved_question": "Reviewed exact two-link navigation repair; selected record and frozen scientific sources unchanged. Six existing current-status tests pass; repairs the shared planner navigation gate.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26r-20261026.json"
+      ],
+      "closure": null
     }
   ]
 }

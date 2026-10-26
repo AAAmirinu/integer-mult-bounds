@@ -337,3 +337,7 @@ The [exact-head delta](pr-intake-evidence/queue-oct25d-20261025.json) records 34
 The [25 October local research archive](../../research/local-research-checkpoint-20261025/README.md) preserves 12 unpublished commits and 88 unique or differing source files from the old checkout. Another 174 identical files are indexed at their canonical locations. Historical claims are not current supplier admissions; the original branch head is retained in ancestry.
 
 PR5561 also became reachable as an ancestor of accepted successor source heads, so GitHub marked it merged automatically. Its held package was **not** installed in the default tree and its claim-line objections remain in the ledger; see [ancestry status](pr-intake-evidence/pr5561-ancestry-status.json). The [PR5599 partial maintainer audit](pr-intake-evidence/pr5599/README.md) records fresh endpoint checks and a resource stop, not a frontier promotion.
+
+## Delta intake through PR5703
+
+The [exact-head delta](pr-intake-evidence/queue-oct26r-20261026.json) records 1 decisions: {'reviewed_tooling': 1}. Source-only retention preserves attribution and open scientific obligations. Historical-only files and any workflow configuration resolutions are explicit in that receipt. No scientific replay or selected-frontier change.

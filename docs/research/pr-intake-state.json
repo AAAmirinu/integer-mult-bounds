@@ -33371,6 +33371,19 @@
       "baseline": "5e0052ca0aa3036a3afa8b0438927377c8d97d53",
       "watch_paths": {},
       "watch_prs": {}
+    },
+    {
+      "number": 5703,
+      "head": "475cfff509e3369926c5b2ee258fc8f1f9c3c6a1",
+      "status": "ready_to_integrate",
+      "reason": "Reviewed exact two-link navigation repair; selected record and frozen scientific sources unchanged. Six existing current-status tests pass; repairs the shared planner navigation gate.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26r-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "df0137efd35e11b4445734bf612bdd4c7ebc330c",
+      "watch_paths": {},
+      "watch_prs": {}
     }
   ]
 }

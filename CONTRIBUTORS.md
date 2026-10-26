@@ -4311,3 +4311,9 @@ Source archives retain attribution; mathematical review remains open.
 ## Selected P104 helper-split result — 25 October 2026
 
 **Ali Romman (@aliromman), PR5599:** selected conditional κ = 0.00310045. The [contribution map](docs/research/community-p1045599-contributors.md) credits the commuting-contact work by **Pierre-Loic Doulcet / hexapode**, predecessor improvements by **GamingPuzzled**, **DreamingOfClouds** and **thu-nmrc**, and verification/interface work by **Clear1nsight** and **Matarener**, alongside the full P104, BIT, compiler and analytic lineage. Complete guarded Linux replays and the maintainer application review passed under the five retained assumptions.
+
+## Queue intake, 26 October 2026 (chunk R)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **Chris R (@Clear1nsight)** — [#5703](https://github.com/CrocSwap/integer-mult-bounds/pull/5703): Restore selected review and source links in the CI guide (reviewed tooling).
