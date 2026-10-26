@@ -13,9 +13,29 @@
     "research/p104-shared-frame-gather/inputs/predecessor-SOURCES.json",
     "research/p104-shared-frame-gather/inputs/predecessor-experiment.py",
     "research/p104-shared-frame-gather/inputs/result5718.json",
-    "research/p104-shared-frame-gather/inputs/word5718.json.gz"
+    "research/p104-shared-frame-gather/inputs/word5718.json.gz",
+    "research/p104-cross-call-paid-reuse/inputs/DATA-PHASES.json",
+    "research/p104-cross-call-paid-reuse/inputs/NOTICE5718",
+    "research/p104-cross-call-paid-reuse/inputs/clifford_exact.py",
+    "research/p104-cross-call-paid-reuse/inputs/controller5718.json",
+    "research/p104-cross-call-paid-reuse/inputs/native_verify.py",
+    "research/p104-cross-call-paid-reuse/inputs/result5718.json",
+    "research/p104-cross-call-paid-reuse/inputs/word5718.json.gz",
+    "research/p104-cross-call-paid-reuse/experiment.py",
+    "research/p104-cross-call-paid-reuse/SOURCES.json",
+    "research/p104-cross-call-paid-reuse/results/QUERY-MAPS.json.gz"
   ],
   "commands": [
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/publication_check.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Byte-exact join of the published query-map and shared-gather source packages."
+    },
     {
       "argv": [
         "{python}",
