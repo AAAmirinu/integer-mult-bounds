@@ -23,6 +23,10 @@ with LF newlines, so the receipt hash also works on Windows.
 
 All contracts must match. A matching declaration does not prove that components
 have disjoint lifetimes, independent targets or compatible native boundaries.
+
+For fixed helper lifetimes, the [minimum-pool allocator](helper-lifetime-allocation.md)
+constructs a slot map and checks a matching lower-bound witness.
+
 Charge shared adapters, restoration, routes and compiler work in the complete
 construction bill. Do not add claimed κ values or count the same target twice.
 
