@@ -56,10 +56,33 @@ another physical mechanism.
 The final finite split screen tested 46 boundary groups and found no further
 candidate. The screen is restricted to the declared after-MOVE basis-pair class.
 
-Registered normal/optimized replay, the final committed-byte check and a
-fresh read-only Git-free replay are pending for this last composition.
-The earlier 0.00310432 result and its successful sealed replay remain frozen
-at `baf2921bede71664d201e055e5ba34fe5f979674`.
+Registered normal and optimized replays both passed at scientific commit
+`3e038c5da1b56e9c9e3ad76c0592e91914f7eb6d`. The metadata/source-pin check and
+36-file committed-byte check passed. The official export and its integrity
+check also passed. These commands reproduce those checks:
+
+```sh
+python3 -B scripts/research_package.py --package research/p104-helper-subspace-splits --check-only
+python3 -B scripts/research_package.py --package research/p104-helper-subspace-splits
+python3 -B scripts/check_research_commit.py --package research/p104-helper-subspace-splits
+python3 -B scripts/export_research_package.py export --package research/p104-helper-subspace-splits --ref 3e038c5da1b56e9c9e3ad76c0592e91914f7eb6d --output /tmp/helper-splits.tar
+python3 -B scripts/export_research_package.py check /tmp/helper-splits.tar
+```
+
+The exported package passed a fresh isolated optimized replay with no Git
+directory, an empty PATH, file mode 0444 and directory mode 0555. The run
+used an absolute CPython 3.12.14 executable with `-I -O -B`. All 37 files,
+including the export manifest, kept their hashes and modes. A one-byte change
+to the retained PR5612 constructor then failed at its SHA256 check before
+import. The test restored the exact source bytes and mode and checked all
+files again. The harness returned
+`PASS_READ_ONLY_GIT_FREE_REPLAY_AND_SOURCE_FAULT`.
+
+Only this validation record changes after the frozen scientific replay.
+The final publication check compares all other 35 package/input files with
+that commit. No pre-existing unmerged branch objects or writable source files
+were needed for the sealed replay. These are author-side checks, not
+independent scientific acceptance.
 
 ## Source history and limits
 
