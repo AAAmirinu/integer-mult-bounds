@@ -178,3 +178,6 @@ For a difference whose uncancelled ranks are powers of one integer, the
 [polynomial comparison](power-polynomial-comparison.md) classifies the power
 cost on the whole open interval `0 < t < 1`. It distinguishes strict order,
 interior equality and actual crossings without a numerical exponent grid.
+
+For a finite search pool, use the [certified invoice frontier](invoice-search-frontier.md)
+to remove dominated bills and retain all incomparable candidates.
