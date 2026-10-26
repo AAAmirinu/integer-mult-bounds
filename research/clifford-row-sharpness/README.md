@@ -1,6 +1,6 @@
 # Clifford Gram row-sum sharpness: independent scoped finding
 
-**Status: published on this fork for independent review; upstream PR not yet opened, merged, or selected-frontier approved.** This standalone note and verifier complement PR #5694. They do not claim to improve κ or certify a complete multiplication theorem.
+**Status: submitted as [upstream PR #5714](https://github.com/CrocSwap/integer-mult-bounds/pull/5714) for independent review; not merged or selected-frontier approved.** This standalone note and verifier complement PR #5694. They do not claim to improve κ or certify a complete multiplication theorem.
 
 - Repository: <https://github.com/CrocSwap/integer-mult-bounds>
 - Pinned canonical `main` at the final checkpoint: `df0137efd35e11b4445734bf612bdd4c7ebc330c` (2026-10-26); priority revision **7**.
