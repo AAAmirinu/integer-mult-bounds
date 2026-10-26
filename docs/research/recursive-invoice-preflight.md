@@ -1,5 +1,8 @@
 # Compare the complete recursive invoice before extending a construction
 
+For explicit equal-mass paid concentration or target refinement, use the
+[rank-transfer planner and replay checker](recursive-rank-transfers.md).
+
 The same local edit can save scalar instructions while worsening its recursive
 bill. Conversely, owning a helper can remove paid work while also surrendering
 a productive target. Compare **both** paid jobs and target credits first:
