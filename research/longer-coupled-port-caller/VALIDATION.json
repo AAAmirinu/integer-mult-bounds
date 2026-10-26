@@ -1,5 +1,5 @@
 {
-  "status": "LOCAL_REPLAY_PASSED_PUBLICATION_CHECKS_PENDING",
+  "status": "LOCAL_AND_GIT_FREE_REPLAY_PASSED",
   "python": "CPython 3.12.13",
   "registered_normal": "PASS_REGISTERED_RESEARCH_PACKAGE research/longer-coupled-port-caller outcome=negative-result",
   "optimized": "python3.12 -I -O -B research/longer-coupled-port-caller/verify.py; byte-identical RESULT.json",
@@ -13,8 +13,11 @@
     "Independent human review"
   ],
   "remaining_publication_checks": [
-    "Committed-byte preflight",
-    "Git-free read-only export",
-    "GitHub objects and rendered PR readback"
-  ]
+    "GitHub rendered PR and published-body readback"
+  ],
+  "proof_commit": "67f12b6bef1e25f649bd62edae36cd144fe19899",
+  "committed_bytes": "PASS_RESEARCH_COMMIT_BYTES; 22 files",
+  "git_free_export": "PASS_RESEARCH_EXPORT; 22 files; read-only optimized replay with PATH=/nonexistent; identical result",
+  "source_corruption": "Changed invoice bytes rejected before computation, then restored",
+  "github_proof_objects": "Proof, result, sources and independent checker match exact Git blobs at the proof commit"
 }

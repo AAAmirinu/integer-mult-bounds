@@ -2,7 +2,8 @@
 
 Ali Romman with substantial OpenAI Codex assistance. Apache-2.0.
 
-This file records work in progress. No new kappa is established.
+This file records discovery steps. The final result is in PROOF.md.
+No new kappa is established.
 Base: 6cf7a683f447b9f1e2333791907fd92be5009a63.
 Claim: https://github.com/CrocSwap/integer-mult-bounds/discussions/5593#discussioncomment-19186397
 
