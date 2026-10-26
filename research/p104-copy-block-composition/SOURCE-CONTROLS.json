@@ -1,0 +1,14 @@
+[
+  {
+    "path": "source/R22-EDITS.json",
+    "middle_byte_xor1_rejected": true
+  },
+  {
+    "path": "source/R22-NOTICE",
+    "middle_byte_xor1_rejected": true
+  },
+  {
+    "path": "source/pr5774-export.tar",
+    "middle_byte_xor1_rejected": true
+  }
+]
