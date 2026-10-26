@@ -48,7 +48,34 @@ also passed; it does not substitute for the new-word replay.
 
 ## Committed export
 
-The committed export check and sealed replay will be recorded after completion.
+The committed-byte and executable-mode preflight passes for all 57 package
+files at scientific payload commit `f40ad6936e208a3b2430f9a246077f5d8b34ee31`.
+The official exporter and its inventory/mode/hash/declared-input checker pass.
+Export archive SHA256:
+`bc900fa1d6d1818297b8298e8eb914c0969dd5f1e6ecbbe59657ee8883acf277`.
+
+```sh
+python3.12 -B scripts/check_research_commit.py \
+  --package research/p104-accumulated-block-composition --check-modes
+python3.12 -B scripts/export_research_package.py export \
+  --package research/p104-accumulated-block-composition \
+  --ref f40ad6936e208a3b2430f9a246077f5d8b34ee31 --output publication.tar
+python3.12 -B scripts/export_research_package.py check publication.tar --check-inputs
+```
+
+The export was extracted outside Git, all files set to 0444 and directories to
+0555, and PATH set to the empty string. Using an absolute Python executable,
+`-I -O -W error -B verify.py` passed in 75.52 seconds; `integrity_check.py`
+and `check_total_gain.py` passed in 0.17 and 0.25 seconds. All 58 files including
+the export receipt, and all directory/file modes, were unchanged afterward.
+The final documentation commit changes only this validation record; its complete
+scientific payload is byte-identical to the tested export.
+
+An earlier sealed run passed the scientific replay but exposed a corruption-test
+fixture copying read-only modes into its temporary sandbox. The fix changes only
+those private copied fixtures to writable modes. Both normal and optimized
+source-corruption checks passed after the fix, followed by the complete fresh
+sealed replay above. No scientific source, word, invoice, root or claim changed.
 
 ## Scope and current overlap
 
