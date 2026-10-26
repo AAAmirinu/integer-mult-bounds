@@ -13,6 +13,13 @@ For an `inconclusive` result, use the separate
 exponent. It can certify a strict sign or report an interval that still contains
 zero. It does not turn a local invoice gain into a complete κ claim.
 
+For a certificate over the whole interval `0<t<1`, use the
+[general-rank root-budget tool](recursive-power-variation.md). It combines a
+proved root-count bound with exact endpoint roots and rational brackets. It
+reports `inconclusive` if roots remain unaccounted for; a grid alone is not a
+uniform-order certificate. The common-base Sturm tool remains the complete
+polynomial classifier when all uncancelled ranks share one integer base.
+
 This standard-library tool uses integer arithmetic, without a root search or
 contribution replay. It reports an exact certificate for every increasing
 concave rank tariff with f(0)=0, including r^(1-C), 0<C<1. The method is classical
