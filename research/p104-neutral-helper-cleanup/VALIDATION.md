@@ -34,13 +34,39 @@ The final source export is an uncompressed tar file. Its exact bytes, Git
 blob, archive manifest and all 36 payload files are checked before imports.
 The export bytes are retained in an ancestor of this branch.
 
-## Publication checks pending
+## Completed publication checks
 
-Registered normal and optimized replay, committed-byte comparison, export
-integrity, a read-only Git-free replay and source-corruption controls will be
-recorded before publication. Hosted CI and independent scientific acceptance
-are separate. Full-history source-ancestry mode is unavailable in this shallow
-checkout; direct source-byte and ancestor checks are used instead.
+The registered normal and optimized replays both passed. They compared the
+complete regenerated receipt and word with the saved artifacts.
+
+```sh
+python3 -B scripts/research_package.py --package research/p104-neutral-helper-cleanup
+python3 -B scripts/check_research_commit.py --package research/p104-neutral-helper-cleanup
+python3 -B scripts/export_research_package.py export --package research/p104-neutral-helper-cleanup --ref 034db9706c0b4b6913a2347351656d52a2cbfe66 --output /tmp/p104-neutral-clean.tar
+python3 -B scripts/export_research_package.py check /tmp/p104-neutral-clean.tar
+```
+
+Expected and observed markers were `PASS_REGISTERED_RESEARCH_PACKAGE`,
+`PASS_RESEARCH_COMMIT_BYTES` and `PASS_RESEARCH_EXPORT`. All 15 package files
+matched scientific commit `034db9706c0b4b6913a2347351656d52a2cbfe66`.
+
+A fresh export passed optimized replay without Git and with an empty PATH.
+All 16 exported files, including the export manifest, were read-only. Their
+hashes and modes stayed unchanged. Replay took 73.01 seconds. It used the
+same Python 3.12 standard library and compared the complete receipt and word.
+
+Three separate source-corruption cases were rejected in normal and optimized
+mode: a changed archive byte, a changed payload with rebound outer archive
+hashes, and an omitted payload with rebound outer hashes. The last two reach
+the payload and inventory checks. No source code from a damaged export is
+imported. Controls ran in isolated temporary copies.
+
+The full-history source-ancestry mode was not run. This checkout is shallow
+and the tool requires full history. The task base and retained-export commit
+are direct ancestors of the publication commit; their source bytes and the
+Git-free replay are checked. Hosted CI and independent scientific acceptance
+remain separate. GitHub body rendering and link checks will be retained in
+the Discussion handoff after publication.
 
 ## Coordination
 
