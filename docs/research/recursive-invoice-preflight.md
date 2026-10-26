@@ -50,6 +50,46 @@ claim. Keep the source word, extraction command and exact head with the invoice.
 The [worked package](../../research/owned-relation-exhaustion/README.md)
 independently reconstructs its complete source invoice before comparing it.
 
+## Export the selected P104 bill
+
+For the selected P104 helper-subspace source, use the opt-in exporter:
+
+```sh
+python3 -B scripts/export_selected_invoice.py \
+  --evidence /tmp/selected-invoice-evidence.json > /tmp/selected-invoice.json
+python3 -B scripts/compare_recursive_invoices.py \
+  /tmp/selected-invoice.json CANDIDATE.json
+```
+
+The exporter first runs the selected source-binding check. It then counts each
+local MOVE from its frame dimensions and each productive public helper from its
+endpoint frames. It counts LOCAL calls, query calls, whole idle jobs and main
+diagonal targets from the physical controller. All component bills and the full
+bill must agree with the authenticated local, native and complete caller receipts.
+The evidence file records separate components and exact input hashes. The invoice
+on standard output uses the comparator schema without extra fields.
+
+This closes the manual transcription gap for the supported selected source.
+The candidate still needs its own complete, justified bill. The exporter does
+not replay scalar endpoint matrices, native phases or compiler inequalities.
+Use the selected record's reproduction command for those checks. Unknown source
+formats and controllers fail; a future selection can require another extractor.
+The source word, controller, receipts and selected result remain unchanged.
+
+The tests compare the bill with an independent count from the two path lengths.
+They remove each physical charge class and each paid or target rank entry, test
+source and ownership errors, and corrupt actual source files before running the
+CLI. Run them with:
+
+```sh
+python3 -B -m unittest discover -s tests -p 'test_research_selected_invoice.py' -v
+```
+
+The source P104 word is by Pierre-Loic Doulcet (hexapode). Ali Romman supplied
+the complete caller and helper accounting; Cinna Davis supplied the controller.
+Jacob Alan Sussman supplied productive recursion. The comparator is by zxv.
+The exporter is by Ali Romman with substantial OpenAI Codex assistance.
+
 | Result | What it establishes | Next action |
 |---|---|---|
 | `uniformly_worse` | Larger paid-minus-target cost for every power 0<t<1. | Stop this raw-moment improvement claim; identify a changed charge or contract before expanding it. |
