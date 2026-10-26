@@ -1,5 +1,8 @@
 # Add complete component invoices
 
+If a linear relaxation selects component multiplicities, use the
+[exact LP certificate checker](rational-lp-certificates.md) to replay its bounds.
+
 Use positive integer multiplicities to add invoices with the same declared
 contract. For example, add three copies of A and two copies of B:
 
