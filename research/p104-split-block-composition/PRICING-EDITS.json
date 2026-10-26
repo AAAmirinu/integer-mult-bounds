@@ -1,22 +1,22 @@
 [
   [
-    "KAPPA, TESTED = Q('311224341/100000000000'), Q('622448683/200000000000')",
-    "KAPPA, TESTED = Q('.00311236528'), Q('.003112365285')"
+    "KAPPA, TESTED = Q('.00311301600'), Q('.003113016005')",
+    "KAPPA, TESTED = Q('.00311313795'), Q('.003113137955')"
   ],
   [
     "PREVIOUS = Q('.00311024570')",
-    "PREVIOUS = Q('.00311224341')"
+    "PREVIOUS = Q('.00311301600')"
   ],
   [
-    "sum(paid.values()) == 66654",
-    "sum(paid.values()) == 66672"
+    "sum(paid.values()) == 66834",
+    "sum(paid.values()) == 66852"
   ],
   [
-    "'kappa_decimal':'0.00311224341'",
-    "'kappa_decimal':'0.00311236528'"
+    "'kappa_decimal':'0.00311301600'",
+    "'kappa_decimal':'0.00311313795'"
   ],
   [
-    "'previous_open_pr5718'",
-    "'previous_public_seventeen_split_checkpoint'"
+    "'previous_pr5718'",
+    "'previous_pr5751'"
   ]
 ]

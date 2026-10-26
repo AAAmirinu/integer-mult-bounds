@@ -1,7 +1,8 @@
 """Independent literal candidate walk and focused actual invalid-word controls.
 
 No constructor imports, source search, native engine, or pricing dependencies.
-Prepared with substantial OpenAI Codex assistance for flyingviper. Apache-2.0.
+Source: flyingviper PR5718 with substantial OpenAI Codex assistance.
+Candidate inventory: Ali Romman with substantial OpenAI Codex assistance. Apache-2.0.
 """
 from collections import Counter
 from copy import deepcopy
@@ -19,7 +20,7 @@ def binary_span(basis):
 
 def audit(word):
     n=word['public'];owned=word['owned_fields'];size=n+owned
-    need(n==761 and owned==9,'Exact independent/owned inventory')
+    need(n==767 and owned==9,'Exact independent/owned inventory')
     need(len(word['initial'])==len(word['final'])==n,'Boundary inventory')
     frames=[binary_span(x) for x in word['frames']]
     charts=word['initial']+[None]*owned
@@ -68,9 +69,9 @@ def audit(word):
     main=set(word['live'])|{r+112 for r in word['live']}
     targets=Counter(len(word['frames'][word['final'][r]])-len(word['frames'][word['initial'][r]]) for r in range(n) if r not in main)
     need(lifetimes==11 and peak==2,'Retained owned lifetime and peak contract')
-    need(paid==Counter({1:2203,2:458,3:495,4:93,5:174,6:6,7:15}),'Complete local paid inventory')
-    need(targets==Counter({1:18,2:5,4:92,5:7,7:6,8:31,9:394}),'Complete local target inventory')
-    need(scalar==244338,'Literal ordinary scalar allowance')
+    need(paid==Counter({1:2220,2:454,3:492,4:93,5:174,6:6,7:15}),'Complete local paid inventory')
+    need(targets==Counter({1:24,2:5,4:92,5:7,7:6,8:37,9:388}),'Complete local target inventory')
+    need(scalar==224138,'Literal ordinary scalar allowance')
     return dict(status='PASS_ALL_SCALAR_INPUTS_FRAMES_OWNERSHIP_INVOICES',columns=size,paid=dict(paid),targets=dict(targets),scalar=scalar,owned_lifetimes=lifetimes,owned_peak=peak)
 
 def transpose_audit(word):
@@ -94,27 +95,38 @@ def transpose_audit(word):
         need(col==expected,'Exact backward arbitrary-input column '+str(source))
     return dict(status='PASS_ALL_TRANSPOSE_COLUMNS',columns=size)
 
-def negative_controls(word,witness):
-    fresh=743
-    retirement=['ADD',708,154,'1/2',602]
-    restore126=['ADD',126,fresh,'2',127]
-    restore188=['ADD',188,fresh,'-2',127]
-    inverse=['ADD',fresh,146,'-1/2',127]
-    need(word['program'].count(retirement)==word['program'].count(restore126)==word['program'].count(restore188)==word['program'].count(inverse)==1,'Unique actual construction events')
-    mutants={}
-    x=deepcopy(word);x['program'].remove(retirement);mutants['omit_original_retirement']=x
-    x=deepcopy(word);x['program'].remove(restore126);mutants['omit_early126_restoration']=x
-    x=deepcopy(word);x['program'].remove(restore188);mutants['omit_early188_restoration']=x
-    x=deepcopy(word);x['program'].remove(inverse);mutants['omit_current146_inverse']=x
-    x=deepcopy(word);x['program'][x['program'].index(inverse)][3]='1/2';mutants['wrong_current146_inverse_sign']=x
-    x=deepcopy(word);at=x['program'].index(restore126);x['program'][at:at+3]=[inverse,restore126,restore188];mutants['inverse_before_normalizing126188']=x
-    x=deepcopy(word);x['program'].insert(x['program'].index(retirement)+1,['ADD',fresh,154,'-1/2',602]);mutants['reintroduce_obsolete_decoder']=x
-    x=deepcopy(word);next(e for e in x['program'] if e[0]=='INIT')[1]-=1;mutants['omit_owned_identifier_shift']=x
-    x=deepcopy(word);x['final'][708]=127;mutants['restore_uncharged_old_H9_target']=x
-    x=deepcopy(word);x['initial'][fresh]=3;mutants['wrong_new_helper_boundary']=x
-    reasons={}
-    for name,mutant in mutants.items():
-        try:audit(mutant)
-        except ValueError as error:reasons[name]=str(error)
-        else:raise ValueError('Invalid actual candidate accepted: '+name)
+
+def negative_controls(word):
+    """Reject defects in the actual paid-meeting construction."""
+    events = {
+        'omit_retirement': ['ADD', 731, 146, '1/2', 531],
+        'omit_cut_projection': ['ADD', 146, 731, '-2', 531],
+        'omit_fresh_injection': ['ADD', 146, 744, '2', 531],
+        'omit_initial_basis': ['ADD', 126, 731, '2', 3],
+        'omit_terminal_inverse': ['ADD', 126, 744, '-2', 127],
+        'omit_added_query': ['MOVE', 731, 529, 531, False],
+    }
+    mutants = {}
+    for name, event in events.items():
+        need(word['program'].count(event) == 1, 'Unique actual control event: '+name)
+        candidate = deepcopy(word)
+        candidate['program'].remove(event)
+        mutants[name] = candidate
+    candidate = deepcopy(word)
+    candidate['final'][731] = 127
+    mutants['retain_uncharged_H9_target'] = candidate
+    candidate = deepcopy(word)
+    candidate['initial'][744] = 3
+    mutants['wrong_fresh_input_frame'] = candidate
+    candidate = deepcopy(word)
+    next(e for e in candidate['program'] if e[0] == 'INIT')[1] -= 23
+    mutants['omit_owned_label_shift'] = candidate
+    reasons = {}
+    for name, candidate in mutants.items():
+        try:
+            audit(candidate)
+        except ValueError as error:
+            reasons[name] = str(error)
+        else:
+            raise ValueError('Invalid paid-meeting word accepted: '+name)
     return reasons

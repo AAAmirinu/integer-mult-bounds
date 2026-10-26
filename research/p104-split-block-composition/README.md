@@ -1,8 +1,8 @@
 # P104 split and block composition
 
 The exact PR5739 block reframe composes with the PR5718 two-boundary helper
-split and the released seventeen paid helper subdivisions. The complete conditional saving is **κ = .00311236528**, a gain of
-**.00000012187** over the public seventeen-split checkpoint's .00311224341. This package does not change the
+split and all 23 helper splits from PR5751's paid intermediate meetings. The complete conditional saving is **κ = .00311313795**, a gain of
+**.00000012195** over PR5751's .00311301600. This package does not change the
 selected frontier. The same five inherited framework assumptions remain.
 
 The fixed block also has a complete optimization result: its legal intermediate
@@ -15,35 +15,39 @@ helper cuts, or P104 words.
 
 Sources are flyingviper's PR5718 at
 `a1534ac45401c9a9c80c07aa65c89e00e33594f8` and Joel Pulikkan / GamingPuzzled's
-PR5739 at `b93d749a0a895d260e87887170af5162bda461a4`. The immediate source is the released seventeen-split checkpoint at
-`d12c769799573058248ae986d6e8fd036522f020`, which retains PR5718. It is a full
-repository export. The second retains its exact edit list, word and notices.
-`SOURCES.json` authenticates the source bytes and their Git objects.
-The frozen copies are first committed in this branch at
-`700a41e17e7eb7267b72596febfeac71255951dd`; registered metadata binds to those copies.
-The original source Git pins remain in `original_git_sources` and
-`DIRECT-SOURCES.json`. Every exported source payload has its original hash.
-A clean replay does not need the unmerged seventeen-split branch.
+PR5739 at `b93d749a0a895d260e87887170af5162bda461a4`. The immediate source is PR5751 at
+`8483f9a679d06c1e270141dbc686a7e76e7a7522`, which retains PR5718 and supplies
+23 paid intermediate meetings. It is retained as a complete repository export.
+The R22 source retains its exact edit list, word and notices. SOURCES.json binds
+all published source bytes. The PR5751 export was first committed in this branch
+at `cfa65140fd13b9f63b5168c7cdaac442063fbcd5` before use. The original source Git pins remain in
+`original_git_sources` and DIRECT-SOURCES.json. Every export payload retains
+its original hash. A clean replay needs no unmerged source branch.
 
-Each of the eight R22 source runs occurs exactly once in the PR5718 word.
+The earlier seventeen-split checkpoint and its notices remain frozen as
+provenance. They are not imported by the final scientific verifier. That
+checkpoint discloses overlap with the earlier Discussion5600 paid-meeting claim;
+this package claims no helper-split discovery.
+
+Each of the eight R22 source runs occurs exactly once in the PR5751 word.
 The new chart index 1090 is free. Helper 741 changes its initial chart and
 helper 405 changes its final chart. These are separate from helper 708 and
 the new helper 743 in the two-boundary split. `construct.py` applies the exact
 published edits with explicit guards. It also reproduces the published R22
 word on its own PR5713 source. `HUNKS.json` records all source positions.
 
-The combined word retains 761 public inputs, nine owned labels, eleven owned
+The combined word retains 767 public inputs, nine owned labels, eleven owned
 lifetimes and peak owned storage two. Its ordinary scalar allowance remains
-244338. The local paid and productive profiles are:
+224138. The local paid and productive profiles are:
 
 | Kind | Exact profile |
 | --- | --- |
-| Paid | 2203 H1 + 458 H2 + 495 H3 + 93 H4 + 174 H5 + 6 H6 + 15 H7 |
-| Helpers | 18 H1 + 5 H2 + 92 H4 + 7 H5 + 6 H7 + 31 H8 + 394 H9 |
+| Paid | 2220 H1 + 454 H2 + 492 H3 + 93 H4 + 174 H5 + 6 H6 + 15 H7 |
+| Helpers | 24 H1 + 5 H2 + 92 H4 + 7 H5 + 6 H7 + 37 H8 + 388 H9 |
 
-Relative to the seventeen-split checkpoint, the local paid change is `H1 + H4 - H5`; the target change
+Relative to PR5751, the local paid change is `H1 + H4 - H5`; the target change
 is `-H1 + H4 + H5 - H8`. The complete caller has 18 local invocations, 15
-query shears and 3120 whole idle jobs. It has 13282 productive fields, 66672
+query shears and 3120 whole idle jobs. It has 13390 productive fields, 66852
 paid calls and rank-mass surplus 760. Every helper normalizer, main adapter,
 route, owned operation, idle and caller boundary is charged. This is a new
 complete signed invoice, not an addition of the two source κ values.
@@ -64,7 +68,7 @@ The native chart has the Pauli image space
 `L(W) = {(x,z): x in W, z+x in W_perp}`. If A is contained in B,
 `L(A) intersect L(B)` has dimension `dim A + 9 - dim B`.
 The native Gaussian rank is nine minus this intersection dimension, hence
-`dim B - dim A`. `native_interval.py` independently checks this image-space
+`dim B - dim A`. `native_interval.py` checks this image-space
 formula and all 1206 incoming, outgoing and target ranks for the 67 actual
 canonical charts. It rejects the illegal rank-three relaxation. Phases do
 not change this rank; the selected complete word receives the separate full
@@ -96,15 +100,15 @@ space equals L, so the optimal subspace itself is unique.
 
 | Chart rank | Number of charts | Exact raw crossing interval |
 | --- | --- | --- |
-| 4 | 1 | (.00311236530073, .00311236530074) |
-| 5 | 15 | (.00311037534008, .00311037534009) |
-| 6 | 35 | (.00310972641420, .00310972641421) |
-| 7 | 15 | (.00311024928946, .00311024928947) |
-| 8 | 1 | (.00311224343152, .00311224343153) |
+| 4 | 1 | (0.00311313797336, 0.00311313797337) |
+| 5 | 15 | (0.00311114702998, 0.00311114702999) |
+| 6 | 35 | (0.00311049778387, 0.00311049778388) |
+| 7 | 15 | (0.00311102091727, 0.00311102091728) |
+| 8 | 1 | (0.00311301604454, 0.00311301604455) |
 
-The exact raw crossing is in `(0.00311236530073, 0.00311236530074)`.
-The published saving leaves between 2.073e-11 and 2.074e-11 before that
-raw ceiling.
+The optimal raw crossing is in `(0.00311313797336, 0.00311313797337)`. The published
+saving leaves between 2.336e-11 and 2.337e-11 below that raw ceiling.
+
 
 The complete conditional claim lies below its raw crossing and includes the
 compiler and outer losses. More digits of that same root are not a new result.
@@ -113,19 +117,19 @@ contract. The published gap-four window campaign is not repeated here.
 
 ## Verification and limits
 
-`verify.py` checks every one of the 770 scalar input columns, both a literal
+`verify.py` checks every one of the 776 scalar input columns, both a literal
 forward audit and separate transpose audits, literal frame containment,
 owned lifetimes, every native map and its phase, and the full physical caller.
 The native, caller, interval and compiler engines come from the unchanged
-source stack. Five explicit literal edits update the independent scalar audit's
-expected public count, histograms, scalar allowance and original helper index. `CHECKS-EDITS.json` proves that no other audit logic changed.
+source stack. Two explicit literal edits update the independent scalar audit's
+expected histograms. `CHECKS-EDITS.json` proves that no other audit logic changed.
 `PRICING-EDITS.json` permits only five declared price literals and labels.
 
-The unchanged two local-envelope edits in the seventeen-split source permit
-at most 768 public fields and fewer than 28000 instructions. Their exact text
-is checked against the authenticated predecessor before the native engine is
-loaded. This package adds no further envelope change. Completion uses the
-source parameters c=16, b=17, u=7/50 and decay=122/125.
+The inherited local engine changes only its public-count guard from
+`735 <= public <= 750` to `public == 767`, as declared by PR5751. The word
+remains below 26000 instructions. The exact source edit is checked before the
+engine is imported. This package adds no further local-envelope change.
+Completion retains PR5751's c=16, b=17, u=1/7 and decay=125/128.
 
 Two rational moment engines, the finite compiler threshold, ordinary BIT
 admission, 54 strict outer predicates and four functional predicates all run.
@@ -153,22 +157,20 @@ Finite checks and the scoped chart optimum do not discharge these assumptions.
 
 ## Coordination and priorities
 
-The investigation is claimed in Discussion 1166, comment 19198738. The helper-cut construction in Discussions 5600 and 5645 is credited.
-Discussion 5600 reported a stronger 23-split word, but its final word and price
-were not yet public at this checkpoint. Our separate block change was handed
-off there in comment 19199118. This package does not claim the helper splits
-or search nonnested excursions. It uses the strongest released compatible
-checkpoint that was available, and does not claim the best pending κ.
-The branch started at canonical main
-`553d26d796fde9871ff2661a49ac7732e945410f`, after the initial refresh at
-`709bc508b54bdc5b70cd2bd62538906313474c9e`. The initial claim named that earlier
-refresh; TASK.json and SOURCES.json bind the actual branch base.
+The investigation is claimed in Discussion1166, comment19198738. The block
+change was handed to Discussion5600 in comment19199118. When PR5751 published
+its stronger source before submission, the final certificate was moved to that
+exact source. The previously verified seventeen-split composition is preserved
+in history and is not a second result. Nonnested excursions and new helper cuts
+remain outside this fixed-block scope.
 
-Revision 8 arrived during verification at main
-`de5ec2e7a`. It explicitly replaces the removed-paid-call gate with the full
-signed-moment gate. Its current priorities, family record and scalar-to-moment
-card were read. The frozen revision-7 card stays in TASK.json as provenance;
-the final scope meets the revision-8 gate. Selected κ remains .00310045.
+The branch started at canonical main
+`553d26d796fde9871ff2661a49ac7732e945410f`. The latest read checkpoint is
+`de5ec2e7a6074068452f45b1a191b5c72832df4a`. Revision8 explicitly replaces the
+removed-paid-call gate with the full signed-moment gate. Its current priorities,
+family record and scalar-to-moment card were read. TASK.json retains the frozen
+revision7 card as provenance and records both stronger-source updates. Selected
+kappa remains .00310045.
 
 ## Open next questions
 
@@ -187,6 +189,8 @@ Ali Romman with substantial OpenAI Codex assistance contributed the composition,
 full replay and exact fixed-block optimization. No subagents were used.
 Joel Pulikkan (GamingPuzzled), with Claude Opus 5.5 assistance, supplied the
 R22 block construction and edits. Flyingviper, with OpenAI Codex assistance,
-supplied the distinct-boundary helper split. Both contributions remain intact.
+supplied the distinct-boundary helper split. Ali Romman with OpenAI Codex
+assistance supplied PR5751's paid intermediate meetings. All source
+contributions remain intact.
 The source exports and NOTICE retain the P104, helper, native, controller,
 BIT, interval, compiler and outer-proof attribution. New work is Apache-2.0.

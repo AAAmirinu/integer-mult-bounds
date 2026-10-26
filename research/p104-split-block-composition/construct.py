@@ -1,8 +1,9 @@
-"""Apply the exact PR5739 edits to the PR5718 word.
+"""Apply the exact PR5739 edits to the PR5751 word.
 
 Ali Romman with substantial OpenAI Codex assistance. Apache-2.0.
 The edit list and block construction are by Joel Pulikkan (GamingPuzzled),
-with Claude Opus 5.5 assistance. The helper split is by flyingviper.
+with Claude Opus 5.5 assistance. The boundary split is by flyingviper. Paid meetings are by Ali Romman
+with substantial OpenAI Codex assistance, PR5751.
 """
 from copy import deepcopy
 import json

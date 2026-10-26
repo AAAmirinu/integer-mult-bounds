@@ -12,7 +12,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 550,
-      "checks": "Exact 770-input identity, ownership, transpose, native phases, full caller, complete price, compiler, outer inequalities and all 67 legal block charts."
+      "checks": "Exact 776-input identity, ownership, transpose, native phases, full caller, complete price, compiler, outer inequalities and all 67 legal block charts."
     },
     {
       "argv": [
@@ -22,7 +22,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 550,
-      "checks": "Exact 770-input identity, ownership, transpose, native phases, full caller, complete price, compiler, outer inequalities and all 67 legal block charts."
+      "checks": "Exact 776-input identity, ownership, transpose, native phases, full caller, complete price, compiler, outer inequalities and all 67 legal block charts."
     },
     {
       "argv": [

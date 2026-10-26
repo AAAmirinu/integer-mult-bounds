@@ -1,7 +1,7 @@
-"""Authenticate the retained seventeen-split export before any source import.
+"""Authenticate the retained PR5751 export before any source import.
 
 Ali Romman with substantial OpenAI Codex assistance. Apache-2.0.
-Rebound to the public seventeen-split checkpoint by Ali Romman with substantial OpenAI Codex assistance.
+Rebound to the public PR5751 checkpoint by Ali Romman with substantial OpenAI Codex assistance.
 The archive checks follow the repository exporter and flyingviper's PR5613.
 """
 from contextlib import contextmanager

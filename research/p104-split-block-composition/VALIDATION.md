@@ -1,64 +1,57 @@
 # Validation record
 
-Scientific commit: `a8d9d47f07acb187dfc88262bd8990c89fcc298c`.
-Source-retention commit: `700a41e17e7eb7267b72596febfeac71255951dd`.
-Environment: macOS arm64, CPython 3.12. Standard library only. No subagents.
+Final source: PR5751 at `8483f9a679d06c1e270141dbc686a7e76e7a7522`.
+The exact source export is retained in commit
+`cfa65140fd13b9f63b5168c7cdaac442063fbcd5`.
+Environment: macOS arm64, CPython 3.12, standard library only. No subagents.
 
-The registered command passed all four commands in 507.38 seconds:
+The registered command passed all four declared commands in 585.62 seconds:
 
 ```sh
 python3.12 -B scripts/research_package.py --package research/p104-split-block-composition
 ```
 
-The primary and native-interval scripts each ran normally and with `-O`.
-Both primary runs produced `PASS_P104_SPLIT_BLOCK_KAPPA_00311236528`.
-Both chart runs produced
+The complete primary and the native-interval scripts each ran normally and
+with `-O`. Both primary runs produced
+`PASS_P104_SPLIT_BLOCK_KAPPA_00311313795`. Both chart runs produced
 `PASS_ALL_67_NATIVE_CHARTS_1206_RANKS_AND_RANK3_REJECTION`.
-The complete output matched every retained JSON field and the emitted word.
-No scientific file changed after these checks.
+Every retained output field and the emitted word matched. The full source word
+has 776 scalar input columns and 2927 distinct native maps. The complete price
+includes both moment engines, compiler, 54 strict and four functional checks.
 
-`check_research_commit.py` passed all 28 scientific package files at the
-scientific commit. The official exporter and export checker each passed the
-same 28-file inventory. The manifest adds one file in the extracted export.
+Nine actual one-byte source corruptions were rejected in a disposable copy
+under optimized Python. For each direct source and the current source export,
+flip its middle byte with XOR 1, enter `sources.sources()`, require ValueError,
+and restore the bytes. SOURCE-CONTROLS.json records every file and rejection.
+Each failure occurs at source authentication before scientific source import.
+The frozen source files are unchanged.
 
-A separate optimized replay used `-I -O -W error -B`, an empty PATH, no Git,
-files with mode 0444 and directories with mode 0555. The primary script passed
-in 230.47 seconds; the chart supplement passed in 0.47 seconds. All 29 file
-hashes and modes stayed unchanged. Temporary source extraction and bytecode
-cache paths were outside the sealed export. The command sequence was:
+The final committed-byte and official export checks follow this record. The
+separate sealed export replay is pending at this scientific checkpoint; the
+publication record will give its exact commit, timing and immutable-file check.
+No sealed pass for an older source is transferred to this source.
 
-```sh
-python3.12 -I -O -W error -B research/p104-split-block-composition/verify.py
-python3.12 -I -O -W error -B research/p104-split-block-composition/native_interval.py
-```
+The PR5718-only composition passed a full primary replay at .00311036741.
+The seventeen-split composition passed all registered and sealed checks at
+.00311236528, with its record preserved at
+`d7da36d2b22e43717cef912351d848647180bb6f`. Both are superseded by the final
+PR5751 composition and are not separate contributions. Their frozen source
+archives and notices remain unchanged.
 
-Nine actual source-corruption controls passed in a disposable package copy
-under optimized Python. For each direct source and the retained tar export,
-flip the middle byte with XOR 1, enter `sources.sources()`, require ValueError,
-then restore the bytes. `SOURCE-CONTROLS.json` records every file and rejection.
-Each failure occurred at source authentication before scientific source import.
-The published source files were not changed.
+Canonical base is `553d26d796fde9871ff2661a49ac7732e945410f`. The refreshed main
+checkpoint is `de5ec2e7a6074068452f45b1a191b5c72832df4a`; revision 8, the current
+priorities, family record and changed scalar-to-moment card were read. The
+public overlap cache covers 312 open PR records at 16:17 UTC and 5109 Discussion
+records at 16:19 UTC. Local sparse coverage is 93 of 7842 note paths; unpublished
+work is outside that search. The subsequent live PR delta supplied PR5751 and
+triggered the final stronger-source composition. The canonical claim is
+Discussion1166 comment19198738; its concrete integration handoff is in
+Discussion5600 comment19199118.
 
-The initial weaker PR5718-only composition also passed its full primary replay
-at conditional kappa .00311036741. It is superseded here by the stronger public
-seventeen-split source. It is not counted as another result.
-
-The submission checkpoint fetched canonical main at
-`de5ec2e7a6074068452f45b1a191b5c72832df4a`. Revision 8, the current priorities,
-family record and changed scalar-to-moment card were read. The complete public
-overlap cache covers 312 open PR records at 16:17UTC and 5109 Discussion records
-at 16:19UTC. Sparse local coverage is 93 of 7842 note paths; unpublished work is
-outside this search. The disjoint block integration was handed to the active
-23-split investigation with the exact public scientific commit.
-
-The final publication commit adds only this record and SOURCE-CONTROLS.json.
-Its metadata, raw committed bytes and export inventory are checked separately.
-The shallow checkout prevents the optional full-history ancestry preflight;
-it was not run. Frozen exports in this branch's own history remove the runtime
-dependency on the unmerged seventeen-split source branch. Original Git pins,
-source bytes and attribution remain explicit.
-
-Hosted CI and independent scientific acceptance are separate and pending at
-publication. No full Lean proof, huge uniform word or rounded multiplier is
-materialized. The same five framework assumptions remain. No frontier change,
-merge or closure is performed.
+The optional full-history ancestry preflight was not run in this shallow
+checkout. The source exports are committed in this branch's own history;
+scientific replay needs no unmerged source branch. Original Git pins and all
+source notices remain explicit. Hosted CI and independent scientific acceptance
+are separate. The five inherited assumptions remain. No full Lean proof, huge
+uniform word or rounded multiplier is materialized. No frontier change, merge
+or closure is performed.

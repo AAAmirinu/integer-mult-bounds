@@ -91,7 +91,7 @@ def optimality(local, native, caller, physical, price, P, root):
 
 def local_envelope_edits(parent):
     rows = json.loads((parent/'LOCAL-EDITS.json').read_bytes())
-    need(rows == [["735 <= public <= 750", "735 <= public <= 768"], ["len(w['program']) < 26000", "len(w['program']) < 28000"]], 'Exact inherited finite envelope edits')
+    need(rows == [["735 <= public <= 750", "public == 767"]], 'Exact inherited finite envelope edits')
     return rows
 
 
@@ -108,12 +108,12 @@ def run():
                 split = cursor
             if depth == 1:
                 predecessor = cursor
-        derived(split,'checks.py','CHECKS-EDITS.json')
+        derived(parent,'checks.py','CHECKS-EDITS.json')
         local_text = (cursor/'local.py').read_text()
         for before, after in local_envelope_edits(parent):
             need(local_text.count(before) == 1, 'One declared source envelope edit')
             local_text = local_text.replace(before,after)
-        need(local_text == (parent/'local.py').read_text(), 'Only the two published finite envelope changes')
+        need(local_text == (parent/'local.py').read_text(), 'Only the published exact public-count change')
         L = load(parent/'local.py','local')
         L.ROOT = root
         source = L.read(parent/'WORD.json.gz')
@@ -125,13 +125,13 @@ def run():
         interval = construct.interval(word)
         independent = checks.audit(word)
         transpose = checks.transpose_audit(word)
-        controls = checks.negative_controls(word,{})
+        controls = checks.negative_controls(word)
         local = L.replay(word)
         columns = L.reverse_columns(word)
-        need(local['public_inputs'] == 761 and local['owned_fields'] == 9
+        need(local['public_inputs'] == 767 and local['owned_fields'] == 9
              and local['owned_lifetimes'] == 11 and local['peak_owned_fields'] == 2,
              'Exact public and owned inventory')
-        print('PASS all 770 scalar inputs, both transpose checks, 67 legal block subspaces',flush=True)
+        print('PASS all 776 scalar inputs, both transpose checks, 67 legal block subspaces',flush=True)
         native = L.native(word)
         C = load(root/'research/p104-productive-controller/caller.py','block_caller')
         caller = C.construct()
@@ -142,16 +142,6 @@ def run():
         price = P.run(local,native,caller,physical)
         ranking = optimality(local,native,caller,physical,price,P,root)
         controls.update(C.controls(caller))
-        for label, event in {'missing_subdivision': ['MOVE',744,531,127,False],
-                             'missing_split_restoration': ['ADD',115,744,'4',127]}.items():
-            bad = deepcopy(word)
-            need(bad['program'].count(event) == 1, 'One actual split control event')
-            bad['program'].remove(event)
-            controls[label] = reject(lambda: checks.audit(bad))
-        bad = deepcopy(word); bad['initial'][744] = 529
-        controls['wrong_split_input_chart'] = reject(lambda: checks.audit(bad))
-        bad = deepcopy(word); bad['final'][731] = 127
-        controls['uncharged_split_H9'] = reject(lambda: checks.audit(bad))
         bad = deepcopy(word); bad['initial'][741] = 477
         controls['old_helper_start'] = reject(lambda: checks.audit(bad))
         bad = deepcopy(word); next(e for e in bad['program'] if e == ['ADD',42,41,'1',1090])[-1] = 477
@@ -163,7 +153,7 @@ def run():
         bad = deepcopy(local); bad['helpers'][9] += 1
         controls['extra_target'] = reject(lambda: P.assemble(bad,native,caller,physical))
         print('PASS full invoice, two moment engines, compiler, outer predicates and fixed-block optimum',flush=True)
-        return P.encode({'status':'PASS_P104_SPLIT_BLOCK_KAPPA_00311236528',
+        return P.encode({'status':'PASS_P104_SPLIT_BLOCK_KAPPA_00311313795',
             'local':local,'independent_literal_audit':independent,'independent_transpose':transpose,
             'separate_columns':columns,'native':native,'physical_caller':physical,
             'complete_cost':price,'fixed_block_ranks':ranking,'negative_controls':controls}), interval, hunks, word

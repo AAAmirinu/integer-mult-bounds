@@ -4,33 +4,35 @@
       "H": 80511200000000000,
       "N": "2^80511200000000000",
       "eta": {
-        "lower": "0.000000128893871679485559372138",
-        "upper": "0.000000128893871679485559372139"
+        "lower": "0.000000128387229643834457871291",
+        "upper": "0.000000128387229643834457871292"
       },
       "gap": "1/1400000000000",
       "integer_test_exponent": 57508,
       "logarithm_power": 1024,
       "theta": "63/64",
-      "uniform_saving": "2178655699/700000000000",
+      "uniform_saving": "272399571/87500000000",
       "word_materialized": false
     },
     "full_forward_calls": 18,
-    "gain": "12187/100000000000",
-    "kappa": "19452283/6250000000",
-    "kappa_decimal": "0.00311236528",
+    "gain": "2439/20000000000",
+    "kappa": "62262759/20000000000",
+    "kappa_decimal": "0.00311313795",
     "margin_at_previous": {
-      "lower": "0.029566039003866395428467835846",
-      "upper": "0.029566039003866395428467835847"
+      "lower": "0.029578770580357904755090866637",
+      "upper": "0.029578770580357904755090866638"
     },
     "negative_controls": {
       "old_BIT": "Rejected by outer inequalities",
-      "old_cutoff": "Rejected by completion-tail ratio greater than one"
+      "old_cutoff": "Rejected by completion-tail ratio greater than one",
+      "source_completion": "Rejected at cutoff17, floor18 and decay39/40",
+      "source_offset": "Rejected at cutoff16 with tail offset1/5"
     },
     "nonrecursive": {
-      "fixed_scalar_growth_bound": "At most 2^(16*28000) before native factors; a declared constant, not an attained norm.",
+      "fixed_scalar_growth_bound": "At most 2^(16*26000) before native factors; a declared constant, not an attained norm.",
       "local_paid_rank_mass": 5987,
-      "local_routes": 5218000,
-      "local_scalar": 244338,
+      "local_routes": 5240000,
+      "local_scalar": 224138,
       "peak_owned_fields": 2,
       "raw_budget": 1000000000,
       "raw_scalar_upper": 184647552,
@@ -52,82 +54,82 @@
         "new_semantic_group_guard": "3/1400000000000"
       },
       "margins": {
-        "boundary_algebraic_matrix": "1220047190879128537721/392000000000000000000000",
-        "fused_gaussian": "1220047190877385613163/392000000000000000000000",
-        "global_coordinate_router": "1089327849/350000000000",
-        "group_bit_router": "1525058988946732016453/490000000000000000000000",
+        "boundary_algebraic_matrix": "6101750387595641606867/1960000000000000000000000",
+        "fused_gaussian": "6101750387586924820601/1960000000000000000000000",
+        "global_coordinate_router": "2179196567/700000000000",
+        "group_bit_router": "3050875194493462410299/980000000000000000000000",
         "group_scans": "699999999999/700000000000",
-        "main_transform": "1220047190599128537721/392000000000000000000000",
+        "main_transform": "6101750386195641606867/1960000000000000000000000",
         "microbox_face_corrections": "26950000000001/350000000000",
         "polynomial_products": "1399999999999/1400000000000",
-        "sparse_union_movement": "160470047190879128537721/392000000000000000000000"
+        "sparse_union_movement": "802351750387595641606867/1960000000000000000000000"
       },
       "parameters": {
-        "a": "1089327849/350000000000",
-        "b": "4357311397/1400000000000",
+        "a": "2179196567/700000000000",
+        "b": "871678627/280000000000",
         "beta": "1399999999997/1400000000000",
         "bit_saving": "17/5000",
-        "cap_xi": "356470047190599128537721/392000000000000000000000",
-        "complex_uniform_saving": "2178655699/700000000000",
+        "cap_xi": "1782351750386195641606867/1960000000000000000000000",
+        "complex_uniform_saving": "272399571/87500000000",
         "d": "1/1400000000000",
         "epsilon": "1399999999999/1400000000000",
-        "kappa": "19452283/6250000000",
-        "lambda_": "398755053887/400000000000",
-        "lambda_prime": "279128537721/280000000000",
+        "kappa": "62262759/20000000000",
+        "lambda_": "398754744819/400000000000",
+        "lambda_prime": "1395641606867/1400000000000",
         "layout": "1/1400000000000",
-        "q": "871462279/280000000000",
+        "q": "4358393133/1400000000000",
         "r0": "1/14000000000000",
         "stop": "1/1400000000000",
-        "tested_saving": "622473057/200000000000"
+        "tested_saving": "622627591/200000000000"
       },
       "strict_checks": {
-        "actual_bit_above_effective": "100672151/350000000000",
+        "actual_bit_above_effective": "200803433/700000000000",
         "actual_logarithmic_gamma_guard": "1/1400000000000",
-        "actual_logarithmic_group_guard": "35529952809820871462279/196000000000000000000000",
+        "actual_logarithmic_group_guard": "177648249615904358393133/980000000000000000000000",
         "alpha_logarithm_absorption": "1/14000000000000",
-        "boundary_algebraic_matrix_above_kappa": "1119128537721/392000000000000000000000",
-        "cap_above_band": "160470047190599128537721/392000000000000000000000",
-        "cap_below_cell": "35529952809120871462279/392000000000000000000000",
-        "cap_below_phase_cell_power": "427529952809400871462279/392000000000000000000000",
+        "boundary_algebraic_matrix_above_kappa": "5595641606867/1960000000000000000000000",
+        "cap_above_band": "802351750386195641606867/1960000000000000000000000",
+        "cap_below_cell": "177648249612404358393133/1960000000000000000000000",
+        "cap_below_phase_cell_power": "2137648249613804358393133/1960000000000000000000000",
         "complex_above_effective": "1/1400000000000",
-        "complex_below_one_over_32": "39392688603/1400000000000",
+        "complex_below_one_over_32": "7878321373/280000000000",
         "complex_endpoint": "1/700000000000",
         "epsilon_below_one": "1/1400000000000",
         "epsilon_positive": "1399999999999/1400000000000",
         "fine_prime_halo_umbrella": "7/2",
-        "fused_gaussian_above_kappa": "1117385613163/392000000000000000000000",
-        "gaussian_above_main": "139128537721/196000000000000000000000",
+        "fused_gaussian_above_kappa": "5586924820601/1960000000000000000000000",
+        "gaussian_above_main": "695641606867/980000000000000000000000",
         "global_coordinate_router_above_kappa": "1/350000000000",
         "global_gamma_power_slack": "9/14000000000000",
         "group_below_dimension": "1/700000000000",
-        "group_bit_router_above_kappa": "1746732016453/490000000000000000000000",
-        "group_gauge_power_slack": "35529952809806871462279/196000000000000000000000",
+        "group_bit_router_above_kappa": "3493462410299/980000000000000000000000",
+        "group_gauge_power_slack": "177648249615834358393133/980000000000000000000000",
         "group_key_fits_record": "1/700000000000",
         "group_positive": "1399999999997/1400000000000",
-        "group_scans_above_kappa": "697821344303/700000000000",
+        "group_scans_above_kappa": "348910401717/350000000000",
         "halo_covers_generic_inverse_radius": "5",
-        "improvement_over_user_baseline": "690697430400418148631/500000000000000000000000",
+        "improvement_over_user_baseline": "691083765400418148631/500000000000000000000000",
         "lambda_above_internal": "1/2800000000000",
         "lambda_above_sigma": "3/2800000000000",
         "lambda_above_tau": "1/2800000000000",
         "lambda_prime_above_lambda": "1/2800000000000",
-        "lambda_prime_above_leaf": "2795642688603/1960000000000000000000000",
-        "leaf_saving_above_effective": "1395642688603/1960000000000000000000000",
-        "main_transform_above_kappa": "839128537721/392000000000000000000000",
+        "lambda_prime_above_leaf": "559128321373/392000000000000000000000",
+        "leaf_saving_above_effective": "279128321373/392000000000000000000000",
+        "main_transform_above_kappa": "4195641606867/1960000000000000000000000",
         "membership_arithmetic_fits_record": "1/1400000000000",
-        "microbox_face_corrections_above_kappa": "26948910672153/350000000000",
+        "microbox_face_corrections_above_kappa": "53897820803437/700000000000",
         "microbox_halo_volume": "110600000000003/1400000000000",
         "new_complex_uniform_saving_above_b": "1/1400000000000",
         "new_semantic_guard_with_C1_one": "1/1400000000000",
-        "polynomial_products_above_kappa": "1395642688607/1400000000000",
+        "polynomial_products_above_kappa": "1395641606869/1400000000000",
         "positive_layout_slack": "1/1400000000000",
         "q_below_effective": "1/1400000000000",
         "q_below_internal": "1/1400000000000",
-        "q_below_leaf": "2795642688603/1960000000000000000000000",
-        "q_positive": "871462279/280000000000",
-        "short_record_fallback": "1395642688603/1400000000000",
+        "q_below_leaf": "559128321373/392000000000000000000000",
+        "q_positive": "4358393133/1400000000000",
+        "short_record_fallback": "279128321373/280000000000",
         "source_axis_superpolynomial": "1/1400000000000",
-        "sparse_union_movement_above_kappa": "159250000001119128537721/392000000000000000000000",
+        "sparse_union_movement_above_kappa": "796250000005595641606867/1960000000000000000000000",
         "stop_below_one": "1399999999999/1400000000000",
         "stop_positive": "1/1400000000000",
         "strassen_integer_power_gap": "1951441519231",
@@ -138,11 +140,11 @@
       }
     },
     "paid": {
-      "1": 41214,
+      "1": 41520,
       "16": 416,
-      "2": 8244,
+      "2": 8172,
       "24": 416,
-      "3": 8910,
+      "3": 8856,
       "32": 416,
       "4": 1674,
       "40": 416,
@@ -154,52 +156,52 @@
       "7": 270,
       "72": 208
     },
-    "paid_calls": 66672,
-    "previous_public_seventeen_split_checkpoint": "311224341/100000000000",
-    "productive_fields": 13282,
+    "paid_calls": 66852,
+    "previous_pr5751": "389127/125000000",
+    "productive_fields": 13390,
     "query_shears": 15,
     "rank_mass_surplus": 760,
     "raw_ceiling": {
-      "derivative_upper": "-369389155506807006921204082926908009224394659434369020797455199/1569275433846670190958947355801916604025588861116008628224",
+      "derivative_upper": "-738596154004511222636095493817850924833979710424488126325902089/3138550867693340381917894711603833208051177722232017256448",
       "interval": [
         "0",
         "17/5000"
       ]
     },
     "raw_headroom": [
-      "2073/100000000000000",
-      "1037/50000000000000"
+      "73/3125000000000",
+      "2337/100000000000000"
     ],
     "raw_root_interval": [
-      "311236530073/100000000000000",
-      "155618265037/50000000000000"
+      "38914224667/12500000000000",
+      "311313797337/100000000000000"
     ],
-    "relative_gain_percent": "1218700/311224341",
+    "relative_gain_percent": "4065/1037672",
     "strictification": {
       "alpha": {
-        "lower": "0.999999999984030529669751121631",
-        "upper": "0.999999999984030529669751121632"
+        "lower": "0.999999999981368230437503066447",
+        "upper": "0.999999999981368230437503066448"
       },
       "cutoff": 16,
       "delta": {
-        "lower": "0.936724139950299647331973535096",
-        "upper": "0.936724139950299647331973535097"
+        "lower": "0.944337257529929949513398128117",
+        "upper": "0.944337257529929949513398128118"
       },
       "floor": 17,
       "gamma": {
-        "lower": "0.975602757435507156727224242145",
-        "upper": "0.975602757435507156727224242146"
+        "lower": "0.975484709128690914856977434634",
+        "upper": "0.975484709128690914856977434635"
       },
       "normalized_paid_upper": "1048576000976562501/1048576001073741824",
       "power": 1024,
       "reserve": "1/1000000000000",
       "tail_block": 128,
-      "tail_decay": "122/125",
-      "tail_offset": "7/50",
-      "tested": "622473057/200000000000"
+      "tail_decay": "125/128",
+      "tail_offset": "1/7",
+      "tested": "622627591/200000000000"
     },
     "targets": {
-      "1": 324,
+      "1": 432,
       "145": 208,
       "17": 416,
       "2": 90,
@@ -213,15 +215,15 @@
       "65": 416,
       "7": 108,
       "73": 208,
-      "8": 558,
-      "9": 7092
+      "8": 666,
+      "9": 6984
     },
     "whole_idle_jobs": 3120
   },
   "fixed_block_ranks": {
     "4": {
-      "complete_paid_calls": 66672,
-      "derivative_upper": "-369389155506807006921204082926908009224394659434369020797455199/1569275433846670190958947355801916604025588861116008628224",
+      "complete_paid_calls": 66852,
+      "derivative_upper": "-738596154004511222636095493817850924833979710424488126325902089/3138550867693340381917894711603833208051177722232017256448",
       "local_changed_paid": {
         "1": 8,
         "4": 1,
@@ -232,13 +234,13 @@
         "5": 1
       },
       "raw_root_interval": [
-        "311236530073/100000000000000",
-        "155618265037/50000000000000"
+        "38914224667/12500000000000",
+        "311313797337/100000000000000"
       ]
     },
     "5": {
-      "complete_paid_calls": 66672,
-      "derivative_upper": "-369634143363674244251021720997420329356654079326408832593653865/1569275433846670190958947355801916604025588861116008628224",
+      "complete_paid_calls": 66852,
+      "derivative_upper": "-739086129718245697295730769958875565098498550208567749918299421/3138550867693340381917894711603833208051177722232017256448",
       "local_changed_paid": {
         "2": 8,
         "3": 1,
@@ -249,13 +251,13 @@
         "5": 1
       },
       "raw_root_interval": [
-        "38879691751/12500000000000",
-        "311037534009/100000000000000"
+        "155557351499/50000000000000",
+        "311114702999/100000000000000"
       ]
     },
     "6": {
-      "complete_paid_calls": 66672,
-      "derivative_upper": "-369714156068938064591771782452129721865046648633044252513882329/1569275433846670190958947355801916604025588861116008628224",
+      "complete_paid_calls": 66852,
+      "derivative_upper": "-739246155128773337977230892868294350115283688821838589758756349/3138550867693340381917894711603833208051177722232017256448",
       "local_changed_paid": {
         "2": 1,
         "3": 15
@@ -265,13 +267,13 @@
         "6": 1
       },
       "raw_root_interval": [
-        "15548632071/5000000000000",
-        "310972641421/100000000000000"
+        "311049778387/100000000000000",
+        "77762444597/25000000000000"
       ]
     },
     "7": {
-      "complete_paid_calls": 66672,
-      "derivative_upper": "-739299485615433871877255657115082425223194405328446330879190097/3138550867693340381917894711603833208051177722232017256448",
+      "complete_paid_calls": 66852,
+      "derivative_upper": "-184779332151582770167735746269779332902096199221049103902545447/784637716923335095479473677900958302012794430558004314112",
       "local_changed_paid": {
         "1": 1,
         "2": 7,
@@ -282,13 +284,13 @@
         "7": 1
       },
       "raw_root_interval": [
-        "155512464473/50000000000000",
-        "311024928947/100000000000000"
+        "311102091727/100000000000000",
+        "19443880733/6250000000000"
       ]
     },
     "8": {
-      "complete_paid_calls": 66654,
-      "derivative_upper": "-738802261784711202138902792706988589555397913452590063650532069/3138550867693340381917894711603833208051177722232017256448",
+      "complete_paid_calls": 66834,
+      "derivative_upper": "-46163756548475525683286882541938968496286769063021259273845235/196159429230833773869868419475239575503198607639501078528",
       "local_changed_paid": {
         "1": 7,
         "5": 8
@@ -298,57 +300,57 @@
         "8": 1
       },
       "raw_root_interval": [
-        "19451521447/6250000000000",
-        "311224343153/100000000000000"
+        "155650802227/50000000000000",
+        "62260320891/20000000000000"
       ]
     }
   },
   "independent_literal_audit": {
-    "columns": 770,
+    "columns": 776,
     "owned_lifetimes": 11,
     "owned_peak": 2,
     "paid": {
-      "1": 2203,
-      "2": 458,
-      "3": 495,
+      "1": 2220,
+      "2": 454,
+      "3": 492,
       "4": 93,
       "5": 174,
       "6": 6,
       "7": 15
     },
-    "scalar": 244338,
+    "scalar": 224138,
     "status": "PASS_ALL_SCALAR_INPUTS_FRAMES_OWNERSHIP_INVOICES",
     "targets": {
-      "1": 18,
+      "1": 24,
       "2": 5,
       "4": 92,
       "5": 7,
       "7": 6,
-      "8": 31,
-      "9": 394
+      "8": 37,
+      "9": 388
     }
   },
   "independent_transpose": {
-    "columns": 770,
+    "columns": 776,
     "status": "PASS_ALL_TRANSPOSE_COLUMNS"
   },
   "local": {
-    "endpoint_coefficients": 592900,
+    "endpoint_coefficients": 602176,
     "helpers": {
-      "1": 18,
+      "1": 24,
       "2": 5,
       "4": 92,
       "5": 7,
       "7": 6,
-      "8": 31,
-      "9": 394
+      "8": 37,
+      "9": 388
     },
     "owned_fields": 9,
     "owned_lifetimes": 11,
     "paid": {
-      "1": 2203,
-      "2": 458,
-      "3": 495,
+      "1": 2220,
+      "2": 454,
+      "3": 492,
       "4": 93,
       "5": 174,
       "6": 6,
@@ -356,47 +358,42 @@
     },
     "paid_rank_mass": 5987,
     "peak_owned_fields": 2,
-    "public_inputs": 761,
-    "real_scalar_allowance": 244338
+    "public_inputs": 767,
+    "real_scalar_allowance": 224138
   },
   "native": {
-    "distinct_maps": 2919,
-    "helper_normalizers": 1106,
+    "distinct_maps": 2927,
+    "helper_normalizers": 1118,
     "helpers": {
-      "1": 18,
+      "1": 24,
       "2": 5,
       "4": 92,
       "5": 7,
       "7": 6,
-      "8": 31,
-      "9": 394
+      "8": 37,
+      "9": 388
     },
     "main_adapters": 208,
     "proof": "Every signed Pauli image and exact global phase; frame induction at every positive tensor width",
-    "recipe_payload_sha256": "486f8994d95d4d231cba33d495b4492db8d4bdbe4644105a5a9c0297d9917ea0",
+    "recipe_payload_sha256": "b566ac8ebfb9df3d4c8a7be449c749283ec70dedbdaad7f943c264c692da544a",
     "wrong_phase_rejected": true
   },
   "negative_controls": {
     "extra_target": "Every productive helper has a native target",
     "illegal_rank_three_frame": "Strict native containment",
-    "inverse_before_normalizing126188": "Exact arbitrary-input endpoint row 126",
     "missing_central_translation": "Rejected by the complete Laurent endpoint",
-    "missing_split_restoration": "Exact arbitrary-input endpoint row 115",
-    "missing_subdivision": "Scalar source coframe",
     "old_helper_start": "Scalar destination coframe",
     "old_scalar_chart": "Scalar destination coframe",
-    "omit_current146_inverse": "Exact arbitrary-input endpoint row 743",
-    "omit_early126_restoration": "Exact arbitrary-input endpoint row 126",
-    "omit_early188_restoration": "Exact arbitrary-input endpoint row 188",
-    "omit_original_retirement": "Exact arbitrary-input endpoint row 708",
-    "omit_owned_identifier_shift": "Scalar destination coframe",
-    "reintroduce_obsolete_decoder": "Exact arbitrary-input endpoint row 743",
-    "restore_uncharged_old_H9_target": "All declared final charts and owned exits",
-    "uncharged_split_H9": "All declared final charts and owned exits",
+    "omit_added_query": "Scalar destination coframe",
+    "omit_cut_projection": "Exact arbitrary-input endpoint row 146",
+    "omit_fresh_injection": "Exact arbitrary-input endpoint row 146",
+    "omit_initial_basis": "Exact arbitrary-input endpoint row 126",
+    "omit_owned_label_shift": "Owned INIT uses an inactive owned label",
+    "omit_retirement": "Exact arbitrary-input endpoint row 146",
+    "omit_terminal_inverse": "Exact arbitrary-input endpoint row 126",
+    "retain_uncharged_H9_target": "All declared final charts and owned exits",
     "unpaid_query": "Complete field and call counts",
-    "wrong_current146_inverse_sign": "Exact arbitrary-input endpoint row 743",
-    "wrong_new_helper_boundary": "MOVE source and ownership",
-    "wrong_split_input_chart": "MOVE source and ownership"
+    "wrong_fresh_input_frame": "Scalar source coframe"
   },
   "physical_caller": {
     "central_square_columns": 53248,
@@ -448,8 +445,8 @@
   },
   "separate_columns": {
     "arithmetic": "Dense integer rows with binary denominators; reverse chronology",
-    "coefficients": 592900,
-    "columns": 770
+    "coefficients": 602176,
+    "columns": 776
   },
-  "status": "PASS_P104_SPLIT_BLOCK_KAPPA_00311236528"
+  "status": "PASS_P104_SPLIT_BLOCK_KAPPA_00311313795"
 }

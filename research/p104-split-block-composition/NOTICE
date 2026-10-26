@@ -51,3 +51,5 @@ Two-boundary main-assisted helper split and early cleanup: flyingviper with subs
 OpenAI Codex assistance, including independent AI review agents. Apache-2.0.
 
 The seventeen paid splits are a released verification/completion checkpoint from Discussion5645 at d12c769799573058248ae986d6e8fd036522f020. Their construction overlaps the earlier Discussion5600 paid-meeting claim, which has priority. Both are by Ali Romman with substantial OpenAI Codex assistance. This package claims neither split discovery nor the broader meeting search.
+
+The final immediate source is Ali Romman PR5751, with substantial OpenAI Codex assistance, which completes the earlier Discussion5600 paid-meeting claim. It supersedes the seventeen-split checkpoint. All 23 splits and their completion parameters are retained. No split discovery is claimed by this block-composition package.
