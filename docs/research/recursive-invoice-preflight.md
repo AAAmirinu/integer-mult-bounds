@@ -24,6 +24,10 @@ checks compatibility of reviewed physical, invoice, closure and funding receipts
 This comparator is an earlier arithmetic screen, not a replacement for that
 evidence join or its trusted policies.
 
+For a source model with submodular binary choices, the
+[exact binary-cost optimizer](binary-cost-optimization.md) constructs a global
+minimum and checks it with a flow/cut certificate.
+
 ## Input and meaning
 
 Both files use this schema, with identical declared accounting contracts:
