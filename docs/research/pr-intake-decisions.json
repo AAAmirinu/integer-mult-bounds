@@ -96010,26 +96010,31 @@
       },
       "reviewed_head": "09dd0965711ca7eeb169057a420abab1c9052137",
       "current_head": "09dd0965711ca7eeb169057a420abab1c9052137",
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "github_state": "MERGED",
       "integration_location": [
-        "research/p104-helper-subspace-splits"
+        "research/p104-helper-subspace-splits",
+        "certificates/frontier5599/CLAIM.json",
+        "certificates/selected-result.json"
       ],
-      "unresolved_question": "Finish source-bound native/caller/funding and the independent caller positive control/candidate check in a revised resource plan. Current 600-second run timed out; do not retry unchanged automatically. See docs/research/pr-intake-evidence/pr5599/VALIDATION.json",
-      "scope": "Exact-source archival intake plus preliminary mechanism review and a partial maintainer replay. Thirteen split checks and complete scalar endpoints passed; 600-second resource stop before the native/caller and funding checkpoints. No selected-frontier admission.",
+      "unresolved_question": "Selected conditional \u03ba = 0.00310045 after complete source-bound Linux normal/optimized construction and independent caller replays, with the five inherited assumptions retained. No global search optimality or full formal theorem is claimed.",
+      "scope": "Finite P104 helper-split construction, complete independent caller/ownership/native-normalizer checks, exact full funding and compiler/outer predicates, and application review. Earlier local resource stop superseded by successful Linux execution; precursor numerical claim-line objections remain separate.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct25d-20261025.json",
         "docs/research/pr-intake-evidence/pr5599/VALIDATION.json",
-        "docs/research/pr-intake-evidence/pr5599/PROOF-REVIEW.md"
+        "docs/research/pr-intake-evidence/pr5599/PROOF-REVIEW.md",
+        "docs/research/pr-intake-evidence/pr5599-completion/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr5599-completion/PROOF-REVIEW.md",
+        "docs/research/pr-intake-evidence/pr5599-completion/INTEGRATION.json"
       ],
       "closure": {
-        "kind": "merged_for_archive_only",
+        "kind": "merged_archive_then_scientifically_admitted",
         "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5599",
         "merge_commit": "300ee91bc0d8dc3ec1517bb6d139421d02ea55d6"
       }

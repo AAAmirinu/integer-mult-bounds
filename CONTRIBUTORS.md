@@ -4307,3 +4307,7 @@ Source archives retain attribution; mathematical review remains open.
 - **flyingviper (@flyingviper)** — [#5605](https://github.com/CrocSwap/integer-mult-bounds/pull/5605): Conditional kappa 0.00308326 (+1.37e-6 over #5580): compensated shared P104 relay (source archive).
 
 - **DreamingOfClouds** — [#5561](https://github.com/CrocSwap/integer-mult-bounds/pull/5561): free helper endpoint retiming used by the later P104 lineage. Original source retained in descendant ancestry; the default-tree package is omitted and the recorded headline-correction objections remain open. GitHub ancestry closure is not scientific approval.
+
+## Selected P104 helper-split result — 25 October 2026
+
+**Ali Romman (@aliromman), PR5599:** selected conditional κ = 0.00310045. The [contribution map](docs/research/community-p1045599-contributors.md) credits the commuting-contact work by **Pierre-Loic Doulcet / hexapode**, predecessor improvements by **GamingPuzzled**, **DreamingOfClouds** and **thu-nmrc**, and verification/interface work by **Clear1nsight** and **Matarener**, alongside the full P104, BIT, compiler and analytic lineage. Complete guarded Linux replays and the maintainer application review passed under the five retained assumptions.

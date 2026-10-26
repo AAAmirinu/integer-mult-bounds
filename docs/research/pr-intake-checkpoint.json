@@ -1792,5 +1792,12 @@
       "new": 2
     },
     "selected_frontier_changed": false
+  },
+  "p1045599_completed": {
+    "kappa": "0.00310045",
+    "source_head": "09dd0965711ca7eeb169057a420abab1c9052137",
+    "validation": "docs/research/pr-intake-evidence/pr5599-completion/VALIDATION.json",
+    "integration": "docs/research/pr-intake-evidence/pr5599-completion/INTEGRATION.json",
+    "status": "Four serial Linux scientific replays passed; selected conditional admission. Do not repeat completed checks merely because the earlier partial-review file says timeout."
   }
 }

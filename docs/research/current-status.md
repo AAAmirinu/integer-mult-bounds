@@ -1,38 +1,39 @@
 # Current reviewed status
 
-Selected conditional κ: **0.003027288235** = 605457647/200000000000,
-Chris R / Clear1nsight's PR5413 complete neutral caller, with the provider audit
-in PR5407 and independent companion PR5414. It uses Dillon Amburgey's PR5402
-coupled provider and Ali Romman's PR5398 direct controller. Cao Yifan's native
-construction, Cinna Davis's helpers/controllers, zxv's compiler/precision work,
-Jacob Alan Sussman's mixed-target recursion and the earlier lineage remain credited.
+Selected conditional κ: **0.00310045** = 62009/20000000, Ali Romman's PR5599
+helper-subspace splitting on the community P104 construction. The complete
+caller has 13,048 productive fields and 66,726 paid calls. The saving is about
+2.41674% above the preceding selected 0.003027288235.
 
 [Selected record](../../certificates/selected-result.json) ·
-[Proof review](pr-intake-evidence/pr5413/PROOF-REVIEW.md) ·
-[Promotion and scope](pr-intake-evidence/pr5413-promotion/PROMOTION.md) ·
-[Integration receipt](pr-intake-evidence/pr5413-promotion/INTEGRATION.json) ·
-[Contributors](community-neutral5413-contributors.md).
+[Proof review](pr-intake-evidence/pr5599-completion/PROOF-REVIEW.md) ·
+[Linux replay](pr-intake-evidence/pr5599-completion/VALIDATION.json) ·
+[Integration receipt](pr-intake-evidence/pr5599-completion/INTEGRATION.json) ·
+[Contributor map](community-p1045599-contributors.md).
 
-Replay: `make frontier5413-verify`. The provider's five engines, primary eight
-engines and independent companion screen run serially in a closed source export
-under a sampled 1 GiB descendant-memory limit and per-package timeouts.
-Source-bound PR4610/#5241 and earlier foundation coverage is reused, not rerun.
-The local macOS replay uses an explicit RLIMIT_AS compatibility adapter;
-it is not presented as an unmodified Linux run.
+Replay: `make frontier5599-verify`. The complete primary, exact original caller
+positive control, adapted independent caller and optimized primary checks run
+serially in a source-bound export with sampled 1 GiB descendant RSS limits.
+The successful Linux run took about six minutes across the four scientific
+commands. The earlier Mac timeout remains preserved as incomplete evidence.
+There was no mathematical failure; the completed Linux run supersedes that
+execution status. The public record now selects the stronger claim.
 
-Exactly the five preceding assumptions remain: native/all-column realization,
+Exactly the five preceding assumptions remain: native all-width realization,
 owned erasure, compiler closure, precision/fixed-tape execution, and analytic
-recovery. No complete Lean or independent human multiplication proof is claimed;
-the enormous uniform word is not materialized. Hosted CI status is separate
-from the successful local replay and recorded in the integration receipt.
+recovery. The huge uniform word and rounded multiplier are not materialized.
+No complete Lean or independent human multiplication proof is asserted.
 
-The [preceding selected checkpoint](../../certificates/checkpoints/frontier4610.json)
-is 0.0030217758. Its [review](pr-intake-evidence/pr4610/PROOF-REVIEW.md) remains part
-of the inherited foundation. The gain is about 0.182424%; the final +5×10⁻¹² over
-#5398/#5400 is compiler/outer headroom. Equal additional paid/target H8 jobs
-preserve the raw signed moment. Frozen submission and review files retain their
-pre-promotion wording; this status and the integration receipt supersede that
-publication status without rewriting the evidence.
+Credit includes Ali Romman, Pierre-Loic Doulcet / hexapode, GamingPuzzled,
+DreamingOfClouds, thu-nmrc, Clear1nsight, Matarener, David Arias, Cinna Davis,
+Gareth Davidson, Cao Yifan, zxv, Jacob Alan Sussman and the cumulative lineage.
+See the contributor map for construction versus verification scope.
+
+The [preceding selected checkpoint](../../certificates/checkpoints/frontier5413.json)
+and its [review](pr-intake-evidence/pr5413/PROOF-REVIEW.md) are preserved.
+Source-bound framework/BIT coverage is reused, not rerun. Historical predecessor
+claim-line objections and unreviewed search/optimality assertions do not become
+approved merely because the final descendant construction passes.
 
 The remaining sections form a **historical snapshot**; their “current” wording
 is local to their checkpoint, not the selected record above.

@@ -719,3 +719,9 @@ frontier4470-verify: selected-record-check
 frontier5413-verify: selected-record-check
 	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier5413.XXXXXX"); \
 		env -u PYTHONPATH python3 -I -B scripts/verify_frontier5413.py --work "$$work/replay"
+
+# Selected P104 helper-split construction; all scientific checks remain serial.
+.PHONY: frontier5599-verify
+frontier5599-verify: selected-record-check
+	@work=$$(mktemp -d "$${TMPDIR:-/tmp}/integer-mult-frontier5599.XXXXXX"); \
+		env -u PYTHONPATH python3 -I -B scripts/verify_frontier5599.py --work "$$work/replay"

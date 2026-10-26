@@ -33310,9 +33310,10 @@
       "number": 5599,
       "head": "09dd0965711ca7eeb169057a420abab1c9052137",
       "status": "ready_to_integrate",
-      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "reason": "Scientific admission complete; selected conditional 0.00310045 integrated. The user explicitly authorized extended runtime; Linux replay supersedes the earlier resource stop.",
       "evidence": [
-        "docs/research/pr-intake-evidence/queue-oct25d-20261025.json"
+        "docs/research/pr-intake-evidence/queue-oct25d-20261025.json",
+        "docs/research/pr-intake-evidence/pr5599-completion/INTEGRATION.json"
       ],
       "policy_version": 1,
       "baseline": "5e0052ca0aa3036a3afa8b0438927377c8d97d53",

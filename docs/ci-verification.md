@@ -1,8 +1,38 @@
 # CI verification
 
-## Current selected-family replay: #5413 with #5407 and #5414
+## Current selected-family replay: #5599
 
 The [selected record](../certificates/selected-result.json) binds conditional
+κ = 0.00310045. `make frontier5599-verify` authenticates the complete source
+closure and claim derivation, then executes primary, independent caller
+positive-control, adapted caller and optimized primary checks serially. The
+Linux [audit run](https://github.com/CrocSwap/integer-mult-bounds/actions/runs/40253906841)
+passed all four; [receipts](research/pr-intake-evidence/pr5599-completion/VALIDATION.json)
+and losslessly compressed logs are retained. Original positive-control output
+matches its frozen bytes exactly. Peak sampled descendant RSS was 487,100 KiB.
+
+The manual [selected replay workflow](../.github/workflows/frontier5599.yml)
+uses Python 3.12 and an explicit source export. The earlier
+[audit workflow](../.github/workflows/p1045599-audit.yml) runs the identical
+scientific engines independently of selection. Primary limits are 3,600 seconds,
+caller limits 1,800 seconds, with a sampled 1 GiB aggregate descendant-memory
+cap. No automatic Lean, Docker or historical replay is enabled.
+
+The selected driver also supports `--validate-replay` for an existing exact
+export with all four complete receipts. That reauthenticates source, original
+positive control, independent invoice, ownership counts and output equality;
+it does not claim a new cold execution. The promotion used this mode to bind
+the already completed Linux scientific replay to the new selected record.
+The initial 600-second Mac timeout and subsequent Linux handoff remain recorded.
+
+The five inherited framework assumptions remain. Neither the uniform word nor
+a full rounded multiplier is materialized. Source/metadata checks are not
+operator replays or a formal theorem proof.
+
+
+## Historical selected-family replay: #5413 with #5407 and #5414
+
+The [historical checkpoint](../certificates/checkpoints/frontier5413.json) binds conditional
 κ = 0.003027288235, the [promotion and scope](research/pr-intake-evidence/pr5413-promotion/PROMOTION.md),
 [explicit source closure](../certificates/frontier5413-source.json),
 [review validation](research/pr-intake-evidence/pr5413-promotion/VALIDATION.json), and

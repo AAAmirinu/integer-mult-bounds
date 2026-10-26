@@ -55,8 +55,8 @@
     "docs/research/pr-intake-decisions.json"
   ],
   "counts": {
-    "incorporated": 2134,
-    "partially_reviewed": 2706,
+    "incorporated": 2135,
+    "partially_reviewed": 2705,
     "superseded": 2,
     "unreviewed": 60
   },
@@ -123,7 +123,7 @@
     "research/community-efficient2400-audit/DISPOSITIONS.json": "2602f88f4a333ade0b654645a3126fcde85f16c41f25f36a397f8c760f8acf4c",
     "research/community-efficient2500-audit/DISPOSITIONS.json": "23d12152b20bd788c5fb1e1935543185dc3772634cf26efbfad88f6d78ed6e15",
     "research/community-efficient2600-audit/DISPOSITIONS.json": "d7816f0e79c421d750d691cb1edfc4646accae0a47dc817fb32409745795765c",
-    "docs/research/pr-intake-decisions.json": "1fc69397e92d9c9528aafe2c11960b50ae7501a47f20420c91f619525f6d6095",
+    "docs/research/pr-intake-decisions.json": "2cf4dcb2a223e07a7b0b46d128825172f30584157671c922491954887c6ca4cb",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353",
     "research/pr116-evidence-reconciliation/PARENT-EVIDENCE.json": "62a666dac3e67ba8d388820c92e0cd4495657a20b6eae280a5367af8e89d769c",
@@ -267975,33 +267975,38 @@
         {
           "head": "09dd0965711ca7eeb169057a420abab1c9052137",
           "evidence": "docs/research/pr-intake-decisions.json",
-          "scope": "Exact-source archival intake plus preliminary mechanism review and a partial maintainer replay. Thirteen split checks and complete scalar endpoints passed; 600-second resource stop before the native/caller and funding checkpoints. No selected-frontier admission.",
+          "scope": "Finite P104 helper-split construction, complete independent caller/ownership/native-normalizer checks, exact full funding and compiler/outer predicates, and application review. Earlier local resource stop superseded by successful Linux execution; precursor numerical claim-line objections remain separate.",
           "kind": "integration_or_partial_review"
         }
       ],
       "closure": {
-        "kind": "merged_for_archive_only",
+        "kind": "merged_archive_then_scientifically_admitted",
         "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/5599",
         "merge_commit": "300ee91bc0d8dc3ec1517bb6d139421d02ea55d6"
       },
       "reviewed_head": "09dd0965711ca7eeb169057a420abab1c9052137",
       "current_head": "09dd0965711ca7eeb169057a420abab1c9052137",
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "github_state": "MERGED",
       "integration_location": [
-        "research/p104-helper-subspace-splits"
+        "research/p104-helper-subspace-splits",
+        "certificates/frontier5599/CLAIM.json",
+        "certificates/selected-result.json"
       ],
-      "unresolved_question": "Finish source-bound native/caller/funding and the independent caller positive control/candidate check in a revised resource plan. Current 600-second run timed out; do not retry unchanged automatically. See docs/research/pr-intake-evidence/pr5599/VALIDATION.json",
+      "unresolved_question": "Selected conditional κ = 0.00310045 after complete source-bound Linux normal/optimized construction and independent caller replays, with the five inherited assumptions retained. No global search optimality or full formal theorem is claimed.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct25d-20261025.json",
         "docs/research/pr-intake-evidence/pr5599/VALIDATION.json",
-        "docs/research/pr-intake-evidence/pr5599/PROOF-REVIEW.md"
+        "docs/research/pr-intake-evidence/pr5599/PROOF-REVIEW.md",
+        "docs/research/pr-intake-evidence/pr5599-completion/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr5599-completion/PROOF-REVIEW.md",
+        "docs/research/pr-intake-evidence/pr5599-completion/INTEGRATION.json"
       ],
       "current_head_observed_in": "docs/research/pr-intake-decisions.json",
       "reconciliation_evidence": [
