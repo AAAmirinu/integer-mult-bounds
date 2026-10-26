@@ -148,7 +148,7 @@ def path_report(pr_records, file_rows, patterns):
     matches = []
     for row in sorted(file_rows, key=lambda item: -item["number"]):
         matched = [path for path in row["paths"]
-                   if any(fnmatch.fnmatch(path, pattern) or pattern in path for pattern in patterns)]
+                   if any(fnmatch.fnmatchcase(path, pattern) or pattern in path for pattern in patterns)]
         if not matched:
             continue
         pull = pulls.get(row["number"], {})
@@ -408,7 +408,7 @@ def main():
     ap.add_argument("terms", nargs="*", help="literal case-insensitive terms; quote multiword phrases")
     ap.add_argument("--task", help="add the named catalogue card's overlap terms")
     ap.add_argument("--path", action="append", default=[], metavar="PATTERN",
-                    help="match open PRs by changed file path (fnmatch pattern or substring); repeatable")
+                    help="match open PRs by case-sensitive Git path glob or substring; spaces are literal; repeatable")
     ap.add_argument("--offline", action="store_true")
     ap.add_argument("--refresh", action="store_true")
     ap.add_argument("--include-closed", action="store_true",
@@ -448,7 +448,9 @@ def main():
                 terms.append(parts[1])
     if not any(t.strip() for t in terms) and not args.path:
         ap.error("provide terms, --task or --path")
-    patterns = [p.strip() for p in args.path if p.strip()]
+    patterns = list(args.path)
+    if any(not p for p in patterns):
+        ap.error("--path must not be empty")
     local = local_records(ROOT)
     local_status, local_warnings = local_coverage(ROOT, local)
     snapshot, warnings = remote_snapshot(args.cache, args.offline, args.refresh, args.max_age,
