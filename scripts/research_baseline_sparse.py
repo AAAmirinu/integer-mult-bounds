@@ -107,7 +107,7 @@ def materialize_command(omitted, cone=True):
             return "".join("\\" + c if c in "\\*?[] " else c for c in name)
         patterns = sorted(["/" + literal(name) for name in root_files]
                           + ["/" + literal(name) + "/" for name in dirs])
-    return ["git", "sparse-checkout", "add", *patterns]
+    return ["git", "sparse-checkout", "add", "--", *patterns]
 
 
 def report(record, root=ROOT):
