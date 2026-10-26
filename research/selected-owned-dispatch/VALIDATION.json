@@ -1,0 +1,18 @@
+{
+  "base": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
+  "commands": [
+    {
+      "command": "python3.12 -B scripts/research_package.py --package research/selected-owned-dispatch --check-only",
+      "result": "PASS_PACKAGE_METADATA_AND_PINS"
+    },
+    {
+      "command": "python3.12 -B scripts/research_package.py --package research/selected-owned-dispatch",
+      "result": "PASS_REGISTERED_RESEARCH_PACKAGE; normal and isolated optimized scientific receipts identical"
+    }
+  ],
+  "overlap": "Discussion5009 unchanged except our claim; targeted recent PR review includes5813 at af37059809ae41283142c6aeb217cc456852aff1, a distinct spectral/precision construction explicitly retaining all five assumptions.",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "scope": "Scoped physical refinement and ownership-source checks; no selected full replay, native child execution, full multiplier, formal kernel proof or hosted CI result claimed.",
+  "upstream_refresh": "Canonical main unchanged at de5ec2e7a6074068452f45b1a191b5c72832df4a before submission."
+}
