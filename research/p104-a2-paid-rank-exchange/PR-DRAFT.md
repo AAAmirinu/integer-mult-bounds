@@ -12,10 +12,12 @@ This answers whether an A2 scalar rewrite can improve the recursive bill when it
 
 ```sh
 python3.12 -B scripts/research_package.py --package research/p104-a2-paid-rank-exchange
-python3.12 -B scripts/check_research_commit.py --package research/p104-a2-paid-rank-exchange --check-source-history
+python3.12 -B scripts/check_research_commit.py --package research/p104-a2-paid-rank-exchange
 ```
 
 The registered quick, isolated optimized full and separate scoped algebra audit pass. Coverage includes 752 dense transpose columns, all 2,916 signed native maps with exact global phases, the complete physical caller, two rational moment engines, compiler completion and ordinary allowances, BIT stock, all 54 strict and four functional outer predicates, and rejection controls. Publication evidence and the refreshed overlap check are recorded in `research/p104-a2-paid-rank-exchange/PUBLICATION.md`.
+
+The 41-file committed-byte check passes. The optional full source-history preflight declines this shallow checkout; the declared provenance base passes a direct ancestor check.
 
 The exact predecessor remains head `ed4dc88a09a7d201971f6603b8c2074e95dd9c32`; its scientific inputs and authenticated framework export are retained unchanged. The same five framework assumptions and helper-endpoint contract remain. The huge uniform word and complete rounded multiplier are not materialized. This is an author-checked conditional contribution; selected-frontier promotion, formal verification, independent human acceptance and hosted CI success are separate obligations.
 

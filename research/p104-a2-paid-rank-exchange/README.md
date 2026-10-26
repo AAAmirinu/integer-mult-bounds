@@ -134,7 +134,7 @@ above remain frozen; shell Git refresh and committed-byte publication
 preflight remain unavailable. No source frontier, frozen package
 or others' PR was changed. The later publication checkout resolves the Git
 refresh and committed-byte limitations; see [PUBLICATION.md](PUBLICATION.md)
-for the fresh replay, source-history check and overlap coverage. Historical
+for the fresh replay, source-history scope and overlap coverage. Historical
 `CLAIM.json`, `TASK.json`, `VALIDATION.json` and their logs retain the original
 session's status and limitations. Publication/CI/maintainer acceptance remain
 separate.

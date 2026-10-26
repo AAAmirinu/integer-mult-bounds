@@ -24,14 +24,14 @@ python3.12 -B scripts/compare_recursive_invoices.py \
 
 The two inputs are direct copies of `paid` and `targets` from the retained PR5627 and candidate RESULT.json `complete_cost` objects, under the same explicitly declared mixed-target accounting contract. [COMPARISON.json](publication-invoices/COMPARISON.json) gives Δpaid = 18(H2 + H6 − H3 − H5), Δtargets = 0, unchanged rank mass, and a strictly negative cost change for every power 0 < t < 1. This arithmetic screen does not supply physical legality; the full replay supplies the separately scoped native/caller evidence.
 
-After committing, check publication bytes and declared source ancestry:
+The 41-file committed-byte check passes:
 
 ```sh
 python3.12 -B scripts/check_research_commit.py \
-  --package research/p104-a2-paid-rank-exchange --check-source-history
+  --package research/p104-a2-paid-rank-exchange
 ```
 
-The original provenance base `f626db5c3a3d781d8f7695038776c621651f75e1` is retained. The pending PR5627 scientific dependency is a self-contained authenticated archive/input closure rather than an undeclared foreign Git object. A byte/history pass is separate from the mathematical replay and hosted CI.
+The original provenance base `f626db5c3a3d781d8f7695038776c621651f75e1` is retained. The pending PR5627 scientific dependency is a self-contained authenticated archive/input closure rather than an undeclared foreign Git object. The optional `--check-source-history` mode was attempted and declined because this repository is shallow. A direct `git merge-base --is-ancestor f626db5c3a3d781d8f7695038776c621651f75e1 HEAD` check passes, but this is not the full-history preflight. The byte pass is separate from the mathematical replay and hosted CI.
 
 ## Refreshed overlap
 
