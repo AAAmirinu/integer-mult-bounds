@@ -47,7 +47,7 @@
   "bottleneck_link": "Check the exclusion used to select long P104 callers. Explicit rank-minimum maps prove that static rank/signature tests cannot reject the remaining targets.",
   "budget_minutes": 90,
   "stop_rule": "Finish the proof audit and static sharpness construction. Do not claim a complete star word or a native supplier.",
-  "outcome": "scoped theorem and independent audit",
+  "outcome": "completed",
   "evidence": "PROOF.md and RESULT.json; separate literal coefficient, matrix and enumeration checks.",
   "author": "Ali Romman with substantial OpenAI Codex assistance",
   "ai_assistance": "OpenAI Codex; no subagents. This is a separate implementation, not independent human review.",
