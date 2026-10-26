@@ -157,7 +157,7 @@ def check_unit(item):
 
 def census(part, jobs):
     i,n=map(int,part.split('/'))
-    need(1<=i<=n<=32 and 1<=jobs<=16,'part and worker bounds')
+    need(n==2 and i in (1,2) and 1<=jobs<=16,'registered part and worker bounds')
     levels=unit_levels()
     all_units=[(k,tuple(X)) for k in range(8) for X in levels[k]]
     chosen=all_units[i-1::n]
@@ -273,6 +273,7 @@ def main():
     else: result={'census':census(args.part,args.jobs)}
     key='cover' if args.cover else 'e7' if args.e7 else 'part'+args.part
     expected=json.loads((ROOT/'RESULT.json').read_text())['phases']
+    result=json.loads(json.dumps(result))
     need(key in expected and result==expected[key],'committed phase result differs')
     print(json.dumps({'status':'PASS_SEVEN_DELETION_QUADRATIC_EXTENSION',**result},sort_keys=True),flush=True)
 
