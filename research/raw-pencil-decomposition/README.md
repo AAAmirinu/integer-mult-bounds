@@ -19,3 +19,11 @@ Expected: `PASS_RAW_PENCIL_DECOMPOSITION` and `PASS_REGISTERED_RESEARCH_PACKAGE`
 Python 3.12 and the standard library suffice. No physical supplier or new
 kappa is claimed. The selected frontier is unchanged. Ali Romman with
 substantial OpenAI Codex assistance; no subagents. Apache-2.0.
+
+## Open next questions
+
+Connect the extracted blocks and maps to the supplied-model characters in
+PR5689, with an explicit convention check. For a physical candidate, price
+all maps, storage, preparation, routes and restoration before a kappa claim.
+The dense exact implementation is a reference algorithm; faster extraction
+can use established canonical-form methods with the same certificate boundary.
