@@ -8,6 +8,11 @@ a productive target. Compare **both** paid jobs and target credits first:
 python3 -B scripts/compare_recursive_invoices.py OLD.json NEW.json
 ```
 
+For an `inconclusive` result, use the separate
+[exact rational-power comparison](recursive-power-comparison.md) at a declared
+exponent. It can certify a strict sign or report an interval that still contains
+zero. It does not turn a local invoice gain into a complete κ claim.
+
 This standard-library tool uses integer arithmetic, without a root search or
 contribution replay. It reports an exact certificate for every increasing
 concave rank tariff with f(0)=0, including r^(1-C), 0<C<1. The method is classical
