@@ -42,3 +42,13 @@ Its normal/optimized full replay passed in 288.13 seconds. It is a superseded
 checkpoint of this investigation, not a separate contribution. Frozen sources
 remain byte-exact. The optional full-history ancestry preflight is unavailable
 in this shallow checkout; no automatic full-history download was attempted.
+
+The scientific checkpoint is 79346b22912b820d567de7f55cfabb3833ba7ee9.
+The committed-byte check, executable-mode check and official export check pass
+for all 23 package files. A separate export has no Git directory. Its 24 files,
+including the export manifest, were made read-only, and its directories were
+made read-only. With empty PATH, Python 3.12 ran both scripts using
+`-I -O -W error -B`: verify.py passed in 128.83 seconds and compatibility.py
+passed in 0.19 seconds. Every exported byte and file mode stayed unchanged.
+Only this validation record changes after the scientific checkpoint. The final
+committed bytes and publication export are checked again before submission.
