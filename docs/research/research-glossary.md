@@ -27,3 +27,7 @@ and contracts govern a proof; historical packages may use different conventions.
 
 Use [the bottleneck brief](bottleneck-brief.md) to connect these terms to a first
 experiment, and the selected record for the precise active sources.
+
+For a declared bounded linear parameter region, the
+[dyadic precision search](dyadic-parameter-search.md) constructs a point at
+minimum certified binary precision or records unresolved bounds.
