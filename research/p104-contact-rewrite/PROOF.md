@@ -83,6 +83,12 @@ new local target delta = 0
 For every `0<t<1`, `2-2^t>0`. The complete caller uses the local word 18 times,
 so this new component improves the signed moment by `18*(2-2^t)`.
 
+For this fixed dimension-zero to dimension-two path of c, the new transport
+also has the minimum cost among strictly nested subdivisions. Such a path
+has either one rank-two step or two rank-one steps. For `0<t<1`, the former
+costs `2^t<2`. This local minimum keeps the neighboring contact charts fixed;
+it does not restrict a changed scalar graph or a different caller.
+
 ## 3. Complete native interface
 
 For a frame V, a field contains its canonical native chart applied to its
