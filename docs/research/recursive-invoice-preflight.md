@@ -1,5 +1,8 @@
 # Compare the complete recursive invoice before extending a construction
 
+Use the [exact two-fee region](recursive-fee-region.md) to price route and
+restoration patterns together under the concave-order test.
+
 The same local edit can save scalar instructions while worsening its recursive
 bill. Conversely, owning a helper can remove paid work while also surrendering
 a productive target. Compare **both** paid jobs and target credits first:
