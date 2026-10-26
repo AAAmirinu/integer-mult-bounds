@@ -227,14 +227,16 @@ def fetch_discussions():
 
 def atomic_json(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent, delete=False) as out:
-        tmp = Path(out.name)
-        json.dump(data, out)
-        out.write("\n")
+    tmp = None
     try:
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent, delete=False) as out:
+            tmp = Path(out.name)
+            json.dump(data, out)
+            out.write("\n")
         os.replace(tmp, path)
     finally:
-        tmp.unlink(missing_ok=True)
+        if tmp is not None:
+            tmp.unlink(missing_ok=True)
 
 
 def error_summary(exc):
@@ -283,9 +285,11 @@ def remote_snapshot(cache, offline=False, refresh=False, max_age=300, need_files
             try:
                 # Replace each source only after every page succeeds.
                 records = fetch()
-                sources[name] = {"fetched_at": now(), "records": records, "complete_pagination": True}
-                atomic_json(cache, snapshot)
-                cached = sources[name]
+                replacement = {"fetched_at": now(), "records": records, "complete_pagination": True}
+                pending = {**snapshot, "sources": {**sources, name: replacement}}
+                atomic_json(cache, pending)
+                sources[name] = replacement
+                cached = replacement
             except (OSError, ValueError, KeyError, TypeError, subprocess.SubprocessError) as exc:
                 warnings.append(f"{name}: refresh failed; using old data if available: {error_summary(exc)}")
         if not cached:
