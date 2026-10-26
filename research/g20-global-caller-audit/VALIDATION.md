@@ -34,3 +34,12 @@ It does not prove uniform compiler, stock, precision/tape or analytic contracts.
 No new kappa, selected-frontier change, merge or closure is claimed. Hosted CI
 and independent scientific review remain pending. Full-history ancestry checking
 is unavailable in this shallow checkout; no automatic history expansion ran.
+
+Scientific checkpoint: a629595ac0f384fd394300fffdfa86033ec83132. Committed bytes,
+executable modes and the official 33-file export pass. A separate export has no
+Git directory, has read-only files/directories, and runs with empty PATH. Its
+Python 3.12 `-I -O -W error -B` replay passed in 4.08 seconds. All 34 files,
+including the export manifest, retained their exact bytes and modes. Only this
+validation record changes afterward. Final committed bytes and export are
+checked again before submission. Refreshed canonical main remains
+de5ec2e7a6074068452f45b1a191b5c72832df4a, priority revision 8.
