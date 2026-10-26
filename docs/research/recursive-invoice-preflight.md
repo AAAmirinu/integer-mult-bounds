@@ -106,3 +106,8 @@ fail with a diagnostic and exit code 2. Valid comparisons, including inconclusiv
 ones, exit 0: this is an arithmetic report, not an automatic acceptance gate.
 
 Prepared for zxv with substantial OpenAI Codex assistance. Apache-2.0.
+
+For a difference whose uncancelled ranks are powers of one integer, the
+[polynomial comparison](power-polynomial-comparison.md) classifies the power
+cost on the whole open interval `0 < t < 1`. It distinguishes strict order,
+interior equality and actual crossings without a numerical exponent grid.
