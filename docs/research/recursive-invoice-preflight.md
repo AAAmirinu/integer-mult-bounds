@@ -1,8 +1,5 @@
 # Compare the complete recursive invoice before extending a construction
 
-Use the [exact two-fee region](recursive-fee-region.md) to price route and
-restoration patterns together under the concave-order test.
-
 The same local edit can save scalar instructions while worsening its recursive
 bill. Conversely, owning a helper can remove paid work while also surrendering
 a productive target. Compare **both** paid jobs and target credits first:
@@ -162,6 +159,9 @@ concave tariff. This does not imply a power crossing: their power-cost differenc
 is `(2^t-1)^2`, which is positive for every `0<t<1`.
 
 ## Certificate and bounds
+
+Use the [exact two-fee region](recursive-fee-region.md) to price route and
+restoration patterns together under the concave-order test.
 
 Set d_r=Δpaid_r-Δtargets_r. The report gives K(k)=Σ d_r min(r,k) at every support
 breakpoint. Between breakpoints K is linear. If all K are nonnegative, every
