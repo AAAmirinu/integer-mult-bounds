@@ -21,6 +21,12 @@ def rational(x):
     return Q(x)
 
 
+def encode_rational(q):
+    require(max(abs(q.numerator).bit_length(), q.denominator.bit_length()) <= 6000,
+            'Exact certificate exceeds the 6000-bit rational budget')
+    return str(q)
+
+
 def read(path, limit):
     with Path(path).open('rb') as f: raw=f.read(limit+1)
     require(len(raw)<=limit,'JSON byte limit exceeded')
@@ -81,7 +87,7 @@ def certify(value):
         v=[Q(i==free) for i in range(m)]
         for l,i in enumerate(chosen_rows):v[i]=-sum((a[free][cols[k]]*inv[k][l] for k in range(r)),Q(0))
         left.append(v)
-    encode=lambda rows:[[str(x) for x in row] for row in rows]
+    encode=lambda rows:[[encode_rational(x) for x in row] for row in rows]
     result={'schema':'rational-rank-certificate/v1','rank':r,'rows':chosen_rows,'columns':cols,
             'minor_inverse':encode(inv),'coefficients':encode(coeff),
             'right_kernel':encode(right),'left_kernel':encode(left)}

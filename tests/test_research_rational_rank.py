@@ -64,6 +64,9 @@ class RankTests(unittest.TestCase):
         for a in ([],[[]],[[0]*65],[[True]],[[0.1]],[['1/1000000001']]):
             with self.assertRaises(ValueError):tool.certify(problem(a))
 
+        with self.assertRaisesRegex(ValueError,'6000-bit'):
+            tool.encode_rational(Q(1<<6001))
+
     def test_nonleading_pivot_minor(self):
         a=[[0,0,0,0],[0,0,2,1],[0,3,0,2],[0,6,4,6]]
         r=tool.certify(problem(a));self.assertEqual(r['rank'],2)

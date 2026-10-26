@@ -31,7 +31,9 @@ The CLI binds the exact problem bytes by SHA-256. It accepts integers and
 rational strings, rejects duplicate JSON keys and floats, and uses the Python
 standard library. Limits are 64 rows and columns, input numerator/denominator
 magnitudes at most 10^9, 1 MiB input and 32 MiB saved certificate. Exact rational
-growth can increase runtime and certificate size.
+growth can increase runtime and certificate size. Each output numerator and
+denominator is limited to 6000 bits. Larger exact outputs fail before
+serialization and emit no partial certificate.
 
 ## Open next questions
 
