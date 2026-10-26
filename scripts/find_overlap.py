@@ -21,7 +21,7 @@ import time
 # Retain direct script execution under -I; the shared helper uses stdlib only.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 try:
-    from research_package import git_source_env
+    from research_package import git_source_env, relative_file
 finally:
     sys.path.pop(0)
 
@@ -318,7 +318,10 @@ def local_records(root):
     if ledger.is_file():
         paths.append(ledger)
     for path in paths:
-        if path.is_symlink():
+        try:
+            path = relative_file(root, path.relative_to(root).as_posix())
+        except ValueError:
+            # Aliases and non-files do not count as searched local notes.
             continue
         data = path.read_bytes()
         body = data.decode("utf-8", errors="replace")
