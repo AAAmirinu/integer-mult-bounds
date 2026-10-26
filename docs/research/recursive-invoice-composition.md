@@ -34,3 +34,7 @@ This is exact histogram arithmetic, not a new construction or theorem. Credit
 the existing signed-invoice comparator, mightyOil's T16 moment-order audit and
 their retained predecessors for the schema and accounting context. Prepared for
 aliromman with OpenAI Codex assistance. Apache-2.0.
+
+To replace paid jobs with an inner construction, use
+[matched-target substitution](recursive-invoice-substitution.md). It consumes
+the serviced target, retains other credits and requires an explicit fee bill.
