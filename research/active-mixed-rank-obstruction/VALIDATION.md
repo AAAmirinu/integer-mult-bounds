@@ -14,6 +14,15 @@ weight is checked again. The full native operator, physical implementation,
 compiler, finite-precision, tape and outer theorem are outside this proof.
 The common-fixed-vector scalar specialization is the retained premise.
 
-Registered normal/optimized replay, metadata, committed bytes, official
-export and sealed Git-free evidence are recorded below before publication.
-Independent acceptance and hosted scientific replay are not claimed.
+Registered normal and optimized replays pass. Metadata and source pins pass.
+Three actual corruptions of retained source files are rejected. Committed-byte
+and executable-mode checks pass on scientific commit
+266324e1ac2e6a086f718afa07028129cda60c9c. Its official 18-file export passes
+integrity and declared-input checks.
+
+A separate read-only export replay passes with Python -I -O -W error -B,
+empty PATH and no Git checkout in 6.92 seconds. All 19 files, including the
+export manifest, retain their exact bytes and modes. The final documentation
+commit records this evidence; it changes no scientific code, source or witness.
+Full-history preflight was not run in this shallow checkout. Independent
+acceptance and hosted scientific replay are not claimed.
