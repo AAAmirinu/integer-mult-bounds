@@ -1,27 +1,27 @@
 {
-  "canonical_word_sha256": "e2b9a43f411a923ca16cea9a11c9fce3abdf8846a6f5584585ed4d2aed7ed306",
+  "canonical_word_sha256": "3d23bc1febc881e670994cffb69e9e33ba61cfcdeb5b895f38c7c043e605e374",
   "complete_cost": {
     "compiler": {
       "H": 80511200000000000,
       "N": "2^80511200000000000",
       "eta": {
-        "lower": "0.000000122689369770545312708293",
-        "upper": "0.000000122689369770545312708294"
+        "lower": "0.000000122234177987104667796802",
+        "upper": "0.000000122234177987104667796803"
       },
       "gap": "1/1400000000000",
       "integer_test_exponent": 57508,
       "logarithm_power": 1024,
       "theta": "63/64",
-      "uniform_saving": "2185430733/700000000000",
+      "uniform_saving": "1092970597/350000000000",
       "word_materialized": false
     },
     "full_forward_calls": 18,
-    "gain": "12263/100000000000",
-    "kappa": "31220439/10000000000",
-    "kappa_decimal": "0.00312204390",
+    "gain": "12269/100000000000",
+    "kappa": "312277313/100000000000",
+    "kappa_decimal": "0.00312277313",
     "margin_at_previous": {
-      "lower": "0.029658738524162684693950608867",
-      "upper": "0.029658738524162684693950608868"
+      "lower": "0.029665789896551303821074897076",
+      "upper": "0.029665789896551303821074897077"
     },
     "negative_controls": {
       "old_BIT": "Rejected by outer inequalities",
@@ -32,9 +32,9 @@
     "nonrecursive": {
       "fixed_scalar_growth_bound": "At most 2^(16*26000) before native factors; a declared constant, not an attained norm.",
       "local_paid_rank_mass": 5918,
-      "local_routes": 5292000,
-      "local_scalar": 224294,
-      "peak_owned_fields": 12,
+      "local_routes": 5314000,
+      "local_scalar": 224990,
+      "peak_owned_fields": 13,
       "raw_budget": 1000000000,
       "raw_scalar_upper": 184647552,
       "tensor_native_growth_bound": "Each rank-r Gaussian has row l1 norm at most 2^(rf); use local_paid_rank_mass for the whole word."
@@ -55,82 +55,82 @@
         "new_semantic_group_guard": "3/1400000000000"
       },
       "margins": {
-        "boundary_algebraic_matrix": "6119206049595629138537/1960000000000000000000000",
-        "fused_gaussian": "6119206049586887415611/1960000000000000000000000",
-        "global_coordinate_router": "546357683/175000000000",
-        "group_bit_router": "764900756373360926951/245000000000000000000000",
+        "boundary_algebraic_matrix": "1224127068079125623523/392000000000000000000000",
+        "fused_gaussian": "1224127068077376870569/392000000000000000000000",
+        "global_coordinate_router": "2185941193/700000000000",
+        "group_bit_router": "3060317670893442176421/980000000000000000000000",
         "group_scans": "699999999999/700000000000",
-        "main_transform": "6119206048195629138537/1960000000000000000000000",
+        "main_transform": "1224127067799125623523/392000000000000000000000",
         "microbox_face_corrections": "26950000000001/350000000000",
         "polynomial_products": "1399999999999/1400000000000",
-        "sparse_union_movement": "802369206049595629138537/1960000000000000000000000"
+        "sparse_union_movement": "160474127068079125623523/392000000000000000000000"
       },
       "parameters": {
-        "a": "546357683/175000000000",
-        "b": "874172293/280000000000",
+        "a": "2185941193/700000000000",
+        "b": "4371882387/1400000000000",
         "beta": "1399999999997/1400000000000",
         "bit_saving": "17/5000",
-        "cap_xi": "1782369206048195629138537/1960000000000000000000000",
-        "complex_uniform_saving": "2185430733/700000000000",
+        "cap_xi": "356474127067799125623523/392000000000000000000000",
+        "complex_uniform_saving": "1092970597/350000000000",
         "d": "1/1400000000000",
         "epsilon": "1399999999999/1400000000000",
-        "kappa": "31220439/10000000000",
-        "lambda_": "398751182439/400000000000",
-        "lambda_prime": "1395629138537/1400000000000",
+        "kappa": "312277313/100000000000",
+        "lambda_": "398750890747/400000000000",
+        "lambda_prime": "279125623523/280000000000",
         "layout": "1/1400000000000",
-        "q": "4370861463/1400000000000",
+        "q": "874376477/280000000000",
         "r0": "1/14000000000000",
         "stop": "1/1400000000000",
-        "tested_saving": "624408781/200000000000"
+        "tested_saving": "624554627/200000000000"
       },
       "strict_checks": {
-        "actual_bit_above_effective": "48642317/175000000000",
+        "actual_bit_above_effective": "194058807/700000000000",
         "actual_logarithmic_gamma_guard": "1/1400000000000",
-        "actual_logarithmic_group_guard": "177630793953904370861463/980000000000000000000000",
+        "actual_logarithmic_group_guard": "35525872932620874376477/196000000000000000000000",
         "alpha_logarithm_absorption": "1/14000000000000",
-        "boundary_algebraic_matrix_above_kappa": "5595629138537/1960000000000000000000000",
-        "cap_above_band": "802369206048195629138537/1960000000000000000000000",
-        "cap_below_cell": "177630793950404370861463/1960000000000000000000000",
-        "cap_below_phase_cell_power": "2137630793951804370861463/1960000000000000000000000",
+        "boundary_algebraic_matrix_above_kappa": "1119125623523/392000000000000000000000",
+        "cap_above_band": "160474127067799125623523/392000000000000000000000",
+        "cap_below_cell": "35525872931920874376477/392000000000000000000000",
+        "cap_below_phase_cell_power": "427525872932200874376477/392000000000000000000000",
         "complex_above_effective": "1/1400000000000",
-        "complex_below_one_over_32": "7875827707/280000000000",
+        "complex_below_one_over_32": "39378117613/1400000000000",
         "complex_endpoint": "1/700000000000",
         "epsilon_below_one": "1/1400000000000",
         "epsilon_positive": "1399999999999/1400000000000",
         "fine_prime_halo_umbrella": "7/2",
-        "fused_gaussian_above_kappa": "5586887415611/1960000000000000000000000",
-        "gaussian_above_main": "695629138537/980000000000000000000000",
+        "fused_gaussian_above_kappa": "1117376870569/392000000000000000000000",
+        "gaussian_above_main": "139125623523/196000000000000000000000",
         "global_coordinate_router_above_kappa": "1/350000000000",
         "global_gamma_power_slack": "9/14000000000000",
         "group_below_dimension": "1/700000000000",
-        "group_bit_router_above_kappa": "873360926951/245000000000000000000000",
-        "group_gauge_power_slack": "177630793953834370861463/980000000000000000000000",
+        "group_bit_router_above_kappa": "3493442176421/980000000000000000000000",
+        "group_gauge_power_slack": "35525872932606874376477/196000000000000000000000",
         "group_key_fits_record": "1/700000000000",
         "group_positive": "1399999999997/1400000000000",
-        "group_scans_above_kappa": "697814569269/700000000000",
+        "group_scans_above_kappa": "87226757351/87500000000",
         "halo_covers_generic_inverse_radius": "5",
-        "improvement_over_user_baseline": "695536740400418148631/500000000000000000000000",
+        "improvement_over_user_baseline": "695901355400418148631/500000000000000000000000",
         "lambda_above_internal": "1/2800000000000",
         "lambda_above_sigma": "3/2800000000000",
         "lambda_above_tau": "1/2800000000000",
         "lambda_prime_above_lambda": "1/2800000000000",
-        "lambda_prime_above_leaf": "559125827707/392000000000000000000000",
-        "leaf_saving_above_effective": "279125827707/392000000000000000000000",
-        "main_transform_above_kappa": "4195629138537/1960000000000000000000000",
+        "lambda_prime_above_leaf": "2795628117613/1960000000000000000000000",
+        "leaf_saving_above_effective": "1395628117613/1960000000000000000000000",
+        "main_transform_above_kappa": "839125623523/392000000000000000000000",
         "membership_arithmetic_fits_record": "1/1400000000000",
-        "microbox_face_corrections_above_kappa": "6737226821159/87500000000",
+        "microbox_face_corrections_above_kappa": "53897814058811/700000000000",
         "microbox_halo_volume": "110600000000003/1400000000000",
         "new_complex_uniform_saving_above_b": "1/1400000000000",
         "new_semantic_guard_with_C1_one": "1/1400000000000",
-        "polynomial_products_above_kappa": "1395629138539/1400000000000",
+        "polynomial_products_above_kappa": "1395628117617/1400000000000",
         "positive_layout_slack": "1/1400000000000",
         "q_below_effective": "1/1400000000000",
         "q_below_internal": "1/1400000000000",
-        "q_below_leaf": "559125827707/392000000000000000000000",
-        "q_positive": "4370861463/1400000000000",
-        "short_record_fallback": "279125827707/280000000000",
+        "q_below_leaf": "2795628117613/1960000000000000000000000",
+        "q_positive": "874376477/280000000000",
+        "short_record_fallback": "1395628117613/1400000000000",
         "source_axis_superpolynomial": "1/1400000000000",
-        "sparse_union_movement_above_kappa": "796250000005595629138537/1960000000000000000000000",
+        "sparse_union_movement_above_kappa": "159250000001119125623523/392000000000000000000000",
         "stop_below_one": "1399999999999/1400000000000",
         "stop_positive": "1/1400000000000",
         "strassen_integer_power_gap": "1951441519231",
@@ -141,57 +141,57 @@
       }
     },
     "paid": {
-      "1": 41736,
+      "1": 41808,
       "16": 416,
-      "2": 8172,
+      "2": 8136,
       "24": 416,
-      "3": 8928,
+      "3": 8964,
       "32": 416,
-      "4": 1746,
+      "4": 1782,
       "40": 416,
       "48": 416,
       "5": 2844,
       "56": 416,
       "6": 126,
       "64": 416,
-      "7": 180,
+      "7": 144,
       "72": 208
     },
-    "paid_calls": 66852,
-    "previous_pr5774": "312192127/100000000000",
-    "productive_fields": 13390,
+    "paid_calls": 66924,
+    "previous_pr5786": "78066261/25000000000",
+    "productive_fields": 13444,
     "query_shears": 15,
     "rank_mass_surplus": 760,
     "raw_ceiling": {
-      "derivative_upper": "-736511525582696746705417971034057925876686318183829411630427641/3138550867693340381917894711603833208051177722232017256448",
+      "derivative_upper": "-368175339329066869598200785980685869710294687844550355802579881/1569275433846670190958947355801916604025588861116008628224",
       "interval": [
         "0",
         "17/5000"
       ]
     },
     "raw_headroom": [
-      "1257/50000000000000",
-      "503/20000000000000"
+      "2303/100000000000000",
+      "9/390625000000"
     ],
     "raw_root_interval": [
-      "156102196257/50000000000000",
-      "62440878503/20000000000000"
+      "312277315303/100000000000000",
+      "39034664413/12500000000000"
     ],
-    "relative_gain_percent": "1226300/312192127",
+    "relative_gain_percent": "306725/78066261",
     "strictification": {
       "alpha": {
-        "lower": "0.999999999979508431335798550064",
-        "upper": "0.999999999979508431335798550065"
+        "lower": "0.999999999981662310445924844960",
+        "upper": "0.999999999981662310445924844961"
       },
       "cutoff": 16,
       "delta": {
-        "lower": "0.949234139835968425429637104171",
-        "upper": "0.949234139835968425429637104172"
+        "lower": "0.953059252757307698286902042097",
+        "upper": "0.953059252757307698286902042098"
       },
       "floor": 17,
       "gamma": {
-        "lower": "0.975804889192559720621502440433",
-        "upper": "0.975804889192559720621502440434"
+        "lower": "0.975696028147599003618221255535",
+        "upper": "0.975696028147599003618221255536"
       },
       "normalized_paid_upper": "1048576000976562501/1048576001073741824",
       "power": 1024,
@@ -199,26 +199,26 @@
       "tail_block": 128,
       "tail_decay": "125/128",
       "tail_offset": "1/7",
-      "tested": "624408781/200000000000"
+      "tested": "624554627/200000000000"
     },
     "targets": {
-      "1": 432,
+      "1": 450,
       "145": 208,
       "17": 416,
       "2": 90,
       "25": 416,
       "3": 72,
       "33": 416,
-      "4": 1872,
+      "4": 1908,
       "41": 416,
       "49": 416,
-      "5": 126,
+      "5": 162,
       "57": 416,
       "65": 416,
       "7": 126,
       "73": 208,
-      "8": 360,
-      "9": 6984
+      "8": 378,
+      "9": 6930
     },
     "whole_idle_jobs": 3120
   },
@@ -235,7 +235,7 @@
       "8": -1
     }
   },
-  "instructions": 25883,
+  "instructions": 25974,
   "limits": [
     "Five inherited framework assumptions remain.",
     "Independent scientific acceptance is pending.",
@@ -243,49 +243,49 @@
     "The selected frontier is unchanged."
   ],
   "local": {
-    "endpoint_coefficients": 622521,
+    "endpoint_coefficients": 632025,
     "helpers": {
-      "1": 24,
+      "1": 25,
       "2": 5,
       "3": 4,
-      "4": 104,
-      "5": 7,
+      "4": 106,
+      "5": 9,
       "7": 7,
-      "8": 20,
-      "9": 388
+      "8": 21,
+      "9": 385
     },
-    "owned_fields": 22,
-    "owned_lifetimes": 24,
+    "owned_fields": 25,
+    "owned_lifetimes": 27,
     "paid": {
-      "1": 2232,
-      "2": 454,
-      "3": 496,
-      "4": 97,
+      "1": 2236,
+      "2": 452,
+      "3": 498,
+      "4": 99,
       "5": 158,
       "6": 7,
-      "7": 10
+      "7": 8
     },
     "paid_rank_mass": 5918,
-    "peak_owned_fields": 12,
-    "public_inputs": 767,
-    "real_scalar_allowance": 224294
+    "peak_owned_fields": 13,
+    "public_inputs": 770,
+    "real_scalar_allowance": 224990
   },
   "native": {
-    "distinct_maps": 2923,
-    "helper_normalizers": 1118,
+    "distinct_maps": 2924,
+    "helper_normalizers": 1124,
     "helpers": {
-      "1": 24,
+      "1": 25,
       "2": 5,
       "3": 4,
-      "4": 104,
-      "5": 7,
+      "4": 106,
+      "5": 9,
       "7": 7,
-      "8": 20,
-      "9": 388
+      "8": 21,
+      "9": 385
     },
     "main_adapters": 208,
     "proof": "Every signed Pauli image and exact global phase; frame induction at every positive tensor width",
-    "recipe_payload_sha256": "f6ef6fddf248ca7d66e3ba5b97b35995b1c087f7c956274edeaf4b2620be3894",
+    "recipe_payload_sha256": "971029bc498617a18b667b8f5377ad28a1154c81dc95e23f60b3d50fcec16804",
     "wrong_phase_rejected": true
   },
   "negative_controls": {
@@ -349,37 +349,37 @@
   },
   "separate_columns": {
     "arithmetic": "Dense integer rows with binary denominators; reverse chronology",
-    "coefficients": 622521,
-    "columns": 789
+    "coefficients": 632025,
+    "columns": 795
   },
-  "source_commit": "7d6ec0cdef31d0c37b7d2563e709979caa0d5eae",
+  "source_commit": "6b936acd68a7e0f9062037900f0fe9bc4b6fdd25",
   "source_local": {
-    "endpoint_coefficients": 622521,
+    "endpoint_coefficients": 632025,
     "helpers": {
-      "1": 25,
+      "1": 26,
       "2": 5,
       "3": 4,
-      "4": 103,
-      "5": 6,
+      "4": 105,
+      "5": 8,
       "7": 7,
-      "8": 21,
-      "9": 388
+      "8": 22,
+      "9": 385
     },
-    "owned_fields": 22,
-    "owned_lifetimes": 24,
+    "owned_fields": 25,
+    "owned_lifetimes": 27,
     "paid": {
-      "1": 2231,
-      "2": 454,
-      "3": 496,
-      "4": 96,
+      "1": 2235,
+      "2": 452,
+      "3": 498,
+      "4": 98,
       "5": 159,
       "6": 7,
-      "7": 10
+      "7": 8
     },
     "paid_rank_mass": 5918,
-    "peak_owned_fields": 12,
-    "public_inputs": 767,
-    "real_scalar_allowance": 224294
+    "peak_owned_fields": 13,
+    "public_inputs": 770,
+    "real_scalar_allowance": 224990
   },
-  "status": "PASS_P104_COPY_BLOCK_KAPPA_00312204390"
+  "status": "PASS_P104_COPY_BLOCK_KAPPA_000312277313"
 }

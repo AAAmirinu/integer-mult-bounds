@@ -12,7 +12,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 590,
-      "checks": "Exact R22/source joins, all789 scalar inputs, transpose, owned lifetimes, every native phase, full physical caller, two moment engines, compiler, outer predicates and rejection controls."
+      "checks": "Exact R22/source joins, all795 scalar inputs, transpose, owned lifetimes, every native phase, full physical caller, two moment engines, compiler, outer predicates and rejection controls."
     },
     {
       "argv": [
@@ -22,7 +22,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 590,
-      "checks": "Exact R22/source joins, all789 scalar inputs, transpose, owned lifetimes, every native phase, full physical caller, two moment engines, compiler, outer predicates and rejection controls."
+      "checks": "Exact R22/source joins, all795 scalar inputs, transpose, owned lifetimes, every native phase, full physical caller, two moment engines, compiler, outer predicates and rejection controls."
     },
     {
       "argv": [

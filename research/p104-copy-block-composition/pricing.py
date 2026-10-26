@@ -21,8 +21,8 @@ from collections import Counter
 from fractions import Fraction as Q
 import local as L
 
-KAPPA, TESTED = Q('0.00312204390'), Q('0.003122043905')
-PREVIOUS = Q('.00312192127')
+KAPPA, TESTED = Q('0.00312277313'), Q('0.003122773135')
+PREVIOUS = Q('.00312265044')
 
 
 def encode(x):
@@ -71,7 +71,7 @@ def assemble(local, native, word, physical):
             second_p[8*(j+1)] += 208
     L.need((targets,paid) == (second_t,second_p), 'Independent full invoice')
     L.need(max(targets) == 145 and max(paid) == 72, 'Maximum recursive ranks')
-    L.need(sum(targets.values()) == 13390 and sum(paid.values()) == 66852, 'Complete field and call counts')
+    L.need(sum(targets.values()) == 13444 and sum(paid.values()) == 66924, 'Complete field and call counts')
     L.need(sum(r*n for r,n in targets.items())-sum(r*n for r,n in paid.items()) == 760, 'Complete rank surplus')
     return targets,paid,counts
 
@@ -163,7 +163,7 @@ def run(local,native,word,physical):
     L.need(old_offset[0] > decay, 'The old tail offset fails at the new cutoff')
     bad=outer_module.ledger(dict(params,bit_saving=Q('.0027')))
     L.need(any(x <= 0 for x in bad['strict_checks'].values()), 'Insufficient BIT contract rejected')
-    return encode({'kappa':KAPPA,'kappa_decimal':'0.00312204390','previous_pr5774':PREVIOUS,'gain':KAPPA-PREVIOUS,
+    return encode({'kappa':KAPPA,'kappa_decimal':'0.00312277313','previous_pr5786':PREVIOUS,'gain':KAPPA-PREVIOUS,
                    'relative_gain_percent':100*(KAPPA/PREVIOUS-1),'raw_root_interval':[lower,upper],
                    'raw_headroom':[lower-KAPPA,upper-KAPPA],
                    'raw_ceiling':{'interval':[Q(0),cap],'derivative_upper':derivative_upper},'margin_at_previous':E.display(margin(PREVIOUS)),

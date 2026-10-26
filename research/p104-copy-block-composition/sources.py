@@ -1,7 +1,7 @@
-"""Authenticate the retained PR5774 export before any source import.
+"""Authenticate the retained PR5786 export before any source import.
 
 Ali Romman with substantial OpenAI Codex assistance. Apache-2.0.
-Rebound to the public PR5774 checkpoint by Ali Romman with substantial OpenAI Codex assistance.
+Rebound to the public PR5786 checkpoint by Ali Romman with substantial OpenAI Codex assistance.
 The archive checks follow the repository exporter and flyingviper's PR5613.
 """
 from contextlib import contextmanager

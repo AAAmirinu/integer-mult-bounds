@@ -56,10 +56,11 @@ def run():
         old_events = [e for e in source['program'] if e[0] in ('INIT', 'COPY', 'CLEAR')]
         new_events = [e for e in word['program'] if e[0] in ('INIT', 'COPY', 'CLEAR')]
         need(old_events == new_events, 'Every copied source and lifetime event remains in order')
-        copies = [e for e in old_events if e[0] == 'COPY' and e[1] >= source['public']+9]
+        copies = [e for e in old_events if e[0] == 'COPY' and source['public']+9 <= e[1] < source['public']+22]
         need(len(copies) == 13, 'All thirteen retained native copies')
         return dict(status='PASS_R22_SCALAR_TRANSFERS_AND_ALL_13_COPY_VALUES',
                     word_sha256=digest(word), edits=witnesses, retained_copies=copies,
+                    all_copy_events=[e for e in old_events if e[0] == 'COPY'],
                     proof='Disjoint equal scalar transfers and no internal COPY imply identical logical values at every unchanged external COPY, for arbitrary inputs. Native frames and phases are checked by the complete verifier.',
                     wrong_scalar_coefficient_rejected=True)
 

@@ -39,7 +39,7 @@ def construct(source):
         program[i:i+len(old)] = deepcopy(new)
     preserve = lambda w: [e for e in w['program'] if e[0] in ('INIT', 'COPY', 'CLEAR')]
     need(preserve(word) == preserve(source), 'Every owned lifetime and COPY event is retained in order')
-    need(word['owned_fields'] == source['owned_fields'] == 22, 'No extra owned label')
+    need(word['owned_fields'] == source['owned_fields'] == 25, 'No extra owned label')
     word['schema'] = 'p104-copy-block-composition/1'
     witness = [dict(source_index=i, old_length=len(old), new_length=len(new),
                     old_sha256=digest(old), new_sha256=digest(new)) for i, old, new in spots]

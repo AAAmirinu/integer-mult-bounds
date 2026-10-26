@@ -75,7 +75,7 @@ def run():
     with ExitStack() as stack:
         parent, _ = stack.enter_context(sources())
         cursor = parent
-        for depth in range(6):
+        for depth in range(7):
             cursor, root = stack.enter_context(load(cursor/'sources.py', 'copy_block_source_'+str(depth)).sources())
         declared_price(parent)
         L = load(parent/'local.py', 'local')
@@ -88,13 +88,13 @@ def run():
         local = L.replay(word)
         transpose = L.reverse_columns(word)
         need((local['public_inputs'], local['owned_fields'], local['owned_lifetimes'], local['peak_owned_fields'])
-             == (767, 22, 24, 12), 'Complete arbitrary-input and storage inventory')
+             == (770, 25, 27, 13), 'Complete arbitrary-input and storage inventory')
         need(local['real_scalar_allowance'] == baseline['real_scalar_allowance'], 'No extra scalar allowance')
         change = dict(paid=delta(baseline['paid'], local['paid']), targets=delta(baseline['helpers'], local['helpers']))
         need(change == {'paid': {1: 1, 4: 1, 5: -1}, 'targets': {1: -1, 4: 1, 5: 1, 8: -1}},
              'Exact changed paid and target profiles')
         negative = controls(source, word, L)
-        print('PASS composition, all789 scalar inputs, transpose and owned lifetimes', flush=True)
+        print('PASS composition, all795 scalar inputs, transpose and owned lifetimes', flush=True)
         native = L.native(word)
         C = load(root/'research/p104-productive-controller/caller.py', 'copy_block_caller')
         caller = C.construct()
@@ -103,7 +103,7 @@ def run():
         print('PASS every native phase and complete physical caller', flush=True)
         P = load(HERE/'pricing.py', 'copy_block_price')
         price = P.run(local, native, caller, physical)
-        need(price['previous_pr5774'] == old['complete_cost']['kappa'], 'Exact predecessor claim')
+        need(price['previous_pr5786'] == old['complete_cost']['kappa'], 'Exact predecessor claim')
         negative.update(C.controls(caller))
         bad = deepcopy(local)
         bad['paid'][1] -= 1
@@ -111,8 +111,8 @@ def run():
         bad = deepcopy(local)
         bad['helpers'][8] += 1
         negative['retain_obsolete_helper_credit'] = reject(lambda: P.assemble(bad, native, caller, physical))
-        result = dict(status='PASS_P104_COPY_BLOCK_KAPPA_00312204390',
-            source_commit='7d6ec0cdef31d0c37b7d2563e709979caa0d5eae',
+        result = dict(status='PASS_P104_COPY_BLOCK_KAPPA_000312277313',
+            source_commit='6b936acd68a7e0f9062037900f0fe9bc4b6fdd25',
             canonical_word_sha256=digest(word), instructions=len(word['program']),
             source_local=baseline, local=local, delta=change, separate_columns=transpose,
             native=native, physical_caller=physical, complete_cost=price, negative_controls=negative,
