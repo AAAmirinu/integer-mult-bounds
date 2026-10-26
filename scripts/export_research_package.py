@@ -124,7 +124,43 @@ def export(root, package, ref, output, input_ref=None):
     return receipt
 
 
-def check_bundle(path):
+def check_declared_inputs(path, receipt, seen):
+    """Check the bundled manifest's file declarations without extraction or Git."""
+    name = receipt['package'] + '/VERIFY.json'
+    with tarfile.open(path, mode='r:') as archive:
+        item = archive.getmember(name)
+        require(item.isfile() and item.size <= 16 * 1024 * 1024,
+                'invalid or oversized bundled manifest')
+        with archive.extractfile(item) as stream:
+            raw = stream.read(16 * 1024 * 1024 + 1)
+    require(len(raw) == seen[name]['size'] and hashlib.sha256(raw).hexdigest() == seen[name]['sha256'],
+            'bundled manifest changed during declaration check')
+
+    def unique(pairs):
+        result = {}
+        for key, value in pairs:
+            require(key not in result, 'duplicate bundled manifest key: ' + key)
+            result[key] = value
+        return result
+
+    manifest = json.loads(raw.decode('utf-8'), object_pairs_hook=unique)
+    require(isinstance(manifest, dict) and isinstance(manifest.get('inputs'), list),
+            'bundled VERIFY.json needs an inputs list')
+    inputs = manifest['inputs']
+    require(len(inputs) <= 100000, 'bundled input count exceeds 100000')
+    for entry in inputs:
+        bundle_relative_path(entry)
+        require(entry != RECEIPT, 'reserved declared input: ' + entry)
+    declared = set(inputs)
+    require(len(inputs) == len(declared), 'duplicate bundled input')
+    missing = declared - seen.keys()
+    require(not missing, 'missing bundled declared input: ' + ', '.join(sorted(missing)))
+    extra = {entry for entry in seen if not entry.startswith(receipt['package'] + '/') and entry not in declared}
+    require(not extra, 'undeclared external bundle file: ' + ', '.join(sorted(extra)))
+    return len(inputs)
+
+
+def check_bundle(path, check_inputs=False):
     """Check declared inventory, modes and payload hashes; never extract or execute."""
     seen, receipt = {}, None
     with tarfile.open(path, mode='r:') as archive:
@@ -164,6 +200,8 @@ def check_bundle(path):
     del seen[RECEIPT]
     require(seen == expected, 'bundle inventory, mode, size or SHA256 mismatch')
     require(receipt['package'] + '/VERIFY.json' in seen, 'missing bundled manifest')
+    if check_inputs:
+        receipt = {**receipt, 'declared_inputs_checked': check_declared_inputs(path, receipt, seen)}
     return receipt
 
 
@@ -177,15 +215,19 @@ def main():
     make.add_argument('--output', type=Path, required=True)
     check = commands.add_parser('check')
     check.add_argument('archive', type=Path)
+    check.add_argument('--check-inputs', action='store_true',
+                       help='also check bundled VERIFY.json input coverage; see docs/research/export-input-coverage.md')
     args = parser.parse_args()
     try:
         result = (export(ROOT, args.package, args.ref, args.output, args.input_ref) if args.command == 'export'
-                  else check_bundle(args.archive))
-    except (OSError, ValueError, TypeError, KeyError, tarfile.TarError, subprocess.SubprocessError) as exc:
+                  else check_bundle(args.archive, args.check_inputs))
+    except (OSError, ValueError, TypeError, KeyError, RecursionError, tarfile.TarError, subprocess.SubprocessError) as exc:
         parser.exit(1, str(exc) + '\n')
     print('PASS_RESEARCH_EXPORT ' + json.dumps({k: result[k] for k in ('commit', 'package')} |
                                              {'files': len(result['files'])} |
-                                             ({'input_commit': result['input_commit']} if 'input_commit' in result else {})))
+                                             ({'input_commit': result['input_commit']} if 'input_commit' in result else {}) |
+                                             ({'declared_inputs_checked': result['declared_inputs_checked']}
+                                              if 'declared_inputs_checked' in result else {})))
 
 
 if __name__ == '__main__':
