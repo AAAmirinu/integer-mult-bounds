@@ -34,7 +34,7 @@ in a native supplier, admit a capped RawGaussian API, or price a physical
 caller. Coefficient storage, exact elimination, and numerical proposal work
 are explicit costs. Page delivery, tape movement, stock reuse, preparation
 amortization, online reversible execution and outer recovery remain open.
-The main transform still limits the selected conditional kappa0.00310045.
+The main transform still limits the selected conditional kappa 0.00310045.
 
 ## Verification
 
@@ -49,8 +49,8 @@ Expected: `PASS_DYADIC_FULL_CELL_GAUSSIAN`,
 `PASS_REGISTERED_RESEARCH_PACKAGE`, and `PASS_RESEARCH_COMMIT_BYTES`.
 Both normal and optimized modes rebuild the complete cells. The 299-column
 case uses the primes p=17, s=599 and t=601, with theta=t/s-1; this t is the
-source-prime name, not the requested accuracy. Its floor remains299.
-Requested accuracy bits are4 on the256-column case and12 and40 on the
+source-prime name, not the requested accuracy. Its floor remains 299.
+Requested accuracy bits are 4 on the 256-column case and 12 and 40 on the
 299-column case. The literal source ceiling is checked separately.
 
 The checks include independent rational exponential enclosures, exact
@@ -87,6 +87,6 @@ New effective guard, certified dyadic preparation, exact residual check,
 proof and implementation: Ali Romman with substantial OpenAI Codex assistance.
 Apache-2.0.
 
-Base: canonical main `df0137efd35e11b4445734bf612bdd4c7ebc330c`, priority7.
+Base: canonical main `df0137efd35e11b4445734bf612bdd4c7ebc330c`, priority 7.
 [Advance claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/4202#discussioncomment-19188471).
 No selected-frontier file is changed.
