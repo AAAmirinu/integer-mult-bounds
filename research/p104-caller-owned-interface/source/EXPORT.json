@@ -1,0 +1,13 @@
+{
+  "declared_source_head": "d0f6fa2555410a1e23fe4191424c2097ab3d5d97",
+  "files": {
+    "NOTICE-PR5684": "e8e0cabef6cf40d63f3cea3b6403dfd1af8727e40df03f09b2932718bcddc1b0",
+    "RESULT.json": "de245b8762f4e7f5e73ed5b3c6c5e47fa0f64caa9c852986164359e9aec1f2dd",
+    "WORD.json.gz": "d6db1d0d97b13ea483a462c65437664d15d34dec56c3682cf6e1de31266ec6c2"
+  },
+  "path": "research/p104-reframe-r22",
+  "pull_request": 5684,
+  "repository": "https://github.com/CrocSwap/integer-mult-bounds",
+  "scope": "Exact pending-source bytes exported locally. This is not a Git ancestry/admission claim. No fetch or pending Git object is needed at replay.",
+  "word_canonical_sha256": "3ae490190103898b9a20d32a4be8865b1214dd9a84a154e509022dc698e3f8fc"
+}

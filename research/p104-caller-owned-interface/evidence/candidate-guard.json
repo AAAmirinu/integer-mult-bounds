@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "adapter.py",
+    "run",
+    "pr5684-v3.binding.json",
+    "candidate"
+  ],
+  "elapsed_seconds": 26.234000000054948,
+  "exit_code": 0,
+  "log_sha256": "f50b88056a33b78031f46b8ea8577793a8134fcdab184985040ac612f31cb3e3",
+  "memory_limit_mib": 512,
+  "rss_samples": 261,
+  "sampled_peak_child_rss_bytes": 72175616,
+  "scope": "Operational resource bounds on the non-spawning scientific child; scientific claims depend on its output. Command paths normalized for publication; source output hashes are unchanged.",
+  "termination": null,
+  "timeout_seconds": 120
+}
