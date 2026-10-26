@@ -1,4 +1,6 @@
-New composition and exact fixed-block optimization: Ali Romman with substantial OpenAI Codex assistance. Apache-2.0. No subagents.
+The published PR5756 composition and conditional kappa .00311313795 are by Joel Pulikkan (GamingPuzzled), with Claude Opus 5.5 assistance. This package independently reproduces that word. It claims no new composition or kappa.
+
+New all-canonical-chart optimization proof and source-bound audit: Ali Romman with substantial OpenAI Codex assistance. Apache-2.0. No subagents.
 
 The block reframe and edit list are by Joel Pulikkan (GamingPuzzled), with Claude Opus 5.5 assistance, PR5739. The distinct-boundary helper split is by flyingviper, with OpenAI Codex assistance, PR5718. The retained source exports keep all predecessor notices.
 

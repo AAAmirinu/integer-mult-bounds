@@ -30,7 +30,7 @@
         "-B",
         "{package}/native_interval.py"
       ],
-      "timeout_seconds": 50,
+      "timeout_seconds": 20,
       "checks": "Actual signed-Pauli Lagrangians and all 1206 native ranks for the 67 legal charts; reject the rank-three relaxation."
     },
     {
@@ -40,8 +40,27 @@
         "-B",
         "{package}/native_interval.py"
       ],
-      "timeout_seconds": 50,
+      "timeout_seconds": 20,
       "checks": "Actual signed-Pauli Lagrangians and all 1206 native ranks for the 67 legal charts; reject the rank-three relaxation."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "{package}/optimal_tariff.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Exact PR5756 word and invoice equality; all 8,283,458 canonical subspaces by a dominance proof; 2412 native ranks; all-exponent classification and full-caller margin exclusion."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-O",
+        "-B",
+        "{package}/optimal_tariff.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Exact PR5756 word and invoice equality; all 8,283,458 canonical subspaces by a dominance proof; 2412 native ranks; all-exponent classification and full-caller margin exclusion."
     }
   ]
 }
