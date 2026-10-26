@@ -1,0 +1,20 @@
+{
+  "status": "LOCAL_REPLAY_PASSED_PUBLICATION_CHECKS_PENDING",
+  "python": "CPython 3.12.13",
+  "registered_normal": "PASS_REGISTERED_RESEARCH_PACKAGE research/longer-coupled-port-caller outcome=negative-result",
+  "optimized": "python3.12 -I -O -B research/longer-coupled-port-caller/verify.py; byte-identical RESULT.json",
+  "metadata_and_pins": "PASS_PACKAGE_METADATA_AND_PINS",
+  "exact_certificates": 75600,
+  "matrix_controls": "24 frames, 96 literal mixed coefficients, 206 symbolic blocks, 432 three-leaf restrictions, a full one-leaf word and 1365 parity controls",
+  "not_run": [
+    "Native P104 replay",
+    "Characteristic-zero reduction",
+    "Proof-assistant verification",
+    "Independent human review"
+  ],
+  "remaining_publication_checks": [
+    "Committed-byte preflight",
+    "Git-free read-only export",
+    "GitHub objects and rendered PR readback"
+  ]
+}
