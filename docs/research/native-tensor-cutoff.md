@@ -51,3 +51,7 @@ operator check does not refute an identity which uses native relations.
 Prepared by Ali Romman with substantial OpenAI Codex assistance. The package
 retains the source and classical mathematical attribution. This is an
 author-checked research interface, not a selected-frontier update.
+
+For declared binary query vectors with separate acquisition costs, the
+[minimum-cost query-basis tool](binary-query-basis.md) constructs a basis and
+checks its full-span expressions and optimality. Native phases stay separate.
