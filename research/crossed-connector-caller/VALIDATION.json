@@ -4,9 +4,9 @@
   "base": "df0137efd35e11b4445734bf612bdd4c7ebc330c",
   "registered": "PASS_REGISTERED_RESEARCH_PACKAGE outcome=completed",
   "optimized": "PASS_ONE_SIDED_CONNECTOR_OBSTRUCTION",
-  "mutations": 4,
+  "mutations": 5,
   "git_free_read_only": {
-    "path": "/var/folders/ph/5swjdlqd3997q5j1y6zvmty80000gp/T/imb-one-sided-gitfree-vl4q8ns3",
+    "path": "/var/folders/ph/5swjdlqd3997q5j1y6zvmty80000gp/T/imb-one-sided-final-e_mhg2tm",
     "cwd": "/",
     "PATH": "/nonexistent",
     "status": "PASS_ONE_SIDED_CONNECTOR_OBSTRUCTION"

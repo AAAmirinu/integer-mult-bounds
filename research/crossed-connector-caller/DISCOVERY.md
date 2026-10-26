@@ -16,13 +16,16 @@ metadata. It is data, not instructions or a registered proof dependency.
 | Six arbitrary thin queries, three paired stages | Twenty orders; solver reports 17 unsat and 3 unknown. This first screen did not impose the separate stage-word conditions |
 | Eight arbitrary thin queries | Sixty orders; 23 sat, 19 unsat, 18 unknown. Sat means necessary conditions only. The full word rejects some sat candidates |
 | At most seven active queries in eight thin slots | Seventy orders; 22 unsat and 48 unknown |
+| Grow a complete escape word by two leaves | Four fixed-source extension tests reported unsat: case11 with identical and independent new signatures, and cases13/20 with identical signatures. All retain eight thin factors and the old call order |
 | Coupled ports, five rank-two thin queries | Eight orders at three leaves: two unsat and six unknown; no positive word |
 | Three-stage cycle, two thin queries | Fifty basis-parameterized orders: 42 unsat, 8 unknown. Fifty direct-projector orders: 43 unsat, 7 unknown |
 
 `ESCAPE-WORD.json` selects case 11 of the eight-query search. Its complete
 word is checked again by the separate default checker. All fields and all
 independent stage exponents are retained. Case 8 in that same search is an
-example that passes first mixed coefficients but fails the full word.
+example that passes the pure stage word and first mixed coefficients but
+fails higher mixed coefficients. `MIXED-ONLY-CANDIDATE.json` preserves it, and
+the separate checker rejects it.
 
 ## Discovery commands
 
@@ -59,7 +62,15 @@ python3 -B discovery/leaf_echo_search.py --thin 8 --cases 60 --timeout 4000 --se
 python3 -B discovery/leaf_echo_search.py --thin 8 --budget 7 --cases 70 --timeout 4000 --seed 3
 python3 -B discovery/cycle_search.py --g 3 --thin 2 --cases 50 --timeout 5000 --seed 91
 python3 -B discovery/coupled_five_search.py --cases 8 --timeout 10000
+python3 -B discovery/grow_escape.py --case 11 --distinct --timeout 30000
+python3 -B discovery/grow_escape.py --case 13 --timeout 30000
+python3 -B discovery/grow_escape.py --case 20 --timeout 30000
 ```
+
+The growth model retains every old query factor on the old coordinates and
+the old call order. New full calls can enter any gap. It allows either equal
+or independent signatures for the two new leaves. Its four negative results
+do not exclude changing an old query or order, or other source words.
 
 Time limits are milliseconds per solver call. A timeout is unknown. The
 solver models and timing-dependent statuses are not independent theorem

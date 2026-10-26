@@ -62,8 +62,9 @@ kappa remains .00310045 at the pinned base. This package changes no frontier.
 - Construct a long word whose connectors have distinct leaf signatures in
   both directions. Start with 31 leaves and five rank-two queries per coupled
   port pair, or 127 leaves and ten rank-one queries per binary copy. Both
-  optimistic prices pass at .0035. Begin with the saved
-  eight-field word and test the full polynomial endpoint after each extension.
+  optimistic prices pass at .0035. Use the saved word as a positive control.
+  The fixed-source growth tests fail; resynthesize old connector restrictions
+  or call order, then test every polynomial coefficient.
 - Solve or certify the remaining finite searches. Seven thin queries at three
   leaves and the separate cycle frame have timeout cases. First use exact
   certificates or longer bounded solves on those saved cases. A timeout is

@@ -78,6 +78,10 @@ def escape():
     for j in range(g):
         a,b=calls[2*j:2*j+2];e=tuple(1<<i if i in (0,1,2*j+2,2*j+3) else 0 for i in range(n))
         require(add(a['p'],b['p'])==e and mul(a['p'],b['p'])==zero(n),'Paired target resolution')
+        t=[0]*n
+        for channel in range(2):
+            value=(1<<channel)|(1<<(2*j+2+channel));t[channel]=value;t[2*j+2+channel]=value
+        require(add(a['r'],b['r'])==tuple(t),'Grouped star query')
     word,expected=replay(calls,order,g);require(word==expected,'Complete escape word')
     changed=[dict(c) for c in calls];changed[order[-1]]=dict(changed[order[-1]],r=[0]*n)
     require(replay(changed,order,g)[0]!=expected,'Deleted query control')
@@ -89,7 +93,13 @@ def escape():
         columns.append(tuple(tuple((c['r'][i]>>j)&1 for i in range(n) for j in block) for c in thin))
         rows.append(tuple(tuple(c['r'][i] for i in block) for c in thin))
     require(len(set(columns))==3 and len(set(rows))==3,'The word must leave both equal-signature classes')
-    return {'fields':n,'full_calls':6,'thin_queries':8,'full_polynomial_coefficients':len(word),'deleted_query_rejected':True,'moved_call_rejected':True,'distinct_leaf_column_signatures':3,'distinct_leaf_row_signatures':3}
+    trap=json.loads((PACKAGE/'MIXED-ONLY-CANDIDATE.json').read_text());wrong,wanted=replay(trap['calls'],trap['order'],g)
+    for j in range(g):
+        key=[1,0,0,0];key[j+1]=1
+        require(wrong.get(tuple(key),zero(n))==wanted.get(tuple(key),zero(n)),'First mixed coefficient control')
+    require(all(wrong.get(k,zero(n))==wanted.get(k,zero(n)) for k in wrong.keys()|wanted.keys() if k[0]==0),'Pure stage word control')
+    require(wrong!=wanted,'Full-word trap must fail')
+    return {'first_mixed_false_positive_rejected':True,'fields':n,'full_calls':6,'thin_queries':8,'full_polynomial_coefficients':len(word),'deleted_query_rejected':True,'moved_call_rejected':True,'distinct_leaf_column_signatures':3,'distinct_leaf_row_signatures':3}
 
 # Polynomials in three free, noncommuting variables over F2.
 ONE=frozenset(((),));Z=frozenset()

@@ -12,6 +12,7 @@
       "distinct_leaf_column_signatures": 3,
       "distinct_leaf_row_signatures": 3,
       "fields": 8,
+      "first_mixed_false_positive_rejected": true,
       "full_calls": 6,
       "full_polynomial_coefficients": 16,
       "moved_call_rejected": true,
