@@ -80,10 +80,10 @@
     "nonce": "00770df06ad58b13ce127059b5948653",
     "upstream": "df0137efd35e11b4445734bf612bdd4c7ebc330c",
     "priority_revision": 7,
-    "overlap_utc": "2026-10-26T04:18:07.791584+00:00",
+    "overlap_utc": "2026-10-26T04:19:48.351555+00:00",
     "local_notes": 7676,
-    "open_prs": 353,
-    "discussion_records": 4972,
+    "open_prs": 357,
+    "discussion_records": 4977,
     "coverage": "All tracked main notes and complete cached PR/Discussion pagination; no unpublished-work coverage."
   }
 }
