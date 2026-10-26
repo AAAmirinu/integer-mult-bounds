@@ -61,7 +61,7 @@ def sources():
              and len(manifest['files']) == pin['files'], 'Exact source commit and inventory')
         need(names == {'.research-export.json'} | {r['path'] for r in manifest['files']},
              'No missing or additional source payload')
-        origins = {row['path']: row for row in pins['files'] if row['usage'] == 'provenance'}
+        origins = {row['path']: row for row in pins['archived_files']}
         for row in manifest['files']:
             origin = origins[row['path']]
             need(origin['pin'] == 'head:'+pin['commit']+':'+row['path']

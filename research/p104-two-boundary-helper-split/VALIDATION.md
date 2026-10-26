@@ -41,3 +41,9 @@ https://github.com/CrocSwap/integer-mult-bounds/actions/runs/40314285344/job/121
 Existing PR5703 supplies the documentation fix. This package changes no shared
 documentation, tests, workflows or selected-result values. Local scientific
 success is not presented as hosted CI success or full theorem acceptance.
+
+The source-history gate first rejected direct Git pins to the pending PR5713
+head. Runtime bytes were already self-contained. The metadata now binds the
+retained archive in this branch history, while archived_files preserves every
+origin head and payload hash and the verifier authenticates them before import.
+No source bytes or mathematical assertions changed.

@@ -1,8 +1,5 @@
 {
-  "attribution": "PR5713 supplies the frozen temporal word and complete source stack. All predecessor notices are retained. Two-boundary main-assisted helper split by flyingviper with substantial OpenAI Codex assistance and separate AI checks.",
-  "base_commit": "df0137efd35e11b4445734bf612bdd4c7ebc330c",
-  "direct_sources": [],
-  "files": [
+  "archived_files": [
     {
       "git_blob": "36c1b859be8f5c1325811e633ac51149e1cd7bc0",
       "path": "research/p104-temporal-updates/NOTICE",
@@ -149,7 +146,12 @@
       "pin": "head:a5348f7143f95fe0046b92b96172e30763c7d731:research/p104-temporal-updates/verify.py",
       "sha256": "21259016a0980065e9348718504f4f5c9d06773c072c23b63384b41608a46dfa",
       "usage": "provenance"
-    },
+    }
+  ],
+  "attribution": "PR5713 supplies the frozen temporal word and complete source stack. All predecessor notices are retained. Two-boundary main-assisted helper split by flyingviper with substantial OpenAI Codex assistance and separate AI checks.",
+  "base_commit": "df0137efd35e11b4445734bf612bdd4c7ebc330c",
+  "direct_sources": [],
+  "files": [
     {
       "git_blob": "581f8d87008354eb5b869f7ed9de1317ad837ce8",
       "path": "certificates/selected-result.json",
@@ -161,9 +163,17 @@
       "path": "docs/research/agent-task-catalog.json",
       "sha256": "f7a48bfa2659b88378282a8eee7d9fe52cdf505594124c4d1686b58510fffd72",
       "usage": "provenance"
+    },
+    {
+      "git_blob": "ec8f4bccaca147bc80cec078147fb95bc515036e",
+      "path": "research/p104-two-boundary-helper-split/inputs/pr5713-source.tar",
+      "pin": "head:d504eda8236e5cc5acabc10a373af1bab58b1c6f:research/p104-two-boundary-helper-split/inputs/pr5713-source.tar",
+      "sha256": "c4d8d0bcd6231eb4539a76d66b0dbd465313cbc50d279ca974a55fecb935d544",
+      "usage": "provenance"
     }
   ],
   "schema_version": 1,
+  "source_custody": "Runtime sources come from the self-contained archive retained at d504eda8236e5cc5acabc10a373af1bab58b1c6f. archived_files preserve exact origin heads and byte pins, checked before imports; no origin Git object is needed at replay.",
   "source_export": {
     "commit": "a5348f7143f95fe0046b92b96172e30763c7d731",
     "files": 21,

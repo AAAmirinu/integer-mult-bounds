@@ -79,7 +79,9 @@ or formal mathematical acceptance.
 
 Main provenance is `df0137efd35e11b4445734bf612bdd4c7ebc330c`.
 The exact 21-file PR5713 export is authenticated before source imports; all
-nested source checks remain active. The complete price adapter differs only
+nested source checks remain active. Git-history metadata binds the archive
+retained in this branch; `archived_files` separately preserves its exact
+origin-head and payload pins. Replay needs no cached pending-PR Git objects. The complete price adapter differs only
 by the explicit substitutions in `PRICING-EDITS.json`. Frozen predecessors and
 shared framework files are unchanged.
 
