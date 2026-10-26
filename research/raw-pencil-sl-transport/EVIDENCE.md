@@ -53,6 +53,26 @@ public-transporter control and streams irreducible-fixture candidates without
 materializing all candidates. The executable classifier is unchanged from the
 normal run. RESULT.json records both normal and registered receipts.
 
+## Sealed exported replay and publication checks
+
+All five phases pass from the official committed export of scientific commit
+3afe93780f111c6368badd47394ce761d4421317. The export has no Git directory.
+Python 3.12.14 runs with -I -O -B and an empty executable PATH. All 21 files,
+including the export manifest, keep their bytes and permissions after the
+read-only run. An actual changed source input fails authentication before
+replay. The source is restored before the full run. RESULT.json records this
+receipt. The official committed-byte and export integrity checks pass for
+all twenty package files.
+
+The final overlap search covers all 7,676 main notes, 392 open PRs and 5,043
+Discussion records, with separate literal terms and a cached-body scan. Its
+last remote refresh is 2026-10-26T08:23:49Z. It finds no competing raw-SL or
+residue-norm claim within that coverage. Closed unretained work and unpublished
+work are outside this search. Both consumed predecessors are released.
+Canonical main was fetched again at 2026-10-26T08:35Z and has the same commit.
+The final commit adds receipts and coordination metadata only; executable
+sources and the proof are unchanged from the sealed replay.
+
 ## Hosted CI and omitted obligations
 
 The nine earlier contributions in this session have completed hosted plan

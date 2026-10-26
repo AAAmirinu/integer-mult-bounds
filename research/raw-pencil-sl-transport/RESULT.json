@@ -2244,5 +2244,20 @@
       "source_inputs": 11,
       "status": "PASS_RAW_PENCIL_SL_CHARACTERS"
     }
-  ]
+  ],
+  "sealed_optimized_replay": {
+    "readonly_files_unchanged": 21,
+    "optimized_git_free": true,
+    "empty_path": true,
+    "source_corruption_rejected": true,
+    "python": "Python 3.12.14",
+    "scientific_commit": "3afe93780f111c6368badd47394ce761d4421317",
+    "phases": [
+      "PASS_RAW_PENCIL_SL_SMALL",
+      "PASS_RAW_PENCIL_SL_EXTENSION",
+      "PASS_RAW_PENCIL_SL_FIXTURES",
+      "PASS_RAW_PENCIL_SL_NORMS",
+      "PASS_RAW_PENCIL_SL_CHARACTERS"
+    ]
+  }
 }

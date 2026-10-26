@@ -82,5 +82,10 @@
     "decision": "Close the full raw two-slice SL boundary and remove the executable norm-degree cap. Do not start a physical supplier from an unpriced algebraic orbit result.",
     "proved_costs": "All slice actions, raw extraction, determinants, character closure and norm preparation have positive polynomial costs in dimension for fixed field. Norm witnesses have expected, not deterministic worst-case, polynomial runtime.",
     "unknowns": "Native producer/consumer, physical movement, dirty restoration, storage, precision and the complete recursive invoice."
+  },
+  "freshness": {
+    "canonical_main": "df0137efd35e11b4445734bf612bdd4c7ebc330c",
+    "overlap_checked_utc": "2026-10-26T08:23:49Z",
+    "coverage": "All 7676 main notes, 392 open PRs and 5043 Discussion records. Separate literal terms and a cached-body scan found no competing raw SL or residue norm claim. The consumed predecessors are released. Main was fetched again before publication."
   }
 }
