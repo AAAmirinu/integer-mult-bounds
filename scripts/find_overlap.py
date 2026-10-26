@@ -377,6 +377,18 @@ def match_position(text, term, pattern):
     return match.start() if match else -1
 
 
+def original_offset(text, lowered_offset):
+    """Map a lowercase search offset back to the unchanged source text."""
+    if text.isascii():
+        return lowered_offset
+    for index, char in enumerate(text):
+        width = len(char.lower())
+        if lowered_offset < width:
+            return index
+        lowered_offset -= width
+    return len(text)
+
+
 def search(records, terms, all_terms=False, reference_terms=()):
     terms = list(dict.fromkeys(t.strip().lower() for t in terms if t.strip()))
     if not terms:
@@ -395,7 +407,7 @@ def search(records, terms, all_terms=False, reference_terms=()):
         if not found or (all_terms and len(found) != len(terms)):
             continue
         positions = [body_positions[t] for t in found if body_positions[t] >= 0]
-        start = max(0, min(positions) - 100) if positions else 0
+        start = max(0, original_offset(record.get("body", ""), min(positions)) - 100) if positions else 0
         matches.append({**{k: v for k, v in record.items() if k != "body"},
                         "matched_terms": found,
                         "score": sum(3 if title_positions[t] >= 0 else 1 for t in found),
