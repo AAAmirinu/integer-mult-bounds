@@ -33,6 +33,10 @@ def run(package):
         root = Path(name)
         shutil.copytree(package/'vendor', root/'vendor')
         shutil.copy2(package/'SOURCES.json', root/'SOURCES.json')
+        # copy2/copytree retain a sealed input's read-only mode. Mutations are
+        # confined to these private temporary fixtures, never the input package.
+        for fixture in root.rglob('*'):
+            fixture.chmod(0o700 if fixture.is_dir() else 0o600)
         baseline = module.authenticate(root)
         module.need(baseline == clean, 'Positive exported authentication')
         target = root/relative
