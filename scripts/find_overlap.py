@@ -102,6 +102,15 @@ def pull_file_record(pull):
             "truncated": connection is None or len(paths) != pull["changedFiles"]}
 
 
+def next_cursor(page_info, seen, label):
+    """Require progress within one GraphQL connection."""
+    cursor = page_info.get("endCursor")
+    if not isinstance(cursor, str) or not cursor or cursor in seen:
+        raise ValueError(label + " pagination did not advance")
+    seen.add(cursor)
+    return cursor
+
+
 def fetch_pr_files():
     """Changed file paths per open PR, so overlap can be searched by path.
 
@@ -110,6 +119,7 @@ def fetch_pr_files():
     """
     rows = []
     cursor = None
+    cursors = set()
     while True:
         # ponytail: 10 PRs per page (25x100-node pages exceed GitHub's ~10 s
         # gateway limit and 502; 10x100 stays under it). A full index refresh is
@@ -139,7 +149,7 @@ def fetch_pr_files():
             rows.append(pull_file_record(pull))
         if not result["pageInfo"]["hasNextPage"]:
             return sorted(rows, key=lambda row: row["number"])
-        cursor = result["pageInfo"]["endCursor"]
+        cursor = next_cursor(result["pageInfo"], cursors, "connection")
 
 
 def path_report(pr_records, file_rows, patterns):
@@ -167,6 +177,7 @@ def path_report(pr_records, file_rows, patterns):
 def fetch_discussions():
     records = []
     cursor = None
+    cursors = set()
     while True:
         result = graphql('''query($cursor:String) {
           repository(owner:"CrocSwap",name:"integer-mult-bounds") {
@@ -189,11 +200,13 @@ def fetch_discussions():
             # every discussion. The worst-case nested node count is only
             # 10 + 10*25 + 10*25*10 = 2760; busy threads still page fully.
             connection = discussion["comments"]
+            comment_cursors = set()
             while True:
                 for comment in connection["nodes"]:
                     records.append({**common, "kind": "discussion-comment", "body": comment["body"],
                                     "url": comment["url"], "updated_at": comment["updatedAt"]})
                     replies = comment["replies"]
+                    reply_cursors = set()
                     while True:
                         for reply in replies["nodes"]:
                             records.append({**common, "kind": "discussion-reply", "body": reply["body"],
@@ -206,7 +219,7 @@ def fetch_discussions():
                               pageInfo {hasNextPage endCursor} nodes {body url updatedAt}
                             }
                           }}
-                        }''', {"id": comment["id"], "cursor": replies["pageInfo"]["endCursor"]})["node"]["replies"]
+                        }''', {"id": comment["id"], "cursor": next_cursor(replies["pageInfo"], reply_cursors, "replies")})["node"]["replies"]
                 if not connection["pageInfo"]["hasNextPage"]:
                     break
                 connection = graphql('''query($id:ID!, $cursor:String) {
@@ -219,10 +232,10 @@ def fetch_discussions():
                     }
                   }}
                 }''', {"id": discussion["id"],
-                       "cursor": connection["pageInfo"]["endCursor"]})["node"]["comments"]
+                       "cursor": next_cursor(connection["pageInfo"], comment_cursors, "comments")})["node"]["comments"]
         if not result["pageInfo"]["hasNextPage"]:
             return records
-        cursor = result["pageInfo"]["endCursor"]
+        cursor = next_cursor(result["pageInfo"], cursors, "connection")
 
 
 def atomic_json(path, data):
