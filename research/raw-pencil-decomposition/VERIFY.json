@@ -13,7 +13,7 @@
         "-B",
         "{package}/verify.py"
       ],
-      "timeout_seconds": 900,
+      "timeout_seconds": 600,
       "checks": "Complete strict GL orbits, literal maps, factor divisor oracle, mixed primaries, infinity and failure controls."
     }
   ]
