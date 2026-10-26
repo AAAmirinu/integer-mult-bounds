@@ -195,3 +195,53 @@ Preserve historical pins and attributions; update the task catalogue, guide and
 priority log together when assignments change. Current weights are allocation
 choices, not estimates of success probabilities or proof that the portfolio is
 optimal.
+
+
+## Revision 8 evidence and assignments
+
+Assessed October 26, 2026 against selected #5599
+`09dd0965711ca7eeb169057a420abab1c9052137`; see the
+[completed review](pr-intake-evidence/pr5599-completion/PROOF-REVIEW.md).
+Earlier sections retain their original scope and evidence status. Active tasks
+are in [revision-8 priorities](current-priorities.md), not the historical tables.
+
+- **Expand legal helper/target experiments, bounded by complete invoices.**
+  Ali Romman's #5599, composing Pierre-Loic Doulcet's #5565 contacts and the
+  credited P104 lineage, is the reviewed positive control. Pending #5718 uses
+  distinct boundary bases; #5611/#5615 propose exact dyadic completion/capacity
+  tools. Partition by exact word, helper group and cut. Require dirty-state
+  independence, legal physical endpoints, target debits and complete charges.
+  Stop at an unpaid delivery; a matrix rank or hypothetical split count is not
+  enough. The frozen #5702 expansion bound is not a universal target-split cap.
+- **Continue BIT in parallel with complex.** #5679
+  `715dda75fc4cefb1e492349fa0e331d5f15d0f53` and #5708
+  `829d01fc031f7323ffcfa423fdfd1f24dcbe3190` are archived component proposals,
+  not newly admitted budgets. Check their audits before duplicating work.
+  Reopen the #5609 frozen common-frame exclusion only with a changed premise.
+- **Narrow successor admission to changed coverage.** #5717 explicitly changes
+  the caller's owned-lifetime schedule; #5719
+  `7f94d31659b6ccbbdd302588f5bddc94e0f01941` checks exact #5713 temporal premises,
+  not the changed #5718 word. Source identity, positive control and rejection
+  controls must survive adaptation. #5599's completed replay is no longer an
+  open assignment. Scientific admission of successors remains separate from
+  their source/integrity archive receipt.
+- **Continue different interfaces; pause rediscovery inside closed models.**
+  #5617/#5631/#5649 concern specific stage/caller models; #5698 optimizes a stated
+  binary coframe class. #5720 grants an active injection but identifies missing
+  helper restoration. The newer #5745 claims a sharp 8H8 canonical delivery tariff,
+  repaying the eight removed centre jobs; #5747 adds a chronological exclusion
+  for the proposed 31-leaf caller. These are newly archived scoped claims, not
+  independently replayed theorems. Audit their exact models or name the channel,
+  feedback or caller hypothesis changed before reopening construction. Do not reinterpret
+  any of these as exclusion of arbitrary finite networks. Reopen with a named
+  changed hypothesis and favorable complete budget, not more seeds.
+- **Replace obsolete audit tasks.** Select one of the five current assumption
+  IDs and an actual caller. #5625 and #5707 offer partial source-relative
+  interfaces; neither closes all-size theorem obligations. Formal and numerical
+  coverage must state what is still missing.
+
+These successor claims were read and retained through archive intake, not
+independently mathematically replayed for this strategy update. Exact heads,
+remaining scope and attribution are in the queue-oct26 receipts. The complete
+expansion gate above still applies; improving raw moment is necessary evidence,
+not full construction acceptance.

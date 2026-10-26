@@ -653,3 +653,49 @@ strategy review. Historical family diagnoses are labelled rather than rewritten.
 The user has requested a new κ > 0.01 research campaign with firm stopping rules
 for adjacent constructions; that campaign must establish its own changed premise
 and budget before recommending another allocation revision.
+
+
+## Revision 8 — October 26, 2026
+
+Assessed after repair-first queue intake at main `c297a40e7732bc9452bbf745f9aad43455b1e330`. Selected record SHA256
+`2a0220e866417774606e0f991e41b9c1d26b1f43b97857238cf478dbc7d330b5`; selected PR5599 source `09dd0965711ca7eeb169057a420abab1c9052137`, κ = 62009/20000000.
+[Review](pr-intake-evidence/pr5599-completion/PROOF-REVIEW.md) and Linux evidence complete the
+conditional admission; the same five framework assumptions remain.
+
+**Allocation:** unchanged: BIT 20, complex 20, interfaces 20, adversarial audit 15,
+independent verification 10, verifier engineering 8, consolidation 5, incumbent
+optimization 2. We have no measured track yield supporting reweighting. This is
+an assignment correction, not a claim that one family has become universally best.
+
+**Evidence and actions:** expand legal joint-base/target-split experiments using
+reviewed #5599; continue BIT alongside complex with pending #5679/#5708 coverage;
+replace stale #4088 admission assignments by exact latest-candidate deltas; narrow
+all-size work to one selected assumption/caller. Replace the removed-paid-transition
+gate with a complete signed target/paid moment gate. Pause repeated fixed-invoice
+and already-covered cut searches; reopen with a new word, cut, boundary or hypothesis
+and a favorable full budget. Keep broader decoder/interface tracks active.
+
+The previous .001687 ceiling and a/(1+a), 1/99 planning conversion are historical,
+not restrictions on the selected mixed-target/nine-row assembly. Current admitted
+BIT remains .0034; newer component numbers are not selected. No >.01 construction
+or general finite-network ceiling is established here.
+
+**Coordination evidence:** reviewed recent [handoffs](https://github.com/CrocSwap/integer-mult-bounds/discussions/1166),
+[feedback](https://github.com/CrocSwap/integer-mult-bounds/discussions/1200), and
+[physical delivery work](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125).
+PR5703 fixes the reported shared navigation failure first; equivalent #5659 and
+#5686 work retain credit. Shared-tool repairs #5723–#5731 have separately recorded
+tests. #5729's speed claim and successor scientific claims remain author evidence
+until checked. No measured productivity inference is made from announcement volume.
+
+**Next experiments and stop rules:** one exact helper/cut relation plus the complete
+caller bill; one source-bound BIT admission gap; one physically delivered interface
+with all retained helper outputs; or one quantified assumption implication. Reject
+unfunded delivery, lost arbitrary inputs, wrong source reuse and unfavorable full
+relaxations before wider scans. Different seeds are not different tasks.
+
+**Next review trigger:** a newly admitted supplier/outer bottleneck, resolved
+framework assumption, completed target-scale construction or scoped counterexample,
+or substantial new intake. Looping agents refresh normally and preserve frozen
+work. The current-priorities file, catalogue and family record change together;
+no scientific archive or selected certificate is repinned by this update.

@@ -14,15 +14,18 @@ ordinary BIT, admitted BIT and outer budgets. This is source-bound metadata
 orientation, **not** an operator replay. Follow
 [selected-result.json](../../certificates/selected-result.json) for current values.
 
-The selected conditional saving is **κ = 0.00302015 (#4470)**. Its complex
-uniform saving is 528527/175000000; the ordinary BIT saving is .0034363538396,
-admitted conservatively as .0034. The limiting outer row is `main_transform`.
-The productive-helper interface uses unequal target and paid jobs followed by
-paid completion and compilation. Its scope is in the
-[review](pr-intake-evidence/pr4470/PROOF-REVIEW.md). Do not apply the historical
-balanced `a/(1+a)` conversion or fixed-invoice ceilings to this changed interface.
-For new experiments use [current priorities](current-priorities.md), exact
-supplier inputs and a fully charged target/paid moment.
+The selected conditional saving is **κ = 0.00310045 (#5599)**. The complex
+supplier currently binds; ordinary BIT .0034363538396 is admitted conservatively
+as .0034. The [review](pr-intake-evidence/pr5599-completion/PROOF-REVIEW.md)
+records the completed source-bound admission and five retained assumptions.
+
+The latest reviewed mechanism changes productive helper targets through legal
+joint bases and independent subspace splits. A gain need not remove a paid call:
+compare the complete target and paid moments, then compiler/native/caller costs.
+Newer P104 and G20 archives are proposals until separately admitted. Do not apply
+the historical balanced `a/(1+a)` conversion or old fixed-invoice ceilings to this
+mixed-target interface. Follow [revision-8 priorities](current-priorities.md) for
+active assignments and exact-source overlap checks.
 
 **Historical diagnosis follows.** The revision-3/6 budgets and family suggestions
 below describe older inventories. They are preserved as context, not a current
@@ -34,7 +37,7 @@ screened paid local profile and the stated model is capped within about 0.9% of 
 [the packing ceiling](../../research/complex-local-word-ceiling/README.md) and the
 [priority log](research-priority-log.md).
 
-## What to work on now
+## Historical revision-6 assignments (not current tasks)
 
 The [review through #2027](community-efficient1000-review.md) remains a reviewed
 starting point. Newer pending follow-ups have moved the useful entry points;
