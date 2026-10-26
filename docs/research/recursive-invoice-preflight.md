@@ -143,6 +143,9 @@ the unfiltered retiming's algebra; it is not a newly emitted physical supplier.
 
 ## Inspect a tariff witness
 
+For a bounded menu of smaller targets and explicit piece fees, use the
+[target-partition optimizer](target-partition-optimization.md).
+
 To show exact old and new costs for the strongest positive and negative hinges:
 
 ```sh
