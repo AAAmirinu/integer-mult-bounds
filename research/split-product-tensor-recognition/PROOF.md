@@ -40,6 +40,10 @@ They are not sufficient alone: both nucleus modules must also be regular.
 
 ## 2. Find the radical and every primitive idempotent
 
+This extends Nick Petalas's fixed-algebra spectral projectors in PR5252 from
+the reduced case to algebras with a nilradical. The projector formula itself
+is retained mathematical precedent.
+
 Write J for the nilradical of B. A finite-dimensional commutative algebra has
 a decomposition into local Artinian factors. Here is the needed nilpotence
 bound. Its radical is nilpotent: choose a finite basis of nilpotent generators;

@@ -83,7 +83,8 @@ selected record or predecessor package.
   [PR #5502](https://github.com/CrocSwap/integer-mult-bounds/pull/5502) for the
   height criterion; Nick Petalas's
   [PR #5252](https://github.com/CrocSwap/integer-mult-bounds/pull/5252) for the
-  nucleus approach; Ali Romman's
+  nucleus approach and the reduced-case Frobenius-fixed spectral projectors;
+  Ali Romman's
   [PR #5540](https://github.com/CrocSwap/integer-mult-bounds/pull/5540) and
   [PR #5459](https://github.com/CrocSwap/integer-mult-bounds/pull/5459) for local
   recovery and characters; and David Ganz for the tensor atlas lineage.

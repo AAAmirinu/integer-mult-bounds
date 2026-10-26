@@ -34,6 +34,12 @@
       "git_blob": "a9f931a378ebf7a67881d209f46c2f7fe47d1041",
       "sha256": "0eb6c9f9eba70dc339e54b72a98b5b0fdcef706bcff5e02546ab2d0426a85ad9",
       "pin": "head:a41789ca4881f0576f290fd7b8010f3dc7500a7d:research/split-product-tensor-recognition/vendor/PR5656.md"
+    },
+    {
+      "path": "research/etale-tensor-determinant-image/README.md",
+      "usage": "provenance",
+      "git_blob": "0f07df6ce2a8c43ea1fcc5f0081ee3532da28208",
+      "sha256": "2ec18042a1a63d5fd5da246f4f6060c5fb66cff338f25a2a1b95e3ea8b4f0fba"
     }
   ],
   "external_inputs": [
