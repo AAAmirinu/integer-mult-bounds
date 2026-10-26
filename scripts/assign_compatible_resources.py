@@ -114,7 +114,7 @@ def main(argv=None):
         value, digest = read(args.problem)
         if args.check:
             result, _ = read(args.check)
-            require(result.get('input_sha256') == digest, 'Problem bytes changed')
+            require(type(result) is dict and result.get('input_sha256') == digest, 'Problem bytes changed')
             verify(value, result); print('PASS_COMPATIBLE_ASSIGNMENT')
         else:
             result = assign(value); result['input_sha256'] = digest

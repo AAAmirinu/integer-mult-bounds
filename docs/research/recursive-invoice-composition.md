@@ -21,10 +21,6 @@ arithmetic result as adding its multiplicities. Inputs are read and hashed once
 per listed term; the tool does not modify them. Output uses exact UTF-8 bytes
 with LF newlines, so the receipt hash also works on Windows.
 
-Use the [compatible-resource matcher](compatible-resource-assignment.md) when
-component construction requires a distinct resource for each declared consumer.
-It returns a minimum-cost assignment or a Hall shortage witness.
-
 All contracts must match. A matching declaration does not prove that components
 have disjoint lifetimes, independent targets or compatible native boundaries.
 Charge shared adapters, restoration, routes and compiler work in the complete

@@ -6,6 +6,10 @@ Gaussian phase. This is the fixed monomial recipe grammar in [PR #2250](https://
 The checker respects actual inverse, finite-order, commutation and phase
 relations. It checks all dirty inputs and all returned roles.
 
+When a source supplies a matrix of legal resource deliveries, the
+[compatible-resource matcher](compatible-resource-assignment.md) constructs
+a minimum-cost injection or a Hall shortage witness.
+
 The proof gives a finite criterion for a fixed n-axis program: equality at
 widths **2n+4 through 2n+7** is equivalent to equality at every positive
 width. The tool checks canonical native coefficients and constructs a short

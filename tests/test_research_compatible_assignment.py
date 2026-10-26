@@ -71,6 +71,9 @@ class AssignmentTests(unittest.TestCase):
             out = subprocess.run(cmd, cwd=tmp, capture_output=True, text=True)
             self.assertEqual(out.returncode, 0, out.stderr); c.write_text(out.stdout)
             self.assertEqual(subprocess.run(cmd+['--check',str(c)], capture_output=True).returncode, 0)
+            saved = c.read_text(); c.write_text('[]')
+            self.assertEqual(subprocess.run(cmd+['--check',str(c)], capture_output=True).returncode, 2)
+            c.write_text(saved)
             p.write_text(p.read_text()+'\n')
             self.assertEqual(subprocess.run(cmd+['--check',str(c)], capture_output=True).returncode, 2)
 
