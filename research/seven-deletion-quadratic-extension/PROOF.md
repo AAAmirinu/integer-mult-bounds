@@ -50,11 +50,11 @@ the first two identities on the complete root set, and zero sums on all
 2025 frames. Thus the full evaluation operator has squared norm identity
 192 I. For any t deleted root lines, the Gram matrix of their R_v has
 operator norm at most 56+8(t-1), by the absolute row-sum bound. For t<=17
-this is at most184<192. The remaining evaluations are therefore injective.
+this is at most 184<192. The remaining evaluations are therefore injective.
 This argument proves a bound for every deletion set; it is not a sample.
 
 In our theorem t=8+|X|<=15. Thus the restrictions of trace-zero quadratics
-have dimension35 on L. They lie in ker(M_L), since the eight equal-length
+have dimension 35 on L. They lie in ker(M_L), since the eight equal-length
 orthogonal roots of a frame have sum of outer products 8I. It remains to
 prove rank(M_L)>=|L|-35. The next section supplies this lower bound for
 every X. Together the bounds give equality and the extension assertion.
@@ -67,7 +67,7 @@ all those fields, without an order or positivity assumption on the field.
 ## 2. Complete deletion cover and new rank certificate
 
 The retained PR1650 source constructs the 120 lines and all 2025 frames.
-Its eight FRAME0-stabilizer generators generate a group H of order172032.
+Its eight FRAME0-stabilizer generators generate a group H of order 172032.
 The verifier rebuilds H, checks that each generator is a permutation fixing
 FRAME0 and preserving every frame, and checks the full orbit-cover chain.
 These maps come from orthogonal root reflections and preserve quadratic
@@ -84,7 +84,7 @@ seven it uses the retained PR1650 data, and checks every candidate transporter:
 | 6 | 156627 | 19295 |
 | 7 | 1651528 | 242802 |
 
-The triple orbits cover all227920 triples. Every k-subset has a (k-1)-subset;
+The triple orbits cover all 227920 triples. Every k-subset has a (k-1)-subset;
 move that subset to a retained representative and add its remaining point.
 Each resulting candidate is checked to be an actual H-image of its listed
 k-unit. This induction proves coverage of all subsets, without trusting a
@@ -93,18 +93,18 @@ The new package checks source hashes, all indices and lengths, all unit
 memberships, every transporter and the absence of trailing cover data.
 The data and this induction are Josie Elliston's predecessor contribution.
 
-For all263922 retained units of sizes0 through7, the new verifier enumerates
+For all 263922 retained units of sizes 0 through 7, the new verifier enumerates
 all frames disjoint from FRAME0 and X and row-reduces their incidence modulo3.
 It obtains rank112-|X|-35 in every case. A nonzero minor modulo3 is a
-nonzero integer minor, so this is a lower bound over Q. Section1 supplies
+nonzero integer minor, so this is a lower bound over Q. Section 1 supplies
 the matching upper bound. Transport through H gives the rank for every X.
 
-For speed, a ternary row has two disjoint bit planes, for coefficients1 and2.
+For speed, a ternary row has two disjoint bit planes, for coefficients 1 and 2.
 The code implements the nine field additions by Boolean operations; its
 row reduction uses only nonzero pivot scaling and row additions. A retained
 PR1650 routine orders the rows by new columns before elimination. It changes
 only row order. The new packed elimination is checked against separate dense
-modulo3 elimination on512 matrices, all nine scalar additions and deficient
+modulo3 elimination on 512 matrices, all nine scalar additions and deficient
 frame-family controls. It stops once the required lower bound is reached;
 the matching upper bound is the written geometric proof, not that stop rule.
 The registered parts partition the complete unit list with disjoint strides.
@@ -112,7 +112,7 @@ No pivot from the retained unit records is used by this rank calculation.
 
 ## 3. Seven canonical directions remain independent
 
-Fix a root a in P112. Among the other root lines,56 are nonorthogonal to a.
+Fix a root a in P112. Among the other root lines, 56 are nonorthogonal to a.
 For each such doubled root b, put u_b=2b-(a dot b)/4 a. These vectors lie in
 a-perp. Exact full-geometry checks give
 
@@ -123,8 +123,8 @@ sum_b u_b u_b^T = 192 I - 24 a a^T,
 
 and each u_b has exactly one distinct twin with absolute inner product24.
 Its inner product with every other distinct vector has absolute value8.
-On a-perp the sum is192 I. Four of the56 lines belong to FRAME0. At most
-seven more are in X. For any removed set of at most11 projected vectors,
+On a-perp the sum is192 I. Four of the 56 lines belong to FRAME0. At most
+seven more are in X. For any removed set of at most 11 projected vectors,
 its Gram operator norm is at most24+24+9*8=120<192. Therefore the surviving
 projected vectors span all seven dimensions of a-perp.
 
@@ -132,7 +132,7 @@ At a live pivot F, put a=F[k]. The other seven pivot roots are a basis of
 a-perp. The functions h_kl(i)=G_ik G_il on I_k are the corresponding cross
 terms. Since G_ik is nonzero on I_k and the projected vectors there span
 a-perp, these seven functions are independent. Other pivot roots are
-orthogonal to a and hence do not remove any of the56 vectors. This proves
+orthogonal to a and hence do not remove any of the 56 vectors. This proves
 independence for every deletion set in scope and every live pivot, with no
 W, G or block-completeness hypothesis.
 
@@ -140,14 +140,14 @@ W, G or block-completeness hypothesis.
 
 Take z in the kernel of the live-frame incidence on I_k. Extend z by zero to
 all other live lines, including the whole pivot. This new function has sum
-zero on every live frame, so Sections1 and2 give a unique trace-zero ambient
+zero on every live frame, so Sections 1 and 2 give a unique trace-zero ambient
 quadratic q extending it. In particular q(a)=0. Its restriction to a-perp
 therefore has trace zero.
 
-The full E7 slice orthogonal to a has63 root lines. Exactly four belong to
+The full E7 slice orthogonal to a has 63 root lines. Exactly four belong to
 FRAME0 and at most seven more to X. On all the other orthogonal lines q is
-zero. If the restriction were nonzero, it would have support at most11.
-Nick Petalas's PR5238 theorem gives minimum support12 for a nonzero rational
+zero. If the restriction were nonzero, it would have support at most 11.
+Nick Petalas's PR5238 theorem gives minimum support 12 for a nonzero rational
 trace-zero restricted quadratic. The package replays its complete
 134217727-word binary certificate and root-transitivity check. The same
 bound holds over every characteristic-zero field: a nontrivial solution of
@@ -159,7 +159,7 @@ A symmetric quadratic whose restriction to a-perp is zero and whose value
 at a is zero consists only of cross terms between a and a-perp. Its values
 on I_k are in the span of the seven h_kl. Conversely those seven vectors
 have zero sums on every full frame, because the pivot roots are orthogonal.
-Section3 proves their independence. Hence the local kernel has dimension7
+Section 3 proves their independence. Hence the local kernel has dimension 7
 and its rank is |I_k|-7, which is D. This holds for every live pivot at once;
 no census of individual pivots is substituted for the argument.
 
@@ -168,9 +168,9 @@ no census of individual pivots is substituted for the argument.
 The two retained PR1668 fixtures have eight deleted lines and all live
 frames. The replay checks W, G, nonempty blocks, the exact rational rank
 loss, an eighth independent integer kernel vector, and damaged-vector
-rejection. Restoring any one deleted line gives128 checked pivot-coordinate
+rejection. Restoring any one deleted line gives 128 checked pivot-coordinate
 ranks across the two fixtures, consistent with the new theorem. The global
-incidence rank is69 on both104-line boundary sets, so quadratic extension
+incidence rank is 69 on both 104-line boundary sets, so quadratic extension
 still holds there: sixteen missing roots are within the uniform injectivity
 bound. These D failures therefore do not imply extension failure. Their
 counterexamples are credited results, not new discoveries.
