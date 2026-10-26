@@ -54,6 +54,16 @@ value(747,13578)
     - value(525,14983)/4 + value(340,14983)/4.
 ```
 
+The identity also has a short direct derivation. Let `A=value(525,823)`,
+`B=value(712,823)`, `V=value(747,13578)` and `C=value(340,14983)`.
+Field 712 has only one write in the interval: event 13572 adds `V`.
+The owned value is unchanged between that read and event 13578.
+Field 525 has only two writes: event 13737 subtracts four times field 712,
+and event 14654 adds field 340. Field 340 has no write from event 11202
+through cut 14983, so that last added value is `C`.
+Consequently `value(525,14983)=A-4(B+V)+C`. Rearrangement gives the identity.
+The complete prefix check independently confirms all 105 source coefficients.
+
 The first two replacement ADDs use frame 3. The last two use frame 396.
 Each source and field 715 have that frame at the stated cut. There is no read
 of715 in `[823,14983)`. Event14983 is the next read, `ADD 340,715,-4`.
