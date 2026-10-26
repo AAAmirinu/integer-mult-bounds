@@ -3,7 +3,7 @@
 ## Current selected-family replay: #5599
 
 The [selected record](../certificates/selected-result.json) binds conditional
-κ = 0.00310045. `make frontier5599-verify` authenticates the complete source
+κ = 0.00310045. The [source manifest](../certificates/frontier5599-source.json) and [maintainer proof review](research/pr-intake-evidence/pr5599-completion/PROOF-REVIEW.md) bind the selected source closure and review scope. `make frontier5599-verify` authenticates the complete source
 closure and claim derivation, then executes primary, independent caller
 positive-control, adapted caller and optimized primary checks serially. The
 Linux [audit run](https://github.com/CrocSwap/integer-mult-bounds/actions/runs/40253906841)
