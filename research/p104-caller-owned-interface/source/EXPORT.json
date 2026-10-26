@@ -1,13 +1,13 @@
 {
-  "declared_source_head": "d0f6fa2555410a1e23fe4191424c2097ab3d5d97",
+  "declared_source_head": "a5348f7143f95fe0046b92b96172e30763c7d731",
   "files": {
-    "NOTICE-PR5684": "e8e0cabef6cf40d63f3cea3b6403dfd1af8727e40df03f09b2932718bcddc1b0",
-    "RESULT.json": "de245b8762f4e7f5e73ed5b3c6c5e47fa0f64caa9c852986164359e9aec1f2dd",
-    "WORD.json.gz": "d6db1d0d97b13ea483a462c65437664d15d34dec56c3682cf6e1de31266ec6c2"
+    "NOTICE-PR5713": "a252225cb4d9c61fc94b5b7f638600393a859e47750cfea7688c75b1f6610077",
+    "RESULT.json": "3ce2dfdd7ccb6b0d6d8d674bc7614a8302a0f2f9e23f16ece95dedb9d7ea561e",
+    "WORD.json.gz": "9fd67dd89ed24a644257cd9aef06934ed4c6fbe0441804684a968868f2ef66a8"
   },
-  "path": "research/p104-reframe-r22",
-  "pull_request": 5684,
+  "path": "research/p104-temporal-updates",
+  "pull_request": 5713,
   "repository": "https://github.com/CrocSwap/integer-mult-bounds",
   "scope": "Exact pending-source bytes exported locally. This is not a Git ancestry/admission claim. No fetch or pending Git object is needed at replay.",
-  "word_canonical_sha256": "3ae490190103898b9a20d32a4be8865b1214dd9a84a154e509022dc698e3f8fc"
+  "word_canonical_sha256": "32adce6656e49aa020d3e6317f1c45c11fccadeeb67a8d506172d101703d2138"
 }

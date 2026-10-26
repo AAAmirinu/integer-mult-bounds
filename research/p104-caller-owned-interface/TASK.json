@@ -1,5 +1,5 @@
 {
-  "actual_scope": "Independent PR5684 forward-caller audit with explicit independent public holes, multiple owned lifetimes, scratch scheduling and complete ordinary recount.",
+  "actual_scope": "Independent PR5713 forward-caller audit with explicit independent public holes, multiple owned lifetimes, scratch scheduling and complete ordinary recount.",
   "ai_assistance": "Substantial OpenAI Codex assistance for the independent interface audit, exact adapter and controls, source binding and packaging. Agent review is not human or formal mathematical acceptance.",
   "author": "flyingviper, with substantial OpenAI Codex assistance",
   "base_commit": "df0137efd35e11b4445734bf612bdd4c7ebc330c",
@@ -11,7 +11,7 @@
       "blocked_by": "No successor source is part of this fixed package.",
       "first_step": "Pin the successor and its primary all-input/native receipt, then diff the physical controller and interface before adapting any equations.",
       "question": "Can the same explicit-inventory audit be rebound to a successor with a changed caller or helper ABI?",
-      "why_it_matters": "The present proof is bound to the fixed eighteen-call PR5684 interface; inventory generality alone does not validate new scalar/native identities."
+      "why_it_matters": "The present proof is bound to the fixed eighteen-call PR5713 interface; inventory generality alone does not validate new scalar/native identities."
     },
     {
       "blocked_by": "Primary native and compiler results are separate prerequisites; this package does not independently prove the five framework assumptions.",

@@ -4,11 +4,11 @@ The selected PR5599 independent caller adapter assumes every public label is
 productive, eight owned lifetimes, and one reusable scratch field. Newer P104
 constructions use retired public labels and overlapping owned lifetimes. This
 package supplies the missing inventory and scheduling adapter and checks it on
-[PR5684](https://github.com/CrocSwap/integer-mult-bounds/pull/5684), head
-`d0f6fa2555410a1e23fe4191424c2097ab3d5d97`.
+[PR5713](https://github.com/CrocSwap/integer-mult-bounds/pull/5713), head
+`a5348f7143f95fe0046b92b96172e30763c7d731`.
 
 The source's recursive invoice is unchanged. **This is a scoped independent
-forward-caller audit: no new construction, κ gain, selected-frontier update or
+forward-caller audit: no new construction, kappa gain, selected-frontier update or
 complete supplier admission.** The old adapter's inventory restriction is an
 evidence gap for the newer interface, not a demonstrated flaw in the source's
 primary verifier.
@@ -22,24 +22,24 @@ primary verifier.
 | Native target binding | 535 helper normalizers and 208 intrinsic main adapters; 302 distinct signed-Pauli/independent-phase comparisons |
 | Productive inventory | 743 independent local inputs; 9,630 fresh caller helpers; 12,958 total productive fields |
 | Owned storage | Nine local owned labels, eleven lifetimes, peak two; explicit global interval schedule including thin queries |
-| Complete invoice | 66,366 paid jobs and 12,958 targets, equal to the pinned source |
-| Ordinary allowance | 124,302,196 abstract address/phase/scalar passes < retained 184,647,552 allowance |
+| Complete invoice | 66,348 paid jobs and 12,958 targets, equal to the pinned source |
+| Ordinary allowance | 124,284,844 abstract address/phase/scalar passes < retained 184,647,552 allowance |
 | Fault rejection | All ten original controls plus six inventory/lifetime/scratch controls |
 
 The actual source is compact. A separate exact role-permutation fixture swaps
 helper 573 with owned 743 to create a retired public hole while preserving every
 chart, coefficient, input count and lifetime. It verifies that the hole gets no
-productive ID, the relocated helper does, and all1,758 local/query owned
+productive ID, the relocated helper does, and all 1,758 local/query owned
 intervals remain nonoverlapping on their assigned scratch fields. This tests
 the general adapter without importing another construction or changing the
 candidate's scientific result.
 
 The exact candidate output is stored as `expected/candidate.json.gz`; replay
 compares its **complete decompressed bytes**. SHA256:
-`b0cdb4c137b90dd1abd13d97a275434dda0b1edc37f6e25ce4b9a97230a18768`.
+`9fe876e5e74e878e691b0f9277ebbc39ce4610262526632db489816a4dd741ac`.
 Its inherited `reviewed_head` and `canonical_main` keys identify the original
 PR5550 checker capsule. The current candidate is separately and explicitly
-bound by `candidate_input.declared_source_head` to PR5684; those legacy keys
+bound by `candidate_input.declared_source_head` to PR5713; those legacy keys
 are not its source revision.
 The original positive-control output remains the canonical PR5550 artifact,
 with SHA256
@@ -63,8 +63,8 @@ See [PROOF.md](PROOF.md) for the exact boundary and accounting argument.
 
 ## Prerequisites and limits
 
-The primary PR5684 verifier is a separate prerequisite. A fresh parent-side
-replay passed its complete 752-column scalar/transpose obligations, 2,916 native
+The primary PR5713 verifier is a separate prerequisite. A fresh parent-side
+replay passed its complete 752-column scalar/transpose obligations, 2,917 native
 maps/phases, primary physical caller and complete pricing; the short output is
 retained in `evidence/primary-prerequisite.log`. This package does not rerun that
 primary science or turn its log into an independent proof. Its own native checks
@@ -92,14 +92,17 @@ Expected marker: `PASS_P104_EXPLICIT_OWNED_CALLER_AUDIT`.
 Each registered normal/optimized command runs the original and candidate
 serially, with separate 120-second and sampled 512-MiB child caps. Normal and
 optimized equality is reproducibility, not two independent implementations.
-The frozen local v3 pair passed in 25.625/26.234 seconds, below 70 MiB per child;
+The untouched original positive control passed in 25.625 seconds. The current
+candidate passed in 26.313 seconds with a sampled RSS peak of 76,578,816 bytes;
 portable registered replay and publication checks are reported separately.
+The earlier PR5684 compact receipt and binding are retained in `evidence/` as
+historical evidence; they are not substituted for the PR5713 replay.
 
 Main provenance is `df0137efd35e11b4445734bf612bdd4c7ebc330c`. Canonical PR5550
 capsule inputs and the selected PR5599 adapter are declared live inputs in
 `SOURCES.json` and `VERIFY.json`; their bytes are authenticated before imports.
 The original capsule is reused in place. Only the current pending word, result,
-notice, exact adaptation and new evidence are packaged here. Pending PR5684
+notice, exact adaptation and new evidence are packaged here. Pending PR5713
 bytes have explicit hashes in `source/EXPORT.json`; their archival custody does
 not claim that its head is in main's ancestry. Fresh child bytecode namespaces
 prevent stale caches from replacing authenticated source.
@@ -128,9 +131,11 @@ search or recurring run is started by this package.
 
 Chris R/Clear1nsight's PR5550 supplies the independent caller, spectral,
 Laurent and native-normalizer checker. The maintainer PR5599 review supplies
-the selected inventory adapter and admission analysis. Joel Pulikkan supplies
-PR5684, building on Ali Romman's PR5678 and its source lineage; the full attribution is retained verbatim in
-`source/NOTICE-PR5684`. This includes the work of flyingviper, Scratch-net,
+the selected inventory adapter and admission analysis. Ali Romman supplies
+PR5713 with OpenAI Codex assistance, building on Joel Pulikkan/GamingPuzzled's
+PR5684 with Claude assistance and Ali Romman's PR5678. The predecessor
+attribution is retained verbatim in
+`source/NOTICE-PR5713`. This includes the work of flyingviper, Scratch-net,
 Pierre-Loic Doulcet, Joel Pulikkan, DreamingOfClouds, thu-nmrc, Gareth Davidson,
 David Arias, Cinna Davis, Jacob Alan Sussman, zxv and Cao Yifan.
 

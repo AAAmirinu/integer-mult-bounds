@@ -40,3 +40,5 @@ No subagents were used for this contribution. Apache-2.0.
 Concurrent PR5650 by zxv publishes the PR5643/PR5644 composition. PR5651 by
 Ali Romman corroborates it. This package credits that released composition
 and contributes the further four-gate placement.
+
+New work: distributed scalar updates on an unobserved public field interval, the exact witness and complete conditional price. Prepared for Ali Romman with substantial OpenAI Codex assistance. No subagents. Apache-2.0. The source archive retains all predecessor notices.

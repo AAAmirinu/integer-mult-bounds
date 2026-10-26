@@ -1,72 +1,26 @@
 {
-  "changed_charts": [
-    [
-      12503,
-      [
-        "ADD",
-        213,
-        473,
-        "1/2"
-      ],
-      594,
-      3
-    ],
-    [
-      12868,
-      [
-        "ADD",
-        473,
-        100,
-        "1"
-      ],
-      718,
-      716
-    ],
-    [
-      12997,
-      [
-        "ADD",
-        585,
-        733,
-        "-4"
-      ],
-      597,
-      772
-    ],
-    [
-      13022,
-      [
-        "ADD",
-        438,
-        733,
-        "-4"
-      ],
-      794,
-      772
-    ]
-  ],
   "complete_cost": {
     "compiler": {
       "H": 80511200000000000,
       "N": "2^80511200000000000",
       "eta": {
-        "lower": "0.000000131315795765027896626529",
-        "upper": "0.000000131315795765027896626530"
+        "lower": "0.000000131022217212430301374984",
+        "upper": "0.000000131022217212430301374985"
       },
       "gap": "1/1400000000000",
       "integer_test_exponent": 57508,
       "logarithm_power": 1024,
       "theta": "63/64",
-      "uniform_saving": "2176099187/700000000000",
+      "uniform_saving": "2176406557/700000000000",
       "word_materialized": false
     },
     "full_forward_calls": 18,
-    "gain": "55463/100000000000",
-    "kappa": "19429457/6250000000",
-    "kappa_decimal": ".00310871312",
+    "gain": "4391/10000000000",
+    "kappa": "155457611/50000000000",
+    "kappa_decimal": "0.00310915222",
     "margin_at_previous": {
-      "lower": "0.134696110478415012478842752499",
-      "upper": "0.134696110478415012478842752500"
+      "lower": "0.106625834236318763156961686328",
+      "upper": "0.106625834236318763156961686329"
     },
     "negative_controls": {
       "old_BIT": "Rejected by outer inequalities",
@@ -75,8 +29,8 @@
     "nonrecursive": {
       "fixed_scalar_growth_bound": "At most 2^(16*26000) before native factors; a declared constant, not an attained norm.",
       "local_paid_rank_mass": 5987,
-      "local_routes": 5165000,
-      "local_scalar": 220290,
+      "local_routes": 5164000,
+      "local_scalar": 220326,
       "peak_owned_fields": 2,
       "raw_budget": 1000000000,
       "raw_scalar_upper": 184647552,
@@ -98,82 +52,82 @@
         "new_semantic_group_guard": "3/1400000000000"
       },
       "margins": {
-        "boundary_algebraic_matrix": "6093077720795647801629/1960000000000000000000000",
-        "fused_gaussian": "6093077720786943404887/1960000000000000000000000",
-        "global_coordinate_router": "1088049593/350000000000",
-        "group_bit_router": "1523269430546735851221/490000000000000000000000",
+        "boundary_algebraic_matrix": "6093938356795647186889/1960000000000000000000000",
+        "fused_gaussian": "6093938356786941560667/1960000000000000000000000",
+        "global_coordinate_router": "544101639/175000000000",
+        "group_bit_router": "761742294773367695083/245000000000000000000000",
         "group_scans": "699999999999/700000000000",
-        "main_transform": "6093077719395647801629/1960000000000000000000000",
+        "main_transform": "6093938355395647186889/1960000000000000000000000",
         "microbox_face_corrections": "26950000000001/350000000000",
         "polynomial_products": "1399999999999/1400000000000",
-        "sparse_union_movement": "802343077720795647801629/1960000000000000000000000"
+        "sparse_union_movement": "802343938356795647186889/1960000000000000000000000"
       },
       "parameters": {
-        "a": "1088049593/350000000000",
-        "b": "4352198373/1400000000000",
+        "a": "544101639/175000000000",
+        "b": "4352813113/1400000000000",
         "beta": "1399999999997/1400000000000",
         "bit_saving": "17/5000",
-        "cap_xi": "1782343077719395647801629/1960000000000000000000000",
-        "complex_uniform_saving": "2176099187/700000000000",
+        "cap_xi": "1782343938355395647186889/1960000000000000000000000",
+        "complex_uniform_saving": "2176406557/700000000000",
         "d": "1/1400000000000",
         "epsilon": "1399999999999/1400000000000",
-        "kappa": "19429457/6250000000",
-        "lambda_": "398756514751/400000000000",
-        "lambda_prime": "1395647801629/1400000000000",
+        "kappa": "155457611/50000000000",
+        "lambda_": "398756339111/400000000000",
+        "lambda_prime": "1395647186889/1400000000000",
         "layout": "1/1400000000000",
-        "q": "4352198371/1400000000000",
+        "q": "4352813111/1400000000000",
         "r0": "1/14000000000000",
         "stop": "1/1400000000000",
-        "tested_saving": "4973941/1600000000"
+        "tested_saving": "124366089/40000000000"
       },
       "strict_checks": {
-        "actual_bit_above_effective": "101950407/350000000000",
+        "actual_bit_above_effective": "50898361/175000000000",
         "actual_logarithmic_gamma_guard": "1/1400000000000",
-        "actual_logarithmic_group_guard": "177656922282704352198371/980000000000000000000000",
+        "actual_logarithmic_group_guard": "177656061646704352813111/980000000000000000000000",
         "alpha_logarithm_absorption": "1/14000000000000",
-        "boundary_algebraic_matrix_above_kappa": "5595647801629/1960000000000000000000000",
-        "cap_above_band": "802343077719395647801629/1960000000000000000000000",
-        "cap_below_cell": "177656922279204352198371/1960000000000000000000000",
-        "cap_below_phase_cell_power": "2137656922280604352198371/1960000000000000000000000",
+        "boundary_algebraic_matrix_above_kappa": "5595647186889/1960000000000000000000000",
+        "cap_above_band": "802343938355395647186889/1960000000000000000000000",
+        "cap_below_cell": "177656061643204352813111/1960000000000000000000000",
+        "cap_below_phase_cell_power": "2137656061644604352813111/1960000000000000000000000",
         "complex_above_effective": "1/1400000000000",
-        "complex_below_one_over_32": "39397801627/1400000000000",
+        "complex_below_one_over_32": "39397186887/1400000000000",
         "complex_endpoint": "1/700000000000",
         "epsilon_below_one": "1/1400000000000",
         "epsilon_positive": "1399999999999/1400000000000",
         "fine_prime_halo_umbrella": "7/2",
-        "fused_gaussian_above_kappa": "5586943404887/1960000000000000000000000",
-        "gaussian_above_main": "695647801629/980000000000000000000000",
+        "fused_gaussian_above_kappa": "5586941560667/1960000000000000000000000",
+        "gaussian_above_main": "695647186889/980000000000000000000000",
         "global_coordinate_router_above_kappa": "1/350000000000",
         "global_gamma_power_slack": "9/14000000000000",
         "group_below_dimension": "1/700000000000",
-        "group_bit_router_above_kappa": "1746735851221/490000000000000000000000",
-        "group_gauge_power_slack": "177656922282634352198371/980000000000000000000000",
+        "group_bit_router_above_kappa": "873367695083/245000000000000000000000",
+        "group_gauge_power_slack": "177656061646634352813111/980000000000000000000000",
         "group_key_fits_record": "1/700000000000",
         "group_positive": "1399999999997/1400000000000",
-        "group_scans_above_kappa": "139564780163/140000000000",
+        "group_scans_above_kappa": "139564718689/140000000000",
         "halo_covers_generic_inverse_radius": "5",
-        "improvement_over_user_baseline": "688871350400418148631/500000000000000000000000",
+        "improvement_over_user_baseline": "689090900400418148631/500000000000000000000000",
         "lambda_above_internal": "1/2800000000000",
         "lambda_above_sigma": "3/2800000000000",
         "lambda_above_tau": "1/2800000000000",
         "lambda_prime_above_lambda": "1/2800000000000",
-        "lambda_prime_above_leaf": "2795647801627/1960000000000000000000000",
-        "leaf_saving_above_effective": "1395647801627/1960000000000000000000000",
-        "main_transform_above_kappa": "4195647801629/1960000000000000000000000",
+        "lambda_prime_above_leaf": "2795647186887/1960000000000000000000000",
+        "leaf_saving_above_effective": "1395647186887/1960000000000000000000000",
+        "main_transform_above_kappa": "4195647186889/1960000000000000000000000",
         "membership_arithmetic_fits_record": "1/1400000000000",
-        "microbox_face_corrections_above_kappa": "26948911950409/350000000000",
+        "microbox_face_corrections_above_kappa": "6737227949181/87500000000",
         "microbox_halo_volume": "110600000000003/1400000000000",
         "new_complex_uniform_saving_above_b": "1/1400000000000",
         "new_semantic_guard_with_C1_one": "1/1400000000000",
-        "polynomial_products_above_kappa": "1395647801631/1400000000000",
+        "polynomial_products_above_kappa": "1395647186891/1400000000000",
         "positive_layout_slack": "1/1400000000000",
         "q_below_effective": "1/1400000000000",
         "q_below_internal": "1/1400000000000",
-        "q_below_leaf": "2795647801627/1960000000000000000000000",
-        "q_positive": "4352198371/1400000000000",
-        "short_record_fallback": "1395647801627/1400000000000",
+        "q_below_leaf": "2795647186887/1960000000000000000000000",
+        "q_positive": "4352813111/1400000000000",
+        "short_record_fallback": "1395647186887/1400000000000",
         "source_axis_superpolynomial": "1/1400000000000",
-        "sparse_union_movement_above_kappa": "796250000005595647801629/1960000000000000000000000",
+        "sparse_union_movement_above_kappa": "796250000005595647186889/1960000000000000000000000",
         "stop_below_one": "1399999999999/1400000000000",
         "stop_positive": "1/1400000000000",
         "strassen_integer_power_gap": "1951441519231",
@@ -184,11 +138,11 @@
       }
     },
     "paid": {
-      "1": 40890,
+      "1": 40872,
       "16": 416,
-      "2": 8280,
+      "2": 8262,
       "24": 416,
-      "3": 8892,
+      "3": 8910,
       "32": 416,
       "4": 1656,
       "40": 416,
@@ -200,41 +154,41 @@
       "7": 270,
       "72": 208
     },
-    "paid_calls": 66366,
-    "previous_open_pr5660": "310815849/100000000000",
+    "paid_calls": 66348,
+    "previous_open_pr5660": "19429457/6250000000",
     "productive_fields": 12958,
     "query_shears": 15,
     "rank_mass_surplus": 760,
     "raw_ceiling": {
-      "derivative_upper": "-369817807368548921458450545778859467289312053203468722279700553/1569275433846670190958947355801916604025588861116008628224",
+      "derivative_upper": "-739527737203957000275288525290373783419970457168925055914772323/3138550867693340381917894711603833208051177722232017256448",
       "interval": [
         "0",
         "17/5000"
       ]
     },
     "raw_headroom": [
-      "2031/100000000000000",
-      "127/6250000000000"
+      "1281/50000000000000",
+      "2563/100000000000000"
     ],
     "raw_root_interval": [
-      "310871314031/100000000000000",
-      "19429457127/6250000000000"
+      "155457612281/50000000000000",
+      "310915224563/100000000000000"
     ],
-    "relative_gain_percent": "5546300/310815849",
+    "relative_gain_percent": "548875/38858914",
     "strictification": {
       "alpha": {
-        "lower": "0.999999999984441745640821653631",
-        "upper": "0.999999999984441745640821653632"
+        "lower": "0.999999999979045390727904314922",
+        "upper": "0.999999999979045390727904314923"
       },
       "cutoff": 17,
       "delta": {
-        "lower": "0.967460173468106654668565402432",
-        "upper": "0.967460173468106654668565402433"
+        "lower": "0.967460429302773034801102736481",
+        "upper": "0.967460429302773034801102736482"
       },
       "floor": 18,
       "gamma": {
-        "lower": "0.968245042849263897375605321737",
-        "upper": "0.968245042849263897375605321738"
+        "lower": "0.968263729732811178316707419523",
+        "upper": "0.968263729732811178316707419524"
       },
       "normalized_paid_upper": "1048576000976562501/1048576001073741824",
       "power": 1024,
@@ -242,7 +196,7 @@
       "tail_block": 128,
       "tail_decay": "39/40",
       "tail_offset": "1/5",
-      "tested": "4973941/1600000000"
+      "tested": "124366089/40000000000"
     },
     "targets": {
       "1": 36,
@@ -264,28 +218,12 @@
     },
     "whole_idle_jobs": 3120
   },
-  "controls": {
-    "extra_target_credit": "Every productive helper has a native target",
-    "helper_read_after_write": "Dependent operations keep their order",
-    "missing_helper_move": "Scalar destination and coefficient",
-    "old_helper_start": "Common scalar chart",
-    "read_on_old_chart": "Scalar destination and coefficient",
-    "unpaid_query": "Complete field and call counts"
-  },
-  "global_paid_delta": {
-    "1": -54,
-    "4": 18
-  },
-  "helper_credit_delta": {
-    "8": -1,
-    "9": 1
-  },
-  "helper_starts": {
-    "473": [
-      594,
-      3
-    ]
-  },
+  "limits": [
+    "The five inherited framework assumptions remain.",
+    "The complete rounded multiplier and huge uniform word are not materialized.",
+    "Author checks do not establish independent scientific acceptance.",
+    "The gain is small. No large gain or global optimum is claimed."
+  ],
   "local": {
     "endpoint_coefficients": 565504,
     "helpers": {
@@ -300,9 +238,9 @@
     "owned_fields": 9,
     "owned_lifetimes": 11,
     "paid": {
-      "1": 2185,
-      "2": 460,
-      "3": 494,
+      "1": 2184,
+      "2": 459,
+      "3": 495,
       "4": 92,
       "5": 159,
       "6": 22,
@@ -311,14 +249,16 @@
     "paid_rank_mass": 5987,
     "peak_owned_fields": 2,
     "public_inputs": 743,
-    "real_scalar_allowance": 220290
+    "real_scalar_allowance": 220326
   },
+  "local_helper_delta": {},
   "local_paid_delta": {
-    "1": -3,
-    "4": 1
+    "1": -1,
+    "2": -1,
+    "3": 1
   },
   "native": {
-    "distinct_maps": 2916,
+    "distinct_maps": 2917,
     "helper_normalizers": 1070,
     "helpers": {
       "1": 2,
@@ -331,10 +271,21 @@
     },
     "main_adapters": 208,
     "proof": "Every signed Pauli image and exact global phase; frame induction at every positive tensor width",
-    "recipe_payload_sha256": "d72c17d8398a3425a7dd40ac6c06905a144f4bd39fee2785b09da6fd06d2f263",
+    "recipe_payload_sha256": "626b4ce338e77fd1f5c5d90cf107d91bb73af42c107cd8eea14fe657ddb324e4",
     "wrong_phase_rejected": true
   },
-  "physical": {
+  "negative_controls": {
+    "extra_target": "Every productive helper has a native target",
+    "interval_crosses_target_read": "No original instruction reads the changed target",
+    "missing_central_translation": "Rejected by the complete Laurent endpoint",
+    "missing_late_update": "Exact distributed source functional",
+    "missing_native_transport": "Scalar destination and coefficient",
+    "missing_owned_erasure": "All public and owned exits",
+    "unpaid_query": "Complete field and call counts",
+    "wrong_common_frame": "Each replacement has an actual common frame",
+    "wrong_history_sign": "Exact distributed source functional"
+  },
+  "physical_caller": {
     "central_square_columns": 53248,
     "full_calls": 18,
     "main_targets": {
@@ -382,13 +333,72 @@
       31
     ]
   },
-  "source": {
-    "pr5678": "af814f6f3c477fdd13b8f04380a33cf32004966b"
-  },
-  "status": "PASS_P104_R22_REFRAME_KAPPA_00310871312",
-  "transpose": {
+  "separate_columns": {
     "arithmetic": "Dense integer rows with binary denominators; reverse chronology",
     "coefficients": 565504,
     "columns": 752
+  },
+  "source_commit": "d0f6fa2555410a1e23fe4191424c2097ab3d5d97",
+  "source_local": {
+    "endpoint_coefficients": 565504,
+    "helpers": {
+      "1": 2,
+      "2": 4,
+      "4": 91,
+      "5": 6,
+      "7": 5,
+      "8": 15,
+      "9": 412
+    },
+    "owned_fields": 9,
+    "owned_lifetimes": 11,
+    "paid": {
+      "1": 2185,
+      "2": 460,
+      "3": 494,
+      "4": 92,
+      "5": 159,
+      "6": 22,
+      "7": 15
+    },
+    "paid_rank_mass": 5987,
+    "peak_owned_fields": 2,
+    "public_inputs": 743,
+    "real_scalar_allowance": 220290
+  },
+  "status": "PASS_P104_TEMPORAL_UPDATES_KAPPA_00310915222",
+  "temporal_identity": {
+    "observations": [
+      [
+        823,
+        525,
+        3,
+        1
+      ],
+      [
+        823,
+        712,
+        3,
+        1
+      ],
+      [
+        14983,
+        525,
+        396,
+        106
+      ],
+      [
+        14983,
+        340,
+        396,
+        7
+      ]
+    ],
+    "removed_event": 13578,
+    "role": 715,
+    "source_coefficients": 105,
+    "source_sha256": "cddffb3e9a025e4a68c44ef66cc5c88b2d8eb88c6180415d7552f04ff6a48689",
+    "start": 823,
+    "stop": 14983
   }
 }

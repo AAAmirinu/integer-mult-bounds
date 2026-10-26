@@ -171,7 +171,7 @@ def main():
     need(candidate['native_checks']['owned_peak']==2 and len(candidate['owned_scratch_fields'])==2,'Explicit simultaneous scratch bound')
     authenticate(root)
     print('PASS_P104_EXPLICIT_OWNED_CALLER_AUDIT')
-    print(json.dumps(dict(source_head='d0f6fa2555410a1e23fe4191424c2097ab3d5d97',contacts=len(candidate['route_recipes'])*4,
+    print(json.dumps(dict(source_head=candidate['candidate_input']['declared_source_head'],contacts=len(candidate['route_recipes'])*4,
         fresh_helpers=candidate['native_checks']['fresh_helpers'],owned_peak=2,paid_jobs=sum(candidate['paid'].values()),
         productive_fields=sum(candidate['targets'].values()),ordinary_pass_upper=candidate['ordinary']['abstract_address_phase_scalar_pass_upper'],
         controls=len(candidate['controls']),public_hole_fixture=fixture,runs=[old_run,new_run],full_parent_admitted=False,new_kappa=None),sort_keys=True))

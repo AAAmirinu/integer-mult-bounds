@@ -6,7 +6,7 @@
         "-B",
         "{package}/verify.py"
       ],
-      "checks": "Source custody; untouched original complete-output positive control; current PR5684 independent caller/normalizer/inventory/schedule/recount; sixteen fault controls. No frontier admission.",
+      "checks": "Source custody; untouched original complete-output positive control; current PR5713 independent caller/normalizer/inventory/schedule/recount; sixteen fault controls. No frontier admission.",
       "timeout_seconds": 300
     },
     {
@@ -16,7 +16,7 @@
         "-B",
         "{package}/verify.py"
       ],
-      "checks": "Source custody; untouched original complete-output positive control; current PR5684 independent caller/normalizer/inventory/schedule/recount; sixteen fault controls. No frontier admission.",
+      "checks": "Source custody; untouched original complete-output positive control; current PR5713 independent caller/normalizer/inventory/schedule/recount; sixteen fault controls. No frontier admission.",
       "timeout_seconds": 300
     }
   ],

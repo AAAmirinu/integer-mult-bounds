@@ -96,11 +96,11 @@ code and output are unchanged. A separate guard samples the actual child RSS.
 
 ## Source-specific lightweight checks
 
-For PR5684 head `d0f6fa2555410a1e23fe4191424c2097ab3d5d97`, the literal interface
+For PR5713 head `a5348f7143f95fe0046b92b96172e30763c7d731`, the literal interface
 has 743 independent inputs, 535 helper targets, 9 owned labels, 11 lifetimes and
 peak 2. Eighteen fresh helper inventories plus 3,328 main fields give 12,958
 productive fields; owned slots are 12958 and 12959. The independently recounted
-local scalar and routing allowances are 220,290 and 5,165,000.
+local scalar and routing allowances are 220,326 and 5,164,000.
 
 The registered lightweight compatibility fixture exchanges helper label 573 with
 owned label 743 in this same frozen word. It permutes destinations and scalar
@@ -118,15 +118,16 @@ candidate runs are explicitly separate, bounded serial commands. Their results
 are recorded only after successful completion; preparation is not a scientific
 caller pass. See the generated binding, patch, output, guard and receipt files.
 
-The frozen v3 serial pair has now completed. The original output agrees with
+The unchanged original positive control and the current PR5713 candidate
+have completed in separate serial runs. The original output agrees with
 all frozen bytes (SHA256 `b51a7d19c10faea7d569a48e9536db8ba1e7418f8dd8dfb25646cc87cc9c4009`).
 The candidate verifies 7,488 contacts, 302 distinct signed-Pauli/independent-phase
-checks, 9,630 fresh helpers, 66,366 paid jobs, 12,958 productive fields and all 16
-negative controls. Its ordinary pass count 124,302,196 is below 184,647,552.
+checks, 9,630 fresh helpers, 66,348 paid jobs, 12,958 productive fields and all 16
+negative controls. Its ordinary pass count 124,284,844 is below 184,647,552.
 The candidate full output SHA256 is
-`b0cdb4c137b90dd1abd13d97a275434dda0b1edc37f6e25ce4b9a97230a18768`.
-Original/candidate elapsed times were 25.625/26.234 seconds, sampled child RSS
-peaks 73,019,392/72,175,616 bytes, under separate 120-second/512-MiB caps. These
+`9fe876e5e74e878e691b0f9277ebbc39ce4610262526632db489816a4dd741ac`.
+Original/candidate elapsed times were 25.625/26.313 seconds, sampled child RSS
+peaks 73,019,392/76,578,816 bytes, under separate 120-second/512-MiB caps. These
 operational results are local evidence, not a guarantee on another host.
 
 Prepared for flyingviper with substantial OpenAI Codex assistance. Original
