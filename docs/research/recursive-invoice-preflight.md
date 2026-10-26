@@ -37,6 +37,11 @@ Both files use this schema, with identical declared accounting contracts:
 }
 ```
 
+For repeated independent components, the
+[invoice combiner](recursive-invoice-composition.md) adds both paid and target
+histograms and emits a source receipt. Prove that the components compose at the
+declared boundary before using that arithmetic as a construction bill.
+
 Ranks are canonical positive integer strings; counts are nonnegative integers.
 The contract identifies the common pricing and consumer boundary. A change in
 ownership can change targets inside that boundary, but requires its own legal
