@@ -43,4 +43,7 @@ def construct(source):
     word['schema'] = 'p104-copy-block-composition/1'
     witness = [dict(source_index=i, old_length=len(old), new_length=len(new),
                     old_sha256=digest(old), new_sha256=digest(new)) for i, old, new in spots]
-    return word, witness
+    from second_block import extend
+    word, second = extend(word)
+    need(preserve(word) == preserve(source), 'Both blocks retain every owned lifetime and COPY event')
+    return word, dict(R22=witness, second_block=second)

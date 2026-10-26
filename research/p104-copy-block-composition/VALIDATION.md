@@ -2,27 +2,29 @@
 
 CPython 3.12.14 on macOS arm64, standard library only, no subagents.
 Canonical main is de5ec2e7a6074068452f45b1a191b5c72832df4a, priority revision 8.
-The final immediate source is PR5786 at
-6b936acd68a7e0f9062037900f0fe9bc4b6fdd25. Its complete frozen export and all
-nested source inventories are authenticated before source imports.
+The immediate source is PR5786 at6b936acd68a7e0f9062037900f0fe9bc4b6fdd25.
+The second block is PR5796 at4b30391e633ba0c7c674f03586ae97d443e9bc9c. All frozen
+source bytes, including both source closures and the added block plan/words,
+are authenticated before source import or interpretation.
 
-The final full primary replay passed. The four registered commands then passed
-in 438.77 seconds: normal and optimized full replay, followed by normal and
-optimized exact scalar-transfer checks. The full replay checks all 795 input
-columns and 632025 endpoint coefficients, separate transpose columns, 27 owned
-lifetimes, peak 13 live owned fields, 2924 distinct native maps with absolute
-phases, 208 main adapters, 1124 helper normalizers and the complete physical
-caller. Both rational moment engines, completion, compiler, all 54 strict outer
-rows and four functional conditions pass. Nine changed-word/caller/invoice
-controls and the native phase control reject.
+The final two-block primary replay passed in143.90 seconds. All four registered
+commands then passed in247.49 seconds: normal and optimized full replay, then
+normal and optimized scalar-transfer compatibility checks. These cover all795
+input columns and632025 coefficients, separate transpose,27 owned lifetimes,
+peak13 live owned fields,2926 distinct native maps with absolute phases,
+208 main adapters,1124 helper normalizers and the complete physical caller.
+Both rational moment engines, completion, compiler,54 strict outer rows and
+four functional conditions pass. Twelve word/caller/invoice controls and the
+native phase control reject. The compatibility check covers every original R22
+transfer and all102 frame-only second-block contacts; a wrong coefficient rejects.
+Nine actual direct-source/archive byte corruptions reject before imports.
 
-The compatibility proof checks all eight original R22 edits, including exact
-9-by-9 and 2-by-2 rational scalar transfers. All 23 COPY events retain their
-logical source values, including the 13 retained native copies. A wrong scalar
-coefficient rejects. Three actual byte corruptions of the final direct sources
-and PR5786 archive reject before imports; see SOURCE-CONTROLS.json.
-
-Commands:
+The conditional saving is .00312289583377. The raw ceiling lies strictly inside
+(.00312289583975,.00312289583976). An exact fixed-reserve derivative bound and
+opposite signs at adjacent tested values certify the maximum published point on
+the1e-14 grid, for reserve1e-12 and tested gap5e-12. This is a fixed-contract
+result. The next tested point .00312289583878 fails the reserve. No global
+optimum over different compiler choices, source words or BIT caps is claimed.
 
 ```
 python3.12 -B scripts/research_package.py --package research/p104-copy-block-composition
@@ -30,25 +32,16 @@ python3 -B scripts/research_package.py --package research/p104-copy-block-compos
 git diff --check
 ```
 
-The final checks establish conditional kappa .00312277313. The raw ceiling is
-strictly inside (.00312277315303,.00312277315304). The selected frontier stays
-unchanged. The five framework assumptions remain. No large uniform word or
-rounded multiplier is materialized. Hosted CI and independent scientific review
-are separate and remain pending.
+The earlier PR5786 plus original-R22 checkpoint is retained at
+582c6334f474b5ea576b518a9497ae9961c620ac, with kappa .00312277313. Its four
+registered commands passed in438.77 seconds; its sealed full/compatibility
+replays passed in128.83/.19 seconds with24 files unchanged. The still earlier
+PR5774 composition is retained at8f4a012d9171971837fef8949b1eedb60beacc64,
+kappa .00312204390, with registered normal/optimized full replay in288.13 seconds.
+These are superseded checkpoints of the same contribution. The second block was
+released after the first publication and is added to the same PR5795.
 
-The earlier PR5774 composition is retained at
-8f4a012d9171971837fef8949b1eedb60beacc64, with conditional kappa .00312204390.
-Its normal/optimized full replay passed in 288.13 seconds. It is a superseded
-checkpoint of this investigation, not a separate contribution. Frozen sources
-remain byte-exact. The optional full-history ancestry preflight is unavailable
-in this shallow checkout; no automatic full-history download was attempted.
-
-The scientific checkpoint is 79346b22912b820d567de7f55cfabb3833ba7ee9.
-The committed-byte check, executable-mode check and official export check pass
-for all 23 package files. A separate export has no Git directory. Its 24 files,
-including the export manifest, were made read-only, and its directories were
-made read-only. With empty PATH, Python 3.12 ran both scripts using
-`-I -O -W error -B`: verify.py passed in 128.83 seconds and compatibility.py
-passed in 0.19 seconds. Every exported byte and file mode stayed unchanged.
-Only this validation record changes after the scientific checkpoint. The final
-committed bytes and publication export are checked again before submission.
+All five framework assumptions remain. No large uniform word or rounded
+multiplier is materialized. Hosted CI and independent scientific acceptance
+remain pending. Full-history ancestry checking is unavailable in the shallow
+checkout; no automatic history expansion ran. The selected frontier is unchanged.

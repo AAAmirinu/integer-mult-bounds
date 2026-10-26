@@ -61,7 +61,9 @@ def run():
         return dict(status='PASS_R22_SCALAR_TRANSFERS_AND_ALL_13_COPY_VALUES',
                     word_sha256=digest(word), edits=witnesses, retained_copies=copies,
                     all_copy_events=[e for e in old_events if e[0] == 'COPY'],
-                    proof='Disjoint equal scalar transfers and no internal COPY imply identical logical values at every unchanged external COPY, for arbitrary inputs. Native frames and phases are checked by the complete verifier.',
+                    second_block_scalar_transfer_sha256=spots['second_block']['scalar_transfer_sha256'],
+                    second_block_contacts=len(spots['second_block']['changed_scalar_source_indices']),
+                    proof='Disjoint equal R22 scalar transfers and no internal COPY preserve all external COPY values. The second block changes only scalar frames and preserves every scalar coefficient and order. Native frames and phases are checked by the complete verifier.',
                     wrong_scalar_coefficient_rejected=True)
 
 

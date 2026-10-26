@@ -12,7 +12,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 590,
-      "checks": "Exact R22/source joins, all795 scalar inputs, transpose, owned lifetimes, every native phase, full physical caller, two moment engines, compiler, outer predicates and rejection controls."
+      "checks": "Both released block/source joins, all795 scalar inputs, transpose, owned lifetimes, every native phase, full physical caller, two moment engines, compiler, outer predicates and rejection controls."
     },
     {
       "argv": [
@@ -22,7 +22,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 590,
-      "checks": "Exact R22/source joins, all795 scalar inputs, transpose, owned lifetimes, every native phase, full physical caller, two moment engines, compiler, outer predicates and rejection controls."
+      "checks": "Both released block/source joins, all795 scalar inputs, transpose, owned lifetimes, every native phase, full physical caller, two moment engines, compiler, outer predicates and rejection controls."
     },
     {
       "argv": [
@@ -31,7 +31,7 @@
         "{package}/compatibility.py"
       ],
       "timeout_seconds": 10,
-      "checks": "Every exact R22 scalar transfer, all13 retained COPY values, source joins and a wrong-coefficient control."
+      "checks": "Every exact R22 scalar transfer and all102 frame-only second-block contacts, all13 retained COPY values, source joins and a wrong-coefficient control."
     },
     {
       "argv": [
@@ -41,7 +41,7 @@
         "{package}/compatibility.py"
       ],
       "timeout_seconds": 10,
-      "checks": "Every exact R22 scalar transfer, all13 retained COPY values, source joins and a wrong-coefficient control."
+      "checks": "Every exact R22 scalar transfer and all102 frame-only second-block contacts, all13 retained COPY values, source joins and a wrong-coefficient control."
     }
   ]
 }

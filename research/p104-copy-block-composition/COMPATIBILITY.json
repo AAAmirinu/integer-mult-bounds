@@ -326,7 +326,7 @@
       "matrix": []
     }
   ],
-  "proof": "Disjoint equal scalar transfers and no internal COPY imply identical logical values at every unchanged external COPY, for arbitrary inputs. Native frames and phases are checked by the complete verifier.",
+  "proof": "Disjoint equal R22 scalar transfers and no internal COPY preserve all external COPY values. The second block changes only scalar frames and preserves every scalar coefficient and order. Native frames and phases are checked by the complete verifier.",
   "retained_copies": [
     [
       "COPY",
@@ -420,7 +420,9 @@
       470
     ]
   ],
+  "second_block_contacts": 102,
+  "second_block_scalar_transfer_sha256": "edc0b6e91a17faad1b897b93e50bba1b4d71fb5b6ae48a1d63c10363a6a947e9",
   "status": "PASS_R22_SCALAR_TRANSFERS_AND_ALL_13_COPY_VALUES",
-  "word_sha256": "3d23bc1febc881e670994cffb69e9e33ba61cfcdeb5b895f38c7c043e605e374",
+  "word_sha256": "8abcf56336a57c131427320e1ef9abecfb6da56e58ea8be6b050cc54ccbdfad6",
   "wrong_scalar_coefficient_rejected": true
 }
