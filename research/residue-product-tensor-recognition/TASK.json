@@ -75,11 +75,11 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "Recognize finite residue-field Frobenius products from arbitrary tensors, with explicit coefficient-field tables, factor maps and exact stabilizer determinant images.",
-  "scope_change_reason": "Change the split-residue premise of the completed PR5661 handoff. This is a written algebraic interface proof and exact checker, not a proof-kernel formalization.",
+  "actual_scope": "Recognize finite residue-field Frobenius products from arbitrary tensors, with explicit coefficient-field tables and all three factor maps.",
+  "scope_change_reason": "Change the split-residue premise of PR5661. Narrow the draft after the submission refresh found the concurrent supplied-character claim posted seconds earlier. Character images and transporters remain outside this package.",
   "bottleneck_link": "Extend the tensor atlas input test to nonsplit nonreduced products. A complete physical caller is still needed for a kappa gain.",
   "budget_minutes": 120,
-  "stop_rule": "Complete the nonsplit class test, coefficient-field construction and character theorem. Do not assume canonical field isomorphisms or a paid physical realization.",
+  "stop_rule": "Complete nonsplit recognition, coefficient-field discovery and literal factor maps. Do not duplicate the concurrent supplied-character claim.",
   "outcome": "completed",
   "evidence": "PROOF.md, recognize.py, verify.py and RESULT.json.",
   "author": "Ali Romman",
@@ -106,6 +106,7 @@
     "local_notes": 7676,
     "open_prs": 350,
     "discussion_records": 4965,
-    "coverage": "Complete cached pagination and all tracked main notes; no arbitrary diff or unpublished-work claim."
+    "coverage": "Complete cached pagination and all tracked main notes; no arbitrary diff or unpublished-work claim.",
+    "concurrent_scope": "https://github.com/CrocSwap/integer-mult-bounds/discussions/5655#discussioncomment-19187845"
   }
 }

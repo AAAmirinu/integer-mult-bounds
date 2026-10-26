@@ -118,14 +118,17 @@ def main():
     import recognize as r
     fs = [r.a.Field(2,[0,1]),r.a.Field(3,[0,1]),r.a.Field(2,[1,1,1]),r.a.Field(3,[1,0,1])]
     rng = random.Random(56615656)
-    fixtures = products = controls = norm_witnesses = 0
+    fixtures = products = controls = 0
     for f in fs:
         field1 = [[[1]]]
         field2 = quadratic(f)
         unit = dict(degree=1,heights=[],field=field1)
         ext = dict(degree=2,heights=[],field=field2)
         nil = dict(degree=2,heights=[1],field=field2)
-        cases = [[ext],[nil],[unit,nil],[ext,ext],[nil,nil]]
+        field3 = polynomial_field([1,1,0,1] if f.p==2 else [1,2,0,1],f)
+        ext3 = dict(degree=3,heights=[],field=field3)
+        nil3 = dict(degree=3,heights=[1],field=field3)
+        cases = [[ext],[nil],[unit,nil],[ext,ext],[nil,nil],[ext3],[nil3]]
         if f.p==2:
             cases.append([dict(degree=2,heights=[2],field=field2)])
         for cs in cases:
@@ -141,7 +144,6 @@ def main():
                 require(cert is not None,str((f.q,target_types,why)))
                 require(sorted((c['degree'],c['heights']) for c in cert['components'])==target_types,'residue or height type')
                 require(r.check_certificate(t,cert,f),'literal product')
-                require(cert['sl_orbit_count']==r.character_index(cs,f),'character index')
                 fixtures += 1
                 products += n*n
                 for key in ('U','V','W'):
@@ -170,43 +172,7 @@ def main():
         split = r.product_model([unit,unit],f)
         require(not r.field_table_valid(split,f),'reduced product called a field')
         controls += 1
-    # Norm descent uses the L-dimension, without an extra factor d.
-    f = fs[2]
-    field = polynomial_field([1,1,0,1],f)
-    component = dict(degree=3,heights=[1],field=field)
-    mu,_ = r.local_model(component,f)
-    require(r.character_index([component],f)==1,'spurious residue-degree character factor')
-    scalar = None
-    for c in itertools.product(range(f.q),repeat=3):
-        multiplication = r.a.columns([r.a.tensor_value(field,list(c),e,f) for e in r.a.identity(3)],3)
-        if r.a.determinant(multiplication,f)==2:
-            scalar,matrix = list(c),multiplication
-            break
-    require(scalar is not None,'norm witness absent')
-    sigma = r.a.identity(6)
-    for i in range(3):
-        sigma[3+i][3:]=matrix[i]
-    require(r.a.determinant(sigma,f)==2,'norm witness determinant')
-    for i,j in itertools.product(range(6),repeat=2):
-        require(r.a.tensor_value(mu,r.a.column(sigma,i),r.a.column(sigma,j),f)==r.a.mv(sigma,mu[i][j],f),'norm scaling automorphism')
-    cert,why = r.recognize(changed(mu,*(random_gl(6,f,rng) for _ in range(3)),f),f)
-    require(cert is not None and cert['sl_orbit_count']==1,str(why))
-    norm_witnesses += 1
-    # An even residue degree contributes a Frobenius sign in odd characteristic.
-    f = fs[1]
-    field = quadratic(f)
-    frobenius = r.a.columns([r.a.algebra_power(field,e,f.q,[1,0],f) for e in r.a.identity(2)],2)
-    require(r.a.determinant(frobenius,f)==2,'residue Frobenius sign')
-    require(r.character_index([dict(degree=2,heights=[],field=field)],f)==1,'missing residue sign')
-    # Distinct odd-degree field factors do not supply a permutation sign.
-    field3 = polynomial_field([1,2,0,1],f)
-    c3 = dict(degree=3,heights=[],field=field3)
-    c1 = dict(degree=1,heights=[],field=[[[1]]])
-    require(r.character_index([c1,c3],f)==2,'illegal distinct-factor swap')
-    require(r.character_index([c3,c3],f)==1,'missing identical-factor swap')
-    controls += 4
     report = dict(presentations=fixtures,basis_products=products,controls=controls,
-                  norm_automorphism_witnesses=norm_witnesses,
                   exhaustive=[exhaustive(f) for f in fs[:3]])
     print(json.dumps(report,sort_keys=True))
     print('PASS_RESIDUE_PRODUCT_TENSOR_RECOGNITION')

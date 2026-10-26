@@ -1,6 +1,6 @@
 {
-  "basis_products": 1176,
-  "controls": 216,
+  "basis_products": 1392,
+  "controls": 272,
   "exhaustive": [
     {
       "accepted": 174,
@@ -21,6 +21,5 @@
       "tensors": 65536
     }
   ],
-  "norm_automorphism_witnesses": 1,
-  "presentations": 40
+  "presentations": 52
 }

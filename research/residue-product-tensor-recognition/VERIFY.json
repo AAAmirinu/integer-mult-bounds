@@ -17,7 +17,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Check complete small tensor orbits; nonsplit nilpotent products and all factor maps; norm, residue-degree, Galois-sign, field and module controls."
+      "checks": "Check complete small tensor orbits; nonsplit nilpotent products and all factor maps; residue-degree, field and nonregular-module controls."
     },
     {
       "argv": [
@@ -27,7 +27,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 600,
-      "checks": "Check complete small tensor orbits; nonsplit nilpotent products and all factor maps; norm, residue-degree, Galois-sign, field and module controls."
+      "checks": "Check complete small tensor orbits; nonsplit nilpotent products and all factor maps; residue-degree, field and nonregular-module controls."
     }
   ]
 }

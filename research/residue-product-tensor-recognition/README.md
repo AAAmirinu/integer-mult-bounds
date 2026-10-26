@@ -4,16 +4,14 @@ This package recognizes arbitrary square K-tensors that are isotopic to
 products of L[x_i]/(x_i^(p^h_i)), where K=F_q and each L is any finite extension
 of K. It returns every residue degree, height list, coefficient-field table,
 and all three factor maps. No decomposition or coefficient-field section is
-supplied. The complete stabilizer determinant image and number of special-linear
-orbits are also returned through the exact character index.
+supplied. The output is an explicit algebra model and a literal tensor-isotopy certificate.
 
 This removes the split-residue restriction of
 [PR #5661](https://github.com/CrocSwap/integer-mult-bounds/pull/5661).
 The new coefficient field is the kernel of Frob_(q^d)-I inside a local component
 of residue degree d. Height tests use spans over that recovered field. Both
 steps use base-field linear algebra and avoid enumeration of q^d elements.
-The regular-module top has base-field dimension d. Norm descent, residue
-Frobenius signs and identical-component permutations give the determinant image.
+The regular-module top has base-field dimension d.
 
 The algorithm is necessary and sufficient for the stated class, and polynomial
 in tensor dimension for each fixed K. Read [PROOF.md](PROOF.md),
@@ -26,19 +24,18 @@ atlas. It supplies no paid physical construction or complete kappa increase.
 `recognize(t, field)` returns `(certificate, None)` or `(None, reason)`.
 Invalid tensor shapes or noncanonical field elements raise `ValueError`.
 The base field uses the exact explicit representation retained from PR5637.
-The certificate has `components`, `U`, `V`, `W` and `sl_orbit_count`.
+The certificate has `components`, `U`, `V` and `W`.
 Each component has `degree`, sorted `heights`, and a `field` multiplication
 table whose first basis vector is one. Model basis order is variable monomial
 first, then coefficient-field basis. All maps satisfy `t(Ua,Vb)=W mu(a,b)`.
 
-If the returned count is g, the covariant stabilizer determinant image is
-
-    {(u,v,w) in (K*)^3 : (u*v*w)^((q-1)/g)=1}.
-
-The coefficient-field tables use discovered bases. The API does not claim a
-canonical cross-presentation orbit label or determinant-one transporters between
-different field tables. The previous split-product API retains those outputs
-on its own class. No field-presentation conversion is silently assumed.
+The coefficient-field tables use discovered bases. Character images,
+canonical orbit labels and determinant-one transporters between different
+field tables are outside this package. The separate
+[concurrent character claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/5655#discussioncomment-19187845)
+uses supplied decompositions and explicitly leaves this discovery task open.
+The package was narrowed after the submission overlap refresh to preserve
+that separation. No field-presentation conversion is silently assumed.
 
 ## Verification
 
@@ -54,18 +51,12 @@ generator agrees on every one of the 72,353 two-dimensional tensors over
 F2/F3/F4, accepting 174/4,320/62,460. The new accepted cases include nonsplit
 quadratic fields. This oracle does not use the nucleus or discovery kernels.
 
-Forty further presentations over F2/F3/F4/F9 check 1,176 basis products,
-nonsplit nilpotent factors, repeated factors and mixed residue types. The 216
-controls include false maps and fields, wrong residue degrees, extra local
-relations, nonregular modules and sign mistakes. The F64[x]/x^2 example over F4
-has a literal norm-scaling automorphism of determinant 2. It rejects the false
-extra factor d in the character exponent. A finite search for this small
-witness is used only by the verifier, not by the recognition algorithm.
-
-The coefficient-field validator rejects a reduced product of two fields.
-The odd-characteristic checks distinguish even-degree Frobenius, repeated
-odd-degree factors and distinct odd-degree factors. [VALIDATION.md](VALIDATION.md)
-records the execution and publication boundary.
+Further presentations over F2/F3/F4/F9 check nonsplit nilpotent factors,
+repeated factors, mixed residue types, and residue degrees two and three.
+Controls reject false maps and fields, wrong residue degrees, extra local
+relations and nonregular modules. The coefficient-field validator also rejects
+a reduced product of two fields. [RESULT.json](RESULT.json) gives the exact
+counts, and [VALIDATION.md](VALIDATION.md) records the execution boundary.
 
 ## Credit and scope
 
@@ -90,7 +81,7 @@ Exact executable and proof inputs are retained byte-for-byte and authenticated
 before imports. The new code extends the nucleus/module composition and orbit
 checks; it does not claim those predecessor methods as new. Coefficient-field
 lifting is classical finite algebra. The new result is the complete recognition
-and character interface for the stated nonsplit nonreduced family, with exact
+interface for the stated nonsplit nonreduced family, with exact
 certificates and checks. No literature-priority claim is made.
 
 Physical native realization, coefficient costs, ownership, restoration, storage,
@@ -102,9 +93,9 @@ Ali Romman with substantial OpenAI Codex assistance. Apache-2.0.
 
 ## Open next questions
 
-- Construct efficient, checked isomorphisms between the recovered coefficient
-  fields to obtain canonical cross-presentation SL labels and transporters.
-  Fix the reference field bases and their determinant signs first.
+- Connect these recovered field tables to the concurrent supplied-decomposition
+  character interface. Coordinate there before implementing field isomorphisms,
+  labels or transporters.
 - Choose an actual accepted tensor and price its maps in a complete native
   caller before treating the algebraic result as a kappa improvement.
 

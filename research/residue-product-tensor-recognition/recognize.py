@@ -1,6 +1,5 @@
 """Recover residue-field products. Ali Romman with OpenAI Codex. Apache-2.0."""
 from itertools import product
-from math import gcd
 from vendor import local as a
 from vendor.split import span, coordinate_map, linear_combination
 
@@ -111,18 +110,6 @@ def field_table_valid(table,f):
         return False
 
 
-def character_index(components,f):
-    exponents = [f.q-1]
-    types = [(c['degree'],tuple(c['heights'])) for c in components]
-    for c in components:
-        size = f.p**sum(c['heights'])
-        exponents.extend(size*(f.p**h-1)//2 for h in c['heights'])
-    if f.p != 2 and (any(d%2==0 for d,_ in types)
-                     or any(d%2 and types.count((d,hs))>1 for d,hs in types)):
-        exponents.append((f.q-1)//2)
-    return gcd(*exponents)
-
-
 def classify_local(table,unit,f):
     n = len(table)
     jbasis = radical(table,unit,f)
@@ -197,7 +184,7 @@ def check_certificate(t,cert,f):
         for i,j in product(range(n),repeat=2):
             if a.tensor_value(t,a.column(u,i),a.column(v,j),f)!=a.mv(w,mu[i][j],f):
                 return False
-        return cert['sl_orbit_count']==character_index(cs,f)
+        return True
     except (KeyError,ValueError,TypeError,IndexError):
         return False
 
@@ -251,7 +238,6 @@ def recognize(t,f):
     factors.sort(key=lambda item:(item[0]['degree'],item[0]['heights']))
     change = a.columns([a.column(m,j) for _,m in factors for j in range(len(m[0]))],n)
     cert = dict(components=[c for c,_ in factors],U=a.mm(u,change,f),V=a.mm(v,change,f),W=a.mm(w,change,f))
-    cert['sl_orbit_count'] = character_index(cert['components'],f)
     if not check_certificate(t,cert,f):
         raise ArithmeticError('residue-product certificate')
     return cert,None
