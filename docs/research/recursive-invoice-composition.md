@@ -15,6 +15,10 @@ and output hash. Keep both files and check the command exit code. On a validatio
 error the tool exits 2 and emits no invoice; standard error then holds the error,
 not a receipt. Shell redirection can still create an empty output file.
 
+When components share a fixed source inventory, use the
+[identity-preserving assembler](invoice-inventory-assembly.md) to reject omitted
+items and duplicate credits before adding their bills.
+
 For each rank and each side, the result is the sum of multiplicity times count.
 Paid jobs and target credits stay separate. Repeating a file twice has the same
 arithmetic result as adding its multiplicities. Inputs are read and hashed once
