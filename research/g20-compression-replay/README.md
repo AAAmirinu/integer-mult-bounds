@@ -107,7 +107,8 @@ python3.12 -I -B research/g20-compression-replay/codec_benchmark.py --output /tm
 
 The benchmark is separate from registered correctness checks. Source corruption,
 normal replay, and a sealed optimized export with an empty PATH are checked
-before publication. The export needs no Git, network access or writable sources.
+before publication. [VALIDATION.json](VALIDATION.json) records the exact tested
+commit and export hash. The export needs no Git, network access or writable sources.
 
 ## Scope and limitations
 
