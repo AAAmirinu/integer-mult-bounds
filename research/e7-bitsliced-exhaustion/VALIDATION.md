@@ -54,3 +54,21 @@ The registered Python 3.12.14 command passes all declared checks and ends
 with PASS_REGISTERED_RESEARCH_PACKAGE. The normal result equals RESULT.json.
 The complete source classification is unchanged. No locally declared command
 is omitted.
+
+## Isolated export and final overlap
+
+The official committed-byte and export checks pass for all 23 package files
+at scientific commit 5c5aa5674885a81b11d301bd393481843ff3c266.
+The exported package passes Python 3.12.14 with -I -O -B, no Git directory,
+an empty executable PATH and read-only files. All 24 exported files retain
+their bytes and permissions. An actual changed source input is rejected
+before the full replay; its bytes are restored before that replay.
+
+The final remote refresh covers 404 open PRs and 5,072 Discussion records
+at 2026-10-26T14:30:44Z. All 7,676 main package notes are searched. A separate
+recent-body scan finds no competing E7 bit-lane optimization. The live source
+head is still the consumed commit. Canonical main remains unchanged. Closed
+unretained and unpublished work are outside this coverage.
+
+The final evidence commit changes documentation and coordination metadata
+only. Scientific code and source inputs are unchanged from the isolated run.
