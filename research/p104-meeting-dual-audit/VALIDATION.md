@@ -29,8 +29,20 @@ is inconclusive, with hinges 72 at rank 1 and -72 at rank 2. This does not prove
 a crossing of power tariffs or invalidate the source's pointwise improvement.
 The audit does not run the source moment or compiler engines.
 
-Pending: committed-byte preflight, sealed read-only Git-free optimized replay,
-source-corruption control and final publication readback. The optional complete
+The scientific commit is `b482572647e1256affae014297de7b4e8632be50`.
+The committed-byte and executable-mode preflight and the official 16-file export
+pass. Its sealed replay passes under Python 3.12.14 with `-I -O -B`, no Git, empty
+PATH, files mode 444 and directories mode 555. All 17 file bytes and modes,
+including the export manifest, remain unchanged. Corrupting the actual source
+archive rejects before evaluation. PORTABILITY.json records the export digest.
+Only this validation text and the portability receipt change after that commit.
+
+The final refresh at 17:36 UTC covers 327 open PRs, 5,137 Discussion records and
+all 7,845 main notes. The matches are this investigation and the released source
+handoffs. Main remains de5ec2e7a6074068452f45b1a191b5c72832df4a, priority 8.
+See the canonical Discussion for the final publication head and readback status.
+
+The optional complete
 Git-history check is not run in this shallow checkout. The complete source
 archive is retained and checked directly. Hosted scientific CI, native/compiler
 admission and independent human review are separate.
