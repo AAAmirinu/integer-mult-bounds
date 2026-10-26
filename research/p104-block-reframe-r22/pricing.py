@@ -14,14 +14,15 @@ Ali Romman's complete caller/price proof and all predecessor credit are retained
 The paid A2 change is from zxv PR5643. The three helper relations are from
 Ali Romman PR5644. The four-gate change is by Ali Romman with Codex assistance.
 The four interior basis changes are by Ali Romman with Codex assistance.
+Paid intermediate meetings: Ali Romman with substantial OpenAI Codex assistance.
 Apache-2.0.
 """
 from collections import Counter
 from fractions import Fraction as Q
 import local as L
 
-KAPPA, TESTED = Q('.00310927386'), Q('.003109273865')
-PREVIOUS = Q('.00310915222')
+KAPPA, TESTED = Q('.00311313795'), Q('.003113137955')
+PREVIOUS = Q('.00311301600')
 
 
 def encode(x):
@@ -70,7 +71,7 @@ def assemble(local, native, word, physical):
             second_p[8*(j+1)] += 208
     L.need((targets,paid) == (second_t,second_p), 'Independent full invoice')
     L.need(max(targets) == 145 and max(paid) == 72, 'Maximum recursive ranks')
-    L.need(sum(targets.values()) == 12958 and sum(paid.values()) == 66366, 'Complete field and call counts')
+    L.need(sum(targets.values()) == 13390 and sum(paid.values()) == 66852, 'Complete field and call counts')
     L.need(sum(r*n for r,n in targets.items())-sum(r*n for r,n in paid.items()) == 760, 'Complete rank surplus')
     return targets,paid,counts
 
@@ -102,7 +103,7 @@ def run(local,native,word,physical):
     L.need(derivative_upper < 0, 'Unique raw crossing below the retained BIT cap')
     L.need(margin(lower)[0] > 0 and margin(upper)[1] < 0, 'Strict rational crossing enclosure')
     L.need(PREVIOUS < KAPPA < TESTED < lower and margin(PREVIOUS)[0] > 0, 'Changed complete bill improves the source claim')
-    t,u,v,c,b = 1-TESTED,Q(1,5),1024,17,18
+    t,u,v,c,b = 1-TESTED,Q(1,7),1024,16,17
     target,paid = E.moment(T,t),E.moment(P,t)
     tl,th = other.moment(T,TESTED)
     pl,ph = other.moment(P,TESTED)
@@ -110,7 +111,7 @@ def run(local,native,word,physical):
     alpha = E.divide(paid,target)
     gamma = E.divide(E.moment(P,t+u),E.mul(E.power(c,u),target))
     delta = E.divide((Q(sum(T.values())*b),)*2,E.mul(E.power(c,TESTED),target))
-    reserve,decay = Q(1,10**12),Q(39,40)
+    reserve,decay = Q(1,10**12),Q(125,128)
     L.need(alpha[1] < 1-reserve and gamma[1] < decay and delta[1] < decay, 'All three charged tail ratios')
     L.need(decay**128 < Q(1,16), 'Both tail decay blocks')
     normalized = 1/(1+v*reserve)+Q(4,2**32)
@@ -156,9 +157,13 @@ def run(local,native,word,physical):
     L.need(all(x > 0 for key in ('strict_checks','functional_checks') for x in outer[key].values()), 'All outer inequalities strict')
     wrong_cutoff = E.divide((Q(sum(T.values())*21),)*2,E.mul(E.power(20,TESTED),target))
     L.need(wrong_cutoff[0] > 1, 'Old cutoff fails with this helper inventory')
+    old_completion = E.divide((Q(sum(T.values())*18),)*2,E.mul(E.power(17,TESTED),target))
+    L.need(old_completion[0] > Q(39,40), 'PR5718 completion-tail bound fails with the new target count')
+    old_offset = E.divide(E.moment(P,t+Q(1,5)),E.mul(E.power(16,Q(1,5)),target))
+    L.need(old_offset[0] > decay, 'The old tail offset fails at the new cutoff')
     bad=outer_module.ledger(dict(params,bit_saving=Q('.0027')))
     L.need(any(x <= 0 for x in bad['strict_checks'].values()), 'Insufficient BIT contract rejected')
-    return encode({'kappa':KAPPA,'kappa_decimal':'0.00310927386','previous_open_pr5660':PREVIOUS,'gain':KAPPA-PREVIOUS,
+    return encode({'kappa':KAPPA,'kappa_decimal':'0.00311313795','previous_pr5718':PREVIOUS,'gain':KAPPA-PREVIOUS,
                    'relative_gain_percent':100*(KAPPA/PREVIOUS-1),'raw_root_interval':[lower,upper],
                    'raw_headroom':[lower-KAPPA,upper-KAPPA],
                    'raw_ceiling':{'interval':[Q(0),cap],'derivative_upper':derivative_upper},'margin_at_previous':E.display(margin(PREVIOUS)),
@@ -174,4 +179,6 @@ def run(local,native,word,physical):
                                    'local_paid_rank_mass':local['paid_rank_mass'],
                                    'tensor_native_growth_bound':'Each rank-r Gaussian has row l1 norm at most 2^(rf); use local_paid_rank_mass for the whole word.'},
                    'ordinary_BIT':bit,'outer':outer,
-                   'negative_controls':{'old_cutoff':'Rejected by completion-tail ratio greater than one','old_BIT':'Rejected by outer inequalities'}})
+                   'negative_controls':{'source_completion':'Rejected at cutoff17, floor18 and decay39/40',
+                                        'source_offset':'Rejected at cutoff16 with tail offset1/5',
+                                        'old_cutoff':'Rejected by completion-tail ratio greater than one','old_BIT':'Rejected by outer inequalities'}})

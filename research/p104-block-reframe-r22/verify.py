@@ -1,7 +1,7 @@
-"""Check the R22 reorder+reframe word on PR5713's P104 word on PR5713's own complete stack.
+"""Check the R22 reorder+reframe word on PR5751's P104 word on PR5751's own complete stack.
 
 Joel Pulikkan (GamingPuzzled) with Claude Opus 5.5 (Anthropic) via Claude Code. Apache-2.0.
-Every retained checker is loaded unmodified from ../p104-temporal-updates (Ali Romman, zxv and
+Every retained checker is loaded unmodified from ../p104-paid-meeting-splits (Ali Romman, flyingviper, zxv and
 the contributors listed in its NOTICE); only the four declared pricing literals change.
 """
 from collections import Counter, defaultdict
@@ -10,25 +10,27 @@ from fractions import Fraction as Q
 from hashlib import sha256
 from pathlib import Path
 import argparse, gzip, importlib.util, json, sys, tempfile
+from contextlib import ExitStack
 
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
-BASE = HERE.parent/'p104-temporal-updates'
+BASE = HERE.parent/'p104-paid-meeting-splits'
 sys.path.insert(0, str(HERE))
 from construct import construct
 
-PINS = {   # PR5713 head a5348f7143f95fe0046b92b96172e30763c7d731
-    'WORD.json.gz': '9fd67dd89ed24a644257cd9aef06934ed4c6fbe0441804684a968868f2ef66a8',
+PINS = {   # PR5751 head 8483f9a679d06c1e270141dbc686a7e76e7a7522
+    'WORD.json.gz': 'fb60e34238a57a147f53aadb1af1209a562e2dcd18b05a29557df452cfe83133',
+    'local.py': 'fc7c7293f7cffb8a9074e65b926e1782f2ebce2991c9ea75d42b94e888052689',
 }
-PUBLIC = 743
-PARENT_KAPPA = Q('.00310915222')
+PUBLIC = 767
+PARENT_KAPPA = Q('.00311301600')
 LITERALS = [
-    ("KAPPA, TESTED = Q('155457611/50000000000'), Q('124366089/40000000000')", "KAPPA, TESTED = Q('.00310927386'), Q('.003109273865')"),
-    ("PREVIOUS = Q('.00310871312')", "PREVIOUS = Q('.00310915222')"),
-    ("sum(paid.values()) == 66348", "sum(paid.values()) == 66366"),
-    ("'kappa_decimal':'0.00310915222'", "'kappa_decimal':'0.00310927386'"),
+    ("KAPPA, TESTED = Q('.00311301600'), Q('.003113016005')", "KAPPA, TESTED = Q('.00311313795'), Q('.003113137955')"),
+    ("PREVIOUS = Q('.00311024570')", "PREVIOUS = Q('.00311301600')"),
+    ("sum(paid.values()) == 66834", "sum(paid.values()) == 66852"),
+    ("'kappa_decimal':'0.00311301600'", "'kappa_decimal':'0.00311313795'"),
 ]
-STATUS = 'PASS_P104_R22_REFRAME_KAPPA_00310927386'
+STATUS = 'PASS_P104_R22_REFRAME_KAPPA_00311313795'
 
 
 def need(ok, why):
@@ -103,9 +105,9 @@ def reject(f):
 
 def run():
     for name, digest in PINS.items():
-        need(sha256((BASE/name).read_bytes()).hexdigest() == digest, 'Exact PR5713 source ' + name)
+        need(sha256((BASE/name).read_bytes()).hexdigest() == digest, 'Exact PR5751 source ' + name)
     base, word = read(BASE/'WORD.json.gz'), read(HERE/'WORD.json.gz')
-    need(construct(base) == word, 'Exact regeneration from PR5713')
+    need(construct(base) == word, 'Exact regeneration from PR5751')
     for key in base:
         if key not in ('program', 'initial', 'final', 'frames', 'schema'):
             need(word[key] == base[key], 'Unchanged word field ' + key)
@@ -128,9 +130,11 @@ def run():
     for before, after in LITERALS:
         need(original.count(before) == 1, 'Unique pricing literal ' + before); original = original.replace(before, after)
     need((HERE/'pricing.py').read_text() == original, 'Only declared pricing literals change')
-    with S.sources() as (parent, _), load(parent/'sources.py', 'r22_parent_sources').sources() as (prior, _), \
-            load(prior/'sources.py', 'r22_prior_sources').sources() as (stack, framework):
-        L = load(stack/'local.py', 'local')
+    with ExitStack() as contexts:
+        cursor, _ = contexts.enter_context(S.sources())
+        for depth in range(4):   # PR5751's own source chain; its local.py is pinned above
+            cursor, framework = contexts.enter_context(load(cursor/'sources.py', 'r22_sources_%d' % depth).sources())
+        L = load(BASE/'local.py', 'local')
         L.ROOT = framework
         parent_local, local = L.replay(base), L.replay(word)
         need(parent_local['real_scalar_allowance'] == local['real_scalar_allowance'], 'Same scalar allowance')
@@ -152,7 +156,7 @@ def run():
         price = P.run(local, native, caller, physical)
         print('PASS complete pricing', price['raw_root_interval'], flush=True)
         lo = Q(price['raw_root_interval'][0])
-        need(lo > PARENT_KAPPA, 'Strict raw gain over PR5713 claim')
+        need(lo > PARENT_KAPPA, 'Strict raw gain over PR5751 claim')
         controls = {}
         bad = deepcopy(word); bad['initial'][741] = 477
         controls['old_helper_start'] = reject(lambda: L.replay(bad))
@@ -169,7 +173,7 @@ def run():
         i, j = bad.index(['ADD', 42, 41, '1', 1090]), bad.index(['ADD', 41, 42, '-1', 1090])
         bad[i], bad[j] = bad[j], bad[i]
         controls['read_after_write'] = reject(lambda: trace_equivalent(scalar(base), bad))
-    return P.encode({'status': STATUS, 'source': {'pr5713': 'a5348f7143f95fe0046b92b96172e30763c7d731'},
+    return P.encode({'status': STATUS, 'source': {'pr5751': '8483f9a679d06c1e270141dbc686a7e76e7a7522'},
                      'helper_starts': starts, 'helper_finals': finals, 'changed_charts': charts, 'local': local,
                      'local_paid_delta': paid_delta, 'helper_credit_delta': helper_delta,
                      'global_paid_delta': {r: 18*n for r, n in paid_delta.items()},
