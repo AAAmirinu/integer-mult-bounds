@@ -23,6 +23,14 @@ RECEIPT = '.research-export.json'
 FORMAT = 'research-package-export-v1'
 
 
+def unique_json_keys(pairs):
+    result = {}
+    for key, value in pairs:
+        require(key not in result, 'duplicate export JSON key: ' + key)
+        result[key] = value
+    return result
+
+
 def bundle_relative_path(name):
     canonical_relative_path(name)
     # A POSIX-relative name such as C:/file or C:file can discard the extraction
@@ -38,7 +46,8 @@ def inventory(root, package, ref, input_ref=None):
     # Read declarations from the publication, never the working manifest.
     with closing(git_blobs(root, [commit + ':' + package + '/VERIFY.json'])) as rows:
         values = list(rows)
-    manifest = json.loads(values[0][1])
+    manifest = json.loads(values[0][1], object_pairs_hook=unique_json_keys)
+    require(isinstance(manifest, dict), 'VERIFY.json must be an object')
     inputs = manifest.get('inputs')
     require(isinstance(inputs, list), 'VERIFY.json inputs must be a list')
     for name in inputs:
@@ -137,7 +146,7 @@ def check_bundle(path):
             with archive.extractfile(item) as data:
                 if item.name == RECEIPT:
                     require(item.size <= 16 * 1024 * 1024, 'oversized export receipt')
-                    receipt = json.load(data)
+                    receipt = json.load(data, object_pairs_hook=unique_json_keys)
                 else:
                     for block in iter(lambda: data.read(1024 * 1024), b''):
                         digest.update(block)
@@ -146,7 +155,7 @@ def check_bundle(path):
     require_file_tree(seen)
     require(isinstance(receipt, dict) and receipt.get('format') == FORMAT, 'missing or invalid export receipt')
     require(isinstance(receipt.get('commit'), str) and
-            re.fullmatch(r'[0-9a-f]{40,64}', receipt['commit']), 'invalid commit label')
+            re.fullmatch(r'(?:[0-9a-f]{40}|[0-9a-f]{64})', receipt['commit']), 'invalid commit label')
     if 'input_commit' in receipt:
         require(isinstance(receipt['input_commit'], str) and
                 re.fullmatch(r'(?:[0-9a-f]{40}|[0-9a-f]{64})', receipt['input_commit']), 'invalid input commit label')
@@ -157,6 +166,9 @@ def check_bundle(path):
     expected = {}
     for row in files:
         require(isinstance(row, dict), 'invalid receipt row')
+        require(type(row.get('size')) is int and row['size'] >= 0, 'invalid receipt size')
+        require(type(row.get('mode')) is int and row['mode'] in (0o644, 0o755),
+                'invalid receipt mode')
         name = row.get('path')
         bundle_relative_path(name)
         require(name != RECEIPT and name not in expected, 'duplicate or reserved receipt path')

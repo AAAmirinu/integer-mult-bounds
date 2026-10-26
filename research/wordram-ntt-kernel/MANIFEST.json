@@ -22,7 +22,7 @@
     "ram/verify_wordram.py": "02b2c09ff1542e6f947aedaad67c9a1872ed0098a447b71076cfbfe14373efbb",
     "ram/wordram_kernel.py": "b1a6133e505e5faf5832a5274eea23f96b033257c3d16cc24479c4a4c7059a2e",
     "ram_multiplier.py": "6c3ae23ad90c92741f5a505ae9dd85a4bbaaafb72ebdf50291e07d1ae4c52476",
-    "README.md": "23084a8deb72003a42d79e01816f2275e9f38d8250e2ad411fed74a1e6d7bed8",
+    "README.md": "903f3fd84a09de855dec2a000f4eedab16037c93648d5e8d275475a66c7a9322",
     "recovery/fixedpoint_fft.py": "e9ffceb08684d73e9971b8be9451caefdd2836235eaf059356fc38dc43861bb6",
     "recovery/REPORT.txt": "eff4e3bdabdf0216604493e2d768cbe9862e40c61cba21c8964d6fc339b85138",
     "recovery/SOURCES.json": "3f29acd9aee095197f2b0829774d40ba930e1977fe9ab1a5f7efb4b2935a07c3",
@@ -30,8 +30,8 @@
     "recovery/verification.json": "3593b43218392896cbcccad591b3bfdf2fb65f1b8d1b60d1b28320ebb1134041",
     "SOURCES.json": "3610732a3a0accd3766c92b1de904ed7a41c05970942e0fe5eb89fa697b26f7d",
     "TASK.json": "33d03eb9b15b920ae29387a91212fcd67d3a95be81723670a5177b3b56fe612e",
-    "VERIFY.json": "a6125ea7187eaed24f883dd9600c5cef692e61d1788dabd82d8a521333870a58",
     "verify.py": "84283f0581ed63f099a453be34e8d615d90a3ca5dd6f24cdc4a38d93710e594a",
-    "verify_integration.py": "ef0f3721a9db3f96985f11f446e7bb0bd9c8e20763344c30e4b39f57cbcaaea5"
+    "verify_integration.py": "ef0f3721a9db3f96985f11f446e7bb0bd9c8e20763344c30e4b39f57cbcaaea5",
+    "STANDALONE-VERIFY.json": "e6320251311dc9a6850284a974cb6ddd1dadbcdc45cfeba0787a77c15351c184"
   }
 }

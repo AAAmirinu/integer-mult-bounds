@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import subprocess
 import sys
-from research_coordination import messages, validate_message
+from research_coordination import messages, parse_message, validate_message
 
 REPO = 'CrocSwap/integer-mult-bounds'
 
@@ -31,7 +31,7 @@ def prepare_body(path, metadata=None):
         if present:
             raise ValueError('body already contains coordination metadata')
         validate_message(metadata)
-        body = body.rstrip() + '\n\n```json\n' + json.dumps(metadata, indent=2) + '\n```\n'
+        body = body.rstrip() + '\n\n```json\n' + json.dumps(metadata, indent=2, allow_nan=False) + '\n```\n'
     return body
 
 
@@ -78,7 +78,7 @@ def main():
     try:
         if args.discussion <= 0:
             raise ValueError('discussion number must be positive')
-        metadata = json.loads(args.metadata_file.read_text(encoding='utf-8')) if args.metadata_file else None
+        metadata = parse_message(args.metadata_file.read_text(encoding='utf-8')) if args.metadata_file else None
         body = prepare_body(args.body_file, metadata)
         result = ({'repository': REPO, 'discussion': args.discussion, 'reply_to': args.reply_to,
                    'body': body, 'posted': False} if args.dry_run else post(args.discussion, args.reply_to, body))

@@ -341,3 +341,7 @@ PR5561 also became reachable as an ancestor of accepted successor source heads, 
 ## Delta intake through PR5703
 
 The [exact-head delta](pr-intake-evidence/queue-oct26r-20261026.json) records 1 decisions: {'reviewed_tooling': 1}. Source-only retention preserves attribution and open scientific obligations. Historical-only files and any workflow configuration resolutions are explicit in that receipt. No scientific replay or selected-frontier change.
+
+## Delta intake through PR5731
+
+The [exact-head delta](pr-intake-evidence/queue-oct26a-20261026.json) records 100 decisions: {'archive': 91, 'reviewed_tooling': 9}. Source-only retention preserves attribution and open scientific obligations. Historical-only files and any workflow configuration resolutions are explicit in that receipt. No scientific replay or selected-frontier change.

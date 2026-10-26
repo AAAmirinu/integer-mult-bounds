@@ -91,6 +91,23 @@ python3 -B scripts/compare_recursive_invoices.py \
 The second is a declared single-H4 edit to the complete source invoice, illustrating
 the unfiltered retiming's algebra; it is not a newly emitted physical supplier.
 
+## Inspect a tariff witness
+
+To show exact old and new costs for the strongest positive and negative hinges:
+
+```sh
+python3 -B scripts/explain_recursive_invoices.py OLD.json NEW.json
+```
+
+Each witness gives a cap `k` and the tariff `min(r,k)`. The report debits target
+credits and binds both input files by SHA256. No witness is emitted for zero cost
+change. The comparator and its source bytes remain unchanged.
+
+For old paid jobs `{"2":2}` and new paid jobs `{"1":1,"4":1}`, cap 2 gives
+costs 4 and 3; cap 4 gives costs 4 and 5. Thus neither invoice wins for every
+concave tariff. This does not imply a power crossing: their power-cost difference
+is `(2^t-1)^2`, which is positive for every `0<t<1`.
+
 ## Certificate and bounds
 
 Set d_r=Δpaid_r-Δtargets_r. The report gives K(k)=Σ d_r min(r,k) at every support

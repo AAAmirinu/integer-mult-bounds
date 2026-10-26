@@ -33,7 +33,7 @@ python3 -B verify.py
 
 The checker validates the package hashes, runs independent transform and integer-product oracles, replays the actual RAM instructions with dirty owned memory, compares the recomputation control, and regenerates both exact-rational precision checks in memory. It does not need Git, Lean, network access, Windows, a GPU or upstream library installations. It fails under Python `-O`, because executable certificates use assertions.
 
-`PROOF.txt` gives the complete informal assembly and cost proof. `ram/PROOFS.txt`, `ntt/NTT-APPLICATION.txt` and `recovery/REPORT.txt` provide the component arguments. `INTEGRATION-RESULTS.json` and component receipts are finite evidence, not replacements for their universal arguments. `SOURCES.json` retains exact upstream revisions/hashes; `VERIFY.json` specifies this standalone replay. No global repository checker or selected record is changed.
+`PROOF.txt` gives the complete informal assembly and cost proof. `ram/PROOFS.txt`, `ntt/NTT-APPLICATION.txt` and `recovery/REPORT.txt` provide the component arguments. `INTEGRATION-RESULTS.json` and component receipts are finite evidence, not replacements for their universal arguments. `SOURCES.json` retains exact upstream revisions/hashes; `STANDALONE-VERIFY.json` specifies this standalone replay. No global repository checker or selected record is changed.
 
 ## Frontier and overlap
 

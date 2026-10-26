@@ -21,7 +21,7 @@ import time
 # Retain direct script execution under -I; the shared helper uses stdlib only.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 try:
-    from research_package import git_source_env
+    from research_package import git_source_env, relative_file
 finally:
     sys.path.pop(0)
 
@@ -102,6 +102,15 @@ def pull_file_record(pull):
             "truncated": connection is None or len(paths) != pull["changedFiles"]}
 
 
+def next_cursor(page_info, seen, label):
+    """Require progress within one GraphQL connection."""
+    cursor = page_info.get("endCursor")
+    if not isinstance(cursor, str) or not cursor or cursor in seen:
+        raise ValueError(label + " pagination did not advance")
+    seen.add(cursor)
+    return cursor
+
+
 def fetch_pr_files():
     """Changed file paths per open PR, so overlap can be searched by path.
 
@@ -110,6 +119,7 @@ def fetch_pr_files():
     """
     rows = []
     cursor = None
+    cursors = set()
     while True:
         # ponytail: 10 PRs per page (25x100-node pages exceed GitHub's ~10 s
         # gateway limit and 502; 10x100 stays under it). A full index refresh is
@@ -139,7 +149,7 @@ def fetch_pr_files():
             rows.append(pull_file_record(pull))
         if not result["pageInfo"]["hasNextPage"]:
             return sorted(rows, key=lambda row: row["number"])
-        cursor = result["pageInfo"]["endCursor"]
+        cursor = next_cursor(result["pageInfo"], cursors, "connection")
 
 
 def path_report(pr_records, file_rows, patterns):
@@ -167,6 +177,7 @@ def path_report(pr_records, file_rows, patterns):
 def fetch_discussions():
     records = []
     cursor = None
+    cursors = set()
     while True:
         result = graphql('''query($cursor:String) {
           repository(owner:"CrocSwap",name:"integer-mult-bounds") {
@@ -189,11 +200,13 @@ def fetch_discussions():
             # every discussion. The worst-case nested node count is only
             # 10 + 10*25 + 10*25*10 = 2760; busy threads still page fully.
             connection = discussion["comments"]
+            comment_cursors = set()
             while True:
                 for comment in connection["nodes"]:
                     records.append({**common, "kind": "discussion-comment", "body": comment["body"],
                                     "url": comment["url"], "updated_at": comment["updatedAt"]})
                     replies = comment["replies"]
+                    reply_cursors = set()
                     while True:
                         for reply in replies["nodes"]:
                             records.append({**common, "kind": "discussion-reply", "body": reply["body"],
@@ -206,7 +219,7 @@ def fetch_discussions():
                               pageInfo {hasNextPage endCursor} nodes {body url updatedAt}
                             }
                           }}
-                        }''', {"id": comment["id"], "cursor": replies["pageInfo"]["endCursor"]})["node"]["replies"]
+                        }''', {"id": comment["id"], "cursor": next_cursor(replies["pageInfo"], reply_cursors, "replies")})["node"]["replies"]
                 if not connection["pageInfo"]["hasNextPage"]:
                     break
                 connection = graphql('''query($id:ID!, $cursor:String) {
@@ -219,10 +232,10 @@ def fetch_discussions():
                     }
                   }}
                 }''', {"id": discussion["id"],
-                       "cursor": connection["pageInfo"]["endCursor"]})["node"]["comments"]
+                       "cursor": next_cursor(connection["pageInfo"], comment_cursors, "comments")})["node"]["comments"]
         if not result["pageInfo"]["hasNextPage"]:
             return records
-        cursor = result["pageInfo"]["endCursor"]
+        cursor = next_cursor(result["pageInfo"], cursors, "connection")
 
 
 def atomic_json(path, data):
@@ -243,14 +256,39 @@ def error_summary(exc):
     return str(exc)[:700]
 
 
+def validate_cached_source(source, name):
+    """Check cached containers before search code uses their fields."""
+    if not isinstance(source, dict) or not isinstance(source.get("records"), list):
+        raise ValueError("source must contain a records list")
+    if type(source.get("complete_pagination")) is not bool:
+        raise ValueError("source must declare pagination coverage")
+    stamp = datetime.fromisoformat(source["fetched_at"])
+    if stamp.tzinfo is None:
+        raise ValueError("source timestamp needs a UTC offset")
+    for row in source["records"]:
+        if not isinstance(row, dict) or type(row.get("number")) is not int:
+            raise ValueError("record needs an integer number")
+        if name == "pr_files":
+            if not isinstance(row.get("paths"), list) or not all(isinstance(p, str) for p in row["paths"]):
+                raise ValueError("file record needs a list of paths")
+        elif (not all(isinstance(row.get(key), str) for key in ("kind", "title"))
+              or not all(isinstance(row[key], str) for key in ("body", "url", "updated_at", "state") if key in row)):
+            raise ValueError("record text fields must be strings")
+    return stamp
+
+
 def remote_snapshot(cache, offline=False, refresh=False, max_age=300, need_files=False,
                     include_closed=False):
     warnings = []
     try:
         snapshot = json.loads(cache.read_text(encoding="utf-8"))
-        if snapshot.get("schema_version") != 1 or snapshot.get("repository") != REPO:
+        if (not isinstance(snapshot, dict) or snapshot.get("schema_version") != 1
+                or snapshot.get("repository") != REPO or not isinstance(snapshot.get("sources"), dict)):
             raise ValueError("cache schema or repository mismatch")
-    except (OSError, ValueError):
+    except FileNotFoundError:
+        snapshot = {"schema_version": 1, "repository": REPO, "sources": {}}
+    except (OSError, ValueError) as exc:
+        warnings.append("cache: unusable snapshot: " + error_summary(exc))
         snapshot = {"schema_version": 1, "repository": REPO, "sources": {}}
     sources = snapshot.setdefault("sources", {})
     fetches = [("open_prs", lambda: pull_records(gh_json([
@@ -267,10 +305,13 @@ def remote_snapshot(cache, offline=False, refresh=False, max_age=300, need_files
     for name, fetch in fetches:
         cached = sources.get(name)
         age = None
-        if cached:
+        if cached is not None:
             try:
-                age = (datetime.now(timezone.utc) - datetime.fromisoformat(cached["fetched_at"])).total_seconds()
-            except (KeyError, ValueError, TypeError):
+                stamp = validate_cached_source(cached, name)
+                age = (datetime.now(timezone.utc) - stamp).total_seconds()
+            except (KeyError, ValueError, TypeError) as exc:
+                warnings.append(f"{name}: unusable cached source: {error_summary(exc)}")
+                sources.pop(name, None)
                 cached = None
         fresh = cached is not None and age is not None and 0 <= age <= max_age
         if need_files and name in ("pr_files", "open_prs") and cached:
@@ -318,7 +359,10 @@ def local_records(root):
     if ledger.is_file():
         paths.append(ledger)
     for path in paths:
-        if path.is_symlink():
+        try:
+            path = relative_file(root, path.relative_to(root).as_posix())
+        except ValueError:
+            # Aliases and non-files do not count as searched local notes.
             continue
         data = path.read_bytes()
         body = data.decode("utf-8", errors="replace")
