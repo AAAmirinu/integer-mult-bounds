@@ -44,6 +44,10 @@ with its own initial input. Retain borrowed fields and cleanup outputs. If the
 reference also expands exponentially, give `reference` as another instruction
 list instead of `target`. Exactly one is required.
 
+For a complete binary linear map on at most four roles, the
+[weighted word synthesizer](binary-linear-synthesis.md) constructs a cheapest
+word in a declared XOR/SWAP alphabet and checks every arbitrary input.
+
 ## Produce and check
 
 ```sh
