@@ -62,3 +62,14 @@ The final overlap check used all 7,676 main note records, 389 open PRs and
 and cached-body scans found the released PR5515/5688 handoffs and this claim;
 no competing encoded-planner claim appeared. Main was fetched again and is
 still the stated base. No merge, closure or frontier change was made.
+
+## Export and optimized replay
+
+Scientific commit 1470cc5f2ddf1332701f35d1492c71b5202e17ae passes the
+14-file committed-byte check and official export/check. All four final
+commands pass with Python 3.12.14 under -I -O -B, no Git checkout and an
+empty PATH. All 15 exported files, including the export manifest, keep their
+bytes and read-only modes. An actual change to the retained source archive
+fails authentication before execution. RESULT.json records the receipt.
+The final closeout adds only this evidence and receipts; executable bytes
+remain those checked in the scientific commit.
