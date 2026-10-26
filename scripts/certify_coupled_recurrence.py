@@ -22,6 +22,12 @@ def rational(x):
     return Q(x)
 
 
+def encode_rational(q):
+    require(max(abs(q.numerator).bit_length(), q.denominator.bit_length()) <= 6000,
+            'Exact certificate exceeds the 6000-bit rational budget')
+    return str(q)
+
+
 def read(path):
     with Path(path).open('rb') as f: raw = f.read(2*1024**2+1)
     require(len(raw) <= 2*1024**2, 'Input exceeds 2 MiB')
@@ -60,7 +66,7 @@ def certify(value):
         if rows[k][k] <= 0:
             v = backsolve(rows, [-rows[i][k] for i in range(k)], k)+[Q(1)]+[Q(0)]*(n-k-1)
             result = {'schema': 'coupled-recurrence-certificate/v1', 'status': 'noncontracting',
-                      'witness': list(map(str,v))}
+                      'witness': list(map(encode_rational,v))}
             verify(value,result); return result
         for i in range(k+1,n):
             factor = rows[i][k]/rows[k][k]
@@ -69,7 +75,7 @@ def certify(value):
     total = backsolve(rows,[row[n+1] for row in rows],n)
     aw = product(a,w); ratio = max(x/y for x,y in zip(aw,w))
     result = {'schema': 'coupled-recurrence-certificate/v1', 'status': 'contracting',
-              'weights': list(map(str,w)), 'ratio': str(ratio), 'total': list(map(str,total))}
+              'weights': list(map(encode_rational,w)), 'ratio': encode_rational(ratio), 'total': list(map(encode_rational,total))}
     verify(value,result); return result
 
 

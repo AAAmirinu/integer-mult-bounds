@@ -51,6 +51,9 @@ class RecurrenceTests(unittest.TestCase):
         self.assertEqual(Q(r['total'][0]),2-Q(1,2**63))
         with self.assertRaises(ValueError):tool.certify(problem([[0]*65 for _ in range(65)]))
 
+        with self.assertRaisesRegex(ValueError,'6000-bit'):
+            tool.encode_rational(Q(1<<6001))
+
     def test_false_certificates_reject(self):
         v=problem([[0,'1/2'],['1/2',0]]);good=tool.certify(v)
         for kind in ('weights','ratio','total'):

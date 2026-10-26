@@ -55,7 +55,9 @@ singular and reducible matrices, without a floating eigenvalue calculation.
 Input fields are `schema: coupled-recurrence/v1`, square `matrix` and `forcing`.
 Use integers or rational strings. Limits: 64 types, coefficient numerator and
 denominator at most 10^12, and 2 MiB input. Arithmetic is exact; rational growth
-can increase runtime. This is not a bit-complexity claim.
+can increase runtime. Each certificate numerator and denominator is limited
+to 6000 bits. Larger exact outputs fail before serialization and emit no
+certificate. This is not a bit-complexity claim.
 
 If A bounds actual costs from above, a positive certificate transfers to those
 costs. Failure of that upper bound does not prove failure of the actual costs.
