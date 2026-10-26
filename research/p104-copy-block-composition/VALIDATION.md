@@ -45,3 +45,13 @@ All five framework assumptions remain. No large uniform word or rounded
 multiplier is materialized. Hosted CI and independent scientific acceptance
 remain pending. Full-history ancestry checking is unavailable in the shallow
 checkout; no automatic history expansion ran. The selected frontier is unchanged.
+
+Final two-block scientific checkpoint:
+ca740c341b4e2ce1d7d95c5c08c9fd06491f1068. Committed bytes, executable modes and
+the official30-file export pass. A separate export has no Git directory and
+uses read-only files/directories. With empty PATH, Python3.12 runs both scripts
+under `-I -O -W error -B`: the complete verifier passed in76.00 seconds and the
+compatibility verifier in.24 seconds. All31 files, including the export
+manifest, retained their bytes and modes. Only this validation record changes
+after the scientific checkpoint. Final committed bytes and publication export
+are checked again. No timing comparison or speedup is inferred from these runs.
