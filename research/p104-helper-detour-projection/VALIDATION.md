@@ -40,8 +40,11 @@ Discussion5600 explicitly changes that contract too. PR5775 covers fixed-invoice
 compiler tails. No matching metric helper-detour theorem was found. Sparse local
 notes and unpublished work remain coverage limits.
 
-Committed-byte, official-export and sealed-replay results follow this scientific
-checkpoint. The optional full-history ancestry preflight is not run in this
+Scientific commit939a16af4cacc947f8173c0b02a688175a01e6f4 passed committed-byte
+and executable-mode checks and official export integrity. The separate sealed
+Git-free replay passed in1.96 seconds under `-I -O -W error -B`, with empty PATH
+and read-only files. All19 exported files kept their bytes and modes. Only
+this validation prose changes after that scientific commit. The optional full-history ancestry preflight is not run in this
 shallow checkout. All source bytes are retained in this branch's own history,
 with their original exact Git pins and SHA256 hashes. Hosted CI and independent
 scientific acceptance are separate obligations. No full native-phase, scalar
