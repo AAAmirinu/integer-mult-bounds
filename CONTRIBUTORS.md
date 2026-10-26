@@ -4422,3 +4422,21 @@ Source archives retain attribution; mathematical review remains open.
 - **Ali Romman (@aliromman)** — [#5729](https://github.com/CrocSwap/integer-mult-bounds/pull/5729): Accelerate complete E7 classification replay 17.5x with exact bit lanes (source archive).
 - **Ali Romman (@aliromman)** — [#5730](https://github.com/CrocSwap/integer-mult-bounds/pull/5730): Add an opt-in executable-mode check before package publication (reviewed tooling).
 - **Ali Romman (@aliromman)** — [#5731](https://github.com/CrocSwap/integer-mult-bounds/pull/5731): Explain recursive invoice comparisons with exact tariff witnesses (reviewed tooling).
+
+## Queue intake, 26 October 2026 (chunk B)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **Ali Romman (@aliromman)** — [#5732](https://github.com/CrocSwap/integer-mult-bounds/pull/5732): Certify recursive invoice comparisons at exact rational powers (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5733](https://github.com/CrocSwap/integer-mult-bounds/pull/5733): Combine recursive invoices with exact multiplicities and source receipts (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5734](https://github.com/CrocSwap/integer-mult-bounds/pull/5734): Reject linked output paths before creating research drafts (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5735](https://github.com/CrocSwap/integer-mult-bounds/pull/5735): Export the selected P104 recursive invoice from authenticated source (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5736](https://github.com/CrocSwap/integer-mult-bounds/pull/5736): Keep Unicode overlap excerpts centered on the actual match (reviewed tooling).
+- **Joel Pulikkan (@GamingPuzzled)** — [#5739](https://github.com/CrocSwap/integer-mult-bounds/pull/5739): Conditional κ .00310927386 (+1.216e-7 over #5713): move a 96-op block from a dim-8 to a new dim-4 chart (source archive).
+- **Ali Romman (@aliromman)** — [#5740](https://github.com/CrocSwap/integer-mult-bounds/pull/5740): Preserve exact Git-path query case and whitespace across hosts (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5742](https://github.com/CrocSwap/integer-mult-bounds/pull/5742): Preserve overlap evidence when cache publication fails (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5743](https://github.com/CrocSwap/integer-mult-bounds/pull/5743): Keep option-like paths literal in sparse materialization commands (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5744](https://github.com/CrocSwap/integer-mult-bounds/pull/5744): Check declared replay inputs in offline research exports (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5745](https://github.com/CrocSwap/integer-mult-bounds/pull/5745): Prove sharp 8H8 active-mode delivery cost with temporal reuse (source archive).
+- **Ali Romman (@aliromman)** — [#5746](https://github.com/CrocSwap/integer-mult-bounds/pull/5746): Certify common-base invoice order over every power exponent (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5747](https://github.com/CrocSwap/integer-mult-bounds/pull/5747): Exclude the 31-leaf target with a chronological connector rank bound (source archive).

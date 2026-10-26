@@ -13,13 +13,13 @@ import shutil
 import subprocess
 import tempfile
 
-from research_package import ROOT, git, git_blobs, relative_file
+from research_package import ROOT, git, git_blobs, relative_file, symlink_free_relative_path
 
 
 def create(root, slug, task_id, author, sources=(), base="HEAD", budget=60):
     if not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,79}", slug):
         raise ValueError("use a lowercase hyphenated package slug")
-    destination = root / "research" / slug
+    destination = symlink_free_relative_path(root, "research/" + slug)
     if destination.exists():
         raise ValueError("package already exists; nothing overwritten")
     if not author.strip() or budget <= 0:

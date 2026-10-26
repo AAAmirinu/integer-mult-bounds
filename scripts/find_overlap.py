@@ -158,7 +158,7 @@ def path_report(pr_records, file_rows, patterns):
     matches = []
     for row in sorted(file_rows, key=lambda item: -item["number"]):
         matched = [path for path in row["paths"]
-                   if any(fnmatch.fnmatch(path, pattern) or pattern in path for pattern in patterns)]
+                   if any(fnmatch.fnmatchcase(path, pattern) or pattern in path for pattern in patterns)]
         if not matched:
             continue
         pull = pulls.get(row["number"], {})
@@ -240,14 +240,16 @@ def fetch_discussions():
 
 def atomic_json(path, data):
     path.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent, delete=False) as out:
-        tmp = Path(out.name)
-        json.dump(data, out)
-        out.write("\n")
+    tmp = None
     try:
+        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent, delete=False) as out:
+            tmp = Path(out.name)
+            json.dump(data, out)
+            out.write("\n")
         os.replace(tmp, path)
     finally:
-        tmp.unlink(missing_ok=True)
+        if tmp is not None:
+            tmp.unlink(missing_ok=True)
 
 
 def error_summary(exc):
@@ -324,9 +326,11 @@ def remote_snapshot(cache, offline=False, refresh=False, max_age=300, need_files
             try:
                 # Replace each source only after every page succeeds.
                 records = fetch()
-                sources[name] = {"fetched_at": now(), "records": records, "complete_pagination": True}
-                atomic_json(cache, snapshot)
-                cached = sources[name]
+                replacement = {"fetched_at": now(), "records": records, "complete_pagination": True}
+                pending = {**snapshot, "sources": {**sources, name: replacement}}
+                atomic_json(cache, pending)
+                sources[name] = replacement
+                cached = replacement
             except (OSError, ValueError, KeyError, TypeError, subprocess.SubprocessError) as exc:
                 warnings.append(f"{name}: refresh failed; using old data if available: {error_summary(exc)}")
         if not cached:
@@ -421,6 +425,18 @@ def match_position(text, term, pattern):
     return match.start() if match else -1
 
 
+def original_offset(text, lowered_offset):
+    """Map a lowercase search offset back to the unchanged source text."""
+    if text.isascii():
+        return lowered_offset
+    for index, char in enumerate(text):
+        width = len(char.lower())
+        if lowered_offset < width:
+            return index
+        lowered_offset -= width
+    return len(text)
+
+
 def search(records, terms, all_terms=False, reference_terms=()):
     terms = list(dict.fromkeys(t.strip().lower() for t in terms if t.strip()))
     if not terms:
@@ -439,7 +455,7 @@ def search(records, terms, all_terms=False, reference_terms=()):
         if not found or (all_terms and len(found) != len(terms)):
             continue
         positions = [body_positions[t] for t in found if body_positions[t] >= 0]
-        start = max(0, min(positions) - 100) if positions else 0
+        start = max(0, original_offset(record.get("body", ""), min(positions)) - 100) if positions else 0
         matches.append({**{k: v for k, v in record.items() if k != "body"},
                         "matched_terms": found,
                         "score": sum(3 if title_positions[t] >= 0 else 1 for t in found),
@@ -452,7 +468,7 @@ def main():
     ap.add_argument("terms", nargs="*", help="literal case-insensitive terms; quote multiword phrases")
     ap.add_argument("--task", help="add the named catalogue card's overlap terms")
     ap.add_argument("--path", action="append", default=[], metavar="PATTERN",
-                    help="match open PRs by changed file path (fnmatch pattern or substring); repeatable")
+                    help="match open PRs by case-sensitive Git path glob or substring; spaces are literal; repeatable")
     ap.add_argument("--offline", action="store_true")
     ap.add_argument("--refresh", action="store_true")
     ap.add_argument("--include-closed", action="store_true",
@@ -492,7 +508,9 @@ def main():
                 terms.append(parts[1])
     if not any(t.strip() for t in terms) and not args.path:
         ap.error("provide terms, --task or --path")
-    patterns = [p.strip() for p in args.path if p.strip()]
+    patterns = list(args.path)
+    if any(not p for p in patterns):
+        ap.error("--path must not be empty")
     local = local_records(ROOT)
     local_status, local_warnings = local_coverage(ROOT, local)
     snapshot, warnings = remote_snapshot(args.cache, args.offline, args.refresh, args.max_age,

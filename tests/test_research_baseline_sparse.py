@@ -203,7 +203,7 @@ class SparseBaselineTests(unittest.TestCase):
                          (2, "SPARSE_SELECTED_INPUTS_ABSENT", 5))
         command = result["materialize"]
         self.assertEqual(command, sparse.materialize_command(omitted))
-        self.assertEqual(command[3:], ["research/audit", "research/pkg-a", "research/pkg-b"])
+        self.assertEqual(command[3:], ["--", "research/audit", "research/pkg-a", "research/pkg-b"])
         self.git(*command[1:])
         self.assertEqual(sparse.sparse_omissions(self.record, self.root), [])
         self.assertEqual(self.run_main()[0], 0)

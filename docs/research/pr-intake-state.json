@@ -34684,6 +34684,175 @@
       "baseline": "709bc508b54bdc5b70cd2bd62538906313474c9e",
       "watch_paths": {},
       "watch_prs": {}
+    },
+    {
+      "number": 5732,
+      "head": "75aaaa5b0c6c7ebd5a0c8c61222208787fe076b4",
+      "status": "ready_to_integrate",
+      "reason": "Reviewed shared-tool implementation, declared arithmetic scope and affected consumers; combined tests recorded separately. No supplier or theorem admission.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26b-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "553d26d796fde9871ff2661a49ac7732e945410f",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5733,
+      "head": "470df91df2ab6e4ada410f6635e7159bf076a5e5",
+      "status": "ready_to_integrate",
+      "reason": "Reviewed shared-tool implementation, declared arithmetic scope and affected consumers; combined tests recorded separately. No supplier or theorem admission.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26b-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "553d26d796fde9871ff2661a49ac7732e945410f",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5734,
+      "head": "9a49794b08658da52f83b3a3b214366136808740",
+      "status": "ready_to_integrate",
+      "reason": "Reviewed shared-tool implementation, declared arithmetic scope and affected consumers; combined tests recorded separately. No supplier or theorem admission.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26b-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "553d26d796fde9871ff2661a49ac7732e945410f",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5735,
+      "head": "4ecfa15596c47d243f86bedd7e3d353dd909d086",
+      "status": "ready_to_integrate",
+      "reason": "Reviewed shared-tool implementation, declared arithmetic scope and affected consumers; combined tests recorded separately. No supplier or theorem admission.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26b-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "553d26d796fde9871ff2661a49ac7732e945410f",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5736,
+      "head": "63f441c3a98e994dd99e1f1ca31199f3ef032df1",
+      "status": "ready_to_integrate",
+      "reason": "Reviewed shared-tool implementation, declared arithmetic scope and affected consumers; combined tests recorded separately. No supplier or theorem admission.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26b-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "553d26d796fde9871ff2661a49ac7732e945410f",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5739,
+      "head": "b93d749a0a895d260e87887170af5162bda461a4",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26b-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "553d26d796fde9871ff2661a49ac7732e945410f",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5740,
+      "head": "0c084e2d1ff26ce3f0098b4867f8d5427a47e052",
+      "status": "ready_to_integrate",
+      "reason": "Reviewed shared-tool implementation, declared arithmetic scope and affected consumers; combined tests recorded separately. No supplier or theorem admission.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26b-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "553d26d796fde9871ff2661a49ac7732e945410f",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5742,
+      "head": "79789e1fae2d1c478ec98902eda11916006655b9",
+      "status": "ready_to_integrate",
+      "reason": "Reviewed shared-tool implementation, declared arithmetic scope and affected consumers; combined tests recorded separately. No supplier or theorem admission.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26b-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "553d26d796fde9871ff2661a49ac7732e945410f",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5743,
+      "head": "0740911040bf30ab00a28c5ab38734aeb4f855bc",
+      "status": "ready_to_integrate",
+      "reason": "Reviewed shared-tool implementation, declared arithmetic scope and affected consumers; combined tests recorded separately. No supplier or theorem admission.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26b-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "553d26d796fde9871ff2661a49ac7732e945410f",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5744,
+      "head": "5e8f76a5e26da67bf8ad7468d2331523793452ad",
+      "status": "ready_to_integrate",
+      "reason": "Reviewed shared-tool implementation, declared arithmetic scope and affected consumers; combined tests recorded separately. No supplier or theorem admission.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26b-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "553d26d796fde9871ff2661a49ac7732e945410f",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5745,
+      "head": "e82b64e91e57c838ff2028bcf2219203966bf9ed",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26b-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "553d26d796fde9871ff2661a49ac7732e945410f",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5746,
+      "head": "7c58c57143cc322eb0d578162e6df87ac0f4cd1f",
+      "status": "ready_to_integrate",
+      "reason": "Reviewed shared-tool implementation, declared arithmetic scope and affected consumers; combined tests recorded separately. No supplier or theorem admission.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26b-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "553d26d796fde9871ff2661a49ac7732e945410f",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 5747,
+      "head": "f9a3bc99b186b2e08a855e260f2f904ef33821c9",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct26b-20261026.json"
+      ],
+      "policy_version": 1,
+      "baseline": "553d26d796fde9871ff2661a49ac7732e945410f",
+      "watch_paths": {},
+      "watch_prs": {}
     }
   ]
 }
