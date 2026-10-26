@@ -2,7 +2,6 @@
 
 Ali Romman with substantial OpenAI Codex assistance. Apache-2.0.
 """
-from itertools import permutations
 import random
 
 
@@ -49,8 +48,6 @@ def choose(q,rng):
     gi=inverse(g);diagonal=tuple(1<<i if i<q else 0 for i in range(d))
     off=tuple(sum((rng.randrange(2)<<j) for j in range(d) if (i<q)!=(j<q)) for i in range(d))
     return mul(mul(g,diagonal),gi),mul(mul(g,off),gi)
-
-def outer(u,v,n):return tuple(v if u>>i&1 else 0 for i in range(n))
 
 def block_put(rows,block,rr,cc,d):
     for i,row in enumerate(block):rows[rr*d+i]^=row<<(cc*d)

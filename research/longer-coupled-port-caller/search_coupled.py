@@ -13,8 +13,6 @@ import search_star as S
 
 # A polynomial is a set of square-free Boolean monomials. An integer gives
 # the variable set of one monomial. Zero denotes its constant term.
-def plus(a,b): return a^b
-
 def prod(a,b):
     out=set()
     for x in a:

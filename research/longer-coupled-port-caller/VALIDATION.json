@@ -12,12 +12,22 @@
     "Proof-assistant verification",
     "Independent human review"
   ],
-  "remaining_publication_checks": [
-    "GitHub rendered PR and published-body readback"
-  ],
   "proof_commit": "67f12b6bef1e25f649bd62edae36cd144fe19899",
   "committed_bytes": "PASS_RESEARCH_COMMIT_BYTES; 22 files",
   "git_free_export": "PASS_RESEARCH_EXPORT; 22 files; read-only optimized replay with PATH=/nonexistent; identical result",
   "source_corruption": "Changed invoice bytes rejected before computation, then restored",
-  "github_proof_objects": "Proof, result, sources and independent checker match exact Git blobs at the proof commit"
+  "github_proof_objects": "Proof, result, sources and independent checker match exact Git blobs at the proof commit",
+  "publication": {
+    "pr": "https://github.com/CrocSwap/integer-mult-bounds/pull/5649",
+    "rendered_and_read_back": true,
+    "proof_links_checked_against_github_blobs": true,
+    "canonical_discussion_read_back": true
+  },
+  "hosted_ci": {
+    "head": "b904e2748d2374082ceb1a95bdfcfd4b528742db",
+    "run": 40258944381,
+    "planner": "Failed two upstream selected-record navigation tests",
+    "package_replay": "Skipped"
+  },
+  "cleanup": "Removed one unused import and two unused discovery helpers after replay; matrix controls still match the result."
 }
