@@ -119,8 +119,28 @@
   "assignment": "Explicit portable-verification preparation; no picker/reroll",
   "milestone": "Qualified independent fixed causal/typed-contact certificate with direct normal, explicit-O and12 synthetic controls; final publication evidence revision only.",
   "formal_Lean": false,
-  "outcome": "Historical local fixed audit plus direct portable normal/explicit-O and all12 synthetic controls passed, with limited static postrun review. No new kappa or full native/caller/price acceptance.",
-  "open_next_questions": [
+  "outcome": "partial",
+  "qualification": {
+    "status": "PASS_THREE_PHASE_PORTABLE_FIXED_AUDIT_QUALIFICATION_ONLY",
+    "outcome_sha256": "7298b86c76e400876962c3daf8908a09694bee05501b8b0f62d2fd17d91c8fc8",
+    "postrun_review_sha256": "5162081de87c51ebb8dc3a8375513928ad1fb39226c60e7f9dfed78a4477f1ce",
+    "root_acceptance_metadata_sha256": "84d22f2e8f7c5bd3621064793de1dea4ce9a2363d8f1e7aad7a192cec4580666",
+    "normal_and_explicit_O_passed": true,
+    "synthetic_controls_passed": 12,
+    "full_scientific_projection_sha256": "8ad201fe2ce3ebcbb0a081774790fd4511d3ecce1b5b5c1cee3dd9bde033895c",
+    "generic_metadata_validation": "NOT_RUN",
+    "export": "NOT_RUN",
+    "hosted_replay": "NOT_RUN"
+  },
+  "task_id": "p104-side-correction",
+  "actual_scope": "Independently verify the fixed original PR5684 causal ledger and every prescribed prospective field715 contact supporting the PR5713 temporal rewrite.",
+  "bottleneck_link": "https://github.com/CrocSwap/integer-mult-bounds/pull/5713",
+  "stop_rule": "Stop on source/grammar mismatch, an unmet fixed causal or typed premise, incomplete receipt or resource limit. No automatic retry, new candidate or full supplier claim.",
+  "evidence": "evidence/SCIENTIFIC-RECEIPT-EXTRACT.json, evidence/PORTABLE-V2-OUTCOME.json and evidence/PORTABLE-V2-POSTRUN-REVIEW.json record the fixed results, exact controls and limited review.",
+  "author": "Clear1nsight",
+  "ai_assistance": "Prepared with substantial OpenAI Codex assistance, including separate preparation and static review agents. AI checks are not independent human or formal acceptance.",
+  "outcome_detail": "Historical local fixed audit plus direct portable normal/explicit-O and all12 synthetic controls passed, with limited static postrun review. No new kappa or full native/caller/price acceptance.",
+  "open_questions": [
     {
       "question": "Does the emitted5713 artifact implement exactly the credited edit under complete native/caller contracts?",
       "why_it_matters": "This package certifies fixed original-source and prescribed715 contact premises, not successor equality or full admission.",
@@ -133,17 +153,5 @@
       "first_step": "Root reviews final bytes and real publication identity, then chooses applicable bounded metadata/CI/render checks.",
       "blocked_by": "Implementation commit and PR/CI identities have not yet been supplied; no automated action is granted by this note."
     }
-  ],
-  "qualification": {
-    "status": "PASS_THREE_PHASE_PORTABLE_FIXED_AUDIT_QUALIFICATION_ONLY",
-    "outcome_sha256": "7298b86c76e400876962c3daf8908a09694bee05501b8b0f62d2fd17d91c8fc8",
-    "postrun_review_sha256": "5162081de87c51ebb8dc3a8375513928ad1fb39226c60e7f9dfed78a4477f1ce",
-    "root_acceptance_metadata_sha256": "84d22f2e8f7c5bd3621064793de1dea4ce9a2363d8f1e7aad7a192cec4580666",
-    "normal_and_explicit_O_passed": true,
-    "synthetic_controls_passed": 12,
-    "full_scientific_projection_sha256": "8ad201fe2ce3ebcbb0a081774790fd4511d3ecce1b5b5c1cee3dd9bde033895c",
-    "generic_metadata_validation": "NOT_RUN",
-    "export": "NOT_RUN",
-    "hosted_replay": "NOT_RUN"
-  }
+  ]
 }

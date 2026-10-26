@@ -11,7 +11,8 @@
         "{package}/inputs/WORD.json.gz"
       ],
       "timeout_seconds": 45,
-      "expected": "PASS_FIXED_CAUSAL_LEDGER_AND_TYPED_CONTACTS_ONLY"
+      "expected": "PASS_FIXED_CAUSAL_LEDGER_AND_TYPED_CONTACTS_ONLY",
+      "checks": "PASS_FIXED_CAUSAL_LEDGER_AND_TYPED_CONTACTS_ONLY; fixed causal and typed-contact scope only, with explicit source custody and normal result envelope."
     },
     {
       "name": "fixed-explicit-optimized",
@@ -23,7 +24,8 @@
         "{package}/inputs/WORD.json.gz"
       ],
       "timeout_seconds": 45,
-      "expected": "PASS_FIXED_CAUSAL_LEDGER_AND_TYPED_CONTACTS_ONLY"
+      "expected": "PASS_FIXED_CAUSAL_LEDGER_AND_TYPED_CONTACTS_ONLY",
+      "checks": "PASS_FIXED_CAUSAL_LEDGER_AND_TYPED_CONTACTS_ONLY; fixed causal and typed-contact scope only, with explicit source custody and normal result envelope."
     },
     {
       "name": "explicit-synthetic-controls",
@@ -34,7 +36,8 @@
         "{package}/inputs/WORD.json.gz"
       ],
       "timeout_seconds": 60,
-      "expected": "PASS_EXPLICIT_PORTABLE_CONTROL_SET_ONLY with SYNTHETIC_CONTROL_ONLY labels"
+      "expected": "PASS_EXPLICIT_PORTABLE_CONTROL_SET_ONLY with SYNTHETIC_CONTROL_ONLY labels",
+      "checks": "PASS_EXPLICIT_PORTABLE_CONTROL_SET_ONLY with SYNTHETIC_CONTROL_ONLY labels; fixed causal and typed-contact scope only, with explicit source custody and normal result envelope."
     }
   ],
   "inputs": [
@@ -77,5 +80,6 @@
     "generic_metadata_validation": "NOT_RUN",
     "export": "NOT_RUN",
     "hosted_replay": "NOT_RUN"
-  }
+  },
+  "python": "3.12"
 }
