@@ -80,13 +80,13 @@
     ]
   },
   "scope_status": "refined",
-  "actual_scope": "Compose the published PR5643 paid A2 change with PR5644 helper cleanup in one fully priced word.",
-  "scope_change_reason": "The two published mechanisms share PR5627 but do not supply their common chronological word or complete invoice.",
+  "actual_scope": "Corroborate the concurrent PR5650 P104 composition with a separately constructed full replay and exact word/invoice comparison.",
+  "scope_change_reason": "A refreshed overlap check found PR5650 after both proposals were published. The exact programs agree. Reclassify as corroboration and exclude this overlap from the ten-result quota.",
   "bottleneck_link": "The composition preserves all target credit and makes a further strict reduction in the complete paid Gaussian moment.",
   "budget_minutes": 120,
   "stop_rule": "Stop after the exact four-change composition, both-order identity, all-column/native/caller and complete cost checks. Do not search new motifs or take active scopes.",
   "outcome": "completed",
-  "evidence": "WORD.json.gz, RESULT.json, construct.py and verify.py; conditional kappa .00310644469 under source assumptions.",
+  "evidence": "WORD.json.gz, RESULT.json, construct.py and verify.py; conditional kappa .00310644469 under source assumptions. CONCURRENT-SOURCE.json and compare.py establish exact equivalence with PR5650; no distinct mechanism is claimed.",
   "author": "Ali Romman with substantial OpenAI Codex assistance",
   "ai_assistance": "Substantial OpenAI Codex assistance for construction, verification, prose and publication. No subagents or independent human review.",
   "open_questions": [

@@ -1,4 +1,28 @@
-# Complete P104 A2 and helper-cleanup composition
+# Corroborating replay of the concurrent P104 composition
+
+## Concurrent result and contribution status
+
+PR5650 was published while the final checks for this package were running.
+The next upstream refresh found the overlap. The two emitted programs differ
+only in their schema labels. Every instruction, frame, boundary, native map,
+physical caller and complete invoice agrees exactly. The pinned comparison
+is in CONCURRENT-SOURCE.json and compare.py. Both constructions were prepared
+from PR5643/5644 before this cross-comparison.
+
+This package is retained as a separate construction/replay and exact artifact
+comparison. It is not a new mechanism beyond PR5650. The 10^-11 difference in
+the chosen claim is not counted as a research improvement. This concurrent
+result is excluded from the donor's ten-result quota. Shared frozen check
+engines are reused; this is not an independent implementation of every engine,
+independent human scientific review or scientific admission of PR5650.
+
+The normal and optimized full replays and the Git-free full replay were
+completed at bdf59f7af8049ef226e3c68ee730c2ac12d8a421. The reconciliation adds
+only frozen comparison inputs, a comparison checker and explanatory prose.
+The scientific constructor, verifier, pricing engine, emitted word and receipt
+are unchanged. The comparison runs in normal and optimized mode and includes
+a missing-event rejection control. The revised committed export is checked.
+
 
 This construction supports conditional **kappa = 0.00310644469**. It composes
 the paid A2 path of PR5643 with the three helper cleanups of PR5644 in one

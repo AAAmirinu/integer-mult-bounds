@@ -14,7 +14,7 @@
         "-B",
         "{package}/verify.py"
       ],
-      "timeout_seconds": 600,
+      "timeout_seconds": 570,
       "checks": "Both composition orders, both exact source words, all columns/native phases, full caller, two rational moments, complete compiler/outer costs and corruption controls."
     },
     {
@@ -27,8 +27,29 @@
         "-B",
         "{package}/verify.py"
       ],
-      "timeout_seconds": 600,
+      "timeout_seconds": 570,
       "checks": "Both composition orders, both exact source words, all columns/native phases, full caller, two rational moments, complete compiler/outer costs and corruption controls."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/compare.py"
+      ],
+      "timeout_seconds": 20,
+      "checks": "Authenticate PR5650 and compare the entire program, native maps, caller and invoice; reject a missing event."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-B",
+        "{package}/compare.py"
+      ],
+      "timeout_seconds": 20,
+      "checks": "Authenticate PR5650 and compare the entire program, native maps, caller and invoice; reject a missing event."
     }
   ]
 }
