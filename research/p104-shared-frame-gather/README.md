@@ -235,7 +235,7 @@ Structured questions and the explicit stopping decision are in [TASK.json](TASK.
 
 ## Sources, attribution and current context
 
-The direct local predecessor is [cross-call-paid-reuse](../p104-cross-call-paid-reuse/README.md)
+The direct local predecessor is `research/p104-cross-call-paid-reuse`
 at `50dd8aa3cef02cd7b4a785b58f3a66d0edd91825`. Its exact code and factorized query
 maps are retained as runtime inputs without altering predecessor artifacts.
 PR5718 supplies the source word/controller and its inherited attribution:
@@ -263,4 +263,5 @@ removed its failed partial checkout. The fallback is the isolated conventional
 sparse worktree on `codex/shared-frame-gather`; the app's attach operation rejected
 it as unmanaged. No other checkout or untracked research was modified. All
 runtime inputs are vendored; Git-free reproduction needs no predecessor worktree
-or Git objects. Unmerged local source pins remain clearly identified as such.
+or Git objects. Original unmerged local source pins remain identified in the provenance record;
+metadata reads the identical retained copies at an ancestor export commit.

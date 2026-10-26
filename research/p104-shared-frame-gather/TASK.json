@@ -71,5 +71,6 @@
   ],
   "expansion_decision": "Stop the pinned canonical single-frame gather route. Reopen only with a named source/consumer/native-operation hypothesis changed and favorable fully charged budget.",
   "latest_guidance_revision_read": 8,
-  "publication": "Local-only. No public posting, PR, merging or selected-frontier changes."
+  "publication": "Local-only. No public posting, PR, merging or selected-frontier changes.",
+  "base_commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a"
 }
