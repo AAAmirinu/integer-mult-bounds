@@ -53,6 +53,13 @@ class CacheShapeTests(unittest.TestCase):
         self.assertNotIn('pr_files', snapshot['sources'])
         self.assertTrue(any('pr_files: unusable cached source' in w for w in warnings))
 
+    def test_legacy_optional_text_fields_remain_optional(self):
+        good = dict(source(), records=[{'kind': 'pr', 'number': 1, 'title': 'prior claim'}])
+        snapshot, warnings = self.read({'schema_version': 1, 'repository': overlap.REPO,
+                                       'sources': {'open_prs': good, 'discussions': source()}})
+        self.assertEqual(snapshot['sources']['open_prs'], good)
+        self.assertFalse(any('unusable' in w for w in warnings))
+
     def test_online_refresh_replaces_invalid_source(self):
         with tempfile.TemporaryDirectory() as tmp:
             cache = Path(tmp) / 'cache.json'

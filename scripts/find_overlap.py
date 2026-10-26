@@ -258,7 +258,8 @@ def validate_cached_source(source, name):
         if name == "pr_files":
             if not isinstance(row.get("paths"), list) or not all(isinstance(p, str) for p in row["paths"]):
                 raise ValueError("file record needs a list of paths")
-        elif not all(isinstance(row.get(key), str) for key in ("kind", "title", "body", "url", "updated_at")):
+        elif (not all(isinstance(row.get(key), str) for key in ("kind", "title"))
+              or not all(isinstance(row[key], str) for key in ("body", "url", "updated_at", "state") if key in row)):
             raise ValueError("record text fields must be strings")
     return stamp
 
