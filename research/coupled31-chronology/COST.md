@@ -68,6 +68,11 @@ margin. Consequently every saving from .00256 through 1 is rejected.
 This is a family-wide tariff ceiling, not a root search on a finite range.
 In particular this family cannot reach selected kappa .00310045.
 
+The two smaller positive leaf counts also lose. At g=1 or g=2, the static
+rank K=2d already requires R/q>=4. Their linear margins are -112 and -16.
+Separated ranks then reject every concave moment. Thus the stated ceiling
+covers every positive leaf count, not only the long callers.
+
 For the requested g=31,q=2 case, R>=28. Its 104-port bill therefore needs
 at least 1456 rank-one thin queries, instead of the proposed 520. For the
 old g=127,q=1 case, R>=88 instead of ten. Both complete optimistic profiles

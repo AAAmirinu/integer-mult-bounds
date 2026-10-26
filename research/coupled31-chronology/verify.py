@@ -27,6 +27,8 @@ def load(name):
 
 def run():
     sources = json.loads((PACKAGE/'SOURCES.json').read_text())
+    provenance = {row.get('pin'): row['sha256'] for row in sources['files']
+                  if row['usage'] == 'provenance'}
     authenticated = 0
     for row in sources['files']:
         if row['usage'] == 'input':
@@ -34,6 +36,8 @@ def run():
             path = PACKAGE/row['path'][len(PREFIX):]
             require(hashlib.sha256(path.read_bytes()).hexdigest() == row['sha256'],
                     'source hash: '+row['path'])
+            require(provenance.get(row['copied_from']) == row['sha256'],
+                    'retained copy differs from original provenance')
             authenticated += 1
     checker, prices = load('check'), load('pricing')
     evidence = checker.run()

@@ -175,6 +175,11 @@ matrices, call order, or compatible paired stage projections can give the
 required endpoint. The PR5681 static maps remain valid static maps; they
 cannot be completed to this chronological word.
 
+Allowing arbitrarily many nonzero stage splits does not repair this target.
+At d=4, every nonzero query has rank at least one, so L<=5. Even this weaker
+contract requires `R>=8+2 ceil(29/5)=20`, still more than ten. The bound 28
+uses the requested paired rank-two full queries; the bound 20 does not.
+
 For g=127 and q=1, the bound is a,b>=42 and **R>=88**, instead of the ten
 rank-one connectors in the earlier target. It is excluded for the same reason.
 

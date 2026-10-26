@@ -85,6 +85,7 @@
     "requested_31_leaf": {
       "minimum_H1_calls_at_104_ports": 1456,
       "minimum_thin_rank": 28,
+      "minimum_with_arbitrary_nonzero_stage_splits": 20,
       "optimistic_signed_profile": {
         "1": -137918,
         "2": -28148,
@@ -131,11 +132,16 @@
     "uniform_one_or_two_port_ceiling": {
       "all_integer_leaves_at_least_three": true,
       "all_larger_savings_rejected": true,
+      "all_positive_leaf_counts_rejected": true,
       "intercept_interval": [
         "-2387010674050001077/331141978521600000",
         "-4774021348099800407/662283957043200000"
       ],
       "saving_rejected": "8/3125",
+      "short_caller_linear_margins": {
+        "1": -112,
+        "2": -16
+      },
       "slope_interval": [
         "-593132702156541649/5298271656345600000",
         "-593132698134742867/5298271656345600000"
@@ -145,8 +151,8 @@
   },
   "proof_sha256": {
     "COMMUTING.md": "d4329ca042cd80527a086fbd6b4644f67660145adfc72196c0a8744bf4d40017",
-    "COST.md": "076e0f322209c64ab91870e282f251d07ecaae282b536f0f993ba36576fae457",
-    "PROOF.md": "f909adc46fb9df2955430da2ce1f29caf78b4cb668e8eda0361fa5d6dd800095"
+    "COST.md": "2ed1d2e4f0db0e3c694e6fce24e614a0dd0fd222279eefc66a8535b3479642a8",
+    "PROOF.md": "35a9b9dd0418a502e6dcf758920108a5c75f08b7fcb38de36a53f9bbc7df9642"
   },
   "scope": "Paired full star stages over characteristic two; arbitrary thin maps",
   "status": "PASS_CHRONOLOGICAL_CONNECTOR_RANK_BOUND"

@@ -4,6 +4,7 @@
 cannot have the full endpoint under the paired-star contract. Its thin rank
 must be at least 28, rather than ten. The new proof also excludes the earlier
 127-leaf, ten-rank-one target, whose thin rank must be at least 88.
+Even arbitrarily fine nonzero stage splits at d=4 need thin rank at least 20.
 
 The main result is a linear information bound for every finite dimension and
 every characteristic-two field. If b is the extra row dimension in the thin
@@ -21,6 +22,7 @@ Those static witnesses remain valid. Chronology prevents their completion.
 concave tangent proves that every paired-star caller with one or two coupled
 ports loses at saving **.00256**, for every integer leaf count g>=3. This is
 a uniform ceiling below selected .00310045, not a bounded parameter search.
+The g=1 and g=2 profiles already lose every concave moment.
 The invoice marks all unconstructed physical obligations as unknown.
 
 A larger coupling is still possible under this test. At 31 leaves, five

@@ -67,6 +67,8 @@ def run():
     bound31 = profile(source, 31, 14)
     bound127 = profile(source, 127, 88)
     complete31 = profile(source, 31, 64)
+    short_margins = {g: sum(r*c for r, c in profile(source, g, 4).items()) for g in (1, 2)}
+    require(short_margins == {1: -112, 2: -16}, 'short caller linear losses')
     require(sum(r*c for r, c in complete31.items()) == -3472, 'complete word linear loss')
     require(min(r for r, c in complete31.items() if c > 0) >= 8, 'positive rank floor')
     require(max(r for r, c in complete31.items() if c < 0) <= 7, 'negative rank ceiling')
@@ -87,6 +89,7 @@ def run():
     return {'net_rank_mass_per_full_call': 1720,
             'requested_31_leaf': {'ports': 2, 'requested_thin_rank': 10,
                                   'minimum_thin_rank': 28,
+                                  'minimum_with_arbitrary_nonzero_stage_splits': 20,
                                   'minimum_H1_calls_at_104_ports': 1456,
                                   'optimistic_signed_profile': bound31},
             'old_127_leaf': {'ports': 1, 'requested_thin_rank': 10,
@@ -97,6 +100,8 @@ def run():
                 'slope_interval': [str(x) for x in slope],
                 'intercept_interval': [str(x) for x in intercept],
                 'all_integer_leaves_at_least_three': True,
+                'short_caller_linear_margins': short_margins,
+                'all_positive_leaf_counts_rejected': True,
                 'all_larger_savings_rejected': True},
             'complete_binary_word31': {'full_calls': 62, 'thin_maps': 16,
                                        'rank_per_thin_map': 8, 'binary_blocks': 52,
