@@ -25,6 +25,8 @@ with prepared(mode) as (root, baseline, stage):
         runpy.run_path(sys.argv[0], run_name='__main__')
     else:
         sys.path.insert(0, str(stage))
+        import fractions
+        print(json.dumps(dict(runtime_fraction_source_sha256=sha256(Path(fractions.__file__).read_bytes()).hexdigest(),python=sys.version,scope='rational-source-pin-diagnostic'),sort_keys=True))
         from finite_probe import main
         main(stage / 'package', micro=False)
         import arithmetic_binding as binding
@@ -36,6 +38,18 @@ with prepared(mode) as (root, baseline, stage):
             require(binding.bind() is None and not binding.fresh(token), 'destructor drift rejects')
         finally:
             del F.__del__
-        print('PASS_ADDED_DESTRUCTOR_BINDING_CONTROL')
+        # A populated expected-code cache must not admit an unknown file.
+        import fractions, tempfile
+        saved=fractions.__file__
+        with tempfile.TemporaryDirectory(prefix='unknown-fraction-source-') as temp:
+            foreign=Path(temp)/'fractions.py'
+            foreign.write_bytes(Path(saved).read_bytes()+b'\n# unapproved source revision\n')
+            fractions.__file__=str(foreign)
+            try:
+                require(binding.bind() is None, 'unknown Fraction source rejects after cache populated')
+            finally:
+                fractions.__file__=saved
+        require(binding.bind() is not None, 'known Fraction source binding restored')
+        print('PASS_ADDED_DESTRUCTOR_AND_UNKNOWN_SOURCE_BINDING_CONTROLS')
 print('PASS_C_VERIFICATION_SCOPED_FINITE ' + mode)
 

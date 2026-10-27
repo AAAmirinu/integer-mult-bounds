@@ -16,6 +16,9 @@ from types import CodeType, FunctionType, BuiltinFunctionType
 import slot_binding
 
 SOURCE_SHA256='cf33568f7b767f66896995a7a81cc662e8be226f2e58efb61d2028f64eb5d231'
+# Explicitly reviewed CPython source revisions; all live operation guards remain.
+SUPPORTED_RUNTIME_SOURCES={(3,12,3):frozenset((SOURCE_SHA256,)),
+    (3,12,15):frozenset(('d52d1ab9d5be26924e4914a5e40069c992bbfa68f773694c2e5ee8452d0766a0',))}
 DIRECT=('_add','_sub','_mul','__abs__','__bool__','__new__')
 WRAPPED=(('__add__','_add','add','forward'),('__radd__','_add','add','reverse'),
          ('__sub__','_sub','sub','forward'),('__rsub__','_sub','sub','reverse'),
@@ -31,10 +34,10 @@ def _shape(code):
 
 def _codes():
     global _expected
-    if _expected is not None:return _expected
     path=Path(fractions.__file__)
     raw=path.read_bytes()
-    if path.is_symlink() or sha256(raw).hexdigest()!=SOURCE_SHA256:raise ValueError('pinned Fraction source')
+    if path.is_symlink() or sha256(raw).hexdigest() not in SUPPORTED_RUNTIME_SOURCES.get(sys.version_info[:3],()):raise ValueError('pinned Fraction source')
+    if _expected is not None:return _expected
     compiled=compile(raw,str(path),'exec',optimize=sys.flags.optimize)
     result={}
     def visit(code):

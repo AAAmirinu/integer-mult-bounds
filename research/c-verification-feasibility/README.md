@@ -92,7 +92,7 @@ supports odd denominators. Exact Fraction output types do not make its changed
 arithmetic an untouched literal Python Fraction oracle.
 
 The bounded probe passed 178 literal/predecessor/candidate comparisons and 19
-added controls. The final binder also rejects destructor drift; its exact final
+added controls. The final binder also rejects destructor and unknown-source drift; its exact final
 bytes pass finite normal and optimized replay. The earlier binder and every
 declared BCCB micro observation are retained. The micro excludes cold build
 and has no complete-performance or source-independent oracle admission.
@@ -142,6 +142,18 @@ portable extraction overhead. Its fresh times are separate from the retained
 six-process screen. It refuses evidence reuse and retains the 180-second /
 1-GiB sampled process-group RSS / serial / zero-automatic-retry policy. Do not
 reroll the failed retained timing round.
+
+## Hosted runtime correction
+
+The first hosted replay rejected CPython 3.12.15 at the strict full-file
+Fraction source hash, after the baseline and integer normal/optimized checks
+passed. The failure is retained. An explicit second reviewed source hash admits
+the official 3.12.15 file; its only source difference is in `Fraction.__pow__`,
+outside the bypassed score operations. Exact live operation, closure, defaults,
+MRO and descriptor checks remain. Unknown source bytes reject even after the
+expected-code cache is populated. This compatibility correction changes no
+measured integer source, C kernel, timing sample or failed performance gate.
+See [the retained correction](evidence/publication/CI-PORTABILITY-CORRECTION.json).
 
 ## Credit
 
