@@ -4440,3 +4440,108 @@ Source archives retain attribution; mathematical review remains open.
 - **Ali Romman (@aliromman)** — [#5745](https://github.com/CrocSwap/integer-mult-bounds/pull/5745): Prove sharp 8H8 active-mode delivery cost with temporal reuse (source archive).
 - **Ali Romman (@aliromman)** — [#5746](https://github.com/CrocSwap/integer-mult-bounds/pull/5746): Certify common-base invoice order over every power exponent (reviewed tooling).
 - **Ali Romman (@aliromman)** — [#5747](https://github.com/CrocSwap/integer-mult-bounds/pull/5747): Exclude the 31-leaf target with a chronological connector rank bound (source archive).
+
+## Queue intake, 27 October 2026 (chunk A)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **Ali Romman (@aliromman)** — [#5749](https://github.com/CrocSwap/integer-mult-bounds/pull/5749): Register all contributor regression tests in shared research CI (reviewed tooling).
+- **Sricharan Vagvala (@theon199)** — [#5750](https://github.com/CrocSwap/integer-mult-bounds/pull/5750): Simplify the accepted P104 word by 974 scalar primitives per call (source archive).
+- **Ali Romman (@aliromman)** — [#5751](https://github.com/CrocSwap/integer-mult-bounds/pull/5751): Conditional κ 0.00311301600 (+2.77030e-6 over #5718): paid intermediate meetings (source archive).
+- **Ali Romman (@aliromman)** — [#5753](https://github.com/CrocSwap/integer-mult-bounds/pull/5753): Certify arbitrary-rank invoice order across exponent ranges (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5754](https://github.com/CrocSwap/integer-mult-bounds/pull/5754): Substitute recursive jobs with matched-target and fee accounting (reviewed tooling).
+- **flyingviper (@flyingviper)** — [#5755](https://github.com/CrocSwap/integer-mult-bounds/pull/5755): Rule out fixed rank-one active repair with a 101-channel bound (source archive).
+- **Joel Pulikkan (@GamingPuzzled)** — [#5756](https://github.com/CrocSwap/integer-mult-bounds/pull/5756): Conditional κ .00311313795 (+1.219e-7 over #5751): the #5739 block move on the paid-meeting word (historical source archive).
+- **Ali Romman (@aliromman)** — [#5757](https://github.com/CrocSwap/integer-mult-bounds/pull/5757): research: speed up the complete selected P104 replay by 2.73x (source archive).
+- **Ali Romman (@aliromman)** — [#5759](https://github.com/CrocSwap/integer-mult-bounds/pull/5759): Select compatible invoice edits with an exhaustive optimum certificate (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5760](https://github.com/CrocSwap/integer-mult-bounds/pull/5760): Construct and independently replay concave rank-transfer plans (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5761](https://github.com/CrocSwap/integer-mult-bounds/pull/5761): test: preserve legacy routing coverage after priority revision 8 (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5762](https://github.com/CrocSwap/integer-mult-bounds/pull/5762): Compute exact two-fee tradeoff regions for concave invoice gains (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5763](https://github.com/CrocSwap/integer-mult-bounds/pull/5763): Allocate optimal weighted helper pools with independent replay certificates (reviewed tooling).
+- **zxv (@zxv)** — [#5765](https://github.com/CrocSwap/integer-mult-bounds/pull/5765): P104 #5718 cache delivery cannot save the tested centre charges (source archive).
+- **zxv (@zxv)** — [#5766](https://github.com/CrocSwap/integer-mult-bounds/pull/5766): P104 #5718 helper680 split cannot be repaired at the three tested meetings (source archive).
+- **Ali Romman (@aliromman)** — [#5767](https://github.com/CrocSwap/integer-mult-bounds/pull/5767): Replay exact LP bounds, infeasibility witnesses and improving rays (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5768](https://github.com/CrocSwap/integer-mult-bounds/pull/5768): Certify best-invoice regions across common-base power costs (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5769](https://github.com/CrocSwap/integer-mult-bounds/pull/5769): Optimize complete target partitions with explicit piece fees (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5770](https://github.com/CrocSwap/integer-mult-bounds/pull/5770): Assemble complete invoices with source identity and coverage checks (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5771](https://github.com/CrocSwap/integer-mult-bounds/pull/5771): research: independently audit all 23 paid-meeting helper cuts (source archive).
+- **Ali Romman (@aliromman)** — [#5772](https://github.com/CrocSwap/integer-mult-bounds/pull/5772): Classify every canonical P104 block chart and audit PR5756 (source archive).
+- **Ali Romman (@aliromman)** — [#5774](https://github.com/CrocSwap/integer-mult-bounds/pull/5774): Raise conditional κ to 0.00312192127 with retained native copies (source archive).
+- **Ali Romman (@aliromman)** — [#5775](https://github.com/CrocSwap/integer-mult-bounds/pull/5775): Prove the complete fixed P104 R22 compiler tail envelope (source archive).
+- **Ali Romman (@aliromman)** — [#5778](https://github.com/CrocSwap/integer-mult-bounds/pull/5778): Prune invoice search pools with exact retained dominance witnesses (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5779](https://github.com/CrocSwap/integer-mult-bounds/pull/5779): Prove sharp all-Clifford helper-detour bounds and correction budgets (source archive).
+- **Ali Romman (@aliromman)** — [#5780](https://github.com/CrocSwap/integer-mult-bounds/pull/5780): Construct optimal reversible scratch schedules with replay certificates (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5781](https://github.com/CrocSwap/integer-mult-bounds/pull/5781): Construct minimum-cost compatible assignments with Hall and dual certificates (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5782](https://github.com/CrocSwap/integer-mult-bounds/pull/5782): Audit G20 native maps for all admissible addresses (source archive).
+- **Ali Romman (@aliromman)** — [#5783](https://github.com/CrocSwap/integer-mult-bounds/pull/5783): Certify global optima for submodular binary frame cost tables (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5785](https://github.com/CrocSwap/integer-mult-bounds/pull/5785): Construct exact contraction and obstruction certificates for coupled recurrences (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5786](https://github.com/CrocSwap/integer-mult-bounds/pull/5786): Raise conditional κ to 0.00312265044 with asynchronous helper hubs (source archive).
+- **Richard Hoekstra (@RichardHoekstra)** — [#5787](https://github.com/CrocSwap/integer-mult-bounds/pull/5787): Reduce PR5413 carrier height at fixed κ and certify size-saving tradeoffs (source archive).
+- **Ali Romman (@aliromman)** — [#5788](https://github.com/CrocSwap/integer-mult-bounds/pull/5788): Certify all-exponent order for general-rank recursive invoices (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5789](https://github.com/CrocSwap/integer-mult-bounds/pull/5789): Export exact rational rank and complete kernel certificates (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5791](https://github.com/CrocSwap/integer-mult-bounds/pull/5791): Construct minimum-cost binary query bases with exchange certificates (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5792](https://github.com/CrocSwap/integer-mult-bounds/pull/5792): Construct exact optima and dual bounds for bounded parameter models (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5793](https://github.com/CrocSwap/integer-mult-bounds/pull/5793): Synthesize optimal weighted reversible binary words with full endpoint replay (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5794](https://github.com/CrocSwap/integer-mult-bounds/pull/5794): Construct minimum-precision dyadic parameters with complete exclusion proofs (reviewed tooling).
+- **Ali Romman (@aliromman)** — [#5795](https://github.com/CrocSwap/integer-mult-bounds/pull/5795): Conditional κ = 0.00312289583377 (+0.00000024539377 over #5786) (source archive).
+- **Ali Romman (@aliromman)** — [#5796](https://github.com/CrocSwap/integer-mult-bounds/pull/5796): Conditional κ = 0.00311325989 (+1.2194e-7 over #5756): second rank-four block (source archive).
+- **Ali Romman (@aliromman)** — [#5797](https://github.com/CrocSwap/integer-mult-bounds/pull/5797): Add measured low-compression replay for the complete G20 candidate (source archive).
+- **Ali Romman (@aliromman)** — [#5798](https://github.com/CrocSwap/integer-mult-bounds/pull/5798): Audit the complete G20 caller and exact port interfaces (source archive).
+- **ToikY (@ToikY)** — [#5799](https://github.com/CrocSwap/integer-mult-bounds/pull/5799): test: cover sparse receipts and resolver errors through the picker CLI (reviewed tooling).
+- **ToikY (@ToikY)** — [#5800](https://github.com/CrocSwap/integer-mult-bounds/pull/5800): Independently verify the first asynchronous helper hub on 791 inputs (source archive).
+- **ToikY (@ToikY)** — [#5801](https://github.com/CrocSwap/integer-mult-bounds/pull/5801): Construct dyadic words for all 111 G20 port normalizers (source archive).
+- **Ali Romman (@aliromman)** — [#5802](https://github.com/CrocSwap/integer-mult-bounds/pull/5802): Raise conditional κ to 0.00312336057 with accumulated native updates (source archive).
+- **David Ganz (@Dugongue)** — [#5803](https://github.com/CrocSwap/integer-mult-bounds/pull/5803): Add a mathematical atlas of shared queries, helper hubs and compiler routes (source archive).
+- **ToikY (@ToikY)** — [#5805](https://github.com/CrocSwap/integer-mult-bounds/pull/5805): Bind all 7,548 G20 route markers to conditional ROW cover words (source archive).
+- **David Ganz (@Dugongue)** — [#5806](https://github.com/CrocSwap/integer-mult-bounds/pull/5806): Conditional kappa >= 0.0031234 by composing shared updates and helper hubs (source archive).
+- **Ali Romman (@aliromman)** — [#5807](https://github.com/CrocSwap/integer-mult-bounds/pull/5807): Construct a shorter G20 word: 245 fewer ADDs per call with exact endpoints (source archive).
+- **Ali Romman (@aliromman)** — [#5808](https://github.com/CrocSwap/integer-mult-bounds/pull/5808): Exclude arbitrary mixed-rank active repair below rank eight (source archive).
+- **Ali Romman (@aliromman)** — [#5809](https://github.com/CrocSwap/integer-mult-bounds/pull/5809): Audit all three P104 accumulation traces and complete invoices (source archive).
+- **ToikY (@ToikY)** — [#5810](https://github.com/CrocSwap/integer-mult-bounds/pull/5810): Bound the fixed unpooled R437 moment contract against the current BIT budget (source archive).
+- **Mason Hale (@mason-hale)** — [#5811](https://github.com/CrocSwap/integer-mult-bounds/pull/5811): Raise conditional κ to 0.00312418633064 with a fourth accumulated update (source archive).
+- **Ali Romman (@aliromman)** — [#5812](https://github.com/CrocSwap/integer-mult-bounds/pull/5812): Conditional κ = 0.00312360607355 (+0.00000024550355 over #5802) (source archive).
+- **David Ganz (@Dugongue)** — [#5813](https://github.com/CrocSwap/integer-mult-bounds/pull/5813): Construct Gaussian spectral and precision compilers from the ETH preprint (source archive).
+- **Mason Hale (@mason-hale)** — [#5814](https://github.com/CrocSwap/integer-mult-bounds/pull/5814): Bridge signed-query suspension and return on 23 fixed tapes (source archive).
+- **David Ganz (@Dugongue)** — [#5815](https://github.com/CrocSwap/integer-mult-bounds/pull/5815): Construct exact Gaussian corrections with pruned and mixed precision circuits (source archive).
+- **Chris R (@Clear1nsight)** — [#5816](https://github.com/CrocSwap/integer-mult-bounds/pull/5816): Validate complete PR #5757 replay on Linux: 2.60x faster with full coverage (source archive).
+- **jacobalansussman (@jacobalansussman)** — [#5817](https://github.com/CrocSwap/integer-mult-bounds/pull/5817): Research: if the reported ETH disproof holds, no κ record moves; Alman–Li's depth-2 WHT barrier survives on OVC; what falls, what survives and what might open up (no new κ) (source archive).
+- **Chris R (@Clear1nsight)** — [#5818](https://github.com/CrocSwap/integer-mult-bounds/pull/5818): Share complete P104 qualification: 33.7% less time, both literal oracles (source archive).
+- **Ali Romman (@aliromman)** — [#5819](https://github.com/CrocSwap/integer-mult-bounds/pull/5819): Certify sharp P104 prefix norms and completed-error guards (source archive).
+- **Ali Romman (@aliromman)** — [#5820](https://github.com/CrocSwap/integer-mult-bounds/pull/5820): Cut G20 port route words by 73% with exact sparse bases (source archive).
+- **Ali Romman (@aliromman)** — [#5821](https://github.com/CrocSwap/integer-mult-bounds/pull/5821): Execute Gaussian Smith circuits and prove sharp precision requirements (source archive).
+- **Ali Romman (@aliromman)** — [#5822](https://github.com/CrocSwap/integer-mult-bounds/pull/5822): Materialize P104 in 12 private slots while preserving every native query (source archive).
+- **Ali Romman (@aliromman)** — [#5823](https://github.com/CrocSwap/integer-mult-bounds/pull/5823): Prove the sharp all-rank floor for immutable mode delivery (source archive).
+- **Ali Romman (@aliromman)** — [#5824](https://github.com/CrocSwap/integer-mult-bounds/pull/5824): Construct globally optimal private dyadic gauges for the complete P104 word (source archive).
+- **Ali Romman (@aliromman)** — [#5825](https://github.com/CrocSwap/integer-mult-bounds/pull/5825): Execute pruned Gaussian corrections and bound the standalone Newton-W route (source archive).
+- **Ali Romman (@aliromman)** — [#5826](https://github.com/CrocSwap/integer-mult-bounds/pull/5826): Certify current P104 precision with additive COPY and reset residuals (source archive).
+- **Ali Romman (@aliromman)** — [#5827](https://github.com/CrocSwap/integer-mult-bounds/pull/5827): Conditional κ = 0.00312476680 (+5.8046936e-7 over #5811): unread path (source archive).
+- **Ali Romman (@aliromman)** — [#5828](https://github.com/CrocSwap/integer-mult-bounds/pull/5828): Remove 1350 G20 ADDs through exact dependency-trace resynthesis (source archive).
+- **Ali Romman (@aliromman)** — [#5829](https://github.com/CrocSwap/integer-mult-bounds/pull/5829): Bind delayed-cover batches to recursive allocation and return (source archive).
+- **Ali Romman (@aliromman)** — [#5830](https://github.com/CrocSwap/integer-mult-bounds/pull/5830): Save 438012 P104 scalar primitives with a complete optimal gauge construction (source archive).
+- **Ali Romman (@aliromman)** — [#5831](https://github.com/CrocSwap/integer-mult-bounds/pull/5831): Speed up complete P104 precision replay with proved exact integer arithmetic (source archive).
+- **Chris R (@Clear1nsight)** — [#5832](https://github.com/CrocSwap/integer-mult-bounds/pull/5832): Reuse literal gate setup: 25.9% less qualification time, full coverage (source archive).
+- **Ali Romman (@aliromman)** — [#5833](https://github.com/CrocSwap/integer-mult-bounds/pull/5833): Construct P104 at the sharp amplification floor and optimal original-budget peak (source archive).
+- **Ali Romman (@aliromman)** — [#5834](https://github.com/CrocSwap/integer-mult-bounds/pull/5834): Install the shorter G20 word in all 18 physical calls with fresh source records (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5835](https://github.com/CrocSwap/integer-mult-bounds/pull/5835): Record the corrected frame ranks of the PR5827 early read. (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5836](https://github.com/CrocSwap/integer-mult-bounds/pull/5836): Record the port-0 G20 unit-scale tariff gap. (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5837](https://github.com/CrocSwap/integer-mult-bounds/pull/5837): Prove the selected #5599 scalar instructions lift at every column mul… (source archive).
+- **Ali Romman (@aliromman)** — [#5838](https://github.com/CrocSwap/integer-mult-bounds/pull/5838): Prove the sharp 20-bit completed-error guard and gauge-invariant obstruction (source archive).
+- **Chris R (@Clear1nsight)** — [#5839](https://github.com/CrocSwap/integer-mult-bounds/pull/5839): Validate PR5831 on Linux: 4.40x complete precision replay, full coverage (source archive).
+- **Ali Romman (@aliromman)** — [#5840](https://github.com/CrocSwap/integer-mult-bounds/pull/5840): Halve G20 boundary work with equal-target bases and a complete physical caller (source archive).
+- **Ali Romman (@aliromman)** — [#5841](https://github.com/CrocSwap/integer-mult-bounds/pull/5841): Lower all sparse G20 routes with exact whole-word q-adic carries (source archive).
+- **Ali Romman (@aliromman)** — [#5842](https://github.com/CrocSwap/integer-mult-bounds/pull/5842): Complete original-owner execution of the full runtime affine shear (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5843](https://github.com/CrocSwap/integer-mult-bounds/pull/5843): Prove identity scratch does not unlock full monomial two-FULL routing. (source archive).
+- **unpaidmoon (@unpaidmoon)** — [#5844](https://github.com/CrocSwap/integer-mult-bounds/pull/5844): Record that the fixed #5719 causal certificate does not cover #5718. (source archive).
+- **Nicholas Stone (@NicholasStone)** — [#5845](https://github.com/CrocSwap/integer-mult-bounds/pull/5845): Prove nine-channel delivery floor for monotone tariffs (source archive).
+- **Ali Romman (@aliromman)** — [#5846](https://github.com/CrocSwap/integer-mult-bounds/pull/5846): Complete all G20 rational shear leaves with paid literal coefficient preparation (source archive).
+- **Ali Romman (@aliromman)** — [#5847](https://github.com/CrocSwap/integer-mult-bounds/pull/5847): Prove fixed P104 joint restrictions fail two complete moment gates (source archive).
+- **Chris R (@Clear1nsight)** — [#5848](https://github.com/CrocSwap/integer-mult-bounds/pull/5848): Qualify precision once per backend: 36% less time, full coverage (source archive).
+- **Ali Romman (@aliromman)** — [#5849](https://github.com/CrocSwap/integer-mult-bounds/pull/5849): Complete runtime G20 quarter-carry rotation with tight physical bounds (source archive).
+- **Sricharan Vagvala (@theon199)** — [#5850](https://github.com/CrocSwap/integer-mult-bounds/pull/5850): [negative result] Certify the GL2 floor for three G20 boundary exchanges (source archive).
+- **Sricharan Vagvala (@theon199)** — [#5851](https://github.com/CrocSwap/integer-mult-bounds/pull/5851): Prove a six-ADD floor for isolated G20 bank exchanges under general binary bases (source archive).
+- **Chris R (@Clear1nsight)** — [#5852](https://github.com/CrocSwap/integer-mult-bounds/pull/5852): Archive Fraction contribution-table feasibility and negative complete-cost screen (source archive).
+- **Chris R (@Clear1nsight)** — [#5853](https://github.com/CrocSwap/integer-mult-bounds/pull/5853): Archive scoped negative Fraction zero/unit feasibility for PR5848 (source archive).
+- **Nick Petalas (@petalas)** — [#5854](https://github.com/CrocSwap/integer-mult-bounds/pull/5854): Prove split determinants do not ensure radical reachability (no κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5855](https://github.com/CrocSwap/integer-mult-bounds/pull/5855): Prove binary deficiency-two spectral completion (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5856](https://github.com/CrocSwap/integer-mult-bounds/pull/5856): Prove a sharp asymmetric UT3 tariff gap: 54 versus 53 (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5857](https://github.com/CrocSwap/integer-mult-bounds/pull/5857): Cut rank-two clean compilation from 16 to 10 CNOTs (no κ) (source archive).

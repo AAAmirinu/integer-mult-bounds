@@ -44,6 +44,10 @@ with its own initial input. Retain borrowed fields and cleanup outputs. If the
 reference also expands exponentially, give `reference` as another instruction
 list instead of `target`. Exactly one is required.
 
+For a complete binary linear map on at most four roles, the
+[weighted word synthesizer](binary-linear-synthesis.md) constructs a cheapest
+word in a declared XOR/SWAP alphabet and checks every arbitrary input.
+
 ## Produce and check
 
 ```sh
@@ -64,6 +68,10 @@ Use `--invertible` on the producer for unipotent counterexamples. Use `--matrice
 on the checker to print sparse operators, input payload and discrepancy.
 These disprove the **independent-operator** identity. Symbols named `G` and
 `G_inverse` acquire no inverse relation.
+
+For a scalar rational interface matrix, use the
+[rank and kernel certificate tool](rational-rank-certificates.md) to export
+independent coordinates and complete linear relations before circuit synthesis.
 
 ## Scope of the bridge
 

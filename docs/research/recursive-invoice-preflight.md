@@ -1,5 +1,8 @@
 # Compare the complete recursive invoice before extending a construction
 
+For explicit equal-mass paid concentration or target refinement, use the
+[rank-transfer planner and replay checker](recursive-rank-transfers.md).
+
 The same local edit can save scalar instructions while worsening its recursive
 bill. Conversely, owning a helper can remove paid work while also surrendering
 a productive target. Compare **both** paid jobs and target credits first:
@@ -13,6 +16,13 @@ For an `inconclusive` result, use the separate
 exponent. It can certify a strict sign or report an interval that still contains
 zero. It does not turn a local invoice gain into a complete κ claim.
 
+For a certificate over the whole interval `0<t<1`, use the
+[general-rank root-budget tool](recursive-power-variation.md). It combines a
+proved root-count bound with exact endpoint roots and rational brackets. It
+reports `inconclusive` if roots remain unaccounted for; a grid alone is not a
+uniform-order certificate. The common-base Sturm tool remains the complete
+polynomial classifier when all uncancelled ranks share one integer base.
+
 This standard-library tool uses integer arithmetic, without a root search or
 contribution replay. It reports an exact certificate for every increasing
 concave rank tariff with f(0)=0, including r^(1-C), 0<C<1. The method is classical
@@ -23,6 +33,10 @@ The concurrent [source-bound pricing oracle #5391](https://github.com/CrocSwap/i
 checks compatibility of reviewed physical, invoice, closure and funding receipts.
 This comparator is an earlier arithmetic screen, not a replacement for that
 evidence join or its trusted policies.
+
+For a source model with submodular binary choices, the
+[exact binary-cost optimizer](binary-cost-optimization.md) constructs a global
+minimum and checks it with a flow/cut certificate.
 
 ## Input and meaning
 
@@ -143,6 +157,9 @@ the unfiltered retiming's algebra; it is not a newly emitted physical supplier.
 
 ## Inspect a tariff witness
 
+For a bounded menu of smaller targets and explicit piece fees, use the
+[target-partition optimizer](target-partition-optimization.md).
+
 To show exact old and new costs for the strongest positive and negative hinges:
 
 ```sh
@@ -159,6 +176,9 @@ concave tariff. This does not imply a power crossing: their power-cost differenc
 is `(2^t-1)^2`, which is positive for every `0<t<1`.
 
 ## Certificate and bounds
+
+Use the [exact two-fee region](recursive-fee-region.md) to price route and
+restoration patterns together under the concave-order test.
 
 Set d_r=Δpaid_r-Δtargets_r. The report gives K(k)=Σ d_r min(r,k) at every support
 breakpoint. Between breakpoints K is linear. If all K are nonnegative, every
@@ -178,3 +198,6 @@ For a difference whose uncancelled ranks are powers of one integer, the
 [polynomial comparison](power-polynomial-comparison.md) classifies the power
 cost on the whole open interval `0 < t < 1`. It distinguishes strict order,
 interior equality and actual crossings without a numerical exponent grid.
+
+For a finite search pool, use the [certified invoice frontier](invoice-search-frontier.md)
+to remove dominated bills and retain all incomparable candidates.

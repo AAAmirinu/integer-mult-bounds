@@ -13,6 +13,9 @@ must match. Paid jobs and target credits use the existing invoice schema. The
 report binds the input bytes by SHA256 and gives rational lower and upper bounds
 for `(new paid-new targets)-(old paid-old targets)`.
 
+To choose compatible changes under shared resource limits at this exponent,
+use the [exact edit selector](recursive-edit-selection.md).
+
 A negative upper bound proves `new_cost_lower` at this exponent. A positive lower
 bound proves `new_cost_higher`. Exact zero gives `equal`. All other intervals give
 `unresolved`; this does not mean equality or failure of the candidate. Increase
@@ -59,3 +62,7 @@ with the source construction. Credit the existing signed-invoice comparator,
 mightyOil's T16 moment-order audit and their retained predecessors for the invoice
 interface and accounting context. Prepared for aliromman with OpenAI Codex
 assistance. Apache-2.0.
+
+For arbitrary ranks over a closed exponent range, use the
+[interval cover and crossing checker](recursive-interval-comparison.md).
+It retains unresolved cells and can certify unique crossings.

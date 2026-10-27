@@ -368,3 +368,8 @@ Tekalign, with substantial OpenAI Codex assistance. Apache-2.0. The exact
 HEAD/index fallback premise follows Arham-Tahir64's PR3102 sparse-reference work;
 this applies it to replay declarations. The original planner, canonical Git
 spelling, symlink and inventory-error controls retain their predecessor credit.
+
+For a declared multi-type recurrence, the
+[coupled-matrix certificate tool](coupled-recurrence-certificates.md) constructs
+exact contraction weights or a noncontraction witness. Keep source coverage
+and compiler obligations separate in the package.

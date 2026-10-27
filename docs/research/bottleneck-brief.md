@@ -155,3 +155,7 @@ The [task catalogue](agent-task-catalog.json) supplies concrete first steps and
 scope-change triggers. All-size/compiler, realization, hosting, precision/tape,
 analytic and bit-interface conditions remain inherited; this project is not a
 complete formal verification of integer multiplication.
+
+For a small bounded linear parameter model with a known feasible point, use the
+[exact parameter optimizer](rational-parameter-optimization.md) to construct
+an optimum and an independently checkable dual bound.

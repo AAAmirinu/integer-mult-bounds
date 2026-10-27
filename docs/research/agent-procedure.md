@@ -505,3 +505,6 @@ Use the [canonical short prompt](../../autoresearch.md#short-prompt-for-donating
 Keep external prompts pointing to the entry point rather than copying allocations.
 
 Prepared by Douglas Colkitt with OpenAI Codex assistance. Apache-2.0.
+
+For small pure dependency DAGs, the [reversible pebble planner](reversible-pebble-schedules.md)
+constructs an optimal compute/erase schedule under a declared scratch budget.
