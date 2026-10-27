@@ -68,7 +68,7 @@ Codex assistance. No subagents. Apache-2.0.
 
 The [canonical investigation](https://github.com/CrocSwap/integer-mult-bounds/discussions/5125#discussioncomment-19154639)
 records the exact source, region and hypotheses. The October 27 snapshot
-through 02:39 UTC covers 370 open PRs and 5225 Discussion records, with
+through 03:15 UTC covers 376 open PRs and 5236 Discussion records, with
 complete pagination. Sparse local notes and unpublished work remain outside
 that coverage. The role695 interval is separate from the released role92
 step and the active mixed-payload, helper-retirement and variable-caller
