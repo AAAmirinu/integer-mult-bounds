@@ -43,6 +43,14 @@ python3 -B research/p104-integer-linux-validation/benchmark.py remaining --workd
 
 The first pair must preserve the complete scientific receipt and save at least 15% wall and CPU before the remaining four original-order runs are allowed. Existing run directories are never overwritten; every sample is kept. These commands measure complete baseline/candidate production replays, with identical outer authentication/extraction charged to both arms. They do not time the extra full-reference qualification as the fast path. The Linux development round's qualification and all six samples share the same cumulative guard; reproduction's standalone qualification and new benchmark directory have separately stated costs.
 
+## Mode and export qualification
+
+Full normal, optimized and read-only Git-free isolated optimized qualification pass in **60.47 / 63.86 / 60.26 seconds**. The scientific receipts agree exactly; raw output retains its varying runtime field. The sealed implementation `48479b602545f27e9a35742938be2d5f2bd8459e` runs with `-I -O -B`, empty PATH and an explicit authenticated import root; all **53 exported files** stay unchanged.
+
+One relative-path launcher invocation failed before target entry. Its zero-output exit-2 receipt and exact diagnosis are retained. The absolute-path correction is separately labelled, manually justified and uses unchanged source/expected records/limits; it is not an automatic retry, scientific repair or discarded timing sample. Nine full scientific commands pass; the additional pre-target launch failure is charged. All ten local attempts total **289.30 seconds**, below 900 seconds cumulative. Qualification and export costs are outside the fast-path speed claim.
+
+Public receipts remove only local absolute script paths; the one failed stderr replaces the local workspace prefix, retaining original receipt/stderr hashes and public redaction details. Scientific stdout is unfiltered. Final committed bytes/modes, immediate input ancestry, official export/input integrity and hosted CI are reported separately; later additions change evidence/reporting only.
+
 ## Source and overlap scope
 
 Canonical main is `de5ec2e7a6074068452f45b1a191b5c72832df4a`, priority revision 8. The donor assigned Linux validation directly; the task card is refined accordingly. [The source claim](https://github.com/CrocSwap/integer-mult-bounds/pull/5831#issuecomment-6433618407) precedes execution. Targeted PR/body and source-comment checks found no competing Linux follow-up. The author's [released handoff](https://github.com/CrocSwap/integer-mult-bounds/discussions/2750#discussioncomment-19209571) explicitly requests Linux reproduction; the neighbouring rounded-gauge transport claim is a different word and scope. Coverage is bounded and does not establish exhaustive novelty or unpublished-work availability.
