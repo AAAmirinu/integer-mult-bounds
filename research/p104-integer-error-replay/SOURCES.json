@@ -23,7 +23,8 @@
         "format": "official research-package export"
       },
       "git_blob": "8f17461fcdbef4bc896bd45f2481ac3bad758d0d",
-      "sha256": "f8252a90dc504ce8a77d781e558691fe8d21014b0f3f720d8dfd5274b5e8aadc"
+      "sha256": "f8252a90dc504ce8a77d781e558691fe8d21014b0f3f720d8dfd5274b5e8aadc",
+      "pin": "head:55394bd623bc9db68ac5d49999481185ba9b82dd:research/p104-integer-error-replay/inputs/source.tar"
     },
     {
       "path": "research/p104-noisy-copy-reset/SOURCES.json",
