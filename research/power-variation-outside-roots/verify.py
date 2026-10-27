@@ -21,6 +21,12 @@ import outside_roots as O
 sys.path.pop(0)
 V = O.V
 
+
+def check(condition, message):
+    """Fail closed under -O as well; assert statements would be stripped."""
+    if not condition:
+        raise SystemExit('FAIL ' + repr(message))
+
 BASES = (2, 3, 5)
 THRESHOLDS = tuple(Q(x) for x in ('1/3', '1/2', '3/4', '1', '4/3', '3/2', '2', '5/2',
                                   '3', '4', '9/2', '5', '7', '9', '25'))
@@ -62,7 +68,7 @@ def truth(factors):
                 not (k[0] == 'int')}
     # Interior membership is exact: 0 < log(theta)/log(a) < 1 iff 1 < theta < a.
     for k in interior:
-        assert 1 < k[2] < k[1]
+        check(1 < k[2] < k[1], '1 < k[2] < k[1]')
     return interior, located, sign_half, ambiguous
 
 
@@ -113,7 +119,7 @@ def census(classify):
         except ValueError:
             stats['budget_errors'] += 1
             continue
-        assert consistent(old, combo), ('predecessor certificate disagrees', combo)
+        check(consistent(old, combo), ('predecessor certificate disagrees', combo))
         stats['false'] += not consistent(new, combo)
         stats['old_certified'] += old['classification'] != 'inconclusive'
         stats['new_certified'] += new['classification'] != 'inconclusive'
@@ -157,16 +163,16 @@ def main():
             ({1: 4, 2: -8, 3: -1, 6: 2}, 'uniformly_lower', [{'exact': '-1'}, {'left': '1', 'right': '2'}]),
             ({1: 15, 2: -20, 3: -3, 6: 4}, 'uniformly_lower',
              [{'left': '-1', 'right': '0'}, {'left': '1', 'right': '2'}])]:
-        assert V.classify(delta)['classification'] == 'inconclusive'
+        check(V.classify(delta)['classification'] == 'inconclusive', "V.classify(delta)['classification'] == 'inconclusive'")
         report = O.classify(delta)
-        assert report['classification'] == expected and report['outside_witnesses'] == outside, report
-        assert report['unspent_root_budget'] == 0
+        check(report['classification'] == expected and report['outside_witnesses'] == outside, report)
+        check(report['unspent_root_budget'] == 0, "report['unspent_root_budget'] == 0")
     print('PASS_MOTIVATING_FIXTURES 2 predecessor-inconclusive -> uniformly_lower')
 
     stats = census(O.classify)
     print('census', stats)
-    assert stats['false'] == stats['budget_errors'] == stats['regressions'] == stats['ambiguous'] == 0
-    assert stats['newly_settled'] > 0
+    check(stats['false'] == stats['budget_errors'] == stats['regressions'] == stats['ambiguous'] == 0, "stats['false'] == stats['budget_errors'] == stats['regressions'] == stats['ambiguous'] == 0")
+    check(stats['newly_settled'] > 0, "stats['newly_settled'] > 0")
     print('PASS_FACTORED_ORACLE_CENSUS')
 
     original = O.outside_witnesses
@@ -176,7 +182,7 @@ def main():
             O.outside_witnesses = mutant(**options)
             bad = census(O.classify)
             failures = {k: bad[k] for k in ('false', 'budget_errors', 'regressions')}
-            assert sum(failures.values()) > 0, (name, bad)
+            check(sum(failures.values()) > 0, (name, bad))
             print('PASS_CONTROL_REJECTED', name, failures)
     finally:
         O.outside_witnesses = original

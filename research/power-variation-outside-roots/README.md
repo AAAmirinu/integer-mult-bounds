@@ -113,7 +113,10 @@ python3.12 -B scripts/research_package.py --package research/power-variation-out
 python3.12 -B scripts/check_research_commit.py --package research/power-variation-outside-roots --check-source-history
 ```
 
-Expected final line: `PASS_POWER_VARIATION_OUTSIDE_ROOTS`.
+Expected final line: `PASS_POWER_VARIATION_OUTSIDE_ROOTS`. The verifier
+fails closed without `assert`, so an isolated optimized run
+(`python3.12 -I -O -B research/power-variation-outside-roots/verify.py`)
+checks the same conditions.
 
 ## Scope and limits
 
