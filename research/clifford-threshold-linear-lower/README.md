@@ -97,7 +97,7 @@ PROOF text on main. A search with no hit does not prove novelty.
 
 ## Credit
 
-Prepared by Nick Petalas. MatShep posed the question in #5675 and proved the
+This contribution was produced by Nick Petalas. MatShep posed the question in #5675 and proved the
 n = 1, 2 thresholds (#5549, #5675). Ali Romman proved the 4n+4 upper bound
 (#5526), the native grammar and Fourier framework (#5369, #5529) and the
 cuspidal residual (#5635). Joseph Anglada (#5542) introduced the coset method.
