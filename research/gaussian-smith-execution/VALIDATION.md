@@ -11,3 +11,11 @@ The all-size proof is informal. Native matchers and physical/tape execution,
 recursive supplier admission, all five framework assumptions and independent
 acceptance remain open. No measured speedup or new kappa is claimed. Full-history
 preflight is not run in this shallow checkout. Publication checks follow below.
+
+Normal and optimized registered checks pass at scientific commit
+ ae0c03037d74610771f3694b153bd4eee23f67f9. Metadata, committed bytes/modes and
+19-file official export checks pass. A read-only Git-free optimized replay
+with empty PATH passes in1.64seconds and preserves all20 files, including the
+manifest. Final publication changes only this record. No hosted scientific
+replay is claimed. Canonical main and priority8 remain unchanged at submission;
+new PR5820 concerns G20 route bases, a separate scope.
