@@ -15,3 +15,14 @@ bound. Physical routes, native admission, full bit tariffs and all five framewor
 assumptions remain open. No hosted scientific or independent human acceptance is
 claimed. Full-history preflight is not run in the shallow checkout. Publication
 evidence follows below.
+
+Scientific commit5db23fa5ec1c3ea28245c8e574d0483ccc857874 passes normal and
+optimized registered replay, metadata, committed bytes/modes and the official
+19-file export. The read-only Git-free optimized replay with empty PATH passes
+in1.27seconds and preserves all20 files including the manifest. Its complete
+endpoint/cost stream hash is
+7d7593c3e6ae9d7c994f0c8eefa1fe8d494e883bdd91a9edea9f77e13f0ba341.
+Final publication changes only this validation record. Current main remains
+de5ec2e7a6074068452f45b1a191b5c72832df4a, priority8. New PRs5822-5824 concern
+private slots, fixed-mode delivery and private gauges; no competing spectral
+execution scope was found in the bounded live check.
