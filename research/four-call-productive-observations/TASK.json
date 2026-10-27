@@ -105,7 +105,7 @@
       "both final output rows"
     ],
     "limitation": "Metadata and README searches do not cover every diff or unpublished work.",
-    "precommit_refresh_utc": "2026-10-27T16:21:00Z",
+    "precommit_refresh_utc": "2026-10-27T16:20:26.099078+00:00",
     "precommit_upstream_commit": "19fdb086ea96af9a9f87936a2b888e10af4ed810"
   }
 }
