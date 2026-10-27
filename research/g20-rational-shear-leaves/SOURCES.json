@@ -3,13 +3,6 @@
   "base_commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
   "files": [
     {
-      "path": "research/inplace-runtime-affine/inputs/machine.py",
-      "usage": "provenance",
-      "git_blob": "6ed03865cdb646d40573c132f841afbe335daba0",
-      "sha256": "04b7b76b9f06653d94d2158196cdd1bed7883dd1f59fcbc81a486e3ffb248681",
-      "pin": "head:0f6cc294f64b19dedb05b76577b624dbce7b2cbc:research/inplace-runtime-affine/inputs/machine.py"
-    },
-    {
       "path": "research/g20-rational-shear-leaves/inputs/machine.py",
       "usage": "input",
       "git_blob": "6ed03865cdb646d40573c132f841afbe335daba0",
@@ -19,13 +12,6 @@
         "path": "research/inplace-runtime-affine/inputs/machine.py"
       },
       "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/machine.py"
-    },
-    {
-      "path": "research/inplace-runtime-affine/inputs/counters.py",
-      "usage": "provenance",
-      "git_blob": "c4878a7a7e3f390d193df496a579e4a788f25e32",
-      "sha256": "2b51181a3efd403be14111ed2d556ba10e63a8939756e69d488d12344d5a7ad1",
-      "pin": "head:0f6cc294f64b19dedb05b76577b624dbce7b2cbc:research/inplace-runtime-affine/inputs/counters.py"
     },
     {
       "path": "research/g20-rational-shear-leaves/inputs/counters.py",
@@ -39,13 +25,6 @@
       "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/counters.py"
     },
     {
-      "path": "research/inplace-runtime-affine/inputs/shear.py",
-      "usage": "provenance",
-      "git_blob": "b814b6f77b03f12577464df91be6c4f103d1722c",
-      "sha256": "84d60e552bb35657b3c5e63b4ab21846a90d71dfd22c8a46cd01acba76475818",
-      "pin": "head:0f6cc294f64b19dedb05b76577b624dbce7b2cbc:research/inplace-runtime-affine/inputs/shear.py"
-    },
-    {
       "path": "research/g20-rational-shear-leaves/inputs/shear.py",
       "usage": "input",
       "git_blob": "b814b6f77b03f12577464df91be6c4f103d1722c",
@@ -55,13 +34,6 @@
         "path": "research/inplace-runtime-affine/inputs/shear.py"
       },
       "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/shear.py"
-    },
-    {
-      "path": "research/inplace-runtime-affine/inputs/independent.py",
-      "usage": "provenance",
-      "git_blob": "0d93b49039465369e79075c0ad93a3d389aa7678",
-      "sha256": "82ba16fae207f2141f986c7cc5788771b6a372a34b90cab67260bc4c7effc500",
-      "pin": "head:0f6cc294f64b19dedb05b76577b624dbce7b2cbc:research/inplace-runtime-affine/inputs/independent.py"
     },
     {
       "path": "research/g20-rational-shear-leaves/inputs/independent.py",
@@ -75,13 +47,6 @@
       "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/independent.py"
     },
     {
-      "path": "research/inplace-runtime-affine/kernel.py",
-      "usage": "provenance",
-      "git_blob": "89888115c5a6539378e84391a3bea4a6317b3a07",
-      "sha256": "28c606e94ee24f081f5c8139a6ba91401a1f9a9a7c72d08cf30c49c271e3fefb",
-      "pin": "head:0f6cc294f64b19dedb05b76577b624dbce7b2cbc:research/inplace-runtime-affine/kernel.py"
-    },
-    {
       "path": "research/g20-rational-shear-leaves/inputs/affine.py",
       "usage": "input",
       "git_blob": "89888115c5a6539378e84391a3bea4a6317b3a07",
@@ -91,13 +56,6 @@
         "path": "research/inplace-runtime-affine/kernel.py"
       },
       "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/affine.py"
-    },
-    {
-      "path": "research/inplace-runtime-affine/PROOF.md",
-      "usage": "provenance",
-      "git_blob": "c98eb6995b4a78e2e10b7b68d0f21b6b5bc644b0",
-      "sha256": "343fd7fb310f0d6cd32f36c44acfc432b99f4d7236456d9f26b198bbadcbeea2",
-      "pin": "head:0f6cc294f64b19dedb05b76577b624dbce7b2cbc:research/inplace-runtime-affine/PROOF.md"
     },
     {
       "path": "research/g20-rational-shear-leaves/inputs/owner-PROOF.md",
@@ -179,13 +137,6 @@
       "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/descriptor-README.md"
     },
     {
-      "path": "research/g20-sparse-port-construction/RESULT.json",
-      "usage": "provenance",
-      "git_blob": "70714bffd9459abaa12effe68bdbef3674b95e45",
-      "sha256": "44511d9c7da1c88e265f32ba5d77559b92edb6ca1430180231e84727d939d318",
-      "pin": "head:04b5db84b4b02bdc17e1c6287dfcf8b9c04199d4:research/g20-sparse-port-construction/RESULT.json"
-    },
-    {
       "path": "research/g20-rational-shear-leaves/inputs/route-RESULT.json",
       "usage": "input",
       "git_blob": "70714bffd9459abaa12effe68bdbef3674b95e45",
@@ -224,6 +175,85 @@
         "path": "research/fixed-tape-affine-shear/PROOF.md"
       },
       "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/affine-PROOF.md"
+    }
+  ],
+  "retained_predecessors": [
+    {
+      "path": "research/inplace-runtime-affine/inputs/machine.py",
+      "usage": "provenance",
+      "git_blob": "6ed03865cdb646d40573c132f841afbe335daba0",
+      "sha256": "04b7b76b9f06653d94d2158196cdd1bed7883dd1f59fcbc81a486e3ffb248681",
+      "pin": "head:0f6cc294f64b19dedb05b76577b624dbce7b2cbc:research/inplace-runtime-affine/inputs/machine.py",
+      "retained_source": {
+        "path": "research/g20-rational-shear-leaves/inputs/machine.py",
+        "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/machine.py"
+      }
+    },
+    {
+      "path": "research/inplace-runtime-affine/inputs/counters.py",
+      "usage": "provenance",
+      "git_blob": "c4878a7a7e3f390d193df496a579e4a788f25e32",
+      "sha256": "2b51181a3efd403be14111ed2d556ba10e63a8939756e69d488d12344d5a7ad1",
+      "pin": "head:0f6cc294f64b19dedb05b76577b624dbce7b2cbc:research/inplace-runtime-affine/inputs/counters.py",
+      "retained_source": {
+        "path": "research/g20-rational-shear-leaves/inputs/counters.py",
+        "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/counters.py"
+      }
+    },
+    {
+      "path": "research/inplace-runtime-affine/inputs/shear.py",
+      "usage": "provenance",
+      "git_blob": "b814b6f77b03f12577464df91be6c4f103d1722c",
+      "sha256": "84d60e552bb35657b3c5e63b4ab21846a90d71dfd22c8a46cd01acba76475818",
+      "pin": "head:0f6cc294f64b19dedb05b76577b624dbce7b2cbc:research/inplace-runtime-affine/inputs/shear.py",
+      "retained_source": {
+        "path": "research/g20-rational-shear-leaves/inputs/shear.py",
+        "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/shear.py"
+      }
+    },
+    {
+      "path": "research/inplace-runtime-affine/inputs/independent.py",
+      "usage": "provenance",
+      "git_blob": "0d93b49039465369e79075c0ad93a3d389aa7678",
+      "sha256": "82ba16fae207f2141f986c7cc5788771b6a372a34b90cab67260bc4c7effc500",
+      "pin": "head:0f6cc294f64b19dedb05b76577b624dbce7b2cbc:research/inplace-runtime-affine/inputs/independent.py",
+      "retained_source": {
+        "path": "research/g20-rational-shear-leaves/inputs/independent.py",
+        "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/independent.py"
+      }
+    },
+    {
+      "path": "research/inplace-runtime-affine/kernel.py",
+      "usage": "provenance",
+      "git_blob": "89888115c5a6539378e84391a3bea4a6317b3a07",
+      "sha256": "28c606e94ee24f081f5c8139a6ba91401a1f9a9a7c72d08cf30c49c271e3fefb",
+      "pin": "head:0f6cc294f64b19dedb05b76577b624dbce7b2cbc:research/inplace-runtime-affine/kernel.py",
+      "retained_source": {
+        "path": "research/g20-rational-shear-leaves/inputs/affine.py",
+        "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/affine.py"
+      }
+    },
+    {
+      "path": "research/inplace-runtime-affine/PROOF.md",
+      "usage": "provenance",
+      "git_blob": "c98eb6995b4a78e2e10b7b68d0f21b6b5bc644b0",
+      "sha256": "343fd7fb310f0d6cd32f36c44acfc432b99f4d7236456d9f26b198bbadcbeea2",
+      "pin": "head:0f6cc294f64b19dedb05b76577b624dbce7b2cbc:research/inplace-runtime-affine/PROOF.md",
+      "retained_source": {
+        "path": "research/g20-rational-shear-leaves/inputs/owner-PROOF.md",
+        "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/owner-PROOF.md"
+      }
+    },
+    {
+      "path": "research/g20-sparse-port-construction/RESULT.json",
+      "usage": "provenance",
+      "git_blob": "70714bffd9459abaa12effe68bdbef3674b95e45",
+      "sha256": "44511d9c7da1c88e265f32ba5d77559b92edb6ca1430180231e84727d939d318",
+      "pin": "head:04b5db84b4b02bdc17e1c6287dfcf8b9c04199d4:research/g20-sparse-port-construction/RESULT.json",
+      "retained_source": {
+        "path": "research/g20-rational-shear-leaves/inputs/route-RESULT.json",
+        "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/route-RESULT.json"
+      }
     }
   ]
 }
