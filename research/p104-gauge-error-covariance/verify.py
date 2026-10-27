@@ -105,6 +105,18 @@ def calculate():
         if max(case['final'][:base['public']])>=1:break
     need(len(causal_cases)>=2 and max(causal_cases[-2]['final'][:base['public']])<1,'least accepted causal guard bracket')
     causal_guard=causal_cases[-2]['guard']
+    adversary=load('actual_adversary',P/'adversary.py');adversary_certificate=json.loads((P/'ADVERSARY.json').read_text())
+    failures=[adversary.replay(physical,sites,adversary_certificate,causal,t) for t in (0,32)]
+    need(all(case['scaled_error']>F(179,100) for case in failures),'displayed sharp-contract failure')
+    family_certificate=json.loads((P/'FAMILY-ADVERSARY.json').read_text());family_sites={i for i,e in enumerate(base['program']) if e[0] in ('MOVE','ADD')}
+    family=[]
+    for extra in (0,32):
+        case,defects=adversary.replay(base,family_sites,family_certificate,causal,extra,True);family.append(case)
+        values,transport_checks=adversary.transported(physical,records,g,family_certificate['initial'],defects,19+extra)
+        ideal_final=tr.execute(base,dict(enumerate(family_certificate['initial'])),{},len(base['program']))
+        need(values[family_certificate['target']]-ideal_final[family_certificate['target']]==case['error'],'literal family witness transport')
+        need(case['scaled_error']>F(170,100),'invariant family floor')
+        case['transported_nonzero_defects']=transport_checks
     need(peakp+causal_cases[-2]['peak']<2**17,'actual field norm plus causal error headroom')
     need(max(causal_cases[-2]['final'][:base['public']])<F(978,1000) and causal_cases[-2]['peak']<27,'displayed exact causal bounds')
     toy_checks=0
@@ -149,6 +161,7 @@ def calculate():
         timeline_sha256=sha256(canonical(records)).hexdigest(),normalized=normalized,ordinary=ordinary,
         weighted_guards=weighted_guards,ordinary_guards=ordinary_guards,
         causal_final_guard=causal_guard,causal_cases=causal_cases,causal_exact_oracle_checks=toy_checks,
+        admissible_19_bit_counterexamples=failures,family_19_bit_counterexamples=family,
         source_scalar_allowance=bill['real_scalar_allowance'],source_exponent_optimum=optimum,
         ideal_peak_for_bounds=dict(normalized=peakn,physical=peakp),rejected_controls=controls,
         limits=['Exact COPY, INIT and CLEAR are premises of this contract.','Completed native maps and gauges are unitary premises.','No norm/cost optimum or new gauge word is claimed.','No physical rounded child or full compiler admission.']))

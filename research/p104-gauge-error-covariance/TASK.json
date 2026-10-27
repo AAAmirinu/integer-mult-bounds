@@ -68,7 +68,7 @@
   "budget_minutes": 90,
   "stop_rule": "Complete the source timeline, covariance, signed transfer, exact causal guard and controls; retain physical implementation premises.",
   "outcome": "completed",
-  "evidence": "PROOF.md and RESULT.json; complete signed forward/transpose coefficients, source invoice,20-bit causal certificate,8 controls and36 independent rational examples.",
+  "evidence": "PROOF.md and RESULT.json; complete signed forward/transpose coefficients, source invoice,20-bit causal certificate,8 controls and36 independent rational examples. Actual admissible 19-bit traces prove the sharp contract guard; MOVE/ADD-only traces give a gauge-invariant family obstruction.",
   "author": "Ali Romman with substantial OpenAI Codex assistance",
   "ai_assistance": "Substantial OpenAI Codex assistance in proof, source review, code and exact checks. No subagents.",
   "open_questions": [

@@ -1,4 +1,30 @@
 {
+  "admissible_19_bit_counterexamples": [
+    {
+      "actual_allowances_checked": 26271,
+      "allowed_output_error": "1",
+      "error": "9314688416211765837242510068463185/5192296858534827628530496329220096",
+      "extra_bits": 0,
+      "guard": 19,
+      "nonzero_defects": 3407,
+      "over_budget_control": true,
+      "scaled_error": "9314688416211765837242510068463185/5192296858534827628530496329220096",
+      "target": 205,
+      "trace_sha256": "a661db695ef8e6390c67580cecb8793a6f1038cc03048179186c9593ec4a39f3"
+    },
+    {
+      "actual_allowances_checked": 26271,
+      "allowed_output_error": "1/4294967296",
+      "error": "1084266208246948815010877/2596148429267413814265248164610048",
+      "extra_bits": 32,
+      "guard": 19,
+      "nonzero_defects": 3349,
+      "over_budget_control": true,
+      "scaled_error": "1084266208246948815010877/604462909807314587353088",
+      "target": 205,
+      "trace_sha256": "88cf425d43e88d0a3f9d5ae361580e5b6eb35d4fa7aa476d64861c7bb5112b4d"
+    }
+  ],
   "causal_cases": [
     {
       "coefficient_scale_bits": 55,
@@ -2395,6 +2421,34 @@
     "omitted_physical_scales": 395
   },
   "defect_sites": 26271,
+  "family_19_bit_counterexamples": [
+    {
+      "actual_allowances_checked": 25142,
+      "allowed_output_error": "1",
+      "error": "1108352978852559678047801783617321/649037107316853453566312041152512",
+      "extra_bits": 0,
+      "guard": 19,
+      "nonzero_defects": 3319,
+      "over_budget_control": true,
+      "scaled_error": "1108352978852559678047801783617321/649037107316853453566312041152512",
+      "target": 205,
+      "trace_sha256": "064fb9d657a17f18d2ef97474862f5c7bb8b01bf598e8fe0b9f1d8b3740abb8e",
+      "transported_nonzero_defects": 3319
+    },
+    {
+      "actual_allowances_checked": 25142,
+      "allowed_output_error": "1/4294967296",
+      "error": "1032135997725019941623613/2596148429267413814265248164610048",
+      "extra_bits": 32,
+      "guard": 19,
+      "nonzero_defects": 3269,
+      "over_budget_control": true,
+      "scaled_error": "1032135997725019941623613/604462909807314587353088",
+      "target": 205,
+      "trace_sha256": "5c135fac6f1712a49a15d231a2fae5b300fd53a2018565457ec4c8ef1b9d69f0",
+      "transported_nonzero_defects": 3269
+    }
+  ],
   "ideal_peak_for_bounds": {
     "normalized": "131072",
     "physical": "65537"

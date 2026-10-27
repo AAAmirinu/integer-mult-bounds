@@ -135,3 +135,45 @@ construction owner. This package does not optimize or emit another gauge word.
 The physical reset/COPY implementation, native unitary and completed-child
 contracts, final compiler execution, fixed tapes and analytic recovery remain
 unadmitted. All five project assumptions keep their status. No new kappa follows.
+
+## Sharp contract guard and a representation-invariant obstruction
+
+`ADVERSARY.json` gives unit-bounded scalar initial fields. For target205, a
+separate reverse row gives each completed defect's final response coefficient.
+A literal forward run chooses its sign to agree with that coefficient and its
+magnitude by rounding the actual permitted local budget down to a2^-96 grid.
+Each scalar state lifts to a field vector by choosing one common decoded unit
+vector and applying its current unitary frame. MOVE transports that vector;
+ADD combines fields in the same frame. Thus the scalar trace is permitted by
+the stated frame contract, including arbitrary-input initialization.
+Every step checks the allowance on the actual perturbed inputs. The final error
+also equals the separate adjoint sum. At19 guard bits the final error exceeds
+1.79B for t=0, and1.79B*2^-32 for t=32. These are admissible traces, not just
+failures of an upper-bound calculation. An over-budget defect is rejected.
+
+Together with the20-bit causal theorem, the t=0 counterexample proves that20
+is the least integer guard which guarantees the stated final error for all
+t>=0 and every allowed defect trace of this exact completed-operation contract.
+Any smaller guard allows the same19-bit trace. This is not a lower bound for a
+particular hardware rounding rule, whose errors may obey stronger correlations.
+
+There is a stronger obstruction to a pure representation search.
+`FAMILY-ADVERSARY.json` uses defects only after source MOVE and ADD events.
+Every SCALE, COPY, INIT and CLEAR is exact in this trace. Its final error exceeds
+1.70B at19 guard bits, and1.70B*2^-32 with32 additional bits. Each defect uses
+its actual input budget and passes the independent adjoint sum.
+
+For any nonzero signed scalar gauge constant on each field, multiply each such
+source defect by the gauge at its destination. The local covariance identity
+preserves its relative allowance on the actual perturbed inputs. Set defects
+on every boundary conversion and other SCALE to zero. Those are permitted
+choices. Retain all native and ADD sites, and retain the exact normalized
+transition when a physical unit SCALE is omitted. Induction preserves the
+complete state relation, and unit public exit gauges give the same final error.
+Thus this19-bit obstruction holds for every such representation of the same
+source word, regardless of the scalar cost or ideal peak norm. It excludes a
+better worst-case guard by pure gauges within this precise contract; it does
+not exclude changed words, exact ADD/native implementations or stronger
+rounding correlations. The verifier also transports both family traces
+literally through the actual PR5830 word and checks every nonzero physical
+defect allowance and final error.

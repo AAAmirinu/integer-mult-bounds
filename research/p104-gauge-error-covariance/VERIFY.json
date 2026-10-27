@@ -20,7 +20,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 240,
-      "checks": "Complete source timeline/invoice/endpoint, gauge covariance, all signed error coefficients and transpose, strict20-bit causal guard,8 controls and36 exact oracle cases"
+      "checks": "Complete source timeline/invoice/endpoint, gauge covariance, all signed error coefficients and transpose, strict20-bit causal guard,8 controls and36 exact oracle cases; admissible 19-bit counterexamples and family witness transport at t=0,32"
     }
   ]
 }

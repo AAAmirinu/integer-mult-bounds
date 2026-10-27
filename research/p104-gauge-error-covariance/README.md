@@ -1,6 +1,6 @@
 # Rounded-error admission for the complete P104 gauge word
 
-The exact PR5830 public/private gauge word has a **20-bit sufficient final-output
+The exact PR5830 public/private gauge word has a **sharp 20-bit final-output
 guard** under the stated completed-operation relative-error contract. A finite
 causal calculation gives final error below0.978B at u=2^-20 and intermediate
 error below27B. With t additional bits, final error is below B*2^-t for all t>=0.
@@ -11,8 +11,13 @@ A direct uniform calculation gives25 guard bits for all prefixes and21 for
 final public fields. The normalized gauge calculation gives26 and23. The new
 causal bound retains signed cancellation and accounts for actual prior defects
 at each site. It needs no global stability denominator. Its96-bit upward grid
-is exact checker arithmetic, not a physical precision assumption. The adjacent
-19-bit upper bound fails; that is not a physical precision lower bound.
+is exact checker arithmetic, not a physical precision assumption. An admissible actual-input defect trace at 19 bits gives final error above
+1.79B. Thus 20 is the least integer guard for this worst-case contract. A second
+trace uses only native MOVE and ADD defects and gives error above 1.70B. Its
+allowances and final error survive every field-constant signed scalar gauge of
+the same word. Pure representation changes cannot remove this obstruction.
+This is not a lower bound for a hardware rounding rule with stronger error
+correlations. Both traces also pass with 32 extra bits and their scaled targets.
 
 The covariance theorem explains how each homogeneous local allowance transforms
 under a signed scalar gauge. The reference timeline retains all384 entry and399
@@ -24,7 +29,8 @@ The checker binds the source graph/word, full local invoice, frames and ownershi
 replays all782 arbitrary input columns; compares every normalized prefix score,
 all final signed error coefficients and witnesses; checks a separate physical
 transpose; and executes an attaining normalized-defect fixture. Eight rejection
-controls and36 independent exact rational causal-oracle checks pass. Exact
+controls, over-budget defect controls, literal transport of both family witnesses,
+and 36 independent exact rational causal-oracle checks pass. Exact
 coefficients, source pins, guard certificates and limits are in `RESULT.json`.
 
 Run `python3 -B scripts/research_package.py --package research/p104-gauge-error-covariance`.
