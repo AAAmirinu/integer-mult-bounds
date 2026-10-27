@@ -29,7 +29,8 @@
         "path": "research/p104-complete-dyadic-gauges/inputs/WORD.json.gz"
       },
       "git_blob": "fa442d0050d2ed5e586df5ed5e9d5bf72f74d7d3",
-      "sha256": "23aa1c77d72c10ff292f872489158a820b7ed66fc5802af2baa1abdffb6e8c6c"
+      "sha256": "23aa1c77d72c10ff292f872489158a820b7ed66fc5802af2baa1abdffb6e8c6c",
+      "pin": "head:c22f5514be75fb683480318b40d46f84afc8e313:research/p104-gauge-error-covariance/inputs/base-WORD.json.gz"
     },
     {
       "path": "research/p104-complete-dyadic-gauges/WORD.json.gz",
@@ -46,7 +47,8 @@
         "path": "research/p104-complete-dyadic-gauges/WORD.json.gz"
       },
       "git_blob": "3b04755eef3733505d2a81b477215936dcb9564e",
-      "sha256": "6a7467851c2a3bc8aee3a7018bcf15290848f040484cfbff5a97ca0773207e0a"
+      "sha256": "6a7467851c2a3bc8aee3a7018bcf15290848f040484cfbff5a97ca0773207e0a",
+      "pin": "head:c22f5514be75fb683480318b40d46f84afc8e313:research/p104-gauge-error-covariance/inputs/WORD.json.gz"
     },
     {
       "path": "research/p104-complete-dyadic-gauges/CERTIFICATE.json",
@@ -63,7 +65,8 @@
         "path": "research/p104-complete-dyadic-gauges/CERTIFICATE.json"
       },
       "git_blob": "350960fbf237325a5956d47e905814fbeee2b794",
-      "sha256": "5b239afd346fc127c52765e233f449b2a0dddb22288a81641f396cd99d3b2760"
+      "sha256": "5b239afd346fc127c52765e233f449b2a0dddb22288a81641f396cd99d3b2760",
+      "pin": "head:c22f5514be75fb683480318b40d46f84afc8e313:research/p104-gauge-error-covariance/inputs/GAUGES.json"
     },
     {
       "path": "research/p104-complete-dyadic-gauges/RESULT.json",
@@ -80,7 +83,8 @@
         "path": "research/p104-complete-dyadic-gauges/RESULT.json"
       },
       "git_blob": "413d113ec21fd78305ae0535e1d67eb1c369750c",
-      "sha256": "dbbc2403cfa431452d05e0b39eb834a73762b52b73acb8b9f999ee0458fae667"
+      "sha256": "dbbc2403cfa431452d05e0b39eb834a73762b52b73acb8b9f999ee0458fae667",
+      "pin": "head:c22f5514be75fb683480318b40d46f84afc8e313:research/p104-gauge-error-covariance/inputs/source-RESULT.json"
     },
     {
       "path": "research/p104-complete-dyadic-gauges/construct.py",
@@ -97,7 +101,8 @@
         "path": "research/p104-complete-dyadic-gauges/construct.py"
       },
       "git_blob": "9f94a5b268bf2d182784726f045fae5cedd536d4",
-      "sha256": "e87c26723cd472fd3fb8ffe339646a04b5efbeff6756777131be108d12553de4"
+      "sha256": "e87c26723cd472fd3fb8ffe339646a04b5efbeff6756777131be108d12553de4",
+      "pin": "head:c22f5514be75fb683480318b40d46f84afc8e313:research/p104-gauge-error-covariance/inputs/source-construct.py"
     },
     {
       "path": "research/p104-complete-dyadic-gauges/local.py",
@@ -114,7 +119,8 @@
         "path": "research/p104-complete-dyadic-gauges/local.py"
       },
       "git_blob": "ba16b494cd923e21c82ef1fd1ceb0d5912fc005c",
-      "sha256": "7144e5f57d2171cc25a06e20932e7a5eba38392c1caba5cf6684feea4592c760"
+      "sha256": "7144e5f57d2171cc25a06e20932e7a5eba38392c1caba5cf6684feea4592c760",
+      "pin": "head:c22f5514be75fb683480318b40d46f84afc8e313:research/p104-gauge-error-covariance/inputs/source-local.py"
     },
     {
       "path": "research/p104-complete-dyadic-gauges/inputs/NOTICE",
@@ -131,7 +137,8 @@
         "path": "research/p104-complete-dyadic-gauges/inputs/NOTICE"
       },
       "git_blob": "dc4d7e3e693a50c3224830719c3eedec73591bb3",
-      "sha256": "cbacb439cd7173827d16476f2b54af1b5092a883a6b5ef50c60a9faacbc15b39"
+      "sha256": "cbacb439cd7173827d16476f2b54af1b5092a883a6b5ef50c60a9faacbc15b39",
+      "pin": "head:c22f5514be75fb683480318b40d46f84afc8e313:research/p104-gauge-error-covariance/inputs/NOTICE"
     }
   ]
 }
