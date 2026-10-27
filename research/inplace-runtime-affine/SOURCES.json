@@ -16,7 +16,8 @@
       "origin": {
         "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
         "path": "research/fixed-tape-ordered-shear/machine.py"
-      }
+      },
+      "pin": "head:210fc8b51c490c399bc6ea1912081e2bbdb0d777:research/inplace-runtime-affine/inputs/machine.py"
     },
     {
       "path": "research/fixed-tape-ordered-shear/counters.py",
@@ -32,7 +33,8 @@
       "origin": {
         "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
         "path": "research/fixed-tape-ordered-shear/counters.py"
-      }
+      },
+      "pin": "head:210fc8b51c490c399bc6ea1912081e2bbdb0d777:research/inplace-runtime-affine/inputs/counters.py"
     },
     {
       "path": "research/fixed-tape-ordered-shear/shear.py",
@@ -48,7 +50,8 @@
       "origin": {
         "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
         "path": "research/fixed-tape-ordered-shear/shear.py"
-      }
+      },
+      "pin": "head:210fc8b51c490c399bc6ea1912081e2bbdb0d777:research/inplace-runtime-affine/inputs/shear.py"
     },
     {
       "path": "research/fixed-tape-affine-shear/kernel.py",
@@ -64,7 +67,8 @@
       "origin": {
         "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
         "path": "research/fixed-tape-affine-shear/kernel.py"
-      }
+      },
+      "pin": "head:210fc8b51c490c399bc6ea1912081e2bbdb0d777:research/inplace-runtime-affine/inputs/source-kernel.py"
     },
     {
       "path": "research/fixed-tape-affine-shear/independent.py",
@@ -80,7 +84,8 @@
       "origin": {
         "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
         "path": "research/fixed-tape-affine-shear/independent.py"
-      }
+      },
+      "pin": "head:210fc8b51c490c399bc6ea1912081e2bbdb0d777:research/inplace-runtime-affine/inputs/independent.py"
     },
     {
       "path": "research/fixed-tape-affine-shear/PROOF.md",
@@ -96,7 +101,8 @@
       "origin": {
         "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
         "path": "research/fixed-tape-affine-shear/PROOF.md"
-      }
+      },
+      "pin": "head:210fc8b51c490c399bc6ea1912081e2bbdb0d777:research/inplace-runtime-affine/inputs/source-PROOF.md"
     },
     {
       "path": "research/fixed-tape-affine-shear/README.md",
@@ -112,7 +118,8 @@
       "origin": {
         "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
         "path": "research/fixed-tape-affine-shear/README.md"
-      }
+      },
+      "pin": "head:210fc8b51c490c399bc6ea1912081e2bbdb0d777:research/inplace-runtime-affine/inputs/source-README.md"
     },
     {
       "path": "research/signed-dyadic-scaling/README.md",
@@ -128,7 +135,8 @@
       "origin": {
         "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
         "path": "research/signed-dyadic-scaling/README.md"
-      }
+      },
+      "pin": "head:210fc8b51c490c399bc6ea1912081e2bbdb0d777:research/inplace-runtime-affine/inputs/scaling-README.md"
     },
     {
       "path": "certificates/selected-result.json",
