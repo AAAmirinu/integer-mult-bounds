@@ -13,7 +13,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 240,
-      "checks": "All16 exact norm-price duals, sharp original-budget optimum, two complete legal words, actual prefix norms, all782 input axes and611524 reverse coefficients."
+      "checks": "All 16 exact norm-price duals, sharp original-budget optimum, two complete legal words, actual prefix norms, all 782 input axes and 611524 reverse coefficients."
     },
     {
       "argv": [
@@ -24,7 +24,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 240,
-      "checks": "All16 exact norm-price duals, sharp original-budget optimum, two complete legal words, actual prefix norms, all782 input axes and611524 reverse coefficients."
+      "checks": "All 16 exact norm-price duals, sharp original-budget optimum, two complete legal words, actual prefix norms, all 782 input axes and 611524 reverse coefficients."
     }
   ]
 }

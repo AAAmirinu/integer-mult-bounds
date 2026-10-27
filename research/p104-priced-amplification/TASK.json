@@ -59,13 +59,13 @@
   "scope_status": "changed",
   "actual_scope": "Construct exact P104 amplification-price optima, including a minimum-peak word and a sharp original-budget word.",
   "scope_change_reason": "The same-cost minimax screen had no gain. This source-bound construction prices the complete norm tradeoff with all boundary costs and legal coefficient lowering.",
-  "bottleneck_link": "The words reduce ideal amplification from131072 to96 at the original scalar budget, or to the unavoidable output floor2 inside the retained complete local allowance.",
+  "bottleneck_link": "The words reduce ideal amplification from 131072 to 96 at the original scalar budget, or to the unavoidable output floor 2 inside the retained complete local allowance.",
   "budget_minutes": 60,
-  "stop_rule": "Emit both complete words, verify16 exact dyadic-cap tariff certificates and close the strict-below96 budget gap.",
+  "stop_rule": "Emit both complete words, verify 16 exact dyadic-cap tariff certificates and close the strict-below 96 budget gap.",
   "outcome": "completed",
   "evidence": "BUDGET-WORD.json.gz, MINIMUM-WORD.json.gz, CERTIFICATES.json.gz and RESULT.json.",
   "author": "Ali Romman with OpenAI Codex assistance",
-  "ai_assistance": "Substantial OpenAI Codex assistance; no subagents. NetworkX3.5 generated exact candidates; standard-library dual and word checks prove the result.",
+  "ai_assistance": "Substantial OpenAI Codex assistance; no subagents. NetworkX 3.5 generated exact candidates; standard-library dual and word checks prove the result.",
   "open_questions": [
     {
       "question": "Which emitted word wins after actual rounded primitive costs are charged?",
