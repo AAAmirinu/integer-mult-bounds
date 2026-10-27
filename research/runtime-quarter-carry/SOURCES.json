@@ -17,7 +17,8 @@
       "origin": {
         "commit": "b3d315a02f03466bc7416b064a253e892cac65ea",
         "path": "research/g20-rational-shear-leaves/inputs/machine.py"
-      }
+      },
+      "pin": "head:55183e2ae456643915bec7d042980901f51ae961:research/runtime-quarter-carry/inputs/machine.py"
     },
     {
       "path": "research/g20-rational-shear-leaves/inputs/counters.py",
@@ -34,7 +35,8 @@
       "origin": {
         "commit": "b3d315a02f03466bc7416b064a253e892cac65ea",
         "path": "research/g20-rational-shear-leaves/inputs/counters.py"
-      }
+      },
+      "pin": "head:55183e2ae456643915bec7d042980901f51ae961:research/runtime-quarter-carry/inputs/counters.py"
     },
     {
       "path": "research/g20-rational-shear-leaves/inputs/shear.py",
@@ -51,7 +53,8 @@
       "origin": {
         "commit": "b3d315a02f03466bc7416b064a253e892cac65ea",
         "path": "research/g20-rational-shear-leaves/inputs/shear.py"
-      }
+      },
+      "pin": "head:55183e2ae456643915bec7d042980901f51ae961:research/runtime-quarter-carry/inputs/shear.py"
     },
     {
       "path": "research/g20-rational-shear-leaves/inputs/independent.py",
@@ -68,7 +71,8 @@
       "origin": {
         "commit": "b3d315a02f03466bc7416b064a253e892cac65ea",
         "path": "research/g20-rational-shear-leaves/inputs/independent.py"
-      }
+      },
+      "pin": "head:55183e2ae456643915bec7d042980901f51ae961:research/runtime-quarter-carry/inputs/independent.py"
     },
     {
       "path": "research/g20-rational-shear-leaves/inputs/route-RESULT.json",
@@ -85,7 +89,8 @@
       "origin": {
         "commit": "b3d315a02f03466bc7416b064a253e892cac65ea",
         "path": "research/g20-rational-shear-leaves/inputs/route-RESULT.json"
-      }
+      },
+      "pin": "head:55183e2ae456643915bec7d042980901f51ae961:research/runtime-quarter-carry/inputs/route-RESULT.json"
     },
     {
       "path": "research/g20-rational-shear-leaves/kernel.py",
@@ -102,7 +107,8 @@
       "origin": {
         "commit": "b3d315a02f03466bc7416b064a253e892cac65ea",
         "path": "research/g20-rational-shear-leaves/kernel.py"
-      }
+      },
+      "pin": "head:55183e2ae456643915bec7d042980901f51ae961:research/runtime-quarter-carry/inputs/descriptor.py"
     },
     {
       "path": "research/g20-rational-shear-leaves/offset.py",
@@ -119,7 +125,8 @@
       "origin": {
         "commit": "b3d315a02f03466bc7416b064a253e892cac65ea",
         "path": "research/g20-rational-shear-leaves/offset.py"
-      }
+      },
+      "pin": "head:55183e2ae456643915bec7d042980901f51ae961:research/runtime-quarter-carry/inputs/offset.py"
     },
     {
       "path": "research/g20-rational-shear-leaves/PROOF.md",
@@ -136,7 +143,8 @@
       "origin": {
         "commit": "b3d315a02f03466bc7416b064a253e892cac65ea",
         "path": "research/g20-rational-shear-leaves/PROOF.md"
-      }
+      },
+      "pin": "head:55183e2ae456643915bec7d042980901f51ae961:research/runtime-quarter-carry/inputs/descriptor-PROOF.md"
     },
     {
       "path": "research/g20-rational-shear-leaves/inputs/descriptor-README.md",
@@ -153,7 +161,8 @@
       "origin": {
         "commit": "b3d315a02f03466bc7416b064a253e892cac65ea",
         "path": "research/g20-rational-shear-leaves/inputs/descriptor-README.md"
-      }
+      },
+      "pin": "head:55183e2ae456643915bec7d042980901f51ae961:research/runtime-quarter-carry/inputs/prior-README.md"
     },
     {
       "path": "certificates/selected-result.json",
