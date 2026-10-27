@@ -51,3 +51,9 @@ JoyboyBrian and all retained G20/native/ROW authors in inputs/NOTICE.
 The new contribution is the complete G20 binding and whole-word carry fusion.
 Ali Romman with substantial OpenAI Codex assistance; no subagents. Apache-2.0.
 Independent scientific acceptance remains open.
+
+The source manifest pins replay inputs to copies in this publication history.
+Its `retained_predecessors` records keep each original head, path, blob and
+SHA256, plus its exact retained file or archive member. Each source was checked
+byte-for-byte before this rebind. This removes an unavailable side-commit
+dependency from clean CI; no source bytes or scientific checks are changed.
