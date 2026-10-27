@@ -21,13 +21,6 @@
       "sha256": "595f988e748b1f3b25e7525a226da173966e4278a70f511b2919245cec1b45f7"
     },
     {
-      "path": "research/active-mixed-rank-obstruction/responses.py",
-      "usage": "provenance",
-      "pin": "head:f7c198d38d5f68b0753dd0a51a2328e145b07638:research/active-mixed-rank-obstruction/responses.py",
-      "git_blob": "85e765abdde46265393695d74341a8be0db75382",
-      "sha256": "7513aa3a898c77be61a8e25e57915ef2a288ae814c6cd08dd2b373b3d9c7f860"
-    },
-    {
       "path": "research/active-all-rank-delivery/responses.py",
       "usage": "input",
       "git_blob": "85e765abdde46265393695d74341a8be0db75382",
@@ -37,6 +30,19 @@
         "path": "research/active-mixed-rank-obstruction/responses.py"
       },
       "pin": "head:43ec7684315883db2895b806c7875ad12952b5dc:research/active-all-rank-delivery/responses.py"
+    }
+  ],
+  "retained_predecessors": [
+    {
+      "path": "research/active-mixed-rank-obstruction/responses.py",
+      "usage": "provenance",
+      "pin": "head:f7c198d38d5f68b0753dd0a51a2328e145b07638:research/active-mixed-rank-obstruction/responses.py",
+      "git_blob": "85e765abdde46265393695d74341a8be0db75382",
+      "sha256": "7513aa3a898c77be61a8e25e57915ef2a288ae814c6cd08dd2b373b3d9c7f860",
+      "retained_source": {
+        "path": "research/active-all-rank-delivery/responses.py",
+        "pin": "head:43ec7684315883db2895b806c7875ad12952b5dc:research/active-all-rank-delivery/responses.py"
+      }
     }
   ]
 }

@@ -38,3 +38,9 @@ Test a moving chart, a changed payload dependency or a changed native word only 
 ## Credit
 
 Prepared by Ali Romman with substantial OpenAI Codex assistance; Apache-2.0. PR5808 supplies the unchanged response census and lower-rank certificates. Credit flyingviper / PR5755 for the restored-Y invariant and rank-one census, PR5745 for temporal delivery and eight-H8 attainment, PR5720 for the active-mode proposal, Cao Yifan, Cinna Davis, Dugongue and every author in the unchanged source archive. The new contributions are the coordinate-basis dual, the rank-nine replacement proof and the complete all-power floor. No predecessor construction credit is claimed.
+
+The source manifest pins replay inputs to copies in this publication history.
+Its `retained_predecessors` records keep each original head, path, blob and
+SHA256, plus its exact retained file or archive member. Each source was checked
+byte-for-byte before this rebind. This removes an unavailable side-commit
+dependency from clean CI; no source bytes or scientific checks are changed.
