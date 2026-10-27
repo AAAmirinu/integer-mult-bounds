@@ -96,10 +96,10 @@ identity and a stronger cross-cell conditioning contract. These are cited
 predecessor results, not new outputs. SOURCES.json pins their retained
 texts at main `19fdb086ea96af9a9f87936a2b888e10af4ed810`.
 
-The new construction changes the approximation polynomial, rather than
-extending a recent account result by changing only a group or target.
+The new construction changes the approximation polynomial while retaining
+the input matrix class and conditioning contract.
 The exact finite verifier is new and imports no predecessor implementation.
-Live open PRs, recent account work, handoff claims, main README searches and
+Live open PRs, handoff claims, main README searches and
 merged-PR searches were checked. Cached overlap has complete remote
 pagination but incomplete sparse local-note coverage. These bounded checks
 are not a novelty certificate.

@@ -115,8 +115,8 @@ The predecessor locality work, including Nick Petalas's #4217 and Mihir
 Srivastava's #4501, supplies the distinction between polynomial locality,
 section inverses and ordered nonnormal error identities. Their Neumann
 polynomials and finite examples are not audited or replayed here. The new
-polynomial changes the approximation method, rather than a group, target,
-or truncation constant in a recent account contribution.
+polynomial changes the approximation method while retaining the input matrix
+class and conditioning contract.
 
 ## Exact coefficient construction
 
