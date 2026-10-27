@@ -36,7 +36,9 @@ Move the source word's permutations to the end by relabeling each ADD. This
 keeps 14 ADDs and leaves a permutation on 32 banks. A cycle decomposition
 implements that permutation with the minimum number of transpositions;
 each transposition is expanded into three ADDs. The checker enumerates all
-65,536 pair orientations. The best normal form has 14 ADDs and eight swaps,
+65,536 pair orientations and checks every complete matrix. A separate census
+uses permutation cycle counts and matches the full cost histogram. The best
+normal form has 14 ADDs and eight swaps,
 for a cost of 38. There are 16 attaining orientations. The retained mask is
 254. Its reverse gives the other 38-ADD boundary.
 

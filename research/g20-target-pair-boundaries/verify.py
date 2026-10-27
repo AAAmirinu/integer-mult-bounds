@@ -99,12 +99,31 @@ def verify_boundary(old, new, mask):
 
 def construct(old):
     histogram, best, winner = Counter(), 10**9, None
+    original = old['boundaries']['right_program']
+    need(all(old['diagonal'][2*j] == old['diagonal'][2*j+1] for j in range(16)),
+         'All permitted pair orientations commute')
     for mask in range(1 << 16):
-        word = normalize(old['boundaries']['right_program'], mask)
+        word = normalize(original, mask)
+        swaps = [['SWAP', 2*j, 2*j+1] for j in range(16) if mask >> j & 1]
+        need(matrix(word) == matrix(swaps + original), 'Every normalized boundary matrix')
         count = cost(word)
         histogram[count] += 1
         if count < best:
             best, winner = count, (mask, word)
+    # A second census uses permutation cycles, without the word constructor.
+    base = [row.bit_length() - 1 for row in matrix([e for e in original if e[0] == 'SWAP'])]
+    cycle_histogram = Counter()
+    for mask in range(1 << 16):
+        permutation = [i ^ ((mask >> (i // 2)) & 1) for i in base]
+        seen, cycles = set(), 0
+        for i in range(32):
+            if i not in seen:
+                cycles += 1
+                while i not in seen:
+                    seen.add(i)
+                    i = permutation[i]
+        cycle_histogram[14 + 3 * (32 - cycles)] += 1
+    need(histogram == cycle_histogram, 'Separate complete orientation census')
     mask, right = winner
     new = deepcopy(old)
     new['boundaries']['right_program'] = right
