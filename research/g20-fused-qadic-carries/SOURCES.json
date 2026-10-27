@@ -17,7 +17,8 @@
       "origin": {
         "commit": "04b5db84b4b02bdc17e1c6287dfcf8b9c04199d4",
         "path": "research/g20-sparse-port-construction/RESULT.json"
-      }
+      },
+      "pin": "head:0b3c28415eb3ae14d74ac074b24bdb3f5de04bf2:research/g20-fused-qadic-carries/inputs/source-RESULT.json"
     },
     {
       "path": "research/g20-sparse-port-construction/inputs/PORTS.json",
@@ -34,7 +35,8 @@
       "origin": {
         "commit": "04b5db84b4b02bdc17e1c6287dfcf8b9c04199d4",
         "path": "research/g20-sparse-port-construction/inputs/PORTS.json"
-      }
+      },
+      "pin": "head:0b3c28415eb3ae14d74ac074b24bdb3f5de04bf2:research/g20-fused-qadic-carries/inputs/PORTS.json"
     },
     {
       "path": "research/g20-sparse-port-construction/inputs/CALLS.json",
@@ -51,7 +53,8 @@
       "origin": {
         "commit": "04b5db84b4b02bdc17e1c6287dfcf8b9c04199d4",
         "path": "research/g20-sparse-port-construction/inputs/CALLS.json"
-      }
+      },
+      "pin": "head:0b3c28415eb3ae14d74ac074b24bdb3f5de04bf2:research/g20-fused-qadic-carries/inputs/CALLS.json"
     },
     {
       "path": "research/g20-sparse-port-construction/inputs/GLOBAL.jsonl.gz",
@@ -68,7 +71,8 @@
       "origin": {
         "commit": "04b5db84b4b02bdc17e1c6287dfcf8b9c04199d4",
         "path": "research/g20-sparse-port-construction/inputs/GLOBAL.jsonl.gz"
-      }
+      },
+      "pin": "head:0b3c28415eb3ae14d74ac074b24bdb3f5de04bf2:research/g20-fused-qadic-carries/inputs/GLOBAL.jsonl.gz"
     },
     {
       "path": "research/g20-sparse-port-construction/NOTICE",
@@ -85,7 +89,8 @@
       "origin": {
         "commit": "04b5db84b4b02bdc17e1c6287dfcf8b9c04199d4",
         "path": "research/g20-sparse-port-construction/NOTICE"
-      }
+      },
+      "pin": "head:0b3c28415eb3ae14d74ac074b24bdb3f5de04bf2:research/g20-fused-qadic-carries/inputs/NOTICE"
     },
     {
       "path": "certificates/selected-result.json",
