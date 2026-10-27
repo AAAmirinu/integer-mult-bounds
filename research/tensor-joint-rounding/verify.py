@@ -145,6 +145,7 @@ def check_rows():
 def check_complex_rows():
     cases = 0
     p, precision, scale = 2, 4, 1
+    quantum = 1 << precision
     components = tuple(product(range(-4, 5), repeat=2))
     disk = tuple(z for z in components if z[0] ** 2 + z[1] ** 2 <= 16)
     for left, right, b, c in product(disk, disk, (1, 7, 16), (1, 4)):
