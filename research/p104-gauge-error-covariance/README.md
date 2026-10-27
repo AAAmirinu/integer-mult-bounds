@@ -61,3 +61,9 @@ Credit PR5830/5824/5822/5812, PR5819/5826/5831, Adam Gall, ywz65, PR2878 and
 all retained P104/native/compiler authors in inputs/NOTICE. New proof and checks
 by Ali Romman with substantial OpenAI Codex assistance; no subagents.
 Apache-2.0. Independent scientific acceptance remains open.
+
+The source manifest pins replay inputs to copies in this publication history.
+Its `retained_predecessors` records keep each original head, path, blob and
+SHA256, plus its exact retained file or archive member. Each source was checked
+byte-for-byte before this rebind. This removes an unavailable side-commit
+dependency from clean CI; no source bytes or scientific checks are changed.
