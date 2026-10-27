@@ -83,6 +83,29 @@ expecting mutation/`None` are not covered. Historical binder metadata fields
 such as `source_only_handoff` describe the worker's handoff, while the parent
 run receipts state what was actually executed.
 
+## Broader integer ownership: one rejection-only cost diagnostic
+
+Before constructing another integer state owner, one source-bound diagnostic
+ran the original PR5864 qualifier without replacing arithmetic. A facade timed
+4 original ideal, 121 error-trace and 121 reverse calls, accounting for their
+disjoint union and retaining every scientific check and exception. No timing
+sample was rerolled or added to the BCCBBC comparison.
+
+The observed eligible union was 4.855752 wall / 4.853204 CPU seconds, below the
+fixed 15% thresholds of 5.199268 / 5.170500 seconds from the chosen baseline
+medians, even granting zero replacement and validation costs. The diagnostic's
+whole command was faster than those earlier baseline samples; these are scoped
+observations under host variation, not a machine-independent upper bound or
+universal obstruction. Relative to its own entire command the free union is
+only about 15.2%, before retained computation and added controls. No fully
+priced construction is funded by this screen.
+
+[All 246 boundary records](evidence/INTEGER-OWNED-BOUNDARY-SCREEN.json), the
+unchanged [diagnostic source](owned_integer/diagnostic.py), and the
+[complete ownership-cost review](evidence/astra-next-boundary-cost-screen.md)
+remain visible. Optional guarded arm `D` reproduces this diagnostic; it is not
+a performance sample or permission to repeat a failed screen automatically.
+
 ## Rational batching: independent-oracle bill stops construction
 
 The prototype retains the existing contribution callback/cache and batches

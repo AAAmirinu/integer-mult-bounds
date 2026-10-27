@@ -19,7 +19,7 @@
   "qualified_speed_claim": false,
   "new_rational_actual_word_or_complete_runs": 0,
   "new_complete_optimized_or_readonly_replays": 0,
-  "readonly_gitfree_finite": "PASS_ALL_FIVE_COMMANDS",
+  "readonly_gitfree_finite": "PASS_ALL_FIVE_COMMANDS_FOR_REVIEWED_RUNTIME_SOURCE_PAIRS",
   "metadata_committed_bytes": "PASS_METADATA_PINS_97_FILES_BEFORE_PUBLICATION_METADATA_ADDITION",
   "hosted_exact_head": "FIRST_HEAD_FAILED_SOURCE_COMPATIBILITY; CORRECTED_HEAD_REPLAY_REQUIRED",
   "scope_notes": [
@@ -29,5 +29,6 @@
   ],
   "extra_unknown_source_rejection_control": 1,
   "first_hosted_failure": "run40505352497 / ec0afa... rejected rational binding after baseline+integer normalO passed; retained diagnostic and reviewed compatibility correction",
-  "explicit_runtime_source_pairs_local": "PASS_NORMAL_AND_OPTIMIZED"
+  "explicit_runtime_source_pairs_local": "PASS_NORMAL_AND_OPTIMIZED",
+  "owned_integer_rejection_diagnostic": "PASS_ALL246_BOUNDARIES_UNCHANGED_ARITHMETIC; observed4.855752wall/4.853204CPU belowfixed5.199268/5.170500thresholds; no construction"
 }
