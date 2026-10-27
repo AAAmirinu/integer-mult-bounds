@@ -106,9 +106,10 @@ Power of Ten review: no recursion, external process, dynamic code generation,
 mutable global state or acceptance assertions occur in the new computation.
 All functions fit within sixty lines. Domain limits bound every loop; field
 search has 1,023 prime candidates and fewer than 64,514 root candidates per
-candidate. Matrix storage is at most 31 squared entries in the verifier, with
-at most fifteen phase matrices live in its repair census. The reference API
-uses at most 255 input/output coordinates and two arrays of at most 255 entries.
+candidate. Every verifier matrix has at most 31 squared entries. The repair
+census retains two families of at most fifteen phase matrices plus their sums.
+Every reference-API array has at most 255 entries, including the folded and
+middle arrays, phase table and input/output vectors.
 Python allocation is a rule-3 deviation forced by its managed integer/list
 runtime. These enforced finite domains and bounded live arrays are the
 compensating controls; a fixed-allocation native implementation remains future
