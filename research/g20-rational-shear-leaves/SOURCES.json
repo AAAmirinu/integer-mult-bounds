@@ -17,7 +17,8 @@
       "origin": {
         "commit": "0f6cc294f64b19dedb05b76577b624dbce7b2cbc",
         "path": "research/inplace-runtime-affine/inputs/machine.py"
-      }
+      },
+      "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/machine.py"
     },
     {
       "path": "research/inplace-runtime-affine/inputs/counters.py",
@@ -34,7 +35,8 @@
       "origin": {
         "commit": "0f6cc294f64b19dedb05b76577b624dbce7b2cbc",
         "path": "research/inplace-runtime-affine/inputs/counters.py"
-      }
+      },
+      "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/counters.py"
     },
     {
       "path": "research/inplace-runtime-affine/inputs/shear.py",
@@ -51,7 +53,8 @@
       "origin": {
         "commit": "0f6cc294f64b19dedb05b76577b624dbce7b2cbc",
         "path": "research/inplace-runtime-affine/inputs/shear.py"
-      }
+      },
+      "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/shear.py"
     },
     {
       "path": "research/inplace-runtime-affine/inputs/independent.py",
@@ -68,7 +71,8 @@
       "origin": {
         "commit": "0f6cc294f64b19dedb05b76577b624dbce7b2cbc",
         "path": "research/inplace-runtime-affine/inputs/independent.py"
-      }
+      },
+      "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/independent.py"
     },
     {
       "path": "research/inplace-runtime-affine/kernel.py",
@@ -85,7 +89,8 @@
       "origin": {
         "commit": "0f6cc294f64b19dedb05b76577b624dbce7b2cbc",
         "path": "research/inplace-runtime-affine/kernel.py"
-      }
+      },
+      "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/affine.py"
     },
     {
       "path": "research/inplace-runtime-affine/PROOF.md",
@@ -102,7 +107,8 @@
       "origin": {
         "commit": "0f6cc294f64b19dedb05b76577b624dbce7b2cbc",
         "path": "research/inplace-runtime-affine/PROOF.md"
-      }
+      },
+      "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/owner-PROOF.md"
     },
     {
       "path": "research/bit-low-carry-lowering/offset.py",
@@ -118,7 +124,8 @@
       "origin": {
         "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
         "path": "research/bit-low-carry-lowering/offset.py"
-      }
+      },
+      "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/source-offset.py"
     },
     {
       "path": "research/bit-low-carry-lowering/controller.py",
@@ -134,7 +141,8 @@
       "origin": {
         "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
         "path": "research/bit-low-carry-lowering/controller.py"
-      }
+      },
+      "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/controller.py"
     },
     {
       "path": "research/bit-low-carry-lowering/PROOF.md",
@@ -150,7 +158,8 @@
       "origin": {
         "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
         "path": "research/bit-low-carry-lowering/PROOF.md"
-      }
+      },
+      "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/descriptor-PROOF.md"
     },
     {
       "path": "research/bit-low-carry-lowering/README.md",
@@ -166,7 +175,8 @@
       "origin": {
         "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
         "path": "research/bit-low-carry-lowering/README.md"
-      }
+      },
+      "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/descriptor-README.md"
     },
     {
       "path": "research/g20-sparse-port-construction/RESULT.json",
@@ -183,7 +193,8 @@
       "origin": {
         "commit": "04b5db84b4b02bdc17e1c6287dfcf8b9c04199d4",
         "path": "research/g20-sparse-port-construction/RESULT.json"
-      }
+      },
+      "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/route-RESULT.json"
     },
     {
       "path": "certificates/selected-result.json",
@@ -211,7 +222,8 @@
       "origin": {
         "commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
         "path": "research/fixed-tape-affine-shear/PROOF.md"
-      }
+      },
+      "pin": "head:420a35cd3e531066b2b342cae88afc02306b9866:research/g20-rational-shear-leaves/inputs/affine-PROOF.md"
     }
   ]
 }
