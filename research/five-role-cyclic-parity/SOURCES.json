@@ -13,6 +13,12 @@
       "usage": "provenance",
       "git_blob": "3404fbdd5e7529a0674eef26114b5071e4586cec",
       "sha256": "ead6cdc9d0af6d58e8a49744d8ec8c7c15e13d2ba93c276c434bcf9b51b93a81"
+    },
+    {
+      "path": "research/r439-gl5-shortest/README.md",
+      "usage": "provenance",
+      "git_blob": "492ee4766f95660621c38ef3b339e71d4a854cfa",
+      "sha256": "51030d14b06b1434319b014f19c5e44e17896881831d4d2b4893330e3f7bd668"
     }
   ]
 }

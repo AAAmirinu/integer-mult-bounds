@@ -15,7 +15,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 120,
-      "checks": "Exact nine-step endpoint, full radius-four meet-in-the-middle exclusion, all 32 literal inputs, inverse and rejection controls."
+      "checks": "Exact twenty-step clockwise endpoint; complete 9+10 meet-in-the-middle exclusion; all 32 inputs, reversed word, twenty deletion controls, nine malformed inputs and a known nineteen-gate positive meet."
     },
     {
       "argv": [
@@ -28,7 +28,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 120,
-      "checks": "Same finite certificate with optimization enabled; all mathematical checks use explicit exceptions."
+      "checks": "Exact twenty-step clockwise endpoint; complete 9+10 meet-in-the-middle exclusion; all 32 inputs, reversed word, twenty deletion controls, nine malformed inputs and a known nineteen-gate positive meet."
     }
   ]
 }

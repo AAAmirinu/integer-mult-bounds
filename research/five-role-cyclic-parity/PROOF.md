@@ -1,99 +1,96 @@
-# Nine XORs are necessary and sufficient
+# Twenty clockwise XORs are necessary and sufficient
 
 This contribution was produced by Nick Petalas. Apache-2.0.
 
 ## Endpoint and alphabet
 
-There are five registers containing independent arbitrary vectors over F2.
-Register indices are zero-based. The only paid instruction is
-`r_dst += r_src`, with distinct source and destination. Each instruction costs
-one. The requested complete output is
+Five labeled registers contain independent arbitrary vectors over F2. The
+only allowed instructions are `r_(i+1 mod 5) += r_i`, for i=0,...,4. Every
+instruction costs one. The requested complete output is
 
 ```
 y_i = x_i + x_(i+1 mod 5) + x_(i+2 mod 5),   0 <= i < 5.
 ```
 
-No workspace, free permutation, basis change, initialization, erasure or
-nonlinear/data-dependent instruction is allowed. The endpoint coefficient
+No additional registers, free wire permutations, basis changes, initialization,
+erasure or nonlinear/data-dependent instructions are allowed. The endpoint
 matrix has row masks `(7,14,28,25,19)`, with bit j denoting input x_j.
+The alphabet has exactly five generators, all involutions. Reverse-direction
+neighboring additions and nonneighboring additions are excluded.
 
 ## Attainment
 
-The following ordered word has nine instructions. The left index is the
-source; the right index is the destination.
+The following ordered word has twenty instructions. Each pair is source,
+destination, and every pair is one of the five allowed clockwise edges.
 
 ```
-0 -> 2
-0 -> 4
-3 -> 0
-4 -> 3
-1 -> 4
-0 -> 1
-2 -> 1
-1 -> 0
-3 -> 2
+(0,1) (2,3) (4,0) (0,1) (1,2)
+(0,1) (3,4) (2,3) (4,0) (3,4)
+(2,3) (1,2) (0,1) (3,4) (2,3)
+(4,0) (0,1) (1,2) (0,1) (3,4)
 ```
 
-Literal substitution of symbolic row masks gives the required matrix. The
-verifier also executes this word on all 32 independent scalar bit inputs.
-These scalar inputs exhaust F2^5 and include a basis. A linear identity on
-this basis holds on arbitrary vector payloads, coordinatewise. The word is
-invertible because every instruction is an involution; reversing it recovers
-all five arbitrary inputs. Thus nine is an upper bound.
+Literal symbolic row substitution gives the specified complete matrix. A
+separate bit interpreter executes the word on all 32 scalar inputs and checks
+the same endpoint. A linear identity on the five input basis vectors extends
+coordinatewise to arbitrary binary vector payloads. Reversing the involutions
+recovers all five independent inputs. Thus twenty is an upper bound.
 
 ## Exhaustive lower bound
 
-Encode a 5-by-5 binary matrix by its five consecutive five-bit rows in a
-25-bit unsigned integer. A directed addition from s to d changes the state
-by XORing the s-th row into the d-th row. This is exactly `step` in verify.py.
-There are twenty distinct allowed gates. They are all involutions.
+Encode each binary 5-by-5 matrix in a 25-bit integer, with five consecutive
+five-bit rows. Adding row s to row d is exactly the `step` operation in
+verify.py. Define B_r(M) to be all states reachable from center M in at most
+r allowed instructions.
 
-For a center M, define B_0(M)={M}. Iteratively form all twenty neighbors of
-every matrix at exact distance k, discard matrices seen at smaller distance,
-and retain the new matrices as layer k+1. Induction on k proves that this
-algorithm enumerates every state reachable by at most k+1 instructions:
-a word of positive length consists of a shorter word followed by an allowed
-gate. Discarding a repeated state cannot remove a shorter path or its possible
-continuations. No length ordering, pivot heuristic or symmetry quotient prunes
-the search. The domain has at most 2^25 matrices.
+Starting with {M}, form all five neighbors of every state in the latest
+layer, discard previously seen states and repeat r times. Induction proves
+this enumerates exactly B_r(M): every positive-length word is a shorter
+word followed by one allowed gate. Keeping only the shortest occurrence of a
+state preserves every possible continuation. The search uses no symmetry
+quotient, pivot heuristic or pruning beyond equality of complete matrices.
+Its domain is contained in the 2^25 binary matrices.
 
-The exact layer sizes through radius four are
+The complete enumerated exact-distance layers are
 
 ```
-center                  radius 0   1    2     3      4    total
-identity                       1  20  260  2570  19680    22531
-target (7,14,28,25,19)          1  20  260  2570  19680    22531
+radius     0  1   2   3    4    5    6     7     8     9     10
+layer      1  5  15  40  100  240  555  1230  2665  5715  12010
 ```
 
-The two complete balls have empty intersection. These counts and the empty
-intersection are enumerated afresh by the standalone verifier, rather than
-accepted from a saved search report.
+The identity ball B_9(I) has 10,566 matrices. The target ball B_10(T) has
+22,576 matrices. Their intersection is empty. Both balls and every layer
+count are computed afresh by the standalone verifier, without accepting any
+saved distance table or discovery output.
 
-If a word of length l<=8 connected the identity to the target, cut it after
-min(l,4) gates. Its intermediate matrix would lie within four gates of the
-identity. It would also lie within four gates of the target, by reversing
-the remaining involutions. It would therefore belong to both balls, a
-contradiction. Thus the minimum is at least nine. Together with the explicit
-word, the exact minimum is nine.
+If a word of length l<=19 connected I to T, cut it after min(l,9) gates.
+The intermediate matrix would lie in B_9(I). Reversing the remaining at most
+ten involutions would place it in B_10(T), contradicting disjointness.
+Therefore at least twenty instructions are necessary, matching the witness.
 
 This is a finite computer-assisted certificate with a written reduction to
-arbitrary vector inputs. The exhaustive enumeration and its Python execution
-are trusted; no proof kernel or independent human review is claimed.
+arbitrary vector payloads. It trusts the explicit enumerator and Python
+execution; independent human and proof-kernel review are unclaimed.
 
-## Checks and boundaries
+## Controls and prior work
 
-A separate literal bit interpreter checks every input, full input recovery,
-and a counterexample after deletion of each of the nine instructions. It does
-not use the packed-matrix update to compute the truth table. An eight-gate
-prefix of the witness supplies a positive control for the neighborhood method:
-its known four-gate midpoint belongs to both radius-four balls. Nine malformed
-input/program controls reject. All checks use explicit exceptions under -O.
+The literal bit interpreter uses a list of five bits, independently of packed
+matrix arithmetic. It checks all 32 inputs, inverse recovery and a failure
+after deletion of each of the twenty gates. The first nineteen witness gates
+supply a positive control for the same 9+10 exclusion method: their known
+nine-gate midpoint belongs to both corresponding balls. Nine malformed
+input/program cases reject. All checks use explicit exceptions under -O.
 
-The result is a scalar binary linear-circuit minimum. It is not a native
-operator identity with phases, a physically priced adapter, a recursive paid
-child minimum, a new kappa or a complete multiplication theorem. Ali Romman's
-PR #5793 supplies the related bounded synthesis interface and its four-role
-limit, cited as motivation. No predecessor executable or certificate is
-imported, rechecked or modified. Classical shortest paths and the
-meet-in-the-middle argument retain their usual mathematical credit. Global
-literature priority for this endpoint is unclaimed.
+Gareth Davidson's merged PR #1188 already certifies every unrestricted
+five-role distance using all twenty directed row additions. This contribution
+does not claim a new unrestricted metric or replay that predecessor. Restricting
+the generator alphabet changes which paths exist; a shortest unrestricted
+path does not determine the present optimum. Ali Romman's PR #5793 supplies
+the related custom-alphabet synthesis interface, limited to four roles.
+Classical shortest paths and meet-in-the-middle exclusion retain their credit.
+Global literature priority for this endpoint is unclaimed.
+
+The result prices scalar binary register additions in the stated cyclic
+layout. It supplies no native tensor identity with phases, physical routing
+invoice, recursive paid-child minimum, new kappa or complete multiplication
+theorem. Other layouts, extra registers and altered alphabets are outside scope.

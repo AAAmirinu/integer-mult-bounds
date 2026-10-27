@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
-"""Exact nine-XOR cyclic parity minimum. Produced by Nick Petalas; Apache-2.0."""
+"""Exact clockwise twenty-XOR cyclic parity minimum. Produced by Nick Petalas; Apache-2.0."""
 from hashlib import sha256
 import json
 from pathlib import Path
 
 WIDTH = 5
 MASK = 31
-GATES = tuple((src, dst) for src in range(WIDTH)
-              for dst in range(WIDTH) if src != dst)
-WORD = ((0, 2), (0, 4), (3, 0), (4, 3), (1, 4),
-        (0, 1), (2, 1), (1, 0), (3, 2))
+GATES = tuple((src, (src + 1) % WIDTH) for src in range(WIDTH))
+WORD = ((0, 1), (2, 3), (4, 0), (0, 1), (1, 2),
+        (0, 1), (3, 4), (2, 3), (4, 0), (3, 4),
+        (2, 3), (1, 2), (0, 1), (3, 4), (2, 3),
+        (4, 0), (0, 1), (1, 2), (0, 1), (3, 4))
+LAYERS = (1, 5, 15, 40, 100, 240, 555, 1230, 2665, 5715, 12010)
 FILES = ("PROOF.md", "README.md", "SOURCES.json", "TASK.json", "VERIFY.json", "verify.py")
 
 
@@ -31,12 +33,13 @@ def step(state, gate):
     return state ^ (((state >> (WIDTH * src)) & MASK) << (WIDTH * dst))
 
 
-def ball(center):
-    """Enumerate all words of length at most four, merging equal matrices."""
+def ball(center, radius):
+    """Enumerate every allowed word through a bounded radius, merging matrices."""
+    require(type(radius) is int and 0 <= radius <= 10, "invalid radius")
     seen = {center}
     frontier = {center}
     counts = [1]
-    for _ in range(4):
+    for _ in range(radius):
         following = set()
         for state in frontier:
             for gate in GATES:
@@ -52,7 +55,7 @@ def ball(center):
 
 def literal_word(value, word):
     require(type(value) is int and 0 <= value <= MASK, "invalid input")
-    require(len(word) <= 9 and all(g in GATES for g in word), "invalid word")
+    require(len(word) <= 20 and all(g in GATES for g in word), "invalid word")
     registers = [(value >> i) & 1 for i in range(WIDTH)]
     for src, dst in word:
         registers[dst] ^= registers[src]
@@ -76,7 +79,7 @@ def check_word_and_controls(identity, target):
     require(outputs == [literal_target(value) for value in range(32)], "truth table")
     require(len(set(outputs)) == 32, "endpoint loses arbitrary input information")
     require(all(literal_word(outputs[v], WORD[::-1]) == v for v in range(32)), "inverse")
-    for omitted in range(9):
+    for omitted in range(20):
         shorter = WORD[:omitted] + WORD[omitted + 1:]
         require(any(literal_word(v, shorter) != literal_target(v)
                     for v in range(32)), "omitted gate was undetected")
@@ -93,7 +96,7 @@ def check_word_and_controls(identity, target):
         except ValueError:
             continue
         raise ValueError("invalid matrix accepted")
-    return {"truth_table_inputs": 32, "deleted_gate_controls": 9,
+    return {"truth_table_inputs": 32, "deleted_gate_controls": 20,
             "invalid_input_controls": 9}
 
 
@@ -103,21 +106,18 @@ def main():
             | (1 << ((i + 2) % WIDTH)) for i in range(WIDTH)]
     target = encode(rows)
     controls = check_word_and_controls(identity, target)
-    forward, fcounts = ball(identity)
-    backward, bcounts = ball(target)
-    require(fcounts == [1, 20, 260, 2570, 19680], "identity radius counts")
-    require(bcounts == fcounts, "target radius counts")
+    forward, fcounts = ball(identity, 9)
+    backward, bcounts = ball(target, 10)
+    require(fcounts == list(LAYERS[:10]), "identity radius counts")
+    require(bcounts == list(LAYERS), "target radius counts")
     intersection = forward.intersection(backward)
-    require(not intersection, "a word of at most eight XORs exists")
-    # A known eight-gate endpoint must be detected by the same exclusion method.
-    midpoint = identity
-    for gate in WORD[:4]:
-        midpoint = step(midpoint, gate)
-    require(midpoint in forward, "known four-gate midpoint missing")
-    short_endpoint = literal_matrix(WORD[:8], identity)
-    nearby, nearcounts = ball(short_endpoint)
-    require(midpoint in nearby and nearcounts == fcounts, "false-negative control")
-    require(not (forward & backward), "negative certificate changed")
+    require(not intersection, "a word of at most nineteen XORs exists")
+    # Detect a known nineteen-gate endpoint using the same 9+10 method.
+    midpoint = literal_matrix(WORD[:9], identity)
+    require(midpoint in forward, "known nine-gate midpoint missing")
+    short_endpoint = literal_matrix(WORD[:19], identity)
+    nearby, nearcounts = ball(short_endpoint, 10)
+    require(midpoint in nearby and nearcounts == bcounts, "false-negative control")
     root = Path(__file__).resolve().parent
     hashes = {}
     for name in FILES:
@@ -125,10 +125,11 @@ def main():
         require(path.is_file() and path.stat().st_size <= 1 << 20, "source size")
         hashes[name] = sha256(path.read_bytes()).hexdigest()
     receipt = {"status": "PASS_FIVE_ROLE_CYCLIC_PARITY", "claim_type": "finite certificate",
-               "minimum_xors": 9, "target_rows": rows, "word": WORD,
+               "minimum_xors": 20, "alphabet": GATES, "target_rows": rows, "word": WORD,
                "forward_layers": fcounts, "backward_layers": bcounts,
-               "ball_size": len(forward), "intersection_size": len(intersection),
-               "eight_gate_positive_controls": 1, **controls, "sha256": hashes}
+               "forward_ball_size": len(forward), "backward_ball_size": len(backward),
+               "intersection_size": len(intersection),
+               "nineteen_gate_positive_controls": 1, **controls, "sha256": hashes}
     print(json.dumps(receipt, sort_keys=True, indent=2))
 
 
