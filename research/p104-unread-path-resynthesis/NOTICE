@@ -1,0 +1,17 @@
+Unread-register path resynthesis
+Copyright 2026 Ali Romman. Apache-2.0.
+
+New construction, code, calculations and prose: Ali Romman with substantial
+OpenAI Codex assistance. No subagents. All new checks are author-side.
+
+Mason Hale supplied PR5811, the complete two-block composition and the exact
+role92 remapping and fourth accumulation. The earlier elementary accumulation,
+retained-copy and second-block work is by Ali Romman. Joel Pulikkan supplied
+R22. Dugongue supplied the concurrent baseline composition proof. Their source
+notice and proof are retained byte for byte under inputs/pr5811-*.
+
+The source closure retains flyingviper, Cinna Davis, David Arias, Gareth
+Davidson, Jacob Alan Sussman, zxv, Cao Yifan, Pierre-Loic Doulcet, thu-nmrc,
+Scratch-net and all native/helper/controller/compiler/geometry/analytic
+predecessors. The exact PR5786 source archive and its nested notices remain.
+This package does not claim any predecessor construction as new.
