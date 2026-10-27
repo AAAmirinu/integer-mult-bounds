@@ -46,6 +46,12 @@ Limits: 512 lifetimes, endpoints in `0..10^12`, widths in `1..10^60`, 1 MiB inpu
 and 32 MiB replay certificate. Invalid input or a false certificate exits 2
 without a success report. Exact input bytes are bound by SHA-256.
 
+Certificate capacities and slot endpoints can reach `512 * 10^60`, the sum
+of all allowed widths. The certificate reader accepts that aggregate bound;
+the lifetime input keeps its `10^60` width limit. For example, two simultaneous
+helpers of width `10^60` produce a `2 * 10^60` certificate that can be replayed
+through `--verify`. Oversized integer tokens remain bounded before conversion.
+
 ## Frozen P104 example
 
 `tests/fixtures/helper-lifetimes-pr5717.json` copies the eleven rows in
@@ -66,3 +72,5 @@ source-specific evidence or certify a new κ.
 Credits: classical interval coloring, the T74 cleanup pool and lower-bound
 witness in PR2655, the P104 owned-interface audit in PR5717, and their retained
 predecessors. Prepared for Ali Romman with OpenAI Codex assistance. Apache-2.0.
+Aggregate-capacity replay repair and CLI regression controls by
+josecarlosgonzalezroque-design with substantial OpenAI Codex assistance.
