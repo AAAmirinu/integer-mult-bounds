@@ -33,13 +33,6 @@
       "sha256": "00fd2fe89905052b75a17bff8ea6f5a249dda1293ec33c0c8d2e329a15694503"
     },
     {
-      "path": "research/selected-owned-dispatch/ALLOCATION-THEOREM.md",
-      "usage": "provenance",
-      "pin": "head:68614094a31bd483083cfaf1f8735ceb6aec5224:research/selected-owned-dispatch/ALLOCATION-THEOREM.md",
-      "sha256": "49053c4c3568a20ffa075a6e6c3cc960eac954709072864f4ab39ac09be84897",
-      "git_blob": "b026ff11ceb626ff1dda30cb517eb63c0e47baa0"
-    },
-    {
       "path": "research/delayed-cover-batch-allocation/inputs/ALLOCATION-THEOREM.md",
       "usage": "input",
       "origin": {
@@ -49,13 +42,6 @@
       "sha256": "49053c4c3568a20ffa075a6e6c3cc960eac954709072864f4ab39ac09be84897",
       "git_blob": "b026ff11ceb626ff1dda30cb517eb63c0e47baa0",
       "pin": "head:33414d5a9cfac63a8e512fe13005c1ce38823b88:research/delayed-cover-batch-allocation/inputs/ALLOCATION-THEOREM.md"
-    },
-    {
-      "path": "research/selected-owned-dispatch/BINDING-STATUS.md",
-      "usage": "provenance",
-      "pin": "head:68614094a31bd483083cfaf1f8735ceb6aec5224:research/selected-owned-dispatch/BINDING-STATUS.md",
-      "sha256": "ff2c3e7397f738f6d46a3a47820e94d04d1ad616b72ec14f5c81aec823dd3854",
-      "git_blob": "64806e5add98faa1ee36082c0e8ca93e5ac2d399"
     },
     {
       "path": "research/delayed-cover-batch-allocation/inputs/BINDING-STATUS.md",
@@ -69,13 +55,6 @@
       "pin": "head:33414d5a9cfac63a8e512fe13005c1ce38823b88:research/delayed-cover-batch-allocation/inputs/BINDING-STATUS.md"
     },
     {
-      "path": "research/selected-owned-dispatch/README.md",
-      "usage": "provenance",
-      "pin": "head:68614094a31bd483083cfaf1f8735ceb6aec5224:research/selected-owned-dispatch/README.md",
-      "sha256": "99d20e3f63b893a3fd24e8917d157bb190fc94fe20bd1f7a6b9cfef0850163f2",
-      "git_blob": "2b058ea18fbaa7be5635dfe357608fc078de3d58"
-    },
-    {
       "path": "research/delayed-cover-batch-allocation/inputs/README.md",
       "usage": "input",
       "origin": {
@@ -85,6 +64,41 @@
       "sha256": "99d20e3f63b893a3fd24e8917d157bb190fc94fe20bd1f7a6b9cfef0850163f2",
       "git_blob": "2b058ea18fbaa7be5635dfe357608fc078de3d58",
       "pin": "head:33414d5a9cfac63a8e512fe13005c1ce38823b88:research/delayed-cover-batch-allocation/inputs/README.md"
+    }
+  ],
+  "retained_predecessors": [
+    {
+      "path": "research/selected-owned-dispatch/ALLOCATION-THEOREM.md",
+      "usage": "provenance",
+      "pin": "head:68614094a31bd483083cfaf1f8735ceb6aec5224:research/selected-owned-dispatch/ALLOCATION-THEOREM.md",
+      "sha256": "49053c4c3568a20ffa075a6e6c3cc960eac954709072864f4ab39ac09be84897",
+      "git_blob": "b026ff11ceb626ff1dda30cb517eb63c0e47baa0",
+      "retained_source": {
+        "path": "research/delayed-cover-batch-allocation/inputs/ALLOCATION-THEOREM.md",
+        "pin": "head:33414d5a9cfac63a8e512fe13005c1ce38823b88:research/delayed-cover-batch-allocation/inputs/ALLOCATION-THEOREM.md"
+      }
+    },
+    {
+      "path": "research/selected-owned-dispatch/BINDING-STATUS.md",
+      "usage": "provenance",
+      "pin": "head:68614094a31bd483083cfaf1f8735ceb6aec5224:research/selected-owned-dispatch/BINDING-STATUS.md",
+      "sha256": "ff2c3e7397f738f6d46a3a47820e94d04d1ad616b72ec14f5c81aec823dd3854",
+      "git_blob": "64806e5add98faa1ee36082c0e8ca93e5ac2d399",
+      "retained_source": {
+        "path": "research/delayed-cover-batch-allocation/inputs/BINDING-STATUS.md",
+        "pin": "head:33414d5a9cfac63a8e512fe13005c1ce38823b88:research/delayed-cover-batch-allocation/inputs/BINDING-STATUS.md"
+      }
+    },
+    {
+      "path": "research/selected-owned-dispatch/README.md",
+      "usage": "provenance",
+      "pin": "head:68614094a31bd483083cfaf1f8735ceb6aec5224:research/selected-owned-dispatch/README.md",
+      "sha256": "99d20e3f63b893a3fd24e8917d157bb190fc94fe20bd1f7a6b9cfef0850163f2",
+      "git_blob": "2b058ea18fbaa7be5635dfe357608fc078de3d58",
+      "retained_source": {
+        "path": "research/delayed-cover-batch-allocation/inputs/README.md",
+        "pin": "head:33414d5a9cfac63a8e512fe13005c1ce38823b88:research/delayed-cover-batch-allocation/inputs/README.md"
+      }
     }
   ]
 }
