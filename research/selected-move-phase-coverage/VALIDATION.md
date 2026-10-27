@@ -18,7 +18,7 @@ python -I -O -W error -B research/selected-move-phase-coverage/verify.py
 python -B scripts/research_package.py --package research/selected-move-phase-coverage
 ```
 
-All passed. Normal and optimized stdout agree byte-for-byte with [RESULT.json](RESULT.json), SHA256 `1f01afc7022e37b5d5fa54679fb89371254a9bf0c2b11c59d08dfb768f844a51`. The [registered log](logs/registered.log) includes both exact receipts and `PASS_REGISTERED_RESEARCH_PACKAGE research/selected-move-phase-coverage outcome=completed`. The complete registered invocation took approximately 0.82 seconds locally; its individual command limits are 30 seconds.
+All passed. Normal and optimized stdout agree byte-for-byte with [RESULT.json](RESULT.json), SHA256 `1f01afc7022e37b5d5fa54679fb89371254a9bf0c2b11c59d08dfb768f844a51`. The [registered log](logs/registered.txt) includes both exact receipts and `PASS_REGISTERED_RESEARCH_PACKAGE research/selected-move-phase-coverage outcome=completed`. The complete registered invocation took approximately 0.82 seconds locally; its individual command limits are 30 seconds.
 
 The evidence is 512 exact positive columns, 512 detected phase-fault columns, 512 detected address-fault columns, an unchanged signed tableau under the phase fault, and rejection specifically by the retained absolute-phase check. The source inventory is 3,447 MOVE occurrences, 2,887 ordered frame pairs and 11 owned occurrences; only one pair is newly replayed.
 
@@ -50,3 +50,21 @@ Decision: finish the bounded coverage correction and release the physical implem
 ## Unrun obligations
 
 No `make verify`, `make frontier5599-verify`, all-map native replay, complete body/controller endpoint replay, physical tape executor, rounded multiplier, Lean or Docker run was performed. All five selected framework assumptions remain. Hosted CI, if a PR is opened, is reported separately on that PR and is not inferred from these local passes.
+
+## Committed scientific snapshot and portable replay
+
+Scientific snapshot `c1187a843403000cb6591f1fb4914f509be96d3e` passed the committed-byte, executable-mode and full source-history preflight for 16 package/input files. Its official export passed integrity checking. Commands:
+
+```sh
+python -B scripts/check_research_commit.py --package research/selected-move-phase-coverage --check-source-history --check-modes
+python -B scripts/export_research_package.py export --package research/selected-move-phase-coverage --ref c1187a843403000cb6591f1fb4914f509be96d3e --output /tmp/selected-move-phase-coverage.tar
+python -B scripts/export_research_package.py check /tmp/selected-move-phase-coverage.tar
+```
+
+The artifact location is replaceable; the executed archive was in external research scratch. See [byte/history receipt](logs/scientific-commit-check.txt), [export receipt](logs/scientific-export-check.txt) and [portable receipt](logs/portable-check.json).
+
+After extraction, both direct commands were run from an unrelated directory using an absolute Python 3.12 path, empty PATH, and read-only package/input files and directories. Both produced the exact saved scientific receipt, in 0.242/0.265 seconds. All 17 files including the export manifest retained their bytes and modes. A separate writable copy with one newline appended to the compiler source failed before imports with `source SHA256: research/p104-native-channel/vendor/clifford_exact.py`, exit 1 and empty stdout.
+
+The final publication commit adds only these validation records and provenance documentation to that scientific snapshot. The final committed-byte/export checks are repeated before publication and reported with the final head in the PR. No scientific executable or result changed after the checked snapshot.
+
+A second complete open/discussion refresh at 2026-10-27T11:11:29Z retained 437 open PRs and 5,350 Discussion records with no warnings. #5837 remained at its pinned head. The earlier fully paginated closed/merged snapshot remains timestamped 11:03:54Z. Canonical main was fetched again and remained `de5ec2e7a6074068452f45b1a191b5c72832df4a`; relevant guidance and the selected record were unchanged. No competing correction was found within these text/source checks; unpublished work and arbitrary diffs are outside their coverage.

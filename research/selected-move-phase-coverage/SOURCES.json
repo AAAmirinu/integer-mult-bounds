@@ -67,6 +67,18 @@
       "usage": "input",
       "git_blob": "2c209dfa9cfade3bc20ac5fc9d876b433a147f8c",
       "sha256": "3049471905b47b385c88378a1a3be7a18b8858aadd035b8a6da2f4a03b470f38"
+    },
+    {
+      "path": "research/selected-monomial-tape-lift/README.md",
+      "usage": "provenance",
+      "git_blob": "94e47cea4427ed0072f8283f431793b52601be9b",
+      "sha256": "f34e186a0576eea5b15b5d2368274cc77c96d2150e8a3d3fbd67275e020c8a3f"
+    },
+    {
+      "path": "research/selected-control-reservations/README.md",
+      "usage": "provenance",
+      "git_blob": "2ff556a541a32274ed88a85801d3f3b77138de43",
+      "sha256": "cccf5d032f5bdaa7e1f6d331e882d27108b473216a4cdd68e83647ef0312f259"
     }
   ]
 }
