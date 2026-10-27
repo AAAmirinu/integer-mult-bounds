@@ -143,7 +143,7 @@ six-process screen. It refuses evidence reuse and retains the 180-second /
 1-GiB sampled process-group RSS / serial / zero-automatic-retry policy. Do not
 reroll the failed retained timing round.
 
-## Credit and open next questions
+## Credit
 
 Original mathematics, P104 source, integer replay, literal scalar and reverse
 oracles: Ali Romman and all predecessor authors retained in the complete input
@@ -157,6 +157,8 @@ Prepared by Chris R / Clear1nsight with substantial OpenAI Codex implementation
 and user-requested GPT-6-astra xhigh static design/source review. Only the parent
 ran numerical/compiler work, serially. These are assisted engineering checks,
 without independent human or proof-kernel acceptance.
+
+## Open next questions
 
 The requested further 15% PR5864 improvement remains unmet. A different exact
 arithmetic ownership boundary would need a new source-pinned cost screen,
