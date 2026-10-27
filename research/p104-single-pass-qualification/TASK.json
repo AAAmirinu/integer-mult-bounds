@@ -44,8 +44,8 @@
   "bottleneck_link": "Faster trustworthy replays increase review throughput and let mechanism candidates be checked sooner.",
   "stop_rule": "Source, observation, complete receipt, stderr or resource failure stops. No automatic retries. 180 seconds/command,1GiB sampled group RSS,1500 seconds shared cumulative; first pair then all six in B,C,C,B,B,C order must save15% wall and CPU.",
   "time_budget_minutes": 90,
-  "outcome": "partial",
-  "evidence": "COVERAGE.md, evidence/, BENCHMARK-pair.json and BENCHMARK-remaining.json; every measurement retained.",
+  "outcome": "completed",
+  "evidence": "PROOF.md, COVERAGE.md, PROFILE.md, BENCHMARK.json, VALIDATION.json and evidence/ preserve 15 bounded passing commands, full raw scientific receipts and the metadata preflight rejection. Normal/O/sealed coverage agrees; exact-head hosted CI remains separate.",
   "author": "Chris R / Clear1nsight",
   "ai_assistance": "Substantial OpenAI Codex assistance for source review, execution, tooling and report; no subagents, independent human or proof-kernel acceptance.",
   "open_questions": [
