@@ -25,11 +25,15 @@ Replay needs only the Python standard library. It authenticates the unchanged so
 
 [SOURCES.json](SOURCES.json) records exact source blobs and hashes. The copied response code is byte-identical to PR5808. Full Git ancestry was not checked in the shallow checkout. Committed bytes, modes and a sealed source export were checked.
 
-## Limits and open next questions
+## Limits
 
 The source word, scalar program, native actions and public boundaries stay fixed. Each channel keeps one chart and one scalar combination of the original eight modes. The model grants gathering, scatter, storage and helper restoration, but retains the restored-Y condition. The common-fixed-vector native specialization remains a predecessor premise. The sharp witness is in this granted quotient; PR5745 retains the separate physical eight-H8 construction and its extra ordinary costs.
 
-Moving charts, changed payloads, feedback-dependent data and changed native words are outside the theorem. No compiler, precision tape, physical native implementation or outer analytic assumption is discharged. The selected frontier is unchanged. [TASK.json](TASK.json) gives the next questions and their blockers.
+Moving charts, changed payloads, feedback-dependent data and changed native words are outside the theorem. No compiler, precision tape, physical native implementation or outer analytic assumption is discharged. The selected frontier is unchanged.
+
+## Open next questions
+
+Test a moving chart, a changed payload dependency or a changed native word only after a new complete invoice and scope check. Audit the common-fixed-vector native premise at the intended caller. [TASK.json](TASK.json) gives the first steps and blockers.
 
 ## Credit
 
