@@ -6,7 +6,13 @@ This answers Open next question 2 of apoursh's merged
 (`research/nonsplit-frobenius-characters`). That package requires identical
 residue presentations and says that comparing different ones needs "a
 separately supplied and checked field isomorphism, with its determinant
-included." This package gives that determinant in closed form.
+included." apoursh's merged
+[PR #5668](https://github.com/CrocSwap/integer-mult-bounds/pull/5668)
+(`research/nonsplit-sl-transport`) already builds such field maps by a linear
+solve and divides the determinant ratio by det(Q), computed numerically. This
+package adds a closed form for the field factor of that determinant and its
+dependence on which isomorphism is chosen. It does not change either
+executable.
 
 ## Result
 
@@ -95,14 +101,14 @@ the standard library, reads no files and writes none. A run takes about
 
 Executable coverage is prime fields only; the written proof covers every
 finite K. This is a scoped proof, not a recognizer, a modification of the
-PR #5663 executable, or a physical caller.
+PR #5663 or PR #5668 executable, or a physical caller.
 
 ## Open next questions
 
-1. Accept differing residue presentations in the PR #5663 checker by
-   composing each factor map with φ_j⊗id and multiplying by det(φ_j)^(N_j).
-   The first step is to accept a supplied root α_j and check f_j(α_j)=0.
-   Implementation and review in that package remain.
+1. Use the closed form as an independent cross-check of the det(Q) factors
+   that PR #5668 computes by linear solves. The first step is to read each
+   recovered field map's image α_j of the reference generator and compare
+   det(φ_j)^(N_j) with its numerical value. No such cross-check is run here.
 2. Extend the formula to non-power bases, such as normal bases, that a real
    producer might store. Compose with the basis change to the power basis.
    No named producer or consumer basis is supplied.
@@ -112,5 +118,6 @@ Structured versions are in [TASK.json](TASK.json).
 ## Credit
 
 This contribution was produced by Nick Petalas. It builds on apoursh's
-[PR #5663](https://github.com/CrocSwap/integer-mult-bounds/pull/5663) and its
+[PR #5663](https://github.com/CrocSwap/integer-mult-bounds/pull/5663) and
+[PR #5668](https://github.com/CrocSwap/integer-mult-bounds/pull/5668) and their
 predecessors credited there. Apache-2.0.

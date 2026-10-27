@@ -75,7 +75,7 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "Closed form for the ground-field determinant of an isomorphism between two power-basis presentations of the same finite residue field, answering Open next question 2 of apoursh's PR #5663 (research/nonsplit-frobenius-characters).",
+  "actual_scope": "Closed form for the ground-field determinant of an isomorphism between two power-basis presentations of the same finite residue field, for Open next question 2 of apoursh's PR #5663. PR #5668 already computes these determinants numerically; this adds the closed form and its sign rule.",
   "scope_change_reason": "The formal-interface card asks for an uncovered interface implication. PR #5663 requires identical residue presentations and states that comparing different ones needs a checked field isomorphism with its determinant. This package supplies that determinant as a written theorem with exhaustive prime-field evidence, not a Lean formalization.",
   "bottleneck_link": "Side result for the determinant-character interface; it does not change kappa or any supplier.",
   "budget_minutes": 60,
@@ -86,10 +86,10 @@
   "ai_assistance": "Independent human and formal proof-kernel review are unclaimed.",
   "open_questions": [
     {
-      "question": "Accept differing residue presentations in the PR #5663 executable by multiplying each factor map's determinant by det(phi_j)^(N_j).",
-      "why_it_matters": "It removes the identical-presentation premise of the supplied-model checker without changing its theorem.",
-      "first_step": "Add a checked root alpha_j of f_j in K[v]/(g_j) per used degree and compose the factor map with phi_j tensor I.",
-      "blocked_by": "Implementation and review in that package; the formula itself is supplied here."
+      "question": "Cross-check the det(Q) field factors computed by PR #5668's linear solves against det(phi_j)^(N_j) from the closed form.",
+      "why_it_matters": "It gives an independent arithmetic check of a numerically computed normalization.",
+      "first_step": "Read each recovered field map's image of the reference generator and evaluate the Vandermonde ratio.",
+      "blocked_by": "Not run here; requires instrumenting the PR #5668 bridge."
     },
     {
       "question": "Extend the closed form to non-power bases, such as normal bases, used by a real producer.",
