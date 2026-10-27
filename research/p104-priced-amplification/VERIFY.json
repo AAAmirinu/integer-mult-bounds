@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "python": "3.12",
+  "requirements": [],
+  "inputs": [],
+  "commands": [
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-B",
+        "{package}/verify.py"
+      ],
+      "timeout_seconds": 240,
+      "checks": "All16 exact norm-price duals, sharp original-budget optimum, two complete legal words, actual prefix norms, all782 input axes and611524 reverse coefficients."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-B",
+        "{package}/verify.py"
+      ],
+      "timeout_seconds": 240,
+      "checks": "All16 exact norm-price duals, sharp original-budget optimum, two complete legal words, actual prefix norms, all782 input axes and611524 reverse coefficients."
+    }
+  ]
+}
