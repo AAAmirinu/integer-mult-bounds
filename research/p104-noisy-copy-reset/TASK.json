@@ -80,7 +80,7 @@
   "bottleneck_link": "Makes the precision allowances for the strongest pending P104 caller explicit, including residual retention and final owned errors.",
   "budget_minutes": 75,
   "stop_rule": "Stop after exact transfer, complete endpoint, strict guard checks and semantic controls.",
-  "outcome": "scoped-proof",
+  "outcome": "completed",
   "evidence": "PROOF.md and RESULT.json; exact forward and transposed coefficients, literal attaining fixtures and six rejection controls.",
   "author": "Ali Romman with substantial OpenAI Codex assistance",
   "ai_assistance": "Substantial OpenAI Codex assistance in source review, proof, code and verification. No subagents.",
