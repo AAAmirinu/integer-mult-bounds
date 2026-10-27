@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "base_commit": "de5ec2e7a6074068452f45b1a191b5c72832df4a",
+  "files": [
+    {
+      "path": "docs/research/agent-task-catalog.json",
+      "usage": "provenance",
+      "git_blob": "3404fbdd5e7529a0674eef26114b5071e4586cec",
+      "sha256": "ead6cdc9d0af6d58e8a49744d8ec8c7c15e13d2ba93c276c434bcf9b51b93a81"
+    },
+    {
+      "path": "certificates/selected-result.json",
+      "usage": "provenance",
+      "git_blob": "581f8d87008354eb5b869f7ed9de1317ad837ce8",
+      "sha256": "2a0220e866417774606e0f991e41b9c1d26b1f43b97857238cf478dbc7d330b5"
+    },
+    {
+      "path": "research/c-verification-feasibility/inputs/PR5864.tar",
+      "usage": "input",
+      "git_blob": "bb9fc302168df0bf66cf43d08bce70544eeffc4e",
+      "sha256": "7b142567acacac5182045bf8daa8780e916661c2cf343dbf81b13c88ead85d64",
+      "pin": "head:ccb92b752ab31df4220780a580cc14d9e86ffeca:research/c-verification-feasibility/inputs/PR5864.tar"
+    }
+  ],
+  "external_origin": {
+    "repository": "CrocSwap/integer-mult-bounds",
+    "pr": 5864,
+    "head": "3f15c943e4ad6479f03e674c80fff1269a16ccfe",
+    "official_export_sha256": "7b142567acacac5182045bf8daa8780e916661c2cf343dbf81b13c88ead85d64",
+    "complete_files": 163
+  },
+  "predecessors": [
+    5848,
+    5852,
+    5853,
+    5864,
+    5875
+  ],
+  "scope": "No new kappa, construction, selected-frontier or qualified performance claim."
+}
