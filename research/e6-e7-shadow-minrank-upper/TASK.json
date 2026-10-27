@@ -59,7 +59,7 @@
   "scope_change_reason": "Side result on the decoder-cost shadow lemma, not a decoder or coframe change. It answers part of a precisely stated open question in the decoder-floor lineage and needs no supplier or invoice.",
   "bottleneck_link": "Side result. PR #2277's shadow lemma bounds the cost of any exact root-code decoder by rank_L(B o N). A rank bound on N limits how far F2-valued B-independent shadows can certify decoder floors; no kappa, decoder or supplier consequence is claimed.",
   "budget_minutes": 60,
-  "stop_rule": "Ship the first verified improvement: explicit witnesses giving new upper bounds. Do not continue into the E6 rank-7 or E7 rank-8..10 decision within this session.",
+  "stop_rule": "Ship the first verified improvement: explicit witnesses giving new upper bounds. Do not continue into the E6 rank-7 or E7 rank-8..10 decision within the 60-minute budget.",
   "outcome": "partial",
   "evidence": "WITNESSES.json gives N = U V^T over F2 with U, V of widths 8 (E6) and 11 (E7). verify.py rebuilds both line sets from E8, checks all 1296 and 3969 pattern entries, computes exact F2 ranks 8 and 11, and rejects a diagonal and an orthogonal-entry mutation. With the cited PR #2277 lower bounds: mr2(Gamma_E6) in {7,8}, 8 <= mr2(Gamma_E7) <= 11.",
   "author": "Nick Petalas",
