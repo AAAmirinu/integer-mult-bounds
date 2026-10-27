@@ -55,7 +55,7 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "Sharp sparse-support obstructions and exact smallest faithful cyclic quotients for two-point supports and one five-point subset-sum/target support.",
+  "actual_scope": "Sharp fixed-ambient-lattice obstructions and exact smallest faithful cyclic quotients for two-point supports and one five-point subset-sum/target support.",
   "scope_change_reason": "The selected baseline binds correctly, but this is an explicitly scoped verification side result answering PR1440's short-quotient question. It does not price a changed decoder or satisfy the original complete supplier gate.",
   "bottleneck_link": "A faithful cyclic quotient can reduce the exact finite certificate representation. The result identifies arithmetic and simultaneous-separation barriers to compressing that representation. It does not change a recursive invoice.",
   "budget_minutes": 60,

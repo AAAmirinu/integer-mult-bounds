@@ -3,7 +3,8 @@
 Scoped algebraic proof with exact finite corroboration. No new kappa.
 
 For a two-point exponent support {u,v}, let h be the positive gcd of the
-coordinates of v-u. Its smallest faithful cyclic quotient has size
+coordinates of v-u. With the ambient integer lattice fixed, its smallest
+faithful cyclic quotient has size
 
     mu(h) = min { q >= 2 : q does not divide h }.
 
@@ -74,6 +75,12 @@ speedup or a legal physical address realization. No larger-register candidate,
 selected paid/target profile, complete native/ordinary invoice, all-size
 compiler, precision, tape/stock bound or multiplication theorem is supplied.
 No selected cold replay, proof kernel or independent human review was run.
+
+The two-point obstruction assumes integer weights on the supplied ambient
+lattice. A frontend may evade it by first rebasing the subgroup generated
+by the differences: {0,h} inside hZ then needs only modulus two. That is a
+different domain for the homomorphism. The five-point support generates
+all of Z^2, so its optimum six survives such a change of group basis.
 
 [SOURCES.json](SOURCES.json) pins the source README, original catalogue and
 selected record as historical provenance at canonical main
