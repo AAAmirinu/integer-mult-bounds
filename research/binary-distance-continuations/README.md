@@ -1,8 +1,9 @@
 # Binary head-distance continuation frames
 
-Scoped constructive proof with exact finite corroboration, produced by Nick
-Petalas. Apache-2.0. Independent human and formal proof-kernel review are
-unclaimed.
+Scoped constructive proof with exact finite corroboration.
+
+New construction and proof produced by Nick Petalas. Apache-2.0.
+Independent human and formal proof-kernel review are unclaimed.
 
 The local continuation contract of Mihir Srivastava's
 [PR #5364](https://github.com/CrocSwap/integer-mult-bounds/pull/5364) can use
@@ -106,7 +107,7 @@ guard/repair, Cinna Davis's caller, Matarener's cover/stock and Sagar Thakrar's
 parent-return lineage retain their predecessor credit. No source notice changes.
 
 The overlap check covered live PR titles/bodies, this account's recent work,
-latest handoffs, active Discussions, batch reservations, main README text and
+latest handoffs, active Discussions, local reservations, main README text and
 merged searches for binary continuations, head distances and compressed
 headers. No matching refinement was located in that coverage. Sparse cached
 notes, unpublished work and arbitrary historical code diffs remain limits;
