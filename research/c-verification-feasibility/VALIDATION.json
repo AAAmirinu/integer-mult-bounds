@@ -19,9 +19,9 @@
   "qualified_speed_claim": false,
   "new_rational_actual_word_or_complete_runs": 0,
   "new_complete_optimized_or_readonly_replays": 0,
-  "readonly_gitfree_finite": "PENDING",
-  "metadata_committed_bytes": "PENDING",
-  "hosted_exact_head": "PENDING",
+  "readonly_gitfree_finite": "PASS_ALL_FIVE_COMMANDS",
+  "metadata_committed_bytes": "PASS_METADATA_PINS_97_FILES_BEFORE_PUBLICATION_METADATA_ADDITION",
+  "hosted_exact_head": "UNCLAIMED_BY_LOCAL_ARTIFACT_SEE_PR_CHECKS",
   "scope_notes": [
     "Four unchanged custody checks are separate from timed arms, matching frozen PR5864 benchmark.",
     "Complete actual witness/ideal/weights outputs equal and all120 independent fixtures retained.",
