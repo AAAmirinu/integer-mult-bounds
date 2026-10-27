@@ -35,7 +35,8 @@
       "origin": {
         "commit": "f7c198d38d5f68b0753dd0a51a2328e145b07638",
         "path": "research/active-mixed-rank-obstruction/responses.py"
-      }
+      },
+      "pin": "head:43ec7684315883db2895b806c7875ad12952b5dc:research/active-all-rank-delivery/responses.py"
     }
   ]
 }
