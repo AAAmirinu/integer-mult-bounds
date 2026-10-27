@@ -4611,3 +4611,18 @@ Source archives retain attribution; mathematical review remains open.
 - **Nick Petalas (@petalas)** — [#5916](https://github.com/CrocSwap/integer-mult-bounds/pull/5916): Prove the sharp fifth-root threshold for tensor phase recovery (source archive).
 - **Nick Petalas (@petalas)** — [#5917](https://github.com/CrocSwap/integer-mult-bounds/pull/5917): Prove a sharp degree-eight tree barrier for a Boolean table (no new κ) (source archive).
 - **Nick Petalas (@petalas)** — [#5918](https://github.com/CrocSwap/integer-mult-bounds/pull/5918): Prove exact 20-XOR clockwise cyclic parity minimum (no new κ) (source archive).
+
+## Queue intake, 27 October 2026 (chunk C)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **Nick Petalas (@petalas)** — [#5919](https://github.com/CrocSwap/integer-mult-bounds/pull/5919): Save eight coefficient ADDs in the actual Gaussian reader (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5920](https://github.com/CrocSwap/integer-mult-bounds/pull/5920): Prove sharp logarithmic height 12040587444441491 (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5921](https://github.com/CrocSwap/integer-mult-bounds/pull/5921): Prove sharp binary pattern-pool cardinality (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5922](https://github.com/CrocSwap/integer-mult-bounds/pull/5922): Halve the sparse-feedback coefficient with a sharp complex entropy bound (source archive).
+- **Nick Petalas (@petalas)** — [#5923](https://github.com/CrocSwap/integer-mult-bounds/pull/5923): Save 22 historical disjoint-triple roles through a descendant tie (no κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5924](https://github.com/CrocSwap/integer-mult-bounds/pull/5924): Prove sharp ten-call minimum for four mixed affine targets (no κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5925](https://github.com/CrocSwap/integer-mult-bounds/pull/5925): Tighten Tensor stored-factor rounding from (n+6)/4 to (n+2)/4 (source archive).
+- **Nick Petalas (@petalas)** — [#5926](https://github.com/CrocSwap/integer-mult-bounds/pull/5926): Prove a sharp Fano cut gap for a GL3 Singer target (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#5927](https://github.com/CrocSwap/integer-mult-bounds/pull/5927): Prove exact dirty endpoint tests with bounded sign lifetimes (source archive).
+- **Nick Petalas (@petalas)** — [#5928](https://github.com/CrocSwap/integer-mult-bounds/pull/5928): Prove sharp shared-block spectral envelopes (no new κ) (source archive).

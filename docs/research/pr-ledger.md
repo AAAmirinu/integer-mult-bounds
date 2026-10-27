@@ -1,6 +1,6 @@
 # PR review and integration ledger
 
-The immutable starting snapshot contains **446 PRs**. Explicit later family rounds extend the current inventory to **5177**; unrelated arrivals remain outside the round.
+The immutable starting snapshot contains **446 PRs**. Explicit later family rounds extend the current inventory to **5187**; unrelated arrivals remain outside the round.
 
 [Machine-readable ledger](pr-ledger.json) · [Starting snapshot](../../research/pr-reconciliation-20261012/starting-snapshot.json)
 
@@ -9,7 +9,7 @@ The ledger separates historical review from integration. A prior snapshot or a m
 | Disposition | Count |
 |---|---:|
 | incorporated | 2179 |
-| partially reviewed | 2936 |
+| partially reviewed | 2946 |
 | superseded | 2 |
 | unreviewed | 60 |
 
@@ -5220,3 +5220,13 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#5916](https://github.com/CrocSwap/integer-mult-bounds/pull/5916) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5917](https://github.com/CrocSwap/integer-mult-bounds/pull/5917) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#5918](https://github.com/CrocSwap/integer-mult-bounds/pull/5918) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5919](https://github.com/CrocSwap/integer-mult-bounds/pull/5919) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5920](https://github.com/CrocSwap/integer-mult-bounds/pull/5920) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5921](https://github.com/CrocSwap/integer-mult-bounds/pull/5921) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5922](https://github.com/CrocSwap/integer-mult-bounds/pull/5922) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5923](https://github.com/CrocSwap/integer-mult-bounds/pull/5923) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5924](https://github.com/CrocSwap/integer-mult-bounds/pull/5924) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5925](https://github.com/CrocSwap/integer-mult-bounds/pull/5925) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5926](https://github.com/CrocSwap/integer-mult-bounds/pull/5926) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5927](https://github.com/CrocSwap/integer-mult-bounds/pull/5927) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#5928](https://github.com/CrocSwap/integer-mult-bounds/pull/5928) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
