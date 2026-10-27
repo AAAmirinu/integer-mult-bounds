@@ -88,15 +88,6 @@ separate fixed-schedule context. Source files and their credit lines remain
 unchanged. New work is Apache-2.0. Independent human and formal proof-kernel
 review are unclaimed.
 
-The Investigation playbook shaped the bounded question. Build the Lever
-produced the reusable exact verifier; Prove It Works required literal
-prefix-cell endpoints and a separate arithmetic oracle. Power of Ten is
-applied with a managed-Python allocation deviation: input caps bound integer
-sizes, loops are bounded, functions remain below sixty lines, and normal and
-optimized executions retain explicit failure checks. No recursion or hidden
-background work is used. Python and Fraction necessarily allocate dynamically;
-no allocation-free claim is made.
-
 ## Open next questions
 
 - Can the final window be reduced or its search replaced by fewer products?

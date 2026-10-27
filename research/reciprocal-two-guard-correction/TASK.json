@@ -106,6 +106,7 @@
   "implementation_limits": {
     "maximum_target": 4096,
     "maximum_input_bits": 16384,
-    "proof_target_limit": null
+    "proof_target_limit": null,
+    "allocation_deviation": "Managed Python and Fraction allocate dynamically. Input caps bound integer lengths; finite target ranges and a thirteen-candidate window bound loops and live collections. No allocation-free guarantee is claimed."
   }
 }
