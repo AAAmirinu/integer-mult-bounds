@@ -8,6 +8,8 @@ Use the exact source and normalized restored-Y quotient from PR5808. Its target 
 
 Gathering, storage, arbitrary rational scatter and helper restoration are granted. Joint output noise can cancel between channels. Initial ground-Y preconditioning has zero response in this quotient. The source native common-fixed-vector specialization is a retained premise, not a new all-address theorem.
 
+Discard any channel whose chosen response vector is zero. Each discarded positive-rank channel costs at least H1. In the cases below, n counts the remaining channels. If the original completion had more than eight channels but at most eight remain, the rank-eight target forces exactly eight to remain, and the discarded charge gives a gap of at least H1. Thus it is enough to analyze nonzero responses.
+
 The unchanged PR5808 census visits every change of an impulse response or its frame. It records all 22,585 events and verifies the complete initial restored-Y invariant. The new checker authenticates that implementation and its archive before use. This proof does not claim an independent implementation of that census.
 
 ## Exact cut certificate without rank eight
