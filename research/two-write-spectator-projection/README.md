@@ -66,7 +66,8 @@ If `c` moves row `k`, then `pi_k([c]I)=0`, so instead
 `0=(I+N)(I+M)+N S M`.                                    (3)
 
 Left multiplication by `I+N` gives `(I+N)(I+M)=0`. This alone does not
-force complementary projectors. Apply the same argument to the inverse word:
+force complementary projectors. Each paid call is an involution, so the inverse is a legal reversed word.
+Apply the same argument to that inverse:
 its two writer projectors occur in order `M,N`; every other label still fixes
 row `k`. Since a subgroup is closed under inversion, `c^{-1}` also moves row
 `k`. Thus `(I+M)(I+N)=0` as well. In dimension two, the first equality gives
@@ -81,7 +82,9 @@ PR6012's cited reduction leaves `n=5`, two scalar roles and the ten-call
 write profile `(target,spectator)=(6,4)`. Both spectators are therefore written
 exactly twice. Their two writer projectors must be equal by (2). Applying the
 transpose/reversed-word version gives the same necessary equality for the
-two reads of each spectator. Each of the three target coordinates is also written and read exactly twice;
+two reads of each spectator. Total length ten and PR6012's two-read minimum
+for each of the five coordinates force exactly two reads per coordinate.
+Each of the three target coordinates is also written and read exactly twice;
 its writer pair and reader pair must each be complementary. These equalities
 are necessary, not sufficient for a full formal endpoint;
 no length-ten or length-eleven exclusion is asserted.
@@ -107,6 +110,7 @@ seventeen-call positive endpoint with a live two-write spectator.
 
 ```sh
 python3.12 -I -W error -B research/two-write-spectator-projection/verify.py
+python3.12 -I -W error -B research/two-write-spectator-projection/independent.py
 python3.12 -B scripts/research_package.py --package research/two-write-spectator-projection
 ```
 
@@ -117,7 +121,16 @@ all 576 augmented `(N,M,S)` cases and all six commutator fixtures. It finds
 and inverse conditions: exactly the complements. Controls reject missing
 middle support selection, missing relabelling and each deleted commutator
 call; the extra forward-only pairs refute the insufficient one-sided argument.
-Finite checks corroborate the written proof. No unrestricted length-ten or
+`independent.py` uses complete permutations of all address vectors as group
+**labels**, retaining a separate scalar coefficient for every permutation.
+It does not accept equality merely in the permutation-module representation.
+Its separate dense scalar arithmetic checks all 288 GL(3,2) return-filter
+cases, 72 five-coordinate contexts with outer subwords and longer middles,
+the twelve-call positive endpoint, and all six seventeen-call insertions.
+Both engines were prepared in this session; this is implementation diversity,
+not independent human review. A separate read-only agent review independently
+checked the proof, augmented matrices and group fixtures; no proof-kernel
+acceptance is claimed. Finite checks corroborate the written proof. No unrestricted length-ten or
 length-eleven search is part of this task.
 
 ## Open next questions

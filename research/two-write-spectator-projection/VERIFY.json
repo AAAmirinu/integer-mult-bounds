@@ -32,6 +32,31 @@
       ],
       "timeout_seconds": 60,
       "checks": "All projection, classification and control checks remain active under optimization"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-W",
+        "error",
+        "-B",
+        "{package}/independent.py"
+      ],
+      "timeout_seconds": 60,
+      "checks": "Independent complete-permutation group labels: 288 return filters, 72 outer contexts, six 17-call positive endpoints"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-I",
+        "-O",
+        "-W",
+        "error",
+        "-B",
+        "{package}/independent.py"
+      ],
+      "timeout_seconds": 60,
+      "checks": "Independent formal-coefficient and positive endpoint checks under optimization"
     }
   ]
 }
