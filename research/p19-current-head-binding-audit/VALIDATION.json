@@ -83,6 +83,21 @@
       "stop": null,
       "stdout_sha256": "6dc0a4cd356c93ebdf6a0764b6e9f0a3ff7b9ba03a563c6f572f4efef28b04a5",
       "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "bank-python312": {
+      "argv": [
+        "/opt/local/bin/python3.12",
+        "-u",
+        "-B",
+        "research/coded-reverse-word-p19/p19_bank.py"
+      ],
+      "cwd": "/tmp/integer-p19-source",
+      "seconds": 131.23299658298492,
+      "peak_sampled_descendant_rss_kib": 203120,
+      "exit_code": 0,
+      "stop": null,
+      "stdout_sha256": "44923100db2573e031478019879cd07a43018dc4bacaf5623017f20f3492a439",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     }
   },
   "export_control": {
@@ -105,7 +120,7 @@
     "full machine/compiler/precision/tape/stock/analytic recovery proof"
   ],
   "limitations": [
-    "Original p2 bank command stopped at 180 seconds with no pass receipt. An earlier sparse setup import failure was resolved before this bounded run.",
+    "An initial CPython 3.11 bank command stopped at 180 seconds. A fresh explicitly budgeted CPython 3.12 run then passed in 131.23 seconds (203120 KiB peak sampled descendant RSS). This is the original one-dense-seed p2 pattern-I control, not a p19 native admission.",
     "The complete-word p19 result instantiates the actual gate-loop semantics with p19 gates; the submitted main remains hardcoded to p2 pattern I.",
     "Fresh source-bound mathematical checks are author-side AI-assisted checks, not independent human or proof-kernel acceptance."
   ],
@@ -132,5 +147,15 @@
   "final_overlap_local_scope": "Sparse local inventory incomplete; relevant retained native/controller/reference/decoder notes were materialized. Live PR/Discussion searches are provisional leads, not novelty proof.",
   "prior_fee_proof": "https://github.com/CrocSwap/integer-mult-bounds/discussions/4930#discussioncomment-19149724",
   "original_contribution": "Complete-word execution of the exact current address-loop protocol on emitted p19 gates, with the role-36 to role-0 pulse witness, p2 eigenvalue controls and narrow repair controls. The fee threshold is independently reproduced prior work.",
-  "frozen_source_whitespace": "git diff --check reports one pre-existing trailing space in retained source/pr5270/p19_claim.py:370. Exact source bytes/hashes are preserved; new authored files pass the scoped whitespace check."
+  "frozen_source_whitespace": "git diff --check reports one pre-existing trailing space in retained source/pr5270/p19_claim.py:370. Exact source bytes/hashes are preserved; new authored files pass the scoped whitespace check.",
+  "committed_byte_preflight": {
+    "status": "PASS_RESEARCH_COMMIT_BYTES",
+    "commit": "ab2435cf5ba7a1f4650cb1d43bd31b09271043a3",
+    "files": 24
+  },
+  "source_history_preflight": {
+    "status": "unavailable",
+    "reason": "source-history check requires full Git history; checkout is shallow. Exact available source bytes/pins pass metadata and committed-byte checks; no full-history availability claim is made."
+  },
+  "source_worktree_status_after_bank": ""
 }
