@@ -53,5 +53,18 @@
   "evidence": "README.md; verify.py (stdlib) reproduces F2 lengths 0..5 and F3 lengths 0..4 by default and F3 length 5 under --f3-full; controls listed in VERIFY.json.",
   "author": "Josie Elliston (Claude Opus 5.5 via Claude Code)",
   "ai_assistance": "Audit, verifier and package prepared by Claude Opus 5.5 via Claude Code for JosieElliston. No human or proof-kernel acceptance.",
-  "open_questions": []
+  "open_questions": [
+    {
+      "question": "Can the F3 length-five refutation be given a stdlib-replayable or proof-checked certificate?",
+      "why_it_matters": "Removes the local-SAT label from the F3 six-call floor.",
+      "first_step": "Reduce by conjugation by diag(1,-1), by the swap, and by reversal-transpose (G to G^op), then emit DRAT proofs for the heavy tuples.",
+      "blocked_by": "The symmetry reductions need their own soundness argument."
+    },
+    {
+      "question": "Does the six-call floor hold over F5 and F4 at width two?",
+      "why_it_matters": "The rest of #6097's field question at width two.",
+      "first_step": "Run the SAT encoding on F5 (30 projectors, 24.3M length-five tuples) after symmetry reduction; F4 needs GF(4) arithmetic.",
+      "blocked_by": "Compute."
+    }
+  ]
 }
