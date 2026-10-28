@@ -35,4 +35,16 @@ No selected-construction replay, `make verify`, historical heavy suite, Lean, or
 
 ## Committed bytes and portable replay
 
-The publication preflight, official export integrity check and Git-free replay are recorded below after execution. They check transport and reproducibility, not the analytic theorem.
+At scientific commit `9465f263a673d2d86e7262523cbeb0e796f486cf`, the following commands passed on all 26 package/input files:
+
+```sh
+python3 -B scripts/check_research_commit.py --package research/direct-flow-leaf-saturation --check-source-history
+python3 -B scripts/export_research_package.py export --package research/direct-flow-leaf-saturation --ref 9465f263a673d2d86e7262523cbeb0e796f486cf --output /tmp/leaf-saturation.tar
+python3 -B scripts/export_research_package.py check /tmp/leaf-saturation.tar
+```
+
+The actual temporary archive path was outside the repository; `/tmp/leaf-saturation.tar` above is the portable equivalent. Both exporter commands reported `PASS_RESEARCH_EXPORT`. Committed-byte comparison reported `PASS_RESEARCH_COMMIT_BYTES`, with source-history commit `721c03822c421b7f7fcbb2598993b947c4d88419`.
+
+After extraction into a fresh directory, with PATH pointing to an empty directory and no Git available, all three direct package commands passed: main verifier 14.383 s, independent source checker 0.094 s, mutation controls 28.189 s. [logs/portable-results.json](logs/portable-results.json) records the actual commands, exits and logs. Their source bytes are exactly the scientific commit above; subsequent packaging adds these logs and this record without changing the proof or checker.
+
+These checks establish committed-source availability, transport integrity and portable replay. They do not prove the analytic theorem. Final publication-byte preflight is repeated after recording this evidence; the PR pins the final contribution SHA.
