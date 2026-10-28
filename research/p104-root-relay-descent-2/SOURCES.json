@@ -5,8 +5,8 @@
   {
    "path": "certificates/selected-result.json",
    "usage": "provenance",
-   "git_blob": "581f8d87008354eb5b869f7ed9de1317ad837ce8",
-   "sha256": "2a0220e866417774606e0f991e41b9c1d26b1f43b97857238cf478dbc7d330b5"
+   "git_blob": "d59b5035e7b4cbaa9d688a1d32dd0d6eb79c466a",
+   "sha256": "9b8d0eea95b3bf0dfcb7938a732a6439b87a2685dec2a5ab9e525b3b34debbfa"
   },
   {
    "path": "docs/research/agent-task-catalog.json",
