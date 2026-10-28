@@ -1,15 +1,16 @@
 # No inserted carrier correction legalizes a PR5718-shape leak class on the PR6030 P104 word
 
-**Scoped exact result; no new κ.** Base: canonical main `a2b4b0395e293dded1cb17b4e78910b364af2343`. The selected
-record is unchanged.
+**Scoped exact result; no new κ.** Base: canonical main `a2b4b0395e293dded1cb17b4e78910b364af2343`; inputs rechecked unchanged at
+`721c03822`. The selected record is unchanged by this package.
 
 Nick Petalas's [PR #6040](https://github.com/CrocSwap/integer-mult-bounds/pull/6040) (`shapesplit.py`, pinned
 here as `inputs/shapesplit.py` from head `1889253f`) finds no PR5718-shape helper split on the PR5907 word. Every
 candidate class either *leaks*, meaning the new helper's direction `d = S e_p` reaches a role whose final chart is
 not `V`, or fails the pairing. It released step (3) of its claim: output corrections at later meetings. This
 package takes that step. It runs on the merged
-[PR #6030](https://github.com/CrocSwap/integer-mult-bounds/pull/6030) word (DreamingOfClouds, κ .003125804), the
-latest conditional P104 word, and repeats the run on PR5907.
+[PR #6030](https://github.com/CrocSwap/integer-mult-bounds/pull/6030) word (DreamingOfClouds, κ .003125804), which
+became the selected word at main `721c03822` while this package was being prepared (the input bytes are unchanged),
+and repeats the run on PR5907.
 
 ## Result
 
