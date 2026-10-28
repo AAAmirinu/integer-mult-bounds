@@ -70,9 +70,12 @@ Theorem S.
 | 2 | F5 | 27,000 | no solution | no solution |
 | 3 | F2 | 21,952 | no solution | no solution |
 | 2 | F7 | 175,616 | no solution | no solution (local run, 87 s) |
+| 3 | F3 | 1,601,613 | no solution | no solution (local run, 1,124 s) |
 
-The first four rows are registered; the F7 row is a local run of the same verifier
-(`--cases 2:7`). Lengths 0, 1 and 2 are also excluded in every row.
+The first four rows are registered. The last two are local runs of the same
+verifier (`--cases 2:7`, `--cases 3:3`). Lengths 0, 1 and 2 are also excluded
+in every row. A local `--cases 4:2` run hit its 1,500 s timeout before
+finishing and is not claimed.
 
 Controls, all registered:
 
@@ -105,6 +108,7 @@ From the repository root, standard-library CPython 3.12:
 python3.12 -B -W error research/conjugate-pair-group-free-audit/verify.py
 python3.12 -O -B -W error research/conjugate-pair-group-free-audit/verify.py
 python3.12 -B research/conjugate-pair-group-free-audit/verify.py --cases 2:7   # optional, about 90 s
+python3.12 -B research/conjugate-pair-group-free-audit/verify.py --cases 3:3   # optional, about 19 min
 python3.12 -B scripts/research_package.py --package research/conjugate-pair-group-free-audit
 ```
 
