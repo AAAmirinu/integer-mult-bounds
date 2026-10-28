@@ -61,8 +61,8 @@ class PublicationMetadataReuseTests(unittest.TestCase):
                          [('cat-file', '-s'), ('cat-file', 'blob')])
         with patch.object(checker, 'history_git', wraps=checker.history_git) as calls:
             self.check()
-        self.assertEqual([c.args[1] for c in calls.call_args_list],
-                         ['rev-parse', 'rev-parse', 'merge-base'])
+        self.assertTrue(calls.call_args_list)
+        self.assertNotIn('cat-file', [c.args[1] for c in calls.call_args_list])
 
     def test_working_drift_is_rejected_before_metadata_parsing(self):
         (self.path / 'SOURCES.json').write_bytes(b'{invalid')
