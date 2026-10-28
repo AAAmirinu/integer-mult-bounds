@@ -94,4 +94,45 @@ class AllocationTests(unittest.TestCase):
             cert.write_text('{}');r=subprocess.run(command+['--verify',str(cert)],capture_output=True,text=True)
             self.assertEqual(r.returncode,2);self.assertEqual(r.stdout,'')
 
+    def test_cli_replays_large_aggregate_capacity(self):
+        # A pool can exceed the per-lifetime width bound without any input
+        # exceeding it. Replay the actual producer's serialized certificate.
+        for count in (2,512):
+            with self.subTest(lifetimes=count), tempfile.TemporaryDirectory() as tmp:
+                source=Path(tmp)/'lifetimes.json';cert=Path(tmp)/'cert.json'
+                source.write_text(json.dumps(problem([(0,1,10**60)]*count)))
+                command=[sys.executable,'-I','-O','-B',str(TOOL),str(source)]
+                produced=subprocess.run(command,capture_output=True,text=True,check=True,cwd=tmp)
+                certificate=json.loads(produced.stdout)['certificate']
+                self.assertEqual(certificate['capacity'],count*10**60)
+                cert.write_text(json.dumps(certificate))
+                replay=subprocess.run(command+['--verify',str(cert)],capture_output=True,
+                                      text=True,check=True,cwd=tmp)
+                report=json.loads(replay.stdout)
+                self.assertTrue(report['valid'])
+                self.assertEqual(report['certificate'],certificate)
+                self.assertEqual(report['minimum_capacity'],count*10**60)
+                self.assertEqual(report['inputs']['lifetimes']['sha256'],sha256(source.read_bytes()).hexdigest())
+                self.assertEqual(report['inputs']['certificate']['sha256'],sha256(cert.read_bytes()).hexdigest())
+
+    def test_cli_keeps_input_and_certificate_integer_bounds(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            source=Path(tmp)/'lifetimes.json';cert=Path(tmp)/'cert.json'
+            p=problem([(0,1,10**60),(0,1,10**60)])
+            source.write_text(json.dumps(p));good=M['allocate'](p)
+            command=[sys.executable,'-I','-O','-B',str(TOOL),str(source)]
+            maximum=512*10**60
+            for capacity in (2*10**60+1,maximum+1,-maximum-1,10**1000):
+                with self.subTest(capacity=capacity):
+                    bad=copy.deepcopy(good);bad['capacity']=capacity
+                    cert.write_text(json.dumps(bad))
+                    r=subprocess.run(command+['--verify',str(cert)],capture_output=True,text=True,cwd=tmp)
+                    self.assertEqual(r.returncode,2);self.assertEqual(r.stdout,'')
+                    self.assertEqual(json.loads(r.stderr)['status'],'INVALID_HELPER_ALLOCATION')
+            p['lifetimes'][0]['width']=10**60+1
+            source.write_text(json.dumps(p))
+            r=subprocess.run(command,capture_output=True,text=True,cwd=tmp)
+            self.assertEqual(r.returncode,2);self.assertEqual(r.stdout,'')
+            self.assertEqual(json.loads(r.stderr)['status'],'INVALID_HELPER_ALLOCATION')
+
 if __name__=='__main__':unittest.main()

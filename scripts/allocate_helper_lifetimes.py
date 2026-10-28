@@ -22,6 +22,17 @@ finally:
 
 MAX_LIVES=512
 MAX_WIDTH=10**60
+MAX_CAPACITY=MAX_LIVES*MAX_WIDTH
+
+
+def _certificate_integer(text):
+    # Aggregate pool coordinates can exceed one lifetime's width limit.
+    # Bound the token before int(), independently of Python's digit limit.
+    require(len(text.removeprefix('-'))<=len(str(MAX_CAPACITY)),
+            'certificate integer token exceeds pool capacity digit limit')
+    value=int(text)
+    require(abs(value)<=MAX_CAPACITY,'certificate integer exceeds maximum pool capacity')
+    return value
 
 
 def validate(problem):
@@ -75,7 +86,7 @@ def verify(problem,certificate):
     require(type(certificate) is dict and certificate.keys()=={'schema','capacity','allocations','peak'} and
             certificate['schema']=='integer-mult-helper-allocation/v1','invalid allocation schema')
     capacity=certificate['capacity'];allocations=certificate['allocations'];peak=certificate['peak']
-    require(type(capacity) is int and 1<=capacity<=MAX_LIVES*MAX_WIDTH,'invalid pool capacity')
+    require(type(capacity) is int and 1<=capacity<=MAX_CAPACITY,'invalid pool capacity')
     require(type(allocations) is dict and allocations.keys()==by_id.keys(),'allocation IDs differ')
     pieces=0
     for name,slots in allocations.items():
@@ -113,10 +124,10 @@ def verify(problem,certificate):
                     'are declarations; no native map or kappa improvement is certified.'}
 
 
-def load(path,limit):
+def load(path,limit,*,parse_int=_integer):
     with Path(path).open('rb') as stream:raw=stream.read(limit+1)
     require(len(raw)<=limit,'input exceeds byte limit')
-    value=json.loads(raw.decode('utf-8'),object_pairs_hook=_pairs,parse_int=_integer,
+    value=json.loads(raw.decode('utf-8'),object_pairs_hook=_pairs,parse_int=parse_int,
                      parse_float=_not_integer,parse_constant=_not_integer)
     return value,{'path':str(path),'bytes':len(raw),'sha256':sha256(raw).hexdigest()}
 
@@ -127,7 +138,8 @@ def main(argv=None):
     args=parser.parse_args(argv)
     try:
         problem,pin=load(args.lifetimes,1024*1024);inputs={'lifetimes':pin}
-        if args.verify:certificate,inputs['certificate']=load(args.verify,32*1024*1024)
+        if args.verify:certificate,inputs['certificate']=load(args.verify,32*1024*1024,
+                                                            parse_int=_certificate_integer)
         else:certificate=allocate(problem)
         report=verify(problem,certificate);report['certificate']=certificate;report['inputs']=inputs
         report['schema']='integer-mult-helper-allocation-report/v1';report['contract']=problem['contract']
