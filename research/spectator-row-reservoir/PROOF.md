@@ -80,7 +80,7 @@ Let N=Θ(p), h≤C p^x, x<1, and suppose the **total** stock satisfies
 $$\log_2Q\le C_0\bigl(1+\log(2h)+h^\nu p^\zeta(\log(2p))^A\bigr),\qquad
 0\le\nu<1,\quad\zeta\ge0.$$
 
-Here the bound is on binary row bits. A source bound in complete K-bit chunks has the same power exponents because K=Θ(log p). Constants and degrees are fixed and computable before input length varies.
+Q and the active-core descriptors must be generated within the retained charged polynomial(p) setup budget. A short numeric encoding alone does not prove fast generation. The row prefix is one aggregate field; it does not create R separately parsed descriptors. Here the bound is on binary row bits. A source bound in complete K-bit chunks has the same power exponents because K=Θ(log p). Constants and degrees are fixed and computable before input length varies.
 
 If
 
