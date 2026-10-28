@@ -10,8 +10,8 @@ meets the bound.
 example, and the soundness argument for the exhaustive finite refutation.
 [verify.py](verify.py) checks every one of the 9,331 projector tuples of
 length zero through five. It propagates common-prefix/suffix cancellation
-jointly through the four group-algebra coefficient equations. The groups
-and label alphabets remain arbitrary; this is not evidence extrapolated
+jointly through the four group-algebra coefficient equations. Free invertible scalar basis changes are normalized by conjugation and
+augmentation in the proof. The groups and label alphabets remain arbitrary; this is not evidence extrapolated
 from a finite group census.
 
 This resolves the width-two/F2 portion of Josie Elliston's #6048 open

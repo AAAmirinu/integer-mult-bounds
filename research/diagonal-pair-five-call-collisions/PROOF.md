@@ -21,6 +21,27 @@ This is the formal register model of Wentao Li (#4089), as used by Nick
 Petalas (#6038) and Josie Elliston (#6048). No native tariff, supplier or
 multiplication bound is inferred.
 
+## Free scalar changes of basis
+
+The stated product form also covers arbitrary invertible scalar basis changes
+between paid calls. Write such a circuit as
+
+    S0 D_N1(g1) S1 ... D_Nk(gk) Sk,
+    Si in GL_2(F2).
+
+Let Ci=S0 ... S_(i-1). The identity S D_N(g) S^-1 = D_(S N S^-1)(g)
+moves each scalar factor to the right, giving
+
+    D_(C1 N1 C1^-1)(g1) ... D_(Ck Nk Ck^-1)(gk) S,
+    S=S0 ... Sk.
+
+Conjugation preserves rank-one idempotence, so every resulting projector is
+in the six-element inventory. The group-algebra augmentation [g] -> 1 sends
+every paid factor to I and sends diag([a],[b]) to I. Thus any successful
+circuit has S=I. Free scalar changes of basis therefore add no missing
+terminal factor or extra cases. This normalization does not admit free
+address-dependent maps, clean auxiliary registers, COPY or ERASE.
+
 ## The missing group implication
 
 Write the chronological labels of a k-call candidate as g_1,...,g_k. They
@@ -38,8 +59,7 @@ The certificate uses both implications, only when all sequences involved
 are chronological subsets of the candidate. It does not presume that these
 rules decide the word problem.
 
-A concrete five-call survivor of the separate scalar-pairing relaxation has
-projectors, in row-major bit encoding,
+A concrete five-call tuple has projectors, in row-major bit encoding,
 
     (1,5,5,3,10) = (E00, [[1,0],[1,0]], [[1,0],[1,0]],
                    [[1,1],[0,0]], [[0,1],[0,1]]).
