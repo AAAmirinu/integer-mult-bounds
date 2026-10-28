@@ -16,11 +16,13 @@ For d = 2 this is `2^k − 1 ≤ k³c`, so every depth-two block has
   (k = 1 + ⌊log₂ c⌋) are within O(log log c) of the largest possible
   depth-two block. A depth-two block "near k ≈ 2 log₂ c", which PR6071's
   open question 1 suggests looking for, does not exist once c is large.
-- Every floor word built by concatenating blocks of depth at most two has
+- Every floor word built by PR4248's concatenation (blocks with depths
+  summing to at most c, each mask read inside each block) using blocks of
+  depth at most two has
   `n ≤ c · max(2, K₂(c)/2) = (1/2 + o(1)) c log₂ c` sources. PR6071's
   `(1 + ⌊log₂ c⌋)⌊c/2⌋` lower bound attains this, so **1/2 is the sharp
   leading constant for depth ≤ 2 block concatenations**.
-- More generally, concatenations of blocks of depth at most D give at most
+- More generally, such concatenations of blocks of depth at most D give at most
   `(1 − 1/D + o(1)) c log₂ c` sources. A leading constant above 1/2 needs
   blocks of depth at least three; reaching the counting constant 1 needs
   depth that grows with c, or reads that are not organized in blocks.
@@ -88,6 +90,13 @@ this is `n ≤ c · max(2, K₂(c)/2)`, which is `(1/2 + O(log log c / log c)) c
 PR6071 gives `n ≥ (1 + ⌊log₂ c⌋)⌊c/2⌋ + 2(c mod 2)`. Both ratios to
 c log₂ c tend to 1/2. For D ≥ 3 the ceiling is `(1 − 1/D + o(1)) c log₂ c`;
 no matching construction is supplied for D ≥ 3.
+
+**The general constant is at most 1.** PR4248's count `2^n − 1 ≤ binom(cn + c − 1, c)`
+and `binom(N, c) ≤ (eN/c)^c` give `2^n − 1 ≤ (e(n + 1))^c`, so
+`n ≤ 1 + c log₂(e(n + 1))`. With PR6071's `n < 4c(⌈log₂ c⌉ + 1)` this is
+`n ≤ (1 + O(log log c / log c)) c log₂ c`. So N(c)/(c log₂ c) has liminf at
+least 1/2 (PR6071) and limsup at most 1. This sharpening of the counting
+asymptotic is routine and is stated only to fix the interval.
 
 The same lemma applied to a whole floor word (d = c, k = n) gives
 `2^n − 1 ≤ n · min(n, c) · binom(cn + c − 2, c − 1)`. For n ≥ 2 this is
