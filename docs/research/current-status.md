@@ -1,6 +1,6 @@
 # Current reviewed status
 
-Selected conditional κ: **0.003125804 = 781451/250000000**, DreamingOfClouds'
+Selected conditional κ: **0.003125804** = 781451/250000000, DreamingOfClouds'
 PR6030 on the cumulative P104 construction. The complete caller counts 13,444
 productive fields and 66,834 paid calls. The saving is about 0.81775% above the
 preceding selected PR5599 claim 0.00310045.
