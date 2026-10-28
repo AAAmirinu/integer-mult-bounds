@@ -64,6 +64,17 @@ local word (which enters the moment, not the mass; see `research/fragmentation-c
 the target ranks that grows with `n_thick` (which is why `p = 16` is optimal for the retained local profile,
 PR5554).
 
+## Relation to the binary theorem
+
+`research/productive-controller-basis-search/GLOBAL-PROOF.md` (Cinna Davis), Theorem B, proves the count
+`queries ≥ 2p + 1` for `2p` independent monomial outputs over `F₂[Q]/(Q² − 1)` with constant binary boundaries
+and without idle work, by the rank of `n` rank-one nilpotents summing to the identity. The lemma above is the same
+count in the retained complex alphabet: `K = ℚ`, `Q` a Laurent variable with `Q² ≠ 1`, free idle markers, outputs
+counted one by one (so partially twisted words are covered), and it is read off the even-part rank rather than
+the derivative at `Q = 1`. The pruning remark of that package's `PROOF.md` ("a query changes the even part from
+`E` to `E + NO`, so its rank can fall by at most one") is the step (2) of the lemma; here it is made the whole
+argument, with the first-shear refinement (3) that gives the `− 1`.
+
 ## Scope
 
 The alphabet is the literal one of the retained callers; a paid job that touches several banks or several ports at

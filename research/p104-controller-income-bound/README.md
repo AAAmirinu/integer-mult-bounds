@@ -8,7 +8,19 @@ in that alphabet can twist more outputs than it has paid odd shears, minus one**
 income per port is at most the number of full calls minus one. The three retained controllers reach exactly that
 bound (17 = 18 − 1).
 
-Base: canonical main `19fdb086ea96af9a9f87936a2b888e10af4ed810`. Inputs pinned in [SOURCES.json](SOURCES.json).
+**Prior work.** Theorem B of Cinna Davis's
+[`research/productive-controller-basis-search/GLOBAL-PROOF.md`](../productive-controller-basis-search/GLOBAL-PROOF.md)
+already proves that a successful controller with `2p` independent monomial outputs needs at least `2p + 1`
+query-bearing calls, over `F₂[Q]/(Q² − 1)` with constant binary boundaries and no idle work, and its
+[`PROOF.md`](../productive-controller-basis-search/PROOF.md) uses "a query changes the even part by one row" as a
+search pruning rule; that package states explicitly that the binary theorem is not asserted for complex words. This
+package is the complex-side counterpart: the same even-part count in the literal rational Laurent alphabet of the
+retained callers (`Q² ≠ 1`, idle stage markers, any number of outputs twisted), stated as a bound on the income of
+the complete invoice rather than on the call count, and checked on the literal controllers. It also answers, for
+the rank mass, the first open question of that package: additional queries beyond `2p + 1` cannot raise the
+controller's income, because every paid shear, thick or thin, buys at most one twisted output.
+
+Base: canonical main `721c03822c421b7f7fcbb2598993b947c4d88419`. Inputs pinned in [SOURCES.json](SOURCES.json).
 
 ## The argument
 
@@ -54,7 +66,8 @@ even rank and the declared diagonal is rejected; a free `Q^{±1}` is rejected by
 ## Credits and scope
 
 Controllers by Cinna Davis (p16/a7 lattice), Ali Romman (PR5398 wrapper, PR5544 all-forward caller) and the
-P104 lineage; PR5405/PR5554 (zxv) for the path-family ceilings this bound complements; `fragmentation-ceiling`
+P104 lineage; Cinna Davis's `productive-controller-basis-search` for the binary `2p + 1` theorem and the even-part
+pruning idea this package lifts to the rational Laurent alphabet; PR5405/PR5554 (zxv) for the path-family ceilings this bound complements; `fragmentation-ceiling`
 for the moment side. The bound is on rank mass inside the literal alphabet; it makes no claim about the moment at
 `t < 1`, about other primitives, or about any selected result. Prepared for Matarener with Claude (Anthropic),
 via Claude Code. Apache-2.0.
