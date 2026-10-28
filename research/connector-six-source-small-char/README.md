@@ -1,4 +1,4 @@
-# Six-source depth-two connector blocks: none in characteristic five (local SAT)
+# Six-source depth-two connector blocks: none in characteristics five and six (local SAT)
 
 **Scoped finite exclusion for the unchanged unsigned dirty connector; local
 solver evidence only; no new κ.**
@@ -13,15 +13,18 @@ Six-source depth-two blocks exist for every c ≥ 8
 five-source ones for every c ≥ 5
 ([PR6035](https://github.com/CrocSwap/integer-mult-bounds/pull/6035)).
 Deleting a source keeps depth two (PR4232/PR4248), so the largest depth-two
-block in characteristic five has exactly five sources. c = 6 and c = 7 are
-still open (see the table).
+block in characteristic five has exactly five sources. The same encoding is
+also UNSAT at c = 6 (CaDiCaL 1.9.5, 1263 s; see the table for the second-solver
+status), so the largest depth-two block there has five sources too. c = 7 is
+still open.
 
-This answers the c = 5 case of open question 1 of PR6061 and of the open item
+This answers the c = 5 and c = 6 cases of open question 1 of PR6061 and of the open item
 in PR6057 / [#6058](https://github.com/CrocSwap/integer-mult-bounds/discussions/6058)
 ("characteristics five through seven remain open").
 
-**What is and is not established.** The UNSAT verdicts are outputs of
-CaDiCaL 1.9.5, CaDiCaL 1.5.3 and Glucose 4 on one machine. No DRAT/LRAT proof
+**What is and is not established.** The c = 5 verdict is the output of
+CaDiCaL 1.9.5, CaDiCaL 1.5.3 and Glucose 4 on one machine; the c = 6 verdict
+is one CaDiCaL 1.9.5 run. No DRAT/LRAT proof
 was checked, and no human proof is given. `verify.py` (standard library)
 checks only the literal words: the positive controls and the encoding's
 pruning identity on them. Treat the exclusion as a reproducible local
@@ -49,7 +52,7 @@ No operation is added and nothing about the alphabet changes.
 | 6 | 5, weights {1,2,3} only | UNSAT | CaDiCaL 1.9.5 106 s |
 | 6 | 5, weights {1,2,6} only | UNSAT | CaDiCaL 1.9.5 130 s |
 | 6 | 5, weights {1,2}, {1,6}, {1,5,6} | SAT | each found in < 4 s; one word is a `verify.py` control |
-| 6 | 6 | open | no verdict within the session (see TASK.json) |
+| **6** | **6** | **UNSAT** | CaDiCaL 1.9.5 1263 s; single solver (MapleChrono and cube runs unfinished at submission) |
 | 6 | 7 | open | no verdict within the session |
 | 6 | 8 | SAT | control (PR6057/PR6061 range); found word checked by `verify.py` |
 
@@ -83,6 +86,7 @@ python3.12 -I -W error -B research/connector-six-source-small-char/verify.py
 python search_sat.py 6 5 --solver cadical195        # UNSAT
 python search_sat.py 6 5 --solver glucose4          # UNSAT
 python search_sat.py 6 5 --weights 2,6              # UNSAT
+python search_sat.py 6 6                            # UNSAT (about 21 minutes)
 python search_sat.py 6 8                            # SAT, prints a word
 ```
 
@@ -91,8 +95,9 @@ Expected `verify.py` output:
 
 ## Consequences and limits
 
-- In characteristic five, PR4248-style block concatenation cannot use a
-  depth-two block on more than five sources. It does not decide N(5): blocks
+- In characteristics five and six, PR4248-style block concatenation cannot
+  use a depth-two block on more than five sources. It does not decide N(5)
+  or N(6): blocks
   of depth three or more, and floor words not built from blocks, are not
   covered.
 - The bound concerns the generic schedule of the inherited interface
@@ -101,11 +106,11 @@ Expected `verify.py` output:
 
 ## Open next questions
 
-1. **c = 6 and c = 7.** *Why:* they close PR6061's question 1 and fix the
-   smallest characteristic with a six-source depth-two block. *First step:*
-   cube-and-conquer on the first eight letters with the same encoding; the
-   c = 5 runs took 2.5 to 4 minutes, while c = 6, 7 had no verdict after about
-   15 minutes on one core per solver. *Blocked by:* solver time.
+1. **c = 7.** *Why:* it closes PR6061's question 1 and fixes the smallest
+   characteristic with a six-source depth-two block (7 or 8). *First step:*
+   cube-and-conquer on the first five or more letters with the same encoding;
+   c = 5 took 2.5 to 4 minutes and c = 6 took 21 minutes on one core, while
+   c = 7 had no verdict after about 25 minutes. *Blocked by:* solver time.
 2. **A checkable certificate for c = 5.** *Why:* the exclusion currently rests
    on solver output. *First step:* emit DRAT for the weights {2,6}
    sub-instance (the smallest UNSAT core found) and check it with drat-trim or
