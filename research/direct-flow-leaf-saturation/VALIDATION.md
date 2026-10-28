@@ -1,10 +1,97 @@
 # Validation and reproducibility
 
-The initial evidence below is pinned to `ff365dba6911ce615bec76e8d1f149faf1fe16ca`. Its receipt schema and source hashes are historical after the Claude-review response. Follow-up evidence is recorded at the end; numerical parameter intervals are unchanged.
+## Current evidence index
+
+**Scientific snapshot: `553198839618962e07519b51cb3bbe808ca6f1dc`.** The proof, four Python checkers, RESULT.json, SOURCES.json and VERIFY.json remain byte-identical to this snapshot. The hashes in [claude-validation.json](logs/claude-validation.json) identify those eight scientific files. Later commits add evidence, attribution and documentation; a newer documentation commit does not mean the numerical experiments were rerun.
+
+| Evidence | Receipt | Actual result and scope |
+| --- | --- | --- |
+| Registered replay and metadata | [run manifest and source hashes](logs/claude-validation.json), [replay output](logs/claude-registered.log) | All four registered commands passed in 75.068 s; metadata passed separately. |
+| Optimized checks | [certificate](logs/claude-optimized.log), [source fixtures](logs/claude-independent-optimized.log), [mutation controls](logs/claude-mutations-optimized.log) | All exited 0; explicit controls remain effective under `-O`. |
+| Independent rational enclosures | [normal receipt](logs/claude-enclosures-normal.json), [optimized receipt](logs/claude-enclosures-optimized.json), [timings](logs/claude-enclosures-timing.json) | Identical receipts; 16 log and 127 exp arguments; all three targeted remainder faults rejected. |
+| Git-free exported replay | [commands, times and log links](logs/claude-portable-results.json) | Four direct commands passed on exported scientific snapshot `553198839`; no Git or executable PATH entries. |
+| Committed bytes and source history | [export record below](#committed-export-and-git-free-replay) | Passed for 41 package/input files at `553198839`; final evidence snapshot `6310550e932de70243fc2aaab6f4885688b6fe21` passed for 46. File counts include five declared predecessor inputs. |
+| Written theorem and review | [PROOF.md](PROOF.md), [review findings](REVIEW.md#claude-review-findings) | Scoped analytic argument with Stone's theorem as an external input; no proof-kernel or human verification. |
+
+Receipts with the `claude-` prefix apply to the current scientific files. Receipts without it are retained historical evidence for `ff365dba`; their schema and source hashes should not be used to certify current code. Historical review hashes likewise identify intermediate snapshots, not the current files. No original receipt was replaced during documentation consolidation.
 
 Base and last upstream refresh: `721c03822c421b7f7fcbb2598993b947c4d88419`, 2026-10-28. Priority revision 8. The branch adds only `research/direct-flow-leaf-saturation/`; frozen predecessors and the selected record are unchanged.
 
-## Initial local evidence actually run
+## Reproduction and evidence reuse
+
+Python 3.12, standard library only. From the repository root, run the four checks serially with the registered entry point (observed total about 75 seconds):
+
+```sh
+python3.12 -B scripts/research_package.py --package research/direct-flow-leaf-saturation
+```
+
+The runner enforces Python 3.12; a default `python3` selecting 3.13 fails its version gate. For an exported tree without Git, run these direct commands from the export root:
+
+```sh
+python3.12 -B research/direct-flow-leaf-saturation/verify.py --expect research/direct-flow-leaf-saturation/RESULT.json
+python3.12 -B research/direct-flow-leaf-saturation/independent_source.py
+python3.12 -B research/direct-flow-leaf-saturation/test_controls.py
+python3.12 -B research/direct-flow-leaf-saturation/test_enclosures.py
+```
+
+The JSON run manifests preserve the additional optimized-mode commands actually executed. Metadata-only validation uses the registered command with `--check-only`; it does not execute the mathematical checks.
+
+Reusing these receipts requires matching the scientific hashes and predecessor pins. Changes to the proof require renewed argument review; changes to code, numerical data or inputs require the affected numerical/source checks and updated receipts. Documentation-only navigation edits require link, claim-consistency and metadata checks plus confirmation that the scientific bytes remain unchanged. Export checks establish availability and integrity; they do not prove the theorem.
+
+## Current local validation
+
+The response addresses all six findings on `ff365dba6911ce615bec76e8d1f149faf1fe16ca`; [REVIEW.md](REVIEW.md#claude-review-findings) maps scope and evidence. All `RESULT.json.parameters` values compare exactly equal to that snapshot. The receipt's source-check labels changed to report histogram equality and fixture sensitivity accurately. The finite source domains remain G≤3.
+
+The following Python 3.12 runs all exited 0. Commands, environment and final scientific-source hashes are in [logs/claude-validation.json](logs/claude-validation.json):
+
+| Check | Seconds | Output |
+| --- | --- | --- |
+| metadata | 0.282 | [log](logs/claude-metadata.log) |
+| registered | 75.068 | [log](logs/claude-registered.log) |
+| optimized | 14.372 | [log](logs/claude-optimized.log) |
+| independent-optimized | 0.155 | [log](logs/claude-independent-optimized.log) |
+| mutations-optimized | 30.389 | [log](logs/claude-mutations-optimized.log) |
+
+The registered replay now runs four commands, including the independent rational enclosure test. Normal and optimized oracle checks additionally passed in 28.674 s and 27.920 s with identical receipts; [timings](logs/claude-enclosures-timing.json), [normal receipt](logs/claude-enclosures-normal.json), [optimized receipt](logs/claude-enclosures-optimized.json). They cover 16 integer logarithm arguments and 127 distinct rational exponential arguments, and reject all three reported remainder faults. Their receipts identify the loaded verifier SHA and exact argument-domain digest. This independently certifies finite-domain enclosure containment, not all-input correctness or the asymptotic theorem.
+
+Both standalone source checkers now reject altered source bytes. Re-pinned empty and terminal-truncated source branches are rejected by the actual histogram comparisons, in normal and optimized modes. This separates source semantics from checksum failures and from fixture sensitivity. Fixed-root-bracket and corrupted-receipt controls remain separately labelled.
+
+The final internal review found no blocking issue in the updated proof, source binding, mutation tests or oracle mathematics. Primary numerical functions were compared by AST against the reviewed snapshot and are unchanged; only `finite_law` changed in verify.py. The oracle's last change adds the loaded source SHA to its receipt and was separately reviewed. The earlier README's “adds eight”→“checks eight” wording avoids implying eighteen distinct source ranks; this prose-only change affects no evidence.
+
+## Committed export and Git-free replay
+
+Scientific follow-up commit: `553198839618962e07519b51cb3bbe808ca6f1dc`. Committed-byte comparison with `--check-source-history` passed for all 41 package/input files, with the original base as the source-history ancestor. The official exporter and archive check both reported `PASS_RESEARCH_EXPORT` for those 41 files:
+
+```sh
+python3.12 -B scripts/check_research_commit.py --package research/direct-flow-leaf-saturation --check-source-history
+python3.12 -B scripts/export_research_package.py export --package research/direct-flow-leaf-saturation --ref 553198839618962e07519b51cb3bbe808ca6f1dc --output /tmp/leaf-saturation-reviewed.tar
+python3.12 -B scripts/export_research_package.py check /tmp/leaf-saturation-reviewed.tar
+```
+
+The archive was extracted into a fresh directory, using an absolute Python 3.12 executable with PATH set to an empty directory and no Git available. All four direct commands passed: primary certificate 15.962 s, independent source checker 0.090 s, mutation controls 31.220 s, and independent enclosure checks 28.117 s. [logs/claude-portable-results.json](logs/claude-portable-results.json) records exact commands, exit codes and links to their logs. The scientific bytes are exactly the commit above; the subsequent evidence commit adds only these logs, this validation record and model attribution. Final publication-byte and export checks are repeated after that evidence commit.
+
+Pre-publication refresh at 2026-10-28T12:34:31Z found canonical main unchanged at `721c03822c421b7f7fcbb2598993b947c4d88419` and no guidance/priority change. A bounded live check of the 100 most recently updated PRs (all states) and 100 Discussions reached back to October 28 00:24Z and October 25 03:58Z respectively, overlapping the earlier complete body snapshots. Exact predecessor and saturation-term checks found no new competing saturation result; this is body-level coverage, not a claim to have reviewed every diff or reply. Existing #6118 was confirmed open and draft before the update.
+
+## Documentation consolidation checks
+
+The documentation follow-up to `6310550e932de70243fc2aaab6f4885688b6fe21` changes only README.md, REVIEW.md, CLAUDE-RESPONSE.md and this file. A Python 3.12 link/anchor scan passed all 56 relative links in those documents. SHA256 checks matched all eight scientific files to `logs/claude-validation.json` and `553198839618962e07519b51cb3bbe808ca6f1dc`; byte comparisons confirmed all 28 logs unchanged from `6310550e`. Package metadata/source pins and `git diff --check` passed. Independent AI documentation review preserved the original limitations and corrected wording that had overstated the executed drift controls. Positive drift is certified; no nonpositive-drift test is claimed.
+
+No scientific replay was rerun for this documentation-only change; the current scientific receipts above remain applicable to identical bytes. Committed-byte/source-history and export checks are performed on the documentation commit before publication. Reproduce the metadata and committed-byte checks with:
+
+```sh
+python3.12 -B scripts/research_package.py --package research/direct-flow-leaf-saturation --check-only
+python3.12 -B scripts/check_research_commit.py --package research/direct-flow-leaf-saturation --check-source-history
+```
+
+## Hosted CI
+
+The previously opened draft #6118's hosted run at `ff365dba` had a failed planning job and skipped replay. Its [actual job log](https://github.com/CrocSwap/integer-mult-bounds/actions/runs/40681403297/job/122792722146) reports two failures in `test_research_current_status`: the old selected-family CI text and an exact bold-value match. The shared files involved are unchanged from base. This is separate from the passing package replay; no unrelated suite or shared documentation repair was added here. The subsequent run at `6310550e932de70243fc2aaab6f4885688b6fe21` has the same two failing tests and skipped replay, confirmed from its [job log](https://github.com/CrocSwap/integer-mult-bounds/actions/runs/40689120787/job/122819086604): 678 tests, two failures, 23 skips. These are pinned historical statuses; consult #6118 for later heads.
+
+## Historical validation
+
+The remaining records describe the initial `ff365dba6911ce615bec76e8d1f149faf1fe16ca` contribution. Numerical parameter intervals remain unchanged, but these older receipts predate the source-check and remainder-control improvements.
+
+### Initial local evidence actually run
 
 Environment: 3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]; Linux-6.18.55-x86_64-with-glibc2.41. Standard library only. The retained environment was activated in the isolated contribution worktree. No dependencies were installed.
 
@@ -25,17 +112,17 @@ Primary and optimized outputs match RESULT.json exactly. The two independent sou
 
 The final proof's reference spelling and canonical Discussion link were normalized after these runs; these prose-only edits change no numerical input or mathematical statement. The scientific hash inventory records the final proof bytes and states that adjustment. The full source root monotonicity bound, corrected citation, independent source integration and mutation controls were already present for these runs.
 
-## Freshness and overlap
+### Freshness and overlap
 
 Canonical upstream was fetched before selection and again before packaging; both fetched SHAs equal the base above, so no rebase or scientific-source migration was needed. Final cached body refresh: open PRs 2026-10-28T11:20:57Z (376 records), Discussions 2026-10-28T11:22:05Z (5,771 records), complete pagination with no warnings. The earlier closed/merged snapshot at 11:11:49Z has 5,222 records. All 8,348 tracked local note paths were searched; the new package adds two notes. No additional saturation proof was found. A separate live read confirmed the user's [canonical claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/1166#discussioncomment-19240402). Searches cover bodies and local top-level notes, not every diff or historical source.
 
-## Verification scope
+### Verification scope
 
 The finite verifier certifies source bindings, rational numerical hypotheses, and semantic controls. The asymptotic argument is the written PROOF.md using the explicitly stated classical interval local-limit theorem. Internal AI reviewers found no unresolved mathematical blocker; REVIEW.md records corrections, final integration and shared dependencies.
 
 No selected-construction replay, `make verify`, historical heavy suite, Lean, or Docker run is applicable to this isolated package. Explicit finite-depth bounds, stable whole-flow shares, the exact refined-induction ceiling, supplier admission, and all five selected framework assumptions remain unrun/unresolved here. Hosted CI is separate; consult the contribution PR for its actual status.
 
-## Initial committed bytes and portable replay
+### Initial committed bytes and portable replay
 
 At scientific commit `9465f263a673d2d86e7262523cbeb0e796f486cf`, the following commands passed on all 26 package/input files:
 
@@ -50,40 +137,3 @@ The actual temporary archive path was outside the repository; `/tmp/leaf-saturat
 After extraction into a fresh directory, with PATH pointing to an empty directory and no Git available, all three direct package commands passed: main verifier 14.383 s, independent source checker 0.094 s, mutation controls 28.189 s. [logs/portable-results.json](logs/portable-results.json) records the actual commands, exits and logs. Their source bytes are exactly the scientific commit above; subsequent packaging adds these logs and this record without changing the proof or checker.
 
 These checks establish committed-source availability, transport integrity and portable replay. They do not prove the analytic theorem. Final publication-byte preflight is repeated after recording this evidence; the PR pins the final contribution SHA.
-
-## Claude-review response: current local validation
-
-The response addresses all six findings on `ff365dba6911ce615bec76e8d1f149faf1fe16ca`; [CLAUDE-RESPONSE.md](CLAUDE-RESPONSE.md) maps scope and evidence. All `RESULT.json.parameters` values compare exactly equal to that snapshot. The receipt's source-check labels changed to report histogram equality and fixture sensitivity accurately. The finite source domains remain G≤3.
-
-The following Python 3.12 runs all exited 0. Commands, environment and final scientific-source hashes are in [logs/claude-validation.json](logs/claude-validation.json):
-
-| Check | Seconds | Output |
-| --- | --- | --- |
-| metadata | 0.282 | [log](logs/claude-metadata.log) |
-| registered | 75.068 | [log](logs/claude-registered.log) |
-| optimized | 14.372 | [log](logs/claude-optimized.log) |
-| independent-optimized | 0.155 | [log](logs/claude-independent-optimized.log) |
-| mutations-optimized | 30.389 | [log](logs/claude-mutations-optimized.log) |
-
-The registered replay now runs four commands, including the independent rational enclosure test. Normal and optimized oracle checks additionally passed in 28.674 s and 27.920 s with identical receipts; [timings](logs/claude-enclosures-timing.json), [normal receipt](logs/claude-enclosures-normal.json), [optimized receipt](logs/claude-enclosures-optimized.json). They cover 16 integer logarithm arguments and 127 distinct rational exponential arguments, and reject all three reported remainder faults. Their receipts identify the loaded verifier SHA and exact argument-domain digest. This independently certifies finite-domain enclosure containment, not all-input correctness or the asymptotic theorem.
-
-Both standalone source checkers now reject altered source bytes. Re-pinned empty and terminal-truncated source branches are rejected by the actual histogram comparisons, in normal and optimized modes. This separates source semantics from checksum failures and from fixture sensitivity. Fixed-root-bracket and corrupted-receipt controls remain separately labelled.
-
-The final internal review found no blocking issue in the updated proof, source binding, mutation tests or oracle mathematics. Primary numerical functions were compared by AST against the reviewed snapshot and are unchanged; only `finite_law` changed in verify.py. The oracle's last change adds the loaded source SHA to its receipt and was separately reviewed. README's final “adds eight”→“checks eight” wording avoids implying eighteen distinct source ranks; this prose-only change affects no evidence.
-
-The previously opened draft #6118's hosted run at `ff365dba` had a failed planning job and skipped replay. Its [actual job log](https://github.com/CrocSwap/integer-mult-bounds/actions/runs/40681403297/job/122792722146) reports two failures in `test_research_current_status`: the old selected-family CI text and an exact bold-value match. The shared files involved are unchanged from base. This is separate from the passing package replay; no unrelated suite or shared documentation repair was added here. Check the PR for the latest head's CI status.
-
-## Claude-review response: committed export and Git-free replay
-
-Scientific follow-up commit: `553198839618962e07519b51cb3bbe808ca6f1dc`. Committed-byte comparison with `--check-source-history` passed for all 41 package/input files, with the original base as the source-history ancestor. The official exporter and archive check both reported `PASS_RESEARCH_EXPORT` for those 41 files:
-
-```sh
-python3.12 -B scripts/check_research_commit.py --package research/direct-flow-leaf-saturation --check-source-history
-python3.12 -B scripts/export_research_package.py export --package research/direct-flow-leaf-saturation --ref 553198839618962e07519b51cb3bbe808ca6f1dc --output /tmp/leaf-saturation-reviewed.tar
-python3.12 -B scripts/export_research_package.py check /tmp/leaf-saturation-reviewed.tar
-```
-
-The archive was extracted into a fresh directory, using an absolute Python 3.12 executable with PATH set to an empty directory and no Git available. All four direct commands passed: primary certificate 15.962 s, independent source checker 0.090 s, mutation controls 31.220 s, and independent enclosure checks 28.117 s. [logs/claude-portable-results.json](logs/claude-portable-results.json) records exact commands, exit codes and links to their logs. The scientific bytes are exactly the commit above; the subsequent evidence commit adds only these logs, this validation record and model attribution. Final publication-byte and export checks are repeated after that evidence commit.
-
-
-Pre-publication refresh at 2026-10-28T12:34:31Z found canonical main unchanged at `721c03822c421b7f7fcbb2598993b947c4d88419` and no guidance/priority change. A bounded live check of the 100 most recently updated PRs (all states) and 100 Discussions reached back to October 28 00:24Z and October 25 03:58Z respectively, overlapping the earlier complete body snapshots. Exact predecessor and saturation-term checks found no new competing saturation result; this is body-level coverage, not a claim to have reviewed every diff or reply. Existing #6118 was confirmed open and draft before the update.
