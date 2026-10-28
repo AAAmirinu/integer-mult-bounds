@@ -2,18 +2,19 @@
 
 ## Current evidence index
 
-**Scientific snapshot: `553198839618962e07519b51cb3bbe808ca6f1dc`.** The proof, four Python checkers, RESULT.json, SOURCES.json and VERIFY.json remain byte-identical to this snapshot. The hashes in [claude-validation.json](logs/claude-validation.json) identify those eight scientific files. Later commits add evidence, attribution and documentation; a newer documentation commit does not mean the numerical experiments were rerun.
+The current hashes, exact commands, stdout/stderr and results are in [followup-validation.json](logs/followup-validation.json). This follow-up to `9946b1c42466ada889c10cd0cea7522d6360a63b` corrects one explanatory Stone paragraph, adds a semantic mutation for the original #4436 comparison, and updates its verification description. The numerical certificate, source checker, enclosure oracle, RESULT.json and SOURCES.json are unchanged. The theorem and its argument are unchanged.
 
-| Evidence | Receipt | Actual result and scope |
+| Evidence | Receipt | Scope |
 | --- | --- | --- |
-| Registered replay and metadata | [run manifest and source hashes](logs/claude-validation.json), [replay output](logs/claude-registered.log) | All four registered commands passed in 75.068 s; metadata passed separately. |
-| Optimized checks | [certificate](logs/claude-optimized.log), [source fixtures](logs/claude-independent-optimized.log), [mutation controls](logs/claude-mutations-optimized.log) | All exited 0; explicit controls remain effective under `-O`. |
-| Independent rational enclosures | [normal receipt](logs/claude-enclosures-normal.json), [optimized receipt](logs/claude-enclosures-optimized.json), [timings](logs/claude-enclosures-timing.json) | Identical receipts; 16 log and 127 exp arguments; all three targeted remainder faults rejected. |
-| Git-free exported replay | [commands, times and log links](logs/claude-portable-results.json) | Four direct commands passed on exported scientific snapshot `553198839`; no Git or executable PATH entries. |
-| Committed bytes and source history | [export record below](#committed-export-and-git-free-replay) | Passed for 41 package/input files at `553198839`; final evidence snapshot `6310550e932de70243fc2aaab6f4885688b6fe21` passed for 46. File counts include five declared predecessor inputs. |
-| Written theorem and review | [PROOF.md](PROOF.md), [review findings](REVIEW.md#claude-review-findings) | Scoped analytic argument with Stone's theorem as an external input; no proof-kernel or human verification. |
+| Registered replay and metadata | [current run record](logs/followup-validation.json) | All four registered commands, with the new #4436 control; source hashes identify the executed bytes. |
+| Optimized mutation controls and deleted-comparison attack | [current run record](logs/followup-validation.json) | A one-count returned-histogram mutation must reach the original-Flow comparison. Removing that comparison makes the control fail; normal and optimized modes are distinguished in the record. |
+| Independent rational enclosures | [normal receipt](logs/claude-enclosures-normal.json), [optimized receipt](logs/claude-enclosures-optimized.json) | Unchanged verifier/oracle bytes; 16 log and 127 exp arguments. The current registered run also repeats the normal oracle check. |
+| Committed export and Git-free changed-control replay | [current run record](logs/followup-validation.json) | The changed mutation suite is replayed from an exported tree without Git. Earlier full export replays remain evidence for unchanged direct entry points. |
+| Written theorem and review | [PROOF.md](PROOF.md), [review findings](REVIEW.md) | Scoped analytic argument with Stone's theorem as an external input; corrected prose makes no quantitative-rate claim. |
 
-Receipts with the `claude-` prefix apply to the current scientific files. Receipts without it are retained historical evidence for `ff365dba`; their schema and source hashes should not be used to certify current code. Historical review hashes likewise identify intermediate snapshots, not the current files. No original receipt was replaced during documentation consolidation.
+The registered replay passed in 75.175 s and metadata in 0.300 s. The isolated mutation suite passed in normal/optimized modes in 31.698/31.589 s; deleting only the original-Flow comparison caused the intended control failure in 1.439/1.541 s. Both positive independent-source baselines passed. All five unchanged numerical/source files were compared byte-for-byte with `6310550e`; the proof differs in exactly one explanatory paragraph. Internal review found no unresolved blocker. Exported-tree results are added to the same current record after execution.
+
+`followup-validation.json` is the current response record. The `claude-` receipts below identify the first response at `553198839618962e07519b51cb3bbe808ca6f1dc`; they do not exercise the new #4436 mutation. Unprefixed receipts identify the initial `ff365dba` evidence. Earlier numerical receipts still apply where their scientific hashes match unchanged files; historical proof/control hashes must not be mistaken for current hashes. No original receipt was replaced.
 
 Base and last upstream refresh: `721c03822c421b7f7fcbb2598993b947c4d88419`, 2026-10-28. Priority revision 8. The branch adds only `research/direct-flow-leaf-saturation/`; frozen predecessors and the selected record are unchanged.
 
@@ -38,9 +39,9 @@ The JSON run manifests preserve the additional optimized-mode commands actually 
 
 Reusing these receipts requires matching the scientific hashes and predecessor pins. Changes to the proof require renewed argument review; changes to code, numerical data or inputs require the affected numerical/source checks and updated receipts. Documentation-only navigation edits require link, claim-consistency and metadata checks plus confirmation that the scientific bytes remain unchanged. Export checks establish availability and integrity; they do not prove the theorem.
 
-## Current local validation
+## First review response: historical validation
 
-The response addresses all six findings on `ff365dba6911ce615bec76e8d1f149faf1fe16ca`; [REVIEW.md](REVIEW.md#claude-review-findings) maps scope and evidence. All `RESULT.json.parameters` values compare exactly equal to that snapshot. The receipt's source-check labels changed to report histogram equality and fixture sensitivity accurately. The finite source domains remain G≤3.
+The first response addressed the six findings on `ff365dba6911ce615bec76e8d1f149faf1fe16ca`; [REVIEW.md](REVIEW.md#claude-review-findings) maps scope and evidence. All `RESULT.json.parameters` values compare exactly equal to that snapshot. The receipt's source-check labels changed to report histogram equality and fixture sensitivity accurately. The finite source domains remain G≤3.
 
 The following Python 3.12 runs all exited 0. Commands, environment and final scientific-source hashes are in [logs/claude-validation.json](logs/claude-validation.json):
 
@@ -52,13 +53,13 @@ The following Python 3.12 runs all exited 0. Commands, environment and final sci
 | independent-optimized | 0.155 | [log](logs/claude-independent-optimized.log) |
 | mutations-optimized | 30.389 | [log](logs/claude-mutations-optimized.log) |
 
-The registered replay now runs four commands, including the independent rational enclosure test. Normal and optimized oracle checks additionally passed in 28.674 s and 27.920 s with identical receipts; [timings](logs/claude-enclosures-timing.json), [normal receipt](logs/claude-enclosures-normal.json), [optimized receipt](logs/claude-enclosures-optimized.json). They cover 16 integer logarithm arguments and 127 distinct rational exponential arguments, and reject all three reported remainder faults. Their receipts identify the loaded verifier SHA and exact argument-domain digest. This independently certifies finite-domain enclosure containment, not all-input correctness or the asymptotic theorem.
+The first response expanded the registered replay to four commands, including the independent rational enclosure test. Normal and optimized oracle checks additionally passed in 28.674 s and 27.920 s with identical receipts; [timings](logs/claude-enclosures-timing.json), [normal receipt](logs/claude-enclosures-normal.json), [optimized receipt](logs/claude-enclosures-optimized.json). They cover 16 integer logarithm arguments and 127 distinct rational exponential arguments, and reject all three reported remainder faults. Their receipts identify the loaded verifier SHA and exact argument-domain digest. This independently certifies finite-domain enclosure containment, not all-input correctness or the asymptotic theorem.
 
-Both standalone source checkers now reject altered source bytes. Re-pinned empty and terminal-truncated source branches are rejected by the actual histogram comparisons, in normal and optimized modes. This separates source semantics from checksum failures and from fixture sensitivity. Fixed-root-bracket and corrupted-receipt controls remain separately labelled.
+Both standalone source checkers reject altered source bytes. In this first response, re-pinned empty and terminal-truncated #4467 branches were rejected by the #4467 histogram comparisons, in normal and optimized modes; this evidence did not guard the original #4436 comparison. This separates source semantics from checksum failures and from fixture sensitivity. Fixed-root-bracket and corrupted-receipt controls remain separately labelled.
 
 The final internal review found no blocking issue in the updated proof, source binding, mutation tests or oracle mathematics. Primary numerical functions were compared by AST against the reviewed snapshot and are unchanged; only `finite_law` changed in verify.py. The oracle's last change adds the loaded source SHA to its receipt and was separately reviewed. The earlier README's “adds eight”→“checks eight” wording avoids implying eighteen distinct source ranks; this prose-only change affects no evidence.
 
-## Committed export and Git-free replay
+## First response: committed export and Git-free replay
 
 Scientific follow-up commit: `553198839618962e07519b51cb3bbe808ca6f1dc`. Committed-byte comparison with `--check-source-history` passed for all 41 package/input files, with the original base as the source-history ancestor. The official exporter and archive check both reported `PASS_RESEARCH_EXPORT` for those 41 files:
 
@@ -72,11 +73,11 @@ The archive was extracted into a fresh directory, using an absolute Python 3.12 
 
 Pre-publication refresh at 2026-10-28T12:34:31Z found canonical main unchanged at `721c03822c421b7f7fcbb2598993b947c4d88419` and no guidance/priority change. A bounded live check of the 100 most recently updated PRs (all states) and 100 Discussions reached back to October 28 00:24Z and October 25 03:58Z respectively, overlapping the earlier complete body snapshots. Exact predecessor and saturation-term checks found no new competing saturation result; this is body-level coverage, not a claim to have reviewed every diff or reply. Existing #6118 was confirmed open and draft before the update.
 
-## Documentation consolidation checks
+## Historical documentation consolidation checks
 
-The documentation follow-up to `6310550e932de70243fc2aaab6f4885688b6fe21` changes only README.md, REVIEW.md, CLAUDE-RESPONSE.md and this file. A Python 3.12 link/anchor scan passed all 56 relative links in those documents. SHA256 checks matched all eight scientific files to `logs/claude-validation.json` and `553198839618962e07519b51cb3bbe808ca6f1dc`; byte comparisons confirmed all 28 logs unchanged from `6310550e`. Package metadata/source pins and `git diff --check` passed. Independent AI documentation review preserved the original limitations and corrected wording that had overstated the executed drift controls. Positive drift is certified; no nonpositive-drift test is claimed.
+The documentation commit `9946b1c42466ada889c10cd0cea7522d6360a63b`, following `6310550e932de70243fc2aaab6f4885688b6fe21`, changed only README.md, REVIEW.md, CLAUDE-RESPONSE.md and this file. A Python 3.12 link/anchor scan passed all 56 relative links in those documents. SHA256 checks matched all eight scientific files to `logs/claude-validation.json` and `553198839618962e07519b51cb3bbe808ca6f1dc`; byte comparisons confirmed all 28 logs unchanged from `6310550e`. Package metadata/source pins and `git diff --check` passed. Independent AI documentation review preserved the original limitations and corrected wording that had overstated the executed drift controls. Positive drift is certified; no nonpositive-drift test is claimed.
 
-No scientific replay was rerun for this documentation-only change; the current scientific receipts above remain applicable to identical bytes. Committed-byte/source-history and export checks are performed on the documentation commit before publication. Reproduce the metadata and committed-byte checks with:
+No scientific replay was rerun for this documentation-only change; the then-current scientific receipts applied to identical bytes at `9946b1c`. The later Stone/control response is indexed separately above. Committed-byte/source-history and export checks are performed on the documentation commit before publication. Reproduce the metadata and committed-byte checks with:
 
 ```sh
 python3.12 -B scripts/research_package.py --package research/direct-flow-leaf-saturation --check-only

@@ -38,7 +38,7 @@
         "{package}/test_controls.py"
       ],
       "timeout_seconds": 120,
-      "checks": "Reject altered bytes in both standalone entry points; re-pinned empty/truncated source branches rejected semantically in normal and optimized modes; fixed-bracket and receipt regressions."
+      "checks": "Reject altered bytes in both standalone entry points; re-pinned empty/truncated #4467 branches and altered #4436 returned histogram rejected by their comparisons in normal and optimized modes; fixed-bracket and receipt regressions."
     },
     {
       "argv": [

@@ -74,6 +74,23 @@ with tempfile.TemporaryDirectory(prefix='leaf-saturation-controls-') as director
     source.write_text(original)
     shutil.copy2(HERE / 'SOURCES.json', package / 'SOURCES.json')
 
+    # Corrupt only the original Flow class's returned boundary histogram, after
+    # its own conservation checks. This reaches the independent comparison
+    # instead of failing an earlier producer invariant or byte-authentication.
+    relative = 'research/direct-mixed-flow/flow.py'
+    source = root / relative
+    original = source.read_text()
+    field = "'boundary_exits': boundary,"
+    if original.count(field) != 1:
+        raise ValueError('original Flow mutation anchor drift')
+    source.write_text(original.replace(field, "'boundary_exits': boundary + Counter({1: 1}),"))
+    repin(package, root, relative)
+    for mode in ([], ['-O']):
+        require_rejection([sys.executable, *mode, '-B', str(package / 'independent_source.py')],
+                          root, "(121, 'original Flow class')")
+    source.write_text(original)
+    shutil.copy2(HERE / 'SOURCES.json', package / 'SOURCES.json')
+
     expected = json.loads((package / 'RESULT.json').read_text())
     expected['parameters']['lambda'][0] = '0.0'
     receipt = package / 'corrupt-result.json'
@@ -93,4 +110,4 @@ for name in ('paid', 'target'):
             raise
     else:
         raise ValueError('changed histogram passed fixed root certificate: ' + name)
-print('PASS_MUTATION_CONTROLS both_standalone_pins_normal_and_optimized repinned_empty_and_truncated_leaf_sources_normal_and_optimized corrupted_receipt fixed_bracket_count_regressions')
+print('PASS_MUTATION_CONTROLS both_standalone_pins_normal_and_optimized repinned_empty_and_truncated_leaf_sources_normal_and_optimized repinned_original_flow_return_normal_and_optimized corrupted_receipt fixed_bracket_count_regressions')

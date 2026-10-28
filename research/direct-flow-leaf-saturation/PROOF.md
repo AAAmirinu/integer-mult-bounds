@@ -71,7 +71,7 @@ Apply it to the tilted law `q(r)=P_r r^α/Z(α)`, with `V=log r−a`. Its mean i
 
 This support argument verifies Stone's characteristic-function condition (2). Indeed, for `θ≠0`, equality `|E exp(iθV)|=1` holds exactly when the unit complex variable `exp(iθV)` is almost surely constant, equivalently when the support lies in `c/θ+(2π/θ)Z` for some real `c`. Thus nonlattice support gives strict inequality for every nonzero `θ`.
 
-The finite support does **not** satisfy Stone's stronger condition (3): simultaneous approximation of its finitely many phases gives arbitrarily large `|θ|` for which the characteristic-function modulus approaches one. Stone's stronger rate conclusion requiring that condition is therefore inapplicable here. The asymptotic theorem used in this proof supplies no explicit error constant or onset `G`; this does not rule out quantitative bounds from other methods.
+The finite support does **not** satisfy Stone's stronger condition (3): simultaneous approximation of its finitely many phases gives arbitrarily large `|θ|` for which the characteristic-function modulus approaches one. Under that condition, Stone's equations (6) and (8) extend the local-limit statement to boxes as small as `exp(−cn)` for a suitable `c>0`; their remainder is still an unquantified `o(1)`. Neither equation is used here. Our proof uses equations (5) and (7) for fixed unnormalized windows. Neither cited version supplies an explicit quantitative convergence rate, error constant or onset `G`; failure of condition (3) is not the explanation for this missing quantitative information. Such bounds require additional work and are not ruled out by this argument.
 
 Two consequences are used:
 
