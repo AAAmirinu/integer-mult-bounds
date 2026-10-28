@@ -93,7 +93,7 @@ the selected record there is #6030, kappa .003125804. The sparse baseline
 preflight reported 1,393 omitted inputs; that unrelated selected supplier replay
 was not materialized or run. Only the predecessor definition is a live input. The optional source-history checker
 refuses this shallow repository; no full-history pass is claimed. All pins resolve
-at the immediate main-branch base, which is the publication commit's parent.
+at the immediate main-branch base, which is an ancestor of the publication head.
 The ordinary committed-byte preflight passes.
 
 ## Significance for researchers
