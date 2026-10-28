@@ -14,8 +14,7 @@ five-source ones for every c ≥ 5
 ([PR6035](https://github.com/CrocSwap/integer-mult-bounds/pull/6035)).
 Deleting a source keeps depth two (PR4232/PR4248), so the largest depth-two
 block in characteristic five has exactly five sources. The same encoding is
-also UNSAT at c = 6 (CaDiCaL 1.9.5, 1263 s; see the table for the second-solver
-status), so the largest depth-two block there has five sources too. c = 7 is
+also UNSAT at c = 6 (CaDiCaL 1.9.5 and MapleChrono agree), so the largest depth-two block there has five sources too. c = 7 is
 still open.
 
 This answers the c = 5 and c = 6 cases of open question 1 of PR6061 and of the open item
@@ -23,8 +22,9 @@ in PR6057 / [#6058](https://github.com/CrocSwap/integer-mult-bounds/discussions/
 ("characteristics five through seven remain open").
 
 **What is and is not established.** The c = 5 verdict is the output of
-CaDiCaL 1.9.5, CaDiCaL 1.5.3 and Glucose 4 on one machine; the c = 6 verdict
-is one CaDiCaL 1.9.5 run. No DRAT/LRAT proof
+CaDiCaL 1.9.5, CaDiCaL 1.5.3 and Glucose 4 on one machine, plus CaDiCaL
+1.9.5 on the encoding without weight pruning; the c = 6 verdict is CaDiCaL
+1.9.5 and MapleChrono. No DRAT/LRAT proof
 was checked, and no human proof is given. `verify.py` (standard library)
 checks only the literal words: the positive controls and the encoding's
 pruning identity on them. Treat the exclusion as a reproducible local
@@ -47,12 +47,12 @@ No operation is added and nothing about the alphabet changes.
 |---|---|---|---|
 | 5 | 4 | UNSAT | control; matches PR4271's c = 4 obstruction (Nick Petalas) (2.8 s) |
 | 5 | 5 | SAT | control; word checked by `verify.py` |
-| **6** | **5** | **UNSAT** | CaDiCaL 1.9.5 153 s, CaDiCaL 1.5.3 197 s, Glucose 4 237 s |
+| **6** | **5** | **UNSAT** | CaDiCaL 1.9.5 153 s, CaDiCaL 1.5.3 197 s, Glucose 4 237 s; without weight pruning (`--no-weight-prune`) CaDiCaL 1.9.5 2332 s |
 | 6 | 5, weights {2,6} only | UNSAT | CaDiCaL 1.9.5 160 s (16 masks suffice) |
 | 6 | 5, weights {1,2,3} only | UNSAT | CaDiCaL 1.9.5 106 s |
 | 6 | 5, weights {1,2,6} only | UNSAT | CaDiCaL 1.9.5 130 s |
 | 6 | 5, weights {1,2}, {1,6}, {1,5,6} | SAT | each found in < 4 s; one word is a `verify.py` control |
-| **6** | **6** | **UNSAT** | CaDiCaL 1.9.5 1263 s; single solver (MapleChrono and cube runs unfinished at submission) |
+| **6** | **6** | **UNSAT** | CaDiCaL 1.9.5 1263 s, MapleChrono 2056 s |
 | 6 | 7 | open | no verdict within the session |
 | 6 | 8 | SAT | control (PR6057/PR6061 range); found word checked by `verify.py` |
 

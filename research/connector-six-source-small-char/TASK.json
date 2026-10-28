@@ -42,13 +42,13 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "Existence of six-source depth-two blocks of the unchanged unsigned dirty connector (PR4231/PR4248 interface) in characteristics c = 5, 6, 7. Result: none at c = 5 (local SAT, three solvers; already UNSAT on the 16 masks of weights 2 and 6) and none at c = 6 (local SAT, CaDiCaL 1.9.5, 1263 s); c = 7 undecided in the session.",
+  "actual_scope": "Existence of six-source depth-two blocks of the unchanged unsigned dirty connector (PR4231/PR4248 interface) in characteristics c = 5, 6, 7. Result: none at c = 5 (local SAT, three solvers; already UNSAT on the 16 masks of weights 2 and 6) and none at c = 6 (local SAT, CaDiCaL 1.9.5 and MapleChrono); c = 7 undecided in the session.",
   "scope_change_reason": "The alphabet stays fixed. This follows the released open question 1 of PR6061 and the open item of PR6057/#6058 (six-source depth-two blocks at c = 5, 6, 7), which bounds what PR4248-style block concatenation can do at small characteristic.",
   "bottleneck_link": "Side result on recursive-interface capacity at small characteristic. It changes no supplier, consumer or kappa.",
   "budget_minutes": 60,
   "stop_rule": "Stop at the c = 5 verdict with cross-solver agreement and the weight-class core, add c = 6 if a solver finishes within the session; report c = 7 as open.",
   "outcome": "completed",
-  "evidence": "Local SAT (python-sat 1.9.dev15): k=6, c=5 UNSAT with CaDiCaL 1.9.5 (153 s), CaDiCaL 1.5.3 (197 s), Glucose 4 (237 s); weights {2,6} alone UNSAT (160 s). k=6, c=6 UNSAT with CaDiCaL 1.9.5 (1263 s). Controls k=5 c=4 UNSAT, k=5 c=5 SAT, k=6 c=8 SAT. verify.py (stdlib) checks the found words, the pruning identity on them and four controls. No DRAT proof checked.",
+  "evidence": "Local SAT (python-sat 1.9.dev15): k=6, c=5 UNSAT with CaDiCaL 1.9.5 (153 s), CaDiCaL 1.5.3 (197 s), Glucose 4 (237 s), and without weight pruning CaDiCaL 1.9.5 (2332 s); weights {2,6} alone UNSAT (160 s). k=6, c=6 UNSAT with CaDiCaL 1.9.5 (1263 s) and MapleChrono (2056 s). Controls k=5 c=4 UNSAT, k=5 c=5 SAT, k=6 c=8 SAT. verify.py (stdlib) checks the found words, the pruning identity on them and four controls. No DRAT proof checked.",
   "author": "JosieElliston (Claude Code session 50)",
   "ai_assistance": "Substantial: Anthropic Claude (Claude Code session 50) wrote the encoding, ran the solvers, wrote the verifier and README.",
   "open_questions": [
