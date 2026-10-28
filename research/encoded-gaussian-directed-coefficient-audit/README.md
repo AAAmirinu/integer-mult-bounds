@@ -35,6 +35,25 @@ Actual finite replay passed with 19 Axis calls and 10 isolated calls,
 including P=1, growth/decay, scale513 and four domain rejections. All
 source intervals contain the independent finer intervals.
 
+## Resumed source review
+
+The unpublished two-commit result was resumed on canonical main
+`721c03822c421b7f7fcbb2598993b947c4d88419`, priority revision 8, after
+[reclaiming its released discussion](https://github.com/CrocSwap/integer-mult-bounds/discussions/3664#discussioncomment-19233742).
+All thirteen scientific inputs still match their frozen blobs; the original
+revision-7 card and selected-record pins remain historical provenance.
+A source review rechecked the encoded Machin signs and tail, Taylor early/fixed
+exit, squaring/reciprocal rounding and Axis half-tie/wrapped argument domains.
+It found no required scientific change. This is same-contributor review.
+The publication still requires both registered actual-source replay modes;
+metadata or oracle-only checks do not establish their success.
+
+The overlap refresh covered 341 open PRs, 5,722 discussion records and 8,348
+local notes. The normalized host scalar audit uses a different backend;
+PR4449's across-cell repair assumes an exponential contract. Neither is repeated
+here. The Tensor accuracy package's production-page admission remains separate.
+These coverage figures are a snapshot, not a novelty certificate.
+
 ## Limits
 
 This audits the encoded physical backend, distinct from the normalized host

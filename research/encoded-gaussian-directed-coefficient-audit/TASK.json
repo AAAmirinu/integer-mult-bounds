@@ -70,5 +70,24 @@
       "first_step": "Bind positive rounded weights and every actual ratio to ideal coefficient intervals.",
       "blocked_by": "Global matrix ideal gap and full production composition remain separate."
     }
-  ]
+  ],
+  "resumption": {
+    "upstream_commit": "721c03822c421b7f7fcbb2598993b947c4d88419",
+    "priority_revision": 8,
+    "selected_record_pr": 6030,
+    "checked_at": "2026-10-28T05:05:36.727564+00:00",
+    "claim": "https://github.com/CrocSwap/integer-mult-bounds/discussions/3664#discussioncomment-19233742",
+    "previous_local_head": "b4596aa6d30f70ed160bf7f39b9f7ac7d62e2249",
+    "decision": "Complete and validate preserved result; all thirteen scientific input blobs unchanged. Keep frozen provenance and oracle.",
+    "review_scope": "Rechecked source-directed Machin signs/tail, positive Taylor early/fixed tails, squaring width, reciprocal direction, final rounding, Axis half ties and wrapped cross-cell domain; no scientific change required. Same-contributor review.",
+    "validation_obligation": "Both normal and optimized actual-source cold Git-free replays; oracle-only and source-binding checks are not substitutes.",
+    "overlap_coverage": {
+      "open_prs": 341,
+      "open_prs_fetched_at": "2026-10-28T04:53:27.931656+00:00",
+      "discussion_records": 5722,
+      "discussions_fetched_at": "2026-10-28T04:54:38.413598+00:00",
+      "local_notes": 8348,
+      "limits": "No exact duplicate found; no remote closed-PR body or arbitrary code-diff scan; not a novelty certificate."
+    }
+  }
 }
