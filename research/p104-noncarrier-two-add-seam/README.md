@@ -1,32 +1,33 @@
-# P104: two non-carrier ADDs across the helper572 seam fail
+# P104: two non-carrier ADDs across the helper 572 seam fail
 
 **Scoped exact exclusion; no new kappa.** On the selected PR6030 word,
 none of 4,500 declared two-ADD location pairs restores every outside-V output
-following the unit overwrite of helper572 after event13637. The corrections
+following the unit overwrite of helper 572 after event 13637. The corrections
 may temporarily change original input rows, so this is outside the carrier-only
 models of [PR6067](https://github.com/CrocSwap/integer-mult-bounds/pull/6067)
 and [PR6069](https://github.com/CrocSwap/integer-mult-bounds/pull/6069).
 
-The first ADD is at chart595 after any event13637..13651. The second is at
-chart603 after13652,13654 or13655. All original events, fields, charts and
+The first ADD is at chart 595 after any event 13637..13651. The second is at
+chart 603 after 13652,13654 or13655. All original events, fields, charts and
 lifetimes stay fixed. Coefficients are arbitrary rationals, including zero.
 Every original input and the new independent z are symbolic. [PROOF.md](PROOF.md)
 specifies the complete domain and endpoint polynomial.
 
 All cases fail even after relaxing the product `a*b` to an independent third
 unknown. Each has an exact independently checked linear contradiction:
-4,262 use one equation and238 use two. Four separate literal whole-word checks
+4,262 use one equation and 238 use two. Four separate literal whole-word checks
 validate the polynomial on all input columns, including a nonzero interaction
-term. A retained false positive clears the z-leak but corrupts original inputs.
+term. A synthetic changed-boundary two-ADD repair is accepted, while a wrong
+seam chart and a forged contradiction certificate are rejected. A retained false positive clears the z-leak but corrupts original inputs.
 [RESULT.json](RESULT.json) retains the deterministic certificate digest and counts.
 
 The scientific base is canonical main `721c03822c421b7f7fcbb2598993b947c4d88419`,
-priority8, selected conditional kappa0.003125804. The canonical investigation is
-[Discussion6074](https://github.com/CrocSwap/integer-mult-bounds/discussions/6074).
+priority 8, selected conditional kappa 0.003125804. The canonical investigation is
+[Discussion 6074](https://github.com/CrocSwap/integer-mult-bounds/discussions/6074).
 
 ## Reproduce
 
-Python3.12 and its standard library, from the repository root:
+Python 3.12 and its standard library, from the repository root:
 
 ```sh
 python3.12 -I -B research/p104-noncarrier-two-add-seam/verify.py
@@ -34,8 +35,8 @@ python3.12 -I -O -B research/p104-noncarrier-two-add-seam/verify.py
 python3.12 -B scripts/research_package.py --package research/p104-noncarrier-two-add-seam
 ```
 
-Direct normal replay took about8.6seconds on macOS arm64. Both registered
-modes have30-second limits. Every guard remains active under `-O`.
+Direct normal replay took about 8.6 seconds on macOS arm64. Both registered
+modes have 30-second limits. Every guard remains active under `-O`.
 `--write` regenerates only this package's RESULT.json; default replay is read-only.
 There are no executable pending-PR dependencies: the sole external live input
 is the selected WORD.json.gz, source-pinned in SOURCES.json and declared in VERIFY.json.
@@ -48,9 +49,9 @@ This follows the original-row-changing correction question in PR6067 at
 credited rather than replayed. The package derives its boundary data directly
 from the selected word; neither pending proof is an executable dependency.
 
-Preclaim overlap read341open PRs,5,722discussion records and8,348local notes.
+Preclaim overlap read 341 open PRs,5,722 discussion records and 8,348 local notes.
 That metadata coverage is not a novelty guarantee or a search of historical
-diffs/unpublished work. The companion receiver-recoding task concerns helper469
+diffs/unpublished work. The companion receiver-recoding task concerns helper 469
 and is separate. No fixed-invoice repacking or selected-word application audit
 is repeated here.
 

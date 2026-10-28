@@ -104,6 +104,10 @@ has its own event loop and row arithmetic, separate from the prefix/suffix
 engine. This is implementation cross-checking by an AI-assisted contributor,
 not independent human or formal-kernel acceptance.
 
+A synthetic changed-boundary fixture admits a two-ADD non-carrier repair; the
+checker does not reject every model by construction. Moving 572 to the wrong
+chart is rejected at its actual consumer, and a forged dual is rejected.
+
 A particularly relevant false positive is `127 -> 572` with coefficient 1
 after 13651, followed by `740 -> 572` with coefficient 1 after 13654. Its
 outside z-leak is zero and z survives publicly, but its outside original-X

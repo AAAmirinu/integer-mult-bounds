@@ -216,6 +216,21 @@ def controls(word, data, outside):
         pass
     else:
         raise ValueError('forged dual accepted')
+    # A non-carrier two-ADD repair exists in a synthetic changed boundary.
+    positive = ({0: Q(1), 1: Q(1)}, {0: Q(1)}, {0: Q(1)},
+                {0: Q(-1), 1: Q(1)}, {0: Q(1)}, {1: Q(1)}, Q(0))
+    need(contradiction(equations(positive, {0})) is None, 'changed-boundary positive admitted')
+    for _, values, rhs in equations(positive, {0}):
+        need(values[0] - values[1] - values[2] == rhs, 'positive a=1,b=-1,c=-1')
+    damaged = dict(word)
+    damaged['program'] = [event.copy() for event in word['program']]
+    damaged['program'][13652][3] = 597
+    try:
+        boundaries(damaged)
+    except ValueError as error:
+        need(str(error) == 'source chart', 'wrong seam rejected at an actual consumer')
+    else:
+        raise ValueError('wrong chart accepted')
     cases = [((13637, 127, 572, 13654, 572, 740), Q(2), Q(-3)),
              ((13639, 572, 778, 13655, 709, 572), Q(1, 2), Q(3, 2)),
              ((13637, 731, 582, 13652, 740, 572), Q(-1), Q(2)),
@@ -238,7 +253,8 @@ def controls(word, data, outside):
     need(any(actual[o] != data[4][o] for o in outside), 'arbitrary-X rejects z-only false positive')
     need(any(row.get(z, 0) for row in actual[:z]), 'false positive retains public z')
     return {'literal_full_column_cases': len(cases), 'z_only_false_positive': True,
-            'consistent_system': True, 'forged_dual_rejected': True, 'bilinear_case': saw_bilinear}
+            'consistent_system': True, 'forged_dual_rejected': True, 'bilinear_case': saw_bilinear,
+            'synthetic_noncarrier_repair': True, 'wrong_seam_rejected': True}
 
 
 def run(word):
