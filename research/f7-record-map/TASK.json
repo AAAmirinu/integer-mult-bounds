@@ -46,7 +46,7 @@
   "bottleneck_link": "Side result for navigation: f(7) is a finite connector-model value used by #5234, #5430 and #6005, not a \u03ba input. Clear status stops sessions from reopening a settled question, and it names the precise open steps.",
   "budget_minutes": 60,
   "stop_rule": "Stop at the session budget; report any split not finished as unfinished, not excluded. All eleven finished (the three heaviest in background after the session, 3751-4188 s each).",
-  "outcome": "complete",
+  "outcome": "completed",
   "evidence": "verify.py: pinned inputs, 21 quoted scope sentences against their READMEs, the length-24 witness by direct XOR, #4221 receipt closure (7+4=11 splits), lifted-engine controls (L18/L20 exact equality with #3005 FULL.json, n=6 L22 positive control, cap fail-closed), exact replay of completed L22 splits. All eleven L22 splits complete with zero hits on the lifted engine. The full L22 runs are local-only receipts in RESULT.json.",
   "author": "JosieElliston (Claude Opus 5.5 session)",
   "ai_assistance": "Prepared by Claude Opus 5.5 (Anthropic) in Claude Code for JosieElliston, in an unattended overnight session. No human review.",
