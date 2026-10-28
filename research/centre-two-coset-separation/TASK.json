@@ -83,7 +83,7 @@
   "upstream_checkpoint": {
     "commit": "721c03822c421b7f7fcbb2598993b947c4d88419",
     "priority_revision": 8,
-    "checked_at": "2026-10-28T12:37:00Z"
+    "checked_at": "2026-10-28T12:58:10Z"
   },
   "environment": {
     "python": "CPython 3.12.15",
@@ -93,6 +93,8 @@
   },
   "preserved_start": {
     "branch": null,
-    "detached_head": "721c03822c421b7f7fcbb2598993b947c4d88419"
+    "detached_head": "721c03822c421b7f7fcbb2598993b947c4d88419",
+    "prior_branch": "research/w1-1022ai-schur-intermediate-ranks",
+    "prior_branch_head": "acc000f4edfa0b0c4a90b505c6e02a4c3572f74c"
   }
 }
