@@ -31,7 +31,7 @@ Assume the following fields, plus the retained protected suffix/router workspace
 $$\underbrace{R}_{\rm row}\ \big|\ \underbrace{F}_{\rm two\ front\ fields}\ \big|\
 \underbrace{hK}_{\rm active\ slots}\ \big|\ \underbrace{B_c}_{\rm back\ field}\ \big|\ \rm spectators.$$
 
-Let T be the ordered positions of the active slots in this display. Map S to T in order. Complete the coordinate permutation π by sending `T\S` bijectively to `S\T`, in any fixed order, and fixing everything outside `S∪T`.
+Use the exact sparse extension already proved in the retained `SUPPORT-ROUTER.md`; its new application here is the spectator-prefix placement and complete-callee boundary. Let T be the ordered positions of the active slots in this display. Map S to T in order. Complete the coordinate permutation π by sending `T\S` bijectively to `S\T`, in any fixed order, and fixing everything outside `S∪T`.
 
 **Lemma 1.** π is a bijection supported on at most 2hK positions. Every preimage of a physical position outside T lies outside S. In particular the new row prefix, front controls and back controls are genuine spectators of the selected kernel.
 

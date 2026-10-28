@@ -4,7 +4,7 @@
 
 A global Hadamard supplier can take its row prefix and compact controls from complete spectator coordinates. It can complete every selected axis in one outer invocation, with one padding by less than two, and restore the original coarse layout before the next diagonal. The prefix may be much larger than the active width.
 
-The construction maps the h complete K-bit active neighborhoods to their destination slots, then completes that map on their union. Only **2hK coordinate positions** can move, regardless of the row-prefix length or gather distance. The retained paid support router therefore preserves the supplier's exponent. This is a concrete replacement for active-axis reservation and deferred completion, with the full layout and cost proof in [PROOF.md](PROOF.md).
+Using the retained SUPPORT-ROUTER sparse extension, the construction maps the h complete K-bit active neighborhoods to their destination slots, then completes that map on their union. Only **2hK coordinate positions** can move, regardless of the row-prefix length or gather distance. The retained paid support router therefore preserves the supplier's exponent. This is a concrete replacement for active-axis reservation and deferred completion, with the full layout and cost proof in [PROOF.md](PROOF.md).
 
 For total simultaneous stock
 
