@@ -79,3 +79,10 @@ inventory and all hashes were unchanged before and after the run.
 Direct Git ancestry queries return success for both the canonical base and
 retained-source ancestor. This narrower check is not presented as a pass of
 the full-history preflight.
+
+The first read-only export passed both mathematical replays, then exposed a
+Windows permission issue in the mutation harness: copying read-only file
+attributes prevented edits to its private copies. The harness now copies
+file contents without those attributes and makes only temporary directories
+writable. The original exported sources remain read-only. The same eleven
+mutations still have to fail semantically, rather than on a permission error.

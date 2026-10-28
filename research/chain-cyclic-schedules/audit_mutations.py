@@ -6,6 +6,7 @@ import hashlib
 import json
 from pathlib import Path
 import shutil
+import stat
 import subprocess
 import sys
 import tempfile
@@ -50,6 +51,15 @@ MUTATIONS = [
 ]
 
 
+def private_copy(source, destination):
+    # A read-only export must stay read-only; only its temporary copies change.
+    shutil.copytree(source, destination, copy_function=shutil.copyfile,
+                    ignore=shutil.ignore_patterns("__pycache__"))
+    directories = [destination] + [p for p in destination.rglob("*") if p.is_dir()]
+    for directory in directories:
+        directory.chmod(directory.stat().st_mode | stat.S_IRWXU)
+
+
 def run_probe(folder, optimized):
     argv = [sys.executable, "-I", "-W", "error", "-B"]
     if optimized:
@@ -65,20 +75,20 @@ def main():
     evidence = []
     with tempfile.TemporaryDirectory(prefix="chain-cyclic-controls-") as tmp:
         baseline = Path(tmp) / "baseline"
-        shutil.copytree(HERE, baseline, ignore=shutil.ignore_patterns("__pycache__"))
-        (baseline / "probe.py").write_text(PROBE, encoding="utf-8")
+        private_copy(HERE, baseline)
+        (baseline / "probe.py").write_text(PROBE, encoding="utf-8", newline="\n")
         for optimized in (False, True):
             control = run_probe(baseline, optimized)
             if control.returncode or control.stdout.strip() != "PASS_MUTATION_PROBE":
                 raise ValueError("positive mutation probe failed: " + control.stderr)
         for name, relative, old, new in MUTATIONS:
             changed = Path(tmp) / name
-            shutil.copytree(baseline, changed)
+            private_copy(baseline, changed)
             path = changed / relative
             original = path.read_text(encoding="utf-8")
             if original.count(old) != 1:
                 raise ValueError("mutation anchor must be unique: " + name)
-            path.write_text(original.replace(old, new), encoding="utf-8")
+            path.write_text(original.replace(old, new), encoding="utf-8", newline="\n")
             for optimized in (False, True):
                 result = run_probe(changed, optimized)
                 if result.returncode == 0 or "ValueError:" not in result.stderr:
