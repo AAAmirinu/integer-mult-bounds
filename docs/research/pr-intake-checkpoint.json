@@ -1819,5 +1819,26 @@
     "review": "docs/research/pr-intake-evidence/pr6030-audit/PROOF-REVIEW.md",
     "validation": "docs/research/pr-intake-evidence/pr6030-audit/VALIDATION.json",
     "all_jobs_finished": true
+  },
+  "latest_delta_intake": {
+    "date": "2026-10-28",
+    "status": "published; zero actionable at ending snapshot",
+    "decisions": 114,
+    "archives_merged": 106,
+    "reviewed_tooling_merged": 7,
+    "new_revision_hold": 6144,
+    "evidence": [
+      "docs/research/pr-intake-evidence/queue-oct28a-20261028.json",
+      "docs/research/pr-intake-evidence/queue-oct28b-20261028.json"
+    ],
+    "closures": [
+      "docs/research/pr-intake-evidence/queue-oct28a-closures.json",
+      "docs/research/pr-intake-evidence/queue-oct28b-closures.json"
+    ],
+    "snapshot": "docs/research/pr-intake-evidence/queue-oct28-ending.json",
+    "selected_kappa": "0.003125804",
+    "selected_frontier_changed": false,
+    "live_jobs": [],
+    "next": "Run delta-only plan on a new request. Do not rerun unchanged holds, deferred replays or historical scientific suites. Archived frontier proposals remain scientifically unadmitted."
   }
 }
