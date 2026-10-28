@@ -111342,7 +111342,7 @@
       "reviewed_head": "772dd10a5859a1d15f4851feb371519789213ad8",
       "current_head": "772dd10a5859a1d15f4851feb371519789213ad8",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/p104-helper470-twin-rung-removal"
       ],
@@ -111352,13 +111352,18 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct27e-20261027.json",
         "docs/research/pr-intake-evidence/pr6030-repair/REVIEW.md"
       ],
-      "closure": null
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6030",
+        "merge_commit": "746ee5e1160ae64a15a81b2a432d5566142db850",
+        "scope": "Portability repair and complete primary replay passed; independent application review and selected-frontier promotion remain open."
+      }
     },
     {
       "number": 6031,

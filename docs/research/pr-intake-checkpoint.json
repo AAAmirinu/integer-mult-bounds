@@ -1808,7 +1808,9 @@
     "local_primary": "pass",
     "scope": "Portability repair and primary replay only; selected frontier unchanged.",
     "evidence": "docs/research/pr-intake-evidence/pr6030-repair/REVIEW.md",
-    "next": "Publish repaired source and reconcile actual merge. Do not repeat completed primary replays; next scientific task is the independent application/promotion review.",
-    "linux_result": "success"
+    "next": "Repair complete and published. Independent application/promotion review remains open; selected kappa stays 0.00310045. Reuse exact-source primary replay evidence.",
+    "linux_result": "success",
+    "publication": "26f0ed6c7",
+    "github_state": "MERGED"
   }
 }

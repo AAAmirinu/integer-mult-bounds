@@ -38380,8 +38380,8 @@
     {
       "number": 6030,
       "head": "772dd10a5859a1d15f4851feb371519789213ad8",
-      "status": "ready_to_integrate",
-      "reason": "Portability repaired; full local and exact-source hosted Linux primary replays pass. Source ready for archival integration; independent scientific application review remains required before selected-frontier promotion.",
+      "status": "pending_review",
+      "reason": "Repaired source published to main and PR merged. Full local and Linux primary replays pass; portability hold resolved. Remaining work is independent scientific application review for optional promotion, not repeated queue intake or primary replay.",
       "evidence": [
         "docs/research/pr-intake-evidence/queue-oct27e-20261027.json",
         "docs/research/pr-intake-evidence/pr6030-portability-hold.json",
