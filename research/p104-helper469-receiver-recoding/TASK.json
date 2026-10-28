@@ -60,8 +60,8 @@
   "bottleneck_link": "Reject this itinerary removal before spending native/invoice work; receiver recoding is a changed hypothesis, not another donor-holder search.",
   "budget_minutes": 60,
   "stop_rule": "Stop after the one-interval exact affine decision; no interval census or new donor routes.",
-  "outcome": "scoped-exclusion",
-  "evidence": "PROOF.md, RESULT.json and verify.py",
+  "outcome": "negative-result",
+  "evidence": "PROOF.md, RESULT.json, verify.py and independent controls.py",
   "author": "JoyboyBrian",
   "ai_assistance": "Substantial OpenAI Codex assistance",
   "open_questions": [

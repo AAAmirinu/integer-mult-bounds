@@ -20,7 +20,10 @@ rational arithmetic. It authenticates the selected word, verifies maximal
 contact-free windows and source chart/lifetime semantics, gathers569 legal
 timestamped generators, checks the complete receiver row, and compares the
 committed deterministic certificate. No pending-source code is imported.
-Only the prefix through the restoration boundary is replayed; no full native,
+Independent controls replay input1 literally at every legal donor slot and exercise
+a synthetic recoding positive plus zero-multiplier, wrong-version, wrong-chart,
+changed-input-column and omitted-restoration negatives. Both scripts are
+registered in normal and optimized Python. Only the prefix through the restoration boundary is replayed; no full native,
 physical caller, selected invoice, Lean or Docker replay is performed.
 
 ## Reproduction
@@ -28,7 +31,7 @@ physical caller, selected invoice, Lean or Docker replay is performed.
 From the repository root, with Python3.12 or later and no dependencies:
 
 ```sh
-python3 -B scripts/research_package.py --package research/p104-helper469-receiver-recoding
+python3.12 -B scripts/research_package.py --package research/p104-helper469-receiver-recoding
 python3 -B scripts/check_research_commit.py --package research/p104-helper469-receiver-recoding --check-source-history
 ```
 

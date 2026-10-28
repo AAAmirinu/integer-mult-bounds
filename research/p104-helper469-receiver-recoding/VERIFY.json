@@ -14,7 +14,36 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 30,
-      "checks": "Exact source hash, arbitrary-input receiver row, legal donor versions and separating coordinate"
+      "checks": "Exact source and all-rational separating certificate"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "{package}/controls.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Independent literal input1 replay; recoding positive; zero, chart, version, arbitrary-column and restoration negatives"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "-O",
+        "{package}/verify.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Exact source and all-rational separating certificate under optimized Python"
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "-O",
+        "{package}/controls.py"
+      ],
+      "timeout_seconds": 30,
+      "checks": "Independent literal input1 replay; recoding positive; zero, chart, version, arbitrary-column and restoration negatives under optimized Python"
     }
   ]
 }
