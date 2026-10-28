@@ -44,7 +44,7 @@ direct six-call word shows the bound is exact.
 4. **New: the same six-call floor holds over F3 at width two.** Over `F3` there
    are 12 rank-one idempotents (`p(p+1)`). The stdlib engine refutes all tuples
    of length 0–4: 22,621 of them, registered. The local SAT run refutes all
-   248,832 tuples of length five, in 555 s on 8 cores. The direct six-call word
+   248,832 tuples of length five (783 s with 9 workers; an earlier prototype of the same encoding also found none). The direct six-call word
    works over every field. So under #6097's hypotheses the minimum over `F3` is
    also **exactly six**. This answers #6097 open question 2 for `F3` at width
    two. The length-five row is **local SAT evidence**, not a stdlib replay.
@@ -91,7 +91,7 @@ python3 -I -W error -B research/diagonal-pair-collision-audit/verify.py      # ~
 python3 -I -O -W error -B research/diagonal-pair-collision-audit/verify.py
 # local only, needs python-sat:
 python3 -I -B research/diagonal-pair-collision-audit/sat_crosscheck.py 2 5
-python3 -I -B research/diagonal-pair-collision-audit/sat_crosscheck.py 3 5 --jobs 8   # ~10 min
+python3 -I -B research/diagonal-pair-collision-audit/sat_crosscheck.py 3 5 --jobs 8   # ~13 min
 python3 -I -B research/diagonal-pair-collision-audit/sat_crosscheck.py 3 4 --no-cancel   # 84
 ```
 
