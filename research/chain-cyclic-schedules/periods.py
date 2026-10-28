@@ -81,6 +81,10 @@ def unit_repeated_count(m, c, rows):
 
 def check_unit_row(m, c, rows, row):
     repeated = unit_repeated_count(m, c, rows)
+    allowed = (m % 3 == 0 and m % 9 != 0 and
+               (c - (m // 3)**3) % 3 == 0)
+    exists = allowed and (m, c) not in ((6, 5), (12, 1))
+    require((repeated > 0) == exists, "unit repetition existence classification")
     require(row["primitive_words"] == rows[m][c] - repeated, "unit primitive formula")
     require(row["cyclic_orbits"] * (3 * m) == rows[m][c] + 2 * repeated,
             "unit orbit formula")

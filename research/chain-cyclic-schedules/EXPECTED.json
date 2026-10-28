@@ -10,7 +10,9 @@
     "missing_totient_weight",
     "mobius_sign_reversed",
     "nonunit_repetition_three_only",
-    "larger_unit_exception"
+    "larger_unit_exception",
+    "small_existence_exception_six",
+    "small_existence_exception_twelve"
   ],
   "derived_from_source_counts_through": 24,
   "dp_moduli": [

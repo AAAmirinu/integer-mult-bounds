@@ -173,6 +173,27 @@ period 3n=m. All remaining words have least period 3m. Counting these two
 orbit sizes proves (7). The condition is necessary for repetition; it does
 not guarantee W(n,t0)>0. QED.
 
+**Existence classification.** The preceding necessary conditions are also
+sufficient for a nonprimitive unit-target word, except at **(m,c)=(6,5)
+and (12,1)**. Thus such a word exists if and only if
+
+```text
+m = 3n, 3 does not divide n, c = n^3 (mod 3),
+and (m,c) is neither (6,5) nor (12,1).                       (8)
+```
+
+Here the standing unit-target hypothesis still applies. To prove this,
+use the credited balanced existence theorem in #4249/#4257: for n>=2,
+W(n,t)>0 at nonzero t except (n,t)=(2,1),(3,2),(4,3).
+The corollary gives gcd(t0,n)=1 and 3 not dividing n, so the n=3 exception
+cannot arise. The n=2 exception becomes m=6,c=5: the congruences are
+c=2 modulo 3 and c=1 modulo 2. The n=4,t0=3 exception becomes m=12,c=1:
+c=1 modulo 3 and c=3t0=1 modulo 4. The n=1 convention gives six words
+and no exception. In every other allowed case the predecessor theorem
+supplies a valid block v; v^3 has the required endpoint and least period m.
+This is a new application of that credited existence theorem, not a new
+proof of its balanced-word construction. QED.
+
 ## 4. Exact examples and boundaries
 
 For (m,c)=(3,1), W=24. Six words are triples of permutations of 123;

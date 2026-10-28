@@ -43,6 +43,8 @@ MUTATIONS = [
     ("totient_weight", "periods.py", "phi(d) * fixed[d]", "fixed[d]"),
     ("mobius_sign", "periods.py", "result = -result", "result = result"),
     ("unit_all_primitive", "periods.py", "return rows[n][((c - n**3) // 3) % n]", "return 0"),
+    ("existence_six", "periods.py", "((6, 5), (12, 1))", "((0, 0), (12, 1))"),
+    ("existence_twelve", "periods.py", "((6, 5), (12, 1))", "((6, 5), (0, 0))"),
     ("source_tamper", "source/6037-RESULT.json", '"6741578652"', '"6741578653"'),
     ("expected_tamper", "EXPECTED.json", '"cyclic_orbits": 7,', '"cyclic_orbits": 8,'),
 ]

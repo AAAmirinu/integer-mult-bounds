@@ -14,11 +14,11 @@ python -X utf8 -B scripts/research_package.py --package research/chain-cyclic-sc
 
 It ran full isolated normal and optimized replay, then the private-copy
 mutation audit. Both full replays returned the same mathematical object
-in EXPECTED.json. Nine actual mutations were rejected in each mode, with
+in EXPECTED.json. Eleven actual mutations were rejected in each mode, with
 two passing unchanged probes. The parity-gate mutation is detected by the
 separate literal orbit counter, not only by the retained expected table.
 
-The initial generated replay took 13.125 seconds. This is one local timing,
+The initial generated replay took 13.125 seconds; the existence-classification replay took 13.672 seconds. This is one local timing,
 not a benchmark against #6037 or a speedup claim. Evidence domains and
 exact counts are in README.md and EXPECTED.json.
 
@@ -61,3 +61,21 @@ counting is exhaustive only through m=5; independent DP stops at m=8.
 Numerical tables through m=24 above that range inherit the frozen #6037 counts.
 No physical hosting, precision, routing, compiler or outer-bound claim is
 tested or changed here.
+
+## Source transport
+
+The pending #6037 bytes are retained unchanged in publication ancestor
+ccff0fb7ed8f53a686a3f2ecc2a5585d7bd8a505. All executable source pins now
+resolve to the canonical base or this publication ancestor; original upstream
+head/path/blob fields are retained separately. The optional full-history
+preflight refuses this shallow checkout, so no full-history preflight pass
+is claimed. Committed-byte and independent export checks are used separately.
+
+The final registered replay after the existence classification took 52.812
+seconds total. Normal and optimized result/file-hash receipts were identical;
+22 mutated probes failed and two unchanged probes passed. The package file
+inventory and all hashes were unchanged before and after the run.
+
+Direct Git ancestry queries return success for both the canonical base and
+retained-source ancestor. This narrower check is not presented as a pass of
+the full-history preflight.

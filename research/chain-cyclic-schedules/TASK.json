@@ -42,13 +42,13 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "Classify all rotation periods of balanced correct depth-three chain words; derive fixed-point, cyclic-class and primitive-word counts from W(m,c), with a sharp unit-target repetition corollary.",
+  "actual_scope": "Classify all rotation periods of balanced correct depth-three chain words; derive cyclic and primitive counts from W(m,c), and classify exactly when nonprimitive unit-target words exist.",
   "scope_change_reason": "The alphabet and source count stay fixed. This follows the unresolved combinatorics behind PR6037, not the card's extra-operation construction. It is an algebraic counting side result with explicit credit for earlier rotation closure.",
   "bottleneck_link": "An exact quotient prevents invalid rotational deduplication and gives all-modulus divisibility controls for future connector censuses. It changes neither the complete-call tariff nor the selected supplier budget; no kappa improvement or measured speedup.",
   "budget_minutes": 60,
   "stop_rule": "Finish the all-modulus depth-three proof, exhaustive m<=5 orbit checks, DP m<=8, repeat blocks n<=4,d<=8, bounded mutation controls and package publication. Do not extend the predecessor high-modulus census or physical supplier construction.",
   "outcome": "completed",
-  "evidence": "PROOF.md; generated EXPECTED.json; exact literal/matrix/DP checks; 11 false-claim controls and nine actual source/expected/code mutations checked in both interpreter modes.",
+  "evidence": "PROOF.md; generated EXPECTED.json; exact literal/matrix/DP checks; 13 false-claim controls and eleven actual source/expected/code mutations checked in both interpreter modes.",
   "author": "SHIN09-git with substantial OpenAI Codex assistance",
   "ai_assistance": "Substantial OpenAI Codex assistance in source reading, mathematical derivation, code, validation and writing. Single assisted author; no independent human or proof-kernel review.",
   "open_questions": [

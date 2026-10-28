@@ -103,6 +103,9 @@ def check_controls(rows, table):
         "mobius_sign_reversed": table["4"][0]["primitive_words"] != rows[4][0] + 42,
         "nonunit_repetition_three_only": table["4"][0]["exact_repetitions"]["2"] == 42,
         "larger_unit_exception": unit_repeated_count(15, 8, rows) == 5340,
+        "small_existence_exception_six": unit_repeated_count(6, 5, rows) == 0,
+        "small_existence_exception_twelve": unit_repeated_count(12, 1, rows) == 0
+                                          and unit_repeated_count(12, 7, rows) == 216,
     }
     for name, passed in controls.items():
         require(passed, "negative control: " + name)

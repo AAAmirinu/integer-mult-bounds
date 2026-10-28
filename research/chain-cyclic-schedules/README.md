@@ -4,7 +4,9 @@ A correct balanced schedule can have a shorter rotation period than its
 length. This package proves an exact repetition law for every modulus and
 uses it to count cyclic classes from the literal counts W(m,c). In particular,
 **a unit-target schedule can repeat only three times**. The exception needs
-m=3n, 3 not dividing n, and c=n^3 modulo 3.
+m=3n, 3 not dividing n, and c=n^3 modulo 3. Combining this with the credited
+balanced existence theorem makes those conditions sufficient too, except
+at exactly (m,c)=(6,5) and (12,1).
 
 For example, at (m,c)=(3,1), the known 24 correct length-nine words form
 **four cyclic classes**: two of size nine and two of size three. Dividing
@@ -76,8 +78,8 @@ handwritten success receipt. The registered checks cover:
   nonnegative integral period populations, and agreement between Burnside and
   the least-period orbit sum. **Rows above m=8 inherit #6037's counts**;
   they are derived tables, not an independent high-m census.
-- Eleven explicit false-claim controls and nine actual private-copy mutations,
-  each rejected in normal and optimized Python: seven formula changes, one
+- Thirteen explicit false-claim controls and eleven actual private-copy mutations,
+  each rejected in normal and optimized Python: nine formula changes, one
   source-byte change and one expected-table change. Positive private-copy
   probes pass in both modes.
 
@@ -145,7 +147,7 @@ There is no stochastic search, external solver or runtime network request.
 Python dynamically allocates bounded tuples, dictionaries and integers;
 this is the declared managed-runtime deviation from allocation-free coding.
 The mathematical proof is uniform; the program is a bounded checker and does
-not claim to execute every modulus. The mutation runner uses at most 20
+not claim to execute every modulus. The mutation runner uses at most 24
 sequential bounded child probes, never concurrent scientific replays.
 
 ## Credit

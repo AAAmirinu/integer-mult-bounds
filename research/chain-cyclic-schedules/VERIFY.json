@@ -40,7 +40,7 @@
         "{package}/audit_mutations.py"
       ],
       "timeout_seconds": 180,
-      "checks": "Nine actual private-copy code/data mutations rejected in normal and optimized modes; positive copied probes pass."
+      "checks": "Eleven actual private-copy code/data mutations rejected in normal and optimized modes; positive copied probes pass."
     }
   ]
 }
