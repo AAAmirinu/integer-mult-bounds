@@ -73,7 +73,19 @@ written.
 the search. Its four parts are split by root option, and each was generated in
 one Kaggle process.
 
-<!-- CERT -->
+The search branches first on port 0, which has 15 canonical options. The
+four parts hold:
+
+| Part | Root options | Internal nodes | Dead nodes | Leaves | Generation time |
+|---|---:|---:|---:|---:|---:|
+| 0 | 4 | 48,696 | 26,162 | 0 | 4,411 s |
+| 1 | 4 | 48,328 | 25,730 | 0 | 4,389 s |
+| 2 | 4 | 40,897 | 27,884 | **1** | 4,814 s |
+| 3 | 3 | 49,050 | 21,251 | 0 | 3,715 s |
+
+Each part is about 50 KB gzipped. An earlier, independent run of the same
+enumeration also found exactly one solution, with identical node totals in
+every part. The replay takes about 107 s per pair of parts.
 
 [verify.py](verify.py) needs no trust in the certificate. At every node it
 recomputes all canonical consistent options of the named port, descends into
@@ -161,7 +173,11 @@ python3 scripts/check_lean_axioms.py --project research/p104-carrier-code-unique
 The audit reports `propext`, `Classical.choice` and `Quot.sound` only, for all
 14 declarations.
 
-## Limits and open questions
+## Open next questions
+
+- **A hand proof of uniqueness.** We have no proof that does not rely on the
+  certificate. PROOF.md §5a reduces the question to 14 blocks of
+  `S(3,4,8)`, but local subsystems do not force the answer.
 
 - **Partner codes of dimension 9 or more are not classified.** PR6030 is one,
   because of a bookkeeping direction. A cheaper design would need carriers

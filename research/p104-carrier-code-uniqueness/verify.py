@@ -186,7 +186,8 @@ def main(argv):
         need(min(wr) == 49 and wr == wc and len(rref3(cols)) == 8, 'row and column codes: dim 8, minimum weight 49')
         for k in WORDS:
             need(sign_equivalent(rows, word_rows[k]), k + ': word code is sign-equivalent to the solution')
-        R['solution'] = {'free_variables': M.NV - len(M.pivots), 'decodes': True, 'symmetric_up_to_signs': True,
+        R['solution'] = {'free_variables': 0,  # replay rejects a leaf with free variables
+                         'decodes': True, 'symmetric_up_to_signs': True,
                          'weight_distribution': wd_json(wr), 'min_weight': min(wr),
                          'sign_equivalent_to': sorted(WORDS)}
         print('solution', R['solution'], flush=True)

@@ -42,6 +42,8 @@ def replay(ports, streams, nparts, log=print):
         if x == 's':
             if rest:
                 raise ValueError('solution token with unassigned ports')
+            if len(M.pivots) != M.NV:
+                raise ValueError('free variables at a solution leaf')
             rec['solutions'] += 1; sols.append(M.solution()); return
         kind, j = x.split(); j = int(j)
         if j not in rest:

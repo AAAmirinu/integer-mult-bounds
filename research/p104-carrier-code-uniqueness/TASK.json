@@ -76,6 +76,12 @@
       "why_it_matters": "Corollary 5 bounds receivers only for direct deliveries; relays move the cost into public lifts, whose price must be compared.",
       "first_step": "Price one relay of a single carrier with the exact invoice of the PR5907 word.",
       "blocked_by": "A legal relay construction."
+    },
+    {
+      "question": "Is there a computer-free proof that the E8 Gram code is the only 8-dimensional decoding code on these 104 root lines over F_3?",
+      "why_it_matters": "It would replace the certificate by an argument that extends to other port sets drawn from E8 root lines.",
+      "first_step": "Work in clique coordinates (PROOF.md section 5a): show that the cross-block conditions force every alpha_j to have full support on its S(3,4,8) block.",
+      "blocked_by": "Local subsystems of three blocks admit degenerate supports, so the argument has to be global."
     }
   ]
 }
