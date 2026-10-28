@@ -58,7 +58,11 @@ def source_history(root, package, commit):
     This is declared history availability, not full SOURCES.json validation
     or discovery of imports, archive references or runtime dependencies.
     """
-    sources = publication_sources(root, package, commit)
+    return _source_history_from_metadata(root, publication_sources(root, package, commit), commit)
+
+
+def _source_history_from_metadata(root, sources, commit):
+    """Validate metadata obtained from the immutable publication blob."""
     require(isinstance(sources, dict), 'SOURCES.json must be an object')
     base = sources.get('base_commit')
     require(isinstance(base, str) and re.fullmatch(r'[0-9a-f]{40,64}', base),
@@ -121,6 +125,7 @@ def check(root, package, ref='HEAD', check_source_history=False, check_modes=Fal
             ', '.join(sorted(set(entries) ^ expected)))
     names = sorted(entries)
     require(names, 'empty package inventory')
+    source_payload, source_size = None, None
     with closing(git_blobs(root, [entries[name] for name in names])) as blobs:
         # Advance the blob iterator once past its last yield, so its final
         # Git exit-status check runs before reporting success.
@@ -134,11 +139,17 @@ def check(root, package, ref='HEAD', check_source_history=False, check_modes=Fal
                     'working/commit bytes differ: '+name+' (working SHA256 '+
                     hashlib.sha256(working).hexdigest()+', commit SHA256 '+
                     hashlib.sha256(committed).hexdigest()+')')
+            if check_source_history and name == package + '/SOURCES.json':
+                source_size = len(committed)
+                source_payload = committed if source_size <= MAX_SOURCE_METADATA_BYTES else None
     result = {'commit':commit, 'files':len(names), 'package':package}
     if check_modes:
         result['executable_modes_checked'] = True
     if check_source_history:
-        result['source_history_commits'] = source_history(root, package, commit)
+        require(source_size is not None, 'missing publication SOURCES.json')
+        require(source_size <= MAX_SOURCE_METADATA_BYTES, 'source metadata byte limit exceeded')
+        result['source_history_commits'] = _source_history_from_metadata(
+            root, json.loads(source_payload), commit)
     return result
 
 
