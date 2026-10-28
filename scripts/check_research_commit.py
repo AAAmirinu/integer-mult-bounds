@@ -130,10 +130,10 @@ def check(root, package, ref='HEAD', check_source_history=False, check_modes=Fal
                 require(bool(path.stat().st_mode & stat.S_IXUSR) == modes[name],
                         'working/commit executable mode differs: ' + name)
             working = path.read_bytes()
-            require(working == committed,
-                    'working/commit bytes differ: '+name+' (working SHA256 '+
-                    hashlib.sha256(working).hexdigest()+', commit SHA256 '+
-                    hashlib.sha256(committed).hexdigest()+')')
+            if working != committed:
+                raise ValueError('working/commit bytes differ: '+name+' (working SHA256 '+
+                                 hashlib.sha256(working).hexdigest()+', commit SHA256 '+
+                                 hashlib.sha256(committed).hexdigest()+')')
     result = {'commit':commit, 'files':len(names), 'package':package}
     if check_modes:
         result['executable_modes_checked'] = True
