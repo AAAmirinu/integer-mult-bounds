@@ -125,7 +125,9 @@ compares the receipt byte for byte.
 - **Price the PR5907 witness.** Its 20 inserted events and the change of the z-column (it now reaches roles 698,
   700 and 702 instead of 699) need the PR5599 complete signed bill. This matters only if a similar redundant class
   appears on the selected word.
-- **Cross-time cancellation** on the 24 residual PR6030 classes (see Scope).
+- **Cross-time cancellation** on the 24 residual PR6030 classes (see Scope). JoyboyBrian's
+  [PR #6088](https://github.com/CrocSwap/integer-mult-bounds/pull/6088) excludes one concrete two-ADD seam family for
+  helper 572.
 
 ## Credit
 
