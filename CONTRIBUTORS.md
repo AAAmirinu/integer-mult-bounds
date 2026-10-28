@@ -4731,3 +4731,11 @@ Source archives retain attribution; mathematical review remains open.
 - **Nick Petalas (@petalas)** — [#6027](https://github.com/CrocSwap/integer-mult-bounds/pull/6027): Decide paired lattices with rank-one projector anchors (no new κ) (source archive).
 - **Nick Petalas (@petalas)** — [#6028](https://github.com/CrocSwap/integer-mult-bounds/pull/6028): Reduce XOR tape travel by at least N-2 crossings (no new κ) (source archive).
 - **Chris R (@Clear1nsight)** — [#6029](https://github.com/CrocSwap/integer-mult-bounds/pull/6029): Reduce complete H25 bookkeeping time by 21% (source archive).
+
+## Queue intake, 27 October 2026 (chunk E)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **Nick Petalas (@petalas)** — [#6031](https://github.com/CrocSwap/integer-mult-bounds/pull/6031): Prove nonmaximal Schur-commutator ranks form an interval with a sharp binary dimension law (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6032](https://github.com/CrocSwap/integer-mult-bounds/pull/6032): Prove a fifth rational frame needs eight calls for every rational slope, settling the #2112 seven-call case (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6033](https://github.com/CrocSwap/integer-mult-bounds/pull/6033): Prove one added paid call defeats a third frame-593 rung removal (no new κ) (source archive).

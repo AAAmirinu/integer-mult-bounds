@@ -38376,6 +38376,59 @@
       "baseline": "19fdb086ea96af9a9f87936a2b888e10af4ed810",
       "watch_paths": {},
       "watch_prs": {}
+    },
+    {
+      "number": 6030,
+      "head": "772dd10a5859a1d15f4851feb371519789213ad8",
+      "status": "waiting_revision",
+      "reason": "Exact-head hosted run 40597285594 fails in verify.py at Entire regenerated WORD.json.gz, byte for byte. Replace generated-container equality with complete decompressed-payload/canonical-word comparison while retaining immutable source hash checks; add header-variation and changed-payload controls and pass the registered replay. This is a portability/reproducibility defect, not a refutation of the claimed kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct27e-20261027.json",
+        "docs/research/pr-intake-evidence/pr6030-portability-hold.json"
+      ],
+      "policy_version": 1,
+      "baseline": "19fdb086ea96af9a9f87936a2b888e10af4ed810",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6031,
+      "head": "acc000f4edfa0b0c4a90b505c6e02a4c3572f74c",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct27e-20261027.json"
+      ],
+      "policy_version": 1,
+      "baseline": "19fdb086ea96af9a9f87936a2b888e10af4ed810",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6032,
+      "head": "3b098803eb854afbd5d63ad3bf4d75cdb1e515d5",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct27e-20261027.json"
+      ],
+      "policy_version": 1,
+      "baseline": "19fdb086ea96af9a9f87936a2b888e10af4ed810",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6033,
+      "head": "c7e171a9e9ee25e69b2533378abc2ada1a4fafa2",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct27e-20261027.json"
+      ],
+      "policy_version": 1,
+      "baseline": "19fdb086ea96af9a9f87936a2b888e10af4ed810",
+      "watch_paths": {},
+      "watch_prs": {}
     }
   ]
 }
