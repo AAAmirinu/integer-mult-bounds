@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "python": "3.12",
+  "requirements": [],
+  "inputs": [
+    "research/direct-flow-leaf-walk/README.md",
+    "research/direct-flow-leaf-walk/diagnostics/overlap_flow.py",
+    "research/direct-flow-leaf-walk/verify.py",
+    "research/direct-mixed-flow/flow.py",
+    "research/direct-mixed-flow/vendor/p7-RESULT.json"
+  ],
+  "commands": [
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "{package}/verify.py",
+        "--expect",
+        "{package}/RESULT.json"
+      ],
+      "timeout_seconds": 120,
+      "checks": "Exact rational root/drift/tilt/limit enclosures, eight whole-flow fixtures, lattice and domain failure controls; classical LLT proof is written, not machine-checked."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "{package}/independent_source.py"
+      ],
+      "timeout_seconds": 60,
+      "checks": "Ten independent ordered-word fixtures agree with PR4436 and PR4467 leaf histograms; wrong final truncation rejected."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "{package}/test_controls.py"
+      ],
+      "timeout_seconds": 120,
+      "checks": "Reject changed source bytes, altered histogram bracket, and corrupted expected receipt, including under optimized Python."
+    }
+  ]
+}
