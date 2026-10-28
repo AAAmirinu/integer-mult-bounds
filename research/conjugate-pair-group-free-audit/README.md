@@ -30,7 +30,8 @@ identities, Lemmas 1-3 and all eight length-three patterns. For `xxy`, `yyx`,
   `xy`.
 
 An OpenAI Codex read-only adversarial review of the same PROOF.md and of this
-verifier also reported no error. It is a second machine check, not human
+verifier also reported no error. A second Codex review of this package's
+Theorem S proof reported no error either. These are machine checks, not human
 review.
 
 **2. A stronger theorem with a shorter proof ([PROOF.md](PROOF.md)).** Fix
