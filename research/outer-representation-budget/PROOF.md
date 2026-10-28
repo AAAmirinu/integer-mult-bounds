@@ -72,7 +72,7 @@ There are 63 predicates in total. They are *sufficient strict exponent tests und
 
 ## 3. Exact admitted region
 
-**Theorem.** Let U,B>0 and let the envelope domain above hold. There are rational free outer parameters and a rational cutoff t satisfying all 63 predicates if and only if
+**Theorem.** Let U,B>0 and κ be rational, and let the rational envelope domain above hold. There are rational free outer parameters and a rational cutoff t satisfying all 63 predicates if and only if
 
 $$\boxed{\rho(1+s)<2,\qquad
 \mathrm{OLD}<\kappa<\min\left(\frac{M}{\rho},\frac1\rho-s\right).}$$

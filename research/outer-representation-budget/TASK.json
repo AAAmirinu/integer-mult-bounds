@@ -99,6 +99,26 @@
     "initial_fetch_utc": "2026-10-28T03:34:21Z",
     "overlap_open_prs_utc": "2026-10-28T03:41:39Z",
     "overlap_discussions_utc": "2026-10-28T03:42:58Z",
-    "coverage": "326 open PR bodies and 5708 discussion records with complete remote pagination at first snapshot; sparse local corpus, historical diff contents and unpublished work remain limits. Exact HEAD README/PROOF grep for superlinear/quadratic/guard/stock terms found only distinct historical precision and helper-invoice notes."
+    "coverage": "326 open PR bodies and 5708 discussion records with complete remote pagination at first snapshot; sparse local corpus, historical diff contents and unpublished work remain limits. Exact HEAD README/PROOF grep for superlinear/quadratic/guard/stock terms found only distinct historical precision and helper-invoice notes.",
+    "final_fetch_utc": "2026-10-28T03:58:12Z",
+    "final_canonical_main": "721c03822c421b7f7fcbb2598993b947c4d88419",
+    "final_open_prs_utc": "2026-10-28T03:58:12Z",
+    "final_discussions_utc": "2026-10-28T03:59:24Z",
+    "final_coverage": "329 open PR bodies and 5715 Discussion records, complete remote pagination. Matches are the canonical claim itself, distinct PR3920 parent-row boundary and R437 pivot/fallback notes; sparse local notes, historical diff contents and unpublished work remain limits."
+  },
+  "validation": {
+    "environment": "macOS, CPython 3.12.8, standard library only",
+    "registered_normal_and_optimized": "PASS, each with 4056 rational witnesses, all 63 predicates, 300 dual-identity checks and meaningful failure controls",
+    "navigation_repair": "Unchanged PR6050 commit cherry-picked; six existing current-status/navigation tests pass",
+    "publication_bytes": "PASS before final metadata update; rerun at publication commit",
+    "global_sparse_replay_planner": "Stopped after more than two minutes waiting without a matrix. No complete global-plan result claimed.",
+    "not_run": [
+      "selected cold replay",
+      "numerical Gaussian implementation",
+      "Lean",
+      "Docker",
+      "full-history provenance preflight (checkout is shallow)",
+      "independent human review"
+    ]
   }
 }
