@@ -48,7 +48,7 @@
   "budget_minutes": 60,
   "stop_rule": "Stop at the proved cap plus a literal-word verifier; do not start a depth-three construction search in this session.",
   "outcome": "completed",
-  "evidence": "README proof (weight identity); verify.py: exhaustive census of 39,288 small floor words with 1,031,591 identity checks, 21 rebuilt Gray blocks, exact capacity table to c=2^4096, five rejected controls. Standard library only.",
+  "evidence": "README proof (weight identity); verify.py: exhaustive census of 39,288 small floor words with 1,031,591 identity checks, 21 rebuilt Gray blocks, exact capacity table to c=2^4096, four rejected controls. Standard library only.",
   "author": "JosieElliston (Claude Code session 40)",
   "ai_assistance": "Substantial: Anthropic Claude (Claude Code session 40) derived the proof, wrote the verifier and README; optional OpenAI Codex read-only review.",
   "open_questions": [

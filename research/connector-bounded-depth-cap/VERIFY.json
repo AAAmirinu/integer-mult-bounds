@@ -17,7 +17,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 120,
-      "checks": "Source pin; exhaustive census of 39,288 floor words (k,c) in {(2,2..5),(3,2..4),(4,2)} with weight-identity and per-weight last-read checks at depths 1,2 (3 when kc<=9); 21 rebuilt reflected-Gray depth-two blocks; exact capacity table to c=2^4096; five rejected controls."
+      "checks": "Source pin; exhaustive census of 39,288 floor words (k,c) in {(2,2..5),(3,2..4),(4,2)} with weight-identity and per-weight last-read checks at depths 1,2 (3 when kc<=9); 21 rebuilt reflected-Gray depth-two blocks; exact capacity table to c=2^4096; four rejected controls."
     },
     {
       "argv": [

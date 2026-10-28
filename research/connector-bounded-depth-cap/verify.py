@@ -214,12 +214,7 @@ def run_controls():
                 bad = True
     if bad:
         rejected += 1
-    # 3. a claimed depth-two block above the cap at c=1024 (k=K_2+1) is excluded
-    c = 1024
-    k = first_fail(c, 2, cap_rhs)
-    if (1 << k) - 1 > cap_rhs(k, c, 2):
-        rejected += 1
-    # 4. the Gray block with its downward suffix not reversed loses depth two
+    # 3. the Gray block with its downward suffix not reversed loses depth two
     k, c = 4, 8
     up, down, g = [], [], 0
     for i in range(1, 1 << k):
@@ -232,7 +227,7 @@ def run_controls():
     got, _ = cover(wrong, k, c, 2, audit=True)
     if len(got) < (1 << k) - 1:
         rejected += 1
-    # 5. depth one cannot cover three sources (PR4248 Lemma C) at c=3
+    # 4. depth one cannot cover three sources (PR4248 Lemma C) at c=3
     best = max(len(cover(wd, 3, 3, 1, audit=True)[0]) for wd in multiset_words(3, 3))
     if best < 7:
         rejected += 1
@@ -286,6 +281,7 @@ def main() -> int:
 
     # Capacity tables
     table = []
+    exact_ratios = []
     for e in list(range(1, 21)) + [24, 32, 40, 48, 64, 96, 128, 256, 1024, 4096]:
         c = 1 << e
         k2 = first_fail(c, 2, cap_rhs) - 1
@@ -299,20 +295,21 @@ def main() -> int:
         # n <= c * max(2, K_2/2) for depth<=2 concatenations; ratios exact
         upper_ratio = Fraction(max(4, k2), 2 * e)
         lower_ratio = Fraction(gray_lower(c), c * e)
+        exact_ratios.append((lower_ratio, upper_ratio))
         table.append({"c": f"2^{e}", "gray_k": g, "cap_k_d2": k2,
                       "trivial_k_d2": t2, "cap_k_d3": k3, "cap_k_d4": k4,
                       "N_le2_lower_over_clog2c": str(round(lower_ratio, 6)),
                       "N_le2_upper_over_clog2c": str(round(upper_ratio, 6))})
     # sanity of the asymptotic message at the largest entry
     last = table[-1]
-    need(Fraction(last["N_le2_upper_over_clog2c"]) < Fraction(506, 1000), "depth<=2 upper ratio not near 1/2")
-    need(Fraction(last["N_le2_lower_over_clog2c"]) > Fraction(49, 100), "Gray ratio not near 1/2")
+    need(exact_ratios[-1][1] < Fraction(506, 1000), "depth<=2 upper ratio not near 1/2")
+    need(exact_ratios[-1][0] > Fraction(49, 100), "Gray ratio not near 1/2")
     need(last["trivial_k_d2"] > 1.99 * 4096, "trivial depth-two count should be ~2 log2 c")
     # the cap is strictly better than trivial pair counting from c = 2^7 on
     crossover = min(int(r["c"][2:]) for r in table if r["cap_k_d2"] < r["trivial_k_d2"])
 
     controls = run_controls()
-    need(controls == 5, f"only {controls}/5 controls rejected")
+    need(controls == 4, f"only {controls}/4 controls rejected")
 
     digest = hashlib.sha256(json.dumps({"census": census, "table": table},
                                        sort_keys=True).encode()).hexdigest()

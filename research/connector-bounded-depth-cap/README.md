@@ -8,7 +8,7 @@ characteristic c ≥ 2 satisfies
 2^k − 1 ≤ k · min(k, c) · binom(kc + d − 2, d − 1).
 ```
 
-For d = 2 this is `2^k − 1 ≤ k³c`, so every depth-two block has
+For d = 2 this is `2^k − 1 ≤ k² c · min(k, c) ≤ k³c`, so every depth-two block has
 `k ≤ 1 + log₂ c + 3 log₂ k` sources. Trivial pair counting allows about
 2 log₂ c. Consequences:
 
@@ -35,7 +35,7 @@ python3.12 -I -W error -B research/connector-bounded-depth-cap/verify.py
 ```
 
 Expected (about 2 s, standard library only):
-`PASS_CONNECTOR_BOUNDED_DEPTH_CAP sources=1 census_cases=8 identity_checks=1031591 gray_blocks=21 gray_masks=741 cap_beats_trivial_from=2^6 controls=5 sha256=499b979ff5d691fd`.
+`PASS_CONNECTOR_BOUNDED_DEPTH_CAP sources=1 census_cases=8 identity_checks=1031591 gray_blocks=21 gray_masks=741 cap_beats_trivial_from=2^6 controls=4 sha256=499b979ff5d691fd`.
 Add `--table` to print the census and the capacity table below.
 
 ## Interface and definitions (inherited)
@@ -74,9 +74,11 @@ Only additivity and the c-fold call count are used. The ring may be any
 nonzero unital ring of characteristic c; the bound concerns schedules that are
 correct for arbitrary compatible maps, as in PR4248.
 
-**Depth two.** `2^k − 1 ≤ k³c`. Since `2^(k−1) ≤ 2^k − 1` for k ≥ 1,
-`k ≤ 1 + log₂ c + 3 log₂ k`. Write K₂(c) for the largest k that the
-displayed inequality allows. By deletion, no block has more than K₂(c)
+**Depth two.** `2^k − 1 ≤ k² c · min(k, c) ≤ k³c`. Since `2^(k−1) ≤ 2^k − 1` for k ≥ 1,
+`k ≤ 1 + log₂ c + 3 log₂ k`. For d ≥ 2 write K_d(c) for the largest k that the exact theorem inequality
+`2^k − 1 ≤ k · min(k, c) · binom(kc + d − 2, d − 1)` allows (the verifier and
+table use this exact form, not the k³c relaxation); set K₁ = 2 by PR4248
+Lemma C. By deletion, no block has more than K₂(c)
 sources.
 
 **Fixed depth d ≥ 2.** `binom(kc + d − 2, d − 1) ≤ (kcd)^(d−1)`, so
@@ -142,11 +144,13 @@ proved inequality, not a search for blocks.
   separately from PR6071's README statement, have depth two on literal
   words and satisfy the identity on every representing pair.
 - The capacity table, the closed form `K₂ ≤ 1 + log₂ c + 3 log₂ K₂` at every
-  tabulated c, and exact (Fraction) ratio checks at c = 2^4096.
-- Five controls are rejected: a word with a missing call, the identity with
-  the wrong modulus, a claimed block one source above K₂(1024), PR6071's
-  block with its downward suffix not reversed (loses depth two), and depth
-  one on three sources at c = 3.
+  tabulated c, and exact Fraction comparisons of both ratios at c = 2^4096
+  (the printed table rounds them to six decimals).
+- Four controls are rejected: a word with a missing call, the identity with
+  the wrong modulus, PR6071's block with its downward suffix not reversed
+  (loses depth two), and depth one on three sources at c = 3. The table
+  itself is arithmetic on the proved inequality, not an independent check of
+  the theorem.
 
 Finite checks support the written proof; they do not establish the
 all-parameter theorem, which rests on the proof above. No AI or human
@@ -186,10 +190,9 @@ not a novelty certificate.
 1. **Is there a depth-three block family with k ≈ 2 log₂ c?** It would raise
    the lower constant to 2/3, the most the theorem allows for depth three.
    *Why:* depth ≤ 2 blocks are now capped at 1/2, so this is the cheapest
-   possible improvement of the lower constant. *First step:* by the
-   theorem, almost every pair of first reads must extend to a mask, so search
+   possible improvement of the lower constant. *First step:* search
    small c (8 to 32) for depth-three blocks with k > 2 + 2 log₂ c and look
-   for structure. Informal remark, not checked by the verifier: a Gray pair
+   for structure among the first-read pairs that extend to a mask. Informal remark, not checked by the verifier: a Gray pair
    plus one extra read does not suffice, because the extra read's prefix must
    lie in {−1, 0, 1}^k mod c, and a monotone prefix chain has at most 4k + 1
    such values. *Blocked by:* no construction known.
