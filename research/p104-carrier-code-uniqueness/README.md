@@ -113,6 +113,54 @@ The verifier uses only the standard library ([replay.py](replay.py),
 
 The final marker is `PASS_P104_CARRIER_CODE_UNIQUENESS`.
 
+## Lean
+
+[`lean/`](lean) formalises everything in PROOF.md except the finite search. It
+uses the same Mathlib revision as `fragmentation-ceiling`.
+
+**Machine-checked:**
+
+- [`CarrierCode/Word.lean`](lean/CarrierCode/Word.lean) models a word as a
+  list of events with the checker's frame rules. It proves:
+  - Lemma 1, the frame invariant along any legal run (`inv_run`), starting
+    from the initial state (`inv_init`), together with the fact that owned
+    parts lie in the span of the delivered owned rows;
+  - that `row = lp + od` is the real row semantics (`step_row`);
+  - Corollary 2 (`decoding_vector`);
+  - that the word's arithmetic commutes with any ring hom (`run_map`,
+    `legalRun_map`, `row_map`), which is the formal reduction of a dyadic
+    word to `ZMod 3`.
+- [`CarrierCode/Cost.lean`](lean/CarrierCode/Cost.lean) proves:
+  - `dim B + dim B^⊥ = 9` for the dot product;
+  - that a frame holding at least 49 ports has dimension at least 8, and a
+    frame orthogonal to at least 49 ports has dimension at most 1;
+  - that the decoding vectors of an 8-clique span the code
+    (`span_of_clique`);
+  - Corollary 5 (`carriers_cost`): at least 7 per chain and at least 56 for
+    the eight chains.
+
+**Taken as hypotheses, checked by `verify.py`:**
+
+- `CodeFact`: every 8-dimensional decoding code has row and column minimum
+  weight at least 49. This is Theorem 3 together with the weight facts. It is
+  established by the certificate replay.
+- `Capacity`: at most 36 ports lie in a subspace of dimension at most 7. This
+  is Lemma 4, checked by enumeration.
+
+Both are finite computations that are too large for kernel `decide`, and the
+axiom policy rules out `native_decide`.
+
+To build and audit, run from the repository root:
+
+```sh
+cd research/p104-carrier-code-uniqueness/lean && lake exe cache get && lake build && cd -
+python3 scripts/check_lean_axioms.py --project research/p104-carrier-code-uniqueness/lean \
+  --audit research/p104-carrier-code-uniqueness/lean/Audit.lean
+```
+
+The audit reports `propext`, `Classical.choice` and `Quot.sound` only, for all
+14 declarations.
+
 ## Limits and open questions
 
 - **Partner codes of dimension 9 or more are not classified.** PR6030 is one,
