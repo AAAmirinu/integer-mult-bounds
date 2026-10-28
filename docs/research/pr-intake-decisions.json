@@ -111492,9 +111492,48 @@
       "reviewed_head": "d27351424186a70b06cf3dae0eb87e425acd5f2d",
       "current_head": "d27351424186a70b06cf3dae0eb87e425acd5f2d",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/two-helper-zero-frame-feedback"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": true
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct27f-20261027.json"
+      ],
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6034",
+        "merge_commit": "2b35e6c6466253aa6fcaa37b7cacb61aa0c316ec"
+      }
+    },
+    {
+      "number": 6035,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "119de1d7fca5124fa8d01ea49d258560aca618e6",
+        "isDraft": false,
+        "number": 6035,
+        "title": "Prove N(c) \u2265 \u230a5c/2\u230b for the unsigned connector via five-source depth-two blocks in every c \u2265 5 (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6035"
+      },
+      "reviewed_head": "119de1d7fca5124fa8d01ea49d258560aca618e6",
+      "current_head": "119de1d7fca5124fa8d01ea49d258560aca618e6",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/connector-five-halves-growth"
       ],
       "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
       "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
@@ -111505,7 +111544,42 @@
         "published": false
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct27f-20261027.json"
+        "docs/research/pr-intake-evidence/queue-oct27g-20261027.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6036,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "1cf36dd5f4d484a6c764f2b73f4f1e21c3eb3108",
+        "isDraft": false,
+        "number": 6036,
+        "title": "Prove a pair-sum readout floor for partitioned walk duals at every Q (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6036"
+      },
+      "reviewed_head": "1cf36dd5f4d484a6c764f2b73f4f1e21c3eb3108",
+      "current_head": "1cf36dd5f4d484a6c764f2b73f4f1e21c3eb3108",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/partitioned-walk-pair-sum-floor"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct27g-20261027.json"
       ],
       "closure": null
     }

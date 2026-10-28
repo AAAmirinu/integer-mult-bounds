@@ -4745,3 +4745,10 @@ Source archives retain attribution; mathematical review remains open.
 Source archives retain attribution; mathematical review remains open.
 
 - **Nick Petalas (@petalas)** — [#6034](https://github.com/CrocSwap/integer-mult-bounds/pull/6034): Prove two-helper shears gain nothing from target feedback at any target count (no new κ) (source archive).
+
+## Queue intake, 27 October 2026 (chunk G)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **Nick Petalas (@petalas)** — [#6035](https://github.com/CrocSwap/integer-mult-bounds/pull/6035): Prove N(c) ≥ ⌊5c/2⌋ for the unsigned connector via five-source depth-two blocks in every c ≥ 5 (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6036](https://github.com/CrocSwap/integer-mult-bounds/pull/6036): Prove a pair-sum readout floor for partitioned walk duals at every Q (no new κ) (source archive).
