@@ -86,3 +86,22 @@ attributes prevented edits to its private copies. The harness now copies
 file contents without those attributes and makes only temporary directories
 writable. The original exported sources remain read-only. The same eleven
 mutations still have to fail semantically, rather than on a permission error.
+
+## Successful independent export replay
+
+Publication snapshot `a2d0504b3937c9513dc13787cfee56a4f983ef1f` passed the
+committed-byte preflight for all 19 package files and the official export
+integrity/input-coverage check. Export SHA-256:
+`6c58fbc92d36ff143e560060495f2dea20127dded845473eebc230ac34207826`.
+
+That exact archive was extracted outside the repository. Every exported file
+was marked read-only, and PATH contained only the Python installation, with
+no Git executable. Normal replay passed in 14.360 s, optimized replay in
+12.859 s, and all eleven mutation variants in both modes in 21.109 s. All
+20 exported files (19 package files plus the export manifest) and their
+hashes were unchanged after the three commands. The read-only-copy repair
+is therefore verified on the Windows environment reported above.
+
+Only this validation note was added after that successful snapshot; the
+proof, programs, source pins, expected table and registered commands are
+identical. The final publication commit receives its own byte preflight.
