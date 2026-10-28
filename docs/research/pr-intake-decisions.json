@@ -111341,28 +111341,30 @@
       },
       "reviewed_head": "772dd10a5859a1d15f4851feb371519789213ad8",
       "current_head": "772dd10a5859a1d15f4851feb371519789213ad8",
-      "disposition": "partially_reviewed",
+      "disposition": "incorporated",
       "github_state": "MERGED",
       "integration_location": [
         "research/p104-helper470-twin-rung-removal"
       ],
-      "unresolved_question": "Portability repair and full primary execution are covered by the repair review. Independent application review of the changed word, physical caller and assembly remains required for selected-frontier promotion; all five framework assumptions remain.",
-      "scope": "Original PR6030 source retained with narrowly scoped maintainer gzip-payload repair. Complete author primary verifier replayed by maintainer; not an independently derived scientific application review or promotion.",
+      "unresolved_question": "Five inherited framework assumptions remain; full uniform word and rounded multiplier are not materialized. Final construction admission complete; predecessor standalone claims not automatically approved.",
+      "scope": "Selected conditional final PR6030 construction after complete primary, independent word/invoice/new-native and physical-caller audit; five assumptions retained. No global-optimality claim.",
       "review_completion": {
         "changed_file_coverage": true,
-        "scoped_mechanism_review": false,
-        "required_execution_complete": false,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
         "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct27e-20261027.json",
-        "docs/research/pr-intake-evidence/pr6030-repair/REVIEW.md"
+        "docs/research/pr-intake-evidence/pr6030-repair/REVIEW.md",
+        "docs/research/pr-intake-evidence/pr6030-audit/VALIDATION.json",
+        "docs/research/pr-intake-evidence/pr6030-audit/PROOF-REVIEW.md"
       ],
       "closure": {
         "kind": "merged_for_archive_only",
         "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6030",
         "merge_commit": "746ee5e1160ae64a15a81b2a432d5566142db850",
-        "scope": "Portability repair and complete primary replay passed; independent application review and selected-frontier promotion remain open."
+        "scope": "Merged source now receives selected conditional construction admission after independent application audit; five assumptions retained."
       }
     },
     {

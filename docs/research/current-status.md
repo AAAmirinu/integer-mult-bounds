@@ -1,39 +1,31 @@
 # Current reviewed status
 
-Selected conditional κ: **0.00310045** = 62009/20000000, Ali Romman's PR5599
-helper-subspace splitting on the community P104 construction. The complete
-caller has 13,048 productive fields and 66,726 paid calls. The saving is about
-2.41674% above the preceding selected 0.003027288235.
+Selected conditional κ: **0.003125804 = 781451/250000000**, DreamingOfClouds'
+PR6030 on the cumulative P104 construction. The complete caller counts 13,444
+productive fields and 66,834 paid calls. The saving is about 0.81775% above the
+preceding selected PR5599 claim 0.00310045.
 
 [Selected record](../../certificates/selected-result.json) ·
-[Proof review](pr-intake-evidence/pr5599-completion/PROOF-REVIEW.md) ·
-[Linux replay](pr-intake-evidence/pr5599-completion/VALIDATION.json) ·
-[Integration receipt](pr-intake-evidence/pr5599-completion/INTEGRATION.json) ·
-[Contributor map](community-p1045599-contributors.md).
+[Application review](pr-intake-evidence/pr6030-audit/PROOF-REVIEW.md) ·
+[Validation](pr-intake-evidence/pr6030-audit/VALIDATION.json) ·
+[Integration](pr-intake-evidence/pr6030-audit/INTEGRATION.json) ·
+[Contributor map](community-p1046030-contributors.md).
 
-Replay: `make frontier5599-verify`. The complete primary, exact original caller
-positive control, adapted independent caller and optimized primary checks run
-serially in a source-bound export with sampled 1 GiB descendant RSS limits.
-The successful Linux run took about six minutes across the four scientific
-commands. The earlier Mac timeout remains preserved as incomplete evidence.
-There was no mathematical failure; the completed Linux run supersedes that
-execution status. The public record now selects the stronger claim.
+Replay: `make frontier6030-verify`. Normal primary macOS/Linux results are
+source-bound and retained. Fresh serial local checks cover the independent
+word/invoice/new-native audit, exact original caller positive control, adapted
+candidate caller and optimized primary. All fresh jobs stay within their
+600-second and sampled 1 GiB limits. Independent funding decimals corroborate,
+but do not replace, the primary exact rational interval certificates.
 
-Exactly the five preceding assumptions remain: native all-width realization,
-owned erasure, compiler closure, precision/fixed-tape execution, and analytic
-recovery. The huge uniform word and rounded multiplier are not materialized.
-No complete Lean or independent human multiplication proof is asserted.
+The five assumptions remain native_all_columns, owned_erasure, compiler,
+precision_tape and analytic_recovery. No full uniform word or rounded multiplier
+is materialized; no complete Lean or independent human theorem proof is asserted.
 
-Credit includes Ali Romman, Pierre-Loic Doulcet / hexapode, GamingPuzzled,
-DreamingOfClouds, thu-nmrc, Clear1nsight, Matarener, David Arias, Cinna Davis,
-Gareth Davidson, Cao Yifan, zxv, Jacob Alan Sussman and the cumulative lineage.
-See the contributor map for construction versus verification scope.
-
-The [preceding selected checkpoint](../../certificates/checkpoints/frontier5413.json)
-and its [review](pr-intake-evidence/pr5413/PROOF-REVIEW.md) are preserved.
-Source-bound framework/BIT coverage is reused, not rerun. Historical predecessor
-claim-line objections and unreviewed search/optimality assertions do not become
-approved merely because the final descendant construction passes.
+DreamingOfClouds, Ali Romman, Mason Hale, Pierre-Loic Doulcet, Matarener,
+Clear1nsight and the cumulative native/controller/compiler/BIT/analytic lineage
+retain credit. Prior source-bound foundation evidence is reused explicitly.
+The [PR5599 checkpoint](../../certificates/checkpoints/frontier5599.json) is preserved.
 
 The remaining sections form a **historical snapshot**; their “current” wording
 is local to their checkpoint, not the selected record above.

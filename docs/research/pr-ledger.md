@@ -8,8 +8,8 @@ The ledger separates historical review from integration. A prior snapshot or a m
 
 | Disposition | Count |
 |---|---:|
-| incorporated | 2180 |
-| partially reviewed | 3052 |
+| incorporated | 2181 |
+| partially reviewed | 3051 |
 | superseded | 2 |
 | unreviewed | 60 |
 
@@ -5330,7 +5330,7 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#6027](https://github.com/CrocSwap/integer-mult-bounds/pull/6027) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#6028](https://github.com/CrocSwap/integer-mult-bounds/pull/6028) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#6029](https://github.com/CrocSwap/integer-mult-bounds/pull/6029) | Clear1nsight | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
-| [#6030](https://github.com/CrocSwap/integer-mult-bounds/pull/6030) | DreamingOfClouds | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6030](https://github.com/CrocSwap/integer-mult-bounds/pull/6030) | DreamingOfClouds | incorporated | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#6031](https://github.com/CrocSwap/integer-mult-bounds/pull/6031) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#6032](https://github.com/CrocSwap/integer-mult-bounds/pull/6032) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#6033](https://github.com/CrocSwap/integer-mult-bounds/pull/6033) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |

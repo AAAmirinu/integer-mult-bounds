@@ -1808,9 +1808,16 @@
     "local_primary": "pass",
     "scope": "Portability repair and primary replay only; selected frontier unchanged.",
     "evidence": "docs/research/pr-intake-evidence/pr6030-repair/REVIEW.md",
-    "next": "Repair complete and published. Independent application/promotion review remains open; selected kappa stays 0.00310045. Reuse exact-source primary replay evidence.",
+    "next": "Repair and independent conditional admission complete. Selected kappa 0.003125804; reuse exact-source completed evidence, no repeated primary/application audit absent changed inputs.",
     "linux_result": "success",
     "publication": "26f0ed6c7",
     "github_state": "MERGED"
+  },
+  "pr6030_audit": {
+    "status": "complete conditional admission",
+    "kappa": "0.003125804",
+    "review": "docs/research/pr-intake-evidence/pr6030-audit/PROOF-REVIEW.md",
+    "validation": "docs/research/pr-intake-evidence/pr6030-audit/VALIDATION.json",
+    "all_jobs_finished": true
   }
 }

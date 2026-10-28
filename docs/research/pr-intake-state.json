@@ -38381,11 +38381,12 @@
       "number": 6030,
       "head": "772dd10a5859a1d15f4851feb371519789213ad8",
       "status": "pending_review",
-      "reason": "Repaired source published to main and PR merged. Full local and Linux primary replays pass; portability hold resolved. Remaining work is independent scientific application review for optional promotion, not repeated queue intake or primary replay.",
+      "reason": "Final PR6030 conditional construction admitted after complete primary, independent word/invoice/new-native, caller positive-control/candidate and optimized replay. Closed PR; do not rerun unchanged evidence. Five framework assumptions retained.",
       "evidence": [
         "docs/research/pr-intake-evidence/queue-oct27e-20261027.json",
         "docs/research/pr-intake-evidence/pr6030-portability-hold.json",
-        "docs/research/pr-intake-evidence/pr6030-repair/REVIEW.md"
+        "docs/research/pr-intake-evidence/pr6030-repair/REVIEW.md",
+        "docs/research/pr-intake-evidence/pr6030-audit/VALIDATION.json"
       ],
       "policy_version": 1,
       "baseline": "746ee5e1160ae64a15a81b2a432d5566142db850",

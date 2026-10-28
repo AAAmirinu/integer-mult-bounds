@@ -1,8 +1,13 @@
 {
-  "status": "Selected maintainer-reviewed conditional P104 helper-subspace construction with exact Linux primary and independent caller replays",
-  "kappa": "62009/20000000",
-  "decimal": "0.00310045",
+  "status": "Selected maintainer-reviewed conditional P104 twin-rung construction with full primary and independent application audits",
+  "kappa": "781451/250000000",
+  "decimal": "0.003125804",
   "source_prs": [
+    6030,
+    5907,
+    5827,
+    5811,
+    5960,
     5599,
     5565,
     5580,
@@ -40,10 +45,10 @@
     555,
     589
   ],
-  "source_manifest": "certificates/frontier5599-source.json",
-  "certificate": "certificates/frontier5599/CLAIM.json",
-  "certificate_sha256": "66fbb5b21f32f1c4ba544c20d5a44ebcdfd11bce2bfa2d609c656ae520d3b21e",
-  "proof": "docs/research/pr-intake-evidence/pr5599-completion/PROOF-REVIEW.md",
+  "source_manifest": "certificates/frontier6030-source.json",
+  "certificate": "certificates/frontier6030/CLAIM.json",
+  "certificate_sha256": "9cee8a1304fa893be3d3b641eda42fdd9b2fd6a5ac2124fb891de7a1a5e8d92e",
+  "proof": "docs/research/pr-intake-evidence/pr6030-audit/PROOF-REVIEW.md",
   "proof_supplements": {
     "notes/batched-bit-rows.tex": "ef72c0ead19373cbc19c8a3aacb44dd0f75353ee5f4d055f775a986a4878022c",
     "notes/batched-complex-rows.tex": "64c70926a8705874f1c9b42a2f703e42cad4e90f927f544458cfdf729540236c",
@@ -71,20 +76,22 @@
     "research/p104-helper-subspace-splits/PROOF.md": "f4c68acf9373e34d88e14e1a7791b4b739c8b5297a1ae4c0121f579a02fde04e",
     "research/p104-productive-controller/PROOF.md": "f4c4e400092954562252df6c4dd157a9b4c1642252168ce72738cdbecfc5ad41",
     "research/p104-caller-independent-audit/PROOF.md": "d73ff9587a85db8063391919ffc4a17521ccd5759cdaf6338ba036703239d839",
-    "research/p104-free-endpoint-contract-audit/PROOF.md": "43aeae1c090b5657f326fd7c56a5e5fbe062db29591b660a903305ca58ce9598"
+    "research/p104-free-endpoint-contract-audit/PROOF.md": "43aeae1c090b5657f326fd7c56a5e5fbe062db29591b660a903305ca58ce9598",
+    "docs/research/pr-intake-evidence/pr6030-audit/PROOF-REVIEW.md": "8bd158b8ef68202000f167b9b78db0b31531b5b067b5cbd91b5bf35f3ddd1ab6",
+    "research/higher-moment-strictification/README.md": "ebe80b68ff026ce90f71f274c31744f4c0b36132d15ebb7e39cf2d5df4df270d"
   },
-  "review": "docs/research/pr-intake-evidence/pr5599-completion/PROOF-REVIEW.md",
-  "validation": "docs/research/pr-intake-evidence/pr5599-completion/VALIDATION.json",
-  "integration": "docs/research/pr-intake-evidence/pr5599-completion/INTEGRATION.json",
-  "reproduce": "make frontier5599-verify",
-  "scope": "Conditional P104 helper-subspace splitting and all-forward productive caller. The five inherited framework assumptions remain; no materialized uniform word or complete rounded multiplier.",
-  "previous_kappa": "605457647/200000000000",
-  "previous_record": "certificates/checkpoints/frontier5413.json",
-  "audited_source_head": "09dd0965711ca7eeb169057a420abab1c9052137",
-  "source_certificate": "research/p104-helper-subspace-splits/RESULT.json",
-  "source_certificate_sha256": "1d92e587915052110dfb3aca8890df5afdaf496164efa5a4a52e69ceeb3c70f3",
-  "replay_mode": "Fresh serial Linux normal and optimized primary replays, exact original caller positive control, and independent caller inventory adaptation. All under sampled 1 GiB descendant RSS guards. Prior selected framework/BIT foundation is explicitly reused.",
-  "contributors": "docs/research/community-p1045599-contributors.md",
+  "review": "docs/research/pr-intake-evidence/pr6030-audit/PROOF-REVIEW.md",
+  "validation": "docs/research/pr-intake-evidence/pr6030-audit/VALIDATION.json",
+  "integration": "docs/research/pr-intake-evidence/pr6030-audit/INTEGRATION.json",
+  "reproduce": "make frontier6030-verify",
+  "scope": "Conditional P104 helper-470 rung removal on the cumulative P104 construction and all-forward productive caller. The five inherited framework assumptions remain; no materialized uniform word or complete rounded multiplier.",
+  "previous_kappa": "62009/20000000",
+  "previous_record": "certificates/checkpoints/frontier5599.json",
+  "audited_source_head": "772dd10a5859a1d15f4851feb371519789213ad8",
+  "source_certificate": "research/p104-helper470-twin-rung-removal/RESULT.json",
+  "source_certificate_sha256": "84fcbe2a0b64307b5703c363408042bdd91555b0419509aa50daa43b3b1924ad",
+  "replay_mode": "Exact-source macOS/Linux primary evidence reused; fresh bounded macOS independent full-word/invoice/new-native checks, original caller positive control, candidate caller and optimized primary. Five framework assumptions retained.",
+  "contributors": "docs/research/community-p1046030-contributors.md",
   "assumptions": [
     {
       "id": "native_all_columns",
@@ -108,5 +115,6 @@
     }
   ],
   "audit_pr": 5550,
-  "audit_head": "6125c07ae8ba4b8550e2a0a28a2c6be503153059"
+  "audit_head": "6125c07ae8ba4b8550e2a0a28a2c6be503153059",
+  "repaired_source_head": "746ee5e1160ae64a15a81b2a432d5566142db850"
 }

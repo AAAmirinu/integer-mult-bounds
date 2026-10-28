@@ -4756,3 +4756,7 @@ Source archives retain attribution; mathematical review remains open.
 ## PR6030 portability repair and primary replay
 
 **DreamingOfClouds** — [#6030](https://github.com/CrocSwap/integer-mult-bounds/pull/6030), helper 470 twin-rung removal, conditional κ = 0.003125804, building on their #5907 and **Ali Romman**'s #5827 verification lineage. **Matarener**'s #5960 documented the predecessor gzip portability issue. **Douglas Colkitt with OpenAI Codex** supplied the payload-comparison repair and corruption/portability controls. [Replay and scope](docs/research/pr-intake-evidence/pr6030-repair/REVIEW.md) distinguish complete primary execution from the independent application review still needed for promotion. All predecessor notices remain retained.
+
+## PR6030 conditional admission
+
+**DreamingOfClouds** supplies the selected κ = 0.003125804 construction, building on **Ali Romman**, **Mason Hale**, **Pierre-Loic Doulcet** and the cumulative P104 line. **Matarener** and **Chris R / Clear1nsight** supply the independently implemented audit machinery used in the maintainer review. [Contribution map](docs/research/community-p1046030-contributors.md) and [application review](docs/research/pr-intake-evidence/pr6030-audit/PROOF-REVIEW.md) distinguish construction, independent checks and the five remaining assumptions.
