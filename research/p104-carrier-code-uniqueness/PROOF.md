@@ -168,6 +168,34 @@ ports, and a subspace of codimension 2 contains at most 36. `verify.py`
 checks this by enumerating all subspaces. Hence any 49 ports span a space of
 dimension at least 8.
 
+## 5a. Why the code exists: E8
+
+The ports are 104 of the 120 root lines of `E8`. We write `E8` in `A8`
+coordinates, so the root lines are `±(e_i − e_j)` and `±(2/3 on a 3-set,
+−1/3 elsewhere)`. A port `q` of weight 7, with zeros at `i` and `j`, gives the
+root `e_i − e_j`. A port of weight 3 gives the root with `2/3` on its three
+coordinates.
+
+These roots have norm 2. Two ports conflict (`<q, q'> = 1` over `F_2`) exactly
+when their roots are orthogonal. The code `C*` is, up to signs, the Gram
+matrix of these roots divided by 2. Over `Q` its eigenvalues are 13 (eight
+times) and 0 (96 times). The missing lines are 14 of weight 3 and 2 of
+weight 7. `verify.py` checks the norms, the orthogonality and the sign equivalence.
+
+In clique coordinates every other root is `½(±r_a ± r_b ± r_c ± r_d)` over a
+block of the Steiner system `S(3,4,8)`: there are 14 blocks with 8 lines
+each, and 96 of these 112 lines are ports. The finite model of section 3 then
+reads as follows. For each line `j` there are two 4-vectors `α_j, β_j` on its
+block, with `<α_j, β_j> = 1` and `<α_j, β_k> = 0` for orthogonal pairs.
+
+The `E8` solution is `α_j = β_j = ε_j`, the sign pattern of the root. This
+works because `4 ≡ 1` mod 3.
+
+A hand proof of uniqueness is open. Subsystems of three blocks through a pair
+of clique points do not force full supports: every probed degenerate support
+is locally consistent. So the uniqueness depends on how all 14 blocks fit
+together.
+
 ## 6. Scoped cost corollary
 
 **Corollary 5.** Take a legal word with dyadic scalars whose partner code

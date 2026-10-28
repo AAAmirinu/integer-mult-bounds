@@ -19,6 +19,7 @@ sign-equivalent to the replayed solution (when the solution is in the selected p
 the root is marked dead (its port has options) is rejected, and so is one whose first dead node is replaced by a
 solution leaf; (6) the receipt equals RESULT.json.
 """
+from fractions import Fraction
 from hashlib import sha256
 from pathlib import Path
 import itertools
@@ -42,6 +43,16 @@ NPARTS = 4
 def need(ok, why):
     if not ok:
         raise ValueError(why)
+
+
+def e8_root(q):
+    """the E8 root (A8 coordinates) of an odd port: weight 7 -> e_i - e_j at its zeros, weight 3 -> 2/3 on it, -1/3 off"""
+    c = [(q >> k) & 1 for k in range(9)]
+    if sum(c) == 7:
+        i, j = [k for k in range(9) if not c[k]]
+        return [Fraction(1) if k == i else Fraction(-1) if k == j else Fraction(0) for k in range(9)]
+    need(sum(c) == 3, 'ports have weight 3 or 7')
+    return [Fraction(2, 3) if c[k] else Fraction(-1, 3) for k in range(9)]
 
 
 def cert(p):
@@ -118,7 +129,14 @@ def main(argv):
     need(all(dot(ports[a], ports[b]) for a in T_INDEX for b in T_INDEX if a != b), 'T is a conflict clique')
     f8, f7 = max_ports_in_codim(ports, 1), max_ports_in_codim(ports, 2)
     need((f8, f7) == (60, 36), 'f(8) = 60 and f(7) = 36')
-    R['structure'] = {'ports': 104, 'conflict_degree': 55, 'clique': T_INDEX, 'f8_hyperplane': f8, 'f7_codim2': f7}
+    roots = [e8_root(q) for q in ports]
+    G = [[sum(x * y for x, y in zip(a, b)) for b in roots] for a in roots]
+    need(all(G[i][i] == 2 for i in range(104)), 'E8 roots have norm 2')
+    need(all((G[i][j] == 0) == bool(dot(ports[i], ports[j])) for i in range(104) for j in range(104) if i != j),
+         'conflict is orthogonality of E8 roots')
+    e8_half = [[m3(x / 2) for x in r] for r in G]
+    R['structure'] = {'ports': 104, 'conflict_degree': 55, 'clique': T_INDEX, 'f8_hyperplane': f8, 'f7_codim2': f7,
+                      'e8_root_lines': 104, 'conflict_is_e8_orthogonality': True}
     print('structure', R['structure'], flush=True)
 
     # (4) the words
@@ -140,6 +158,8 @@ def main(argv):
                          'code_weight_distribution': wd_json(weight_distribution(B))}
         print(k, R['words'][k], flush=True)
     need(sign_equivalent(word_rows['pr5907'], word_rows['pr6030']), 'the two words carry sign-equivalent codes')
+    need(sign_equivalent(e8_half, word_rows['pr5907']), 'the word code is the E8 Gram matrix / 2 mod 3, up to signs')
+    R['words']['e8_gram_half_sign_equivalent'] = True
 
     # (5) controls that do not need the certificate
     bad = [r[:] for r in word_rows['pr5907']]
