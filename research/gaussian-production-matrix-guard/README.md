@@ -26,7 +26,10 @@ The checker authenticates live source hashes before imports, executes the actual
 encoded ProductionPlan metadata example, and calls unchanged Axis.matrix_entry
 with supplied rational coefficient fields. These fields exercise the consumer;
 they are not a full Axis construction or production coefficient page. Exact
-rational identities and failure controls corroborate the proof. Normal and
+rational identities on 150 retained pairs, 3,645 denominator-sensitive scalar
+perturbations and five failure controls corroborate the proof. The actual
+consumer fixture executes 64 entries; the metadata fixture has seven rejection
+controls. Normal and
 optimized registered commands use explicit checks surviving Python -O.
 
 ## Open next questions

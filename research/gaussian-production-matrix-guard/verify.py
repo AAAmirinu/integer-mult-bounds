@@ -55,7 +55,7 @@ def identities():
     need(y-y_hat < 2*eta and abs(1/y_hat-1/y) > 1000, 'denominator failure control')
     need(Q(1, 4)*Q(1, 8)/Q(1, 2) != Q(1, 8), 'bare kernel failure control')
     need(Q(1, 4)/Q(1, 8) > Q(1, 4)/Q(1, 4), 'ratio is not downward')
-    need(Q(1, 4) > Q(3, 16), 'nearest rerounding may exceed exact coefficient')
+    need(Q(round(4*Q(3, 16)), 4) > Q(3, 16), 'nearest rerounding may exceed exact coefficient')
     # Same lifted phase across the physical cut does not license the raw ratio.
     rho, theta = Q(9, 8), Q(1, 8)
     beta_i, beta_j, delta = Q(-1, 8), Q(0), 1
@@ -65,6 +65,27 @@ def identities():
     need(actual != wrong, 'physical-period raw-displacement failure control')
     return {'retained_pairs': cases, 'same_cell_pairs': same, 'wrapped_pairs': wrapped,
             'half_ties': ties, 'failure_controls': 5}
+
+
+def ratio_controls():
+    cases = 0
+    # Independent exact scalar cubes exercise denominator-sensitive propagation.
+    for k in range(1, 6):
+        lower = Q(1, 2**k)
+        eta = lower/16
+        for x in (lower, Q(1, 2), Q(1)):
+            for y in (lower, Q(1, 2), Q(1)):
+                for g in (Q(0), Q(1, 8), Q(1)):
+                    for ex in (Q(0), eta, 3*eta/2):
+                        for ey in (Q(0), eta, 3*eta/2):
+                            for eg in (Q(0), eta, 3*eta/2):
+                                hx, hy, hg = max(0, x-ex), y-ey, max(0, g-eg)
+                                need(hy > lower/2, 'protected denominator')
+                                error = abs(hx*hg/hy-x*g/y)
+                                need(error < 8*eta/lower+4*eta/lower**2,
+                                     'independent ratio error envelope')
+                                cases += 1
+    return cases
 
 
 def consumer():
@@ -171,13 +192,14 @@ def consumer():
 def main():
     authenticate()
     geometry = identities()
+    ratio_cases = ratio_controls()
     sys.path.insert(0, str(ROOT / 'research/physical-gaussian-core'))
     from gaussian_sources import opened
     with opened():
         actual = consumer()
         from gaussian_check_production import run
         metadata = run()
-    print(json.dumps({'status': 'PASS', 'geometry': geometry, 'consumer': actual,
+    print(json.dumps({'status': 'PASS', 'geometry': geometry, 'ratio_cases': ratio_cases, 'consumer': actual,
                       'production_metadata': metadata,
                       'scope': 'supplied-coefficient consumer and metadata only; universal proof is written'},
                      sort_keys=True))
