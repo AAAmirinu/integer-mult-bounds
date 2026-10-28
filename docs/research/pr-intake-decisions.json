@@ -111375,7 +111375,7 @@
       "reviewed_head": "acc000f4edfa0b0c4a90b505c6e02a4c3572f74c",
       "current_head": "acc000f4edfa0b0c4a90b505c6e02a4c3572f74c",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/schur-intermediate-ranks"
       ],
@@ -111385,12 +111385,16 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct27e-20261027.json"
       ],
-      "closure": null
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6031",
+        "merge_commit": "1d0176d7872db60b1e82a8591cc7c2ca3219dbab"
+      }
     },
     {
       "number": 6032,
@@ -111410,7 +111414,7 @@
       "reviewed_head": "3b098803eb854afbd5d63ad3bf4d75cdb1e515d5",
       "current_head": "3b098803eb854afbd5d63ad3bf4d75cdb1e515d5",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/bit-fifth-rational-frame-every-rational-t"
       ],
@@ -111420,12 +111424,16 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct27e-20261027.json"
       ],
-      "closure": null
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6032",
+        "merge_commit": "1d0176d7872db60b1e82a8591cc7c2ca3219dbab"
+      }
     },
     {
       "number": 6033,
@@ -111445,9 +111453,48 @@
       "reviewed_head": "c7e171a9e9ee25e69b2533378abc2ada1a4fafa2",
       "current_head": "c7e171a9e9ee25e69b2533378abc2ada1a4fafa2",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/p104-rung-carrier-break-even"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": true
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct27e-20261027.json"
+      ],
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6033",
+        "merge_commit": "1d0176d7872db60b1e82a8591cc7c2ca3219dbab"
+      }
+    },
+    {
+      "number": 6034,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "d27351424186a70b06cf3dae0eb87e425acd5f2d",
+        "isDraft": false,
+        "number": 6034,
+        "title": "Prove two-helper shears gain nothing from target feedback at any target count (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6034"
+      },
+      "reviewed_head": "d27351424186a70b06cf3dae0eb87e425acd5f2d",
+      "current_head": "d27351424186a70b06cf3dae0eb87e425acd5f2d",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/two-helper-zero-frame-feedback"
       ],
       "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
       "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
@@ -111458,7 +111505,7 @@
         "published": false
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct27e-20261027.json"
+        "docs/research/pr-intake-evidence/queue-oct27f-20261027.json"
       ],
       "closure": null
     }

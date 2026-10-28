@@ -3,7 +3,7 @@
   "snapshot": "research/pr-reconciliation-20261012/starting-snapshot.json",
   "starting_main": "f19cb621be2caf3a7291a37c343c1c55afe935e0",
   "starting_open_count": 446,
-  "inventory_count": 5291,
+  "inventory_count": 5292,
   "family_round": "docs/research/pr-intake-decisions.json",
   "family_rounds": [
     "research/community-family533-audit/DISPOSITIONS.json",
@@ -56,7 +56,7 @@
   ],
   "counts": {
     "incorporated": 2180,
-    "partially_reviewed": 3049,
+    "partially_reviewed": 3050,
     "superseded": 2,
     "unreviewed": 60
   },
@@ -123,7 +123,7 @@
     "research/community-efficient2400-audit/DISPOSITIONS.json": "2602f88f4a333ade0b654645a3126fcde85f16c41f25f36a397f8c760f8acf4c",
     "research/community-efficient2500-audit/DISPOSITIONS.json": "23d12152b20bd788c5fb1e1935543185dc3772634cf26efbfad88f6d78ed6e15",
     "research/community-efficient2600-audit/DISPOSITIONS.json": "d7816f0e79c421d750d691cb1edfc4646accae0a47dc817fb32409745795765c",
-    "docs/research/pr-intake-decisions.json": "da02544d66eb4fe89319862fc875a86cf9b8441fae3d1ca9566b439dbbe825a3",
+    "docs/research/pr-intake-decisions.json": "8a6ab8a87288e8a08487d522ec89c3597b42e9a913d4072837df1cbb8da3926f",
     "research/community-batch970-audit/COMPANION-REVIEWS.json": "6510eb71b37cd3c0842999011ff84408c58493b7c8451a24082f526c6c18e7ec",
     "research/community-efficient300-audit/PARENT-EVIDENCE.json": "8d9e28ec3ece26b91ef5a297092697c341652853164477a4961c992151cec353",
     "research/pr116-evidence-reconciliation/PARENT-EVIDENCE.json": "62a666dac3e67ba8d388820c92e0cd4495657a20b6eae280a5367af8e89d769c",
@@ -286610,8 +286610,12 @@
       "integration_location": [
         "research/schur-intermediate-ranks"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6031",
+        "merge_commit": "1d0176d7872db60b1e82a8591cc7c2ca3219dbab"
+      },
       "reviewed_head": "acc000f4edfa0b0c4a90b505c6e02a4c3572f74c",
       "disposition": "partially_reviewed",
       "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
@@ -286619,7 +286623,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct27e-20261027.json"
@@ -286656,8 +286660,12 @@
       "integration_location": [
         "research/bit-fifth-rational-frame-every-rational-t"
       ],
-      "github_state": "OPEN",
-      "closure": null,
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6032",
+        "merge_commit": "1d0176d7872db60b1e82a8591cc7c2ca3219dbab"
+      },
       "reviewed_head": "3b098803eb854afbd5d63ad3bf4d75cdb1e515d5",
       "disposition": "partially_reviewed",
       "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
@@ -286665,7 +286673,7 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct27e-20261027.json"
@@ -286702,9 +286710,59 @@
       "integration_location": [
         "research/p104-rung-carrier-break-even"
       ],
+      "github_state": "MERGED",
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6033",
+        "merge_commit": "1d0176d7872db60b1e82a8591cc7c2ca3219dbab"
+      },
+      "reviewed_head": "c7e171a9e9ee25e69b2533378abc2ada1a4fafa2",
+      "disposition": "partially_reviewed",
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": true
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct27e-20261027.json"
+      ],
+      "current_head_observed_in": "docs/research/pr-intake-decisions.json",
+      "reconciliation_evidence": [
+        "docs/research/pr-intake-decisions.json"
+      ]
+    },
+    {
+      "number": 6034,
+      "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6034",
+      "title": "Prove two-helper shears gain nothing from target feedback at any target count (no new κ)",
+      "contributor": {
+        "id": "MDQ6VXNlcjc0MjEzNDY=",
+        "is_bot": false,
+        "login": "petalas",
+        "name": "Nick Petalas"
+      },
+      "draft": false,
+      "starting_head": "d27351424186a70b06cf3dae0eb87e425acd5f2d",
+      "current_head": "d27351424186a70b06cf3dae0eb87e425acd5f2d",
+      "previously_reviewed_heads": [],
+      "historical_assessment_heads": [],
+      "evidence": [
+        {
+          "head": "d27351424186a70b06cf3dae0eb87e425acd5f2d",
+          "evidence": "docs/research/pr-intake-decisions.json",
+          "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+          "kind": "integration_or_partial_review"
+        }
+      ],
+      "historical_mentions": [],
+      "integration_location": [
+        "research/two-helper-zero-frame-feedback"
+      ],
       "github_state": "OPEN",
       "closure": null,
-      "reviewed_head": "c7e171a9e9ee25e69b2533378abc2ada1a4fafa2",
+      "reviewed_head": "d27351424186a70b06cf3dae0eb87e425acd5f2d",
       "disposition": "partially_reviewed",
       "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
       "review_completion": {
@@ -286714,7 +286772,7 @@
         "published": false
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct27e-20261027.json"
+        "docs/research/pr-intake-evidence/queue-oct27f-20261027.json"
       ],
       "current_head_observed_in": "docs/research/pr-intake-decisions.json",
       "reconciliation_evidence": [
@@ -286731,7 +286789,7 @@
   ],
   "github_dispositions": {
     "CLOSED": 383,
-    "MERGED": 4610,
-    "OPEN": 298
+    "MERGED": 4613,
+    "OPEN": 296
   }
 }

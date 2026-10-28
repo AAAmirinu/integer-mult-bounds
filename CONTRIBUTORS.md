@@ -4739,3 +4739,9 @@ Source archives retain attribution; mathematical review remains open.
 - **Nick Petalas (@petalas)** — [#6031](https://github.com/CrocSwap/integer-mult-bounds/pull/6031): Prove nonmaximal Schur-commutator ranks form an interval with a sharp binary dimension law (no new κ) (source archive).
 - **Nick Petalas (@petalas)** — [#6032](https://github.com/CrocSwap/integer-mult-bounds/pull/6032): Prove a fifth rational frame needs eight calls for every rational slope, settling the #2112 seven-call case (no new κ) (source archive).
 - **Nick Petalas (@petalas)** — [#6033](https://github.com/CrocSwap/integer-mult-bounds/pull/6033): Prove one added paid call defeats a third frame-593 rung removal (no new κ) (source archive).
+
+## Queue intake, 27 October 2026 (chunk F)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **Nick Petalas (@petalas)** — [#6034](https://github.com/CrocSwap/integer-mult-bounds/pull/6034): Prove two-helper shears gain nothing from target feedback at any target count (no new κ) (source archive).
