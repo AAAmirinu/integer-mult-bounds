@@ -1,6 +1,6 @@
 # PR review and integration ledger
 
-The immutable starting snapshot contains **446 PRs**. Explicit later family rounds extend the current inventory to **5294**; unrelated arrivals remain outside the round.
+The immutable starting snapshot contains **446 PRs**. Explicit later family rounds extend the current inventory to **5394**; unrelated arrivals remain outside the round.
 
 [Machine-readable ledger](pr-ledger.json) · [Starting snapshot](../../research/pr-reconciliation-20261012/starting-snapshot.json)
 
@@ -9,7 +9,7 @@ The ledger separates historical review from integration. A prior snapshot or a m
 | Disposition | Count |
 |---|---:|
 | incorporated | 2181 |
-| partially reviewed | 3051 |
+| partially reviewed | 3151 |
 | superseded | 2 |
 | unreviewed | 60 |
 
@@ -5337,3 +5337,103 @@ Each evidence link leads to the original scoped assessment. The JSON records exa
 | [#6034](https://github.com/CrocSwap/integer-mult-bounds/pull/6034) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#6035](https://github.com/CrocSwap/integer-mult-bounds/pull/6035) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
 | [#6036](https://github.com/CrocSwap/integer-mult-bounds/pull/6036) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6037](https://github.com/CrocSwap/integer-mult-bounds/pull/6037) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6038](https://github.com/CrocSwap/integer-mult-bounds/pull/6038) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6039](https://github.com/CrocSwap/integer-mult-bounds/pull/6039) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6040](https://github.com/CrocSwap/integer-mult-bounds/pull/6040) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6041](https://github.com/CrocSwap/integer-mult-bounds/pull/6041) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6042](https://github.com/CrocSwap/integer-mult-bounds/pull/6042) | antunishdPursuit | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6043](https://github.com/CrocSwap/integer-mult-bounds/pull/6043) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6044](https://github.com/CrocSwap/integer-mult-bounds/pull/6044) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6045](https://github.com/CrocSwap/integer-mult-bounds/pull/6045) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6046](https://github.com/CrocSwap/integer-mult-bounds/pull/6046) | SHIN09-git | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6047](https://github.com/CrocSwap/integer-mult-bounds/pull/6047) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6048](https://github.com/CrocSwap/integer-mult-bounds/pull/6048) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6049](https://github.com/CrocSwap/integer-mult-bounds/pull/6049) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6050](https://github.com/CrocSwap/integer-mult-bounds/pull/6050) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6051](https://github.com/CrocSwap/integer-mult-bounds/pull/6051) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6053](https://github.com/CrocSwap/integer-mult-bounds/pull/6053) | apoursh | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6054](https://github.com/CrocSwap/integer-mult-bounds/pull/6054) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6055](https://github.com/CrocSwap/integer-mult-bounds/pull/6055) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6057](https://github.com/CrocSwap/integer-mult-bounds/pull/6057) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6059](https://github.com/CrocSwap/integer-mult-bounds/pull/6059) | apoursh | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6061](https://github.com/CrocSwap/integer-mult-bounds/pull/6061) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6062](https://github.com/CrocSwap/integer-mult-bounds/pull/6062) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6063](https://github.com/CrocSwap/integer-mult-bounds/pull/6063) | SHIN09-git | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6064](https://github.com/CrocSwap/integer-mult-bounds/pull/6064) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6065](https://github.com/CrocSwap/integer-mult-bounds/pull/6065) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6066](https://github.com/CrocSwap/integer-mult-bounds/pull/6066) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6067](https://github.com/CrocSwap/integer-mult-bounds/pull/6067) | apoursh | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6068](https://github.com/CrocSwap/integer-mult-bounds/pull/6068) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6069](https://github.com/CrocSwap/integer-mult-bounds/pull/6069) | jon314159 | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6070](https://github.com/CrocSwap/integer-mult-bounds/pull/6070) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6071](https://github.com/CrocSwap/integer-mult-bounds/pull/6071) | apoursh | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6072](https://github.com/CrocSwap/integer-mult-bounds/pull/6072) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6079](https://github.com/CrocSwap/integer-mult-bounds/pull/6079) | apoursh | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6080](https://github.com/CrocSwap/integer-mult-bounds/pull/6080) | SHIN09-git | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6081](https://github.com/CrocSwap/integer-mult-bounds/pull/6081) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6082](https://github.com/CrocSwap/integer-mult-bounds/pull/6082) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6083](https://github.com/CrocSwap/integer-mult-bounds/pull/6083) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6084](https://github.com/CrocSwap/integer-mult-bounds/pull/6084) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6085](https://github.com/CrocSwap/integer-mult-bounds/pull/6085) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6086](https://github.com/CrocSwap/integer-mult-bounds/pull/6086) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6087](https://github.com/CrocSwap/integer-mult-bounds/pull/6087) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6088](https://github.com/CrocSwap/integer-mult-bounds/pull/6088) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6089](https://github.com/CrocSwap/integer-mult-bounds/pull/6089) | apoursh | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6090](https://github.com/CrocSwap/integer-mult-bounds/pull/6090) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6091](https://github.com/CrocSwap/integer-mult-bounds/pull/6091) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6092](https://github.com/CrocSwap/integer-mult-bounds/pull/6092) | zxv | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6095](https://github.com/CrocSwap/integer-mult-bounds/pull/6095) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6096](https://github.com/CrocSwap/integer-mult-bounds/pull/6096) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6097](https://github.com/CrocSwap/integer-mult-bounds/pull/6097) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6098](https://github.com/CrocSwap/integer-mult-bounds/pull/6098) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6099](https://github.com/CrocSwap/integer-mult-bounds/pull/6099) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6100](https://github.com/CrocSwap/integer-mult-bounds/pull/6100) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6101](https://github.com/CrocSwap/integer-mult-bounds/pull/6101) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6102](https://github.com/CrocSwap/integer-mult-bounds/pull/6102) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6103](https://github.com/CrocSwap/integer-mult-bounds/pull/6103) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6105](https://github.com/CrocSwap/integer-mult-bounds/pull/6105) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6106](https://github.com/CrocSwap/integer-mult-bounds/pull/6106) | JoyboyBrian | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6107](https://github.com/CrocSwap/integer-mult-bounds/pull/6107) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6108](https://github.com/CrocSwap/integer-mult-bounds/pull/6108) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6109](https://github.com/CrocSwap/integer-mult-bounds/pull/6109) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6110](https://github.com/CrocSwap/integer-mult-bounds/pull/6110) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6111](https://github.com/CrocSwap/integer-mult-bounds/pull/6111) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6112](https://github.com/CrocSwap/integer-mult-bounds/pull/6112) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6113](https://github.com/CrocSwap/integer-mult-bounds/pull/6113) | Matarener | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6114](https://github.com/CrocSwap/integer-mult-bounds/pull/6114) | Matarener | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6115](https://github.com/CrocSwap/integer-mult-bounds/pull/6115) | DLamdata | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6116](https://github.com/CrocSwap/integer-mult-bounds/pull/6116) | CubeJerry | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6117](https://github.com/CrocSwap/integer-mult-bounds/pull/6117) | CubeJerry | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6118](https://github.com/CrocSwap/integer-mult-bounds/pull/6118) | DLamdata | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6119](https://github.com/CrocSwap/integer-mult-bounds/pull/6119) | CubeJerry | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6120](https://github.com/CrocSwap/integer-mult-bounds/pull/6120) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6121](https://github.com/CrocSwap/integer-mult-bounds/pull/6121) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6122](https://github.com/CrocSwap/integer-mult-bounds/pull/6122) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6123](https://github.com/CrocSwap/integer-mult-bounds/pull/6123) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6124](https://github.com/CrocSwap/integer-mult-bounds/pull/6124) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6125](https://github.com/CrocSwap/integer-mult-bounds/pull/6125) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6126](https://github.com/CrocSwap/integer-mult-bounds/pull/6126) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6127](https://github.com/CrocSwap/integer-mult-bounds/pull/6127) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6128](https://github.com/CrocSwap/integer-mult-bounds/pull/6128) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6129](https://github.com/CrocSwap/integer-mult-bounds/pull/6129) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6130](https://github.com/CrocSwap/integer-mult-bounds/pull/6130) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6131](https://github.com/CrocSwap/integer-mult-bounds/pull/6131) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6132](https://github.com/CrocSwap/integer-mult-bounds/pull/6132) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6133](https://github.com/CrocSwap/integer-mult-bounds/pull/6133) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6134](https://github.com/CrocSwap/integer-mult-bounds/pull/6134) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6135](https://github.com/CrocSwap/integer-mult-bounds/pull/6135) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6136](https://github.com/CrocSwap/integer-mult-bounds/pull/6136) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6137](https://github.com/CrocSwap/integer-mult-bounds/pull/6137) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6138](https://github.com/CrocSwap/integer-mult-bounds/pull/6138) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6139](https://github.com/CrocSwap/integer-mult-bounds/pull/6139) | Karnaugh33 | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6140](https://github.com/CrocSwap/integer-mult-bounds/pull/6140) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6141](https://github.com/CrocSwap/integer-mult-bounds/pull/6141) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6142](https://github.com/CrocSwap/integer-mult-bounds/pull/6142) | JosieElliston | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6144](https://github.com/CrocSwap/integer-mult-bounds/pull/6144) | DreamingOfClouds | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6145](https://github.com/CrocSwap/integer-mult-bounds/pull/6145) | CubeJerry | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6146](https://github.com/CrocSwap/integer-mult-bounds/pull/6146) | CubeJerry | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6147](https://github.com/CrocSwap/integer-mult-bounds/pull/6147) | CubeJerry | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6148](https://github.com/CrocSwap/integer-mult-bounds/pull/6148) | CubeJerry | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6149](https://github.com/CrocSwap/integer-mult-bounds/pull/6149) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
+| [#6150](https://github.com/CrocSwap/integer-mult-bounds/pull/6150) | petalas | partially reviewed | [record 1](../../docs/research/pr-intake-decisions.json) |
