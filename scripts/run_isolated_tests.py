@@ -232,6 +232,9 @@ def _run_modules(files, python, tests_dir, cwd, workers, module_timeout, termina
                 try:
                     remaining = 0.2 if deadline is None else max(0, deadline - time.monotonic())
                     out, err = process.communicate(timeout=min(0.2, remaining))
+                    # Reuse timeout cleanup when capture returns after the admission deadline.
+                    if deadline is not None and time.monotonic() >= deadline:
+                        raise subprocess.TimeoutExpired(command, module_timeout)
                 except subprocess.TimeoutExpired:
                     with lock:
                         if stopping:

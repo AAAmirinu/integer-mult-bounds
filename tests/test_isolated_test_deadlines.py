@@ -1,12 +1,15 @@
 """Real hung-module and queued-module deadline controls, without expensive research replays."""
 import importlib.util
+import json
 import os
 from pathlib import Path
 import subprocess
 import sys
 import tempfile
 import time
+from types import SimpleNamespace
 import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location('deadline_runner', ROOT/'scripts/run_isolated_tests.py')
@@ -60,6 +63,70 @@ class DeadlineTests(unittest.TestCase):
         rows = self.run_modules(files, workers=2, module_timeout=5)
         self.assertEqual([r[1] for r in rows], [0, 1, 1])
         self.assertIn(b'Incomplete unittest run', rows[2][3])
+
+    def test_successful_capture_checks_deadline_before_admitting_real_receipt(self):
+        path = self.module('test_capture.py',
+            'import sys, unittest\nclass T(unittest.TestCase):\n'
+            ' def test_ok(self): sys.stdout.buffer.write(b"output\\0\\xff"); '
+            'sys.stderr.buffer.write(b"error\\0\\xfe")\n')
+        real_popen = subprocess.Popen
+        real_stop = runner.stop_module
+        for budget, observed_at, code in [(1, .999, 0), (1, 1, 124),
+                                          (1, 2, 124), (None, 2, 0)]:
+            with self.subTest(budget=budget, observed_at=observed_at):
+                clock, captures = [0], []
+
+                def launch(command, **kwargs):
+                    child = real_popen(command, **kwargs)
+                    communicate = child.communicate
+
+                    def capture(*args, **kw):
+                        out, err = communicate(*args, **kw)
+                        self.assertEqual(child.returncode, 0)
+                        receipt = json.loads(command[-1])[-1] if os.name == 'nt' else command[-1]
+                        self.assertEqual(Path(receipt).read_bytes(), runner.COMPLETED)
+                        captures.append((out, err))
+                        clock[0] = observed_at  # Parent scheduling delay after real capture.
+                        return out, err
+
+                    child.communicate = capture
+                    return child
+
+                with patch.object(runner.subprocess, 'Popen', side_effect=launch), \
+                        patch.object(runner, 'time', SimpleNamespace(monotonic=lambda: clock[0])), \
+                        patch.object(runner, 'stop_module', wraps=real_stop) as stop:
+                    rows = self.run_modules([path], workers=1, module_timeout=budget)
+                self.assertEqual(rows[0][1], code)
+                self.assertEqual(rows[0][2], b'output\0\xff')
+                expected_err = captures[0][1]
+                if code == 124:
+                    expected_err += (b'Module timeout after 1s: test_capture.py; '
+                                     b'unittest completion is not accepted\n')
+                self.assertEqual(rows[0][3], expected_err)
+                if code == 124 or os.name == 'posix':
+                    stop.assert_called_once()
+
+    @unittest.skipUnless(os.name == 'posix', 'POSIX cleanup after leader exit')
+    def test_on_time_exit_retains_post_stop_capture_drain_grace(self):
+        path = self.module('test_drain.py',
+            'import subprocess, sys, unittest\n'
+            'subprocess.Popen([sys.executable,"-c","import time; time.sleep(60)"])\n'
+            'class T(unittest.TestCase):\n def test_ok(self): pass\n')
+        clock = [0]
+        real_stop = runner.stop_module
+
+        def stop_after_exit(child):
+            self.assertEqual(child.poll(), 0)
+            real_stop(child)
+            clock[0] = 2  # Only owned cleanup/draining crosses the budget.
+
+        with patch.object(runner, 'time', SimpleNamespace(monotonic=lambda: clock[0])), \
+                patch.object(runner, 'stop_module', side_effect=stop_after_exit) as stop:
+            rows = self.run_modules([path], workers=1, module_timeout=1)
+        self.assertEqual(rows[0][1], 0)
+        self.assertIn(b'OK', rows[0][3])
+        self.assertNotIn(b'Module timeout', rows[0][3])
+        stop.assert_called_once()
 
     def test_invalid_budgets_rejected_before_launch(self):
         for value in [0, -1, float('nan'), float('inf'), '-inf']:

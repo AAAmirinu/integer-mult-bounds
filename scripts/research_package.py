@@ -365,6 +365,28 @@ def source_pin(row, base):
                      + "; accepted pin forms are base_commit:<path> and head:<40-hex sha>:<path>")
 
 
+def file_equals_bytes(path, expected):
+    """Compare a stable regular file exactly, with at most a 1 MiB buffer.
+
+    Read the whole initial extent even after a mismatch, propagating I/O errors.
+    The caller retains responsibility for path validation and checkout stability.
+    """
+    with path.open("rb") as stream:
+        size = os.fstat(stream.fileno()).st_size
+        capacity = min(1024 * 1024, max(1, size))
+        buffer = bytearray(capacity)
+        actual = memoryview(buffer)
+        wanted = memoryview(expected)
+        matches = size == len(expected)
+        for offset in range(0, size, capacity):
+            count = stream.readinto(buffer)
+            assert 0 <= count <= capacity
+            if count != min(capacity, size - offset) or actual[:count] != wanted[offset:offset + count]:
+                matches = False
+        tail = stream.read(1)
+        return matches and not tail
+
+
 def validate(root, package, check_pins=True):
     parts = PurePosixPath(package).parts
     require(len(parts) == 2 and parts[0] == "research" and re.fullmatch(r"[a-z0-9][a-z0-9-]*", parts[1]),
@@ -501,7 +523,7 @@ def validate(root, package, check_pins=True):
                 require(obj == row["git_blob"], "source blob provenance mismatch: " + name)
                 require(hashlib.sha256(pinned).hexdigest() == row["sha256"], "source SHA256 provenance mismatch: " + name)
                 if row["usage"] == "input":
-                    require(pinned == relative_file(root, name).read_bytes(), "working source drift: " + name)
+                    require(file_equals_bytes(relative_file(root, name), pinned), "working source drift: " + name)
                 if name == catalog_name:
                     catalog = json.loads(pinned)
         cards = [t for tr in catalog["tracks"] for t in tr["tasks"] if t["id"] == task["task_id"]]
@@ -907,6 +929,8 @@ def plan_details(root, changed):
             changed_packages.setdefault("/".join(parts[:2]), []).append(name)
     packages = []
     sparse_count = 0
+    # Planning requires a stable checkout; reuse only within this invocation.
+    validated_inputs = set()
     for path, raw, sparse in planning_manifests(root, head_tracked):
         sparse_count += sparse
         package = path.parent.relative_to(root).as_posix()
@@ -915,9 +939,12 @@ def plan_details(root, changed):
         inputs = manifest.get("inputs", [])
         require(isinstance(inputs, list), "declare input paths for CI invalidation")
         for name in inputs:
+            if isinstance(name, str) and name in validated_inputs:
+                continue
             # Do not require existence: a deleted input must still trigger replay.
             symlink_free_relative_path(root, name)
             require_tracked_input(name, tracked)
+            validated_inputs.add(name)
         causes = {
             "declared_inputs": sorted(changed.intersection(inputs)),
             "package_files": changed_packages.get(package, []),
