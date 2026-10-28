@@ -6,6 +6,8 @@
   "inputs": [
     "scripts/check_research_commit.py",
     "scripts/research_package.py",
+    "scripts/export_research_package.py",
+    "scripts/new_research_package.py",
     "tests/test_research_publication_metadata_reuse.py",
     "tests/test_research_source_history.py",
     "tests/test_research_commit_bytes.py",

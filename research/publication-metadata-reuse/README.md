@@ -28,7 +28,7 @@ all declared source-commit ancestry. These are complete `check()` function times
 in a warm Python process. Imports, baseline extraction and CLI startup are outside
 the timed region. Mathematical replay is outside the measured workload.
 
-An unreported profile attributed 109 of 130 ms to synchronous Git subprocess
+A separate profile attributed 109 of 130 ms to synchronous Git subprocess
 calls, including 21 ms in the duplicate metadata reader. For these one-pin
 packages, history-specific Git calls fall from five to three and total Git
 processes from nine to seven. The host had 18 logical CPUs and load averages
@@ -38,8 +38,9 @@ have separated ranges. There is no cross-host speed claim.
 [PROOF.md](PROOF.md) gives the acceptance argument, bounded retention, failure
 ordering, controls and implementation limits. The registered verifier runs the
 new tests plus retained history, byte, executable-mode and replacement controls.
-Its generated stdout receipt binds all executed test files and both shared
-scripts by SHA256. [TASK.json](TASK.json) records the scope and next question.
+Its generated stdout receipt binds all executed test files and their shared
+scripts by SHA256, including the exporter and scaffold imported by replacement
+controls. [TASK.json](TASK.json) records the scope and next question.
 
 ## Reproduce
 

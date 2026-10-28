@@ -25,6 +25,7 @@ def main():
     if not result.wasSuccessful() or result.testsRun != count:
         raise SystemExit(1)
     names = ['scripts/check_research_commit.py', 'scripts/research_package.py',
+             'scripts/export_research_package.py', 'scripts/new_research_package.py',
              'research/publication-metadata-reuse/verify.py']
     names.extend('tests/' + pattern for pattern in PATTERNS)
     receipt = {'schema': 'publication-metadata-reuse-controls/v1', 'tests_run': count,
