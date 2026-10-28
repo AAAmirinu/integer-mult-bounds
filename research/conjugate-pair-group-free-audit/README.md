@@ -124,7 +124,12 @@ Expected marker: `PASS_CONJUGATE_PAIR_GROUP_FREE_AUDIT`, in about 30 s per mode.
    at length 4 (20 of 1,296 idempotent tuples) and at length 5 (938 of
    7,776). The control with threshold two reproduces Theorem S: no solution
    up to length 3, and 264 at length 4. So a floor of 6, if true, must use
-   relations among the labels, not just support sizes. *First step:* use this
+   relations among the labels, not just support sizes. A second local probe
+   (stdlib, not registered) solves the exact equations in the free group on
+   `x, y`: no word of length at most 5 reaches `diag([xyx],[yxy])` at `r = 2`
+   over `F2`. The same code finds the four-call words for `(xy, yx)`. A
+   free-group solution would map to every group, so any saving below 6 needs
+   a relation among the labels. *First step:* use this
    package's full tier for the labels `{x, y}` and the target `(xyx, yxy)`.
    That needs sound rules for when a single equation forces `xyx = yxy`; the
    commutation rule used here does not imply that. Then check whether the
