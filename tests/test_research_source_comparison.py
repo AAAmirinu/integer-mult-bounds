@@ -25,7 +25,7 @@ class FileComparisonTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
-        self.path = Path(self.temp.name) / "binary source\nλ.bin"
+        self.path = Path(self.temp.name) / "binary source λ.bin"
 
     def test_equal_binary_files_across_buffer_boundaries(self):
         for size in (0, 1, BLOCK - 1, BLOCK, BLOCK + 1, 2 * BLOCK + 19):
