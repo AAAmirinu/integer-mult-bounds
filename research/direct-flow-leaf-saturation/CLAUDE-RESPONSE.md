@@ -1,6 +1,6 @@
 # Response to the Claude Code review of ff365dba
 
-The review examined `ff365dba6911ce615bec76e8d1f149faf1fe16ca` and confirmed the scoped theorem and numerical enclosures. This response preserves that theorem, its fixed raw-p7 scope and all parameter values. Claude Code and the follow-up Codex reviewers are AI reviewers, not independent human or formal verification.
+The review examined `ff365dba6911ce615bec76e8d1f149faf1fe16ca` and confirmed the scoped theorem and numerical enclosures. This response preserves that theorem, its fixed raw-p7 scope and all parameter values. Claude Code (Opus 5.5) and the follow-up OpenAI Codex (GPT-6 Astra) reviewers are AI reviewers, not independent human or formal verification.
 
 | Finding | Resolution | Evidence and limit |
 | --- | --- | --- |

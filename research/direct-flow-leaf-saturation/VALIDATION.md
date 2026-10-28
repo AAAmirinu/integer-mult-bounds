@@ -73,4 +73,17 @@ The final internal review found no blocking issue in the updated proof, source b
 
 The previously opened draft #6118's hosted run at `ff365dba` had a failed planning job and skipped replay. Its [actual job log](https://github.com/CrocSwap/integer-mult-bounds/actions/runs/40681403297/job/122792722146) reports two failures in `test_research_current_status`: the old selected-family CI text and an exact bold-value match. The shared files involved are unchanged from base. This is separate from the passing package replay; no unrelated suite or shared documentation repair was added here. Check the PR for the latest head's CI status.
 
-The current committed-byte/export/Git-free follow-up is recorded after execution below.
+## Claude-review response: committed export and Git-free replay
+
+Scientific follow-up commit: `553198839618962e07519b51cb3bbe808ca6f1dc`. Committed-byte comparison with `--check-source-history` passed for all 41 package/input files, with the original base as the source-history ancestor. The official exporter and archive check both reported `PASS_RESEARCH_EXPORT` for those 41 files:
+
+```sh
+python3.12 -B scripts/check_research_commit.py --package research/direct-flow-leaf-saturation --check-source-history
+python3.12 -B scripts/export_research_package.py export --package research/direct-flow-leaf-saturation --ref 553198839618962e07519b51cb3bbe808ca6f1dc --output /tmp/leaf-saturation-reviewed.tar
+python3.12 -B scripts/export_research_package.py check /tmp/leaf-saturation-reviewed.tar
+```
+
+The archive was extracted into a fresh directory, using an absolute Python 3.12 executable with PATH set to an empty directory and no Git available. All four direct commands passed: primary certificate 15.962 s, independent source checker 0.090 s, mutation controls 31.220 s, and independent enclosure checks 28.117 s. [logs/claude-portable-results.json](logs/claude-portable-results.json) records exact commands, exit codes and links to their logs. The scientific bytes are exactly the commit above; the subsequent evidence commit adds only these logs, this validation record and model attribution. Final publication-byte and export checks are repeated after that evidence commit.
+
+
+Pre-publication refresh at 2026-10-28T12:34:31Z found canonical main unchanged at `721c03822c421b7f7fcbb2598993b947c4d88419` and no guidance/priority change. A bounded live check of the 100 most recently updated PRs (all states) and 100 Discussions reached back to October 28 00:24Z and October 25 03:58Z respectively, overlapping the earlier complete body snapshots. Exact predecessor and saturation-term checks found no new competing saturation result; this is body-level coverage, not a claim to have reviewed every diff or reply. Existing #6118 was confirmed open and draft before the update.

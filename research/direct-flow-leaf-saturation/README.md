@@ -48,4 +48,4 @@ The main certificate uses `Fraction` intervals throughout: a 48-term `2 atanh(z)
 
 Structured questions are in [TASK.json](TASK.json). No wider construction search is justified by this package alone.
 
-Prepared for DLamdata with substantial OpenAI Codex assistance, including two separate AI agents for independent mathematical/source checks and skeptical review. This is not independent human review, formal verification, or maintainer acceptance. Predecessor credit and Apache-2.0 licensing are retained.
+Prepared for DLamdata with substantial OpenAI Codex (GPT-6 Astra) assistance, including two separate AI agents for independent mathematical/source checks and skeptical review. Claude Code (Opus 5.5) reviewed the initial published snapshot; its findings and the response are recorded in CLAUDE-RESPONSE.md. This is not independent human review, formal verification, or maintainer acceptance. Predecessor credit and Apache-2.0 licensing are retained.
