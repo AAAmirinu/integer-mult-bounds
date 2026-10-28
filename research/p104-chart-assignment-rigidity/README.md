@@ -85,7 +85,7 @@ python3.12 scripts/research_package.py --package research/p104-chart-assignment-
 
 The direct command is `python3.12 -I -B research/p104-chart-assignment-rigidity/verify.py`.
 It prints `PASS_P104_CHART_ASSIGNMENT_RIGIDITY` and compares the regenerated
-`RESULT.json` byte for byte (about 75 s, standard library only).
+`RESULT.json` byte for byte (under 90 s, standard library only).
 
 ## Open next questions
 
