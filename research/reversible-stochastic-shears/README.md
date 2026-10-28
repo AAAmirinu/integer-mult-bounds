@@ -121,6 +121,12 @@ forward output's probability law is unchanged under uniform independent coins;
 its source-relative error guarantee applies at the copied output. There is no
 claim that the rounded map equals the exact Gaussian or native operator.
 
+The returned tape is unchanged bit for bit, but the retained rounded output can
+be correlated with it. It is not automatically a fresh independent random
+resource for a later adaptive call. Such a call needs new independent coin
+blocks or a new conditional-error proof; restoration alone does not replenish
+randomness. The verifier includes a two-shear reused-tape bias counterexample.
+
 The logical ledger is 9,589 forward macro-updates, 748 integer output ADDs and
 9,589 reverse macro-updates, totaling 19,926 macros. The tape contains 11,713
 bits and is read twice; the 84 owned parity bits are returned clean. A reverse

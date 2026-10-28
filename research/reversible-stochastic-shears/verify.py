@@ -142,6 +142,10 @@ def main():
     # Same uncomplemented coin is an actual failing inverse, not a guarantee.
     y=sr(1,2,0);bad=y+sr(-1,2,0)
     need(bad!=0,'uncomplemented-coin counterexample')
+    reused=sum(sr(sr(1,2,u),2,u) for u in (0,1))
+    fresh=sum(sr(sr(1,2,u),2,v) for u,v in product((0,1),repeat=2))
+    need(Q(reused,2)==Q(1,2) and Q(fresh,4)==Q(1,4),
+         'restored tape is not fresh for an adaptive second shear')
     need(sr(0,2,1)==sr(1,2,1),'one side bit necessary for local halving')
     rejected(lambda:need(2*sr(1,2,0)==1,'discarded half residue'))
     es=[('SCALE',0,None,1,2)];y,log=forward([1],es,(0,));log[0]=0
