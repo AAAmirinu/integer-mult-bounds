@@ -92,7 +92,7 @@ to replace that sentence with the `±x` argument.
 **F4 (verifier coverage, not an error).** PR6134's check "only endpoint
 ranks attain" runs only on laws that it built with endpoint ranks, so it is
 tautological. Its verifier never tests the lower bound on a non-attaining
-law. This package adds that coverage.
+law. This package adds that coverage for the trace steps (1, 2, 4, 5); see below.
 
 Remark (not checked beyond the proof sketch): if inputs are promised to lie in
 a known `d`-dimensional subspace with `R <= d`, the same argument applied to
@@ -109,7 +109,10 @@ rational matrices; the complex case rests on the written proof.
 - **Random unbiased laws.** The verifier builds 2,631 seeded laws as `A_i = M_i M^{-1}`
   (`M = sum p_i M_i`, entries in `{-1, 0, 1, 2}`, `k <= 3`, up to three
   outcomes). These have oblique, nonsymmetric and mixed-rank outcomes.
-  Inequality (3) and `tr C/k >= k/E r - 1` hold on every law. Each of the
+  On every law, inequality (3) and `tr C/k >= k/E r - 1` hold, and some
+  basis input `e_i` already has error `C_ii >= k/E r - 1`. The last step
+  `E r <= R^(1-t) E r^t` is a per-outcome elementary inequality and is not
+  evaluated (`E r^t` is irrational). Each of the
   1,343 exact equalities has every nonzero outcome equal to `alpha P` with
   one common `alpha`. Most are trivial (`A = I` or `k = 1`); four have `k >= 2`
   and two distinct nonzero outcomes, and one has mixed ranks (F2).

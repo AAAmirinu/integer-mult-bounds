@@ -163,9 +163,13 @@ def check_random(seed=6134, trials=4000):
         if inv is None:
             continue
         law = [(p, mat_mul(x, inv)) for p, x in zip(ps, ms)]
-        slack, gap, _ = bound_gap(law)
+        slack, gap, cov = bound_gap(law)
         require(slack >= 0, "inequality (3)")
         require(gap >= 0, "trace(C)/k >= k/E r - 1")
+        # A literal input e_i realizes error C_ii, so omega >= max_i C_ii.
+        er = stats(law)[2]
+        require(max(cov[i][i] for i in range(k)) >= F(k) / er - 1,
+                "an actual basis input meets the bound")
         if slack == 0:
             require(gap == 0, "equality propagates")
             require(classify_equality(law), "equality classification")
