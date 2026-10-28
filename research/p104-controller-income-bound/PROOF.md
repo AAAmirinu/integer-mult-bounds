@@ -3,7 +3,7 @@
 ## Setting
 
 One central port. The caller word of `research/p104-productive-controller/caller.py` acts on `n = 32` banks
-(16 pairs). A bank holds an element of `R = K[Q, Q⁻¹] ⊗ K[D_0, …, D_33]`, `K = ℚ`; the banks start as the rows of
+(16 pairs). A bank holds an element of `R = K[Q, Q⁻¹] ⊗ K[D_0, …, D_32]`, `K = ℚ`; the banks start as the rows of
 the constant right boundary matrix (invertible), and the constant left boundary matrix is applied at the end. The
 alphabet is replayed literally:
 
@@ -28,15 +28,24 @@ Write every row as `a + Q·b` with `a, b ∈ R_even = K[Q^{±2}] ⊗ K[D]`; `a` 
    `R_even`. So `rank E` changes by at most one.
 3. Before the first paid shear every odd part is zero (the right boundary is constant), so the first paid shear
    does not change `E` at all.
-4. A row that ends as an odd monomial `Q^{±1}·D^S·e_i` (every declared diagonal output) has zero even part.
+4. The outputs are the rows of `L·M_final`, `L` the constant left boundary. The even part of `L·M_final` is
+   `L·E_final`, so an output `ℓ_i·M_final` that is an odd monomial `Q^{±1}·D^{S_i}·e_i` (every declared diagonal
+   output) puts the row `ℓ_i` of `L` in the left kernel of `E_final`.
 
 **Theorem.** With `s` paid shears and `n_odd` outputs that are odd (zero even part),
 
     n_odd ≤ n − rank E_final ≤ n − (n − (s − 1)) = s − 1 .
 
 Proof: `rank E` starts at `n` (invertible right boundary), stays `n` through free events and the first paid
-shear, drops by at most one at each of the other `s − 1` paid shears, so `rank E_final ≥ n − (s − 1)`; the
-`n_odd` zero rows give `rank E_final ≤ n − n_odd`. ∎
+shear, drops by at most one at each of the other `s − 1` paid shears, so `rank E_final ≥ n − (s − 1)`. For the
+other inequality let `T` be the set of twisted outputs and `L_T` the matching rows of `L`. By (4), `L_T·E_final = 0`.
+The outputs `Q^{±1}D^{S_i}e_i`, `i ∈ T`, are linearly independent, so `rank L_T ≥ rank(L_T·M_final) = n_odd`, and
+the left kernel of `E_final` has dimension at least `n_odd`: `rank E_final ≤ n − n_odd`. This does not need `L`
+to be invertible (on the three literal controllers it is; the verifier records its rank, 32). ∎
+
+(The first version of this file read the zero rows off `M_final` instead of `L·M_final`; the left-kernel step
+above is the repair given in the independent audit
+[PR #6120](https://github.com/CrocSwap/integer-mult-bounds/pull/6120), PROOF.md A1.)
 
 The verifier evaluates the same argument after the ring homomorphism `D_s → 1`, `Q² → θ` (`θ = 7/3`, `11/5`):
 items 1–4 hold verbatim in the image, so the per-event rank trace is a complete check on the given word.
@@ -45,7 +54,14 @@ items 1–4 hold verbatim in the image, so the per-event rank trace is a complet
 
 Let a caller use `n_thick` full calls and `n_thin` thin shears, all on one pair each, and let every one of its
 `n_out` outputs be an odd monomial with stage set `S_i` (target rank `1 + d·|S_i|`, `d = 8`). Every stage that
-appears in an output was paid once as a lift of that content (`d` per bank per full call or per idle stage), so
+appears in an output was paid once as a lift of that content (`d` per bank per full call or per idle stage).
+This follows from the determinant, stage by stage (audit PR #6120, A2): scalar `ADD`, swaps and shears have
+determinant `±1`, `Q_POWER` multiplies it by `Q^{±2}`, and a lift of one row by `D_s` multiplies it by `D_s`, so
+`det(L·M_final) = c·Q^{2k}·∏_s D_s^{ℓ_s}` with `c ∈ K^×` and `ℓ_s` the number of row-lifts at stage `s`; the
+diagonal `diag(Q^{q_i}D^{S_i})` has determinant `∏_i Q^{q_i}·∏_s D_s^{#{i : s ∈ S_i}}`, and `K[Q^{±1}, D]` is a
+UFD, hence `#{i : s ∈ S_i} = ℓ_s` for every `s` and `Σ_i |S_i| = Σ_s ℓ_s`. The argument needs the outputs to form
+the full monomial diagonal (the cost model of `caller.py` accepts only that); the verifier checks both identities
+stage by stage on the three controllers (`Σ_s ℓ_s = 194`, `Σ_i q_i` = net `Q_POWER` = 0). Therefore
 
     income per port = Σ_i (1 + d|S_i|) − d·(lifts) − n_thin = n_out − n_thin ≤ (n_thick + n_thin − 1) − n_thin = n_thick − 1 .
 
@@ -77,7 +93,15 @@ argument, with the first-shear refinement (3) that gives the `− 1`.
 
 ## Scope
 
-The alphabet is the literal one of the retained callers; a paid job that touches several banks or several ports at
-once (a cross-port or multi-bank primitive) is outside it and is the only way to escape the bound (see
-`TASK.json`, open questions). The bound is on rank mass; it says nothing new about the moment at `t < 1`, where
+The alphabet is the literal one of the retained callers (constant boundaries, `Q_POWER ∈ {±2}`, one-pair shears
+with coefficient `Q^{-1}` or `−Q`). Outside it the bound can fail, but touching several banks is not by itself an
+escape. Writing a paid job as `M ← A·M`, `A = A_e + Q·A_o`, Sylvester's inequality bounds its drop of `rank E` by
+`(n − rank A_e) + rank A_o`, and by `n − rank A_e` while no odd content exists yet (audit PR #6120, PROOF.md A4,
+with exact controls). So a paid job that writes one row, `y ← u·y + Σ_j f_j·x_j` with `u` even and nonzero, obeys
+the bound including the `− 1`, for any number of source banks and any Laurent `f_j`. The known escapes are: a job
+that writes several rows (for example the three Whitehead shears of one pair taken as one paid job, which drops
+`rank E` by two from a constant entry); a paid odd
+one-bank translation `y ← Q^{±1}·y` (it twists one output even as the first paid job); and a boundary that already
+carries odd `Q` content (step 3 fails; with a general entry the bound is `n_odd ≤ (n − rank E_entry) + s`). None
+of these is in the literal alphabet. The bound is on rank mass; it says nothing new about the moment at `t < 1`, where
 PR5554's convexity argument and the fragmentation ceiling apply.

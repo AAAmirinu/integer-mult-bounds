@@ -27,8 +27,12 @@ Base: canonical main `721c03822c421b7f7fcbb2598993b947c4d88419`. Inputs pinned i
 Split every bank's content into its even and odd parts in `Q`. Free operations (scalar `ADD`, swaps, `Q^{±2}`,
 stage markers) are invertible row operations over the even subring and keep the rank of the even-part matrix; a paid
 odd shear (`LOCAL` or `QUERY_SHEAR`) changes one row of it, so the rank drops by at most one, and the very first paid
-shear cannot change it because no odd part exists yet. Every declared output is an odd monomial, i.e. has zero even
-part. Hence `twisted outputs ≤ paid shears − 1`. Full statement and the invoice consequence in [PROOF.md](PROOF.md).
+shear cannot change it because no odd part exists yet. Every declared output is an odd monomial, so its row of the
+constant left boundary lies in the left kernel of the final even-part matrix; these rows are independent, so the
+final even rank is at most `n − twisted` (no invertibility of the left boundary is needed). Hence
+`twisted outputs ≤ paid shears − 1`. Full statement and the invoice consequence in [PROOF.md](PROOF.md); the
+left-kernel step and the stage-by-stage determinant proof of the lift cancellation are the repairs given by the
+independent audit [PR #6120](https://github.com/CrocSwap/integer-mult-bounds/pull/6120) (A1, A2).
 
 | Controller | Events | Paid shears (thick + thin) | Even-rank trace | Twisted outputs | Income per port |
 |---|---:|---:|---|---:|---:|
@@ -45,7 +49,10 @@ owned centre: `M = v·income − calls·c ≤ calls·(v − c) − v`, which is 
 not, any idle law, any pairing of the thin shears) cannot raise it with 18 full calls; the open complex-side levers
 are the centre, the fragmentation of the local word ([`research/fragmentation-ceiling`](../fragmentation-ceiling/README.md))
 and the moment cost of longer callers ([PR #5554](https://github.com/CrocSwap/integer-mult-bounds/pull/5554)).
-A paid primitive that touches several banks or ports at once is outside the alphabet and is the only escape.
+Outside the alphabet the bound can fail: a paid job that writes several rows, a paid odd one-bank translation
+`Q^{±1}`, or a boundary that already carries odd `Q` content. A paid job that writes one row with a nonzero even
+self-coefficient obeys it for any number of source banks (per-job bound `(n − rank A_e) + rank A_o`, audit PR #6120
+A4; see [PROOF.md](PROOF.md), Scope).
 
 ## Verification
 
@@ -58,7 +65,8 @@ replays one port of each controller from its right boundary to its left boundary
 coefficients, tracking the exact rank over ℚ of the even part after `D_s → 1`, `Q² → 7/3` and `11/5`, and checks
 that free events keep it, every paid shear changes it by at most one, the first leaves it unchanged, the trace is
 32, 32, 31, …, 0 and all 32 declared outputs are odd monomials; computes the per-port income from the literal
-word; runs the controls (the two-bank Whitehead word with three odd shears reaches `diag(Q, Q⁻¹)` with trace
+word and checks the lift cancellation stage by stage (outputs containing `D_s` = row-lifts at `s`, 194 in all) and
+records the rank of the left boundary; runs the controls (the two-bank Whitehead word with three odd shears reaches `diag(Q, Q⁻¹)` with trace
 2, 2, 1, 0 and its two-shear prefix does not; dropping the last thin shear of the p104 controller leaves a positive
 even rank and the declared diagonal is rejected; a free `Q^{±1}` is rejected by the alphabet); and compares
 [RESULT.json](RESULT.json) in full. Final marker: `PASS_P104_CONTROLLER_INCOME_BOUND`.
@@ -67,7 +75,8 @@ even rank and the declared diagonal is rejected; a free `Q^{±1}` is rejected by
 
 Controllers by Cinna Davis (p16/a7 lattice), Ali Romman (PR5398 wrapper, PR5544 all-forward caller) and the
 P104 lineage; Cinna Davis's `productive-controller-basis-search` for the binary `2p + 1` theorem and the even-part
-pruning idea this package lifts to the rational Laurent alphabet; PR5405/PR5554 (zxv) for the path-family ceilings this bound complements; `fragmentation-ceiling`
+pruning idea this package lifts to the rational Laurent alphabet; JosieElliston's independent audit
+(PR #6120) for the left-kernel and determinant repairs and the corrected escape list; PR5405/PR5554 (zxv) for the path-family ceilings this bound complements; `fragmentation-ceiling`
 for the moment side. The bound is on rank mass inside the literal alphabet; it makes no claim about the moment at
 `t < 1`, about other primitives, or about any selected result. Prepared for Matarener with Claude (Anthropic),
 via Claude Code. Apache-2.0.
@@ -76,9 +85,10 @@ via Claude Code. Apache-2.0.
 
 1. Does the bound extend to callers whose paid primitives are not odd central shears of one pair, for example a
    paid rank-r Gaussian touching several banks or several ports at once? Such a primitive could twist more than
-   one output per paid job; it is the only way to raise the controller income above thick calls minus one. First
-   step: state the primitive as a physical job in `research/p104-productive-controller/caller.py` terms and extend
-   the even-part tracker with its action; the bound becomes twisted ≤ Σ over paid jobs of their even-rank change.
+   one output per paid job; with a paid odd one-bank translation and an odd boundary it is one of the ways to
+   raise the controller income above thick calls minus one (PR #6120 A4 gives the per-job bound). First step:
+   state the primitive as a physical job in `research/p104-productive-controller/caller.py` terms and extend the
+   even-part tracker with its action; the bound becomes twisted ≤ Σ over paid jobs of their even-rank change.
 2. Is the bound attained with more thick calls, and does the resulting invoice ever beat p = 16? Income grows by
    (ports − centre) per thick call, but the target ranks 1 + 8(p+2) and the idle chunks grow too; PR5554 covers
    path controllers, and the local invoice of PR5907 peaks at p = 16 (p = 20: 0.003117). First step: price

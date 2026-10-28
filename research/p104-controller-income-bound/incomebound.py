@@ -14,8 +14,10 @@ Even part E of a bank = its terms with even Q-exponent, odd part O = the others.
 invertible row operation of the matrix whose rows are the banks; it maps the even parts among themselves (even Q
 powers and markers are even), so it preserves rank E.  A paid shear adds Q^{+-1} x to y: E_y += Q^{+-1} O_x, a
 change of one row, so rank E drops by at most one; before the first paid shear every O_x is zero, so the first
-paid shear does not change rank E at all.  A bank that ends twisted (pure odd content, as every diagonal
-output does) has zero even part.  Hence with s paid shears and n_odd twisted outputs,
+paid shear does not change rank E at all.  The outputs are the rows of L.M (L the constant left boundary); a
+twisted output row l_i.M has zero even part, so l_i lies in the left kernel of E, and the twisted outputs being
+independent monomials, these l_i are independent (L need not be invertible).  Hence with s paid shears and n_odd
+twisted outputs,
 
     n_odd  <=  32 - rank E_final  <=  s - 1 .
 
@@ -172,9 +174,29 @@ def income(word, fresh=8):
     thin = sum(1 for e in word['physical_events'] if e[0] == 'QUERY_SHEAR')
     idle = sum(2 * len(e[2]) for e in word['physical_events'] if e[0] == 'IDLE')
     lifts = fresh * (2 * locals_ + idle)
+    # Lift cancellation, stage by stage (the determinant argument of PROOF.md): every row-lift by D_s multiplies
+    # det by D_s and nothing else carries markers, so #{outputs containing s} must equal the row-lifts at s;
+    # likewise sum of output Q-exponents = net Q_POWER exponent (shears have determinant 1).
+    nstages = len(word['diagonal'][0]) - 1
+    row_lifts = [0] * nstages
+    net_q = 0
+    for e in word['physical_events']:
+        if e[0] == 'LOCAL':
+            row_lifts[e[1]] += 2
+        elif e[0] == 'IDLE':
+            for s in e[2]:
+                row_lifts[s] += 2
+        elif e[0] == 'Q_POWER':
+            net_q += e[2]
+    output_stages = [sum(t[1 + s] for t in word['diagonal']) for s in range(nstages)]
+    need(output_stages == row_lifts, 'every output stage is paid exactly once as a lift (stage by stage)')
+    need(sum(t[0] for t in word['diagonal']) == net_q, 'sum of output Q-exponents equals the net Q_POWER exponent')
+    left_rank = rank([{j: Q(x) for j, x in enumerate(row) if Q(x)} for row in word['boundaries']['left']])
     return {'targets_rank_sum': targets, 'outputs': len(word['diagonal']), 'locals': locals_, 'thin': thin,
             'idle_stage_mass': idle, 'paid_lifts': lifts, 'income': targets - lifts - thin,
-            'outputs_minus_thin': len(word['diagonal']) - thin}
+            'outputs_minus_thin': len(word['diagonal']) - thin, 'stages': nstages,
+            'row_lifts_per_stage': row_lifts, 'row_lifts_total': sum(row_lifts),
+            'output_stage_count_equals_lifts': True, 'net_q_power': net_q, 'left_boundary_rank': left_rank}
 
 
 def read(path):

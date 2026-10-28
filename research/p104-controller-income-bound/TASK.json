@@ -11,7 +11,7 @@
    "blocked_by": "A new physical primitive, not this package.",
    "first_step": "State the primitive as a physical job in research/p104-productive-controller/caller.py terms and extend the even-part tracker with its action; the bound becomes twisted <= sum over paid jobs of their even-rank change.",
    "question": "Does the bound extend to callers whose paid primitives are not odd central shears of one pair, for example a paid rank-r Gaussian touching several banks or several ports at once?",
-   "why_it_matters": "Such a primitive could twist more than one output per paid job; it is the only way to raise the controller income above thick calls minus one."
+   "why_it_matters": "Such a primitive could twist more than one output per paid job. It is one of the ways to raise the controller income above thick calls minus one; the others are a paid odd one-bank translation Q^{+-1} and a boundary that already carries odd Q content, while a paid job writing one row with a nonzero even self-coefficient obeys the bound for any number of source banks (independent audit, PR #6120, PROOF.md A4)."
   },
   {
    "blocked_by": "A non-path caller word.",

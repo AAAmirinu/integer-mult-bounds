@@ -8,7 +8,8 @@ the 33 paid shears for two values of the central square: free operations never c
 it by at most one, the first paid shear leaves it unchanged, and all 32 declared diagonal outputs are odd monomials,
 so the bound 32 <= 33 - 1 is attained with equality; (2) the per-port controller income computed from the literal
 word (target ranks minus paid lifts and thin requests) equals outputs minus thin requests = 17 = thick calls - 1
-on all three; (3) controls: the two-bank Whitehead word with three odd shears reaches diag(Q, Q^-1) with trace
+on all three, with the lift cancellation checked stage by stage (#outputs containing D_s = row-lifts at s, 194 in
+all; sum of output Q-exponents = net Q_POWER) and the rank of the left boundary recorded; (3) controls: the two-bank Whitehead word with three odd shears reaches diag(Q, Q^-1) with trace
 2, 2, 1, 0; its two-shear prefix leaves one bank with an even part (no diagonal); dropping the last QUERY_SHEAR of the p104
 controller leaves a positive even rank and non-twisted outputs; a word that applies Q^{+-1} for free is rejected by the
 alphabet; (4) RESULT.json equals the recomputed receipt.
@@ -72,6 +73,7 @@ def main():
             receipts[theta] = r
         inc = B.income(word)
         need(inc['income'] == inc['outputs_minus_thin'] == 17 == receipts[THETAS[0]]['thick'] - 1, name + ': income 17 = thick - 1')
+        need(inc['row_lifts_total'] == 194 and inc['left_boundary_rank'] == n, name + ': 194 row-lifts, invertible left boundary')
         result['controllers'][name] = {'path': rel, 'events': len(word['physical_events']), 'receipts': receipts, 'income': inc}
         print(name, 'events', len(word['physical_events']), 'paid shears', receipts[THETAS[0]]['paid_shears'],
               'twisted', receipts[THETAS[0]]['twisted_outputs'], 'income/port', inc['income'], flush=True)
