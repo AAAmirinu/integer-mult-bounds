@@ -21,124 +21,135 @@ results, not new claims here.
 
 ## 1. Full eligible-module theorem
 
-Let D=Z[1/2], with fraction field Q. For each factor i take a finite free
-ambient module V_i, an invertible dyadic prefix A_i, coordinate summands F_i
-(the cut) and G_i (allowed helper input support). In row convention let
+Let $D=\mathbb{Z}[1/2]$, with fraction field $\mathbb{Q}$. For each factor $i$, take a finite free ambient module $V_i$, an invertible dyadic prefix $A_i$, and coordinate summands $F_i$ (the cut) and $G_i$ (allowed helper input support). In row convention, define
 
-```
-L_i = F_i intersect (G_i A_i^(-1)).
-```
+$$
+L_i = F_i \cap \bigl(G_i A_i^{-1}\bigr).
+$$
 
-For the pure tensor prefix A= tensor_i A_i, cut F=tensor_i F_i and allowed
-support G=tensor_i G_i, the **entire** eligible row module is
+For the pure tensor prefix, cut and allowed support, write
 
-```
-L = {v in F : v A in G} = tensor_i L_i.                 (1)
-```
+$$
+A=\bigotimes_i A_i,
+\qquad F=\bigotimes_i F_i,
+\qquad G=\bigotimes_i G_i.
+$$
 
-The column version gives the same identity for suffix-eligible modules R_i.
-With full module bases L0_i,R0_i, their full tensor bases therefore pair by
-`K = tensor_i (L0_i R0_i)`. No additional eligible vector is omitted by using
-those bases. Basis changes are algebraic coordinates, with no free physical
-implementation or channel credit inferred.
+Then the **entire** eligible row module is
 
-**Proof.** A submodule is saturated when dv in it, for nonzero d in D, implies
-v is in it. Coordinate summands are saturated, as are their images under an
-invertible dyadic map. Intersections of saturated submodules are saturated.
-Since D is a PID, a saturated submodule of a finite free module is a direct
-summand: its finitely generated torsion-free quotient is free, and a basis of
-the quotient lifts to a splitting. Thus every L_i is a direct summand.
+$$
+\boxed{\displaystyle
+L=\{v\in F: vA\in G\}=\bigotimes_i L_i.
+}
+\tag{1}
+$$
 
-Over Q, for any subspaces U_i,W_i of V_i,
+The column version gives the same identity for suffix-eligible modules $R_i$. With full module bases $L_{0,i}$ and $R_{0,i}$, their full tensor bases therefore pair by
 
-```
-(tensor_i U_i) intersect (tensor_i W_i)
-    = tensor_i (U_i intersect W_i).
-```
+$$
+K=\bigotimes_i\bigl(L_{0,i}R_{0,i}\bigr).
+$$
 
-To see this, in each factor choose a basis of U_i intersect W_i, extend it
-separately to U_i and W_i, and then to the ambient space. The tensor basis
-vectors common to both tensor subspaces use an intersection vector in every
-factor. This proves the identity for arbitrary, including nondecomposable,
-vectors. Rationalization commutes with these intersections (clearing finitely
-many denominators proves the reverse inclusion).
+No additional eligible vector is omitted by using those bases. Basis changes are algebraic coordinates, with no free physical implementation or channel credit inferred.
 
-The two sides of (1) have this same rational span. The left side is saturated
-as an intersection of direct summands. The right side is a direct summand by
-tensoring splittings of the L_i, so is saturated too. A saturated submodule H
-of a free D-module is exactly `(Q H) intersect V`: clear a denominator and
-apply saturation. Hence the two sides are equal over D. The column argument
-is identical. Multiplication of tensor row/column bases gives the pairing
-identity. ∎
+**Proof.** A submodule is saturated when $dv$ belonging to it, for nonzero $d\in D$, implies that $v$ belongs to it. Coordinate summands are saturated, as are their images under an invertible dyadic map. Intersections of saturated submodules are saturated. Since $D$ is a PID, a saturated submodule of a finite free module is a direct summand: its finitely generated torsion-free quotient is free, and a basis of the quotient lifts to a splitting. Thus every $L_i$ is a direct summand.
 
-Invertibility here is **over D**, not merely over Q. F and G are the exact
-product supports. A larger cut, cross-factor support not of this form, live
-owned fields, or a prefix not factoring as A changes the hypotheses. Equation
-(1) alone does not prove timing, common physical charts or native realization.
+Over $\mathbb{Q}$, for any subspaces $U_i,W_i\subseteq V_i$,
+
+$$
+\left(\bigotimes_i U_i\right)\cap
+\left(\bigotimes_i W_i\right)
+=\bigotimes_i(U_i\cap W_i).
+$$
+
+To see this, in each factor choose a basis of $U_i\cap W_i$, extend it separately to $U_i$ and $W_i$, and then to the ambient space. The tensor basis vectors common to both tensor subspaces use an intersection vector in every factor. This proves the identity for arbitrary, including nondecomposable, vectors. Rationalization commutes with these intersections: clearing finitely many denominators proves the reverse inclusion.
+
+The two sides of (1) have this same rational span. The left side is saturated as an intersection of direct summands. The right side is a direct summand by tensoring splittings of the $L_i$, so is saturated too. A saturated submodule $H\subseteq V$ of a free $D$-module satisfies
+
+$$
+H=\bigl(\operatorname{span}_{\mathbb{Q}}H\bigr)\cap V.
+$$
+
+Clear a denominator and apply saturation. Hence the two sides are equal over $D$. The column argument is identical. Multiplication of tensor row/column bases gives the pairing identity. ∎
+
+Invertibility here is **over $D$**, not merely over $\mathbb{Q}$. The supports $F$ and $G$ are the exact product supports. A larger cut, cross-factor support not of this form, live owned fields, or a prefix not factoring as $A$ changes the hypotheses. Equation (1) alone does not prove timing, common physical charts or native realization.
 
 ## 2. Fixed finite catalogues cannot tensor away their losses
 
-Use [Ali Romman](https://github.com/aliromman)'s
-[PR #5615](https://github.com/CrocSwap/integer-mult-bounds/pull/5615) single-cut
-criterion and #5882's tensor theorem as cited premises. Let a catalogue contain
-q>=1 matrices K_j of positive rational ranks r_j and capacities c_j<r_j. Put
-`theta=max_j c_j/r_j`, so 0<=theta<1. For every length-n sequence of catalogue
-members, with repetitions and arbitrary ordering,
+Use [Ali Romman](https://github.com/aliromman)'s [PR #5615](https://github.com/CrocSwap/integer-mult-bounds/pull/5615) single-cut criterion and [PR #5882](https://github.com/CrocSwap/integer-mult-bounds/pull/5882)'s tensor theorem as cited premises. Let a catalogue contain $q\geq1$ matrices $K_j$ with positive rational ranks $r_j$ and unit capacities $c_j<r_j$. Put
 
-```
-c(tensor factors) / product(ranks) <= theta^ceil(n/q).   (2)
-```
+$$
+\theta=\max_{1\leq j\leq q}\frac{c_j}{r_j},
+\qquad 0\leq\theta<1.
+$$
 
-**Proof.** Some type j occurs at least ceil(n/q) times. Choose an odd prime
-attaining its capacity, so its rank fraction there is c_j/r_j. Every other
-factor has rank fraction at most one at that same prime. The primewise tensor
-formula therefore bounds the whole fraction by
-`(c_j/r_j)^count_j <= theta^ceil(n/q)`. If theta=0, any nonempty tensor has
-zero capacity by the predecessor's zero-capacity case. ∎
+For every length-$n$ sequence $j_1,\ldots,j_n$ of catalogue members, with repetitions and arbitrary ordering,
 
-This is uniform over switching schedules, not only repeated equal factors.
-It assumes a **fixed finite** defective catalogue. Adding new cuts as n grows,
-a full-capacity type, nonproduct supports or changed endpoints is outside it.
-It concerns unit-channel capacity, not the entire productive signed invoice:
-one must not turn it into a universal κ ceiling.
+$$
+\boxed{\displaystyle
+\frac{c\!\left(\bigotimes_{\ell=1}^{n}K_{j_\ell}\right)}
+     {\prod_{\ell=1}^{n}r_{j_\ell}}
+\leq\theta^{\lceil n/q\rceil}.
+}
+\tag{2}
+$$
 
-For the predecessor's two types diag(1,3),diag(1,5), a copies of the first
-and b of the second give exactly `2^min(a,b)` channels among `2^(a+b)`
-rational channels. Bound (2) is attained by balanced counts. The one-of-each
-capacity two exceeds the product of individual capacities one; its relative
-loss nevertheless persists under every long word from this fixed catalogue.
+**Proof.** Some type $j$ occurs $m_j\geq\lceil n/q\rceil$ times. Choose an odd prime attaining its capacity, so its rank fraction there is $c_j/r_j$. Every other factor has rank fraction at most one at that same prime. The primewise tensor formula therefore bounds the whole fraction by
+
+$$
+\left(\frac{c_j}{r_j}\right)^{m_j}
+\leq\theta^{\lceil n/q\rceil}.
+$$
+
+If $\theta=0$, any nonempty tensor has zero capacity by the predecessor's zero-capacity case. ∎
+
+This is uniform over switching schedules, not only repeated equal factors. It assumes a **fixed finite** defective catalogue. Adding new cuts as $n$ grows, a full-capacity type, nonproduct supports or changed endpoints is outside it. It concerns unit-channel capacity, not the entire productive signed invoice: one must not turn it into a universal $\kappa$ ceiling.
+
+For the predecessor's two types $\operatorname{diag}(1,3)$ and $\operatorname{diag}(1,5)$, take $a$ copies of the first and $b$ of the second. Then
+
+$$
+\begin{aligned}
+c\!\left(\operatorname{diag}(1,3)^{\otimes a}
+\otimes\operatorname{diag}(1,5)^{\otimes b}\right)
+&=2^{\min(a,b)},\\
+r\!\left(\operatorname{diag}(1,3)^{\otimes a}
+\otimes\operatorname{diag}(1,5)^{\otimes b}\right)
+&=2^{a+b}.
+\end{aligned}
+$$
+
+Bound (2) is attained by balanced counts. The one-of-each capacity two exceeds the product of individual capacities one; its relative loss nevertheless persists under every long word from this fixed catalogue.
 
 ## 3. Causal scalar cuts with full saturated bases
 
-Here is an explicit reversible scalar realization of those pairing types.
-For odd p>=3 take one untouched free coordinate f, p coordinates x, and p-1
-coordinates z, all arbitrary dirty. Let V have columns e_j-e_(j+1), and apply
+Here is an explicit reversible scalar realization of those pairing types. For odd $p\geq3$, take one untouched free coordinate $f$, $p$ coordinates $x$, and $p-1$ coordinates $z$, all arbitrary dirty. Let $V$ have columns $e_j-e_{j+1}$, and apply
 
-```
-x <- x + V z;
-z <- z + V^T x;           (A)
-```
+$$
+A:\quad
+\begin{aligned}
+x&\leftarrow x+Vz,\\
+z&\leftarrow z+V^{\mathsf{T}}x.
+\end{aligned}
+$$
 
-The suffix B reverses those two operations. Each half consists of 4(p-1)
-signed scalar ADDs; the complete identity word costs **8(p-1)** ADDs, uses
-2p arbitrary coordinates and restores all of them. There is no clean storage,
-erasure or free basis conversion. Every intermediate event is replayed exactly.
-At the cut choose F=G=span(f,x), with the original z-support excluded. The
-row eligibility equation is v_x V=0; the column equation from B is V^T u_x=0.
-Both full D-modules have the basis `(f, sum_j x_j)`, because all adjacent
-coordinate differences must vanish. Their pairing is diag(1,p).
+The suffix $B$ reverses those two operations. Each half consists of $4(p-1)$ signed scalar ADDs; the complete identity word costs **$8(p-1)$ ADDs**, uses $2p$ arbitrary coordinates and restores all of them. There is no clean storage, erasure or free basis conversion. Every intermediate event is replayed exactly.
 
-Thus p=3 and p=5 yield explicit causal algebraic cuts with complementary prime
-losses. They are calibration circuits, not source-bound P104 helpers: the
-required strict chart nesting, native targets, tensor carriers, delivery and
-complete caller bill are still absent. In particular their coefficient-basis
-channels are not automatically independent productive Gaussian targets.
+At the cut choose $F=G=\operatorname{span}(f,x)$, with the original $z$-support excluded. The row and column eligibility equations are
 
-The verifier also tensors the actual 3-coordinate K=[5] causal fixture from
-#5615 through depth four. Full independently recomputed row/column kernels
-have the complete tensor module, pairing [5^d], and zero unit capacity.
-Scalar restoration at the base is checked; no exponentially large physical
-word is claimed or materialized.
+$$
+v_xV=0,
+\qquad V^{\mathsf{T}}u_x=0.
+$$
+
+Both full $D$-modules have basis $\bigl(f,\sum_jx_j\bigr)$, because all adjacent coordinate differences must vanish. Their pairing is
+
+$$
+K=\operatorname{diag}(1,p).
+$$
+
+Thus $p=3$ and $p=5$ yield explicit causal algebraic cuts with complementary prime losses. They are calibration circuits, not source-bound P104 helpers: the required strict chart nesting, native targets, tensor carriers, delivery and complete caller bill are still absent. In particular their coefficient-basis channels are not automatically independent productive Gaussian targets.
+
+The verifier also tensors the actual three-coordinate $K=[5]$ causal fixture from [PR #5615](https://github.com/CrocSwap/integer-mult-bounds/pull/5615) through depth four. Full independently recomputed row/column kernels have the complete tensor module, pairing $[5^d]$, and zero unit capacity. Scalar restoration at the base is checked; no exponentially large physical word is claimed or materialized.
 
 ## Evidence and reproduction
 
@@ -182,7 +193,7 @@ its tensor carrier. The scalar calibration circuits do not discharge native
 or productive-target obligations.
 
 Can a controlled nonproduct cut enlarge the eligible module enough to fund its
-extra fields and delivery? Begin with one added coordinate outside F tensor F;
+extra fields and delivery? Begin with one added coordinate outside $F\otimes F$;
 state the changed support and full signed bill before expanding a search.
 
 ## Credit
