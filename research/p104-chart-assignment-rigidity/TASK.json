@@ -80,20 +80,20 @@
   "budget_minutes": 60,
   "stop_rule": "Stop at one exhaustive pass of each class over the three words with positive controls; any positive proposal would be handed to the full PR5827 chain rather than claimed.",
   "outcome": "negative-result",
-  "evidence": "verify.py: classes A-D on PR6030/PR5907/PR5827 words, zero positive proposals; two synthetic controls on PR6030 (inserted unread rung found by A-D; worsened meeting chart found by B and C), every proposal replayed by PR5827 local.py. RESULT.json is regenerated and compared byte for byte.",
+  "evidence": "verify.py: classes A-E on PR6030/PR5907/PR5827 words, zero positive proposals; three synthetic controls on PR6030 (inserted unread rung found by A-D; worsened meeting chart found by B, C and E; rung holding two SCALEs found by A and B), every class A proposal and every positive class B proposal replayed by PR5827 local.py, class E priced by the nesting rule. RESULT.json is regenerated and compared byte for byte.",
   "author": "Josie Elliston",
   "ai_assistance": "Claude Opus 5.5 (Anthropic) via Claude Code wrote the census and package; the author supervised an unattended overnight run.",
   "open_questions": [
     {
-      "question": "Can read rerouting (a register reading a source directly instead of through an intermediate register, as in PR6030 where helper 268 reads 2*704 at frame 714 and helper 560 no longer reads 704 at frame 612) be searched systematically, and does it expose stays that classes A-D can then delete?",
+      "question": "Can read rerouting (a register reading a source directly instead of through an intermediate register, as in PR6030 where helper 268 reads 2*704 at frame 714 and helper 560 no longer reads 704 at frame 612) be searched systematically, and does it expose stays that classes A-E can then delete?",
       "why_it_matters": "All three recent complex steps were of this shape; this package shows chart edits alone are exhausted, so the scalar rewrite is the step that creates headroom.",
-      "first_step": "Using the exact row replay of PR5827 local.py, list every ADD d += q*k whose source k carries a single-source term that k receives at a frame d never visits; test whether d can take that term directly at a frame it shares with the source, then rerun classes A-D on the rewritten word.",
+      "first_step": "Using the exact row replay of PR5827 local.py, list every ADD d += q*k whose source k carries a single-source term that k receives at a frame d never visits; test whether d can take that term directly at a frame it shares with the source, then rerun classes A-E on the rewritten word.",
       "blocked_by": "Needs a rewrite engine that keeps every row identity; PR5827 local.py can serve as the exact checker."
     },
     {
-      "question": "Is the per-meeting optimality in class C also globally optimal when several adjacent meetings are re-charted together?",
-      "why_it_matters": "Class C moves one meeting at a time with its neighbours fixed; a joint move of two linked meetings could gain under a concave rank cost even when each single move does not.",
-      "first_step": "For each pair of meetings joined by one MOVE, search both frames jointly over the subspace lattice between their outer bounds.",
+      "question": "Do re-charts of three or more linked meetings, or of linked pairs over arbitrary (unlisted) subspaces, find a gain that classes C and E miss?",
+      "why_it_matters": "Class C is coordinate-wise and class E covers pairs over listed frames only; a concave rank cost can reward larger joint moves.",
+      "first_step": "Extend class E to arbitrary subspaces between the pair's outer bounds, then to chains of three meetings.",
       "blocked_by": "None; it is a bounded extension of class C."
     }
   ]

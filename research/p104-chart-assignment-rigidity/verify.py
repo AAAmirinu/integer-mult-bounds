@@ -3,9 +3,11 @@
 
 The paid rank of a MOVE in PR5827's local.py is |dim(to) - dim(from)| and a
 productive helper's rank is dim(final) - dim(initial).  Scalar events need a
-common chart but do not care which one.  This verifier searches four classes of
+common chart but do not care which one.  This verifier searches five classes of
 edits that keep the scalar program's content and change only charts, MOVEs or
-event timing, and replays every proposal with the unmodified PR5827 local.py:
+event timing.  Class A proposals and positive class B proposals are replayed by
+the unmodified PR5827 local.py; classes C, D and E are priced by the nesting
+rule and the per-LOCAL proxy (none is positive on the real words):
 
   A. rung skip by commuting retiming: delete one stay a -> b -> c of a register,
      moving each of its scalar events (commuting) to a slot where the partner is
@@ -17,10 +19,11 @@ event timing, and replays every proposal with the unmodified PR5827 local.py:
      best frame is found exactly over every dimension between the span of the
      lower neighbours and the intersection of the upper ones;
   D. split skip: delete a stay a -> b -> c and re-chart each partner
-     sub-meeting wholesale to a (events before a threshold) or c (after).
+     sub-meeting wholesale to a (events before a threshold) or c (after);
+  E. joint re-chart of two meetings linked by a MOVE, over listed frames.
 
-Two synthetic controls on the PR6030 word (an inserted unread rung and a
-worsened meeting chart) must be found.  Gains use t = 1 - 0.0031258 per LOCAL
+Three synthetic controls on the PR6030 word (an inserted unread rung, a
+worsened meeting chart, and a rung holding two SCALEs) must be found.  Gains use t = 1 - 0.0031258 per LOCAL
 call, as a ranking proxy; a positive find would still need the full chain.
 
 Prepared by Josie Elliston with Claude Opus 5.5 (Anthropic) via Claude Code.
@@ -303,9 +306,12 @@ def class_a(W):
     out = Counter()
     passes = []
 
-    def slots(t, rs, lo, hi):
+    def slots(t, rs, lo, hi, skip):
+        # Events of the deleted stay itself are relocated too, so they are not
+        # barriers here; the exact replay rejects any proposal whose relocated
+        # events end up in a non-equivalent order.
         e = P[t]
-        inter = sorted({x for r in rs for x in W.touch[r] if lo < x < hi and x != t})
+        inter = sorted({x for r in rs for x in W.touch[r] if lo < x < hi and x != t and x not in skip})
         res = []
         s, pos = t + 1, bisect.bisect_right(inter, t)
         while True:
@@ -343,14 +349,20 @@ def class_a(W):
                 out['init/clear inside'] += 1
                 continue
             plan = []
+            skip = set(ops)
             for t in ops:
                 e = P[t]
+                A, C = [], []
                 if e[0] == 'SCALE':
-                    plan.append((t, None, None))
+                    # no partner: any reachable slot where r is at a or at c
+                    for x, y in slots(t, {r}, lo, hi, skip):
+                        for u, v, out_ in ((max(x, lo + 1), min(y, j), A), (max(x, i + 1), min(y, hi), C)):
+                            if u <= v:
+                                out_ += [u, v]
+                    plan.append((t, A, C))
                     continue
                 p = e[2] if e[1] == r else e[1]
-                A, C = [], []
-                for x, y in slots(t, set(regs(e)), lo, hi):
+                for x, y in slots(t, set(regs(e)), lo, hi, skip):
                     A += partner_slots(p, a, max(x, lo + 1), min(y, j))
                     C += partner_slots(p, c, max(x, i + 1), min(y, hi))
                 plan.append((t, A, C))
@@ -358,9 +370,6 @@ def class_a(W):
             for T in range(i, j + 1):
                 choice = []
                 for t, A, C in plan:
-                    if A is None:
-                        choice.append((t, 'scale', None))
-                        continue
                     As = [s for s in A if s <= T]
                     Cs = [s for s in C if s > T]
                     if As:
@@ -379,10 +388,9 @@ def class_a(W):
             moved = {t: (f, s) for t, f, s in choice}
             ins = defaultdict(list)
             for t, f, s in choice:
-                if f != 'scale':
-                    ev = list(P[t])
-                    ev[-1] = f
-                    ins[s].append((t, ev))
+                ev = list(P[t])
+                ev[-1] = f
+                ins[s].append((t, ev))
             new = []
             for idx, e in enumerate(P):
                 new += [ev for _, ev in sorted(ins.get(idx, []))]
@@ -391,11 +399,6 @@ def class_a(W):
                 if idx in (i, j):
                     continue
                 if idx in moved:
-                    f, _ = moved[idx]
-                    if f == 'scale':
-                        ev = list(e)
-                        ev[-1] = a if idx < T else c
-                        new.append(ev)
                     continue
                 new.append(e)
             new += [ev for _, ev in sorted(ins.get(len(P), []))]
@@ -566,6 +569,81 @@ def class_d(W):
     return dict(out), positive
 
 
+# ---- class E ---------------------------------------------------------------
+def class_e(W):
+    """Joint re-chart of two meetings linked by at least one MOVE, over listed frames."""
+    st = W.stays
+    # moves as (event, from_stay, to_stay)
+    mv_from = {}
+    for sid, s in enumerate(st):
+        if s['kind'] == 'move':
+            mv_from[s['start']] = sid
+    move_pairs = {}  # event -> (from stay, to stay)
+    for sid, s in enumerate(st):
+        if s['nextkind'] == 'move':
+            move_pairs[s['end']] = (sid, mv_from[s['end']])
+    stay_moves = defaultdict(list)
+    for ev, (x, y) in move_pairs.items():
+        stay_moves[x].append(ev); stay_moves[y].append(ev)
+    def fixed(K):
+        return any((st[m]['kind'] == 'initial' or st[m]['nextkind'] == 'final') for m in W.comp[K])
+    links = set()
+    for ev, (x, y) in move_pairs.items():
+        K1, K2 = W.root[x], W.root[y]
+        if K1 != K2 and not fixed(K1) and not fixed(K2):
+            links.add((K1, K2))
+    def frame_of(sid, assign):
+        return assign.get(W.root[sid], st[sid]['frame'])
+    def cost_and_ok(Ks, assign):
+        evs = set(ev for K in Ks for m in W.comp[K] for ev in stay_moves[m])
+        tot = 0.0
+        for ev in evs:
+            x, y = move_pairs[ev]
+            a, b = frame_of(x, assign), frame_of(y, assign)
+            priv = st[x]['reg'] >= W.public
+            if a == b:
+                continue
+            if W.M[a] == W.M[b]:
+                return None
+            if not (W.sub(b, a) if priv else W.sub(a, b)):
+                return None
+            tot += h(W.dim[b] - W.dim[a])
+        return tot
+    def single_cands(K, other):
+        # frames legal for K against moves not touching `other`
+        out = []
+        for f in range(len(W.F)):
+            ok = True
+            for m in W.comp[K]:
+                for ev in stay_moves[m]:
+                    x, y = move_pairs[ev]
+                    if W.root[x] == other or W.root[y] == other:
+                        continue
+                    a = f if W.root[x] == K else st[x]['frame']
+                    b = f if W.root[y] == K else st[y]['frame']
+                    priv = st[x]['reg'] >= W.public
+                    if a == b: continue
+                    if W.M[a] == W.M[b] or not (W.sub(b, a) if priv else W.sub(a, b)):
+                        ok = False; break
+                if not ok: break
+            if ok: out.append(f)
+        return out
+    n_pairs = n_legal = 0; positive = []
+    for K1, K2 in sorted(links):
+        n_pairs += 1
+        base = cost_and_ok((K1, K2), {})
+        c1, c2 = single_cands(K1, K2), single_cands(K2, K1)
+        for f1 in c1:
+            for f2 in c2:
+                if f1 == st[W.comp[K1][0]]['frame'] and f2 == st[W.comp[K2][0]]['frame']:
+                    continue
+                c = cost_and_ok((K1, K2), {K1: f1, K2: f2})
+                if c is None: continue
+                n_legal += 1
+                if base - c > EPS:
+                    positive.append((base - c, K1, K2, f1, f2))
+    return {'linked_free_pairs': n_pairs, 'legal_joint_recharts': n_legal, 'positive': len(positive)}, positive
+
 def analyse(w):
     W = Word(w)
     a_stats, a_pass = class_a(W)
@@ -574,6 +652,7 @@ def analyse(w):
     c_free, c_slack, c_pos = class_c(W, False)
     ce_free, ce_slack, ce_pos = class_c(W, True)
     d_stats, d_pos = class_d(W)
+    e_stats, e_pos = class_e(W)
     return {
         'events': len(W.P), 'moves': sum(len(v) for v in W.moves.values()),
         'stays': len(W.stays), 'meetings': len(W.comp),
@@ -584,7 +663,8 @@ def analyse(w):
         'C_any_subspace': {'free_meetings': c_free, 'with_dimension_slack': c_slack, 'positive': len(c_pos)},
         'C_with_helper_endpoints': {'free_meetings': ce_free, 'with_dimension_slack': ce_slack, 'positive': len(ce_pos)},
         'D_split_skip': {'counts': d_stats, 'positive': len(d_pos)},
-    }, (a_pass, b_pos, c_pos, d_pos)
+        'E_joint_pair_rechart': e_stats,
+    }, (a_pass, b_pos, c_pos, d_pos, e_pos)
 
 
 def controls(w):
@@ -601,6 +681,11 @@ def controls(w):
     w1 = copy.deepcopy(w)
     w1['program'] = P[:idx] + [['MOVE', e[1], a, bs[0], False], ['MOVE', e[1], bs[0], c, False]] + P[idx + 1:]
     assert L.replay(w1)
+    # control 3: the same rung, now holding two SCALE -1 events that class A must relocate in order.
+    w3 = copy.deepcopy(w)
+    w3['program'] = P[:idx] + [['MOVE', e[1], a, bs[0], False], ['SCALE', e[1], '-1', bs[0]],
+                               ['SCALE', e[1], '-1', bs[0]], ['MOVE', e[1], bs[0], c, False]] + P[idx + 1:]
+    assert L.replay(w3)
     # control 2: re-chart the first fully-moving meeting to a smaller listed frame that strictly worsens it.
     w2 = None
     for root, members in W.comp.items():
@@ -622,7 +707,11 @@ def controls(w):
     assert L.replay(w2)
     r1, p1 = analyse(w1)
     r2, p2 = analyse(w2)
+    r3, p3 = analyse(w3)
     return {
+        'occupied_rung': {'found_by': {'A': r3['A_rung_skip_retiming']['positive'],
+                                       'B': r3['B_existing_frame_rechart']['positive']},
+                          'best_gain': round(max(x['gain'] for x in p3[0]), 12)},
         'inserted_rung': {'event': idx, 'register': e[1], 'frames': [a, bs[0], c],
                           'found_by': {'A': r1['A_rung_skip_retiming']['positive'],
                                        'B': r1['B_existing_frame_rechart']['positive'],
@@ -631,7 +720,8 @@ def controls(w):
                           'best_gain': round(max(x['gain'] for x in p1[1]), 12)},
         'worsened_meeting': {**ctrl2, 'worsening': round(ctrl2['worsening'], 12),
                              'found_by': {'B': r2['B_existing_frame_rechart']['positive'],
-                                          'C': r2['C_any_subspace']['positive']},
+                                          'C': r2['C_any_subspace']['positive'],
+                                          'E': r2['E_joint_pair_rechart']['positive']},
                              'best_gain': round(max(x['gain'] for x in p2[1]), 12)},
     }
 
@@ -646,11 +736,12 @@ def main():
     result['controls_on_PR6030'] = controls(w)
     for name, r in result['words'].items():
         for key in ('A_rung_skip_retiming', 'B_existing_frame_rechart', 'B_with_helper_endpoints',
-                    'C_any_subspace', 'C_with_helper_endpoints', 'D_split_skip'):
+                    'C_any_subspace', 'C_with_helper_endpoints', 'D_split_skip', 'E_joint_pair_rechart'):
             assert r[key]['positive'] == 0, (name, key)
     ctl = result['controls_on_PR6030']
     assert all(v >= 1 for v in ctl['inserted_rung']['found_by'].values())
     assert all(v >= 1 for v in ctl['worsened_meeting']['found_by'].values())
+    assert all(v >= 1 for v in ctl['occupied_rung']['found_by'].values())
     text = json.dumps(result, indent=1, sort_keys=True) + '\n'
     out = HERE / 'RESULT.json'
     if '--write' in sys.argv:
