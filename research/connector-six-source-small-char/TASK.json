@@ -42,7 +42,7 @@
     ]
   },
   "scope_status": "changed",
-  "actual_scope": "Existence of six-source depth-two blocks of the unchanged unsigned dirty connector (PR4231/PR4248 interface) in characteristics c = 5, 6, 7. Result: none at c = 5 (local SAT, three solvers; already UNSAT on the 21 masks of weights 2 and 6); c = 6 and c = 7 undecided in the session.",
+  "actual_scope": "Existence of six-source depth-two blocks of the unchanged unsigned dirty connector (PR4231/PR4248 interface) in characteristics c = 5, 6, 7. Result: none at c = 5 (local SAT, three solvers; already UNSAT on the 16 masks of weights 2 and 6); c = 6 and c = 7 undecided in the session.",
   "scope_change_reason": "The alphabet stays fixed. This follows the released open question 1 of PR6061 and the open item of PR6057/#6058 (six-source depth-two blocks at c = 5, 6, 7), which bounds what PR4248-style block concatenation can do at small characteristic.",
   "bottleneck_link": "Side result on recursive-interface capacity at small characteristic. It changes no supplier, consumer or kappa.",
   "budget_minutes": 60,

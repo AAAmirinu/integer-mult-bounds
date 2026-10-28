@@ -6,7 +6,7 @@ solver evidence only; no new κ.**
 In the interface of [PR4231/PR4248](../connector-depth-blocks/README.md), no
 word on six sources that calls each source exactly five times has depth two
 in characteristic c = 5. Three SAT solvers report UNSAT on the same exact
-encoding, and the result already holds for the 21 masks of weights 2 and 6.
+encoding, and the result already holds for the 16 masks of weights 2 and 6.
 Six-source depth-two blocks exist for every c ≥ 8
 ([PR6057](https://github.com/CrocSwap/integer-mult-bounds/pull/6057),
 [PR6061](https://github.com/CrocSwap/integer-mult-bounds/pull/6061)), and
@@ -45,7 +45,7 @@ No operation is added and nothing about the alphabet changes.
 | 5 | 4 | UNSAT | control; matches PR4271's c = 4 obstruction (Nick Petalas) (2.8 s) |
 | 5 | 5 | SAT | control; word checked by `verify.py` |
 | **6** | **5** | **UNSAT** | CaDiCaL 1.9.5 153 s, CaDiCaL 1.5.3 197 s, Glucose 4 237 s |
-| 6 | 5, weights {2,6} only | UNSAT | CaDiCaL 1.9.5 160 s (21 masks suffice) |
+| 6 | 5, weights {2,6} only | UNSAT | CaDiCaL 1.9.5 160 s (16 masks suffice) |
 | 6 | 5, weights {1,2,3} only | UNSAT | CaDiCaL 1.9.5 106 s |
 | 6 | 5, weights {1,2,6} only | UNSAT | CaDiCaL 1.9.5 130 s |
 | 6 | 5, weights {1,2}, {1,6}, {1,5,6} | SAT | each found in < 4 s; one word is a `verify.py` control |
