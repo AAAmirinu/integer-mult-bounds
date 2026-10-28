@@ -28,7 +28,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 300,
-      "checks": "Same as the normal run under -O (no assert-dependent checks are skipped: the verifier raises SystemExit on failure paths that matter and asserts only on controls)."
+      "checks": "Same checks under python -O. Every check raises SystemExit explicitly (no assert statements), so -O skips nothing."
     }
   ]
 }
