@@ -111531,7 +111531,7 @@
       "reviewed_head": "119de1d7fca5124fa8d01ea49d258560aca618e6",
       "current_head": "119de1d7fca5124fa8d01ea49d258560aca618e6",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/connector-five-halves-growth"
       ],
@@ -111541,12 +111541,16 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct27g-20261027.json"
       ],
-      "closure": null
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6035",
+        "merge_commit": "943b98779433f669d99fb7a8648ccc0d190b8f0c"
+      }
     },
     {
       "number": 6036,
@@ -111566,7 +111570,7 @@
       "reviewed_head": "1cf36dd5f4d484a6c764f2b73f4f1e21c3eb3108",
       "current_head": "1cf36dd5f4d484a6c764f2b73f4f1e21c3eb3108",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "MERGED",
       "integration_location": [
         "research/partitioned-walk-pair-sum-floor"
       ],
@@ -111576,12 +111580,16 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct27g-20261027.json"
       ],
-      "closure": null
+      "closure": {
+        "kind": "merged_for_archive_only",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6036",
+        "merge_commit": "943b98779433f669d99fb7a8648ccc0d190b8f0c"
+      }
     }
   ]
 }
