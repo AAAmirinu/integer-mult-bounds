@@ -74,8 +74,8 @@ remark only. Neither result is used here.
   on odd residues.
 
 Engine A uses the period lemma. Its proof is short and is given above and in
-#6129. The verifier only samples it, on 400 random literal J=3 networks. So for
-J>=3, engine A is a complete check *given* that lemma, not a proof-free
+#6129. The verifier only samples it, on 400 random literal J=3 networks. So
+engine A is a complete check *given* that lemma, not a proof-free
 exhaustion. Engine B is literal for J=3 on a box only. All-J correctness rests
 on the written proof, which I found correct.
 
