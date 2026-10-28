@@ -34,7 +34,9 @@ python3 -B scripts/research_package.py --package research/diagonal-pair-five-cal
 Expected marker: `PASS_DIAGONAL_PAIR_FIVE_CALL_COLLISIONS`, with zero survivors
 at every length. Registered controls include the six-call exact endpoint,
 a reopened four-call support-only instance when cancellation is removed,
-and a reopened two-call instance when short targets are allowed.
+and a reopened two-call instance when short targets are allowed. Independent
+controls authenticate every generated context rule and require the collision
+solver itself to accept the known four- and six-call constructions.
 
 The package has no runtime source dependencies. Exact predecessor proof and
 README pins are provenance in SOURCES.json; their bytes are not imported or

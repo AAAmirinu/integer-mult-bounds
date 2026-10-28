@@ -141,6 +141,26 @@ def main():
              for u in (1, 2, 3) for v in (1, 2, 3) if (u & v).bit_count() % 2}
     require(set(PROJECTORS) == outer, 'outer-product inventory mismatch')
     require(multiply(3, 5) != multiply(5, 3), 'matrix order control')
+    # Independently authenticate every generated rule as a single context law.
+    for k in range(7):
+        words = [tuple(i for i in range(k) if mask >> i & 1) for mask in range(1 << k)]
+        for a, b, c, d in cancellation_rules(k):
+            valid = False
+            for u, v, s, t in ((words[a], words[b], words[c], words[d]),
+                               (words[c], words[d], words[a], words[b])):
+                for split in range(len(u) + 1):
+                    context = u[:split]
+                    valid |= u == context + s and v == context + t
+                    context = u[split:]
+                    valid |= u == s + context and v == t + context
+            require(valid, 'invalid cancellation rule')
+    require(CollisionProblem(6).solve((1, 1, 1, 8, 8, 8)) is not None,
+            'solver rejected six-call true endpoint')
+    require(CollisionProblem(4, minimum=2).solve((1, 1, 8, 8)) is not None,
+            'solver rejected preceding four-call true endpoint')
+    require({m: v for m, v in expand((1, 5, 5, 3, 10)).items() if v}
+            == {8: 12, 14: 12, 15: 3, 22: 8, 23: 2},
+            'written collision example coefficients')
     require(exact_endpoint('xyxyxy', (1, 1, 1, 8, 8, 8)) == {'xyx': 1, 'yxy': 8},
             'six-call positive endpoint')
     relaxed = CollisionProblem(4, cancellation=False)

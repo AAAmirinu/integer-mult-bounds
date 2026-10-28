@@ -119,7 +119,10 @@ Removing cancellation reopens the four-call tuple (1,5,1,10), demonstrating
 that support and coefficient parity alone do not prove the result. Relaxing
 the target length hypothesis reopens the two-call tuple (E00,E11). The
 explicit five-call example above is checked by the same refutation engine.
-The verifier uses explicit checks, which remain active under Python -O.
+The verifier independently authenticates every generated cancellation rule as a
+single common-context law, checks the displayed coefficient expansion, and
+accepts the actual four- and six-call constructions in the collision solver.
+It uses explicit checks, which remain active under Python -O.
 
 The proof still depends on the correctness and successful completion of the
 small Python certificate. Independent human or proof-assistant review has
