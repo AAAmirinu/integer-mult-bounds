@@ -4864,3 +4864,22 @@ Source archives retain attribution; mathematical review remains open.
 - **CubeJerry (@CubeJerry)** — [#6148](https://github.com/CrocSwap/integer-mult-bounds/pull/6148): Exclude PR6111's eight-call half-frame candidate (No new κ) (source archive).
 - **Nick Petalas (@petalas)** — [#6149](https://github.com/CrocSwap/integer-mult-bounds/pull/6149): Prove every continuous P112 Walsh basis gauge costs 82 (no new κ) (source archive).
 - **Nick Petalas (@petalas)** — [#6150](https://github.com/CrocSwap/integer-mult-bounds/pull/6150): Prove sharp affine native tag membership at 46 queries (no new κ) (source archive).
+
+## Queue intake, 28 October 2026 (chunk B)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **Nick Petalas (@petalas)** — [#6151](https://github.com/CrocSwap/integer-mult-bounds/pull/6151): Reduce aggregate padding from seventeen tapes to twelve (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6152](https://github.com/CrocSwap/integer-mult-bounds/pull/6152): Bound complete RootPlan retained backing across call histories (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6153](https://github.com/CrocSwap/integer-mult-bounds/pull/6153): Classify every budget attaining the hidden-window bound (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6154](https://github.com/CrocSwap/integer-mult-bounds/pull/6154): Coalesce a P104 owned copy: one fewer field and twelve fewer scalar units (no κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6155](https://github.com/CrocSwap/integer-mult-bounds/pull/6155): Speed up publication byte/history checks by 12% (no new κ) (reviewed tooling).
+- **Nick Petalas (@petalas)** — [#6156](https://github.com/CrocSwap/integer-mult-bounds/pull/6156): Reduce research-source validation peak allocation by 42% (no new κ) (reviewed tooling).
+- **Nick Petalas (@petalas)** — [#6157](https://github.com/CrocSwap/integer-mult-bounds/pull/6157): Prove exact star budgets for prescribed odd-unicyclic targets (no κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6158](https://github.com/CrocSwap/integer-mult-bounds/pull/6158): Prove one lower-only phase cannot change an upper-shear endpoint (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6159](https://github.com/CrocSwap/integer-mult-bounds/pull/6159): Prove bare Pascal lane iteration fails by depth 111 (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6160](https://github.com/CrocSwap/integer-mult-bounds/pull/6160): Prove sharp sqrt(|G|) prefix-encoder metric loss (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6161](https://github.com/CrocSwap/integer-mult-bounds/pull/6161): perf(research): cut overlap query wall time by 48.7% (reviewed tooling).
+- **Nick Petalas (@petalas)** — [#6162](https://github.com/CrocSwap/integer-mult-bounds/pull/6162): Reuse publication metadata: 15.7% less complete-check time (no κ) (reviewed tooling).
+- **Nick Petalas (@petalas)** — [#6163](https://github.com/CrocSwap/integer-mult-bounds/pull/6163): Prove a receiver-only obstruction to a root-2 stage deletion (no κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6164](https://github.com/CrocSwap/integer-mult-bounds/pull/6164): Reduce complete publication preflight time by 34.2% (no new κ) (source archive).

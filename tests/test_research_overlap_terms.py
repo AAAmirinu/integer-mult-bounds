@@ -1,6 +1,8 @@
 """Task queries must derive package names, not generic nested directories."""
+import importlib.util
 import json
 from pathlib import Path
+import re
 import subprocess
 import sys
 import tempfile
@@ -17,6 +19,29 @@ def pull(number, title, body=""):
 
 
 class OverlapTaskTermsTests(unittest.TestCase):
+    def test_reference_prefilter_keeps_the_actual_regex_offset(self):
+        spec = importlib.util.spec_from_file_location("overlap_prefilter_test", ROOT / "scripts/find_overlap.py")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        expression = re.compile(r"(?<![\w.])(?:pr(?:\s*#)?\s*)?2977(?!\w|\.\d)")
+
+        class CountedPattern:
+            calls = 0
+
+            def search(self, text):
+                self.calls += 1
+                return expression.search(text)
+
+        pattern = CountedPattern()
+        self.assertEqual(module.match_position("No predecessor here", "2977", pattern), -1)
+        self.assertEqual(pattern.calls, 0)
+        for text in ("PR #2977", "a2977b then PR2977", "2977.5", "é2977", "İ PR2977"):
+            match = expression.search(text)
+            expected = match.start() if match else -1
+            self.assertEqual(module.match_position(text, "2977", pattern), expected)
+        self.assertEqual(pattern.calls, 5)
+        self.assertEqual(module.match_position("a2977b", "2977", None), 1)
+
     def report(self, card, records, *args):
         """Exercise the public CLI with an isolated, immutable offline cache."""
         with tempfile.TemporaryDirectory() as tmp:

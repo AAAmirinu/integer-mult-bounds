@@ -421,6 +421,10 @@ def local_coverage(root, records):
 def match_position(text, term, pattern):
     if pattern is None:
         return text.find(term)
+    # Numeric-reference patterns contain the complete literal term. Avoid a
+    # boundary-aware regex scan when that mandatory substring is absent.
+    if term not in text:
+        return -1
     match = pattern.search(text)
     return match.start() if match else -1
 
