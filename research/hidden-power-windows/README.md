@@ -19,7 +19,7 @@ number of endpoint derivatives, with a sharp larger support bound.
 
 Let S be any finite subset of (0,1). Let J be any nonempty open subinterval
 of (0,1) avoiding S, and let h>=1 be an integer. There are two nonnegative
-integer paid profiles A,B, supported on exactly the ranks
+integer paid profiles A,B, whose combined support consists of exactly the ranks
 
 ```
 1, 2, 4, ..., 2^(2h+2),
