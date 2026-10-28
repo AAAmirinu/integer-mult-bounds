@@ -115,6 +115,9 @@ def matrix_control(w,reads,k,c):
     vec=lambda:tuple(rng.randrange(c) for _ in range(2))
     bs=[mat() for _ in range(k)];xs=[vec() for _ in range(k)]
     aa={m:mat() for m in reads};ys={m:vec() for m in reads};initial=ys.copy()
+    need(any(mv(a,mv(b,e,c),c)!=mv(b,mv(a,e,c),c)
+             for a in aa.values() for b in bs for e in ((1,0),(0,1))),
+         'matrix fixture really has noncommuting maps')
     z=vec();dirty=z;at=[[] for _ in range(len(w)+1)]
     for m,ts in reads.items():
         for t in ts:at[t].append(m)
