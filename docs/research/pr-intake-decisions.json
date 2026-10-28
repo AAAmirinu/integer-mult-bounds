@@ -111343,9 +111343,11 @@
       "current_head": "772dd10a5859a1d15f4851feb371519789213ad8",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "Exact-head hosted run 40597285594 fails in verify.py at Entire regenerated WORD.json.gz, byte for byte. Replace generated-container equality with complete decompressed-payload/canonical-word comparison while retaining immutable source hash checks; add header-variation and changed-payload controls and pass the registered replay. This is a portability/reproducibility defect, not a refutation of the claimed kappa.",
-      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "integration_location": [
+        "research/p104-helper470-twin-rung-removal"
+      ],
+      "unresolved_question": "Portability repair and full primary execution are covered by the repair review. Independent application review of the changed word, physical caller and assembly remains required for selected-frontier promotion; all five framework assumptions remain.",
+      "scope": "Original PR6030 source retained with narrowly scoped maintainer gzip-payload repair. Complete author primary verifier replayed by maintainer; not an independently derived scientific application review or promotion.",
       "review_completion": {
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
@@ -111353,7 +111355,8 @@
         "published": false
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct27e-20261027.json"
+        "docs/research/pr-intake-evidence/queue-oct27e-20261027.json",
+        "docs/research/pr-intake-evidence/pr6030-repair/REVIEW.md"
       ],
       "closure": null
     },

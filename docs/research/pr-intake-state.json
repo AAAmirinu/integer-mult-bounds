@@ -38380,14 +38380,15 @@
     {
       "number": 6030,
       "head": "772dd10a5859a1d15f4851feb371519789213ad8",
-      "status": "waiting_revision",
-      "reason": "Exact-head hosted run 40597285594 fails in verify.py at Entire regenerated WORD.json.gz, byte for byte. Replace generated-container equality with complete decompressed-payload/canonical-word comparison while retaining immutable source hash checks; add header-variation and changed-payload controls and pass the registered replay. This is a portability/reproducibility defect, not a refutation of the claimed kappa.",
+      "status": "ready_to_integrate",
+      "reason": "Portability repaired; full local and exact-source hosted Linux primary replays pass. Source ready for archival integration; independent scientific application review remains required before selected-frontier promotion.",
       "evidence": [
         "docs/research/pr-intake-evidence/queue-oct27e-20261027.json",
-        "docs/research/pr-intake-evidence/pr6030-portability-hold.json"
+        "docs/research/pr-intake-evidence/pr6030-portability-hold.json",
+        "docs/research/pr-intake-evidence/pr6030-repair/REVIEW.md"
       ],
       "policy_version": 1,
-      "baseline": "19fdb086ea96af9a9f87936a2b888e10af4ed810",
+      "baseline": "746ee5e1160ae64a15a81b2a432d5566142db850",
       "watch_paths": {},
       "watch_prs": {}
     },

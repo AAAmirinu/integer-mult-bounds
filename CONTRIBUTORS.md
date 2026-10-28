@@ -4752,3 +4752,7 @@ Source archives retain attribution; mathematical review remains open.
 
 - **Nick Petalas (@petalas)** — [#6035](https://github.com/CrocSwap/integer-mult-bounds/pull/6035): Prove N(c) ≥ ⌊5c/2⌋ for the unsigned connector via five-source depth-two blocks in every c ≥ 5 (no new κ) (source archive).
 - **Nick Petalas (@petalas)** — [#6036](https://github.com/CrocSwap/integer-mult-bounds/pull/6036): Prove a pair-sum readout floor for partitioned walk duals at every Q (no new κ) (source archive).
+
+## PR6030 portability repair and primary replay
+
+**DreamingOfClouds** — [#6030](https://github.com/CrocSwap/integer-mult-bounds/pull/6030), helper 470 twin-rung removal, conditional κ = 0.003125804, building on their #5907 and **Ali Romman**'s #5827 verification lineage. **Matarener**'s #5960 documented the predecessor gzip portability issue. **Douglas Colkitt with OpenAI Codex** supplied the payload-comparison repair and corruption/portability controls. [Replay and scope](docs/research/pr-intake-evidence/pr6030-repair/REVIEW.md) distinguish complete primary execution from the independent application review still needed for promotion. All predecessor notices remain retained.
