@@ -1,0 +1,39 @@
+{
+  "block_fiber_sizes": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "block_program_sha256": [
+    "5988600462f2d31f19ee57ba6bb211a1e09d4487f8f072304602bf583aae6085",
+    "5988600462f2d31f19ee57ba6bb211a1e09d4487f8f072304602bf583aae6085",
+    "5988600462f2d31f19ee57ba6bb211a1e09d4487f8f072304602bf583aae6085",
+    "310fd43088b4f8d64285d0df3e0bee2a2eeafe4fb1aab6e06c4a5590de1a3c28",
+    "310fd43088b4f8d64285d0df3e0bee2a2eeafe4fb1aab6e06c4a5590de1a3c28",
+    "310fd43088b4f8d64285d0df3e0bee2a2eeafe4fb1aab6e06c4a5590de1a3c28",
+    "310fd43088b4f8d64285d0df3e0bee2a2eeafe4fb1aab6e06c4a5590de1a3c28",
+    "310fd43088b4f8d64285d0df3e0bee2a2eeafe4fb1aab6e06c4a5590de1a3c28"
+  ],
+  "conservative_signed_guard_bits": 4571,
+  "events": 9589,
+  "fixture_peak_magnitude_bits": 10,
+  "full_fiber_power_lower": 76,
+  "full_word_lifts_checked": 86,
+  "half_lemma_checks": 516,
+  "independent_blocks": 8,
+  "lift_bound_magnitude_bits": 4563,
+  "maximum_possible_bit_saving": 8,
+  "prefix_fiber_power": 60,
+  "public_integer_roles": 748,
+  "scope": "Worst-case retained information for the exact PR6066 forward map and unchanged tape; no matching upper bound or new kappa.",
+  "source_doubles": 32,
+  "source_halves": 84,
+  "source_log_bits": 84,
+  "status": "PASS_STOCHASTIC_RESTORATION_MEMORY",
+  "surjective_prefix_events": 8411
+}
