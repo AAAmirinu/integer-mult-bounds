@@ -29,7 +29,7 @@
         "{package}/independent_source.py"
       ],
       "timeout_seconds": 60,
-      "checks": "Ten independent ordered-word fixtures agree with PR4436 and PR4467 leaf histograms; wrong final truncation rejected."
+      "checks": "Ten independent ordered-word fixtures compare complete #4436 and #4467 leaf histograms after authenticating every input; terminal-cut fields describe fixture sensitivity."
     },
     {
       "argv": [
@@ -38,7 +38,16 @@
         "{package}/test_controls.py"
       ],
       "timeout_seconds": 120,
-      "checks": "Reject changed source bytes, altered histogram bracket, and corrupted expected receipt, including under optimized Python."
+      "checks": "Reject altered bytes in both standalone entry points; re-pinned empty/truncated source branches rejected semantically in normal and optimized modes; fixed-bracket and receipt regressions."
+    },
+    {
+      "argv": [
+        "{python}",
+        "-B",
+        "{package}/test_enclosures.py"
+      ],
+      "timeout_seconds": 120,
+      "checks": "Independent exact rational bounds at every executed log/exp argument; reject zero logarithm/exponential tails and invalid exponential remainder majorant."
     }
   ]
 }

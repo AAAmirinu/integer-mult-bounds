@@ -27,7 +27,14 @@ Under `p_t(r)=P_r r^t/Z(t)`, take independent `X_i=log R_i` and write `S_G=Σ_{i
 
 The condition has positive probability because `P_1>0`.
 
-**Actual leaf consequence.** For every integer rank `N≥121`, set `G=floor(log_5(N/121))` and `δ=log(N/121)−G log5∈[0,a)`. The potential-weighted mean leaf log-depth in the pinned flow satisfies
+**Actual leaf consequence.** For every integer rank `N≥121`, set `G=floor(log_5(N/121))` and `δ=log(N/121)−G log5∈[0,a)`. Write `L_N(ℓ)=X_N(ℓ)−BX_N(ℓ)` for the pinned flow's leaf-exit multiplicity at rank `ℓ`, subtracting its boundary-exit histogram from its complete exit histogram and interpreting missing entries as zero. Define its potential-weighted mean leaf log-depth by
+
+```
+D_leaf(N) = [Σ_ℓ L_N(ℓ) ℓ^t log(N/ℓ)] / [Σ_ℓ L_N(ℓ) ℓ^t]
+          = [Σ_ρ Σ_r F[G][ρ] P_r (rρ)^t log(N/(rρ))] / [Σ_ρ Σ_r F[G][ρ] P_r (rρ)^t].
+```
+
+Here `F[G]` is the prefix-count table described in §2, and both sums over `r` use the entire paid inventory. The denominators are positive because the all-ones prefix and terminal rank are present. Then
 
 `D_leaf(N) → log121 − μ(t) + 1/λ ∈ [136.51870330,136.51870331]`
 
@@ -51,9 +58,20 @@ We use the nonlattice interval local-limit theorem in the following standard for
 
 `sup_x | sqrt(G) P(Σ V_i∈[x,x+h)) − h/(σ sqrt(2π)) exp(−x²/(2Gσ²)) | → 0`.
 
-Reference: C. Stone, “A local limit theorem for nonlattice multi-dimensional distribution functions,” *The Annals of Mathematical Statistics* 36(2) (1965), 546–551, [DOI 10.1214/aoms/1177700165](https://doi.org/10.1214/aoms/1177700165), one-dimensional specialization. This theorem is an external mathematical dependency; it is stated here rather than silently replacing a discrete distribution by a density. Its asymptotic form supplies no explicit error constant or onset G.
+Reference: C. Stone, “A local limit theorem for nonlattice multi-dimensional distribution functions,” *The Annals of Mathematical Statistics* 36(2) (1965), 546–551, [DOI 10.1214/aoms/1177700165](https://doi.org/10.1214/aoms/1177700165), **Corollary 1, equation (7), derived from the Theorem, equation (5), with footnote 2's uniformity convention**. The displayed form is a specialization, not a verbatim quotation. Use `d=1`, `A_G=0`, `B_G=√G` in Stone's normalization (his `B_G` is unrelated to our barrier `Ga+δ`), and normal limiting density `φ_σ(u)=exp(−u²/(2σ²))/(σ√(2π))`. For `T_G=Σ V_i` and any fixed width `H>0`, substitute `x=X/√G` and `h=H/√G` in his half-open boxes. This gives, uniformly over `X∈R`,
 
-Apply it to the tilted law `q(r)=P_r r^α/Z(α)`, with `V=log r−a`. Its mean is zero by definition, and its variance is positive and finite because the support is finite and contains distinct points of positive mass. The support is nonlattice: it contains `0,log2,log3` before centering. If all belonged to a translate of `hZ`, their differences would imply `log2/log3` rational. An integer relation `u log2=v log3` with nonzero integers would imply `2^u=3^v`, contradicting unique factorization. Centering and tilting do not alter this property.
+```
+P(T_G∈[X,X+H)) = ∫_[X/√G,(X+H)/√G) φ_σ(u) du + o(G^(−1/2))
+               = (H/√G) φ_σ(X/√G) + o(G^(−1/2)).
+```
+
+The second equality uses uniform continuity of the Gaussian density. Multiplying by `√G` gives the required supremum statement; footnote 2 makes the remainder uniform in the unlisted variable `x`, hence also in `X`. The paper's Corollary 4, equation (12), is only a fixed-`x` statement and is not the input used for our uniform concentration bound. Stone's theorem is an external mathematical dependency; no discrete law is replaced by a density without this interval argument.
+
+Apply it to the tilted law `q(r)=P_r r^α/Z(α)`, with `V=log r−a`. Its mean is zero by definition, and its variance is positive and finite because the support is finite and contains distinct points of positive mass. The ordinary central limit theorem supplies Stone's normal domain-of-attraction hypothesis with this normalization. The support is nonlattice: it contains `0,log2,log3` before centering. If all belonged to a translate of `hZ`, their differences would imply `log2/log3` rational. An integer relation `u log2=v log3` with nonzero integers would imply `2^u=3^v`, contradicting unique factorization. Centering and tilting do not alter this property.
+
+This support argument verifies Stone's characteristic-function condition (2). Indeed, for `θ≠0`, equality `|E exp(iθV)|=1` holds exactly when the unit complex variable `exp(iθV)` is almost surely constant, equivalently when the support lies in `c/θ+(2π/θ)Z` for some real `c`. Thus nonlattice support gives strict inequality for every nonzero `θ`.
+
+The finite support does **not** satisfy Stone's stronger condition (3): simultaneous approximation of its finitely many phases gives arbitrarily large `|θ|` for which the characteristic-function modulus approaches one. Stone's stronger rate conclusion requiring that condition is therefore inapplicable here. The asymptotic theorem used in this proof supplies no explicit error constant or onset `G`; this does not rule out quantitative bounds from other methods.
 
 Two consequences are used:
 

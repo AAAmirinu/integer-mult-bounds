@@ -152,7 +152,7 @@ def finite_law(P, W, M):
     # Independent ordered-word enumeration vs the predecessor's whole-flow X-BX.
     flow = runpy.run_path(str(ROOT / 'research/direct-flow-leaf-walk/diagnostics/overlap_flow.py'))['flow']
     count = 0
-    extra_truncation_detected = False
+    terminal_cut_distinguishing_fixtures = 0
     for G in range(4):
         for N in (M * 5 ** G, M * 5 ** G + M * 5 ** G // 2):
             got = flow(N, W, P)
@@ -171,14 +171,14 @@ def finite_law(P, W, M):
                         wrong[e] = wrong.get(e, 0) + multiplicity * pr
             actual = {e: c - got['BX'].get(e, 0) for e, c in got['X'].items() if c != got['BX'].get(e, 0)}
             need(actual == leaves, 'ordered words disagree with actual leaf exits')
-            # At t=1, the weighted final-r distribution factorizes exactly.
-            leaf_mass = sum(e * c for e, c in leaves.items())
-            need(leaf_mass == sum(rho * c for rho, c in prefixes.items()) * sum(r * c for r, c in P.items()), 'independent terminal rank')
-            extra_truncation_detected |= wrong != actual
+            # This checks fixture sensitivity, not an additional source identity.
+            # Source coverage is the complete actual==leaves comparison above.
+            terminal_cut_distinguishing_fixtures += wrong != leaves
             count += 1
-    need(extra_truncation_detected, 'extra-terminal-truncation control did not discriminate')
+    need(terminal_cut_distinguishing_fixtures > 0, 'no fixture distinguishes terminal truncation')
     return {'whole_flow_fixtures': count, 'ordered_word_max_depth': 3,
-            'extra_terminal_truncation': 'rejected'}
+            'terminal_cut_distinguishing_fixtures': terminal_cut_distinguishing_fixtures,
+            'source_check': 'complete actual X-BX histogram equals ordered-word enumeration'}
 
 
 def controls():

@@ -1,6 +1,6 @@
-# Internal review and source independence
+# Review history and source independence
 
-Two separate OpenAI Codex agents examined pinned source inputs before seeing the lead's proof. These are internal AI checks, not independent human review, proof-kernel verification, or maintainer acceptance.
+The sections below through “Initial integration review” record the initial `ff365dba6911ce615bec76e8d1f149faf1fe16ca` snapshot; their hashes and logs are historical after the later review response. Two separate OpenAI Codex agents examined pinned source inputs before seeing the lead's proof. These are internal AI checks, not independent human review, proof-kernel verification, or maintainer acceptance.
 
 ## Independent mathematical derivation
 
@@ -32,7 +32,7 @@ The second reviewer then inspected the frozen proof and verifier (verifier SHA25
 
 No blocking issue was found. The reviewer recommended strengthening monotonicity from the tiny root enclosure to the predecessor's full `[0.99,1]` bisection interval. The final checker implements that stronger bound, exceeding 211661, and includes both +1 histogram controls. The lead reran all affected evidence after this change; the original review hashes do not pretend to identify the final bytes.
 
-## Final integration review
+## Initial integration review
 
 The skeptical reviewer read the integrated stronger derivative bound, both +1 histogram controls, portable two-source fixture and package claims. No blocker remained. Final reviewed proof SHA256 `b6edd825bc5a3a48fc2860533040faa111c7f239f8724bb3b50cc8a3bdfdc6e7`; verifier SHA256 `9a6ed8de94eab4a643685eba3697d34503bae9dd4c6097b6b8a6f230c29dd3b8`. The reviewer checked that the last proof change was only PR-reference spelling. The confirmed canonical claim link was added to README. Registered evidence and publication checks are reported separately.
 
@@ -41,3 +41,13 @@ The skeptical reviewer read the integrated stronger derivative bound, both +1 hi
 Orientation coverage was complete for 375 open PRs, 5,222 closed/merged PRs, 5,771 Discussion records and 8,348 local notes at base `721c03822c421b7f7fcbb2598993b947c4d88419` (2026-10-28 11:09–11:11 UTC). Broader body searches also found #4477's disposition, the later finite-share diagnostic, and the author's explicit request for a saturation proof; these still left the proof open. The final refresh is recorded in VALIDATION.md. No body search establishes novelty or covers every code diff.
 
 Remaining obligations are an effective finite-depth rate and the other full-flow components/exact induction ratio. Finite tests do not prove the asymptotic result; the asymptotic result does not certify finite-depth extrapolations, a supplier, or the multiplication theorem.
+
+## Claude review and follow-up
+
+A user-provided Claude Code AI review independently examined `ff365dba6911ce615bec76e8d1f149faf1fe16ca`. It confirmed the scoped theorem and certified parameter values, reported inspection of Stone's primary text, and identified citation precision and checker-coverage gaps. It is not human or formal verification. The earlier internal reviews' primary-text limitation above remains an accurate description of their work; the later review supplies the equation/footnote mapping now in PROOF.md.
+
+[CLAUDE-RESPONSE.md](CLAUDE-RESPONSE.md) maps all six findings to the changes and their remaining limits. The theorem and every numerical parameter interval are unchanged. The standalone source checker now authenticates inputs, coverage labels distinguish fixture sensitivity from actual source comparisons, and exact independent log/exp bounds discriminate the reported remainder faults. An additional internal reviewer checked the integrated fixes; current checks and source hashes are in the follow-up section of VALIDATION.md.
+
+### Final review of the response
+
+A separate internal reviewer checked the integrated changes without running a competing replay. It verified the alternative logarithm series, the degree 82 exponential geometric tail, full interval containment, meaningful remainder fixtures, re-pinned source mutations and pre-import hashes. No blocking defect was found. Current reviewed verifier SHA256 `3a88ad1da0691afefead7d71c00ab4a51d547c770a40dc2e232c39dc02d8366d`; oracle SHA256 `b92a75601ef676ab0b412395eb2ccaa52c8e802f89fe1fb2f3820cafa173aea4`; proof SHA256 `09dc0d6fd22b5e502b812543ddf78395ab7deacc894cd52430709475acfb2978`. The final oracle metadata addition was checked against the earlier reviewed bytes. These are internal AI reviews with the shared arithmetic/series dependencies disclosed in CLAUDE-RESPONSE.md, not formal verification.

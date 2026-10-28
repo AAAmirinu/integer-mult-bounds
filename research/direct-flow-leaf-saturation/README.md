@@ -8,7 +8,7 @@ The [proof](PROOF.md) uses the classical nonlattice interval local-limit theorem
 - limiting mean deficit in `[133.34882837,133.34882838]`;
 - limiting actual leaf log-depth in `[136.51870330,136.51870331]`.
 
-The source has **G conditioned paid ranks plus one unconditioned terminal rank**. Ten independent exact fixtures bind this interpretation to both the original #4436 flow and #4467's diagnostic; an incorrectly truncated terminal rank is rejected. The main certificate adds eight fixtures and a lattice countermodel showing why discrete support alone does not justify an exponential limit.
+The source has **G conditioned paid ranks plus one unconditioned terminal rank**. Ten independent exact fixtures compare the complete leaf histograms of both the original #4436 flow and #4467's diagnostic. Both standalone entry points authenticate all declared inputs before executing them. Separate mutation tests re-pin empty or terminal-truncated source branches and confirm that the actual histogram comparisons reject them; fixture-sensitivity flags are not counted as extra source checks. The main certificate checks eight fixtures and a lattice countermodel showing why discrete support alone does not justify an exponential limit.
 
 This resolves the qualitative saturation part of #4467's open question. It supplies **no explicit finite-depth error rate**, stable-share theorem, full-flow log-gap limit, numerical refined-induction ceiling, new κ, or supplier admission. The raw-p7 profile is historical; the selected #6030 record and its five assumptions are unchanged. In particular, the predecessor's estimated `.0025–.0026` ceiling and enormous finite-rank thresholds remain unproved here.
 
@@ -23,22 +23,23 @@ The original direct flow is zxv's #4436 (`56003680aee2871773de408e5f01cc5dd46b14
 Python 3.12, standard library only, assertions not needed. From the repository root:
 
 ```sh
-python3 -B scripts/research_package.py --package research/direct-flow-leaf-saturation --check-only
-python3 -B scripts/research_package.py --package research/direct-flow-leaf-saturation
-python3 -O -B research/direct-flow-leaf-saturation/verify.py --expect research/direct-flow-leaf-saturation/RESULT.json
+python3.12 -B scripts/research_package.py --package research/direct-flow-leaf-saturation --check-only
+python3.12 -B scripts/research_package.py --package research/direct-flow-leaf-saturation
+python3.12 -O -B research/direct-flow-leaf-saturation/verify.py --expect research/direct-flow-leaf-saturation/RESULT.json
 ```
 
-Direct commands also work from a package export without Git:
+The registered runner requires Python 3.12; using a default `python3` that selects 3.13 fails its declared version gate. Direct commands also work from a package export without Git:
 
 ```sh
-python3 -B research/direct-flow-leaf-saturation/verify.py --expect research/direct-flow-leaf-saturation/RESULT.json
-python3 -B research/direct-flow-leaf-saturation/independent_source.py
-python3 -B research/direct-flow-leaf-saturation/test_controls.py
+python3.12 -B research/direct-flow-leaf-saturation/verify.py --expect research/direct-flow-leaf-saturation/RESULT.json
+python3.12 -B research/direct-flow-leaf-saturation/independent_source.py
+python3.12 -B research/direct-flow-leaf-saturation/test_controls.py
+python3.12 -B research/direct-flow-leaf-saturation/test_enclosures.py
 ```
 
-The main certificate uses `Fraction` intervals throughout: a 48-term `2 atanh(z)` series with a geometric tail bounds logarithms after power-of-two reduction; an 80-term exponential Taylor series uses `e^x≤3^5` on `[0,5]` to bound the remainder. Strict endpoint signs and a derivative lower bound isolate the invoice root. Strict monotonicity of the tilted mean (its derivative is a positive variance) isolates the tilt. Output decimals are rounded outward. The certificate does not execute the predecessor's floating-point root finder or fit its data.
+The main certificate uses `Fraction` intervals throughout: a 48-term `2 atanh(z)` series with a geometric tail bounds logarithms after power-of-two reduction; an 80-term exponential Taylor series uses `e^x≤3^5` on `[0,5]` to bound the remainder. Strict endpoint signs and a derivative lower bound isolate the invoice root. Strict monotonicity of the tilted mean (its derivative is a positive variance) isolates the tilt. Output decimals are rounded outward. The certificate does not execute the predecessor's floating-point root finder or fit its data. `test_enclosures.py` independently encloses every executed logarithm/exponential argument using a different logarithm series and a geometric-tail exponential bound. It detects zero tails and an invalid exponential majorant even when the rounded parameter receipt stays unchanged. These are finite-domain controls, not an all-input proof of the routines; both engines share exact rational arithmetic and the exponential series.
 
-[VALIDATION.md](VALIDATION.md) records actual commands, environments and logs. [REVIEW.md](REVIEW.md) records the independent derivation, source check, skeptical review and shared dependencies. The proof's local-limit theorem remains an external mathematical input, rather than an assertion tested by finite examples.
+[VALIDATION.md](VALIDATION.md) records actual commands, environments and logs, including the response to the user-provided Claude Code review of `ff365dba6911ce615bec76e8d1f149faf1fe16ca`. [REVIEW.md](REVIEW.md) records the independent derivation, source check, skeptical review and shared dependencies. The proof's local-limit theorem remains an external mathematical input, rather than an assertion tested by finite examples.
 
 ## Open next questions
 

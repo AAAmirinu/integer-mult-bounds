@@ -85,7 +85,7 @@
   "budget_minutes": 90,
   "stop_rule": "Stop after a source-bound saturation proof and certified hypotheses. No stable-share theorem, finite-G rate, whole-flow ceiling, supplier admission or construction search.",
   "outcome": "completed",
-  "evidence": "PROOF.md, RESULT.json, independent_source.py, REVIEW.md and VALIDATION.md.",
+  "evidence": "PROOF.md, RESULT.json, independent_source.py, test_enclosures.py, REVIEW.md, CLAUDE-RESPONSE.md and VALIDATION.md.",
   "author": "DLamdata",
   "ai_assistance": "Substantial OpenAI Codex assistance, including two separate native AI agents for independent derivation/source checks and skeptical review. No human or proof-kernel verification.",
   "open_questions": [

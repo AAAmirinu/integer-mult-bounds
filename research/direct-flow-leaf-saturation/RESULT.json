@@ -4,8 +4,9 @@
     "lattice_countermodel": "geometric mean gap/log2 tends to 1; finite n=400 gap<0.7, not exponential mean1"
   },
   "finite_law": {
-    "extra_terminal_truncation": "rejected",
     "ordered_word_max_depth": 3,
+    "source_check": "complete actual X-BX histogram equals ordered-word enumeration",
+    "terminal_cut_distinguishing_fixtures": 8,
     "whole_flow_fixtures": 8
   },
   "parameters": {
