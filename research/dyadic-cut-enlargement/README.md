@@ -140,8 +140,8 @@ python3.12 -B scripts/check_research_commit.py --package research/dyadic-cut-enl
 ```
 
 The verifier authenticates the unchanged #5615 kernel/capacity source and the
-#5882 proof. It reconstructs every ADD of the scalar words, independently solves
-the complete row/column eligibility constraints, and checks all partial support
+#5882 proof. It reconstructs every ADD of the scalar words, solves the complete row/column eligibility constraints with the retained kernel
+routine, and checks all partial support
 enlargements of one through six independent blocks. It verifies literal full
 unit-block witnesses and modular upper bounds, including odd and dyadic-scaled
 coefficient controls. A separate small bordered-matrix census corroborates the
