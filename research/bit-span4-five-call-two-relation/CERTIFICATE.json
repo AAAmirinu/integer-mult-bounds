@@ -84,6 +84,34 @@
    "lattices": 117,
    "weighted_words": 472384
   },
+  "W5_rank2": {
+   "W": 5,
+   "candidates": 0,
+   "diagonal_words_weighted": 53463710,
+   "evaluated_words": 71355080,
+   "high_hist": {
+    "0": 28198385,
+    "1": 21187785,
+    "2": 4077540
+   },
+   "k": 5,
+   "lattices": 4060,
+   "weighted_words": 3043554480
+  },
+  "W5_rank_le_1": {
+   "W": 5,
+   "candidates": 0,
+   "diagonal_words_weighted": 785591,
+   "evaluated_words": 457941,
+   "high_hist": {
+    "0": 229511,
+    "1": 430220,
+    "2": 125860
+   },
+   "k": 5,
+   "lattices": 117,
+   "weighted_words": 2475781
+  },
   "unpruned_W2_k4": {
    "W": 2,
    "derivative_violations": 0,
@@ -94,6 +122,17 @@
     "2": 1286
    },
    "k": 4
+  },
+  "unpruned_W2_k5": {
+   "W": 2,
+   "derivative_violations": 0,
+   "diagonal": 178880,
+   "hist": {
+    "0": 16528,
+    "1": 87352,
+    "2": 75000
+   },
+   "k": 5
   },
   "unpruned_W3_k3": {
    "W": 3,

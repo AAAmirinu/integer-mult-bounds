@@ -105,7 +105,7 @@ the same diagonal words and histogram, and no diagonal word that violates step 2
 |---:|---:|---:|---:|---:|
 | 2 | 4 | 6^4 × 316 lattices | 9,056 | 0 |
 | 3 | 3 | 28^3 × 16 lattices | 1,959 | 0 |
-| 2 | 5 | 6^5 × 4,060 lattices | UN25_DIAG | 0 |
+| 2 | 5 | 6^5 × 4,060 lattices | 178,880 | 0 |
 
 Controls: six coordinate calls, two per data register, give three high
 registers, so the detector can fire. A cancelling pair `A_1 + A_2 = 0` makes its
@@ -127,7 +127,7 @@ Expected: `PASS_FIVE_CALL_TWO_RELATION_CENSUS ... max_high_registers=2 candidate
 Without `--long`, the W = 5 rows and the (2, 5) unpruned row are in the certificate but not replayed
 (`not_replayed=3`), so the two-auxiliary conclusion rests on the `--long` run recorded below.
 
-`--long` was run once locally on CPython 3.14 (macOS, about LONG_MIN min) and wrote the W = 5 rows.
+`--long` was run once locally on CPython 3.14 (macOS, about 17 min) and wrote the W = 5 rows.
 
 ## Scope
 
