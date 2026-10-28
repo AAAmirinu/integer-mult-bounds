@@ -19,7 +19,8 @@ words are literally initialized/retired at costs281/389 instructions.
 Each separate actual call has3,146,057 retained cells including raw input and
 both descriptor banks. A shared u→t history requires3,146,075 cells: the extra18
 falsify max-of-standalone-total accounting. The t history figure is derived
-from the source per-role theorem; FULL.json records the actual u execution.
+from the source per-role theorem; FULL.json records the historical actual u execution; the publication refresh
+replays only the light checks and preserves that receipt unchanged.
 
 Small tests include H0 identity, growing/shrinking histories, all16 independent
 H2 columns, a separately written sparse interpreter, exact retained capacities,
@@ -58,4 +59,12 @@ binary lowering; Hiroki KUMAZAKI/PR5286 supplies retained backing. Cinna Davis,
 Hiroki KUMAZAKI, Douglas Colkitt/OpenAI and retained notices retain CRT credit.
 All original sources remain unchanged. No human or formal-kernel acceptance.
 
-[Canonical claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/4709#discussioncomment-19173365).
+[Resumed canonical claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/4709#discussioncomment-19233740);
+[original released claim](https://github.com/CrocSwap/integer-mult-bounds/discussions/4709#discussioncomment-19173365).
+
+Publication was resumed on canonical main
+`721c03822c421b7f7fcbb2598993b947c4d88419`, priority revision8, selected
+PR6030. All eight live scientific inputs are unchanged. The original revision7
+card and source pins remain frozen; this result makes no claim about the new
+selected construction. The registered hook includes the source-sized `--full`
+command and will require its separate resource budget when run in hosted CI.

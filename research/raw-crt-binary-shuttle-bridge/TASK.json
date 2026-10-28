@@ -78,8 +78,18 @@
     }
   ],
   "coordination": {
-    "claim": "https://github.com/CrocSwap/integer-mult-bounds/discussions/4709#discussioncomment-19173365",
-    "coverage": "Root refreshed359openPR/4760Discussion/7402localnotes before claim; unpublished work excluded."
+    "claim": "https://github.com/CrocSwap/integer-mult-bounds/discussions/4709#discussioncomment-19233740",
+    "coverage": "Root refreshed359openPR/4760Discussion/7402localnotes before claim; unpublished work excluded.",
+    "previous_claim": "https://github.com/CrocSwap/integer-mult-bounds/discussions/4709#discussioncomment-19173365",
+    "publication_refresh": {
+      "main": "721c03822c421b7f7fcbb2598993b947c4d88419",
+      "priority_revision": 8,
+      "selected_pr": 6030,
+      "checked_at": "2026-10-28T04:54:38Z",
+      "coverage": "341 open PR bodies, 5722 Discussion records, 8348 tracked local notes; complete pagination and tracked note inventory. No exact successor found; closed PRs, unpublished work and changes after the snapshot remain outside coverage.",
+      "source_compatibility": "Eight live scientific input hashes unchanged; original card and provenance pins retained.",
+      "validation_scope": "Fresh light normal/optimized and integrity checks; historical FULL.json preserved without local full-u replay."
+    }
   },
   "invoice": {
     "recursive_profile_changed": false,

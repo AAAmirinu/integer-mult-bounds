@@ -1,5 +1,7 @@
 # Exact validation scope
 
+## Preserved source-sized evidence (original session)
+
 Python3.12, standard library, macOS. Individual final commands passed; the
 aggregate hook was not redundantly replayed.
 
@@ -16,3 +18,22 @@ all29-role backing and tariffs and reran optimized light controls; no blocking
 findings. This is not human or formal-kernel acceptance. Exact final commit,
 proof hash, publication-byte/source-history and export/cold-light results are
 bound in the external delivery record, avoiding a self-referential commit.
+
+
+## Publication refresh (28 October 2026 UTC)
+
+The two original commits were cherry-picked onto canonical main
+`721c03822c421b7f7fcbb2598993b947c4d88419`; all executable, proof and receipt
+bytes and all eight scientific input hashes remain unchanged. The original
+revision7 card and source pins are retained as historical provenance.
+
+Fresh Python3.12 normal and optimized light replays, optimized integrity
+controls and package metadata checks passed. The final publication delivery
+record separately binds its exact commit, source-history, committed-byte and
+Git-free exported-light checks. Earlier external delivery records are historical
+and are not evidence of these fresh checks.
+
+`FULL.json` remains the original actual-u receipt, not a new source-sized replay.
+No local full-u, actual-t or twelve-call replay was run in this refresh. The
+registered hook still includes `--full` with a180-second timeout; a hosted run
+is a separate execution and its result must be read independently.
