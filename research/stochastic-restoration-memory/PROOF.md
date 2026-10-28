@@ -1,4 +1,4 @@
-# A 2^76 fiber in the exact PR6066 forward map
+# An optimal 76-bit retained log for the exact PR6066 forward map
 
 This proof concerns the historical 748-role, 9,589-event scalar prefix used by [PR6066](https://github.com/CrocSwap/integer-mult-bounds/pull/6066). It does not transfer the result to the different selected PR6030 word. All incoming integer values are arbitrary dirty data. Fix every forward coin to zero; this is a permitted finite tape with positive probability under the fresh-coin model. The tape is retained unchanged.
 
@@ -18,7 +18,7 @@ Counting all 84 halvings alone would be invalid: the later program has 32 doubli
 
 The next 1,121 events partition into eight consecutive programs on the disjoint role sets 272..287, 288..303, ..., 384..399. The first three blocks have 137 events each; the last five have 142 each. No block reads or writes outside its own sixteen roles. Each has three signed halvings and four doublings.
 
-[COLLISIONS.json](COLLISIONS.json) supplies four distinct 16-integer preimages and their common output for each literal source block, with every coin zero. The verifier replays all 32 input vectors directly against the authenticated source events. It also runs an independently structured reverse branch interpreter: each halving branches into its two preimages and each inverse doubling rejects odd values. For the nominated output it checks that the complete surviving fiber is exactly the four committed vectors. This checks particular finite fibers; it does **not** prove four is a global maximum for other outputs or tapes.
+[COLLISIONS.json](COLLISIONS.json) supplies four distinct 16-integer preimages and their common output for each literal source block, with every coin zero. The verifier replays all 32 input vectors directly against the authenticated source events. It also runs an independently structured reverse branch interpreter: each halving branches into its two preimages and each inverse doubling rejects odd values. For the nominated output it checks that the complete surviving fiber is exactly the four committed vectors. These are finite lower-bound witnesses. Section 5 independently proves a four-preimage upper bound for every output and tape by recovering one of each block's three residues.
 
 Take the Cartesian product of these eight four-element sets, fixing all other coordinates to zero at the start of the middle program. Disjoint support proves that its 4^8 = 2^16 distinct states have one identical complete 748-role output. Every following event is deterministic with the fixed tape, so the final 57 ADDs preserve this collision.
 
@@ -42,7 +42,31 @@ All additional state capable of distinguishing inputs is included in A: logs, te
 
 This is a **worst-case** bound for exact pathwise restoration and the same forward map/tape. It does not bound average compressed length or prove that every tape needs 76 bits. It does not cover a changed rounding law, bounded-error restoration, restricted reached input set, or a different forward interface that leaves further input information in other outputs. Such extra information is payable and cannot be called clean scratch.
 
-PR6066 supplies an 84-bit residue log. This lower bound leaves at most eight bits of possible worst-case log reduction under this boundary. It does not construct a 76-bit log, prove the block fibers never exceed four, or price a physical compression/cleanup routine. Working scratch, integer arithmetic, tape movement, the next native MOVE and complete supplier costs remain open. No new kappa or selected change follows.
+## 5. Recover eight residues instead of retaining them
+
+Number a block's local roles x0,...,x15. Its first half acts on x9, after a twelve-ADD phase whose only source is x9. The source has two block templates. Immediately before this phase they satisfy, for arbitrary incoming integers and every fixed tape,
+
+    first three blocks:  x15 = 0             (mod 2),
+    last five blocks:    x10 + x15 = 0       (mod 2).
+
+These are literal source invariants. The verifier derives them by propagating integer parity rows through the pre-phase program. Each fractional ADD is replaced by an entirely arbitrary independent integer contribution to its target. This enlarges the possible states, so any relation annihilating all original bits and all these extra noise bits holds for the actual rounded word. The derived annihilators are masks 0x8000 and 0x8400, respectively. Every coefficient column is checked.
+
+In the following twelve-ADD phase, x15 receives x9 exactly once with coefficient +1; x10 is unchanged. None of the fractional ADDs targets a parity holder. The holders do not include x9. Therefore, immediately after the signed half of x9, its discarded input parity is exactly
+
+    first three blocks:  x15 mod 2,
+    last five blocks:    (x10 + x15) mod 2.
+
+The relation is independent of the rounding coins and of the magnitude of the data. In reverse, all later block events have already been undone when this half is reached. The displayed parity is consequently available from the current state. Recover it, apply the usual matched-coin inverse half, and continue. No retained bit is required for these eight particular halves.
+
+The other 76 signed halves use PR6066's original retained parity and cleanup rule. Forward arithmetic and every coin are unchanged; forward processing merely omits eight log writes. Reverse processing infers those eight bits using thirteen existing-value parity reads. All retained bits are cleared after reconstruction, as in the predecessor. The complete logical boundary is
+
+    (x, y, U, 0^76) -> (x, y + F_U(x), U, 0^76).
+
+The intermediate forward boundary retains F_U(x), U and exactly 76 residue bits, with no additional input-dependent retained payload. This supplies a computable inverse on the reached image. Together with section 4 it proves **76 is the minimum worst-case retained information capacity at this logical boundary**. Equivalently, every fixed-tape fiber has size at most 2^76, and section 3 attains that size on the all-zero tape. Each tail block has at most four preimages: only its other two half residues can vary after the first is inferred.
+
+The source-bound checker compares the new forward endpoint with the exact unmodified PR6066 interpreter on 64 full protocols, using all-zero, all-maximum and independently generated mixed tapes and arbitrary signed dirty values. It checks exact restoration, all 76 cleaned residues, unchanged tape, and the same dirty accumulator update. A wrong parity-holder control fails on an actually reached state. The symbolic parity invariant, rather than these finite protocols, supplies the all-input/all-tape proof.
+
+This is an eight-bit reduction from the original 84-bit retained log (2/21, about 9.52%). It does not bound total physical working memory or execution time. Temporary integer scratch and its reversible cleanup, finite guards for arbitrary callers, tape access, the next native MOVE and the full supplier bill remain unpriced. Fewer retained bits do not alone imply a runtime improvement, new kappa, or a complete rounded multiplier.
 
 ## Credit
 

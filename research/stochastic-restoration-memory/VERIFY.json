@@ -15,7 +15,7 @@
         "{package}/verify.py"
       ],
       "timeout_seconds": 120,
-      "checks": "Exact source-bound product collisions, complete nominated block fibers, lifted source executions and controls"
+      "checks": "Exact lower-bound collisions, symbolic all-tape parity recovery, 76-bit protocols against literal predecessor and controls"
     },
     {
       "argv": [

@@ -63,27 +63,27 @@
     ]
   },
   "scope_status": "refined",
-  "actual_scope": "Investigate PR6066 chronological restoration-log compression by constructing a source-bound large fiber of its exact forward rounded map.",
+  "actual_scope": "Construct and prove an optimal 76-bit retained residue log for the exact PR6066 forward map, including a matching 2^76 collision lower bound and source-derived parity recovery.",
   "scope_change_reason": "Explicit assignment starts with recent zxv PRs; this addresses PR6066 open question on the 84 retained parity bits.",
   "bottleneck_link": "Bounds the possible storage improvement before paying for a new reversible numerical interface; no direct exponent gain is inferred.",
   "budget_minutes": 30,
-  "stop_rule": "Stop at a proved source-bound memory floor and bounded exact replay. Treat a matching compression and all-tape block upper bound as separate tasks.",
-  "outcome": "negative-result",
-  "evidence": "PROOF.md; COLLISIONS.json; RESULT.json: 86 whole-prefix lifts, 32 block collision inputs, complete nominated fibers and 516 signed-half checks.",
+  "stop_rule": "Stop at a matching logical lower/upper bound and bounded exact replay. Total physical working scratch, guard widths and native caller pricing remain separate.",
+  "outcome": "completed",
+  "evidence": "PROOF.md; COLLISIONS.json; compressed.py; RESULT.json: symbolic all-tape parity certificates, 86 collision lifts and 64 full protocols compared with the literal predecessor.",
   "author": "zxv",
   "ai_assistance": "Substantial OpenAI Codex assistance in source review, proof, exact search, implementation and verification; no subagents or independent human/formal review.",
   "open_questions": [
     {
-      "question": "Is every tail-block fiber at most four for arbitrary outputs and fixed tapes?",
-      "why_it_matters": "Could close the remaining eight-bit information gap.",
-      "first_step": "Analyze the eight exact inverse branches for each of the two source templates.",
-      "blocked_by": "A universal upper bound is unproved; finite probes are insufficient."
+      "question": "Can the 76-bit retained log be implemented with a favorable complete reversible integer/tape bill?",
+      "why_it_matters": "Retained information capacity is not total working memory or runtime.",
+      "first_step": "Lower the eight inference sites, thirteen current-value parity reads and all scratch cleanup.",
+      "blocked_by": "No physical tape/arithmetic implementation or complete fee supplied."
     },
     {
-      "question": "Can a smaller retained log be compressed and erased under the actual native caller?",
-      "why_it_matters": "Information capacity alone does not pay for scratch, tape access or cleanup.",
-      "first_step": "Give the exact forward boundary, reversible algorithm and total physical bill.",
-      "blocked_by": "Full physical/native/error interface remains open."
+      "question": "Can the next native MOVE use this copied-output error/guard boundary?",
+      "why_it_matters": "Needed before the stochastic prefix can become a complete supplier.",
+      "first_step": "Pin actual operands, full approximation error and restored endpoint.",
+      "blocked_by": "Native and complete caller/precision contract remain open."
     }
   ]
 }

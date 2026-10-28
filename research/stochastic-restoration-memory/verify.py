@@ -5,6 +5,7 @@ from itertools import product
 from pathlib import Path
 import gzip
 import json
+import types
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
@@ -172,15 +173,25 @@ def calculate():
     else:
         raise ValueError('wrong collision output accepted')
     need(60+sum(2 for block in blocks) == 76 and 84-76 == 8, 'retention floor and possible headroom')
-    return dict(status='PASS_STOCHASTIC_RESTORATION_MEMORY',events=9589,
+    p = json.loads((HERE/'PREDECESSOR.json').read_text())['retained_verifier']
+    raw = (HERE/p['retained_path']).read_bytes()
+    need(sha256(raw).hexdigest() == p['sha256'], 'literal predecessor verifier')
+    old = types.ModuleType('retained_pr6066')
+    old.__file__ = str(HERE/p['retained_path'])
+    exec(compile(raw,old.__file__,'exec'),old.__dict__)
+    compressed = types.ModuleType('compressed_source')
+    exec(compile((HERE/'compressed.py').read_bytes(),str(HERE/'compressed.py'),'exec'),compressed.__dict__)
+    construction = compressed.verify(events,old)
+    return dict(status='PASS_OPTIMAL_STOCHASTIC_RETAINED_LOG',events=9589,
                 public_integer_roles=748,source_halves=halves,source_doubles=doubles,
                 surjective_prefix_events=8411,prefix_fiber_power=60,
                 independent_blocks=8,block_fiber_sizes=[4]*8,block_program_sha256=signatures,
-                full_fiber_power_lower=76,source_log_bits=84,maximum_possible_bit_saving=8,
+                full_fiber_power_lower=76,source_log_bits=84,optimal_retained_log_bits=76,
+                saved_log_bits=8,construction=construction,
                 full_word_lifts_checked=checked,half_lemma_checks=local_checks,
                 lift_bound_magnitude_bits=upper.bit_length(),fixture_peak_magnitude_bits=peak,
                 conservative_signed_guard_bits=upper.bit_length()+8,
-                scope='Worst-case retained information for the exact PR6066 forward map and unchanged tape; no matching upper bound or new kappa.')
+                scope='Optimal retained residue capacity for the exact PR6066 logical boundary and unchanged tape; physical working scratch and full native costs remain open; no new kappa.')
 
 
 def main():

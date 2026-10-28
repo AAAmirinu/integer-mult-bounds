@@ -1,12 +1,14 @@
-# The PR6066 stochastic prefix needs at least 76 retained bits
+# PR6066 stochastic restoration needs exactly 76 retained residue bits
 
-For the exact integer-grid forward map in [PR6066](https://github.com/CrocSwap/integer-mult-bounds/pull/6066), with its random tape unchanged, exact dirty restoration needs auxiliary information with at least **76 bits of worst-case capacity**. The existing 84-bit parity log can therefore save at most eight bits under the same boundary. No matching compression algorithm or new kappa is claimed.
+The historical [PR6066](https://github.com/CrocSwap/integer-mult-bounds/pull/6066) integer-grid protocol's retained log falls from **84 to 76 bits**, with the same stochastic forward map, unchanged random tape and exact arbitrary-dirty restoration. A matching 2^76-point collision proves 76 is optimal for retained information at this logical boundary. This saves eight bits (about 9.52%); physical working scratch and tape costs remain open. No new kappa is claimed.
 
-The authenticated historical 9,589-event prefix has 60 halvings before any doubling. Its first 8,411 events are surjective and exactly 2^60-to-one on arbitrary integer data. Eight disjoint later 16-role blocks each have a verified four-preimage collision for one all-zero coin tape. Their product and the surjective prefix give a 2^76-point fiber of the full rounded forward map. [PROOF.md](PROOF.md) gives the quantifiers, finite-width guard and limits; [COLLISIONS.json](COLLISIONS.json) provides the small exact witnesses.
+One residue in each of eight independent tail blocks can be inferred from current data when the inverse reaches it. For the first three blocks its input parity is one current role's parity; for the last five it is the sum of two roles' parities. A symbolic source-bound invariant proves these rules for every integer input and coin tape, including the fractional ADDs. No rounding event or coin changes. The other 76 residues follow the predecessor's original save/reconstruct/clear lifecycle.
+
+The lower bound uses 60 early halvings before any doubling, followed by eight disjoint four-preimage tail collisions. Their product gives exactly the retained-state requirement. [PROOF.md](PROOF.md) supplies both proofs and the exact source scope; [COLLISIONS.json](COLLISIONS.json) contains the small witnesses. The matching inverse is in compressed.py.
 
 ## Significance for researchers
 
-This resolves a substantial part of PR6066's question about reducing its 84 parity bits. The 32 later doublings do not imply a 52-bit log is sufficient: chronology and source-bound collisions force at least 76 bits at the forward boundary. A smaller log would require proving and implementing a compression within the remaining eight-bit gap, or changing the forward/restoration contract.
+This resolves PR6066's question about chronological reduction of the 84 parity bits at its logical boundary. The 32 later doublings do not make a 52-bit log possible; exact collisions force 76. The constructive upper bound also shows that keeping all 84 local residues was unnecessary. Next work can price the actual 76-bit interface instead of searching further for a smaller retained log under the same map.
 
 ## Reproduce
 
@@ -15,16 +17,16 @@ python3.12 -B scripts/research_package.py --package research/stochastic-restorat
 python3.12 -B scripts/check_research_commit.py --package research/stochastic-restoration-memory
 ```
 
-The standard-library verifier authenticates the historical word and retained PR6066 statement, checks all 32 small collision preimages with exact integer arithmetic, exhausts each nominated block fiber, verifies disjoint literal source domains, and checks 86 complete lifted source executions plus signed-half and invalid-counting controls. The written composition proof supplies the 2^76 quantifier; this many inputs are not enumerated. Normal and optimized registered checks compare RESULT.json.
+The standard-library checks authenticate the historical word and retained predecessor, verify all 32 small collision inputs and complete nominated fibers, derive both symbolic parity invariants, execute 86 whole-prefix collision lifts, and compare 64 full restored protocols against the unmodified predecessor interpreter. Signed-half and wrong-holder controls remain active under optimization. The written product proof supplies the 2^76 quantifier; that many inputs are not enumerated. RESULT.json is compared with the recomputation.
 
 ## Open next questions
 
-Are all fibers of each tail block bounded by four, for every output and coin tape? Start with its eight exact inverse branches; a proof could close the remaining eight-bit information gap. Finite probes are not an all-tape proof.
+Can the 76-bit protocol be lowered to a reversible integer/tape implementation with a favorable total cost? Start with the eight inferred-parity sites, thirteen existing-value parity reads and the complete scratch/cleanup ledger. Retained-log optimality does not price working memory or tape movement.
 
-Can a smaller retained log be computed and erased under the actual physical caller at a favorable total cost? First distinguish retained information from working scratch, charge compression and random-tape movement, and keep every arbitrary dirty input. The native MOVE and full error/cost contracts remain blockers.
+Can one actual native MOVE accept the resulting copied-output error and guard contract? Pin its source operands and completed error bound before composing the caller. The predecessor's stochastic error estimate and the complete native/caller costs remain separate obligations.
 
 ## Scope and credit
 
-This uses the historical PR5599 prefix used by PR6066, not the different selected PR6030 word. The 76-bit floor is worst-case for exact pathwise restoration with arbitrary integer inputs and unchanged tape. It does not assert an average-length lower bound, a matching 76-bit implementation, a complete physical resource optimum, or a result for every small fixed width. A conservative 4,571-bit signed/guard width suffices for the entire collision family; executed representative fixtures need only ten magnitude bits. No native/selected cold replay or new kappa is claimed.
+This uses the historical PR5599 prefix used by PR6066, not the different selected PR6030 word. Optimality concerns worst-case retained information for exact pathwise restoration with arbitrary integer data and unchanged tape. It does not assert an average-code-length lower bound or a total physical resource optimum. A conservative 4,571-bit signed/guard width suffices for the entire collision family; executed representative collision fixtures use ten magnitude bits. No selected/native cold replay, independent human review, proof-kernel acceptance or new kappa is claimed.
 
-Prepared by [zxv](https://github.com/zxv) with substantial OpenAI Codex assistance. Credit [Nick Petalas](https://github.com/petalas)'s [PR6026](https://github.com/CrocSwap/integer-mult-bounds/pull/6026), [Ali Romman](https://github.com/aliromman)'s [PR5599](https://github.com/CrocSwap/integer-mult-bounds/pull/5599), and the retained source lineage. The pending PR6066 statement is retained verbatim with exact head/hash. Apache-2.0. No independent human review or proof-kernel acceptance is claimed.
+Prepared by [zxv](https://github.com/zxv) with substantial OpenAI Codex assistance. Credit [Nick Petalas](https://github.com/petalas)'s [PR6026](https://github.com/CrocSwap/integer-mult-bounds/pull/6026), [Ali Romman](https://github.com/aliromman)'s [PR5599](https://github.com/CrocSwap/integer-mult-bounds/pull/5599), PR6066's restoration ABI and the retained P104 lineage. The pending predecessor statement and interpreter are retained verbatim with exact head/hash. Apache-2.0.
