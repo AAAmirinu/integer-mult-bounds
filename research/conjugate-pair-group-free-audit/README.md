@@ -113,15 +113,23 @@ Expected marker: `PASS_CONJUGATE_PAIR_GROUP_FREE_AUDIT`, in about 30 s per mode.
 ## Open next questions
 
 1. **Longer diagonal pair targets (#6038 open question 1).** Theorem S is a
-   uniform floor of 4 for any pair target whose entries are not labels. Does a
-   corner argument give `≥ 6` for `diag([g],[h])` when neither `g` nor `h` is a
+   uniform floor of 4 for any pair target whose entries are not labels. Is
+   there a uniform floor of 6 for `diag([g],[h])` when neither entry is a
    product of at most two labels, for example `diag([xyx],[yxy])`? *Why:* it
-   would replace per-group pair censuses with one argument. *First step:*
-   extend the singleton tier so that every subset of size at most two is also
-   barred from the target classes, then search lengths 4 and 5 at `r = 2` over
-   `F2`. *Blocker:* the per-class mask enumeration here costs
-   `2^(allowed subsets)`, which is too slow at length five. It needs a
-   linear-algebra search over the subset sums instead.
+   would replace per-group pair censuses with one argument. *What fails
+   already (local probe, not registered):* the support-only analogue of
+   Theorem S does not hold. I kept `∅` in the `e` class, kept the singletons out
+   of all three classes and let only subsets of size at least three carry `g`
+   or `h`. A NumPy subset-sum search at `r = 2` over `F2` then finds solutions
+   at length 4 (20 of 1,296 idempotent tuples) and at length 5 (938 of
+   7,776). The control with threshold two reproduces Theorem S: no solution
+   up to length 3, and 264 at length 4. So a floor of 6, if true, must use
+   relations among the labels, not just support sizes. *First step:* use this
+   package's full tier for the labels `{x, y}` and the target `(xyx, yxy)`.
+   That needs sound rules for when a single equation forces `xyx = yxy`; the
+   commutation rule used here does not imply that. Then check whether the
+   length-4 relaxed solutions survive. *Blocker:* the consistency rules
+   for the new hypothesis.
 2. **Formalization.** Theorem S involves only rank-one matrices over a field
    and suits a proof assistant. No Lean build was attempted.
 

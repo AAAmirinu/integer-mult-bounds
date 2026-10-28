@@ -86,10 +86,10 @@
   "ai_assistance": "Claude (Anthropic) assisted with the audit, the proof, the code and the writing. An OpenAI Codex read-only adversarial review of #6038's PROOF.md and of verify.py reported no error.",
   "open_questions": [
     {
-      "question": "Does a corner argument give a uniform floor of 6 calls for diag([g],[h]) when neither entry is a product of at most two labels, e.g. diag([xyx],[yxy])? (#6038 open question 1)",
+      "question": "Is there a uniform floor of 6 calls for diag([g],[h]) when neither entry is a product of at most two labels, e.g. diag([xyx],[yxy])? (#6038 open question 1)",
       "why_it_matters": "It would replace per-group pair censuses with one uniform argument.",
-      "first_step": "Bar subsets of size <= 2 from the target classes in the singleton tier; search lengths 4-5 at r = 2 over F2.",
-      "blocked_by": "The per-class mask enumeration is 2^(allowed subsets); length five needs a linear-algebra search over subset sums."
+      "first_step": "The support-only analogue of Theorem S fails. A local probe at r=2 over F2, with only size>=3 subsets allowed to carry g or h, finds relaxed solutions at length 4 (20/1296 tuples) and 5 (938/7776). Next, add the label relations: a full-tier table for labels {x,y} and target (xyx, yxy), then test whether those length-4 solutions survive.",
+      "blocked_by": "Sound single-equation rules for the hypothesis xyx != yxy; the commutation rule used here does not imply it."
     },
     {
       "question": "Formalize Theorem S in a proof assistant.",
