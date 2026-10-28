@@ -266,8 +266,17 @@
           11,
           11
         ],
-        "complete": false,
-        "status": "not completed in this session (no receipt)"
+        "prune": true,
+        "cap": 0,
+        "complete": true,
+        "attempts": 262967842859,
+        "entered": 37567052539,
+        "candidate_leaves": 0,
+        "hits": 0,
+        "restoration_prunes": 127606738457,
+        "size_prunes": 31908107595,
+        "same_prunes": 64005526587,
+        "cross_prunes": 1880417682
       },
       {
         "n": 7,
@@ -276,8 +285,17 @@
           11,
           10
         ],
-        "complete": false,
-        "status": "not completed in this session (no receipt)"
+        "prune": true,
+        "cap": 0,
+        "complete": true,
+        "attempts": 285196543267,
+        "entered": 40743043536,
+        "candidate_leaves": 0,
+        "hits": 0,
+        "restoration_prunes": 114662362937,
+        "size_prunes": 36277910836,
+        "same_prunes": 91780027840,
+        "cross_prunes": 1733198119
       },
       {
         "n": 7,
@@ -305,8 +323,17 @@
           10,
           10
         ],
-        "complete": false,
-        "status": "not completed in this session (no receipt)"
+        "prune": true,
+        "cap": 0,
+        "complete": true,
+        "attempts": 261789060244,
+        "entered": 37400857165,
+        "candidate_leaves": 0,
+        "hits": 0,
+        "restoration_prunes": 82624190942,
+        "size_prunes": 34567494590,
+        "same_prunes": 105634229919,
+        "cross_prunes": 1562287629
       },
       {
         "n": 7,
@@ -446,9 +473,30 @@
       {
         "split": [
           11,
+          11
+        ],
+        "wall_seconds": 3751
+      },
+      {
+        "split": [
+          11,
+          10
+        ],
+        "wall_seconds": 4188
+      },
+      {
+        "split": [
+          11,
           9
         ],
         "wall_seconds": 1537
+      },
+      {
+        "split": [
+          10,
+          10
+        ],
+        "wall_seconds": 4117
       },
       {
         "split": [

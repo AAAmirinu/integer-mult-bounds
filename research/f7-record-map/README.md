@@ -1,6 +1,6 @@
 # The f(7) records agree; a second engine at length 22
 
-**Navigation index plus a partial finite replay. No new bound, no κ, no
+**Navigation index plus a complete second-engine replay of the length-22 census. No new bound, no κ, no
 supplier or frontier change.** The model throughout is Ross Richardson's PR943
 abstract singleton prefix-walk model. Seven immutable sources, singleton
 additions, paired readouts, eventual restoration. A restored word is universal
@@ -27,7 +27,7 @@ scientific approval.
 | L ≤ 20 excluded, so f(7) ≥ 22 | census | #2973 (Nicholas Stone), corrected census | #3005 (Nick Petalas, separate C++ engine), #3333 (1337isnot1337, separate C engine) | none at this step; #2542/#2634/#2691 used the bit-0 prune and are retired (#4946, JoyboyBrian) |
 | L ≤ 20 excluded | covering code | #3058 (conorholds) §1–2: `ell(7,2)=19` gives a 20-point cover floor, and the published 19-point classification gives L ≥ 24 for a 20-point cover | #3728 re-checks the `\|P\|=20` step. #3732 (James Reed) excludes two of its five representatives by a multiplicity count. | the two published results are imported, not re-derived |
 | L = 22 excluded | covering code | #3058 §3 (21 distinct prefixes), §4 (patterns A and B via f(6)=16, f(5)=12), §5 (complete small-path search) | engine audits: capacity #3224, propagation #3244, domain #3261, search #3276, caller #3287. SAT proofs for 4 of the 77 B cases (#3360). | §3 is checked by #3058's own two implementations, but no separate audit package covers it on main. #3360 lists it as out of scope. Pattern A has #3058's own Python port and solver checks. The other 73 B cases rest on the single native search. |
-| L = 22 excluded | census | split domain #3708, independently #3712; probes #3731 and #3818; closure #4221; receipt binding #4871 | before this package, every split ran on one engine (#3818's `union_census.c`). **This package adds a second engine for the splits below.** | #3899 (tiny-domain audit of the union prune) is open; the heavy splits listed below |
+| L = 22 excluded | census | split domain #3708, independently #3712; probes #3731 and #3818; closure #4221; receipt binding #4871 | before this package, every split ran on one engine (#3818's `union_census.c`). **This package adds a second engine for the splits below.** | #3899 (tiny-domain audit of the union prune) is open. Both engines share #3005's union-support bound and #3708's domain and symmetry. |
 | L = 24 attained | witness | #1185 (Douglas Colkitt) Gray cycle; #2973's `UPPER-WITNESS.json` | `verify.py` checks `010201030102010345464546` directly | none |
 
 Consumers cite only #3058 for f(7) = 24: `research/eight-source-singleton-floor`
@@ -68,10 +68,10 @@ Results at n=7, L=22 (LOCAL-ONLY; full receipts in [RESULT.json](RESULT.json)):
 
 | Split | This engine: entered nodes | Hits | Status | Prior engine (nodes) |
 |---|---:|---:|---|---|
-| `(11,11)` | — | — | **not finished in this session** | #4221 cover sum 55,385,607,437 |
-| `(11,10)` | — | — | **not finished in this session** | #4221 cover sum 52,957,641,635 |
+| `(11,11)` | 37,567,052,539 | 0 | complete, exit 0 (3751 s wall) | #4221 cover sum 55,385,607,437 |
+| `(11,10)` | 40,743,043,536 | 0 | complete, exit 0 (4188 s wall) | #4221 cover sum 52,957,641,635 |
 | `(11,9)` | 11,942,611,230 | 0 | complete, exit 0 (1537 s wall) | #4221 cover sum 14,058,107,415 |
-| `(10,10)` | — | — | **not finished in this session** | #4221 cover sum 44,378,511,529 |
+| `(10,10)` | 37,400,857,165 | 0 | complete, exit 0 (4117 s wall) | #4221 cover sum 44,378,511,529 |
 | `(11,8)` | 973,631,241 | 0 | complete, exit 0 (130 s wall) | #3731 1,349,702,650 |
 | `(10,9)` | 6,624,261,154 | 0 | complete, exit 0 (830 s wall) | #4221 cover sum 7,027,617,655 |
 | `(11,7)` | 8,613,944 | 0 | complete, exit 0 (1 s wall) | #3731 8,784,744 |
@@ -85,7 +85,7 @@ Entered-node counts track the #3731/#3818 node counts closely. `(9,9)` gives
 8,784,744. Throughput was about 7.5 M entered nodes per second per core on a
 shared 10-core machine.
 
-**8 of the eleven splits close on the second engine with zero hits.** `(11,11)`, `(11,10)`, `(10,10)` were still running when the session ended, so they are not excluded by this package. At the measured rate each needs roughly two single-core hours. The census-route exclusion of those splits still rests on #4221 alone.
+**All eleven splits close on the second engine with zero hits.** Every census-route length-22 exclusion now rests on two separately written engines. The engines still share #3708's domain and symmetry premises.
 
 The census route still imports #3708's rotation symmetry, so only `s >= t`
 runs. It also imports its four necessary conditions, as #4221 does.
@@ -108,7 +108,7 @@ and replays `(11,6)`, `(10,7)` and `(11,7)` exactly.
 
 ## Open next questions
 
-1. **Finish the heavy splits on the second engine.** `(11,11)`, `(11,10)`, `(10,10)` remain. First step: rerun the lifted engine on each, or add prefix sharding. Blocked by CPU time only (about two hours per split on one core).
+1. **A tiny-domain audit of the union prune.** #3899 (open) does this at `(n,L)=(4,8)`. Both engines depend on that bound, so it is the main shared premise left. First step: review #3899. Blocked by: none.
 2. **Audit #3058 §3, the 21-distinct-prefix case, separately.** #3058 checks it
    with two implementations of its own. No separate audit package covers it
    on main, and #3360 lists it as out of scope. First step: re-derive the
