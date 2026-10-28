@@ -18,7 +18,19 @@ An initial metadata invocation rejected the nonstandard outcome string; it was c
 
 ## Publication checks
 
-Committed-byte, source-history, export/integrity and read-only Git-free replay receipts are added below after execution. Export is a transport/dependency check, not mathematical certification. Final commit/status details also appear in the contribution PR.
+At scientific commit `d5893178e0eda61b111fdd48f8807e075c0420f1`, these commands passed:
+
+```sh
+python -B scripts/check_research_commit.py --package research/p104-6030-deferred-layer --check-source-history
+python -B scripts/export_research_package.py export --package research/p104-6030-deferred-layer --ref d5893178e0eda61b111fdd48f8807e075c0420f1 --output /tmp/reviewed-package.tar
+python -B scripts/export_research_package.py check /tmp/reviewed-package.tar
+```
+
+The output archive location is incidental; a fresh path is required. Actual receipts: [committed-bytes.txt](evidence/committed-bytes.txt) and [export.txt](evidence/export.txt). The byte preflight checks 22 package/input files and ancestry of the exact scientific base. The export/integrity checks pass the same 22 files.
+
+The checked archive was extracted into a fresh directory. Every file was set read-only, directories nonwritable, PATH was empty, and the working directory was unrelated to the export. Both direct verifiers ran with absolute paths, `-I -B`, normally and with `-O`; all four passed on CPython 3.12.14. SHA256 of every exported file, including the export receipt, was unchanged afterward. See [portable.json](evidence/portable.json) and [actual outputs](evidence/portable.txt).
+
+These receipts are added in a following evidence-only commit. Final committed-byte/source-history and fresh export/direct replay checks are repeated at the publication head and recorded in the PR; the scientific proof and both checkers are unchanged. Export is a transport/dependency check, not mathematical certification.
 
 ## Checks deliberately not run
 
