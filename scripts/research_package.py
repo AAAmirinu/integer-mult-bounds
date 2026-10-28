@@ -907,6 +907,8 @@ def plan_details(root, changed):
             changed_packages.setdefault("/".join(parts[:2]), []).append(name)
     packages = []
     sparse_count = 0
+    # Planning requires a stable checkout; reuse only within this invocation.
+    validated_inputs = set()
     for path, raw, sparse in planning_manifests(root, head_tracked):
         sparse_count += sparse
         package = path.parent.relative_to(root).as_posix()
@@ -915,9 +917,12 @@ def plan_details(root, changed):
         inputs = manifest.get("inputs", [])
         require(isinstance(inputs, list), "declare input paths for CI invalidation")
         for name in inputs:
+            if isinstance(name, str) and name in validated_inputs:
+                continue
             # Do not require existence: a deleted input must still trigger replay.
             symlink_free_relative_path(root, name)
             require_tracked_input(name, tracked)
+            validated_inputs.add(name)
         causes = {
             "declared_inputs": sorted(changed.intersection(inputs)),
             "package_files": changed_packages.get(package, []),
