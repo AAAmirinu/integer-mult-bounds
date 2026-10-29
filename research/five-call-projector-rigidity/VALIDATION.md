@@ -62,7 +62,7 @@ export and input-coverage check passed. Its optimized Git-free replay
 passed in 241.036 seconds with an empty PATH and read-only sources. All
 47 exported files kept the same bytes and modes. Direct base ancestry
 passed. The full-history limitation is unchanged. The replay timeout was
-then raised from 300 to 900 seconds to allow slower validation hosts; the
+then raised from 300 to 600 seconds to allow slower validation hosts; the
 proof and executable bytes were not changed by that metadata update.
 
 These are author checks with substantial AI assistance. Independent
