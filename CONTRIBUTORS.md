@@ -4883,3 +4883,35 @@ Source archives retain attribution; mathematical review remains open.
 - **Nick Petalas (@petalas)** — [#6162](https://github.com/CrocSwap/integer-mult-bounds/pull/6162): Reuse publication metadata: 15.7% less complete-check time (no κ) (reviewed tooling).
 - **Nick Petalas (@petalas)** — [#6163](https://github.com/CrocSwap/integer-mult-bounds/pull/6163): Prove a receiver-only obstruction to a root-2 stage deletion (no κ) (source archive).
 - **Nick Petalas (@petalas)** — [#6164](https://github.com/CrocSwap/integer-mult-bounds/pull/6164): Reduce complete publication preflight time by 34.2% (no new κ) (source archive).
+
+## Queue intake, 29 October 2026 (chunk A)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **DreamingOfClouds (@DreamingOfClouds)** — [#6144](https://github.com/CrocSwap/integer-mult-bounds/pull/6144): Conditional κ .003128386 (+2.582e-6 over #6030): owned registers 770, 771 and 772 descend through the frames of helpers 705, 706 and 731, which no longer relay them; helper 732 reads 771 at frame 117 (source archive).
+- **josecarlosgonzalezroque-design (@josecarlosgonzalezroque-design)** — [#6165](https://github.com/CrocSwap/integer-mult-bounds/pull/6165): Audit selected JSON locale failures without changing frozen sources (source archive).
+- **Matarener (@Matarener)** — [#6166](https://github.com/CrocSwap/integer-mult-bounds/pull/6166): P104 carrier code: the length-8 decoding code is unique (E8 root code, min weight 49) (source archive).
+- **Ali Romman (@aliromman)** — [#6167](https://github.com/CrocSwap/integer-mult-bounds/pull/6167): Conditional κ = 0.003128645 (+2.59e-7 over #6144): retain an operand to remove a root stop (source archive).
+- **Ali Romman (@aliromman)** — [#6168](https://github.com/CrocSwap/integer-mult-bounds/pull/6168): Prove exact cyclic query tariffs and all-width caller obstructions (source archive).
+- **Ali Romman (@aliromman)** — [#6169](https://github.com/CrocSwap/integer-mult-bounds/pull/6169): No new κ: exact multi-gate resynthesis removes 117 P104 events (source archive).
+- **DreamingOfClouds (@DreamingOfClouds)** — [#6170](https://github.com/CrocSwap/integer-mult-bounds/pull/6170): Add P104 designer toolkit v2: exact pricing and legality, #6030 rebuild with fold/hoist/retain, generators, sub-circuit tools (no kappa claim) (source archive).
+- **Ali Romman (@aliromman)** — [#6171](https://github.com/CrocSwap/integer-mult-bounds/pull/6171): Prove an all-width tensor-frame reduction under fixed boundaries (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6172](https://github.com/CrocSwap/integer-mult-bounds/pull/6172): Prove sharp signed tensor gap with variable target boundaries (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6173](https://github.com/CrocSwap/integer-mult-bounds/pull/6173): Prove exact two-channel P104 support 72 over F3 and Q (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6174](https://github.com/CrocSwap/integer-mult-bounds/pull/6174): Realize unbounded bipartite rank metrics in four-dimensional shears (no κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6175](https://github.com/CrocSwap/integer-mult-bounds/pull/6175): Add exact P104 ADD-coefficient fault localization (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6176](https://github.com/CrocSwap/integer-mult-bounds/pull/6176): Prove the sharp universal axis cutoff for the CRT reservoir envelope (no κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6177](https://github.com/CrocSwap/integer-mult-bounds/pull/6177): Reduce complete replay planning time by 8.27% (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6178](https://github.com/CrocSwap/integer-mult-bounds/pull/6178): Prove functional decoder pairings cost at least v over every field (source archive).
+- **Nick Petalas (@petalas)** — [#6179](https://github.com/CrocSwap/integer-mult-bounds/pull/6179): Reduce current task-picker startup time by 4.66% (no new κ) (reviewed tooling).
+- **Nick Petalas (@petalas)** — [#6180](https://github.com/CrocSwap/integer-mult-bounds/pull/6180): Certify rectangular dirty circuits with k+1-coordinate witnesses (no κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6181](https://github.com/CrocSwap/integer-mult-bounds/pull/6181): Prove stable joint-bank Gram spectral obstruction (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6182](https://github.com/CrocSwap/integer-mult-bounds/pull/6182): Prove exact five-bit coordinate-parity recovery (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6183](https://github.com/CrocSwap/integer-mult-bounds/pull/6183): Prove a sharp 1/4 error floor for contractive P104 mode deletion (no κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6184](https://github.com/CrocSwap/integer-mult-bounds/pull/6184): Prove exact arithmetic chirp cut spectra and robust bond floors (no κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6185](https://github.com/CrocSwap/integer-mult-bounds/pull/6185): Construct a paid arbitrary-bit Sandwich boundary (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6186](https://github.com/CrocSwap/integer-mult-bounds/pull/6186): Reduce complete positive-frame replay time by 71.4% (no new κ) (source archive).
+- **Nick Petalas (@petalas)** — [#6187](https://github.com/CrocSwap/integer-mult-bounds/pull/6187): Reduce complete first P104 fold time by 29.94% (no new κ) (source archive).
+- **Matarener (@Matarener)** — [#6188](https://github.com/CrocSwap/integer-mult-bounds/pull/6188): research: P104 B-form nine-term decoder floor >= 56 (no κ claim) (source archive).
+- **josecarlosgonzalezroque-design (@josecarlosgonzalezroque-design)** — [#6189](https://github.com/CrocSwap/integer-mult-bounds/pull/6189): Publish Windows research exports without hard links (reviewed tooling).
+- **Armin Pourshafeie (@apoursh)** — [#6190](https://github.com/CrocSwap/integer-mult-bounds/pull/6190): Prove eight-call floor for two arbitrary signed rank-one frames (no κ) (source archive).

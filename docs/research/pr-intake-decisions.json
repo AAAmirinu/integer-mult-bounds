@@ -115242,18 +115242,20 @@
           "login": "DreamingOfClouds",
           "name": ""
         },
-        "headRefOid": "4f3b67e7c37ae270da9584033132866d0cf63e42",
+        "headRefOid": "5ec9b6dafc1ec54e2c0ca0771e8ed032f7888417",
         "isDraft": false,
         "number": 6144,
         "title": "Conditional \u03ba .003128386 (+2.582e-6 over #6030): owned registers 770, 771 and 772 descend through the frames of helpers 705, 706 and 731, which no longer relay them; helper 732 reads 771 at frame 117",
         "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6144"
       },
-      "reviewed_head": "4f3b67e7c37ae270da9584033132866d0cf63e42",
-      "current_head": "4f3b67e7c37ae270da9584033132866d0cf63e42",
+      "reviewed_head": "5ec9b6dafc1ec54e2c0ca0771e8ed032f7888417",
+      "current_head": "5ec9b6dafc1ec54e2c0ca0771e8ed032f7888417",
       "disposition": "partially_reviewed",
       "github_state": "OPEN",
-      "integration_location": [],
-      "unresolved_question": "SOURCES.json pins certificates/selected-result.json to SHA256 2a0220e866417774606e0f991e41b9c1d26b1f43b97857238cf478dbc7d330b5 and Git blob 581f8d87008354eb5b869f7ed9de1317ad837ce8 at base 721c03822c421b7f7fcbb2598993b947c4d88419; neither matches that exact base. Correct or explicitly identify the historical source pin before archive intake. No mathematical refutation or independent replay is claimed.",
+      "integration_location": [
+        "research/p104-root-relay-descent-2"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
       "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
       "review_completion": {
         "changed_file_coverage": true,
@@ -115262,7 +115264,7 @@
         "published": false
       },
       "verification_evidence": [
-        "docs/research/pr-intake-evidence/queue-oct28a-20261028.json"
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
       ],
       "closure": null
     },
@@ -116079,6 +116081,927 @@
         "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6164",
         "merge_commit": "4f46cbba931456a3b88be68a7cdf3de7eb842144"
       }
+    },
+    {
+      "number": 6165,
+      "metadata": {
+        "author": {
+          "id": "U_kgDOE8HONA",
+          "is_bot": false,
+          "login": "josecarlosgonzalezroque-design",
+          "name": ""
+        },
+        "headRefOid": "4f0f0a69d6db31e31ec85bf70390670a6ec81b5b",
+        "isDraft": false,
+        "number": 6165,
+        "title": "Audit selected JSON locale failures without changing frozen sources",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6165"
+      },
+      "reviewed_head": "4f0f0a69d6db31e31ec85bf70390670a6ec81b5b",
+      "current_head": "4f0f0a69d6db31e31ec85bf70390670a6ec81b5b",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/selected-json-utf8-replay"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6166,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjUyOTEyMzI1",
+          "is_bot": false,
+          "login": "Matarener",
+          "name": ""
+        },
+        "headRefOid": "096938513138868f0ed27639061f1a5054900f96",
+        "isDraft": false,
+        "number": 6166,
+        "title": "P104 carrier code: the length-8 decoding code is unique (E8 root code, min weight 49)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6166"
+      },
+      "reviewed_head": "096938513138868f0ed27639061f1a5054900f96",
+      "current_head": "096938513138868f0ed27639061f1a5054900f96",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/p104-carrier-code-uniqueness"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6167,
+      "metadata": {
+        "author": {
+          "id": "U_kgDODYXfmQ",
+          "is_bot": false,
+          "login": "aliromman",
+          "name": "Ali Romman"
+        },
+        "headRefOid": "564a076b113621a93edc4e39968ee4e4a8c9caf0",
+        "isDraft": false,
+        "number": 6167,
+        "title": "Conditional \u03ba = 0.003128645 (+2.59e-7 over #6144): retain an operand to remove a root stop",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6167"
+      },
+      "reviewed_head": "564a076b113621a93edc4e39968ee4e4a8c9caf0",
+      "current_head": "564a076b113621a93edc4e39968ee4e4a8c9caf0",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/p104-retained-operand-descent"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6168,
+      "metadata": {
+        "author": {
+          "id": "U_kgDODYXfmQ",
+          "is_bot": false,
+          "login": "aliromman",
+          "name": "Ali Romman"
+        },
+        "headRefOid": "2defc4f2f74acae1d6b49dfbcf2140570a09b381",
+        "isDraft": false,
+        "number": 6168,
+        "title": "Prove exact cyclic query tariffs and all-width caller obstructions",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6168"
+      },
+      "reviewed_head": "2defc4f2f74acae1d6b49dfbcf2140570a09b381",
+      "current_head": "2defc4f2f74acae1d6b49dfbcf2140570a09b381",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/alternating-caller-closure",
+        "research/cyclic-stage-rank-budget",
+        "research/five-call-projector-rigidity"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6169,
+      "metadata": {
+        "author": {
+          "id": "U_kgDODYXfmQ",
+          "is_bot": false,
+          "login": "aliromman",
+          "name": "Ali Romman"
+        },
+        "headRefOid": "66f4d2d7f8269fb058c3759c019e677516891082",
+        "isDraft": false,
+        "number": 6169,
+        "title": "No new \u03ba: exact multi-gate resynthesis removes 117 P104 events",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6169"
+      },
+      "reviewed_head": "66f4d2d7f8269fb058c3759c019e677516891082",
+      "current_head": "66f4d2d7f8269fb058c3759c019e677516891082",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/p104-common-response-resynthesis"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6170,
+      "metadata": {
+        "author": {
+          "id": "U_kgDOClpS9w",
+          "is_bot": false,
+          "login": "DreamingOfClouds",
+          "name": ""
+        },
+        "headRefOid": "445fb9124eb3fcb5d4f342c476b9ae3637f185aa",
+        "isDraft": false,
+        "number": 6170,
+        "title": "Add P104 designer toolkit v2: exact pricing and legality, #6030 rebuild with fold/hoist/retain, generators, sub-circuit tools (no kappa claim)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6170"
+      },
+      "reviewed_head": "445fb9124eb3fcb5d4f342c476b9ae3637f185aa",
+      "current_head": "445fb9124eb3fcb5d4f342c476b9ae3637f185aa",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/p104-designer-toolkit-v2"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6171,
+      "metadata": {
+        "author": {
+          "id": "U_kgDODYXfmQ",
+          "is_bot": false,
+          "login": "aliromman",
+          "name": "Ali Romman"
+        },
+        "headRefOid": "343232cdf5273d1f77569de390f0977b46916644",
+        "isDraft": false,
+        "number": 6171,
+        "title": "Prove an all-width tensor-frame reduction under fixed boundaries (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6171"
+      },
+      "reviewed_head": "343232cdf5273d1f77569de390f0977b46916644",
+      "current_head": "343232cdf5273d1f77569de390f0977b46916644",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/tensor-frame-reduction"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6172,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "0821ba9ff3b55204042b007212f04d764b5d3921",
+        "isDraft": false,
+        "number": 6172,
+        "title": "Prove sharp signed tensor gap with variable target boundaries (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6172"
+      },
+      "reviewed_head": "0821ba9ff3b55204042b007212f04d764b5d3921",
+      "current_head": "0821ba9ff3b55204042b007212f04d764b5d3921",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/signed-triangle-tensor-gap"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6173,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "6479ec01b2afb0056e9ee3bb5f053b7d5931bece",
+        "isDraft": false,
+        "number": 6173,
+        "title": "Prove exact two-channel P104 support 72 over F3 and Q (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6173"
+      },
+      "reviewed_head": "6479ec01b2afb0056e9ee3bb5f053b7d5931bece",
+      "current_head": "6479ec01b2afb0056e9ee3bb5f053b7d5931bece",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/p104-two-channel-support"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6174,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "e833fa110cb6cb878a1e95680d4957b2638b29a8",
+        "isDraft": false,
+        "number": 6174,
+        "title": "Realize unbounded bipartite rank metrics in four-dimensional shears (no \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6174"
+      },
+      "reviewed_head": "e833fa110cb6cb878a1e95680d4957b2638b29a8",
+      "current_head": "e833fa110cb6cb878a1e95680d4957b2638b29a8",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/unbounded-shear-bicliques"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6175,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "045350fba7915f964248ca95f996eff3acc08239",
+        "isDraft": false,
+        "number": 6175,
+        "title": "Add exact P104 ADD-coefficient fault localization (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6175"
+      },
+      "reviewed_head": "045350fba7915f964248ca95f996eff3acc08239",
+      "current_head": "045350fba7915f964248ca95f996eff3acc08239",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/p104-add-fault-localization"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6176,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "75b7bfe3635e593c9f2a4a4a97c039588ce3415c",
+        "isDraft": false,
+        "number": 6176,
+        "title": "Prove the sharp universal axis cutoff for the CRT reservoir envelope (no \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6176"
+      },
+      "reviewed_head": "75b7bfe3635e593c9f2a4a4a97c039588ce3415c",
+      "current_head": "75b7bfe3635e593c9f2a4a4a97c039588ce3415c",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/reservoir-universal-axis-cutoff"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6177,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "07236dccd7dfca0e5e501c77e24f645b7ee523f6",
+        "isDraft": false,
+        "number": 6177,
+        "title": "Reduce complete replay planning time by 8.27% (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6177"
+      },
+      "reviewed_head": "07236dccd7dfca0e5e501c77e24f645b7ee523f6",
+      "current_head": "07236dccd7dfca0e5e501c77e24f645b7ee523f6",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/replay-planner-ancestor-cache"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6178,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "c651f5a1180ab5611f16533a1837c8a386f1ab50",
+        "isDraft": false,
+        "number": 6178,
+        "title": "Prove functional decoder pairings cost at least v over every field",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6178"
+      },
+      "reviewed_head": "c651f5a1180ab5611f16533a1837c8a386f1ab50",
+      "current_head": "c651f5a1180ab5611f16533a1837c8a386f1ab50",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/functional-pairing-lift"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6179,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "637a0513b0ca75053fc62ddb99d1ac43eb1cb333",
+        "isDraft": false,
+        "number": 6179,
+        "title": "Reduce current task-picker startup time by 4.66% (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6179"
+      },
+      "reviewed_head": "637a0513b0ca75053fc62ddb99d1ac43eb1cb333",
+      "current_head": "637a0513b0ca75053fc62ddb99d1ac43eb1cb333",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/current-picker-lazy-validation/BENCHMARK.json",
+        "research/current-picker-lazy-validation/README.md",
+        "research/current-picker-lazy-validation/SOURCES.json",
+        "research/current-picker-lazy-validation/TASK.json",
+        "research/current-picker-lazy-validation/VERIFY.json",
+        "research/current-picker-lazy-validation/benchmark.py",
+        "research/current-picker-lazy-validation/verify.py",
+        "scripts/choose_current_research_task.py"
+      ],
+      "unresolved_question": "Reviewed lazy loading of unchanged legacy validation only when a historical route needs it; no cache or route-validation deletion. Current/historical assignment tests normal and optimized; performance measurements not independently rerun.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6180,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "454fa2f43e2465518946ae51fc6f64bd275c877d",
+        "isDraft": false,
+        "number": 6180,
+        "title": "Certify rectangular dirty circuits with k+1-coordinate witnesses (no \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6180"
+      },
+      "reviewed_head": "454fa2f43e2465518946ae51fc6f64bd275c877d",
+      "current_head": "454fa2f43e2465518946ae51fc6f64bd275c877d",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/rectangular-dirty-certificates"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6181,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "65704df0ff4e7cad336694d39ff3492df48e0c04",
+        "isDraft": false,
+        "number": 6181,
+        "title": "Prove stable joint-bank Gram spectral obstruction (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6181"
+      },
+      "reviewed_head": "65704df0ff4e7cad336694d39ff3492df48e0c04",
+      "current_head": "65704df0ff4e7cad336694d39ff3492df48e0c04",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/p104-joint-spectral-obstruction"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6182,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "2779de2ce398eba70ec195192506e6eb9548db29",
+        "isDraft": false,
+        "number": 6182,
+        "title": "Prove exact five-bit coordinate-parity recovery (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6182"
+      },
+      "reviewed_head": "2779de2ce398eba70ec195192506e6eb9548db29",
+      "current_head": "2779de2ce398eba70ec195192506e6eb9548db29",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/rounded-inverse-parity-tags"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6183,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "eaf77790466f34b86ce72080e3ec690e26dfacab",
+        "isDraft": false,
+        "number": 6183,
+        "title": "Prove a sharp 1/4 error floor for contractive P104 mode deletion (no \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6183"
+      },
+      "reviewed_head": "eaf77790466f34b86ce72080e3ec690e26dfacab",
+      "current_head": "eaf77790466f34b86ce72080e3ec690e26dfacab",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/p104-contractive-gram-deflation"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6184,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "bc755bb256fd369a52341950c62a80b29db64cdb",
+        "isDraft": false,
+        "number": 6184,
+        "title": "Prove exact arithmetic chirp cut spectra and robust bond floors (no \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6184"
+      },
+      "reviewed_head": "bc755bb256fd369a52341950c62a80b29db64cdb",
+      "current_head": "bc755bb256fd369a52341950c62a80b29db64cdb",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/arithmetic-chirp-cut-spectrum"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6185,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "9ef83f675cb193d9f7a3fddb4cd452b12398c08b",
+        "isDraft": false,
+        "number": 6185,
+        "title": "Construct a paid arbitrary-bit Sandwich boundary (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6185"
+      },
+      "reviewed_head": "9ef83f675cb193d9f7a3fddb4cd452b12398c08b",
+      "current_head": "9ef83f675cb193d9f7a3fddb4cd452b12398c08b",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/arbitrary-bit-sandwich"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6186,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "3d452329bf4e4893c0a5205eecd61c3cd6c39cb4",
+        "isDraft": false,
+        "number": 6186,
+        "title": "Reduce complete positive-frame replay time by 71.4% (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6186"
+      },
+      "reviewed_head": "3d452329bf4e4893c0a5205eecd61c3cd6c39cb4",
+      "current_head": "3d452329bf4e4893c0a5205eecd61c3cd6c39cb4",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/positive-frame-subset-join"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6187,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjc0MjEzNDY=",
+          "is_bot": false,
+          "login": "petalas",
+          "name": "Nick Petalas"
+        },
+        "headRefOid": "9a7f206d4e9812d2eec042aed6e40acadacd534d",
+        "isDraft": false,
+        "number": 6187,
+        "title": "Reduce complete first P104 fold time by 29.94% (no new \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6187"
+      },
+      "reviewed_head": "9a7f206d4e9812d2eec042aed6e40acadacd534d",
+      "current_head": "9a7f206d4e9812d2eec042aed6e40acadacd534d",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/p104-fold-elimination"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6188,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjUyOTEyMzI1",
+          "is_bot": false,
+          "login": "Matarener",
+          "name": ""
+        },
+        "headRefOid": "1dd7fb6b48f2a00128b62513337d2457f28623c4",
+        "isDraft": false,
+        "number": 6188,
+        "title": "research: P104 B-form nine-term decoder floor >= 56 (no \u03ba claim)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6188"
+      },
+      "reviewed_head": "1dd7fb6b48f2a00128b62513337d2457f28623c4",
+      "current_head": "1dd7fb6b48f2a00128b62513337d2457f28623c4",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/p104-bform-nine-term-floor"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6189,
+      "metadata": {
+        "author": {
+          "id": "U_kgDOE8HONA",
+          "is_bot": false,
+          "login": "josecarlosgonzalezroque-design",
+          "name": ""
+        },
+        "headRefOid": "8938e6be3e97ec3f2bfc0f7a32689919091eca67",
+        "isDraft": false,
+        "number": 6189,
+        "title": "Publish Windows research exports without hard links",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6189"
+      },
+      "reviewed_head": "8938e6be3e97ec3f2bfc0f7a32689919091eca67",
+      "current_head": "8938e6be3e97ec3f2bfc0f7a32689919091eca67",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "docs/research/windows-export-publication.md",
+        "scripts/export_research_package.py",
+        "tests/test_research_export_publication.py"
+      ],
+      "unresolved_question": "Reviewed same-directory non-overwriting Windows rename publication and retained POSIX hard-link path. Full exporter regression suites run on macOS normally and optimized. Native Windows execution remains author-reported, not independently replayed. Python os.rename documentation confirms existing-destination rejection on Windows.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": true,
+        "required_execution_complete": true,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
+    },
+    {
+      "number": 6190,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjg4Njc3NzA=",
+          "is_bot": false,
+          "login": "apoursh",
+          "name": "Armin Pourshafeie"
+        },
+        "headRefOid": "375aced69b88d996fb9f8faa8911fefeaaf1923b",
+        "isDraft": false,
+        "number": 6190,
+        "title": "Prove eight-call floor for two arbitrary signed rank-one frames (no \u03ba)",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6190"
+      },
+      "reviewed_head": "375aced69b88d996fb9f8faa8911fefeaaf1923b",
+      "current_head": "375aced69b88d996fb9f8faa8911fefeaaf1923b",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/bit-two-signed-frame-floor"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      ],
+      "closure": null
     }
   ]
 }

@@ -13,7 +13,6 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 LEGACY = ROOT / "scripts/choose_research_task.py"
-check_catalog_files = runpy.run_path(str(LEGACY))["check_catalog_files"]
 
 
 def resolve_current_first_steps(result, root):
@@ -35,6 +34,7 @@ def resolve_current_first_steps(result, root):
                      for name in (runner, package + "/VERIFY.json", package + "/verify.py")]
     # Validate the whole route before changing any suggestion. These are entry
     # references only; the registered replay authenticates its own input closure.
+    check_catalog_files = runpy.run_path(str(LEGACY))["check_catalog_files"]
     omitted = check_catalog_files(root, required)
     for card in cards:
         original = card["first_step"]
