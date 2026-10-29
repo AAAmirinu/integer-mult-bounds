@@ -43,6 +43,9 @@ python3.12 -B scripts/research_package.py --package research/alternating-caller-
 python3.12 -I -O -B research/alternating-caller-closure/verify.py
 ```
 
+[VALIDATION.md](VALIDATION.md) records the normal, optimized, export, source
+mutation and read-only Git-free checks.
+
 Only Python 3.12 and the standard library are required. The direct verifier
 also works in a Git-free package copy. SOURCES.json pins main
 3f0152a32eeebac0df11946dbd50cabe5a7f7839 and the PR6168 proof helpers at
