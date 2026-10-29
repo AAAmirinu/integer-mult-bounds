@@ -1,0 +1,40 @@
+{
+  "n": 6,
+  "full_calls": 5,
+  "thin_calls": 2,
+  "saved_history_rows": 48,
+  "spaces": [
+    {
+      "degree": 0,
+      "dimension": 0,
+      "basis": []
+    },
+    {
+      "degree": 1,
+      "dimension": 0,
+      "basis": []
+    },
+    {
+      "degree": 2,
+      "dimension": 0,
+      "basis": []
+    },
+    {
+      "degree": 3,
+      "dimension": 0,
+      "basis": []
+    },
+    {
+      "degree": 4,
+      "dimension": 0,
+      "basis": []
+    },
+    {
+      "degree": 5,
+      "dimension": 0,
+      "basis": []
+    }
+  ],
+  "seconds": 0.02075520798098296,
+  "new_kappa": false
+}
