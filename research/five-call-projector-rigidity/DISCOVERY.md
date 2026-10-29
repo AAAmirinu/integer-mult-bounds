@@ -57,10 +57,20 @@ cannot be read as independent Gaussian targets.
 `history_discovery.py` then grants an ordinary saved copy of every field
 after every completed call, including the original input. It uses exact
 rational row reduction to test whether a constant combination gives a
-pure S z^e row. On the six-field natural endpoint, the dimension is zero
-for every e from zero through five. This includes arbitrary ordinary
-combinations of the original inputs. It excludes only that fixed prefix
-history and endpoint choice, not all initialized-work callers.
+pure S z^e row. On the six-field natural endpoint, degree two has dimension
+two. The other degrees from zero through five have dimension zero. The
+two returned input rows are (1,1,0,0,0,0) and (0,0,0,0,0,1). This does not
+complete six independent Gaussian targets. The test includes arbitrary
+ordinary combinations of the original inputs and covers only this fixed
+prefix history and endpoint choice.
+
+Correction after the first publication: the earlier discovery script used
+coefficients of w=z-1 but tested a single coefficient as if it were z^e.
+It therefore tested S (z-1)^e, and its all-zero result did not exclude
+S z^e. The corrected script uses coefficients of z throughout and has a
+control that a full stage on the entire space is exactly z I. This error
+was in the unregistered history screen. It did not affect PROOF.md,
+PERIOD.md or the registered exact replay.
 
 The six-field history receipt and rational projectors are saved. The same
 elimination used in `verify.alternating` rebuilds those projectors.

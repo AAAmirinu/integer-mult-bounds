@@ -40,6 +40,14 @@ The direct base ancestry check passed. Both declared provenance files are
 pinned to that base, and their source authentication passed. This does not
 claim a full-history check.
 
+The first published head `075c9df913cfabcbaa84d1d71e8561b20141b856` also
+passed the hosted plan and registered replay jobs. A later correction
+changes the unregistered history screen from powers of z-1 to powers of z.
+Its exact normal and optimized discovery runs now return two independent
+degree-two query rows. A literal full-stage control rejects the earlier
+variable convention. The proof and registered executable files are unchanged.
+DISCOVERY.md states the old error and the corrected coverage.
+
 These are author checks with substantial AI assistance. Independent
 scientific review and proof-kernel verification have not occurred.
 The selected frontier replay was not run. There is no complete new caller,

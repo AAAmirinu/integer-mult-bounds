@@ -13,7 +13,9 @@ from exact_replay import canonical
 
 def advance(word, p, t):
     old = [t*x for x in word]
-    return [old[0]] + [old[i] + p*old[i-1] for i in range(1, len(old))] + [p*old[-1]]
+    complement = s.eye(p.rows)-p
+    return [complement*old[0]] + [complement*old[i]+p*old[i-1]
+                                  for i in range(1, len(old))] + [p*old[-1]]
 
 
 def search(path):
@@ -24,6 +26,8 @@ def search(path):
     ps = [ps[0]] + ps + [ps[-1]]
     ts = [s.Matrix(t) for t in canonical(n)[2]]
     ident = s.eye(n)
+    if advance([ident], ident, ident) != [s.zeros(n), ident]:
+        raise ValueError('The stage variable control fails: a full stage is z I')
     plus, minus = [ident], [ident]
     records = [(plus.copy(), minus.copy())]
     for p, t in zip(ps, ts):
@@ -49,7 +53,10 @@ def search(path):
         spaces.append({'degree': e, 'dimension': len(vectors),
                        'basis': [[str(x) for x in row] for row in vectors]})
         print(json.dumps({'n': n, 'degree': e, 'dimension': len(vectors)}), flush=True)
+    if n == 6 and [x['dimension'] for x in spaces] != [0, 0, 2, 0, 0, 0]:
+        raise ValueError('The fixed six-field history control fails')
     return {'n': n, 'full_calls': n//2+2, 'thin_calls': n//2-1,
+            'coefficient_variable': 'z',
             'saved_history_rows': histories.rows, 'spaces': spaces,
             'seconds': time.monotonic()-started, 'new_kappa': False}
 
