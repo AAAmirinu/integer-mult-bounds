@@ -126,10 +126,16 @@ def export(root, package, ref, output, input_ref=None):
                                              'sha256': hashlib.sha256(data).hexdigest()})
             data = (json.dumps(receipt, sort_keys=True, indent=2) + '\n').encode('utf-8')
             archive.addfile(*member(RECEIPT, data))
-        # link is atomic and refuses an existing destination, including a symlink.
-        os.link(name, output)
+        # Both operations refuse an existing destination, including one created
+        # after the check above. Windows rename needs no hard-link permission;
+        # POSIX rename would overwrite, so retain link there. The staging file
+        # is in the destination directory and all writer handles are closed.
+        if os.name == 'nt':
+            os.rename(name, output)
+        else:
+            os.link(name, output)
     finally:
-        os.unlink(name)
+        Path(name).unlink(missing_ok=True)
     return receipt
 
 
