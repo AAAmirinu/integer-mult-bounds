@@ -34,7 +34,8 @@ python3.12 scripts/research_package.py --package research/p104-wire-routing-obst
 
 `verify.py` uses only the standard library. It takes about 10 s and checks V1–V6, two failure controls and `RESULT.json`.
 The Lean file needs Mathlib (same revision as `research/p104-carrier-code-uniqueness/lean`). Build it with `lake build`
-inside `lean/`.
+inside `lean/`. Checked build (Lean v4.33.0-rc1, Mathlib `55b7917b`): `lake build` OK, and
+`lean/Axioms.lean` prints only `propext`, `Classical.choice`, `Quot.sound` for both theorems.
 
 ## Open next questions
 

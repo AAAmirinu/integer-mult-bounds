@@ -32,11 +32,17 @@ theorem third_root_or_sign (rj rk ri : E)
     simp only [inner_add_left, inner_add_right, inner_sub_left, inner_sub_right, real_inner_smul_left,
       real_inner_smul_right, hj, hk, hi, hki, hik, hkj, hij]
     ring
-  rcases hjk with hx | hx <;> rcases hji with hy | hy <;> rcases hc with hcv | hcv
-  all_goals first
-    | (right; right; rw [hx, hy, hcv]; norm_num; done)
-    | (left; exact sub_eq_zero.mp ((inner_self_eq_zero (𝕜 := ℝ)).mp (by rw [e1, hx, hy, hcv]; norm_num)))
-    | (right; left; exact eq_neg_of_add_eq_zero_left ((inner_self_eq_zero (𝕜 := ℝ)).mp (by rw [e2, hx, hy, hcv]; norm_num)))
+  have key : (⟪rj, rk⟫ - c * ⟪rj, ri⟫) = 2 ∨ (⟪rj, rk⟫ - c * ⟪rj, ri⟫) = -2 ∨ ⟪rj, rk⟫ * ⟪rj, ri⟫ = c := by
+    rcases hjk with hx | hx <;> rcases hji with hy | hy <;> rcases hc with hcv | hcv <;>
+      rw [hx, hy, hcv] <;> norm_num
+  rcases key with h | h | h
+  · left
+    have h0 : ⟪rj - (rk - c • ri), rj - (rk - c • ri)⟫ = 0 := by rw [e1, h]; norm_num
+    exact sub_eq_zero.mp ((inner_self_eq_zero (𝕜 := ℝ)).mp h0)
+  · right; left
+    have h0 : ⟪rj + (rk - c • ri), rj + (rk - c • ri)⟫ = 0 := by rw [e2, h]; norm_num
+    exact eq_neg_of_add_eq_zero_left ((inner_self_eq_zero (𝕜 := ℝ)).mp h0)
+  · right; right; exact h
 
 theorem triangle_iff (rk rm ri : E)
     (hk : ⟪rk, rk⟫ = 2) (hm : ⟪rm, rm⟫ = 2) (hi : ⟪ri, ri⟫ = 2)
