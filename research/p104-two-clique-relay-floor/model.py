@@ -97,7 +97,7 @@ def packet(vector, tags, functional):
 def check_network(ports, moves, output):
     """Check REL and return the invoice, shadow rank and debt dimension."""
     tags = tags_for(ports)
-    universe = span(list(ports[:4]) + [ports[4]])
+    universe = span(list(ports))
     require(len(moves) <= 16 and len(output) == 8, "network capacity")
     require(all(len(row) == len(moves) for row in output), "output shape")
     vectors, landings, debt = [], [], ()
