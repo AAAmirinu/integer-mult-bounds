@@ -1821,24 +1821,22 @@
     "all_jobs_finished": true
   },
   "latest_delta_intake": {
-    "date": "2026-10-28",
-    "status": "published; zero actionable at ending snapshot",
-    "decisions": 114,
-    "archives_merged": 106,
-    "reviewed_tooling_merged": 7,
-    "new_revision_hold": 6144,
+    "date": "2026-10-29",
+    "status": "published; ending queue snapshot recorded",
+    "decisions": 27,
+    "archives_merged": 25,
+    "reviewed_tooling_merged": 2,
+    "repaired_hold": 6144,
     "evidence": [
-      "docs/research/pr-intake-evidence/queue-oct28a-20261028.json",
-      "docs/research/pr-intake-evidence/queue-oct28b-20261028.json"
+      "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
     ],
     "closures": [
-      "docs/research/pr-intake-evidence/queue-oct28a-closures.json",
-      "docs/research/pr-intake-evidence/queue-oct28b-closures.json"
+      "docs/research/pr-intake-evidence/queue-oct29a-closures.json"
     ],
-    "snapshot": "docs/research/pr-intake-evidence/queue-oct28-ending.json",
+    "snapshot": "docs/research/pr-intake-evidence/queue-oct29-ending.json",
     "selected_kappa": "0.003125804",
     "selected_frontier_changed": false,
     "live_jobs": [],
-    "next": "Run delta-only plan on a new request. Do not rerun unchanged holds, deferred replays or historical scientific suites. Archived frontier proposals remain scientifically unadmitted."
+    "next": "Use delta-only plan. PR6167 claim 0.003128645 is archived, not independently admitted. Do not replay unchanged holds or historical suites. Intermittent macOS Git process cleanup EPERM observed in an unchanged path; see retained normal/optimized tooling logs."
   }
 }
