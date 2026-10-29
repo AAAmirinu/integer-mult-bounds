@@ -12,6 +12,12 @@ directed source-to-destination graph is acyclic.
 The contribution is the exact batching contract, necessity proof and executable
 witness guard. Read-before-write dependency scheduling and topological sorting
 are standard background; no historical-priority claim is made for those ideas.
+Rohan Arun's [PR409](https://github.com/CrocSwap/integer-mult-bounds/pull/409)
+already uses read-before-write as a sufficient premise for a particular
+rational entrance-shear word; [PR413](https://github.com/CrocSwap/integer-mult-bounds/pull/413)
+retains it. The additional step here is necessity with a final-state witness
+and an exact safe-ordering criterion under the Boolean unique-write contract.
+Neither predecessor's word or reported bound is replayed here.
 
 ## Contract and theorem
 
