@@ -36,6 +36,11 @@ helper profiles and all boundary data. The [receipt](RESULT.json) records the
 counts and rejection controls. [CERTIFICATE.json](CERTIFICATE.json) records the
 three passes and the hash of the reconstructed final word.
 
+The source word uses the archive manifest format. The verifier checks its
+SHA256 and Git blob ID. These bytes matched the exact PR6144 head locally.
+The hosted checkout cannot resolve that fork-only head. Thus hosted replay
+checks the retained bytes, but does not check their publication ancestry.
+
 The registered result does not depend on a solver or on the discovery files.
 The optional `--write-result` argument writes the mathematical receipt; it does
 not write or change the retained input.

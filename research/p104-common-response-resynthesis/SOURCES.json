@@ -13,14 +13,14 @@
       "usage": "provenance",
       "git_blob": "3404fbdd5e7529a0674eef26114b5071e4586cec",
       "sha256": "ead6cdc9d0af6d58e8a49744d8ec8c7c15e13d2ba93c276c434bcf9b51b93a81"
-    },
-    {
-      "path": "research/p104-root-relay-descent-2/WORD.json.gz",
-      "usage": "provenance",
-      "pin": "head:5ec9b6dafc1ec54e2c0ca0771e8ed032f7888417:research/p104-root-relay-descent-2/WORD.json.gz",
-      "git_blob": "69b70ee50c697b185ebf585fbe69f2487af32d1d",
-      "sha256": "c71985d96bf3d4a35aae111aaba87e376f7367efb4a5686278ef293732757533",
-      "vendored_copy": "inputs/pr6144-WORD.json.gz"
     }
-  ]
+  ],
+  "source_word": {
+    "path": "research/p104-root-relay-descent-2/WORD.json.gz",
+    "git_blob": "69b70ee50c697b185ebf585fbe69f2487af32d1d",
+    "sha256": "c71985d96bf3d4a35aae111aaba87e376f7367efb4a5686278ef293732757533",
+    "commit": "5ec9b6dafc1ec54e2c0ca0771e8ed032f7888417",
+    "pr": 6144,
+    "local_path": "inputs/pr6144-WORD.json.gz"
+  }
 }

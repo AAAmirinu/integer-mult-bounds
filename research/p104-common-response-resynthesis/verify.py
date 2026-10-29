@@ -40,11 +40,10 @@ def scalar(value):
 
 def source():
     manifest = json.loads((HERE / 'SOURCES.json').read_text())
-    pins = [p for p in manifest['files'] if 'vendored_copy' in p]
-    need(len(pins) == 1, 'One source word')
-    raw = (HERE / pins[0]['vendored_copy']).read_bytes()
-    need(sha256(raw).hexdigest() == pins[0]['sha256'], 'Source bytes')
-    need(sha1(b'blob ' + str(len(raw)).encode() + b'\0' + raw).hexdigest() == pins[0]['git_blob'], 'Source Git blob')
+    pin = manifest['source_word']
+    raw = (HERE / pin['local_path']).read_bytes()
+    need(sha256(raw).hexdigest() == pin['sha256'], 'Source bytes')
+    need(sha1(b'blob ' + str(len(raw)).encode() + b'\0' + raw).hexdigest() == pin['git_blob'], 'Source Git blob')
     return json.loads(gzip.decompress(raw))
 
 
