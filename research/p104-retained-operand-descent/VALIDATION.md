@@ -32,8 +32,19 @@ independent scientific reviewers performed these checks.
 
 ## Publication checks
 
-The committed-byte preflight, official export and Git-free replay are pending
-at this initial source commit. Their result will be recorded before publication.
+The committed-byte and executable-mode preflight passed at source commit
+`531df47159d3f9ee6652c1e0e46305cc30ca841d` for all 18 package files. The official
+exporter and its separate archive check passed. The archive SHA256 is
+`3f5f6e6a612aa18b28a3a3bd444085e39b3de07055ed09c7f86d124fd285a934`.
+
+The exported package then passed the full optimized Python 3.12.13 replay in
+156.311 seconds. Git was absent from PATH. All exported files had mode 0444;
+all export directories had mode 0555. Hash and mode inventories before and
+after the run matched for all 19 files, including the export receipt.
+Status: `PASS_READ_ONLY_GIT_FREE_EXPORT`.
+
+The next commit changes only this validation note and task coordination
+metadata. It does not change code, source inputs, the word or RESULT.json.
 Hosted CI and independent scientific review remain pending. The optional full
 Git-history ancestry preflight is not run: this checkout is shallow, and the
 runtime source is retained in authenticated local archives.

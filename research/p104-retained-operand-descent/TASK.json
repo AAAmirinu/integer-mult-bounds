@@ -135,6 +135,18 @@
       "canonical_main": "3f0152a32eeebac0df11946dbd50cabe5a7f7839",
       "source_head_unchanged": true,
       "coverage": "Latest20 open PRs and last8 comments in Discussions5125,5600,5645,5593,1166. The live5600 GF4 scope fixes the source scalar graph and excludes changed scalar words. The5593 caller scope is separate."
-    }
+    },
+    "larger_proposals_read": [
+      {
+        "pr": 5270,
+        "head": "225a19a184296d12120203a1f43b981d55465241",
+        "scope": "Draft p19 claim0.0033999964; this package does not claim to complete its caller."
+      },
+      {
+        "pr": 5440,
+        "head": "c0f52b5b18bba78a6a5e8057edf9571bade88549",
+        "scope": "The larger p19 claim0.0033999964 explicitly retains the missing chain-to-native-event compiler contract and sets kappa_attached_to_physical_chain=false. This contribution instead extends the exact PR6144 native word. The live5593 caller scope is separate."
+      }
+    ]
   }
 }
