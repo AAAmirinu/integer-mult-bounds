@@ -45,6 +45,7 @@ def lemma_p(planes, cliq):
 
 def numbers(logs):
     out = {'lemma_p': lemma_p(logs['evidence/planes.txt'], logs['evidence/cliq.txt'])}
+    out['lemma_p_kaggle'] = lemma_p(logs['evidence/kaggle/planes.txt'], logs['evidence/kaggle/cliq.txt'])
     out['compatible_pair_shapes'] = ast.literal_eval(re.search(r'compatible pair \(\|L1\|,\|L2\|,\|L1&L2\|,\|union\|\) (\[.*\])', logs['evidence/sizes.txt']).group(1))
     out['max_union'] = max(k for k, _ in ast.literal_eval(re.search(r'over plane pairs with \|L\| >= 20: (\[.*\])', logs['evidence/maxu.txt']).group(1)))
     rows = re.findall(r'^y (port|nonport) L-inside-H_y flags \((\d), (\d)\) (overlap|disjoint) pairs with \|N minus union\| <= 12: (\d+) min uncovered (\d+)$',
@@ -56,12 +57,15 @@ def numbers(logs):
         m = re.search(r"'%s' depends on axioms: \[([^\]]*)\]" % re.escape(t), lb)
         ax[t] = [s.strip() for s in m.group(1).split(',')] if m else None
     out['lean_axioms'] = ax
-    out['lean_build_ok'] = 'LEAN BUILD OK' in lb
+    # the final OK line went only to driver.txt (lean-build.txt was not flushed at exit); require it there and all
+    # eleven per-target OK lines plus the axiom lines in lean-build.txt
+    out['lean_build_ok'] = ('LEAN BUILD OK' in logs['evidence/kaggle/driver.txt']
+                            and len(re.findall(r'TARGET BForm\.\S+ OK', lb)) == 11 and 'FAILED' not in lb)
     return out
 
 def accept(n):
     lp = n['lemma_p']
-    return (max(k for k, _ in lp['maximal_families']) <= 3 and lp['compatible_pairs'] == 15240
+    return (n['lemma_p_kaggle'] == lp and max(k for k, _ in lp['maximal_families']) <= 3 and lp['compatible_pairs'] == 15240
             and all(k <= 2 for k, _ in lp['degree_hist'])
             and all(ov == 0 for (_, _, ov, _), _ in n['compatible_pair_shapes'])
             and n['max_union'] == 66 and n['lean_build_ok']

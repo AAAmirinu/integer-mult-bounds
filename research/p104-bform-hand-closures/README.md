@@ -18,8 +18,8 @@ B-form realisations `M = D₁ G D₂ + c βᵀ` (singular `D` allowed), nine-ter
 | 4 | **Cases II/III (any `D`) cost `≥ 56` without the census**: at most one big term has `d ≥ 3` (and `d ≤ 4`), so `≥ 6` pairwise compatible label planes would be needed; Lemma P: there are at most 3 | PROVEN from Lemma P ([PROOF.md](PROOF.md) §4); Lemma P CHECKED (`checks/planes.py`, `checks/cliq.py`) |
 
 Lean `#print axioms` for the three theorems: `propext`, `Classical.choice`, `Quot.sound`. No `sorry`. The finite
-checks are kernel computations (`decide +kernel`) on small lists; the whole project builds in about 25 minutes on
-one core (Kaggle log `evidence/kaggle/lean-build.txt`).
+checks are kernel computations (`decide +kernel`) on small lists; the whole project builds in about 35 minutes on
+Kaggle (4 cores, peak 10.8 GB, about 35 minutes including the Mathlib cache; log `evidence/kaggle/lean-build.txt`).
 
 Item 4 replaces, for Cases II/III, the repo census (`cnt9b`), its propagation bound `lb`, survivor and port
 classes, the clique and support filters and PR6188's runs `cnt9c` V0-V3 / `cnt9z` V3 by: the label caps
@@ -51,8 +51,8 @@ P104 that are neither B-form nor A2, `≥ 10` terms, P112, E8.
   `sizes.txt`: the run also tried a union-only graph that was too large and was stopped; that part was removed
   from `sizes.py`, the two printed lines are complete.
 - `checks/labels.py` builds the 511 label classes directly as E8 modulo 2 (no networkx); they are the same 511 odd
-  sets as `setup9.load('P104')` (checked when the scripts were switched). The local logs in `evidence/` were made
-  with the `setup9` classes, the `FULL=1` re-run with `labels.py`; only index-free numbers are compared.
+  sets as `setup9.load('P104')` (checked when the scripts were switched). The logs in `evidence/` and `evidence/kaggle/`
+  were made with the `setup9` classes, the `FULL=1` re-run uses `labels.py`; only index-free numbers are compared.
 
 ## Reproduce
 
