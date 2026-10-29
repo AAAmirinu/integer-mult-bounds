@@ -124,8 +124,8 @@ Independent human and formal proof-kernel review are unclaimed.
 
 Credit Tekalign / PR3138 for the exporter; Ali Romman / PR5744 and PR5728 for
 declared coverage and typed metadata; roger-sato / PR3629 and PR3641 for path
-and tree checks; Mihir Srivastava for portable fixtures; Jose Carlos Gonzalez
-Roque / PR6189 for Windows publication; and Douglas Colkitt and the retained
+and tree checks; Mihir Srivastava for portable fixtures;
+josecarlosgonzalezroque-design / PR6189 for Windows publication; and Douglas Colkitt and the retained
 Git-reader contributors. Original notices and source bytes are unchanged.
 The new contribution is archive-index reuse, its lifecycle controls and measured
 complete-command effect. New work is Apache-2.0.
