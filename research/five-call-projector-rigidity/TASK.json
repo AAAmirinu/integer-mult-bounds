@@ -64,13 +64,13 @@
     ]
   },
   "scope_status": "refined",
-  "actual_scope": "Classify shortest central-query tuples; prove projector and thin-query bounds for 4, 6 and 8 fields; prove the faithful-period p>=n-1 reduction and check the literal order-seven stage.",
+  "actual_scope": "Classify shortest central-query tuples at every coupled width; prove projector and thin-query bounds for 4, 6 and 8 blocks; prove the faithful-period p>=n-1 reduction and check the literal order-seven stage.",
   "scope_change_reason": "The user requires a changed caller with a large kappa gain. The full-call query condition must hold before a target or native invoice can be claimed.",
-  "bottleneck_link": "The eight-field/nine-full formal and order-seven caller proposals pass an optimistic .0034 invoice but have no endpoint under the stated scalar-frame contract. The new exact proofs close both routes before native or compiler expansion.",
+  "bottleneck_link": "The eight-block/nine-full formal and order-seven proposals pass an optimistic .0034 invoice but have no endpoint under the stated central-stage contract, even with arbitrary port coupling. The exact proofs close both routes before native or compiler expansion.",
   "budget_minutes": 180,
   "stop_rule": "Publish the exact scoped proof and its replay; do not report a kappa gain without a complete independent-target caller and full invoice.",
   "outcome": "negative-result",
-  "evidence": "PROOF.md, PERIOD.md, RESULT.json, exact_replay.py, period_check.py and verify.py; separate discovery records in discovery-results.",
+  "evidence": "PROOF.md, COUPLED.md, PERIOD.md, RESULT.json, exact_replay.py, free_replay.py, period_check.py and verify.py; separate discovery records in discovery-results.",
   "author": "Ali Romman with substantial OpenAI Codex assistance",
   "ai_assistance": "Substantial OpenAI Codex assistance for derivation, code, searches, prose and author-side review. No subagents and no independent human review.",
   "open_questions": [

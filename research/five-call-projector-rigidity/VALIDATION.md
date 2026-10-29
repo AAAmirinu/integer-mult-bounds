@@ -48,6 +48,14 @@ degree-two query rows. A literal full-stage control rejects the earlier
 variable convention. The proof and registered executable files are unchanged.
 DISCOVERY.md states the old error and the corrected coverage.
 
+The coupled-width extension adds a complete block query normal form and
+ordered polynomial equations. Its registered normal and optimized replays
+both passed under Python 3.12.13. Each rebuilt 84 scalar domains and 84
+free-associative domains. The literal matrix controls reject sorted
+commutative words. Eight block corner controls verify the Schur complement
+without a determinant of noncommuting entries. These extension checks are
+author checks; they do not establish independent scientific acceptance.
+
 These are author checks with substantial AI assistance. Independent
 scientific review and proof-kernel verification have not occurred.
 The selected frontier replay was not run. There is no complete new caller,

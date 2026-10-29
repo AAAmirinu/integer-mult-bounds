@@ -4,6 +4,8 @@ This theorem closes the proposed eight-field/nine-full order-seven escape
 under the scalar-frame contract. It uses the shortest-query normal form
 from PROOF.md. It does not exclude shorter periods, initialized work,
 extra queries or ordinary frames that act noncentrally on native addresses.
+COUPLED.md extends this theorem to every coupled query width through a
+block Schur complement; the scalar proof below is retained in full.
 
 ## Theorem
 

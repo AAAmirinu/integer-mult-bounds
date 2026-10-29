@@ -4,8 +4,12 @@
 with n independent main fields and n+1 rank-one central queries needs at
 least 1, 2 or 3 thin calls when n is 4, 6 or 8, respectively. Arbitrary
 constant scalar frames are allowed. The bound does not assume that the
-full-stage projectors commute. It leaves extra work fields, longer query
-words, shorter finite-order stages and noncentral ordinary frames open.
+full-stage projectors commute. The same bounds now hold for rank-q queries
+on nq fields at every positive coupled width q. Arbitrary mixing between
+ports is permitted. Read [COUPLED.md](COUPLED.md) for the complete block
+normal form and free associative algebra proof. Extra work fields, longer
+query words, shorter finite-order stages and noncentral ordinary frames
+remain open.
 
 The first two mixed coefficients already prove these exclusions. The replay
 covers the complete scalar parameter space in each of 84 site-pattern
@@ -25,6 +29,8 @@ Three additional written results make the scope explicit:
   p>=n-1 gives no escape for an all-full shortest query word. A literal
   native trace check then excludes the proposed eight-field order-seven
   caller. Read [PERIOD.md](PERIOD.md) for this additional theorem.
+  The block Schur-complement argument in COUPLED.md extends it to every
+  coupled width, including all 104 source ports at once.
 
 The four-field all-full case has a short polynomial identity for 1. It
 works in every characteristic other than two. The six- and eight-field
@@ -72,7 +78,10 @@ python3 -I -B research/five-call-projector-rigidity/verify.py
 python3 -I -O -B research/five-call-projector-rigidity/verify.py
 ```
 
-The final marker is `PASS_SHORTEST_QUERY_PROJECTOR_RIGIDITY`. Normal replay
+The final marker is `PASS_SHORTEST_QUERY_PROJECTOR_RIGIDITY`. The replay
+checks the 84 scalar domains and all 84 free-algebra domains. Literal
+2-by-2 and 3-by-3 matrix controls reject commutative word multiplication.
+Normal replay
 does not write artifacts. The explicit `--write` mode regenerates RESULT.json.
 Checks include a changed polynomial coefficient, a first-order false
 positive made of actual projectors, complete alternating query endpoints,

@@ -8,6 +8,7 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import exact_replay as e
+import free_replay
 import period_check
 
 
@@ -129,7 +130,9 @@ def signed_control():
 
 def verify():
     result = {'short_certificate':short_certificate(), 'signed_control':signed_control(),
-              'finite_period_controls':period_check.verify()}
+              'finite_period_controls':period_check.verify(),
+              'free_algebra_matrix_controls':free_replay.matrix_controls(),
+              'block_corner_controls':free_replay.corner_controls()}
     try:
         short_certificate(mutate=True)
     except ValueError as error:
@@ -137,7 +140,7 @@ def verify():
     else:
         raise ValueError('The changed coefficient was accepted')
     result['changed_coefficient_rejected'] = True
-    rows = []
+    rows, coupled = [], []
     for n in (4,6,8):
         for count in range(n//2):
             for thin in itertools.combinations(range(1,n),count):
@@ -146,8 +149,15 @@ def verify():
                             else 'EXACT_SECOND_COEFFICIENT_CONTRADICTION')
                 need(row['status'] == expected, f'Unexpected exact outcome: n={n}, thin={thin}')
                 rows.append({k:v for k,v in row.items() if k != 'seconds'})
+                block = free_replay.replay(n, thin)
+                block_expected = ('SECOND_COEFFICIENT_CONSISTENT' if thin == tuple(range(2,n,2))
+                                  else 'EXACT_FREE_ALGEBRA_CONTRADICTION')
+                need(block['status'] == block_expected,
+                     f'Unexpected free-algebra outcome: n={n}, thin={thin}')
+                coupled.append(block)
         print(f'PASS_EXACT_FIELD_COUNT_{n}',flush=True)
     result['domains'] = rows
+    result['coupled_domains'] = coupled
     result['alternating_controls'] = [alternating(n) for n in (4,6,8)]
     result['new_kappa'] = False
     return result

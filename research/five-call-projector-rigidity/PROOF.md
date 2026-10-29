@@ -245,6 +245,9 @@ The results do not cover more than n+1 queries, initialized extra work,
 separate native stage maps or idles, a stage with a finite-order relation,
 ordinary coefficients that do not commute with S or z, coupled query rank
 greater than one in Sections 1--4, or changed independent helper targets.
+COUPLED.md supplies a separate complete extension of the thin-call bounds
+to every coupled width in characteristic zero, without commuting matrix
+coefficients. It also extends the finite-period argument.
 They do not replace native phase checks, source-bound routing, ownership,
 precision, complete pricing, compiler or outer admission.
 
