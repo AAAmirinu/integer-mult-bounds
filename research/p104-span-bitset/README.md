@@ -1,14 +1,18 @@
 # Bitset incidence shortens the complete P104 B-form replay
 
-The new S0 implementation reduces the complete bounded P104 B-form verifier's
-local median wall time from 14.982 to 13.665 seconds,
-8.79% less. The complete span-fact command falls from
-2.596 to 0.855 seconds. Five alternating fresh-process
-pairs per command produce identical normalized standard output and zero errors.
+The complete P104 span-fact command has a 67.09% lower local median wall time,
+from 2.596 to 0.855 seconds. The scalar range is 2.437..2.918 seconds and the
+bitset range is 0.832..0.873 seconds. Five alternating fresh-process pairs
+produce identical normalized standard output and zero errors.
+
+The enclosing bounded B-form verifier has an observed 8.79% lower median,
+14.982 to 13.665 seconds. Its whole-caller wall-time comparison is inconclusive
+because the ranges overlap and host variation exceeds the median difference.
+All ten complete caller outputs still agree, with zero errors.
 [BENCHMARK.json](BENCHMARK.json) contains every sample, environment details,
 transcript hashes and implementation/input bindings.
 
-Claim type: measured verifier improvement with a scoped implementation-equivalence
+Claim type: measured complete-span verifier improvement with a scoped implementation-equivalence
 proof and exact finite conformance. No new mathematical bound or kappa is claimed.
 This contribution is produced by Nick Petalas.
 
@@ -22,8 +26,8 @@ result comparison, Lean-source scan and controls. The saved timing ranges are
 All five paired complete-verifier samples favor the bitset implementation.
 The complete ranges overlap; the exact descriptive rank-sum tail is 8/252
 (two-sided p=0.031746). [STATISTICS.json](STATISTICS.json) binds that calculation
-to the generated timing record. This small sample does not establish a portable
-speed guarantee. The standalone span median equals 17.3% of the complete scalar median. The
+to the generated timing record. The whole-caller timing remains
+inconclusive. The clear span-command improvement has no portable speed guarantee. The standalone span median equals 17.3% of the complete scalar median. The
 end-to-end result is consistent with its available headroom. The remaining
 singular-rank stage limits the gain. The machine had other work running;
 alternating order and the recorded load averages make that limitation explicit.
