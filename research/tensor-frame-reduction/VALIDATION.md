@@ -11,6 +11,13 @@ three declared offsets; it is not an exhaustive pair census there.
 An altered receipt is rejected in optimized mode. Metadata and source pins
 pass, and `git diff --check` passes.
 
+At proof commit `dfa1d461ec80d8a11644455930a69a60ab735666`, all eight
+package files pass the committed-byte and mode checks. The official export
+passes integrity and input-coverage checks. Its optimized replay passes in
+1.0396 seconds with Git absent from PATH and all exported files read-only.
+All nine exported files retain their bytes and modes. Direct base ancestry
+also passes.
+
 The coordinate-flag computation is checked against explicit vector sets.
 The written proof gives the result for all finite dimensions and all
 positive tensor widths. The checks are by the author and the same AI
