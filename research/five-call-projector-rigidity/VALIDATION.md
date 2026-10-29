@@ -27,6 +27,19 @@ SymPy discovery agreed on the all-full exclusions. The numerical and
 mixed/dirty-target screens in DISCOVERY.md are discovery records; they
 are not additional independently checked impossibility theorems.
 
+At commit `78debc972036c189af372eeafd65d9e07e6d1d5c`, the committed-byte
+and executable-mode check passed for all 44 package files. The official
+export and input-coverage check passed. A separate optimized Python 3.12
+replay then passed in 53.784 seconds, with an empty PATH, no Git directory,
+and read-only source files. All 45 exported files, including the export
+manifest, kept the same bytes and modes. This receipt is a later prose
+addition; the checked proof and executable files are unchanged.
+
+The full-history preflight could not run because this checkout is shallow.
+The direct base ancestry check passed. Both declared provenance files are
+pinned to that base, and their source authentication passed. This does not
+claim a full-history check.
+
 These are author checks with substantial AI assistance. Independent
 scientific review and proof-kernel verification have not occurred.
 The selected frontier replay was not run. There is no complete new caller,
