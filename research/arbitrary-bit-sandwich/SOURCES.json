@@ -429,6 +429,12 @@
       "sha256": "a27cf9d637009403d3ab1e766590ef1bc6db8fdc364dfab3bfe0b76e5c8f8354"
     },
     {
+      "path": "research/physical-tensor-crt-sandwich-recovery/inputs/p48-5x7.bin",
+      "usage": "input",
+      "git_blob": "5c420cc4aecc15c74cc37011866ab5719c441e85",
+      "sha256": "7dd7adbe9e8f6d5ffbecd425a72827b31d7222ee51bcd67a4148ebfd03420381"
+    },
+    {
       "path": "research/physical-tensor-crt-sandwich-recovery/sandwich.py",
       "usage": "input",
       "git_blob": "d1b42997b65c0405791baa79c5b470823994ced8",

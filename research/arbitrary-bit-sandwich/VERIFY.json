@@ -73,6 +73,7 @@
     "research/physical-gaussian-tensor/tensor_word.py",
     "research/physical-gaussian-tensor/verify.py",
     "research/physical-tensor-crt-sandwich-recovery/SOURCES.json",
+    "research/physical-tensor-crt-sandwich-recovery/inputs/p48-5x7.bin",
     "research/physical-tensor-crt-sandwich-recovery/sandwich.py",
     "research/physical-tensor-crt-sandwich-recovery/sandwich_sources.py",
     "upstream/build/sections/07-resampling.tex",

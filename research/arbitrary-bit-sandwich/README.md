@@ -78,7 +78,7 @@ is executed. Positive child fixtures are explicitly supplied exact oracles;
 their host arithmetic is outside the charged wrapper.
 
 [SOURCES.json](SOURCES.json) binds canonical main
-`3f0152a32eeebac0df11946dbd50cabe5a7f7839`, the original task card and all 73
+`3f0152a32eeebac0df11946dbd50cabe5a7f7839`, the original task card and all 74
 runtime/source inputs. The predecessor's scientific verifier is not run.
 The selected baseline control reports `PASS_RESEARCH_BASELINE_BINDINGS_ONLY`
 with selected kappa `781451/250000000`; that control authenticates metadata.
