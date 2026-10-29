@@ -39,18 +39,18 @@ def census_numbers(logs):
     out = {}
     for v in ('V0', 'V1', 'V2', 'V3'):
         m = re.search(r'DONE %s big configurations (\d+) sigma>=8 assignments (\d+) with port class (\d+) ALIVE (\d+)' % v,
-                      logs['evidence/kaggle/census-v1/cnt9c_%s.log' % v])
+                      logs['evidence/kaggle/census-v1/cnt9c_%s.txt' % v])
         out['cnt9c_' + v] = dict(zip(('configurations', 'sigma_ge_8', 'with_port_class', 'alive'), map(int, m.groups())))
-    m = re.search(r'DONE multi-big: big configurations (\d+) alive after J \+ support filter (\d+)', logs['evidence/kaggle/census-v1/cnt9b.log'])
+    m = re.search(r'DONE multi-big: big configurations (\d+) alive after J \+ support filter (\d+)', logs['evidence/kaggle/census-v1/cnt9b.txt'])
     out['cnt9b_control'] = {'configurations': int(m.group(1)), 'alive': int(m.group(2))}
     m = re.search(r'DONE cnt104z pairs (\d+)', logs['evidence/kaggle/singular-v1/cnt104z.log.gz'])
     out['cnt104z_pairs'] = int(m.group(1))
-    m = re.search(r'pairs: repo (\d+) lbz (\d+) union (\d+)', logs['evidence/kaggle/singular-v1/cnt9z_V3.log'])
+    m = re.search(r'pairs: repo (\d+) lbz (\d+) union (\d+)', logs['evidence/kaggle/singular-v1/cnt9z_V3.txt'])
     out['cnt9z_pairs'] = dict(zip(('repo', 'lbz', 'union'), map(int, m.groups())))
     m = re.search(r'DONE V3 big configurations (\d+) sigma>=8 assignments (\d+) with port class (\d+) ALIVE (\d+)',
-                  logs['evidence/kaggle/singular-v1/cnt9z_V3.log'])
+                  logs['evidence/kaggle/singular-v1/cnt9z_V3.txt'])
     out['cnt9z_V3'] = dict(zip(('configurations', 'sigma_ge_8', 'with_port_class', 'alive'), map(int, m.groups())))
-    m = re.search(r'SELFTEST mismatches (\d+)', logs['evidence/kaggle/singular-v1/lbz_selftest.log'])
+    m = re.search(r'SELFTEST mismatches (\d+)', logs['evidence/kaggle/singular-v1/lbz_selftest.txt'])
     out['lbz_selftest_mismatches'] = int(m.group(1))
     return out
 
@@ -90,7 +90,7 @@ def main():
     bad = lean_clean(); assert not bad, bad
     log('PASS Lean sources: no sorry / admit / axiom declarations (build: lake build in lean/, not run here)')
     # controls
-    tampered = dict(logs); tampered['evidence/kaggle/census-v1/cnt9c_V3.log'] = logs['evidence/kaggle/census-v1/cnt9c_V3.log'].replace('ALIVE 0', 'ALIVE 1')
+    tampered = dict(logs); tampered['evidence/kaggle/census-v1/cnt9c_V3.txt'] = logs['evidence/kaggle/census-v1/cnt9c_V3.txt'].replace('ALIVE 0', 'ALIVE 1')
     assert not accept(census_numbers(tampered))
     hashes = {p: sha(p) for p in LOGS}
     res = {'finite_facts': {'f7': 36, 'f8': 60, 'max_ports_E7_D7_hyperplane': 55, 'S2_exceptions': 104, 'biclique_max_B': 4},
