@@ -191,10 +191,12 @@ block, with `<α_j, β_j> = 1` and `<α_j, β_k> = 0` for orthogonal pairs.
 The `E8` solution is `α_j = β_j = ε_j`, the sign pattern of the root. This
 works because `4 ≡ 1` mod 3.
 
-A hand proof of uniqueness is open. Subsystems of three blocks through a pair
-of clique points do not force full supports: every probed degenerate support
-is locally consistent. So the uniqueness depends on how all 14 blocks fit
-together.
+Subsystems of three blocks through a pair of clique points do not force full
+supports: every probed degenerate support is locally consistent. A proof
+without the search must therefore use all of E8 at once. Such a proof is in
+[`e8/E8-PROOF.md`](e8/E8-PROOF.md): frame factorisation over all 759 frames,
+an A2 triangle argument, and a sign step in one frame. It is formalized in
+Lean (`lean/CarrierCode/E8*.lean`).
 
 ## 6. Scoped cost corollary
 

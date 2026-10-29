@@ -173,12 +173,25 @@ python3 scripts/check_lean_axioms.py --project research/p104-carrier-code-unique
 The audit reports `propext`, `Classical.choice` and `Quot.sound` only, for all
 14 declarations.
 
+## Search-free proof via E8
+
+[`e8/E8-PROOF.md`](e8/E8-PROOF.md) proves Theorem 3 a second time, without the search. The 104 ports are 104 of
+the 120 root lines of E8, and two ports conflict exactly when their roots are orthogonal. The argument has five
+steps: frame factorisation `M = M[:,F] M[F,:]`; frame sums of `N = M ∘ Mᵀ`; a linear lemma on each row of `N`
+(proved by hand with the tables in [`e8/handcert.md`](e8/handcert.md)); the A2 triangle trick, which makes `M`
+symmetric with `±1` entries; and signs, which give `M = D (Gram/2) D`.
+[`e8/verify_e8hand.py`](e8/verify_e8hand.py) re-checks the finite inputs in about a minute.
+
+The whole argument is also formalized in Lean (`lean/CarrierCode/E8*.lean`, final theorem
+`CarrierCode.E8.decoding_unique`). All finite inputs are checked by the kernel, with no `native_decide`, and the
+axioms are the standard three. These files are outside the default build target because they are heavy (about
+8 GB per step-3 chunk, 35 minutes in total); `e8/E8-PROOF.md` gives the build commands and the exact scope.
+
 ## Open next questions
 
-- **A hand proof of uniqueness.** We have no proof that does not rely on the
-  certificate. PROOF.md §5a reduces the question to 14 blocks of
-  `S(3,4,8)`, but local subsystems do not force the answer.
-
+- **The link from `decoding_unique` to `CodeFact`.** The E8 theorem is stated
+  for the matrix of decoding vectors. Deriving the word-level `CodeFact`
+  hypothesis from it (row space and minimum weights) is not formalized.
 - **Partner codes of dimension 9 or more are not classified.** PR6030 is one,
   because of a bookkeeping direction. A cheaper design would need carriers
   that are each cheap but together decode. The clique and cover bounds alone
