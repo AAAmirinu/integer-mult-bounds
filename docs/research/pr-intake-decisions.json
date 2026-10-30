@@ -119138,6 +119138,41 @@
         "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6241",
         "merge_commit": "a615e535914b130cdccf6b0eff3c3861d4a44f1c"
       }
+    },
+    {
+      "number": 6242,
+      "metadata": {
+        "author": {
+          "id": "MDQ6VXNlcjg5MDkzOTQy",
+          "is_bot": false,
+          "login": "AAAmirinu",
+          "name": "kazoemo"
+        },
+        "headRefOid": "b7dfeb65fa30384e5c92205301ad6110d1796f52",
+        "isDraft": false,
+        "number": 6242,
+        "title": "Preserve Windows export benchmark receipts and measure the pinned comparison",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6242"
+      },
+      "reviewed_head": "b7dfeb65fa30384e5c92205301ad6110d1796f52",
+      "current_head": "b7dfeb65fa30384e5c92205301ad6110d1796f52",
+      "disposition": "partially_reviewed",
+      "github_state": "OPEN",
+      "integration_location": [
+        "research/windows-export-benchmark"
+      ],
+      "unresolved_question": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa. Original history retained at archive/pr-6242-source, excluded from main ancestry to preserve the PR6204 hold. Original source-history reproduction uses that branch.",
+      "scope": "Exact Git inventory/modes, Python/JSON syntax and available declared source pins checked. Author scientific evidence not independently replayed.",
+      "review_completion": {
+        "changed_file_coverage": true,
+        "scoped_mechanism_review": false,
+        "required_execution_complete": false,
+        "published": false
+      },
+      "verification_evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30b-20261030.json"
+      ],
+      "closure": null
     }
   ]
 }

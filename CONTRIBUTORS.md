@@ -4971,3 +4971,9 @@ Source archives retain attribution; mathematical review remains open.
 - **kazoemo (@AAAmirinu)** — [#6241](https://github.com/CrocSwap/integer-mult-bounds/pull/6241): Bind port9 low-cache digits to the complete-owner carry leaf (source archive).
 
 - **ywz65** — original [#2477](https://github.com/CrocSwap/integer-mult-bounds/pull/2477) log-closure work retained in the [#6237](https://github.com/CrocSwap/integer-mult-bounds/pull/6237) grammar repair by **AAAmirinu**; the held original is superseded, not independently approved.
+
+## Queue intake, 30 October 2026 (chunk B)
+
+Source archives retain attribution; mathematical review remains open.
+
+- **kazoemo (@AAAmirinu)** — [#6242](https://github.com/CrocSwap/integer-mult-bounds/pull/6242): Preserve Windows export benchmark receipts and measure the pinned comparison (source archive).
