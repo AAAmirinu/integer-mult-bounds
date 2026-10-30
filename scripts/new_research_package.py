@@ -16,6 +16,29 @@ import tempfile
 from research_package import ROOT, git, git_blobs, relative_file, symlink_free_relative_path
 
 
+def source_metadata(root, commit, task_id, sources):
+    catalog_path = "docs/research/agent-task-catalog.json"
+    # Read the catalogue first so its card and source pin share the same bytes.
+    names = [catalog_path] + sorted(set(["certificates/selected-result.json", *sources]) - {catalog_path})
+    inventory = []
+    with closing(git_blobs(root, [commit + ":" + name for name in names])) as objects:
+        # strict also exhausts the reader, including its final process-status check.
+        for name, (blob, pinned) in zip(names, objects, strict=True):
+            if name == catalog_path:
+                catalog = json.loads(pinned)
+                cards = [t for tr in catalog["tracks"] for t in tr["tasks"] if t["id"] == task_id]
+                if len(cards) != 1:
+                    raise ValueError("unknown task in the pinned catalogue")
+                card = cards[0]
+            live = relative_file(root, name).read_bytes()
+            if live != pinned:
+                raise ValueError("source has uncommitted changes or differs from chosen base: " + name)
+            inventory.append({"path": name, "usage": "input" if name in sources else "provenance",
+                              "git_blob": blob, "sha256": hashlib.sha256(pinned).hexdigest()})
+    inventory.sort(key=lambda row: row["path"])
+    return catalog, card, inventory
+
+
 def create(root, slug, task_id, author, sources=(), base="HEAD", budget=60):
     if not re.fullmatch(r"[a-z0-9][a-z0-9-]{0,79}", slug):
         raise ValueError("use a lowercase hyphenated package slug")
@@ -25,22 +48,7 @@ def create(root, slug, task_id, author, sources=(), base="HEAD", budget=60):
     if not author.strip() or budget <= 0:
         raise ValueError("provide an author and positive time budget")
     commit = git(root, "rev-parse", "--verify", base + "^{commit}").decode().strip()
-    catalog_path = "docs/research/agent-task-catalog.json"
-    catalog = json.loads(git(root, "show", commit + ":" + catalog_path))
-    cards = [t for tr in catalog["tracks"] for t in tr["tasks"] if t["id"] == task_id]
-    if len(cards) != 1:
-        raise ValueError("unknown task in the pinned catalogue")
-    card = cards[0]
-    inventory = []
-    names = sorted(set([catalog_path, "certificates/selected-result.json", *sources]))
-    with closing(git_blobs(root, [commit + ":" + name for name in names])) as objects:
-        for index, (blob, pinned) in enumerate(objects):
-            name = names[index]
-            live = relative_file(root, name).read_bytes()
-            if live != pinned:
-                raise ValueError("source has uncommitted changes or differs from chosen base: " + name)
-            inventory.append({"path": name, "usage": "input" if name in sources else "provenance",
-                              "git_blob": blob, "sha256": hashlib.sha256(pinned).hexdigest()})
+    catalog, card, inventory = source_metadata(root, commit, task_id, sources)
     task = {"schema_version": 1, "task_id": task_id, "priority_revision": catalog["priority_revision"],
             "base_commit": commit, "original_card": card, "scope_status": "unchanged",
             "actual_scope": card["question"], "scope_change_reason": None,

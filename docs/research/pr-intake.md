@@ -107,6 +107,11 @@ incorporation; reconcile actual GitHub state and retained sources separately.
 - Group related construction chains; review the strongest relevant descendant and
   each unique delta, retaining predecessor credit. This is not automatic approval
   or closure of ancestors.
+- Before publishing a merge with contribution heads as parents, compare their
+  ancestry against all other open PR heads. GitHub can mark an ancestor PR merged
+  even when its files are not installed in the default tree. Resolve and record
+  each such predecessor explicitly, including whether a checked successor
+  supersedes a held version; do not silently close an unrelated or unresolved hold.
 - Run relevant checks once per changed source/dependency/environment obligation.
   Reuse exact-source receipts with explicit coverage; keep expensive frontier
   verification separate from archive intake.

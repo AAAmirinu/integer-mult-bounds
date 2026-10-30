@@ -1535,17 +1535,14 @@
     {
       "number": 2477,
       "head": "0760e745c5d3b6e66dbfab1799be75abf01576ed",
-      "status": "waiting_revision",
-      "reason": "Registered optimized replay passes on macOS, but an exact counterexample violates the declared LF/CRLF-only outer-log policy: replacing the first LF by vertical tab is accepted through inherited str.splitlines(). Revision requested to enforce the outer line grammar in the new caller and add rejecting controls, preserving frozen vendor bytes. https://github.com/CrocSwap/integer-mult-bounds/pull/2477#issuecomment-6205219558",
+      "status": "ready_to_integrate",
+      "reason": "Superseded by PR6237: original outer parser remains defective and is retained in history only. Exact unchanged vendors/controls and new LF/CRLF-only repair reviewed; archived grammar checks pass normally and optimized. No fresh successor scientific stage or selected-frontier promotion.",
       "evidence": [
-        "research/community-efficient2600-audit/INTAKE.json"
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
       ],
       "policy_version": 1,
-      "baseline": "a23bdc1b07be96bea0101d44ae27d14de67a79ed",
-      "watch_paths": {
-        "research/community-efficient2600-audit/INTAKE.json": "66ac2ec224212206febf709a6f567f051c9cd555",
-        "research/selected-windows-log-closure": null
-      },
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
       "watch_prs": {}
     },
     {
@@ -40288,6 +40285,669 @@
       ],
       "policy_version": 1,
       "baseline": "3f0152a32eeebac0df11946dbd50cabe5a7f7839",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6191,
+      "head": "be3fc854aa380b3d81e134ce9a4282468e4fa999",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6192,
+      "head": "91df334ccd2a4bc9959e311f118ac8aaf967ffc2",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6193,
+      "head": "eb26f36eebcd06c18974ea8e14b08e0a53d71524",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6194,
+      "head": "d297eb399c5b2457b2028130c0752234fad9ccba",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6195,
+      "head": "64a58e7bce47a1745aa74918485afd657bc5f871",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6196,
+      "head": "4de04d6e8354442a26d310556e8d8b63cb832904",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6197,
+      "head": "b967838c246dc4b2a5bed2f506608dcbb62c4532",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6198,
+      "head": "2a804fcb32f46d66018185194b55f1f2b217523d",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6199,
+      "head": "a6bee4472b4df4ff17510dba2b2bb06e5af0f029",
+      "status": "ready_to_integrate",
+      "reason": "Reviewed single-read pinned catalogue reuse, identical sorted metadata, exact byte checks, final-reader completion and output guards. Targeted normal/optimized tests; performance claims remain author-measured. Pre-existing downstream frozen live-pin drift remains separately disclosed.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6200,
+      "head": "8b705d15869ba12d55adcb9075c68a2c7d44602d",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6201,
+      "head": "7f150965d4836ae29bac98df8c25785428deddb1",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6202,
+      "head": "4ee826b9cdfa2587ec96a00ba0cf80faa2173d12",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6203,
+      "head": "304ecd1e31e5f6928b4472690bb1959931ad263e",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6204,
+      "head": "9889f94b6ed045c1069b2e6f7e4471d0322f2f16",
+      "status": "waiting_revision",
+      "reason": "The new test_same_handle_reread_still_rejects_changed_manifest_bytes fails reproducibly in normal and optimized CPython 3.14.6 on macOS: ValueError is not raised after the manifest is changed following hashing. Preserve the claimed reread rejection with borrowed-handle buffering, or revise and justify the contract. The separate intermittent Git cleanup EPERM is unchanged and is not the basis for this hold.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6205,
+      "head": "a2e2d4da922b64c6b137fe74e9b0fe845c60dc24",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6206,
+      "head": "4fdb25a3759fcb86cc92642d97a2a206771a8dfb",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6207,
+      "head": "4e50e98e4ee2c87139aa127de72aed9a74bfde4b",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6208,
+      "head": "4e3f55105e436dfa364029f9032c90f6a239fbe0",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6209,
+      "head": "a06035c5fc77f7b0dac7a65763068d8368cac7a6",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6210,
+      "head": "4e08457f4d0b69c00a6ca62eca81c8d0a55f3e60",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6211,
+      "head": "369ad15647ad0df0b0ef6f4fcb060509b67f1823",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6212,
+      "head": "9c159482e0495b6a97e17e629debe66a0ceb9466",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6213,
+      "head": "76af8b818541ffafbd1c8ce7fafba4d1fc3aa434",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6214,
+      "head": "ee8b66c91510b1ff4e5d28be8c6567810b4b3d01",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6215,
+      "head": "0013c2b40c522ccd19670a8fbd4b1531f13fed2b",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6216,
+      "head": "dd43e856dceec9a92d338345d01d4ad247ce2172",
+      "status": "waiting_revision",
+      "reason": "The committed logs/reproduce-optimized.json is an empty zero-byte file, not valid JSON. Replace it with the authentic receipt or remove/clearly classify the placeholder and update references. Scientific certificate replay was not run; no mathematical refutation is inferred.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6217,
+      "head": "6aa982f08190fb3f2bff8f4dee3eeaf0ba0412d9",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6218,
+      "head": "159352d273bd7b9f92c55cee3a9ac9b955de9b86",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6219,
+      "head": "f9f096be89878e4fcbf75c4be98bc9b52f0e6c56",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6220,
+      "head": "bedadda56af1cc2c124bec5888eb9f443dc3324e",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6221,
+      "head": "5f5e7fc87844f265ec5b206b2ed2e690f202f879",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6222,
+      "head": "dd40722fba14ba7446a1b1d58b9c78170c739721",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6223,
+      "head": "e1ec7b370176e14bb6309969968c0ae04c4aa556",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6224,
+      "head": "3bdd11b9f08c0d1ad60c4b863f33d47d7fb65aad",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6225,
+      "head": "69ad888ce9dd15f7fe68ad5b4d2f3a43bda7533a",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6226,
+      "head": "8fee704ce85d346aaac08e3d217373d7011a8b13",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6227,
+      "head": "98bc47f847488c7909c6a80308998c792fd6a903",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6228,
+      "head": "d85df7f7524e41799a6db2d6c082f6cadbd5cc84",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6229,
+      "head": "50540b2a7e0d219bc4920e6252e75113b5a9d8d8",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6230,
+      "head": "5d9b3d792358bc423fd64cf3a15c2f46dbf91a97",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6231,
+      "head": "c5406de0d327cfad1a4a52fe19a9b72169f7e4ae",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6232,
+      "head": "913b61836ecc4c20ff59935424719177f1362723",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6233,
+      "head": "ab4f7b56bc152d29afa2c40062b29f2c5a9e5cfc",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6234,
+      "head": "dc7d0f681a7b326b475863074c825f9824d21a80",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6235,
+      "head": "75bbb6080b4d96114543d3017060d0becc6e0d11",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6236,
+      "head": "0fd1086e41214eff62db2b498728388848fce2d7",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6237,
+      "head": "f868287c92aabd6221120cb3df9d7550eca338bd",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6238,
+      "head": "d8554688ae6ad298259d6bb1c58c279d75fbe907",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6239,
+      "head": "80c537689f297b19dcd435d71623d2c743856650",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6240,
+      "head": "4e675ff219d54492e83900127aca6cde90b2d37e",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
+      "watch_paths": {},
+      "watch_prs": {}
+    },
+    {
+      "number": 6241,
+      "head": "3cd72e02bd091c4e3f82c8cd9a250ce752cf3a78",
+      "status": "ready_to_integrate",
+      "reason": "Independent scientific review and source-bound replay remain open. Archival publication does not admit a supplier, outer theorem or improved kappa.",
+      "evidence": [
+        "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
+      ],
+      "policy_version": 1,
+      "baseline": "a5bff3bf133e482541c09eba4e773884bdb2b1b7",
       "watch_paths": {},
       "watch_prs": {}
     }
