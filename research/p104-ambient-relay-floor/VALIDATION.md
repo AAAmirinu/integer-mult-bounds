@@ -57,3 +57,7 @@ The first committed-byte preflight found CRLF working bytes in generated JSON
 that Git normalized to LF. The new package files were normalized to their
 committed LF bytes before the final preflight; the mathematical inputs and
 certificate values were unchanged.
+
+Final committed-byte/source-history preflight passed for all 10 declared files,
+with both the main base and pending PR6229 head retained as ancestors. The diff
+against canonical main contains only the nine new package files.
