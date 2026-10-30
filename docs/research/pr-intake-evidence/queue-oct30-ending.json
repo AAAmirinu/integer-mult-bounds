@@ -1,0 +1,24 @@
+{
+  "observed_at": "2026-10-30T04:23:53.296873+00:00",
+  "base": "a615e535914b130cdccf6b0eff3c3861d4a44f1c",
+  "counts": {
+    "draft": 180,
+    "waiting_revision": 121,
+    "deferred_replay": 7,
+    "new": 1
+  },
+  "open_count": 309,
+  "actionable_count": 1,
+  "remaining_actionable": 0,
+  "selected": [
+    {
+      "number": 6242,
+      "head": "b7dfeb65fa30384e5c92205301ad6110d1796f52",
+      "title": "Preserve Windows export benchmark receipts and measure the pinned comparison",
+      "lane": "new",
+      "changes": [],
+      "reason": "No cached intake decision.",
+      "evidence": []
+    }
+  ]
+}

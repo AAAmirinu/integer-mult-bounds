@@ -1821,22 +1821,27 @@
     "all_jobs_finished": true
   },
   "latest_delta_intake": {
-    "date": "2026-10-29",
-    "status": "published; ending queue snapshot recorded",
-    "decisions": 27,
-    "archives_merged": 25,
-    "reviewed_tooling_merged": 2,
-    "repaired_hold": 6144,
+    "date": "2026-10-30",
+    "status": "published; final queue snapshot recorded",
+    "new_heads_reviewed": 51,
+    "archives_merged": 48,
+    "reviewed_tooling_merged": 1,
+    "new_revision_holds": [
+      6204,
+      6216
+    ],
+    "superseded_predecessor": 2477,
+    "successor": 6237,
     "evidence": [
-      "docs/research/pr-intake-evidence/queue-oct29a-20261029.json"
+      "docs/research/pr-intake-evidence/queue-oct30a-20261030.json"
     ],
     "closures": [
-      "docs/research/pr-intake-evidence/queue-oct29a-closures.json"
+      "docs/research/pr-intake-evidence/queue-oct30a-closures.json"
     ],
-    "snapshot": "docs/research/pr-intake-evidence/queue-oct29-ending.json",
+    "snapshot": "docs/research/pr-intake-evidence/queue-oct30-ending.json",
     "selected_kappa": "0.003125804",
     "selected_frontier_changed": false,
     "live_jobs": [],
-    "next": "Use delta-only plan. PR6167 claim 0.003128645 is archived, not independently admitted. Do not replay unchanged holds or historical suites. Intermittent macOS Git process cleanup EPERM observed in an unchanged path; see retained normal/optimized tooling logs."
+    "next": "Use delta-only intake. PR6214 adds author-reported independent replay for archived PR6167 kappa .003128645; selected admission remains open. Reuse old evidence and unchanged holds. Check ancestor PR closures before multi-parent publication."
   }
 }
