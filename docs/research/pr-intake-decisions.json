@@ -119157,7 +119157,7 @@
       "reviewed_head": "b7dfeb65fa30384e5c92205301ad6110d1796f52",
       "current_head": "b7dfeb65fa30384e5c92205301ad6110d1796f52",
       "disposition": "partially_reviewed",
-      "github_state": "OPEN",
+      "github_state": "CLOSED",
       "integration_location": [
         "research/windows-export-benchmark"
       ],
@@ -119167,12 +119167,18 @@
         "changed_file_coverage": true,
         "scoped_mechanism_review": false,
         "required_execution_complete": false,
-        "published": false
+        "published": true
       },
       "verification_evidence": [
         "docs/research/pr-intake-evidence/queue-oct30b-20261030.json"
       ],
-      "closure": null
+      "closure": {
+        "kind": "closed_after_exact_source_archive_copy",
+        "url": "https://github.com/CrocSwap/integer-mult-bounds/pull/6242",
+        "publication_commit": "01885346d4e78083b0a41786f977f71c73e3ffa2",
+        "source_branch": "archive/pr-6242-source",
+        "excluded_ancestor": 6204
+      }
     }
   ]
 }
