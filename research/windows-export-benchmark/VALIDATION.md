@@ -80,3 +80,10 @@ No secondary workload, Linux host, historical mathematical verifier, selected
 native supplier or multiplication theorem was executed. Hosted CI and human or
 formal proof-kernel acceptance are separate and unclaimed. Source integrity
 does not transfer the predecessor's scientific acceptance.
+
+The final overlap attempt encountered a transient GitHub HTTP2 Discussion-read
+failure and reported its stale fallback explicitly. A read-only retry succeeded:
+358 open PRs at04:17 UTC,5978 Discussion records at04:22 UTC and the complete
+8625-note HEAD inventory. Its matches were the predecessor/handoff, an unrelated
+older helper and this investigation. No competing receipt repair was identified;
+this is bounded coverage, not a novelty guarantee.
