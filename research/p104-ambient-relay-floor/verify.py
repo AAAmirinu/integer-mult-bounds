@@ -17,6 +17,7 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 PORTS = (73, 239, 336, 502, 81, 247, 328, 494)
 WORD = 'research/p104-helper-subspace-splits/WORD.json.gz'
+MODEL_SOURCE = 'research/p104-two-clique-relay-floor/model.py'
 MODEL_PIN = ('head:50540b2a7e0d219bc4920e6252e75113b5a9d8d8:'
              'research/p104-two-clique-relay-floor/model.py')
 
@@ -33,24 +34,26 @@ def authenticate_bytes(raw, row):
 
 
 def authenticate():
-    rows = [row for row in json.loads((HERE / 'SOURCES.json').read_bytes())['files']
-            if row['usage'] == 'input']
-    vendors = [row for row in rows if row['path'].endswith('vendor/model.py')]
-    require(len(rows) == 2 and len(vendors) == 1 and
-            any(row['path'] == WORD for row in rows), 'source inventory')
-    require(vendors[0]['pin'] == MODEL_PIN, 'predecessor source pin')
-    data = {}
-    for row in rows:
-        path = (ROOT if row['path'].startswith('research/') else HERE) / row['path']
-        require(not path.is_symlink(), 'source symlink')
-        data[row['path']] = path.read_bytes()
-        authenticate_bytes(data[row['path']], row)
+    rows = json.loads((HERE / 'SOURCES.json').read_bytes())['files']
+    inputs = [row for row in rows if row['usage'] == 'input']
+    vendors = [row for row in rows if row['path'] == MODEL_SOURCE]
+    require(len(inputs) == 1 and inputs[0]['path'] == WORD and len(vendors) == 1,
+            'source inventory')
+    require(vendors[0]['usage'] == 'provenance' and vendors[0]['pin'] == MODEL_PIN,
+            'predecessor source pin')
+    word_path, vendor_path = ROOT / WORD, HERE / 'vendor/model.py'
+    require(not word_path.is_symlink() and not vendor_path.is_symlink(), 'source symlink')
+    word_bytes, vendor_bytes = word_path.read_bytes(), vendor_path.read_bytes()
+    authenticate_bytes(word_bytes, inputs[0])
+    # The manifest pins the original source path; the retained local copy is
+    # authenticated against those exact source bytes, not a fabricated Git path.
+    authenticate_bytes(vendor_bytes, vendors[0])
     model = types.ModuleType('pinned_two_clique_model')
-    exec(compile(data[vendors[0]['path']], '<pinned PR6229 model>', 'exec', optimize=0),
+    exec(compile(vendor_bytes, '<pinned PR6229 model>', 'exec', optimize=0),
          model.__dict__)
-    require(set(PORTS) <= set(json.loads(gzip.decompress(data[WORD]))['ports']),
+    require(set(PORTS) <= set(json.loads(gzip.decompress(word_bytes))['ports']),
             'ports belong to pinned source')
-    return model, rows, data[vendors[0]['path']], vendors[0]
+    return model, [inputs[0], vendors[0]], vendor_bytes, vendors[0]
 
 
 def plain(value):

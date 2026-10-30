@@ -21,8 +21,8 @@
       "sha256": "bbb072bced5824a8d9094c49be2fc51fbfdd05fb2b7dab8106e1275053075099"
     },
     {
-      "path": "research/p104-ambient-relay-floor/vendor/model.py",
-      "usage": "input",
+      "path": "research/p104-two-clique-relay-floor/model.py",
+      "usage": "provenance",
       "git_blob": "6582cfb3ea17be2628dd687d07be9e118c5964f7",
       "sha256": "3d6f1529ad9ca2b718f2335152a1d4db077931c4a943fa13656d1a2dce786eab",
       "pin": "head:50540b2a7e0d219bc4920e6252e75113b5a9d8d8:research/p104-two-clique-relay-floor/model.py"

@@ -2,7 +2,7 @@
 
 Environment: native Windows, CPython 3.12.11, standard library only, 2026-10-30.
 Canonical main was refreshed at the start and before submission; it remained
-`a5bff3bf133e482541c09eba4e773884bdb2b1b7`. Priority revision8 and selected
+`a5bff3bf133e482541c09eba4e773884bdb2b1b7`. Priority revision 8 and selected
 #6030 were unchanged. The source baseline returned
 `PASS_RESEARCH_BASELINE_BINDINGS_ONLY`; no selected native replay was run.
 
@@ -11,13 +11,13 @@ committed-byte checks are recorded below after execution.
 
 The finite certificate contains:
 
-- All374 subspaces of `W + span(1)`, all5395 strict nested pairs,307 equal
-  contractions and1503 strict cost reductions. It checks5769 parent inclusions,
+- All 374 subspaces of `W + span(1)`, all 5395 strict nested pairs, 307 equal
+  contractions and 1503 strict cost reductions. It checks 5769 parent inclusions,
   536 local-source cases and536 receiver cases.
 - Three complete identity-shadow fixtures. The direct eight-move identity has
-  original/contracted paid cost8/8 and completion rank8. The four-move outside
-  attainer has8/8 and completion rank4. The nine-move zero-gap relay has9/8 and
-  completion rank8. Every contracted debt/effective/shadow rank is8. Full source
+  original/contracted paid cost 8/8 and completion rank 8. The four-move outside
+  attainer has 8/8 and completion rank 4. The nine-move zero-gap relay has 9/8 and
+  completion rank 8. Every contracted debt/effective/shadow rank is 8. Full source
   vectors, completion matrices and shadows agree before and after contraction.
 - Nine exact-reason controls: forbidden ambient equal frames, non-subspace
   frames, unavailable local sources, a ninth source coordinate, unavailable
@@ -32,8 +32,8 @@ proof. It found no blocking issue. The reviewed PROOF.md SHA256 was
 Root review separately inspected the new checker and source-loading boundary.
 This is not independent human review or proof-kernel verification.
 
-The final overlap refresh through03:31 UTC covered356 open PRs,5976 Discussion
-records and the complete8623-file HEAD note inventory, plus the two new local
+The final overlap refresh through 03:31 UTC covered 356 open PRs, 5976 Discussion
+records and the complete 8623-file HEAD note inventory, plus the two new local
 notes. Its six distinctive matches were PR6229, its claim and handoff, this
 claim, and this package's README/TASK. No competing contraction result was
 identified; bounded search is not a novelty certificate. PR6229 remained OPEN
@@ -45,3 +45,9 @@ three declared fixtures, with at most nine moves. Authentication checks bytes;
 it does not certify predecessor scientific claims. Hosted CI, all historical
 replays, native synthesis and human/kernel review are unrun. No selected
 frontier, upstream PR state or shared source was changed.
+
+The first metadata attempt rejected a vendor alias whose SOURCES path differed
+from its explicit head-pin path. This was a packaging error, before registered
+scientific execution. The corrected manifest pins the original model path as
+provenance; the verifier independently authenticates the local vendor bytes
+against that pin. The only external live input is WORD.json.gz.

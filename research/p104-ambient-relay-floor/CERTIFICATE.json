@@ -1196,10 +1196,10 @@
     },
     {
       "git_blob": "6582cfb3ea17be2628dd687d07be9e118c5964f7",
-      "path": "research/p104-ambient-relay-floor/vendor/model.py",
+      "path": "research/p104-two-clique-relay-floor/model.py",
       "pin": "head:50540b2a7e0d219bc4920e6252e75113b5a9d8d8:research/p104-two-clique-relay-floor/model.py",
       "sha256": "3d6f1529ad9ca2b718f2335152a1d4db077931c4a943fa13656d1a2dce786eab",
-      "usage": "input"
+      "usage": "provenance"
     }
   ],
   "status": "PASS_P104_AMBIENT_RELAY_FLOOR"

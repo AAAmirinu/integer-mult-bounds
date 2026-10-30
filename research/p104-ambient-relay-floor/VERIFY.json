@@ -4,8 +4,7 @@
   "python": "3.12",
   "requirements": [],
   "inputs": [
-    "research/p104-helper-subspace-splits/WORD.json.gz",
-    "research/p104-ambient-relay-floor/vendor/model.py"
+    "research/p104-helper-subspace-splits/WORD.json.gz"
   ],
   "commands": [
     {
