@@ -71,8 +71,10 @@ line endings were normalized to LF for Git, preserving every parsed value.
 
 Root reviewed the wrapper, exact sources and verifier. Frozen measurement
 functions and all candidate/baseline source bytes are unchanged. Registered
-checks validate the retained observation without rerunning timings. Their
-outcomes and committed-byte check are recorded after execution.
+warning-strict normal and optimized checks both passed, validating the same
+retained native observation without rerunning timings. Metadata/pins and the
+14-file committed-byte/source-history preflight passed. The final diff adds only
+this package. No positive timing threshold is enforced by the verifier.
 
 No secondary workload, Linux host, historical mathematical verifier, selected
 native supplier or multiplication theorem was executed. Hosted CI and human or
