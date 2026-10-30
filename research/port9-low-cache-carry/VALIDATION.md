@@ -49,7 +49,17 @@ PR5497's distinct cell0 case, PR5985's Q1 bypass and packet-state/sparsity side
 results were inspected. No matching actual-column composition was identified;
 bounded search is not a novelty certificate.
 
-Registered replay and committed-byte outcomes are appended after execution.
+Registered normal and optimized commands both passed and recomputed the exact
+same retained RESULT.json. The runner returned PASS_REGISTERED_RESEARCH_PACKAGE
+with outcome partial, reflecting the open full-caller work. Metadata/pins and
+the 18-file committed-byte/source-history preflight passed. Only the nine new
+package files differ from canonical main.
+
+Measured frontend executions use 1,055–1,069 transitions and233–235 visited
+cells. The 20 complete fixtures use3,085–19,244 transitions and322–881 visited
+cells, within the stated complete-leaf allowances. These finite ranges are
+observations, not universal extrema or a supplier performance comparison.
+
 Hosted CI, independent human/kernel review, whole-T cache construction and
 selection, low-type commit/retirement, high-matrix routing, ROW installation,
 the complete supplier invoice and frontier admission are unrun or unresolved.
