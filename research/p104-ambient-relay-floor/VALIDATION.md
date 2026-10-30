@@ -6,8 +6,9 @@ Canonical main was refreshed at the start and before submission; it remained
 #6030 were unchanged. The source baseline returned
 `PASS_RESEARCH_BASELINE_BINDINGS_ONLY`; no selected native replay was run.
 
-The direct author smoke passed. Registered normal/optimized replay and final
-committed-byte checks are recorded below after execution.
+The direct author smoke and both registered commands passed. Normal and -O
+recomputed identical certificates and returned PASS_P104_AMBIENT_RELAY_FLOOR;
+the runner returned PASS_REGISTERED_RESEARCH_PACKAGE. Metadata/pins passed.
 
 The finite certificate contains:
 
@@ -51,3 +52,8 @@ from its explicit head-pin path. This was a packaging error, before registered
 scientific execution. The corrected manifest pins the original model path as
 provenance; the verifier independently authenticates the local vendor bytes
 against that pin. The only external live input is WORD.json.gz.
+
+The first committed-byte preflight found CRLF working bytes in generated JSON
+that Git normalized to LF. The new package files were normalized to their
+committed LF bytes before the final preflight; the mathematical inputs and
+certificate values were unchanged.
